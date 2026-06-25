@@ -153,6 +153,12 @@ Writing tips that keep you passing it:
 - Record image-generator prompts in the lesson's `prompts.md`.
 - Unicode icons/emoji are fine inline where they're enough (★ ✔ 🎉).
 
+## Narration (optional, currently shelved)
+
+Per-slide audio narration is supported but not used in any lesson right now. The
+audio toggle only appears if a lesson contains a `<phil-narration>`. To add it, see
+[docs/audio-narration.md](docs/audio-narration.md).
+
 ## Topics
 
 `lessons/<topic>/` groups lessons (e.g. `ethical-theory`, `logic`, `ai-ethics`,

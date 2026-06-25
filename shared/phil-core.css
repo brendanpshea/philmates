@@ -59,6 +59,10 @@ img[src$=".png"], img[data-pixel] { image-rendering: pixelated; }
 .phil-top__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-top__right { display: flex; align-items: center; gap: 12px; }
 .phil-reset { font-size: 9px; padding: 8px 10px; }
+.phil-audio { font-size: 13px; padding: 7px 9px; line-height: 1; }
+
+/* narration script is data for the TTS generator, not shown on screen */
+phil-narration { display: none; }
 .phil-title {
   font-family: var(--pixel);
   font-size: 14px;

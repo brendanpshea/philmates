@@ -47,6 +47,9 @@ class PhilLesson extends HTMLElement {
     this.lessonId = this.getAttribute('id') || 'lesson';
     this.store = new ProgressStore(this.lessonId);
 
+    this._audio = new Audio();                                  // narration player
+    this._audioOn = localStorage.getItem('philmates:audio') === 'on';   // default off
+
     // collect slides in document order
     this.slides = [...this.querySelectorAll(':scope > phil-slide')];
     this.slides.forEach((s, i) => { if (!s.id) s.id = `s${i + 1}`; });
@@ -75,7 +78,15 @@ class PhilLesson extends HTMLElement {
     reset.title = 'Reset this lesson’s progress';
     reset.onclick = () => this._confirmReset();
     const right = el('div', 'phil-top__right');
-    right.append(this._tally, reset);
+    right.append(this._tally);
+    if (this.querySelector('phil-narration')) {        // only show audio UI if the lesson has narration
+      this._audioBtn = el('button', 'phil-btn phil-btn--ghost phil-audio', '🔇');
+      this._audioBtn.title = 'Narration on/off (plays the current slide)';
+      this._audioBtn.onclick = () => this._toggleAudio();
+      right.append(this._audioBtn);
+      this._setAudioBtn();
+    }
+    right.append(reset);
     row.append(el('h1', 'phil-title', this.getAttribute('title') || 'PhilMates'), right);
     const bar = el('div', 'phil-progress');
     this._fill = el('div', 'phil-progress__fill');
@@ -178,6 +189,7 @@ class PhilLesson extends HTMLElement {
     this._refresh();
     const focusable = slide.querySelector('h1, [tabindex], button, input, select');
     focusable?.focus?.({ preventScroll: true });
+    this._playSlideAudio(slide);
   }
   next() {
     // reveal the next bullet/step before leaving the slide
@@ -202,6 +214,21 @@ class PhilLesson extends HTMLElement {
   toggleFullscreen() {
     if (document.fullscreenElement) document.exitFullscreen();
     else this.requestFullscreen?.();
+  }
+
+  /* ---- narration audio (optional; needs generated assets/audio/<slide.id>.mp3) ---- */
+  _setAudioBtn() { this._audioBtn.textContent = this._audioOn ? '🔊' : '🔇'; }
+  _toggleAudio() {
+    this._audioOn = !this._audioOn;                       // the click is the gesture browsers require
+    localStorage.setItem('philmates:audio', this._audioOn ? 'on' : 'off');
+    this._setAudioBtn();
+    this._playSlideAudio(this.current);
+  }
+  _playSlideAudio(slide) {
+    this._audio.pause();
+    if (!this._audioOn || !slide || !slide.querySelector('phil-narration')) return;
+    this._audio.src = `./assets/audio/${slide.id}.mp3`;
+    this._audio.play().catch(() => {});                   // ignore autoplay block / missing file
   }
 
   /* ---- widget coordination ---- */
