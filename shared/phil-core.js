@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('phil-slide[optional]').forEach(s => {
     const back = el('button', 'phil-btn phil-back', '◀ Back to lesson');
     back.onclick = () => s.closest('phil-lesson').prev();
-    s.querySelector('.phil-slide__body')?.prepend(back) ?? s.prepend(back);
+    (s.querySelector('.phil-slide__body') || s).append(back);   // sits below the content
   });
 });
 

@@ -7,6 +7,7 @@
   <meta name="description" content="You ate a $40 cake alone and now three philosophers haunt your dreams. A story-driven tour of hedonism, classical utilitarianism, and Peter Singer.">
   <link rel="stylesheet" href="/shared/phil-core.css">
   <script type="module" src="/shared/phil-core.js"></script>
+  <script type="module" src="./diminishing-utility.js"></script>
 </head>
 <body>
 
@@ -134,6 +135,14 @@
       <li>So a bite given to a friend who's had <em>none</em> adds more happiness than that same bite piled onto already-stuffed you.</li>
       <li><strong>Verdict:</strong> sharing wasn't just nice — it was the option that maximized total utility.</li>
     </ul>
+  </phil-slide>
+
+  <!-- 11.5. Interactive viz: diminishing marginal utility -->
+  <phil-slide>
+    <h1>See It Yourself</h1>
+    <p>Bentham hands you the cake. <strong>Move bites between people</strong> with – and + and watch what happens to each person's happiness — and to the total.</p>
+    <phil-cake-utility bites="12" people="You,Ana,Ben,Cy"></phil-cake-utility>
+    <p class="muted">Watch the "next bite" value shrink as someone eats more — that shrinking is the law of diminishing marginal utility, and it's why sharing wins.</p>
   </phil-slide>
 
   <!-- 12. Checkset: hedonic calculus -->
