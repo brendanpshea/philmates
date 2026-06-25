@@ -116,6 +116,34 @@ from the linear sequence and the completion count, and automatically gets a
 "◀ Back to lesson" button. Keep most lessons linear; use branches only for
 genuinely optional side content.
 
+## Quiz quality (auto-checked)
+
+Multiple-choice questions leak answers if you're not careful. Two tells matter most:
+
+1. **Similar lengths.** The correct answer should be about the same length as the
+   distractors. A conspicuously longer (usually more qualified/detailed) or much
+   shorter answer is a giveaway — students learn to pick the odd one out.
+2. **Varied position.** Across a lesson's MCQs, move the `correct` choice around
+   (A / B / C…). Don't park it in the same slot every time.
+
+Run the validator any time you add or edit questions:
+
+```bash
+node tools/validate-quizzes.mjs            # report tells across all lessons
+node tools/validate-quizzes.mjs --strict   # exit 1 if any issues (for CI/hooks)
+```
+
+It scans every `<phil-mcq>`, prints each lesson's answer order (e.g. `B C A C`),
+and flags uneven option lengths, a correct answer that's the longest/shortest, and
+correct-answer positions that cluster. Aim for an all-`✓` report.
+
+Writing tips that keep you passing it:
+- Give every option a full sentence of comparable length; don't let the right one
+  be the only "complete" answer.
+- Make distractors *plausible* (a common misconception, or another theory's
+  answer) rather than obviously wrong throwaways.
+- Deliberately alternate which slot holds the correct choice as you write.
+
 ## Art & style
 
 - Reference aesthetic: **16-bit console era**. Hand-authored SVGs preferred;
