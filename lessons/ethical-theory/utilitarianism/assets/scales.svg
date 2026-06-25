@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" shape-rendering="crispEdges" role="img" aria-label="Pixel scales of balance weighing happiness against suffering">
+  <rect width="80" height="80" fill="#1d2235"/>
+  <!-- stand -->
+  <rect x="38" y="16" width="4" height="48" fill="#c9c3ad"/>
+  <rect x="28" y="64" width="24" height="4" fill="#c9c3ad"/>
+  <rect x="24" y="68" width="32" height="4" fill="#8d876f"/>
+  <!-- beam -->
+  <rect x="16" y="18" width="48" height="4" fill="#e6e0cf"/>
+  <rect x="38" y="12" width="4" height="6" fill="#46e07a"/>
+  <!-- left pan (happy / green) -->
+  <rect x="16" y="22" width="2" height="14" fill="#c9c3ad"/>
+  <rect x="10" y="36" width="16" height="4" fill="#46e07a"/>
+  <rect x="12" y="40" width="12" height="4" fill="#38c466"/>
+  <rect x="16" y="30" width="4" height="4" fill="#46e07a"/>
+  <!-- right pan (suffering / magenta) -->
+  <rect x="62" y="22" width="2" height="18" fill="#c9c3ad"/>
+  <rect x="56" y="40" width="16" height="4" fill="#ff6ad5"/>
+  <rect x="58" y="44" width="12" height="4" fill="#d452ac"/>
+  <rect x="60" y="34" width="4" height="4" fill="#ff6ad5"/>
+</svg>

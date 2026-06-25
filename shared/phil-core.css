@@ -1,0 +1,223 @@
+/* =====================================================================
+   PhilMates — shared design system & slide engine styles
+   16-bit console reference aesthetic. Load once per lesson.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  /* ---- palette (NES/SNES-ish) ---- */
+  --bg:        #11131f;
+  --panel:     #1d2235;
+  --panel-2:   #262c44;
+  --ink:       #eef1ff;
+  --muted:     #9aa3c7;
+  --accent:    #46e07a;   /* progress / "go" green   */
+  --accent-2:  #ff6ad5;   /* highlight magenta        */
+  --accent-3:  #4cc2ff;   /* info blue                */
+  --good:      #46e07a;
+  --bad:       #ff5d6c;
+  --border:    #050610;
+  --shadow:    #00000080;
+
+  --pixel: 'Press Start 2P', system-ui, sans-serif;
+  --body:  'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --stage-max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+/* image-rendering for retro raster art */
+img[src$=".png"], img[data-pixel] { image-rendering: pixelated; }
+
+/* =====================================================================
+   App shell (built by the engine around <phil-lesson>)
+   ===================================================================== */
+.phil-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: var(--stage-max);
+  margin: 0 auto;
+  padding: 12px;
+  gap: 12px;
+}
+
+/* ---- top bar: title + progress ---- */
+.phil-top { display: flex; flex-direction: column; gap: 8px; }
+.phil-top__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.phil-title {
+  font-family: var(--pixel);
+  font-size: 14px;
+  color: var(--accent-2);
+  text-shadow: 2px 2px 0 var(--border);
+  margin: 0;
+  letter-spacing: .5px;
+}
+.phil-tally { font-family: var(--pixel); font-size: 9px; color: var(--muted); white-space: nowrap; }
+
+.phil-progress {
+  position: relative;
+  height: 18px;
+  background: var(--panel);
+  border: 3px solid var(--border);
+  box-shadow: 0 3px 0 var(--shadow);
+  overflow: hidden;
+}
+.phil-progress__fill {
+  height: 100%;
+  width: 0%;
+  background: repeating-linear-gradient(45deg, var(--accent) 0 8px, #38c466 8px 16px);
+  transition: width .25s steps(8);
+}
+
+/* ---- stage: holds slides, one visible at a time ---- */
+.phil-stage {
+  position: relative;
+  flex: 1 1 auto;
+  background: var(--panel);
+  border: 4px solid var(--border);
+  box-shadow: inset 0 0 0 2px #ffffff10, 0 6px 0 var(--shadow);
+  overflow: hidden;
+}
+
+phil-slide {
+  position: absolute;
+  inset: 0;
+  display: none;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: clamp(16px, 4vw, 40px);
+  overflow: auto;
+  animation: phil-in .18s ease-out;
+}
+phil-slide.is-current { display: grid; }
+phil-slide.has-art { grid-template-columns: 1fr minmax(180px, 320px); align-items: start; }
+
+@keyframes phil-in { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: none; } }
+
+.phil-slide__body { min-width: 0; }
+.phil-slide__art {
+  display: flex; align-items: center; justify-content: center;
+  align-self: stretch;
+}
+.phil-slide__art img, .phil-slide__art svg { max-width: 100%; height: auto; max-height: 60vh; }
+
+phil-slide h1 { font-family: var(--pixel); font-size: clamp(16px, 3.4vw, 26px); color: var(--accent); line-height: 1.4; margin: 0 0 .6em; text-shadow: 2px 2px 0 var(--border); }
+phil-slide h2 { font-family: var(--pixel); font-size: clamp(12px, 2.4vw, 16px); color: var(--accent-3); margin: 1.2em 0 .5em; }
+phil-slide p, phil-slide li { max-width: 60ch; }
+phil-slide .lead { font-size: 1.15em; color: var(--ink); }
+phil-slide .muted { color: var(--muted); }
+.phil-date { display: inline-block; font-family: var(--pixel); font-size: 9px; color: var(--bg); background: var(--accent-3); padding: 4px 6px; margin-bottom: 10px; }
+
+/* ---- bottom bar: navigation ---- */
+.phil-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.phil-nav { display: flex; gap: 10px; }
+.phil-counter { font-family: var(--pixel); font-size: 9px; color: var(--muted); }
+
+/* =====================================================================
+   Buttons (chunky pixel)
+   ===================================================================== */
+.phil-btn, phil-slide button {
+  font-family: var(--pixel);
+  font-size: 10px;
+  color: var(--ink);
+  background: var(--panel-2);
+  border: 3px solid var(--border);
+  box-shadow: 0 4px 0 var(--shadow);
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: transform .04s, box-shadow .04s, background .1s;
+  text-align: left;
+}
+.phil-btn:hover, phil-slide button:hover { background: #313a5e; }
+.phil-btn:active, phil-slide button:active { transform: translateY(4px); box-shadow: 0 0 0 var(--shadow); }
+.phil-btn:disabled { opacity: .5; cursor: default; transform: none; box-shadow: 0 4px 0 var(--shadow); }
+.phil-btn--primary { background: var(--accent-3); color: var(--bg); }
+.phil-btn--ghost { background: transparent; }
+
+/* =====================================================================
+   Widgets
+   ===================================================================== */
+.phil-widget {
+  margin: 18px 0;
+  padding: 18px;
+  background: var(--panel-2);
+  border: 3px solid var(--border);
+  box-shadow: 0 5px 0 var(--shadow);
+}
+.phil-widget__prompt { font-weight: 700; margin: 0 0 14px; }
+.phil-widget__prompt::before { content: "▸ "; color: var(--accent-2); }
+
+.phil-feedback { margin-top: 14px; padding: 12px; border: 3px solid var(--border); font-size: .95em; display: none; }
+.phil-feedback.show { display: block; }
+.phil-feedback.good { background: #133a24; color: var(--good); }
+.phil-feedback.bad  { background: #3a1620; color: var(--bad); }
+.phil-feedback strong { font-family: var(--pixel); font-size: 10px; display: block; margin-bottom: 6px; }
+
+/* MCQ + checkset choices */
+.phil-options { display: flex; flex-direction: column; gap: 10px; }
+.phil-choice {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px;
+  background: var(--panel);
+  border: 3px solid var(--border);
+  cursor: pointer;
+  transition: background .1s;
+}
+.phil-choice:hover { background: #2b3252; }
+.phil-choice input { width: 18px; height: 18px; accent-color: var(--accent-3); flex: none; }
+.phil-choice.correct { background: #133a24; border-color: var(--good); }
+.phil-choice.wrong   { background: #3a1620; border-color: var(--bad); }
+.phil-choice.locked { cursor: default; pointer-events: none; }
+
+/* Cloze */
+.phil-cloze { line-height: 2.4; }
+.phil-cloze .phil-blank {
+  display: inline-block;
+  min-width: 90px;
+  font-family: var(--body);
+  font-size: 1em;
+  color: var(--ink);
+  background: var(--panel);
+  border: none;
+  border-bottom: 3px solid var(--accent-3);
+  padding: 2px 6px;
+  text-align: center;
+}
+.phil-cloze .phil-blank.correct { border-color: var(--good); color: var(--good); }
+.phil-cloze .phil-blank.wrong   { border-color: var(--bad); color: var(--bad); }
+select.phil-blank { cursor: pointer; }
+
+/* Branch */
+.phil-branch .phil-options { gap: 12px; }
+.phil-branch .phil-btn { font-size: 11px; }
+.phil-back { margin-bottom: 16px; }
+
+/* completion toast */
+.phil-toast {
+  position: fixed; left: 50%; bottom: 30px; transform: translateX(-50%) translateY(120%);
+  background: var(--accent); color: var(--bg);
+  font-family: var(--pixel); font-size: 11px;
+  padding: 16px 22px; border: 4px solid var(--border); box-shadow: 0 6px 0 var(--shadow);
+  transition: transform .3s ease-out; z-index: 50;
+}
+.phil-toast.show { transform: translateX(-50%) translateY(0); }
+
+/* small screens / projector portrait */
+@media (max-width: 760px) {
+  phil-slide.has-art { grid-template-columns: 1fr; }
+  .phil-slide__art { order: -1; max-height: 32vh; }
+  .phil-slide__art img, .phil-slide__art svg { max-height: 32vh; }
+}

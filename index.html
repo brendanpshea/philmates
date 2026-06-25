@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhilMates — Bite-sized Philosophy Activities</title>
+  <link rel="stylesheet" href="/shared/phil-core.css">
+  <style>
+    body { padding: 0; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 32px 16px 64px; }
+    .home-title { font-family: var(--pixel); color: var(--accent-2); font-size: 26px; text-shadow: 3px 3px 0 var(--border); }
+    .home-sub { color: var(--muted); max-width: 60ch; }
+    .topic h2 { font-family: var(--pixel); color: var(--accent-3); font-size: 15px; margin-top: 40px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .card { display: block; text-decoration: none; color: var(--ink); background: var(--panel-2);
+            border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 18px; transition: transform .05s; }
+    .card:hover { transform: translateY(-3px); background: #313a5e; }
+    .card:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--shadow); }
+    .card h3 { font-family: var(--pixel); font-size: 12px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
+    .card p { color: var(--muted); font-size: .9em; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="home-title">★ PhilMates</h1>
+    <p class="home-sub">Bite-sized, gamified philosophy activities — for the classroom projector or solo study.</p>
+    
+    <section class="topic">
+      <h2>Ethical Theory</h2>
+      <div class="cards">
+        
+        <a class="card" href="lessons/ethical-theory/utilitarianism/index.html">
+          <h3>Utilitarianism</h3>
+          <p>A historical walk through utilitarianism — hedonism, the hedonic calculus, higher pleasures, and modern variants.</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
