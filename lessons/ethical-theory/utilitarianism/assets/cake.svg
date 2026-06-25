@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" shape-rendering="crispEdges" role="img" aria-label="A lavish pixel-art slice of gold-leaf chocolate cake on a plate">
+  <rect width="72" height="72" fill="#1d2235"/>
+  <!-- plate -->
+  <ellipse cx="36" cy="58" rx="28" ry="6" fill="#3a3f55"/>
+  <ellipse cx="36" cy="56" rx="24" ry="5" fill="#525879"/>
+  <!-- cake slice body (chocolate layers) -->
+  <rect x="20" y="30" width="32" height="24" fill="#3a2418"/>
+  <rect x="20" y="30" width="32" height="4" fill="#6b4a32"/>
+  <rect x="20" y="40" width="32" height="4" fill="#6b4a32"/>
+  <rect x="20" y="50" width="32" height="4" fill="#6b4a32"/>
+  <!-- ganache top -->
+  <rect x="18" y="24" width="36" height="8" fill="#2a190f"/>
+  <rect x="18" y="24" width="36" height="3" fill="#46e07a" opacity="0"/>
+  <!-- gold leaf flecks -->
+  <rect x="24" y="26" width="4" height="3" fill="#ffd24a"/>
+  <rect x="34" y="25" width="3" height="3" fill="#ffe98a"/>
+  <rect x="42" y="27" width="4" height="3" fill="#ffd24a"/>
+  <rect x="30" y="46" width="3" height="3" fill="#ffe98a"/>
+  <rect x="44" y="42" width="3" height="3" fill="#ffd24a"/>
+  <!-- cherry on top -->
+  <rect x="33" y="18" width="6" height="6" fill="#ff5d6c"/>
+  <rect x="34" y="16" width="2" height="3" fill="#46e07a"/>
+  <!-- sparkle -->
+  <rect x="14" y="18" width="2" height="2" fill="#ffe98a"/>
+  <rect x="56" y="22" width="2" height="2" fill="#ffe98a"/>
+  <rect x="58" y="14" width="2" height="2" fill="#fff"/>
+</svg>

@@ -3,176 +3,263 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Utilitarianism: From Epicurus to Effective Altruism · PhilMates</title>
-  <meta name="description" content="A historical walk through utilitarianism — hedonism, the hedonic calculus, higher pleasures, and modern variants.">
+  <title>The Midnight Tribunal: A Dream of Utilitarianism · PhilMates</title>
+  <meta name="description" content="You ate a $40 cake alone and now three philosophers haunt your dreams. A story-driven tour of hedonism, classical utilitarianism, and Peter Singer.">
   <link rel="stylesheet" href="/shared/phil-core.css">
   <script type="module" src="/shared/phil-core.js"></script>
 </head>
 <body>
 
-<phil-lesson id="util-history" title="Utilitarianism">
+<phil-lesson id="util-history" title="The Midnight Tribunal">
 
-  <!-- 1. Title -->
+  <!-- ============ ACT 0 — THE SETUP ============ -->
+
+  <!-- 1. Title / hook -->
   <phil-slide>
-    <img slot="art" src="./assets/scales.svg" alt="Pixel scales weighing happiness against suffering">
-    <h1>The Greatest Good</h1>
-    <p class="lead">A short history of <strong>utilitarianism</strong> — the idea that the right action is the one that produces the most well-being for the most people.</p>
-    <p class="muted">We'll trace one idea as it evolves, from an ancient Greek garden to modern charities. Use <strong>← →</strong> to move, press <strong>F</strong> for fullscreen.</p>
+    <img slot="art" src="./assets/cake.svg" alt="A lavish slice of gold-leaf chocolate cake">
+    <h1>The Midnight Tribunal</h1>
+    <p class="lead">Tonight you did something a little decadent. Now your conscience has hired lawyers.</p>
+    <p class="muted">Press <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
 
-  <!-- 2. The core idea -->
+  <!-- 2. The crime -->
   <phil-slide>
-    <h1>One Question, One Test</h1>
-    <p>Most ethical theories ask, "What kind of rule should I follow?" Utilitarianism asks something simpler:</p>
-    <h2>Did the act make things better or worse?</h2>
-    <p>It is a <strong>consequentialist</strong> theory: an action's morality lives entirely in its <em>results</em> — specifically, in how much happiness or suffering it creates. No act is forbidden in itself; what matters is the outcome.</p>
+    <h1>What You Did</h1>
+    <p class="lead">This afternoon, on a whim, you bought a <strong>$40 slice of gold-leaf chocolate cake</strong>.</p>
+    <ul reveal>
+      <li>You ate the <strong>entire thing yourself</strong>, in about four minutes.</li>
+      <li>Three friends were right there. You offered them <strong>none</strong>.</li>
+      <li>By bite ten you felt slightly sick. By bedtime, queasy and oddly guilty.</li>
+      <li>Now you're asleep — and the dream is <em>strange.</em></li>
+    </ul>
   </phil-slide>
 
-  <!-- 3. Epicurus -->
+  <!-- 3. The dream begins -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.svg" alt="Glowing scales of balance">
+    <h1>The Dream</h1>
+    <p class="lead dream">A foggy courtroom. A giant set of scales hangs overhead. Three robed figures step forward to judge a single question:</p>
+    <h2>Did that cake actually make your life better?</h2>
+    <p class="muted">Each of the three is a real philosopher. Each belongs to a family of ideas called <strong>utilitarianism</strong> — the view that what's good is <em>well-being</em>, and the right act is the one that produces the most of it.</p>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — EPICURUS ============ -->
+
+  <!-- 4. Epicurus enters -->
   <phil-slide>
     <img slot="art" src="./assets/epicurus.svg" alt="Pixel portrait of Epicurus in a laurel wreath">
     <span class="phil-date">341–270 BCE</span>
-    <h1>Epicurus &amp; the Good Life</h1>
-    <p>Long before the word "utilitarian" existed, the Greek philosopher <strong>Epicurus</strong> argued that <strong>pleasure is the only thing good in itself</strong>, and pain the only thing bad. This view is called <strong>hedonism</strong>.</p>
-    <p>But Epicurus was no party animal. The highest pleasure, he taught, was <em>ataraxia</em> — a calm freedom from fear and pain — reached through friendship, modest living, and clear thinking.</p>
+    <h1>The First Judge: Epicurus</h1>
+    <p class="lead">"Friend," says the Greek in the laurel wreath, "I am not here to scold pleasure. I <em>worship</em> it."</p>
+    <p>Epicurus is a <strong>hedonist</strong>: he believes <strong>pleasure is the only thing good in itself</strong>, and pain the only thing bad in itself. Everything else — money, fame, even cake — is only good if it brings pleasure and avoids pain.</p>
   </phil-slide>
 
-  <!-- 4. MCQ: Epicurus -->
+  <!-- 5. Teaching: kinds of desire -->
   <phil-slide>
-    <h1>Check Your Understanding</h1>
-    <phil-mcq prompt="For Epicurus, the BEST kind of pleasure is…"
-              explain="Exactly. Epicurean hedonism prizes tranquility (ataraxia) — sustainable, fear-free contentment — over intense indulgence, which often brings later pain.">
-      <phil-choice correct>calm, lasting tranquility free from fear and pain</phil-choice>
-      <phil-choice feedback="Epicurus actually warned that intense indulgence tends to cause more pain than it's worth.">as much intense physical indulgence as possible</phil-choice>
-      <phil-choice feedback="Self-denial for its own sake isn't the goal — pleasure is still the standard, just a stable kind.">strict self-denial and suffering</phil-choice>
+    <h1>Not All Desires Are Equal</h1>
+    <p>"So why," Epicurus asks, "do I frown at your cake? Because I sort desires into three bins:"</p>
+    <ul reveal>
+      <li><strong>Natural &amp; necessary</strong> — food when hungry, shelter, friendship, understanding. Easy to satisfy, and their absence really hurts.</li>
+      <li><strong>Natural but unnecessary</strong> — a <em>gold-leaf</em> cake instead of plain bread. Pleasant, but it scratches an itch you didn't need to have.</li>
+      <li><strong>Vain &amp; empty</strong> — craving luxury, status, "the most expensive thing on the menu." These can never be fully satisfied, so they breed anxiety.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Teaching: ataraxia + friends -->
+  <phil-slide>
+    <img slot="art" src="./assets/epicurus.svg" alt="Epicurus">
+    <h1>The Goal Is Tranquility</h1>
+    <p>The aim of life, for Epicurus, isn't <em>maximum</em> pleasure — it's <strong>ataraxia</strong>: a calm, stable contentment, free from fear and pain.</p>
+    <ul reveal>
+      <li>Intense, fleeting thrills often cost more than they pay: your cake bought four minutes of bliss and a night of nausea and guilt. <strong>Net pain.</strong></li>
+      <li>Epicurus' single greatest source of happiness? <strong>Friendship.</strong> "Of all that wisdom provides for a happy life, much the greatest is friendship."</li>
+      <li>And you ate <strong>alone</strong>, ignoring three friends — trading the deepest pleasure for a sugar rush.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. MCQ: Epicurus -->
+  <phil-slide>
+    <h1>The First Judge Questions You</h1>
+    <phil-mcq prompt="By Epicurus' reasoning, the deepest problem with the cake was that…"
+              explain="Right. For Epicurus the intense, vain pleasure brought more pain than it was worth — and by eating alone you skipped friendship, the greatest pleasure of all.">
+      <phil-choice correct>it chased an intense, vain pleasure while skipping a deeper one — friendship</phil-choice>
+      <phil-choice feedback="Epicurus never says pleasure is bad — pleasure is the whole point. The problem is which pleasure you chose.">pleasure is always morally wrong</phil-choice>
+      <phil-choice feedback="The price tag isn't the core issue; the anxiety of craving luxury and the missed friendship are.">it cost money, and money is the root of evil</phil-choice>
     </phil-mcq>
   </phil-slide>
 
-  <!-- 5. Bridge -->
-  <phil-slide>
-    <h1>From a Garden to a System</h1>
-    <p>Epicurus gave us the seed: <strong>well-being is what ultimately matters</strong>. But he aimed it at the individual — <em>how should I live?</em></p>
-    <p>Two thousand years later, Enlightenment reformers asked a bigger version: <strong>how should we judge laws and societies?</strong> They turned hedonism into a public, almost mathematical, decision procedure.</p>
-  </phil-slide>
-
-  <!-- 6. Bentham -->
-  <phil-slide>
-    <img slot="art" src="./assets/bentham.svg" alt="Pixel portrait of Jeremy Bentham">
-    <span class="phil-date">1748–1832</span>
-    <h1>Bentham's Classical Utilitarianism</h1>
-    <p><strong>Jeremy Bentham</strong> gave the theory its famous standard: the <strong>Principle of Utility</strong> — choose whatever brings <em>"the greatest happiness for the greatest number."</em></p>
-    <p>Crucially, <strong>everyone counts equally</strong>: "each to count for one, none for more than one." A king's pleasure is worth no more than a peasant's. This made utilitarianism a radical engine for reform — of prisons, laws, and animal welfare.</p>
-  </phil-slide>
-
-  <!-- 7. Checkset: hedonic calculus -->
-  <phil-slide>
-    <h1>The Hedonic Calculus</h1>
-    <p>Bentham thought you could literally <em>add up</em> pleasure. His "hedonic calculus" weighed pleasures by several measurable features.</p>
-    <phil-checkset prompt="Check every factor Bentham said we should weigh when measuring a pleasure."
-                   explain="These are core dimensions of Bentham's calculus — how strong, how long, how likely, how soon, and how many people it reaches. 'Moral purity of the person' was never one of them; Bentham judged acts by outcomes, not character.">
-      <phil-statement correct>Intensity — how strong the pleasure is</phil-statement>
-      <phil-statement correct>Duration — how long it lasts</phil-statement>
-      <phil-statement correct>Certainty — how likely it is to happen</phil-statement>
-      <phil-statement correct>Extent — how many people it affects</phil-statement>
-      <phil-statement>The moral purity of the person feeling it</phil-statement>
-      <phil-statement>Whether a religious authority approves of it</phil-statement>
-    </phil-checkset>
-  </phil-slide>
-
-  <!-- 8. Cloze -->
+  <!-- 8. Cloze: Epicurus -->
   <phil-slide>
     <h1>Say It Back</h1>
-    <p>Fill in the blanks to summarize classical utilitarianism.</p>
-    <phil-cloze explain="That's the heart of Bentham's view: maximize aggregate happiness, counting everyone equally.">
-      Bentham's Principle of Utility tells us to maximize the greatest
-      <phil-blank answer="happiness|pleasure|well-being|wellbeing">happiness</phil-blank>
-      for the greatest <phil-blank answer="number">number</phil-blank>.
-      Because each person counts as
-      <phil-blank options="one,two,many,none">one</phil-blank>,
-      the theory treats everyone's well-being as equally important.
+    <p>Complete Epicurus' verdict.</p>
+    <phil-cloze explain="That's Epicurean hedonism: pleasure is the good, but the wise aim is steady tranquility, not intense indulgence.">
+      Epicurus is a <phil-blank answer="hedonist|hedonism">hedonist</phil-blank>:
+      he holds that <phil-blank answer="pleasure">pleasure</phil-blank> is the only thing good in itself.
+      Yet the true goal of life is a calm tranquility he calls
+      <phil-blank options="ataraxia,utility,virtue,duty">ataraxia</phil-blank>.
     </phil-cloze>
   </phil-slide>
 
-  <!-- 9. Mill -->
+  <!-- ============ ACT 2 — BENTHAM ============ -->
+
+  <!-- 9. Bentham enters -->
   <phil-slide>
-    <img slot="art" src="./assets/mill.svg" alt="Pixel portrait of John Stuart Mill">
-    <span class="phil-date">1806–1873</span>
-    <h1>Mill's Higher Pleasures</h1>
-    <p>Critics mocked Bentham: if only quantity of pleasure matters, isn't a life of simple thrills as good as a life of art and thought? <strong>John Stuart Mill</strong> answered by adding <strong>quality</strong>.</p>
-    <p>Some pleasures — those of the intellect, imagination, and moral feeling — are <strong>higher</strong> than mere bodily ones. As Mill put it: <em>"Better to be Socrates dissatisfied than a fool satisfied."</em></p>
+    <img slot="art" src="./assets/bentham.svg" alt="Pixel portrait of Jeremy Bentham">
+    <span class="phil-date">1748–1832</span>
+    <h1>The Second Judge: Bentham</h1>
+    <p class="lead">"Pleasure, pain — yes, yes," says the man in the powdered wig. "But you forgot to do the <em>math.</em>"</p>
+    <p><strong>Jeremy Bentham</strong> turned hedonism into a public rule, the <strong>Principle of Utility</strong>: the right action produces <em>"the greatest happiness for the greatest number."</em> And in that sum, <strong>everyone counts equally</strong> — "each to count for one, none for more than one."</p>
   </phil-slide>
 
-  <!-- 10. MCQ: Mill vs Bentham -->
+  <!-- 10. Teaching: hedonic calculus -->
   <phil-slide>
-    <h1>Bentham vs. Mill</h1>
-    <phil-mcq prompt="What did Mill add to Bentham's utilitarianism?"
-              explain="Right. Bentham measured only the quantity of pleasure; Mill argued that some pleasures are higher in quality and count for more.">
-      <phil-choice correct>a distinction in the <em>quality</em> of pleasures, not just quantity</phil-choice>
-      <phil-choice feedback="Mill kept happiness as the goal — he didn't replace it with duty. That's Kant's view.">the idea that consequences don't matter, only duty</phil-choice>
-      <phil-choice feedback="Both thinkers counted everyone equally; that wasn't Mill's new contribution.">the idea that the rich should count more</phil-choice>
-    </phil-mcq>
+    <h1>The Hedonic Calculus</h1>
+    <p>Bentham claimed you could actually <em>weigh</em> a pleasure. His "hedonic calculus" scores it along several dimensions:</p>
+    <ul reveal>
+      <li><strong>Intensity</strong> — how strong? · <strong>Duration</strong> — how long?</li>
+      <li><strong>Certainty</strong> — how likely? · <strong>Propinquity</strong> — how soon?</li>
+      <li><strong>Fecundity</strong> — will it lead to more pleasure? · <strong>Purity</strong> — will it avoid later pain?</li>
+      <li><strong>Extent</strong> — and crucially, <em>how many people does it reach?</em></li>
+    </ul>
   </phil-slide>
 
-  <!-- 11. Branch into optional deep dive -->
+  <!-- 11. Teaching: extent + diminishing returns -->
   <phil-slide>
-    <h1>A Fork in the Road</h1>
-    <p>By Mill's time, utilitarians split over <em>what</em> we should evaluate: individual <strong>acts</strong>, or general <strong>rules</strong>?</p>
-    <p>This is an optional detour. You can take the deep dive or skip ahead to the modern era.</p>
-    <phil-branch prompt="Explore Act vs. Rule utilitarianism?">
-      <phil-option goto="act-rule">Yes — show me the deep dive</phil-option>
-      <phil-option goto="next">Skip to modern variants</phil-option>
-    </phil-branch>
+    <img slot="art" src="./assets/scales.svg" alt="Scales">
+    <h1>Why Sharing Wins the Math</h1>
+    <p>Two of those dimensions convict you, says Bentham:</p>
+    <ul reveal>
+      <li><strong>Extent.</strong> One happy person scores far less total happiness than four happy people. Split four ways, the same cake produces <em>more</em> good in the world.</li>
+      <li><strong>Diminishing returns.</strong> Your first bite was ecstasy; your tenth made you queasy. Pleasure per bite <em>falls</em> the more you eat.</li>
+      <li>So a bite given to a friend who's had <em>none</em> adds more happiness than that same bite piled onto already-stuffed you.</li>
+      <li><strong>Verdict:</strong> sharing wasn't just nice — it was the option that maximized total utility.</li>
+    </ul>
   </phil-slide>
 
-  <!-- 11b. OPTIONAL detour slide -->
-  <phil-slide id="act-rule" optional>
-    <h1>Act vs. Rule Utilitarianism</h1>
-    <p><strong>Act utilitarianism:</strong> judge each individual action by its own consequences. Flexible, but it can seem to justify a terrible act if it happens to maximize happiness this once.</p>
-    <p><strong>Rule utilitarianism:</strong> follow the <em>rules</em> that, if generally adopted, produce the most happiness — like "don't break promises." This protects trust and rights, even when breaking the rule would help in a single case.</p>
-    <p class="muted">When you're ready, head back to continue the main story.</p>
-  </phil-slide>
-
-  <!-- 12. Modern variants -->
+  <!-- 12. Checkset: hedonic calculus -->
   <phil-slide>
-    <img slot="art" src="./assets/singer.svg" alt="Pixel portrait of a modern philosopher in glasses">
-    <span class="phil-date">20th–21st century</span>
-    <h1>Modern Variants</h1>
-    <p>The idea kept evolving. <strong>Preference utilitarianism</strong> (associated with <strong>Peter Singer</strong>) measures good not as raw pleasure but as <strong>satisfied preferences</strong> — getting what beings actually want.</p>
-    <p>Singer also pushed the principle of equal consideration outward to <strong>animals</strong>, and inspired <strong>effective altruism</strong>: using evidence to do the <em>most</em> good per dollar and effort.</p>
-  </phil-slide>
-
-  <!-- 13. Checkset: variants -->
-  <phil-slide>
-    <h1>Tracking the Evolution</h1>
-    <phil-checkset prompt="Check each statement that correctly describes how utilitarianism developed."
-                   explain="Nicely tracked. The thread is constant — maximize well-being, count everyone equally — while the measure of 'good' shifts from pleasure, to higher pleasures, to satisfied preferences.">
-      <phil-statement correct>Epicurus located the good in pleasure (hedonism)</phil-statement>
-      <phil-statement correct>Bentham made it a public test: the greatest happiness for the greatest number</phil-statement>
-      <phil-statement correct>Mill added that some pleasures are higher in quality</phil-statement>
-      <phil-statement correct>Preference utilitarianism measures good as satisfied preferences</phil-statement>
-      <phil-statement>Modern utilitarians abandoned the goal of maximizing well-being</phil-statement>
+    <h1>The Second Judge Tests You</h1>
+    <phil-checkset prompt="Check every factor that belongs to Bentham's hedonic calculus."
+                   explain="Exactly. Bentham weighs measurable features of the pleasure itself — including how many people it reaches (extent). The character or piety of the person was never part of the sum.">
+      <phil-statement correct>Intensity — how strong the pleasure is</phil-statement>
+      <phil-statement correct>Duration — how long it lasts</phil-statement>
+      <phil-statement correct>Extent — how many people it reaches</phil-statement>
+      <phil-statement correct>Certainty — how likely it is to occur</phil-statement>
+      <phil-statement>The moral virtue of the person enjoying it</phil-statement>
+      <phil-statement>Whether a priest approves of it</phil-statement>
     </phil-checkset>
   </phil-slide>
 
-  <!-- 14. Objection -->
+  <!-- 13. MCQ: greatest number -->
   <phil-slide>
-    <img slot="art" src="./assets/scales.svg" alt="Pixel scales">
-    <h1>The Standing Challenge</h1>
-    <p>Every version faces a famous worry: by focusing only on <em>total</em> good, utilitarianism can seem to permit sacrificing an individual for the group — the dilemma dramatized by the <strong>trolley problem</strong>.</p>
-    <p>How a theory answers that — through rules, rights, or refinements — is exactly what keeps the 2,300-year-old conversation alive.</p>
+    <h1>Do the Math</h1>
+    <phil-mcq prompt="On Bentham's principle, why would sharing the cake have been the better act?"
+              explain="Right. Because of extent and diminishing returns, the same cake spread across four people produces more total happiness than one stuffed person enjoying it alone.">
+      <phil-choice correct>spread over more people, the same cake produces greater total happiness</phil-choice>
+      <phil-choice feedback="Bentham doesn't say sharing is a sacred duty regardless of outcomes — he says it produces the better outcome.">sharing is a sacred rule that must never be broken</phil-choice>
+      <phil-choice feedback="Bentham counts everyone equally, including you — the point is the total, not self-denial.">your own happiness doesn't count at all</phil-choice>
+    </phil-mcq>
   </phil-slide>
 
-  <!-- 15. Recap -->
+  <!-- 14. Branch: optional Mill detour -->
   <phil-slide>
-    <h1>You Made It 🎉</h1>
-    <p>You traced one idea across millennia:</p>
-    <ul>
-      <li><strong>Epicurus</strong> — pleasure is the good (hedonism)</li>
-      <li><strong>Bentham</strong> — greatest happiness for the greatest number</li>
-      <li><strong>Mill</strong> — higher vs. lower pleasures</li>
-      <li><strong>Singer &amp; today</strong> — preferences, animals, effective altruism</li>
+    <h1>A Voice From the Gallery</h1>
+    <p>Before the third judge speaks, a bewhiskered figure — <strong>John Stuart Mill</strong> — raises a hand from the gallery. "A quick objection," he says, "about the <em>quality</em> of that cake's pleasure."</p>
+    <phil-branch prompt="Hear Mill's optional objection?">
+      <phil-option goto="mill-detour">Yes — what's his point?</phil-option>
+      <phil-option goto="next">Skip ahead to the third judge</phil-option>
+    </phil-branch>
+  </phil-slide>
+
+  <!-- 14b. OPTIONAL: Mill -->
+  <phil-slide id="mill-detour" optional>
+    <img slot="art" src="./assets/mill.svg" alt="Pixel portrait of John Stuart Mill">
+    <span class="phil-date">1806–1873</span>
+    <h1>Mill: Higher &amp; Lower Pleasures</h1>
+    <p>Mill worried that Bentham's math treats all pleasures as the same <em>kind</em> of stuff. He disagreed: some pleasures are <strong>higher in quality</strong>.</p>
+    <ul reveal>
+      <li>Your cake is a <strong>lower</strong> (bodily) pleasure — fine, but shallow.</li>
+      <li>Conversation, art, and learning are <strong>higher</strong> pleasures, worth more even in smaller amounts.</li>
+      <li>As Mill put it: <em>"Better to be Socrates dissatisfied than a fool satisfied."</em> A life of nothing but cake is the fool's bargain.</li>
     </ul>
-    <p class="muted">Answer every question correctly and visit every slide to light up the bar at the top.</p>
+    <p class="muted">Head back when you're ready to meet the third judge.</p>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — SINGER ============ -->
+
+  <!-- 15. Singer enters -->
+  <phil-slide>
+    <img slot="art" src="./assets/singer.svg" alt="Pixel portrait of a modern philosopher in glasses">
+    <span class="phil-date">b. 1946</span>
+    <h1>The Third Judge: Singer</h1>
+    <p class="lead">A modern philosopher in glasses leans in. "Your friends aren't the only ones with a stake in that cake."</p>
+    <p><strong>Peter Singer</strong> is a <strong>preference utilitarian</strong>: what matters is satisfying the <em>preferences</em> of everyone affected — and we must give <strong>equal consideration</strong> to every being capable of suffering, human or not.</p>
+  </phil-slide>
+
+  <!-- 16. Teaching: what you eat -->
+  <phil-slide>
+    <h1>Lesson One: What You Eat</h1>
+    <p>Singer points at the cream and eggs. "To ignore an animal's suffering just because it isn't human is <strong>speciesism</strong> — a bias as arbitrary as racism."</p>
+    <ul reveal>
+      <li>The animals behind factory-farmed dairy and eggs have a real interest in <strong>not suffering</strong>.</li>
+      <li>That interest counts in the moral sum — it doesn't vanish because they can't argue in court.</li>
+      <li>So Singer's verdict on <em>what</em> to eat: lean toward foods that cause far less suffering — largely <strong>plant-based</strong> ones.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Teaching: how you spend -->
+  <phil-slide>
+    <img slot="art" src="./assets/singer.svg" alt="Singer">
+    <h1>Lesson Two: That $40</h1>
+    <p>"Now the price tag," says Singer, with his famous thought experiment:</p>
+    <ul reveal>
+      <li><strong>The drowning child.</strong> If you could save a drowning child by ruining $40 shoes, you obviously should. Distance and strangers don't change the math.</li>
+      <li>Right now, $40 given to a highly <strong>effective charity</strong> can protect real children from deadly disease.</li>
+      <li>The cake bought four minutes of solo pleasure; the same money could have prevented serious suffering. This is the heart of <strong>effective altruism</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Checkset: Singer -->
+  <phil-slide>
+    <h1>The Third Judge Tests You</h1>
+    <phil-checkset prompt="Check each claim Singer would endorse."
+                   explain="Well tracked. Singer extends equal consideration to animals, treats faraway suffering as morally serious, and asks us to spend where we can do the most good.">
+      <phil-statement correct>An animal's suffering deserves equal consideration with ours</phil-statement>
+      <phil-statement correct>We should try to prevent serious suffering even far away</phil-statement>
+      <phil-statement correct>$40 might do far more good donated than spent on luxury cake</phil-statement>
+      <phil-statement>Only human beings' interests carry any moral weight</phil-statement>
+      <phil-statement>How effective a charity is doesn't matter, only that you give something</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 19. Cloze: synthesis -->
+  <phil-slide>
+    <h1>The Three Verdicts</h1>
+    <p>One idea, three refinements. Fill in each judge's core lesson.</p>
+    <phil-cloze explain="That's the whole arc: from pleasure, to the public sum of pleasure, to the satisfied preferences of every being who can suffer.">
+      Epicurus says the good is <phil-blank answer="pleasure">pleasure</phil-blank>,
+      so chase tranquility, not thrills. Bentham says maximize the greatest
+      <phil-blank answer="happiness|pleasure|utility">happiness</phil-blank>
+      for the greatest <phil-blank answer="number">number</phil-blank>, counting everyone equally.
+      Singer widens the circle to include
+      <phil-blank options="animals,only humans,the rich,no one">animals</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ WAKE UP ============ -->
+
+  <!-- 20. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.svg" alt="Scales settling into balance">
+    <h1>You Wake Up</h1>
+    <p class="lead">Dawn. The queasiness is fading. Three lessons linger:</p>
+    <ul reveal>
+      <li><strong>Epicurus</strong> — pleasure is the good, but tranquility and friends beat fleeting indulgence.</li>
+      <li><strong>Bentham</strong> — the greatest happiness for the greatest number; sharing was the better math.</li>
+      <li><strong>Singer</strong> — widen the circle: what you eat and how you spend ripple out to others, including animals.</li>
+      <li>Tomorrow, maybe, you buy the plain muffin — and split it three ways.</li>
+    </ul>
+    <p class="muted">Visit every slide and answer every question correctly to fill the bar and close the case.</p>
   </phil-slide>
 
 </phil-lesson>

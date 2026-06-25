@@ -11,6 +11,7 @@ with the prompts below and drop the files in `/assets/` with the matching name
 
 | File | Subject | Prompt addition |
 |------|---------|-----------------|
+| `cake.png` | The decadent dessert | A single lavish slice of chocolate cake topped with gold leaf and a cherry, on a fancy plate, faint sparkles — the story's "$40 cake." |
 | `scales.png` | Balance scales | A pixel-art balance scale, one pan glowing green (happiness), the other magenta (suffering), slightly tilted toward green. |
 | `epicurus.png` | Epicurus | Ancient Greek philosopher bust, olive laurel wreath, white toga, serene smile, a small garden of green plants behind him. |
 | `bentham.png` | Jeremy Bentham | 18th-century English gentleman, white wavy hair, brown coat, white cravat, faint confident smile. |

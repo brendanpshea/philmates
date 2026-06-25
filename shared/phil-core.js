@@ -53,6 +53,7 @@ class PhilLesson extends HTMLElement {
     this.linear = this.slides.filter(s => !s.hasAttribute('optional'));
     this.widgets = [];          // registered by widgets on connect
     this._returnIndex = 0;
+    this._revealed = new Set(); // slide ids whose step-reveals are fully shown
 
     this._buildShell();
     this.slides.forEach(s => this._prepareSlide(s));
@@ -119,10 +120,25 @@ class PhilLesson extends HTMLElement {
     else slide.append(body);
   }
 
+  /* ---- step reveal ---- */
+  _initSteps(slide) {
+    if (slide._steps) return;
+    slide._steps = [...slide.querySelectorAll('[reveal] > *')];
+    slide._steps.forEach(s => s.classList.add('phil-step'));
+  }
+  _applyReveal(slide) {
+    this._initSteps(slide);
+    const full = slide._steps.length === 0 || this._revealed.has(slide.id);
+    slide._shown = full ? slide._steps.length : 0;
+    slide._steps.forEach((s, i) => s.classList.toggle('phil-show', i < slide._shown));
+  }
+  _remainingSteps() { return this.current ? this.current._steps.length - this.current._shown : 0; }
+
   /* ---- navigation ---- */
   show(slide) {
     this.slides.forEach(s => s.classList.toggle('is-current', s === slide));
     this.current = slide;
+    this._applyReveal(slide);
     if (!slide.hasAttribute('optional')) {
       this._returnIndex = this.linear.indexOf(slide);
       this.store.visited.add(slide.id);
@@ -134,6 +150,15 @@ class PhilLesson extends HTMLElement {
     focusable?.focus?.({ preventScroll: true });
   }
   next() {
+    // reveal the next bullet/step before leaving the slide
+    if (this._remainingSteps() > 0) {
+      const step = this.current._steps[this.current._shown++];
+      step.classList.add('phil-show');
+      step.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      if (this._remainingSteps() === 0) this._revealed.add(this.current.id);
+      this._refresh();
+      return;
+    }
     if (this.current.hasAttribute('optional')) return this.goLinear(this._returnIndex);
     this.goLinear(this.linear.indexOf(this.current) + 1);
   }
@@ -176,7 +201,8 @@ class PhilLesson extends HTMLElement {
 
     this._prevBtn.disabled = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === 0;
     const last = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === this.linear.length - 1;
-    this._nextBtn.disabled = last;
+    this._nextBtn.disabled = last && this._remainingSteps() === 0;
+    this._nextBtn.textContent = this._remainingSteps() > 0 ? 'Reveal ▶' : 'Next ▶';
 
     const complete = reqSeen === this.linear.length && this.store.correct.size === this.widgets.length;
     if (complete && !this.store.completed) this._celebrate();
