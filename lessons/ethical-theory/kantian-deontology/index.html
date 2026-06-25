@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Cat at the Door: Kant &amp; Modern Deontology · PhilMates</title>
+  <meta name="description" content="A cat asks a mouse where its friends are hiding. A story-driven tour of Kant's categorical imperative, who counts as an end, and how Korsgaard and O'Neill respond.">
+  <link rel="stylesheet" href="/shared/phil-core.css">
+  <script type="module" src="/shared/phil-core.js"></script>
+  <script type="module" src="./assets/maxim-tester.js"></script>
+</head>
+<body>
+
+<phil-lesson id="kant-cat-door" title="The Cat at the Door">
+
+  <!-- ============ ACT 0 — THE KNOCK ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/cat-at-door.svg" alt="A sly grinning cat peering through a doorway">
+    <h1>The Cat at the Door</h1>
+    <p class="lead">There's a knock. You are a mouse. On the other side is a very large, very polite cat.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/mouse.svg" alt="A nervous cartoon mouse">
+    <h1>The Question</h1>
+    <p class="lead">The cat smiles. "Good evening. I'm simply <em>famished.</em> Could you tell me — <strong>where are the other mice hiding?</strong>"</p>
+    <ul reveal>
+      <li>Your friends are crammed behind the wall, holding their breath.</li>
+      <li>Tell the truth, and they're dinner.</li>
+      <li>So — do you <strong>lie</strong> to the cat?</li>
+      <li>A utilitarian mouse would just run the numbers. Tonight you meet a philosopher who says the numbers are beside the point.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — FOUNDATIONS ============ -->
+
+  <!-- 3. Good will / duty -->
+  <phil-slide>
+    <img slot="art" src="./assets/kant.svg" alt="Pixel portrait of Immanuel Kant">
+    <span class="phil-date">Immanuel Kant · 1724–1804</span>
+    <h1>It's Not About Results</h1>
+    <p>Kant breaks sharply with the utilitarians. For him, the only thing good <em>without qualification</em> is a <strong>good will</strong> — a will that acts because something is <strong>right</strong>, not because of how it turns out.</p>
+    <p>Morality, then, is about acting from <strong>duty</strong>. Consequences — even saving your friends — don't decide what's right. The principle behind your act does.</p>
+  </phil-slide>
+
+  <!-- 4. Compare: from duty vs from inclination -->
+  <phil-slide>
+    <h1>Why You Do It Matters</h1>
+    <p>Kant draws a sharp line between two motives that can produce the very same action.</p>
+    <phil-compare>
+      <phil-side label="From Duty" tag="Because it's right">
+        <p>You protect your friends because you recognize protecting them as the <strong>right</strong> thing to do.</p>
+        <p class="cake">This has genuine <em>moral worth</em> for Kant — it would hold even if you didn't feel like it.</p>
+      </phil-side>
+      <phil-side label="From Inclination" tag="Because you feel like it">
+        <p>You protect them only because you <strong>love</strong> them and it feels good.</p>
+        <p class="cake">Kind and lovely — but, Kant says, it carries no distinctively <em>moral</em> worth on its own.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 5. Maxims -->
+  <phil-slide>
+    <h1>Every Act Has a Maxim</h1>
+    <p>To judge an action, Kant says, look at its <strong>maxim</strong> — the personal principle you'd be acting on.</p>
+    <ul reveal>
+      <li>Not "I'm scared," but the <em>rule</em>: <em>"I will lie whenever a lie spares someone harm."</em></li>
+      <li>The maxim is what gets tested — and the test is the same for every rational being.</li>
+      <li>So the real question isn't "what happens if I lie?" but <strong>"what am I willing to make a law for everyone?"</strong></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Compare: hypothetical vs categorical -->
+  <phil-slide>
+    <h1>Two Kinds of "Ought"</h1>
+    <p>Commands come in two flavors. Only one is the home of morality.</p>
+    <phil-compare>
+      <phil-side label="Hypothetical Imperative" tag="If… then">
+        <p>Commands a <strong>means to an end you happen to want.</strong></p>
+        <p class="cake">"<em>If</em> you want to stay safe, keep quiet." Drop the want, and the command vanishes.</p>
+      </phil-side>
+      <phil-side label="Categorical Imperative" tag="Just do it">
+        <p>Commands <strong>unconditionally</strong> — binding on any rational being, wants or no wants.</p>
+        <p class="cake">"Do not lie." No "if." This, Kant says, is the form of a genuine moral law.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 7. MCQ: categorical imperative -->
+  <phil-slide>
+    <h1>Spot the Categorical</h1>
+    <phil-mcq prompt="Which of these is a categorical imperative?"
+              explain="Right. A categorical imperative commands unconditionally, with no 'if you want…' attached. The others are hypothetical — they only bind you if you happen to have the goal.">
+      <phil-choice correct>"Do not lie."</phil-choice>
+      <phil-choice feedback="That's hypothetical — it only binds you IF you want the cat's approval.">"If you want the cat to like you, be honest."</phil-choice>
+      <phil-choice feedback="Also hypothetical — it depends on your desire to avoid trouble.">"If you want to avoid trouble, hide your friends."</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — THE THREE FORMULATIONS ============ -->
+
+  <!-- 8. F1: Universal Law -->
+  <phil-slide>
+    <img slot="art" src="./assets/gear-machine.svg" alt="Interlocking gears, the universalizing machine">
+    <h1>Formulation 1: Universal Law</h1>
+    <p>The categorical imperative has one core, stated several ways. The first:</p>
+    <p class="lead">"Act only according to that maxim whereby you can at the same time will that it should become a universal law."</p>
+    <p class="muted">In short: could you will that <em>everyone</em> act on your maxim? If universalizing it breaks something, it fails.</p>
+  </phil-slide>
+
+  <!-- 9. Viz: the Universalizer -->
+  <phil-slide>
+    <h1>Run the Machine</h1>
+    <p>Feed a maxim into the Universalizer. It imagines a world where <strong>everyone</strong> acts on it — and reports what happens.</p>
+    <phil-maxim-tester>
+      <phil-maxim result="conception"
+        universal="Everyone makes promises they don't intend to keep whenever it's useful."
+        verdict="If everyone broke promises at will, no one would trust a promise — so the institution of promising collapses and your false promise couldn't even work. The maxim destroys its own point.">
+        Make a promise I don't intend to keep.
+      </phil-maxim>
+      <phil-maxim result="conception"
+        universal="Everyone lies whenever a lie is convenient."
+        verdict="If lying were universal, assertions would mean nothing and no one would believe you — so the convenient lie becomes impossible. A contradiction in conception: a perfect duty.">
+        Lie whenever a lie is convenient.
+      </phil-maxim>
+      <phil-maxim result="will"
+        universal="No one ever helps anyone else in need."
+        verdict="You CAN imagine such a cold world — no contradiction in conceiving it. But you couldn't rationally WILL it, since you may one day need help yourself. A contradiction in the will: an imperfect duty of beneficence.">
+        Never help anyone in need.
+      </phil-maxim>
+      <phil-maxim result="will"
+        universal="Everyone lets their talents rust and develops nothing."
+        verdict="A world of wasted potential is conceivable — but as a rational being with ends, you couldn't will that your own powers be useless. Another contradiction in the will: the imperfect duty of self-development.">
+        Let my talents rust away.
+      </phil-maxim>
+      <phil-maxim result="passes"
+        universal="Everyone keeps the promises they make."
+        verdict="Universalize it and nothing breaks — trust is even strengthened. The maxim sails through the test: perfectly permissible.">
+        Keep the promises I make.
+      </phil-maxim>
+    </phil-maxim-tester>
+  </phil-slide>
+
+  <!-- 10. Apply to the cat -->
+  <phil-slide>
+    <h1>So What About the Cat?</h1>
+    <p>Run your own maxim — <em>"I'll lie whenever a lie spares someone harm"</em> — through the same test:</p>
+    <ul reveal>
+      <li>Imagine <strong>everyone</strong> lies whenever they judge it helpful.</li>
+      <li>Then a spoken assertion carries no weight — no one believes anyone.</li>
+      <li>But your lie only works <em>because</em> the cat expects the truth. Universalized, it undercuts itself.</li>
+      <li>On the Formula of Universal Law, then, the lie can't pass. (Hold that thought — the modern Kantians will push back.)</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Compare: conception vs will -->
+  <phil-slide>
+    <h1>Two Ways a Maxim Can Fail</h1>
+    <p>The machine flagged two different failures — and the difference defines two kinds of duty.</p>
+    <phil-compare>
+      <phil-side label="Contradiction in Conception" tag="Can't even imagine">
+        <p>Universalizing the maxim makes it <strong>self-destruct</strong> (lying, false promises).</p>
+        <p class="cake">Yields a <strong>perfect duty</strong>: strict, no exceptions — e.g. don't lie.</p>
+      </phil-side>
+      <phil-side label="Contradiction in the Will" tag="Can't rationally want">
+        <p>You can picture the world, but couldn't <strong>rationally will</strong> it (no one ever helps).</p>
+        <p class="cake">Yields an <strong>imperfect duty</strong>: real, but with latitude in how and when — e.g. help others sometimes.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 12. Cloze: FUL -->
+  <phil-slide>
+    <h1>Say It Back</h1>
+    <p>Complete the first formulation and the duty it yields.</p>
+    <phil-cloze explain="That's the Formula of Universal Law: a maxim that can't even be conceived as universal violates a perfect duty.">
+      Act only on that <phil-blank answer="maxim">maxim</phil-blank>
+      through which you can at the same time
+      <phil-blank answer="will">will</phil-blank>
+      that it become a universal <phil-blank answer="law">law</phil-blank>.
+      A maxim that can't even be conceived as universal violates a
+      <phil-blank options="perfect,imperfect">perfect</phil-blank> duty.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- 13. F2: Humanity -->
+  <phil-slide>
+    <img slot="art" src="./assets/kant.svg" alt="Kant">
+    <h1>Formulation 2: Humanity</h1>
+    <p>Kant says the same law can be put a second way — in terms of <strong>respect for persons</strong>:</p>
+    <p class="lead">"Act so that you treat humanity, whether in your own person or in that of another, never merely as a means, but always at the same time as an end."</p>
+    <ul reveal>
+      <li>Using someone <em>as a means</em> is fine — you use the cat for directions all the time.</li>
+      <li>The wrong is using them as a <strong>mere</strong> means — bypassing their rational agency.</li>
+      <li>Deception does exactly that: a lie manipulates the cat with information he can't rationally evaluate.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. MCQ: humanity -->
+  <phil-slide>
+    <h1>Why Lying Offends the Second Formula</h1>
+    <phil-mcq prompt="On the Formula of Humanity, what's wrong with lying to the cat?"
+              explain="Right. For Kant, deception treats the other as a mere means — it routes around their rational agency, giving them something they can't genuinely consent to or assess.">
+      <phil-choice correct>it treats the cat as a <em>mere means</em>, manipulating him with information he can't rationally consent to</phil-choice>
+      <phil-choice feedback="That's the utilitarian's reason, not Kant's. Kant doesn't decide this by tallying happiness.">it produces less total happiness than telling the truth</phil-choice>
+      <phil-choice feedback="There's no agreement between you and the cat to break — the wrong runs deeper, in how you treat his agency.">it breaks a promise the cat and you had agreed to</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 15. F3: Kingdom of Ends -->
+  <phil-slide>
+    <img slot="art" src="./assets/crown.svg" alt="A golden crown representing the Kingdom of Ends">
+    <h1>Formulation 3: The Kingdom of Ends</h1>
+    <p>The third formulation pictures the moral community the first two imply:</p>
+    <ul reveal>
+      <li>Act as if you were a <strong>co-legislator</strong> of universal laws in a community of rational beings.</li>
+      <li>Each member is both author of the laws and bound by them — and each is an <strong>end in themselves</strong>.</li>
+      <li>Ask: could every rational being, the cat included, live under the law you're proposing to act on?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Checkset: formulations -->
+  <phil-slide>
+    <h1>Sort the Formulations</h1>
+    <phil-checkset prompt="Check each statement that correctly describes one of Kant's formulations of the categorical imperative."
+                   explain="Exactly. Universal Law, Humanity, and the Kingdom of Ends are Kant's three angles on one principle. 'Maximize happiness' is utilitarianism, and the 'virtuous mean' is Aristotle — neither is Kant.">
+      <phil-statement correct>Universal Law: act only on a maxim you could will everyone to follow</phil-statement>
+      <phil-statement correct>Humanity: never treat a rational being as a mere means</phil-statement>
+      <phil-statement correct>Kingdom of Ends: act as a co-legislator of laws for a community of rational agents</phil-statement>
+      <phil-statement>Greatest Happiness: choose whatever maximizes total well-being</phil-statement>
+      <phil-statement>The Golden Mean: aim for the virtuous middle between two extremes</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — WHO COUNTS? ============ -->
+
+  <!-- 17. Rational beings -->
+  <phil-slide>
+    <img slot="art" src="./assets/crown.svg" alt="Crown">
+    <h1>Who Gets to Be an "End"?</h1>
+    <p>Kant's respect is owed to a specific class: <strong>rational beings — persons</strong> capable of setting their own ends and acting on reasons.</p>
+    <ul reveal>
+      <li>Such beings have <strong>dignity</strong>, not a price — they can't be traded off or used up.</li>
+      <li>That's exactly why deception and coercion are so serious: they override a rational will.</li>
+      <li>In our cartoon, the mouse and the cat both talk and reason — so both qualify as persons.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Animals: indirect duties -->
+  <phil-slide>
+    <img slot="art" src="./assets/mouse.svg" alt="Mouse">
+    <h1>The Twist: Real Animals</h1>
+    <p>Here's where Kant's own view bites. He held that <strong>animals are not ends in themselves</strong>, because they aren't rational agents.</p>
+    <ul reveal>
+      <li>So we have no <em>direct</em> duties to them — only <strong>indirect</strong> ones (in his <em>Lectures on Ethics</em>).</li>
+      <li>Cruelty to animals is wrong, he argued, because it <strong>hardens us</strong> and corrodes how we treat fellow humans.</li>
+      <li>The sting: by Kant's real standard, a <em>literal</em> mouse wouldn't count at all. Only our reasoning, talking cartoon mouse does.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. MCQ: animals -->
+  <phil-slide>
+    <h1>Kant on a Real Animal</h1>
+    <phil-mcq prompt="On Kant's OWN view, why is it wrong to torment a (real, non-talking) animal?"
+              explain="Right — for Kant this is an indirect duty. The animal isn't an end in itself; the wrong is what cruelty does to our own moral character. (Many later Kantians reject this, as we'll see.)">
+      <phil-choice correct>only indirectly — cruelty corrodes how we then treat other humans</phil-choice>
+      <phil-choice feedback="That's the view of later Kantians like Korsgaard, not Kant himself — he denied animals are ends in themselves.">because the animal is an end in itself with its own dignity</phil-choice>
+      <phil-choice feedback="That's a utilitarian reason. Kant doesn't settle it by adding up pleasure and pain.">because it lowers the total happiness in the world</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — KANT'S HARD LINE ============ -->
+
+  <!-- 20. On a Supposed Right to Lie -->
+  <phil-slide>
+    <img slot="art" src="./assets/kant.svg" alt="Kant">
+    <span class="phil-date">"On a Supposed Right to Lie" · 1797</span>
+    <h1>Kant Bites the Bullet</h1>
+    <p>This case is really Kant's. The writer <strong>Benjamin Constant</strong> objected: surely you may lie to a murderer who asks where your friend is hiding.</p>
+    <ul reveal>
+      <li>Kant's reply: <strong>no.</strong> Truthfulness is an unconditional duty; you may not lie even here.</li>
+      <li>His reasoning: you answer for your own <em>lie</em>, but not for what the murderer freely chooses to do with the truth.</li>
+      <li>Tell the truth and harm follows? That's on the murderer. Lie and anything goes wrong? That's on you.</li>
+      <li>Many readers find this conclusion deeply troubling — and that's the door the modern Kantians walk through.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. MCQ: Kant's conclusion -->
+  <phil-slide>
+    <h1>What Does Kant Actually Say?</h1>
+    <phil-mcq prompt="In 'On a Supposed Right to Lie,' what is Kant's own verdict on lying to the murderer (our cat) at the door?"
+              explain="Yes — and it's deliberately uncomfortable. Kant holds truthfulness to be an unconditional duty, so even here he says you may not lie. The modern responses try to keep Kant's framework while escaping this result.">
+      <phil-choice correct>you still must not lie — truthfulness is an unconditional duty</phil-choice>
+      <phil-choice feedback="That's the intuitive (and utilitarian) answer, but it's NOT Kant's. He refuses to make truthfulness conditional on consequences.">you may lie, since saving a life clearly outweighs honesty</phil-choice>
+      <phil-choice feedback="Kant doesn't make the duty depend on your odds of success — he holds it unconditionally.">you may lie only if you're sure the lie will work</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — MODERN KANTIANS ============ -->
+
+  <!-- 22. Intro -->
+  <phil-slide>
+    <h1>Keep the Framework, Lose the Verdict?</h1>
+    <p>Later Kantians admire the apparatus — universal law, dignity, ends in themselves — but think Kant misapplied it at the door. Two of the most important:</p>
+    <ul reveal>
+      <li><strong>Christine Korsgaard</strong> — on lying to evildoers, and on who counts.</li>
+      <li><strong>Onora O'Neill</strong> — on deception and coercion as the core wrongs.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. Compare: Kant vs Korsgaard on lying -->
+  <phil-slide>
+    <img slot="art" src="./assets/korsgaard.svg" alt="Stylized portrait of Christine Korsgaard">
+    <h1>Korsgaard: Dealing With Evil</h1>
+    <p>In "The Right to Lie: Kant on Dealing with Evil" (1986), Korsgaard argues Kant's own test, applied honestly to the situation, gives a different answer.</p>
+    <phil-compare>
+      <phil-side label="Orthodox Kant" tag="Never lie">
+        <p>Truthfulness is unconditional. Even to the cat, you may <strong>not</strong> lie (the 1797 essay).</p>
+        <p class="cake">You answer for your lie; what the cat does with the truth is his affair.</p>
+      </phil-side>
+      <phil-side label="Korsgaard" tag="Dealing with evil">
+        <p>Ideal rules assume everyone complies. The cat doesn't — he's using <strong>coercion</strong> to do murder.</p>
+        <p class="cake">A maxim like "deceive a deceiver to thwart violence" can be universalized; you needn't cooperate with his evil. The Universal Law formula can permit the lie.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 24. O'Neill -->
+  <phil-slide>
+    <img slot="art" src="./assets/oneill.svg" alt="Stylized portrait of Onora O'Neill">
+    <h1>O'Neill: Deception &amp; Coercion</h1>
+    <p>Onora O'Neill builds her Kantian ethics around the Formula of Humanity, read through one practical test: <strong>could those affected actually consent to what you're doing?</strong></p>
+    <ul reveal>
+      <li>The two paradigm ways to treat someone as a <em>mere means</em> are <strong>deception</strong> and <strong>coercion</strong> — both make genuine consent impossible.</li>
+      <li>Real moral principles are ones <strong>everyone could adopt</strong> and act on together.</li>
+      <li>Apply it at the door: the <strong>cat</strong> is trying to coerce and exploit you; the hidden <strong>mice</strong> can't consent to being handed over. Whose agency are you really required to respect?</li>
+    </ul>
+    <p class="muted">O'Neill gives you the test; she leaves you to weigh the case honestly with it.</p>
+  </phil-slide>
+
+  <!-- 25. Compare: Kant vs Korsgaard on animals -->
+  <phil-slide>
+    <img slot="art" src="./assets/korsgaard.svg" alt="Korsgaard">
+    <h1>And the Real Mouse?</h1>
+    <p>Korsgaard also reopens "who counts." In <em>Fellow Creatures</em> (2018) she argues Kant got animals wrong.</p>
+    <phil-compare>
+      <phil-side label="Kant" tag="Indirect only">
+        <p>Animals aren't rational, so they're <strong>not ends in themselves</strong>. We owe them only indirect duties.</p>
+        <p class="cake">A real mouse at your door? On Kant's view, no standing of its own.</p>
+      </phil-side>
+      <phil-side label="Korsgaard" tag="Fellow creatures">
+        <p>Creatures for whom things can be <strong>good or bad</strong> are ends in themselves too — we owe them <strong>direct</strong> duties.</p>
+        <p class="cake">The real mouse counts in its own right — and so, for that matter, would the cat.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 26. Checkset: Kantian vs utilitarian -->
+  <phil-slide>
+    <h1>Stay Kantian</h1>
+    <phil-checkset prompt="Check each response to the cat that a Kantian (not a utilitarian) could give."
+                   explain="Nicely sorted. Kantians reason about maxims, agency, deception and coercion — not about tallying pleasure. The two checked-off distractors are utilitarian moves wearing a disguise.">
+      <phil-statement correct>Refuse to treat the hidden mice as mere means to the cat's ends</phil-statement>
+      <phil-statement correct>Ask whether your maxim could hold as a universal law</phil-statement>
+      <phil-statement correct>Note the cat is using coercion, so you needn't cooperate with his evil (Korsgaard)</phil-statement>
+      <phil-statement>Just calculate whether lying yields more total happiness</phil-statement>
+      <phil-statement>Hand over whoever's suffering matters least to the overall sum</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ DECIDE ============ -->
+
+  <!-- 27. The mouse decides -->
+  <phil-slide>
+    <img slot="art" src="./assets/mouse.svg" alt="The mouse, resolved">
+    <h1>The Mouse Decides</h1>
+    <p class="lead">The cat is still waiting. Now you have more than a gut feeling — you have a framework.</p>
+    <ul reveal>
+      <li><strong>Kant</strong> — act only on maxims you could universalize; treat every rational being as an end, never a mere means.</li>
+      <li><strong>Kant's hard line</strong> — truthfulness is unconditional; even here, don't lie.</li>
+      <li><strong>Korsgaard</strong> — dealing with evil is different; you needn't cooperate with a coercer — and real animals count too.</li>
+      <li><strong>O'Neill</strong> — the deep wrongs are deception and coercion; ask who could really consent.</li>
+    </ul>
+    <p class="muted">Visit every slide and answer every question correctly to fill the bar and finally answer the cat.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

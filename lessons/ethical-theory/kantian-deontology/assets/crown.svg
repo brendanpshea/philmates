@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 64" shape-rendering="crispEdges" role="img" aria-label="A golden crown representing Kant's Kingdom of Ends">
+  <rect width="80" height="64" fill="#1d2235"/>
+  <!-- crown band -->
+  <rect x="18" y="40" width="44" height="10" fill="#caa22f"/>
+  <rect x="18" y="40" width="44" height="4" fill="#ffd24a"/>
+  <!-- points -->
+  <rect x="18" y="22" width="6" height="18" fill="#ffd24a"/>
+  <rect x="37" y="16" width="6" height="24" fill="#ffd24a"/>
+  <rect x="56" y="22" width="6" height="18" fill="#ffd24a"/>
+  <rect x="27" y="30" width="6" height="10" fill="#e0b836"/>
+  <rect x="47" y="30" width="6" height="10" fill="#e0b836"/>
+  <!-- point jewels -->
+  <rect x="18" y="18" width="6" height="6" fill="#ff6ad5"/>
+  <rect x="37" y="12" width="6" height="6" fill="#4cc2ff"/>
+  <rect x="56" y="18" width="6" height="6" fill="#ff6ad5"/>
+  <!-- band jewels -->
+  <rect x="27" y="42" width="5" height="5" fill="#46e07a"/>
+  <rect x="38" y="42" width="5" height="5" fill="#ff5d6c"/>
+  <rect x="49" y="42" width="5" height="5" fill="#4cc2ff"/>
+  <!-- base -->
+  <rect x="16" y="50" width="48" height="4" fill="#caa22f"/>
+</svg>

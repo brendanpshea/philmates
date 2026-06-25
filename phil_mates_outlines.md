@@ -127,3 +127,143 @@ optional Mill content.
 - **`<phil-compare>` comparison cards** (shared component) for any "X vs Y"
   distinction, each grounded in the same running example (the cake). Reuse for
   taxonomies of a view; a third `<phil-side>` handles three-way contrasts.
+
+---
+
+## Kantian Deontology — "The Cat at the Door"  *(built)*
+
+- **Path:** `lessons/ethical-theory/kantian-deontology/`
+- **Lesson id:** `kant-cat-door` (proposed)
+- **Topic:** Ethical theory (normative ethics) — companion to the utilitarianism lesson.
+- **Approach:** Build Kant's machinery on one running case, then watch modern
+  Kantians re-litigate it. Same devices: story frame, `reveal` bullets,
+  `<phil-compare>` cards, an interactive viz, graded checks.
+- **Narrative frame — Tom & Jerry's "murderer at the door":** *You are a mouse.*
+  A cat raps on your door and asks, sweetly, **"Where are the other mice hiding?"**
+  Tell the truth and your friends get eaten. Do you lie? In this cartoon world the
+  mouse and cat both talk and reason, so we treat them as rational agents — which
+  lets us run Kant's argument on you directly, and sets up the real-world twist
+  about *who counts* later.
+- **Thinkers:** Immanuel Kant; then Christine Korsgaard and Onora O'Neill.
+
+### Accuracy note (real, not invented)
+This is Kant's actual signature case. In **"On a Supposed Right to Lie from
+Philanthropy" (1797)**, replying to **Benjamin Constant**, Kant argues you may
+*not* lie even to a would-be murderer — truthfulness is an unconditional duty. The
+lecture honors this genuine (and genuinely controversial) result, then shows the
+modern responses. Use canonical *Groundwork* formulations as Kant's own wording;
+attribute modern positions only to works that really hold them (see Sources).
+
+### Learning goals
+- Distinguish a **categorical** from a **hypothetical** imperative, and acting
+  **from duty** from merely acting in accordance with it.
+- State and apply the three main **formulations** (Universal Law, Humanity,
+  Kingdom of Ends).
+- Run a **universalizability test**; tell a *contradiction in conception* (perfect
+  duty) from a *contradiction in the will* (imperfect duty).
+- Explain Kant's restriction of standing to **rational beings/persons** and his
+  **indirect-duty** view of animals — and why it's contested.
+- Reconstruct Kant's hard line on lying to the murderer, and contrast
+  **Korsgaard's** and **O'Neill's** modern reinterpretations.
+
+### Slide-by-slide
+
+**Act 0 — The knock**
+1. **[T]** Title — "The Cat at the Door" (cat looming at a mouse-hole door).
+2. **[T]** Setup — the cat's question, friends' lives at stake, `reveal`. "A
+   utilitarian mouse would just calculate; tonight you meet a philosopher who says
+   the math is beside the point."
+
+**Act 1 — Foundations**
+3. **[T]** The **good will**; morality is acting from **duty**, not results/inclination.
+4. **[C]** Acting **from duty** vs **from inclination**.
+5. **[T]** **Maxims** — the principle behind the act, `reveal`.
+6. **[C]** **Hypothetical vs Categorical** imperative.
+7. **[Q · MCQ]** Which statement is a categorical imperative? (distractors: prudential/hypothetical).
+
+**Act 2 — The three formulations**
+8. **[T]** F1 **Formula of Universal Law** (Kant's wording, Groundwork).
+9. **[V]** **"The Universalizer"** (`<phil-maxim-tester>`) — pick a maxim; the
+   machine imagines everyone doing it and shows whether it self-destructs
+   (contradiction in conception). Manipulate input → see result.
+10. **[T]** Apply to the cat: universalized "lie when convenient" undermines
+    truth-telling → impermissible on Kant's test, `reveal`.
+11. **[C]** Contradiction in **conception** vs in the **will** → **perfect** vs
+    **imperfect** duties.
+12. **[Q · Cloze]** Formula of Universal Law + perfect/imperfect.
+13. **[T]** F2 **Formula of Humanity** — never treat rational agency as a *mere
+    means*; deception bypasses it, `reveal`.
+14. **[Q · MCQ]** Why lying violates the Formula of Humanity.
+15. **[T]** F3 **Kingdom of Ends / Autonomy** — co-legislator of universal law, `reveal`.
+16. **[Q · Checkset]** Match each formulation to its core idea (distractor:
+    "maximize total happiness," contrasting the prior lesson).
+
+**Act 3 — Who counts?**
+17. **[T]** Ends in themselves = **rational beings (persons)**; dignity vs price, `reveal`.
+18. **[T]** **Animals** — only **indirect** duties (Lectures on Ethics): cruelty
+    corrodes our humanity. Twist: by Kant's real standard a literal mouse wouldn't
+    count — only our reasoning cartoon mouse does.
+19. **[Q · MCQ]** On Kant's view, why is harming a (real) animal wrong? (answer:
+    indirect duty; distractors: it's an end in itself / lowers total happiness).
+
+**Act 4 — Kant's hard line**
+20. **[T]** **"On a Supposed Right to Lie" (1797)** — Constant's challenge; Kant's
+    reply; you answer for your *lie*, not another's wrongdoing, `reveal`.
+21. **[Q · MCQ]** What does Kant himself conclude about lying to the cat? (answer:
+    still impermissible — surface the controversial result honestly).
+
+**Act 5 — Modern Kantians answer back**
+22. **[T]** Keep the framework, reach a more humane verdict, `reveal`.
+23. **[C]** Orthodox Kant vs **Korsgaard** — "The Right to Lie: Kant on Dealing
+    with Evil" (1986): ideal vs **dealing with evil/coercion**; the Universal Law
+    test, applied to the coercive situation, can *permit* lying to the murderer.
+24. **[T]** **O'Neill** — constructivist reading on the Formula of Humanity: the
+    core wrongs are **deception and coercion** (they make shared/consented
+    principles impossible); genuine principles are ones all could adopt. Students
+    apply "could they consent?" to cat and hidden mice, `reveal`. *(Present her
+    framework, not a sourced verdict on the murderer case.)*
+25. **[C]** Kant on animals vs **Korsgaard's** *Fellow Creatures* (2018): animals
+    **are** ends in themselves; **direct** duties. Reopens "who counts," ties the
+    cartoon back to reality.
+26. **[Q · Checkset]** Which moves are genuinely Kantian reinterpretations vs which
+    smuggle in utilitarian reasoning (reinforces the contrast with Lesson 1).
+
+**Wake up / decide**
+27. **[T]** The mouse decides — recap + the live modern debate; no tidy bow, `reveal`.
+
+### Comparisons (where each `<phil-compare>` lives)
+From duty vs from inclination (4) · Hypothetical vs Categorical (6) · Contradiction
+in conception vs in will → perfect vs imperfect (11) · Orthodox Kant vs Korsgaard
+on lying (23) · Kant vs Korsgaard on animals (25).
+
+### New interactive viz to build
+**`<phil-maxim-tester>` ("The Universalizer")** — author supplies maxims tagged by
+failure mode (contradiction in conception / in will / passes). Student selects one;
+widget "universalizes" it and animates the breakdown. Ungraded, like the cake viz;
+reusable for any FUL teaching.
+
+### Art assets (16-bit SVGs)
+`cat-at-door`, `mouse`, `kant`, `korsgaard`, `oneill` (latter two stylized +
+labeled), `crown`/`gavel` (Kingdom of Ends), `gear-machine` (Universalizer); plus
+`prompts.md`.
+
+### Sources to cite (so nothing is invented)
+- Kant, *Groundwork of the Metaphysics of Morals* (the three formulations).
+- Kant, *On a Supposed Right to Lie from Philanthropy* (1797); Constant's challenge.
+- Kant, *Lectures on Ethics* (indirect duties to animals).
+- Korsgaard, "The Right to Lie: Kant on Dealing with Evil" (1986); *Fellow
+  Creatures* (2018).
+- O'Neill, *Acting on Principle* (1975); *Constructions of Reason* (1989);
+  *Towards Justice and Virtue* (1996).
+
+### Counts (target)
+~27 slides. ~9 interactive (3 MCQ, 1 cloze, 2 checkset, 1 viz, plus comparisons),
+≈ our 40% interactivity. Optional branch not yet planned (candidate: a perfect-vs-
+imperfect-duty deep dive).
+
+### Open decisions before building
+- **O'Neill's verdict on the murderer case:** present framework only unless we find
+  a citable stance.
+- **Korsgaard does double duty** (lying *and* animals), deliberately reuniting the
+  two lessons' "who counts" thread.
+- Build the `<phil-maxim-tester>` viz in v1, or stub the slide first?
