@@ -251,8 +251,10 @@ phil-side {
 phil-side:nth-of-type(2) .phil-side__label { color: var(--accent); }
 phil-side:nth-of-type(2) .phil-side__tag { background: var(--accent); }
 phil-side p { font-size: 16px; line-height: 1.5; max-width: none; margin: .25em 0; }
-phil-side .cake { margin-top: auto; margin-bottom: 16px; background: var(--panel); border-left: 4px solid var(--accent-2); padding: 10px 12px; }
+phil-side .cake, phil-side .case { margin-top: auto; margin-bottom: 16px; background: var(--panel); border-left: 4px solid var(--accent-2); padding: 10px 12px; }
 phil-side .cake::before { content: "🍰 "; }
+phil-side .case { border-left-color: var(--accent-3); }
+phil-side .case::before { content: "🩺 "; }
 .phil-vs {
   position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
   font-family: var(--pixel); font-size: 12px; color: var(--ink);

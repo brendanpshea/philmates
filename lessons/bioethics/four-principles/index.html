@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rounds with Van Helsing: The Four Principles of Bioethics · PhilMates</title>
+  <meta name="description" content="Train under Doctor Van Helsing in Transylvania and learn principlism — the four principles of bioethics — through the dilemmas of monstrous patients.">
+  <link rel="stylesheet" href="/shared/phil-core.css">
+  <script type="module" src="/shared/phil-core.js"></script>
+  <script type="module" src="./assets/balance.js"></script>
+</head>
+<body>
+
+<phil-lesson id="bioethics-four-principles" title="Rounds with Van Helsing">
+
+  <!-- ============ ACT 0 — ARRIVAL ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/van-helsing.svg" alt="Pixel portrait of Doctor Van Helsing">
+    <h1>Rounds with Van Helsing</h1>
+    <p class="lead">Welcome to Transylvania, doctor. Tonight you begin your training — and the patients are... unusual.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The apprenticeship -->
+  <phil-slide>
+    <h1>Your Apprenticeship</h1>
+    <p class="lead">"Medicine for monsters," Van Helsing says, "is still medicine. The hard part was never the fangs. It is the <em>decisions.</em>"</p>
+    <ul reveal>
+      <li>His clinic treats vampires, werewolves, the newly-risen, and stranger folk still.</li>
+      <li>Each case will pull you in several directions at once.</li>
+      <li>Tonight he teaches you not a rulebook, but a <strong>way of reasoning</strong>: the four principles of bioethics.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — COMMON MORALITY ============ -->
+
+  <!-- 3. Common morality -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.svg" alt="A balanced scale">
+    <h1>Start With What We All Know</h1>
+    <p>"Before the special rules of medicine," says Van Helsing, "there is the <strong>common morality</strong> — the norms every morally serious person already accepts."</p>
+    <ul reveal>
+      <li>Don't kill. Don't cause needless suffering. Don't steal or deceive.</li>
+      <li>Keep your promises. Treat people fairly.</li>
+      <li>These aren't the invention of any one culture — they're shared across them.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Why extend it -->
+  <phil-slide>
+    <h1>Why Medicine Needs More</h1>
+    <p>The common morality is true but <em>thin</em>. The clinic adds pressures it never anticipated:</p>
+    <ul reveal>
+      <li><strong>Vulnerability</strong> — patients are frightened, in pain, sometimes barely themselves.</li>
+      <li><strong>Power</strong> — you hold knowledge, instruments, and authority they lack.</li>
+      <li><strong>Special roles</strong> — a healer takes on duties an ordinary villager doesn't.</li>
+      <li>So bioethics <strong>specifies and extends</strong> the common morality for medicine.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Compare: common morality vs principles -->
+  <phil-slide>
+    <h1>From Shared Norms to Clinical Principles</h1>
+    <phil-compare>
+      <phil-side label="Common Morality" tag="For everyone">
+        <p>The universal norms <strong>all</strong> morally serious people share.</p>
+        <p class="case">"Do not cause needless harm" — true everywhere, but it doesn't tell you how to dose wolfsbane.</p>
+      </phil-side>
+      <phil-side label="Bioethical Principles" tag="For the clinic">
+        <p>That same morality <strong>specified</strong> for medicine's roles and powers.</p>
+        <p class="case">"Weigh the benefits and harms of this treatment for this patient" — built for the bedside.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 6. MCQ: common morality -->
+  <phil-slide>
+    <h1>Check Your Understanding</h1>
+    <phil-mcq prompt="What does 'the common morality' refer to?"
+              explain="Right. For Beauchamp and Childress the common morality is the set of basic norms shared by all morally serious people — universal, not the private code of a profession or a single culture.">
+      <phil-choice feedback="That's a professional code. The common morality is shared by everyone, not only clinicians.">A code unique to doctors that outsiders never share.</phil-choice>
+      <phil-choice correct>The basic moral norms that all serious people share.</phil-choice>
+      <phil-choice feedback="That's cultural relativism. Principlism treats the common morality as universal, not merely local.">Whatever moral rules a given culture happens to hold.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — THE FOUR PRINCIPLES ============ -->
+
+  <!-- 7. Meet the four -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.svg" alt="Scales">
+    <h1>The Four Principles</h1>
+    <p>Van Helsing holds up four fingers. "These are your compass. Learn them as <strong>equals</strong> — none outranks another."</p>
+    <ul reveal>
+      <li><strong>Respect for autonomy</strong> — honor a patient's own informed choices.</li>
+      <li><strong>Nonmaleficence</strong> — do no harm.</li>
+      <li><strong>Beneficence</strong> — act for the patient's good.</li>
+      <li><strong>Justice</strong> — share benefits and burdens fairly.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Autonomy -->
+  <phil-slide>
+    <img slot="art" src="./assets/vampire.svg" alt="The vampire Count">
+    <h1>1 · Respect for Autonomy</h1>
+    <p>A competent patient gets to make their own informed decisions — even ones you'd advise against.</p>
+    <ul reveal>
+      <li>The Count, fully lucid, refuses your daytime-shielding regimen. He understands the risks.</li>
+      <li>Respecting autonomy means <strong>informed consent</strong>: disclosure, understanding, and a voluntary choice.</li>
+      <li>It is his life and his body — not yours to commandeer.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Nonmaleficence -->
+  <phil-slide>
+    <img slot="art" src="./assets/werewolf.svg" alt="The werewolf patient">
+    <h1>2 · Nonmaleficence</h1>
+    <p><em>Primum non nocere</em> — first, do no harm. Never let a treatment wound worse than the disease.</p>
+    <ul reveal>
+      <li>However tidy it would be, you do <strong>not</strong> prescribe silver to a werewolf — it would poison him.</li>
+      <li>Nonmaleficence forbids inflicting harm and reckless risk.</li>
+      <li>It's the floor beneath everything else you do.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Beneficence -->
+  <phil-slide>
+    <img slot="art" src="./assets/blood-vial.svg" alt="A vial of synthetic blood">
+    <h1>3 · Beneficence</h1>
+    <p>Nonmaleficence says <em>don't harm</em>; beneficence says actively <strong>do good</strong> — and weigh the good against the costs.</p>
+    <ul reveal>
+      <li>Offering the Count synthetic blood spares him suffering and keeps others safe too.</li>
+      <li>Beneficence always carries a balance: benefits versus risks, burdens, and cost.</li>
+      <li>To help well, you must weigh — not just mean well.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Justice -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.svg" alt="Scales of justice">
+    <h1>4 · Justice</h1>
+    <p>Justice asks: are benefits and burdens shared <strong>fairly</strong>?</p>
+    <ul reveal>
+      <li>This week's synthetic blood is scarce. Vampires need it — but so do injured villagers.</li>
+      <li>Justice governs who gets the scarce good, and on what fair basis.</li>
+      <li>No patient counts for more simply because they're powerful, or frightening.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Prima facie -->
+  <phil-slide>
+    <h1>All Equal, All Prima Facie</h1>
+    <p>"Here is the part students forget," Van Helsing warns. The principles are <strong>prima facie</strong> — a term from the philosopher W. D. Ross.</p>
+    <ul reveal>
+      <li>Each one binds you <strong>unless</strong> it collides with another that, here and now, outweighs it.</li>
+      <li>There is <strong>no fixed ranking</strong> — autonomy doesn't automatically beat beneficence, or vice versa.</li>
+      <li>Which one yields depends on the <em>case</em>, argued out — not on a standing hierarchy.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Checkset: the four principles -->
+  <phil-slide>
+    <h1>Name the Four</h1>
+    <phil-checkset prompt="Check the four principles of bioethics (and only those)."
+                   explain="Exactly — autonomy, nonmaleficence, beneficence, and justice. 'Maximize utility' is utilitarianism and the 'categorical imperative' is Kant; useful theories, but not the four principles.">
+      <phil-statement correct>Respect for autonomy — honor competent, informed choices</phil-statement>
+      <phil-statement correct>Nonmaleficence — do no harm</phil-statement>
+      <phil-statement correct>Beneficence — act for the patient's good</phil-statement>
+      <phil-statement correct>Justice — distribute benefits and burdens fairly</phil-statement>
+      <phil-statement>Utility — always maximize total happiness</phil-statement>
+      <phil-statement>The categorical imperative — act only on universalizable maxims</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 14. MCQ: prima facie -->
+  <phil-slide>
+    <h1>What "Prima Facie" Means</h1>
+    <phil-mcq prompt="To call the four principles 'prima facie' means that…"
+              explain="Right. Prima facie (after Ross) means each principle is binding unless, in a particular clash, another principle outweighs it. There's no permanent ranking.">
+      <phil-choice feedback="No — there is no standing hierarchy. Which principle yields depends on the case.">one principle always outranks all of the others.</phil-choice>
+      <phil-choice feedback="They bind you whether or not anyone asks — the term is about how conflicts are settled.">they only matter when a patient asks about them.</phil-choice>
+      <phil-choice correct>each holds firm unless another outweighs it in a clash.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — SPECIFICATION ============ -->
+
+  <!-- 15. Principles are abstract -->
+  <phil-slide>
+    <h1>The Principles Are Abstract</h1>
+    <p>"'Respect autonomy,'" Van Helsing says dryly, "is a fine motto. It is useless at two in the morning with a thrashing patient."</p>
+    <ul reveal>
+      <li>The principles are general. Real cases are specific.</li>
+      <li>A bare principle rarely tells you what to <em>do</em> with this patient, tonight.</li>
+      <li>So before you can apply a principle, you often have to <strong>sharpen</strong> it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Specification -->
+  <phil-slide>
+    <img slot="art" src="./assets/van-helsing.svg" alt="Van Helsing teaching">
+    <h1>Specification</h1>
+    <p>Philosopher <strong>Henry Richardson</strong> called this move <strong>specification</strong>: narrowing an abstract principle to fit a context.</p>
+    <ul reveal>
+      <li>Abstract: "Respect the patient's autonomy."</li>
+      <li>Specified: "Obtain the werewolf's informed consent before giving wolfsbane, disclosing that it blocks transformation for three nights."</li>
+      <li>A good specification guides action — and often heads off conflicts before they start.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Compare: specification vs balancing -->
+  <phil-slide>
+    <h1>Two Different Moves</h1>
+    <p>Don't confuse the two things you'll do with principles.</p>
+    <phil-compare>
+      <phil-side label="Specification" tag="Make it concrete">
+        <p>Take <strong>one</strong> abstract principle and spell out what it requires here.</p>
+        <p class="case">"Respect autonomy" → "get informed consent before wolfsbane."</p>
+      </phil-side>
+      <phil-side label="Balancing" tag="Weigh the clash">
+        <p>When <strong>two</strong> specified principles still conflict, weigh their relative strength.</p>
+        <p class="case">His refusal (autonomy) vs his repeated injuries (beneficence): which wins, here?</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 18. Cloze: specification -->
+  <phil-slide>
+    <h1>Say It Back</h1>
+    <phil-cloze explain="That's specification: it makes a general principle concrete enough to act on in a particular case.">
+      Turning "respect autonomy" into "get informed consent before giving wolfsbane" is called
+      <phil-blank answer="specification">specification</phil-blank>.
+      It takes an <phil-blank options="abstract,concrete">abstract</phil-blank> principle and makes it
+      <phil-blank options="concrete,vaguer">concrete</phil-blank> enough to guide action.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — WEIGHING & BALANCING ============ -->
+
+  <!-- 19. Weigh and balance -->
+  <phil-slide>
+    <h1>When Principles Still Collide</h1>
+    <p>Specify all you like — sometimes two principles still pull against each other in the same case. Then you must <strong>weigh and balance</strong>.</p>
+    <ul reveal>
+      <li>Balancing is <em>judgment</em>, not arithmetic — there's no formula that spits out the answer.</li>
+      <li>But it isn't a free-for-all either. Overriding a principle has to be <strong>earned</strong>.</li>
+      <li>Beauchamp and Childress give conditions any justified override must meet.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Conditions -->
+  <phil-slide>
+    <h1>Conditions for a Justified Override</h1>
+    <p>To justifiably infringe one prima facie principle for another, you should be able to show:</p>
+    <ul reveal>
+      <li><strong>Good reasons</strong> — the overriding principle really is weightier here.</li>
+      <li><strong>Realistic prospect</strong> — the override will actually achieve its aim.</li>
+      <li><strong>Necessity</strong> — no morally preferable alternative is available.</li>
+      <li><strong>Least infringement</strong> — you intrude as little as the goal allows.</li>
+      <li><strong>Minimize harm</strong> and act <strong>impartially</strong> throughout.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Compare: paternalism (self-regarding!) -->
+  <phil-slide>
+    <img slot="art" src="./assets/werewolf.svg" alt="The werewolf patient with a bandaged head">
+    <h1>A Hard Case: Paternalism</h1>
+    <p>The werewolf is hooked on <strong>moon-nectar</strong> — the very drug that drives his injurious transformations. Lucid, he refuses to give it up. (He harms no one else.)</p>
+    <phil-compare>
+      <phil-side label="Respect for Autonomy" tag="His call">
+        <p>He's competent and informed. What he puts in his own body is <strong>his</strong> choice.</p>
+        <p class="case">Restricting his moon-nectar overrides a lucid refusal.</p>
+      </phil-side>
+      <phil-side label="Beneficence / Nonmaleficence" tag="His own good">
+        <p>The drug leaves him gravely, repeatedly injured — and the addiction clouds the very choice he's making.</p>
+        <p class="case">Limiting it for his <strong>own</strong> good, against his wishes, is <strong>paternalism</strong>.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 22. Viz: the Scales -->
+  <phil-slide>
+    <h1>Tune the Case</h1>
+    <p>Change the facts. Restricting his drug is justified paternalism <strong>only</strong> when every knob is set right — switch one off and the scales fall.</p>
+    <phil-balance
+        case="The werewolf is addicted to moon-nectar, a drug that triggers the violent transformations that gravely injure him. Lucid, he demands his supply. He endangers no one else."
+        action="Restrict his access to moon-nectar, against his wishes, for his own good"
+        infringed="Respect for autonomy"
+        honored="Beneficence / nonmaleficence"
+        prompt="<strong>Set each knob ON</strong> only if the case really has that feature. Paternalism is justified only when all are ON:"
+        residue="You still owe him honesty about the restriction, real support through withdrawal, and a plan he can consent to — and you should feel the weight of overruling him.">
+      <phil-cond>The drug is genuinely addictive — his "choice" to keep using isn't fully free.</phil-cond>
+      <phil-cond>The drug itself causes the injuries — remove it and the harm stops.</phil-cond>
+      <phil-cond>Gentler measures (a taper he agreed to, counseling) have already failed.</phil-cond>
+      <phil-cond>You restrict only the drug — the least intrusive step that works.</phil-cond>
+      <phil-cond>You support him through withdrawal and protect his dignity.</phil-cond>
+      <phil-cond>You'd set the same limit for any addicted patient.</phil-cond>
+    </phil-balance>
+  </phil-slide>
+
+  <!-- 23. Checkset: conditions -->
+  <phil-slide>
+    <h1>What Justifies an Override?</h1>
+    <phil-checkset prompt="Check each genuine condition for justifiably overriding a principle."
+                   explain="Right. These come from Beauchamp and Childress: good reasons, necessity, least infringement, impartiality (plus realistic prospect and minimizing harm). A show of hands or a happiness tally is NOT what licenses an override.">
+      <phil-statement correct>You have good reasons that the other principle is weightier here</phil-statement>
+      <phil-statement correct>No less-infringing alternative is available</phil-statement>
+      <phil-statement correct>You infringe as little as the goal requires</phil-statement>
+      <phil-statement correct>You act impartially, as you would for any patient</phil-statement>
+      <phil-statement>A majority of the villagers approves of your choice</phil-statement>
+      <phil-statement>The choice maximizes total happiness, whatever else it costs</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — PARADIGMATIC CONFLICTS ============ -->
+
+  <!-- 24. Compare: confidentiality vs duty to warn -->
+  <phil-slide>
+    <img slot="art" src="./assets/vampire.svg" alt="The vampire Count">
+    <h1>Another Fault Line: Duty to Warn</h1>
+    <p>In confidence, the Count tells you he intends to feed on a <strong>named villager</strong> tonight. Now the danger is to <em>someone else</em>.</p>
+    <phil-compare>
+      <phil-side label="Confidentiality" tag="Trust">
+        <p>What a patient tells you in confidence is, by default, <strong>protected</strong>.</p>
+        <p class="case">Break it lightly and no patient will ever confide the truth again.</p>
+      </phil-side>
+      <phil-side label="Duty to Warn" tag="Protect others">
+        <p>When a third party faces serious, specific danger, you may have to <strong>warn</strong>.</p>
+        <p class="case">The real-world landmark here is <em>Tarasoff</em> (1976). This is harm to others — not paternalism.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 25. More fault lines -->
+  <phil-slide>
+    <img slot="art" src="./assets/creature.svg" alt="A vulnerable newly-risen patient">
+    <h1>The Fault Lines Multiply</h1>
+    <p>Most great debates in bioethics live where two principles meet:</p>
+    <ul reveal>
+      <li><strong>Capacity &amp; consent</strong> — a newly-risen revenant can't grasp her options. Honor a choice she can't really make? Or find a surrogate?</li>
+      <li><strong>Justice &amp; triage</strong> — when the synthetic blood runs short, who gets it, and on what fair rule?</li>
+      <li><strong>End-of-life autonomy</strong> — a weary 400-year-old asks you to help him reach his "final death."</li>
+      <li>Each pits real principles against each other — there is no skipping the weighing.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. MCQ: a case -->
+  <phil-slide>
+    <h1>Reason Through It</h1>
+    <phil-mcq prompt="A newly-risen revenant cannot understand her treatment options. What's the soundest first step?"
+              explain="Right. When capacity is in doubt you neither rubber-stamp nor ignore her words — you assess her decision-making capacity and turn to an appropriate surrogate. That's autonomy, specified for diminished capacity.">
+      <phil-choice correct>Assess her capacity, then involve an appropriate surrogate.</phil-choice>
+      <phil-choice feedback="Honoring a choice she can't actually understand isn't respect for autonomy — it's abandoning her.">Treat her refusal exactly as a fully competent one.</phil-choice>
+      <phil-choice feedback="Overriding her to maximize village welfare ignores her standing as a patient entirely.">Decide for her by maximizing total village welfare.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 6 — MORAL RESIDUE ============ -->
+
+  <!-- 27. Moral residue -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.svg" alt="Scales, slightly tipped">
+    <h1>The Cost That Remains</h1>
+    <p>Say you were right to override a principle. Van Helsing stops you: "Being justified is not the same as being <em>clean.</em>"</p>
+    <ul reveal>
+      <li>The principle you overrode didn't vanish — it leaves <strong>moral residue</strong>.</li>
+      <li>You may owe <strong>residual duties</strong>: disclose what you did, apologize, follow up, make amends.</li>
+      <li>And the ache you feel — clinicians call it <strong>moral distress</strong> — is a signal, not a malfunction.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. Compare: justified vs residue -->
+  <phil-slide>
+    <h1>Both Things Are True</h1>
+    <phil-compare>
+      <phil-side label="Justified Infringement" tag="You acted rightly">
+        <p>Every condition was met, so overriding the principle was <strong>defensible</strong>.</p>
+        <p class="case">Restricting his moon-nectar to stop grievous self-injury was the right call.</p>
+      </phil-side>
+      <phil-side label="Moral Residue" tag="Something is still owed">
+        <p>The overridden principle still <strong>makes a claim</strong> on you.</p>
+        <p class="case">You owe him honesty, support through withdrawal, and a consented plan — and you should feel it.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 29. MCQ: moral residue -->
+  <phil-slide>
+    <h1>What Residue Asks of You</h1>
+    <phil-mcq prompt="You justifiably broke confidentiality to protect a villager. What does 'moral residue' imply?"
+              explain="Right. Residue means that even a justified override leaves a remainder — the overridden duty still calls for regret and repair, such as disclosure, apology, or follow-up.">
+      <phil-choice feedback="Justification doesn't wipe the slate — the overridden duty still makes a claim on you.">Since you were justified, nothing further is owed.</phil-choice>
+      <phil-choice feedback="Residue doesn't mean you acted wrongly — you were justified; you simply still owe something.">You acted wrongly and should reverse the decision.</phil-choice>
+      <phil-choice correct>Though justified, you still owe regret and follow-up.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ GRADUATION ============ -->
+
+  <!-- 30. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/van-helsing.svg" alt="Van Helsing, nodding">
+    <h1>You've Earned the Coat</h1>
+    <p class="lead">Dawn over the mountains. Van Helsing nods. "You have the method now. Use it well."</p>
+    <ul reveal>
+      <li><strong>Common morality</strong> — shared norms, <em>specified and extended</em> for the clinic.</li>
+      <li><strong>Four principles</strong> — autonomy, nonmaleficence, beneficence, justice: equal and prima facie.</li>
+      <li><strong>Specify, then weigh</strong> — and override only when every condition holds.</li>
+      <li><strong>Moral residue</strong> — even when you're right, honor what's still owed.</li>
+    </ul>
+    <p class="muted">Visit every slide and answer every question correctly to fill the bar and complete your training.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

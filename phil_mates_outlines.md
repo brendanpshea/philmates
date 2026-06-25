@@ -267,3 +267,162 @@ imperfect-duty deep dive).
 - **Korsgaard does double duty** (lying *and* animals), deliberately reuniting the
   two lessons' "who counts" thread.
 - Build the `<phil-maxim-tester>` viz in v1, or stub the slide first?
+
+---
+
+## Bioethics: The Four Principles — "Rounds with Van Helsing"  *(built)*
+
+- **Path:** `lessons/bioethics/four-principles/`  (new topic folder → new catalog section)
+- **Lesson id:** `bioethics-four-principles` (proposed)
+- **Topic:** Bioethics (intro / principlism). First lesson in a new course strand.
+- **Approach:** Teach Beauchamp & Childress's principlism as a *method of reasoning*
+  (not a rulebook), using monstrous patients as vivid, low-stakes stand-ins for
+  real clinical dilemmas. Same devices: story frame, `reveal` bullets,
+  `<phil-compare>` cards, an interactive viz, graded checks.
+- **Narrative frame — Transylvania:** You are a young doctor apprenticed to
+  **Doctor Van Helsing**, who runs a clinic for the region's monstrous residents.
+  Across one night of "rounds," he teaches you to reason through cases involving a
+  vampire Count, a werewolf, a newly-risen revenant, and Frankenstein's Creature.
+- **Recurring "patients":** the Count (vampire), the werewolf, the revenant
+  (newly-risen, capacity questions), Frankenstein's Creature, and the villagers —
+  plus a scarce supply of **synthetic blood** as the running resource.
+
+### Accuracy note (real, not invented)
+Principlism is **Beauchamp & Childress, *Principles of Biomedical Ethics***. Keep
+faithful: four co-equal, **prima facie** principles (prima facie = W. D. Ross);
+**specification** = Henry Richardson; **balancing** + the **conditions for
+justified infringement** are B&C's; **moral residue/remainder** traces to Bernard
+Williams, and clinician **moral distress** to Andrew Jameton. Don't invent
+conditions or quotations. Monsters are the *examples*; the framework is real.
+
+### Learning goals
+- Say what the **common morality** is and why bioethics must **specify/extend** it.
+- Name and apply the **four principles** — respect for **autonomy**,
+  **nonmaleficence**, **beneficence**, **justice** — and explain that they are
+  **co-equal and prima facie** (no fixed hierarchy).
+- Explain and perform **specification** (make an abstract principle concrete).
+- Explain **weighing/balancing** and the **conditions for justified infringement**.
+- Work paradigmatic **conflicts** (paternalism; confidentiality vs duty to warn;
+  capacity & surrogate consent; triage/justice; end-of-life autonomy).
+- Define **moral residue** and the residual duties a justified override leaves.
+
+### Slide-by-slide
+
+**Act 0 — Arrival**
+1. **[T]** Title — "Rounds with Van Helsing" (art: Van Helsing / castle clinic).
+2. **[T]** The apprenticeship — the clinic treats Transylvania's monsters; tonight
+   you learn to *reason*, not memorize, `reveal`.
+
+**Act 1 — Common morality**
+3. **[T]** What common morality is — norms all morally serious people share (don't
+   kill, don't cause suffering, keep promises, be fair), `reveal`.
+4. **[T]** Why medicine needs more — power asymmetry, vulnerability, special
+   professional roles; bioethics **specifies and extends** common morality, `reveal`.
+5. **[C]** Common morality (shared, universal, general) vs Bioethical principles
+   (specified for the clinic).
+6. **[Q · MCQ]** What "common morality" is / why it must be extended.
+
+**Act 2 — The four principles**
+7. **[T]** Meet the four — autonomy, nonmaleficence, beneficence, justice; **all
+   equal, none ranked**, `reveal`.
+8. **[T]** Respect for **autonomy** — informed, competent choices. Ex: the Count
+   refuses a proposed therapy, `reveal`.
+9. **[T]** **Nonmaleficence** — *primum non nocere*; do no harm. Ex: never dose a
+   werewolf with silver, `reveal`.
+10. **[T]** **Beneficence** — actively benefit; balance benefits against risks. Ex:
+    synthetic blood both helps the Count and protects others, `reveal`.
+11. **[T]** **Justice** — fair distribution of benefits and burdens. Ex: scarce
+    synthetic blood among monsters and villagers, `reveal`.
+12. **[T]** **Prima facie** (Ross) — each binds *unless* outweighed by another in a
+    conflict; no standing hierarchy, `reveal`.
+13. **[Q · Checkset]** Pick the four principles (distractors: maximize utility, the
+    categorical imperative, the golden mean — callbacks to Lessons 1–2).
+14. **[Q · MCQ]** What "prima facie" means.
+
+**Act 3 — Specification**
+15. **[T]** Principles are abstract — "respect autonomy" doesn't tell you what to do
+    at 2 a.m. with a thrashing werewolf, `reveal`.
+16. **[T]** **Specification** (Richardson) — narrow a principle to the context to
+    guide action and pre-empt conflicts; worked example specifying consent for
+    wolfsbane, `reveal`.
+17. **[C]** Specification (make a principle concrete) vs Balancing (weigh competing
+    principles) — two different operations.
+18. **[Q · Cloze]** Specification turns an *abstract* norm into a *specified* one
+    (Richardson).
+
+**Act 4 — Weighing & balancing**
+19. **[T]** When specified principles still collide, you must **weigh and balance** —
+    judgment, not a formula, `reveal`.
+20. **[T]** **Conditions for justified infringement** (B&C): good reason; realistic
+    prospect; necessity (no preferable alternative); least infringement; minimize
+    negative effects; act impartially, `reveal`.
+21. **[V]** **"The Scales of Van Helsing"** (`<phil-balance>`) — pick a case, see
+    the two principles in tension, toggle the justification conditions as met/unmet,
+    and watch whether overriding is justified — plus the **residue** it leaves.
+    Ungraded; ties Acts 4–6 together.
+22. **[Q · Checkset]** Which are genuine B&C conditions for justified infringement
+    (distractors: "the majority approves," "it maximizes total happiness").
+
+**Act 5 — Paradigmatic conflicts (core debates, monstrous examples)**
+23. **[C]** **Paternalism** — Autonomy vs Beneficence/Nonmaleficence: the werewolf
+    refuses to be chained at the full moon.
+24. **[C]** **Confidentiality vs Duty to Warn** — the Count confides he means to
+    feed on a named villager (the *Tarasoff* problem).
+25. **[T]** More fault lines — **capacity & surrogate consent** (the newly-risen
+    revenant), **triage/justice** (scarce synthetic blood), **end-of-life autonomy**
+    (a 400-year-old's request for "final death"), `reveal`.
+26. **[Q · MCQ]** A case: which two principles conflict, and the soundest first move
+    (specify; seek the least-infringing option).
+
+**Act 6 — Moral residue**
+27. **[T]** **Moral residue** — even a *justified* override leaves a remainder:
+    regret, and residual duties (disclose, apologize, follow up, make amends); link
+    to clinician **moral distress**, `reveal`.
+28. **[C]** Justified infringement (you acted rightly) vs Moral residue (something is
+    still owed) — the two coexist.
+29. **[Q · MCQ]** What moral residue is and what it asks of you.
+
+**Graduation**
+30. **[T]** Van Helsing's parting lesson — principlism is a disciplined way to
+    *reason*, not a rulebook; recap of the night, `reveal`.
+
+### Comparisons (where each `<phil-compare>` lives)
+Common morality vs bioethical principles (5) · Specification vs Balancing (17) ·
+Paternalism: Autonomy vs Beneficence (23) · Confidentiality vs Duty to Warn (24) ·
+Justified infringement vs Moral residue (28).
+
+### New interactive viz to build
+**`<phil-balance>` ("The Scales of Van Helsing")** — author supplies a case naming
+two conflicting principles plus the B&C justification conditions; the student
+toggles each condition met/unmet; when the bar of conditions is satisfied the
+override reads as **justified**, and the overridden principle's **residue** (the
+duty still owed) is surfaced. Reusable for any conflict-of-duties case. Ungraded.
+
+### Art assets (16-bit SVGs)
+`van-helsing`, `vampire` (the Count), `werewolf`, `creature` (Frankenstein's),
+`scales` (medical balance), `blood-vial` (synthetic blood); optional
+`castle-clinic`; plus `prompts.md`.
+
+### Sources to cite (so nothing is invented)
+- Beauchamp & Childress, *Principles of Biomedical Ethics* (the four principles,
+  common morality, specification, balancing, conditions for justified infringement,
+  moral residue).
+- W. D. Ross, *The Right and the Good* (prima facie duties).
+- Henry Richardson, "Specifying Norms as a Way to Resolve Concrete Ethical
+  Problems" (1990).
+- *Tarasoff v. Regents of the University of California* (1976) — duty to warn.
+- Andrew Jameton, *Nursing Practice: The Ethical Issues* (1984) — "moral distress";
+  Bernard Williams on moral remainder/regret.
+
+### Counts (target)
+~30 slides. ~7 graded (3 MCQ, 2 checkset, 1 cloze, +1 case MCQ) + 1 viz + 5
+comparisons ≈ 40% interactive. Remember to **vary correct-answer positions and
+balance option lengths** — run `node tools/validate-quizzes.mjs` before commit.
+
+### Open decisions before building
+- **Scope of debates in Act 5:** four fault lines are a lot — keep two as full
+  `<phil-compare>` slides (paternalism, duty-to-warn) and the rest as one survey
+  slide (as outlined), or expand one into an optional `<phil-branch>` deep dive?
+- **`<phil-balance>` viz** in v1, or stub the slide and add the viz second?
+- New **`bioethics`** topic folder means the homepage will show a second topic
+  section (the catalog already groups by folder — no code needed).

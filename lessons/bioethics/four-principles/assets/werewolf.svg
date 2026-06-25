@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Pixel portrait of a werewolf patient with a bandage on its head">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <rect y="62" width="64" height="18" fill="#262c44"/>
+  <!-- shoulders / fur -->
+  <rect x="14" y="52" width="36" height="24" fill="#5a4632"/>
+  <rect x="18" y="52" width="28" height="24" fill="#6e5640"/>
+  <!-- ears -->
+  <rect x="16" y="14" width="10" height="12" fill="#5a4632"/>
+  <rect x="38" y="14" width="10" height="12" fill="#5a4632"/>
+  <rect x="19" y="17" width="4" height="6" fill="#3f3120"/>
+  <rect x="41" y="17" width="4" height="6" fill="#3f3120"/>
+  <!-- head -->
+  <rect x="18" y="22" width="28" height="24" fill="#6e5640"/>
+  <!-- snout -->
+  <rect x="24" y="40" width="16" height="12" fill="#7d6349"/>
+  <rect x="28" y="48" width="8" height="4" fill="#11131f"/>
+  <!-- yellow eyes -->
+  <rect x="24" y="30" width="6" height="4" fill="#ffd24a"/>
+  <rect x="34" y="30" width="6" height="4" fill="#ffd24a"/>
+  <rect x="26" y="31" width="2" height="2" fill="#11131f"/>
+  <rect x="36" y="31" width="2" height="2" fill="#11131f"/>
+  <!-- fangs -->
+  <rect x="26" y="44" width="2" height="4" fill="#f2eedd"/>
+  <rect x="36" y="44" width="2" height="4" fill="#f2eedd"/>
+  <!-- bandage across the head (self-injury) -->
+  <rect x="16" y="24" width="32" height="5" fill="#f2eedd"/>
+  <rect x="29" y="22" width="6" height="9" fill="#e7c6cf"/>
+  <rect x="30" y="25" width="4" height="1" fill="#d98aa8"/>
+  <rect x="31" y="23" width="1" height="5" fill="#d98aa8"/>
+</svg>
