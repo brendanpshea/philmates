@@ -70,10 +70,13 @@ class PhilLesson extends HTMLElement {
 
     const top = el('header', 'phil-top');
     const row = el('div', 'phil-top__row');
-    row.append(
-      el('h1', 'phil-title', this.getAttribute('title') || 'PhilMates'),
-      this._tally = el('span', 'phil-tally', '')
-    );
+    this._tally = el('span', 'phil-tally', '');
+    const reset = el('button', 'phil-btn phil-btn--ghost phil-reset', '↺ Reset');
+    reset.title = 'Reset this lesson’s progress';
+    reset.onclick = () => this._confirmReset();
+    const right = el('div', 'phil-top__right');
+    right.append(this._tally, reset);
+    row.append(el('h1', 'phil-title', this.getAttribute('title') || 'PhilMates'), right);
     const bar = el('div', 'phil-progress');
     this._fill = el('div', 'phil-progress__fill');
     bar.append(this._fill);
@@ -100,13 +103,40 @@ class PhilLesson extends HTMLElement {
     this.append(top, this._stage, bottom);
 
     document.addEventListener('keydown', e => {
-      if (isTyping()) return;
+      if (isTyping() || document.querySelector('.phil-modal')) return;
       if (e.key === 'ArrowRight') this.next();
       else if (e.key === 'ArrowLeft') this.prev();
       else if (e.key.toLowerCase() === 'f') this.toggleFullscreen();
     });
   }
   _wrap(cls, kids) { const w = el('div', cls); w.append(...kids); return w; }
+
+  /* ---- reset progress (with confirmation) ---- */
+  _confirmReset() {
+    if (document.querySelector('.phil-modal')) return;
+    const overlay = el('div', 'phil-modal');
+    const box = el('div', 'phil-modal__box');
+    box.append(
+      el('p', 'phil-modal__title', '↺ Reset this lesson?'),
+      el('p', null, 'This clears your progress — every slide and question starts over. This can’t be undone.')
+    );
+    const cancel = el('button', 'phil-btn', 'Cancel');
+    const confirm = el('button', 'phil-btn phil-btn--danger', 'Yes, reset');
+    const actions = el('div', 'phil-modal__actions');
+    actions.append(cancel, confirm);
+    box.append(actions);
+    overlay.append(box);
+
+    const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey, true); };
+    const onKey = e => { if (e.key === 'Escape') { e.preventDefault(); close(); } };
+    cancel.onclick = close;
+    overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+    document.addEventListener('keydown', onKey, true);
+    confirm.onclick = () => { this.store.reset(); location.reload(); };
+
+    document.body.append(overlay);
+    cancel.focus();
+  }
 
   /* ---- split each slide into art / body regions ---- */
   _prepareSlide(slide) {

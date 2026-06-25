@@ -46,6 +46,10 @@ click through), but 100% requires both. Progress is saved per-lesson in
 `localStorage`; the same `ProgressStore` interface is where a SCORM adapter will
 later hook in.
 
+The top bar also has a **↺ Reset** button (built in — you don't author it). It
+pops a confirmation, then clears this lesson's saved progress and reloads to a
+clean slide 1. Handy for re-running a lesson live in class.
+
 ## Widgets
 
 ### Multiple choice — `<phil-mcq>`
