@@ -416,6 +416,31 @@ class PhilBranch extends HTMLElement {
   }
 }
 
+/* ---------- <phil-compare> : reusable side-by-side comparison ----------
+   <phil-compare>
+     <phil-side label="Act Utilitarianism" tag="This act">
+       <p>...the stance...</p>
+       <p class="cake">...the cake example...</p>
+     </phil-side>
+     <phil-side label="Rule Utilitarianism" tag="The rule"> ... </phil-side>
+   </phil-compare>
+   Teaching only (not graded). Two sides get a "VS" badge between them.
+------------------------------------------------------------------ */
+class PhilCompare extends HTMLElement {
+  connectedCallback() {
+    if (this._init) return; this._init = true;
+    this.classList.add('phil-compare');
+    const sides = [...this.querySelectorAll(':scope > phil-side')];
+    sides.forEach(s => {
+      const head = el('div', 'phil-side__head');
+      if (s.hasAttribute('tag')) head.append(el('span', 'phil-side__tag', s.getAttribute('tag')));
+      head.append(el('span', 'phil-side__label', s.getAttribute('label') || ''));
+      s.prepend(head);
+    });
+    if (sides.length === 2) this.append(el('div', 'phil-vs', 'VS'));
+  }
+}
+
 /* ---- inject "Back to lesson" on optional slides when shown ---- */
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('phil-slide[optional]').forEach(s => {
@@ -431,3 +456,4 @@ customElements.define('phil-mcq', PhilMcq);
 customElements.define('phil-checkset', PhilCheckset);
 customElements.define('phil-cloze', PhilCloze);
 customElements.define('phil-branch', PhilBranch);
+customElements.define('phil-compare', PhilCompare);

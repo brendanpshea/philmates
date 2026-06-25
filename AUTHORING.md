@@ -77,6 +77,25 @@ Correct = the checked set exactly matches the `correct` statements.
 - `answer="a|b|c"` → free-text blank; any listed value (case-insensitive) is accepted.
 - `options="x,y,z"` → dropdown blank. First accepted/option value is the answer.
 
+### Side-by-side comparison — `<phil-compare>` (teaching, not graded)
+For contrasting two positions (e.g. Act vs. Rule). Each `<phil-side>` takes a
+`label` and optional short `tag`; a "VS" badge is drawn between two sides.
+```html
+<phil-compare>
+  <phil-side label="Act Utilitarianism" tag="This act">
+    <p>Judge each action by its own consequences.</p>
+    <p class="cake">Cake example — text after a 🍰 marker.</p>
+  </phil-side>
+  <phil-side label="Rule Utilitarianism" tag="The rule">
+    <p>Follow the rules that generally maximize happiness.</p>
+    <p class="cake">Keep the rule "share treats with friends."</p>
+  </phil-side>
+</phil-compare>
+```
+A `<p class="cake">` gets a dessert marker and accent border — use it for the
+concrete example. Two sides stack on narrow screens. (For three positions, add a
+third `<phil-side>`; the VS badge only appears with exactly two.)
+
 ### Optional detour — `<phil-branch>`
 ```html
 <phil-branch prompt="Want the deep dive?">
