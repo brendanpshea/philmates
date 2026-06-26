@@ -3,7 +3,15 @@
    16-bit console reference aesthetic. Load once per lesson.
    ===================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Self-hosted so lessons work offline / on restricted networks (no CDN dependency).
+   Press Start 2P by CodeMan38, SIL Open Font License 1.1. */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/shared/assets/fonts/press-start-2p.woff2') format('woff2');
+}
 
 :root {
   /* ---- palette (NES/SNES-ish) ---- */
