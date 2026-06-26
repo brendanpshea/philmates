@@ -32,6 +32,10 @@ npx serve .        # or: python -m http.server
 ```
 
 - `id` must be unique — it's the localStorage progress key.
+- `title` is the story title shown in the lesson's top bar (keep it short).
+- `subject` names the philosophical topic (e.g. `subject="Utilitarianism"`). The
+  homepage catalog shows it next to the title — `Story Title (Subject)` — so
+  instructors can see at a glance what a lesson covers. Always set it.
 - Each `<phil-slide>` is one projector screen.
 - Add an illustration with `slot="art"` on an `<img>` or inline `<svg>`:
   `<img slot="art" src="./assets/foo.svg" alt="describe it">` (alt text required).

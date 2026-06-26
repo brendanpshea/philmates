@@ -24,6 +24,7 @@ async function collect() {
       (topics[topic] ||= []).push({
         href: `lessons/${topic}/${lesson}/index.html`,
         title: grab(html, /<phil-lesson[^>]*\btitle="([^"]+)"/i) || lesson,
+        subject: grab(html, /<phil-lesson[^>]*\bsubject="([^"]+)"/i),
         desc:  grab(html, /<meta\s+name="description"\s+content="([^"]+)"/i),
       });
     }
@@ -42,7 +43,7 @@ function render(topics) {
       <div class="cards">
         ${lessons.map(l => `
         <a class="card" href="${l.href}">
-          <h3>${l.title}</h3>
+          <h3>${l.title}${l.subject ? ` <span class="card-topic">(${l.subject})</span>` : ''}</h3>
           <p>${l.desc || ''}</p>
         </a>`).join('')}
       </div>
@@ -54,6 +55,7 @@ function render(topics) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PhilMates — Bite-sized Philosophy Activities</title>
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/favicon.svg">
   <link rel="stylesheet" href="/shared/phil-core.css">
   <style>
     body { padding: 0; }
@@ -67,6 +69,7 @@ function render(topics) {
     .card:hover { transform: translateY(-3px); background: #313a5e; }
     .card:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--shadow); }
     .card h3 { font-family: var(--pixel); font-size: 12px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
+    .card-topic { font-family: var(--body); font-weight: 400; font-size: 15px; color: var(--accent-3); }
     .card p { color: var(--muted); font-size: .9em; margin: 0; }
   </style>
 </head>
