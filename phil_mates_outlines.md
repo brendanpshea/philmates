@@ -432,3 +432,150 @@ balance option lengths** — run `node tools/validate-quizzes.mjs` before commit
 - **`<phil-balance>` viz** in v1, or stub the slide and add the viz second?
 - New **`bioethics`** topic folder means the homepage will show a second topic
   section (the catalog already groups by folder — no code needed).
+
+---
+
+## Bioethics: Patient Autonomy — "House Calls in the Hedgerow"  *(built)*
+
+- **Path:** `lessons/bioethics/patient-autonomy/`
+- **Lesson id:** `bioethics-autonomy` (proposed)
+- **Subject (catalog):** `Patient Autonomy`
+- **Topic:** Bioethics (second lesson in the strand).
+- **Approach:** Two practical skills — (1) what makes consent genuinely *informed*,
+  and (2) Emanuel & Emanuel's four models of the clinical relationship — taught
+  through a country doctor's caseload. Same devices: story frame, `reveal`,
+  `<phil-compare>`, an interactive viz, the belief probe, graded checks.
+- **Narrative frame — the world of Peter Rabbit (wry, slightly grown-up):** You are
+  the new village doctor among talking animals. Your patients make their own
+  (often questionable) choices, and your job is to support those choices well —
+  not just to be right.
+- **Recurring patients:** **Peter Rabbit** (reckless garden-raider — the running
+  case for the four models), **Jemima Puddle-Duck** (naive, manipulated by the
+  "gentleman with sandy whiskers" — voluntariness), **Squirrel Nutkin** (impulsive,
+  can't appreciate consequences — capacity), **Mrs. Tiggy-Winkle** (sensible, just
+  wants the facts — the informative-model patient).
+
+### Accuracy note (real, not invented)
+- Informed-consent elements follow **Faden & Beauchamp** / **Beauchamp & Childress**:
+  capacity, disclosure, understanding, voluntariness, authorization.
+- Capacity abilities (understand, appreciate, reason, communicate) per
+  **Appelbaum & Grisso**.
+- Disclosure standards (reasonable-physician vs reasonable-patient) — *Canterbury
+  v. Spence* (1972).
+- The four models are **Emanuel & Emanuel, "Four Models of the Physician-Patient
+  Relationship," JAMA 1992.** They argue the **deliberative** model is the
+  preferable ideal (paternalism justified mainly in emergencies; the informative
+  model too thin) — present that faithfully, with their caveats. Animals are the
+  examples; the frameworks are real.
+
+### Learning goals
+- List the **requirements of informed consent** and explain why each matters.
+- Distinguish **persuasion** (legitimate) from **manipulation/coercion** (which
+  void voluntariness); name the **disclosure standards**.
+- Assess **decision-making capacity** as decision-specific (the four abilities).
+- Describe **Emanuel's four models** (paternalistic, informative, interpretive,
+  deliberative), the physician role and conception of **autonomy** in each, and
+  why the Emanuels defend the deliberative model.
+
+### Slide-by-slide
+
+**Act 0 — The new doctor**
+1. **[T]** Title — "House Calls in the Hedgerow" (art: doctor's bag / village clinic).
+2. **[T]** Setup — talking-animal patients who make their own choices; tonight's two
+   skills: real consent, and how to relate to patients, `reveal`.
+3. **[P]** Belief probe (start) — 5 autonomy statements (see below).
+
+**Act 1 — Informed consent**
+4. **[T]** Why consent matters — it's what makes treatment *the patient's*, not done
+   *to* them, `reveal`.
+5. **[T]** Requirement — **Capacity** (decision-specific: understand, appreciate,
+   reason, communicate). Ex: Squirrel Nutkin can't appreciate consequences, `reveal`.
+6. **[T]** Requirement — **Disclosure** (diagnosis, proposed treatment, risks,
+   benefits, alternatives, and doing nothing). Ex: Peter's tummy-ache, `reveal`.
+7. **[C]** Disclosure standards — **Reasonable-physician** vs **Reasonable-patient**
+   (*Canterbury v. Spence*).
+8. **[T]** Requirement — **Understanding** (told ≠ grasped; use teach-back), `reveal`.
+9. **[T]** Requirement — **Voluntariness** (free of coercion/manipulation/undue
+   influence). Ex: the sandy-whiskered fox "consenting" Jemima into his oven, `reveal`.
+10. **[C]** **Persuasion vs Manipulation/Coercion** (legitimate vs illegitimate influence).
+11. **[T]** Requirement — **Authorization** (consent is an *act*: the patient actually
+   agrees to the plan), `reveal`.
+12. **[V]** **"The Consent-o-Meter"** — toggle the five requirements for a case;
+   consent reads *valid* only when all are present, and each missing one names the
+   defect ("understanding off → not *informed*"; "voluntariness off → not *free*").
+   (New viz; generalizes the all-elements-required pattern.)
+13. **[Q · Checkset]** Which are required elements of informed consent (distractors:
+   "the doctor approves the choice," "the family agrees").
+14. **[Q · MCQ]** Capacity case (Nutkin) — what element is missing.
+15. **[Q · MCQ]** Voluntariness case (Jemima) — manipulation voids consent.
+16. **[T]** When consent rules bend — emergencies, waiver, incapacity → surrogate, `reveal`.
+
+**Act 2 — Emanuel's four models**
+17. **[T]** Beyond consent: *how* should doctor and patient relate? Intro the four
+   models (Emanuel & Emanuel, 1992), `reveal`.
+18. **[T]** **Paternalistic** — physician as guardian; decides what's best, patient
+   assents. Autonomy = assent to objective goods, `reveal`.
+19. **[T]** **Informative** — physician as technician; gives facts, patient chooses.
+   Autonomy = control/choice. Ex: Mrs. Tiggy-Winkle wants just the facts, `reveal`.
+20. **[C]** **Paternalistic vs Informative** (the two extremes).
+21. **[T]** **Interpretive** — physician as counselor; helps the patient clarify and
+   articulate values, then choose accordingly. Autonomy = self-understanding, `reveal`.
+22. **[T]** **Deliberative** — physician as teacher/friend; engages the patient about
+   which health values are worth pursuing; persuades (never coerces). Autonomy =
+   moral self-development, `reveal`.
+23. **[C]** **Interpretive vs Deliberative** (clarify values you have vs develop the
+   values worth having).
+24. **[T]** One case, four doctors — Peter's reckless garden-raiding seen through each
+   model (a single running case), `reveal`.
+25. **[Q · MCQ]** Match a doctor's line to its model.
+26. **[Q · Checkset]** True claims about how the models conceive the physician's role
+   / patient autonomy (distractors mix the models up).
+27. **[T]** The Emanuels' verdict — they defend the **deliberative** model as the
+   ideal (teacher/friend), with paternalism reserved for emergencies and the
+   informative model judged too thin, `reveal`.
+28. **[Q · MCQ]** Which model do the Emanuels defend as the ideal, and why.
+
+**Act 3 — Rounds end**
+29. **[P]** Belief probe (revisit) — has the day changed your view?
+30. **[T]** Recap — consent requirements + four models + autonomy as *more than
+   non-interference*, `reveal`.
+
+### Belief-probe statements (start; revisited at end)
+1. A doctor should give the facts and then step back and let the patient choose.
+2. If a patient is making a clearly bad choice, a good doctor should talk them out of it.
+3. A patient can give valid consent even without really understanding the risks.
+4. Pressuring a patient "for their own good" is sometimes acceptable.
+5. Part of a doctor's job is helping patients work out what they truly value.
+
+### Comparisons (where each `<phil-compare>` lives)
+Reasonable-physician vs reasonable-patient (7) · Persuasion vs manipulation (10) ·
+Paternalistic vs informative (20) · Interpretive vs deliberative (23).
+
+### New interactive viz to build
+**`<phil-consent>` ("The Consent-o-Meter")** — five toggles (capacity, disclosure,
+understanding, voluntariness, authorization); a validity verdict that's positive
+only when all are on; each off-toggle names the specific defect. Ungraded; a clean
+generalization of the "all elements required" idea (sibling to `<phil-balance>`).
+
+### Art assets (16-bit SVGs)
+`doctor-bag` (or village clinic), `peter-rabbit`, `jemima-duck`, `squirrel`,
+`hedgehog` (Tiggy-Winkle), `fox` (the sandy-whiskered gentleman); plus `prompts.md`.
+
+### Sources to cite (so nothing is invented)
+- Faden & Beauchamp, *A History and Theory of Informed Consent* (1986); Beauchamp
+  & Childress, *Principles of Biomedical Ethics* (consent elements).
+- Appelbaum & Grisso, "Assessing Patients' Capacities to Consent to Treatment"
+  (NEJM, 1988).
+- *Canterbury v. Spence* (1972) — reasonable-patient disclosure standard.
+- Emanuel & Emanuel, "Four Models of the Physician-Patient Relationship" (JAMA, 1992).
+
+### Counts (target)
+~30 slides. Belief probe (start+revisit) + ~7 graded (3 MCQ, 2 checkset, +case MCQ,
++ a capacity/voluntariness MCQ) + 1 viz + 4 comparisons ≈ 45% interactive.
+
+### Open decisions before building
+- **`<phil-consent>` viz** in v1, or reuse/generalize `<phil-balance>` instead?
+- **Peter-across-four-models (slide 24):** keep as one teaching slide, or make it an
+  interactive "pick the model" selector viz?
+- Tone calibration: "slightly grown-up Peter Rabbit" — confirm how wry you want it
+  (e.g., the fox slide plays the manipulation for dark comedy).

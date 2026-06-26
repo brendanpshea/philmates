@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Peter Rabbit in a blue jacket, looking a little guilty">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <rect y="62" width="64" height="18" fill="#26402c"/>
+  <!-- ears -->
+  <rect x="22" y="6" width="6" height="20" fill="#9a6b45"/>
+  <rect x="36" y="6" width="6" height="20" fill="#9a6b45"/>
+  <rect x="23" y="9" width="4" height="13" fill="#e7a9c2"/>
+  <rect x="37" y="9" width="4" height="13" fill="#e7a9c2"/>
+  <!-- head -->
+  <rect x="20" y="24" width="24" height="22" fill="#b07d50"/>
+  <rect x="20" y="24" width="24" height="5" fill="#9a6b45"/>
+  <!-- eyes (glancing aside, guilty) -->
+  <rect x="25" y="31" width="5" height="5" fill="#11131f"/>
+  <rect x="34" y="31" width="5" height="5" fill="#11131f"/>
+  <rect x="28" y="32" width="1" height="1" fill="#fff"/>
+  <rect x="37" y="32" width="1" height="1" fill="#fff"/>
+  <!-- nose + whiskers -->
+  <rect x="30" y="38" width="4" height="3" fill="#e7a9c2"/>
+  <rect x="14" y="39" width="8" height="1" fill="#cdd3e8"/>
+  <rect x="42" y="39" width="8" height="1" fill="#cdd3e8"/>
+  <!-- blue jacket -->
+  <rect x="16" y="46" width="32" height="30" fill="#2f5aa6"/>
+  <rect x="20" y="46" width="24" height="30" fill="#3a6fc4"/>
+  <rect x="30" y="48" width="4" height="28" fill="#264a86"/>
+  <!-- brass buttons -->
+  <rect x="31" y="52" width="2" height="2" fill="#ffd24a"/>
+  <rect x="31" y="58" width="2" height="2" fill="#ffd24a"/>
+  <rect x="31" y="64" width="2" height="2" fill="#ffd24a"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 64" shape-rendering="crispEdges" role="img" aria-label="A country doctor's medical bag">
+  <rect width="80" height="64" fill="#1d2235"/>
+  <!-- bag body -->
+  <rect x="16" y="24" width="48" height="30" fill="#2a1d14"/>
+  <rect x="18" y="26" width="44" height="26" fill="#3c2a1c"/>
+  <rect x="16" y="50" width="48" height="4" fill="#22160e"/>
+  <!-- top opening / frame -->
+  <rect x="18" y="20" width="44" height="6" fill="#4a3424"/>
+  <rect x="14" y="22" width="6" height="4" fill="#9a7b52"/>
+  <rect x="60" y="22" width="6" height="4" fill="#9a7b52"/>
+  <!-- handle -->
+  <rect x="30" y="12" width="20" height="4" fill="#5a4128"/>
+  <rect x="30" y="12" width="4" height="9" fill="#5a4128"/>
+  <rect x="46" y="12" width="4" height="9" fill="#5a4128"/>
+  <!-- clasp -->
+  <rect x="37" y="20" width="6" height="6" fill="#ffd24a"/>
+  <!-- medical cross -->
+  <rect x="36" y="34" width="8" height="2" fill="#46e07a"/>
+  <rect x="39" y="31" width="2" height="8" fill="#46e07a"/>
+  <!-- highlight -->
+  <rect x="20" y="28" width="3" height="18" fill="#4c3826"/>
+</svg>

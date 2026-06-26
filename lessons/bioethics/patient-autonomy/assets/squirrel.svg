@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="A cheeky red squirrel with a big bushy tail">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <rect y="62" width="64" height="18" fill="#26402c"/>
+  <!-- bushy tail -->
+  <rect x="44" y="30" width="14" height="40" fill="#b5491f"/>
+  <rect x="48" y="26" width="10" height="40" fill="#cf5a28"/>
+  <rect x="50" y="22" width="6" height="14" fill="#e0703a"/>
+  <!-- body -->
+  <rect x="20" y="48" width="24" height="26" fill="#cf5a28"/>
+  <rect x="24" y="52" width="14" height="20" fill="#e9c9a8"/>
+  <!-- ears with tufts -->
+  <rect x="22" y="14" width="6" height="10" fill="#cf5a28"/>
+  <rect x="36" y="14" width="6" height="10" fill="#cf5a28"/>
+  <rect x="23" y="10" width="3" height="5" fill="#b5491f"/>
+  <rect x="38" y="10" width="3" height="5" fill="#b5491f"/>
+  <!-- head -->
+  <rect x="20" y="22" width="24" height="24" fill="#e0703a"/>
+  <!-- eyes (wide, impulsive) -->
+  <rect x="25" y="29" width="6" height="6" fill="#11131f"/>
+  <rect x="34" y="29" width="6" height="6" fill="#11131f"/>
+  <rect x="27" y="30" width="2" height="2" fill="#fff"/>
+  <rect x="36" y="30" width="2" height="2" fill="#fff"/>
+  <!-- nose + cheeky grin -->
+  <rect x="30" y="37" width="4" height="3" fill="#7a3315"/>
+  <rect x="27" y="41" width="10" height="2" fill="#7a3315"/>
+  <rect x="26" y="40" width="2" height="2" fill="#fff"/>
+</svg>

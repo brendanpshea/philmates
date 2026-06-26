@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House Calls in the Hedgerow: Patient Autonomy · PhilMates</title>
+  <meta name="description" content="A country doctor in the world of Peter Rabbit learns what makes consent truly informed, and Emanuel's four models of the doctor–patient relationship.">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/favicon.svg">
+  <link rel="stylesheet" href="/shared/phil-core.css">
+  <script type="module" src="/shared/phil-core.js"></script>
+  <script type="module" src="./assets/consent.js"></script>
+  <script type="module" src="./assets/pick-model.js"></script>
+</head>
+<body>
+
+<phil-lesson id="bioethics-autonomy" title="House Calls in the Hedgerow" subject="Patient Autonomy">
+
+  <!-- ============ ACT 0 — THE NEW DOCTOR ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/doctor-bag.svg" alt="A country doctor's medical bag">
+    <h1>House Calls in the Hedgerow</h1>
+    <p class="lead">You're the new doctor in a village of talking animals. Your patients are clever, stubborn, and absolutely intend to make their own decisions.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/peter-rabbit.svg" alt="Peter Rabbit looking guilty">
+    <h1>Your Job, Really</h1>
+    <p class="lead">"Curing them is the easy part," the old doctor warns before retiring. "Respecting them is the trick."</p>
+    <ul reveal>
+      <li>Today you learn two skills the textbooks rush past.</li>
+      <li>First: how to get consent that's actually <strong>informed</strong>, not just a signature.</li>
+      <li>Second: how to <em>relate</em> to a patient — and there's more than one good way.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe (start) -->
+  <phil-slide>
+    <h1>Before Your First Patient</h1>
+    <p>Five gut-checks — <strong>no right answers.</strong> Just say where you stand; we'll revisit them at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>A doctor should give the facts and then step back and let the patient choose.</phil-statement>
+      <phil-statement>If a patient is making a clearly bad choice, a good doctor should talk them out of it.</phil-statement>
+      <phil-statement>A patient can give valid consent even without really understanding the risks.</phil-statement>
+      <phil-statement>Pressuring a patient "for their own good" is sometimes acceptable.</phil-statement>
+      <phil-statement>Part of a doctor's job is helping patients work out what they truly value.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — INFORMED CONSENT ============ -->
+
+  <!-- 4. Why consent matters -->
+  <phil-slide>
+    <h1>Why Consent Matters</h1>
+    <p>Treatment without consent — however well-meant — is something done <em>to</em> a patient. Consent is what makes it something done <strong>with</strong> them.</p>
+    <ul reveal>
+      <li>It's the practical face of <strong>respect for autonomy</strong>: their body, their call.</li>
+      <li>And it isn't one thing — valid <em>informed</em> consent has <strong>five ingredients</strong>.</li>
+      <li>Miss any one, and the "consent" is hollow.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Capacity -->
+  <phil-slide>
+    <img slot="art" src="./assets/squirrel.svg" alt="Squirrel Nutkin, impulsive">
+    <h1>1 · Capacity</h1>
+    <p>Can this patient actually make <em>this</em> decision? Capacity is decision-specific — four abilities:</p>
+    <ul reveal>
+      <li><strong>Understand</strong> the information, <strong>appreciate</strong> how it applies to them,</li>
+      <li><strong>reason</strong> through the options, and <strong>communicate</strong> a choice.</li>
+      <li>Squirrel Nutkin grasps the words but can't appreciate the consequences — he'd cheek a hawk to its face. Capacity here is in doubt.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Disclosure -->
+  <phil-slide>
+    <img slot="art" src="./assets/peter-rabbit.svg" alt="Peter Rabbit">
+    <h1>2 · Disclosure</h1>
+    <p>Peter arrives clutching his stomach (the McGregor's-lettuce special, again). To decide, he needs the facts:</p>
+    <ul reveal>
+      <li>The <strong>diagnosis</strong>, the <strong>proposed treatment</strong>, its <strong>risks</strong> and <strong>benefits</strong>,</li>
+      <li>the reasonable <strong>alternatives</strong> — and what happens if he does <strong>nothing</strong>.</li>
+      <li>Leave out the alternatives and you've quietly made the choice for him.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. Compare: disclosure standards -->
+  <phil-slide>
+    <h1>How Much Must You Tell?</h1>
+    <p>Two standards answer "what counts as enough disclosure?"</p>
+    <phil-compare>
+      <phil-side label="Reasonable-Physician" tag="What doctors tell">
+        <p>Disclose what a <strong>typical doctor</strong> would in your shoes.</p>
+        <p class="case">Risk: it lets the profession decide what patients get to know.</p>
+      </phil-side>
+      <phil-side label="Reasonable-Patient" tag="What patients want">
+        <p>Disclose what a <strong>typical patient</strong> would want to know to decide.</p>
+        <p class="case">The modern standard (see <em>Canterbury v. Spence</em>, 1972) — it centers the patient.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 8. Understanding -->
+  <phil-slide>
+    <h1>3 · Understanding</h1>
+    <p>Telling isn't the same as <em>getting through</em>. Information the patient doesn't grasp can't ground a real choice.</p>
+    <ul reveal>
+      <li>Jargon, fear, and politeness all blunt understanding — patients nod along.</li>
+      <li>Check it with <strong>teach-back</strong>: "So I'm sure I explained it well — what's your understanding of the plan?"</li>
+      <li>If Peter thinks "bed rest" means "rest in McGregor's beds," you haven't got understanding yet.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Voluntariness -->
+  <phil-slide>
+    <img slot="art" src="./assets/fox.svg" alt="The sly gentleman fox">
+    <h1>4 · Voluntariness</h1>
+    <p>A choice has to be the patient's <em>own</em> — free of coercion, manipulation, or undue influence.</p>
+    <ul reveal>
+      <li>Jemima Puddle-Duck happily "agrees" to the sandy-whiskered gentleman's dinner plans — herb-stuffing very much included.</li>
+      <li>She said yes. But it was <strong>engineered</strong>, not chosen — so it isn't valid consent.</li>
+      <li>Watch for the foxes: flattery, half-truths, and pressure all poison voluntariness.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Compare: persuasion vs manipulation -->
+  <phil-slide>
+    <h1>Influence: Fair vs Foul</h1>
+    <p>Not all influence is wrong — doctors should try to persuade. The line is <em>how</em>.</p>
+    <phil-compare>
+      <phil-side label="Persuasion" tag="Fair">
+        <p>Appeal to the patient's <strong>own reason</strong> with true, relevant arguments.</p>
+        <p class="case">"Here's why bed rest really will get you back to mischief sooner." (Legitimate.)</p>
+      </phil-side>
+      <phil-side label="Manipulation / Coercion" tag="Foul">
+        <p>Bypass reason with <strong>lies, pressure, or threats</strong>.</p>
+        <p class="case">The fox's flattery and half-truths — consent extracted, not given.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 11. Authorization -->
+  <phil-slide>
+    <h1>5 · Authorization</h1>
+    <p>Finally, consent is an <strong>act</strong>: the patient actually <em>authorizes</em> this plan.</p>
+    <ul reveal>
+      <li>Understanding and approving in your head isn't enough — they must agree to go ahead.</li>
+      <li>It's the patient handing you permission, not you assuming you have it.</li>
+      <li>(And authorization can be withdrawn — yes, even mid-lettuce-detox.)</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Viz: consent-o-meter -->
+  <phil-slide>
+    <h1>Test It: The Consent-o-Meter</h1>
+    <p>Here's Peter's case. <strong>Toggle each element</strong> the case actually has — the consent is valid only when all five light up.</p>
+    <phil-consent
+        case="Peter, lucid and calm, has a sore tummy from McGregor's lettuces. You propose chamomile and a day's bed rest."
+        action="Treat Peter on the basis of his consent"
+        prompt="Switch on each requirement the case truly meets:">
+      <phil-req fail="No capacity — Peter can't understand or weigh this decision.">Peter can understand and weigh the choice (capacity).</phil-req>
+      <phil-req fail="No disclosure — he wasn't told the risks, benefits, and alternatives.">You disclosed the diagnosis, risks, benefits, and alternatives.</phil-req>
+      <phil-req fail="No understanding — he heard you but didn't actually grasp it.">Peter understood what you explained (teach-back confirmed).</phil-req>
+      <phil-req fail="Not voluntary — he's being pressured or manipulated into it.">His choice is voluntary — no coercion or manipulation.</phil-req>
+      <phil-req fail="No authorization — he never actually agreed to go ahead.">Peter explicitly agreed to the plan (authorization).</phil-req>
+    </phil-consent>
+  </phil-slide>
+
+  <!-- 13. Checkset: elements -->
+  <phil-slide>
+    <h1>Name the Ingredients</h1>
+    <phil-checkset prompt="Check every genuine element of valid informed consent."
+                   explain="Right — capacity, disclosure, understanding, voluntariness, and authorization. A doctor's approval or a witness's signature might be on the form, but neither is what makes consent valid.">
+      <phil-statement correct>Capacity to make this particular decision</phil-statement>
+      <phil-statement correct>Disclosure of the material information</phil-statement>
+      <phil-statement correct>Understanding of what was disclosed</phil-statement>
+      <phil-statement correct>Voluntariness — a choice free of manipulation</phil-statement>
+      <phil-statement correct>Authorization — actually agreeing to the plan</phil-statement>
+      <phil-statement>The doctor approves of the patient's choice</phil-statement>
+      <phil-statement>A witness signs the consent form</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 14. MCQ: capacity -->
+  <phil-slide>
+    <h1>Diagnose the Defect</h1>
+    <phil-mcq prompt="Squirrel Nutkin understands your words but can't appreciate what could go wrong. Which element is in doubt?"
+              explain="Right. Appreciating how the facts apply to one's own situation is part of decision-making capacity — and that's exactly what Nutkin lacks here.">
+      <phil-choice feedback="He was told plenty — disclosure isn't the problem; he just can't appreciate it.">Disclosure of the facts</phil-choice>
+      <phil-choice correct>Capacity to decide this</phil-choice>
+      <phil-choice feedback="No one is pressuring him — the gap is in appreciating the consequences.">Voluntariness of consent</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 15. MCQ: voluntariness -->
+  <phil-slide>
+    <h1>Was That Consent?</h1>
+    <phil-mcq prompt="The fox flatters and misleads Jemima until she 'agrees' to his dinner. Why isn't this valid consent?"
+              explain="Right. The yes was produced by manipulation, so it wasn't voluntary — and voluntariness is required for valid consent.">
+      <phil-choice correct>Manipulation made her "yes" not truly voluntary.</phil-choice>
+      <phil-choice feedback="She's a competent adult duck — capacity isn't the problem here.">A duck can never really consent to anything.</phil-choice>
+      <phil-choice feedback="She did say yes — the trouble is how that yes was produced.">She didn't put her agreement in writing.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 16. Exceptions -->
+  <phil-slide>
+    <h1>When the Rules Bend</h1>
+    <p>A few situations modify (but don't abolish) consent:</p>
+    <ul reveal>
+      <li><strong>Emergencies</strong> — if a patient is unconscious and the need is urgent, consent is presumed.</li>
+      <li><strong>Waiver</strong> — a competent patient may choose not to be informed (within limits).</li>
+      <li><strong>Incapacity</strong> — when a patient genuinely can't decide, you turn to a <strong>surrogate</strong>, guided by the patient's wishes and interests.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — FOUR MODELS ============ -->
+
+  <!-- 17. Intro four models -->
+  <phil-slide>
+    <img slot="art" src="./assets/doctor-bag.svg" alt="Doctor's bag">
+    <h1>Four Ways to Be a Doctor</h1>
+    <p>Consent tells you what you must secure. But <em>how</em> should you relate to a patient? Ezekiel and Linda Emanuel (1992) mapped <strong>four models</strong>.</p>
+    <ul reveal>
+      <li>They differ on the doctor's role — and on what "respecting autonomy" even means.</li>
+      <li>Watch how each would handle the same patient.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Paternalistic -->
+  <phil-slide>
+    <h1>Model 1 · Paternalistic</h1>
+    <p>The doctor as <strong>guardian</strong>: you determine what's best and the patient assents.</p>
+    <ul reveal>
+      <li>Assumes shared, objective goals — mainly "get healthy."</li>
+      <li>Autonomy here shrinks to <strong>assenting</strong> to what the expert prescribes.</li>
+      <li>Fine in a true emergency; presumptuous most of the rest of the time.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Informative -->
+  <phil-slide>
+    <img slot="art" src="./assets/hedgehog.svg" alt="Mrs Tiggy-Winkle, sensible">
+    <h1>Model 2 · Informative</h1>
+    <p>The doctor as <strong>technician</strong>: you supply the facts; the patient supplies the values and chooses.</p>
+    <ul reveal>
+      <li>Mrs. Tiggy-Winkle wants exactly this: "Just the facts, dear — I'll decide."</li>
+      <li>Autonomy = <strong>control</strong>: the patient picks, you execute.</li>
+      <li>The risk: a doctor reduced to a vending machine, offering no guidance or care.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Compare: paternalistic vs informative -->
+  <phil-slide>
+    <h1>The Two Extremes</h1>
+    <phil-compare>
+      <phil-side label="Paternalistic" tag="Doctor decides">
+        <p>The doctor chooses; the patient <strong>assents</strong>.</p>
+        <p class="case">"I know what's best for you, Peter — carrots, no garden."</p>
+      </phil-side>
+      <phil-side label="Informative" tag="Patient decides alone">
+        <p>The doctor informs; the patient <strong>chooses unaided</strong>.</p>
+        <p class="case">"Here are the facts and the options. Your call entirely."</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 21. Interpretive -->
+  <phil-slide>
+    <h1>Model 3 · Interpretive</h1>
+    <p>The doctor as <strong>counselor</strong>: you help the patient figure out what <em>they</em> already value, then choose to fit it.</p>
+    <ul reveal>
+      <li>Patients often arrive with values that are fuzzy or in conflict.</li>
+      <li>You help articulate them — without imposing your own.</li>
+      <li>Autonomy = <strong>self-understanding</strong>: choosing in line with who they really are.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Deliberative -->
+  <phil-slide>
+    <h1>Model 4 · Deliberative</h1>
+    <p>The doctor as <strong>teacher and friend</strong>: you engage the patient about which <em>health-related values</em> are worth pursuing — and try to <strong>persuade</strong> (never coerce).</p>
+    <ul reveal>
+      <li>You don't just clarify Peter's values; you discuss whether some are better than others.</li>
+      <li>"A braver life needn't be a reckless one" — an argument, openly made.</li>
+      <li>Autonomy = <strong>moral self-development</strong>: growing through honest deliberation.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. Compare: interpretive vs deliberative -->
+  <phil-slide>
+    <h1>Clarify vs Develop</h1>
+    <phil-compare>
+      <phil-side label="Interpretive" tag="Values you have">
+        <p>Help the patient <strong>uncover and apply</strong> their existing values.</p>
+        <p class="case">"Let's name what matters most to you, and choose to match it."</p>
+      </phil-side>
+      <phil-side label="Deliberative" tag="Values worth having">
+        <p>Engage the patient on which values are <strong>worth adopting</strong> — persuasion, not pressure.</p>
+        <p class="case">"May I make the case that a longer life with your sisters is worth more than the thrill?"</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 24. Viz: pick the model -->
+  <phil-slide>
+    <h1>Name That Model</h1>
+    <p>Peter won't stop raiding McGregor's garden. Here's how four doctors respond — <strong>identify each model.</strong></p>
+    <phil-pick prompt="Read each doctor's line and pick the model it shows:">
+      <phil-scenario model="paternalistic" why="The doctor decides and expects Peter to fall in line.">
+        “I've cancelled your garden privileges and put you on a carrot regimen. Doctor knows best.”
+      </phil-scenario>
+      <phil-scenario model="informative" why="Pure facts and options, with no guidance on what to value.">
+        “Here are the risks of garden-raiding and three diets. Tell me which you'd like and I'll set it up.”
+      </phil-scenario>
+      <phil-scenario model="interpretive" why="The doctor helps Peter surface and apply the values he already holds.">
+        “Let's work out what matters most to you — the thrill, or years with your sisters — and choose to fit it.”
+      </phil-scenario>
+      <phil-scenario model="deliberative" why="The doctor argues, openly, for which health values are worth pursuing.">
+        “Can I make the case that courage isn't the same as recklessness? Let's talk about what's actually worth wanting.”
+      </phil-scenario>
+    </phil-pick>
+  </phil-slide>
+
+  <!-- 25. MCQ: autonomy conception -->
+  <phil-slide>
+    <h1>What Counts as Autonomy?</h1>
+    <phil-mcq prompt="In which model is patient autonomy understood as moral self-development?"
+              explain="Right. The deliberative model treats autonomy as growth through moral discussion — the patient develops, not just selects.">
+      <phil-choice feedback="In the informative model, autonomy is control — the patient picks from facts, full stop.">Informative</phil-choice>
+      <phil-choice feedback="In the interpretive model, autonomy is self-understanding — clarifying values you already hold.">Interpretive</phil-choice>
+      <phil-choice correct>Deliberative</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 26. Checkset: models -->
+  <phil-slide>
+    <h1>Sort the Models</h1>
+    <phil-checkset prompt="Check each statement that correctly describes one of Emanuel's models."
+                   explain="Nicely sorted. The checked items match each model's role; the two left unchecked swap the models' jobs around.">
+      <phil-statement correct>Paternalistic: the doctor decides and the patient assents</phil-statement>
+      <phil-statement correct>Informative: the doctor gives facts and the patient chooses</phil-statement>
+      <phil-statement correct>Interpretive: the doctor helps clarify the patient's own values</phil-statement>
+      <phil-statement correct>Deliberative: the doctor engages the patient on which values are worth pursuing</phil-statement>
+      <phil-statement>Informative: the doctor decides and the patient obeys</phil-statement>
+      <phil-statement>Deliberative: the doctor stays silent about values</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 27. Emanuels' verdict -->
+  <phil-slide>
+    <img slot="art" src="./assets/peter-rabbit.svg" alt="Peter Rabbit, considering">
+    <h1>The Emanuels' Verdict</h1>
+    <p>The Emanuels don't leave all four as equals. They argue for one as the ideal:</p>
+    <ul reveal>
+      <li>The <strong>deliberative</strong> model — physician as teacher and friend — best fits a caring relationship.</li>
+      <li>The <strong>paternalistic</strong> model is justified mainly in <em>emergencies</em>.</li>
+      <li>The <strong>informative</strong> model, they argue, is too thin — it abandons the patient to choose alone.</li>
+      <li>The aim isn't to impose values, but to <em>care</em> enough to deliberate about them.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. MCQ: the ideal -->
+  <phil-slide>
+    <h1>Which Model Wins?</h1>
+    <phil-mcq prompt="Which model do Emanuel &amp; Emanuel defend as the ideal?"
+              explain="Right. They argue the deliberative model — physician as teacher and friend — best realizes a caring relationship, reserving paternalism for emergencies.">
+      <phil-choice feedback="They call this one too thin — it leaves the patient to choose with no guidance.">The informative model</phil-choice>
+      <phil-choice correct>The deliberative model</phil-choice>
+      <phil-choice feedback="They allow this only in emergencies, not as the everyday ideal.">The paternalistic model</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — ROUNDS END ============ -->
+
+  <!-- 29. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Revisit Your Instincts</h1>
+    <p>Here's where you started this morning. Re-rate each one — has the day shifted anything? Staying put is fine; can you now say <em>why</em>?</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 30. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/doctor-bag.svg" alt="The doctor's bag, packed up">
+    <h1>End of Rounds</h1>
+    <p class="lead">You close the bag. The hedgerow is quiet, and your patients are still — gloriously — in charge of their own lives.</p>
+    <ul reveal>
+      <li><strong>Informed consent</strong> — capacity, disclosure, understanding, voluntariness, authorization.</li>
+      <li><strong>Influence</strong> — persuade by reason; never manipulate or coerce.</li>
+      <li><strong>Four models</strong> — paternalistic, informative, interpretive, deliberative.</li>
+      <li><strong>Autonomy</strong> is more than non-interference — at its best, you help patients deliberate well.</li>
+    </ul>
+    <p class="muted">Visit every slide, answer every question, and submit both belief probes to complete your rounds.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

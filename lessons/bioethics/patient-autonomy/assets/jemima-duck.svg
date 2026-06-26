@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Jemima Puddle-Duck in a poke bonnet and shawl">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <rect y="62" width="64" height="18" fill="#26402c"/>
+  <!-- shawl/body -->
+  <rect x="14" y="48" width="36" height="28" fill="#c9c3ad"/>
+  <rect x="18" y="48" width="28" height="28" fill="#eee9d8"/>
+  <!-- pink shawl trim -->
+  <rect x="14" y="48" width="36" height="5" fill="#d98aa8"/>
+  <!-- head -->
+  <rect x="22" y="24" width="20" height="22" fill="#eee9d8"/>
+  <!-- bonnet -->
+  <rect x="18" y="16" width="28" height="10" fill="#4a7bbf"/>
+  <rect x="18" y="14" width="28" height="3" fill="#3a63a0"/>
+  <rect x="16" y="24" width="6" height="8" fill="#4a7bbf"/>
+  <!-- eye -->
+  <rect x="28" y="30" width="4" height="4" fill="#11131f"/>
+  <rect x="29" y="30" width="1" height="1" fill="#fff"/>
+  <!-- bill -->
+  <rect x="32" y="35" width="14" height="5" fill="#f2a93c"/>
+  <rect x="32" y="40" width="12" height="2" fill="#d98a26"/>
+</svg>
