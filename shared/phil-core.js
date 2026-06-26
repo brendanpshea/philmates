@@ -25,12 +25,14 @@ class ProgressStore {
     this.visited = new Set(data.visited || []);
     this.correct = new Set(data.correct || []);
     this.completed = !!data.completed;
+    this.beliefs = data.beliefs || {};      // ungraded Likert ratings { key: {statements, pre, post} }
   }
   save() {
     localStorage.setItem(this.key, JSON.stringify({
       visited: [...this.visited],
       correct: [...this.correct],
       completed: this.completed,
+      beliefs: this.beliefs,
     }));
   }
   reset() { localStorage.removeItem(this.key); }
@@ -54,7 +56,9 @@ class PhilLesson extends HTMLElement {
     this.slides = [...this.querySelectorAll(':scope > phil-slide')];
     this.slides.forEach((s, i) => { if (!s.id) s.id = `s${i + 1}`; });
     this.linear = this.slides.filter(s => !s.hasAttribute('optional'));
-    this.widgets = [];          // registered by widgets on connect
+    this.widgets = [];          // graded widgets, registered on connect
+    this.tasks = [];            // ungraded-but-required activities (e.g. belief probe)
+    this.tasksDone = new Set();
     this._returnIndex = 0;
     this._revealed = new Set(); // slide ids whose step-reveals are fully shown
 
@@ -243,6 +247,9 @@ class PhilLesson extends HTMLElement {
     this.store.save();
     this._refresh();
   }
+  // ungraded activities that still count toward completion (any answer is fine)
+  registerTask() { const id = `k${this.tasks.length + 1}`; this.tasks.push(id); return id; }
+  setTaskDone(id, done) { done ? this.tasksDone.add(id) : this.tasksDone.delete(id); this._refresh(); }
 
   /* ---- progress + completion ---- */
   _refresh() {
@@ -257,14 +264,18 @@ class PhilLesson extends HTMLElement {
 
     const pos = this.current.hasAttribute('optional') ? '–' : idx + 1;
     this._counter.textContent = `${pos} / ${this.linear.length}`;
-    this._tally.textContent = `★ ${this.store.correct.size}/${this.widgets.length} correct`;
+    let tally = `★ ${this.store.correct.size}/${this.widgets.length} correct`;
+    if (this.tasks.length) tally += ` · ✔ ${this.tasksDone.size}/${this.tasks.length}`;
+    this._tally.textContent = tally;
 
     this._prevBtn.disabled = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === 0;
     const last = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === this.linear.length - 1;
     this._nextBtn.disabled = last && this._remainingSteps() === 0;
     this._nextBtn.textContent = this._remainingSteps() > 0 ? 'Reveal ▶' : 'Next ▶';
 
-    const complete = reqSeen === this.linear.length && this.store.correct.size === this.widgets.length;
+    const complete = reqSeen === this.linear.length
+      && this.store.correct.size === this.widgets.length
+      && this.tasksDone.size === this.tasks.length;
     if (complete && !this.store.completed) this._celebrate();
   }
   _celebrate() {
@@ -501,6 +512,169 @@ class PhilCompare extends HTMLElement {
   }
 }
 
+/* ---------- belief probe (Likert "anticipation guide") ----------
+   Ungraded. Rate agreement up front, revisit at the end to see what shifted.
+     <phil-beliefs prompt="...">          (near the start)
+       <phil-statement>A belief, phrased as a value claim.</phil-statement>
+       ...
+     </phil-beliefs>
+     <phil-beliefs-review for="beliefs"></phil-beliefs-review>   (near the end)
+   Ratings persist per-lesson in the ProgressStore; never affect completion.
+------------------------------------------------------------------ */
+const LIKERT = { 1: 'Strongly disagree', 2: 'Disagree', 3: 'Neutral', 4: 'Agree', 5: 'Strongly agree' };
+
+function likertLegend() {
+  const legend = el('div', 'phil-scale-legend');
+  legend.append(el('span', null, 'Strongly disagree'), el('span', null, 'Strongly agree'));
+  return legend;
+}
+function likertScale(selected, onPick) {
+  const row = el('div', 'phil-scale');
+  const cells = [];
+  for (let v = 1; v <= 5; v++) {
+    const b = el('button', null, String(v));
+    b.type = 'button';
+    b.setAttribute('aria-label', LIKERT[v]);
+    if (v === selected) b.classList.add('sel');
+    b.onclick = () => { cells.forEach(c => c.classList.remove('sel')); b.classList.add('sel'); onPick(v); };
+    cells.push(b); row.append(b);
+  }
+  return row;
+}
+
+function beliefDelta(node, pre, post) {
+  if (!post) { node.textContent = ''; node.className = 'phil-belief__delta none'; return; }
+  if (!pre) { node.textContent = 'Recorded.'; node.className = 'phil-belief__delta none'; return; }
+  const d = post - pre;
+  if (d === 0) { node.textContent = 'No change — can you say why you still hold it?'; node.className = 'phil-belief__delta none'; }
+  else { node.textContent = `Shifted from “${LIKERT[pre]}” to “${LIKERT[post]}” (${d > 0 ? '+' : ''}${d}).`; node.className = 'phil-belief__delta'; }
+}
+
+class PhilBeliefs extends HTMLElement {
+  connectedCallback() {
+    if (this._init) return; this._init = true;
+    this.lesson = this.closest('phil-lesson');
+    this.store = this.lesson?.store;
+    this.key = this.getAttribute('id') || 'beliefs';
+    this.statements = [...this.querySelectorAll('phil-statement')].map(s => s.innerHTML.trim());
+    this.classList.add('phil-widget', 'phil-beliefs');
+    if (!this.store) return;
+    const rec = (this.store.beliefs[this.key] ||= {});
+    rec.statements = this.statements;        // persist so the review can read them
+    rec.pre ||= {};
+    this.store.save();
+    this.build(rec);
+  }
+  build(rec) {
+    this.rec = rec;
+    this.innerHTML = '';
+    this.append(el('p', 'phil-widget__prompt',
+      this.getAttribute('prompt') || 'How much do you agree? There are no wrong answers — this is just where you stand right now.'));
+    this.append(likertLegend());
+    this.statements.forEach((text, i) => {
+      const row = el('div', 'phil-belief');
+      row.append(el('p', 'phil-belief__text', text));
+      row.append(likertScale(rec.pre[i], v => { rec.pre[i] = v; this.store.save(); this._sync(); }));
+      this.append(row);
+    });
+    this._submit = el('button', 'phil-btn phil-btn--primary phil-belief__submit', 'Submit');
+    this._submit.onclick = () => this._onSubmit();
+    this._status = el('p', 'phil-belief__status');
+    this.append(this._submit, this._status);
+    this.taskId = this.lesson?.registerTask();
+    if (rec.submitted) this.lesson?.setTaskDone(this.taskId, true);
+    this._sync();
+  }
+  _count() { return this.statements.filter((_, i) => this.rec.pre[i]).length; }
+  _sync() {
+    const n = this.statements.length, done = this._count();
+    if (this.rec.submitted) {
+      this._status.textContent = '✓ Submitted — counts toward completion. (You can still change your answers.)';
+      this._status.classList.add('done');
+    } else {
+      this._status.textContent = `${done}/${n} rated. Rate all ${n}, then Submit.`;
+      this._status.classList.remove('done');
+    }
+  }
+  _onSubmit() {
+    const n = this.statements.length, done = this._count();
+    if (done < n) {
+      this._status.textContent = `Please rate all ${n} first (${done}/${n}).`;
+      this._status.classList.remove('done');
+      return;
+    }
+    this.rec.submitted = true;
+    this.store.save();
+    this.lesson?.setTaskDone(this.taskId, true);
+    this._sync();
+  }
+}
+
+class PhilBeliefsReview extends HTMLElement {
+  connectedCallback() {
+    if (this._init) return; this._init = true;
+    this.lesson = this.closest('phil-lesson');
+    this.store = this.lesson?.store;
+    this.key = this.getAttribute('for') || 'beliefs';
+    this.classList.add('phil-widget', 'phil-beliefs');
+    this.build(this.store?.beliefs?.[this.key]);
+  }
+  build(rec) {
+    this.rec = rec;
+    this.innerHTML = '';
+    this.append(el('p', 'phil-widget__prompt',
+      this.getAttribute('prompt') || 'Here’s where you started. Has anything shifted? Staying put is fine — but can you now say why?'));
+    this.taskId = this.lesson?.registerTask();
+    if (!rec || !rec.statements) {
+      this.append(el('p', 'muted', '(No starting answers were recorded for this lesson.)'));
+      this.lesson?.setTaskDone(this.taskId, true);   // nothing to revisit — don't block completion
+      return;
+    }
+    rec.post ||= {};
+    this.append(likertLegend());
+    rec.statements.forEach((text, i) => {
+      const pre = rec.pre?.[i];
+      const row = el('div', 'phil-belief');
+      row.append(el('p', 'phil-belief__text', text));
+      row.append(el('p', 'phil-belief__then', pre ? `Then: ${LIKERT[pre]}` : 'Then: (not rated)'));
+      const delta = el('p', 'phil-belief__delta none', '');
+      row.append(likertScale(rec.post[i], v => { rec.post[i] = v; this.store.save(); beliefDelta(delta, pre, v); this._sync(); }));
+      row.append(delta);
+      beliefDelta(delta, pre, rec.post[i]);
+      this.append(row);
+    });
+    this._submit = el('button', 'phil-btn phil-btn--primary phil-belief__submit', 'Submit');
+    this._submit.onclick = () => this._onSubmit();
+    this._status = el('p', 'phil-belief__status');
+    this.append(this._submit, this._status);
+    if (rec.reviewSubmitted) this.lesson?.setTaskDone(this.taskId, true);
+    this._sync();
+  }
+  _count() { return (this.rec.statements || []).filter((_, i) => this.rec.post[i]).length; }
+  _sync() {
+    const n = (this.rec.statements || []).length, done = this._count();
+    if (this.rec.reviewSubmitted) {
+      this._status.textContent = '✓ Submitted — counts toward completion.';
+      this._status.classList.add('done');
+    } else {
+      this._status.textContent = `${done}/${n} revisited. Re-rate all ${n}, then Submit.`;
+      this._status.classList.remove('done');
+    }
+  }
+  _onSubmit() {
+    const n = (this.rec.statements || []).length, done = this._count();
+    if (done < n) {
+      this._status.textContent = `Please re-rate all ${n} first (${done}/${n}).`;
+      this._status.classList.remove('done');
+      return;
+    }
+    this.rec.reviewSubmitted = true;
+    this.store.save();
+    this.lesson?.setTaskDone(this.taskId, true);
+    this._sync();
+  }
+}
+
 /* ---- inject "Back to lesson" on optional slides when shown ---- */
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('phil-slide[optional]').forEach(s => {
@@ -517,3 +691,5 @@ customElements.define('phil-checkset', PhilCheckset);
 customElements.define('phil-cloze', PhilCloze);
 customElements.define('phil-branch', PhilBranch);
 customElements.define('phil-compare', PhilCompare);
+customElements.define('phil-beliefs', PhilBeliefs);
+customElements.define('phil-beliefs-review', PhilBeliefsReview);

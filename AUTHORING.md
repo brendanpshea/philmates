@@ -104,6 +104,26 @@ A `<p class="cake">` gets a dessert marker and accent border — use it for the
 concrete example. Two sides stack on narrow screens. (For three positions, add a
 third `<phil-side>`; the VS badge only appears with exactly two.)
 
+### Belief probe — `<phil-beliefs>` + `<phil-beliefs-review>` (ungraded)
+A before/after attitude check ("anticipation guide"). Place `<phil-beliefs>` near
+the start with value statements; place `<phil-beliefs-review>` near the end to show
+the saved ratings and let students re-rate and see what shifted.
+```html
+<!-- near the start -->
+<phil-beliefs prompt="How much do you agree, right now?">
+  <phil-statement>A competent adult should be free to refuse treatment.</phil-statement>
+  <phil-statement>It can be right to override someone's wishes for their own good.</phil-statement>
+</phil-beliefs>
+
+<!-- near the end -->
+<phil-beliefs-review for="beliefs"></phil-beliefs-review>
+```
+- Use **value/belief statements, not facts** (no right answer) — that's the point.
+- Ratings are a 1–5 Likert scale, saved per-lesson; **ungraded** (never affect the
+  ★ tally or completion). Reset clears them with the rest of progress.
+- `<phil-beliefs>` defaults to key `beliefs`; set `id="x"` and match it with
+  `<phil-beliefs-review for="x">` if you want more than one probe per lesson.
+
 ### Optional detour — `<phil-branch>`
 ```html
 <phil-branch prompt="Want the deep dive?">

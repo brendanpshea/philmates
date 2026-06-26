@@ -187,6 +187,7 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
    Widgets
    ===================================================================== */
 .phil-widget {
+  display: block;            /* custom elements default to inline; force block so the card border wraps cleanly */
   margin: 18px 0;
   padding: 18px;
   background: var(--panel-2);
@@ -297,6 +298,30 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
   phil-slide.is-current .phil-compare > phil-side,
   phil-slide.is-current .phil-vs { animation: none; }
 }
+
+/* =====================================================================
+   <phil-beliefs> / <phil-beliefs-review> — Likert belief probe
+   ===================================================================== */
+.phil-beliefs.phil-widget { padding: 14px 16px; }
+.phil-beliefs .phil-widget__prompt { margin-bottom: 8px; }
+.phil-belief { margin: 12px 0 0; }
+.phil-belief__text { font-size: clamp(16px, 1.5vw, 19px); font-weight: 600; line-height: 1.35; margin: 0 0 6px; }
+.phil-belief__then { font-size: 13px; color: var(--muted); margin: 0 0 5px; }
+.phil-scale-legend { display: flex; justify-content: space-between; max-width: 540px; font-size: 12px; color: var(--muted); margin: 0 0 8px; }
+.phil-scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; max-width: 540px; }
+.phil-scale button {
+  font-family: var(--pixel); font-size: 12px; color: var(--ink);
+  background: var(--panel); border: 3px solid var(--border); box-shadow: 0 3px 0 var(--shadow);
+  padding: 9px 0; cursor: pointer; transition: background .1s;
+}
+.phil-scale button:hover { background: #2b3252; }
+.phil-scale button:active { transform: translateY(3px); box-shadow: none; }
+.phil-scale button.sel { background: var(--accent-3); color: var(--bg); }
+.phil-belief__delta { font-size: 13px; margin: 6px 0 0; min-height: 1.1em; color: var(--accent); }
+.phil-belief__delta.none { color: var(--muted); }
+.phil-belief__submit { margin-top: 16px; }
+.phil-belief__status { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+.phil-belief__status.done { color: var(--good); }
 
 /* completion toast */
 .phil-toast {

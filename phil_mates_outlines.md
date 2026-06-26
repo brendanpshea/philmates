@@ -7,8 +7,14 @@ content/quiz pacing has worked. Add a new section per lesson.
 
 Legend: **[T]** teaching slide · **[Q]** graded interactive · **[V]** ungraded
 interactive visualization · **[C]** `<phil-compare>` side-by-side comparison ·
-**[B]** branch · **[opt]** optional/branch-only slide · `reveal` = bullets shown
-one at a time.
+**[P]** belief probe (`<phil-beliefs>` Likert, revisited at the end) · **[B]** branch ·
+**[opt]** optional/branch-only slide · `reveal` = bullets shown one at a time.
+
+**Engagement device (use in new lessons):** open with a 5-statement **belief probe**
+(`<phil-beliefs>`, ungraded value statements) and revisit it at the end
+(`<phil-beliefs-review>`). It earns attention by getting students on record up
+front, then confronting them with their past selves — and doubles as an advance
+organizer. First used in the bioethics lesson.
 
 ---
 
