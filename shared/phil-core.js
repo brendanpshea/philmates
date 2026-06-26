@@ -247,12 +247,15 @@ class PhilLesson extends HTMLElement {
   /* ---- progress + completion ---- */
   _refresh() {
     const reqSeen = this.linear.filter(s => this.store.visited.has(s.id)).length;
-    const total = this.linear.length + this.widgets.length;
-    const done = reqSeen + this.store.correct.size;
-    this._fill.style.width = Math.round((done / total) * 100) + '%';
 
-    const pos = this.current && !this.current.hasAttribute('optional')
-      ? this.linear.indexOf(this.current) + 1 : '–';
+    // The bar tracks CURRENT position, so it moves when you navigate back.
+    // "Credit" (visited slides + correct answers) is kept separately for
+    // completion, so going back never loses progress.
+    const idx = this.current.hasAttribute('optional')
+      ? this._returnIndex : this.linear.indexOf(this.current);
+    this._fill.style.width = Math.round(((idx + 1) / this.linear.length) * 100) + '%';
+
+    const pos = this.current.hasAttribute('optional') ? '–' : idx + 1;
     this._counter.textContent = `${pos} / ${this.linear.length}`;
     this._tally.textContent = `★ ${this.store.correct.size}/${this.widgets.length} correct`;
 
