@@ -22,8 +22,9 @@ npx serve .        # or: python -m http.server
 ## Skeleton
 
 ```html
-<link rel="stylesheet" href="/shared/phil-core.css">
-<script type="module" src="/shared/phil-core.js"></script>
+<!-- paths are relative to the lesson at lessons/<topic>/<slug>/index.html -->
+<link rel="stylesheet" href="../../../shared/phil-core.css">
+<script type="module" src="../../../shared/phil-core.js"></script>
 
 <phil-lesson id="unique-slug" title="Short Title">
   <phil-slide> ...one screen... </phil-slide>

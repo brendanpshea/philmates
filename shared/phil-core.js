@@ -1,7 +1,8 @@
 /* =====================================================================
    PhilMates — slide engine + interactive widgets (vanilla Web Components)
-   No build step. Load as: <script type="module" src="/shared/phil-core.js">
-   Authoring format is documented in /AUTHORING.md
+   No build step. Load with a path relative to the lesson, e.g.
+   <script type="module" src="../../../shared/phil-core.js">
+   Authoring format is documented in AUTHORING.md
    ===================================================================== */
 
 /* ---------- tiny helpers ---------- */

@@ -25,9 +25,9 @@ const html = `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${title} · PhilMates</title>
   <meta name="description" content="TODO: one-line description for the catalog.">
-  <link rel="icon" type="image/svg+xml" href="/shared/assets/favicon.svg">
-  <link rel="stylesheet" href="/shared/phil-core.css">
-  <script type="module" src="/shared/phil-core.js"></script>
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
 </head>
 <body>
 
