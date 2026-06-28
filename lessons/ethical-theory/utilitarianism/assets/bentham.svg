@@ -1,26 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Pixel portrait of Jeremy Bentham in 18th-century coat and white hair">
-  <rect width="64" height="80" fill="#1d2235"/>
-  <rect y="62" width="64" height="18" fill="#262c44"/>
-  <!-- coat -->
-  <rect x="14" y="50" width="36" height="26" fill="#5b4a2e"/>
-  <rect x="18" y="50" width="28" height="26" fill="#6e5a38"/>
-  <rect x="30" y="50" width="4" height="26" fill="#3f3320"/>
-  <!-- cravat -->
-  <rect x="26" y="48" width="12" height="10" fill="#f2eedd"/>
-  <!-- neck/head -->
-  <rect x="28" y="42" width="8" height="8" fill="#d9a066"/>
-  <rect x="22" y="20" width="20" height="24" fill="#e6b87f"/>
-  <!-- white wavy hair -->
-  <rect x="20" y="14" width="24" height="10" fill="#e6e0cf"/>
-  <rect x="16" y="22" width="6" height="16" fill="#e6e0cf"/>
-  <rect x="42" y="22" width="6" height="16" fill="#e6e0cf"/>
-  <rect x="16" y="34" width="4" height="6" fill="#cfc9b4"/>
-  <rect x="44" y="34" width="4" height="6" fill="#cfc9b4"/>
-  <!-- eyes + brow -->
-  <rect x="26" y="28" width="4" height="2" fill="#7a5a30"/>
-  <rect x="34" y="28" width="4" height="2" fill="#7a5a30"/>
-  <rect x="26" y="31" width="4" height="4" fill="#11131f"/>
-  <rect x="34" y="31" width="4" height="4" fill="#11131f"/>
-  <!-- slight smile -->
-  <rect x="28" y="39" width="8" height="2" fill="#a76b3a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: a calculation tablet with a green plus column and a magenta minus column summed to a net total — Bentham's felicific (hedonic) calculus">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <!-- tablet -->
+  <rect x="16" y="26" width="48" height="56" fill="#8d876f"/>
+  <rect x="19" y="29" width="42" height="50" fill="#11131f"/>
+  <!-- column divider -->
+  <rect x="39" y="32" width="2" height="32" fill="#3a3f55"/>
+  <!-- plus sign (pleasures) -->
+  <rect x="28" y="33" width="3" height="9" fill="#46e07a"/>
+  <rect x="25" y="36" width="9" height="3" fill="#46e07a"/>
+  <!-- minus sign (pains) -->
+  <rect x="46" y="36" width="9" height="3" fill="#ff6ad5"/>
+  <!-- pleasure units -->
+  <rect x="24" y="46" width="5" height="5" fill="#46e07a"/>
+  <rect x="31" y="46" width="5" height="5" fill="#46e07a"/>
+  <rect x="24" y="53" width="5" height="5" fill="#46e07a"/>
+  <rect x="31" y="53" width="5" height="5" fill="#46e07a"/>
+  <rect x="24" y="60" width="5" height="5" fill="#46e07a"/>
+  <!-- pain units -->
+  <rect x="45" y="46" width="5" height="5" fill="#ff6ad5"/>
+  <rect x="52" y="46" width="5" height="5" fill="#ff6ad5"/>
+  <rect x="45" y="53" width="5" height="5" fill="#ff6ad5"/>
+  <!-- sum line + net positive total -->
+  <rect x="22" y="68" width="38" height="2" fill="#c9c3ad"/>
+  <rect x="37" y="71" width="6" height="6" fill="#46e07a"/>
 </svg>

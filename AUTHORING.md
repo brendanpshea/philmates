@@ -173,6 +173,19 @@ Writing tips that keep you passing it:
 
 - Reference aesthetic: **16-bit console era**. Hand-authored SVGs preferred;
   PNGs from an image generator are fine for richer scenes.
+- **Don't draw portraits of real (contemporary or historical) thinkers.** At
+  pixel resolution a face can't carry a likeness — it just reads as "generic
+  person," so the payoff of recognizing Mill or Kant never lands. Instead give
+  each real thinker an **idea-emblem on a relic card**: a framed 80×108 SVG whose
+  central icon encodes their core move (Bentham → a felicific-calculus tablet,
+  Singer → an expanding circle, Kant → a starry sky over a compass). The emblem
+  doubles as a mnemonic and gives the "collect the thinkers" game feel. Keep the
+  card frame consistent (dark border, accent inner frame, a rank gem in the top
+  bar, rarity pips at the bottom) and give each thinker a distinct accent color.
+  See `lessons/ethical-theory/*/assets/` for the seven reference cards.
+- Portraits are still fine for **invented characters** (e.g. Van Helsing) — there's
+  no real likeness to fail at, and you own the canon. Objects, creatures, tools,
+  and scenes all pixel well; faces of real people don't.
 - Keep art in the lesson's own `assets/`, never inline-embedded in the HTML body
   (a `slot="art"` `<svg>` is fine; large data-URIs are not).
 - Record image-generator prompts in the lesson's `prompts.md`.

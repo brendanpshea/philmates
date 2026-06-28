@@ -1,25 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Pixel portrait of John Stuart Mill, balding with sideburns in a dark Victorian suit">
-  <rect width="64" height="80" fill="#1d2235"/>
-  <rect y="62" width="64" height="18" fill="#262c44"/>
-  <!-- suit -->
-  <rect x="14" y="50" width="36" height="26" fill="#2b2f3f"/>
-  <rect x="18" y="50" width="28" height="26" fill="#3a3f55"/>
-  <!-- collar + tie -->
-  <rect x="24" y="48" width="16" height="6" fill="#f2eedd"/>
-  <rect x="30" y="50" width="4" height="14" fill="#4cc2ff"/>
-  <!-- neck/head -->
-  <rect x="28" y="42" width="8" height="8" fill="#d9a066"/>
-  <rect x="22" y="18" width="20" height="26" fill="#e6b87f"/>
-  <!-- high balding forehead -->
-  <rect x="22" y="18" width="20" height="8" fill="#eec295"/>
-  <!-- side hair + big sideburns -->
-  <rect x="18" y="24" width="6" height="20" fill="#4b4636"/>
-  <rect x="40" y="24" width="6" height="20" fill="#4b4636"/>
-  <rect x="20" y="36" width="6" height="10" fill="#4b4636"/>
-  <rect x="38" y="36" width="6" height="10" fill="#4b4636"/>
-  <!-- eyes -->
-  <rect x="26" y="30" width="4" height="4" fill="#11131f"/>
-  <rect x="34" y="30" width="4" height="4" fill="#11131f"/>
-  <!-- thoughtful mouth -->
-  <rect x="29" y="40" width="6" height="2" fill="#a76b3a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: an open book lit by a rising flame — Mill's higher, intellectual pleasures">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#ffcf5a"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#ffcf5a"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="38" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="44" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <!-- flame of intellect -->
+  <rect x="38" y="26" width="4" height="6" fill="#ffe9a8"/>
+  <rect x="36" y="30" width="8" height="10" fill="#ffcf5a"/>
+  <rect x="38" y="34" width="4" height="6" fill="#ff8a3a"/>
+  <!-- light rays -->
+  <rect x="28" y="32" width="3" height="3" fill="#ffcf5a"/>
+  <rect x="49" y="32" width="3" height="3" fill="#ffcf5a"/>
+  <rect x="24" y="40" width="3" height="3" fill="#ffcf5a"/>
+  <rect x="53" y="40" width="3" height="3" fill="#ffcf5a"/>
+  <!-- open book: pages -->
+  <rect x="14" y="52" width="24" height="20" fill="#e6e0cf"/>
+  <rect x="42" y="52" width="24" height="20" fill="#e6e0cf"/>
+  <rect x="14" y="52" width="24" height="3" fill="#f5f1e2"/>
+  <rect x="42" y="52" width="24" height="3" fill="#f5f1e2"/>
+  <!-- spine -->
+  <rect x="38" y="50" width="4" height="24" fill="#8d876f"/>
+  <!-- text lines -->
+  <rect x="18" y="59" width="16" height="2" fill="#9aa3c7"/>
+  <rect x="18" y="63" width="16" height="2" fill="#9aa3c7"/>
+  <rect x="18" y="67" width="12" height="2" fill="#9aa3c7"/>
+  <rect x="46" y="59" width="16" height="2" fill="#9aa3c7"/>
+  <rect x="46" y="63" width="16" height="2" fill="#9aa3c7"/>
+  <rect x="46" y="67" width="12" height="2" fill="#9aa3c7"/>
+  <!-- cover edge -->
+  <rect x="12" y="72" width="56" height="4" fill="#7a3f8d"/>
 </svg>
