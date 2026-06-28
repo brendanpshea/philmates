@@ -339,3 +339,37 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
   .phil-slide__art { order: -1; max-height: 32vh; }
   .phil-slide__art img, .phil-slide__art svg { max-height: 32vh; }
 }
+
+/* =====================================================================
+   Phone tier — mobile-only refinements. Everything here lives inside a
+   max-width query, so the desktop / projector layout is untouched.
+   ===================================================================== */
+@media (max-width: 600px) {
+  /* base font down one notch so clamped content sizes settle smaller */
+  html, body { font-size: 16px; }
+
+  /* dvh tracks the *visible* viewport (excludes the mobile URL bar), so the
+     bottom nav stays on-screen and reachable. vh would push it under the bar. */
+  .phil-app { height: 100dvh; padding: 8px; gap: 8px; }
+
+  /* let the title wrap to its own line instead of crushing the controls */
+  .phil-top__row { flex-wrap: wrap; row-gap: 6px; }
+  .phil-title { font-size: 12px; }
+  .phil-tally { font-size: 8px; }
+  .phil-reset { font-size: 8px; padding: 7px 8px; }
+
+  /* tighter slide padding reclaims horizontal room for text */
+  phil-slide { padding: 16px; gap: 16px; }
+  phil-slide h1 { line-height: 1.5; }
+
+  /* full-width, thumb-reachable bottom navigation */
+  .phil-bottom { gap: 8px; }
+  .phil-nav { flex: 1; }
+  .phil-nav .phil-btn { flex: 1; text-align: center; }
+
+  /* modal hugs the screen edges */
+  .phil-modal__box { margin: 12px; }
+
+  /* belief Likert: keep 5 columns but shrink so they don't overflow */
+  .phil-scale button { font-size: 10px; padding: 10px 0; }
+}
