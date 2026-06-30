@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Labors of Arête: Virtue Ethics · PhilMates</title>
+  <meta name="description" content="Athena guides you through Aristotle's virtue ethics — eudaimonia, the doctrine of the mean, phronesis, and the polis — using Greek myths as case studies.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
+  <script type="module" src="./assets/golden-mean.js"></script>
+</head>
+<body>
+
+<phil-lesson id="aristotle-virtue" title="The Labors of Arête" subject="Virtue Ethics">
+
+  <!-- ============ ACT 0 — THE SUMMONS ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/athena.png" alt="Athena, goddess of wisdom, at a mythic training ground">
+    <h1>The Labors of Arête</h1>
+    <p class="lead">You've been summoned to Mount Olympus — not to fight, but to learn something harder. Athena, goddess of wisdom, is tired of watching mortals bungle the basics.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/athena.png" alt="Athena, arms crossed, impatient">
+    <h1>"Forget the Monsters"</h1>
+    <p class="lead">"Today's labor is harder than slaying any beast," Athena says, grey eyes cool. "Today you learn to <em>live well</em>."</p>
+    <ul reveal>
+      <li>She'll use the heroes you know — but not the way you expect.</li>
+      <li>No swords. No quests. Just one question: <strong>what kind of person should you be?</strong></li>
+      <li>The philosopher behind it all? A man named <strong>Aristotle</strong> — and she has opinions about him.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe (start) -->
+  <phil-slide>
+    <h1>Before Training Begins</h1>
+    <p>Five gut-checks — <strong>no right answers.</strong> Just say where you stand; we'll revisit them when training ends.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>Being a good person is more about who you <em>are</em> than what you <em>do</em>.</phil-statement>
+      <phil-statement>You can learn to be virtuous the same way you learn a skill — by practice.</phil-statement>
+      <phil-statement>A truly good life requires good friends, not just good choices.</phil-statement>
+      <phil-statement>There's a "right amount" of every emotion — even anger can be a virtue if felt at the right time and in the right way.</phil-statement>
+      <phil-statement>A society's laws and institutions are partly responsible for whether its citizens are virtuous.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — WHO IS THIS ARISTOTLE? ============ -->
+
+  <!-- 4. Aristotle's background -->
+  <phil-slide>
+    <img slot="art" src="./assets/olympus.png" alt="Olympian training ground">
+    <h1>The Philosopher</h1>
+    <p>"He was my father's student," Athena says. "Well — my father's student's student. Plato taught him. But he thought Plato was too abstract."</p>
+    <ul reveal>
+      <li><strong>Aristotle</strong> (384–322 BCE) studied at Plato's Academy for twenty years, then broke away.</li>
+      <li>He tutored <strong>Alexander the Great</strong>, founded his own school (the <strong>Lyceum</strong>), and studied <em>everything</em> — biology, politics, logic, constitutions, poetry.</li>
+      <li>Where Plato looked <em>up</em> to ideal Forms, Aristotle looked <em>around</em>: at how people actually live, thrive, and fail.</li>
+      <li>His ethics starts from a simple question: <strong>"What does a flourishing human life actually look like?"</strong></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Compare: Plato vs Aristotle -->
+  <phil-slide>
+    <h1>Two Ways to Find the Good</h1>
+    <p>"He was brilliant," Athena concedes. "But he thought my father was too stuck in the sky."</p>
+    <phil-compare>
+      <phil-side label="Plato" tag="Look up">
+        <p>The Good is a <strong>transcendent Form</strong> — eternal, perfect, known through reason alone.</p>
+        <p class="case">Know the Form of the Good, and right action follows. Philosophy is the path.</p>
+      </phil-side>
+      <phil-side label="Aristotle" tag="Look around">
+        <p>The good is <strong>how you actually live</strong> — a practical matter of habit, character, and community.</p>
+        <p class="case">The goal isn't to <em>know</em> the good but to <em>become</em> good (NE II.2). Practice is the path.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 6. MCQ: Aristotle vs Plato -->
+  <phil-slide>
+    <h1>Spot the Difference</h1>
+    <phil-mcq prompt="What most distinguishes Aristotle's ethical approach from Plato's?"
+              explain="Right. Aristotle's ethics is grounded in observation of how people actually live and flourish — it's practical philosophy, not abstract metaphysics.">
+      <phil-choice correct>He grounds ethics in how people actually live.</phil-choice>
+      <phil-choice feedback="Aristotle placed virtue at the very center of his ethics — he absolutely didn't reject it.">He rejects all talk of virtue and focuses on rules.</phil-choice>
+      <phil-choice feedback="Aristotle believed in objective virtue, not moral relativism. The mean is relative to the person, but the virtues themselves are real.">He argues that morality is simply a matter of opinion.</phil-choice>
+      <phil-choice feedback="That's closer to Plato's view — Socrates' 'no one does wrong knowingly.' Aristotle insisted you must practice, not just know.">He says knowledge alone is enough to make you virtuous.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — EUDAIMONIA ============ -->
+
+  <!-- 7. Eudaimonia -->
+  <phil-slide>
+    <img slot="art" src="./assets/athena.png" alt="Athena teaching">
+    <h1>Eudaimonia</h1>
+    <p>"Every mortal wants to be happy," Athena says. "But most of you have no idea what that actually means."</p>
+    <ul reveal>
+      <li>Everything we do aims at some <strong>good</strong>. But what's the <em>final</em> good — the one we want for its own sake?</li>
+      <li>Aristotle calls it <strong>eudaimonia</strong> (εὐδαιμονία): not "happiness" in the smiley-face sense, but <em>flourishing</em> — living well and doing well across a whole life.</li>
+      <li>It's an <strong>activity of the soul in accordance with virtue</strong> (NE I.7). Not a feeling. A way of living.</li>
+      <li>Not pleasure alone (Achilles feasting after battle). Not wealth (ask Midas). Not fame (heroes chasing <em>kleos</em> still die badly). Those can be <em>parts</em> of a good life — none is the whole.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Compare: eudaimonia vs hedonism -->
+  <phil-slide>
+    <h1>Flourishing ≠ Pleasure</h1>
+    <p>Athena glances toward the utilitarianism wing of the training camp. "Some people tried to reduce it all to pleasure. They were wrong."</p>
+    <phil-compare>
+      <phil-side label="Eudaimonia" tag="Aristotle">
+        <p><strong>Flourishing</strong> across a whole life: virtuous activity, good relationships, meaningful work.</p>
+        <p class="case">A hard life lived with courage, wisdom, and friends can still be a <em>good</em> life.</p>
+      </phil-side>
+      <phil-side label="Hedonism" tag="Epicurus / Bentham">
+        <p><strong>Pleasure</strong> is the only intrinsic good; pain the only intrinsic evil.</p>
+        <p class="case">A pleasant life — however shallow — counts as good by definition.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 9. MCQ: eudaimonia -->
+  <phil-slide>
+    <h1>What Is Eudaimonia?</h1>
+    <phil-mcq prompt="Which best captures Aristotle's concept of eudaimonia?"
+              explain="Right. Eudaimonia is a life of virtuous activity and flourishing — not a momentary feeling, and not reducible to pleasure, wealth, or fame.">
+      <phil-choice feedback="That's closer to hedonism. Eudaimonia is about a whole life of virtuous activity, not a passing mood.">Feeling happy and content right now.</phil-choice>
+      <phil-choice correct>A life of virtuous activity and flourishing.</phil-choice>
+      <phil-choice feedback="Aristotle explicitly argues that wealth is a means to other goods, not the final good.">Having lots of money and security.</phil-choice>
+      <phil-choice feedback="Fame (kleos) was what the Greek heroes chased — Aristotle argued it's too dependent on others' opinions to be the highest good.">Being famous for heroic deeds.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 10. Cloze: eudaimonia -->
+  <phil-slide>
+    <h1>In Aristotle's Words</h1>
+    <phil-cloze explain="Eudaimonia is activity of the soul in accordance with virtue — a way of living, not just a feeling. Aristotle insists on this distinction throughout the Nicomachean Ethics.">
+      Eudaimonia is "activity of the <phil-blank answer="soul">soul</phil-blank> in accordance with
+      <phil-blank answer="virtue|excellence|arete|arête">virtue</phil-blank>" (NE I.7).
+      It is not just a <phil-blank options="feeling,rule,duty">feeling</phil-blank> but a way of
+      <phil-blank options="living,thinking,praying">living</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE DOCTRINE OF THE MEAN ============ -->
+
+  <!-- 11. Virtue as disposition at the mean -->
+  <phil-slide>
+    <img slot="art" src="./assets/achilles.png" alt="Achilles, warrior with a cracked shield">
+    <h1>The Golden Mean</h1>
+    <p>"Now pay attention," Athena says. "This is where most of you go wrong."</p>
+    <ul reveal>
+      <li>A virtue is a stable <strong>disposition</strong> (<em>hexis</em>), not a one-off act. The brave person doesn't just act bravely once; they <em>are</em> brave, reliably.</li>
+      <li>Each virtue sits between two vices: <strong>excess</strong> and <strong>deficiency</strong>. Courage lies between rashness and cowardice; generosity between prodigality and stinginess.</li>
+      <li>The mean is <strong>not</strong> an arithmetic midpoint — it's relative to the person and situation.</li>
+      <li>What counts as courage for a trained warrior differs from what counts for a civilian. The one who perceives the right response? That takes <strong>phronesis</strong> — practical wisdom.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12a. The Rage of Achilles (Story) -->
+  <phil-slide>
+    <img slot="art" src="./assets/achilles.png" alt="Achilles, warrior with a cracked shield">
+    <h1>The Rage of Achilles</h1>
+    <p class="lead">"Let's look at Achilles," Athena says, conjuring an image of the great warrior. "A hero of unmatched physical courage, yes — but a total disaster of a human."</p>
+    <ul reveal>
+      <li>In the Trojan War, Achilles was the Greeks' ultimate weapon. But when King Agamemnon insulted his honor, Achilles pouted in his tent and refused to fight, letting his allies die.</li>
+      <li>Only when his dearest friend, Patroclus, was killed did he return to battle. Consumed by rage, he slaughtered Hector, desecrated the body, and dragged it behind his chariot for days.</li>
+      <li>"My father's poets called it 'heroic,'" Athena snorts. "Aristotle called it a lack of self-government."</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12b. Courage: Finding the Mean (Application) -->
+  <phil-slide>
+    <img slot="art" src="./assets/achilles.png" alt="Achilles, warrior with a cracked shield">
+    <h1>Courage: Finding the Mean</h1>
+    <p>Aristotle uses courage as the classic virtue. But it's not just "not being afraid."</p>
+    <ul reveal>
+      <li><strong>Deficiency (Cowardice):</strong> Fleeing in fear, prioritizing safety over honor.</li>
+      <li><strong>Excess (Rashness/Wrath):</strong> Blind rage, rushing headlong into danger without reason, or desecrating a fallen foe. This is Achilles.</li>
+      <li><strong>The Mean (Courage):</strong> Facing the right things, for the right reason, in the right way, at the right time.</li>
+      <li>Achilles had spirit, but because he couldn't moderate it, his courage curdled into the vice of wrath.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12c. The Flight of Icarus (Story) -->
+  <phil-slide>
+    <img slot="art" src="./assets/icarus.png" alt="Icarus falling, one wing melting">
+    <h1>The Flight of Icarus</h1>
+    <p class="lead">Athena sweeps her hand, and the scene changes to a boy soaring over the Aegean. "Next, a boy who thought he was a bird."</p>
+    <ul reveal>
+      <li>Trapped in the Labyrinth, the master inventor Daedalus built two sets of wings made of feathers and wax for himself and his son, Icarus.</li>
+      <li>Before they flew, Daedalus gave a strict warning: <em>Do not fly too high, or the sun will melt the wax. Do not fly too low, or the damp sea will weigh down the feathers.</em></li>
+      <li>But once in the air, the thrill of flight overcame Icarus. He flew higher and higher, the wax melted, and he plunged into the sea.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12d. Spirit: Finding the Mean (Application) -->
+  <phil-slide>
+    <img slot="art" src="./assets/icarus.png" alt="Icarus falling, one wing melting">
+    <h1>The Literal Middle Path</h1>
+    <p>"Daedalus wasn't just giving flight instructions," Athena notes. "He was explaining the Mean."</p>
+    <ul reveal>
+      <li>Icarus's tragedy is the Doctrine of the Mean made literal.</li>
+      <li><strong>The Deficiency (Damp Sea/Timidity):</strong> Flying too low, being too fearful to rise and escape.</li>
+      <li><strong>The Excess (Blazing Sun/Rashness):</strong> Flying too high, intoxicated by pride and thrill.</li>
+      <li><strong>The Mean (The Middle Way):</strong> Temperance and moderation — navigating escape safely by recognizing your limits.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Viz: The Golden Mean -->
+  <phil-slide>
+    <h1>Explore the Mean</h1>
+    <p><strong>Pick a character and a virtue domain</strong> — the marker shows where their myth places them on the spectrum. Green = near the mean; amber or magenta = trouble.</p>
+    <phil-mean prompt="Choose a character and virtue to explore:"></phil-mean>
+  </phil-slide>
+
+  <!-- 14. Checkset: doctrine of the mean -->
+  <phil-slide>
+    <h1>Test the Doctrine</h1>
+    <phil-checkset prompt="Check every TRUE statement about Aristotle's doctrine of the mean."
+                   explain="Right. The mean is relative to the person and situation, perceived by practical wisdom. It's not a mathematical average, virtues aren't innate — they're developed through practice — and the mean differs for different people in different circumstances.">
+      <phil-statement correct>A virtue is a stable disposition, not just a single good act.</phil-statement>
+      <phil-statement correct>The mean is relative to the person and the situation.</phil-statement>
+      <phil-statement correct>Each virtue lies between an excess and a deficiency.</phil-statement>
+      <phil-statement>The mean always means choosing the exact mathematical average.</phil-statement>
+      <phil-statement>Virtue is innate — you either have it or you don't.</phil-statement>
+      <phil-statement>The mean is exactly the same for everyone in every situation.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — PRACTICING VIRTUE ============ -->
+
+  <!-- 15a. Habituation: Ethics as a Craft -->
+  <phil-slide>
+    <img slot="art" src="./assets/olympus.png" alt="Olympian training ground">
+    <h1>Practice Makes Virtuous</h1>
+    <p class="lead">"How do you think my heroes got good at fighting?" Athena asks. "Practice. Ethics is no different."</p>
+    <ul reveal>
+      <li>Aristotle calls this <strong>habituation</strong> (<em>ethismos</em>): "We become just by doing just acts, temperate by doing temperate acts" (NE II.1).</li>
+      <li>Virtue is not a set of rules you memorize. It's a stable disposition (<em>hexis</em>) built over time.</li>
+      <li>Just as you learn to play the lyre by playing the lyre, you learn to be patient by practicing patience.</li>
+      <li>But practice alone isn't enough. You need to know *what* to do in each unique situation.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15b. The Cunning of Odysseus (Story) -->
+  <phil-slide>
+    <img slot="art" src="./assets/odysseus.png" alt="Odysseus, thoughtful, with a compass motif">
+    <h1>The Cunning of Odysseus</h1>
+    <p class="lead">Athena points to her favorite mortal. "Look at Odysseus. He isn't the strongest, but he's the one who gets home."</p>
+    <ul reveal>
+      <li>Trapped in the cave of the Cyclops Polyphemus, Odysseus didn't charge in blind fury (which would have meant death). Instead, he got the giant drunk, told him his name was "Nobody," and blinded him.</li>
+      <li>To hear the irresistible song of the Sirens without shipwrecking, he had his men plug their ears with wax and tie him securely to the mast.</li>
+      <li>Back in Ithaca, he spent days disguised as a beggar, patiently enduring insults from suitors to survey his household before striking.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15c. Phronesis: Wisdom in Action (Application) -->
+  <phil-slide>
+    <img slot="art" src="./assets/odysseus.png" alt="Odysseus, thoughtful, with a compass motif">
+    <h1>Phronesis: Wisdom in Action</h1>
+    <p>Odysseus demonstrates <strong>phronesis</strong> (practical wisdom) — the master virtue that coordinates all others.</p>
+    <ul reveal>
+      <li>Phronesis is the ability to perceive what a situation requires and find the right mean.</li>
+      <li>In the cave, raw courage without phronesis would have been suicide (rashness). Odysseus's restraint was the true mean.</li>
+      <li>"Phronesis is situational intelligence," Athena explains. "It connects intellectual smarts with a good character. Without it, cleverness is just a weapon."</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Compare: phronesis vs cleverness -->
+  <phil-slide>
+    <h1>Wisdom ≠ Cleverness</h1>
+    <p>"Don't confuse wisdom with being clever," Athena warns. "I've seen very clever people do terrible things."</p>
+    <phil-compare>
+      <phil-side label="Phronesis" tag="Practical wisdom">
+        <p>Aims at the <strong>genuinely good</strong>; requires good character.</p>
+        <p class="case">Odysseus navigating everyone safely home — reading each situation and choosing well.</p>
+      </phil-side>
+      <phil-side label="Mere Cleverness" tag="Skill without virtue">
+        <p>Can serve <strong>any end</strong>, including wicked ones.</p>
+        <p class="case">A con artist reads people brilliantly — but toward selfish ends. Cleverness without character.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 17a. The Tragedy of Medea (Story) -->
+  <phil-slide>
+    <img slot="art" src="./assets/medea.png" alt="Medea, holding a vial, flames in her eyes">
+    <h1>The Tragedy of Medea</h1>
+    <p class="lead">Athena's voice drops. "And then we have Medea. Brilliant, powerful, and utterly consumed."</p>
+    <ul reveal>
+      <li>Medea used her magic to help Jason steal the Golden Fleece, betraying her own family for him. But years later, Jason abandoned her to marry the princess of Corinth.</li>
+      <li>Blinded by jealousy and betrayal, Medea plotted a horrific revenge. She sent a poisoned robe to Jason's new bride, who died in agony.</li>
+      <li>To inflict the maximum possible pain on Jason, she chose to murder their own children, escaping in a chariot sent by the sun god Helios as Jason wept.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17b. Passion vs. Reason (Application) -->
+  <phil-slide>
+    <img slot="art" src="./assets/medea.png" alt="Medea, holding a vial, flames in her eyes">
+    <h1>The Nightmare of Akrasia</h1>
+    <p>"She wasn't stupid," Athena says. "She knew exactly what she was doing. That's what makes it terrifying."</p>
+    <ul reveal>
+      <li>Euripides gives Medea a famous line: <em>"I know what evil I am about to do, but my passion is stronger than my reason."</em></li>
+      <li>This is Aristotle's primary example of <strong>akrasia</strong> (incontinence or weakness of will).</li>
+      <li>Unlike a truly vicious person who thinks doing bad is good, the akratic person *knows* what is right but is overcome by desire or anger.</li>
+      <li>Without <strong>self-mastery</strong> and phronesis, Medea's brilliant cleverness became a tool of pure destruction.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. MCQ: habituation -->
+  <phil-slide>
+    <h1>Why Practice?</h1>
+    <phil-mcq prompt="Why does Aristotle say virtue must be practiced, not just taught?"
+              explain="Right. For Aristotle, virtues are dispositions formed through repeated action — just as you learn a craft by practicing it, you learn courage by doing courageous things. Knowing what's right isn't enough; you have to make it a habit.">
+      <phil-choice feedback="Aristotle valued education deeply — he founded a school! But he insisted that knowledge alone doesn't make you good.">He didn't believe in formal education at all.</phil-choice>
+      <phil-choice feedback="That's closer to Plato's view ('no one does wrong knowingly'). Aristotle argued against exactly this — Medea knew and still did wrong.">Knowledge of the good automatically makes you virtuous.</phil-choice>
+      <phil-choice feedback="Aristotle explicitly says virtues are not natural but acquired through practice (NE II.1).">Virtues are genetic traits — you're born with them or not.</phil-choice>
+      <phil-choice correct>Virtues are dispositions formed by habit, like craft skills.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — VIRTUE AND THE POLIS ============ -->
+
+  <!-- 19a. The Theft of Fire (Story) -->
+  <phil-slide>
+    <img slot="art" src="./assets/prometheus.png" alt="Prometheus, chained, fire in his outstretched hand">
+    <h1>The Theft of Fire</h1>
+    <p class="lead">"You can't flourish alone," Athena says. "Even the Titan who made you learned that the hard way."</p>
+    <ul reveal>
+      <li>Prometheus pitied humanity, who lived cold and helpless in the dark. Defying Zeus, he stole fire from Mount Olympus, hiding it in a hollow fennel stalk, and gave it to mortals.</li>
+      <li>With fire came civilization, science, and the arts. But Zeus's punishment was brutal: Prometheus was chained to a rock in the Caucasus, where an eagle ate his liver daily.</li>
+      <li>"A noble act," Athena muses. "But a life of eternal torture on a rock is not what we call a happy ending."</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19b. The Political Animal (Application) -->
+  <phil-slide>
+    <img slot="art" src="./assets/prometheus.png" alt="Prometheus, chained, fire in his outstretched hand">
+    <h1>The Political Animal</h1>
+    <p>Aristotle famously wrote: <strong>"Man is by nature a political animal"</strong> (Politics I.2).</p>
+    <ul reveal>
+      <li>For Aristotle, humans cannot fully flourish in isolation. We need a <strong>polis</strong> (community/city-state) to practice virtue and live well.</li>
+      <li>Prometheus gave humanity the tools to build a community, but he was cast out of it. An individual on a rock, even a noble one, cannot achieve eudaimonia.</li>
+      <li>Flourishing requires shared laws, education, and social institutions. Virtue is co-authored with the community you inhabit.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20a. The Loom of Penelope (Story) -->
+  <phil-slide>
+    <img slot="art" src="./assets/penelope.png" alt="Penelope at her loom, threads radiating outward">
+    <h1>The Loom of Penelope</h1>
+    <p class="lead">"If you want to see virtue that sustains an entire kingdom," Athena says, "look at Penelope."</p>
+    <ul reveal>
+      <li>With Odysseus missing for twenty years, Ithaca was overrun by 108 greedy suitors demanding Penelope's hand and eating the palace out of house and home.</li>
+      <li>To hold them off, she devised a trick: she would marry only after finishing a burial shroud for Odysseus's father. She wove it by day, but secretly unraveled it by torchlight at night.</li>
+      <li>For three years she maintained this web of resistance, protecting her son, her household, and the throne through patient intelligence and temperance.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20b. Philia: Virtue in Community (Application) -->
+  <phil-slide>
+    <img slot="art" src="./assets/penelope.png" alt="Penelope at her loom, threads radiating outward">
+    <h1>Philia: Virtue in Community</h1>
+    <p>Penelope's story shows that virtue is relational. It requires <strong>philia</strong> (friendship/broad social loyalty).</p>
+    <ul reveal>
+      <li>Aristotle claims friendship is one of the greatest external goods for eudaimonia (NE VIII).</li>
+      <li>The highest form is <strong>virtue-friendship</strong>, where friends love each other for their character, helping each other grow.</li>
+      <li>Penelope's virtue wasn't a solo act of heroic pride like Achilles's; it was a communal anchor that kept the social fabric of Ithaca from tearing apart.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Compare: individual vs communal virtue -->
+  <phil-slide>
+    <h1>Me vs We</h1>
+    <p>Modern ethics often asks "what should <em>I</em> do?" Aristotle asks something bigger.</p>
+    <phil-compare>
+      <phil-side label="Individual Virtue" tag="Modern focus">
+        <p>What should <strong>I</strong> do in this situation? Ethics as personal decision-making.</p>
+        <p class="case">A lonely hero choosing right — admirable, but Aristotle would say incomplete.</p>
+      </phil-side>
+      <phil-side label="Communal Virtue" tag="Aristotle's focus">
+        <p>What kind of <strong>polis</strong> produces virtuous people? Character and community are inseparable.</p>
+        <p class="case">Penelope's virtue is woven into Ithaca itself — it needs good laws, good neighbors, good friends.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 22. Checkset: virtue & the polis -->
+  <phil-slide>
+    <h1>Would Aristotle Agree?</h1>
+    <phil-checkset prompt="Check every claim Aristotle would endorse."
+                   explain="Right. Aristotle insists that humans flourish in community, that laws shape character, and that virtue-friendship is the highest form. He'd reject the ideas that hermits flourish fully, that the state shouldn't shape ethics, or that justice is irrelevant to personal virtue.">
+      <phil-statement correct>Humans flourish in community, not in isolation.</phil-statement>
+      <phil-statement correct>Laws and institutions shape moral character.</phil-statement>
+      <phil-statement correct>Virtue-friendship — loving someone for their character — is the highest kind.</phil-statement>
+      <phil-statement>A hermit can be fully virtuous without any community at all.</phil-statement>
+      <phil-statement>The state should stay out of ethics entirely.</phil-statement>
+      <phil-statement>Justice is irrelevant to an individual's personal virtue.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 6 — MODERN VIRTUE ETHICS ============ -->
+
+  <!-- 23. The return of virtue ethics -->
+  <phil-slide>
+    <img slot="art" src="./assets/athena.png" alt="Athena, gesturing forward">
+    <h1>The Tradition Lives</h1>
+    <p>"Mortals spent centuries arguing about rules and calculations," Athena says. "Then some of them remembered to ask the question that matters."</p>
+    <ul reveal>
+      <li>After centuries dominated by utilitarianism ("maximize happiness") and deontology ("follow the rules"), <strong>virtue ethics came roaring back</strong> in the 20th century.</li>
+      <li>Why? Because rules and calculations feel incomplete without asking: <em>what kind of person should I be?</em></li>
+      <li>Three modern philosophers picked up Aristotle's project and ran with it — each in a different direction.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Three modern Aristotelians -->
+  <phil-slide>
+    <h1>Three Modern Paths</h1>
+    <p>Each updates Aristotle for the modern world — same root, different branches.</p>
+    <ul reveal>
+      <li><strong>Alasdair MacIntyre</strong> (<em>After Virtue</em>, 1981): virtues only make sense within <strong>practices</strong> (shared activities with internal goods) and <strong>traditions</strong> (ongoing communal narratives). Modern individualism has fragmented our moral vocabulary — we need to recover it.</li>
+      <li><strong>Philippa Foot</strong> (<em>Natural Goodness</em>, 2001): <strong>neo-naturalism</strong> — virtues are natural excellences of the human species, just as deep roots are natural excellences of an oak. A human who lacks justice is <em>defective as a human</em>.</li>
+      <li><strong>Rosalind Hursthouse</strong> (<em>On Virtue Ethics</em>, 1999): practical action guidance — "an action is right iff it is what a <em>virtuous agent</em> would characteristically do in the circumstances." Virtue ethics <em>can</em> tell you what to do, not just what to be.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Compare: MacIntyre vs Foot vs Hursthouse -->
+  <phil-slide>
+    <h1>Same Root, Three Branches</h1>
+    <phil-compare>
+      <phil-side label="MacIntyre" tag="Practices &amp; traditions">
+        <p>Virtues make sense within <strong>shared practices</strong> and <strong>living traditions</strong>.</p>
+        <p class="case">A chess player's honesty; a community's inherited sense of justice — virtues need a social home.</p>
+      </phil-side>
+      <phil-side label="Foot" tag="Natural excellences">
+        <p>Virtues are <strong>natural human excellences</strong> — evaluable the way we evaluate any living thing.</p>
+        <p class="case">A human without justice is defective as a human, like a lioness who won't nurse her cubs.</p>
+      </phil-side>
+      <phil-side label="Hursthouse" tag="The virtuous agent">
+        <p>An action is right if it's what a <strong>virtuous person</strong> would characteristically do.</p>
+        <p class="case">"What would a courageous/generous/just person do here?" — virtue ethics as practical guide.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 26. MCQ: modern virtue ethics -->
+  <phil-slide>
+    <h1>Match the Philosopher</h1>
+    <phil-mcq prompt="Which modern philosopher argues that virtues are natural excellences of the human species — the way deep roots are natural excellences of an oak?"
+              explain="Right. Philippa Foot's 'Natural Goodness' (2001) argues that virtues are species-typical excellences — a human lacking justice is defective as a human, just as a bee that doesn't dance is defective as a bee.">
+      <phil-choice feedback="MacIntyre focuses on practices and traditions, not biological naturalism.">Alasdair MacIntyre</phil-choice>
+      <phil-choice feedback="Hursthouse focuses on action guidance — what a virtuous agent would do — not on natural species-norms.">Rosalind Hursthouse</phil-choice>
+      <phil-choice correct>Philippa Foot</phil-choice>
+      <phil-choice feedback="Singer is a utilitarian, not a virtue ethicist — he's in a different lesson!">Peter Singer</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 27. Cloze: modern variants -->
+  <phil-slide>
+    <h1>Complete the Map</h1>
+    <phil-cloze explain="MacIntyre grounds virtue in practices and traditions; Hursthouse gives action guidance via the virtuous agent; Foot identifies virtues as natural excellences. Three very different ways to update Aristotle for the modern world.">
+      MacIntyre argues virtues make sense within <phil-blank answer="practices">practices</phil-blank> and
+      <phil-blank answer="traditions">traditions</phil-blank>.
+      Hursthouse says an action is right if it's what a <phil-blank answer="virtuous">virtuous</phil-blank> agent would do.
+      Foot calls virtues natural <phil-blank answer="excellences">excellences</phil-blank> of the human species.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ DESCENT — ATHENA'S PARTING CHALLENGE ============ -->
+
+  <!-- 28. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Revisit Your Instincts</h1>
+    <p>Here's where you stood before training began. Re-rate each one — has Athena shifted anything? Staying put is fine; can you now say <em>why</em>?</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 29. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/athena.png" alt="Athena, parting">
+    <h1>Go Practice</h1>
+    <p class="lead">"Knowing the mean isn't enough," Athena says, already turning away. "You have to <em>live</em> it."</p>
+    <ul reveal>
+      <li><strong>Eudaimonia</strong> — flourishing is the highest good: activity of the soul in accordance with virtue.</li>
+      <li><strong>The mean</strong> — virtue is a disposition between excess and deficiency, perceived by practical wisdom.</li>
+      <li><strong>Habituation &amp; phronesis</strong> — virtue is practiced, not just taught; wisdom unifies it.</li>
+      <li><strong>The polis &amp; friendship</strong> — you can't flourish alone; community and virtue-friendship are essential.</li>
+      <li><strong>The tradition continues</strong> — MacIntyre, Foot, and Hursthouse carry Aristotle's project forward.</li>
+    </ul>
+    <p class="muted">Visit every slide, answer every question, and submit both belief probes to complete your training.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

@@ -579,3 +579,275 @@ generalization of the "all elements required" idea (sibling to `<phil-balance>`)
   interactive "pick the model" selector viz?
 - Tone calibration: "slightly grown-up Peter Rabbit" — confirm how wry you want it
   (e.g., the fox slide plays the manipulation for dark comedy).
+
+---
+
+## Aristotelian Virtue Ethics — "The Labors of Arête"
+
+- **Path:** `lessons/ethical-theory/virtue-ethics/`
+- **Lesson id:** `aristotle-virtue` (proposed)
+- **Subject (catalog):** `Virtue Ethics`
+- **Topic:** Ethical theory (normative ethics) — companion to the utilitarianism
+  and deontology lessons; completes the "big three" frameworks.
+- **Approach:** Build Aristotle's virtue-ethical framework through his key concepts
+  (eudaimonia, the doctrine of the mean, habituation, the polis) and show modern
+  variants. Same devices: story frame, `reveal` bullets, `<phil-compare>` cards,
+  an interactive viz, the belief probe, graded checks.
+- **Narrative frame — a training camp on Mount Olympus, Percy Jackson style:**
+  You've been summoned by **Athena, goddess of wisdom**, to a mythic training ground
+  where Greek heroes and anti-heroes serve as living case studies. She's not teaching
+  you to fight — she's teaching you to *live well*. Each hero's story illustrates a
+  virtue, a vice, or the precarious balance between them. The tone is witty, direct,
+  and slightly irreverent — Athena is an impatient mentor who expects you to *think*,
+  not just listen. Think "divine philosophy professor who has seen every mortal
+  mistake twice."
+- **Recurring characters (from Greek myth):**
+  - **Athena** — the instructor / guide. Wise, dry, occasionally exasperated.
+  - **Odysseus** — the exemplar of *phronesis* (practical wisdom); cunning but also
+    capable of excess (pride, deception).
+  - **Achilles** — courage taken to reckless extremes; honors *thumos* (spiritedness)
+    but struggles with wrath.
+  - **Medea** — passion unchecked by reason; brilliant but consumed by revenge.
+  - **Penelope** — steadfast temperance, loyalty, practical intelligence.
+  - **Icarus** — the iconic failure of the mean: recklessness vs cowardice, and the
+    price of not listening to wise counsel.
+  - **Prometheus** — justice and beneficence toward humanity, at enormous personal
+    cost; raises the question of virtue vs. self-sacrifice.
+
+### Accuracy note (real, not invented)
+Core concepts follow Aristotle's **Nicomachean Ethics** (NE): eudaimonia (NE I),
+the doctrine of the mean (NE II), habituation and moral education (NE II–III),
+phronesis / practical wisdom (NE VI), friendship (NE VIII–IX), and the connection
+between personal virtue and the polis (NE X + *Politics* I, III). Modern variants:
+**Alasdair MacIntyre** (*After Virtue*, 1981 — virtue within practices/traditions),
+**Philippa Foot** (*Natural Goodness*, 2001 — neo-naturalism),
+**Rosalind Hursthouse** (*On Virtue Ethics*, 1999 — action guidance via the
+virtuous agent). Greek myths are illustrative framing, not Aristotle's own examples
+(he uses Homer, but sparingly). Don't attribute specific claims to Aristotle unless
+they track the NE.
+
+### Learning goals
+- Situate Aristotle in context: student of Plato, tutor of Alexander, empiricist
+  temperament, and why his ethics starts from *how people actually live*.
+- Define **eudaimonia** (flourishing / living well and doing well) as the highest
+  good, and distinguish it from mere pleasure or wealth.
+- State the **doctrine of the mean** — virtue as a disposition (*hexis*) lying
+  between two vices (excess and deficiency), determined relative to the individual
+  and situation by practical wisdom (*phronesis*).
+- Explain how virtue is **acquired through habituation** (*ethismos*), not just
+  taught as theory; and the role of **phronesis** (practical wisdom) in perceiving
+  the right action in particular circumstances.
+- Describe the link between **individual virtue and a well-governed polis** —
+  Aristotle's claim that human beings are *political animals* (*zoon politikon*)
+  and that virtue requires a community context.
+- Outline three **modern variants** of virtue ethics (MacIntyre, Foot, Hursthouse)
+  and how each updates or defends Aristotle's core project.
+
+### Slide-by-slide
+
+**Act 0 — The summons**
+1. **[T]** Title — "The Labors of Arête" (art: Athena / Olympian training
+   ground). "Arête" = excellence/virtue in Greek; the title puns on the mythic
+   "labors" tradition.
+2. **[T]** Setup — Athena appears: "Forget the monsters. Today's labor is harder:
+   learning to live well." She'll use the heroes you already know — but not the
+   way you expect, `reveal`.
+3. **[P]** Belief probe (start) — 5 virtue-ethics statements (see below).
+
+**Act 1 — Who is this Aristotle? (background & context)**
+4. **[T]** Aristotle the person — student of Plato at the Academy, but broke with
+   Plato's Forms; tutor of Alexander the Great; founder of the Lyceum; an
+   empiricist who studied everything from biology to constitutions, `reveal`.
+5. **[C]** **Plato vs Aristotle** — the Good is a transcendent Form (Plato) vs
+   the good is *how you actually live* (Aristotle). "He was my father's student,"
+   Athena notes. "But he thought Dad was too abstract."
+6. **[Q · MCQ]** What distinguishes Aristotle's ethical approach from Plato's?
+   (answer: starts from how people actually live; distractors: rejects virtue
+   entirely / argues morality is relative / says knowledge alone makes you good).
+
+**Act 2 — Eudaimonia (the point of it all)**
+7. **[T]** **Eudaimonia** — everything we do aims at some good, but what's the
+   *final* good? Not "happiness" in our smiley-face sense: *flourishing* — living
+   well and doing well across a whole life. An **activity of the soul in
+   accordance with virtue** (NE I.7). Not pleasure alone (Achilles feasting),
+   wealth (Midas), or fame (heroes chasing *kleos*), `reveal`.
+8. **[C]** **Eudaimonia vs Hedonism** — flourishing across a whole life (Aristotle)
+   vs pleasure as the only intrinsic good (Epicurus/Bentham). Callback to
+   Lesson 1.
+9. **[Q · MCQ]** Which best captures Aristotle's eudaimonia? (answer: a life of
+   virtuous activity and flourishing; distractors: feeling happy right now /
+   having lots of money / being famous for heroic deeds).
+10. **[Q · Cloze]** Eudaimonia is "activity of the _soul_ in accordance with
+    _virtue_" (NE I.7). It is not just a _feeling_ but a way of _living_.
+
+**Act 3 — The doctrine of the mean (virtue as balance)**
+11. **[T]** **Virtue as a disposition at the mean** — a virtue is a stable
+    **disposition** (*hexis*), not a one-off act. Each virtue sits between two
+    vices: courage between rashness (excess) and cowardice (deficiency); generosity
+    between prodigality and stinginess. The mean is **not** an arithmetic midpoint
+    — it's relative to the person and situation, perceived by **phronesis**
+    (practical wisdom), `reveal`.
+12. **[T]** Athena's case study: **Achilles & Icarus** — Achilles' courage in
+    battle is legendary, but his *wrath* (the entire Iliad) is courage's excess:
+    fight fiercely, yes, but desecrating Hector's body overshoots the mean.
+    Icarus, meanwhile, is the mean made literal: Daedalus says *not too high, not
+    too low* — and Icarus overshoots. Two myths, one lesson, `reveal`.
+13. **[V]** **"The Golden Mean"** (`<phil-mean>`) — pick a character and a virtue
+    domain (e.g., courage, generosity, temperance); a slider runs from Deficiency
+    through the Mean to Excess, with the two vices labeled at each end and the
+    virtue in the middle. For each character, a marker shows where their mythic
+    story places them (Achilles: courage slider pegged toward excess; Penelope:
+    temperance near the mean). Ungraded; demonstrates that the mean is
+    character-relative.
+14. **[Q · Checkset]** Which are true of the doctrine of the mean (distractors:
+    always choose the mathematical average / virtue is innate, not a disposition /
+    the mean is the same for everyone).
+
+**Act 4 — Practicing virtue (habituation & phronesis)**
+15. **[T]** **Habituation & Odysseus** (*ethismos*) — "we become just by doing just
+    acts" (NE II.1). Virtue is trained like a craft. Athena's proof:
+    **Odysseus**, the exemplar of **phronesis** (practical wisdom, NE VI) — not
+    just clever but *situationally perceptive*. The Cyclops cave, the Sirens, the
+    return to Ithaca: each shows a man who reads the situation and chooses *well*.
+    Phronesis is the master virtue — without it, courage becomes rashness,
+    generosity becomes prodigality, `reveal`.
+16. **[C]** **Phronesis vs mere cleverness** — practical wisdom aims at the
+    genuinely good (Odysseus getting everyone home) vs cleverness that can serve
+    any end (a con artist's skill). Aristotle insists: phronesis requires good
+    character.
+17. **[T]** Athena's counter-example: **Medea** — brilliant, resourceful (she's
+    arguably *clever*), but her passions overwhelm reason. She knows what she's
+    about to do is wrong (Euripides gives her a devastating soliloquy) and does it
+    anyway. Passion without phronesis is catastrophic, `reveal`.
+18. **[Q · MCQ]** Why does Aristotle say virtue must be *practiced*, not just
+    taught? (answer: virtues are dispositions formed by habit, like skills;
+    distractors: he didn't believe in education / knowledge automatically makes you
+    virtuous / virtues are genetic).
+
+**Act 5 — Virtue and the polis (the political animal)**
+19. **[T]** **Zoon politikon & Prometheus** — "man is by nature a political
+    animal" (Politics I.2). You can't flourish alone; virtue requires a
+    *community* — laws, institutions, friends. Athena's case: **Prometheus** stole
+    fire for humanity and gave them the arts of civilization. Noble? But Zeus
+    punished him. Aristotle would ask: does self-sacrifice without a supportive
+    community constitute flourishing? `reveal`.
+20. **[T]** **Penelope & friendship** — **philia** (NE VIII–IX): the highest form
+    is **virtue-friendship**, where each person loves the other *for their
+    character*. Athena's example: **Penelope** — steadfast, temperate, practically
+    wise in managing Ithaca for twenty years. Her virtue sustains and is sustained
+    by a household, a community, and a web of obligations. "Even heroes need
+    companions. Ask Achilles about Patroclus," `reveal`.
+21. **[C]** **Individual virtue vs communal virtue** — modern ethics asks "what
+    should *I* do?" Aristotle asks "what kind of *polis* produces virtuous
+    people?" Personal character and political structure are inseparable.
+22. **[Q · Checkset]** Which claims would Aristotle endorse? (correct: humans
+    flourish in community / laws shape moral character / virtue-friendship is the
+    highest kind; distractors: hermits can be fully virtuous / the state should
+    stay out of ethics / justice is irrelevant to individual virtue).
+
+**Act 6 — Modern virtue ethics (the tradition lives)**
+23. **[T]** The return of virtue ethics — after centuries dominated by
+    utilitarianism and deontology, virtue ethics came roaring back in the 20th
+    century. Why? Because rules and calculations feel incomplete without asking
+    *what kind of person should I be?* `reveal`.
+24. **[T]** Three modern Aristotelians — **MacIntyre** (*After Virtue*, 1981):
+    virtues make sense within **practices** and **traditions**; modern
+    individualism has fragmented the moral vocabulary. **Foot** (*Natural Goodness*,
+    2001): **neo-naturalism** — virtues are natural excellences of the human
+    species, like deep roots for an oak. **Hursthouse** (*On Virtue Ethics*, 1999):
+    "an action is right iff it's what a *virtuous agent* would characteristically
+    do" — virtue ethics can guide action, not just assess character, `reveal`.
+25. **[C]** **MacIntyre vs Foot vs Hursthouse** (three-way `<phil-side>`):
+    virtues-in-practices (MacIntyre) vs natural human excellences (Foot) vs
+    action via the virtuous agent (Hursthouse). Three modern paths from the same
+    Aristotelian root.
+26. **[Q · MCQ]** Which modern philosopher argues virtues are natural excellences
+    of the human species? (answer: Foot; distractors: MacIntyre / Hursthouse /
+    Singer).
+27. **[Q · Cloze]** MacIntyre argues virtues make sense within _practices_ and
+    _traditions_. Hursthouse says an action is right if it's what a _virtuous_
+    agent would do. Foot calls virtues natural _excellences_ of the human species.
+
+**Descent — Athena's parting challenge**
+28. **[P]** Belief probe (revisit) — has the training changed your view?
+29. **[T]** Athena's farewell — "Knowing the mean isn't enough. You have to *live*
+    it. Go practice." Recap: eudaimonia → the mean → habituation & phronesis →
+    polis & friendship → the tradition continues, `reveal`.
+
+### Belief-probe statements (start; revisited at end)
+1. Being a good person is more about who you *are* than what you *do*.
+2. You can learn to be virtuous the same way you learn a skill — by practice.
+3. A truly good life requires good friends, not just good choices.
+4. There's a "right amount" of every emotion — even anger can be a virtue if felt
+   at the right time and in the right way.
+5. A society's laws and institutions are partly responsible for whether its citizens
+   are virtuous.
+
+### Comparisons (where each `<phil-compare>` lives)
+Plato vs Aristotle (5) · Eudaimonia vs Hedonism (8) · Phronesis vs mere
+cleverness (16) · Individual vs communal virtue (21) · MacIntyre vs Foot vs
+Hursthouse (25, three-way).
+
+### New interactive viz to build
+**`<phil-mean>` ("The Golden Mean")** — author supplies virtue domains (courage,
+generosity, temperance, etc.), each with named vices at excess and deficiency
+ends. A slider or spectrum runs from Deficiency → Mean → Excess, with the virtue
+labeled at center. For each mythic character, a marker is pre-placed on the
+spectrum showing where their story lands (e.g., Achilles on courage: pegged toward
+Excess/Rashness). Students can explore different characters × different virtues.
+Ungraded; reusable for any virtue-ethics teaching.
+
+### Art assets (16-bit SVGs / PNGs)
+All Greek mythic characters get **portraits** (they're fictional, so portraits
+work). Each portrait should include a **visual cue** that reinforces the concept
+the character teaches — the art should make the lesson sticky at a glance:
+
+- `athena` — portrait: wise, armored, owl on shoulder (the guide/instructor).
+- `achilles` — portrait: warrior mid-rage, **cracked shield** (courage taken to
+  excess; the crack = the flaw in his virtue).
+- `icarus` — portrait: falling, **one intact wing, one melting** (the failure of
+  the mean — too high).
+- `odysseus` — portrait: thoughtful pose, **compass or labyrinth motif** in
+  background (phronesis = navigating the situation wisely).
+- `medea` — portrait: holding a vial, **flames reflected in her eyes** (passion
+  overwhelming reason; cleverness without good character).
+- `penelope` — portrait: at her loom, **threads radiating outward to small
+  figures** (virtue sustained by and sustaining community/friendship).
+- `prometheus` — portrait: chained, **fire in his outstretched hand** (justice
+  toward humanity at personal cost; virtue and the polis).
+- `olympus-training-ground` — scene: the mythic training camp setting.
+
+Real historical thinkers (Aristotle, MacIntyre, Foot, Hursthouse) get
+**idea-emblem relic cards** per the art guidelines — no portraits of real people.
+Plus `prompts.md`.
+
+### Sources to cite (so nothing is invented)
+- Aristotle, *Nicomachean Ethics* (NE): eudaimonia (I.7), the mean (II.6–7),
+  habituation (II.1), phronesis (VI), friendship (VIII–IX), relation to the polis
+  (I.2, X.9).
+- Aristotle, *Politics* I.2 (zoon politikon), III (virtue and citizenship).
+- Alasdair MacIntyre, *After Virtue* (1981) — practices, traditions, narrative
+  unity of a life.
+- Philippa Foot, *Natural Goodness* (2001) — neo-naturalism, natural human
+  excellences.
+- Rosalind Hursthouse, *On Virtue Ethics* (1999) — v-rules, action guidance via
+  the virtuous agent.
+- Greek myths sourced from standard retellings (Homer's *Iliad* and *Odyssey*,
+  Euripides' *Medea*, Hesiod's *Theogony* / *Works and Days*, Ovid's
+  *Metamorphoses* for Icarus/Daedalus).
+
+### Counts (target)
+~29 slides. Belief probe (start + revisit) + ~7 graded (4 MCQ, 1 checkset,
+2 cloze) + 1 viz + 5 comparisons (one three-way) ≈ 45% interactive. No optional
+branch planned yet (candidate: a deep dive on friendship / philia types).
+
+### Open decisions before building
+- **`<phil-mean>` viz** in v1, or stub the slide and build the viz second? The
+  slider-with-character-markers concept is straightforward but needs good data for
+  each character × virtue pairing.
+- **Percy Jackson tone calibration:** How irreverent should Athena be? The outline
+  leans "impatient divine professor" — confirm the vibe isn't too snarky for the
+  audience.
+- **Prometheus and self-sacrifice:** Does Aristotle's framework handle
+  self-sacrifice well? Worth flagging as a limit/tension, or save that critique
+  for a future lesson?
