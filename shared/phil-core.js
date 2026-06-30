@@ -48,7 +48,9 @@ class PhilLesson extends HTMLElement {
     this._init = true;
 
     this.lessonId = this.getAttribute('id') || 'lesson';
-    this.store = new ProgressStore(this.lessonId);
+    // Persistence is swappable: a SCORM build sets globalThis.PhilProgressStore
+    // to an adapter with the same get/save/reset surface. Defaults to localStorage.
+    this.store = new (globalThis.PhilProgressStore || ProgressStore)(this.lessonId);
 
     this._audio = new Audio();                                  // narration player
     this._audioOn = localStorage.getItem('philmates:audio') === 'on';   // default off

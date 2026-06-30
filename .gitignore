@@ -1,0 +1,7 @@
+# Build artifacts under dist/ are ignored by default...
+dist/**
+# ...except the SCORM packages, which are published downloads linked from the
+# homepage (rebuild with: node tools/build-scorm.mjs --all).
+!dist/
+!dist/scorm/
+!dist/scorm/**
