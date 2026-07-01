@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" shape-rendering="crispEdges" role="img" aria-label="Dr. Helen Jekyll in a modern lab coat, holding a vial">
+  <rect width="80" height="80" fill="#1d2235"/>
+  <!-- head -->
+  <rect x="30" y="14" width="20" height="18" fill="#e8b98a"/>
+  <rect x="28" y="12" width="24" height="8" fill="#3a2a1e"/>
+  <!-- lab coat -->
+  <rect x="22" y="32" width="36" height="34" fill="#eef1ff"/>
+  <rect x="22" y="32" width="36" height="6" fill="#cdd3e8"/>
+  <rect x="38" y="32" width="4" height="34" fill="#9aa3c7"/>
+  <!-- collar -->
+  <rect x="34" y="30" width="12" height="6" fill="#4cc2ff"/>
+  <!-- held vial -->
+  <rect x="54" y="44" width="8" height="18" fill="#2f93c9"/>
+  <rect x="55" y="42" width="6" height="4" fill="#cdd3e8"/>
+  <rect x="56" y="48" width="4" height="10" fill="#4cc2ff"/>
+</svg>

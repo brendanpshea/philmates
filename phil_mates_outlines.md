@@ -851,3 +851,260 @@ branch planned yet (candidate: a deep dive on friendship / philia types).
 - **Prometheus and self-sacrifice:** Does Aristotle's framework handle
   self-sacrifice well? Worth flagging as a limit/tension, or save that critique
   for a future lesson?
+
+---
+
+## Bioethics: Equipoise — "The Jekyll Protocol"
+
+- **Path:** `lessons/bioethics/clinical-equipoise/` (proposed)
+- **Lesson id:** `bioethics-equipoise` (proposed)
+- **Subject (catalog):** `Clinical Equipoise`
+- **Topic:** Bioethics (third lesson in the strand, after Four Principles and
+  Patient Autonomy).
+- **Approach:** Teach the *machinery* of a clinical trial from scratch (phases,
+  control groups, randomization, blinding, research consent, DSMBs, placebo
+  ethics), then use that machinery to explain why **equipoise** is the principle
+  that makes randomizing human beings defensible at all. Same devices: story
+  frame, `reveal` bullets, `<phil-compare>` cards, an interactive viz, the belief
+  probe, graded checks.
+- **Narrative frame — the Jekyll family, one generation removed:** You're
+  shadowing **Dr. Helen Jekyll**, a physician-scientist and great-granddaughter of
+  the Henry Jekyll of *The Strange Case of Dr. Jekyll and Mr. Hyde*. Family
+  history has made her obsessive about doing research *right*. She's running a
+  real, modern clinical trial of an experimental drug for a severe impulse-control
+  disorder — the same territory her great-grandfather blundered into with his
+  serum — and every safeguard she insists on is one he skipped. Her ancestor's
+  journal (quoted/paraphrased from the public-domain novella) supplies the
+  running cautionary counter-example: an "experiment" with no control group, no
+  randomization, no blinding, no consent, and no one watching for the moment it
+  went wrong.
+- **Recurring device — "N of 1, no one watching":** every new safeguard Helen
+  explains is immediately checked against what Henry didn't have, e.g. "Henry was
+  subject, investigator, and sole judge of his own results — a trial with a
+  control group of exactly zero."
+
+### Accuracy note (real, not invented)
+- **Theoretical equipoise** is Charles Fried's standard (*Medical Experimentation:
+  Personal Integrity and Social Policy*, 1974): the individual physician's own
+  subjective probability must be genuinely 50/50.
+- **Clinical equipoise** is Benjamin Freedman's revision ("Equipoise and the
+  Ethics of Clinical Research," *NEJM*, 1987): not each doctor's internal balance,
+  but genuine, honest disagreement within the expert clinical community about
+  which treatment is better — the standard actually used to justify randomization
+  in practice.
+- Trial phases (I–IV), control groups, randomization, and blinding follow standard
+  clinical-research methodology (FDA/NIH definitions).
+- **DSMBs** (Data and Safety Monitoring Boards) and interim stopping rules are
+  standard practice in RCTs (ICH E6 Good Clinical Practice guidance).
+- The **placebo-control controversy** (placebo vs. active/standard-of-care
+  control) follows the real debate around the **Declaration of Helsinki**
+  (WMA, most relevant to its 2000 revision and para. 33 of the 2013 revision),
+  which restricts placebo use when proven effective treatment exists.
+- **Therapeutic misconception** is a real term (Appelbaum, Roth & Lidz, 1982) for
+  research subjects mistakenly believing a trial is designed for their personal
+  benefit rather than to generate knowledge.
+- Henry Jekyll and his serum are fiction (Robert Louis Stevenson, 1886, public
+  domain) — used only as the illustrative anti-example; the research-ethics
+  framework is real. Helen Jekyll and her drug trial are invented for this lesson.
+
+### Learning goals
+- Explain the basic **apparatus of a clinical trial**: trial phases (I–IV), why a
+  **control group** is needed, what **randomization** accomplishes, and the
+  difference between **single-** and **double-blind** design.
+- Explain how **research consent** differs from ordinary clinical consent
+  (disclosure that the goal is generalizable knowledge, not necessarily personal
+  benefit; the right to withdraw), and define the **therapeutic misconception**.
+- State and distinguish **theoretical equipoise** (Fried) from **clinical
+  equipoise** (Freedman), and explain why clinical equipoise is the more workable
+  standard for justifying randomization.
+- Explain how **interim monitoring**, **stopping rules**, and an independent
+  **DSMB** respond when a trial's data disturb equipoise mid-course.
+- Explain the **placebo-control controversy** — when a placebo arm is ethically
+  defensible versus when comparison to standard-of-care is ethically required.
+- Apply all of the above to diagnose everything wrong, ethically, with Henry
+  Jekyll's original self-experiment.
+
+### Slide-by-slide
+
+**Act 0 — Shadowing Dr. Jekyll**
+1. **[T]** Title — "The Jekyll Protocol" (art: Helen Jekyll in a modern lab, vial
+   with a double-helix subtly forming an "H").
+2. **[T]** Setup — Helen Jekyll, great-granddaughter of *that* Jekyll, is running a
+   trial of an experimental drug for a severe impulse-control disorder — the same
+   territory her ancestor stumbled into with a serum and no plan at all, `reveal`.
+3. **[P]** Belief probe (start) — 5 statements (see below).
+
+**Act 1 — The apparatus of a clinical trial**
+4. **[T]** What a clinical trial actually *is* — testing whether an intervention
+   beats an alternative, under a controlled comparison, not just "trying something
+   and seeing what happens," `reveal`.
+5. **[T]** **Phases I–IV** — I: safety/dosing, small numbers; II: early efficacy
+   and side-effect signal; III: large comparative trial, the one that decides
+   approval; IV: post-approval surveillance, `reveal`.
+6. **[T]** The **control group** — a comparison arm (placebo or standard of care).
+   Without one you can't tell the drug's effect apart from natural recovery,
+   regression to the mean, or the placebo effect, `reveal`.
+7. **[T]** **Randomization** — chance assignment spreads both known and unknown
+   confounders evenly across arms. Henry's "trial": he was investigator, subject,
+   and control group, all in one body, `reveal`.
+8. **[C]** **Randomized** vs **historically/self-selected** comparison (Henry's
+   approach vs a modern RCT).
+9. **[T]** **Blinding** — single-blind (patient doesn't know their arm) vs
+   double-blind (patient *and* clinician don't know) — guards against the placebo
+   effect and against biased assessment, `reveal`.
+10. **[Q · Checkset]** Genuine purposes of randomization/blinding (distractors:
+    "to trick patients into complying," "to punish the control group").
+11. **[Q · MCQ]** Why does a trial need a control group at all?
+
+**Act 2 — Consenting to research, not just treatment**
+12. **[T]** **Research consent** adds two things beyond ordinary clinical consent:
+    disclosure that the goal is *generalizable knowledge* (you might get placebo,
+    it might not help you personally) and an unconditional **right to withdraw**,
+    `reveal`.
+13. **[C]** **Clinical consent** (this treatment, chosen for you) vs **Research
+    consent** (this protocol, which may or may not benefit you, in service of
+    what we learn).
+14. **[Q · MCQ]** A participant scenario testing the **therapeutic misconception**
+    (believing the trial exists to treat *them*, specifically).
+
+**Act 3 — Equipoise: the ethical linchpin**
+15. **[T]** The randomization problem — if a doctor already believes drug X is
+    better, isn't it wrong to randomly deny some patients the better option?
+    `reveal`.
+16. **[T]** Fried's answer — **theoretical equipoise**: the individual physician's
+    own subjective odds must be exactly balanced, 50/50. Turns out almost
+    impossibly fragile — a single hunch breaks it, `reveal`.
+17. **[T]** Freedman's fix — **clinical equipoise**: not each doctor internally
+    50/50, but genuine, honest disagreement *within the expert clinical
+    community* about which treatment is better. Far more realistic, and the
+    standard actually used to launch trials, `reveal`.
+18. **[C]** **Theoretical equipoise** (Fried, individual) vs **Clinical equipoise**
+    (Freedman, community).
+19. **[Q · Cloze]** Clinical equipoise = genuine disagreement in the expert
+    _community_; theoretical equipoise = the _individual_ physician's own
+    uncertainty.
+20. **[V]** **"The Panel of Experts"** (`<phil-equipoise>`) — a panel of expert
+    avatars, each holding an opinion for or against Helen's drug. As the student
+    feeds in emerging (hypothetical) trial results, the panel's opinions shift;
+    the widget reads out whether **clinical equipoise still holds** (a genuine
+    split) or has **collapsed** (consensus one way), and flags what that implies
+    for the trial. Ungraded.
+21. **[Q · MCQ]** Given a described split among experts, does clinical equipoise
+    hold or not?
+
+**Act 4 — When equipoise breaks: monitoring and stopping**
+22. **[T]** Trials don't run blind to their own data forever — **interim
+    analyses** and pre-set **stopping rules**, reviewed by an independent **Data
+    and Safety Monitoring Board (DSMB)**, `reveal`.
+23. **[T]** If results become clearly one-sided — or harm shows up — equipoise has
+    collapsed. The ethical duty is to stop early, unblind, and offer the better
+    treatment to everyone, `reveal`.
+24. **[T]** Henry had no DSMB. Nothing was watching for the moment his private
+    trial turned from promising to catastrophic — no one to call a stop but
+    himself, and he never did, `reveal`.
+25. **[Q · MCQ]** What is the purpose of a DSMB and pre-set stopping rules?
+
+**Act 5 — The placebo controversy**
+26. **[T]** Is a placebo arm always required, or always permissible? When an
+    effective standard treatment already exists, many argue new drugs must be
+    compared *to that*, not to nothing — an unnecessary placebo arm can itself
+    violate equipoise, `reveal`.
+27. **[C]** **Placebo-controlled** vs **active-controlled** (standard-of-care)
+    trial design.
+28. **[Q · Checkset]** When is a placebo control ethically defensible? (correct:
+    no proven effective treatment exists; condition is minor/short-term and
+    closely monitored; distractors: "whenever it's cheaper," "whenever the
+    condition is serious enough to justify anything").
+
+**Act 6 — Verdict: Helen vs. Henry**
+29. **[T]** Helen's protocol, checked against everything her great-grandfather's
+    lacked — a control group, randomization, blinding, real research consent,
+    clinical equipoise established across a genuine panel of experts, a DSMB
+    watching for the moment to stop. The machinery exists *because* one Jekyll
+    skipped every step of it, `reveal`.
+30. **[P]** Belief probe (revisit) — has the shadowing changed your view?
+31. **[T]** Recap — apparatus (phases, control, randomization, blinding) →
+    research consent → equipoise (theoretical vs. clinical) → monitoring
+    (DSMB/stopping rules) → placebo ethics, `reveal`.
+
+### Belief-probe statements (start; revisited at end)
+1. If a doctor is even slightly confident one treatment is better, it's wrong to
+   randomly assign patients to either arm.
+2. A drug trial without a placebo group can't really prove anything.
+3. Once a trial starts producing promising results, it should be stopped early so
+   everyone can get the better treatment.
+4. It's fine to test an experimental treatment on yourself without any oversight,
+   since you're only risking your own body.
+5. Blinding — hiding who's getting the real drug — is mostly a way of tricking
+   patients.
+
+### Comparisons (where each `<phil-compare>` lives)
+Randomized vs historically/self-selected comparison (8) · Clinical consent vs
+research consent (13) · Theoretical vs clinical equipoise (18) · Placebo-
+controlled vs active-controlled design (27).
+
+### New interactive viz to build
+**`<phil-equipoise>` ("The Panel of Experts")** — author supplies a panel of
+expert opinions (for/against) on a trial drug and a sequence of hypothetical
+interim results. As the student steps through results, the panel's balance of
+opinion shifts; the widget reports whether clinical equipoise holds (genuine
+split) or has collapsed (consensus), and what that implies (continue / stop /
+unblind). Reusable for any research-ethics or expert-disagreement teaching;
+conceptually a sibling to `<phil-balance>` (Four Principles) and `<phil-consent>`
+(Patient Autonomy) — "toggle inputs, read a threshold verdict."
+
+### Art assets (16-bit SVGs)
+**New:**
+- `helen-jekyll` — portrait, modern lab coat, vial with a subtle double-helix "H."
+- `henry-jekyll` — period portrait/locket photo, for the callback slides.
+- `hyde-shadow` — a Hyde silhouette looming just behind Henry's portrait; used on
+  the theoretical-equipoise slide (16) to visualize the individual physician's own
+  hidden hunch tipping a private balance — distinct from the expert panel.
+- `expert-panel` — a row of diverse clinician silhouettes, leaning "for" or
+  "against" (lean-angle or speech-bubble), for the clinical-equipoise slide (17)
+  and the `<phil-equipoise>` viz (20).
+- `blindfold` — simple eye-mask icon, doubled for double-blind vs. single for
+  single-blind, next to the blinding slide (9).
+- `placebo-pill` — a plain sugar pill beside a real capsule, for the placebo-
+  controversy slides (26–28).
+- `dsmb-eye` — a watchful-eye motif for the monitoring-board slides (22–24).
+
+**Reused (recolor/relabel only, no new illustration):**
+- `scales.svg` (from `four-principles`) — the theoretical-vs-clinical equipoise
+  comparison card (18); "equipoise" is literally balance, so this rhymes visually
+  with the Van Helsing lesson's "weighing principles" idea.
+- `blood-vial.svg` (from `four-principles`) — two color variants of the same
+  silhouette: a murky serum for Henry, a clean trial-drug vial for Helen. Same
+  apparatus, different rigor, reused across generations.
+
+Plus `prompts.md`.
+
+### Sources to cite (so nothing is invented)
+- Charles Fried, *Medical Experimentation: Personal Integrity and Social Policy*
+  (1974) — theoretical equipoise.
+- Benjamin Freedman, "Equipoise and the Ethics of Clinical Research," *NEJM*
+  (1987) — clinical equipoise.
+- Appelbaum, Roth & Lidz, "The Therapeutic Misconception: Informed Consent in
+  Psychiatric Research" (1982).
+- World Medical Association, *Declaration of Helsinki* (placebo-control
+  provisions, esp. the 2000 revision and para. 33 of the 2013 revision).
+- ICH E6 Good Clinical Practice guidance — DSMBs, interim analysis, stopping
+  rules.
+- FDA/NIH clinical trial phase definitions (I–IV).
+- Robert Louis Stevenson, *The Strange Case of Dr. Jekyll and Mr. Hyde* (1886,
+  public domain) — source of the framing anti-example; a fictional device, not a
+  research-ethics source.
+
+### Counts (target)
+~31 slides. Belief probe (start + revisit) + ~7 graded (3 MCQ, 2 checkset,
+1 cloze) + 1 viz + 4 comparisons ≈ 40% interactive.
+
+### Open decisions before building
+- **`<phil-equipoise>` viz** in v1, or stub the slide first? Needs authored
+  interim-result data that plausibly shifts a panel from split to consensus.
+- **How much Stevenson to quote directly** (public domain, so verbatim lines are
+  fine) vs. paraphrase — verbatim gives authenticity but needs careful excerpt
+  choice to keep the tone consistent with the rest of the lesson.
+- **Fictional drug/condition naming:** keep the impulse-control disorder and drug
+  name deliberately generic/fictional to avoid implying any real diagnosis or
+  compound, given the sensitive subject matter (loss of behavioral control).

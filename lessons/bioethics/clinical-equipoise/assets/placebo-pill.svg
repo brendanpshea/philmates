@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" shape-rendering="crispEdges" role="img" aria-label="A plain sugar pill beside a real capsule">
+  <rect width="80" height="80" fill="#1d2235"/>
+  <!-- placebo (plain) -->
+  <rect x="14" y="34" width="20" height="20" rx="0" fill="#eef1ff"/>
+  <rect x="16" y="36" width="16" height="16" fill="#cdd3e8"/>
+  <!-- real capsule (two-tone) -->
+  <rect x="46" y="30" width="22" height="26" fill="#2f93c9"/>
+  <rect x="46" y="30" width="22" height="12" fill="#4cc2ff"/>
+  <rect x="46" y="42" width="22" height="2" fill="#050610"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Helen Jekyll's modern trial-drug vial">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <rect x="26" y="12" width="12" height="6" fill="#cdd3e8"/>
+  <rect x="28" y="9" width="8" height="4" fill="#eef1ff"/>
+  <rect x="24" y="18" width="16" height="50" fill="#2b3252"/>
+  <rect x="26" y="18" width="12" height="50" fill="#3a4673"/>
+  <rect x="24" y="66" width="16" height="4" fill="#2b3252"/>
+  <!-- clean trial liquid -->
+  <rect x="26" y="34" width="12" height="32" fill="#1f6fa8"/>
+  <rect x="26" y="34" width="12" height="3" fill="#4cc2ff"/>
+  <rect x="28" y="38" width="3" height="24" fill="#2f93c9"/>
+  <!-- printed label with "H" helix mark -->
+  <rect x="22" y="44" width="20" height="12" fill="#f2eedd"/>
+  <rect x="29" y="46" width="2" height="8" fill="#4cc2ff"/>
+  <rect x="33" y="46" width="2" height="8" fill="#4cc2ff"/>
+  <rect x="27" y="49" width="10" height="2" fill="#2f93c9"/>
+  <rect x="28" y="20" width="2" height="14" fill="#6f80a6"/>
+  <rect x="44" y="22" width="2" height="2" fill="#ffe98a"/>
+</svg>

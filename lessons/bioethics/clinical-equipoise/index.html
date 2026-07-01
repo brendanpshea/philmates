@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Jekyll Protocol: Clinical Equipoise · PhilMates</title>
+  <meta name="description" content="Dr. Helen Jekyll, great-granddaughter of the original, runs a modern clinical trial the right way — teaching the apparatus of research and the principle of equipoise against her ancestor's reckless self-experiment.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
+  <script type="module" src="./assets/equipoise.js"></script>
+</head>
+<body>
+
+<phil-lesson id="bioethics-equipoise" title="The Jekyll Protocol" subject="Clinical Equipoise">
+
+  <!-- ============ ACT 0 — SHADOWING DR. JEKYLL ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/helen-jekyll.svg" alt="Dr. Helen Jekyll in a modern lab coat, holding a vial">
+    <h1>The Jekyll Protocol</h1>
+    <p class="lead">You're shadowing Dr. Helen Jekyll — great-granddaughter of <em>that</em> Jekyll — as she runs a clinical trial in the same territory her ancestor blundered into with a serum and no plan at all.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/henry-jekyll.svg" alt="A period portrait of Henry Jekyll, in a locket frame">
+    <h1>The Family Business</h1>
+    <p class="lead">"Everyone assumes I went into medicine to make up for him," Helen says, nodding at the locket photo on her desk. "They're right."</p>
+    <ul reveal>
+      <li>Her trial: an experimental drug for a severe impulse-control disorder — the same territory Henry Jekyll wandered into with a self-brewed serum.</li>
+      <li>He had a hypothesis, a syringe, and himself. No committee, no colleagues, no one watching.</li>
+      <li>She has all three, plus one idea he never had: a reason it's <em>ethical</em> to run the experiment on someone besides yourself, at all.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe (start) -->
+  <phil-slide>
+    <h1>Before Rounds</h1>
+    <p>Five gut-checks — <strong>no right answers.</strong> Just say where you stand; we'll revisit them at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>If a doctor is even slightly confident one treatment is better, it's wrong to randomly assign patients to either arm.</phil-statement>
+      <phil-statement>A drug trial without a placebo group can't really prove anything.</phil-statement>
+      <phil-statement>Once a trial starts producing promising results, it should be stopped early so everyone can get the better treatment.</phil-statement>
+      <phil-statement>It's fine to test an experimental treatment on yourself without any oversight, since you're only risking your own body.</phil-statement>
+      <phil-statement>Blinding — hiding who's getting the real drug — is mostly a way of tricking patients.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — THE APPARATUS OF A CLINICAL TRIAL ============ -->
+
+  <!-- 4. What a trial is -->
+  <phil-slide>
+    <h1>What a Clinical Trial Actually Is</h1>
+    <p>Not "try something and see what happens." A trial tests whether an intervention beats an alternative, under a comparison built to survive your own wishful thinking.</p>
+    <ul reveal>
+      <li>Henry's method: drink the serum, note what happens, done. One data point, one believer.</li>
+      <li>A real trial is designed so the result would convince someone who <em>wasn't</em> already hoping for it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Phases -->
+  <phil-slide>
+    <h1>Phases I–IV</h1>
+    <p>Before a drug reaches the patients who might benefit, it climbs four stages:</p>
+    <ul reveal>
+      <li><strong>Phase I</strong> — is it safe, and at what dose? A handful of people.</li>
+      <li><strong>Phase II</strong> — does it show a real efficacy signal, and what side effects show up? A larger but still small group.</li>
+      <li><strong>Phase III</strong> — the big one: a large comparative trial against a control, deciding whether it's approved.</li>
+      <li><strong>Phase IV</strong> — after approval, ongoing surveillance for rare or long-term effects.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Control group -->
+  <phil-slide>
+    <img slot="art" src="./assets/serum-vial.svg" alt="Henry Jekyll's murky serum vial">
+    <h1>The Control Group</h1>
+    <p>A comparison arm — placebo, or the current standard of care.</p>
+    <ul reveal>
+      <li>Without one, you can't separate the drug's effect from the natural course of the illness, from regression to the mean, or from the placebo effect.</li>
+      <li>Henry's serum "worked" — but compared to <em>what</em>? He had no one who took nothing, and no earlier version of himself to compare against fairly. Every "result" is confounded with everything else happening that night.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. Randomization -->
+  <phil-slide>
+    <img slot="art" src="./assets/trial-vial.svg" alt="Helen Jekyll's modern trial-drug vial">
+    <h1>Randomization</h1>
+    <p>Chance assignment to trial arms spreads both the confounders you thought of and the ones you didn't, evenly across groups.</p>
+    <ul reveal>
+      <li>Sicker patients, healthier patients, optimists, skeptics — randomization makes sure none of them clump on one side.</li>
+      <li>Henry's "trial" had an arm of exactly one. He was investigator, subject, and sole judge of his own results, all in the same body — nothing to randomize, and no one to compare himself to.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Compare: randomized vs historical -->
+  <phil-slide>
+    <h1>Two Ways to Compare</h1>
+    <phil-compare>
+      <phil-side label="Randomized Comparison" tag="Modern RCT">
+        <p>Chance decides who gets the drug and who gets the control — confounders scatter evenly across both arms.</p>
+        <p class="case">Helen's trial: patients randomized to drug or placebo by computer, not by hunch.</p>
+      </phil-side>
+      <phil-side label="Self-Selected / Historical" tag="Henry's method">
+        <p>One subject picks himself, compares himself only to his own past — no second arm at all.</p>
+        <p class="case">Henry's diary: "I took the draught, and felt at once a change." Compared to nothing.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 9. Blinding -->
+  <phil-slide>
+    <img slot="art" src="./assets/blindfold.svg" alt="A blindfold, doubled to suggest double-blind design">
+    <h1>Blinding</h1>
+    <p>Knowing which arm you're in changes how you feel and how you're assessed — so trials hide it.</p>
+    <ul reveal>
+      <li><strong>Single-blind</strong> — the patient doesn't know which arm they're in.</li>
+      <li><strong>Double-blind</strong> — neither the patient <em>nor</em> the treating clinician knows, which also guards against biased assessment of symptoms.</li>
+      <li>Henry knew exactly what he'd taken and exactly what he expected to feel — the least blinded experiment imaginable.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Checkset: purposes of randomization/blinding -->
+  <phil-slide>
+    <h1>What These Tools Are Actually For</h1>
+    <phil-checkset prompt="Check every genuine purpose of randomization and blinding."
+                   explain="Right — both tools exist to keep bias (from confounders, the placebo effect, or a clinician's expectations) from contaminating the comparison. Neither is about compliance or punishment.">
+      <phil-statement correct>Spreading confounders evenly across the trial arms</phil-statement>
+      <phil-statement correct>Preventing the placebo effect from being mistaken for the drug's own effect</phil-statement>
+      <phil-statement correct>Stopping a clinician's expectations from biasing how symptoms are assessed</phil-statement>
+      <phil-statement>Tricking patients into complying with the protocol</phil-statement>
+      <phil-statement>Punishing the control group for being assigned to it</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 11. MCQ: why control group -->
+  <phil-slide>
+    <h1>Why Bother With a Control?</h1>
+    <phil-mcq prompt="Why does a trial need a control group at all?"
+              explain="Right. Without a comparison arm, you can't tell the drug's real effect apart from natural recovery, regression to the mean, or the placebo effect — which is exactly the gap in Henry's one-man experiment.">
+      <phil-choice feedback="Control groups aren't about punishing anyone — they're about being able to interpret the result at all.">To deliberately give some patients a worse outcome</phil-choice>
+      <phil-choice correct>To tell the drug's effect apart from recovery or placebo</phil-choice>
+      <phil-choice feedback="Ethics review matters, but it isn't what a control group itself accomplishes methodologically.">To satisfy a regulator's paperwork requirement, nothing more</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — CONSENTING TO RESEARCH ============ -->
+
+  <!-- 12. Research consent -->
+  <phil-slide>
+    <h1>Consenting to Research, Not Just Treatment</h1>
+    <p>Helen's patients sign something Henry never offered anyone: research consent.</p>
+    <ul reveal>
+      <li>It discloses that the goal is <strong>generalizable knowledge</strong> — you might get the placebo, and the trial isn't designed around your personal benefit.</li>
+      <li>It guarantees an unconditional <strong>right to withdraw</strong>, at any point, without penalty.</li>
+      <li>Skip this, and patients can fall into the <strong>therapeutic misconception</strong> — believing the trial exists to treat <em>them</em>, specifically.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Compare: clinical vs research consent -->
+  <phil-slide>
+    <h1>Two Kinds of "Yes"</h1>
+    <phil-compare>
+      <phil-side label="Clinical Consent" tag="This treatment, for you">
+        <p>Chosen because it's believed to be your <strong>best option</strong>, tailored to your case.</p>
+        <p class="case">"I recommend this because it's what's best for you."</p>
+      </phil-side>
+      <phil-side label="Research Consent" tag="This protocol, for knowledge">
+        <p>You may receive the drug, the control, or the placebo — the goal is what we <strong>learn</strong>, not guaranteed personal benefit.</p>
+        <p class="case">"You may get the study drug. You may get placebo. We won't know which until it's over."</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 14. MCQ: therapeutic misconception -->
+  <phil-slide>
+    <h1>"But This Is Supposed to Help Me"</h1>
+    <phil-mcq prompt="A participant tells Helen, 'I signed up because I knew you'd give me the good drug.' What's the name for this mistake?"
+              explain="Right. The therapeutic misconception is exactly this: treating a research protocol, which may randomize you to placebo, as if it were personalized treatment chosen for your benefit."
+    >
+      <phil-choice feedback="Voluntariness is about freedom from coercion — this patient wasn't coerced, just confused about what the trial is for.">A failure of voluntariness</phil-choice>
+      <phil-choice feedback="Capacity is about the ability to reason through a decision — the confusion here is about what the trial promises, not whether he can reason.">A failure of capacity</phil-choice>
+      <phil-choice correct>The therapeutic misconception</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — EQUIPOISE ============ -->
+
+  <!-- 15. The randomization problem -->
+  <phil-slide>
+    <h1>The Problem With Randomizing People</h1>
+    <p>If Helen already believes HJ-9 works better than placebo, isn't it wrong to randomly deny some patients the treatment she thinks is better?</p>
+    <ul reveal>
+      <li>This isn't a technicality — it's the central ethical puzzle of every controlled trial.</li>
+      <li>Two philosophers gave two different answers.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Theoretical equipoise -->
+  <phil-slide>
+    <img slot="art" src="./assets/hyde-shadow.svg" alt="A Hyde silhouette looming behind Henry Jekyll's portrait">
+    <h1>Fried's Answer: Theoretical Equipoise</h1>
+    <p>Charles Fried's standard: the <strong>individual physician's own</strong> subjective odds must be exactly balanced — a true 50/50.</p>
+    <ul reveal>
+      <li>The trouble: this is almost impossibly fragile. One hunch, one half-remembered case, one gut feeling, and the 50/50 is broken.</li>
+      <li>It's the physician's own private inner Hyde whispering a lean — and by this standard, a single whisper should end the trial.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Clinical equipoise -->
+  <phil-slide>
+    <img slot="art" src="./assets/expert-panel.svg" alt="A row of clinician silhouettes, some leaning for and some against">
+    <h1>Freedman's Fix: Clinical Equipoise</h1>
+    <p>Benjamin Freedman's revision: forget any one doctor's internal balance. What matters is genuine, honest disagreement within the <strong>expert clinical community</strong> about which treatment is better.</p>
+    <ul reveal>
+      <li>Individual physicians can have hunches. The trial is justified as long as the field, collectively, is genuinely split.</li>
+      <li>This is the standard actually used to launch and run real trials.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Compare: theoretical vs clinical equipoise -->
+  <phil-slide>
+    <h1>Individual Balance vs Community Disagreement</h1>
+    <phil-compare>
+      <phil-side label="Theoretical Equipoise" tag="Fried — individual">
+        <p>Each physician's own subjective probability must sit at exactly 50/50.</p>
+        <p class="case">Fragile: any personal hunch, however small, breaks it.</p>
+      </phil-side>
+      <phil-side label="Clinical Equipoise" tag="Freedman — community">
+        <p>The expert clinical community, as a whole, must genuinely disagree.</p>
+        <p class="case">Robust: individual hunches are fine as long as honest disagreement persists in the field.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 19. Cloze -->
+  <phil-slide>
+    <h1>Name the Standard</h1>
+    <phil-cloze explain="Clinical equipoise looks at the community of experts; theoretical equipoise looks inward at one physician's own uncertainty — which is why clinical equipoise is the workable standard.">
+      <phil-blank options="clinical,theoretical,statistical,personal">Clinical</phil-blank> equipoise means genuine disagreement in the expert
+      <phil-blank answer="community">community</phil-blank>, while
+      <phil-blank options="theoretical,clinical,collective,legal">theoretical</phil-blank> equipoise is about one
+      <phil-blank answer="individual|physician's own">individual</phil-blank> physician's own uncertainty.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- 20. Viz: panel of experts -->
+  <phil-slide>
+    <h1>The Panel of Experts</h1>
+    <p>Helen's trial for HJ-9 is underway. <strong>Step through the interim results</strong> and watch whether clinical equipoise still holds.</p>
+    <phil-equipoise prompt="Click Next to move through each interim look at the data.">
+      <phil-stage label="Trial opens — five reviewers, five honest opinions" verdict="holds"
+                  note="Five respected clinicians, genuinely divided. This is exactly the state that makes randomizing patients defensible.">
+        <phil-expert lean="for">Dr. Álvarez</phil-expert>
+        <phil-expert lean="against">Dr. Boyko</phil-expert>
+        <phil-expert lean="neutral">Dr. Chen</phil-expert>
+        <phil-expert lean="against">Dr. Devi</phil-expert>
+        <phil-expert lean="neutral">Dr. Osei</phil-expert>
+      </phil-stage>
+      <phil-stage label="Interim look #1 — a mild signal favoring HJ-9" verdict="holds"
+                  note="A first look at unblinded interim data. Opinions shift, but the panel is still split down the middle — equipoise holds.">
+        <phil-expert lean="for">Dr. Álvarez</phil-expert>
+        <phil-expert lean="against">Dr. Boyko</phil-expert>
+        <phil-expert lean="for">Dr. Chen</phil-expert>
+        <phil-expert lean="against">Dr. Devi</phil-expert>
+        <phil-expert lean="neutral">Dr. Osei</phil-expert>
+      </phil-stage>
+      <phil-stage label="Interim look #2 — the effect widens, one holdout remains" verdict="holds"
+                  note="Four of five now lean toward HJ-9 — but Dr. Boyko, an experienced skeptic, isn't convinced. As long as one respected expert holds out in good faith, the disagreement is real.">
+        <phil-expert lean="for">Dr. Álvarez</phil-expert>
+        <phil-expert lean="against">Dr. Boyko</phil-expert>
+        <phil-expert lean="for">Dr. Chen</phil-expert>
+        <phil-expert lean="for">Dr. Devi</phil-expert>
+        <phil-expert lean="for">Dr. Osei</phil-expert>
+      </phil-stage>
+      <phil-stage label="Interim look #3 — even the skeptics come around" verdict="collapsed"
+                  note="Even Dr. Boyko concedes: the data now looks decisive. There's no honest disagreement left to protect — continuing to randomize patients to placebo can no longer be justified.">
+        <phil-expert lean="for">Dr. Álvarez</phil-expert>
+        <phil-expert lean="for">Dr. Boyko</phil-expert>
+        <phil-expert lean="for">Dr. Chen</phil-expert>
+        <phil-expert lean="for">Dr. Devi</phil-expert>
+        <phil-expert lean="for">Dr. Osei</phil-expert>
+      </phil-stage>
+    </phil-equipoise>
+  </phil-slide>
+
+  <!-- 21. MCQ: does equipoise hold -->
+  <phil-slide>
+    <h1>Does the Panel Still Disagree?</h1>
+    <phil-mcq prompt="At Interim Look #2, four of five experts favor HJ-9 and one respected skeptic still disagrees in good faith. Does clinical equipoise still hold?"
+              explain="Right. Clinical equipoise asks whether genuine, honest disagreement remains in the expert community — a lopsided but real split still counts, unlike full consensus.">
+      <phil-choice feedback="Equipoise doesn't require an even split — it requires that the disagreement be genuine, which four-to-one with a sincere holdout still is.">No, once it's four-to-one the trial should already stop.</phil-choice>
+      <phil-choice correct>Yes, a genuine but lopsided disagreement is still real disagreement.</phil-choice>
+      <phil-choice feedback="Individual physicians' hunches are exactly what clinical equipoise sets aside; it looks at the community as a whole.">Only Dr. Álvarez's personal confidence level can settle it.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — MONITORING & STOPPING ============ -->
+
+  <!-- 22. DSMB -->
+  <phil-slide>
+    <img slot="art" src="./assets/dsmb-eye.svg" alt="A watchful eye, the monitoring board keeping watch over the trial">
+    <h1>Someone Has to Be Watching</h1>
+    <p>Trials don't run blind to their own data forever.</p>
+    <ul reveal>
+      <li><strong>Interim analyses</strong> check the accumulating data at pre-planned points.</li>
+      <li>Pre-set <strong>stopping rules</strong> say, in advance, what result would end the trial early.</li>
+      <li>An independent <strong>Data and Safety Monitoring Board (DSMB)</strong> — not Helen, not her team — reviews the unblinded data and decides.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. When equipoise collapses -->
+  <phil-slide>
+    <h1>When the Balance Tips</h1>
+    <p>If results turn clearly one-sided — or a harm signal appears — clinical equipoise has collapsed.</p>
+    <ul reveal>
+      <li>The ethical duty flips: stop the trial early, unblind it, and offer the better treatment to everyone still enrolled.</li>
+      <li>Continuing to randomize patients once genuine disagreement is gone isn't rigor — it's just withholding a known benefit.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Henry had no DSMB -->
+  <phil-slide>
+    <img slot="art" src="./assets/serum-vial.svg" alt="Henry Jekyll's murky serum vial">
+    <h1>No One Was Watching Henry</h1>
+    <p>Henry Jekyll had no DSMB, no interim look, no pre-set line that would have ended things.</p>
+    <ul reveal>
+      <li>Nothing was tracking the moment his private experiment turned from promising to catastrophic.</li>
+      <li>The only one positioned to call a stop was himself — and by his own account, he didn't, until it was very nearly too late.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. MCQ: DSMB purpose -->
+  <phil-slide>
+    <h1>Why an Outside Board?</h1>
+    <phil-mcq prompt="What is the purpose of a DSMB and its pre-set stopping rules?"
+              explain="Right. An independent board reviewing unblinded data against rules fixed in advance protects patients from a trial continuing past the point where honest disagreement has essentially disappeared.">
+      <phil-choice feedback="A DSMB doesn't exist to speed up recruitment — it exists to protect participants once the ethical basis for continuing shifts.">To help the trial finish enrolling patients faster than planned</phil-choice>
+      <phil-choice feedback="It's independent of the research team for exactly this reason — investigators aren't the ones who decide when to stop their own trial.">To give Helen and her own team more control over the results</phil-choice>
+      <phil-choice correct>To let an outside body stop the trial once it's no longer uncertain</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE PLACEBO CONTROVERSY ============ -->
+
+  <!-- 26. Placebo controversy -->
+  <phil-slide>
+    <img slot="art" src="./assets/placebo-pill.svg" alt="A plain sugar pill beside a real capsule">
+    <h1>Is a Placebo Always Fair Game?</h1>
+    <p>Not always. When an effective standard treatment already exists, many argue new drugs must be compared <em>to that</em>, not to nothing.</p>
+    <ul reveal>
+      <li>Denying patients a treatment already known to work — just to get a cleaner placebo comparison — can itself violate equipoise.</li>
+      <li>The <strong>Declaration of Helsinki</strong> restricts placebo use for exactly this reason.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. Compare: placebo vs active control -->
+  <phil-slide>
+    <h1>Placebo-Controlled vs Active-Controlled</h1>
+    <phil-compare>
+      <phil-side label="Placebo-Controlled" tag="Compared to nothing">
+        <p>The control arm receives an inert placebo — the cleanest test of whether the drug does anything at all.</p>
+        <p class="case">Defensible when no proven effective treatment yet exists for the condition.</p>
+      </phil-side>
+      <phil-side label="Active-Controlled" tag="Compared to standard care">
+        <p>The control arm receives the current best-known treatment instead.</p>
+        <p class="case">Required when an effective treatment already exists — no one should be denied it just for a cleaner comparison.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 28. Checkset: when placebo is defensible -->
+  <phil-slide>
+    <h1>When Is a Placebo Arm Defensible?</h1>
+    <phil-checkset prompt="Check every case where a placebo-controlled design is ethically defensible."
+                   explain="Right — a placebo arm is defensible when no proven effective treatment exists, or for a minor, short-term condition under close monitoring. Cost and disease severity alone don't settle the question.">
+      <phil-statement correct>No proven effective treatment currently exists for the condition</phil-statement>
+      <phil-statement correct>The condition is minor and short-term, and participants are closely monitored</phil-statement>
+      <phil-statement>Whenever a placebo arm would be cheaper to run</phil-statement>
+      <phil-statement>Whenever the condition is serious enough to justify anything that gets an answer fast</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 6 — VERDICT: HELEN VS HENRY ============ -->
+
+  <!-- 29. Verdict -->
+  <phil-slide>
+    <img slot="art" src="./assets/trial-vial.svg" alt="Helen Jekyll's modern trial-drug vial">
+    <h1>Helen vs Henry</h1>
+    <p>Run the checklist. Every safeguard Helen insists on is one her great-grandfather skipped entirely.</p>
+    <ul reveal>
+      <li>A real control group. Randomization. Blinding. Research consent, not a signature he never sought.</li>
+      <li>Clinical equipoise, established across a genuine panel of experts — not one man's private certainty.</li>
+      <li>A DSMB watching for the exact moment to stop — where Henry had no one watching at all.</li>
+      <li>The machinery exists precisely <em>because</em> one Jekyll skipped every step of it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Revisit Your Instincts</h1>
+    <p>Here's where you started before rounds. Re-rate each one — has shadowing Helen shifted anything? Staying put is fine; can you now say <em>why</em>?</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 31. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/helen-jekyll.svg" alt="Dr. Helen Jekyll in a modern lab coat, holding a vial">
+    <h1>End of Rounds</h1>
+    <p class="lead">Helen locks the lab. Somewhere in a drawer, Henry's old journal — the only record he ever kept.</p>
+    <ul reveal>
+      <li><strong>Apparatus</strong> — phases I–IV, control groups, randomization, single- and double-blinding.</li>
+      <li><strong>Research consent</strong> — disclosure of the research goal, the right to withdraw, and the therapeutic misconception it guards against.</li>
+      <li><strong>Equipoise</strong> — theoretical (Fried, one physician's balance) vs clinical (Freedman, genuine community disagreement).</li>
+      <li><strong>Monitoring</strong> — DSMBs and stopping rules act the moment equipoise collapses.</li>
+      <li><strong>Placebo ethics</strong> — fair when nothing proven exists; not fair once something does.</li>
+    </ul>
+    <p class="muted">Visit every slide, answer every question, and submit both belief probes to complete your rounds.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
