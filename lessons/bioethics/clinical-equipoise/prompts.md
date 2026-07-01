@@ -30,7 +30,7 @@ Freedman)** — the outline deliberately keeps them off-camera as text-only
 ## Cast & icons
 
 ### `helen-jekyll.png` — Dr. Helen Jekyll
-> A composed young physician-scientist in a crisp modern lab coat over a blue
+> A composed young asian-american physician-scientist in a crisp modern lab coat over a blue
 > collar, dark hair pulled back, holding up a clean glass trial vial that catches
 > the light; a faint double-helix motif traced into the vial's label forms a
 > subtle "H."
