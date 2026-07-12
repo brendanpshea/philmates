@@ -15,6 +15,37 @@ const el = (tag, cls, html) => {
 const isTyping = () => /^(input|select|textarea)$/i.test(document.activeElement?.tagName || '');
 
 /* =====================================================================
+   PhilSfx — short synthesized feedback sounds (Web Audio, no files)
+   Fires only on user-triggered events (answers, completion), so the
+   triggering click doubles as the autoplay-unlock gesture. Default OFF;
+   the 🔕/🔔 toggle persists across lessons.
+   ===================================================================== */
+const PhilSfx = {
+  get on() { return localStorage.getItem('philmates:sfx') === 'on'; },
+  set on(v) { localStorage.setItem('philmates:sfx', v ? 'on' : 'off'); },
+  _tone(freq, start, dur, type = 'sine', gain = 0.12) {
+    const ctx = this._ctx;
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = type; o.frequency.value = freq;
+    const t = ctx.currentTime + start;
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.linearRampToValueAtTime(gain, t + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+    o.connect(g).connect(ctx.destination);
+    o.start(t); o.stop(t + dur + 0.05);
+  },
+  _play(notes) {
+    if (!this.on || !(window.AudioContext || window.webkitAudioContext)) return;
+    this._ctx ||= new (window.AudioContext || window.webkitAudioContext)();
+    if (this._ctx.state === 'suspended') this._ctx.resume();
+    notes.forEach(n => this._tone(...n));
+  },
+  correct()  { this._play([[660, 0, 0.15], [880, 0.09, 0.2]]); },
+  wrong()    { this._play([[220, 0, 0.18, 'triangle', 0.07], [175, 0.1, 0.22, 'triangle', 0.07]]); },
+  complete() { this._play([[523, 0, 0.18], [659, 0.12, 0.18], [784, 0.24, 0.18], [1047, 0.36, 0.45]]); },
+};
+
+/* =====================================================================
    ProgressStore — swappable persistence (localStorage today, SCORM later)
    A future SCORM adapter implements the same get/save/onComplete surface.
    ===================================================================== */
@@ -86,6 +117,14 @@ class PhilLesson extends HTMLElement {
     reset.onclick = () => this._confirmReset();
     const right = el('div', 'phil-top__right');
     right.append(this._tally);
+    this._sfxBtn = el('button', 'phil-btn phil-btn--ghost phil-sfx', PhilSfx.on ? '🔔' : '🔕');
+    this._sfxBtn.title = 'Sound effects on/off (answer feedback chimes)';
+    this._sfxBtn.onclick = () => {
+      PhilSfx.on = !PhilSfx.on;
+      this._sfxBtn.textContent = PhilSfx.on ? '🔔' : '🔕';
+      PhilSfx.correct();   // sample chime confirms it's on (and unlocks audio)
+    };
+    right.append(this._sfxBtn);
     if (this.querySelector('phil-narration')) {        // only show audio UI if the lesson has narration
       this._audioBtn = el('button', 'phil-btn phil-btn--ghost phil-audio', '🔇');
       this._audioBtn.title = 'Narration on/off (plays the current slide)';
@@ -284,6 +323,7 @@ class PhilLesson extends HTMLElement {
   _celebrate() {
     this.store.completed = true;
     this.store.save();
+    PhilSfx.complete();
     this.dispatchEvent(new CustomEvent('phil:complete', { bubbles: true, detail: { lessonId: this.lessonId } }));
     const toast = el('div', 'phil-toast', '✔ LESSON COMPLETE!');
     document.body.append(toast);
@@ -303,7 +343,7 @@ class PhilWidget extends HTMLElement {
     this.qid = reg.qid;
     this.classList.add('phil-widget');
     this.build();
-    if (reg.alreadyCorrect) this.restore();
+    if (reg.alreadyCorrect) { this._restoring = true; this.restore(); this._restoring = false; }
   }
   feedbackBox() {
     if (!this._fb) { this._fb = el('div', 'phil-feedback'); this.append(this._fb); }
@@ -313,6 +353,7 @@ class PhilWidget extends HTMLElement {
     const fb = this.feedbackBox();
     fb.className = 'phil-feedback show ' + (ok ? 'good' : 'bad');
     fb.innerHTML = `<strong>${ok ? '✔ Correct' : '✘ Try again'}</strong>${msg || ''}`;
+    if (!this._restoring) PhilSfx[ok ? 'correct' : 'wrong']();
   }
   solved() {
     this.lesson?.reportCorrect(this.qid);
