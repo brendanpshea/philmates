@@ -159,6 +159,10 @@ class PhilLesson extends HTMLElement {
 
     this.append(top, this._stage, bottom);
 
+    // slide art loading late (or a window resize) changes content height
+    this.addEventListener('load', e => { if (e.target.tagName === 'IMG') this._fitSlide(this.current); }, true);
+    window.addEventListener('resize', () => this._fitSlide(this.current));
+
     document.addEventListener('keydown', e => {
       if (isTyping() || document.querySelector('.phil-modal')) return;
       if (e.key === 'ArrowRight') this.next();
@@ -221,6 +225,12 @@ class PhilLesson extends HTMLElement {
   }
   _remainingSteps() { return this.current ? this.current._steps.length - this.current._shown : 0; }
 
+  /* When a slide's content is taller than the stage, `align-content: safe center`
+     misbehaves in Chrome (starts mid-scroll) — pin overflowing slides to the top. */
+  _fitSlide(slide) {
+    if (slide) slide.classList.toggle('is-tall', slide.scrollHeight > slide.clientHeight + 1);
+  }
+
   /* ---- navigation ---- */
   show(slide) {
     this.slides.forEach(s => s.classList.toggle('is-current', s === slide));
@@ -231,7 +241,8 @@ class PhilLesson extends HTMLElement {
       this.store.visited.add(slide.id);
       this.store.save();
     }
-    this._stage.scrollTop = 0;
+    this._fitSlide(slide);
+    slide.scrollTop = 0;          // the slide, not the stage, is the scroll container
     this._refresh();
     const focusable = slide.querySelector('h1, [tabindex], button, input, select');
     focusable?.focus?.({ preventScroll: true });
@@ -295,6 +306,7 @@ class PhilLesson extends HTMLElement {
 
   /* ---- progress + completion ---- */
   _refresh() {
+    this._fitSlide(this.current);   // reveals/answers can change the slide's height
     const reqSeen = this.linear.filter(s => this.store.visited.has(s.id)).length;
 
     // The bar tracks CURRENT position, so it moves when you navigate back.

@@ -1209,8 +1209,10 @@ Plus `prompts.md`.
 **Act 5 — The hard cases**
 24. **[T]** Voluntariness under attack — engineered poppy paths; loot boxes,
     infinite scroll; regulate the manipulation, not the informed user, `reveal`.
-25. **[T]** Collective harms (forge smoke aggregation) and misinformation —
-    where the principle becomes a framework, not an algorithm, `reveal`.
+25a. **[T]** Collective/diffuse harms — forge-smoke aggregation; the principle
+    must count contributions to collective harm, `reveal`.
+25b. **[T]** Misinformation — when false speech outruns the answer and the cost
+    lands on third parties; where the principle becomes a framework, `reveal`.
 26. **[T]** The dissenters: Glinda's perfectionism, Devlin's legal moralism
     (vs. Hart), communitarianism; the liberal reply — liberty as presumption,
     burden of proof on the compeller, `reveal`.

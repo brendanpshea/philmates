@@ -118,6 +118,7 @@ phil-slide {
   animation: phil-in .18s ease-out;
 }
 phil-slide.is-current { display: grid; }
+phil-slide.is-tall { align-content: start; }   /* content overflows: pin to top (Chrome ignores `safe` here and starts mid-scroll) */
 phil-slide.has-art { grid-template-columns: 1fr minmax(200px, 340px); align-items: center; }
 
 @keyframes phil-in { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: none; } }
