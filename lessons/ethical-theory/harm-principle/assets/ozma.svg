@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="Princess Ozma of Oz in a green gown, red poppies in her crown, holding an old scroll">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- hair -->
+  <rect x="22" y="8" width="20" height="8" fill="#3a2a1d"/>
+  <rect x="20" y="12" width="6" height="18" fill="#3a2a1d"/>
+  <rect x="38" y="12" width="6" height="18" fill="#3a2a1d"/>
+  <!-- crown band + poppies -->
+  <rect x="22" y="6" width="20" height="3" fill="#ffcf5a"/>
+  <rect x="24" y="3" width="4" height="4" fill="#d8393f"/>
+  <rect x="30" y="2" width="4" height="4" fill="#d8393f"/>
+  <rect x="36" y="3" width="4" height="4" fill="#d8393f"/>
+  <rect x="31" y="3" width="2" height="2" fill="#1d2235"/>
+  <!-- face -->
+  <rect x="26" y="12" width="12" height="12" fill="#e8c39a"/>
+  <rect x="28" y="16" width="2" height="2" fill="#2a2a3a"/>
+  <rect x="34" y="16" width="2" height="2" fill="#2a2a3a"/>
+  <rect x="30" y="21" width="4" height="1" fill="#b56a5a"/>
+  <!-- gown -->
+  <rect x="24" y="24" width="16" height="10" fill="#2e7d4f"/>
+  <rect x="20" y="34" width="24" height="30" fill="#2e7d4f"/>
+  <rect x="18" y="52" width="28" height="12" fill="#256a42"/>
+  <rect x="20" y="34" width="4" height="30" fill="#3f9d66"/>
+  <!-- gown trim -->
+  <rect x="18" y="62" width="28" height="2" fill="#ffcf5a"/>
+  <!-- arms -->
+  <rect x="16" y="30" width="6" height="14" fill="#2e7d4f"/>
+  <rect x="42" y="30" width="6" height="14" fill="#2e7d4f"/>
+  <rect x="15" y="42" width="6" height="5" fill="#e8c39a"/>
+  <rect x="43" y="42" width="6" height="5" fill="#e8c39a"/>
+  <!-- scroll held across -->
+  <rect x="12" y="45" width="40" height="8" fill="#e8ddb8"/>
+  <rect x="10" y="44" width="4" height="10" fill="#cbbf95"/>
+  <rect x="50" y="44" width="4" height="10" fill="#cbbf95"/>
+  <rect x="18" y="48" width="20" height="1" fill="#5c3a2a"/>
+  <rect x="18" y="50" width="14" height="1" fill="#5c3a2a"/>
+  <!-- floor shadow -->
+  <rect x="16" y="66" width="32" height="3" fill="#141829"/>
+</svg>

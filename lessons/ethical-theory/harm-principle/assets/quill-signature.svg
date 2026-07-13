@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="A quill signing the new Emerald Constitution, a green wax seal beside it">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- desk -->
+  <rect x="0" y="60" width="64" height="20" fill="#5c3a2a"/>
+  <rect x="0" y="60" width="64" height="2" fill="#7a5a3a"/>
+  <!-- fresh parchment -->
+  <rect x="8" y="18" width="44" height="46" fill="#f5f1e2"/>
+  <rect x="8" y="18" width="44" height="3" fill="#ffffff"/>
+  <!-- heading -->
+  <rect x="16" y="24" width="28" height="3" fill="#2e7d4f"/>
+  <!-- clean clause lines -->
+  <rect x="12" y="32" width="34" height="2" fill="#8d876f"/>
+  <rect x="12" y="37" width="30" height="2" fill="#8d876f"/>
+  <rect x="12" y="42" width="36" height="2" fill="#8d876f"/>
+  <rect x="12" y="47" width="26" height="2" fill="#8d876f"/>
+  <!-- signature flourish -->
+  <rect x="14" y="55" width="10" height="2" fill="#2a2a3a"/>
+  <rect x="22" y="53" width="6" height="2" fill="#2a2a3a"/>
+  <rect x="26" y="55" width="8" height="2" fill="#2a2a3a"/>
+  <!-- quill -->
+  <rect x="38" y="30" width="3" height="4" fill="#cdd3e8"/>
+  <rect x="40" y="26" width="4" height="6" fill="#cdd3e8"/>
+  <rect x="42" y="22" width="5" height="6" fill="#e6e0cf"/>
+  <rect x="45" y="18" width="5" height="6" fill="#e6e0cf"/>
+  <rect x="48" y="14" width="4" height="6" fill="#cdd3e8"/>
+  <rect x="36" y="34" width="3" height="3" fill="#a08a5a"/>
+  <rect x="35" y="37" width="2" height="2" fill="#2a2a3a"/>
+  <!-- ink pot -->
+  <rect x="54" y="52" width="7" height="8" fill="#2b3252"/>
+  <rect x="55" y="50" width="5" height="2" fill="#3a4673"/>
+  <!-- green wax seal -->
+  <rect x="14" y="66" width="12" height="10" fill="#2e7d4f"/>
+  <rect x="16" y="64" width="8" height="2" fill="#3f9d66"/>
+  <rect x="18" y="69" width="4" height="4" fill="#6fe3a1"/>
+  <!-- ribbon -->
+  <rect x="24" y="70" width="10" height="3" fill="#d8393f"/>
+</svg>

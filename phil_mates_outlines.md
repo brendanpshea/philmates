@@ -1108,3 +1108,129 @@ Plus `prompts.md`.
 - **Fictional drug/condition naming:** keep the impulse-control disorder and drug
   name deliberately generic/fictional to avoid implying any real diagnosis or
   compound, given the sensitive subject matter (loss of behavioral control).
+
+---
+
+## Mill's Harm Principle — "The Emerald Constitution"  *(built)*
+
+- **Path:** `lessons/ethical-theory/harm-principle/`
+- **Lesson id:** `harm-principle`
+- **Topic:** Ethical/political theory (Mill, liberalism); bridges into bioethics.
+- **Approach:** Applied constitutional drafting — every concept is immediately
+  exercised on a clause ("strike, keep, or rewrite?"), moving from the plain
+  statement of the principle to contested contemporary edges.
+- **Narrative frame:** The Wizard has fled Oz; **Princess Ozma** convenes a
+  council (the student is a member) to revise his old constitution, which lurches
+  between **paternalism** (mandatory green spectacles "for cheerfulness," travel
+  bans) and **negligence** (no rules on the sleep-inducing poppy fields, no market
+  honesty). Council members personify positions: **Scarecrow** (rationalist
+  liberal), **Tin Woodman** (soft-hearted paternalist), **Cowardly Lion**
+  (security-first), **Glinda** (perfectionist). Running device: applying Mill's
+  test clause by clause; ends with ratification of a new liberal constitution.
+- **Thinkers covered:** J. S. Mill (*On Liberty*); Feinberg (optional branch);
+  Devlin vs. Hart, perfectionism, communitarianism (named in the dissents slide).
+- **Cross-references:** patient-autonomy (refusal of treatment, Emanuel's models),
+  clinical-equipoise (research consent), four-principles (autonomy), virtue-ethics
+  (perfectionism/Aristotle).
+- **Art (16-bit SVGs in `/assets`):** `ozma`, `old-constitution`, `poppy-field`,
+  `bridge`, `emerald-square`, `quill-signature`, plus the `mill` relic card
+  (copied from utilitarianism). Raster prompts in `prompts.md`.
+
+### Learning goals
+- State the **Harm Principle** and its exclusions ("his own good … is not a
+  sufficient warrant"); identify the sovereignty-over-self claim and the
+  maturity-of-faculties caveat.
+- Give Mill's **utilitarian case for liberty** (fallibilism, experiments in
+  living, individuality) and place the principle within **liberalism** (liberty
+  as default; state neutrality about the good life).
+- Distinguish **self- vs. other-regarding** conduct and explain why the boundary
+  is contested (diffuse costs, "no one is a lone wagon").
+- Define and apply **hard vs. soft paternalism** (Mill's bridge case), **legal
+  moralism**, and Feinberg's **offense principle**.
+- Apply the framework to **speech** (corn-dealer/instigation vs. advocacy; dead
+  dogma) and to **bioethics** (treatment refusal = self-regarding; contagion &
+  vaccine mandates = other-regarding; manipulation undermines voluntariness).
+- Recognize contemporary pressure points: engineered temptation/addiction,
+  collective harms, misinformation — and the standing critics (Devlin,
+  perfectionism, communitarianism).
+
+### Slide-by-slide
+
+**Act 0 — The council convenes**
+1. **[T]** Title/hook — Ozma finds the Wizard's constitution (ozma art).
+2. **[P]** Belief probe: self-harm bans / offense-as-harm / doctor override /
+   vaccine mandates / immorality-as-crime.
+3. **[T]** Tour of the old constitution — alternating paternalist clause and
+   negligent gap, `reveal` (old-constitution art).
+
+**Act 1 — Mill and the one very simple principle**
+4. **[T]** Who is Mill; tyranny of the majority (mill relic card).
+5. **[T]** The Harm Principle stated + exclusions + caveats, `reveal`.
+6. **[T]** Why liberty: fallibilism, experiments in living, individuality;
+   liberalism defined, `reveal`.
+7. **[Q · MCQ]** Which clause falls first? (green spectacles — pure paternalism.)
+8. **[Q · Cloze]** harm / others / not / paternalism.
+
+**Act 2 — Drawing the line**
+9. **[C]** *Self-regarding vs. Other-regarding* + Tin Woodman's boundary worry.
+10. **[T]** The poppy question — Mill on dangerous substances: label and regulate
+    sale, don't prohibit informed adults, `reveal` (poppy-field art).
+11. **[T]** Mill's bridge case → soft vs. hard paternalism, `reveal` (bridge art).
+12. **[Q · Checkset]** Which draft clauses pass? (poison labels ✓, drunk on watch
+    ✓, private-drunkenness fine ✗, mandatory temperance ✗ — Mill's own examples.)
+13. **[V]** `<phil-clause-sorter>` "The Council's Docket" — classify six clauses
+    as harm-to-others / harm-to-self / enforcing-morality; council ruling + note
+    per clause; ungraded tally at the end. (Defined in `assets/harm-principle.js`.)
+
+**Act 3 — Speech in the Emerald Square**
+14. **[T]** Pamphleteer of Emerald Square — corn-dealer case: press vs. excited
+    mob; circumstances not content, `reveal` (emerald-square art).
+15. **[T]** Why protect wrong opinions — true / partly true / wholly false →
+    dead dogma, `reveal`.
+16. **[Q · MCQ]** The mob case — what makes it punishable? (instigation.)
+17. **[B]** Branch: offense-principle tangent →
+    **[opt]** Feinberg deep-dive: offense ≠ harm; profound-and-unavoidable test;
+    time-place-manner compromise; the elasticity worry.
+
+**Act 4 — The health ministry**
+18. **[T]** The health chapter's split personality: forced treatment vs. no
+    epidemic powers, `reveal` (old-constitution art).
+19. **[T]** The right to refuse — competent elder declines surgery; ties to
+    patient-autonomy lesson, `reveal`.
+20. **[Q · MCQ]** Strike or keep the forced-treatment clause? (Strike —
+    informed refusal is self-regarding.)
+21. **[T]** The Gillikin epidemic — contagion is other-regarding; a liberal can
+    strike forced surgery AND support vaccine mandates; proportionality, `reveal`.
+22. **[C]** *Wagon-harness (seatbelt) debate* — pure paternalism vs. diffuse
+    public costs; warning that the second move can swallow the principle.
+23. **[Q · Checkset]** Health clauses: quarantine ✓, honest tonic labels ✓,
+    forced treatment ✗, informed research participation ✓ (equipoise tie-in).
+
+**Act 5 — The hard cases**
+24. **[T]** Voluntariness under attack — engineered poppy paths; loot boxes,
+    infinite scroll; regulate the manipulation, not the informed user, `reveal`.
+25. **[T]** Collective harms (forge smoke aggregation) and misinformation —
+    where the principle becomes a framework, not an algorithm, `reveal`.
+26. **[T]** The dissenters: Glinda's perfectionism, Devlin's legal moralism
+    (vs. Hart), communitarianism; the liberal reply — liberty as presumption,
+    burden of proof on the compeller, `reveal`.
+27. **[Q · MCQ]** Which concept grounds banning manipulative field design but
+    not informed visits? (Soft paternalism.)
+28. **[Q · Cloze]** hard / soft / moralism / liberty — the drafting glossary.
+
+**Act 6 — Ratification**
+29. **[T]** Ratification day — struck/added/kept-open lists; the harness question
+    deliberately left open, `reveal` (quill-signature art).
+30. **[P]** Belief probe review.
+31. **[T]** Recap — the six takeaways, `reveal` (ozma art).
+
+### Notes for future lessons
+- **Clause-sorting** worked as a running device: every abstraction got an
+  immediate concrete vote. Reusable for any principle-application lesson
+  (e.g. Rawls: which policies pass the difference principle?).
+- The **"kept open" ending** (wagon-harness question tabled, on the record as
+  disputed) models intellectual honesty — flag genuinely contested questions
+  as contested instead of resolving them by fiat.
+- Oz canon (Baum) is public domain and rich in ready-made policy absurdities
+  (green spectacles = built-in paternalism metaphor); more Oz-frame lessons
+  are viable (Rawls: designing Oz behind a veil of ignorance?).

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="A soapbox orator in the Emerald City square, handing pamphlets to a small crowd">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- emerald skyline -->
+  <rect x="4" y="8" width="10" height="28" fill="#1f4a38"/>
+  <rect x="18" y="4" width="12" height="32" fill="#2e7d4f"/>
+  <rect x="34" y="10" width="10" height="26" fill="#1f4a38"/>
+  <rect x="48" y="6" width="12" height="30" fill="#2e7d4f"/>
+  <!-- spire gems -->
+  <rect x="22" y="1" width="4" height="3" fill="#6fe3a1"/>
+  <rect x="52" y="3" width="4" height="3" fill="#6fe3a1"/>
+  <!-- windows -->
+  <rect x="7" y="12" width="3" height="3" fill="#6fe3a1"/>
+  <rect x="21" y="10" width="3" height="3" fill="#6fe3a1"/>
+  <rect x="25" y="16" width="3" height="3" fill="#6fe3a1"/>
+  <rect x="37" y="14" width="3" height="3" fill="#6fe3a1"/>
+  <rect x="51" y="12" width="3" height="3" fill="#6fe3a1"/>
+  <!-- square paving -->
+  <rect x="0" y="36" width="64" height="44" fill="#262c44"/>
+  <rect x="0" y="36" width="64" height="2" fill="#3a4055"/>
+  <!-- soapbox -->
+  <rect x="26" y="58" width="14" height="8" fill="#7a5a3a"/>
+  <rect x="26" y="58" width="14" height="2" fill="#a08a5a"/>
+  <!-- orator -->
+  <rect x="30" y="38" width="6" height="6" fill="#e8c39a"/>
+  <rect x="29" y="36" width="8" height="3" fill="#2a2a3a"/>
+  <rect x="29" y="44" width="8" height="12" fill="#8d4a8d"/>
+  <!-- raised arm with pamphlet -->
+  <rect x="37" y="40" width="6" height="3" fill="#8d4a8d"/>
+  <rect x="43" y="37" width="6" height="6" fill="#e8ddb8"/>
+  <rect x="44" y="39" width="4" height="1" fill="#5c3a2a"/>
+  <!-- crowd heads -->
+  <rect x="8" y="62" width="6" height="6" fill="#e8c39a"/>
+  <rect x="7" y="60" width="8" height="3" fill="#5c3a2a"/>
+  <rect x="7" y="68" width="8" height="8" fill="#3a4673"/>
+  <rect x="18" y="66" width="6" height="6" fill="#c9906a"/>
+  <rect x="17" y="64" width="8" height="3" fill="#2a2a3a"/>
+  <rect x="17" y="72" width="8" height="6" fill="#5a3a5a"/>
+  <rect x="46" y="64" width="6" height="6" fill="#e8c39a"/>
+  <rect x="45" y="62" width="8" height="3" fill="#7a5a3a"/>
+  <rect x="45" y="70" width="8" height="8" fill="#2c4a2a"/>
+  <rect x="56" y="68" width="6" height="6" fill="#c9906a"/>
+  <rect x="55" y="74" width="8" height="4" fill="#3a4673"/>
+  <!-- a pamphlet in a crowd hand -->
+  <rect x="24" y="60" width="5" height="4" fill="#e8ddb8"/>
+</svg>
