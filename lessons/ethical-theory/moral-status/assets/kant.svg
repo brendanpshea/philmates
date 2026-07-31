@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: a starry sky above a compass — Kant's 'starry heavens above and the moral law within,' the universal direction of the categorical imperative">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <!-- starry sky -->
+  <rect x="8" y="22" width="64" height="22" fill="#11131f"/>
+  <rect x="16" y="27" width="2" height="2" fill="#eef1ff"/>
+  <rect x="26" y="33" width="2" height="2" fill="#eef1ff"/>
+  <rect x="34" y="25" width="2" height="2" fill="#eef1ff"/>
+  <rect x="44" y="31" width="2" height="2" fill="#eef1ff"/>
+  <rect x="54" y="26" width="2" height="2" fill="#eef1ff"/>
+  <rect x="62" y="34" width="2" height="2" fill="#eef1ff"/>
+  <!-- a brighter guiding star -->
+  <rect x="39" y="35" width="2" height="2" fill="#ffcf5a"/>
+  <rect x="38" y="34" width="4" height="1" fill="#ffcf5a"/>
+  <rect x="38" y="37" width="4" height="1" fill="#ffcf5a"/>
+  <rect x="37" y="36" width="1" height="1" fill="#ffcf5a"/>
+  <rect x="42" y="36" width="1" height="1" fill="#ffcf5a"/>
+  <!-- compass body -->
+  <rect x="26" y="50" width="28" height="28" fill="#8d876f"/>
+  <rect x="29" y="53" width="22" height="22" fill="#262c44"/>
+  <!-- cardinal ticks -->
+  <rect x="39" y="51" width="2" height="3" fill="#c9c3ad"/>
+  <rect x="39" y="74" width="2" height="3" fill="#c9c3ad"/>
+  <rect x="27" y="63" width="3" height="2" fill="#c9c3ad"/>
+  <rect x="50" y="63" width="3" height="2" fill="#c9c3ad"/>
+  <!-- needle: north magenta, south blue -->
+  <polygon points="40,55 44,64 36,64" fill="#ff6ad5"/>
+  <polygon points="40,73 44,64 36,64" fill="#4cc2ff"/>
+  <rect x="39" y="63" width="2" height="2" fill="#eef1ff"/>
+</svg>

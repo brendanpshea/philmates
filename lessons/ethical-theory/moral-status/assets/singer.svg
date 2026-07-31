@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: concentric rings widening outward around a small figure — Singer's expanding circle of equal consideration for every being that can suffer">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#ff6ad5"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#ff6ad5"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#ff6ad5"/>
+  <rect x="38" y="93" width="4" height="4" fill="#ff6ad5"/>
+  <rect x="44" y="93" width="4" height="4" fill="#ff6ad5"/>
+  <!-- outer ring (faint) -->
+  <rect x="14" y="28" width="52" height="2" fill="#5a4a6a"/>
+  <rect x="14" y="80" width="52" height="2" fill="#5a4a6a"/>
+  <rect x="14" y="28" width="2" height="54" fill="#5a4a6a"/>
+  <rect x="64" y="28" width="2" height="54" fill="#5a4a6a"/>
+  <!-- middle ring (blue) -->
+  <rect x="22" y="36" width="36" height="2" fill="#4cc2ff"/>
+  <rect x="22" y="72" width="36" height="2" fill="#4cc2ff"/>
+  <rect x="22" y="36" width="2" height="38" fill="#4cc2ff"/>
+  <rect x="56" y="36" width="2" height="38" fill="#4cc2ff"/>
+  <!-- inner ring (green) -->
+  <rect x="30" y="44" width="20" height="2" fill="#46e07a"/>
+  <rect x="30" y="64" width="20" height="2" fill="#46e07a"/>
+  <rect x="30" y="44" width="2" height="22" fill="#46e07a"/>
+  <rect x="48" y="44" width="2" height="22" fill="#46e07a"/>
+  <!-- center figure (a being that counts) -->
+  <rect x="38" y="50" width="4" height="4" fill="#eef1ff"/>
+  <rect x="37" y="55" width="6" height="6" fill="#eef1ff"/>
+  <!-- outward arrows -->
+  <polygon points="40,24 44,30 36,30" fill="#ff6ad5"/>
+  <polygon points="40,86 44,80 36,80" fill="#ff6ad5"/>
+  <polygon points="10,55 16,51 16,59" fill="#ff6ad5"/>
+  <polygon points="70,55 64,51 64,59" fill="#ff6ad5"/>
+</svg>

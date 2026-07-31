@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="The Vorl: a swarm of identical mindless beetle-units whose massed pattern forms a single thoughtful face">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- the swarm forms a face-shaped mass: shading blocks -->
+  <rect x="14" y="10" width="36" height="52" fill="#262c44"/>
+  <!-- individual units, arranged; darker units read as the face's features -->
+  <!-- top rows -->
+  <rect x="16" y="12" width="5" height="4" fill="#c48a3a"/>
+  <rect x="23" y="12" width="5" height="4" fill="#e0a44e"/>
+  <rect x="30" y="12" width="5" height="4" fill="#c48a3a"/>
+  <rect x="37" y="12" width="5" height="4" fill="#e0a44e"/>
+  <rect x="44" y="12" width="5" height="4" fill="#c48a3a"/>
+  <rect x="16" y="18" width="5" height="4" fill="#e0a44e"/>
+  <rect x="23" y="18" width="5" height="4" fill="#c48a3a"/>
+  <rect x="30" y="18" width="5" height="4" fill="#e0a44e"/>
+  <rect x="37" y="18" width="5" height="4" fill="#c48a3a"/>
+  <rect x="44" y="18" width="5" height="4" fill="#e0a44e"/>
+  <!-- eye rows: dark units make the eyes -->
+  <rect x="16" y="24" width="5" height="4" fill="#c48a3a"/>
+  <rect x="23" y="24" width="5" height="4" fill="#5c3a12"/>
+  <rect x="30" y="24" width="5" height="4" fill="#e0a44e"/>
+  <rect x="37" y="24" width="5" height="4" fill="#5c3a12"/>
+  <rect x="44" y="24" width="5" height="4" fill="#c48a3a"/>
+  <rect x="16" y="30" width="5" height="4" fill="#e0a44e"/>
+  <rect x="23" y="30" width="5" height="4" fill="#c48a3a"/>
+  <rect x="30" y="30" width="5" height="4" fill="#e0a44e"/>
+  <rect x="37" y="30" width="5" height="4" fill="#c48a3a"/>
+  <rect x="44" y="30" width="5" height="4" fill="#e0a44e"/>
+  <!-- nose column -->
+  <rect x="16" y="36" width="5" height="4" fill="#c48a3a"/>
+  <rect x="23" y="36" width="5" height="4" fill="#e0a44e"/>
+  <rect x="30" y="36" width="5" height="4" fill="#5c3a12"/>
+  <rect x="37" y="36" width="5" height="4" fill="#e0a44e"/>
+  <rect x="44" y="36" width="5" height="4" fill="#c48a3a"/>
+  <!-- mouth row -->
+  <rect x="16" y="42" width="5" height="4" fill="#e0a44e"/>
+  <rect x="23" y="42" width="5" height="4" fill="#5c3a12"/>
+  <rect x="30" y="42" width="5" height="4" fill="#5c3a12"/>
+  <rect x="37" y="42" width="5" height="4" fill="#5c3a12"/>
+  <rect x="44" y="42" width="5" height="4" fill="#e0a44e"/>
+  <!-- chin rows -->
+  <rect x="16" y="48" width="5" height="4" fill="#c48a3a"/>
+  <rect x="23" y="48" width="5" height="4" fill="#e0a44e"/>
+  <rect x="30" y="48" width="5" height="4" fill="#c48a3a"/>
+  <rect x="37" y="48" width="5" height="4" fill="#e0a44e"/>
+  <rect x="44" y="48" width="5" height="4" fill="#c48a3a"/>
+  <rect x="23" y="54" width="5" height="4" fill="#c48a3a"/>
+  <rect x="30" y="54" width="5" height="4" fill="#e0a44e"/>
+  <rect x="37" y="54" width="5" height="4" fill="#c48a3a"/>
+  <!-- stragglers breaking off the swarm -->
+  <rect x="6" y="20" width="4" height="3" fill="#c48a3a"/>
+  <rect x="54" y="34" width="4" height="3" fill="#c48a3a"/>
+  <rect x="8" y="56" width="4" height="3" fill="#e0a44e"/>
+  <rect x="52" y="60" width="4" height="3" fill="#c48a3a"/>
+  <!-- a single unit, isolated on a slide below: nothing to it -->
+  <rect x="4" y="68" width="24" height="10" fill="#050610"/>
+  <rect x="6" y="70" width="20" height="6" fill="#11131f"/>
+  <rect x="14" y="72" width="4" height="3" fill="#c48a3a"/>
+  <rect x="36" y="68" width="24" height="10" fill="#050610"/>
+  <rect x="38" y="70" width="20" height="6" fill="#11131f"/>
+  <rect x="40" y="72" width="16" height="2" fill="#4cc2ff" opacity="0.8"/>
+</svg>

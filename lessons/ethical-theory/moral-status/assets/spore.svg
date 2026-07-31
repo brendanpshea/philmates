@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="A Kessel spore: a dormant seed pod on a pedestal, with a ghostly outline of the grown Kessel it will become behind it">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- ghost of the future adult: tall, faint, rational-looking figure -->
+  <rect x="24" y="6" width="16" height="16" fill="#4cc2ff" opacity="0.18"/>
+  <rect x="20" y="22" width="24" height="30" fill="#4cc2ff" opacity="0.18"/>
+  <rect x="14" y="26" width="6" height="18" fill="#4cc2ff" opacity="0.18"/>
+  <rect x="44" y="26" width="6" height="18" fill="#4cc2ff" opacity="0.18"/>
+  <rect x="28" y="12" width="3" height="3" fill="#4cc2ff" opacity="0.4"/>
+  <rect x="35" y="12" width="3" height="3" fill="#4cc2ff" opacity="0.4"/>
+  <!-- ground -->
+  <rect x="0" y="60" width="64" height="20" fill="#262c44"/>
+  <rect x="0" y="60" width="64" height="2" fill="#3a4468"/>
+  <!-- pedestal -->
+  <rect x="22" y="54" width="20" height="6" fill="#3a4468"/>
+  <rect x="24" y="52" width="16" height="2" fill="#5a679a"/>
+  <!-- the spore pod itself -->
+  <rect x="26" y="36" width="12" height="4" fill="#5c7a3a"/>
+  <rect x="24" y="40" width="16" height="12" fill="#7aa34e"/>
+  <rect x="26" y="34" width="4" height="2" fill="#5c7a3a"/>
+  <rect x="28" y="42" width="4" height="6" fill="#a8cf72"/>
+  <!-- seam lines -->
+  <rect x="31" y="36" width="2" height="16" fill="#4a6330"/>
+  <rect x="24" y="46" width="16" height="1" fill="#4a6330"/>
+  <!-- stem nub -->
+  <rect x="30" y="30" width="3" height="6" fill="#4a6330"/>
+  <rect x="27" y="28" width="9" height="2" fill="#5c7a3a"/>
+  <!-- no activity readout: flatline monitor -->
+  <rect x="36" y="66" width="24" height="10" fill="#050610"/>
+  <rect x="38" y="68" width="20" height="6" fill="#11131f"/>
+  <rect x="39" y="71" width="18" height="2" fill="#9aa3c7"/>
+  <!-- time marker: hourglass -->
+  <rect x="6" y="64" width="12" height="2" fill="#ffcf5a"/>
+  <rect x="8" y="66" width="8" height="2" fill="#ffcf5a"/>
+  <rect x="10" y="68" width="4" height="2" fill="#ffcf5a"/>
+  <rect x="10" y="70" width="4" height="2" fill="#ffcf5a"/>
+  <rect x="8" y="72" width="8" height="2" fill="#ffcf5a"/>
+  <rect x="6" y="74" width="12" height="2" fill="#ffcf5a"/>
+</svg>

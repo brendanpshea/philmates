@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="A Glim: a small drifting crystal-flower with no mind, cupped in a crew member's gloved hands, its light feeding a bed of moss below">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- dim cargo-bay backdrop -->
+  <rect x="0" y="0" width="64" height="40" fill="#20263c"/>
+  <rect x="0" y="40" width="64" height="2" fill="#3a4468"/>
+  <!-- moss bed below, lit by the glim -->
+  <rect x="0" y="62" width="64" height="18" fill="#20301f"/>
+  <rect x="4" y="60" width="8" height="3" fill="#3d5a2a"/>
+  <rect x="16" y="59" width="10" height="4" fill="#3d5a2a"/>
+  <rect x="30" y="60" width="12" height="3" fill="#4a7033"/>
+  <rect x="46" y="59" width="10" height="4" fill="#3d5a2a"/>
+  <!-- glow pool -->
+  <rect x="14" y="52" width="36" height="10" fill="#46e07a" opacity="0.12"/>
+  <rect x="20" y="46" width="24" height="12" fill="#46e07a" opacity="0.12"/>
+  <!-- gloved hands cupping, from below -->
+  <rect x="12" y="52" width="16" height="8" fill="#5a679a"/>
+  <rect x="36" y="52" width="16" height="8" fill="#5a679a"/>
+  <rect x="14" y="50" width="12" height="3" fill="#7c8ac0"/>
+  <rect x="38" y="50" width="12" height="3" fill="#7c8ac0"/>
+  <rect x="12" y="58" width="16" height="2" fill="#3a4468"/>
+  <rect x="36" y="58" width="16" height="2" fill="#3a4468"/>
+  <!-- the glim: crystalline flower -->
+  <rect x="30" y="20" width="4" height="26" fill="#2f8f5b"/>
+  <rect x="26" y="30" width="4" height="2" fill="#2f8f5b"/>
+  <rect x="34" y="36" width="4" height="2" fill="#2f8f5b"/>
+  <!-- petals -->
+  <rect x="24" y="14" width="6" height="8" fill="#7df0aa"/>
+  <rect x="34" y="14" width="6" height="8" fill="#7df0aa"/>
+  <rect x="28" y="8" width="8" height="8" fill="#a8ffd0"/>
+  <rect x="22" y="22" width="8" height="6" fill="#46e07a"/>
+  <rect x="34" y="22" width="8" height="6" fill="#46e07a"/>
+  <!-- core -->
+  <rect x="29" y="16" width="6" height="6" fill="#eef1ff"/>
+  <rect x="31" y="18" width="2" height="2" fill="#a8ffd0"/>
+  <!-- drifting sparks -->
+  <rect x="18" y="12" width="2" height="2" fill="#7df0aa" opacity="0.7"/>
+  <rect x="46" y="18" width="2" height="2" fill="#7df0aa" opacity="0.7"/>
+  <rect x="44" y="8" width="2" height="2" fill="#7df0aa" opacity="0.5"/>
+  <rect x="14" y="26" width="2" height="2" fill="#7df0aa" opacity="0.5"/>
+  <!-- flat welfare gauge: nothing to register -->
+  <rect x="40" y="68" width="20" height="8" fill="#050610"/>
+  <rect x="42" y="70" width="16" height="4" fill="#11131f"/>
+  <rect x="43" y="72" width="14" height="1" fill="#9aa3c7"/>
+</svg>

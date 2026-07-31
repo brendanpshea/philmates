@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="The survey ship Charitable Interpretation drifting past a ringed world, a lit office window on its hull">
+  <rect width="64" height="80" fill="#11131f"/>
+  <!-- starfield -->
+  <rect x="6" y="8" width="2" height="2" fill="#eef1ff"/>
+  <rect x="21" y="4" width="2" height="2" fill="#9aa3c7"/>
+  <rect x="49" y="10" width="2" height="2" fill="#eef1ff"/>
+  <rect x="58" y="24" width="2" height="2" fill="#9aa3c7"/>
+  <rect x="4" y="34" width="2" height="2" fill="#9aa3c7"/>
+  <rect x="12" y="66" width="2" height="2" fill="#eef1ff"/>
+  <rect x="55" y="70" width="2" height="2" fill="#9aa3c7"/>
+  <rect x="34" y="74" width="2" height="2" fill="#eef1ff"/>
+  <!-- ringed world, upper right -->
+  <rect x="40" y="10" width="18" height="18" fill="#4a3a6a"/>
+  <rect x="42" y="12" width="14" height="14" fill="#6a4f96"/>
+  <rect x="44" y="14" width="8" height="4" fill="#8a68bd"/>
+  <rect x="46" y="22" width="6" height="3" fill="#8a68bd"/>
+  <rect x="34" y="18" width="30" height="2" fill="#c9a6f2"/>
+  <rect x="36" y="20" width="26" height="2" fill="#8a68bd"/>
+  <!-- ship hull -->
+  <rect x="8" y="40" width="44" height="14" fill="#050610"/>
+  <rect x="10" y="42" width="40" height="10" fill="#3a4468"/>
+  <rect x="10" y="42" width="40" height="3" fill="#5a679a"/>
+  <!-- nose -->
+  <rect x="50" y="44" width="6" height="6" fill="#3a4468"/>
+  <rect x="54" y="46" width="4" height="2" fill="#5a679a"/>
+  <!-- lit office window (the status office) -->
+  <rect x="14" y="45" width="8" height="5" fill="#ffcf5a"/>
+  <rect x="16" y="46" width="2" height="3" fill="#050610"/>
+  <!-- other portholes -->
+  <rect x="26" y="46" width="3" height="3" fill="#4cc2ff"/>
+  <rect x="32" y="46" width="3" height="3" fill="#4cc2ff"/>
+  <rect x="38" y="46" width="3" height="3" fill="#262c44"/>
+  <!-- fin / dish -->
+  <rect x="20" y="34" width="4" height="6" fill="#3a4468"/>
+  <rect x="16" y="30" width="12" height="4" fill="#5a679a"/>
+  <rect x="18" y="32" width="8" height="2" fill="#4cc2ff"/>
+  <!-- engine glow -->
+  <rect x="4" y="44" width="4" height="6" fill="#46e07a"/>
+  <rect x="0" y="46" width="4" height="2" fill="#46e07a" opacity="0.6"/>
+  <!-- hull shadow -->
+  <rect x="10" y="52" width="40" height="2" fill="#262c44"/>
+</svg>

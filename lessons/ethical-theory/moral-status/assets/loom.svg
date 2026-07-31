@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="The Loom: a tall machine intelligence of woven brass threads and a single calm lens, drafting a treaty on a hanging tapestry">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- floor -->
+  <rect x="0" y="64" width="64" height="16" fill="#262c44"/>
+  <rect x="0" y="64" width="64" height="2" fill="#3a4468"/>
+  <!-- hanging tapestry of argument, behind -->
+  <rect x="40" y="8" width="20" height="42" fill="#3a3050"/>
+  <rect x="42" y="10" width="16" height="38" fill="#4a3f66"/>
+  <rect x="44" y="14" width="12" height="1" fill="#c9a6f2"/>
+  <rect x="44" y="18" width="9" height="1" fill="#c9a6f2"/>
+  <rect x="44" y="22" width="12" height="1" fill="#c9a6f2"/>
+  <rect x="44" y="26" width="7" height="1" fill="#c9a6f2"/>
+  <rect x="44" y="30" width="12" height="1" fill="#c9a6f2"/>
+  <rect x="44" y="34" width="10" height="1" fill="#c9a6f2"/>
+  <rect x="38" y="6" width="24" height="2" fill="#5a679a"/>
+  <!-- body: frame of the loom -->
+  <rect x="8" y="18" width="28" height="46" fill="#050610"/>
+  <rect x="10" y="20" width="24" height="42" fill="#8a6a3a"/>
+  <rect x="10" y="20" width="24" height="3" fill="#c49a56"/>
+  <!-- warp threads -->
+  <rect x="14" y="24" width="1" height="34" fill="#e0c07a"/>
+  <rect x="18" y="24" width="1" height="34" fill="#e0c07a"/>
+  <rect x="22" y="24" width="1" height="34" fill="#e0c07a"/>
+  <rect x="26" y="24" width="1" height="34" fill="#e0c07a"/>
+  <rect x="30" y="24" width="1" height="34" fill="#e0c07a"/>
+  <!-- weft passes -->
+  <rect x="12" y="32" width="20" height="2" fill="#c49a56"/>
+  <rect x="12" y="44" width="20" height="2" fill="#c49a56"/>
+  <!-- head: single calm lens, no face -->
+  <rect x="12" y="6" width="20" height="12" fill="#050610"/>
+  <rect x="14" y="8" width="16" height="8" fill="#3a4468"/>
+  <rect x="19" y="10" width="6" height="4" fill="#4cc2ff"/>
+  <rect x="21" y="11" width="2" height="2" fill="#eef1ff"/>
+  <!-- writing arm reaching to the tapestry -->
+  <rect x="34" y="34" width="8" height="3" fill="#8a6a3a"/>
+  <rect x="42" y="35" width="4" height="2" fill="#c49a56"/>
+  <!-- base -->
+  <rect x="6" y="62" width="32" height="4" fill="#5a4426"/>
+  <!-- no vitals: a flat welfare gauge reading zero -->
+  <rect x="40" y="66" width="22" height="10" fill="#050610"/>
+  <rect x="42" y="68" width="18" height="6" fill="#11131f"/>
+  <rect x="43" y="71" width="16" height="1" fill="#9aa3c7"/>
+  <rect x="50" y="69" width="1" height="4" fill="#4cc2ff"/>
+</svg>

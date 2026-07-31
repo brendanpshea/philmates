@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="A dossier with its redaction bars lifting away to reveal an Earth beneath, stamped DECLASSIFIED in red">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- the file page -->
+  <rect x="6" y="6" width="52" height="68" fill="#050610"/>
+  <rect x="8" y="8" width="48" height="64" fill="#e6e0cf"/>
+  <!-- header lines -->
+  <rect x="12" y="12" width="26" height="2" fill="#5c5040"/>
+  <rect x="12" y="16" width="16" height="2" fill="#8d876f"/>
+  <!-- lifting redaction bars, drifting off to the right -->
+  <rect x="12" y="24" width="30" height="4" fill="#11131f"/>
+  <rect x="46" y="23" width="12" height="4" fill="#11131f" opacity="0.6"/>
+  <rect x="12" y="32" width="22" height="4" fill="#11131f" opacity="0.75"/>
+  <rect x="44" y="30" width="14" height="4" fill="#11131f" opacity="0.4"/>
+  <rect x="50" y="37" width="10" height="4" fill="#11131f" opacity="0.25"/>
+  <!-- the revealed line: a small Earth -->
+  <rect x="24" y="42" width="16" height="16" fill="#2f6fb0"/>
+  <rect x="26" y="44" width="12" height="12" fill="#3f8ad4"/>
+  <rect x="28" y="46" width="6" height="4" fill="#4a9a4a"/>
+  <rect x="33" y="51" width="5" height="4" fill="#4a9a4a"/>
+  <rect x="26" y="52" width="4" height="2" fill="#4a9a4a"/>
+  <rect x="30" y="44" width="4" height="2" fill="#cfe3f5" opacity="0.6"/>
+  <rect x="27" y="55" width="8" height="1" fill="#cfe3f5" opacity="0.6"/>
+  <!-- caption lines under it -->
+  <rect x="14" y="62" width="20" height="2" fill="#5c5040"/>
+  <rect x="14" y="66" width="28" height="2" fill="#8d876f"/>
+  <!-- DECLASSIFIED stamp: red rotated block -->
+  <rect x="10" y="46" width="44" height="12" fill="#ff5d6c" opacity="0.25"/>
+  <rect x="10" y="46" width="44" height="2" fill="#ff5d6c"/>
+  <rect x="10" y="56" width="44" height="2" fill="#ff5d6c"/>
+  <rect x="10" y="46" width="2" height="12" fill="#ff5d6c"/>
+  <rect x="52" y="46" width="2" height="12" fill="#ff5d6c"/>
+  <!-- stamp tick marks reading as blocky letters -->
+  <rect x="15" y="50" width="3" height="4" fill="#ff5d6c"/>
+  <rect x="20" y="50" width="3" height="4" fill="#ff5d6c"/>
+  <rect x="25" y="50" width="3" height="4" fill="#ff5d6c"/>
+  <rect x="30" y="50" width="3" height="4" fill="#ff5d6c"/>
+  <rect x="35" y="50" width="3" height="4" fill="#ff5d6c"/>
+  <rect x="40" y="50" width="3" height="4" fill="#ff5d6c"/>
+  <rect x="45" y="50" width="3" height="4" fill="#ff5d6c"/>
+</svg>

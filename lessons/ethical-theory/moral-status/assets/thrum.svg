@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" shape-rendering="crispEdges" role="img" aria-label="The Thrum: a soft eyeless creature curled in a containment cell, red pain-waves radiating from it">
+  <rect width="64" height="80" fill="#1d2235"/>
+  <!-- containment cell floor and back wall -->
+  <rect x="0" y="52" width="64" height="28" fill="#262c44"/>
+  <rect x="0" y="52" width="64" height="2" fill="#3a4468"/>
+  <!-- cell bars, faint -->
+  <rect x="8" y="6" width="2" height="46" fill="#3a4468" opacity="0.5"/>
+  <rect x="28" y="6" width="2" height="46" fill="#3a4468" opacity="0.5"/>
+  <rect x="48" y="6" width="2" height="46" fill="#3a4468" opacity="0.5"/>
+  <!-- pain waves -->
+  <rect x="10" y="30" width="10" height="2" fill="#ff5d6c" opacity="0.5"/>
+  <rect x="44" y="30" width="10" height="2" fill="#ff5d6c" opacity="0.5"/>
+  <rect x="6" y="38" width="8" height="2" fill="#ff5d6c" opacity="0.35"/>
+  <rect x="50" y="38" width="8" height="2" fill="#ff5d6c" opacity="0.35"/>
+  <rect x="26" y="18" width="12" height="2" fill="#ff5d6c" opacity="0.5"/>
+  <rect x="22" y="12" width="20" height="2" fill="#ff5d6c" opacity="0.3"/>
+  <!-- body: soft rounded mass -->
+  <rect x="20" y="40" width="24" height="4" fill="#c76a9a"/>
+  <rect x="16" y="44" width="32" height="14" fill="#e08ab5"/>
+  <rect x="14" y="48" width="36" height="10" fill="#e08ab5"/>
+  <rect x="16" y="56" width="32" height="6" fill="#c76a9a"/>
+  <!-- translucent highlight -->
+  <rect x="22" y="46" width="10" height="4" fill="#f7bcd8"/>
+  <!-- no eyes: a smooth blank front, just a puckered mouth -->
+  <rect x="28" y="50" width="8" height="4" fill="#8c3f63"/>
+  <rect x="30" y="52" width="4" height="2" fill="#5c2340"/>
+  <!-- fringe of small cilia along the base -->
+  <rect x="16" y="62" width="2" height="4" fill="#c76a9a"/>
+  <rect x="22" y="62" width="2" height="5" fill="#c76a9a"/>
+  <rect x="28" y="62" width="2" height="4" fill="#c76a9a"/>
+  <rect x="34" y="62" width="2" height="5" fill="#c76a9a"/>
+  <rect x="40" y="62" width="2" height="4" fill="#c76a9a"/>
+  <rect x="46" y="62" width="2" height="5" fill="#c76a9a"/>
+  <!-- trembling motion lines -->
+  <rect x="12" y="52" width="2" height="2" fill="#eef1ff" opacity="0.6"/>
+  <rect x="50" y="52" width="2" height="2" fill="#eef1ff" opacity="0.6"/>
+  <!-- monitoring readout, spiking -->
+  <rect x="4" y="68" width="24" height="10" fill="#050610"/>
+  <rect x="6" y="70" width="20" height="6" fill="#11131f"/>
+  <rect x="7" y="74" width="3" height="2" fill="#ff5d6c"/>
+  <rect x="10" y="71" width="2" height="5" fill="#ff5d6c"/>
+  <rect x="12" y="73" width="3" height="3" fill="#ff5d6c"/>
+  <rect x="15" y="70" width="2" height="6" fill="#ff5d6c"/>
+  <rect x="17" y="74" width="8" height="2" fill="#ff5d6c"/>
+</svg>

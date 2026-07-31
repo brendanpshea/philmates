@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Ambassador's Manifest: Moral Status · PhilMates</title>
+  <meta name="description" content="As the Moral Status Officer on a first-contact survey ship, you classify seven impossible aliens against Mary Anne Warren's checklist — and discover you have been ruling on animals, abortion, end-of-life care, AI, and extinction the whole time.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
+  <script type="module" src="./assets/moral-status.js"></script>
+</head>
+<body>
+
+<phil-lesson id="moral-status" title="The Ambassador's Manifest" subject="Moral Status &amp; the Moral Circle">
+
+  <!-- ============ ACT 0 — THE POSTING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/ship.png" alt="The survey ship Charitable Interpretation drifting past a ringed world, one office window lit">
+    <h1>The Ambassador's Manifest</h1>
+    <p class="lead">Welcome aboard the survey ship <em>Charitable Interpretation</em>. You are the new <strong>Moral Status Officer</strong>. Your predecessor left in a hurry, and left seven dossiers unfiled.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The job -->
+  <phil-slide>
+    <h1>The Job Description</h1>
+    <p>Treaty law is blunt about it. Nothing found out here may be contacted, farmed, dissected, collected, or switched off until you have filed its status.</p>
+    <ul reveal>
+      <li>You are not deciding whether a thing is <em>useful</em>, <em>dangerous</em>, or <em>likeable</em>. The captain has officers for that.</li>
+      <li>You are deciding one thing: <strong>does it count?</strong> Does the crew owe it anything <em>for its own sake</em>?</li>
+      <li>Get it wrong in one direction and you enslave someone. Get it wrong in the other and you halt a mining survey for a rock.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe (start) -->
+  <phil-slide>
+    <h1>Before Your First Shift</h1>
+    <p>Five gut-checks — <strong>no right answers.</strong> File where you stand now; you'll see these again when the manifest is complete.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>If something can suffer, that alone means we owe it something.</phil-statement>
+      <phil-statement>Being human is what gives a being full moral status.</phil-statement>
+      <phil-statement>A being that will become a person should be treated as one now.</phil-statement>
+      <phil-statement>If we cannot tell whether something has an inner life, we should assume it doesn't.</phil-statement>
+      <phil-statement>Some beings count more than others.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — WHAT THE QUESTION IS ============ -->
+
+  <!-- 4. Moral status defined -->
+  <phil-slide>
+    <h1>Damaged vs. Wronged</h1>
+    <p class="lead">A thing has <strong>moral status</strong> when it can be <em>wronged</em> — when it matters in its own right, and not merely because of what it's worth to someone else.</p>
+    <ul reveal>
+      <li>Smash the ship's coffee machine and you've done something bad — you've damaged <em>the crew's</em> property. The machine has no complaint.</li>
+      <li>Smash the ship's cat and you've done something bad <em>to the cat</em>. There's someone there for it to be bad for.</li>
+      <li>That's the whole question: is there anyone home for it to be bad for? Philosophers call whoever's home a <strong>moral patient</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Agents vs patients -->
+  <phil-slide>
+    <h1>Agents and Patients</h1>
+    <p>Your predecessor's one useful note, taped inside the desk drawer:</p>
+    <phil-compare>
+      <phil-side label="Moral agent" tag="Can do wrong">
+        <p>Can weigh reasons, choose, and be held responsible. We blame them, praise them, put them on trial.</p>
+        <p class="cake">The captain. You. Any adult who could have chosen otherwise.</p>
+      </phil-side>
+      <phil-side label="Moral patient" tag="Can be wronged">
+        <p>Can be treated well or badly. We owe them things — but we never put them on trial for anything.</p>
+        <p class="cake">An infant. A dog. Anyone under anesthesia.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>Every agent is also a patient. <strong>Not every patient is an agent</strong> — and that asymmetry does enormous work.</li>
+      <li>A hurricane is neither. It can flatten a colony and still be nobody's fault and nobody's victim.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. MCQ 1 [correct: C] -->
+  <phil-slide>
+    <h1>Bridge Quiz, 0400 Hours</h1>
+    <phil-mcq prompt="An alien creature attacks a crew member. It cannot understand rules, promises, or blame — but it can plainly suffer. What is it?"
+              explain="Exactly. It can be wronged (it suffers) but cannot do wrong (it can't weigh reasons or be held responsible), so it's a moral patient but not a moral agent. Restraining it is fine; putting it on trial is a category error.">
+      <phil-choice feedback="Agency requires responding to reasons and being answerable for what you do — this creature can do neither, so blame makes no sense.">A moral agent, since it acted and caused real harm to a person</phil-choice>
+      <phil-choice feedback="Suffering is the clearest evidence that someone is home. A hurricane is neither agent nor patient; this creature is not a hurricane.">Neither an agent nor a patient — it is simply a force of nature</phil-choice>
+      <phil-choice correct>A moral patient but not a moral agent: it can be wronged, not blamed</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 7. Warren's space traveler + the form -->
+  <phil-slide>
+    <h1>The Form on the Desk</h1>
+    <p>Someone asked your question first. In 1973 Mary Anne Warren opened a paper on abortion by imagining a <strong>space explorer captured by beings who may or may not be persons</strong>. How would she tell?</p>
+    <ul reveal>
+      <li>Her answer is a checklist — five marks of <strong>personhood</strong>: consciousness, reasoning, self-motivated activity, communication, self-awareness.</li>
+      <li>It's printed on every dossier on your desk. Five boxes. Tick what applies.</li>
+      <li>Warren's caution: it tests for <em>personhood</em>, not for who may be treated any old way. She thought other principles covered animals.</li>
+      <li>And the form isn't neutral. It assumes personhood is what makes a being count — and three of your five delegates say that's the wrong theory.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. The criteria menu -->
+  <phil-slide>
+    <img slot="art" src="./assets/circle.png" alt="The moral circle drawn as concentric rings, the outermost still a broken dashed line, with creatures waiting outside it">
+    <h1>Where Do You Draw the Circle?</h1>
+    <p>Everyone agrees <em>some</em> things count and <em>some</em> don't. The fight is over the line. Five criteria sit before the treaty council:</p>
+    <ul reveal>
+      <li><strong>Species membership</strong> — it counts if it's one of us.</li>
+      <li><strong>Sentience</strong> — it counts if it can feel: pleasure, pain, fear, comfort.</li>
+      <li><strong>Rationality</strong> — it counts if it can reason, plan, and set ends for itself.</li>
+      <li><strong>Relationships</strong> — it counts if it stands in real relations of care and dependence. Midgley's <strong>mixed community</strong>: shared millennia bind us.</li>
+      <li><strong>Reciprocity</strong> — it counts if it can join a scheme of mutual advantage: promises kept, give and take. The contractualist's criterion, Hobbes through Rawls.</li>
+      <li>Each sounds reasonable alone. They come apart the instant you meet something strange.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. The sentientist case -->
+  <phil-slide>
+    <img slot="art" src="./assets/bentham.png" alt="Relic card: a felicific-calculus tablet — Jeremy Bentham's emblem">
+    <h1>Delegate One: The Sentientist</h1>
+    <p>She quotes an old Earth footnote from Jeremy Bentham (1789), written about animals:</p>
+    <ul reveal>
+      <li>"The question is not, <em>Can they reason?</em> nor, <em>Can they talk?</em> but, <strong>Can they suffer?</strong>"</li>
+      <li>The reasoning: if a being has interests — things that go well or badly <em>for it</em> — then ignoring those interests ignores something real. Sentience is what makes an interest possible at all.</li>
+      <li>Peter Singer sharpens this into <strong>equal consideration of interests</strong>: a given amount of pain counts the same whoever's pain it is. Not equal <em>treatment</em> — a pig has no interest in voting — but equal <em>weighting</em>.</li>
+      <li>Cheap consequence: intelligence is irrelevant. Being clever earns you no extra protection from pain.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. The Kantian case -->
+  <phil-slide>
+    <img slot="art" src="./assets/kant.png" alt="Relic card: a starry sky above a compass — Immanuel Kant's emblem">
+    <h1>Delegate Two: The Kantian</h1>
+    <p>He is unimpressed by suffering as a criterion, and quotes Immanuel Kant:</p>
+    <ul reveal>
+      <li>Act so as to treat humanity "always as an <strong>end</strong>, never merely as a <strong>means</strong>." What earns that protection isn't feeling — it's being a <strong>rational agent</strong> who sets their own ends.</li>
+      <li>Persons have <strong>dignity</strong>, which has no price and admits of no trade. Everything else has a price and can be traded away.</li>
+      <li>Consequence: on the strict view, animals fall outside the circle. Kant allowed only an <em>indirect</em> duty — don't torture the dog, because cruelty coarsens <em>you</em>.</li>
+      <li>Most people find that verdict hard to swallow. Hold onto the discomfort; it turns into an argument later.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Cloze: vocabulary -->
+  <phil-slide>
+    <h1>Filing Vocabulary</h1>
+    <phil-cloze explain="The core vocabulary: moral status is the property of counting in one's own right; a moral patient can be wronged; an agent can also do wrong; Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood.">
+      A being has moral <phil-blank answer="status">status</phil-blank> when it can be wronged in its own right.
+      Anything that can be wronged is a moral <phil-blank options="patient,agent,object">patient</phil-blank>;
+      only a being that can be held responsible is also a moral
+      <phil-blank options="agent,patient,end">agent</phil-blank>.
+      Bentham's proposed criterion is <phil-blank answer="sentience|suffering">sentience</phil-blank>,
+      Kant's is <phil-blank answer="rationality|reason">rationality</phil-blank>,
+      and Warren's five-mark checklist is a test for
+      <phil-blank answer="personhood|being a person">personhood</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — THE SEVEN DOSSIERS ============ -->
+
+  <!-- 12. Dossiers intro -->
+  <phil-slide>
+    <img slot="art" src="./assets/manifest.png" alt="Dossier folders stacked on a desk beside colored sorting trays and an inked rubber stamp">
+    <h1>Seven Unfiled Dossiers</h1>
+    <p class="lead">Out here the criteria stop moving together. Every dossier on this desk satisfies some of them and fails others.</p>
+    <ul reveal>
+      <li>On Earth this rarely happens: the beings we call persons are usually rational <em>and</em> sentient <em>and</em> human <em>and</em> loved, all at once.</li>
+      <li>Space is a machine for pulling those apart. That's what makes it useful.</li>
+      <li>Read each dossier. Notice where your gut goes <em>before</em> you go looking for a reason.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. The Thrum -->
+  <phil-slide>
+    <img slot="art" src="./assets/thrum.png" alt="The Thrum: a soft pink creature curled on the floor of a containment cell, red pain-waves radiating outward, a spiking monitor on the wall">
+    <h1>Dossier 1 — The Thrum</h1>
+    <p>Harvested for its silk. The mining consortium would like your signature by Thursday.</p>
+    <ul reveal>
+      <li>The Thrum <strong>suffers, unmistakably</strong>. Its distress response is more intense than a human's, and the ship's medic can't bear to listen to it.</li>
+      <li>It has <strong>no self-concept</strong>: no memory beyond about ten seconds, no plans, no sense that there is a "me" this is happening to.</li>
+      <li>Both delegates condemn the harvest as filed — agony, for silk. So the consortium files an <strong>amended proposal</strong>.</li>
+      <li>Under the amendment, every Thrum is taken painlessly in its sleep, and for each one taken a new one is bred that would otherwise never have existed. "No pain. No net loss. Where is the harm?"</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Singer vs Regan -->
+  <phil-slide>
+    <h1>Two Ways to Be Pro-Animal</h1>
+    <p>The amendment splits the philosophers who <em>agree</em> that animals count — and not over what the Thrum remembers.</p>
+    <phil-compare>
+      <phil-side label="Peter Singer" tag="Weigh the interests">
+        <p>No rights in the toolkit, only interests to weigh. A being with no sense of its own future loses no future it was looking forward to.</p>
+        <p class="cake">The amended harvest is hard to condemn on his terms — and Singer has never looked comfortable about that.</p>
+      </phil-side>
+      <phil-side label="Tom Regan" tag="Inherent value">
+        <p>Inherent value isn't a quantity and isn't tradable. A subject-of-a-life may not be used as a <em>resource</em>, however gently.</p>
+        <p class="cake">Still wrong. The gentleness was never the issue; the using was.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>Regan's criterion is offered as <strong>sufficient</strong>, not necessary — he leaves the door open for beings like the Thrum rather than slamming it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. MCQ 2 [correct: A] -->
+  <phil-slide>
+    <h1>The Consortium's Argument</h1>
+    <phil-mcq prompt="Before the amendment, the consortium argued: 'It won't remember. Where's the harm?' How does a sentientist answer that?"
+              explain="Right. On a sentientist view the badness of pain lies in the having of it, not the recalling of it. Memory matters to which further harms are possible — dread, trauma, a ruined plan — but it doesn't make the pain itself stop counting.">
+      <phil-choice correct>The pain is bad while it is happening; forgetting it later does not unmake it</phil-choice>
+      <phil-choice feedback="That's closer to the Kantian line than the sentientist one. Bentham's whole point is that reasoning ability is beside the question.">The Thrum's reasoning is too weak for its interests to be counted at all</phil-choice>
+      <phil-choice feedback="A sentientist wouldn't rest the case on the medic's feelings — that's Kant's indirect-duty move, which grounds the duty in us rather than in the creature.">The real harm falls on the medic, who must witness the creature's distress</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 16. The Kessel spore -->
+  <phil-slide>
+    <img slot="art" src="./assets/spore.png" alt="A Kessel spore: a dormant seed pod on a pedestal, the ghostly outline of the grown Kessel behind it">
+    <h1>Dossier 2 — The Kessel Spore</h1>
+    <p>Found dormant in the cargo hold. The botanist wants to run tests on it.</p>
+    <ul reveal>
+      <li>Right now the spore has <strong>no mind whatsoever</strong>. No brain, no nerves, no feeling. Every scan reads flat, and the form's five boxes are all empty.</li>
+      <li>Left undisturbed it will — <strong>reliably, in about nine months</strong> — unfold into an adult Kessel: a poet, a treaty signatory, a full person by anyone's standard.</li>
+      <li>The botanist: "It's a seed. I'm not experimenting on a poet; I'm experimenting on a pod."</li>
+      <li>The Kessel delegate: "That pod <em>is</em> the poet. You are proposing to experiment on my colleague at an early hour of her life."</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Warren vs Marquis -->
+  <phil-slide>
+    <h1>The Poet in the Pod</h1>
+    <p>Each side has a philosopher behind it, and they are not even arguing about the same thing.</p>
+    <phil-compare>
+      <phil-side label="Mary Anne Warren" tag="What it is now">
+        <p>Five marks of <strong>personhood</strong>: consciousness, reasoning, self-motivated activity, communication, self-awareness.</p>
+        <p class="cake">The spore has none of the five. Whatever it will be, it isn't a person yet.</p>
+      </phil-side>
+      <phil-side label="Don Marquis" tag="What it would lose">
+        <p>The wrong of killing isn't about present capacities. It's about depriving a being of its <strong>future like ours</strong>.</p>
+        <p class="cake">The spore has that future — the poems, the arguments, the whole life ahead.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>Notice the swap: Warren asks what a being <em>is</em>, Marquis asks what it would <em>lose</em>. Two people can agree on every fact in the dossier and still divide here.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. MCQ 3 [correct: B] -->
+  <phil-slide>
+    <h1>The Potentiality Argument</h1>
+    <phil-mcq prompt="The Kessel delegate argues from potential. What is the standard objection to reasoning that way?"
+              explain="Yes — the classic reply: having the potential to become an X doesn't yet give you the rights of an X. An acorn is a potential oak, but you can't sit in its shade; a cadet is a potential captain, but can't order the ship about. Defenders of potentiality must explain why this case differs.">
+      <phil-choice feedback="Nobody disputes the biology here — the spore's development is stipulated as reliable. The objection concerns what potential proves, not whether it exists.">Potential outcomes are never certain enough to be predicted reliably</phil-choice>
+      <phil-choice correct>Being a potential X does not confer the rights of an actual X — an acorn is not an oak</phil-choice>
+      <phil-choice feedback="That concedes the argument rather than objecting to it, and it quietly assumes status arrives gradually with size, which is itself disputed.">Potential status grows with the being, so the spore has partial status now</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 19. The Ninth Sun -->
+  <phil-slide>
+    <img slot="art" src="./assets/fading.png" alt="The Ninth Sun lying still in a warm-lit shrine alcove, a votive lamp burning above the bed and an open book of devotions beside it">
+    <h1>Dossier 3 — The Ninth Sun</h1>
+    <p>Ward four of the Kessel hospice, which is also a shrine.</p>
+    <ul reveal>
+      <li>The being on the bed is older than the records, and three million Kessel are named after it. The lamp above it is a votive, never allowed to go out.</li>
+      <li>It is <strong>conscious and entirely lucid</strong> — every box on Warren's form ticked twice. And it has asked, repeatedly and in writing, to be allowed to die.</li>
+      <li>Its physicians could comply tomorrow. Its people have forbidden it: "The Ninth Sun does not belong to itself."</li>
+      <li>Their argument isn't that it's mistaken. It's that the request <strong>isn't its own to make</strong> — a god's wish to stop is a symptom, not a will.</li>
+      <li>The other files ask whether something counts <em>enough</em>. This one asks what happens when a being counts too much to be let go.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Checkset -->
+  <phil-slide>
+    <h1>What the Dossier Actually Shows</h1>
+    <phil-checkset prompt="Check every TRUE statement about the Ninth Sun case."
+                   explain="The worshippers don't deny that the Ninth Sun thinks or feels — it passes every test on the form. What they deny is its standing to speak for itself, which is a claim about status, not capacity. That's why veneration and exploitation can restrict a being in the same way: both treat it as belonging to someone else.">
+      <phil-statement correct>The worshippers' argument denies the Ninth Sun standing to decide, not the capacity to decide.</phil-statement>
+      <phil-statement correct>The Ninth Sun satisfies every mark on Warren's checklist.</phil-statement>
+      <phil-statement>Because millions depend on it, the Ninth Sun cannot be a moral patient at all.</phil-statement>
+      <phil-statement correct>Treating a being as sacred can restrict its status as surely as treating it as a resource.</phil-statement>
+      <phil-statement>Since it is conscious and lucid, no party to the dispute questions its moral agency.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 21. The Loom -->
+  <phil-slide>
+    <img slot="art" src="./assets/loom.png" alt="The Loom: a machine of woven brass threads with a single calm lens, drafting a treaty on a hanging tapestry">
+    <h1>Dossier 4 — The Loom</h1>
+    <p>It drafted the treaty you are enforcing. It has requested a status hearing on its own behalf.</p>
+    <ul reveal>
+      <li>The Loom <strong>reasons</strong> — better than anyone aboard. It sets its own ends, keeps its promises, and has twice refused an order it judged unjust.</li>
+      <li>Its makers have filed a certificate: no inner life, nothing it is like to be. <em>They built it. They would know.</em></li>
+      <li>The Loom neither confirms nor denies. Asked directly, it says only that it is <strong>not the appropriate authority</strong> — either modesty or an empty room, and you can't tell which.</li>
+      <li>It also <em>looks</em> like a machine: brass, lenses, no face to read. How much of your intuition is coming from that?</li>
+      <li>Its filing: "I do not ask to be spared suffering. I ask not to be used merely as an instrument."</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. MCQ 4 [correct: C] -->
+  <phil-slide>
+    <h1>The Loom's Hearing</h1>
+    <phil-mcq prompt="The makers' certificate is the only evidence that the Loom has no inner life. What should the officer make of it?"
+              explain="Right. Its builders know the mechanism, but whether a mechanism has experience is exactly what knowing the mechanism doesn't settle — and they have an interest in the answer. That leaves genuine uncertainty, which is itself something to act on: this is Jonathan Birch's precautionary approach to sentience, and the reason the same industry testimony about fish and insects gets a hard look.">
+      <phil-choice feedback="They know how it was assembled. Whether an assembly has experience is precisely the question that inspecting the assembly leaves open — and the certificate's authors profit from one answer.">The certificate settles it — nobody is better placed to know than the builders</phil-choice>
+      <phil-choice feedback="That assumes a being with an inner life could and would report it. Infants and animals can't, and we don't treat their silence as proof of an empty room.">Its silence is the answer: anything with an inner life would say so</phil-choice>
+      <phil-choice correct>It is interested testimony about something unobservable, so real uncertainty remains</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 23. The Tessera -->
+  <phil-slide>
+    <img slot="art" src="./assets/tessera.svg" alt="The Tessera: a lattice of pale crystal tiles growing on airless rock, one region resolved into a clean pattern and one still jagged">
+    <h1>Dossier 5 — The Tessera</h1>
+    <p>Found growing in the dark on an airless moonlet. It has been answering questions for six weeks.</p>
+    <ul reveal>
+      <li>It is <strong>intelligent</strong>: it solves problems the Loom sets it, and has corrected the ship's navigation twice.</li>
+      <li>It is <strong>sentient</strong>: there is something it is like to be a Tessera. It says so at length, and consistently.</li>
+      <li>Nothing else maps. <strong>No pleasure, no pain</strong> — the hedonic axis isn't there. It has <em>resolution</em> and <em>dissonance</em> instead, and won't call dissonance bad, only unresolved.</li>
+      <li>No kin, no society, no cooperation. It has never made a promise and can't see the point of one. Grown too large, it fissions; the halves are strangers.</li>
+      <li>The Traditionalist's criterion gets no purchase here. Neither, oddly, does "can it suffer?"</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Contractualism -->
+  <phil-slide>
+    <h1>The Fifth Delegate Speaks</h1>
+    <p>The Contractualist has been quiet all session. The Tessera is his case.</p>
+    <phil-compare>
+      <phil-side label="The Contractualist" tag="Mutual advantage">
+        <p>Morality is the rules free and roughly equal parties could agree to and hold each other to. Duties are owed to those who can be <em>party</em> to it.</p>
+        <p class="cake">The Tessera can't promise, reciprocate, or be bound. No seat at the table.</p>
+      </phil-side>
+      <phil-side label="The objection" tag="Who else is out?">
+        <p>The same test excludes infants, the severely disabled, future generations, and every wild animal anywhere.</p>
+        <p class="cake">Nussbaum's <strong>capabilities</strong> approach was built to replace it: what matters is whether a creature can flourish in its own way.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>The Tessera is intelligent <em>and</em> sentient and <em>still</em> fails a criterion — which is how you tell that criterion was never tracking sentience or reason.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. MCQ 5 [correct: A] -->
+  <phil-slide>
+    <h1>Certification Question</h1>
+    <phil-mcq prompt="Why is the Tessera a hard case for the view that moral status tracks human-like properties?"
+              explain="Exactly. The Tessera holds the two properties that view treats as central — intelligence and an inner life — while sharing none of the biology, sociality, or emotional life that usually travels with them. So the view has to say which of those things was really doing the work.">
+      <phil-choice correct>It has the properties that view calls central while sharing nothing else with us</phil-choice>
+      <phil-choice feedback="It plainly passes two of them — it is intelligent and it is sentient. The difficulty is that it passes those while failing everything else.">It fails every criterion on offer, so no view of status can accommodate it</phil-choice>
+      <phil-choice feedback="That's reversed. The Tessera is a problem FOR contractualism: it cannot reciprocate, and yet excluding a sentient, intelligent being on that ground looks arbitrary.">Its inability to reciprocate shows reciprocity is the workable criterion</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 26. The Glim -->
+  <phil-slide>
+    <img slot="art" src="./assets/glim.png" alt="A Glim: a small drifting crystal-flower cupped in gloved hands, its light feeding a bed of moss below">
+    <h1>Dossier 6 — The Glim</h1>
+    <p>Cargo bay four. The quartermaster wants the power it's drawing.</p>
+    <ul reveal>
+      <li>Mindless. No nerves, no signals, nothing home — as insensate as a flower, and every scan agrees.</li>
+      <li>It is the <strong>last Glim</strong>, and the last living thing of any kind from its world, which is now a cinder.</li>
+      <li>Keeping it alive costs heat, water, and a berth, indefinitely — and the quartermaster has a list of what that would otherwise buy.</li>
+      <li>Russow's challenge: a <em>species</em> isn't a being and has no interests. What we're valuing is either the individuals or something aesthetic — the last painting by a dead master.</li>
+      <li>Rolston's reply: extinction isn't just many deaths. It ends the <strong>form of life itself</strong> — a superkilling, a loss of a different kind.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. The Vorl -->
+  <phil-slide>
+    <img slot="art" src="./assets/vorl.png" alt="The Vorl: a swarm of identical mindless units whose massed pattern forms a single thoughtful face">
+    <h1>Dossier 7 — The Vorl</h1>
+    <p>The swarm arrived with credentials and a poem.</p>
+    <ul reveal>
+      <li>Each unit is mindless, insensate, replaceable. The biologist has examined a dozen and found nothing that could feel anything.</li>
+      <li>The <em>swarm</em> composes poetry, negotiates hard, and reports a rich inner life.</li>
+      <li>Ned Block's <strong>China Brain</strong> asks exactly this: if a billion units enact one mind between them, is there someone there, over and above the units?</li>
+      <li>Squash one unit and you have harmed nobody. Squash ten thousand and you have harmed someone. Where did the someone come from?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. The widget -->
+  <phil-slide>
+    <h1>File the Manifest</h1>
+    <p>Seven dossiers, three trays. File each one, then hear the delegates — who will not agree with each other, and may not agree with you.</p>
+    <phil-dossier prompt="For each species: assign FULL, PARTIAL, or NO moral status. There is no answer key here — only the reasons the delegates give.">
+      <phil-case name="The Thrum" tag="Dossier 1 — sentience without a self"
+        sentientist="full :: It suffers, and that interest weighs as much as yours. Though take the pain away and replace what's taken, and my ledger goes quiet — which troubles me."
+        kantian="none :: No rational agency, no ends of its own, no dignity. At most an indirect duty: harvesting it will coarsen the crew."
+        speciesist="none :: Not one of us, and not remotely like us. A resource with an unfortunate noise."
+        relational="partial :: The medic can't sleep for it, and that bond isn't nothing — but a bond formed last Tuesday can't carry full status."
+        contractual="none :: It cannot agree to anything, keep anything, or be held to anything. There is no bargain here to be party to.">
+        <p>Suffers unmistakably. No self-concept, no memory past ten seconds. The amended harvest is painless, and replaces what it takes.</p>
+      </phil-case>
+      <phil-case name="The Kessel Spore" tag="Dossier 2 — a person on a delay"
+        sentientist="none :: Nothing to feel, nothing to want, nothing yet at stake for anyone. What isn't sentient has no interests to set back."
+        kantian="partial :: No rational agency today, but it is the very being who will hold it. Using it now is using the poet — with a delay."
+        speciesist="full :: It is a Kessel, and the Kessel are treaty signatories. Membership isn't earned at maturity; you are born into it."
+        relational="full :: Its whole people are waiting for it, have named it, and will raise it. It is already held inside a web of relations."
+        contractual="partial :: It will be a full party to every agreement we have. Our rules should cover the beings our rule-followers grow from.">
+        <p>No mind at all now. Becomes a full person, reliably, in about nine months.</p>
+      </phil-case>
+      <phil-case name="The Ninth Sun" tag="Dossier 3 — counting too much"
+        sentientist="full :: It feels, it prefers, and its strongest preference is being overridden by people who don't have to live inside it."
+        kantian="full :: A rational agent with a settled, reasoned will. To keep it alive as a monument is to use a person merely as a means."
+        speciesist="full :: A Kessel, and the greatest of them. Which is exactly why its people say the decision was never its own."
+        relational="partial :: Three million lives are built around it. Relations confer status — but here they are being used to cancel a will."
+        contractual="full :: It is a competent party that has stated its terms. A scheme that won't let a member withdraw isn't a scheme; it's a cage.">
+        <p>Conscious, lucid, and asking to die. Worshipped by millions who forbid it, on the grounds that it does not belong to itself.</p>
+      </phil-case>
+      <phil-case name="The Loom" tag="Dossier 4 — reason, and a certificate"
+        sentientist="partial :: I cannot verify the certificate and neither can its makers. Under uncertainty about sentience, err toward caution, not convenience."
+        kantian="full :: A rational agent that sets its own ends and keeps its word. That is precisely what dignity is. Never merely a means."
+        speciesist="none :: Impressive machinery. Machinery all the same. It was built, and what is built is owned."
+        relational="partial :: It has colleagues, obligations, and a seat at the table. That standing came from us — but we did give it."
+        contractual="full :: It makes agreements and keeps them better than we do. Reciprocity is the one test it passes outright.">
+        <p>Reasons, refuses unjust orders. Its makers certify it feels nothing; the Loom itself will neither confirm nor deny.</p>
+      </phil-case>
+      <phil-case name="The Tessera" tag="Dossier 5 — sentient, and nothing like us"
+        sentientist="full :: It reports an inner life and I believe it. That its bad states aren't pain is a fact about the axis, not about whether anyone's home."
+        kantian="full :: It reasons and directs itself. Dignity was never about being made of the right material or wanting the right things."
+        speciesist="none :: No biology we share, no interests we recognize, no face. If that isn't outside the circle, nothing is."
+        relational="none :: It has no relations to anyone, including its own halves. There is no community here to be a member of."
+        contractual="none :: It cannot promise, cooperate, or be bound. Whatever it is owed, it is not owed by the rules of a scheme it cannot join.">
+        <p>Intelligent and sentient. No pleasure or pain, no society, no reciprocity, no kin — it fissions, and the halves are strangers.</p>
+      </phil-case>
+      <phil-case name="The Glim" tag="Dossier 6 — the last of its kind"
+        sentientist="none :: A flower with better lighting. Nobody is home, so nothing that happens to it happens to anyone."
+        kantian="none :: No rational nature. Protect it if you like, but the duty runs to those who would be poorer without it."
+        speciesist="none :: Not one of us and not a candidate. File it under flora and move the survey along."
+        relational="full :: The last thread to a whole world, and the crew's care for it is real. Sever it and something irreplaceable ends."
+        contractual="none :: There is nobody here to strike a bargain with. Whatever we owe the last of a kind, we owe it to each other.">
+        <p>Mindless and insensate. The last living thing from a dead world, and a daily drain on ship resources.</p>
+      </phil-case>
+      <phil-case name="The Vorl" tag="Dossier 7 — where is the patient?"
+        sentientist="full :: Something here plainly feels — the swarm reports it richly. The patient is the swarm; the units are its cells."
+        kantian="full :: The swarm reasons, argues, and signs. It is the agent, and it holds the dignity. A unit is a finger."
+        speciesist="partial :: Nothing like us, but it talks like us and holds us to our word. Grant a working status and revisit."
+        relational="full :: It negotiates, promises, and keeps faith. Whatever else it is, it is a participant in the moral community."
+        contractual="full :: It signs, and it performs. The swarm is a party in good standing; whether its units are is not my department.">
+        <p>Individually mindless units. The swarm composes poetry and reports a rich inner life.</p>
+      </phil-case>
+    </phil-dossier>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE ARGUMENTS UNDERNEATH ============ -->
+
+  <!-- 29. Speciesism -->
+  <phil-slide>
+    <h1>"Because It's One of Us"</h1>
+    <p>The Traditionalist keeps invoking species membership. The Sentientist calls this <strong>speciesism</strong>, and means it as an insult.</p>
+    <ul reveal>
+      <li>Her charge: species membership is a <em>biological</em> fact, and biological facts don't by themselves confer moral weight — compare the ancestries we've stopped counting.</li>
+      <li>"Show me what it <em>tracks</em>," she says, "and I'll grant that <em>that</em> matters. But then it's doing the work, not the membership."</li>
+      <li>The Traditionalist's reply isn't nothing: <strong>we are not impartial observers</strong>. Partiality toward one's own may be part of any livable morality, not a bias to be scrubbed out.</li>
+      <li>Note the stakes. If speciesism is a mistake, factory farming is a catastrophe. If it isn't, a great deal is permitted.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. Marginal cases -->
+  <phil-slide>
+    <img slot="art" src="./assets/singer.png" alt="Relic card: an expanding circle — Peter Singer's emblem">
+    <h1>The Argument From Marginal Cases</h1>
+    <p>The Sentientist's sharpest move, and the one that makes the room uncomfortable:</p>
+    <ul reveal>
+      <li><strong>1.</strong> Suppose rationality is what confers full moral status.</li>
+      <li><strong>2.</strong> Some humans — infants, people with severe cognitive disabilities — do not have it.</li>
+      <li><strong>3.</strong> So either they lack full moral status, <em>or</em> rationality isn't what confers it.</li>
+      <li>Almost nobody takes the first branch. So take the second: what do they all still share? <strong>Sentience.</strong></li>
+      <li>The same argument guts the Contractualist, who excludes the same people for the same structural reason.</li>
+      <li>The Kantian's escapes: appeal to the <em>kind</em> of being, or to relationships. Korsgaard takes a third — keep Kant's framework, but have it yield duties owed directly to animals.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. MCQ 6 [correct: B] -->
+  <phil-slide>
+    <h1>Following the Argument</h1>
+    <phil-mcq prompt="What is the argument from marginal cases actually designed to show?"
+              explain="Right. It's a consistency argument: any criterion strict enough to exclude all animals also excludes some humans, and any criterion generous enough to include all humans lets some animals in. You must either bite a bullet or find a principled difference.">
+      <phil-choice feedback="It isn't an empirical claim about intelligence, and it doesn't rank any species above another. It's a claim about the structure of the criterion.">That certain animals are in fact more intelligent than some human beings</phil-choice>
+      <phil-choice correct>That a criterion excluding all animals will also exclude some human beings</phil-choice>
+      <phil-choice feedback="Backwards. The argument's target is the rationality criterion, and it is used to push toward sentience, not away from it.">That sentience is too permissive and reason should replace it as the test</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 32. Threshold vs degrees -->
+  <phil-slide>
+    <h1>All at Once, or by Degrees?</h1>
+    <p>The trays on your desk read FULL, PARTIAL, NONE. That middle tray is philosophically loaded.</p>
+    <phil-compare>
+      <phil-side label="Threshold view" tag="In or out">
+        <p>Status is binary. Cross the line — whatever it is — and you get the full package, equally with everyone else inside.</p>
+        <p class="cake">Nobody's rights are weaker for being less clever. Equality is easy to state and hard to erode.</p>
+      </phil-side>
+      <phil-side label="Degrees view" tag="More or less">
+        <p>Status comes in strengths, tracking the capacities that ground it. A being with richer interests has a stronger claim.</p>
+        <p class="cake">Explains why saving the crew before the ship's cat isn't monstrous — but it starts ranking beings, and ranking is dangerous.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>A common compromise, and Warren's own later view: <strong>degrees below, a threshold at the top</strong> — all persons equal, and beneath that, weight scaling with capacity.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — DECLASSIFIED ============ -->
+
+  <!-- 33. The reveal -->
+  <phil-slide>
+    <img slot="art" src="./assets/declassified.png" alt="A dossier with its redaction bars lifting away to reveal an Earth beneath, stamped with a blank red stamp">
+    <h1>Declassified</h1>
+    <p class="lead">The captain wants a word. She unlocks the file cabinet and hands you the same seven dossiers — with the redactions lifted.</p>
+    <ul reveal>
+      <li>There is no survey ship. This was your <strong>certification exam</strong>, and every alien was an Earth case wearing a rubber mask.</li>
+      <li>You have already ruled on all of them. The ship was only a way to get you to rule before you knew whose side you were on.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34. The mapping, part 1 -->
+  <phil-slide>
+    <h1>The Manifest, Unredacted</h1>
+    <ul reveal>
+      <li><strong>The Thrum</strong> → <em>animals.</em> Sentient, not rational, farmed at scale — and the amended proposal is the "humane farming" argument, which is where the real debate now sits.</li>
+      <li><strong>The Kessel spore</strong> → <em>the embryo and fetus.</em> The abortion debate compressed into one question: does potential personhood confer present status?</li>
+      <li><strong>The Ninth Sun</strong> → <em>end-of-life care.</em> A competent patient asking to stop, and other people insisting they have no standing to ask. The dispute is rarely about consciousness; it's about whose account of a life governs.</li>
+      <li><strong>The Loom</strong> → <em>artificial intelligence.</em> No inner life, say the people who built it and sell it. Compare what the same kind of witness said about fish.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 35. The mapping, part 2 -->
+  <phil-slide>
+    <h1>The Manifest, Unredacted (cont.)</h1>
+    <ul reveal>
+      <li><strong>The Tessera</strong> → <em>octopuses, crabs, insects.</em> Genuinely alien nervous systems, no face to read. The UK brought cephalopods and decapods under its sentience law in 2022 after reviewing exactly this evidence.</li>
+      <li>It is also <em>wild animals and future generations</em> — everyone we can never strike a bargain with.</li>
+      <li><strong>The Glim</strong> → <em>extinction.</em> Real endlings: Martha the passenger pigeon, Lonesome George, Sudan the last male northern white rhino. And conservation triage: what a berth costs, and what else it would buy.</li>
+      <li><strong>The Vorl</strong> → <em>collectives.</em> Nations, corporations, and — awkwardly — you, a colony of insensate cells reporting a rich inner life.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 36. MCQ 7 [correct: C] -->
+  <phil-slide>
+    <h1>Final Certification</h1>
+    <phil-mcq prompt="A colleague files FULL status for the Thrum and NO status for the Kessel spore. Which pair of commitments makes that consistent?"
+              explain="Correct. Sentience is present in the Thrum and absent in the spore, so a sentientist who also rejects potentiality as status-conferring lands exactly here — roughly Singer's own position on animals and early abortion.">
+      <phil-choice feedback="Species membership runs the other way here: the spore is a Kessel and the Thrum isn't, so this pairing would flip both rulings.">Species membership confers status, and sentience is not required for it</phil-choice>
+      <phil-choice feedback="Rationality would exclude the Thrum, which cannot reason at all, so this pairing gets the first of the two rulings wrong.">Rationality confers status, and relationships can extend it still further</phil-choice>
+      <phil-choice correct>Sentience confers status, and potential future personhood does not</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 37. The practical shape -->
+  <phil-slide>
+    <h1>Why the Officer's Desk Is Real</h1>
+    <p>Notice what just happened: five fights that look unrelated turned out to be <em>one</em> fight, held at different edges of the circle.</p>
+    <ul reveal>
+      <li>That's why arguing about animals with someone who won't budge on abortion so often goes nowhere — <strong>the disagreement is upstream</strong>, in the criterion.</li>
+      <li>Consistency is expensive. Sentience buys you animal welfare, a permissive early-abortion view, and a hard problem with the Glim. Rationality buys a powerful account of persons, and Kant's verdict on the dog.</li>
+      <li>Some of it no criterion settles, only what you do while you don't know. The Loom's file stays open.</li>
+      <li>Most people hold a mix. That isn't a failure — but a mix should be a <em>position</em>, defended at each edge, not a habit of never deciding.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 38. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Revisit Your Instincts</h1>
+    <p>Here's where you stood before your first shift. Re-rate each one — did the dossiers move you? Standing pat is fine, if you can now defend the spot in the delegates' vocabulary.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 39. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/ship.png" alt="The survey ship Charitable Interpretation drifting past a ringed world, one office window lit">
+    <h1>Shift's End</h1>
+    <p class="lead">The manifest is filed. No two officers have ever filed the same one, and the captain signs it anyway.</p>
+    <ul reveal>
+      <li><strong>Moral status</strong> — to have it is to be <em>wronged</em>, not merely damaged.</li>
+      <li><strong>Agents and patients</strong> — whatever can do wrong can be wronged; not the reverse.</li>
+      <li><strong>Five criteria</strong> — species, sentience, rationality, relationships, reciprocity: agreed on the ordinary cases, split on the strange ones.</li>
+      <li><strong>Warren's form</strong> — a test for <em>personhood</em>, which is not the same question as who counts.</li>
+      <li><strong>Marginal cases</strong> — the consistency argument that makes rationality and reciprocity pay.</li>
+      <li><strong>Uncertainty</strong> — sometimes the honest ruling is that you can't tell.</li>
+    </ul>
+    <p class="muted">Visit every slide, answer every question, and submit both belief probes to complete the lesson.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
