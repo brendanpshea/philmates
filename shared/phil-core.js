@@ -159,8 +159,7 @@ class PhilLesson extends HTMLElement {
 
     this.append(top, this._stage, bottom);
 
-    // slide art loading late (or a window resize) changes content height
-    this.addEventListener('load', e => { if (e.target.tagName === 'IMG') this._fitSlide(this.current); }, true);
+    // a window resize changes the stage height (the ResizeObserver in show() covers content growth)
     window.addEventListener('resize', () => this._fitSlide(this.current));
 
     document.addEventListener('keydown', e => {
@@ -228,7 +227,10 @@ class PhilLesson extends HTMLElement {
   /* When a slide's content is taller than the stage, `align-content: safe center`
      misbehaves in Chrome (starts mid-scroll) — pin overflowing slides to the top. */
   _fitSlide(slide) {
-    if (slide) slide.classList.toggle('is-tall', slide.scrollHeight > slide.clientHeight + 1);
+    if (!slide) return;
+    slide.classList.toggle('is-tall', slide.scrollHeight > slide.clientHeight + 1);
+    // note: don't touch scrollTop here — this runs on every re-measure (reveals,
+    // art load), and resetting would fight the auto-scroll-to-revealed-bullet.
   }
 
   /* ---- navigation ---- */
@@ -241,6 +243,11 @@ class PhilLesson extends HTMLElement {
       this.store.visited.add(slide.id);
       this.store.save();
     }
+    // Re-measure whenever the current slide's content changes size — reveals,
+    // late-loading art, font swaps — since scrollHeight isn't known at show() time.
+    this._ro ||= new ResizeObserver(() => this._fitSlide(this.current));
+    this._ro.disconnect();
+    slide.querySelectorAll('.phil-slide__body, .phil-slide__art').forEach(n => this._ro.observe(n));
     this._fitSlide(slide);
     slide.scrollTop = 0;          // the slide, not the stage, is the scroll container
     this._refresh();
