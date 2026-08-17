@@ -1447,3 +1447,53 @@ Plus `prompts.md`.
 27. **[P]** Beliefs review (`<phil-beliefs-review>`).
 28. **[T]** The Trail Ahead — completion (`forest-trail` art).
 
+---
+
+## General Philosophy / AI Ethics: Timed Essay Writing — "The Philosopher's Blueprint"
+
+- **Path:** `lessons/ai-ethics/philosophers-blueprint/`
+- **Lesson id:** `philosophers-blueprint`
+- **Topic:** Writing & Critical Thinking (Philosophical Method & Timed Essay Mastery)
+- **Approach:** PlatoBot (a slightly malfunctioning copper automaton that humorously mangles Socrates quotes) guides students through a 1-hour bluebook essay: why philosophy is worldview debugging, why writing builds non-transferable cognitive agency in the AI era, and how Cognitive Load Theory supports a 10-minute outline scaffold.
+- **Thinkers & Theories covered:** Socrates (Elenchus & Gadfly), John Sweller (Cognitive Load Theory & Working Memory limits), Principle of Charity & Steelmanning, Kantian dignity vs. utilitarian triage.
+- **Art (16-bit PNGs in `/assets`):** `platobot.png`, `bluebook-desk.png`, `steelman-scales.png`, `mind-gymnasium.png`, `worldview-debugging.png`, `strawman-fallacy.png`, `cognitive-overload.png`, `relic-socrates.png`.
+- **Signature widget:** `<phil-blueprint-builder>` (Interactive Essay Blueprint Builder: Thesis tester, Argument Mechanism, Steelman vs. Strawman, and 60-Minute Bluebook Time Budget).
+
+### Slide-by-slide
+
+**Act 0 — Meet PlatoBot & The Bluebook Challenge**
+1. **[T]** Title / hook — "The Philosopher's Blueprint" (`platobot` art).
+2. **[T]** The Bluebook Challenge — proctored 60-min exam context & non-transferable cognitive skills, `reveal`.
+3. **[P]** Dawn: Where You Stand — 5-statement belief probe on writing, opinions, AI, and time management.
+
+**Act 1 — What Philosophy Is (And Isn't)**
+4. **[T]** What Philosophy Actually Is — worldview debugging vs. trivia collection (`worldview-debugging` art), `reveal`.
+5. **[C]** Compare — The Vibe Check (Ungrounded Claim) vs. The Examined Argument (Justified Claim).
+6. **[T]** Why Philosophy Matters for Pre-Professionals — nursing triage, IT root-cause analysis, and management, `reveal`.
+7. **[Q · MCQ B]** Name That Discipline — critical examination of assumptions vs. trivia or vibes.
+
+**Act 2 — Why Write? (The Gymnasium of the Mind)**
+8. **[T]** Writing as the Engine of Thought — externalizing thoughts to spot contradictions (`mind-gymnasium` art), `reveal`.
+9. **[T]** The LLM Paradox: The Weightlifting Fallacy — why automated prose does not build cognitive agency, `reveal`.
+10. **[Q · Cloze]** Mechanics of Cognitive Agency (externalization / self-examination / agency / sound).
+
+**Act 3 — The Cognitive Science of Timed Exams**
+11. **[T]** The Working Memory Bottleneck — Cognitive Load Theory & panic from zero outlining (`cognitive-overload` art), `reveal`.
+12. **[T]** The 10-Minute Scaffold Rule — blueprinting on scrap paper before drafting (`bluebook-desk` art), `reveal`.
+13. **[C]** Compare — The Panicked Sprinter (Zero Outline) vs. The Thoughtful Architect (10-Minute Blueprint).
+14. **[Q · MCQ A]** The Strategy of Scaffolding — offloading architecture to reduce working memory load.
+
+**Act 4 — The Four-Piece Essay Spine**
+15. **[T]** Spine Piece 1: The Thesis Statement — claim + because-clause, avoiding tables of contents, `reveal`.
+16. **[T]** Spine Piece 2: The Argument Mechanism — step-by-step premises vs. mere assertion, `reveal`.
+17. **[T]** Spine Piece 3: The Principle of Charity — steelmanning vs. knocking down strawmen (`strawman-fallacy` art), `reveal`.
+18. **[T]** Spine Piece 4: The Rebuttal & Resolution — resolving objections with nuance (`steelman-scales` art), `reveal`.
+19. **[T]** Relic Card: The Socratic Elenchus — Socrates, cross-examination, and the gadfly (`relic-socrates` art), `reveal`.
+
+**Act 5 — The Blueprint Builder & Sundown**
+20. **[V]** Interactive Blueprint Builder — toggle Thesis, Mechanism, Steelman, and 60-Minute Timeline.
+21. **[Q · Checkset]** The Examined Essay Checklist — 5 statements (3 true, 2 false).
+22. **[P]** Beliefs review (`<phil-beliefs-review>`).
+23. **[T]** The Examined Student — completion & Socrates quote (`platobot` art).
+
+

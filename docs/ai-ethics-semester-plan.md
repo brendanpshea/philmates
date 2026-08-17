@@ -79,13 +79,12 @@ lesson then reveals which principle each call implicitly applied (harm,
 offense, heckler's veto, misinformation) — and where the student was
 inconsistent.
 
-## Week 5 — The Cartographer's Draft (Essay 1)
+## Week 5 — The Philosopher's Blueprint (Essay 1)
 
-Philosophy-essay bootcamp as map-making: thesis = destination, arguments =
-roads, objections = ravines to bridge rather than route around.
-**Widget:** drag a scrambled essay into order (thesis → argument → objection →
-reply); spot-the-thesis MCQs on short sample paragraphs. Reusable in any
-course with a writing assignment.
+Timed bluebook philosophy-essay bootcamp guided by PlatoBot (a malfunctioning Socrates-quoting automaton):
+what philosophy is (worldview debugging), why writing develops non-transferable cognitive agency in the AI era,
+and how Cognitive Load Theory supports the 10-minute outline scaffold (Thesis → Mechanism → Steelman → Rebuttal).
+**Widget:** Essay Blueprint Builder with thesis tester, step-by-step mechanism, steelman vs strawman sorter, and 60-minute time budget. Reusable in any course with a writing assignment.
 
 ## Week 6 — The Songsmith's Ghost (Owning Ideas)
 

@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Philosopher's Blueprint · PhilMates</title>
+  <meta name="description" content="PlatoBot's guide to the examined essay: why philosophy is worldview debugging, why writing builds cognitive agency in the age of AI, and how cognitive science helps you conquer the 1-hour timed bluebook exam.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
+  <style>
+    .blueprint-box {
+      background: var(--panel, #1d2235);
+      border: 2px solid var(--border, #3d4566);
+      border-radius: 8px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    .blueprint-stepper {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .blueprint-btn {
+      background: var(--bg-alt, #111422);
+      color: var(--text, #e2e8f0);
+      border: 1px solid var(--border, #3d4566);
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .blueprint-btn:hover {
+      border-color: var(--accent, #6366f1);
+    }
+    .blueprint-btn.active {
+      background: var(--accent, #6366f1);
+      color: #fff;
+      border-color: var(--accent, #6366f1);
+    }
+    .blueprint-display {
+      background: rgba(0,0,0,0.25);
+      padding: 14px;
+      border-radius: 6px;
+      border-left: 3px solid #6366f1;
+    }
+    .quote-box {
+      font-family: Georgia, serif;
+      font-style: italic;
+      background: rgba(99, 102, 241, 0.1);
+      border-left: 3px solid var(--accent, #6366f1);
+      padding: 12px 16px;
+      margin: 12px 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<phil-lesson id="philosophers-blueprint" title="The Philosopher's Blueprint" subject="Thinking, Writing &amp; Timed Philosophy Essays">
+
+  <!-- ============ ACT 0 — MEET PLATOBOT ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/platobot.png" alt="PlatoBot: a friendly retro copper and brass automaton tutor with glowing amber vacuum-tube eyes and a crooked brass laurel wreath, standing in an Athenian library">
+    <h1>The Philosopher's Blueprint</h1>
+    <p class="lead"><em>"GREETINGS, CITIZEN!"</em> whirs PlatoBot, adjusting its brass laurel wreath. <em>"As Socrates famously told the Athenian Senate: 'The unexamined essay draft is not worth turning in!'"</em></p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The Exam Hall Challenge -->
+  <phil-slide>
+    <h1>The Bluebook Challenge</h1>
+    <p>You are sitting in a proctored examination hall with a blank bluebook, an ink pen, and sixty minutes on the clock:</p>
+    <ul reveal>
+      <li>PlatoBot was designed by ancient engineers to assist human students, but a loose vacuum tube makes it occasionally hallucinate classical quotations.</li>
+      <li>Despite its minor mechanical quirks, PlatoBot understands the underlying <strong>cognitive architecture of argumentation</strong> better than any standard text generator.</li>
+      <li>A timed philosophy essay is not a pop quiz testing rote memory, nor is it a personal diary entry asking for ungrounded feelings.</li>
+      <li>Learning how to structure a philosophical argument under time pressure builds a permanent cognitive muscle that serves you across nursing triage, IT systems debugging, law, and civic life.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe -->
+  <phil-slide>
+    <h1>Dawn: Where You Stand</h1>
+    <p>Before PlatoBot rolls out the drafting blueprints, rate where you stand on thinking, writing, and timed exams:</p>
+    <phil-beliefs prompt="How much do you agree right now?">
+      <phil-statement>A philosophy essay is primarily about sharing your personal feelings on an ethical issue.</phil-statement>
+      <phil-statement>In philosophy, every opinion is equally valid as long as the person holding it is sincere.</phil-statement>
+      <phil-statement>If artificial intelligence can draft fluent business prose, practicing timed writing by hand is obsolete.</phil-statement>
+      <phil-statement>The best strategy for a one-hour essay exam is to begin writing paragraph one immediately.</phil-statement>
+      <phil-statement>A strong argument actively seeks out and answers the most formidable objection to its thesis.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — WHAT PHILOSOPHY IS (AND ISN'T) ============ -->
+
+  <!-- 4. What philosophy is -->
+  <phil-slide>
+    <img slot="art" src="./assets/worldview-debugging.png" alt="An ancient Athenian observatory showing a glowing brass armillary sphere with mechanical gears representing philosophical principles under a starry sky">
+    <h1>What Philosophy Actually Is</h1>
+    <p class="lead"><em>"As Socrates declared at the Olympic javelin finals,"</em> sparks PlatoBot, <em>"'Philosophy is not collecting trivia; it is debugging your operating system!'"</em></p>
+    <ul reveal>
+      <li>Philosophy is the systematic, critical examination of fundamental <strong>assumptions and worldviews</strong>, especially the ones you take for granted.</li>
+      <li>It is not a collection of dusty historical trivia about dead thinkers, nor is it an unguided forum where "everyone has their own truth."</li>
+      <li>Doing philosophy means submitting your deepest intuitions to rigorous <strong>logical stress-testing</strong> to see whether your reasons actually support your conclusions.</li>
+      <li>The goal is not to win rhetorical shouting matches, but to achieve <strong>epistemic clarity</strong> about what is true, what is just, and why.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Compare: Vibe check vs Philosophy -->
+  <phil-slide>
+    <h1>The Vibe Check vs. The Examined Argument</h1>
+    <p>Students often mistake asserting a personal preference for making a philosophical argument:</p>
+    <phil-compare>
+      <phil-side label="The Vibe Check (Opinion)" tag="Ungrounded Claim">
+        <p>States a personal feeling or cultural norm as an obvious fact without providing verifiable reasons or examining counter-evidence.</p>
+        <p class="cake">"I just feel that healthcare is a personal luxury, and that's just how the real world works."</p>
+      </phil-side>
+      <phil-side label="The Examined Argument (Philosophy)" tag="Justified Claim">
+        <p>Defines core terms, establishes clear premises, identifies trade-offs, and shows why a conclusion logically follows from shared principles.</p>
+        <p class="cake">"Healthcare is a basic right because bodily health is the necessary precondition for exercising any other human liberty."</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 6. Pre-professional connection -->
+  <phil-slide>
+    <h1>Why Philosophy Matters for Pre-Professionals</h1>
+    <p>Whether you are entering healthcare, technology, business, or public service, philosophical rigor is a practical superpower:</p>
+    <ul reveal>
+      <li>In nursing and healthcare, ethical analysis provides a framework for <strong>clinical triage</strong> when patient autonomy directly clashes with non-maleficence.</li>
+      <li>In software engineering and IT, philosophy provides the tools for <strong>ethical root-cause analysis</strong> before deploying autonomous systems or algorithmic scoring.</li>
+      <li>In business and management, philosophical training enables leaders to distinguish between short-term <strong>compliance rules</strong> and genuine moral responsibility.</li>
+      <li>Every high-stakes career eventually places you in situations where existing rules run out, forcing you to justify difficult decisions with clear, defensible reasons.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. MCQ: What is philosophy [correct: B] -->
+  <phil-slide>
+    <h1>Name That Discipline</h1>
+    <phil-mcq prompt="Which of the following activities best captures the true nature of philosophical inquiry?"
+              explain="Right — critical examination of assumptions. Philosophy is distinguished by its method of subjecting fundamental beliefs and worldviews to rigorous logical stress-testing and conceptual clarification.">
+      <phil-choice feedback="Memorizing biographical details is history of ideas, not the active practice of philosophical reasoning itself.">Memorizing the birthplaces and publication dates of famous ancient and Enlightenment thinkers</phil-choice>
+      <phil-choice correct>Critically examining and stress-testing fundamental assumptions, reasons, and worldviews</phil-choice>
+      <phil-choice feedback="Uncritical self-expression shares personal sentiments, but philosophy requires logical justification and accountability to counterarguments.">Expressing your personal emotional feelings about controversial topics without needing to defend them</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — WHY WRITE? (THE GYMNASIUM OF THE MIND) ============ -->
+
+  <!-- 8. Writing as thinking -->
+  <phil-slide>
+    <img slot="art" src="./assets/mind-gymnasium.png" alt="An ancient Athenian academy forge where a glowing hearth illuminates an anvil with a quill and intricate clockwork mechanisms being crafted">
+    <h1>Writing as the Engine of Thought</h1>
+    <p class="lead"><em>"Socrates told his wrestling coach,"</em> hums PlatoBot with a click of gears, <em>"'You do not know what you think until you attempt to write it down without contradicting yourself!'"</em></p>
+    <ul reveal>
+      <li>An essay is not a mere storage container for ideas you finished having yesterday; <strong>writing is the process of discovering</strong> what you actually think.</li>
+      <li>In your head, vague intuitions feel seamless and brilliant because your brain glosses over logical gaps and hidden contradictions.</li>
+      <li>Forcing your ideas onto paper acts as an <strong>epistemic mirror</strong>, making unstated assumptions, missing links, and fallacies visible for the first time.</li>
+      <li>When you struggle to write a clear sentence, you are not suffering from a mere vocabulary failure; you are wrestling with an unresolved conceptual problem.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. The LLM Paradox -->
+  <phil-slide>
+    <h1>The LLM Paradox: The Weightlifting Fallacy</h1>
+    <p>Large language models can instantly generate grammatically polished essays, raising an urgent question: <em>why practice writing under timed exam conditions?</em></p>
+    <ul reveal>
+      <li>Automated text generators excel at mimicking linguistic style, but they cannot perform the internal cognitive labor of <strong>moral self-examination</strong>.</li>
+      <li>Hiring a machine to write your essay is like hiring someone to lift barbells for you at the gym: the weights move, but your own <strong>cognitive agency</strong> remains unexercised.</li>
+      <li>Writing an essay under proctored bluebook conditions develops <strong>non-transferable cognitive stamina</strong>, training your brain to synthesize evidence, spot fallacies, and defend a position under pressure.</li>
+      <li>In a world flooded with automated boilerplate, the rarest and most valuable human skill is the ability to independently evaluate whether an argument is sound.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Cloze: The Cognitive Muscle -->
+  <phil-slide>
+    <h1>The Mechanics of Cognitive Agency</h1>
+    <p>Fill in PlatoBot's diagnostic report on why human writing remains indispensable:</p>
+    <phil-cloze explain="Writing is an active cognitive process. Externalizing thought onto the page forces students to practice epistemic self-regulation, building cognitive autonomy that cannot be outsourced to automated language models.">
+      Writing serves as an engine of thought because putting words on paper forces
+      <phil-blank options="externalization,memorization,plagiarism">externalization</phil-blank>
+      of internal intuitions.
+      Automated models can produce fluent syntax, but they cannot perform the human discipline of
+      <phil-blank answer="self-examination|critical thinking|reflection">self-examination</phil-blank>.
+      Practicing timed essay writing builds individual cognitive
+      <phil-blank options="agency,speed,conformity">agency</phil-blank>,
+      ensuring that students learn to evaluate whether claims are logically
+      <phil-blank options="sound,popular,ancient">sound</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE COGNITIVE SCIENCE OF TIMED EXAMS ============ -->
+
+  <!-- 11. Cognitive Load Theory -->
+  <phil-slide>
+    <img slot="art" src="./assets/cognitive-overload.png" alt="A frustrated student at a wooden exam desk overwhelmed by floating spinning gears, tangled scrolls, and a running-out hourglass">
+    <h1>The Working Memory Bottleneck</h1>
+    <p class="lead"><em>"In the Phaedo, Socrates warned the banquet,"</em> chirps PlatoBot: <em>"'A student who begins writing without an outline is like a captain sailing into a fogbank without a compass!'"</em></p>
+    <ul reveal>
+      <li>Cognitive Science explains that human <strong>working memory</strong> can manage only three to four complex information chunks simultaneously.</li>
+      <li>If you start writing paragraph one immediately, your working memory suffers from catastrophic <strong>cognitive overload</strong> as it tries to juggle grammar, thesis focus, counterarguments, and time limits all at once.</li>
+      <li>This overload causes the classic symptoms of timed exam panic: freezing, circular rambling, and abandoning your central argument halfway down the page.</li>
+      <li>To succeed in a timed environment, you must deliberately separate the <strong>architectural planning phase</strong> from the sentence drafting phase.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. The 10-Minute Blueprint Rule -->
+  <phil-slide>
+    <img slot="art" src="./assets/bluebook-desk.png" alt="A wooden exam desk with an open blue examination booklet, an hourglass with sand flowing, a quill, and a 4-part outline sketch on scrap paper">
+    <h1>The 10-Minute Scaffold Rule</h1>
+    <p>In a standard sixty-minute bluebook exam, the most crucial moments happen before you write a single complete sentence in the bluebook:</p>
+    <ul reveal>
+      <li>Spend the first <strong>ten minutes building a scaffold</strong> on the inside cover or scrap paper, identifying your thesis, key premises, best objection, and rebuttal.</li>
+      <li>Creating an external outline frees up your working memory completely, allowing you to spend the next <strong>forty minutes drafting</strong> with absolute focus on sentence clarity and precision.</li>
+      <li>Reserve the final <strong>ten minutes for revision</strong> to audit your argument for unstated assumptions, missing links, and logical consistency.</li>
+      <li>Students who spend ten minutes planning consistently produce deeper, more coherent, and higher-scoring essays than students who start writing in minute one.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Compare: Sprinter vs Architect -->
+  <phil-slide>
+    <h1>The Panicked Sprinter vs. The Thoughtful Architect</h1>
+    <p>Observe how two students approach the exact same sixty-minute bluebook prompt:</p>
+    <phil-compare>
+      <phil-side label="The Panicked Sprinter" tag="Zero Outline">
+        <p>Begins writing introductory fluff in minute one, runs out of ideas by page two, shifts thesis mid-essay, and finishes in a disorganized panic.</p>
+        <p class="cake">Writes three pages of stream-of-consciousness summary that never actually answers the prompt's core question.</p>
+      </phil-side>
+      <phil-side label="The Thoughtful Architect" tag="10-Minute Blueprint">
+        <p>Budgets ten minutes to sketch a four-piece outline, writes directly to each point without stalling, and concludes with a unified, rigorous defense.</p>
+        <p class="cake">Produces two tight, punchy bluebook pages with clear topic sentences and a well-countered objection.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 14. MCQ: Cognitive Load [correct: A] -->
+  <phil-slide>
+    <h1>The Strategy of Scaffolding</h1>
+    <phil-mcq prompt="According to Cognitive Load Theory, why does creating a 10-minute outline on scrap paper improve essay quality under exam conditions?"
+              explain="Exactly — reducing cognitive load. Externalizing the macro-structure of the argument to paper frees your working memory to focus entirely on drafting clear, logically connected sentences.">
+      <phil-choice correct>It offloads the architectural structure to paper, freeing limited working memory to focus on sentence clarity</phil-choice>
+      <phil-choice feedback="An outline does not extend your total exam time; its benefit is maximizing the efficiency and coherence of the time you have.">It guarantees that you will write twice as many pages as someone writing without a preparatory outline</phil-choice>
+      <phil-choice feedback="Instructors grade the final essay in the bluebook; scrap paper is an internal cognitive tool for your own working memory.">Exam proctors award automatic bonus points for handing in neatly formatted scratch-paper notes</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — THE FOUR-PIECE ESSAY SPINE ============ -->
+
+  <!-- 15. Piece 1: The Thesis -->
+  <phil-slide>
+    <h1>Spine Piece 1: The Thesis Statement</h1>
+    <p class="lead"><em>"A thesis statement,"</em> clanks PlatoBot, <em>"is not a topic announcement. It is an arguable claim supported by a explicit reason!"</em></p>
+    <ul reveal>
+      <li>A weak thesis merely describes the subject: <em>"In this essay, I will discuss the pros and cons of autonomous vehicles in healthcare."</em> (This is a table of contents, not an argument).</li>
+      <li>A strong philosophical thesis takes a stand and includes a <strong>because-clause</strong>: <em>"Hospitals should not deploy autonomous triage algorithms because algorithmic scoring violates patient autonomy by reducing moral worth to statistical survival probabilities."</em></li>
+      <li>Your thesis must be a claim that a reasonable, intelligent opponent could <strong>meaningfully dispute</strong>.</li>
+      <li>If nobody in their right mind would argue the opposite (e.g., <em>"Murder is generally bad"</em>), you do not have a philosophical thesis.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Piece 2: The Core Argument Mechanism -->
+  <phil-slide>
+    <h1>Spine Piece 2: The Argument Mechanism</h1>
+    <p>Once your thesis is declared, your body paragraphs must build a step-by-step logical bridge rather than a collection of unsupported assertions:</p>
+    <ul reveal>
+      <li>Define your key concepts with <strong>conceptual precision</strong> so the reader knows exactly what your terms mean.</li>
+      <li>Provide intermediate premises showing the <strong>causal or logical mechanism</strong> that connects your starting principles to your final claim.</li>
+      <li>Avoid the common trap of <strong>mere assertion</strong>, where repeating a conclusion loudly substitutes for showing how the premises entail it.</li>
+      <li>Use concrete, realistic examples to illustrate abstract principles, grounding your logic in observable real-world dilemmas.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Piece 3: The Steelman vs Strawman -->
+  <phil-slide>
+    <img slot="art" src="./assets/strawman-fallacy.png" alt="A comically flimsy straw training dummy with a crooked pot helmet collapsing under a gentle poke of a wooden training sword in an Athenian yard">
+    <h1>Spine Piece 3: The Principle of Charity</h1>
+    <p class="lead"><em>"As Socrates shouted in the Athenian gymnasium,"</em> gears whirring excitedly, <em>"'Knocking over a straw scarecrow proves only that you are fighting straw!'"</em></p>
+    <ul reveal>
+      <li>The <strong>Strawman Fallacy</strong> consists of inventing a cartoonishly weak or foolish version of your opponent's view so you can easily knock it down.</li>
+      <li>Philosophical excellence requires the <strong>Principle of Charity</strong>: interpreting an opponent's argument in its strongest, most sophisticated, and most plausible form.</li>
+      <li>Building a <strong>Steelman Counterargument</strong> demonstrates intellectual honesty and shows you understand the true depth of the ethical dilemma.</li>
+      <li>When an essay defeats a weak caricature, the reader is unimpressed; when an essay meets the opponent's best argument head-on and still stands, the conclusion is genuinely earned.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Piece 4: The Rebuttal & Bridge -->
+  <phil-slide>
+    <img slot="art" src="./assets/steelman-scales.png" alt="A polished brass balance scale atop a marble pillar weighing an iron thesis shield against a golden steelman sword">
+    <h1>Spine Piece 4: The Rebuttal &amp; Resolution</h1>
+    <p>After presenting your opponent's strongest objection, your final task is to provide a decisive, nuanced rebuttal:</p>
+    <ul reveal>
+      <li>Do not simply repeat your opening thesis louder; explain <strong>why the objection fails</strong> to overthrow your central claim.</li>
+      <li>Show that the counterargument relies on a flawed premise, overlooks an essential moral distinction, or produces worse consequences.</li>
+      <li>Acknowledge any legitimate concerns raised by the objection while showing that your framework provides a more <strong>coherent and balanced resolution</strong>.</li>
+      <li>Conclude by demonstrating how your thesis emerges stronger and more refined for having survived the confrontation with its best critic.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Relic Card: Socratic Method -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-socrates.png" alt="Relic card: an ancient Greek ceramic cup, an unrolled papyrus scroll with geometric sketches, and a silver Athenian owl coin on dark olive wood with laurel gold trim">
+    <span class="phil-date">469–399 BCE</span>
+    <h1>The Socratic Elenchus</h1>
+    <p class="lead">Plato's teacher Socrates gave philosophy its founding method: the <strong>Elenchus</strong> (cross-examination):</p>
+    <ul reveal>
+      <li>Socrates wandered the Athenian marketplace asking citizens to define justice, piety, and courage, showing that their unexamined beliefs were riddled with contradictions.</li>
+      <li>He called himself a <strong>gadfly</strong> stinging the lazy horse of Athens into wakefulness, insisting that <em>"the unexamined life is not worth living for a human being."</em></li>
+      <li>Writing a timed philosophy essay is your opportunity to practice the Socratic method on your own mind—putting your own convictions on trial before an impartial reader.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE BLUEPRINT BUILDER & SUNDOWN ============ -->
+
+  <!-- 20. Interactive Widget: Blueprint Builder -->
+  <phil-slide>
+    <h1>The Essay Blueprint Builder</h1>
+    <p>Select each component below to inspect how a chaotic prompt is transformed into a four-piece bluebook scaffold:</p>
+
+    <div class="blueprint-box">
+      <div class="blueprint-stepper">
+        <button class="blueprint-btn active" onclick="showBlueprint('thesis')">1. The Thesis Formula</button>
+        <button class="blueprint-btn" onclick="showBlueprint('mechanism')">2. Argument Mechanism</button>
+        <button class="blueprint-btn" onclick="showBlueprint('steelman')">3. The Steelman Test</button>
+        <button class="blueprint-btn" onclick="showBlueprint('timeline')">4. 60-Min Time Budget</button>
+      </div>
+
+      <div id="blueprint-content" class="blueprint-display">
+        <h3 style="margin-top:0; color: #a5b4fc;">The Thesis Formula: Claim + "Because" Clause</h3>
+        <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a public health crisis?</em></p>
+        <div class="quote-box">
+          ❌ <strong>Vague / Descriptive:</strong> "In this bluebook, I will look at different ethical theories regarding ventilator allocation algorithms."<br>
+          ✔ <strong>Strong Thesis:</strong> "Hospitals should not use purely algorithmic ventilator allocation <strong>because</strong> reducing moral priority to automated statistical survival scores violates patient dignity and discriminates against individuals with pre-existing disabilities."
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const blueprints = {
+        thesis: `
+          <h3 style="margin-top:0; color: #a5b4fc;">The Thesis Formula: Claim + "Because" Clause</h3>
+          <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a crisis?</em></p>
+          <div class="quote-box">
+            ❌ <strong>Descriptive / Weak:</strong> "In this essay, I will explore the pros and cons of algorithmic ICU triage."<br>
+            ✔ <strong>Strong Thesis:</strong> "Hospitals should not use algorithmic ventilator triage <strong>because</strong> automated statistical metrics disproportionately penalize vulnerable patients with chronic disabilities, violating Kantian dignity."
+          </div>
+        `,
+        mechanism: `
+          <h3 style="margin-top:0; color: #a5b4fc;">The Step-by-Step Argument Mechanism</h3>
+          <p><strong>Building the Logical Bridge:</strong></p>
+          <ul style="line-height:1.6;">
+            <li><strong>Premise 1:</strong> Kantian ethics establishes that human beings possess intrinsic dignity and must never be treated as mere numerical instruments.</li>
+            <li><strong>Premise 2:</strong> Algorithmic triage algorithms calculate utility by maximizing aggregate Quality-Adjusted Life Years (QALYs).</li>
+            <li><strong>Premise 3:</strong> Maximizing QALYs systematically devalues the lives of elderly and disabled patients by treating their remaining lifespan as worth less than healthy individuals.</li>
+            <li><strong>Conclusion:</strong> Purely algorithmic triage is ethically impermissible because it treats human dignity as a calculable commodity.</li>
+          </ul>
+        `,
+        steelman: `
+          <h3 style="margin-top:0; color: #a5b4fc;">The Principle of Charity: Steelman vs. Strawman</h3>
+          <p><strong>Facing the Strongest Counterargument:</strong></p>
+          <div class="quote-box">
+            ❌ <strong>Strawman Objection:</strong> "Opponents simply hate technology and want doctors to guess randomly in the dark."<br>
+            ✔ <strong>Steelman Objection:</strong> "Utilitarians argue that during an overwhelming catastrophe, doctors have a tragic duty to save the maximum total number of lives, and automated algorithms eliminate human exhaustion and racial bias from split-second triage decisions."
+          </div>
+        `,
+        timeline: `
+          <h3 style="margin-top:0; color: #a5b4fc;">The 60-Minute Bluebook Time Budget</h3>
+          <ul style="line-height:1.6;">
+            <li><strong>0:00 – 0:10 (10 Mins):</strong> <em>The Blueprint Phase.</em> Dissect prompt, write thesis with because-clause, outline 3 premises, and sketch the steelman counterargument on scrap paper.</li>
+            <li><strong>0:10 – 0:50 (40 Mins):</strong> <em>The Drafting Phase.</em> Write directly into the bluebook following your scaffold. Focus on clear transitions, defined terms, and logical links.</li>
+            <li><strong>0:50 – 1:00 (10 Mins):</strong> <em>The Audit Phase.</em> Check for missing logical steps, ensure your rebuttal didn't contradict your thesis, and polish sentence clarity.</li>
+          </ul>
+        `
+      };
+
+      window.showBlueprint = function(key) {
+        document.querySelectorAll('.blueprint-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        document.getElementById('blueprint-content').innerHTML = blueprints[key];
+      };
+    </script>
+  </phil-slide>
+
+  <!-- 21. Checkset: Essay Rules -->
+  <phil-slide>
+    <h1>The Examined Essay Checklist</h1>
+    <phil-checkset prompt="PlatoBot reviews your bluebook before submission. Check every TRUE rule for philosophical writing."
+                   explain="A philosophy essay requires taking an arguable stand, providing step-by-step justification, charitably addressing the strongest counterargument, and managing cognitive load through preparatory outlining.">
+      <phil-statement correct>A strong thesis statement must make an arguable claim supported by an explicit reason.</phil-statement>
+      <phil-statement correct>The Principle of Charity requires presenting the opponent's counterargument in its strongest, most plausible form.</phil-statement>
+      <phil-statement>A philosophy essay achieves excellence by listing all possible opinions without taking a definitive side.</phil-statement>
+      <phil-statement correct>Spending initial exam time on a scratch outline reduces working memory overload during drafting.</phil-statement>
+      <phil-statement>Defeating an exaggerated, cartoonish strawman argument is sufficient to prove that your thesis is correct.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 22. Beliefs review -->
+  <phil-slide>
+    <h1>Sundown in the Exam Hall</h1>
+    <p>Look back at your ratings from before we examined the blueprint. Re-rate each statement — and observe where your perspective shifted:</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <p class="muted">Visit every slide, answer all checks correctly, and submit your ratings to complete the lesson.</p>
+  </phil-slide>
+
+  <!-- 23. Completion -->
+  <phil-slide>
+    <img slot="art" src="./assets/platobot.png" alt="PlatoBot raising a brass hand in cheerful farewell in the Athenian library">
+    <h1>The Examined Student</h1>
+    <p class="lead"><em>"SYSTEM AUDIT COMPLETE!"</em> announces PlatoBot, his amber vacuum tubes glowing softly. <em>"And on this final point, the historical record is entirely uncorrupted:"</em></p>
+    <div class="quote-box">
+      "The unexamined life is not worth living — and the examined life begins with the courage to examine your own sentences."
+    </div>
+    <ul reveal>
+      <li>You have mastered the architecture of philosophical inquiry and the cognitive science of the timed essay.</li>
+      <li>Whether in an exam bluebook, a clinical ethics consultation, or a systems engineering review, you now possess the tools to structure, defend, and stress-test ideas with clarity.</li>
+    </ul>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
