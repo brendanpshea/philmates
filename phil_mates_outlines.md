@@ -1258,6 +1258,16 @@ Plus `prompts.md`.
   crime list (surveillance), blacksmith + unpracticed town (labor/virtues),
   boiler supply chain (environment/ghost work), dam request + Sweetwater
   (x-risk), "I WOULD PREFER NOT TO" (moral status), town vote.
+- **Structure as built:** 32 slides (31 linear + the optional Sweetwater
+  detour), 9 graded widgets, 5 belief-probe tasks. Note that the
+  slide-by-slide below was written against the first draft and numbers 29
+  slides; the lesson was later rewritten into a more explicitly expository
+  register (bolded concept labels — *Instrumental Convergence*,
+  *Variable-Ratio Reinforcement*, *Context Collapse* — and named theorists
+  inline), and three slides were split so their widgets stopped falling
+  below the fold: the boiler MCQ became "Name That Worry № 4", the circuit
+  rider's branch became "Before the Vote", and the vote probe became
+  "Checkpoint: The Vote". Re-sync the list below when convenient.
 - **Engagement devices:** Opening 7-statement belief probe re-rated at
   sundown (and designed to be re-rated once more in Week 17 of the course);
   three mid-lesson mini-probes (`board`, `list`, `vote`) as ungraded "where
@@ -1364,6 +1374,23 @@ Plus `prompts.md`.
 - The recurring-character promise: PRUDENCE's "I WOULD PREFER NOT TO" is a
   planned callback for Weeks 14–15 lessons; the Lucky Prospector for Week
   16; the boiler for Week 12.
+- **Check that widgets aren't below the fold.** Overflowing slides are normal
+  here (roughly 60% of slides in every shipped lesson overflow at 1280×800,
+  and the engine pins them to top). What is *not* survivable is an
+  interactive widget sitting under a long `<ul reveal>`: once the last bullet
+  reveals, the widget can be entirely off-screen with no scroll affordance,
+  so students hit Next and never answer it. Three slides here had that bug —
+  a graded MCQ 294px below the fold, and a branch and a belief probe at 0%
+  visible — and all three were fixed by splitting the widget onto its own
+  slide. Standalone `Checkpoint:` slides (as used for the notice board and
+  the Thursday list) are the pattern to copy. Measure rather than eyeball:
+  drive the lesson, exhaust each slide's reveals, and compare the widget's
+  rect against the slide's.
+- Prose lesson learned on the first draft: comic register is not a substitute
+  for exposition. Bullets written as epigrams ("The house always won; it has
+  simply learned arithmetic") only land for a reader who *already* holds the
+  concept, which is the opposite of the audience. State the idea plainly,
+  label it, then let the joke ride on top of it.
 
 ---
 
@@ -1416,7 +1443,7 @@ Plus `prompts.md`.
 24. **[T]** The Scriptorium Door — **[B]** branch: hear the scribe's lament?
 24b. **[opt]** What Brother Thomas Knew — friction of copying as a quality filter.
 25. **[T]** It Was All One Trail — 2,500-year synthesis from 370 BCE to Generative AI, `reveal`.
-26. **[T]** The Road to Amberville — connecting Oakhaven directly to PRUDENCE and Week 1, `reveal`.
+26. **[T]** The Digital Forest — connecting ancient information shocks to social media, crypto, surveillance, and AI, `reveal`.
 27. **[P]** Beliefs review (`<phil-beliefs-review>`).
-28. **[T]** The Trail Ahead — completion & bridge to Week 3 (`forest-trail` art).
+28. **[T]** The Trail Ahead — completion (`forest-trail` art).
 
