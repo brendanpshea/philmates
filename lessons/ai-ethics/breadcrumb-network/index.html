@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Breadcrumb Network · PhilMates</title>
+  <meta name="description" content="Hansel and Gretel invent writing, printing, telegraphy, and mass media to solve crises in a fairy-tale village — and unleash 2,500 years of unpredictable moral, cognitive, and political rearrangements.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
+  <style>
+    .cascade-box {
+      background: var(--panel, #1d2235);
+      border: 2px solid var(--border, #3d4566);
+      border-radius: 8px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    .cascade-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .cascade-btn {
+      background: var(--bg-alt, #111422);
+      color: var(--text, #e2e8f0);
+      border: 1px solid var(--border, #3d4566);
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .cascade-btn:hover {
+      border-color: var(--accent, #6366f1);
+    }
+    .cascade-btn.active {
+      background: var(--accent, #6366f1);
+      color: #fff;
+      border-color: var(--accent, #6366f1);
+    }
+    .cascade-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .cascade-card { grid-template-columns: 1fr; }
+    }
+    .col-card {
+      background: rgba(0,0,0,0.25);
+      padding: 12px;
+      border-radius: 6px;
+      border-left: 3px solid #6366f1;
+    }
+    .col-card.fix { border-color: #10b981; }
+    .col-card.fallout { border-color: #ef4444; }
+    .col-card h4 { margin: 0 0 6px; font-size: 0.95em; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted, #94a3b8); }
+    .col-card p { margin: 0; line-height: 1.45; }
+  </style>
+</head>
+<body>
+
+<phil-lesson id="breadcrumb-network" title="The Breadcrumb Network" subject="Information Technology &amp; Moral Values">
+
+  <!-- ============ ACT 0 — DAWN IN OAKHAVEN ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/forest-trail.png" alt="Hansel and Gretel in rustic clothes at the edge of a dark pine forest at dawn, dropping white pebbles along a path marked with runes on a tree trunk">
+    <h1>The Breadcrumb Network</h1>
+    <p class="lead">Hansel once dropped white pebbles, then breadcrumbs. Breadcrumbs get eaten by birds. So Gretel carved a mark into a beech tree. That was the first mistake.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The village problem -->
+  <phil-slide>
+    <h1>The Fragile Forest</h1>
+    <p>Welcome to <strong>Oakhaven</strong>, population 410. You and your sister are the village's official Problem Solvers. Every morning, oral culture threatens to unravel the peace:</p>
+    <ul reveal>
+      <li>Master Aldous, the village elder, has forgotten the second half of the annual <strong>Frost-Ward Spell</strong>.</li>
+      <li>The miller and the baker have been shouting at the town well since sunrise over whether eight sacks of barley were borrowed or ten.</li>
+      <li>When wolves approach the ridge, the only warning is the woodcutter sprinting through thorns until his lungs give out.</li>
+      <li>Oral tradition is warm, communal, and human. It is also completely at the mercy of forgetful brains.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe -->
+  <phil-slide>
+    <h1>Dawn: Where You Stand</h1>
+    <p>Before the inventing begins — six gut-checks, <strong>no right answers</strong>. You will meet each one again at sundown after 2,500 years of unintended consequences.</p>
+    <phil-beliefs prompt="How much do you agree right now?">
+      <phil-statement>A tool is neutral; good or evil comes only from the hand that holds it.</phil-statement>
+      <phil-statement>Writing down an agreement makes it inherently more just than a spoken handshake.</phil-statement>
+      <phil-statement>Making information cheaper and faster always makes a society more democratic.</phil-statement>
+      <phil-statement>Instant communication between rival groups makes misunderstanding and war less likely.</phil-statement>
+      <phil-statement>If you give everyone a public platform, truth will naturally defeat falsehood.</phil-statement>
+      <phil-statement>Whenever a culture adopts a new medium, it loses an intellectual ability it used to practice.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — THE BARK RUNES (WRITING & MEMORY) ============ -->
+
+  <!-- 4. Gretel's invention -->
+  <phil-slide>
+    <img slot="art" src="./assets/bark-runes.png" alt="Gretel carving runes and tally marks with a small blade into birch bark sheets at a wooden workbench with admiring villagers watching">
+    <h1>The First Trail: Bark Runes</h1>
+    <p>Gretel takes a hunting knife and begins notching standardized symbols into strips of white birch bark. Within a week, the village is transformed:</p>
+    <ul reveal>
+      <li>The barley debt is notched: exactly <strong>eight sacks</strong>. The miller and baker shake hands.</li>
+      <li>The Frost-Ward spell is permanently preserved in oak-gall ink.</li>
+      <li>Paths through the deep woods are blazed on tree trunks so no child will ever be lost again.</li>
+      <li>The village rejoices: <em>knowledge has been freed from the frail container of the human skull!</em></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. The unexpected goblins of writing -->
+  <phil-slide>
+    <h1>The Unforeseen Goblins</h1>
+    <p>By autumn, Oakhaven discovers that fixing words to bark is not merely a convenience. It is a quiet social revolution:</p>
+    <ul reveal>
+      <li><strong>The Atrophy:</strong> The schoolmaster notices children can no longer recite three verses of poetry without clutching their bark slips.</li>
+      <li><strong>The Stray Word:</strong> Red Riding Hood receives a written note: <em>"Grandmother is sick; bring cakes to the dark thicket."</em> It was carved by the Wolf. An oral voice has a face and an accent; a written note wanders without its speaker.</li>
+      <li><strong>The Scribe's Gate:</strong> The village magistrate rules that oral promises are no longer legally binding. The illiterate woodcutters are suddenly defenseless in court.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Relic Card: Plato's Phaedrus -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-thamus.png" alt="Relic card: an ancient cracked wax tablet inscribed with runes, an antique bronze stylus, and an owl feather emblem in a laurel gold frame">
+    <span class="phil-date">c. 370 BCE</span>
+    <h1>The King Who Said No: Plato</h1>
+    <p class="lead">In the <em>Phaedrus</em>, Socrates recounts the Egyptian god Theuth presenting writing to King Thamus as an elixir of memory and wisdom.</p>
+    <p>King Thamus replied with a devastating verdict:</p>
+    <p><em>"This invention will produce forgetfulness in the minds of those who learn to use it, because they will not practice their memory. You have provided an elixir not of memory, but of reminder. You offer the appearance of wisdom, not true wisdom."</em></p>
+  </phil-slide>
+
+  <!-- 7. Compare: Orality vs Text -->
+  <phil-slide>
+    <h1>Living Memory vs. The Silent Text</h1>
+    <p>Plato warned that transitioning from oral dialogue to written text changes the very nature of truth:</p>
+    <phil-compare>
+      <phil-side label="Living Speech (Orality)" tag="The Socratic Dialogue">
+        <p>Dynamic, communal, and rooted in living memory. It can answer questions, explain itself when misunderstood, and adapt to the listener.</p>
+        <p class="cake">Grandmother teaching you how to bake bread by smell and touch, correcting your technique as you go.</p>
+      </phil-side>
+      <phil-side label="The Written Record (Text)" tag="The Silent Monument">
+        <p>Fixed, standardized, and detached from the author. It repeats the exact same sentence forever and cannot defend itself against bad-faith readers.</p>
+        <p class="cake">A printed recipe card followed rigidly by a novice even after the milk has turned sour.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 8. MCQ: Plato's warning [correct: B] -->
+  <phil-slide>
+    <h1>Name That Shift № 1</h1>
+    <phil-mcq prompt="What was Plato's deepest ethical worry about the transition from oral memory to written text?"
+              explain="Right — externalization vs. internalization. Thamus warned that external records substitute lookup access for real cognitive mastery, allowing people to feel informed without having done the internal intellectual work.">
+      <phil-choice feedback="Plato wrote extensively and respected literature; his objection was philosophical, not an aristocratic attempt to protect papyrus monopolies.">Writing was too expensive, ensuring only wealthy nobles could participate in civic life</phil-choice>
+      <phil-choice correct>It externalizes memory, giving people the illusion of wisdom without the discipline of understanding</phil-choice>
+      <phil-choice feedback="Written laws did standardize punishment, but Plato's core concern in the Phaedrus is epistemology and the atrophy of human recollection.">Standardized written laws made criminal trials too rigid for judges to show mercy</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — THE CRANK PRESS (PRINTING & AUTHORITY) ============ -->
+
+  <!-- 9. The herbal bottleneck -->
+  <phil-slide>
+    <h1>The Herbal Bottleneck</h1>
+    <p>Winter arrives, bringing the dreaded Purple Fever. The tragedy strikes not from lack of medicine, but from lack of bandwidth:</p>
+    <ul reveal>
+      <li>The sole recipe for the Wolf-Bane antidote is locked in the Duke's abbey, written in Latin in a single leather-bound codex.</li>
+      <li>Brother Thomas, the scribe, takes three weeks of meticulous labor to illuminate a single duplicate page.</li>
+      <li>Two families perish while waiting for their turn with the manuscript.</li>
+      <li>Hansel inspects the cider press behind the barn and mutters: <em>"There must be a way to strike ten thousand pages at once."</em></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Hansel's invention: The Crank Press -->
+  <phil-slide>
+    <img slot="art" src="./assets/printing-press.png" alt="Hansel operating a wooden screw-press in a workshop, pulling the lever while printed sheets dry on clotheslines">
+    <h1>Hansel's Crank Press</h1>
+    <p>Hansel carves movable lead characters, mixes soot with walnut oil, and adapts the village screw-press:</p>
+    <ul reveal>
+      <li>In a single afternoon, the press produces <strong>500 identical copies</strong> of the Wolf-Bane remedy.</li>
+      <li>Every hearth in Oakhaven has the life-saving recipe nailed to its doorpost by nightfall.</li>
+      <li>The Purple Fever is eradicated in forty-eight hours.</li>
+      <li>Hansel is crowned the greatest benefactor in the valley's history. Knowledge is now free, cheap, and universal.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. The pamphlet war -->
+  <phil-slide>
+    <h1>The Paper Deluge</h1>
+    <p>The press did not stop at herbal remedies. Within two months, anyone with a sack of lead letters and cheap paper was an author:</p>
+    <ul reveal>
+      <li>The Witch and the Pied Piper rented night-shifts on the press.</li>
+      <li>Sensational broadsides were nailed to the church door: <em>"IS THE DUKE ACTUALLY THREE GOBLINS IN A CLOAK?"</em> and <em>"WHY THE MILLER'S FLOUR CONTAINS TOAD DUST."</em></li>
+      <li>Villagers stopped conversing at the well; they waved competing printed tracts in each other's faces.</li>
+      <li>A brawl over a forged tract burned down the bakery. When the Duke ordered the press smashed, the villagers rioted to defend it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Compare: Erasmus vs Luther -->
+  <phil-slide>
+    <h1>The Dream of Erasmus vs. The Reality of Luther</h1>
+    <p>The 16th-century printing revolution split Europe into the exact same two camps that divided Oakhaven:</p>
+    <phil-compare>
+      <phil-side label="Desiderius Erasmus" tag="The Humanist Dream (1516)">
+        <p>Believed cheap printing would spread calm scholarship, universal Bible literacy, and peaceful moral consensus across Christendom.</p>
+        <p class="cake">A scholar in every cottage quietly reading the classics and growing wiser in solitude.</p>
+      </phil-side>
+      <phil-side label="Martin Luther" tag="The Pamphlet Catapult (1517)">
+        <p>Realized the press was not a quiet library but a weapon. Unleashed short, fiery vernacular pamphlets that shattered church authority and sparked 130 years of religious wars.</p>
+        <p class="cake">Viral leaflets nailed to church doors that mobilized furious crowds before bishops could reply.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 13. Cloze: Disintermediation -->
+  <phil-slide>
+    <h1>The Mechanics of Disintermediation</h1>
+    <p>Fill in the clerk's report on how the press reorganized Oakhaven's authority:</p>
+    <phil-cloze explain="Disintermediation removes gatekeepers. While it democratizes access to truth, it simultaneously destroys the shared institutional filters that previously contained rumors and factional rage.">
+      The printing press caused chaos not by making people wicked, but by destroying the village's
+      <phil-blank options="gatekeepers,monarchs,merchants">gatekeepers</phil-blank>.
+      When the cost of copying drops to near zero, the volume of words outpaces the public's capacity for
+      <phil-blank answer="discernment|verification|filtering">discernment</phil-blank>.
+      Erasmus dreamed of universal <phil-blank options="enlightenment,censorship,wealth">enlightenment</phil-blank>,
+      but Luther proved that cheap ink accelerates <phil-blank options="polarization,harmony,quiet">polarization</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- 14. MCQ: Print authority shift [correct: A] -->
+  <phil-slide>
+    <h1>Name That Shift № 2</h1>
+    <phil-mcq prompt="What fundamental ethical and political shift occurred when Oakhaven moved from handwritten scriptoria to the printing press?"
+              explain="Exactly — authority decentralized. Scribes and bishops controlled what was copied; the press gave anyone with ink the power to assemble a faction before traditional authorities even knew a tract existed.">
+      <phil-choice correct>Authority moved from institutional gatekeepers who vetted truth to pamphleteers who mobilized crowds fastest</phil-choice>
+      <phil-choice feedback="Literacy skyrocketed after the press arrived; the crisis was caused by an excess of competing texts, not a return to oral illiteracy.">Villagers lost the ability to read and returned entirely to oral folklore and superstition</phil-choice>
+      <phil-choice feedback="The press made paper far more plentiful and durable, standardizing texts rather than destroying physical records.">Physical records degraded so quickly that centuries of legal precedent were permanently lost</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE SINGING WIRE (THE TELEGRAPH & INSTANT SPEED) ============ -->
+
+  <!-- 15. The frontier crisis -->
+  <phil-slide>
+    <h1>The Ridge in the Mist</h1>
+    <p>Spring brought a new threat: mountain trolls gathering along the jagged border with the neighboring Valley of Elden.</p>
+    <ul reveal>
+      <li>Sending a rider on horseback from the mountain watchtower to the village garrison takes thirty-six hours.</li>
+      <li>By the time the riders arrived, the outer homesteads had already been raided.</li>
+      <li>The Burgomaster pounded the table: <em>"In an age of crisis, waiting thirty-six hours for news is suicide. We must speak at the speed of lightning."</em></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Gretel's invention: The Telegraph Wire -->
+  <phil-slide>
+    <img slot="art" src="./assets/telegraph-wire.png" alt="Copper telegraph wires strung between pine trees with ceramic insulators over a foggy mountain ridge between wooden watchtowers">
+    <h1>The Singing Wires</h1>
+    <p>Gretel strings zinc-copper wires on ceramic insulators across the pine canopy, connecting every watchtower to the garrison:</p>
+    <ul reveal>
+      <li>A tapped pulse at the ridge rings the bell in Oakhaven three seconds later.</li>
+      <li>An attempted border ambush is intercepted in under twenty minutes.</li>
+      <li>The Victorian prophecy echoes through the valley: <em>"When the electric wire binds all nations together, misunderstandings will become impossible and eternal peace will reign!"</em></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. The 10-minute war -->
+  <phil-slide>
+    <h1>The 10-Minute War</h1>
+    <p>Speed solved the border delay. It also destroyed the one thing diplomacy required: <strong>time to think</strong>.</p>
+    <ul reveal>
+      <li><strong>The False Signal:</strong> At 2:00 AM, a terrified sentry taps an anxious fragment: <em>"SHADOWS AT FORD STOP HEAVY WEAPONS STOP."</em> (It was charcoal burners with poles).</li>
+      <li><strong>The Vanishing Latency:</strong> The Burgomaster has no time to send an envoy to verify. Speed creates urgency: if he waits, Elden might strike first.</li>
+      <li>He wires an enraged ultimatum to Elden's Duke. Elden's sleepy Duke, terrified by the sudden telegram, orders a preemptive cavalry charge.</li>
+      <li>By dawn, forty soldiers are dead over an unverified four-word telegram.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Relic Card: McLuhan & Postman -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-luther.png" alt="Relic card: a heavy iron movable-type alphabet block stamping down on paper with a sharp steel dagger cutting through spilled black ink">
+    <span class="phil-date">1964 / 1985</span>
+    <h1>The Medium is the Message</h1>
+    <p class="lead">Marshall McLuhan and Neil Postman diagnosed the electric trap that caught Oakhaven:</p>
+    <ul reveal>
+      <li><strong>McLuhan (1964):</strong> <em>"The medium is the message."</em> The scale and speed of a technology remodel human relations far more than the specific sentences sent over it.</li>
+      <li><strong>Postman (1985):</strong> The <strong>Information-to-Action Ratio</strong>. The telegraph flooded humanity with decontextualized, urgent fragments that demand immediate reaction without enabling deep comprehension.</li>
+      <li>A 2-day horse ride was not a defect; it was a diplomatic cooling-off period.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. MCQ: Speed vs Deliberation [correct: C] -->
+  <phil-slide>
+    <h1>Name That Shift № 3</h1>
+    <phil-mcq prompt="Why did instantaneous electrical communication increase the risk of war between Oakhaven and Elden instead of preventing it?"
+              explain="Right — the elimination of latency. When messages take days, leaders have time to verify rumors and let panic subside. Instant transmission forces immediate decisions on unverified signals, turning every misunderstanding into an emergency ultimatum.">
+      <phil-choice feedback="The wires transmitted signals reliably; the catastrophe was caused by human panic reacting to real electrical speed, not power failures.">Frequent electrical short-circuits caused the warning bells to ring continuously by mistake</phil-choice>
+      <phil-choice feedback="The telegraph allowed full alphabetic text in Morse code; the limitation was context and time, not vocabulary.">The telegraph could only send numbers, preventing ambassadors from explaining diplomatic nuance</phil-choice>
+      <phil-choice correct>It eliminated the cooling-off buffer of physical travel, forcing leaders to act instantly on fragmented rumors</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — THE MIRROR TOWER (MASS MEDIA & ALGORITHMIC ATTENTION) ============ -->
+
+  <!-- 20. The Mirror Tower -->
+  <phil-slide>
+    <img slot="art" src="./assets/mirror-tower.png" alt="A timber clocktower with a large round glowing enchanted crystal mirror at its top beaming light rays down onto villagers seated around table mirrors in the square">
+    <h1>The Mirror Tower</h1>
+    <p>To unite the bickering valley, Gretel builds the ultimate medium: an enchanted <strong>Crystal Reflector</strong> atop the clocktower, beaming a single broadcast to glass shards on every kitchen table.</p>
+    <ul reveal>
+      <li>At first: morning farm forecasts, lovely harp music, and official announcements.</li>
+      <li>Then the Pied Piper realizes the law of the glass: <em>calm farming advice gets two viewers; shouting about conspiracies gets three hundred.</em></li>
+      <li>The Mirror begins automatically tilting toward whatever makes human hearts beat fastest.</li>
+      <li>Within six months, villagers rarely look at each other; they sit by the hearth arguing with glowing glass about crises three forests away.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Relic Card: Melvin Kranzberg -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-kranzberg.png" alt="Relic card: a finely crafted brass balance scale weighing a clockwork iron gear against a glowing human heart in a violet-lit frame">
+    <span class="phil-date">1986</span>
+    <h1>Kranzberg's Laws of Technology</h1>
+    <p class="lead">Historian Melvin Kranzberg formulated the six laws that govern Oakhaven's entire history:</p>
+    <ul reveal>
+      <li><strong>First Law:</strong> <em>"Technology is neither good nor bad; nor is it neutral."</em> A tool is not an inert puppet; its architecture actively biases what humans do and value.</li>
+      <li><strong>Second Law:</strong> <em>"Invention is a mother of necessity."</em> Every technological fix creates secondary social dilemmas that require yet another technical fix.</li>
+      <li>Runes required courts; presses required copyright and censors; wires required military codes; mirrors required content moderators.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Interactive Widget: Cascade Engine -->
+  <phil-slide>
+    <h1>The Information Cascade Engine</h1>
+    <p>Select any technological property below to inspect how Oakhaven's "innocent fix" triggered a secondary moral crisis:</p>
+    
+    <div class="cascade-box">
+      <div class="cascade-tabs">
+        <button class="cascade-btn active" onclick="showCascade('persistence')">1. Persistence (Runes)</button>
+        <button class="cascade-btn" onclick="showCascade('reproduction')">2. Zero-Cost Copying (Press)</button>
+        <button class="cascade-btn" onclick="showCascade('speed')">3. Instant Latency (Wire)</button>
+        <button class="cascade-btn" onclick="showCascade('broadcast')">4. Central Attention (Mirror)</button>
+      </div>
+
+      <div id="cascade-display">
+        <div class="cascade-card">
+          <div class="col-card fix">
+            <h4>The Stated Goal</h4>
+            <p><strong>Stop forgetting debts &amp; paths.</strong> Carve words onto permanent birch bark so agreements never decay.</p>
+          </div>
+          <div class="col-card">
+            <h4>The Cognitive Cost</h4>
+            <p><strong>Memory atrophy.</strong> Villagers stop practicing oral recall; the spoken word is stripped of legal standing.</p>
+          </div>
+          <div class="col-card fallout">
+            <h4>The Unforeseen Crisis</h4>
+            <p><strong>The detached text.</strong> Forged notes from wolves wander without their speakers to verify their intent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cascades = {
+        persistence: {
+          goal: "<strong>Stop forgetting debts & paths.</strong> Carve words onto permanent birch bark so agreements never decay.",
+          cost: "<strong>Memory atrophy.</strong> Villagers stop practicing oral recall; the spoken word is stripped of legal standing.",
+          fallout: "<strong>The detached text.</strong> Forged notes from wolves wander without their speakers to verify their intent."
+        },
+        reproduction: {
+          goal: "<strong>Democratize medical recipes.</strong> Stamp 500 copies of Wolf-Bane so nobody dies waiting for scribes.",
+          cost: "<strong>Gatekeeper collapse.</strong> Scriptorium authority vanishes before public discernment can develop.",
+          fallout: "<strong>The pamphlet wars.</strong> Competing sensationalist broadsides polarize the town into armed factions."
+        },
+        speed: {
+          goal: "<strong>Instant border defense.</strong> Warn the garrison of bandit raids in 3 seconds instead of 36 hours.",
+          cost: "<strong>Destruction of latency.</strong> Eliminates the diplomatic cooling-off buffer that prevents hasty panic.",
+          fallout: "<strong>The 10-minute war.</strong> Accidental military escalation triggered by unverified 4-word telegrams."
+        },
+        broadcast: {
+          goal: "<strong>Unite the valley.</strong> Beam official news and wholesome music to every cottage hearth simultaneously.",
+          cost: "<strong>Outrage optimization.</strong> The broadcast medium naturally rewards fear and conflict over calm truth.",
+          fallout: "<strong>Atomized panic.</strong> Villagers stare at glowing glass, paralyzed by distant threats they cannot fix."
+        }
+      };
+
+      window.showCascade = function(key) {
+        document.querySelectorAll('.cascade-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        const data = cascades[key];
+        document.getElementById('cascade-display').innerHTML = `
+          <div class="cascade-card">
+            <div class="col-card fix">
+              <h4>The Stated Goal</h4>
+              <p>${data.goal}</p>
+            </div>
+            <div class="col-card">
+              <h4>The Cognitive Cost</h4>
+              <p>${data.cost}</p>
+            </div>
+            <div class="col-card fallout">
+              <h4>The Unforeseen Crisis</h4>
+              <p>${data.fallout}</p>
+            </div>
+          </div>
+        `;
+      };
+    </script>
+    <p class="muted">Notice the recurring rule: each tool was built to stop someone from being eaten, and ended up restructuring what the village valued.</p>
+  </phil-slide>
+
+  <!-- 23. Checkset: Ironies of IT History -->
+  <phil-slide>
+    <h1>The Laws of Information Shocks</h1>
+    <phil-checkset prompt="Gretel drafts the final thesis in the village chronicle. Check every TRUE historical claim."
+                   explain="The core synthesis: technologies are active architectures that bias cognitive habits, dismantle old gatekeepers before new ones form, and repeatedly blindside their own creators with secondary social cascades.">
+      <phil-statement correct>Every new medium rewards certain cognitive habits while allowing older abilities to atrophy.</phil-statement>
+      <phil-statement correct>Lowering the cost of reproducing information destabilizes traditional authorities before public verification mechanisms can adapt.</phil-statement>
+      <phil-statement>Increasing the speed of communication between rival nations has historically eliminated misunderstandings and ensured peace.</phil-statement>
+      <phil-statement correct>Technologies are not morally neutral; their structural architecture actively biases human behavior and institutional power.</phil-statement>
+      <phil-statement>Inventors of transformative media throughout history have reliably predicted how their tools would be used fifty years later.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — SUNDOWN & SYNTHESIS ============ -->
+
+  <!-- 24. Optional Branch -->
+  <phil-slide>
+    <h1>The Scriptorium Door</h1>
+    <p>The sun is sinking behind the clocktower. Brother Thomas, the former abbey scribe, sits on the stone steps cleaning his dried quill.</p>
+    <phil-branch prompt="Brother Thomas raises his lantern. Hear the scribe's lament?">
+      <phil-option goto="scribe-lament">Listen to Brother Thomas</phil-option>
+      <phil-option goto="next">Return to the tavern porch</phil-option>
+    </phil-branch>
+  </phil-slide>
+
+  <!-- 24b. OPTIONAL: Scribe's Lament -->
+  <phil-slide id="scribe-lament" optional>
+    <h1>What Brother Thomas Knew</h1>
+    <p>Brother Thomas holds up a single parchment of the ancient Vulgate:</p>
+    <blockquote style="font-family: Georgia, serif; font-style: italic; border-left: 3px solid var(--accent); padding-left: 16px; margin: 16px 0;">
+      "You young people thought my manuscripts were slow because I was lazy. My manuscripts were slow because truth is heavy. When you made words as light as thistledown, you made them as easy to scatter and as easy to burn."
+    </blockquote>
+    <ul reveal>
+      <li>The friction of copying was a quality filter. It was an imperfect, undemocratic filter—but it was a filter.</li>
+      <li>When friction disappears, the cost of producing truth remains high, while the cost of producing toxic noise drops to zero.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. The 2,500-year pattern -->
+  <phil-slide>
+    <h1>It Was All One Trail</h1>
+    <p class="lead">Step back from Oakhaven. Every crisis Hansel and Gretel caused was a genuine chapter of human history:</p>
+    <ul reveal>
+      <li><strong>Writing (370 BCE)</strong> — Traded internal memory for permanence → Plato's warning about detached text.</li>
+      <li><strong>Print (1450s)</strong> — Traded scribe gatekeepers for mass volume → Erasmus's dream vs. Luther's pamphlet wars.</li>
+      <li><strong>Telegraph (1840s)</strong> — Traded diplomatic latency for instant speed → The July 1914 crisis and McLuhan's electric nervous system.</li>
+      <li><strong>Web &amp; AI (Present)</strong> — Trades human synthesis for infinite generation → The synthetic information flood.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Road to Amberville -->
+  <phil-slide>
+    <h1>The Road to Amberville</h1>
+    <p>Oakhaven's story didn't end in the Black Forest. It moved west to Amberville:</p>
+    <ul reveal>
+      <li>When Amberville installed <strong>PRUDENCE</strong> in Week 1, it repeated this exact cycle:</li>
+      <li>The curated notice board was the <em>Pamphlet War</em> reborn.</li>
+      <li>Glimmer ledger-money was the <em>Bark Rune</em> taken to its logical extreme.</li>
+      <li>The sheriff's Thursday crime list was the <em>Singing Wire</em> operating on predictive statistics.</li>
+      <li>There are no completely new ethical dilemmas in computing—only ancient human vulnerabilities wearing newer, faster gears.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. Beliefs review -->
+  <phil-slide>
+    <h1>Sundown in the Forest</h1>
+    <p>Here is where you stood at dawn. Re-rate each statement — and observe how four technological epochs have challenged the assumption that tools are ever "just tools."</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <p class="muted">Visit every slide, answer all three checks correctly, and submit your ratings to complete the lesson.</p>
+  </phil-slide>
+
+  <!-- 28. Completion -->
+  <phil-slide>
+    <img slot="art" src="./assets/forest-trail.png" alt="Hansel and Gretel at the edge of the forest at dusk looking back at Oakhaven's chimney smoke">
+    <h1>The Trail Ahead</h1>
+    <p class="lead"><em>"We thought we were inventing tools to talk across the woods,"</em> Gretel wrote in the village chronicle. <em>"We were actually deciding what kind of human beings would live on the other side."</em></p>
+    <ul reveal>
+      <li><strong>Lesson complete!</strong> You have charted the four great information shocks.</li>
+      <li>Next week: <strong>Week 3 — Technology and Virtues</strong> (how our daily devices forge or erode human character).</li>
+    </ul>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

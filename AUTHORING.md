@@ -189,6 +189,11 @@ Writing tips that keep you passing it:
 - Keep art in the lesson's own `assets/`, never inline-embedded in the HTML body
   (a `slot="art"` `<svg>` is fine; large data-URIs are not).
 - Record image-generator prompts in the lesson's `prompts.md`.
+- To generate the PNGs from those prompts, see
+  [docs/image-generation.md](docs/image-generation.md) — Cloudflare Workers AI
+  via `node tools/cf-image.mjs --batch …`. Needs an untracked `.env.local`.
+  Always inspect generated panels full-size: they often carry baked-in text,
+  which breaks the no-text rule.
 - Unicode icons/emoji are fine inline where they're enough (★ ✔ 🎉).
 
 ## Narration (optional, currently shelved)

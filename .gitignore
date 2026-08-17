@@ -6,3 +6,7 @@ dist/**
 !dist/scorm/
 !dist/scorm/**
 temp/**
+
+# Local secrets — never commit. See tools/cf-image.mjs.
+.env.local
+.env
