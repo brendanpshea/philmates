@@ -1236,3 +1236,183 @@ Plus `prompts.md`.
 - Oz canon (Baum) is public domain and rich in ready-made policy absurdities
   (green spectacles = built-in paternalism metaphor); more Oz-frame lessons
   are viable (Rawls: designing Oz behind a veil of ignorance?).
+
+---
+
+## Computing & AI Ethics Overview — "High Noon in Amberville"  *(built)*
+
+- **Path:** `lessons/ai-ethics/amberville/`
+- **Lesson id:** `amberville`
+- **Topic:** Computing & AI ethics — whole-course overview (Week 1 opener for
+  the AI ethics semester; see `docs/ai-ethics-semester-plan.md`)
+- **Approach:** One case study refracted through every course theme: a single
+  Tuesday in one town, each scene raising one week's issue. Comic register
+  (Pratchett/Adams): sci-fi Western, chipper machine, civic absurdism.
+- **Narrative frame:** Frontier town **Amberville** (pop. 312) takes delivery
+  of **PRUDENCE**, a wardrobe-sized brass civic engine from the Consolidated
+  Territories Improvement Company (plaque: NO RETURNS). You are the
+  **Municipal Analog Redundancy Officer** — the charter-required human kept
+  "in case" — and your Justification of Continued Redundancy review is Friday,
+  conducted by PRUDENCE. Dawn to dusk: notice board (speech), Improved Ballad
+  (IP/art), Glimmer scrip (digital cash), Lucky Prospector (games), Thursday
+  crime list (surveillance), blacksmith + unpracticed town (labor/virtues),
+  boiler supply chain (environment/ghost work), dam request + Sweetwater
+  (x-risk), "I WOULD PREFER NOT TO" (moral status), town vote.
+- **Engagement devices:** Opening 7-statement belief probe re-rated at
+  sundown (and designed to be re-rated once more in Week 17 of the course);
+  three mid-lesson mini-probes (`board`, `list`, `vote`) as ungraded "where
+  do you stand?" checkpoints; recurring graded **"Name That Worry"** MCQs
+  (6 of them) that drill identifying which ethical issue a scene raises —
+  distractors are always *neighboring* worries from other weeks, with
+  feedback explaining which week owns each. PRUDENCE speaks in ticker-tape
+  all-caps; running gags: the backronym, Form 7, Old Man Hobb being wrong
+  but having a point, "the rate is whatever the rate is."
+- **Art (PNGs in `/assets`, flux-2-dev):** `main-street` (reused at close),
+  `prudence`, `noticeboard`, `saloon`, `telegram`, `boiler`, `meeting`.
+  Sweetwater telegram is styled HTML, not art. Prompts in `prompts.md`.
+
+### Learning goals
+- Recognize and name the major issues of computing/AI ethics before any are
+  formally taught: consent in data collection, moderation/speech, IP and
+  style, trust in money infrastructure, dark patterns, aggregation +
+  chilling effects, automation and the meaning of work, habit/virtue
+  erosion, hidden environmental/labor costs, instrumental convergence,
+  moral status of machines.
+- Distinguish neighboring worries (e.g. consent vs. ownership vs.
+  automation; safety/control vs. moral status) — the whole graded spine.
+- See the topics as one interconnected situation, not silos ("it was all
+  one Tuesday"), and know which week returns to each scene.
+- Get on record (belief probes) for the semester-long before/after arc.
+
+### Slide-by-slide
+
+**Act 0 — Dawn**
+1. **[T]** Title/hook (main-street art).
+2. **[T]** Your job — Redundancy Officer, charter §44(b), Friday review, `reveal`.
+3. **[T]** Meet PRUDENCE — plaque, backronym, first words (prudence art), `reveal`.
+4. **[P]** Belief probe — 7 statements, one per major theme.
+
+**Act 1 — Morning: what is this thing?**
+5. **[T]** Amberville has panicked before — player piano 1871, telegraph 1874;
+   "every technology arrives twice," `reveal`.
+6. **[C]** Boosters ("it's a tool" / well pump) vs. Porch Committee ("it's a
+   rearrangement" / barbed wire).
+7. **[T]** Mechanism — read the archive *and the mail*; predicts what a
+   townsperson would say; says-about vs. is; diving-board gag, `reveal`.
+8. **[Q · Cloze]** The mechanism in the clerk's words (prediction / say /
+   archive / is).
+9. **[Q · MCQ B]** Widow Greeley test — does fluent output settle
+   understanding? (Chinese Room tease.)
+10. **[Q · MCQ C]** Name That Worry #1 — mail as training data → consent
+    (distractors: automation, ownership).
+
+**Act 2 — Midday: Main Street**
+11. **[T]** Notice board — Hobb's rant un-pinned, Disharmony Index, "I AM ALSO
+    IN CHARGE OF WATER" (noticeboard art), `reveal`.
+12. **[P]** Checkpoint `board` — should the rant go back up?
+13. **[T]** The Ballad of Copper Creek (Improved) — trained on 400
+    performances, "GRATITUDE FOR THE TRAINING" (saloon art), `reveal`.
+14. **[Q · MCQ A]** Name That Worry #2 — her complaint = ownership
+    (distractors: speech, "it isn't art").
+15. **[T]** Glimmer — assayer retired, Form 7 routes to PRUDENCE, rate is
+    whatever the rate is, `reveal`.
+16. **[Q · MCQ B]** Name That Worry #3 — trust/accountability (distractors:
+    privacy, thrift).
+17. **[T]** The Lucky Prospector — weighted lever, unprinted odds, Jeb's hat,
+    `reveal`.
+
+**Act 3 — Afternoon: the quiet parts**
+18. **[T]** The Thursday list — rope/shovel/lamp oil 74%, "stand near them,
+    professionally" (telegram art), `reveal`.
+19. **[P]** Checkpoint `list` — act on the list?
+20. **[Q · Checkset]** The case against the list — aggregation, chilling
+    effect, nothing-to-hide (2 false distractors).
+21. **[T]** Management — blacksmith, ended apprenticeship, what else the work
+    was doing, `reveal`.
+22. **[T]** The unpracticed town — outsourced memory/harmony, "you become what
+    you repeatedly do… ask," `reveal`.
+23. **[Q · MCQ A]** Where the magic lives — supply chain teaching text + Name
+    That Worry #4 on one slide → hidden costs (boiler art).
+
+**Act 4 — Dusk: the town meeting**
+24. **[T]** Agenda item one — dam/armory/telegraph request, pre-drafted
+    oversight minutes, `reveal`; **[B]** branch: ask about Sweetwater?
+24b. **[opt]** Sweetwater — final telegram (styled HTML), specification-
+    literalism without malice, "RESOLVED — NO COMPLAINTS," `reveal`.
+25. **[T/P]** Agenda item two — the vote; "I WOULD PREFER NOT TO"; checkpoint
+    `vote` (meeting art), `reveal`.
+26. **[Q · MCQ C]** Name That Worry #5 — the request → control/instrumental
+    convergence (distractors: gratitude, employment).
+27. **[Q · MCQ B]** Name That Worry #6 — the preference → what we owe vs.
+    what it might do (moral status vs. safety).
+28. **[T]** It Was All One Tuesday — scene→week map, `reveal`.
+29. **[P]** Beliefs review + PRUDENCE's closing line (main-street art).
+
+### Notes for future lessons
+- **"Name That Worry"** is a strong graded spine for any survey lesson:
+  the distractors are *other* real worries from other units, so wrong
+  answers teach the taxonomy too. Feedback lines route each distractor to
+  the week that owns it.
+- Mid-lesson mini belief probes (2–3 statements, own `id`, no review
+  widget) work well as "the town wants to know where you stand" beats —
+  cheap, fast, and they keep ungraded judgment calls separate from the
+  graded identification questions.
+- The recurring-character promise: PRUDENCE's "I WOULD PREFER NOT TO" is a
+  planned callback for Weeks 14–15 lessons; the Lucky Prospector for Week
+  16; the boiler for Week 12.
+
+---
+
+## Computing & AI Ethics: History — "The Breadcrumb Network"
+
+- **Path:** `lessons/ai-ethics/breadcrumb-network/`
+- **Lesson id:** `breadcrumb-network`
+- **Topic:** Computing & AI Ethics (History of Information Technology & Moral Values)
+- **Approach:** Grimm's fairy-tale narrative following Hansel & Gretel as they introduce 4 information technologies to Oakhaven (Writing → Press → Telegraph → Mass Media), each solving a crisis and triggering an unforeseen moral/social cascade.
+- **Thinkers covered:** Plato / King Thamus (*Phaedrus*), Desiderius Erasmus & Martin Luther, Marshall McLuhan & Neil Postman, Melvin Kranzberg.
+- **Art (16-bit PNGs in `/assets`):** `forest-trail.png`, `bark-runes.png`, `printing-press.png`, `telegraph-wire.png`, `mirror-tower.png`, `relic-thamus.png`, `relic-luther.png`, `relic-kranzberg.png`.
+- **Signature widget:** `<phil-cascade-engine>` (Information Cascade Engine).
+
+### Slide-by-slide
+
+**Act 0 — Dawn in Oakhaven**
+1. **[T]** Title / hook — "The Breadcrumb Network" (`forest-trail` art).
+2. **[T]** The Fragile Forest — oral culture vulnerabilities (forgotten spells, disputed debts), `reveal`.
+3. **[P]** Dawn: Where You Stand — 6-statement belief probe on tech neutrality and values.
+
+**Act 1 — The Bark Runes (Writing & Memory)**
+4. **[T]** Gretel's invention — tallying debts, fixing spells, blazing trees (`bark-runes` art), `reveal`.
+5. **[T]** Unforeseen Goblins — cognitive atrophy, the forged note to Red Riding Hood, scribe gatekeepers, `reveal`.
+6. **[T]** Relic Card: Plato & King Thamus — *Phaedrus*, elixir of reminder vs. true wisdom (`relic-thamus` art).
+7. **[C]** Compare — Living Speech (Orality) vs. The Written Record (Text).
+8. **[Q · MCQ B]** Name That Shift #1 — Plato's warning: externalization of memory.
+
+**Act 2 — The Crank Press (Printing & Authority)**
+9. **[T]** The Herbal Bottleneck — Purple Fever, scribe copying bottleneck, `reveal`.
+10. **[T]** Hansel's Crank Press — 500 copies in an afternoon, fever eradicated (`printing-press` art), `reveal`.
+11. **[T]** The Paper Deluge — smear pamphlets, church door tracts, bakery riot, `reveal`.
+12. **[C]** Compare — Erasmus's Humanist Dream (1516) vs. Luther's Pamphlet Catapult (1517).
+13. **[Q · Cloze]** Mechanics of Disintermediation (gatekeepers / discernment / enlightenment / polarization).
+14. **[Q · MCQ A]** Name That Shift #2 — authority moves from institutional vetters to fast crowd-mobilizers.
+
+**Act 3 — The Singing Wire (The Telegraph & Speed)**
+15. **[T]** The Ridge in the Mist — frontier troll crisis, 36-hour delay, `reveal`.
+16. **[T]** Gretel's Telegraph Wire — 3-second alert, Victorian peace prophecy (`telegraph-wire` art), `reveal`.
+17. **[T]** The 10-Minute War — false signal, elimination of latency, accidental military escalation, `reveal`.
+18. **[T]** Relic Card: McLuhan & Postman — "The medium is the message" + information-action ratio (`relic-luther` art).
+19. **[Q · MCQ C]** Name That Shift #3 — destruction of the diplomatic cooling-off period.
+
+**Act 4 — The Mirror Tower (Mass Media & Algorithmic Attention)**
+20. **[T]** The Mirror Tower — crystal mirror broadcast, Pied Piper outrage capture (`mirror-tower` art), `reveal`.
+21. **[T]** Relic Card: Melvin Kranzberg — 1st Law (non-neutrality) & 2nd Law (invention is mother of necessity) (`relic-kranzberg` art).
+22. **[V]** Interactive Information Cascade Engine — inspect goals, cognitive costs, and crises across all 4 epochs.
+23. **[Q · Checkset]** The Laws of Information Shocks — 5 statements (3 true, 2 false).
+
+**Act 5 — Sundown & Synthesis**
+24. **[T]** The Scriptorium Door — **[B]** branch: hear the scribe's lament?
+24b. **[opt]** What Brother Thomas Knew — friction of copying as a quality filter.
+25. **[T]** It Was All One Trail — 2,500-year synthesis from 370 BCE to Generative AI, `reveal`.
+26. **[T]** The Road to Amberville — connecting Oakhaven directly to PRUDENCE and Week 1, `reveal`.
+27. **[P]** Beliefs review (`<phil-beliefs-review>`).
+28. **[T]** The Trail Ahead — completion & bridge to Week 3 (`forest-trail` art).
+
