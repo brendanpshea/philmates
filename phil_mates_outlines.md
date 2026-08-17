@@ -1288,8 +1288,12 @@ Plus `prompts.md`.
 
 **Act 0 — Dawn**
 1. **[T]** Title/hook (main-street art).
-2. **[T]** Your job — Redundancy Officer, charter §44(b), Friday review, `reveal`.
-3. **[T]** Meet PRUDENCE — plaque, backronym, first words (prudence art), `reveal`.
+2. **[T]** Meet PRUDENCE — the crate off the Tuesday train, plaque, backronym,
+   first words (prudence art), `reveal`. **Must precede the job slide** — an
+   early draft introduced the Officer first and referred to "the Engine"
+   three times before the reader had met it.
+3. **[T]** Your job — Redundancy Officer, charter §44(b), Friday review
+   conducted by PRUDENCE, `reveal`.
 4. **[P]** Belief probe — 7 statements, one per major theme.
 
 **Act 1 — Morning: what is this thing?**
