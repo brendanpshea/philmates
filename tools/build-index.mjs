@@ -6,6 +6,7 @@
 import { readFile, writeFile, readdir, stat } from 'node:fs/promises';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getScormFilename } from './build-scorm.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LESSONS = path.join(ROOT, 'lessons');
@@ -25,7 +26,7 @@ async function collect() {
       try { html = await readFile(file, 'utf8'); } catch { continue; }
       const slides = count(html, /<phil-slide[\s>]/gi);
       const questions = count(html, /<phil-(?:mcq|checkset|cloze)[\s>]/gi);
-      const scorm = `dist/scorm/${slug(topic)}-${slug(lesson)}-scorm12.zip`;
+      const scorm = `dist/scorm/${getScormFilename(topic, lesson)}`;
       (topics[topic] ||= []).push({
         href: `lessons/${topic}/${lesson}/index.html`,
         scorm,

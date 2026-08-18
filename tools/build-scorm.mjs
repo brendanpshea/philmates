@@ -34,6 +34,25 @@ const grab = (html, re) => (html.match(re)?.[1] || '').trim();
 const xml = s => s.replace(/[<>&"']/g, c => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' }[c]));
 const slug = s => s.replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-+|-+$/g, '');
 
+export const SCORM_NAMES = {
+  'ai-ethics/amberville': 'ai-ethics-overview-amberville-scorm12.zip',
+  'ai-ethics/breadcrumb-network': 'ai-ethics-tech-and-values-breadcrumb-scorm12.zip',
+  'ai-ethics/philosophers-blueprint': 'ai-ethics-essay-writing-blueprint-scorm12.zip',
+  'bioethics/clinical-equipoise': 'bioethics-clinical-equipoise-jekyll-scorm12.zip',
+  'bioethics/four-principles': 'bioethics-four-principles-van-helsing-scorm12.zip',
+  'bioethics/patient-autonomy': 'bioethics-patient-autonomy-hedgerow-scorm12.zip',
+  'ethical-theory/harm-principle': 'ethical-theory-harm-principle-ozma-scorm12.zip',
+  'ethical-theory/kantian-deontology': 'ethical-theory-kantian-deontology-cat-door-scorm12.zip',
+  'ethical-theory/moral-status': 'ethical-theory-moral-status-manifest-scorm12.zip',
+  'ethical-theory/utilitarianism': 'ethical-theory-utilitarianism-tribunal-scorm12.zip',
+  'ethical-theory/virtue-ethics': 'ethical-theory-virtue-ethics-arete-scorm12.zip',
+};
+
+export function getScormFilename(topic, lesson) {
+  const key = `${topic}/${lesson}`;
+  return SCORM_NAMES[key] || `${slug(topic)}-${slug(lesson)}-scorm12.zip`;
+}
+
 /* ---- discover lessons (topic/lesson pairs that have an index.html) ---- */
 async function allLessons() {
   const out = [];
@@ -222,7 +241,7 @@ await mkdir(OUT, { recursive: true });
 
 for (const t of targets) {
   const { title, buffer, count } = await buildLesson(t);
-  const file = path.join(OUT, `${slug(t.topic)}-${slug(t.lesson)}-scorm12.zip`);
+  const file = path.join(OUT, getScormFilename(t.topic, t.lesson));
   await writeFile(file, buffer);
   console.log(`✔ ${title}  →  ${path.relative(ROOT, file)}  (${count} files, ${(buffer.length / 1024).toFixed(0)} KB)`);
 }
