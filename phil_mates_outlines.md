@@ -1029,7 +1029,7 @@ branch planned yet (candidate: a deep dive on friendship / philia types).
 
 ### Belief-probe statements (start; revisited at end)
 1. If a doctor is even slightly confident one treatment is better, it's wrong to
-   randomly assign patients to either arm.
+   randomly assign patients to different treatments.
 2. A drug trial without a placebo group can't really prove anything.
 3. Once a trial starts producing promising results, it should be stopped early so
    everyone can get the better treatment.
