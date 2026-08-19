@@ -1500,9 +1500,9 @@ Plus `prompts.md`.
 
 ## Trolley Problems & Medical Triage — "The Switch and the Scalpel"
 
-- **Path:** `lessons/ethical-theory/trolley-and-triage/`
+- **Path:** `lessons/bioethics/trolley-and-triage/`
 - **Lesson id:** `trolley-triage`
-- **Topic:** Ethical theory / Bioethics orientation (Week 0)
+- **Topic:** Bioethics / Ethical theory orientation (Week 0)
 - **Approach:** Thought experiment stress-testing (Foot/Thomson) transitioning directly into real-world institutional triage and crisis standards of care.
 - **Narrative frame:** You are guided by **Dr. Philippa "Pip" Trackwell**, emergency physician and municipal railway safety consultant. She uses the dual mechanics of railway switches and hospital triage tags to demonstrate how moral dilemmas reveal competing ethical commitments (consequences vs. rights vs. agency).
 - **Thinkers covered:** Philippa Foot (1967), Judith Jarvis Thomson (1976, 1985), and modern clinical triage ethicists (crisis standards of care).

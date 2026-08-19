@@ -41,10 +41,10 @@ export const SCORM_NAMES = {
   'bioethics/clinical-equipoise': 'bioethics-clinical-equipoise-jekyll-scorm12.zip',
   'bioethics/four-principles': 'bioethics-four-principles-van-helsing-scorm12.zip',
   'bioethics/patient-autonomy': 'bioethics-patient-autonomy-hedgerow-scorm12.zip',
+  'bioethics/trolley-and-triage': 'bioethics-trolley-and-triage-scales-scorm12.zip',
   'ethical-theory/harm-principle': 'ethical-theory-harm-principle-ozma-scorm12.zip',
   'ethical-theory/kantian-deontology': 'ethical-theory-kantian-deontology-cat-door-scorm12.zip',
   'ethical-theory/moral-status': 'ethical-theory-moral-status-manifest-scorm12.zip',
-  'ethical-theory/trolley-and-triage': 'ethical-theory-trolley-and-triage-scales-scorm12.zip',
   'ethical-theory/utilitarianism': 'ethical-theory-utilitarianism-tribunal-scorm12.zip',
   'ethical-theory/virtue-ethics': 'ethical-theory-virtue-ethics-arete-scorm12.zip',
 };
