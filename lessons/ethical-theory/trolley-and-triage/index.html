@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Switch and the Scalpel: Trolley Problems &amp; Medical Triage · PhilMates</title>
+  <meta name="description" content="Explore what makes a moral dilemma through Philippa Foot and Judith Jarvis Thomson's classic trolley problems, Thomson's organ transplant puzzle, and real-world medical triage protocols.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css">
+  <script type="module" src="../../../shared/phil-core.js"></script>
+  <script type="module" src="./assets/switchboard.js"></script>
+</head>
+<body>
+
+<phil-lesson id="trolley-triage" title="The Switch and the Scalpel" subject="Trolley Problems &amp; Medical Triage">
+
+  <!-- ============ ACT 0 — THE MORNING SWITCH ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/dilemma-scales.png" alt="A balanced brass scale holding a miniature train switch on one side and a stethoscope on the other">
+    <h1>The Switch and the Scalpel</h1>
+    <p class="lead">Welcome to Week 0. Before studying moral theories in depth, we start with the machinery of moral intuition: <strong>what is a moral dilemma</strong>, and why does human moral reasoning resist simple addition?</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/pip-trackwell.png" alt="Dr. Philippa 'Pip' Trackwell in a waistcoat holding a brass signal lantern">
+    <h1>Meet Dr. Trackwell</h1>
+    <p class="lead">"Most people think ethics is about being a good person," says Dr. Philippa 'Pip' Trackwell, emergency physician and railway safety consultant. "In crisis management, ethics is about what to do when <em>every</em> available option breaks your heart."</p>
+    <ul reveal>
+      <li>A <strong>moral dilemma</strong> isn't just a tough choice between what's easy and what's right.</li>
+      <li>It is a conflict where fundamental moral principles collide, and choosing one means violating another.</li>
+      <li>To see the hidden rules governing our moral minds, philosophers build <strong>thought experiments</strong> — mental wind tunnels designed to isolate one variable at a time.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Belief probe (start) -->
+  <phil-slide>
+    <h1>Before the Signals Turn</h1>
+    <p>Five gut-checks — <strong>no right answers.</strong> Just say where you stand right now; we will revisit them at the end to see what shifted.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>If you can save five lives by causing one person's death, you are morally required to do so.</phil-statement>
+      <phil-statement>There is a fundamental moral difference between actively killing someone and letting them die.</phil-statement>
+      <phil-statement>In a hospital with scarce ventilators, machines should always go to whoever has the most years left to live.</phil-statement>
+      <phil-statement>It is never acceptable to use an innocent person's body to save others without their consent.</phil-statement>
+      <phil-statement>When two patients have an equal chance to survive and only one bed is open, a random lottery is fairer than first-come, first-served.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — THE CLASSIC TRACKS ============ -->
+
+  <!-- 4. Case 1: The Switch (Foot 1967) -->
+  <phil-slide>
+    <img slot="art" src="./assets/trolley-spur.png" alt="A brass switch lever next to train tracks splitting toward five figures vs one on a spur">
+    <span class="phil-date">Philippa Foot · 1967</span>
+    <h1>Case 1: The Spur (The Switch)</h1>
+    <p class="lead">A runaway trolley barrels down the track toward five track workers who cannot hear it coming. You stand beside a switch lever.</p>
+    <ul reveal>
+      <li>If you do nothing, the trolley continues straight and kills the <strong>five</strong> workers.</li>
+      <li>If you pull the switch, the trolley turns onto a side track (the spur), where it will kill <strong>one</strong> worker.</li>
+      <li>In global psychological surveys, roughly <strong>85% to 90% of people</strong> say it is morally permissible (or even obligatory) to pull the switch.</li>
+      <li>The math looks simple: <em>5 lives saved vs. 1 life lost = net +4 lives.</em></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Case 2: The Footbridge (Thomson 1976/1985) -->
+  <phil-slide>
+    <img slot="art" src="./assets/footbridge.png" alt="A stone arched footbridge overlooking tracks with a heavy bystander leaning over the railing">
+    <span class="phil-date">Judith Jarvis Thomson · 1976</span>
+    <h1>Case 2: The Footbridge</h1>
+    <p class="lead">Same runaway trolley, same five workers on the track. This time there is no side spur. You stand on an arched footbridge above the rails.</p>
+    <ul reveal>
+      <li>Next to you leans a heavy stranger. If you push him over the railing, his body will jam the trolley's wheels and stop it before it reaches the five.</li>
+      <li>The man will die, but the five workers will survive. Your own body is too light to stop the train.</li>
+      <li>When presented with this case, the numbers flip: <strong>over 85% of people</strong> say it is completely <em>wrong</em> to push the man.</li>
+      <li>Yet the arithmetic is identical: <em>1 life sacrificed to save 5 = net +4 lives.</em></li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. MCQ: Switch vs Footbridge -->
+  <phil-slide>
+    <h1>The Paradox of the Two Cases</h1>
+    <phil-mcq prompt="Why do most people judge pulling the Switch to be acceptable, but pushing the stranger off the Footbridge to be unacceptable, even though both save 5 lives at the cost of 1?"
+              explain="Right! In the Footbridge case, you use the bystander's physical body as an instrumental tool to absorb the crash. In the Switch case, the death of the one worker on the spur is an unintended, tragic side effect of redirecting an existing threat.">
+      <phil-choice feedback="Both scenarios involve a conscious decision to act that results in one death to save five. The difference lies in how the person is treated.">Pulling a switch is an indirect mechanical motion, whereas pushing someone off a bridge is purely accidental</phil-choice>
+      <phil-choice correct>On the footbridge, you use the stranger as a physical buffer, whereas on the spur death is a side effect</phil-choice>
+      <phil-choice feedback="The total number of lives saved (+4) is identical in both scenarios; numbers alone cannot explain why human intuition changes so dramatically.">Pushing a person off a bridge saves fewer net lives than pulling a switch to divert the speeding train</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 7. Case 3: The Loop -->
+  <phil-slide>
+    <img slot="art" src="./assets/track-loop.png" alt="A circular looping train track with one figure blocking the track">
+    <span class="phil-date">Judith Jarvis Thomson · 1985</span>
+    <h1>Case 3: The Loop</h1>
+    <p class="lead">To test whether 'pushing' vs. 'pulling a lever' was the real issue, Judith Jarvis Thomson invented <strong>The Loop</strong>.</p>
+    <ul reveal>
+      <li>The side track isn't a dead end—it loops back around to hit the five workers from behind!</li>
+      <li>However, there is a heavy worker on the loop. If you divert the train, it hits him, stops, and the five survive.</li>
+      <li>If the track were empty, flipping the switch would do nothing to save the five.</li>
+      <li>Here you pull a lever (no physical touching), but you <strong>depend on the body</strong> to halt the train. Our intuitions suddenly wobble.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — ANATOMY OF A DILEMMA ============ -->
+
+  <!-- 8. Three Levers of Intuition -->
+  <phil-slide>
+    <h1>The Three Moral Levers</h1>
+    <p class="lead">When human beings face moral dilemmas, our minds aren't running a single calculator. We weigh at least three distinct intuitive principles:</p>
+    <ul reveal>
+      <li><strong>1. Consequences (Outcomes):</strong> Maximizing net well-being and saving the greatest number of lives ($5 > 1$).</li>
+      <li><strong>2. Deontic Constraints (Rights & Respect):</strong> Respecting individual inviolability; forbidding using someone merely as a tool without consent.</li>
+      <li><strong>3. Agency & Causal Role:</strong> The moral difference between redirecting an existing danger vs. initiating new lethal violence.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Doing vs Allowing & Double Effect -->
+  <phil-slide>
+    <h1>Doing vs. Allowing &amp; Double Effect</h1>
+    <p class="lead">Two foundational philosophical concepts explain why the cases feel so different:</p>
+    <ul reveal>
+      <li><strong>Doing vs. Allowing:</strong> We feel a stronger moral duty <em>not to cause harm directly</em> (negative duty) than we feel a duty to <em>prevent harm from happening</em> (positive duty).</li>
+      <li><strong>The Doctrine of Double Effect:</strong> It can be morally permissible to perform an action with a foreseen bad side-effect (diverting a train that happens to kill someone), but impermissible to intend that bad effect as the <em>means</em> to your good end (using their body to stop the train).</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Compare: Three Rail Cases -->
+  <phil-slide>
+    <h1>Deconstructing the Rail Dilemmas</h1>
+    <phil-compare>
+      <phil-card title="The Switch (Spur)">
+        <p><strong>Action:</strong> Turn switch</p>
+        <p><strong>Role of 1:</strong> Foreseen side effect</p>
+        <p><strong>Direct contact:</strong> No (lever)</p>
+        <p><strong>Verdict:</strong> ~90% Approve</p>
+      </phil-card>
+      <phil-card title="The Footbridge">
+        <p><strong>Action:</strong> Push stranger</p>
+        <p><strong>Role of 1:</strong> Intended physical buffer</p>
+        <p><strong>Direct contact:</strong> Yes (physical shove)</p>
+        <p><strong>Verdict:</strong> ~85% Disapprove</p>
+      </phil-card>
+      <phil-card title="The Loop">
+        <p><strong>Action:</strong> Turn switch onto loop</p>
+        <p><strong>Role of 1:</strong> Essential obstacle</p>
+        <p><strong>Direct contact:</strong> No (lever)</p>
+        <p><strong>Verdict:</strong> Split / Conflicted</p>
+      </phil-card>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 11. Cloze: Double Effect -->
+  <phil-slide>
+    <h1>Testing the Principle</h1>
+    <p>Complete the core distinction of the Doctrine of Double Effect:</p>
+    <phil-cloze explain="The Doctrine of Double Effect permits causing harm as an unintended side-effect of a good action, but forbids using harm as the instrumental means to achieve that good.">
+      Under the Doctrine of Double Effect, it is impermissible to use someone's death as the [means] to save others, but it may be permissible if their death is a foreseen [side-effect] of redirecting an existing threat.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE SCALPEL: THE HOSPITAL PUZZLE ============ -->
+
+  <!-- 12. Case 4: The Transplant Surgeon -->
+  <phil-slide>
+    <img slot="art" src="./assets/organ-transplant.png" alt="A surgical tray with a scalpel next to patient monitors and charts">
+    <span class="phil-date">Judith Jarvis Thomson · 1976</span>
+    <h1>Case 4: The Organ Transplant</h1>
+    <p class="lead">Dr. Pip Trackwell moves from the rail yard to the intensive care unit. Five patients are dying of organ failure (heart, lungs, liver, two kidneys).</p>
+    <ul reveal>
+      <li>A healthy young traveler walks into the clinic for a routine checkup.</li>
+      <li>His tissue is a perfect match for all five dying patients.</li>
+      <li>If the surgeon quietly doses him with an overdose and harvests his organs, five patients walk out alive.</li>
+      <li>The math is identical: <em>1 life taken to save 5 = net +4 lives.</em> Yet virtually 100% of people reject this as horrific murder.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Why the Hospital is Not the Track -->
+  <phil-slide>
+    <h1>Why the Hospital Breaks the Math</h1>
+    <p class="lead">Why can't a hospital simply run the numbers like a railway switch?</p>
+    <ul reveal>
+      <li><strong>Fiduciary Duty &amp; Trust:</strong> A physician has a strict duty of <em>non-maleficence</em> ("first, do no harm") to each individual patient under their care.</li>
+      <li><strong>Systemic Collapse:</strong> If doctors were permitted to sacrifice healthy visitors for the greater good, no one would ever enter a hospital again.</li>
+      <li><strong>Inviolable Bodily Rights:</strong> Every individual possesses a moral right not to have their body seized as a spare-parts reservoir for the collective good.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Checkset: Why Transplant is Forbidden -->
+  <phil-slide>
+    <h1>Analyzing the Transplant Case</h1>
+    <phil-checkset prompt="Why is the Transplant case ethically distinct from pulling the rail switch? Check ALL that apply."
+                   explain="In the transplant case, the doctor initiates a new lethal assault on an unthreatened person, violates the fiduciary duty of medicine, and treats the patient's body as a mere biological resource.">
+      <phil-choice correct>The surgeon initiates a brand new lethal harm against someone who was not in danger</phil-choice>
+      <phil-choice correct>The surgeon violates the fundamental clinical duty of non-maleficence owed to their patient</phil-choice>
+      <phil-choice correct>The healthy patient is used merely as a biological means to save other patients</phil-choice>
+      <phil-choice feedback="Incorrect: The arithmetic (5 saved vs 1 sacrificed) is mathematically identical in both cases.">The transplant case results in fewer total surviving patients than the railway switch</phil-choice>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — REAL-WORLD MEDICAL TRIAGE ============ -->
+
+  <!-- 15. Real Triage: Crisis Standards of Care -->
+  <phil-slide>
+    <img slot="art" src="./assets/ventilator-crisis.png" alt="Two operating ventilators in a dimly lit ward with six patient clipboards">
+    <h1>When Scarcity Forces the Choice</h1>
+    <p class="lead">Unlike the fictitious transplant surgeon, real emergency physicians face genuine tragic dilemmas during mass casualties, pandemics, and war.</p>
+    <ul reveal>
+      <li>Under <strong>Crisis Standards of Care</strong>, the demand for life-saving resources (ventilators, ICU beds, dialysis) vastly exceeds supply.</li>
+      <li>Doctors are not choosing between murder and duty; they are allocating <em>scarce positive aid</em> to patients who all face lethal illness.</li>
+      <li>When you cannot save everyone, how do you decide who receives treatment?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. The Four Triage Categories -->
+  <phil-slide>
+    <img slot="art" src="./assets/triage-tags.png" alt="Four medical triage tags: Red, Yellow, Green, and Black">
+    <h1>The Four Triage Tags (START Protocol)</h1>
+    <p class="lead">In disaster medicine, responders assign standardized color-coded triage tags in seconds:</p>
+    <ul reveal>
+      <li><strong style="color:var(--bad);">🔴 Immediate (Red):</strong> Life-threatening injuries requiring immediate intervention to survive.</li>
+      <li><strong style="color:var(--accent-3);">🟡 Delayed (Yellow):</strong> Serious injuries requiring care, but stable enough to wait hours.</li>
+      <li><strong style="color:var(--good);">🟢 Minor (Green):</strong> "Walking wounded" with minor injuries; can wait until urgent cases are stabilized.</li>
+      <li><strong style="color:var(--muted);">⚫ Expectant / Palliative (Black):</strong> Injuries so catastrophic that survival is unlikely even with maximal resources. Prioritized for comfort care and pain relief so scarce equipment can save others.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Competing Allocation Principles -->
+  <phil-slide>
+    <h1>Three Ways to Allocate Scarce Beds</h1>
+    <p class="lead">When two patients in the 'Red' category arrive for the last ICU bed, which moral rule should decide?</p>
+    <ul reveal>
+      <li><strong>1. Maximizing Life-Years (Utilitarian Efficiency):</strong> Give the bed to the patient with the highest probability of long-term survival and the most quality-adjusted life years (QALYs) remaining.</li>
+      <li><strong>2. Egalitarian Lottery (Procedural Equality):</strong> Give every competing candidate an equal, random mathematical chance through a lottery.</li>
+      <li><strong>3. First-Come, First-Served (Temporal Queue):</strong> Allocate to whoever arrived at the hospital doors first. (Prone to rewarding people with easy transportation or private cars).</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. MCQ: Triage Decision -->
+  <phil-slide>
+    <h1>Allocating the Last Machine</h1>
+    <phil-mcq prompt="During a pandemic respiratory crisis, an ICU has only one ventilator remaining. Patient A (age 24, acute trauma, 90% survival likelihood) and Patient B (age 78, multi-organ failure, 20% survival likelihood) both require it immediately. Why do most modern triage protocols allocate the machine to Patient A?"
+              explain="Right. Modern crisis triage protocols aim to maximize net survival and life-years saved across the population under tragic scarcity. Unlike the Transplant case, doctors are not killing Patient B—they are directing scarce life support where it has the highest clinical probability of preventing death.">
+      <phil-choice correct>To save the greatest number of lives and life-years with scarce medical technology</phil-choice>
+      <phil-choice feedback="Modern bioethics strictly prohibits valuing human life based on social utility, status, or economic productivity.">Because younger patients are assumed to offer greater economic productivity to society</phil-choice>
+      <phil-choice feedback="Triage protocols explicitly shift away from first-come-first-served in extreme emergencies because arrival order is arbitrary and favors those with private transport.">Because Patient A arrived at the triage intake desk slightly before Patient B</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE INTERACTIVE SWITCHBOARD ============ -->
+
+  <!-- 19. Signature Widget -->
+  <phil-slide>
+    <h1>The Dilemma Switchboard</h1>
+    <p>Step through five classic dilemmas from the rail yard to the ICU. Notice how the interplay of <strong>Consequences</strong>, <strong>Deontic Rights</strong>, and <strong>Double Effect</strong> governs each scenario:</p>
+    <phil-triage-switchboard prompt="Step through each case to see how the moral criteria align or conflict:"></phil-triage-switchboard>
+  </phil-slide>
+
+  <!-- 20. Bridge to Modern Tech: Autonomous Vehicles & AI -->
+  <phil-slide>
+    <h1>From Triage to Algorithms</h1>
+    <p class="lead">Trolley problems and triage protocols are no longer just textbook exercises—they are being hardcoded into machines.</p>
+    <ul reveal>
+      <li><strong>Autonomous Vehicles:</strong> An autonomous car's brakes fail. Should it swerve into a concrete barrier (killing its passenger) to avoid hitting five pedestrians?</li>
+      <li><strong>Automated Triage Algorithms:</strong> Hospital AI systems rank patients on organ transplant waiting lists and ICU admission queues using multi-variable clinical scorecards.</li>
+      <li><strong>The Core Lesson:</strong> If we do not make our ethical commitments conscious, explicit, and accountable, machines will make them for us in the dark.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 6 — VERDICT & RECAP ============ -->
+
+  <!-- 21. What Moral Dilemmas Teach Us -->
+  <phil-slide>
+    <h1>What Thought Experiments Actually Do</h1>
+    <p class="lead">"A trolley problem isn't about trains," Dr. Trackwell smiles. "And a triage protocol isn't about arithmetic."</p>
+    <ul reveal>
+      <li>Thought experiments are <strong>diagnostic stress-tests</strong> for human moral intuitions.</li>
+      <li>They demonstrate that we care deeply about <em>both</em> the consequences of our choices and the moral constraints that protect individual rights.</li>
+      <li>Doing philosophy means learning to state your reasons clearly when these two valid moral demands pull in opposite directions.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Revisit Your Intuitions</h1>
+    <p>Here are the five gut-checks you rated at the start. Re-rate each one now—did dissecting the cases change where you draw the line?</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 23. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/pip-trackwell.png" alt="Dr. Philippa 'Pip' Trackwell holding her signal lantern">
+    <h1>End of the Line</h1>
+    <p class="lead">Dr. Trackwell hangs up her signal lantern. As you begin your semester in ethics, keep these core principles in your diagnostic kit:</p>
+    <ul reveal>
+      <li><strong>Consequentialism:</strong> Pay attention to outcomes and net lives saved ($5 > 1$).</li>
+      <li><strong>Deontology:</strong> Respect inviolable rights; never treat people merely as tools or bodily buffers.</li>
+      <li><strong>Doctrine of Double Effect:</strong> Distinguish between intended means and foreseen, unavoidable side-effects.</li>
+      <li><strong>Crisis Triage:</strong> In tragic scarcity, transparent and fair allocation protocols prevent arbitrary harm.</li>
+    </ul>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

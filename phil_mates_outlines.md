@@ -1496,4 +1496,63 @@ Plus `prompts.md`.
 22. **[P]** Beliefs review (`<phil-beliefs-review>`).
 23. **[T]** The Examined Student — completion & Socrates quote (`platobot` art).
 
+---
+
+## Trolley Problems & Medical Triage — "The Switch and the Scalpel"
+
+- **Path:** `lessons/ethical-theory/trolley-and-triage/`
+- **Lesson id:** `trolley-triage`
+- **Topic:** Ethical theory / Bioethics orientation (Week 0)
+- **Approach:** Thought experiment stress-testing (Foot/Thomson) transitioning directly into real-world institutional triage and crisis standards of care.
+- **Narrative frame:** You are guided by **Dr. Philippa "Pip" Trackwell**, emergency physician and municipal railway safety consultant. She uses the dual mechanics of railway switches and hospital triage tags to demonstrate how moral dilemmas reveal competing ethical commitments (consequences vs. rights vs. agency).
+- **Thinkers covered:** Philippa Foot (1967), Judith Jarvis Thomson (1976, 1985), and modern clinical triage ethicists (crisis standards of care).
+- **Art (16-bit pixel art in `/assets`):** `dilemma-scales`, `pip-trackwell`, `trolley-spur`, `footbridge`, `track-loop`, `organ-transplant`, `triage-tags`, `ventilator-crisis`.
+
+### Learning goals
+- Define a **moral dilemma** as a conflict of competing moral duties where every choice carries moral cost.
+- Analyze the classic trolley variations (Switch, Footbridge, Loop) and Thomson's Organ Transplant puzzle.
+- Isolate the three intuitive levers: **consequences** (net lives saved), **deontic constraints** (rights & mere means), and **agency/causation** (doing vs. allowing, Doctrine of Double Effect).
+- Understand real-world disaster medicine: the **START triage protocol** (Red/Yellow/Green/Black) and competing allocation rules for scarce life-support (life-years maximization vs. egalitarian lottery vs. first-come-first-served).
+- Connect moral dilemmas to modern automated algorithms in autonomous transport and hospital AI triage.
+
+### Structure (23 slides)
+
+**Act 0 — The Morning Switch**
+1. **[T]** Title — "The Switch and the Scalpel" (`dilemma-scales` art).
+2. **[T]** Setup — Meet Dr. Philippa "Pip" Trackwell (`pip-trackwell` art), `reveal`.
+3. **[P]** Belief probe — 5 statements on net lives, doing vs. allowing, triage life-years, bodily rights, and lotteries.
+
+**Act 1 — The Classic Tracks**
+4. **[T]** Case 1: The Spur / Switch (Foot 1967) — 5 vs. 1, 85-90% approve (`trolley-spur` art), `reveal`.
+5. **[T]** Case 2: The Footbridge (Thomson 1976) — pushing the stranger, 85% disapprove (`footbridge` art), `reveal`.
+6. **[Q · MCQ B]** The Paradox of the Two Cases — instrumental tool vs. unintended side effect.
+7. **[T]** Case 3: The Loop (Thomson 1985) — the essential obstacle on the track (`track-loop` art), `reveal`.
+
+**Act 2 — Anatomy of a Dilemma**
+8. **[T]** The Three Moral Levers — consequences, deontic constraints, and causal agency, `reveal`.
+9. **[T]** Doing vs. Allowing & Double Effect — negative vs. positive duties, intended means vs. foreseen side-effects, `reveal`.
+10. **[C]** Compare — The Switch (Spur) vs. The Footbridge vs. The Loop.
+11. **[Q · Cloze]** Testing the Principle — Double Effect (means vs. side-effect).
+
+**Act 3 — The Scalpel: The Hospital Puzzle**
+12. **[T]** Case 4: The Organ Transplant (Thomson 1976) — 5 dying patients vs. 1 healthy visitor (`organ-transplant` art), `reveal`.
+13. **[T]** Why the Hospital Breaks the Math — fiduciary duty, trust, and inviolable bodily rights, `reveal`.
+14. **[Q · Checkset]** Analyzing the Transplant Case — why harvesting healthy patients is forbidden (3 correct).
+
+**Act 4 — Real-World Medical Triage**
+15. **[T]** Real Triage: Crisis Standards of Care — tragic scarcity of positive aid (`ventilator-crisis` art), `reveal`.
+16. **[T]** The Four Triage Tags (START Protocol) — Immediate, Delayed, Minor, Expectant (`triage-tags` art), `reveal`.
+17. **[T]** Three Ways to Allocate Scarce Beds — life-years maximization vs. lottery vs. arrival queue, `reveal`.
+18. **[Q · MCQ A]** Allocating the Last Machine — clinical probability and population life-years.
+
+**Act 5 — The Interactive Switchboard**
+19. **[V]** The Dilemma Switchboard (`<phil-triage-switchboard>`) — compare factors and philosophical verdicts across 5 cases.
+20. **[T]** From Triage to Algorithms — autonomous vehicle crashes and AI hospital queues, `reveal`.
+
+**Act 6 — Verdict & Recap**
+21. **[T]** What Thought Experiments Actually Do — diagnostic stress-tests for moral intuition, `reveal`.
+22. **[P]** Belief probe (revisit) — `<phil-beliefs-review>`.
+23. **[T]** End of the Line — Dr. Trackwell recap and diagnostic kit (`pip-trackwell` art), `reveal`.
+
+
 
