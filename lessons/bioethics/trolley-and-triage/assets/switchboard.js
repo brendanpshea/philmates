@@ -29,7 +29,9 @@ const STYLE = `
 @media (max-width:650px) { .tsb-grid { grid-template-columns:1fr; } }
 
 .tsb-box { background:var(--panel); border:3px solid var(--border); padding:10px 12px; }
-.tsb-box h4 { font-family:var(--pixel); font-size:10px; margin:0 0 6px; color:var(--accent); }
+/* h2, not h4: the widget sits under the slide's h1, so h4 skipped two levels.
+   Sizing is explicit here, so it looks exactly as before. */
+.tsb-box h2 { font-family:var(--pixel); font-size:10px; margin:0 0 6px; color:var(--accent); }
 .tsb-box p { margin:0 0 6px; font-size:13px; }
 
 .tsb-factors { display:flex; flex-direction:column; gap:5px; margin:0 0 8px; }
@@ -161,7 +163,7 @@ class PhilTriageSwitchboard extends HTMLElement {
 
     this._grid.innerHTML = `
       <div class="tsb-box">
-        <h4>Scenario & Intervention</h4>
+        <h2>Scenario & Intervention</h2>
         <p><strong>Domain:</strong> ${sc.domain}</p>
         <p><strong>Action:</strong> ${sc.action}</p>
         <div class="tsb-factors">
@@ -170,7 +172,7 @@ class PhilTriageSwitchboard extends HTMLElement {
         </div>
       </div>
       <div class="tsb-box">
-        <h4>Causal Mechanism</h4>
+        <h2>Causal Mechanism</h2>
         <div class="tsb-factors">
           <div class="tsb-factor"><span>Type of Agency</span><span class="tsb-factor-val">${sc.agency}</span></div>
           <div class="tsb-factor"><span>Intention vs Side Effect</span><span class="tsb-factor-val ${sc.intention.startsWith('Intended') ? 'bad' : 'good'}">${sc.intention}</span></div>

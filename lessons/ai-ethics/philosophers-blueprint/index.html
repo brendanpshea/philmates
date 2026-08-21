@@ -37,9 +37,11 @@
       border-color: var(--accent, #6366f1);
     }
     .blueprint-btn.active {
-      background: var(--accent, #6366f1);
-      color: #fff;
-      border-color: var(--accent, #6366f1);
+      /* --accent is defined globally as green, so the #6366f1 fallback this rule
+         was written for never applies — white on green is 1.72:1. */
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
     }
     .blueprint-display {
       background: rgba(0,0,0,0.25);
@@ -331,7 +333,7 @@
       </div>
 
       <div id="blueprint-content" class="blueprint-display">
-        <h3 style="margin-top:0; color: #a5b4fc;">The Thesis Formula: Claim + "Because" Clause</h3>
+        <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Thesis Formula: Claim + "Because" Clause</h2>
         <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a public health crisis?</em></p>
         <div class="quote-box">
           ❌ <strong>Vague / Descriptive:</strong> "In this bluebook, I will look at different ethical theories regarding ventilator allocation algorithms."<br>
@@ -343,7 +345,7 @@
     <script>
       const blueprints = {
         thesis: `
-          <h3 style="margin-top:0; color: #a5b4fc;">The Thesis Formula: Claim + "Because" Clause</h3>
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Thesis Formula: Claim + "Because" Clause</h2>
           <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a crisis?</em></p>
           <div class="quote-box">
             ❌ <strong>Descriptive / Weak:</strong> "In this essay, I will explore the pros and cons of algorithmic ICU triage."<br>
@@ -351,7 +353,7 @@
           </div>
         `,
         mechanism: `
-          <h3 style="margin-top:0; color: #a5b4fc;">The Step-by-Step Argument Mechanism</h3>
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Step-by-Step Argument Mechanism</h2>
           <p><strong>Building the Logical Bridge:</strong></p>
           <ul style="line-height:1.6;">
             <li><strong>Premise 1:</strong> Kantian ethics establishes that human beings possess intrinsic dignity and must never be treated as mere numerical instruments.</li>
@@ -361,7 +363,7 @@
           </ul>
         `,
         steelman: `
-          <h3 style="margin-top:0; color: #a5b4fc;">The Principle of Charity: Steelman vs. Strawman</h3>
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Principle of Charity: Steelman vs. Strawman</h2>
           <p><strong>Facing the Strongest Counterargument:</strong></p>
           <div class="quote-box">
             ❌ <strong>Strawman Objection:</strong> "Opponents simply hate technology and want doctors to guess randomly in the dark."<br>
@@ -369,7 +371,7 @@
           </div>
         `,
         timeline: `
-          <h3 style="margin-top:0; color: #a5b4fc;">The 60-Minute Bluebook Time Budget</h3>
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The 60-Minute Bluebook Time Budget</h2>
           <ul style="line-height:1.6;">
             <li><strong>0:00 – 0:10 (10 Mins):</strong> <em>The Blueprint Phase.</em> Dissect prompt, write thesis with because-clause, outline 3 premises, and sketch the steelman counterargument on scrap paper.</li>
             <li><strong>0:10 – 0:50 (40 Mins):</strong> <em>The Drafting Phase.</em> Write directly into the bluebook following your scaffold. Focus on clear transitions, defined terms, and logical links.</li>

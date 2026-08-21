@@ -29,11 +29,16 @@ headless Chromium:
 
 ## Summary
 
-| Severity | Count | Nature |
-|---|---|---|
-| Critical (WCAG A) | 7 | Controls with no name; content and navigation invisible or unreachable to AT |
-| Serious (WCAG AA) | 9 | Contrast failures, missing status messages, missing structure |
-| Moderate | 6 | Degraded rather than blocking |
+| Severity | Found | Fixed | Open |
+|---|---|---|---|
+| Critical (WCAG A) | 7 | 6 + 1 partial | C-7 (conformance half) |
+| Serious (WCAG AA) | 9 | 9 | — |
+| Moderate | 6 | 4 | M-2, M-6 |
+
+**All 22 findings below have been addressed except three**, noted inline and
+summarised under *What's left*. A full `tools/a11y-audit.mjs` run — 13 pages,
+1,020 slide-states — now reports **zero axe violations**, down from four rules
+firing on every lesson.
 
 The design system itself is in good shape — **42 of 43 colour-token pairs pass
 AA**, and the three contrast failures are all local mistakes rather than palette
@@ -71,6 +76,8 @@ Worth stating, because these are the parts teams usually get wrong:
 ## Critical
 
 ### C-1 · Fill-in-the-blank fields have no accessible name
+
+> **Fixed** — `PhilCloze.build()` now sets `aria-label="Blank N of M"` on every field.
 **WCAG 4.1.2 Name, Role, Value (A); 3.3.2 Labels or Instructions (A)** ·
 `shared/phil-core.js` `PhilCloze.build()` · **11 of 12 lessons**
 (`patient-autonomy` is the one lesson with no cloze widget)
@@ -95,6 +102,8 @@ Better still, give the widget a prompt (`<phil-cloze prompt="…">`) rendered as
 the surrounding sentence is available on demand.
 
 ### C-2 · Checklist checkboxes have no accessible name
+
+> **Fixed** — both widgets build a real `<label>`; the mouse-only `li.onclick` shim is gone.
 **WCAG 4.1.2 (A); 1.3.1 Info and Relationships (A)** ·
 `lessons/bioethics/four-principles/assets/balance.js:104`,
 `lessons/bioethics/patient-autonomy/assets/consent.js:81`
@@ -115,6 +124,8 @@ li.append(lab);                          // drop the li.onclick shim entirely
 A real `<label>` also gives you the click-anywhere behaviour for free.
 
 ### C-3 · Unrevealed bullets are exposed to assistive tech
+
+> **Fixed** — `.phil-step` now uses `visibility: hidden` alongside `opacity`.
 **WCAG 1.3.2 Meaningful Sequence (A)** · `shared/phil-core.css` `.phil-step`
 
 `.phil-step` hides pending steps with `opacity: 0` alone —
@@ -139,6 +150,8 @@ also focusable while invisible.
 `visibility` still reserves layout space, so nothing shifts.
 
 ### C-4 · Tall slides scroll but can't be scrolled by keyboard
+
+> **Fixed** — `_fitSlide()` sets `tabindex="0"` on overflowing slides, with a focus ring.
 **WCAG 2.1.1 Keyboard (A)** · `shared/phil-core.css` `phil-slide` ·
 **110 slide-states across all 12 lessons**
 
@@ -161,6 +174,8 @@ _fitSlide(slide) {
 ```
 
 ### C-5 · Slide changes are silent, and focus never moves
+
+> **Fixed** — the heading takes `tabindex="-1"` and real focus; a `role="status"` region announces "Slide N of M: <title>".
 **WCAG 2.4.3 Focus Order (A); 4.1.3 Status Messages (AA)** ·
 `shared/phil-core.js:254`
 
@@ -189,6 +204,8 @@ this._live.textContent = `Slide ${idx + 1} of ${this.linear.length}: ${h?.textCo
 ```
 
 ### C-6 · Reset dialog isn't a dialog, and focus escapes it
+
+> **Fixed** — `role="dialog"`, `aria-modal`, `aria-labelledby`, a Tab trap, `inert` on the page behind, and focus restored to the opener.
 **WCAG 4.1.2 (A); 2.4.3 Focus Order (A)** · `shared/phil-core.js`
 `_confirmReset()`
 
@@ -211,6 +228,8 @@ It does two things right: `Escape` closes it, and initial focus goes to Cancel
 Confirm, `inert` on the rest of the page, and focus restore on close.
 
 ### C-7 · `F` shortcut has no modifier guard — it hijacks Ctrl/⌘+F
+
+> **Partly fixed** — the modifier guard is in (Ctrl/⌘/Alt/Shift+F no longer hijacked; verified). The 2.1.4 conformance route still needs a product decision — see below.
 **WCAG 2.1.4 Character Key Shortcuts (A)** · `shared/phil-core.js:167`
 
 ```js
@@ -239,6 +258,8 @@ Two separate fixes:
 ## Serious
 
 ### S-1 · Homepage buttons: 1.52:1 contrast
+
+> **Fixed** — `color: var(--bg)` in `tools/build-index.mjs`; 1.52:1 → 10.74:1.
 **WCAG 1.4.3 Contrast (Minimum) (AA)** · `tools/build-index.mjs` `.btn` rule ·
 13 elements
 
@@ -257,6 +278,8 @@ Note `index.html` is **generated** — edit `tools/build-index.mjs`, then re-run
 `node tools/build-index.mjs`. Editing `index.html` directly will be overwritten.
 
 ### S-2 · `--accent` token collision in breadcrumb-network: 1.72:1
+
+> **Fixed** — here and in `philosophers-blueprint`, which had the same collision.
 **WCAG 1.4.3 (AA)** · `lessons/ai-ethics/breadcrumb-network/index.html:39`
 
 ```css
@@ -275,6 +298,8 @@ fallback, and will silently change meaning if those tokens are ever added to
 `:root`.
 
 ### S-3 · Ancestor `opacity` drops the golden-mean labels below AA
+
+> **Fixed** — the `opacity` moved onto a `::after` gradient layer; labels now 6.2–9.2:1, marker 6.87:1.
 **WCAG 1.4.3 (AA)** · `lessons/ethical-theory/virtue-ethics/assets/golden-mean.js`
 
 `.mean-bar` carries `opacity: .6`, which composites its child labels toward the
@@ -295,6 +320,8 @@ and it's invisible to any check that reads declared colours instead of rendered
 ones.
 
 ### S-4 · Nothing is a status message
+
+> **Fixed** — `role="status"` on answer feedback, the belief-probe status line, and the completion toast.
 **WCAG 4.1.3 Status Messages (AA)** · `shared/phil-core.js`
 
 `document.querySelectorAll('[aria-live], [role=status], [role=alert]').length === 0`
@@ -312,6 +339,8 @@ Give `.phil-feedback` and `.phil-belief__status` `role="status"` when created
 announcement to fire), and `role="status"` on the toast.
 
 ### S-5 · Likert selection is conveyed by colour alone
+
+> **Fixed** — `aria-pressed` on every rating button, and the row is a `group` named by its statement.
 **WCAG 1.4.1 Use of Colour (A); 4.1.2 (A)** · `shared/phil-core.js`
 `likertScale()`
 
@@ -331,6 +360,8 @@ Also give the five-button row a group name tied to the statement it rates, so
 the buttons aren't orphaned.
 
 ### S-6 · MCQ and checkset have no group semantics
+
+> **Fixed** — `role="radiogroup"` / `role="group"` with `aria-labelledby` pointing at the prompt.
 **WCAG 1.3.1 (A)** · `PhilMcq.build()`, `PhilCheckset.build()`
 
 The question prompt is a plain `<p class="phil-widget__prompt">`. It is not
@@ -345,6 +376,8 @@ this.setAttribute('aria-labelledby', p.id);
 ```
 
 ### S-7 · No `<main>`, no skip link
+
+> **Fixed** — the stage is now `<main>`; the homepage gained a skip link and its own `<main>`, with the footer moved out to stay a page landmark.
 **WCAG 2.4.1 Bypass Blocks (A); 1.3.1 (A)** · engine + homepage
 
 Zero `<main>` elements project-wide; axe reports `landmark-one-main` on all 13
@@ -358,6 +391,8 @@ this._stage = el('main', 'phil-stage');   // was el('div', …)
 The homepage additionally has no skip link past its sticky nav.
 
 ### S-8 · Icon-only toggles expose no state
+
+> **Fixed** — `aria-label` on all three, plus `aria-pressed` on the sound toggle.
 **WCAG 4.1.2 (A)** · `_buildShell()`
 
 The sound (🔕/🔔), narration (🔇/🔊) and fullscreen (⛶) buttons are named only by
@@ -368,6 +403,8 @@ on/off state**. The emoji swap is the only indicator.
 Use `aria-label` plus `aria-pressed`, updating both when toggled.
 
 ### S-9 · Progress bar has no role or value
+
+> **Fixed** — `role="progressbar"` with `aria-valuenow` / `valuemax` / `valuetext`, kept in sync by `_refresh()`.
 **WCAG 1.3.1 (A)** · `.phil-progress`
 
 A `<div>` whose child's width is set in percent. Add
@@ -380,6 +417,8 @@ same information, so this is structural rather than an information loss.)
 ## Moderate
 
 ### M-1 · Locked answers are still changeable by keyboard
+
+> **Fixed**, but not as suggested above. `disabled` turned out to be the wrong lever: it greys the radio out, so the answer the student picked stops being visible, and it drops the control from the tab order so a screen-reader user can no longer review their own answer. Instead the widget carries a `_locked` flag that cancels the click a Space/arrow press generates, and the input gets `aria-disabled="true"`. Verified with real key presses: arrows and Space cannot change a settled answer, and the control stays reachable.
 `.phil-choice.locked { pointer-events: none }` blocks the mouse, but the radio
 stays `enabled` and focusable. Verified: after solving an MCQ, focusing a
 distractor and selecting it with the keyboard flips it to checked and adds the
@@ -388,6 +427,8 @@ which is both an accessibility inconsistency and a grading-integrity gap.
 Set `input.disabled = true` in `lock()` (as `PhilCloze.lock()` already does).
 
 ### M-2 · Text ignores the browser's font-size preference
+
+> **Open.** Needs a pass over the `clamp()` bounds and the pixel-font UI sizes; a judgement call about the projector-first design, not a bug fix.
 **WCAG 1.4.4 Resize Text (AA) — at risk.** Setting the root font size to 200 %
 changes slide body text by **0 px** (`28px` → `28px`): every size is `px` or a
 `clamp()` with a `px` cap, and `.phil-btn` is pinned at `10px`. Page zoom does
@@ -397,6 +438,8 @@ size (a very common configuration) get nothing from it, and `9–10px` pixel-fon
 UI chrome is small to begin with. Consider `rem`-based `clamp()` bounds.
 
 ### M-3 · `prefers-reduced-motion` covers 2 animations of ~8
+
+> **Fixed** — the reduced-motion block now covers the slide transition, step fades and toast, and `scrollIntoView` switches to `behavior: "auto"`.
 Only `phil-compare`'s side entrances and the VS badge are guarded. Verified
 still running under `reducedMotion: reduce`: the `phil-in` slide transition
 (`0.18s`, fires on every navigation), `.phil-step` fade-ups, the toast slide-in,
@@ -405,6 +448,8 @@ and `scrollIntoView({ behavior: 'smooth' })` in `next()`. Extend the existing
 in JS.
 
 ### M-4 · No focus styles of the project's own
+
+> **Fixed** — an explicit `:focus-visible` ring in the shared stylesheet and on the homepage. Scoped away from the `tabindex="-1"` slide headings, which take focus programmatically and would otherwise wear a blue box on every slide.
 There is no `:focus`/`:focus-visible` rule anywhere; the project inherits the UA
 ring. On current Chromium this renders as a visible white outline on the dark
 theme (confirmed by screenshot), so **this is not a current AA failure** — but it
@@ -414,6 +459,8 @@ costs one rule and removes the risk. Pairs naturally with the new tab stop from
 C-4.
 
 ### M-5 · Heading-order breaks
+
+> **Fixed** — `breadcrumb-network`, `philosophers-blueprint`, `switchboard.js` and the homepage generator, each with its CSS selector updated so nothing changes visually.
 `heading-order` fires on 3 lessons. `breadcrumb-network` uses `<h4>` where the
 slide's outline reaches `h2` (lines 353, 357, 361, 399…); `philosophers-blueprint`
 jumps `h1 → h3` (lines 334, 346, 354, 364, 372). On the homepage,
@@ -421,6 +468,8 @@ jumps `h1 → h3` (lines 334, 346, 354, 364, 372). On the homepage,
 heading is also `h2` — those should be `h3` (in `tools/build-index.mjs:56`).
 
 ### M-6 · Two visible `<h1>`s per lesson
+
+> **Open, deliberately.** Slide headings are authored as `<h1>` across all 12 lessons; renumbering them is a content migration, and it is not a failure today.
 The shell title (`.phil-title`) and the current slide's heading are both `h1`
 and both visible. 29 `h1` elements exist per lesson; 2 are visible at any time.
 Not a failure — but making `.phil-title` a `<p>` or `<h1>` with slide headings
@@ -433,29 +482,60 @@ readers; use a real element or add `role="img"`.
 
 ---
 
-## Suggested order
+## What's left
 
-1. **C-1, C-2, S-1, S-2, S-3** — small, local, no design decisions. C-1 and S-1
-   are the highest value per line changed.
-2. **C-3, C-4, S-7, M-1** — engine changes, each a few lines, all 12 lessons at
-   once.
-3. **C-5, S-4** — the announcement layer. Do these together; they share a live
-   region.
-4. **C-6, S-5, S-6, S-8, S-9** — remaining semantics.
-5. **C-7 part 1** (modifier guard) immediately; **part 2** needs a product call.
-6. **M-2 … M-6** — hardening.
+Three things, all deliberate:
 
-After any change, rebuild the derived artefacts: `node tools/build-index.mjs`
-for the homepage, and `node tools/build-scorm.mjs --all` so the packages in
-`dist/scorm/` carry the fixes into LMS uploads.
+**C-7, the conformance half.** The bug is fixed — `f` no longer fires with a
+modifier, so Ctrl+F / ⌘+F is Find in page again. But WCAG 2.1.4 wants a
+single-character shortcut to be *turned off, remapped, or limited to when a
+component has focus*, and "ignore it while typing" is none of those. The cheapest
+route is a hotkeys toggle sitting next to the sound toggle, persisted the same
+way. That's a product decision about the projector workflow, so it's flagged
+rather than guessed at.
+
+**M-2, text scaling.** Every size is `px` or a `clamp()` with a `px` cap, so a
+browser font-size preference moves nothing. Page zoom works and is an accepted
+way to satisfy 1.4.4, so this is defensible — but it needs a considered pass over
+the `clamp()` bounds and the 9–10px pixel-font chrome, weighed against a design
+that's built to be legible from the back of a room.
+
+**M-6, one `<h1>` per page.** Slide headings are authored as `<h1>` in all 12
+lessons. Demoting them is a content migration across every lesson file, and the
+current structure isn't a failure — just a worse document outline than it could be.
+
+## Keeping it fixed
+
+```bash
+node tools/a11y-audit.mjs            # walks every slide of every lesson
+node tools/a11y-audit.mjs --strict   # exit 1 on any finding (CI/hooks)
+```
+
+Rebuild the derived artefacts after engine or lesson changes, or the fixes won't
+reach the homepage and the LMS packages:
+
+```bash
+node tools/build-index.mjs           # homepage (index.html is generated)
+node tools/build-scorm.mjs --all     # dist/scorm/*.zip
+```
+
+Authoring rules that keep new lessons clean are in
+[AUTHORING.md](../AUTHORING.md#accessibility-auto-checked).
 
 ## Caveats
 
-- Automated tooling catches roughly a third of WCAG issues. Everything above is
-  either machine-verified or manually reproduced, but this audit has **not**
-  been validated with real assistive technology. Before claiming conformance,
-  run one full lesson end-to-end with NVDA/Windows and VoiceOver/macOS, and once
-  with keyboard only.
+- Automated tooling catches roughly a third of WCAG issues. Every finding above
+  was machine-verified or manually reproduced, and every fix was re-verified the
+  same way — but none of this has been validated with **real assistive
+  technology**. A clean axe run is a floor, not a conformance claim. Before
+  claiming conformance, run one full lesson end-to-end with NVDA/Windows and
+  VoiceOver/macOS, and once with keyboard only.
+- The fixes were verified three ways: axe across all 1,020 slide-states, scripted
+  behavioural probes (focus movement, dialog tab-trapping, the accessibility
+  tree, real key presses against a locked answer), and before/after screenshots
+  to catch visual regressions. Two regressions were caught and corrected that
+  way — a focus ring framing every slide title, and `disabled` radios hiding the
+  student's chosen answer.
 - Testing was Chromium-only. Focus-appearance findings in particular (M-4)
   differ in Firefox and Safari.
 - Cognitive-accessibility and plain-language review are out of scope here, and

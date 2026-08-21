@@ -25,8 +25,8 @@ Three ways to use a lesson (see the **For Instructors** section on the homepage)
 - `lessons/<topic>/<slug>/` — one `index.html` + `assets/` per lesson.
 - `shared/` — the engine (`phil-core.js`), styles, and the SCORM adapter.
 - `tools/` — `new-lesson`, `build-index` (homepage catalog), `build-scorm`
-  (LMS packages), `validate-quizzes`.
-- `docs/` — SCORM packaging and audio narration notes.
+  (LMS packages), `validate-quizzes`, `a11y-audit`.
+- `docs/` — SCORM packaging, audio narration, and accessibility notes.
 
 ## Common commands
 
@@ -34,7 +34,12 @@ Three ways to use a lesson (see the **For Instructors** section on the homepage)
 node tools/new-lesson.mjs <topic> <slug> "Title"   # scaffold a lesson
 node tools/build-index.mjs                          # rebuild the homepage
 node tools/build-scorm.mjs --all                    # build SCORM packages
+node tools/a11y-audit.mjs                           # WCAG 2.1 AA check (needs npm, see docs)
 ```
+
+Lessons target **WCAG 2.1 AA** — see [docs/accessibility.md](docs/accessibility.md)
+for what that covers, what's verified, and what still needs a human with a
+screen reader.
 
 Authoring guide: [AUTHORING.md](AUTHORING.md). Licensed under
 [CC BY-NC 4.0](LICENSE).

@@ -147,15 +147,50 @@ phil-slide ol { counter-reset: phil-ol; }
 phil-slide ol > li { counter-increment: phil-ol; }
 phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left: 0; font-family: var(--pixel); font-size: .7em; color: var(--bg); background: var(--accent-3); padding: 2px 5px; top: .15em; }
 
-/* incremental reveal (engine adds .phil-show as you press Next) */
-.phil-step { opacity: 0; transform: translateY(10px); transition: opacity .25s ease-out, transform .25s ease-out; }
-.phil-step.phil-show { opacity: 1; transform: none; }
+/* incremental reveal (engine adds .phil-show as you press Next)
+   `visibility` matters as much as `opacity` here: with opacity alone the pending
+   bullets stay in the accessibility tree, so a screen reader reads the whole
+   slide — punchlines included — before the reveal happens, and any control
+   inside one is focusable while invisible. visibility:hidden still reserves the
+   layout box, so nothing shifts when a step appears. */
+.phil-step {
+  opacity: 0; visibility: hidden; transform: translateY(10px);
+  transition: opacity .25s ease-out, transform .25s ease-out, visibility 0s linear .25s;
+}
+.phil-step.phil-show { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
 .phil-date { display: inline-block; font-family: var(--pixel); font-size: 9px; color: var(--bg); background: var(--accent-3); padding: 4px 6px; margin-bottom: 10px; }
 
 /* ---- bottom bar: navigation ---- */
 .phil-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-nav { display: flex; gap: 10px; }
 .phil-counter { font-family: var(--pixel); font-size: 9px; color: var(--muted); }
+
+/* =====================================================================
+   Focus
+   The UA default happens to be visible on this dark theme in Chromium, but it
+   varies by browser and sits tight against the 3px black borders. Own it.
+   ===================================================================== */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--accent-3);
+  outline-offset: 2px;
+}
+/* phil-slide gets tabindex="0" when it overflows (so it can be scrolled by
+   keyboard). Offset inward — an outset ring would be clipped by the stage. */
+phil-slide[tabindex="0"]:focus-visible { outline: 3px solid var(--accent-3); outline-offset: -3px; }
+
+/* Slide headings take focus on navigation so the change is announced and focus
+   follows the content. They're tabindex="-1": not operable, not in the tab
+   order, so no ring — otherwise every slide title wears a blue box, including
+   on first paint. Anything a user can actually tab to keeps its indicator. */
+phil-slide :is(h1, h2)[tabindex="-1"]:focus,
+phil-slide[tabindex="-1"]:focus { outline: none; }
+
+/* Screen-reader-only: the live region that announces slide changes. */
+.phil-sr-only {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  clip-path: inset(50%); overflow: hidden; white-space: nowrap;
+}
 
 /* =====================================================================
    Buttons (chunky pixel)
@@ -220,6 +255,9 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
 .phil-choice input { width: 18px; height: 18px; accent-color: var(--accent-3); flex: none; }
 .phil-choice.correct { background: #133a24; border-color: var(--good); }
 .phil-choice.wrong   { background: #3a1620; border-color: var(--bad); }
+/* pointer-events blocks the mouse; the widget's _locked flag blocks the keyboard.
+   The input stays enabled (not disabled) so the chosen answer keeps its colour
+   and a screen-reader user can still reach it to review what they picked. */
 .phil-choice.locked { cursor: default; pointer-events: none; }
 
 /* Cloze */
@@ -300,6 +338,12 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
 @media (prefers-reduced-motion: reduce) {
   phil-slide.is-current .phil-compare > phil-side,
   phil-slide.is-current .phil-vs { animation: none; }
+  /* Everything else that moves: the slide-in on every navigation, the step
+     fade-ups, and the completion toast. Steps still need their visibility flip
+     to be instant rather than absent. */
+  phil-slide { animation: none; }
+  .phil-step { transition: none; transform: none; }
+  .phil-toast { transition: none; }
 }
 
 /* =====================================================================
