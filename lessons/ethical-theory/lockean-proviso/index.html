@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enough and As Good · PhilMates</title>
+  <meta name="description" content="Forty people land on a world that could hold a billion. Do they own it? Locke's labour theory of property, the proviso that limits it, the money argument that loosens it, Nozick's tomato juice, the colonial uses the theory was put to, the left and right libertarian split, and whether any of it applies to ideas.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=2">
+  <script type="module" src="../../../shared/phil-core.js?v=2"></script>
+  <script type="module" src="./assets/claim.js"></script>
+  <style>
+    blockquote.source {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(17px, 1.9vw, 21px);
+      line-height: 1.5;
+      background: var(--panel);
+      border-left: 4px solid var(--accent-3);
+      padding: 12px 16px;
+      margin: 14px 0;
+    }
+    blockquote .cite {
+      display: block;
+      margin-top: 8px;
+      font-family: var(--pixel);
+      font-style: normal;
+      font-size: 10px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<phil-lesson id="lockean-proviso" title="Enough and As Good" subject="Property &amp; the Lockean Proviso">
+
+  <!-- ============ PART 0 — THE LANDING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/landing-site.png" alt="A single small landing craft on an endless plain of waist-high violet and magenta alien vegetation, five or six tiny human figures standing near it dwarfed by the landscape, rolling hills receding to a far horizon under an enormous pale sky with a low amber sun">
+    <h1>Enough and As Good</h1>
+    <p class="lead">Forty people step out of a landing craft onto a world nobody has ever farmed, mined, or mapped. It could comfortably hold a billion.</p>
+    <p>The question they are about to face is much older than spaceflight, and nobody has settled it yet.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The situation -->
+  <phil-slide>
+    <img slot="art" src="./assets/second-ship.png" alt="An enormous colony transport descending through cloud over a violet plain, its bulk filling the upper half of the frame and casting a wide shadow, with the small original landing craft and its cleared rectangle of field now tiny beneath it">
+    <h1>The Situation</h1>
+    <ul reveal>
+      <li>The forty are the first humans here. Nobody else has any claim to the place.</li>
+      <li>They clear a field, build shelter, and fence what they have worked.</li>
+      <li>A second ship is already on its way, carrying ten thousand more.</li>
+      <li>Behind that one, in time, come as many people as the planet will hold.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. POLL 1 — before any theory -->
+  <phil-slide>
+    <h1>Decision Point: Whose Planet Is It?</h1>
+    <p class="muted">Not graded, and asked before any of the arguments. Answer with what you think now.</p>
+    <phil-poll prompt="Before anyone else arrives, how much of this world do the first forty own?"
+               explain="Hold on to whichever you picked. These three positions have been arguing with each other for three hundred years, and you will be asked again at the end. Most people who pick the second answer discover it is harder to defend than it looks, and most who pick the third discover they use the first one all the time."
+      >
+      <phil-choice note="The first-arrival answer. It is how most territorial claims in history were actually made, and it rarely came with an argument attached.">All of it. They got here first, and nobody else has any claim at all.</phil-choice>
+      <phil-choice note="The answer Locke gives. It sounds moderate until you ask how far &quot;worked&quot; is allowed to reach.">Only what they have actually worked. The rest is still unowned.</phil-choice>
+      <phil-choice note="Nobody made the planet, so nobody has done the thing that would earn it. This is where left-libertarians start, and they do not end up where you might expect.">None of it. Nobody made the planet, so nobody can own it.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 4. Belief probe -->
+  <phil-slide>
+    <h1>Six Statements, No Right Answers</h1>
+    <p>Say where you stand now. You will see all six again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>If you are the first person somewhere, what you find there is yours.</phil-statement>
+      <phil-statement>Working on something is what makes it belong to you.</phil-statement>
+      <phil-statement>Nobody can really own land, because nobody made it.</phil-statement>
+      <phil-statement>Owning much more than others is fair, so long as nobody is left with nothing.</phil-statement>
+      <phil-statement>Owning an idea is a different kind of thing from owning a field.</phil-statement>
+      <phil-statement>Property exists because governments say so, not because it is a natural right.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ PART 1 — WHY WOULD WORKING ON SOMETHING MAKE IT YOURS? ============ -->
+
+  <!-- 5. Locke's question -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-locke.png" alt="Relic card: an open human hand holding a single acorn, and directly beneath the hand a field divided by a low boundary wall into one tilled plot and one wild plot of equal size, in a laurel-gold frame">
+    <span class="phil-date">1689</span>
+    <h1>Why Would Working on Something Make It Yours?</h1>
+    <p class="lead">John Locke set out to answer a puzzle that sounds simple and is not. If the world was given to everyone in common, how does any part of it become one person's?</p>
+    <ul reveal>
+      <li>Everyone around him agreed that owning things was normal. Almost nobody could say what made it legitimate.</li>
+      <li>His answer is about a page long, and every argument that follows either comes from it or attacks it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. The chain -->
+  <phil-slide>
+    <h1>The Chain</h1>
+    <p class="lead">Locke's argument runs in three steps, and each one has to hold for the next to work.</p>
+    <ul reveal>
+      <li>You own yourself. Your body is yours, so the work your body does is yours too.</li>
+      <li>When you mix that work with something unowned, you mix in something already yours.</li>
+      <li>Doing that makes the thing yours. An acorn you pick up stops being common and becomes yours.</li>
+      <li>This is the <strong>labour theory of property</strong>, and it is still how most people justify owning things.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. POLL 2 — the acorn -->
+  <phil-slide>
+    <h1>Decision Point: The Acorn</h1>
+    <p class="muted">Not graded.</p>
+    <phil-poll prompt="You pick up an acorn in a forest nobody owns. At what moment does it become yours?"
+               explain="Locke's answer is the first one. Gathering is work, and that is enough. He spends most of his energy attacking the third: if you needed everyone's permission before eating anything, he says, people would have starved while waiting to be asked. The second answer is more demanding than Locke, and it is closer to what most legal systems actually require."
+      >
+      <phil-choice note="Locke's own answer. Picking it up is labour, however slight, and slight labour is still labour.">The moment you pick it up. Gathering it is work, and work is enough.</phil-choice>
+      <phil-choice note="A stricter line. It asks for real transformation rather than mere gathering, which is roughly what patent and mining law ask for.">Not until you plant it, or eat it, or do something with it.</phil-choice>
+      <phil-choice note="The position Locke is arguing against. His reply is that a rule requiring universal consent would have killed everyone long ago.">Never, unless everyone else agrees that you may have it.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 8. MCQ 1 [correct: B] -->
+  <phil-slide>
+    <h1>Checkpoint: What the Argument Rests On</h1>
+    <phil-mcq prompt="One claim has to be true before any of the rest of Locke's argument can work. Which?"
+              explain="Right. Everything depends on self-ownership. The labour is only yours to mix in because your body is yours to begin with, so if you do not own yourself, mixing your work into something gives you no claim at all. That is why arguments about property so often turn into arguments about self-ownership.">
+      <phil-choice feedback="Locke does say this, and it matters later. But it is a claim about value, and it comes after the argument for ownership rather than holding it up.">That farmed land is more valuable than wild land.</phil-choice>
+      <phil-choice correct>That you own yourself, and therefore own the work your body does.</phil-choice>
+      <phil-choice feedback="Locke explicitly does not rely on arriving first. Being there early gives you the chance to work, but the work is what does the arguing.">That whoever finds something first has a stronger claim than later arrivals.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ PART 2 — WHAT STOPS YOU TAKING EVERYTHING? ============ -->
+
+  <!-- 9. The proviso -->
+  <phil-slide>
+    <img slot="art" src="./assets/first-field.png" alt="A small neat rectangle of cleared and furrowed dark earth planted in tidy rows, sitting in the middle of a vast unbroken expanse of wild violet and magenta growth running to the horizon, with three tiny figures working at one edge and a low rough fence along one side">
+    <h1>What Stops You Taking Everything?</h1>
+    <p class="lead">Locke could see that the argument as stated would let one person take a continent, so he attached a condition to it.</p>
+    <ul reveal>
+      <li>You may take from what is unowned only where there is <strong>enough, and as good, left in common for others</strong>.</li>
+      <li>Those seven words are the <strong>Lockean proviso</strong>, and people have argued about them ever since.</li>
+      <li>Take one acorn from a forest full of oaks and nobody is worse off. Take the forest and they are.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. The spoilage limit -->
+  <phil-slide>
+    <h1>And a Second Limit</h1>
+    <p class="lead">Locke adds another condition straight afterwards, and it is the one people forget.</p>
+    <ul reveal>
+      <li>You may take only as much as you can use before it spoils.</li>
+      <li>Gather more apples than you can eat and the surplus was never yours. You wasted what belonged to others.</li>
+      <li>Between them, the two limits keep holdings small. Nobody can pile up much that rots.</li>
+      <li>Anything past that, Locke says, is "more than his share, and belongs to others".</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. The claim tester -->
+  <phil-slide>
+    <h1>How Much May the Forty Take?</h1>
+    <p>Move the slider, then change how many people eventually arrive. Three ways of reading <em>enough, and as good</em> give three different answers.</p>
+    <phil-claim-tester prompt="The planet is unclaimed. The first forty decide how much of it to fence."></phil-claim-tester>
+  </phil-slide>
+
+  <!-- 12. Checkset 1 -->
+  <phil-slide>
+    <h1>Checkpoint: What Locke Actually Says</h1>
+    <phil-checkset prompt="Check every statement that is TRUE of Locke's argument."
+                   explain="The two false statements are the readings Locke is most often saddled with. He never says arriving first is enough — that is the position his labour argument replaces. And he holds that property exists before any government does, which is exactly why he thinks a government that seizes your property is doing something wrong rather than merely changing the rules.">
+      <phil-statement correct>You may take what is unowned only if enough and as good is left for others.</phil-statement>
+      <phil-statement correct>You may not take more than you can use before it spoils.</phil-statement>
+      <phil-statement correct>Owning yourself is what makes the work of your body your own.</phil-statement>
+      <phil-statement>Whoever reaches an unowned place first is the owner of all of it.</phil-statement>
+      <phil-statement>Property comes into existence only once a government has created it.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ PART 3 — MONEY DISSOLVES THE LIMITS ============ -->
+
+  <!-- 13. Money -->
+  <phil-slide>
+    <h1>Then Money Arrives</h1>
+    <p class="lead">Both of Locke's limits work only because things rot. Halfway through his own chapter, he removes one of them.</p>
+    <ul reveal>
+      <li>Gold and silver do not spoil. You can hold them for a lifetime and waste nothing.</li>
+      <li>So you may sell your surplus apples for coin, and keep the coin honestly, however much piles up.</li>
+      <li>The spoilage limit is now toothless. It forbids hoarding food and permits hoarding wealth.</li>
+      <li>Locke says that by agreeing to use money, people <strong>tacitly consented</strong> to unequal holdings.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. POLL 3 -->
+  <phil-slide>
+    <h1>Decision Point: Did Anyone Agree to This?</h1>
+    <p class="muted">Not graded.</p>
+    <phil-poll prompt="Locke says using money counts as agreeing that some may hold far more than others. Does it?"
+               explain="The difficulty with tacit consent is that it is hard to refuse. You can decline a contract, but declining to use money at all means declining to buy food. Locke needs the agreement to be real, because it is what licenses inequality — and critics from Rousseau onward have said an agreement nobody can decline is not an agreement."
+      >
+      <phil-choice note="The straightforward reading. Accepting the benefits of a system is usually taken to mean accepting its terms.">Yes. Anyone who takes payment has accepted the system that comes with it.</phil-choice>
+      <phil-choice note="The standard objection. Consent normally requires a live option to refuse, and there is no way to opt out of money and still eat.">No. Using the only money there is cannot count as choosing it.</phil-choice>
+      <phil-choice note="This accepts the argument and denies it reaches us. It also raises a question Locke never answers: how long does someone else's agreement bind you?">It bound whoever first adopted it, but nobody since has been asked.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 15. What the money move does -->
+  <phil-slide>
+    <h1>What That Move Does</h1>
+    <p class="lead">This is the hinge of the whole chapter, and it is easy to read straight past.</p>
+    <ul reveal>
+      <li>Locke opens with limits so tight that nobody could own very much at all.</li>
+      <li>He closes with a defence of large unequal estates, having never withdrawn a word.</li>
+      <li>Only the spoilage limit dissolves. <em>Enough, and as good</em> is left standing.</li>
+      <li>That is why the proviso is the part still argued over. It is the limit that survived.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ PART 4 — DOES LABOUR-MIXING EVEN WORK? ============ -->
+
+  <!-- 16. Nozick's tomato juice -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-nozick.png" alt="Relic card: a tilted tin can pouring a thin red stream into a vast dark sea that stretches to the frame edges, the red thread dispersing and vanishing a short way from the can">
+    <span class="phil-date">1974</span>
+    <h1>Does Mixing Even Work?</h1>
+    <p class="lead">Robert Nozick was broadly on Locke's side, and he still asked why mixing your work into something should be a way of gaining rather than a way of losing.</p>
+    <blockquote class="source">
+      "If I own a can of tomato juice and spill it in the sea so that its molecules&hellip; mingle evenly throughout the sea, do I thereby come to own the sea, or have I foolishly dissipated my tomato juice?"
+      <span class="cite">&mdash; Robert Nozick, <em>Anarchy, State, and Utopia</em>, 1974</span>
+    </blockquote>
+  </phil-slide>
+
+  <!-- 17. POLL 4 -->
+  <phil-slide>
+    <h1>Decision Point: The Tomato Juice</h1>
+    <p class="muted">Not graded.</p>
+    <phil-poll prompt="You pour a can of tomato juice into the sea. What have you done?"
+               explain="Almost nobody picks the first answer, which is the problem. If mixing what you own into what you do not own made the whole thing yours, it would work here too. So mixing alone cannot be what does the work — something else has to explain why clearing a field is different from spilling juice, and Locke never quite says what."
+      >
+      <phil-choice note="What the labour-mixing argument implies, taken literally. That almost nobody accepts it here is the reason the argument needs repair.">Gained a sea. Your juice is now in every part of it.</phil-choice>
+      <phil-choice note="The obvious answer, and it undercuts the argument. Mixing turns out to be a way of losing things at least as often as gaining them.">Lost a can of juice. Mixing does not make things yours.</phil-choice>
+      <phil-choice note="Nozick's own conclusion. He keeps the proviso and throws out the mixing story, arguing instead from whether anyone was made worse off.">Neither. The case shows that mixing was never the real explanation.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 18. How much do you get -->
+  <phil-slide>
+    <img slot="art" src="./assets/claim-map.png" alt="A surveyor's field table outdoors at dusk: a large unrolled chart of a whole continent weighted at the corners, ruled straight lines dividing it into blank parcels, brass dividers and a plumb bob beside it, one lantern lighting the table, violet plain and low amber horizon behind">
+    <h1>And How Far Does a Claim Reach?</h1>
+    <p class="lead">Even if mixing works, Locke never says how much of the world one piece of work buys you.</p>
+    <ul reveal>
+      <li>You clear one field in a valley. Do you own the field, the valley, or the continent?</li>
+      <li>The forty plough a hundred acres and draw their boundary around a hemisphere.</li>
+      <li>Locke's answer is that you own what you have worked, and working is a matter of degree.</li>
+      <li>Every land claim in history has had to answer this, and most have answered generously.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Cloze 1 -->
+  <phil-slide>
+    <h1>Fill In: The Argument and Its Limits</h1>
+    <p>Complete the summary so far:</p>
+    <phil-cloze explain="Locke's chain runs from self-ownership through labour to property, and it is bounded by two conditions. The spoilage limit dissolves as soon as money exists, because coin does not rot. The proviso does not dissolve, which is why it is still the contested part.">
+      Locke begins by claiming that you own
+      <phil-blank options="yourself,the land,nothing">yourself</phil-blank>,
+      so the work of your body is already yours to mix into things. He limits this with the proviso, which says enough and as
+      <phil-blank answer="good">good</phil-blank>
+      must be left for others, and with a second rule against taking more than you can use before it
+      <phil-blank options="spoils,sells,grows">spoils</phil-blank>.
+      The second limit stops mattering once there is money, because gold does not
+      <phil-blank answer="spoil|rot|decay|perish">spoil</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ PART 5 — WHAT THE ARGUMENT WAS USED FOR ============ -->
+
+  <!-- 20. Locke's own position -->
+  <phil-slide>
+    <h1>What the Argument Was Used For</h1>
+    <p class="lead">Locke was not a detached scholar writing about imaginary islands. He had a direct interest in colonial land.</p>
+    <ul reveal>
+      <li>He was secretary to the Lords Proprietors of Carolina and helped draft its constitutions.</li>
+      <li>Those constitutions granted every freeman "absolute power and authority over his negro slaves".</li>
+      <li>He held shares in the Royal African Company, which traded in enslaved people.</li>
+      <li>The same book also contains a fierce condemnation of slavery. Scholars have argued about that ever since.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. How the limit was made toothless -->
+  <phil-slide>
+    <h1>How the Limit Was Made Toothless</h1>
+    <p class="lead">Chapter Five talks about "the vacant places of America" and about people who leave land unenclosed.</p>
+    <ul reveal>
+      <li>The reasoning runs: unworked land is unowned, and land that is not enclosed and farmed counts as unworked.</li>
+      <li>Anyone already living there is then not an owner but an occupant, and the ground is free to take.</li>
+      <li>Because the land counted as empty, enough and as good was left by definition. A limit met automatically is not a limit.</li>
+      <li>Lawyers later hardened this into a doctrine with a name: <strong>terra nullius</strong>, nobody's land.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. MCQ 2 [correct: C] -->
+  <phil-slide>
+    <h1>Checkpoint: What Happened to the Proviso</h1>
+    <phil-mcq prompt="How did the argument about vacant land stop the proviso from doing any work?"
+              explain="Right, and this is the pattern worth carrying away. The proviso was never repealed or argued against. It was left in place and the facts were described so that it could not possibly be breached. A safeguard you can satisfy by choosing a description is not protecting anything.">
+      <phil-choice feedback="The proviso stayed exactly where it was. Nothing replaced it, which is part of what makes the case instructive.">It was replaced with a different rule about who arrives somewhere first.</phil-choice>
+      <phil-choice feedback="Enough and as good plainly was not left for the people already living there. The argument worked by not counting them as having anything to lose.">It was genuinely satisfied, because there really was enough for everyone involved.</phil-choice>
+      <phil-choice correct>The land was described as empty and unowned, so the condition was met automatically.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ PART 6 — ONE PREMISE, TWO POLITICS ============ -->
+
+  <!-- 23. The compare -->
+  <phil-slide>
+    <h1>One Premise, Two Politics</h1>
+    <p>Two traditions start from Locke's self-ownership and finish in opposite places. The proviso is where they part.</p>
+    <phil-compare>
+      <phil-side label="Right-libertarian" tag="Nozick">
+        <p>The world began unowned. You may take from it, and the only test is whether anyone ends up worse off than they would have been had nobody taken anything at all.</p>
+        <p class="cake">Since an economy with property makes almost everyone richer than a wild planet would, nearly every holding passes the test.</p>
+      </phil-side>
+      <phil-side label="Left-libertarian" tag="Paine, George, Otsuka">
+        <p>The world began owned by everyone in common. You may still take, because land left idle feeds nobody, but you have taken something that was not only yours.</p>
+        <p class="cake">So you keep what you built and pay the rest of humanity for the ground you built it on.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>Both hold that you own yourself. They differ on one question: what the world was before anyone touched it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Paine -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-paine.png" alt="Relic card: a globe resting on a strongbox whose open lid shows stacked coins, with a small chute running from the globe down into the box and a second chute running out of the box toward the frame edge">
+    <span class="phil-date">1797</span>
+    <h1>Paying the Rent</h1>
+    <p class="lead">Thomas Paine made the left-libertarian case a century after Locke, and attached an actual scheme to it.</p>
+    <blockquote class="source">
+      "The earth, in its natural uncultivated state was, and ever would have continued to be, the common property of the human race."
+      <span class="cite">&mdash; Thomas Paine, <em>Agrarian Justice</em>, 1797</span>
+    </blockquote>
+    <ul reveal>
+      <li>Improvers keep what they add. What they may not keep is the value of ground they did not make.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. POLL 5 -->
+  <phil-slide>
+    <h1>Decision Point: What Was the World Before Us?</h1>
+    <p class="muted">Not graded. Almost every argument about tax, land and inheritance runs back to this question.</p>
+    <phil-poll prompt="Before any person had touched it, what was the world?"
+               explain="Notice that this is not a question about facts. Everyone agrees the planet was there and nobody had worked it. The disagreement is about what that situation amounted to morally — whether an untouched world is unowned or jointly owned — and almost nothing in the facts can settle it. That is why the two libertarianisms can share a premise and still end up at opposite policies."
+      >
+      <phil-choice note="The right-libertarian starting point. If nobody had a claim, then taking wrongs nobody, and no debt is created by taking.">Unowned. Nobody had any claim until somebody did the work.</phil-choice>
+      <phil-choice note="The left-libertarian starting point. Everyone alive has an equal share in what nobody made, so taking more than your share creates a debt.">Owned by everybody equally, because nobody made it and we all arrived to it.</phil-choice>
+      <phil-choice note="The conventionalist answer, coming up shortly. Ownership is something people institute, so asking who owned an untouched world is asking the wrong question.">Neither. Ownership is not something the world comes with.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- ============ PART 7 — CAN YOU OWN AN IDEA? ============ -->
+
+  <!-- 26. Non-rivalry -->
+  <phil-slide>
+    <img slot="art" src="./assets/idea-orchard.png" alt="An orchard of trees heavy with glowing jade fruit where one tree has been enclosed by a tall iron fence while every other tree stands open and equally laden, and a small figure outside the fence looks in at the enclosed tree, which is no less full than before">
+    <h1>Can You Own an Idea?</h1>
+    <p class="lead">Everything so far has been about land, which has a hard edge and runs out. Ideas do neither.</p>
+    <ul reveal>
+      <li>If I use your field, you cannot. If I use your idea, you still have all of it.</li>
+      <li>Something that cannot be used up this way is called <strong>non-rivalrous</strong>.</li>
+      <li>So the proviso looks automatically satisfied. Learning a song leaves the song exactly as it was.</li>
+      <li>That is the strongest Lockean case there is for owning what you think of.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. The reversal -->
+  <phil-slide>
+    <h1>The Reversal</h1>
+    <p class="lead">The same feature runs the other way the moment owning means the right to stop other people.</p>
+    <ul reveal>
+      <li>A patent takes nothing from an infinite pool. It removes from common use something everyone could use before.</li>
+      <li>Yesterday anyone could use that method. Today one person may. That is less left for others, not more.</li>
+      <li>And every idea is built out of earlier ones, so Locke's claim that labour supplies almost all the value runs backwards here.</li>
+      <li>The question becomes how much of a shared inheritance one person may fence, and for how long.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. POLL 6 -->
+  <phil-slide>
+    <h1>Decision Point: Which Has the Weakest Case?</h1>
+    <p class="muted">Not graded, and the law disagrees with itself about all three.</p>
+    <phil-poll prompt="Which of these has the weakest claim to being something a person can own?"
+               explain="Courts have landed in roughly this order. Songs are protected almost everywhere. Mathematical truths are protected almost nowhere, on the ground that they are found rather than made. Gene sequences sat in between until 2013, when the US Supreme Court held that a naturally occurring sequence is a product of nature and not patentable merely for having been isolated. The Lockean question underneath is the same each time: how much of this did you actually make?"
+      >
+      <phil-choice note="The strongest case of the three. Nothing like your particular song existed before you wrote it, so the labour argument fits with little strain.">A song you wrote.</phil-choice>
+      <phil-choice note="The middle case. You did real and expensive work to find it, but the sequence itself was there in every cell before you looked.">A gene sequence you were the first to identify.</phil-choice>
+      <phil-choice note="The weakest case on the labour argument. The proof took enormous work, and the truth it establishes was true before you were born and would be true had you never lived.">A mathematical proof you discovered.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 29. Checkset 2 -->
+  <phil-slide>
+    <h1>Checkpoint: Ideas and the Proviso</h1>
+    <phil-checkset prompt="Check every statement that is TRUE."
+                   explain="Non-rivalry means many people can hold the same idea at once, which is why the proviso looks easy to satisfy. But ownership of an idea means the right to exclude, and excluding does take something from the commons. Both false statements come from stopping the argument halfway: the first forgets what owning means, and the second forgets that every system of intellectual property has fought hard about duration.">
+      <phil-statement correct>Using an idea does not use it up, so many people can hold the same one at once.</phil-statement>
+      <phil-statement correct>A patent removes from common use something that everyone could use before it existed.</phil-statement>
+      <phil-statement correct>Locke's claim that labour supplies most of a thing's value is harder to apply to ideas, which are built out of earlier ideas.</phil-statement>
+      <phil-statement>Because ideas cannot run out, owning one can never breach the proviso.</phil-statement>
+      <phil-statement>Copyright and patents last forever, so their duration raises no question.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ PART 8 — OR IS PROPERTY JUST USEFUL? ============ -->
+
+  <!-- 30. Bentham -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-bentham.png" alt="Relic card: a rolled property deed and a heavy statute book bound tightly together with a single iron chain, resting on bare boards with no ornament around them">
+    <h1>Or Is Property Just Useful?</h1>
+    <p class="lead">There is a completely different answer to the original question, and it does not use rights at all.</p>
+    <blockquote class="source">
+      "Property and law are born together and die together. Before laws were made there was no property; take away laws, and property ceases."
+      <span class="cite">&mdash; Jeremy Bentham, <em>Principles of the Civil Code</em></span>
+    </blockquote>
+    <ul reveal>
+      <li>On this view property is not discovered but invented, and it is judged by what it produces.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. Compare 2 -->
+  <phil-slide>
+    <h1>Two Ways to Justify the Same Fence</h1>
+    <phil-compare>
+      <phil-side label="A natural right" tag="Found">
+        <p>Property exists before any government, because working on a thing makes it yours. A state that seizes it does something wrong rather than merely changing a rule.</p>
+        <p class="cake">The proviso is a boundary you may not cross, even when crossing it would make everyone better off.</p>
+      </phil-side>
+      <phil-side label="A useful convention" tag="Made">
+        <p>Property exists because secure holdings produce more food, more building and less fighting than the alternatives. There is no natural right there to breach.</p>
+        <p class="cake">The proviso is worth keeping exactly as long as keeping it makes the system work better.</p>
+      </phil-side>
+    </phil-compare>
+    <ul reveal>
+      <li>Locke keeps sliding into the second. He argues that enclosure raises the common stock so far that a landless English labourer eats better than a king in America.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 32. Cloze 2 -->
+  <phil-slide>
+    <h1>Fill In: Three Answers to One Question</h1>
+    <p>Complete the account of where the argument ended up:</p>
+    <phil-cloze explain="The two libertarianisms share a premise and split on one question about the original world. Paine's answer keeps private improvement and adds a debt on the ground itself. Bentham refuses the question: on his account there is nothing to discover, because property is something law creates.">
+      Nozick and the left-libertarians both accept that you own
+      <phil-blank options="yourself,the land,the state">yourself</phil-blank>,
+      and disagree about whether the world began
+      <phil-blank answer="unowned|un-owned|owned by nobody">unowned</phil-blank>
+      or owned by everyone in common. Paine held that improvers keep what they add but owe
+      <phil-blank options="rent,tax,nothing">rent</phil-blank>
+      on ground they did not make. Bentham rejected the question, holding that property is created by
+      <phil-blank answer="law|laws|government|the state">law</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ PART 9 — THE SECOND VOTE ============ -->
+
+  <!-- 33. Real law -->
+  <phil-slide>
+    <h1>This Is Live Law</h1>
+    <p class="lead">The argument is not settled, and states are currently having it about actual worlds.</p>
+    <ul reveal>
+      <li>The Outer Space Treaty of 1967 says space and the celestial bodies are not subject to national appropriation.</li>
+      <li>Not by claim of sovereignty, not by use, not by occupation. That is a flat rejection of first-taking.</li>
+      <li>A United States statute of 2015 grants its citizens ownership of resources they extract out there.</li>
+      <li>The treaty forbids owning the ground. The statute permits owning what you dig out of it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34. The second vote -->
+  <phil-slide>
+    <h1>The Second Vote</h1>
+    <p>The ten thousand have landed. The forty have a fenced field, a mill, and a claim drawn around a hemisphere.</p>
+    <phil-poll prompt="How should the planet be divided?"
+               explain="Compare this with what you picked at the start. Whichever way you have moved, the useful thing is being able to say which argument moved you — the proviso, the tomato juice, the vacant-land case, or the thought that the whole question is about a convention rather than a right."
+      >
+      <phil-choice note="Locke's own answer, with the proviso read weakly. It is also, near enough, how every frontier in human history was actually settled.">The forty keep what they fenced. The rest is open to whoever works it next.</phil-choice>
+      <phil-choice note="Paine's answer. The improvements stay with the improvers, and the ground they sit on is charged for.">The forty keep what they worked and pay the newcomers for the ground.</phil-choice>
+      <phil-choice note="The common-ownership answer. It avoids the whole first-taker problem and creates a new one: somebody has to run the allocation.">Nobody owns any of it. The land is held in common and shared out by agreement.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 35. Beliefs review + close -->
+  <phil-slide>
+    <img slot="art" src="./assets/landing-site.png" alt="A single small landing craft on an endless plain of waist-high violet and magenta alien vegetation, five or six tiny human figures standing near it dwarfed by the landscape, rolling hills receding to a far horizon under an enormous pale sky with a low amber sun">
+    <h1>Where You Stand Now</h1>
+    <p>Here is where you stood before any of the arguments. Re-rate each statement and see what moved.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <p>Seven words have been carrying the weight the whole way: <em>enough, and as good, left in common for others</em>. Almost everyone agrees to them. Almost nobody agrees about what they mean, and the difference decides who gets a world.</p>
+    <p class="muted">Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
