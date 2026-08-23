@@ -42,6 +42,7 @@ const PhilSfx = {
   },
   correct()  { this._play([[660, 0, 0.15], [880, 0.09, 0.2]]); },
   wrong()    { this._play([[220, 0, 0.18, 'triangle', 0.07], [175, 0.1, 0.22, 'triangle', 0.07]]); },
+  noted()    { this._play([[494, 0, 0.14, 'sine', 0.09]]); },   // neutral: a position was recorded, not graded
   complete() { this._play([[523, 0, 0.18], [659, 0.12, 0.18], [784, 0.24, 0.18], [1047, 0.36, 0.45]]); },
 };
 
@@ -58,6 +59,7 @@ class ProgressStore {
     this.correct = new Set(data.correct || []);
     this.completed = !!data.completed;
     this.beliefs = data.beliefs || {};      // ungraded Likert ratings { key: {statements, pre, post} }
+    this.polls = data.polls || {};          // ungraded forced-choice picks { key: choiceIndex }
   }
   save() {
     localStorage.setItem(this.key, JSON.stringify({
@@ -65,6 +67,7 @@ class ProgressStore {
       correct: [...this.correct],
       completed: this.completed,
       beliefs: this.beliefs,
+      polls: this.polls,
     }));
   }
   reset() { localStorage.removeItem(this.key); }
@@ -420,6 +423,68 @@ class PhilMcq extends PhilWidget {
   }
 }
 
+/* ---------- <phil-poll> : ungraded forced-choice ----------
+   Records where a student stands without grading it. No choice is
+   `correct`; picking any one satisfies completion (like <phil-beliefs>)
+   and the ★ tally is untouched. Use this — not <phil-mcq> — whenever the
+   question is "what would you do?" and the honest answer is that
+   reasonable people divide.
+
+   <phil-poll prompt="What do you do?" explain="Shown after any pick.">
+     <phil-choice note="Where this position leads.">Option A</phil-choice>
+     <phil-choice note="...">Option B</phil-choice>
+   </phil-poll>
+------------------------------------------------------------------ */
+class PhilPoll extends HTMLElement {
+  connectedCallback() {
+    if (this._init) return; this._init = true;
+    this.lesson = this.closest('phil-lesson');
+    this.store = this.lesson?.store;
+    if (this.lesson) this.lesson._pollSeq = (this.lesson._pollSeq || 0) + 1;
+    this.key = this.getAttribute('id') || `poll${this.lesson?._pollSeq || 1}`;
+    this.classList.add('phil-widget', 'phil-poll');
+    this.build();
+  }
+  build() {
+    const choices = [...this.querySelectorAll('phil-choice')];
+    this.innerHTML = '';
+    this.append(el('p', 'phil-widget__prompt', this.getAttribute('prompt') || ''));
+    const list = el('div', 'phil-options');
+    this._rows = choices.map((c, i) => {
+      const row = el('label', 'phil-choice');
+      const input = el('input'); input.type = 'radio'; input.name = `${this.key}-poll`;
+      row.append(input, el('span', null, c.innerHTML));
+      row._note = c.getAttribute('note') || '';
+      input.onchange = () => this._pick(i);
+      list.append(row);
+      return row;
+    });
+    this.append(list);
+    this._fb = el('div', 'phil-feedback');
+    this.append(this._fb);
+    this.taskId = this.lesson?.registerTask();
+
+    const saved = this.store?.polls?.[this.key];
+    if (saved != null && this._rows[saved]) {
+      this._restoring = true;
+      this._rows[saved].querySelector('input').checked = true;
+      this._pick(saved);
+      this._restoring = false;
+    }
+  }
+  _pick(i) {
+    this._rows.forEach(r => r.classList.remove('picked'));
+    this._rows[i].classList.add('picked');
+    if (this.store) { this.store.polls[this.key] = i; this.store.save(); }
+    this.lesson?.setTaskDone(this.taskId, true);
+    const note = this._rows[i]._note;
+    const ex = this.getAttribute('explain') || '';
+    this._fb.className = 'phil-feedback show note';
+    this._fb.innerHTML = `<strong>◆ Position recorded</strong>${note}${note && ex ? ' ' : ''}${ex}`;
+    if (!this._restoring) PhilSfx.noted();
+  }
+}
+
 /* ---------- <phil-checkset> : check all TRUE statements ----------
    <phil-checkset prompt="..." explain="...">
      <phil-statement correct>A true one</phil-statement>
@@ -750,6 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ---------- register ---------- */
 customElements.define('phil-lesson', PhilLesson);
 customElements.define('phil-mcq', PhilMcq);
+customElements.define('phil-poll', PhilPoll);
 customElements.define('phil-checkset', PhilCheckset);
 customElements.define('phil-cloze', PhilCloze);
 customElements.define('phil-branch', PhilBranch);

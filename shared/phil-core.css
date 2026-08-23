@@ -186,6 +186,47 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
 .phil-modal__box p { font-size: 16px; line-height: 1.5; }
 .phil-modal__actions { display: flex; gap: 12px; justify-content: flex-end; margin-top: 20px; }
 
+/* ---------------------------------------------------------------------
+   Un-upgraded widgets.
+
+   A <phil-*> element whose class never registered is just an inline box,
+   so the browser dumps its authored children onto the slide as loose run-on
+   text and drops the prompt entirely (it lives in an attribute). That is what
+   a stale cached phil-core.js looks like — the lesson references a widget the
+   cached engine has never heard of.
+
+   Modules are deferred, so every widget is briefly undefined on a normal load.
+   Hide the raw children immediately (no flash, content just appears a moment
+   later), but hold the warning back 3s so it only ever shows when the engine
+   genuinely didn't arrive. Bump the ?v= on the engine URL when adding a widget.
+   --------------------------------------------------------------------- */
+phil-mcq:not(:defined), phil-poll:not(:defined), phil-checkset:not(:defined),
+phil-cloze:not(:defined), phil-compare:not(:defined), phil-branch:not(:defined),
+phil-beliefs:not(:defined), phil-beliefs-review:not(:defined) { display: block; }
+
+phil-mcq:not(:defined) > *, phil-poll:not(:defined) > *,
+phil-checkset:not(:defined) > *, phil-cloze:not(:defined) > *,
+phil-compare:not(:defined) > *, phil-branch:not(:defined) > *,
+phil-beliefs:not(:defined) > *, phil-beliefs-review:not(:defined) > * { display: none; }
+
+phil-mcq:not(:defined)::after, phil-poll:not(:defined)::after,
+phil-checkset:not(:defined)::after, phil-cloze:not(:defined)::after,
+phil-compare:not(:defined)::after, phil-branch:not(:defined)::after,
+phil-beliefs:not(:defined)::after, phil-beliefs-review:not(:defined)::after {
+  content: "\26A0 This activity didn't load. Hard-refresh the page \2014 Ctrl+Shift+R (\2318\21E7R on a Mac).";
+  display: block;
+  visibility: hidden;                       /* ...until the delay below elapses */
+  animation: phil-undefined 1ms linear 3s forwards;
+  margin: 18px 0;
+  padding: 14px 16px;
+  background: #3a1620;
+  border: 3px solid var(--bad);
+  color: var(--bad);
+  font-size: .85em;
+  line-height: 1.5;
+}
+@keyframes phil-undefined { to { visibility: visible; } }
+
 /* =====================================================================
    Widgets
    ===================================================================== */
@@ -204,6 +245,7 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
 .phil-feedback.show { display: block; }
 .phil-feedback.good { background: #133a24; color: var(--good); }
 .phil-feedback.bad  { background: #3a1620; color: var(--bad); }
+.phil-feedback.note { background: #16283a; color: var(--accent-3); }   /* ungraded: recorded, not judged */
 .phil-feedback strong { font-family: var(--pixel); font-size: 10px; display: block; margin-bottom: 6px; }
 
 /* MCQ + checkset choices */
@@ -220,6 +262,7 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
 .phil-choice input { width: 18px; height: 18px; accent-color: var(--accent-3); flex: none; }
 .phil-choice.correct { background: #133a24; border-color: var(--good); }
 .phil-choice.wrong   { background: #3a1620; border-color: var(--bad); }
+.phil-choice.picked  { background: #16283a; border-color: var(--accent-3); }   /* poll: your position, not a verdict */
 .phil-choice.locked { cursor: default; pointer-events: none; }
 
 /* Cloze */

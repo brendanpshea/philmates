@@ -88,7 +88,8 @@ function rewriteIndex(html) {
     .replace(/\.\.\/\.\.\/\.\.\/shared\//g, 'shared/')
     // load the SCORM adapter before the engine so it can install the store
     .replace(
-      /(<script[^>]*\bsrc="shared\/phil-core\.js"[^>]*><\/script>)/,
+      // tolerate the ?v= cache-buster on the engine URL (see AUTHORING.md)
+      /(<script[^>]*\bsrc="shared\/phil-core\.js(?:\?v=\d+)?"[^>]*><\/script>)/,
       '<script type="module" src="shared/scorm-api.js"></script>\n  $1'
     );
 }

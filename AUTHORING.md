@@ -66,6 +66,23 @@ clean slide 1. Handy for re-running a lesson live in class.
 ```
 Mark the right option with `correct`. Students can retry until right.
 
+### Where do you stand? — `<phil-poll>` (ungraded)
+For "what would you do?" moments where reasonable people genuinely divide.
+Nothing is marked `correct`; picking any option satisfies completion (like
+`<phil-beliefs>`) and the ★ tally is untouched.
+```html
+<phil-poll prompt="You stand beside the switch lever. What do you do?"
+           explain="Shown after any pick — the discussion.">
+  <phil-choice note="Where this position leads.">Pull the switch</phil-choice>
+  <phil-choice note="...">Do nothing</phil-choice>
+</phil-poll>
+```
+**Use this, not `<phil-mcq>`, for moral choices.** An MCQ blocks completion until
+the student picks the answer you marked `correct` — so grading a genuine dilemma
+forces students who hold a defensible minority view to click something they don't
+believe in order to finish. Reserve `<phil-mcq>` for questions that really do have
+a right answer (what a theory claims, why two cases differ, what a protocol says).
+
 ### Check the true ones — `<phil-checkset>`
 ```html
 <phil-checkset prompt="Check every TRUE statement." explain="...">
@@ -102,8 +119,9 @@ For contrasting two positions (e.g. Act vs. Rule). Each `<phil-side>` takes a
 </phil-compare>
 ```
 A `<p class="cake">` gets a dessert marker and accent border — use it for the
-concrete example. Two sides stack on narrow screens. (For three positions, add a
-third `<phil-side>`; the VS badge only appears with exactly two.)
+concrete example. `<p class="case">` is the same thing with a 🩺 marker and a blue
+border, for clinical/case examples. Two sides stack on narrow screens. (For three
+positions, add a third `<phil-side>`; the VS badge only appears with exactly two.)
 
 ### Belief probe — `<phil-beliefs>` + `<phil-beliefs-review>` (ungraded)
 A before/after attitude check ("anticipation guide"). Place `<phil-beliefs>` near
@@ -141,6 +159,29 @@ from the linear sequence and the completion count, and automatically gets a
 "◀ Back to lesson" button. Keep most lessons linear; use branches only for
 genuinely optional side content.
 
+## When you add a widget to the engine: bump `?v=`
+
+Lessons load the engine as `../../../shared/phil-core.js?v=2`. That query string
+is a cache-buster, and it matters: a browser holding an older `phil-core.js` has
+never heard of your new element, so it never upgrades — the widget's authored
+children spill onto the slide as run-on text and the `prompt` attribute vanishes
+entirely. Students see a broken slide and have no idea why.
+
+So whenever you add or rename a `<phil-*>` element in `shared/phil-core.js`,
+bump the number everywhere in one go:
+
+```bash
+# 2 -> 3, across all lessons and the homepage
+grep -rl 'phil-core\.\(js\|css\)?v=' lessons/*/*/index.html index.html \
+  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=3/g'
+```
+
+As a backstop, `phil-core.css` hides the children of any `<phil-*>` element that
+never registered and — after a 3-second delay, so it never flashes during a
+normal deferred-module load — shows a "hard-refresh this page" message in its
+place. That turns a silent mess into a legible failure, but it is a safety net,
+not a substitute for bumping the version.
+
 ## Quiz quality (auto-checked)
 
 Multiple-choice questions leak answers if you're not careful. Two tells matter most:
@@ -168,6 +209,20 @@ Writing tips that keep you passing it:
 - Make distractors *plausible* (a common misconception, or another theory's
   answer) rather than obviously wrong throwaways.
 - Deliberately alternate which slot holds the correct choice as you write.
+
+## Writing for the projector
+
+Slides scroll if they overflow, but a slide that scrolls in class is a slide that
+failed. Two habits keep you inside the frame:
+
+- **Bullets around 70–120 characters.** Past ~170 a bullet wraps to four or five
+  lines, and on a `slot="art"` slide the text column is only ~46 characters wide,
+  so it wraps even harder. Check with:
+  `node tools/check-density.mjs` (add `--strict` for CI).
+- **Four bullets per slide, maximum.** If you have six, you have two slides.
+
+Same rule for any custom widget you write: nothing below 15px. The reference
+sizes are in `lessons/bioethics/trolley-and-triage/assets/switchboard.js`.
 
 ## Art & style
 
