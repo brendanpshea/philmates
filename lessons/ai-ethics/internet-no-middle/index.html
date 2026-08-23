@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Network With No Middle · PhilMates</title>
+  <meta name="description" content="How the internet actually works and where its shape came from — packet switching, the end-to-end principle, open protocols, DNS, the Web and the advertising bargain — and how each engineering choice was made by somebody's values and then went on to shape everybody's.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=2">
+  <script type="module" src="../../../shared/phil-core.js?v=2"></script>
+  <script type="module" src="./assets/packets.js"></script>
+  <style>
+    blockquote.source {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(17px, 1.9vw, 21px);
+      line-height: 1.5;
+      background: var(--panel);
+      border-left: 4px solid var(--accent-3);
+      padding: 12px 16px;
+      margin: 14px 0;
+    }
+    blockquote .cite {
+      display: block;
+      margin-top: 8px;
+      font-family: var(--pixel);
+      font-style: normal;
+      font-size: 10px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<phil-lesson id="internet-no-middle" title="The Network With No Middle" subject="How the Internet Was Built — and What It Built">
+
+  <!-- ============ PART 0 — WHAT YOU ARE ACTUALLY USING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/imp-room.png" alt="A university computer room in 1969: a refrigerator-sized grey steel cabinet covered in small round indicator lamps and toggle switches, a teletype terminal on a metal desk beside it, and a thick orange cable running from the cabinet across the floor and out through a hole in the cinderblock wall">
+    <h1>The Network With No Middle</h1>
+    <p class="lead">Nobody runs the internet. There is no control room, no master switch, and no company that owns it.</p>
+    <p>That is not an accident. It is the result of a handful of decisions made by particular people, for particular reasons, mostly before 1975.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The two directions -->
+  <phil-slide>
+    <h1>Two Things Happen at Once</h1>
+    <p class="lead">Every piece of the internet was designed by someone who wanted something. And every piece, once built, changed what everybody else could want.</p>
+    <ul reveal>
+      <li>Soldiers, scientists, and people who wanted to play games all pushed the design in different directions.</li>
+      <li>What they built then decided which things would be easy to do later, and which would be nearly impossible.</li>
+      <li>Nobody voted on any of it. The choices were technical, and the consequences were not.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. Internet vs Web -->
+  <phil-slide>
+    <h1>The Internet Is Not the Web</h1>
+    <p>These two words get used as if they mean the same thing. They do not, and almost nothing else makes sense until the difference is clear.</p>
+    <ul reveal>
+      <li>The <strong>internet</strong> is the wiring. Its whole job is moving small chunks of data between machines.</li>
+      <li>The <strong>web</strong> is one thing people built on top of that wiring, in 1989, twenty years later.</li>
+      <li>Email, video calls, game servers and messaging apps also run on the internet and are not the web.</li>
+      <li>The wiring does not know or care which of them it is carrying.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Belief probe -->
+  <phil-slide>
+    <h1>Six Statements, No Right Answers</h1>
+    <p>Say where you stand now. You will see all six again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>A well-designed technology is neutral, and only its uses can be good or bad.</phil-statement>
+      <phil-statement>Something no single person controls is safer than something a government controls.</phil-statement>
+      <phil-statement>A network should be allowed to deliver urgent traffic ahead of entertainment.</phil-statement>
+      <phil-statement>Inventors deserve to be paid when their invention makes other people rich.</phil-statement>
+      <phil-statement>Being tracked online is a fair price for services that cost you nothing.</phil-statement>
+      <phil-statement>The people who write the code end up making rules the rest of us live under.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ PART 1 — NO CENTRE ============ -->
+
+  <!-- 5. The problem -->
+  <phil-slide>
+    <h1>Decision One: Build It With No Centre</h1>
+    <p class="lead">In the early 1960s, sending a message meant opening a line and holding it. A telephone call reserved a physical path from end to end for as long as you talked.</p>
+    <ul reveal>
+      <li>That worked for voices and was hopeless for computers, which send in short bursts and then go quiet.</li>
+      <li>It also meant every call passed through a switching centre. Break the centre and everything stops.</li>
+      <li>Computers were rare and expensive. A university might have one, and researchers elsewhere could not touch it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. The choice + widget -->
+  <phil-slide>
+    <h1>The Fix: Cut the Message Up</h1>
+    <p>Instead of reserving a line, chop each message into small numbered pieces called <strong>packets</strong>, and let every piece find its own way. Send a message below, then start breaking things.</p>
+    <phil-packet-router prompt="The left circle is sending. The right circle is receiving. Everything between them is just machines that pass packets along."></phil-packet-router>
+  </phil-slide>
+
+  <!-- 7. How it works -->
+  <phil-slide>
+    <h1>What Just Happened</h1>
+    <p class="lead">Each packet carries the address it is going to, the address it came from, and its number in the sequence.</p>
+    <ul reveal>
+      <li>A machine that passes packets along is a <strong>router</strong>. It looks at the address and picks a direction.</li>
+      <li>No router knows the whole route. It only knows which neighbour is a step closer.</li>
+      <li>Packets from one message can travel completely different paths and arrive out of order.</li>
+      <li>The receiving machine puts them back in order using the numbers, and asks again for any that never came.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Whose values -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-baran.png" alt="Relic card: a torn cream document lying behind a green diamond-shaped mesh of linked nodes, with two orange fragments of the document separated out and sitting apart from the rest">
+    <span class="phil-date">1964 / 1969</span>
+    <h1>Two Groups Wanted This, for Different Reasons</h1>
+    <p class="lead">Packet switching was worked out twice, independently, by people with almost nothing in common.</p>
+    <ul reveal>
+      <li>Paul Baran, at a defence research company, wanted communication that survived losing parts of itself.</li>
+      <li>Donald Davies, at a British physics lab, wanted computers to stop wasting expensive line time.</li>
+      <li>Survivability and thrift are different values, and both pointed at the same shape.</li>
+      <li>ARPANET, the first real network, was funded by the US defence department and built to share scarce computers.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. MCQ: the nuclear myth [correct: C] -->
+  <phil-slide>
+    <h1>Checkpoint: The Nuclear War Story</h1>
+    <p>People often say the internet was built so it could survive a nuclear attack. That story is half right, and the half that is wrong is the interesting half.</p>
+    <phil-mcq prompt="What is the most accurate account of the connection?"
+              explain="Right. Baran's survivable-communication work and the ARPANET project were separate, years apart, and had different funders and goals. What they shared was an engineering answer. The popular story welds them together and loses the useful point: two unrelated sets of values can push toward the same design.">
+      <phil-choice feedback="The story is not simply false. Baran really was working on communication that could survive an attack, and that work really did help establish packet switching.">The story is invented. Nobody working on these systems ever thought about surviving an attack.</phil-choice>
+      <phil-choice feedback="ARPANET was funded by a defence agency, but its stated purpose was letting researchers share scarce computers, not withstanding a strike.">The story is exact. ARPANET was commissioned and built specifically to keep working during a nuclear war.</phil-choice>
+      <phil-choice correct>Baran's survivability work and ARPANET were separate projects that arrived at the same technique.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 10. Made easy / made hard -->
+  <phil-slide>
+    <h1>What Having No Centre Did</h1>
+    <phil-compare>
+      <phil-side label="What it made easy" tag="Consequence">
+        <p>There is no switchboard to seize, no headquarters to raid, and no single machine whose failure stops the network. Damage routes around itself, whether the damage is a broken cable or a government.</p>
+        <p class="cake">A country can block its own connections to the outside, and has to keep doing it, machine by machine, forever.</p>
+      </phil-side>
+      <phil-side label="What it made hard" tag="Consequence">
+        <p>There is also nobody in charge. No one can be required to check that traffic is safe, remove something harmful, or take responsibility when the network carries an attack.</p>
+        <p class="cake">Nobody can switch off a flood of malicious traffic centrally, because there is no centre at which to switch it off.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- ============ PART 2 — A DUMB NETWORK ============ -->
+
+  <!-- 11. The problem -->
+  <phil-slide>
+    <h1>Decision Two: Make the Network Stupid</h1>
+    <p class="lead">Once packets worked, a harder question arrived. How clever should the network itself be?</p>
+    <ul reveal>
+      <li>The telephone companies had an answer. Put the intelligence in the network and sell services from it.</li>
+      <li>On that model, a new kind of communication needs the network's owner to build it and agree to it.</li>
+      <li>The researchers building ARPANET chose the opposite, and wrote down why.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. End to end -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-endtoend.png" alt="Relic card: a long plain grey pipe running across the frame, completely dark and featureless along its whole length, with a bright intricate glowing lamp mechanism mounted at each open end">
+    <span class="phil-date">1981</span>
+    <h1>Smart Ends, Dumb Middle</h1>
+    <p class="lead">The rule is called the <strong>end-to-end principle</strong>. The network moves packets and does nothing else. Everything clever happens on the machines at the two ends.</p>
+    <ul reveal>
+      <li>The network does not know whether a packet is part of an email, a film, or a game.</li>
+      <li>It cannot know, and the design says it should not need to.</li>
+      <li>So inventing a new kind of thing to do online needs nobody's permission and no change to the wiring.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Consequences -->
+  <phil-slide>
+    <h1>What a Stupid Network Did</h1>
+    <p class="lead">Almost everything you use exists because of this one decision.</p>
+    <ul reveal>
+      <li>The web, streaming video, online games and messaging were all added by people who never asked a network owner.</li>
+      <li>That is called <strong>permissionless innovation</strong>, and it is rare. Most industries do not work this way.</li>
+      <li>The cost is that the network cannot tell urgent traffic from trivial traffic, because it cannot tell them apart at all.</li>
+      <li>A surgeon's video link and a film get the same indifferent treatment.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. POLL -->
+  <phil-slide>
+    <h1>Decision Point: Should the Wiring Play Favourites?</h1>
+    <p class="muted">Not graded. This is a live argument, and it is usually had under the name <em>net neutrality</em>.</p>
+    <phil-poll prompt="Should network owners be allowed to deliver some traffic faster than other traffic?"
+               explain="The awkward part is that the same property produces both results. A network that cannot tell an emergency from a cat video is also a network that cannot quietly slow down a competitor, or charge a new service for the right to work properly. You cannot keep one without keeping the other."
+      >
+      <phil-choice note="The case for it is real. Some traffic genuinely matters more, and a network unable to act on that is wasting a capability it already has.">Yes. Urgent things should arrive first, and the network could easily arrange it.</phil-choice>
+      <phil-choice note="This protects permissionless innovation. If owners can pick winners, a new service can be throttled before anyone has heard of it.">No. Once owners can choose, they will choose in their own interest.</phil-choice>
+      <phil-choice note="The middle position, and the hardest to write into a rule. Somebody has to define which categories count, and that somebody gains real power.">Only for a short list of emergency uses, fixed by law and open to inspection.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- ============ PART 3 — THE USERS REWROTE IT ============ -->
+
+  <!-- 15. Email -->
+  <phil-slide>
+    <h1>Nobody Ordered Email</h1>
+    <p class="lead">ARPANET was funded so researchers could run programs on distant computers. Within a few years, that is not mainly what it was doing.</p>
+    <ul reveal>
+      <li>In 1971 Ray Tomlinson wrote a small program to leave messages for people on other machines.</li>
+      <li>It was a side project. Nobody had asked for it and it was in nobody's plan.</li>
+      <li>He needed a character to separate the person from the machine, and picked <strong>@</strong> because it was unused.</li>
+      <li>Within two years, messages between people were most of the traffic on the network.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Games -->
+  <phil-slide>
+    <img slot="art" src="./assets/spacewar-terminal.png" alt="A dim laboratory at night: a large grey minicomputer cabinet with a round radar-style screen showing small glowing green ship shapes on a grid, and three young people gathered close around it, each holding a hand-made control box wired to the machine">
+    <h1>And Nobody Ordered the Games</h1>
+    <p class="lead">In 1962, when computers were expensive machines for serious calculation, students at MIT used one to build <em>Spacewar!</em></p>
+    <ul reveal>
+      <li>It spread to almost every research machine of its type, because people who saw it wanted to play it.</li>
+      <li>It helped make the case that computers were for interacting with, not just for submitting jobs to.</li>
+      <li>In 1978 two students in Essex built a shared world players could all be inside at once, and called it a MUD.</li>
+      <li>Every online game with other people in it is descended from that experiment.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. The reverse direction -->
+  <phil-slide>
+    <h1>The Users Changed What It Was For</h1>
+    <p class="lead">A network built for sharing expensive machines turned into a network for talking and playing, and the people who funded it did not decide that.</p>
+    <ul reveal>
+      <li>This only happened because of decision two. Nobody had to approve email or games.</li>
+      <li>The founders' values shaped the architecture, and then the users' values reshaped its purpose.</li>
+      <li>Both directions were running the whole time, and neither group was in charge of the other.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Cloze 1 -->
+  <phil-slide>
+    <h1>Fill In: The First Two Decisions</h1>
+    <p>Complete the summary so far:</p>
+    <phil-cloze explain="These are the two decisions everything else rests on. Cutting messages into packets removed the centre, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
+      A message is cut into numbered pieces called
+      <phil-blank options="packets,parcels,programs">packets</phil-blank>,
+      and each piece finds its own way, so there is no
+      <phil-blank answer="centre|center|middle">centre</phil-blank>
+      whose loss would stop the message. The network was also built to know
+      <phil-blank options="nothing,everything,a little">nothing</phil-blank>
+      about what it is carrying, which is why Tomlinson could add email without asking anyone's
+      <phil-blank answer="permission|approval|consent">permission</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ PART 4 — NOBODY OWNS THE RULES ============ -->
+
+  <!-- 19. What a protocol is -->
+  <phil-slide>
+    <h1>Decision Three: Publish the Rules, Own Nothing</h1>
+    <p class="lead">For two machines to exchange packets they must agree in advance on exactly what the bytes mean. A written agreement like that is a <strong>protocol</strong>.</p>
+    <ul reveal>
+      <li>A protocol is not a program. It is a document saying what a correct machine must do.</li>
+      <li>Anyone can read one, and anyone can write software that obeys it.</li>
+      <li>The documents are called RFCs, short for Request for Comments, which is how they were meant to sound.</li>
+      <li>The first was written in 1969 by a graduate student who worried he was overstepping.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Whose values -->
+  <phil-slide>
+    <h1>Where That Habit Came From</h1>
+    <p class="lead">The people writing these rules were academics, and they did what academics do. They published, argued in public, and let anyone use the result.</p>
+    <ul reveal>
+      <li>Their working motto was <em>rough consensus and running code</em>. Show something that works, then argue.</li>
+      <li>No government set the standards, no company owned them, and no fee was charged.</li>
+      <li>A rival set of standards, designed properly by international committee, lost. It was slower and needed permission.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. MCQ 2 [correct: A] -->
+  <phil-slide>
+    <h1>Checkpoint: Open Rules</h1>
+    <phil-mcq prompt="Why does it matter that the internet's protocols are public documents nobody owns?"
+              explain="Right. Because the rules are public and free, anyone can build a machine or a program that joins in, without a licence and without asking. That is the reason there are thousands of competing browsers, mail programs and servers rather than one approved product.">
+      <phil-choice correct>Anyone can build something that joins the network without needing a licence or permission.</phil-choice>
+      <phil-choice feedback="Public rules are not automatically more secure. Several early protocols had serious weaknesses, and being readable is what let people find them.">Public rules are harder to attack, because attackers cannot see how the system works.</phil-choice>
+      <phil-choice feedback="Openness did not make the rules easy to change. Anything used everywhere becomes very hard to alter, precisely because everyone depends on it.">Public rules can be rewritten quickly whenever a better idea comes along.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ PART 5 — NAMES ============ -->
+
+  <!-- 22. DNS -->
+  <phil-slide>
+    <img slot="art" src="./assets/dns-catalog.png" alt="An enormous library hall filled floor to ceiling with wooden card-catalogue drawers stretching into the distance, a single clerk on a rolling ladder holding one drawer open, and one large brass key hanging on a hook by the door">
+    <h1>Decision Four: Somebody Has to Keep the Names</h1>
+    <p class="lead">Machines find each other by number. People cannot remember numbers, so names had to be attached to them.</p>
+    <ul reveal>
+      <li>At first one person kept a single file listing every machine on the network, and posted updates.</li>
+      <li>That stopped working, so the job was split into a tree of name servers, called the <strong>DNS</strong>.</li>
+      <li>Type a name and your machine asks the tree what number goes with it, then connects to that number.</li>
+      <li>The tree has a top. Someone has to decide what is in it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. The chokepoint -->
+  <phil-slide>
+    <h1>The One Part With a Middle</h1>
+    <p class="lead">Everything else about the internet was built to have no centre. Names are the exception, and it is the exception that gets used.</p>
+    <ul reveal>
+      <li>A name can be taken away. The machine stays exactly where it was, and nobody can find it.</li>
+      <li>Governments block sites by ordering name servers to stop answering, which is far easier than blocking packets.</li>
+      <li>The organisation that oversees the top of the tree is one of the few places the internet can be leaned on.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. POLL -->
+  <phil-slide>
+    <h1>Decision Point: Who Should Hold the Keys?</h1>
+    <p class="muted">Not graded. This one is argued about at the United Nations, seriously and often.</p>
+    <phil-poll prompt="The name system needs somebody in charge of it. Who should that be?"
+               explain="Notice what makes this hard. Every answer puts the keys in somebody's hands, because the name system genuinely needs a top. The disagreement is not about whether power should exist there. It is about who is least dangerous holding it, and there is no answer that gives it to nobody."
+      >
+      <phil-choice note="Roughly the current arrangement. Its defenders say it keeps names out of any one government's reach. Its critics say it is not accountable to anyone in particular.">An independent non-profit, answering to engineers and users rather than to states.</phil-choice>
+      <phil-choice note="The position several governments argue for. It is more accountable in theory, and it also gives every government a lever it does not currently have.">An international body of governments, in which each country gets a say.</phil-choice>
+      <phil-choice note="The engineer's instinct, and the hardest to build. Schemes that spread naming across many machines exist, and none has replaced the tree.">Nobody. Names should be spread out so that no single group can take one away.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- ============ PART 6 — THE WEB ============ -->
+
+  <!-- 25. Berners-Lee -->
+  <phil-slide>
+    <img slot="art" src="./assets/cern-cube.png" alt="A cluttered office desk in a physics laboratory around 1990: a matte black cube-shaped computer workstation showing plain glowing green rectangles on its screen, stacks of paper and technical binders, a coffee cup, cables trailing off the desk edge, and a window behind showing snow-covered mountains">
+    <span class="phil-date">1989</span>
+    <h1>Decision Five: A Layer for Documents</h1>
+    <p class="lead">Twenty years after ARPANET, a physics laboratory in Switzerland had a filing problem. Thousands of scientists, all with documents on incompatible machines.</p>
+    <ul reveal>
+      <li>Tim Berners-Lee proposed a system where any document could point directly at any other document.</li>
+      <li>His manager's written response was that it was vague, but exciting.</li>
+      <li>It was built for physicists sharing papers. Nothing about shops, videos or arguing with strangers.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. How it works -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-berners-lee.png" alt="Relic card: an open document page with a single glowing thread rising out of one line of it, arcing across the frame and entering a second document page in the far corner, with fainter threads hinting outward beyond the frame edges">
+    <h1>Three Small Inventions</h1>
+    <p class="lead">The web is not complicated. It is three ideas that fit together.</p>
+    <ul reveal>
+      <li>A <strong>URL</strong> is an address that names one document anywhere in the world.</li>
+      <li><strong>HTTP</strong> is the protocol for asking a machine to send you the document at that address.</li>
+      <li><strong>HTML</strong> is the format the document arrives in, including its links to other addresses.</li>
+      <li>A link only needs the sender's permission, never the receiver's. That asymmetry is what let it grow.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. POLL: the patent -->
+  <phil-slide>
+    <h1>Decision Point: Should They Have Owned It?</h1>
+    <p>In April 1993 CERN signed a document putting the web's technology into the public domain. Anyone could use it, build on it, and sell things with it, forever, for nothing.</p>
+    <phil-poll prompt="CERN could have patented the web and charged for it. Should they have?"
+               explain="This is a rare case where we can see quite a lot of the counterfactual. Competing systems of the period did charge licence fees, and none of them is what you are reading this on. The awkward part of the free answer is that the value did not vanish — it went to companies built on top, and neither Berners-Lee nor CERN received any of it."
+      >
+      <phil-choice note="Hard to argue with the result. A licence fee, however small, would have meant asking permission, and the thing that made the web spread was that nobody had to.">No. Charging for it would have killed it, and something worse would have won instead.</phil-choice>
+      <phil-choice note="The fairness case. Enormous fortunes were built on this, and the public laboratory that funded the work got nothing back from any of them.">Yes. Public money paid for it, and the public should have shared in what it earned.</phil-choice>
+      <phil-choice note="A real option at the time, and used elsewhere. Some licences demand only that anything built on the work stays open too.">They should have kept it free to use but attached conditions to keep it open.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 28. Checkset: internet vs web -->
+  <phil-slide>
+    <h1>Checkpoint: Which Layer Is Which?</h1>
+    <phil-checkset prompt="Check every statement that is TRUE."
+                   explain="The internet is the packet-moving layer from 1969, and the web is one thing built on top of it in 1989. Email is older than the web and is not part of it. A game or a video call uses the internet without touching the web at all. Getting this order right is what makes the rest of the story make sense.">
+      <phil-statement correct>The internet existed for about twenty years before the web was invented.</phil-statement>
+      <phil-statement correct>Email travels over the internet but is not part of the web.</phil-statement>
+      <phil-statement correct>A video call uses the internet without using the web.</phil-statement>
+      <phil-statement>The web is the wiring, and the internet is the set of pages that runs on it.</phil-statement>
+      <phil-statement>Turning off the web would stop packets from moving between machines.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ PART 7 — WHO PAYS ============ -->
+
+  <!-- 29. The problem of memory -->
+  <phil-slide>
+    <h1>Decision Six: Give It a Memory</h1>
+    <p class="lead">HTTP was designed to forget. You ask for a document, the machine sends it, and the conversation is over. It has no idea who you are next time.</p>
+    <ul reveal>
+      <li>That is called being <strong>stateless</strong>, and it is why the web could handle so many people so cheaply.</li>
+      <li>It also made shopping impossible. A basket needs the shop to remember you between pages.</li>
+      <li>In 1994 an engineer at Netscape solved it with a small file the site asks your browser to keep and hand back.</li>
+      <li>He called it a <strong>cookie</strong>. It was a fix for shopping baskets.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. What it became -->
+  <phil-slide>
+    <img slot="art" src="./assets/cookie-counter.png" alt="A shop interior seen from behind the counter: a customer browsing shelves in the middle distance while a clerk at a tall desk writes in a long ledger, watching them, with a row of many identical filled ledgers tagged with blank paper tabs on a shelf above">
+    <h1>What a Shopping Basket Turned Into</h1>
+    <p class="lead">A cookie lets a site recognise you when you come back. Nothing in the design says the site has to be the one you are visiting.</p>
+    <ul reveal>
+      <li>Pages load images and scripts from other companies, and those companies can set cookies too.</li>
+      <li>The same company appears on thousands of sites, so it sees you across all of them.</li>
+      <li>None of that required a new invention. It is the shopping basket fix, used as written.</li>
+      <li>Watching people is what makes advertising valuable, and advertising is why the web is free.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. Checkset: cookies -->
+  <phil-slide>
+    <h1>Checkpoint: What a Cookie Is</h1>
+    <phil-checkset prompt="Check every statement that is TRUE."
+                   explain="A cookie is data, not a program. It cannot run, and it cannot read anything on your machine. It was built so a shop could remember your basket from one page to the next. Nothing new had to be invented to follow people between sites — a company whose code sits on thousands of sites simply uses the basket mechanism exactly as it was written.">
+      <phil-statement correct>A cookie is a small piece of data a site asks your browser to keep and hand back later.</phil-statement>
+      <phil-statement correct>Cookies were invented to solve a problem with shopping baskets.</phil-statement>
+      <phil-statement correct>A company whose code appears on many sites can recognise you across all of them.</phil-statement>
+      <phil-statement>A cookie is a program that runs on your computer and can read your files.</phil-statement>
+      <phil-statement>Following people between sites needed a new invention that browsers were not built to allow.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 31. The bargain -->
+  <phil-slide>
+    <h1>The Bargain Nobody Signed</h1>
+    <p class="lead">There was never a vote on paying for the web with attention instead of money. It was settled by a few companies finding out what worked.</p>
+    <ul reveal>
+      <li>Charging money for pages was tried repeatedly in the 1990s and mostly failed.</li>
+      <li>Advertising did not fail, so it became the default, and then it became the assumption.</li>
+      <li>The result is that most things online are free, and that being measured is the ordinary condition of using them.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ PART 8 — CODE IS LAW ============ -->
+
+  <!-- 32. Lessig -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-lessig.png" alt="Relic card: a judge's wooden gavel resting on a thick closed law book, where the head of the gavel is made of green circuit board with fine copper traces running across it">
+    <span class="phil-date">1999</span>
+    <h1>Code Is Law</h1>
+    <p class="lead">The legal scholar Lawrence Lessig gave this whole pattern a name. Software, he argued, regulates what people can do in the same way that law does.</p>
+    <blockquote class="source">
+      "In real space we recognize how laws regulate&mdash;through constitutions, statutes, and other legal codes. In cyberspace we must understand how a different 'code' regulates&mdash;how the software and hardware that make cyberspace what it is regulate cyberspace as it is."
+      <span class="cite">&mdash; Lawrence Lessig, <em>Code and Other Laws of Cyberspace</em>, 1999</span>
+    </blockquote>
+    <ul reveal>
+      <li>A rule enforced by software needs no police, no court, and no vote. It simply is not possible to break.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34. Cloze 2 -->
+  <phil-slide>
+    <h1>Fill In: The Last Four Decisions</h1>
+    <p>Complete the second half of the account:</p>
+    <phil-cloze explain="Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. The web was a layer added on top of a network that was already twenty years old. And it costs nothing because somebody else is paying for your attention.">
+      The internet&apos;s rules are published where anyone can read them, so building something that joins the
+      network needs no <phil-blank options="licence,degree,cable">licence</phil-blank>.
+      Names are handled by a tree called the <phil-blank answer="DNS|domain name system">DNS</phil-blank>,
+      the one part with a top, and therefore the one part where a site can be
+      <phil-blank options="blocked,copied,slowed">blocked</phil-blank>.
+      And the web costs you nothing to use because it is paid for by
+      <phil-blank answer="advertising|adverts|ads|advertisements">advertising</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- 33. The two directions, walked back -->
+  <phil-slide>
+    <h1>Both Directions, One Story</h1>
+    <p class="lead">Six decisions, each made by people with reasons, each now a rule the rest of us live inside.</p>
+    <ul reveal>
+      <li><strong>Values into design.</strong> Survivability, thrift, academic openness, physics filing and shop baskets each left a permanent mark on the shape of the thing.</li>
+      <li><strong>Design into values.</strong> No centre made censorship hard, a dumb network made permission unnecessary, names made a chokepoint, and a basket fix made surveillance ordinary.</li>
+      <li>None of the six was a decision about how people should live, and all six turned into one.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34. Beliefs review + close -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Here is where you started. Re-rate each statement and see what moved.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <p>The internet is not a natural feature of the world, and it did not have to look like this. It looks like this because particular people solved particular problems in particular years, and the rest of us inherited the answers.</p>
+    <p class="muted">Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
