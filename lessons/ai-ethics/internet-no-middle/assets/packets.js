@@ -17,7 +17,7 @@
    widget cannot claim a route that the damage has actually destroyed.
 
    Teaching widget: ungraded, no completion hook, no persistence — same
-   contract as <phil-cascade-engine> and <phil-wish-tester>.
+   contract as <phil-wish-tester> in the Frankenstein lesson.
 
    Type is sized to project: nothing below 15px.
    ===================================================================== */
@@ -39,8 +39,19 @@ const STYLE = `
        border:3px solid var(--border); box-shadow:0 5px 0 var(--shadow);
        font-size:17px; line-height:1.45; }
 .pkt-prompt { margin:0 0 10px; font-size:17px; }
-.pkt-stage { background:var(--panel); border:3px solid var(--border); padding:6px; }
+
+/* The mesh and its controls sit side by side. Stacked, the SVG alone ran
+   ~660px on a wide slide and pushed the status line off the bottom of the
+   frame, so the student could not see the mesh and the verdict at once. */
+.pkt-main { display:flex; gap:14px; align-items:flex-start; }
+.pkt-stage { flex:1 1 300px; max-width:470px; background:var(--panel);
+             border:3px solid var(--border); padding:6px; }
 .pkt-stage svg { display:block; width:100%; height:auto; }
+.pkt-side { flex:1 1 250px; min-width:0; }
+@media (max-width:760px) {
+  .pkt-main { flex-direction:column; }
+  .pkt-stage { max-width:none; align-self:stretch; }
+}
 
 .pkt-link { stroke:#4a5578; stroke-width:3; cursor:pointer; }
 .pkt-link:hover { stroke:var(--accent-3); }
@@ -58,7 +69,7 @@ const STYLE = `
 .pkt-dot.c { fill:var(--accent-2); }
 .pkt-dot.d { fill:#ffd166; }
 
-.pkt-bar { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0; }
+.pkt-bar { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 10px; }
 .pkt-btn { font-family:var(--pixel); font-size:9px; line-height:1.5; padding:9px 11px;
            background:var(--panel); color:var(--ink); border:3px solid var(--border);
            box-shadow:0 3px 0 var(--shadow); cursor:pointer; }
@@ -66,7 +77,7 @@ const STYLE = `
 .pkt-btn:disabled { opacity:.45; cursor:default; }
 .pkt-btn.go { background:var(--accent-3); color:var(--bg); }
 
-.pkt-status { margin:10px 0 0; font-size:16px; line-height:1.5; min-height:3.1em;
+.pkt-status { margin:0; font-size:16px; line-height:1.5; min-height:6.2em;
               border-left:6px solid var(--accent-3); padding:2px 0 2px 10px; }
 .pkt-status.fail { border-left-color:var(--bad); }
 .pkt-status.win  { border-left-color:var(--accent); }
@@ -160,8 +171,9 @@ class PhilPacketRouter extends HTMLElement {
     this.innerHTML = '';
     if (prompt) this.append(el('p', 'pkt-prompt', prompt));
 
+    const main = el('div', 'pkt-main');
     const stage = el('div', 'pkt-stage');
-    const svg = svgEl('svg', { viewBox: '0 0 300 200', role: 'img',
+    const svg = svgEl('svg', { viewBox: '10 22 280 156', role: 'img',
       'aria-label': 'A mesh of eight connected nodes with a sender on the left and a receiver on the right' });
 
     this._linkEls = {};
@@ -190,8 +202,9 @@ class PhilPacketRouter extends HTMLElement {
     this._dots = svgEl('g', {});
     svg.append(this._dots);
     stage.append(svg);
-    this.append(stage);
+    main.append(stage);
 
+    const side = el('div', 'pkt-side');
     const bar = el('div', 'pkt-bar');
     this._send = el('button', 'pkt-btn go', 'Send the message');
     this._send.type = 'button';
@@ -200,12 +213,15 @@ class PhilPacketRouter extends HTMLElement {
     this._reset.type = 'button';
     this._reset.onclick = () => this.reset();
     bar.append(this._send, this._reset);
-    this.append(bar);
+    side.append(bar);
 
     this._status = el('p', 'pkt-status', '');
-    this.append(this._status);
-    this.append(el('p', 'pkt-hint',
+    side.append(this._status);
+    side.append(el('p', 'pkt-hint',
       'Click any <strong>line</strong> to cut it. Click any <strong>circle</strong> to shut that machine down. Then send again.'));
+
+    main.append(side);
+    this.append(main);
   }
 
   say(html, cls) {
