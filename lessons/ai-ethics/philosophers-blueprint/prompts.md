@@ -30,3 +30,8 @@ A frustrated student sitting at a cluttered wooden exam desk surrounded by float
 
 ## relic-socrates
 A framed relic composition showing an ancient Greek ceramic cup, an unrolled papyrus scroll with geometric diagram sketches, and a silver Athenian owl coin resting on dark polished olive wood with laurel gold borders.
+
+## No new art
+The Blueprint Builder was moved from an inline `<script>` into
+`assets/blueprint.js` as a `<phil-blueprint-builder>` custom element. It draws
+itself from CSS — no image assets needed.
