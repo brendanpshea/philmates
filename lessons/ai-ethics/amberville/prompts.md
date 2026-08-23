@@ -7,7 +7,7 @@ Post-processing applied after generation: downscale to 512px wide
 (HighQualityBicubic), then `npx pngquant-bin --force --ext .png --quality 60-90`
 to bring each panel under ~200 KB.
 
-**Status:** All 7 panels (`main-street`, `prudence`, `noticeboard`, `saloon`, `telegram`, `boiler`, and `meeting`) generated, post-processed at 512×512, compressed with pngquant, and enabled in `index.html`.
+**Status:** All 9 panels (`main-street`, `prudence`, `sorter`, `noticeboard`, `prospector`, `saloon`, `telegram`, `boiler`, and `meeting`) generated, post-processed at 512×512, compressed with pngquant, and enabled in `index.html`.
 
 Shared style suffix for every prompt:
 > 16-bit SNES-era pixel art, limited palette, crisp pixel edges, no
@@ -57,3 +57,28 @@ A wooden town-hall interior at dusk: lantern-lit townsfolk seated in pews seen
 from behind, facing a brass cabinet machine standing at the front where a
 preacher would stand, a long paper tape hanging from its slot, several hands
 half-raised for a vote, warm lantern light against dark indigo shadows.
+
+## sorter
+A large brass card-sorting machine inside a wooden frontier granary: a tall
+riveted brass cabinet with a row of open sorting slots along its front, stiff
+paper index cards fanning through the slots and dropping into two separate
+wooden output trays, one tray full and one nearly empty, plump burlap sacks of
+seed grain piled against the plank walls behind it, a worn wooden counter in
+the foreground, warm morning light slanting from a high window, dark indigo
+shadows.
+
+## prospector
+A tall brass gambling machine standing in the dim corner of a western saloon:
+three vertical reels behind a round glass window, each reel showing one single
+large simple gold star shape and nothing else, one large heavy brass crank
+handle mounted on its right side, a polished silver ten-gallon hat displayed on
+a small pedestal on top as the prize, a scattering of small round brass tokens
+spilled on the floorboards at its base, an ornate riveted brass cabinet on
+carved wooden legs, a standing oil lamp glowing at the left, dark indigo
+shadows.
+
+Note: an earlier attempt using mismatched reel symbols (horseshoes/bells/stars)
+composed well but baked letter-like glyphs onto the reels, so it was discarded.
+Asking for one single simple shape per reel avoids that. The trade-off is that
+three matching stars read as a jackpot rather than the near miss the slide
+describes; a reroll aiming for the third reel caught mid-scroll would be better.
