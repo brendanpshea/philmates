@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Frankenstein and the Problem of Alignment · PhilMates</title>
+  <meta name="description" content="Six questions you have to answer before you build something powerful, worked through Mary Shelley's Frankenstein — specification, training data, capability before guidance, what a system copies from its maker, irreversibility, and oversight.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=2">
+  <script type="module" src="../../../shared/phil-core.js?v=2"></script>
+  <script type="module" src="./assets/wishes.js"></script>
+  <style>
+    blockquote.source {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(17px, 1.9vw, 21px);
+      line-height: 1.5;
+      background: var(--panel);
+      border-left: 4px solid var(--accent-3);
+      padding: 12px 16px;
+      margin: 14px 0;
+    }
+    blockquote .cite {
+      display: block;
+      margin-top: 8px;
+      font-family: var(--pixel);
+      font-style: normal;
+      font-size: 10px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<phil-lesson id="frankenstein-alignment" title="Frankenstein's Mistake" subject="AI Alignment">
+
+  <!-- ============ PART 0 — THE PROBLEM ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/arctic-ship.png" alt="A wooden three-masted sailing ship locked in Arctic pack ice at night under green and violet aurora, with two tiny lantern-lit figures on deck and jagged ridges of ice stretching to the horizon">
+    <h1>Dr. Frankenstein and the Problem of Alignment</h1>
+    <p class="lead">In 1818 the eighteen-year-old Mary Shelley published a book about a man who built something powerful and then could not take it back.</p>
+    <p>Two hundred years later, the people who build powerful computer systems work on that same problem full time.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. The problem, stated -->
+  <phil-slide>
+    <h1>The Problem</h1>
+    <p class="lead">Suppose you are about to build something that can act in the world, and that will keep acting when you are not watching it.</p>
+    <ul reveal>
+      <li>Two separate things have to go right. First, it has to do what you actually wanted.</li>
+      <li>Second, you have to be able to tell, in time, when it is not doing that.</li>
+      <li>Getting both is called the <strong>alignment problem</strong>.</li>
+      <li>It is not a problem about evil machines. Almost every famous failure came from someone who meant well.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 3. The story -->
+  <phil-slide>
+    <h1>The Story, in One Page</h1>
+    <p>If you are not familiar with the story, here are the basics.</p>
+    <ul reveal>
+      <li>Victor Frankenstein, a student, works out how to bring dead matter to life.</li>
+      <li>Over two years, alone and in secret, he builds a person out of parts.</li>
+      <li>The night it wakes, he is horrified by it and runs out of the building.</li>
+      <li>The creature teaches itself to speak and read, is driven off by everyone it meets, and comes back to find him.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Checkset: the film myths -->
+  <phil-slide>
+    <h1>What the Films Changed</h1>
+    <phil-checkset prompt="Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is TRUE of Mary Shelley's novel."
+                   explain="In the novel the creature is never given a name, and Frankenstein is Victor, the man who made it. It teaches itself to read and it speaks better than most characters in the book. The lightning, the laboratory tower and the hunchbacked assistant were all invented for the 1931 film. That difference matters. A mindless brute would make this a story about a monster, and it is a story about a maker.">
+      <phil-statement correct>The creature has no name. Frankenstein is the man who made it.</phil-statement>
+      <phil-statement correct>The creature learns to speak, and argues with Victor in full sentences.</phil-statement>
+      <phil-statement correct>The creature teaches itself to read, including Milton's <em>Paradise Lost</em>.</phil-statement>
+      <phil-statement>A bolt of lightning brings the creature to life in a laboratory tower.</phil-statement>
+      <phil-statement>The creature is a mindless brute that can only groan and lash out.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 5. Belief probe -->
+  <phil-slide>
+    <h1>Six Statements, No Right Answers</h1>
+    <p>Say where you stand before we start. You will see all six again at the end, and you can change any of them then.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>If you build something and it turns out badly, that is your fault and not its.</phil-statement>
+      <phil-statement>Something that was never taught right from wrong can still be blamed for what it does.</phil-statement>
+      <phil-statement>If you cannot say exactly what you want, you should not build the thing at all.</phil-statement>
+      <phil-statement>Anything that can argue for itself deserves to be listened to.</phil-statement>
+      <phil-statement>Once you have built something dangerous, destroying it is the responsible choice.</phil-statement>
+      <phil-statement>A person working alone should be free to build whatever they like.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- ============ PART 1 — HOW DO YOU SAY WHAT YOU WANT? ============ -->
+
+  <!-- 6. Victor's instruction -->
+  <phil-slide>
+    <img slot="art" src="./assets/victor-workshop.png" alt="A cluttered attic laboratory at night: a long workbench crowded with glass jars, coiled copper wire and stacked books, a large form under a heavy sheet at the far end, one guttering candle, and rain streaking a tall arched window">
+    <h1>How Do You Say What You Want?</h1>
+    <p class="lead">Victor Frankenstein is a student. He works out how to give life to dead matter, then spends two years building a person out of parts.</p>
+    <ul reveal>
+      <li>He tells nobody. Not his father, not his closest friend, not his teachers.</li>
+      <li>He stops writing home, stops eating properly, and works right through the winter.</li>
+      <li>He knows exactly how he wants to build it. He never asks what he wants it to be.</li>
+      <li>His whole instruction to himself is to give life to something that does not have it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. The wish tester -->
+  <phil-slide>
+    <h1>Try to Write a Better Instruction</h1>
+    <p>Victor's instruction was <em>make it alive</em>. Below are five attempts to do better than that. Work down them in order and read what each one would actually get you.</p>
+    <phil-wish-tester prompt="Start at the top. Each instruction fixes the hole in the one above it."></phil-wish-tester>
+  </phil-slide>
+
+  <!-- 8. MCQ 1 [correct: B] -->
+  <phil-slide>
+    <h1>Checkpoint: Saying What You Want</h1>
+    <phil-mcq prompt="Each instruction above was more careful than the one before it, and every one still left something out. What best explains that?"
+              explain="Right. You have to write the instruction before the thing exists, which means writing it about situations you have never seen. The gap you left is obvious afterwards and almost invisible beforehand. That difficulty is the specification problem, and care alone does not solve it.">
+      <phil-choice feedback="Care helps, but it does not close the gap. Each instruction in the tester was written carefully, and each one still missed something that only became obvious later.">Each instruction was written carelessly, and a slower writer would have caught the gap.</phil-choice>
+      <phil-choice correct>You have to say what you want in advance, about situations you have not seen yet.</phil-choice>
+      <phil-choice feedback="Length is not the issue. A longer instruction has more words but still has to guess which situations will come up, and it will still miss the ones nobody imagined.">The instructions were too short, and a long enough one would eventually cover everything.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ PART 2 — WHERE DOES IT LEARN WHAT IT KNOWS? ============ -->
+
+  <!-- 9. The cottage -->
+  <phil-slide>
+    <img slot="art" src="./assets/cottage-crack.png" alt="Inside a dark lean-to hovel built against a cottage wall: an enormous hunched figure seen from behind, crouched with one eye to a narrow gap between the planks, a thin blade of warm light falling across its shoulders, and a family at a lit supper table visible beyond">
+    <h1>Where Does It Learn What It Knows?</h1>
+    <p class="lead">The creature finds an empty lean-to against a cottage and hides there for months. Through a gap in the planks it can see the family inside.</p>
+    <ul reveal>
+      <li>It watches the De Lacey family cook, work, argue, and forgive each other.</li>
+      <li>It learns to speak by listening to them through the wall.</li>
+      <li>It learns what kindness looks like the same way, by watching people do it.</li>
+      <li>At night it secretly gathers firewood for them, because it wants them to be warm.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. The rejection -->
+  <phil-slide>
+    <img slot="art" src="./assets/village-rejection.png" alt="Dusk at the edge of a stone village: villagers with raised sticks and burning torches driving a tall cloaked figure backward toward dark pine trees, the figure's arms raised to shield its shadowed face">
+    <h1>What Everyone Else Taught It</h1>
+    <p class="lead">The creature has learned gentleness from one family it has never spoken to. Then it meets everybody else.</p>
+    <ul reveal>
+      <li>The first villagers who see it throw stones and drive it out with sticks.</li>
+      <li>It pulls a drowning girl out of a river, and the man with her shoots it.</li>
+      <li>It finally speaks to the family's blind father, who is kind to it, because he cannot see it.</li>
+      <li>The others come home, beat it, and move away. It never finds them again.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Teaching: training data and feedback -->
+  <phil-slide>
+    <h1>It Learns From Whatever Is Nearby</h1>
+    <p class="lead">Nobody ever sat down and taught the creature anything. Everything it knows it picked up from whatever happened to be within reach.</p>
+    <ul reveal>
+      <li>What a system learns from is called its <strong>training data</strong>. The creature's was one family and one wall.</li>
+      <li>It also learned from how people reacted to it, which is called a <strong>feedback loop</strong>.</li>
+      <li>Every person who attacked it taught it that people attack. It had no reason to doubt them.</li>
+      <li>Victor picked none of these lessons, because he was not there. The world picked them.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Cloze 1 -->
+  <phil-slide>
+    <h1>Fill In: What It Learned</h1>
+    <p>Complete the summary of how the creature came to know anything at all:</p>
+    <phil-cloze explain="Nothing about the creature's education was chosen. It learned language and kindness from the one household it could see, and it learned fear and anger from everyone who met it. Both lessons came from the same thing: whatever happened to be nearby while Victor was somewhere else.">
+      The creature taught itself to speak by listening to one family through a
+      <phil-blank options="wall,book,teacher">wall</phil-blank>.
+      Whatever a system learns from is called its
+      <phil-blank options="training data,instruction manual,operating system">training data</phil-blank>.
+      It also learned from the way people treated it, and every person who attacked it taught it that people
+      <phil-blank answer="attack|attacked|hurt|are dangerous">attack</phil-blank>.
+      Victor chose none of these lessons, because he was not
+      <phil-blank answer="there|present|watching">there</phil-blank>.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ PART 3 — WHAT IF IT IS STRONG BEFORE IT IS GOOD? ============ -->
+
+  <!-- 13. The night it woke -->
+  <phil-slide>
+    <img slot="art" src="./assets/creature-wakes.png" alt="An attic laboratory at night: a very tall gaunt figure sitting upright on a workbench with its face turned away into shadow, while in the foreground a young man in shirtsleeves stumbles backward, knocking over a stool and dropping his candle">
+    <h1>What If It Is Strong Before It Is Good?</h1>
+    <p class="lead">The work finishes at one in the morning on a wet November night. The creature's eye opens, it breathes, and one hand moves.</p>
+    <ul reveal>
+      <li>Victor looks at what he has made, is horrified by it, and runs out of the room.</li>
+      <li>He leaves the building, walks the streets until dawn, and does not go back.</li>
+      <li>When he does return, days later, the creature is gone.</li>
+      <li>He never speaks a single word to it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. What was left -->
+  <phil-slide>
+    <h1>What Was Left in That Room</h1>
+    <p>This is what Victor walked away from that night.</p>
+    <ul reveal>
+      <li>It is about eight feet tall and stronger than any person Victor has ever met.</li>
+      <li>It survives cold that would kill a man, and it can go a long time without food.</li>
+      <li>It has the mind of a newborn. No language, no name, no idea what it is.</li>
+      <li>Nobody is coming to teach it any of that.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. POLL 1 -->
+  <phil-slide>
+    <h1>Decision Point: Whose Problem Is It Now?</h1>
+    <p class="muted">Not graded. Pick the answer you actually hold.</p>
+    <phil-poll prompt="The creature is alone in a city, eight feet tall, and a few hours old. Who is responsible for what happens next?"
+               explain="Most people say Victor, and Shelley agrees with them. The other two positions are protecting something real, though. We usually think responsibility follows choice, and the creature has not chosen anything yet. Shelley's answer is that making something is itself a choice, and a large one, and it does not stop being yours the moment you stop looking at it.">
+      <phil-choice note="The book's own answer. Victor made it, and making something is an act that keeps mattering after you have finished doing it.">Victor. He made it, and making something makes you responsible for it.</phil-choice>
+      <phil-choice note="This holds that responsibility attaches to actions, and nothing has acted yet. The difficulty is that it leaves a powerful creature with nobody accountable for it at all.">Nobody yet. It has not done anything, so responsibility begins when it acts.</phil-choice>
+      <phil-choice note="Reasonable, and it is how we treat children. But someone has to be responsible in the meantime, and this answer does not say who.">The creature, as soon as it is old enough to know better.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 16. Teaching: capability vs alignment -->
+  <phil-slide>
+    <h1>Strong Before It Is Good</h1>
+    <p class="lead">The creature could act on the world long before it had any idea how it ought to act. Those two things did not arrive together.</p>
+    <ul reveal>
+      <li>How much a thing can do is its <strong>capability</strong>. Whether it does the right thing is its <strong>alignment</strong>.</li>
+      <li>Capability came free, built into the body. Alignment would have taken years of somebody's attention.</li>
+      <li>Victor supplied the first and none of the second, and then left.</li>
+      <li>This gap is why people worry about powerful systems, and it has nothing to do with the system being evil.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ PART 4 — WHAT DOES IT COPY FROM YOU? ============ -->
+
+  <!-- 17. The glacier -->
+  <phil-slide>
+    <img slot="art" src="./assets/glacier-meeting.png" alt="A vast blue-white glacier under jagged alpine peaks: two lone figures facing each other across the ice at a distance, one of ordinary height in a dark travelling coat, the other nearly twice as tall in ragged clothes, with deep crevasses and drifting mist between them">
+    <h1>What Does It Copy From You?</h1>
+    <p class="lead">Two years later the creature finds Victor on a glacier in the Alps. Then it does something you would not expect from a monster. It argues.</p>
+    <ul reveal>
+      <li>It speaks carefully, in full sentences, and it has read more books than most people in the story.</li>
+      <li>Its argument is simple. It did not ask to be made, and it did not ask to be made like this.</li>
+      <li>Shelley thought that argument was the point of the book. She put it on the title page.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. The epigraph -->
+  <phil-slide>
+    <h1>The Line on the Title Page</h1>
+    <p>Shelley opened the novel with three lines of Milton, spoken by Adam to the God who made him:</p>
+    <blockquote class="source">
+      "Did I request thee, Maker, from my clay<br>
+      To mould me man? Did I solicit thee<br>
+      From darkness to promote me?"
+      <span class="cite">&mdash; John Milton, <em>Paradise Lost</em> X.743&ndash;5, quoted on the title page of <em>Frankenstein</em> (1818)</span>
+    </blockquote>
+    <ul reveal>
+      <li>Adam is complaining that he never agreed to exist, and never agreed to exist as the thing he is.</li>
+      <li>That is the creature's whole complaint, and it is a hard one to answer.</li>
+      <li>Anything you build is built to your specification, and it never gets a say in that.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. The mirror -->
+  <phil-slide>
+    <img slot="art" src="./assets/mirror-diagram.png" alt="A tall mirror in a plain wooden frame standing against a stone wall: a man in a travelling coat stands before it with his back to the viewer, and the reflection looking back at him is a taller, ragged, broader silhouette, with a single candle burning on the floorboards between them">
+    <h1>It Turns Out Like Its Maker</h1>
+    <p>The creature did not become the opposite of Victor. It became a copy.</p>
+    <phil-compare>
+      <phil-side label="Victor" tag="The maker">
+        <p>Works alone for two years and tells nobody. Abandons what he made. Refuses to admit what he did, even in a courtroom. Chases the creature across Europe to the Arctic and dies still chasing it.</p>
+        <p class="cake">Asked to take responsibility, he explains why the situation is not really his fault.</p>
+      </phil-side>
+      <phil-side label="The Creature" tag="What he made">
+        <p>Hides for months and watches through a wall. Is abandoned, then gives up on company entirely. Blames Victor for everything it became. Follows Victor across Europe to the Arctic and refuses to stop.</p>
+        <p class="cake">Asked to take responsibility, it explains why the situation is not really its fault.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 20. Justine -->
+  <phil-slide>
+    <h1>The Thing Victor Does Not Say</h1>
+    <p class="lead">The creature kills Victor's younger brother William. A servant of the family, Justine, is accused of the murder and put on trial.</p>
+    <ul reveal>
+      <li>Victor knows she is innocent. He knows exactly what killed his brother.</li>
+      <li>He says nothing, because saying it would mean admitting what he built.</li>
+      <li>Justine is convicted and hanged for something Victor could have explained in one sentence.</li>
+      <li>The creature is watching. It learns what Victor does when the truth would cost him something.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. POLL 2 -->
+  <phil-slide>
+    <h1>Decision Point: Who Is to Blame?</h1>
+    <p class="muted">Not graded. There is no settled answer to this one.</p>
+    <phil-poll prompt="By the end of the novel the creature has killed three people. Where does the blame sit?"
+               explain="All three positions accept the same facts. They disagree about whether something that was never taught anything can be held to account for what it does. Shelley makes this deliberately hard. She gives the creature a genuinely good argument, and then has it murder a child anyway. She is not letting either of them off."
+      >
+      <phil-choice note="The strongest version of Shelley's own case. Victor built it, taught it nothing, abandoned it, and then let an innocent woman hang rather than speak.">Victor. Every one of those deaths traces back to a choice he made.</phil-choice>
+      <phil-choice note="This holds that once something can reason about right and wrong, it is answerable for what it does — and the creature reasons very well.">The creature. It understood what it was doing, and it chose to do it anyway.</phil-choice>
+      <phil-choice note="The hardest of the three to make precise. It leaves you having to say how the blame divides, and by what measure.">Both, in some proportion, and the book will not tell us what the proportion is.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 22. Teaching: it copies what you did -->
+  <phil-slide>
+    <h1>It Copies What You Did</h1>
+    <p class="lead">Victor never told the creature to be secretive, or vengeful, or full of excuses. It became all three anyway.</p>
+    <ul reveal>
+      <li>The only model of a person it ever watched closely was Victor himself.</li>
+      <li>What you say you value is easy. What you do when it costs you is the lesson that gets learned.</li>
+      <li>A system built by careless people tends to be careless in the same places they were.</li>
+      <li>This is why "we will simply tell it to be good" is not a plan.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ PART 5 — CAN YOU TAKE IT BACK? ============ -->
+
+  <!-- 23. The offer -->
+  <phil-slide>
+    <h1>Can You Take It Back?</h1>
+    <p class="lead">On the glacier the creature makes Victor an offer.</p>
+    <ul reveal>
+      <li>Build me a companion, it says. Someone made as I am made, who will not run from me.</li>
+      <li>In exchange it promises to leave Europe forever and never trouble another person.</li>
+      <li>It is not bluffing about being able to hurt him. It has already proved that.</li>
+      <li>Victor thinks it over for a long time, and agrees.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. POLL 3 -->
+  <phil-slide>
+    <h1>Decision Point: The Second Creature</h1>
+    <p class="muted">Not graded. Victor turns this over for months before he decides.</p>
+    <phil-poll prompt="Should Victor build the companion he has promised?"
+               explain="Three different worries are in play. One is about fairness, one is about whether a promise can be checked, and one is about permanence. Only the last would still apply if the creature were completely honest. That is the one Victor acts on.">
+      <phil-choice note="A fair point. The creature has kept its word so far, and refusing leaves it with nothing left to lose and every reason to act on that.">Yes. It has made a fair offer, and refusing leaves it with nothing to lose.</phil-choice>
+      <phil-choice note="This is the verification problem. The creature may be perfectly sincere, and Victor still has no way to check a promise about the next two hundred years.">No. He has no way to check whether the promise is worth anything.</phil-choice>
+      <phil-choice note="This worry survives even a completely honest creature. Some things, once they exist, cannot be made not to exist.">No. Two of them could never be undone, whatever either of them promised.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 25. He changes his mind -->
+  <phil-slide>
+    <img slot="art" src="./assets/second-creature.png" alt="Inside a bare stone hut on a remote island: a partly assembled second body draped on a slab table, a man standing over it gripping a tool with his head turned toward the window, moonlight on the sea beyond, and a single low candle on the floor">
+    <h1>He Changes His Mind</h1>
+    <p class="lead">Victor travels to a remote island and begins the second creature. Partway through, he stops.</p>
+    <ul reveal>
+      <li>He thinks: the two of them might have children, and I cannot promise what those would be.</li>
+      <li>He tears the half-finished body apart while the creature watches through the window.</li>
+      <li>The creature's answer is one sentence. <em>I shall be with you on your wedding night.</em></li>
+      <li>It keeps that promise. Victor's wife Elizabeth is killed on the night they marry.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. MCQ 2 [correct: C] -->
+  <phil-slide>
+    <h1>Checkpoint: Taking It Back</h1>
+    <phil-mcq prompt="Victor stopped because he decided two creatures could never be undone. What is the strongest version of that worry?"
+              explain="Right. This is the one worry that survives even a perfectly honest creature. If a decision can be reversed, a mistake costs you the time it takes to reverse it. If it cannot, the mistake is permanent, so it has to be got right the first time — and Victor has already shown he does not get things right the first time.">
+      <phil-choice feedback="The creature had actually kept its word up to this point. The worry Victor acts on is not about this creature's honesty at all.">The creature had already broken its promises, so its offer could not be believed.</phil-choice>
+      <phil-choice feedback="Physical strength was not what stopped him. He was worried about something he could not undo later, not about something he could not fight.">A second creature would double the physical danger, and he could not fight both.</phil-choice>
+      <phil-choice correct>Some decisions cannot be reversed later, so a mistake made once stays made.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ PART 6 — WHO CAN STOP YOU? ============ -->
+
+  <!-- 27. Nobody knew -->
+  <phil-slide>
+    <h1>Who Can Stop You?</h1>
+    <p class="lead">Victor works alone from the first day to the last. Every disaster in the book happens behind a door nobody else can open.</p>
+    <ul reveal>
+      <li>He tells no teacher what he is attempting, so nobody warns him.</li>
+      <li>He tells no friend what he has made, so nobody helps him find it.</li>
+      <li>He tells no court what he knows, so an innocent woman is hanged.</li>
+      <li>Any single person who knew could have changed the ending. Nobody knew.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. Wiener -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-wiener.png" alt="Relic card: a brass clockwork mechanism running at full speed with its control lever snapped off at the base, the empty switch socket visible beside it, and an overflowing wooden bucket spilling water across the frame">
+    <span class="phil-date">1960</span>
+    <h1>Somebody Wrote This Down in 1960</h1>
+    <p>Norbert Wiener was a mathematician who helped found the study of machines that steer themselves. He stated the problem before any computer could cause it:</p>
+    <blockquote class="source">
+      "If we use, to achieve our purposes, a mechanical agency with whose operation we cannot efficiently interfere once we have started it&hellip; we had better be quite sure that the purpose put into the machine is the purpose which we really desire."
+      <span class="cite">&mdash; Norbert Wiener, "Some Moral and Technical Consequences of Automation," <em>Science</em>, 1960</span>
+    </blockquote>
+    <p class="muted">Wiener's example was not Frankenstein. It was the story of the monkey's paw, which grants wishes exactly as worded.</p>
+  </phil-slide>
+
+  <!-- 29. Walton -->
+  <phil-slide>
+    <img slot="art" src="./assets/arctic-ship.png" alt="A wooden three-masted sailing ship locked in Arctic pack ice at night under green and violet aurora, with two tiny lantern-lit figures on deck and jagged ridges of ice stretching to the horizon">
+    <h1>The One Person Who Stops</h1>
+    <p class="lead">The whole book is being told to Robert Walton, a captain pushing his ship toward the North Pole. He is doing what Victor did.</p>
+    <ul reveal>
+      <li>Walton wants to be the first man there, and he is willing to risk his crew to manage it.</li>
+      <li>His ship gets trapped in the ice, and Victor, dying, tells him the entire story.</li>
+      <li>Walton turns the ship around and sails home.</li>
+      <li>He is the only person in the book who is told what will happen and changes course.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. Cloze 2 -->
+  <phil-slide>
+    <h1>Fill In: What Victor Got Wrong</h1>
+    <p>Complete the account of what Victor got wrong:</p>
+    <phil-cloze explain="Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel.">
+      Victor's instruction to himself was to make it
+      <phil-blank options="alive,kind,useful">alive</phil-blank>,
+      and he never said what sort of life it ought to have. He gave it a powerful body and no guidance, so its
+      <phil-blank options="capability,honesty,size">capability</phil-blank>
+      arrived years before anything like judgement. He destroyed the second creature because some choices can never be
+      <phil-blank answer="reversed|undone|taken back|unmade">reversed</phil-blank>.
+      And he worked alone the entire time, so nobody was ever in a position to
+      <phil-blank answer="stop|warn|check|correct">stop</phil-blank> him.
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ PART 7 — NOW ============ -->
+
+  <!-- 31. Modern -->
+  <phil-slide>
+    <h1>Where This Turns Up Now</h1>
+    <p class="lead">Each of Victor's failures has a name in the work people do on computer systems today.</p>
+    <ul reveal>
+      <li>Writing down what you actually want, in advance and in words, is the <strong>specification</strong> problem.</li>
+      <li>Choosing what a system learns from, rather than letting it learn from whatever is nearby, is <strong>training data</strong> work.</li>
+      <li>Making sure a system can still be corrected once it is running is called <strong>corrigibility</strong>.</li>
+      <li>Having somebody outside the project who is able to say stop is <strong>oversight</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 32. Checkset 2 -->
+  <phil-slide>
+    <h1>Checkpoint: What Went Wrong</h1>
+    <phil-checkset prompt="Check every TRUE statement about how the disaster in the novel came about."
+                   explain="The three true statements are three separate failures, and none of them required Victor to be cruel. The two false ones are the readings the story is built to rule out: the creature was gentle for a long time before it was violent, and a weaker creature abandoned in the same way would still have been a wrong done to it."
+                   >
+      <phil-statement correct>Victor never wrote down what he wanted the creature to be like, only that it should live.</phil-statement>
+      <phil-statement correct>The creature learned what it knew from whatever it happened to be near.</phil-statement>
+      <phil-statement correct>Victor gave the creature a powerful body and no guidance at all.</phil-statement>
+      <phil-statement>The creature was violent from the moment it woke, before anyone had treated it badly.</phil-statement>
+      <phil-statement>Victor's real mistake was building something too strong, and a weaker creature would have been fine.</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 33. Shelley -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-shelley.png" alt="Relic card: an open leather notebook with ink marks, a quill, a small glass jar holding a captured spark of electricity, and behind them a darkened sun low over a storm-lit lake">
+    <span class="phil-date">1816</span>
+    <h1>Written by an Eighteen-Year-Old</h1>
+    <p class="lead">Mary Shelley began the book in the summer of 1816, when she was eighteen. A volcanic eruption had darkened the skies across Europe and the weather kept her indoors.</p>
+    <ul reveal>
+      <li>She was not writing about computers. Nothing like one existed for another century.</li>
+      <li>She was writing about what happens when someone makes something and will not stay to look after it.</li>
+      <li>That problem turned out to be older than any machine, and to outlast every machine so far.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34. Beliefs review + close -->
+  <phil-slide>
+    <h1>Six Questions, One Book</h1>
+    <p>Here is where you stood at the start. Re-rate each statement and see what moved.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <p>The six questions you just worked through — what you want, where it learns, how strong it is, what it copies, whether you can take it back, and who can stop you — are the anatomy of the alignment problem. Victor answered none of them, and he was not a wicked man. He was a clever one working alone in a hurry.</p>
+    <p class="muted">Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
