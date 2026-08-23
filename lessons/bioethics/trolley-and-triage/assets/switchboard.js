@@ -1,11 +1,14 @@
 /* =====================================================================
    <phil-triage-switchboard> — "The Dilemma Switchboard"
    Interactive side-by-side scenario comparator:
-   Students step through classic scenarios (Switch, Footbridge, Loop,
-   Transplant, Ventilator Lottery, SOFA Life-Years) and toggle moral
-   criteria to see which ethical frameworks (Utilitarianism, Kantian
-   Deontology, Doctrine of Double Effect, Procedural Fairness)
-   support or oppose the action, revealing underlying moral tensions.
+   Students step through five classic scenarios (Switch, Footbridge,
+   Loop, Transplant, Crisis-Standards Ventilator Triage) and read how
+   three ethical frameworks (Consequentialism, Deontology / Rights,
+   Doctrine of Double Effect) judge each one, revealing where the
+   frameworks agree and where they pull apart.
+
+   Type is sized to project: nothing below 15px. If you add a field,
+   keep it short — this widget is read from the back of a classroom.
    ===================================================================== */
 
 const el = (tag, cls, html) => {
@@ -17,35 +20,38 @@ const el = (tag, cls, html) => {
 
 const STYLE = `
 .tsb { display:block; margin:14px 0; padding:14px 16px; background:var(--panel-2);
-       border:3px solid var(--border); box-shadow:0 5px 0 var(--shadow); font-size:14px; line-height:1.4; }
-.tsb-prompt { margin:0 0 10px; font-size:14px; }
-.tsb-nav { display:flex; align-items:center; gap:10px; margin:0 0 12px; }
-.tsb-btn { font-family:var(--pixel); font-size:9px; padding:8px 10px; background:var(--panel);
+       border:3px solid var(--border); box-shadow:0 5px 0 var(--shadow); font-size:17px; line-height:1.45; }
+.tsb-prompt { margin:0 0 10px; font-size:17px; }
+.tsb-nav { display:flex; align-items:center; gap:10px; margin:0 0 12px; flex-wrap:wrap; }
+.tsb-btn { font-family:var(--pixel); font-size:10px; padding:9px 11px; background:var(--panel);
            color:var(--ink); border:3px solid var(--border); box-shadow:0 3px 0 var(--shadow); cursor:pointer; }
 .tsb-btn:disabled { opacity:.35; cursor:default; }
-.tsb-stage-lbl { font-size:13px; color:var(--muted); }
+.tsb-stage-lbl { font-size:16px; color:var(--muted); }
 
 .tsb-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:0 0 12px; }
 @media (max-width:650px) { .tsb-grid { grid-template-columns:1fr; } }
 
 .tsb-box { background:var(--panel); border:3px solid var(--border); padding:10px 12px; }
-.tsb-box h4 { font-family:var(--pixel); font-size:10px; margin:0 0 6px; color:var(--accent); }
-.tsb-box p { margin:0 0 6px; font-size:13px; }
+.tsb-box h4 { font-family:var(--pixel); font-size:11px; margin:0 0 8px; color:var(--accent); }
+.tsb-box p { margin:0 0 6px; font-size:16px; }
 
 .tsb-factors { display:flex; flex-direction:column; gap:5px; margin:0 0 8px; }
-.tsb-factor { display:flex; justify-content:space-between; font-size:12px; padding:3px 6px; background:var(--bg); border:1px solid var(--border); }
-.tsb-factor-val { font-weight:bold; }
+.tsb-factor { display:flex; justify-content:space-between; gap:10px; font-size:15px; padding:5px 7px; background:var(--bg); border:1px solid var(--border); }
+.tsb-factor > span:first-child { color:var(--muted); flex:none; }
+.tsb-factor-val { font-weight:bold; text-align:right; }
 .tsb-factor-val.good { color:var(--good); }
 .tsb-factor-val.warn { color:var(--accent-3); }
 .tsb-factor-val.bad { color:var(--bad); }
 
-.tsb-eval { display:grid; grid-template-columns:repeat(auto-fit, minmax(130px, 1fr)); gap:6px; margin:0 0 10px; }
-.tsb-badge { padding:6px 8px; border:2px solid var(--border); font-size:11px; text-align:center; }
+.tsb-eval { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:8px; margin:0 0 10px; }
+.tsb-badge { padding:8px 10px; border:2px solid var(--border); font-size:15px; line-height:1.35; text-align:center; }
+.tsb-badge strong { display:block; margin-bottom:3px; }
 .tsb-badge.permit { background:#133a24; border-color:var(--good); color:var(--good); }
 .tsb-badge.forbid { background:#3a1620; border-color:var(--bad); color:var(--bad); }
 .tsb-badge.conflict { background:#3a2f16; border-color:var(--accent-3); color:var(--accent-3); }
 
-.tsb-takeaway { font-family:var(--pixel); font-size:10px; line-height:1.5; padding:10px; border:3px solid var(--border); background:var(--panel); color:var(--ink); }
+.tsb-takeaway { font-size:16px; line-height:1.5; padding:11px; border:3px solid var(--border); background:var(--panel); color:var(--ink); }
+.tsb-takeaway strong { font-family:var(--pixel); font-size:10px; display:block; margin-bottom:6px; color:var(--accent-2); }
 `;
 
 const SCENARIOS = [
@@ -104,15 +110,15 @@ const SCENARIOS = [
   {
     title: "5 · Crisis Standards: 2 Ventilators, 6 Patients",
     domain: "Pandemic Triage",
-    action: "Allocate 2 ventilators based on SOFA survival likelihood & life-years saved",
-    netLives: "Maximizes quality-adjusted life years (QALYs) across scarce machines",
-    agency: "Allocating scarce resources among patients who all arrived with lethal illness",
-    intention: "Intended aid for chosen; foreseen non-treatment / palliative care for remainder",
-    contact: "Protocol-driven triage algorithm",
-    utilitarian: "Recommended (Maximizes total survival & life years)",
+    action: "Allocate 2 ventilators by short-term survival odds (SOFA), published in advance",
+    netLives: "Maximizes the number who survive this admission",
+    agency: "Allocating scarce aid among patients who all arrived with lethal illness",
+    intention: "Intended aid for those treated; foreseen palliative care for the rest",
+    contact: "Protocol-driven, applied by a triage officer at the bedside",
+    utilitarian: "Recommended (Maximizes total survivors)",
     deontology: "Permissible if criteria are objective, public, and non-discriminatory",
     doubleEffect: "Passes (Not killing the untreated; scarcity forces tragic choice)",
-    takeaway: "Unlike the Transplant case, triage does not kill a healthy person to harvest parts. It allocates scarce positive aid under tragic constraints where not everyone can be saved."
+    takeaway: "Unlike Transplant, triage kills no one to harvest parts — it allocates scarce aid when not everyone can be saved. Note what the criterion is: surviving this admission, not having the most future left. Most US protocols exclude expected lifespan on purpose."
   }
 ];
 

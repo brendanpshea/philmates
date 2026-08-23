@@ -6,8 +6,8 @@
   <title>The Switch and the Scalpel: Trolley Problems &amp; Medical Triage · PhilMates</title>
   <meta name="description" content="Explore what makes a moral dilemma through Philippa Foot and Judith Jarvis Thomson's classic trolley problems, Thomson's organ transplant puzzle, and real-world medical triage protocols.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css">
-  <script type="module" src="../../../shared/phil-core.js"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=2">
+  <script type="module" src="../../../shared/phil-core.js?v=2"></script>
   <script type="module" src="./assets/switchboard.js"></script>
 </head>
 <body>
@@ -68,11 +68,12 @@
   <!-- 5. Decision 1: Switch Vote -->
   <phil-slide>
     <h1>Decision Point: The Switch</h1>
-    <phil-mcq prompt="You stand beside the switch lever. What do you do?"
-              explain="You are in vast company: across global psychological surveys in over 100 countries, roughly 85% to 90% of people choose to pull the switch. The consequentialist calculation looks immediate: 5 lives saved vs 1 life lost = net +4 lives.">
-      <phil-choice correct>Pull the switch — divert the trolley onto the spur to save the five, killing the one</phil-choice>
-      <phil-choice feedback="Around 10-15% of people choose inaction, often reasoning that actively flipping a switch makes them the direct causal agent of a new death.">Do nothing — allow the trolley to stay on its original path and kill the five</phil-choice>
-    </phil-mcq>
+    <p class="muted">This one is <strong>not graded</strong>. Pick the answer you actually hold.</p>
+    <phil-poll prompt="You stand beside the switch lever. What do you do?"
+               explain="In the largest cross-national study of this case — Awad and colleagues, 42 countries, about 70,000 participants (2020) — a large majority diverted the trolley, and that majority held in every country sampled. The arithmetic looks immediate: 5 saved vs 1 lost.">
+      <phil-choice note="The common answer.">Pull the switch — divert the trolley onto the spur to save the five, killing the one</phil-choice>
+      <phil-choice note="The minority answer, and a defensible one: flipping the lever makes you the causal agent of a death that would not otherwise have happened.">Do nothing — allow the trolley to stay on its original path and kill the five</phil-choice>
+    </phil-poll>
   </phil-slide>
 
   <!-- 6. Case 2: The Footbridge Setup -->
@@ -80,23 +81,25 @@
     <img slot="art" src="./assets/footbridge.png" alt="A stone arched footbridge overlooking tracks with a heavy bystander leaning over the railing">
     <span class="phil-date">Judith Jarvis Thomson · 1976</span>
     <h1>Case 2: The Footbridge</h1>
-    <p class="lead">Same runaway trolley, same five workers on the track. This time there is no side spur. You stand on an arched footbridge above the rails.</p>
+    <p class="lead">Same trolley, same five workers. No side spur this time — you are on a footbridge above the rails.</p>
     <ul reveal>
       <li>Next to you leans a heavy stranger gazing over the railing.</li>
       <li>If you push him over, his heavy body will jam the trolley's wheels and stop the train before it hits the five.</li>
-      <li>The stranger will die instantly, but the five workers will survive. Your own body is too light to stop the train.</li>
+      <li>He dies instantly; the five survive. Your own body is too light to stop the train.</li>
       <li>Your hands are inches from his back. What is your choice?</li>
     </ul>
+    <p class="muted">Thomson called this "Fat Man"; the name <em>Footbridge</em> comes from Greene and colleagues (2001).</p>
   </phil-slide>
 
   <!-- 7. Decision 2: Footbridge Vote -->
   <phil-slide>
     <h1>Decision Point: The Footbridge</h1>
-    <phil-mcq prompt="You stand behind the stranger on the footbridge. What do you do?"
-              explain="Here, human intuition dramatically inverts: over 85% of people refuse to push the man. Yet notice the arithmetic: in both cases, choosing to act sacrifices 1 life to save 5 (net +4 lives). Simple math cannot explain why our moral brains revolt here.">
-      <phil-choice feedback="Only about 10-15% of people say it is permissible to push the stranger, sticking to strict consequentialist net-lives calculation.">Push the stranger over the railing to stop the train and save the five</phil-choice>
-      <phil-choice correct>Do not push — refuse to shove an innocent bystander to his death</phil-choice>
-    </phil-mcq>
+    <p class="muted">Also <strong>not graded</strong>. Answer honestly, then compare with the room.</p>
+    <phil-poll prompt="You stand behind the stranger on the footbridge. What do you do?"
+               explain="Here intuition flips. Most people refuse to push — though the size of that majority swings a lot with wording and with who is asked, from roughly 60% to 90% across studies. Yet the arithmetic is unchanged: 1 life sacrificed to save 5. Simple math cannot explain the flip.">
+      <phil-choice note="The minority answer — and the one strict net-lives consequentialism recommends.">Push the stranger over the railing to stop the train and save the five</phil-choice>
+      <phil-choice note="The common answer.">Do not push — refuse to shove an innocent bystander to his death</phil-choice>
+    </phil-poll>
   </phil-slide>
 
   <!-- 8. MCQ: The Paradox of the Two Cases -->
@@ -127,11 +130,12 @@
   <!-- 10. Decision 3: Loop Vote -->
   <phil-slide>
     <h1>Decision Point: The Loop</h1>
-    <phil-mcq prompt="You stand at the switch for the loop track. Do you divert the trolley onto the loop?"
-              explain="The Loop divides philosophers and students right down the middle: it feels like pulling a mechanical switch (like Case 1), but logically you are using the worker's physical body as an indispensable brake (like Case 2). If the worker stepped off the track, your action would fail to save anyone.">
-      <phil-choice correct>Pull the switch — divert onto the loop because 5 lives saved still outweighs 1</phil-choice>
-      <phil-choice feedback="Many who refuse to pull the loop switch realize they are treating the worker as an essential obstacle rather than an accidental side-effect.">Do not pull — refuse to divert the train when saving the five depends on hitting the person</phil-choice>
-    </phil-mcq>
+    <p class="muted">Not graded — and here even the professionals split.</p>
+    <phil-poll prompt="You stand at the switch for the loop track. Do you divert the trolley onto the loop?"
+               explain="The Loop divides philosophers and students right down the middle, which is exactly why Thomson built it. It feels like pulling a mechanical lever (Case 1), but saving the five depends on the worker's body stopping the train (Case 2). Whichever way you answered, the interesting question is which of those two cases you think it really resembles.">
+      <phil-choice note="You are weighting the mechanism — a lever, no contact, an existing threat redirected.">Pull the switch — divert onto the loop because 5 lives saved still outweighs 1</phil-choice>
+      <phil-choice note="You are weighting the causal role — the worker is an essential obstacle, not an accidental side-effect.">Do not pull — refuse to divert the train when saving the five depends on hitting the person</phil-choice>
+    </phil-poll>
   </phil-slide>
 
   <!-- ============ ACT 2 — DISSECTING INTUITION: THE THREE LEVERS ============ -->
@@ -155,7 +159,7 @@
       <li><strong>Negative Duties (Do No Harm):</strong> A strict moral duty not to inflict injury or kill innocent people.</li>
       <li><strong>Positive Duties (Render Aid):</strong> A moral duty to rescue, protect, or help those in peril when possible.</li>
       <li>In ordinary ethics, <strong>negative duties almost always trump positive duties</strong>: you cannot shoot an innocent person just to collect reward money to donate to charity.</li>
-      <li>The dilemma arises because pulling the switch feels like a positive rescue, while pushing the stranger feels like a direct violation of the negative duty not to kill.</li>
+      <li>Pulling the switch feels like a rescue. Pushing the stranger feels like a violation of the negative duty not to kill.</li>
     </ul>
   </phil-slide>
 
@@ -164,9 +168,9 @@
     <h1>The Doctrine of Double Effect (DDE)</h1>
     <p class="lead">Originating in medieval philosophy (Thomas Aquinas) and formalized in modern ethics, the Doctrine of Double Effect draws a bright line:</p>
     <ul reveal>
-      <li><strong>Foreseen Side-Effect:</strong> An action with a good primary goal (saving five) that carries an unintended, unavoidable bad byproduct (the death of the one on the spur) may be morally permissible.</li>
-      <li><strong>Intended Means:</strong> Using harm to an innocent person as the <em>exact causal stepping stone</em> to achieve your good goal (using their body to block the train) is strictly impermissible.</li>
-      <li><em>The Test:</em> If the one person magically vanished from the track, would you be glad or thwarted? On the spur, you'd be thrilled. On the footbridge or loop, your plan would fail!</li>
+      <li><strong>Foreseen side-effect:</strong> a good goal (saving five) that carries an unintended bad byproduct (the death on the spur) may be permissible.</li>
+      <li><strong>Intended means:</strong> using harm to an innocent person as the <em>causal stepping stone</em> to your good goal is impermissible.</li>
+      <li><em>The test:</em> if the one person vanished, would you be glad or thwarted? On the spur, thrilled. On the footbridge or loop, your plan collapses.</li>
     </ul>
   </phil-slide>
 
@@ -209,7 +213,7 @@
   <!-- 16. Case 4: The Organ Transplant -->
   <phil-slide>
     <img slot="art" src="./assets/organ-transplant.png" alt="A surgical tray with a scalpel next to patient monitors and charts">
-    <span class="phil-date">Judith Jarvis Thomson · 1976</span>
+    <span class="phil-date">Philippa Foot 1967 · Thomson 1976</span>
     <h1>Case 4: The Organ Transplant</h1>
     <p class="lead">Dr. Pip Trackwell moves from the railway switch to the hospital ward. Five patients are dying of organ failure (heart, lungs, liver, and two kidneys).</p>
     <ul reveal>
@@ -223,11 +227,12 @@
   <!-- 17. Decision 4: Transplant Vote -->
   <phil-slide>
     <h1>Decision Point: The Transplant Surgeon</h1>
-    <phil-mcq prompt="You are the transplant surgeon. Do you harvest the healthy patient's organs to save the five dying patients?"
-              explain="Virtually 100% of people reject harvesting the patient. Even committed consequentialists recognize that if hospitals harvested healthy visitors, public trust would instantly collapse and no one would ever enter a clinic again.">
-      <phil-choice feedback="Harvesting an unthreatened patient violates the absolute foundation of clinical medicine: non-maleficence and bodily autonomy.">Harvest the organs — 5 lives saved outweighs 1 life lost</phil-choice>
-      <phil-choice correct>Refuse to harvest — provide conventional care and allow the five to die</phil-choice>
-    </phil-mcq>
+    <p class="muted">Not graded — though this is the case where agreement runs closest to unanimous.</p>
+    <phil-poll prompt="You are the transplant surgeon. Do you harvest the healthy patient's organs to save the five dying patients?"
+               explain="Almost nobody harvests. That near-unanimity is itself the finding worth explaining: the arithmetic is identical to the Switch, which most people accept. Even committed consequentialists reject it — a hospital that harvested its healthy visitors would empty its own waiting room within a week.">
+      <phil-choice note="The rare answer. It follows the net-lives arithmetic strictly, at the cost of everything clinical medicine is built on.">Harvest the organs — 5 lives saved outweighs 1 life lost</phil-choice>
+      <phil-choice note="Nearly everyone's answer — non-maleficence and bodily autonomy outrank the arithmetic.">Refuse to harvest — provide conventional care and allow the five to die</phil-choice>
+    </phil-poll>
   </phil-slide>
 
   <!-- 18. Why the Hospital Breaks the Math -->
@@ -237,7 +242,7 @@
     <ul reveal>
       <li><strong>Fiduciary Duty &amp; Trust:</strong> A physician owes a specific duty of care and <em>non-maleficence</em> ("first, do no harm") to every patient who walks through the door.</li>
       <li><strong>Bodily Inviolability:</strong> Every human being holds an absolute moral right against being commandeered as a biological spare-parts reservoir.</li>
-      <li><strong>Rule Utilitarian Collapse:</strong> A medical system that sacrificed healthy patients would cause vastly more terror, disease, and death across society than organ failure ever could.</li>
+      <li><strong>Rule-utilitarian collapse:</strong> a system that sacrificed healthy patients would cost more lives in avoided care than organ failure ever could.</li>
     </ul>
   </phil-slide>
 
@@ -276,7 +281,7 @@
       <li><strong style="color:var(--bad);">🔴 Immediate (Red):</strong> Life-threatening injuries requiring immediate intervention to survive.</li>
       <li><strong style="color:var(--accent-3);">🟡 Delayed (Yellow):</strong> Serious injuries requiring care, but stable enough to wait hours.</li>
       <li><strong style="color:var(--good);">🟢 Minor (Green):</strong> "Walking wounded" with minor injuries; can wait until urgent cases are stabilized.</li>
-      <li><strong style="color:var(--muted);">⚫ Expectant / Palliative (Black):</strong> Injuries so catastrophic that survival is unlikely even with maximal resources. Prioritized for comfort care and pain relief so scarce equipment can save others.</li>
+      <li><strong style="color:var(--muted);">⚫ Expectant (Black):</strong> survival unlikely even with maximal care. Comfort and pain relief come first, so scarce equipment can save others.</li>
     </ul>
   </phil-slide>
 
@@ -285,20 +290,45 @@
     <h1>Three Ways to Allocate Scarce Beds</h1>
     <p class="lead">When two patients in the 'Red' category arrive for the last ICU bed, which moral rule should decide?</p>
     <ul reveal>
-      <li><strong>1. Maximizing Life-Years (Utilitarian Efficiency):</strong> Give the bed to the patient with the highest probability of long-term survival and the most quality-adjusted life years (QALYs) remaining.</li>
-      <li><strong>2. Egalitarian Lottery (Procedural Equality):</strong> Give every competing candidate an equal, random mathematical chance through a lottery.</li>
-      <li><strong>3. First-Come, First-Served (Temporal Queue):</strong> Allocate to whoever arrived at the hospital doors first. (Prone to rewarding people with easy transportation or private cars).</li>
+      <li><strong>1. Short-Term Survival:</strong> Give the bed to whoever is most likely to walk out of <em>this</em> hospitalization alive, scored from current organ function.</li>
+      <li><strong>2. Egalitarian Lottery:</strong> Give every competing candidate an equal, random chance.</li>
+      <li><strong>3. First-Come, First-Served:</strong> Allocate to whoever arrived first — which quietly rewards whoever owned a car.</li>
+      <li>A fourth rule, <strong>maximizing life-years</strong>, sounds like the same thing as #1 but is not. Hold that thought.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22b. Survival vs Life-Years -->
+  <phil-slide>
+    <h1>The Distinction That Does the Work</h1>
+    <p class="lead">"Save the most lives" and "save the most life-years" sound identical. They are not, and real protocols are built on the gap between them.</p>
+    <ul reveal>
+      <li><strong>Short-term survival</strong> asks: will this patient survive this illness? It is scored from present organ function — US protocols commonly use <strong>SOFA</strong>.</li>
+      <li><strong>Life-years / QALYs</strong> asks: how much future does this patient have? That question builds age and disability directly into the score.</li>
+      <li>This is why most US crisis standards make short-term survival the <em>primary</em> criterion and refuse to rank patients by remaining lifespan.</li>
+      <li>Not only an ethical worry: federal civil-rights guidance in 2020 warned that allocating by age or disability can violate the ADA.</li>
     </ul>
   </phil-slide>
 
   <!-- 23. Decision 5: Triage Allocation Vote -->
   <phil-slide>
     <h1>Decision Point: The Last Ventilator</h1>
-    <phil-mcq prompt="During an epidemic, an ICU has only one ventilator remaining. Patient A (age 24, acute trauma, 90% survival likelihood) and Patient B (age 78, multi-organ failure, 20% survival likelihood) arrive simultaneously. Who receives the machine?"
-              explain="Most crisis triage protocols allocate the machine to Patient A to maximize net survival and life-years saved across the population. Unlike the Transplant case, doctors are not killing Patient B—they are directing scarce life support where it has the highest clinical probability of preventing death.">
-      <phil-choice correct>Allocate to Patient A — maximize clinical survival likelihood and total life-years saved</phil-choice>
-      <phil-choice feedback="A lottery ensures pure procedural equality, but in acute disaster triage, hospitals prioritize maximizing the total number of survivors.">Hold a random coin flip — give both human beings an equal mathematical chance</phil-choice>
-      <phil-choice feedback="Allocating to Patient B saves far fewer expected life-years and carries an 80% mortality rate even with the machine.">Allocate to Patient B — prioritize the sickest and oldest patient first</phil-choice>
+    <p class="muted">Not graded — this is a live dispute among working ethics committees.</p>
+    <phil-poll prompt="An ICU has one ventilator left. Patient A (24, acute trauma) and Patient B (78, multi-organ failure) arrive together. A is far more likely to survive this admission. Which rule should decide?"
+               explain="Every option here is defended by serious people, which is why hospitals settle it in advance, in writing, rather than at the bedside. What no mainstream protocol permits is deciding case-by-case on the spot — that is how bias gets in.">
+      <phil-choice note="This is what most US crisis standards actually do — and note it turns on A's survival odds, not on A's age.">Short-term survival — allocate to whoever is likelier to survive this hospitalization</phil-choice>
+      <phil-choice note="Defended as the only rule that treats every life as strictly equal. Some protocols use it to break ties.">Lottery — give both an equal random chance</phil-choice>
+      <phil-choice note="The rule the belief probe asked you about at the start. It maximizes life-years, and it is the one civil-rights guidance treats as legally risky.">Most years remaining — allocate to whoever has the longest expected future</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 23b. MCQ: What real protocols use -->
+  <phil-slide>
+    <h1>What the Protocols Actually Say</h1>
+    <phil-mcq prompt="In most US crisis standards of care, what is the primary criterion for allocating a scarce ventilator?"
+              explain="Right — short-term survival. Protocols score present organ function (typically SOFA) and ask who is likely to survive this hospitalization. Age and expected remaining lifespan are deliberately excluded as primary criteria, both on ethical grounds and because ranking patients that way raises ADA and Age Discrimination Act problems.">
+      <phil-choice feedback="Arrival order is explicitly rejected: it rewards whoever had transportation, not whoever the machine can save.">Arrival order at the hospital doors, with the earliest patient treated first</phil-choice>
+      <phil-choice feedback="This is the criterion most protocols specifically exclude, because scoring expected lifespan builds age and disability into the ranking.">The number of quality-adjusted life-years the patient can expect to gain</phil-choice>
+      <phil-choice correct>Likelihood of surviving this admission, scored from current organ function</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -324,11 +354,11 @@
 
   <!-- 26. Bridge to Modern Tech: Autonomous Vehicles & AI -->
   <phil-slide>
-    <img slot="art" src="./assets/dilemma-scales.png" alt="Balance scale">
+    <img slot="art" src="./assets/dilemma-scales.png" alt="A balanced brass scale holding a miniature train switch on one side and a stethoscope on the other">
     <h1>From Triage to Algorithms</h1>
     <p class="lead">Trolley problems and triage protocols are no longer just textbook exercises—they are being hardcoded into machines.</p>
     <ul reveal>
-      <li><strong>Autonomous Vehicles:</strong> An autonomous car's brakes fail. Should its collision avoidance system swerve into a concrete wall (killing its sole passenger) to avoid hitting five pedestrians?</li>
+      <li><strong>Autonomous vehicles:</strong> a car's brakes fail. Should it swerve into a wall, killing its passenger, to avoid five pedestrians?</li>
       <li><strong>Automated Triage Algorithms:</strong> Hospital AI systems rank patients on organ transplant waiting lists and ICU admission queues using multi-variable clinical scorecards.</li>
       <li><strong>The Core Lesson:</strong> If we do not make our ethical commitments conscious, explicit, and accountable, machines will make them for us in the dark.</li>
     </ul>
