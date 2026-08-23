@@ -30,3 +30,13 @@ A framed relic composition showing a heavy black iron movable-type alphabet stam
 
 ## relic-kranzberg
 A framed relic composition showing a finely crafted brass balance scale precisely weighing a mechanical clockwork gear on one pan against a warm glowing human heart on the other pan, with rich violet purple and dark indigo lighting.
+
+## relic-mcluhan
+Hand-authored SVG, not generated — `assets/relic-mcluhan.svg`. Idea-emblem for
+McLuhan and Postman on the standard 80×108 relic-card frame, amber accent. A
+broadcast screen whose massive bezel (the medium) dwarfs the tiny dim picture
+inside it (the message), radiating transmission arcs; below it a long amber bar
+of information over a red stub of action — Postman's information-action ratio.
+
+Note: `relic-luther.png` now illustrates the pamphlet-war slide, which is what it
+depicts. It previously sat on the McLuhan/Postman slide by mistake.
