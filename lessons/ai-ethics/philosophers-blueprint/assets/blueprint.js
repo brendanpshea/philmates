@@ -29,7 +29,8 @@ const STYLE = `
 .bpb-btn[aria-selected="true"] { background:var(--accent-3); color:var(--bg); }
 
 .bpb-panel { background:var(--panel); border:3px solid var(--border); padding:12px 14px; }
-.bpb-panel h4 { font-family:var(--pixel); font-size:11px; line-height:1.5; margin:0 0 10px; color:var(--accent); }
+/* h2, not h4: the widget sits under the slide's h1, so h4 skipped two levels. */
+.bpb-panel h2 { font-family:var(--pixel); font-size:11px; line-height:1.5; margin:0 0 10px; color:var(--accent); }
 .bpb-panel p { margin:0 0 8px; font-size:16px; }
 .bpb-panel ul { margin:0; padding-left:0; list-style:none; }
 .bpb-panel li { position:relative; padding-left:1.5em; margin:.4em 0; font-size:16px; line-height:1.45; }
@@ -124,7 +125,7 @@ class PhilBlueprintBuilder extends HTMLElement {
     const p = PIECES[i];
     this._btns.forEach((b, j) => b.setAttribute('aria-selected', j === i ? 'true' : 'false'));
     this._panel.innerHTML =
-      `<h4>${p.heading}</h4>${p.body}` +
+      `<h2>${p.heading}</h2>${p.body}` +
       (p.example ? `<div class="bpb-example">${p.example}</div>` : '');
   }
 }

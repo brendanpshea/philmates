@@ -360,62 +360,6 @@
     <phil-blueprint-builder></phil-blueprint-builder>
   </phil-slide>
 
-      <div id="blueprint-content" class="blueprint-display">
-        <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Thesis Formula: Claim + "Because" Clause</h2>
-        <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a public health crisis?</em></p>
-        <div class="quote-box">
-          ❌ <strong>Vague / Descriptive:</strong> "In this bluebook, I will look at different ethical theories regarding ventilator allocation algorithms."<br>
-          ✔ <strong>Strong Thesis:</strong> "Hospitals should not use purely algorithmic ventilator allocation <strong>because</strong> reducing moral priority to automated statistical survival scores violates patient dignity and discriminates against individuals with pre-existing disabilities."
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const blueprints = {
-        thesis: `
-          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Thesis Formula: Claim + "Because" Clause</h2>
-          <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a crisis?</em></p>
-          <div class="quote-box">
-            ❌ <strong>Descriptive / Weak:</strong> "In this essay, I will explore the pros and cons of algorithmic ICU triage."<br>
-            ✔ <strong>Strong Thesis:</strong> "Hospitals should not use algorithmic ventilator triage <strong>because</strong> automated statistical metrics disproportionately penalize vulnerable patients with chronic disabilities, violating Kantian dignity."
-          </div>
-        `,
-        mechanism: `
-          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Step-by-Step Argument Mechanism</h2>
-          <p><strong>Building the Logical Bridge:</strong></p>
-          <ul style="line-height:1.6;">
-            <li><strong>Premise 1:</strong> Kantian ethics establishes that human beings possess intrinsic dignity and must never be treated as mere numerical instruments.</li>
-            <li><strong>Premise 2:</strong> Algorithmic triage algorithms calculate utility by maximizing aggregate Quality-Adjusted Life Years (QALYs).</li>
-            <li><strong>Premise 3:</strong> Maximizing QALYs systematically devalues the lives of elderly and disabled patients by treating their remaining lifespan as worth less than healthy individuals.</li>
-            <li><strong>Conclusion:</strong> Purely algorithmic triage is ethically impermissible because it treats human dignity as a calculable commodity.</li>
-          </ul>
-        `,
-        steelman: `
-          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Principle of Charity: Steelman vs. Strawman</h2>
-          <p><strong>Facing the Strongest Counterargument:</strong></p>
-          <div class="quote-box">
-            ❌ <strong>Strawman Objection:</strong> "Opponents simply hate technology and want doctors to guess randomly in the dark."<br>
-            ✔ <strong>Steelman Objection:</strong> "Utilitarians argue that during an overwhelming catastrophe, doctors have a tragic duty to save the maximum total number of lives, and automated algorithms eliminate human exhaustion and racial bias from split-second triage decisions."
-          </div>
-        `,
-        timeline: `
-          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The 60-Minute Bluebook Time Budget</h2>
-          <ul style="line-height:1.6;">
-            <li><strong>0:00 – 0:10 (10 Mins):</strong> <em>The Blueprint Phase.</em> Dissect prompt, write thesis with because-clause, outline 3 premises, and sketch the steelman counterargument on scrap paper.</li>
-            <li><strong>0:10 – 0:50 (40 Mins):</strong> <em>The Drafting Phase.</em> Write directly into the bluebook following your scaffold. Focus on clear transitions, defined terms, and logical links.</li>
-            <li><strong>0:50 – 1:00 (10 Mins):</strong> <em>The Audit Phase.</em> Check for missing logical steps, ensure your rebuttal didn't contradict your thesis, and polish sentence clarity.</li>
-          </ul>
-        `
-      };
-
-      window.showBlueprint = function(key) {
-        document.querySelectorAll('.blueprint-btn').forEach(b => b.classList.remove('active'));
-        event.target.classList.add('active');
-        document.getElementById('blueprint-content').innerHTML = blueprints[key];
-      };
-    </script>
-  </phil-slide>
-
   <!-- 21. Checkset: Essay Rules -->
   <phil-slide>
     <h1>The Examined Essay Checklist</h1>
