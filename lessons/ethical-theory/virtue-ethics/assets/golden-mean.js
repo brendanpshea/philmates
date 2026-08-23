@@ -135,7 +135,7 @@ class PhilMean extends HTMLElement {
             <span class="mean-def-label"></span>
             <span class="mean-virtue-label"></span>
             <span class="mean-exc-label"></span>
-            <div class="mean-marker" aria-label="Character position"></div>
+            <div class="mean-marker" role="img" aria-label="Character position"></div>
             <div class="mean-center-line" aria-hidden="true"></div>
           </div>
         </div>
@@ -236,17 +236,27 @@ if (!document.getElementById('phil-mean-styles')) {
       position: relative;
       padding: 2.5rem 0 1rem;
     }
+    /* The opacity lives on the gradient itself, not on .mean-bar. On the bar it
+       composited the child labels too, dragging "Cowardice"/"Courage"/"Rashness"
+       down to 3.1-4.2:1 against the panel — under the 4.5:1 minimum. Same look,
+       readable text. */
     .mean-bar {
       position: relative;
       height: 12px;
       border-radius: 6px;
+    }
+    .mean-bar::after {
+      content: ""; position: absolute; inset: 0;
+      border-radius: inherit;
       background: linear-gradient(90deg,
         var(--info, #4cc2ff) 0%,
         var(--go, #46e07a) 50%,
         var(--mag, #ff6ad5) 100%);
       opacity: .6;
+      z-index: 0;
     }
     .mean-center-line {
+      z-index: 1;
       position: absolute;
       left: 50%; top: -6px;
       width: 2px; height: 24px;
@@ -258,6 +268,7 @@ if (!document.getElementById('phil-mean-styles')) {
       position: absolute; top: -1.6rem;
       font-size: .78rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: .03em;
+      z-index: 1;
     }
     .mean-def-label { left: 0; color: var(--info, #4cc2ff); }
     .mean-virtue-label {
@@ -267,6 +278,7 @@ if (!document.getElementById('phil-mean-styles')) {
     .mean-exc-label { right: 0; color: var(--mag, #ff6ad5); }
     .mean-marker {
       position: absolute;
+      z-index: 2;
       top: -10px;
       transform: translateX(-50%);
       padding: .2rem .55rem;

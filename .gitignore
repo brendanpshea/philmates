@@ -10,3 +10,5 @@ temp/**
 # Local secrets — never commit. See tools/cf-image.mjs.
 .env.local
 .env
+# Dev-only: tools/a11y-audit.mjs asks for playwright + axe-core.
+node_modules/

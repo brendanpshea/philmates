@@ -13,6 +13,8 @@ const el = (tag, cls, html) => {
   return n;
 };
 const isTyping = () => /^(input|select|textarea)$/i.test(document.activeElement?.tagName || '');
+// Checked at call time, not module load — users change this setting mid-session.
+const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
 /* =====================================================================
    PhilSfx — short synthesized feedback sounds (Web Audio, no files)
@@ -117,20 +119,28 @@ class PhilLesson extends HTMLElement {
     this._tally = el('span', 'phil-tally', '');
     const reset = el('button', 'phil-btn phil-btn--ghost phil-reset', '↺ Reset');
     reset.title = 'Reset this lesson’s progress';
+    reset.setAttribute('aria-label', 'Reset this lesson’s progress');
     reset.onclick = () => this._confirmReset();
     const right = el('div', 'phil-top__right');
     right.append(this._tally);
+    // Icon-only toggles: the emoji swap is the visual state, aria-pressed is the
+    // programmatic one. title alone is the weakest naming source and says nothing
+    // about on/off.
     this._sfxBtn = el('button', 'phil-btn phil-btn--ghost phil-sfx', PhilSfx.on ? '🔔' : '🔕');
     this._sfxBtn.title = 'Sound effects on/off (answer feedback chimes)';
+    this._sfxBtn.setAttribute('aria-label', 'Sound effects (answer feedback chimes)');
+    this._sfxBtn.setAttribute('aria-pressed', String(PhilSfx.on));
     this._sfxBtn.onclick = () => {
       PhilSfx.on = !PhilSfx.on;
       this._sfxBtn.textContent = PhilSfx.on ? '🔔' : '🔕';
+      this._sfxBtn.setAttribute('aria-pressed', String(PhilSfx.on));
       PhilSfx.correct();   // sample chime confirms it's on (and unlocks audio)
     };
     right.append(this._sfxBtn);
     if (this.querySelector('phil-narration')) {        // only show audio UI if the lesson has narration
       this._audioBtn = el('button', 'phil-btn phil-btn--ghost phil-audio', '🔇');
       this._audioBtn.title = 'Narration on/off (plays the current slide)';
+      this._audioBtn.setAttribute('aria-label', 'Narration (plays the current slide)');
       this._audioBtn.onclick = () => this._toggleAudio();
       right.append(this._audioBtn);
       this._setAudioBtn();
@@ -138,11 +148,20 @@ class PhilLesson extends HTMLElement {
     right.append(reset);
     row.append(el('h1', 'phil-title', this.getAttribute('title') || 'PhilMates'), right);
     const bar = el('div', 'phil-progress');
+    bar.setAttribute('role', 'progressbar');
+    bar.setAttribute('aria-label', 'Lesson progress');
+    bar.setAttribute('aria-valuemin', '0');
+    this._bar = bar;
     this._fill = el('div', 'phil-progress__fill');
     bar.append(this._fill);
     top.append(row, bar);
 
-    this._stage = el('div', 'phil-stage');
+    // Slide changes swap the whole visible page. Screen readers get told about it
+    // here; see show().
+    this._live = el('div', 'phil-sr-only');
+    this._live.setAttribute('role', 'status');
+
+    this._stage = el('main', 'phil-stage');            // the page's one main landmark
     this.slides.forEach(s => this._stage.append(s));   // move slides into stage
 
     const bottom = el('footer', 'phil-bottom');
@@ -153,6 +172,7 @@ class PhilLesson extends HTMLElement {
     this._nextBtn.onclick = () => this.next();
     const fs = el('button', 'phil-btn phil-btn--ghost', '⛶');
     fs.title = 'Fullscreen (F)';
+    fs.setAttribute('aria-label', 'Toggle fullscreen');
     fs.onclick = () => this.toggleFullscreen();
     bottom.append(
       this._wrap('phil-nav', [this._prevBtn]),
@@ -160,16 +180,19 @@ class PhilLesson extends HTMLElement {
       this._wrap('phil-nav', [fs, this._nextBtn])
     );
 
-    this.append(top, this._stage, bottom);
+    this.append(top, this._live, this._stage, bottom);
 
     // a window resize changes the stage height (the ResizeObserver in show() covers content growth)
     window.addEventListener('resize', () => this._fitSlide(this.current));
 
     document.addEventListener('keydown', e => {
       if (isTyping() || document.querySelector('.phil-modal')) return;
+      // Never shadow a browser/AT shortcut: unmodified keys only. Without this,
+      // Ctrl+F / ⌘+F (Find in page) toggles fullscreen instead of searching.
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
       if (e.key === 'ArrowRight') this.next();
       else if (e.key === 'ArrowLeft') this.prev();
-      else if (e.key.toLowerCase() === 'f') this.toggleFullscreen();
+      else if (e.key.toLowerCase() === 'f' && !e.shiftKey) this.toggleFullscreen();
     });
   }
   _wrap(cls, kids) { const w = el('div', cls); w.append(...kids); return w; }
@@ -177,10 +200,16 @@ class PhilLesson extends HTMLElement {
   /* ---- reset progress (with confirmation) ---- */
   _confirmReset() {
     if (document.querySelector('.phil-modal')) return;
+    const opener = document.activeElement;             // to restore on close
     const overlay = el('div', 'phil-modal');
     const box = el('div', 'phil-modal__box');
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    const title = el('p', 'phil-modal__title', '↺ Reset this lesson?');
+    title.id = 'phil-modal-title';
+    box.setAttribute('aria-labelledby', title.id);
     box.append(
-      el('p', 'phil-modal__title', '↺ Reset this lesson?'),
+      title,
       el('p', null, 'This clears your progress — every slide and question starts over. This can’t be undone.')
     );
     const cancel = el('button', 'phil-btn', 'Cancel');
@@ -190,15 +219,31 @@ class PhilLesson extends HTMLElement {
     box.append(actions);
     overlay.append(box);
 
-    const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey, true); };
-    const onKey = e => { if (e.key === 'Escape') { e.preventDefault(); close(); } };
+    const close = () => {
+      overlay.remove();
+      document.removeEventListener('keydown', onKey, true);
+      this.removeAttribute('inert');
+      opener?.focus?.();                               // put focus back where it came from
+    };
+    const onKey = e => {
+      if (e.key === 'Escape') { e.preventDefault(); return close(); }
+      // Keep Tab inside the dialog. Without this you're two tabs away from
+      // operating the page behind a scrim you can't see through.
+      if (e.key !== 'Tab') return;
+      const stops = [cancel, confirm];
+      const first = stops[0], last = stops[stops.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      else if (!stops.includes(document.activeElement)) { e.preventDefault(); first.focus(); }
+    };
     cancel.onclick = close;
     overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
     document.addEventListener('keydown', onKey, true);
     confirm.onclick = () => { this.store.reset(); location.reload(); };
 
+    this.setAttribute('inert', '');                    // belt and braces for AT + pointer
     document.body.append(overlay);
-    cancel.focus();
+    cancel.focus();                                    // the safe default, not the destructive one
   }
 
   /* ---- split each slide into art / body regions ---- */
@@ -231,7 +276,13 @@ class PhilLesson extends HTMLElement {
      misbehaves in Chrome (starts mid-scroll) — pin overflowing slides to the top. */
   _fitSlide(slide) {
     if (!slide) return;
-    slide.classList.toggle('is-tall', slide.scrollHeight > slide.clientHeight + 1);
+    const tall = slide.scrollHeight > slide.clientHeight + 1;
+    slide.classList.toggle('is-tall', tall);
+    // An overflowing slide is the scroll container, so it has to be focusable or
+    // a keyboard-only user can't reach the bottom of it — arrow keys need
+    // something focused to scroll. Only tall slides get the tab stop.
+    if (tall) slide.setAttribute('tabindex', '0');
+    else slide.removeAttribute('tabindex');
     // note: don't touch scrollTop here — this runs on every re-measure (reveals,
     // art load), and resetting would fight the auto-scroll-to-revealed-bullet.
   }
@@ -254,16 +305,37 @@ class PhilLesson extends HTMLElement {
     this._fitSlide(slide);
     slide.scrollTop = 0;          // the slide, not the stage, is the scroll container
     this._refresh();
-    const focusable = slide.querySelector('h1, [tabindex], button, input, select');
-    focusable?.focus?.({ preventScroll: true });
+    // Move focus to the slide's heading. It needs tabindex="-1" first: a plain
+    // <h1> isn't focusable, so calling focus() on it is a silent no-op and focus
+    // would stay wherever it was (usually the Next button).
+    const heading = slide.querySelector('h1, h2');
+    if (heading) {
+      heading.tabIndex = -1;
+      heading.focus({ preventScroll: true });
+    } else {
+      slide.tabIndex = -1;
+      slide.focus({ preventScroll: true });
+    }
+    this._announceSlide(slide, heading);
     this._playSlideAudio(slide);
   }
+  /* Focusing the heading is what a sighted keyboard user needs; this is what a
+     screen-reader user needs. Both, because they're different people. */
+  _announceSlide(slide, heading) {
+    if (!this._live) return;
+    const title = (heading?.textContent || '').trim();
+    const where = slide.hasAttribute('optional')
+      ? 'Aside'
+      : `Slide ${this.linear.indexOf(slide) + 1} of ${this.linear.length}`;
+    this._live.textContent = title ? `${where}: ${title}` : where;
+  }
+
   next() {
     // reveal the next bullet/step before leaving the slide
     if (this._remainingSteps() > 0) {
       const step = this.current._steps[this.current._shown++];
       step.classList.add('phil-show');
-      step.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      step.scrollIntoView({ block: 'nearest', behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
       if (this._remainingSteps() === 0) this._revealed.add(this.current.id);
       this._refresh();
       return;
@@ -328,6 +400,9 @@ class PhilLesson extends HTMLElement {
 
     const pos = this.current.hasAttribute('optional') ? '–' : idx + 1;
     this._counter.textContent = `${pos} / ${this.linear.length}`;
+    this._bar.setAttribute('aria-valuemax', String(this.linear.length));
+    this._bar.setAttribute('aria-valuenow', String(idx + 1));
+    this._bar.setAttribute('aria-valuetext', `Slide ${idx + 1} of ${this.linear.length}`);
     let tally = `★ ${this.store.correct.size}/${this.widgets.length} correct`;
     if (this.tasks.length) tally += ` · ✔ ${this.tasksDone.size}/${this.tasks.length}`;
     this._tally.textContent = tally;
@@ -348,6 +423,7 @@ class PhilLesson extends HTMLElement {
     PhilSfx.complete();
     this.dispatchEvent(new CustomEvent('phil:complete', { bubbles: true, detail: { lessonId: this.lessonId } }));
     const toast = el('div', 'phil-toast', '✔ LESSON COMPLETE!');
+    toast.setAttribute('role', 'status');   // it self-dismisses after 3.5s; announce it
     document.body.append(toast);
     requestAnimationFrame(() => toast.classList.add('show'));
     setTimeout(() => { toast.classList.remove('show'); setTimeout(() => toast.remove(), 400); }, 3500);
@@ -368,7 +444,13 @@ class PhilWidget extends HTMLElement {
     if (reg.alreadyCorrect) { this._restoring = true; this.restore(); this._restoring = false; }
   }
   feedbackBox() {
-    if (!this._fb) { this._fb = el('div', 'phil-feedback'); this.append(this._fb); }
+    if (!this._fb) {
+      this._fb = el('div', 'phil-feedback');
+      // Must be in the DOM before any text lands in it, or the announcement
+      // doesn't fire. This is the core teaching loop — it shouldn't be silent.
+      this._fb.setAttribute('role', 'status');
+      this.append(this._fb);
+    }
     return this._fb;
   }
   showFeedback(ok, msg) {
@@ -384,6 +466,15 @@ class PhilWidget extends HTMLElement {
   }
   build() {}     // overridden
   restore() { this.solved(); this.lock?.(); }
+  /* Render the prompt and wire it up as the group's accessible name, so someone
+     tabbing into the options hears the question, not just the choices. */
+  promptNode(text, role) {
+    const p = el('p', 'phil-widget__prompt', text);
+    p.id = `${this.qid}-prompt`;
+    this.setAttribute('role', role);
+    this.setAttribute('aria-labelledby', p.id);
+    return p;
+  }
 }
 
 /* ---------- <phil-mcq> : single-answer multiple choice ----------
@@ -396,7 +487,7 @@ class PhilMcq extends PhilWidget {
   build() {
     const choices = [...this.querySelectorAll('phil-choice')];
     this.innerHTML = '';
-    this.append(el('p', 'phil-widget__prompt', this.getAttribute('prompt') || ''));
+    this.append(this.promptNode(this.getAttribute('prompt') || '', 'radiogroup'));
     const list = el('div', 'phil-options');
     this._rows = choices.map(c => {
       const row = el('label', 'phil-choice');
@@ -404,7 +495,15 @@ class PhilMcq extends PhilWidget {
       row.append(input, el('span', null, c.innerHTML));
       row._correct = c.hasAttribute('correct');
       row._wrongHint = c.getAttribute('feedback') || '';
-      input.onchange = () => this._answer(row);
+      // Blocks the click a keyboard Space/arrow also generates. Not `disabled`:
+      // that greys the radio out (the chosen answer stops being visible) and
+      // drops it from the tab order, so a screen-reader user reviewing the
+      // question can no longer reach their own answer.
+      input.addEventListener('click', e => { if (this._locked) e.preventDefault(); });
+      input.onchange = () => {
+        if (this._locked) return this._reassert();
+        this._answer(row);
+      };
       list.append(row);
       return row;
     });
@@ -415,7 +514,19 @@ class PhilMcq extends PhilWidget {
     if (row._correct) { row.classList.add('correct'); this.lock(); this.solved(); }
     else { row.classList.add('wrong'); this.showFeedback(false, row._wrongHint); }
   }
-  lock() { this._rows.forEach(r => r.classList.add('locked')); }
+  // pointer-events:none only stops the mouse — a keyboard user could still change
+  // a locked-in answer. _locked closes that gap for every input modality.
+  _reassert() {
+    const right = this._rows.find(r => r._correct);
+    if (right) right.querySelector('input').checked = true;
+  }
+  lock() {
+    this._locked = true;
+    this._rows.forEach(r => {
+      r.classList.add('locked');
+      r.querySelector('input').setAttribute('aria-disabled', 'true');
+    });
+  }
   restore() {
     const r = this._rows.find(x => x._correct);
     r.classList.add('correct'); r.querySelector('input').checked = true;
@@ -495,7 +606,7 @@ class PhilCheckset extends PhilWidget {
   build() {
     const items = [...this.querySelectorAll('phil-statement')];
     this.innerHTML = '';
-    this.append(el('p', 'phil-widget__prompt', this.getAttribute('prompt') || 'Check every statement that is TRUE.'));
+    this.append(this.promptNode(this.getAttribute('prompt') || 'Check every statement that is TRUE.', 'group'));
     const list = el('div', 'phil-options');
     this._rows = items.map(it => {
       const row = el('label', 'phil-choice');
@@ -503,6 +614,7 @@ class PhilCheckset extends PhilWidget {
       row.append(input, el('span', null, it.innerHTML));
       row._correct = it.hasAttribute('correct');
       row._input = input;
+      input.addEventListener('click', e => { if (this._locked) e.preventDefault(); });
       list.append(row);
       return row;
     });
@@ -522,7 +634,11 @@ class PhilCheckset extends PhilWidget {
     if (ok) { this.lock(); this.solved(); }
     else this.showFeedback(false, 'Some are off — red rows are wrong. Adjust and check again.');
   }
-  lock() { this._rows.forEach(r => r.classList.add('locked')); this._btn.disabled = true; }
+  lock() {
+    this._locked = true;
+    this._rows.forEach(r => { r.classList.add('locked'); r._input.setAttribute('aria-disabled', 'true'); });
+    this._btn.disabled = true;
+  }
   restore() {
     this._rows.forEach(r => { if (r._correct) { r._input.checked = true; r.classList.add('correct'); } });
     this.lock(); this.solved();
@@ -553,6 +669,10 @@ class PhilCloze extends PhilWidget {
       } else {
         field = el('input', 'phil-blank'); field.type = 'text'; field.size = 12;
       }
+      // Without this the field announces as a bare "edit" / "combo box" with no
+      // clue which gap it fills. tpl is in document order, so the index matches
+      // the reading order of the sentence.
+      field.setAttribute('aria-label', `Blank ${this._blanks.length + 1} of ${tpl.length}`);
       field._accepted = accepted;
       b.replaceWith(field);
       this._blanks.push(field);
@@ -656,15 +776,26 @@ function likertLegend() {
   legend.append(el('span', null, 'Strongly disagree'), el('span', null, 'Strongly agree'));
   return legend;
 }
-function likertScale(selected, onPick) {
+function likertScale(selected, onPick, labelledBy) {
   const row = el('div', 'phil-scale');
+  row.setAttribute('role', 'group');
+  if (labelledBy) row.setAttribute('aria-labelledby', labelledBy);
   const cells = [];
   for (let v = 1; v <= 5; v++) {
     const b = el('button', null, String(v));
     b.type = 'button';
     b.setAttribute('aria-label', LIKERT[v]);
+    // The .sel class is the only visual marker of the current rating; aria-pressed
+    // is what lets a screen-reader user read their own answer back — which the
+    // whole before/after belief probe depends on.
+    b.setAttribute('aria-pressed', String(v === selected));
     if (v === selected) b.classList.add('sel');
-    b.onclick = () => { cells.forEach(c => c.classList.remove('sel')); b.classList.add('sel'); onPick(v); };
+    b.onclick = () => {
+      cells.forEach(c => { c.classList.remove('sel'); c.setAttribute('aria-pressed', 'false'); });
+      b.classList.add('sel');
+      b.setAttribute('aria-pressed', 'true');
+      onPick(v);
+    };
     cells.push(b); row.append(b);
   }
   return row;
@@ -701,13 +832,16 @@ class PhilBeliefs extends HTMLElement {
     this.append(likertLegend());
     this.statements.forEach((text, i) => {
       const row = el('div', 'phil-belief');
-      row.append(el('p', 'phil-belief__text', text));
-      row.append(likertScale(rec.pre[i], v => { rec.pre[i] = v; this.store.save(); this._sync(); }));
+      const label = el('p', 'phil-belief__text', text);
+      label.id = `${this.key}-pre-${i}`;
+      row.append(label);
+      row.append(likertScale(rec.pre[i], v => { rec.pre[i] = v; this.store.save(); this._sync(); }, label.id));
       this.append(row);
     });
     this._submit = el('button', 'phil-btn phil-btn--primary phil-belief__submit', 'Submit');
     this._submit.onclick = () => this._onSubmit();
     this._status = el('p', 'phil-belief__status');
+    this._status.setAttribute('role', 'status');
     this.append(this._submit, this._status);
     this.taskId = this.lesson?.registerTask();
     if (rec.submitted) this.lesson?.setTaskDone(this.taskId, true);
@@ -763,10 +897,12 @@ class PhilBeliefsReview extends HTMLElement {
     rec.statements.forEach((text, i) => {
       const pre = rec.pre?.[i];
       const row = el('div', 'phil-belief');
-      row.append(el('p', 'phil-belief__text', text));
+      const label = el('p', 'phil-belief__text', text);
+      label.id = `${this.key}-post-${i}`;
+      row.append(label);
       row.append(el('p', 'phil-belief__then', pre ? `Then: ${LIKERT[pre]}` : 'Then: (not rated)'));
       const delta = el('p', 'phil-belief__delta none', '');
-      row.append(likertScale(rec.post[i], v => { rec.post[i] = v; this.store.save(); beliefDelta(delta, pre, v); this._sync(); }));
+      row.append(likertScale(rec.post[i], v => { rec.post[i] = v; this.store.save(); beliefDelta(delta, pre, v); this._sync(); }, label.id));
       row.append(delta);
       beliefDelta(delta, pre, rec.post[i]);
       this.append(row);
@@ -774,6 +910,7 @@ class PhilBeliefsReview extends HTMLElement {
     this._submit = el('button', 'phil-btn phil-btn--primary phil-belief__submit', 'Submit');
     this._submit.onclick = () => this._onSubmit();
     this._status = el('p', 'phil-belief__status');
+    this._status.setAttribute('role', 'status');
     this.append(this._submit, this._status);
     if (rec.reviewSubmitted) this.lesson?.setTaskDone(this.taskId, true);
     this._sync();

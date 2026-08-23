@@ -10,6 +10,46 @@
   <script type="module" src="../../../shared/phil-core.js?v=2"></script>
   <script type="module" src="./assets/blueprint.js"></script>
   <style>
+    .blueprint-box {
+      background: var(--panel, #1d2235);
+      border: 2px solid var(--border, #3d4566);
+      border-radius: 8px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    .blueprint-stepper {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .blueprint-btn {
+      background: var(--bg-alt, #111422);
+      color: var(--text, #e2e8f0);
+      border: 1px solid var(--border, #3d4566);
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .blueprint-btn:hover {
+      border-color: var(--accent, #6366f1);
+    }
+    .blueprint-btn.active {
+      /* --accent is defined globally as green, so the #6366f1 fallback this rule
+         was written for never applies — white on green is 1.72:1. */
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+    }
+    .blueprint-display {
+      background: rgba(0,0,0,0.25);
+      padding: 14px;
+      border-radius: 6px;
+      border-left: 3px solid #6366f1;
+    }
     .quote-box {
       font-family: Georgia, serif;
       font-style: italic;
@@ -320,31 +360,60 @@
     <phil-blueprint-builder></phil-blueprint-builder>
   </phil-slide>
 
-  <!-- 20b. The vacuum tube reveal -->
-  <phil-slide>
-    <span class="phil-date">Diagnostic · vacuum tube 4</span>
-    <h1>About Those Quotations</h1>
-    <p class="lead"><em>"BEFORE YOU SUBMIT,"</em> PlatoBot says, tubes flickering, <em>"a disclosure. Every Socrates quotation I have given you today was invented. By me."</em></p>
-    <ul reveal>
-      <li>The <strong>"Athenian Senate"</strong> never existed. Athens had an Assembly and a Council; the Senate was Roman.</li>
-      <li>The <strong>"Olympic javelin finals"</strong> quote has Socrates talking about operating systems, roughly 2,400 years early.</li>
-      <li>The <strong>"wrestling coach"</strong> is the sly one. Socrates really did haunt the wrestling grounds — a true setting is what sells a false quote.</li>
-      <li>The <strong><em>Phaedo</em> "banquet"</strong> names a real dialogue, but the <em>Phaedo</em> is Socrates' death scene in a prison cell. The banquet is the <em>Symposium</em>.</li>
-    </ul>
-  </phil-slide>
+      <div id="blueprint-content" class="blueprint-display">
+        <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Thesis Formula: Claim + "Because" Clause</h2>
+        <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a public health crisis?</em></p>
+        <div class="quote-box">
+          ❌ <strong>Vague / Descriptive:</strong> "In this bluebook, I will look at different ethical theories regarding ventilator allocation algorithms."<br>
+          ✔ <strong>Strong Thesis:</strong> "Hospitals should not use purely algorithmic ventilator allocation <strong>because</strong> reducing moral priority to automated statistical survival scores violates patient dignity and discriminates against individuals with pre-existing disabilities."
+        </div>
+      </div>
+    </div>
 
-  <!-- 20c. Checkset: why the fakes worked [ungraded position varies] -->
-  <phil-slide>
-    <h1>Why You Believed a Broken Robot</h1>
-    <p>Each fabrication was fluent, era-appropriate, and attached to a real name — and one even cited a real book. That is precisely the shape of a language model's confident invention.</p>
-    <phil-checkset prompt="Check every TRUE lesson to draw from PlatoBot's faulty tube."
-                   explain="Fluency is not evidence. A fabricated quotation reads exactly like a real one, and a real citation attached to a false claim is harder to catch than an obvious error — which is why the check has to be the source itself, not how right the sentence sounds.">
-      <phil-statement correct>A quotation that sounds plausible and fits the period can still be entirely invented.</phil-statement>
-      <phil-statement correct>Citing a real work (the <em>Phaedo</em>) does not make the claim attached to it true.</phil-statement>
-      <phil-statement>Text that is grammatical, confident, and well-styled is reliable evidence that its claims are accurate.</phil-statement>
-      <phil-statement correct>The only way to verify a quotation is to check the source, not to judge how convincing it sounds.</phil-statement>
-      <phil-statement>Because a language model is trained on real books, quotations it produces can be cited without checking.</phil-statement>
-    </phil-checkset>
+    <script>
+      const blueprints = {
+        thesis: `
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Thesis Formula: Claim + "Because" Clause</h2>
+          <p><strong>Prompt:</strong> <em>Should hospitals use automated algorithms to decide which ICU patients receive scarce ventilators during a crisis?</em></p>
+          <div class="quote-box">
+            ❌ <strong>Descriptive / Weak:</strong> "In this essay, I will explore the pros and cons of algorithmic ICU triage."<br>
+            ✔ <strong>Strong Thesis:</strong> "Hospitals should not use algorithmic ventilator triage <strong>because</strong> automated statistical metrics disproportionately penalize vulnerable patients with chronic disabilities, violating Kantian dignity."
+          </div>
+        `,
+        mechanism: `
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Step-by-Step Argument Mechanism</h2>
+          <p><strong>Building the Logical Bridge:</strong></p>
+          <ul style="line-height:1.6;">
+            <li><strong>Premise 1:</strong> Kantian ethics establishes that human beings possess intrinsic dignity and must never be treated as mere numerical instruments.</li>
+            <li><strong>Premise 2:</strong> Algorithmic triage algorithms calculate utility by maximizing aggregate Quality-Adjusted Life Years (QALYs).</li>
+            <li><strong>Premise 3:</strong> Maximizing QALYs systematically devalues the lives of elderly and disabled patients by treating their remaining lifespan as worth less than healthy individuals.</li>
+            <li><strong>Conclusion:</strong> Purely algorithmic triage is ethically impermissible because it treats human dignity as a calculable commodity.</li>
+          </ul>
+        `,
+        steelman: `
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The Principle of Charity: Steelman vs. Strawman</h2>
+          <p><strong>Facing the Strongest Counterargument:</strong></p>
+          <div class="quote-box">
+            ❌ <strong>Strawman Objection:</strong> "Opponents simply hate technology and want doctors to guess randomly in the dark."<br>
+            ✔ <strong>Steelman Objection:</strong> "Utilitarians argue that during an overwhelming catastrophe, doctors have a tragic duty to save the maximum total number of lives, and automated algorithms eliminate human exhaustion and racial bias from split-second triage decisions."
+          </div>
+        `,
+        timeline: `
+          <h2 style="margin-top:0; color: #a5b4fc; font-family: var(--body); font-size: 1em;">The 60-Minute Bluebook Time Budget</h2>
+          <ul style="line-height:1.6;">
+            <li><strong>0:00 – 0:10 (10 Mins):</strong> <em>The Blueprint Phase.</em> Dissect prompt, write thesis with because-clause, outline 3 premises, and sketch the steelman counterargument on scrap paper.</li>
+            <li><strong>0:10 – 0:50 (40 Mins):</strong> <em>The Drafting Phase.</em> Write directly into the bluebook following your scaffold. Focus on clear transitions, defined terms, and logical links.</li>
+            <li><strong>0:50 – 1:00 (10 Mins):</strong> <em>The Audit Phase.</em> Check for missing logical steps, ensure your rebuttal didn't contradict your thesis, and polish sentence clarity.</li>
+          </ul>
+        `
+      };
+
+      window.showBlueprint = function(key) {
+        document.querySelectorAll('.blueprint-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        document.getElementById('blueprint-content').innerHTML = blueprints[key];
+      };
+    </script>
   </phil-slide>
 
   <!-- 21. Checkset: Essay Rules -->

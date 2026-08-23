@@ -53,11 +53,11 @@ function render(topics) {
 
   const sections = Object.entries(topics).map(([topic, lessons]) => `
       <section class="topic">
-        <h2>${pretty(topic)}</h2>
+        <h3>${pretty(topic)}</h3>
         <div class="cards">
           ${lessons.map(l => `
           <a class="card" href="${l.href}">
-            <h3>${l.title}${l.subject ? ` <span class="card-topic">(${l.subject})</span>` : ''}</h3>
+            <h4>${l.title}${l.subject ? ` <span class="card-topic">(${l.subject})</span>` : ''}</h4>
             <p>${l.desc || ''}</p>
             <div class="meta">
               <span class="badge">⏱ ~${l.minutes} min</span>
@@ -90,6 +90,17 @@ function render(topics) {
     .wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px 72px; }
     a { color: var(--accent-3); }
 
+    /* skip link — visible only once focused */
+    .skip { position: absolute; left: -9999px; top: 0; z-index: 20;
+            font-family: var(--pixel); font-size: 11px; color: var(--bg);
+            background: var(--accent-3); padding: 12px 16px; text-decoration: none; }
+    .skip:focus { left: 8px; top: 8px; }
+
+    /* focus indicator — the UA default is not guaranteed on this dark theme */
+    :where(a, button, input, select, textarea):focus-visible {
+      outline: 3px solid var(--accent-3); outline-offset: 2px;
+    }
+
     /* sticky mini-nav */
     .nav { position: sticky; top: 0; z-index: 10; background: var(--panel);
            border-bottom: 3px solid var(--border); box-shadow: 0 3px 0 var(--shadow); }
@@ -107,8 +118,9 @@ function render(topics) {
     .hero .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
 
     /* buttons */
+    /* dark ink on the green, not --ink: near-white on #46e07a is 1.52:1. */
     .btn { display: inline-block; font-family: var(--pixel); font-size: 11px; text-decoration: none;
-           color: var(--ink); background: var(--accent); border: 3px solid var(--border);
+           color: var(--bg); background: var(--accent); border: 3px solid var(--border);
            box-shadow: 0 5px 0 var(--shadow); padding: 14px 18px; transition: transform .05s; }
     .btn:hover { transform: translateY(-2px); }
     .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--shadow); }
@@ -127,13 +139,13 @@ function render(topics) {
     .feature p { color: var(--muted); font-size: .92em; margin: 0; }
 
     /* lesson cards */
-    .topic h2 { font-family: var(--pixel); color: var(--accent-3); font-size: 15px; margin-top: 36px; }
+    .topic h3 { font-family: var(--pixel); color: var(--accent-3); font-size: 15px; margin-top: 36px; }
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
     .card { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: var(--panel-2);
             border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 18px; transition: transform .05s; }
-    .card:hover { transform: translateY(-3px); background: #313a5e; }
+    .card:hover { transform: translateY(-3px); background: #2b3252; }   /* #313a5e put .card p at 4.45:1 */
     .card:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--shadow); }
-    .card h3 { font-family: var(--pixel); font-size: 12px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
+    .card h4 { font-family: var(--pixel); font-size: 12px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
     .card-topic { font-family: var(--body); font-weight: 400; font-size: 15px; color: var(--accent-3); }
     .card p { color: var(--muted); font-size: .9em; margin: 0 0 14px; }
     .card .meta { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -159,12 +171,15 @@ function render(topics) {
     /* about */
     .about p { max-width: 68ch; }
 
-    footer { margin-top: 64px; padding-top: 22px; border-top: 3px solid var(--border); color: var(--muted); font-size: .85em; }
+    /* a page-level landmark, so it sits outside <main> and carries .wrap itself */
+    footer.wrap { margin-top: 64px; padding-top: 22px; border-top: 3px solid var(--border); color: var(--muted); font-size: .85em; }
   </style>
 </head>
 <body>
 
-  <nav class="nav"><div class="nav__in">
+  <a class="skip" href="#what">Skip to content</a>
+
+  <nav class="nav" aria-label="Section"><div class="nav__in">
     <span class="nav__brand">★ PhilMates</span>
     <a href="#what">What</a>
     <a href="#lessons">Lessons</a>
@@ -172,7 +187,7 @@ function render(topics) {
     <a href="#about">About</a>
   </div></nav>
 
-  <div class="wrap">
+  <main class="wrap">
 
     <header class="hero">
       <h1>Philosophy you can<br>actually finish.</h1>
@@ -224,11 +239,11 @@ ${sections}
       <p>Get in touch: <a href="mailto:brendanpshea@gmail.com">brendanpshea@gmail.com</a>. Contributions and classroom feedback are welcome.</p>
     </section>
 
-    <footer>
-      <p>★ PhilMates — open educational resources for philosophy. Licensed under <a href="LICENSE">CC BY-NC 4.0</a>. Authoring guide: <a href="AUTHORING.md">AUTHORING.md</a>.</p>
-    </footer>
+  </main>
 
-  </div>
+  <footer class="wrap">
+    <p>★ PhilMates — open educational resources for philosophy. Licensed under <a href="LICENSE">CC BY-NC 4.0</a>. Authoring guide: <a href="AUTHORING.md">AUTHORING.md</a>.</p>
+  </footer>
 </body>
 </html>
 `;

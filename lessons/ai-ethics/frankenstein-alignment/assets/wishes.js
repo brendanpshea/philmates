@@ -12,7 +12,7 @@
    it names why there isn't one.
 
    Teaching widget: ungraded, no completion hook, no persistence — same
-   contract as <phil-cascade-engine> in the breadcrumb lesson.
+   contract as <phil-packet-router> in the internet lesson.
 
    Type is sized to project: nothing below 15px.
    ===================================================================== */
@@ -45,15 +45,17 @@ const STYLE = `
 
 .wsh-card { background:var(--panel); border:3px solid var(--border);
             border-left-width:6px; padding:10px 12px; }
-.wsh-card h4 { font-family:var(--pixel); font-size:9px; line-height:1.6;
+/* h2, not h4: the widget sits under the slide's h1, so h4 skipped two levels.
+   Sizing follows switchboard.js, the reference widget named in AUTHORING.md. */
+.wsh-card h2 { font-family:var(--pixel); font-size:11px; line-height:1.6;
                margin:0 0 8px; color:var(--muted); }
 .wsh-card p { margin:0; font-size:16px; line-height:1.45; }
 .wsh-card.got { border-left-color:var(--accent-3); }
-.wsh-card.got h4 { color:var(--accent-3); }
+.wsh-card.got h2 { color:var(--accent-3); }
 .wsh-card.missed { border-left-color:var(--bad); }
-.wsh-card.missed h4 { color:var(--bad); }
+.wsh-card.missed h2 { color:var(--bad); }
 .wsh-card.done { border-left-color:var(--good); grid-column:1 / -1; }
-.wsh-card.done h4 { color:var(--good); }
+.wsh-card.done h2 { color:var(--good); }
 
 .wsh-hint { margin:10px 0 0; font-size:15px; line-height:1.5; color:var(--muted); }
 `;
@@ -150,13 +152,13 @@ class PhilWishTester extends HTMLElement {
     });
 
     this._out.innerHTML = `
-      <div class="wsh-card got"><h4>What you get</h4><p>${a.got}</p></div>
-      <div class="wsh-card missed"><h4>What you left out</h4><p>${a.missed}</p></div>`;
+      <div class="wsh-card got"><h2>What you get</h2><p>${a.got}</p></div>
+      <div class="wsh-card missed"><h2>What you left out</h2><p>${a.missed}</p></div>`;
 
     const last = i === ATTEMPTS.length - 1;
     if (last) {
       this._out.append(el('div', 'wsh-card done',
-        `<h4>${CLOSING.head}</h4><p>${CLOSING.body}</p>`));
+        `<h2>${CLOSING.head}</h2><p>${CLOSING.body}</p>`));
       this._hint.textContent = '';
     } else {
       this._hint.textContent = 'Now try to fix it. Choose the next instruction down.';

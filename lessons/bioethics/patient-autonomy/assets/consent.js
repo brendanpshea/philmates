@@ -34,7 +34,9 @@ const STYLE = `
 .cm-meter.ok > i { background:repeating-linear-gradient(45deg,var(--accent) 0 8px,#38c466 8px 16px); }
 
 .cm-conds { list-style:none; padding:0; margin:10px 0; display:flex; flex-direction:column; gap:6px; }
-.cm-conds li { display:flex; gap:10px; align-items:flex-start; background:var(--panel); border:3px solid var(--border); padding:8px 10px; cursor:pointer; }
+.cm-conds li { background:var(--panel); border:3px solid var(--border); padding:8px 10px; }
+/* the flex row moved onto the label so the whole row stays clickable */
+.cm-conds label { display:flex; gap:10px; align-items:flex-start; cursor:pointer; }
 .cm-conds li.on { border-color:var(--good); }
 .cm-conds input { width:18px; height:18px; flex:none; margin-top:2px; accent-color:var(--good); }
 
@@ -80,8 +82,11 @@ class PhilConsent extends HTMLElement {
       const li = el('li');
       const box = el('input'); box.type = 'checkbox';
       box.onchange = () => { li.classList.toggle('on', box.checked); this.render(); };
-      li.onclick = e => { if (e.target !== box) { box.checked = !box.checked; box.onchange(); } };
-      li.append(box, el('span', null, r.text));
+      // A real <label> wrapper, not a click handler on the row: the handler gave
+      // the mouse click-anywhere but left the checkbox with no accessible name.
+      const lab = el('label');
+      lab.append(box, el('span', null, r.text));
+      li.append(lab);
       list.append(li);
       return box;
     });

@@ -224,6 +224,39 @@ failed. Two habits keep you inside the frame:
 Same rule for any custom widget you write: nothing below 15px. The reference
 sizes are in `lessons/bioethics/trolley-and-triage/assets/switchboard.js`.
 
+## Accessibility (auto-checked)
+
+The engine handles most of this for you — landmarks, focus movement between
+slides, announcements, names for widget controls, keyboard reachability. Four
+things are yours to get right, because only you know the content:
+
+1. **Alt text on every image.** Describe what's *in* the scene, not the filename:
+   `alt="The Thrum: a soft pink creature curled on the floor of a containment
+   cell, red pain-waves radiating outward"`. Every image in the repo has real alt
+   text — keep that streak.
+2. **Don't skip heading levels.** A slide's `<h1>` is its title; sub-headings
+   inside it are `<h2>`. Jumping straight to `<h3>`/`<h4>` because it looks right
+   breaks the outline screen-reader users navigate by. Style it, don't renumber it.
+3. **Never say it with colour alone.** "The green ones are correct" leaves out
+   anyone who can't tell them apart — pair colour with a word, icon, or shape.
+4. **Watch `opacity` for de-emphasis.** Fading text toward the background quietly
+   costs contrast; it's how three labels in the virtue-ethics widget ended up
+   below the minimum. Dim a decorative layer, not the text on top of it.
+
+If you write custom CSS in a lesson, don't reuse the shared token names
+(`--accent`, `--ink`, `--bg`…) for different colours. `var(--accent, #6366f1)`
+looks safe but the fallback never fires — `--accent` is defined globally as
+green, which is how one lesson's active tab ended up white-on-green at 1.7:1.
+
+Run the audit after any of that:
+
+```bash
+node tools/a11y-audit.mjs                  # walks every slide of every lesson
+node tools/a11y-audit.mjs --strict         # exit 1 if any issues (for CI/hooks)
+```
+
+Full findings, method and limits: [docs/accessibility.md](docs/accessibility.md).
+
 ## Art & style
 
 - Reference aesthetic: **16-bit console era**. Hand-authored SVGs preferred;
