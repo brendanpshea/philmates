@@ -27,6 +27,15 @@ const CORRECT_LONG_RATIO = 1.3; // correct vs avg-wrong length before "too long"
 const CORRECT_LONG_MIN   = 12;  // ...minimum absolute gap (chars)
 const POSITION_SHARE   = 0.6;   // share of answers allowed at one position
 
+/* Repo-wide thresholds. A tell can sit under every per-item threshold and
+   still be plain across the whole set: if the correct answer is the longest
+   option in most questions, "pick the longest" beats the quiz even though no
+   single question looks wrong. Only visible in aggregate — a two-question
+   lesson cannot show it at all. */
+const GLOBAL_LONGEST_MAX = 0.45; // share of items where correct is longest
+const GLOBAL_POS_MAX     = 0.45; // share of all correct answers at one slot
+const GLOBAL_LEN_GAP_MAX = 4.0;  // mean correct-minus-wrong length, chars
+
 const ls = async d => { try { return await readdir(d); } catch { return []; } };
 const isDir = async p => { try { return (await stat(p)).isDirectory(); } catch { return false; } };
 const stripTags = s => s.replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/gi, 'x').replace(/\s+/g, ' ').trim();
@@ -94,6 +103,7 @@ function checkPositions(mcqs) {
 
 async function run() {
   let lessonCount = 0, mcqCount = 0, problemCount = 0;
+  const allMcqs = [];
 
   for (const topic of await ls(LESSONS)) {
     const tdir = path.join(LESSONS, topic);
@@ -104,6 +114,7 @@ async function run() {
       const mcqs = parseMcqs(html);
       if (!mcqs.length) continue;
       lessonCount++; mcqCount += mcqs.length;
+      allMcqs.push(...mcqs);
 
       const lines = [];
       mcqs.forEach((q, i) => {
@@ -121,6 +132,37 @@ async function run() {
       console.log(header);
       lines.forEach(l => console.log(l));
     }
+  }
+
+  /* ---- repo-wide tells, invisible one lesson at a time ---- */
+  const globals = [];
+  const usable = allMcqs.filter(q => q.choices.some(c => c.correct) && q.choices.length > 1);
+  if (usable.length >= 10) {
+    const right = q => q.choices.find(c => c.correct).len;
+    const wrong = q => q.choices.filter(c => !c.correct).map(c => c.len);
+
+    const longest = usable.filter(q => right(q) > Math.max(...wrong(q))).length;
+    if (longest / usable.length > GLOBAL_LONGEST_MAX)
+      globals.push(`correct answer is the longest option in ${longest}/${usable.length} items `
+        + `(${Math.round(longest / usable.length * 100)}%, chance is about 33%) `
+        + `\u2014 "pick the longest" beats the quiz`);
+
+    const gap = mean(usable.map(q => right(q) - mean(wrong(q))));
+    if (Math.abs(gap) > GLOBAL_LEN_GAP_MAX)
+      globals.push(`correct answers run ${gap > 0 ? '+' : ''}${gap.toFixed(1)} chars `
+        + `against the wrong ones on average`);
+
+    const slots = {};
+    usable.forEach(q => { const i = q.choices.findIndex(c => c.correct); slots[i] = (slots[i] || 0) + 1; });
+    const [slot, n] = Object.entries(slots).sort((a, b) => b[1] - a[1])[0];
+    if (n / usable.length > GLOBAL_POS_MAX)
+      globals.push(`${n}/${usable.length} correct answers sit in slot ${letter(+slot)} `
+        + `(${Math.round(n / usable.length * 100)}%) across every lesson`);
+  }
+  if (globals.length) {
+    problemCount += globals.length;
+    console.log('\n\u26a0 across all lessons:');
+    globals.forEach(g => console.log(`  - ${g}`));
   }
 
   console.log(`\nScanned ${mcqCount} MCQ across ${lessonCount} lesson(s) — ${problemCount} issue(s).`);

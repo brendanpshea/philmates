@@ -192,6 +192,11 @@ Multiple-choice questions leak answers if you're not careful. Two tells matter m
 2. **Varied position.** Across a lesson's MCQs, move the `correct` choice around
    (A / B / C…). Don't park it in the same slot every time.
 
+It also checks the whole repo at once, because the worst tell is invisible one
+lesson at a time. If the correct answer is the longest option in most questions,
+"pick the longest" beats the quiz even though every individual question looks
+fine — and a two-question lesson cannot show that pattern at all.
+
 Run the validator any time you add or edit questions:
 
 ```bash
