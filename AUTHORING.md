@@ -233,17 +233,28 @@ in its own sentences.
 > ✗ Here is everything the lesson assumes you know.
 > ✓ If you haven't read the story, here are the basics.
 
-**2. One idea per sentence.** If a sentence has an em dash, the clause after it is
-either a separate sentence or it is decoration. Split it or cut it. Same for
-semicolons, and for any bullet that runs past three lines.
+**2. One idea per sentence.** If a sentence ends with an em dash and a trailing
+clause, that clause is either a separate sentence or it is decoration. Split it or
+cut it. Same for any bullet running past three lines.
 
 > ✗ Infection is other-regarding. The Harm Principle doesn't merely tolerate
 >   public-health powers here — it's the very ground for them.
 > ✓ Infection is other-regarding. The Harm Principle does not merely tolerate
 >   public-health powers here. It is the ground for them.
 
-Where a dash separates a term from its gloss, it was standing in for a colon.
-Use the colon: `**The mean**: a disposition between excess and deficiency.`
+This is about the *trailing* dash specifically, because that is what produces the
+skimmable setup/punchline rhythm. Three uses are fine and shouldn't be hunted:
+
+- **Paired dashes** are a parenthetical, functionally a pair of commas:
+  `Blinding — hiding who gets the real drug — protects against bias.`
+- **A single semicolon joining parallel clauses** is doing its actual job:
+  `He dies instantly; the five survive.` Splitting that makes it choppier, not
+  simpler. What to avoid is the *chain* — two or more in one sentence, which is a
+  list in disguise — and the semicolon that tows a trailing qualifier, which is
+  rule 2 again in different punctuation.
+- **A dash separating a term from its gloss** is standing in for a colon, so just
+  use the colon: `**The mean**: a disposition between excess and deficiency.`
+  In a checklist of bare labels either reads fine; be consistent within the list.
 
 **3. No setup and punchline.** Sentence pairs where the first line sets up and the
 second lands read as performance, and students skim them the way they skim ads.
@@ -279,15 +290,17 @@ least.
 Two of these tells are mechanical enough to find automatically:
 
 ```bash
-node tools/check-register.mjs          # count per lesson
-node tools/check-register.mjs --list   # every hit, with the text
+node tools/check-register.mjs          # counts per lesson
+node tools/check-register.mjs --list   # every tell, with the text
+node tools/check-register.mjs --all    # also list what it chose to skip
 ```
 
-It reads all of the above, skips quoted source material (which keeps its own
-punctuation) and headings using a dash as a label separator, and reports em dashes
-and semicolons. **It never fails a build** — most hits are judgment calls, and a
-gate would only teach you to write around the checker. Treat a rising number as a
-sign to reread, not a task to zero out.
+It counts only the two patterns above — a trailing em dash, and a semicolon chain
+— and tallies the legitimate uses separately so you can check its judgment with
+`--all`. Quoted source material keeps its own punctuation and is skipped.
+
+**It never fails a build.** A gate would teach you to write around the checker
+instead of writing better. Treat a rising number as a sign to reread.
 
 ## Writing for the projector
 

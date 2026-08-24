@@ -1,25 +1,36 @@
 #!/usr/bin/env node
 /* Report register tells in every string a student reads.
-   The rules live in AUTHORING.md § "Register: how the prose should sound";
-   this only finds the two mechanical tells that survive a human read-through:
+   The rules live in AUTHORING.md § "Register: how the prose should sound".
 
-     1. EM DASH   — the clause after it is a separate sentence or it is
-                    decoration. Split it or cut it.
-     2. SEMICOLON — same failure, different punctuation.
+   What counts as a tell, and what deliberately doesn't:
 
-   check-density.mjs covers slide bodies. This one deliberately also reads the
-   places prose hides where nothing else looks: explain= and note= attributes,
-   <phil-statement> items, img alt text, and strings inside the widget JS. Those
-   hold about as much text as the slides do.
+     ✗ TRAILING EM DASH — one dash, and the clause after it runs to the end of
+       the sentence. That is the setup/punchline rhythm students skim past.
+     ✗ SEMICOLON CHAIN  — two or more in one string; the sentence is a list
+       wearing a disguise.
 
-   Quoted source material keeps its own punctuation, so anything inside a
-   <blockquote> or a "..." span of 40+ chars is skipped.
+     ✓ Paired dashes are a parenthetical, functionally a pair of commas.
+     ✓ A single semicolon joining parallel clauses is doing its actual job
+       ("He dies instantly; the five survive"). Splitting those makes the prose
+       choppier, not simpler.
+     ✓ "Term — gloss" with no sentence punctuation is a definition-list entry,
+       and label-style headings, alt-text attributions and widget status strings
+       are all separators rather than asides.
 
-   Reports only. It never exits non-zero, because the number that would gate a
-   build is a judgment call, not a lint rule.
+   The skipped categories are still tallied, so the report can show its work
+   and you can second-guess the classifier.
 
-     node tools/check-register.mjs           # summary per lesson
-     node tools/check-register.mjs --list    # every hit, with its text
+   check-density.mjs covers slide bodies. This one also reads the places prose
+   hides where nothing else looks: explain=, note= and feedback= attributes,
+   <phil-statement> items, img alt text, and strings inside the widget JS.
+   Quoted source material keeps its own punctuation and is skipped.
+
+   Reports only. It never exits non-zero: a gate would teach writing around the
+   checker rather than writing better.
+
+     node tools/check-register.mjs           # counts per lesson
+     node tools/check-register.mjs --list    # every tell, with its text
+     node tools/check-register.mjs --all     # also list the skipped categories
 */
 
 import { readFile, readdir, stat } from 'node:fs/promises';
@@ -29,47 +40,63 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LESSONS = path.join(ROOT, 'lessons');
 const LIST = process.argv.includes('--list');
+const ALL = process.argv.includes('--all');
 
 const EM = '—';
-const strip = h => h.replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ').trim();
+const strip = h => h.replace(/<[^>]+>/g, '').replace(/&#39;/g, "'").replace(/&[a-z]+;/g, ' ').trim();
 
-/* Quotations keep the source's punctuation. Drop <blockquote> bodies outright,
-   and any run inside double quotes long enough to be a real citation rather
-   than a scare-quoted term. */
 function dropQuotes(s) {
   return s
     .replace(/<blockquote[\s\S]*?<\/blockquote>/gi, ' ')
     .replace(/["“][^"“”]{40,}["”]/g, ' ');
 }
 
-/* Every student-visible string in a lesson's index.html, tagged by where it
-   came from so the report can say which ones nothing else checks. */
 function harvest(html) {
   const out = [];
   const add = (kind, text) => {
     const t = strip(dropQuotes(text));
     if (t) out.push({ kind, text: t });
   };
-
   const body = html.replace(/<!--[\s\S]*?-->/g, ' ');           // comments are invisible
   for (const m of body.matchAll(/<(li|p)\b[^>]*>([\s\S]*?)<\/\1>/g)) add('slide body', m[2]);
   for (const m of body.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/g)) add('heading', m[1]);
   for (const m of body.matchAll(/<phil-statement\b[^>]*>([\s\S]*?)<\/phil-statement>/g)) add('checkset item', m[1]);
   for (const m of body.matchAll(/<phil-(choice|side|option|cond|req)\b[^>]*>([\s\S]*?)<\/phil-\1>/g)) add('widget body', m[2]);
-  for (const m of body.matchAll(/\b(?:explain|note|prompt|fail|tag)="([^"]+)"/g)) add('quiz/poll text', m[1]);
+  for (const m of body.matchAll(/\b(?:explain|note|prompt|fail|tag|feedback)="([^"]+)"/g)) add('quiz/poll text', m[1]);
   for (const m of body.matchAll(/\balt="([^"]+)"/g)) add('alt text', m[1]);
   return out;
 }
 
-/* Widget JS: only string literals, and only ones with a space in them, so we
-   skip selectors, class names and ids. */
+/* Widget JS: string literals only, and only ones holding a real sentence, so we
+   skip selectors, ids and the fragments left behind when a literal contains an
+   escaped quote. */
 function harvestJS(src) {
   const out = [];
   for (const m of src.matchAll(/(['"`])((?:[^\\\n]|\\.){12,}?)\1/g)) {
-    const t = m[2];
-    if (/\s/.test(t) && !/^[.#][\w-]+$/.test(t)) out.push({ kind: 'widget JS', text: strip(dropQuotes(t)) });
+    const t = strip(dropQuotes(m[2]));
+    if (/\s/.test(t) && /[a-z]{3}/i.test(t) && !/^[.#][\w-]+$/.test(t))
+      out.push({ kind: 'widget JS', text: t });
   }
   return out;
+}
+
+/* One string in, one verdict out. `tell` is the only thing that gets counted. */
+function classify({ kind, text }) {
+  const dashes = (text.match(new RegExp(EM, 'g')) || []).length;
+  const semis = (text.match(/;/g) || []).length;
+
+  if (semis >= 2) return { tell: true, why: 'semicolon chain' };
+
+  if (dashes === 0) return semis ? { tell: false, why: 'single semicolon (parallel clauses)' } : null;
+  if (kind === 'alt text') return { tell: false, why: 'alt-text attribution' };
+  if (kind === 'heading') return { tell: false, why: 'label-style heading' };
+  if (kind === 'widget JS' && /\$\{/.test(text)) return { tell: false, why: 'widget status string' };
+  if (dashes >= 2) return { tell: false, why: 'paired dashes (parenthetical)' };
+  // "Nonmaleficence — do no harm": a definition-list entry, not a sentence.
+  if (text.length < 90 && !/[.!?]/.test(text.replace(/\.\.\./g, '')))
+    return { tell: false, why: 'term-then-gloss label' };
+
+  return { tell: true, why: 'trailing em dash' };
 }
 
 async function lessonDirs() {
@@ -89,45 +116,47 @@ async function lessonDirs() {
 }
 
 async function run() {
-  let total = 0, unchecked = 0;
-  const rows = [];
+  let total = 0, hidden = 0;
+  const rows = [], skipped = {};
 
   for (const { name, dir } of await lessonDirs()) {
-    let items = harvest(await readFile(path.join(dir, 'index.html'), 'utf8'));
+    const items = harvest(await readFile(path.join(dir, 'index.html'), 'utf8'));
     try {
       for (const f of await readdir(path.join(dir, 'assets'))) {
         if (f.endsWith('.js')) items.push(...harvestJS(await readFile(path.join(dir, 'assets', f), 'utf8')));
       }
     } catch { /* no assets dir */ }
 
-    const hits = [];
+    const tells = [];
     for (const it of items) {
-      /* A heading like "Dossier 3 — The Ninth Sun" uses the dash to separate a
-         label from a title. That is not the setup/punchline tell, so headings
-         are judged on semicolons only. */
-      const dashes = it.kind === 'heading'
-        ? 0 : (it.text.match(new RegExp(EM, 'g')) || []).length;
-      const semis = (it.text.match(/;/g) || []).length;
-      if (dashes + semis) hits.push({ ...it, dashes, semis });
+      const v = classify(it);
+      if (!v) continue;
+      if (v.tell) tells.push({ ...it, why: v.why });
+      else (skipped[v.why] = skipped[v.why] || []).push({ ...it, lesson: name });
     }
-    const n = hits.reduce((a, h) => a + h.dashes + h.semis, 0);
-    const hidden = hits.filter(h => h.kind !== 'slide body' && h.kind !== 'heading')
-                       .reduce((a, h) => a + h.dashes + h.semis, 0);
-    total += n; unchecked += hidden;
-    rows.push({ name, n, hidden, hits });
+    const off = tells.filter(t => t.kind !== 'slide body' && t.kind !== 'heading').length;
+    total += tells.length; hidden += off;
+    rows.push({ name, tells, off });
   }
 
-  rows.sort((a, b) => b.n - a.n);
+  rows.sort((a, b) => b.tells.length - a.tells.length);
   for (const r of rows) {
-    const mark = r.n === 0 ? '✓' : '⚠';
-    console.log(`${mark} ${r.name}  (${r.n} tell${r.n === 1 ? '' : 's'}`
-      + (r.hidden ? `, ${r.hidden} outside the slide body` : '') + ')');
-    if (LIST) for (const h of r.hits) console.log(`    [${h.kind}] ${h.text.slice(0, 120)}`);
+    const n = r.tells.length;
+    console.log(`${n === 0 ? '✓' : '⚠'} ${r.name}  (${n} tell${n === 1 ? '' : 's'}`
+      + (r.off ? `, ${r.off} outside the slide body` : '') + ')');
+    if (LIST) for (const t of r.tells) console.log(`    [${t.kind}] ${t.text.slice(0, 120)}`);
   }
 
-  console.log(`\n${total} register tell(s) across ${rows.length} lesson(s); `
-    + `${unchecked} sit in text no other tool reads.`);
-  if (!LIST && total) console.log('Re-run with --list to see them.');
+  console.log(`\n${total} tell(s) across ${rows.length} lesson(s); `
+    + `${hidden} sit in text no other tool reads.`);
+
+  const skipTotal = Object.values(skipped).reduce((a, v) => a + v.length, 0);
+  console.log(`${skipTotal} more use a dash or semicolon legitimately:`);
+  for (const [why, hits] of Object.entries(skipped).sort((a, b) => b[1].length - a[1].length)) {
+    console.log(`  ${String(hits.length).padStart(4)}  ${why}`);
+    if (ALL) for (const h of hits) console.log(`          ${h.lesson} [${h.kind}] ${h.text.slice(0, 90)}`);
+  }
+  if (!LIST && total) console.log('\nRe-run with --list to see the tells (--all to audit the skips).');
 }
 
 run();
