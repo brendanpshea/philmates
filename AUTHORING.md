@@ -77,6 +77,12 @@ Nothing is marked `correct`; picking any option satisfies completion (like
   <phil-choice note="...">Do nothing</phil-choice>
 </phil-poll>
 ```
+**Only the picked option's `note` is ever shown.** A student who chooses "Pull the
+switch" never sees the note under "Do nothing". So a `note` can say where *that*
+position leads, but anything every student must learn belongs in `explain=`, which
+is shown to everyone regardless of what they picked. Teaching buried in per-option
+notes reaches a fraction of the class.
+
 **Use this, not `<phil-mcq>`, for moral choices.** An MCQ blocks completion until
 the student picks the answer you marked `correct` — so grading a genuine dilemma
 forces students who hold a defensible minority view to click something they don't
@@ -214,6 +220,74 @@ Writing tips that keep you passing it:
 - Make distractors *plausible* (a common misconception, or another theory's
   answer) rather than obviously wrong throwaways.
 - Deliberately alternate which slot holds the correct choice as you write.
+
+## Register: how the prose should sound
+
+The recurring failure in this repo has never been wrong content. It is prose that
+sounds like an essay *about* a lesson instead of a person teaching one. Six rules,
+roughly in the order they get broken.
+
+**1. Write to the student, never about the lesson.** The lesson is not a character
+in its own sentences.
+
+> ✗ Here is everything the lesson assumes you know.
+> ✓ If you haven't read the story, here are the basics.
+
+**2. One idea per sentence.** If a sentence has an em dash, the clause after it is
+either a separate sentence or it is decoration. Split it or cut it. Same for
+semicolons, and for any bullet that runs past three lines.
+
+> ✗ Infection is other-regarding. The Harm Principle doesn't merely tolerate
+>   public-health powers here — it's the very ground for them.
+> ✓ Infection is other-regarding. The Harm Principle does not merely tolerate
+>   public-health powers here. It is the ground for them.
+
+Where a dash separates a term from its gloss, it was standing in for a colon.
+Use the colon: `**The mean**: a disposition between excess and deficiency.`
+
+**3. No setup and punchline.** Sentence pairs where the first line sets up and the
+second lands read as performance, and students skim them the way they skim ads.
+Explain in one sentence instead.
+
+**4. Cut the ratings.** "It is the most reasonable thing anybody says in the whole
+book" is a rating, not teaching — and it is probably false. If a claim is worth
+making, make it and show why. Otherwise cut it. This covers cleverness generally:
+the fictional frame exists to make the material *fun*, not to replace it.
+
+**5. Explain it like the student is twelve.** This means simpler sentences, not
+thinner content. Technical vocabulary is fine and necessary; it just has to be
+defined the first time it appears and then actually used. One lesson shipped with
+"arm" used sixteen times before anything said what an arm was.
+
+**6. Teach enough to earn the interactivity.** A cloze or checkset a student can
+pass by matching a bolded phrase from the previous slide tests reading, not
+learning. Build distractors out of real misconceptions.
+
+Two mechanical ones:
+
+- **Never refer to another slide by number.** "As we saw in question 2" is
+  meaningless nine slides later. Name the thing instead — a slide titled "Back to
+  the Coin" calls its own callback.
+- **US spelling.** behavior, color, randomize, honor. The content cites US law.
+
+**These rules cover every string a student reads**, not just `<li>` and `<p>`:
+`explain=` and `note=` attributes, `<phil-statement>` items, `img alt` text, and
+strings inside widget JS. Those hold roughly as much prose as the slide bodies do,
+and they are where register drifts back first, because that is the text you reread
+least.
+
+Two of these tells are mechanical enough to find automatically:
+
+```bash
+node tools/check-register.mjs          # count per lesson
+node tools/check-register.mjs --list   # every hit, with the text
+```
+
+It reads all of the above, skips quoted source material (which keeps its own
+punctuation) and headings using a dash as a label separator, and reports em dashes
+and semicolons. **It never fails a build** — most hits are judgment calls, and a
+gate would only teach you to write around the checker. Treat a rising number as a
+sign to reread, not a task to zero out.
 
 ## Writing for the projector
 
