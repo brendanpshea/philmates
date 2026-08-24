@@ -35,6 +35,8 @@
 
 <phil-lesson id="frankenstein-alignment" title="Frankenstein's Mistake" subject="AI Alignment">
 
+  
+
   <!-- ============ PART 0 — THE PROBLEM ============ -->
 
   <!-- 1. Title -->
@@ -84,7 +86,20 @@
     </phil-checkset>
   </phil-slide>
 
-  <!-- 5. Belief probe -->
+  <!-- 5. The three stages -->
+  <phil-slide>
+    <h1>Three Stages, Two Failures</h1>
+    <p class="lead">Anything built to act on its own goes through three stages. Victor gets each one wrong.</p>
+    <ul reveal>
+      <li><strong>Build it.</strong> Decide what it is for, and let somebody else check the plan.</li>
+      <li><strong>Train it.</strong> Choose what it learns from.</li>
+      <li><strong>Release it.</strong> Decide when it is ready, and how you would take it back.</li>
+      <li>Victor builds, releases, and lets the world do the training. In that order.</li>
+    </ul>
+    <p class="muted">Two failures run through all three stages. Nobody outside the project ever sees the work, and nobody asks what it could cost the world or the creature.</p>
+  </phil-slide>
+
+  <!-- 6. Belief probe -->
   <phil-slide>
     <h1>Six Statements, No Right Answers</h1>
     <p>Say where you stand before we start. You will see all six again at the end, and you can change any of them then.</p>
@@ -98,9 +113,10 @@
     </phil-beliefs>
   </phil-slide>
 
-  <!-- ============ PART 1 — HOW DO YOU SAY WHAT YOU WANT? ============ -->
 
-  <!-- 6. Victor's instruction -->
+  <!-- ============ PART 1 — BUILD IT ============ -->
+
+  <!-- 7. Victor's instruction -->
   <phil-slide>
     <img slot="art" src="./assets/victor-workshop.png" alt="A cluttered attic laboratory at night: a long workbench crowded with glass jars, coiled copper wire and stacked books, a large form under a heavy sheet at the far end, one guttering candle, and rain streaking a tall arched window">
     <h1>How Do You Say What You Want?</h1>
@@ -113,14 +129,14 @@
     </ul>
   </phil-slide>
 
-  <!-- 7. The wish tester -->
+  <!-- 8. The wish tester -->
   <phil-slide>
     <h1>Try to Write a Better Instruction</h1>
     <p>Victor's instruction was <em>make it alive</em>. Below are five attempts to do better than that. Work down them in order and read what each one would actually get you.</p>
     <phil-wish-tester prompt="Start at the top. Each instruction fixes the hole in the one above it."></phil-wish-tester>
   </phil-slide>
 
-  <!-- 8. MCQ 1 [correct: B] -->
+  <!-- 9. MCQ 1 [correct: B] -->
   <phil-slide>
     <h1>Checkpoint: Saying What You Want</h1>
     <phil-mcq prompt="Each instruction above was more careful than the one before it, and every one still left something out. What best explains that?"
@@ -131,12 +147,25 @@
     </phil-mcq>
   </phil-slide>
 
-  <!-- ============ PART 2 — WHAT IF IT IS STRONG BEFORE IT IS GOOD? ============ -->
+  <!-- 10. No external review -->
+  <phil-slide>
+    <h1>Nobody Checked the Plan</h1>
+    <p class="lead">Victor's instruction to himself was thin. What made it dangerous is that nobody else ever read it.</p>
+    <ul reveal>
+      <li>He works in a rented attic for two years and tells no teacher what he is attempting.</li>
+      <li>His professors would have recognized the ambition. One of them might have asked what it was for.</li>
+      <li>A plan nobody else has read has been checked once, by the person least able to see its holes.</li>
+      <li>Somebody outside the project who can say stop is called <strong>oversight</strong>. Stage one is where it costs least.</li>
+    </ul>
+  </phil-slide>
 
-  <!-- 9. The night it woke -->
+
+  <!-- ============ PART 2 — RELEASE IT ============ -->
+
+  <!-- 11. The night he walks away -->
   <phil-slide>
     <img slot="art" src="./assets/creature-wakes.png" alt="An attic laboratory at night: a very tall gaunt figure sitting upright on a workbench with its face turned away into shadow, while in the foreground a young man in shirtsleeves stumbles backward, knocking over a stool and dropping his candle">
-    <h1>What If It Is Strong Before It Is Good?</h1>
+    <h1>He Releases It That Night</h1>
     <p class="lead">The work finishes at one in the morning on a wet November night. The creature's eye opens, it breathes, and one hand moves.</p>
     <ul reveal>
       <li>Victor looks at what he has made, is horrified by it, and runs out of the room.</li>
@@ -146,7 +175,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 10. What was left -->
+  <!-- 12. What was left -->
   <phil-slide>
     <h1>What Was Left in That Room</h1>
     <p>This is what Victor walked away from that night.</p>
@@ -158,7 +187,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 11. POLL 1 -->
+  <!-- 13. POLL 1 -->
   <phil-slide>
     <h1>Decision Point: Whose Problem Is It Now?</h1>
     <p class="muted">Not graded. Pick the answer you actually hold.</p>
@@ -170,7 +199,7 @@
     </phil-poll>
   </phil-slide>
 
-  <!-- 12. Teaching: capability vs alignment -->
+  <!-- 14. Teaching: capability vs alignment -->
   <phil-slide>
     <h1>Strong Before It Is Good</h1>
     <p class="lead">The creature could act on the world long before it had any idea how it ought to act. Those two things did not arrive together.</p>
@@ -182,9 +211,10 @@
     </ul>
   </phil-slide>
 
-  <!-- ============ PART 3 — WHERE DOES IT LEARN WHAT IT KNOWS? ============ -->
 
-  <!-- 13. The cottage -->
+  <!-- ============ PART 3 — THE TRAINING NOBODY CHOSE ============ -->
+
+  <!-- 15. The cottage -->
   <phil-slide>
     <img slot="art" src="./assets/cottage-crack.png" alt="Inside a dark lean-to hovel built against a cottage wall: an enormous hunched figure seen from behind, crouched with one eye to a narrow gap between the planks, a thin blade of warm light falling across its shoulders, and a family at a lit supper table visible beyond">
     <h1>Where Does It Learn What It Knows?</h1>
@@ -197,7 +227,19 @@
     </ul>
   </phil-slide>
 
-  <!-- 14. The rejection -->
+  <!-- 16. The three books -->
+  <phil-slide>
+    <h1>What It Actually Read</h1>
+    <p class="lead">The creature finds a lost satchel in the woods with three books in it, and reads all three.</p>
+    <ul reveal>
+      <li><em>Paradise Lost</em> tells it that a maker owes something to the thing it makes.</li>
+      <li>Plutarch's <em>Lives</em> tells it what people who are admired have in common.</li>
+      <li>Goethe's <em>Werther</em> tells it that despair is a reasonable answer to being alone.</li>
+      <li>Three books and one family. That is every good thing in its training, and Victor picked none of it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. The rejection -->
   <phil-slide>
     <img slot="art" src="./assets/village-rejection.png" alt="Dusk at the edge of a stone village: villagers with raised sticks and burning torches driving a tall cloaked figure backward toward dark pine trees, the figure's arms raised to shield its shadowed face">
     <h1>What Everyone Else Taught It</h1>
@@ -210,7 +252,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 15. Teaching: training data and feedback -->
+  <!-- 18. Teaching: training data and feedback -->
   <phil-slide>
     <h1>It Learns From Whatever Is Nearby</h1>
     <p class="lead">Nobody ever sat down and taught the creature anything. Everything it knows it picked up from whatever happened to be within reach.</p>
@@ -222,7 +264,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 16. Cloze 1 -->
+  <!-- 19. Cloze 1 -->
   <phil-slide>
     <h1>Fill In: What It Learned</h1>
     <p>Complete the summary of how the creature came to know anything at all:</p>
@@ -238,9 +280,10 @@
     </phil-cloze>
   </phil-slide>
 
-  <!-- ============ PART 4 — WHAT DOES IT COPY FROM YOU? ============ -->
 
-  <!-- 17. The glacier -->
+  <!-- ============ PART 4 — THE RISKS NOBODY ASSESSED ============ -->
+
+  <!-- 20. The glacier -->
   <phil-slide>
     <img slot="art" src="./assets/glacier-meeting.png" alt="A vast blue-white glacier under jagged alpine peaks: two lone figures facing each other across the ice at a distance, one of ordinary height in a dark travelling coat, the other nearly twice as tall in ragged clothes, with deep crevasses and drifting mist between them">
     <h1>What Does It Copy From You?</h1>
@@ -252,7 +295,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 18. The epigraph -->
+  <!-- 21. Paradise Lost on the title page -->
   <phil-slide>
     <h1>The Line on the Title Page</h1>
     <p>Shelley opened the novel with three lines of Milton, spoken by Adam to the God who made him:</p>
@@ -269,7 +312,20 @@
     </ul>
   </phil-slide>
 
-  <!-- 19. The mirror -->
+  <!-- 22. What you owe what you make -->
+  <phil-slide>
+    <h1>What You Owe the Thing You Made</h1>
+    <p class="lead">Victor asks for two years whether he can do it. He never asks what he will owe it afterwards.</p>
+    <ul reveal>
+      <li>He is not building a tool. He is building something that can suffer, and that can be blamed.</li>
+      <li>Once it exists it has interests of its own, and they are not the same as his.</li>
+      <li>Whether a thing counts in its own right is called its <strong>moral status</strong>.</li>
+      <li>He never asks the question. By the time the creature puts it to him on the glacier, it is far too late to answer it well.</li>
+    </ul>
+    <p class="muted">Risk assessment usually asks what a thing could do to the world. This one asks what the world will owe the thing.</p>
+  </phil-slide>
+
+  <!-- 23. Mirror: maker and made -->
   <phil-slide>
     <img slot="art" src="./assets/mirror-diagram.png" alt="A tall mirror in a plain wooden frame standing against a stone wall: a man in a travelling coat stands before it with his back to the viewer, and the reflection looking back at him is a taller, ragged, broader silhouette, with a single candle burning on the floorboards between them">
     <h1>It Turns Out Like Its Maker</h1>
@@ -286,7 +342,7 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 20. Justine -->
+  <!-- 24. Justine -->
   <phil-slide>
     <h1>The Thing Victor Does Not Say</h1>
     <p class="lead">The creature kills Victor's younger brother William. A servant of the family, Justine, is accused of the murder and put on trial.</p>
@@ -298,7 +354,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 21. POLL 2 -->
+  <!-- 25. POLL 2 -->
   <phil-slide>
     <h1>Decision Point: Who Is to Blame?</h1>
     <p class="muted">Not graded. There is no settled answer to this one.</p>
@@ -311,7 +367,7 @@
     </phil-poll>
   </phil-slide>
 
-  <!-- 22. Teaching: it copies what you did -->
+  <!-- 26. Teaching: it copies what you did -->
   <phil-slide>
     <h1>It Copies What You Did</h1>
     <p class="lead">Victor never told the creature to be secretive, or vengeful, or full of excuses. It became all three anyway.</p>
@@ -323,9 +379,10 @@
     </ul>
   </phil-slide>
 
-  <!-- ============ PART 5 — CAN YOU TAKE IT BACK? ============ -->
 
-  <!-- 23. The offer -->
+  <!-- ============ PART 5 — YOU CANNOT TAKE IT BACK ============ -->
+
+  <!-- 27. The offer -->
   <phil-slide>
     <h1>Can You Take It Back?</h1>
     <p class="lead">On the glacier the creature makes Victor an offer.</p>
@@ -337,7 +394,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 24. POLL 3 -->
+  <!-- 28. POLL 3 -->
   <phil-slide>
     <h1>Decision Point: The Second Creature</h1>
     <p class="muted">Not graded. Victor turns this over for months before he decides.</p>
@@ -345,11 +402,11 @@
                explain="Three different worries are in play. One is about fairness, one is about whether a promise can be checked, and one is about permanence. Only the last would still apply if the creature were completely honest. That is the one Victor acts on.">
       <phil-choice note="A fair point. The creature has kept its word so far, and refusing leaves it with nothing left to lose and every reason to act on that.">Yes. It has made a fair offer, and refusing leaves it with nothing to lose.</phil-choice>
       <phil-choice note="This is the verification problem. The creature may be perfectly sincere, and Victor still has no way to check a promise about the next two hundred years.">No. He has no way to check whether the promise is worth anything.</phil-choice>
-      <phil-choice note="This worry survives even a completely honest creature. Some things, once they exist, cannot be made not to exist.">No. Two of them could never be undone, whatever either of them promised.</phil-choice>
+      <phil-choice note="This worry survives even a completely honest creature. Two of them could have children, and a population cannot be recalled at all. Some things, once they exist, cannot be made not to exist.">No. Two of them could never be undone, whatever either of them promised.</phil-choice>
     </phil-poll>
   </phil-slide>
 
-  <!-- 25. He changes his mind -->
+  <!-- 29. He changes his mind -->
   <phil-slide>
     <img slot="art" src="./assets/second-creature.png" alt="Inside a bare stone hut on a remote island: a partly assembled second body draped on a slab table, a man standing over it gripping a tool with his head turned toward the window, moonlight on the sea beyond, and a single low candle on the floor">
     <h1>He Changes His Mind</h1>
@@ -362,7 +419,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 26. MCQ 2 [correct: C] -->
+  <!-- 30. MCQ 2 [correct: C] -->
   <phil-slide>
     <h1>Checkpoint: Taking It Back</h1>
     <phil-mcq prompt="Victor stopped because he decided two creatures could never be undone. What is the strongest version of that worry?"
@@ -373,9 +430,10 @@
     </phil-mcq>
   </phil-slide>
 
-  <!-- ============ PART 6 — WHO CAN STOP YOU? ============ -->
 
-  <!-- 27. Nobody knew -->
+  <!-- ============ PART 6 — NOBODY OUTSIDE THE PROJECT ============ -->
+
+  <!-- 31. Working alone -->
   <phil-slide>
     <h1>Who Can Stop You?</h1>
     <p class="lead">Victor works alone from the first day to the last. Every disaster in the book happens behind a door nobody else can open.</p>
@@ -387,7 +445,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 28. Wiener -->
+  <!-- 32. Wiener 1960 -->
   <phil-slide>
     <img slot="art" src="./assets/relic-wiener.png" alt="Relic card: a brass clockwork mechanism running at full speed with its control lever snapped off at the base, the empty switch socket visible beside it, and an overflowing wooden bucket spilling water across the frame">
     <span class="phil-date">1960</span>
@@ -400,7 +458,7 @@
     <p class="muted">Wiener's example was not Frankenstein. It was the story of the monkey's paw, which grants wishes exactly as worded.</p>
   </phil-slide>
 
-  <!-- 29. Walton -->
+  <!-- 33. Walton turns back -->
   <phil-slide>
     <img slot="art" src="./assets/arctic-ship.png" alt="A wooden three-masted sailing ship locked in Arctic pack ice at night under green and violet aurora, with two tiny lantern-lit figures on deck and jagged ridges of ice stretching to the horizon">
     <h1>The One Person Who Stops</h1>
@@ -413,7 +471,7 @@
     </ul>
   </phil-slide>
 
-  <!-- 30. Cloze 2 -->
+  <!-- 34. Cloze 2 -->
   <phil-slide>
     <h1>Fill In: What Victor Got Wrong</h1>
     <p>Complete the account of what Victor got wrong:</p>
@@ -429,9 +487,10 @@
     </phil-cloze>
   </phil-slide>
 
-  <!-- ============ PART 7 — NOW ============ -->
 
-  <!-- 31. Modern -->
+  <!-- ============ PART 7 — NOT ONLY COMPUTERS ============ -->
+
+  <!-- 35. The modern names -->
   <phil-slide>
     <h1>Where This Turns Up Now</h1>
     <p class="lead">Each of Victor's failures has a name in the work people do on computer systems today.</p>
@@ -443,7 +502,32 @@
     </ul>
   </phil-slide>
 
-  <!-- 32. Checkset 2 -->
+  <!-- 36. Midgley and the Therac-25 -->
+  <phil-slide>
+    <h1>Not Only Computers</h1>
+    <p class="lead">None of Victor's failures need a machine that thinks. They turn up wherever somebody builds something that then acts on its own.</p>
+    <ul reveal>
+      <li><strong>Thomas Midgley Jr.</strong> gave the world leaded gasoline, and then CFCs. One chemist, two irreversible harms at planetary scale.</li>
+      <li>Both were reviewed by the industries that profited from them, and by nobody else.</li>
+      <li><strong>The Therac-25</strong> moved a radiation machine's safety locks out of hardware and into software, with no independent review of the code.</li>
+      <li>It gave massive overdoses to six patients. Operators could see something was wrong and had no way to override it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 37. Asilomar 1975 -->
+  <phil-slide>
+    <span class="phil-date">1975</span>
+    <h1>The Field That Stopped Itself</h1>
+    <p class="lead">In 1974 a group of biologists worked out how to move genes between organisms. Then they did something unusual. They stopped.</p>
+    <ul reveal>
+      <li>They called for a halt on their own most promising experiments until the risks had been worked out.</li>
+      <li>At Asilomar in 1975 about 140 scientists, lawyers and journalists spent four days deciding what would be allowed.</li>
+      <li>The work restarted under rules the field wrote for itself, and the halt held while they wrote them.</li>
+      <li>This is Walton turning the ship around, at the scale of a whole science.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 38. Checkset: what went wrong -->
   <phil-slide>
     <h1>Checkpoint: What Went Wrong</h1>
     <phil-checkset prompt="Check every TRUE statement about how the disaster in the novel came about."
@@ -457,7 +541,10 @@
     </phil-checkset>
   </phil-slide>
 
-  <!-- 33. Shelley -->
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 39. Mary Shelley, 1816 -->
   <phil-slide>
     <img slot="art" src="./assets/relic-shelley.png" alt="Relic card: an open leather notebook with ink marks, a quill, a small glass jar holding a captured spark of electricity, and behind them a darkened sun low over a storm-lit lake">
     <span class="phil-date">1816</span>
@@ -470,12 +557,12 @@
     </ul>
   </phil-slide>
 
-  <!-- 34. Beliefs review + close -->
+  <!-- 40. Belief review -->
   <phil-slide>
-    <h1>Six Questions, One Book</h1>
+    <h1>Every Stage, Every Failure</h1>
     <p>Here is where you stood at the start. Re-rate each statement and see what moved.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
-    <p>Those six questions are the anatomy of the alignment problem: what you want, how strong it is, where it learns, what it copies, whether you can take it back, and who can stop you. Victor answered none of them, and he was not a wicked man. He was a clever one working alone in a hurry.</p>
+    <p>Victor got all three stages wrong. He built without a specification, released before there was any training at all, and then let the world do the training for him. Running through every stage were the same two failures: nobody outside the project ever saw the work, and nobody asked what it would cost the world or the creature. He was not a wicked man. He was a clever one working alone in a hurry.</p>
     <p class="muted">Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.</p>
   </phil-slide>
 
