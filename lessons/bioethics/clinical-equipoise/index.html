@@ -52,38 +52,51 @@
 
   <!-- ============ ACT 1 — THE APPARATUS OF A CLINICAL TRIAL ============ -->
 
+  <!-- 4. The question the methods are for -->
+  <phil-slide>
+    <h1>Decision Point: Should She Flip the Coin?</h1>
+    <p class="muted">Not graded, and asked before you know anything about trials. You will meet it again once you do.</p>
+    <phil-poll prompt="Helen is fairly confident her new drug works. She is about to let a computer decide at random which of her patients receive it and which receive nothing. Is that allowed?"
+               explain="Hold on to your answer. The first option is a serious position held by a real philosopher you will meet shortly, and taken strictly it would make almost all medical research impossible. The second is roughly where medicine landed — but &quot;nobody knows yet&quot; turns out to be far harder to pin down than it sounds, and most of this lesson is about who has to not know. The third is necessary, and here is the uncomfortable part: it is not sufficient. Consent does not settle whether a trial should be run at all. To see why any of this is hard, you first need to know what a trial actually is. That is the next few slides."
+      >
+      <phil-choice note="The patient-first answer. If she believes it works, the ones who lose the toss are being denied something she thinks would help them — and she is their doctor, not a researcher who happens to be treating them.">No. If she thinks it works, withholding it from half her patients is a betrayal of the ones who lose the toss.</phil-choice>
+      <phil-choice note="The research answer. Confidence is not knowledge, and the history of medicine is full of treatments everyone was confident about that turned out to be useless or worse.">Yes. Nobody actually knows yet, and a fair coin is the only honest way to find out.</phil-choice>
+      <phil-choice note="Necessary, and not enough on its own. A patient can understand a trial perfectly and agree to it, and the trial can still be one that should never have been started.">Only if the patients understand exactly what they are agreeing to.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
   <!-- 4. What a trial is -->
   <phil-slide>
     <h1>What a Clinical Trial Actually Is</h1>
     <p>Not "try something and see what happens." A trial tests whether an intervention beats an alternative, under a comparison built to survive your own wishful thinking.</p>
     <ul reveal>
-      <li>Henry's method: drink the serum, note what happens, done. One data point, one believer.</li>
+      <li>Henry's method: drink the serum, note what happens, done. One data point, one believer, and one person exposed to a risk nobody had measured.</li>
       <li>A real trial is designed so the result would convince someone who <em>wasn't</em> already hoping for it.</li>
     </ul>
   </phil-slide>
 
-  <!-- 5. Phases -->
+
+  <!-- 6. Control group -->
+  <!-- 6. Why one patient teaches you nothing -->
   <phil-slide>
-    <h1>Phases I–IV</h1>
-    <p>Before a drug reaches the patients who might benefit, it climbs four stages:</p>
+    <h1>Why One Patient Teaches You Nothing</h1>
+    <p>One person cannot tell you whether a drug works, however carefully you watch them.</p>
     <ul reveal>
-      <li><strong>Phase I</strong> — is it safe, and at what dose? A handful of people.</li>
-      <li><strong>Phase II</strong> — does it show a real efficacy signal, and what side effects show up? A larger but still small group.</li>
-      <li><strong>Phase III</strong> — the big one: a large comparative trial against a control, deciding whether it's approved.</li>
-      <li><strong>Phase IV</strong> — after approval, ongoing surveillance for rare or long-term effects.</li>
+      <li>People differ. Some recover on their own; some would have worsened whatever you gave them.</li>
+      <li>With one patient you cannot tell which of those you are looking at. With four hundred, those differences average out and what is left is the drug.</li>
+      <li>So a trial needs a crowd — and that is exactly where the ethics get hard, because every one of them is taking a risk that mostly benefits somebody else.</li>
+      <li>Henry had one subject: himself. Whatever happened that night, he could not have learned anything from it.</li>
     </ul>
   </phil-slide>
 
-  <!-- 6. Control group -->
   <phil-slide>
     <img slot="art" src="./assets/serum-vial.png" alt="Henry Jekyll's murky serum vial">
     <h1>The Control Group</h1>
-    <p>A comparison arm — placebo, or the current standard of care.</p>
+    <p>A second group to measure against, called an <strong>arm</strong>. It gets either a placebo or the <strong>standard of care</strong> — whatever treatment is already the best available.</p>
     <ul reveal>
-      <li>Without one, you cannot separate the drug's effect from three other things: the illness running its course, the placebo effect, and regression to the mean.</li>
-      <li><strong>Regression to the mean</strong> is the ordinary fact that people usually enrol when they feel worst, and feeling worst is often followed by feeling better whatever you do.</li>
-      <li>Henry's serum "worked" — but compared to <em>what</em>? He had nobody who took nothing, and no fair earlier version of himself.</li>
-      <li>Every "result" is confounded with everything else happening that night.</li>
+      <li>Without one you cannot separate the drug's effect from the illness running its course, from the placebo effect, or from regression to the mean.</li>
+      <li><strong>Regression to the mean</strong>: people enrol when they feel worst, and feeling worst is usually followed by feeling better anyway.</li>
+      <li>Henry's serum "worked" — but compared to <em>what</em>? Without an arm that took nothing, he could not have told help from harm, and he kept taking it.</li>
     </ul>
   </phil-slide>
 
@@ -122,7 +135,7 @@
     <ul reveal>
       <li><strong>Single-blind</strong> — the patient doesn't know which arm they're in.</li>
       <li><strong>Double-blind</strong> — neither the patient <em>nor</em> the treating clinician knows, which also guards against biased assessment of symptoms.</li>
-      <li>Henry knew exactly what he'd taken and exactly what he expected to feel — the least blinded experiment imaginable.</li>
+      <li>Henry knew what he had taken and what he expected to feel, and he was the only one judging the result. He would have believed it worked whatever it did to him.</li>
     </ul>
   </phil-slide>
 
@@ -194,11 +207,12 @@
 
   <!-- 15. The randomization problem -->
   <phil-slide>
-    <h1>The Problem With Randomizing People</h1>
-    <p>If Helen already believes HJ-9 works better than placebo, isn't it wrong to randomly deny some patients the treatment she thinks is better?</p>
+    <h1>Back to the Coin</h1>
+    <p>This is the question you were asked before you knew what any of the machinery was for. If Helen already believes HJ-9 works, isn't it wrong to randomly deny it to half her patients?</p>
     <ul reveal>
-      <li>This isn't a technicality — it's the central ethical puzzle of every controlled trial.</li>
-      <li>Two philosophers gave two different answers.</li>
+      <li>You now know what she would be denying them, and what she could not find out without denying it.</li>
+      <li>That does not make the question go away. It is the central ethical puzzle of every controlled trial.</li>
+      <li>Two philosophers gave two different answers, and the difference between them decides which trials may run at all.</li>
     </ul>
   </phil-slide>
 
@@ -417,7 +431,7 @@
     <h1>End of Rounds</h1>
     <p class="lead">Helen locks the lab. In a drawer, Henry's journal — his only record.</p>
     <ul reveal>
-      <li><strong>Apparatus</strong> — phases I–IV, controls, randomization, blinding.</li>
+      <li><strong>Apparatus</strong> — controls, randomization, blinding, and enough patients to learn from.</li>
       <li><strong>Research consent</strong> — the goal disclosed, the right to withdraw, the therapeutic misconception.</li>
       <li><strong>Equipoise</strong> — theoretical (Fried) vs clinical (Freedman, community disagreement).</li>
       <li><strong>Monitoring</strong> — DSMBs and stopping rules fire the moment equipoise collapses.</li>
