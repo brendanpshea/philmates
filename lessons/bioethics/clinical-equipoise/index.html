@@ -20,7 +20,7 @@
   <phil-slide>
     <img slot="art" src="./assets/helen-jekyll.png" alt="Dr. Helen Jekyll in a modern lab coat, holding a vial">
     <h1>The Jekyll Protocol</h1>
-    <p class="lead">You're shadowing Dr. Helen Jekyll — great-granddaughter of <em>that</em> Jekyll — as she runs a clinical trial in the same territory her ancestor blundered into with a serum and no plan at all.</p>
+    <p class="lead">You are shadowing Dr Helen Jekyll for a day while she runs a drug trial. Her great-grandfather was <em>that</em> Jekyll, the one with the serum.</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
 
@@ -30,17 +30,17 @@
     <h1>The Family Business</h1>
     <p class="lead">"Everyone assumes I went into medicine to make up for him," Helen says, nodding at the locket photo on her desk. "They're right."</p>
     <ul reveal>
-      <li>Her trial: an experimental drug for a severe impulse-control disorder — the same territory Henry Jekyll wandered into with a self-brewed serum.</li>
-      <li>He had a hypothesis, a syringe, and himself. No committee, no colleagues, no one watching.</li>
-      <li>It released a second self, Mr Hyde, who did what Henry would not — and nobody was watching.</li>
-      <li>She has all three, plus one idea he never had: a reason it's <em>ethical</em> to run the experiment on someone besides yourself, at all.</li>
+      <li>Her trial tests a new drug for people who cannot control their impulses. Henry worked on the same problem.</li>
+      <li>Henry had an idea and a syringe, and he tested it on himself. Nobody else knew he was doing it.</li>
+      <li>The serum released a second self, Mr Hyde, who did what Henry would not. There was nobody there to stop him.</li>
+      <li>Helen has colleagues, a committee, and people watching. She also has a reason why it is <em>fair</em> to test a drug on somebody else.</li>
     </ul>
   </phil-slide>
 
   <!-- 3. Belief probe (start) -->
   <phil-slide>
     <h1>Before Rounds</h1>
-    <p>Five gut-checks — <strong>no right answers.</strong> Just say where you stand; we'll revisit them at the end.</p>
+    <p>Five quick questions, with <strong>no right answers</strong>. Just say where you stand. You will see them again at the end.</p>
     <phil-beliefs prompt="How much do you agree, right now?">
       <phil-statement>If a doctor is even slightly confident one treatment is better, it's wrong to randomly assign patients to different treatments.</phil-statement>
       <phil-statement>A drug trial without a placebo group can't really prove anything.</phil-statement>
@@ -68,10 +68,11 @@
   <!-- 4. What a trial is -->
   <phil-slide>
     <h1>What a Clinical Trial Actually Is</h1>
-    <p>Not "try something and see what happens." A trial tests whether an intervention beats an alternative, under a comparison built to survive your own wishful thinking.</p>
+    <p>A trial is how you find out whether a new treatment really works.</p>
     <ul reveal>
-      <li>Henry's method: drink the serum, note what happens, done. One data point, one believer, and one person exposed to a risk nobody had measured.</li>
-      <li>A real trial is designed so the result would convince someone who <em>wasn't</em> already hoping for it.</li>
+      <li>You give it to some people, give something else to others, and then compare.</li>
+      <li>You need that comparison because you want the treatment to work, and wanting it changes what you notice.</li>
+      <li>Henry drank his serum himself and wrote down how he felt. He was the only subject, and he was the one hoping.</li>
     </ul>
   </phil-slide>
 
@@ -83,8 +84,8 @@
     <p>One person cannot tell you whether a drug works, however carefully you watch them.</p>
     <ul reveal>
       <li>People differ. Some recover on their own; some would have worsened whatever you gave them.</li>
-      <li>With one patient you cannot tell which of those you are looking at. With four hundred, those differences average out and what is left is the drug.</li>
-      <li>So a trial needs a crowd — and that is exactly where the ethics get hard, because every one of them is taking a risk that mostly benefits somebody else.</li>
+      <li>With one patient you cannot tell which of those you are watching. With four hundred, the differences even out and what is left is the drug.</li>
+      <li>So a trial needs a crowd. That is where the ethics get hard, because each of those people takes a risk that mostly helps somebody else.</li>
       <li>Henry had one subject: himself. Whatever happened that night, he could not have learned anything from it.</li>
     </ul>
   </phil-slide>
@@ -92,11 +93,22 @@
   <phil-slide>
     <img slot="art" src="./assets/serum-vial.png" alt="Henry Jekyll's murky serum vial">
     <h1>The Control Group</h1>
-    <p>A second group to measure against, called an <strong>arm</strong>. It gets either a placebo or the <strong>standard of care</strong> — whatever treatment is already the best available.</p>
+    <p>A trial needs a second group to measure against. Each group is called an <strong>arm</strong>.</p>
     <ul reveal>
-      <li>Without one you cannot separate the drug's effect from the illness running its course, from the placebo effect, or from regression to the mean.</li>
+      <li>The second arm gets a placebo, or the best treatment already available. Doctors call that the <strong>standard of care</strong>.</li>
+      <li>Henry's serum seemed to work. But compared to <em>what</em>? He had no second arm at all.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7b. Why the second arm is needed -->
+  <phil-slide>
+    <h1>Why You Need the Second Arm</h1>
+    <p>Without one, three other things can look exactly like a drug working.</p>
+    <ul reveal>
+      <li>The illness may simply be running its course, and would have eased on its own.</li>
+      <li>The placebo effect: people often feel better just from being treated at all.</li>
       <li><strong>Regression to the mean</strong>: people enrol when they feel worst, and feeling worst is usually followed by feeling better anyway.</li>
-      <li>Henry's serum "worked" — but compared to <em>what</em>? Without an arm that took nothing, he could not have told help from harm, and he kept taking it.</li>
+      <li>Henry could not tell any of these apart from his serum, so he could not tell whether it was helping him or hurting him. He kept taking it.</li>
     </ul>
   </phil-slide>
 
@@ -104,11 +116,11 @@
   <phil-slide>
     <img slot="art" src="./assets/trial-vial.png" alt="Helen Jekyll's modern trial-drug vial">
     <h1>Randomization</h1>
-    <p>Chance assignment to trial arms spreads both the confounders you thought of and the ones you didn't, evenly across groups.</p>
+    <p>Letting chance decide who goes in which arm spreads the differences between people evenly. That includes the differences nobody thought of.</p>
     <ul reveal>
-      <li>Sicker patients, healthier patients, optimists, skeptics — randomization makes sure none of them clump on one side.</li>
-      <li>Henry's "trial" had an arm of exactly one — investigator, subject, and sole judge, all in the same body.</li>
-      <li>Nothing to randomize, and nobody to compare himself against.</li>
+      <li>Sicker patients, healthier ones, hopeful ones and doubtful ones all end up spread across both arms instead of clumping on one side.</li>
+      <li>Henry's trial had one arm with one person in it. He was the researcher, the patient, and the judge of the result.</li>
+      <li>There was nothing to spread out, and nobody to compare himself with.</li>
     </ul>
   </phil-slide>
 
@@ -117,11 +129,11 @@
     <h1>Two Ways to Compare</h1>
     <phil-compare>
       <phil-side label="Randomized Comparison" tag="Modern RCT">
-        <p>Chance decides who gets the drug and who gets the control — confounders scatter evenly across both arms.</p>
+        <p>Chance decides who gets the drug and who gets the control, so the differences between people scatter evenly across both arms.</p>
         <p class="case">Helen's trial: patients randomized to drug or placebo by computer, not by hunch.</p>
       </phil-side>
       <phil-side label="Self-Selected / Historical" tag="Henry's method">
-        <p>One subject picks himself, compares himself only to his own past — no second arm at all.</p>
+        <p>One subject picks himself and compares himself only to his own past. There is no second arm at all.</p>
         <p class="case">Henry's diary: "I took the draught, and felt at once a change." Compared to nothing.</p>
       </phil-side>
     </phil-compare>
@@ -131,10 +143,10 @@
   <phil-slide>
     <img slot="art" src="./assets/blindfold.png" alt="A blindfold, doubled to suggest double-blind design">
     <h1>Blinding</h1>
-    <p>Knowing which arm you're in changes how you feel and how you're assessed — so trials hide it.</p>
+    <p>Knowing which arm you are in changes how you feel, and it changes how your doctor rates you. So trials hide it.</p>
     <ul reveal>
-      <li><strong>Single-blind</strong> — the patient doesn't know which arm they're in.</li>
-      <li><strong>Double-blind</strong> — neither the patient <em>nor</em> the treating clinician knows, which also guards against biased assessment of symptoms.</li>
+      <li><strong>Single-blind</strong> means the patient does not know which arm they are in.</li>
+      <li><strong>Double-blind</strong> means the doctor does not know either, so nobody's expectations can colour how the symptoms get judged.</li>
       <li>Henry knew what he had taken and what he expected to feel, and he was the only one judging the result. He would have believed it worked whatever it did to him.</li>
     </ul>
   </phil-slide>
@@ -170,9 +182,9 @@
     <h1>Consenting to Research, Not Just Treatment</h1>
     <p>Helen's patients sign something Henry never offered anyone: research consent.</p>
     <ul reveal>
-      <li>It discloses that the goal is <strong>generalizable knowledge</strong> — you might get the placebo, and the trial isn't designed around your personal benefit.</li>
+      <li>It says plainly that the point of the trial is to learn something general. You might get the placebo, and the trial is not built around helping you.</li>
       <li>It guarantees an unconditional <strong>right to withdraw</strong>, at any point, without penalty.</li>
-      <li>Skip this, and patients can fall into the <strong>therapeutic misconception</strong> — believing the trial exists to treat <em>them</em>, specifically.</li>
+      <li>Skip this and patients fall into the <strong>therapeutic misconception</strong>: believing the trial exists to treat <em>them</em>.</li>
     </ul>
   </phil-slide>
 
@@ -185,7 +197,7 @@
         <p class="case">"I recommend this because it's what's best for you."</p>
       </phil-side>
       <phil-side label="Research Consent" tag="This protocol, for knowledge">
-        <p>You may receive the drug, the control, or the placebo — the goal is what we <strong>learn</strong>, not guaranteed personal benefit.</p>
+        <p>You may get the drug, the control, or the placebo. The point is what everyone <strong>learns</strong>, not a benefit promised to you.</p>
         <p class="case">"You may get the study drug. You may get placebo. We won't know which until it's over."</p>
       </phil-side>
     </phil-compare>
