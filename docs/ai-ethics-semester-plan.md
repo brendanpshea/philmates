@@ -58,7 +58,9 @@ Thinkers: Plato (*Phaedrus*, King Thamus & memory), Erasmus vs. Luther (humanist
 ideals vs. the pamphlet war), McLuhan & Postman ("the medium is the message" &
 information-action ratio), and Melvin Kranzberg (Laws of Technology).
 **Widget:** interactive information shock cascade engine.
-Built at `lessons/ai-ethics/breadcrumb-network/`.
+Removed, and superseded by **The Network With No Middle**
+(`lessons/ai-ethics/internet-no-middle/`), which covers this slot from the
+history of the internet rather than the Grimm frame described above.
 
 ## Week 3 — Technology and Virtues
 

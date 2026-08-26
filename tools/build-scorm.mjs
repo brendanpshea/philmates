@@ -36,8 +36,6 @@ const slug = s => s.replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-+|-+$/g, '');
 
 export const SCORM_NAMES = {
   'ai-ethics/amberville': 'ai-ethics-overview-amberville-scorm12.zip',
-  'ai-ethics/breadcrumb-network': 'ai-ethics-tech-and-values-breadcrumb-scorm12.zip',
-  'ai-ethics/philosophers-blueprint': 'ai-ethics-essay-writing-blueprint-scorm12.zip',
   'bioethics/clinical-equipoise': 'bioethics-clinical-equipoise-jekyll-scorm12.zip',
   'bioethics/four-principles': 'bioethics-four-principles-van-helsing-scorm12.zip',
   'bioethics/patient-autonomy': 'bioethics-patient-autonomy-hedgerow-scorm12.zip',
