@@ -99,7 +99,7 @@ const STYLE = `
 .pb-conds input { width:18px; height:18px; flex:none; margin-top:2px; accent-color:var(--good); }
 /* Marked after "Check against the case", never before — the point is that the
    student commits to a reading first. Shape and a word carry the meaning; the
-   border colour is only a reinforcement. */
+   border color is only a reinforcement. */
 .pb-conds li.misread { border-color:var(--bad); }
 .pb-conds .tag { font-family:var(--pixel); font-size:11px; margin-left:auto; padding-left:10px; flex:none; }
 .pb-conds li.misread .tag { color:var(--bad); }
@@ -130,7 +130,7 @@ class PhilBalance extends HTMLElement {
       decoy: c.hasAttribute('decoy'),
       gate: c.hasAttribute('gate'),
       // `frame` marks the gate whose failure changes what kind of problem this
-      // is, rather than just leaving the override unearned. Different colour,
+      // is, rather than just leaving the override unearned. Different color,
       // because "you are in the wrong chapter" is not "not yet".
       frame: c.hasAttribute('frame'),
       gateNote: c.getAttribute('gateNote') || c.getAttribute('gatenote') || '',

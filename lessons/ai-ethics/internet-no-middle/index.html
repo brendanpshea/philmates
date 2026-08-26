@@ -39,7 +39,7 @@
 
   <!-- 1. Title -->
   <phil-slide>
-    <img slot="art" src="./assets/imp-room.png" alt="A university computer room in 1969: a refrigerator-sized grey steel cabinet covered in small round indicator lamps and toggle switches, a teletype terminal on a metal desk beside it, and a thick orange cable running from the cabinet across the floor and out through a hole in the cinderblock wall">
+    <img slot="art" src="./assets/imp-room.png" alt="A university computer room in 1969: a refrigerator-sized gray steel cabinet covered in small round indicator lamps and toggle switches, a teletype terminal on a metal desk beside it, and a thick orange cable running from the cabinet across the floor and out through a hole in the cinderblock wall">
     <h1>The Network With No Middle</h1>
     <p class="lead">Nobody runs the internet. There is no control room, no master switch, and no company that owns it.</p>
     <p>That is not an accident. It is the result of a handful of decisions made by particular people, for particular reasons, mostly before 1975.</p>
@@ -61,10 +61,13 @@
   <phil-slide>
     <h1>The Internet Is Not the Web</h1>
     <p>These two words get used as if they mean the same thing. They do not, and almost nothing else makes sense until the difference is clear.</p>
+    <figure class="phil-figure">
+      <img src="./assets/layers.svg" alt="One wide bar labelled THE INTERNET, moving packets between machines since 1969, with three separate boxes resting on top of it: EMAIL from 1971, THE WEB from 1989, and VIDEO CALL, later still">
+      <figcaption>The web is one of the things sitting on the internet, not the internet itself.</figcaption>
+    </figure>
     <ul reveal>
       <li>The <strong>internet</strong> is the wiring. Its whole job is moving small chunks of data between machines.</li>
       <li>The <strong>web</strong> is one thing people built on top of that wiring, in 1989, twenty years later.</li>
-      <li>Email, video calls, game servers and messaging apps also run on the internet and are not the web.</li>
       <li>The wiring does not know or care which of them it is carrying.</li>
     </ul>
   </phil-slide>
@@ -83,15 +86,15 @@
     </phil-beliefs>
   </phil-slide>
 
-  <!-- ============ PART 1 — NO CENTRE ============ -->
+  <!-- ============ PART 1 — NO CENTER ============ -->
 
   <!-- 5. The problem -->
   <phil-slide>
-    <h1>Decision One: Build It With No Centre</h1>
+    <h1>Decision One: Build It With No Center</h1>
     <p class="lead">In the early 1960s, sending a message meant opening a line and holding it. A telephone call reserved a physical path from end to end for as long as you talked.</p>
     <ul reveal>
       <li>That worked for voices and was hopeless for computers, which send in short bursts and then go quiet.</li>
-      <li>It also meant every call passed through a switching centre. Break the centre and everything stops.</li>
+      <li>It also meant every call passed through a switching center. Break the center and everything stops.</li>
       <li>Computers were rare and expensive. A university might have one, and researchers elsewhere could not touch it.</li>
     </ul>
   </phil-slide>
@@ -109,9 +112,23 @@
     <p class="lead">Each packet carries the address it is going to, the address it came from, and its number in the sequence.</p>
     <ul reveal>
       <li>A machine that passes packets along is a <strong>router</strong>. It looks at the address and picks a direction.</li>
-      <li>No router knows the whole route. It only knows which neighbour is a step closer.</li>
+      <li>No router knows the whole route. It only knows which neighbor is a step closer.</li>
       <li>Packets from one message can travel completely different paths and arrive out of order.</li>
       <li>The receiving machine puts them back in order using the numbers, and asks again for any that never came.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7b. One concrete order, end to end -->
+  <phil-slide>
+    <h1>One Order of Donuts</h1>
+    <p>Names, numbers and routing, in a single trip. You want a dozen from <strong>dragon-donuts.example</strong>.</p>
+    <figure class="phil-figure">
+      <img src="./assets/lookup.svg" alt="Two steps. First, your machine asks the name system for dragon-donuts.example and is told the machine is at 203.0.113.42. Second, a packet addressed to that number goes through routers R1 and R2, finds the direct path through R3 broken, detours through R4, and reaches the shop">
+      <figcaption>Every address here is reserved for teaching and reaches nothing real. <code>.example</code> and the <code>203.0.113.x</code> range exist so nobody's documentation accidentally points at a stranger's machine.</figcaption>
+    </figure>
+    <ul reveal>
+      <li>The name is for you. The number is what the machines actually use.</li>
+      <li>R3 failing changes nothing you can see, because R2 simply picks a different neighbor.</li>
     </ul>
   </phil-slide>
 
@@ -122,10 +139,10 @@
     <h1>Two Groups Wanted This, for Different Reasons</h1>
     <p class="lead">Packet switching was worked out twice, independently, by people with almost nothing in common.</p>
     <ul reveal>
-      <li>Paul Baran, at a defence research company, wanted communication that survived losing parts of itself.</li>
+      <li>Paul Baran, at a defense research company, wanted communication that survived losing parts of itself.</li>
       <li>Donald Davies, at a British physics lab, wanted computers to stop wasting expensive line time.</li>
       <li>Survivability and thrift are different values, and both pointed at the same shape.</li>
-      <li>ARPANET, the first real network, was funded by the US defence department and built to share scarce computers.</li>
+      <li>ARPANET, the first real network, was funded by the US defense department and built to share scarce computers.</li>
     </ul>
   </phil-slide>
 
@@ -136,7 +153,7 @@
     <phil-mcq prompt="What is the most accurate account of the connection?"
               explain="Right. Baran's survivable-communication work and the ARPANET project were separate, years apart, and had different funders and goals. What they shared was an engineering answer. The popular story welds them together and loses the useful point: two unrelated sets of values can push toward the same design.">
       <phil-choice feedback="The story is not simply false. Baran really was working on communication that could survive an attack, and that work really did help establish packet switching.">The story is invented. Nobody working on these systems ever thought about surviving an attack.</phil-choice>
-      <phil-choice feedback="ARPANET was funded by a defence agency, but its stated purpose was letting researchers share scarce computers, not withstanding a strike.">The story is exact. ARPANET was commissioned and built specifically to keep working during a nuclear war.</phil-choice>
+      <phil-choice feedback="ARPANET was funded by a defense agency, but its stated purpose was letting researchers share scarce computers, not withstanding a strike.">The story is exact. ARPANET was commissioned and built specifically to keep working during a nuclear war.</phil-choice>
       <phil-choice correct>Baran's survivability work and ARPANET were separate projects that arrived at the same technique.</phil-choice>
       <phil-choice feedback="The order runs the other way. Baran published in the early 1960s, before ARPANET was built, and neither project took the other&#39;s plans.">ARPANET came first, and Baran&#39;s survivability work applied its ideas later.</phil-choice>
     </phil-mcq>
@@ -144,7 +161,7 @@
 
   <!-- 10. Made easy / made hard -->
   <phil-slide>
-    <h1>What Having No Centre Did</h1>
+    <h1>What Having No Center Did</h1>
     <phil-compare>
       <phil-side label="What it made easy" tag="Consequence">
         <p>There is no switchboard to seize, no headquarters to raid, and no single machine whose failure stops the network. Damage routes around itself, whether the damage is a broken cable or a government.</p>
@@ -152,7 +169,7 @@
       </phil-side>
       <phil-side label="What it made hard" tag="Consequence">
         <p>There is also nobody in charge. No one can be required to check that traffic is safe, remove something harmful, or take responsibility when the network carries an attack.</p>
-        <p class="cake">Nobody can switch off a flood of malicious traffic centrally, because there is no centre at which to switch it off.</p>
+        <p class="cake">Nobody can switch off a flood of malicious traffic centrally, because there is no center at which to switch it off.</p>
       </phil-side>
     </phil-compare>
   </phil-slide>
@@ -172,7 +189,7 @@
 
   <!-- 12. End to end -->
   <phil-slide>
-    <img slot="art" src="./assets/relic-endtoend.png" alt="Relic card: a long plain grey pipe running across the frame, completely dark and featureless along its whole length, with a bright intricate glowing lamp mechanism mounted at each open end">
+    <img slot="art" src="./assets/relic-endtoend.png" alt="Relic card: a long plain gray pipe running across the frame, completely dark and featureless along its whole length, with a bright intricate glowing lamp mechanism mounted at each open end">
     <span class="phil-date">1981</span>
     <h1>Smart Ends, Dumb Middle</h1>
     <p class="lead">The rule is called the <strong>end-to-end principle</strong>. The network moves packets and does nothing else. Everything clever happens on the machines at the two ends.</p>
@@ -197,8 +214,9 @@
 
   <!-- 14. POLL -->
   <phil-slide>
-    <h1>Decision Point: Should the Wiring Play Favourites?</h1>
+    <h1>Decision Point: Should the Wiring Play Favorites?</h1>
     <p class="muted">Not graded. This is a live argument, and it is usually had under the name <em>net neutrality</em>.</p>
+    <p>Suppose the company that owns the wiring also owns <strong>troll-bridge-tolls.example</strong>, and would like your donuts to arrive slowly.</p>
     <phil-poll prompt="Should network owners be allowed to deliver some traffic faster than other traffic?"
                explain="The awkward part is that the same property produces both results. A network that cannot tell an emergency from a cat video is also a network that cannot quietly slow down a competitor, or charge a new service for the right to work properly. You cannot keep one without keeping the other."
       >
@@ -224,7 +242,7 @@
 
   <!-- 16. Games -->
   <phil-slide>
-    <img slot="art" src="./assets/spacewar-terminal.png" alt="A dim laboratory at night: a large grey minicomputer cabinet with a round radar-style screen showing small glowing green ship shapes on a grid, and three young people gathered close around it, each holding a hand-made control box wired to the machine">
+    <img slot="art" src="./assets/spacewar-terminal.png" alt="A dim laboratory at night: a large gray minicomputer cabinet with a round radar-style screen showing small glowing green ship shapes on a grid, and three young people gathered close around it, each holding a hand-made control box wired to the machine">
     <h1>And Nobody Ordered the Games</h1>
     <p class="lead">In 1962, when computers were expensive machines for serious calculation, students at MIT used one to build <em>Spacewar!</em></p>
     <ul reveal>
@@ -250,11 +268,11 @@
   <phil-slide>
     <h1>Fill In: The First Two Decisions</h1>
     <p>Complete the summary so far:</p>
-    <phil-cloze explain="These are the two decisions everything else rests on. Cutting messages into packets removed the centre, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
+    <phil-cloze explain="These are the two decisions everything else rests on. Cutting messages into packets removed the center, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
       A message is cut into numbered pieces called
       <phil-blank options="packets,parcels,programs">packets</phil-blank>,
       and each piece finds its own way, so there is no
-      <phil-blank answer="centre|center|middle">centre</phil-blank>
+      <phil-blank answer="center|center|middle">center</phil-blank>
       whose loss would stop the message. The network was also built to know
       <phil-blank options="nothing,everything,a little">nothing</phil-blank>
       about what it is carrying, which is why Tomlinson could add email without asking anyone's
@@ -314,13 +332,27 @@
     </ul>
   </phil-slide>
 
+  <!-- 22b. The tree, and what cutting it does -->
+  <phil-slide>
+    <h1>The Shape of the Name Tree</h1>
+    <p>Every name is a branch hanging off a shorter name, and every chain ends at the same root.</p>
+    <figure class="phil-figure">
+      <img src="./assets/dns-tree.svg" alt="The name system as an upside-down tree. A single root at the top branches to .example, .org and .uk, and .example branches to dragon-donuts, gnome-gazette and troll-bridge-tolls. The branch to gnome-gazette is severed and marked with a cross, under a note reading: the machine is still running, nobody can find it">
+      <figcaption>Cut the branch to <strong>gnome-gazette.example</strong> and the newspaper's machine keeps running, keeps serving, and becomes unreachable to anyone who does not already know its number.</figcaption>
+    </figure>
+    <ul reveal>
+      <li>Nothing was deleted and nothing was blocked. A name simply stopped being answered.</li>
+    </ul>
+  </phil-slide>
+
   <!-- 23. The chokepoint -->
   <phil-slide>
     <h1>The One Part With a Middle</h1>
-    <p class="lead">Everything else about the internet was built to have no centre. Names are the exception, and it is the exception that gets used.</p>
+    <p class="lead">Everything else about the internet was built to have no center. Names are the exception, and it is the exception that gets used.</p>
     <ul reveal>
       <li>A name can be taken away. The machine stays exactly where it was, and nobody can find it.</li>
       <li>Governments block sites by ordering name servers to stop answering, which is far easier than blocking packets.</li>
+      <li>That is what happened to the gazette on the last slide. Taking a name is the cheapest way to remove something.</li>
       <li>The organization that oversees the top of the tree is one of the few places the internet can be leaned on.</li>
     </ul>
   </phil-slide>
@@ -414,6 +446,7 @@
     <ul reveal>
       <li>Pages load images and scripts from other companies, and those companies can set cookies too.</li>
       <li>The same company appears on thousands of sites, so it sees you across all of them.</li>
+      <li>One ad company sits on both dragon-donuts.example and gnome-gazette.example, so it knows you read the news after ordering donuts.</li>
       <li>None of that required a new invention. It is the shopping basket fix, used as written.</li>
       <li>Watching people is what makes advertising valuable, and advertising is why the web is free.</li>
     </ul>
@@ -460,6 +493,71 @@
     </ul>
   </phil-slide>
 
+  <!-- ============ PART 9 — THE SHAPE NOBODY CHOSE ============ -->
+
+  <!-- 34a. Decision seven -->
+  <phil-slide>
+    <h1>Decision Seven: The One Nobody Made</h1>
+    <p>The first six were decided by people who wrote down what they were doing. Nobody decided this one.</p>
+    <figure class="phil-figure">
+      <img src="./assets/then-now.svg" alt="Two networks side by side using the same protocol. On the left, labelled 1969, a dozen equal nodes are joined to their neighbors in a mesh with no center. On the right, labelled today, the same small nodes almost all connect to one of three large hubs instead of to each other">
+      <figcaption>Nothing in the protocol changed between these two pictures.</figcaption>
+    </figure>
+    <ul reveal>
+      <li>Packets still route around damage, and no router has ever been given a center.</li>
+      <li>Almost everything you do online now starts or ends at one of a few companies.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34b. Why -->
+  <phil-slide>
+    <h1>Why It Piled Up in a Few Places</h1>
+    <p>Nobody ordered this either. Several ordinary pressures happened to push the same way at once.</p>
+    <ul reveal>
+      <li>A place is more useful the more people are already there, so whatever leads tends to keep leading.</li>
+      <li>Advertising pays far more for one large audience than for many small ones.</li>
+      <li>Hosting, moderation and surviving attacks all cost more than a small site can carry alone.</li>
+      <li>gnome-gazette.example now gets most of its readers from somebody else's feed, rather than from people typing its name.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34c. LLMs -->
+  <phil-slide>
+    <h1>The Newest Layer: Answers Instead of Links</h1>
+    <p class="lead">A language model is one more thing built on top, the way the web was built on top of the wiring. It changes what the layer underneath is for.</p>
+    <ul reveal>
+      <li>The web ran on links. You were sent somewhere, and the somewhere was paid for by your arriving.</li>
+      <li>A model answers you where you stand, so there is often nowhere left to be sent.</li>
+      <li>It learned to answer by reading pages whose authors were never asked.</li>
+      <li>That is the asymmetry from 1989 again: a link needs the sender's permission and never the receiver's.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 34d. POLL -->
+  <phil-slide>
+    <h1>Decision Point: Who Pays for the Page?</h1>
+    <p class="muted">Not graded. This one is being argued in courts right now, and it is not settled.</p>
+    <phil-poll prompt="An assistant reads gnome-gazette.example, then answers your question without sending you there. What is that?"
+               explain="All three answers accept exactly the same facts. What separates them is which part they think is the wrong: the copying, the money, or the position. Notice also that the free web described in this lesson was built on the first answer, and that the third would still stand even if every model paid in full for what it read."
+      >
+      <phil-choice note="The strongest version of the open-web argument, and the one the web actually grew on. It has to say why a machine reading at this scale is the same act as a person reading.">Fair use of a public page. Anyone may read something and tell you what it said.</phil-choice>
+      <phil-choice note="The fairness case. It has to explain why linking was acceptable for thirty years while summarizing is not, given that both use the page without asking.">A taking. The gazette carries the cost of being read and receives none of the visit.</phil-choice>
+      <phil-choice note="Moves the objection from copying to concentration. It is the worry from the previous slides, and it would survive a world where every model paid its sources.">The wrong question. The problem is that a few companies now sit between everyone and everything.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 34e. Checkpoint -->
+  <phil-slide>
+    <h1>Checkpoint: What Actually Changed</h1>
+    <phil-mcq prompt="The web ended up concentrated in a few companies. What changed to allow it?"
+              explain="Nothing in the protocol. A packet is routed today the way it was routed in 1969, and no rule was rewritten to send traffic through anybody's servers. The concentration was produced by money and convenience on top of a design that still has no center, which is why fixing it is so much harder than repealing a rule.">
+      <phil-choice feedback="No such rewrite ever happened. A packet today takes its own path through routers exactly as it did in 1969.">The protocol was rewritten to route traffic through central servers.</phil-choice>
+      <phil-choice correct>Nothing in the protocol. The concentration came from economics, not a rule.</phil-choice>
+      <phil-choice feedback="The root is not held by those companies. Blocking at the name layer is real, and it is a different problem from where the traffic goes.">The name system's root was handed to the largest companies to manage.</phil-choice>
+      <phil-choice feedback="That argument is about the wiring and it is a live one. The concentration happened anyway, on networks that were treating all traffic alike.">Networks were allowed to deliver the biggest sites faster than the rest.</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
   <!-- 34. Cloze 2 -->
   <phil-slide>
     <h1>Fill In: The Last Four Decisions</h1>
@@ -478,11 +576,12 @@
   <!-- 33. The two directions, walked back -->
   <phil-slide>
     <h1>Both Directions, One Story</h1>
-    <p class="lead">Six decisions, each made by people with reasons, each now a rule the rest of us live inside.</p>
+    <p class="lead">Six decisions made on purpose, a seventh that nobody made at all, and every one of them now a rule the rest of us live inside.</p>
     <ul reveal>
       <li><strong>Values into design.</strong> Survivability, thrift, academic openness, physics filing and shop baskets each left a permanent mark on the shape of the thing.</li>
-      <li><strong>Design into values.</strong> No centre made censorship hard, a dumb network made permission unnecessary, names made a chokepoint, and a basket fix made surveillance ordinary.</li>
-      <li>None of the six was a decision about how people should live, and all six turned into one.</li>
+      <li><strong>Design into values.</strong> No center made censorship hard, a dumb network made permission unnecessary, names made a chokepoint, and a basket fix made surveillance ordinary.</li>
+      <li><strong>And a shape nobody chose.</strong> The wiring still has no center. What people actually use has three or four.</li>
+      <li>None of these was a decision about how anyone should live, and all of them turned into one.</li>
     </ul>
   </phil-slide>
 

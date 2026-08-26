@@ -10,7 +10,7 @@
                   arrives — until you shut down one of the two ends,
                   which is the only thing that works.
 
-   The student discovers "no centre means no off switch" by failing to
+   The student discovers "no center means no off switch" by failing to
    switch it off, which is a different kind of knowing than being told.
 
    Pathfinding is real: BFS over the live graph every time, so the

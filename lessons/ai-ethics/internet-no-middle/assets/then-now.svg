@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 244" shape-rendering="crispEdges" role="img" aria-label="Two diagrams side by side, both using the same protocol. On the left, labelled 1969, about a dozen equal-sized nodes are joined to their neighbors in a mesh with many cross-links and no center. On the right, labelled today, the same dozen small nodes almost all connect to one of three large hubs instead of to each other, and the hubs carry nearly all the lines.">
+  <rect width="640" height="244" fill="#1a1f31"/>
+  <g font-family="Verdana, DejaVu Sans, sans-serif">
+
+    <!-- ================= LEFT: the mesh ================= -->
+    <text x="16" y="26" fill="#46e07a" font-size="16" font-weight="bold">1969 · no center</text>
+    <text x="16" y="46" fill="#8fd9a8" font-size="14">every node talks to its neighbors</text>
+
+    <g stroke="#46e07a" stroke-width="2" opacity="0.75" fill="none">
+      <path d="M56 92 L134 76"/>  <path d="M134 76 L212 100"/>
+      <path d="M56 92 L96 148"/>  <path d="M96 148 L134 76"/>
+      <path d="M96 148 L170 160"/><path d="M170 160 L212 100"/>
+      <path d="M170 160 L128 214"/><path d="M128 214 L96 148"/>
+      <path d="M212 100 L246 158"/><path d="M246 158 L170 160"/>
+      <path d="M246 158 L196 212"/><path d="M196 212 L128 214"/>
+      <path d="M196 212 L170 160"/><path d="M56 92 L134 76"/>
+    </g>
+    <g fill="#232838" stroke="#46e07a" stroke-width="3">
+      <rect x="46"  y="82"  width="20" height="20"/>
+      <rect x="124" y="66"  width="20" height="20"/>
+      <rect x="202" y="90"  width="20" height="20"/>
+      <rect x="86"  y="138" width="20" height="20"/>
+      <rect x="160" y="150" width="20" height="20"/>
+      <rect x="236" y="148" width="20" height="20"/>
+      <rect x="118" y="204" width="20" height="20"/>
+      <rect x="186" y="202" width="20" height="20"/>
+    </g>
+
+    <!-- divider -->
+    <path d="M320 60 L320 236" stroke="#3a4160" stroke-width="3"/>
+
+    <!-- ================= RIGHT: the hubs ================= -->
+    <text x="360" y="26" fill="#ff6ad5" font-size="16" font-weight="bold">today · same protocol</text>
+    <text x="360" y="46" fill="#d8a8c6" font-size="14">almost everything goes via a few hubs</text>
+
+    <!-- spokes drawn first so hubs sit on top -->
+    <g stroke="#ff6ad5" stroke-width="2" opacity="0.55" fill="none">
+      <path d="M420 100 L370 74"/> <path d="M420 100 L370 130"/> <path d="M420 100 L376 104"/>
+      <path d="M420 100 L432 62"/> <path d="M420 100 L470 70"/>
+      <path d="M556 106 L602 76"/> <path d="M556 106 L610 118"/> <path d="M556 106 L600 148"/>
+      <path d="M556 106 L546 62"/>
+      <path d="M488 190 L432 214"/><path d="M488 190 L490 232"/><path d="M488 190 L548 220"/>
+      <path d="M488 190 L590 200"/><path d="M488 190 L392 176"/>
+      <!-- hubs interconnect -->
+      <path d="M420 100 L556 106"/><path d="M556 106 L488 190"/><path d="M488 190 L420 100"/>
+    </g>
+
+    <!-- the small nodes -->
+    <g fill="#232838" stroke="#9aa3c7" stroke-width="2">
+      <rect x="362" y="66"  width="16" height="16"/>
+      <rect x="362" y="122" width="16" height="16"/>
+      <rect x="368" y="96"  width="16" height="16"/>
+      <rect x="424" y="54"  width="16" height="16"/>
+      <rect x="462" y="62"  width="16" height="16"/>
+      <rect x="594" y="68"  width="16" height="16"/>
+      <rect x="602" y="110" width="16" height="16"/>
+      <rect x="592" y="140" width="16" height="16"/>
+      <rect x="538" y="54"  width="16" height="16"/>
+      <rect x="424" y="206" width="16" height="16"/>
+      <rect x="482" y="224" width="16" height="16"/>
+      <rect x="540" y="212" width="16" height="16"/>
+      <rect x="582" y="192" width="16" height="16"/>
+      <rect x="384" y="168" width="16" height="16"/>
+    </g>
+
+    <!-- the three hubs -->
+    <g fill="#2a2140" stroke="#ff6ad5" stroke-width="3">
+      <rect x="400" y="84"  width="40" height="34"/>
+      <rect x="536" y="90"  width="40" height="34"/>
+      <rect x="468" y="174" width="40" height="34"/>
+    </g>
+
+  </g>
+</svg>

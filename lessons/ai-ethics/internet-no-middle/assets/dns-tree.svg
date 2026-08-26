@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 268" shape-rendering="crispEdges" role="img" aria-label="Diagram: the name system drawn as an upside-down tree. A single root at the top branches to .example, .org and .uk, and .example branches to dragon-donuts, gnome-gazette and troll-bridge-tolls. The branch to gnome-gazette is cut and marked with a cross, and a note reads: the machine is still running, nobody can find it.">
+  <rect width="640" height="268" fill="#1a1f31"/>
+
+  <!-- the root: the one place with a top -->
+  <rect x="286" y="16" width="68" height="34" fill="#3a3418" stroke="#ffcf5a" stroke-width="3"/>
+  <text x="320" y="39" fill="#ffcf5a" font-size="17" font-weight="bold" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif">root</text>
+  <text x="368" y="39" fill="#ddcb9a" font-size="14" font-family="Verdana, DejaVu Sans, sans-serif">← somebody owns this</text>
+
+  <!-- root to the top-level names -->
+  <g stroke="#9aa3c7" stroke-width="3" fill="none">
+    <path d="M320 50 L320 68 L128 68 L128 88"/>
+    <path d="M320 50 L320 88"/>
+    <path d="M320 50 L320 68 L512 68 L512 88"/>
+  </g>
+
+  <g font-family="Verdana, DejaVu Sans, sans-serif" text-anchor="middle" font-size="16">
+    <rect x="72"  y="88" width="112" height="34" fill="#20304a" stroke="#4cc2ff" stroke-width="3"/>
+    <text x="128" y="111" fill="#4cc2ff">.example</text>
+    <rect x="264" y="88" width="112" height="34" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <text x="320" y="111" fill="#cdd3e8">.org</text>
+    <rect x="456" y="88" width="112" height="34" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <text x="512" y="111" fill="#cdd3e8">.uk</text>
+  </g>
+
+  <!-- .example down to a bus, then one drop per site -->
+  <g stroke="#9aa3c7" stroke-width="3" fill="none">
+    <path d="M128 122 L128 140"/>
+    <path d="M84 140 L488 140"/>
+    <path d="M84 140 L84 168"/>
+    <path d="M488 140 L488 168"/>
+  </g>
+  <!-- the cut branch: its own drop, severed halfway, with the X on the gap -->
+  <path d="M277 140 L277 148" stroke="#ff6ad5" stroke-width="3" fill="none"/>
+  <path d="M277 162 L277 168" stroke="#ff6ad5" stroke-width="3" fill="none" opacity="0.3"/>
+  <g stroke="#ff6ad5" stroke-width="4">
+    <path d="M267 145 L287 165"/>
+    <path d="M287 145 L267 165"/>
+  </g>
+
+  <g font-family="Verdana, DejaVu Sans, sans-serif" text-anchor="middle" font-size="15">
+    <rect x="8"   y="168" width="152" height="34" fill="#232838" stroke="#46e07a" stroke-width="3"/>
+    <text x="84"  y="191" fill="#46e07a">dragon-donuts</text>
+
+    <rect x="201" y="168" width="152" height="34" fill="#232838" stroke="#ff6ad5" stroke-width="3" opacity="0.45"/>
+    <text x="277" y="191" fill="#ff6ad5" opacity="0.55">gnome-gazette</text>
+
+    <rect x="394" y="168" width="188" height="34" fill="#232838" stroke="#46e07a" stroke-width="3"/>
+    <text x="488" y="191" fill="#46e07a">troll-bridge-tolls</text>
+  </g>
+
+  <text x="320" y="232" fill="#ff6ad5" font-size="16" font-weight="bold" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif">✕ name removed</text>
+  <text x="320" y="254" fill="#cdd3e8" font-size="15" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif">the machine is still running · nobody can find it</text>
+</svg>

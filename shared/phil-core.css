@@ -136,6 +136,23 @@ phil-slide h1 { font-family: var(--pixel); font-size: clamp(18px, 3.6vw, 30px); 
 phil-slide h2 { font-family: var(--pixel); font-size: clamp(13px, 2.4vw, 17px); color: var(--accent-3); margin: 1.2em 0 .5em; }
 phil-slide p, phil-slide li { max-width: 62ch; font-size: clamp(18px, 2.1vw, 23px); line-height: 1.65; }
 
+/* A diagram in the slide body, as opposed to the portrait in the slot="art"
+   column. An explanatory picture — a route, a tree, a stack of layers — needs
+   the full text width; the art column is about 46 characters wide and squeezes
+   one into illegibility. Use <figure class="phil-figure"> for those, and keep
+   slot="art" for the scene and relic-card portraits.
+
+   Never let the picture carry meaning the prose does not: the alt text and the
+   surrounding bullets have to say the same thing, because a diagram is the one
+   element a screen-reader user gets nothing from. */
+phil-slide .phil-figure { margin: 12px 0; max-width: 100%; }
+phil-slide .phil-figure img, phil-slide .phil-figure svg {
+  display: block; width: 100%; height: auto; max-height: 44vh;
+}
+phil-slide .phil-figure figcaption {
+  font-size: clamp(15px, 1.3vw, 17px); color: var(--muted); line-height: 1.4; margin-top: 6px; max-width: none;
+}
+
 /* Dense widget text. A widget that sets font-size on its own root does NOT get
    it: the rule above is more specific than inheritance, so every <p> and <li>
    inside snaps back to 23px at 1.65. Three widgets shipped oversized that way

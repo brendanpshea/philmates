@@ -88,7 +88,7 @@ const ATTEMPTS = [
   },
   {
     wish: 'Make it alive, well, able to want things — and able to get along with people.',
-    got: 'It is gentle, patient, and wants to be a good neighbour. It has done nothing wrong.',
+    got: 'It is gentle, patient, and wants to be a good neighbor. It has done nothing wrong.',
     missed: 'You specified the creature. You did not specify the village. The first person who sees it screams and throws a stone, and nothing you wrote into it changes that.'
   }
 ];
