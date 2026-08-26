@@ -300,20 +300,54 @@
   <!-- 22. Viz: the Scales -->
   <phil-slide>
     <h1>Tune the Case</h1>
-    <p>Change the facts. Restricting her drug is justified paternalism <strong>only</strong> when every knob is set right. Switch one off and the scales fall.</p>
+    <p>Five versions of Ilinca. Switch on only what <em>that</em> case supports, then check your reading. Two switches are not conditions at all.</p>
     <phil-balance
-        case="Ilinca the werewolf is addicted to moon-nectar, a drug that triggers the violent transformations that gravely injure her. Lucid, she demands her supply. She endangers no one else."
-        action="Restrict her access to moon-nectar, against her wishes, for her own good"
+        action="Restrict her moon-nectar, for her own good"
         infringed="Respect for autonomy"
         honored="Beneficence / nonmaleficence"
-        prompt="<strong>Set each knob ON</strong> only if the case really has that feature. Paternalism is justified only when all are ON:"
-        residue="You still owe her honesty about the restriction, real support through withdrawal, and a plan she can consent to — and you should feel the weight of overruling her.">
-      <phil-cond>The drug is genuinely addictive — her "choice" to keep using isn't fully free.</phil-cond>
-      <phil-cond>The drug itself causes the injuries — remove it and the harm stops.</phil-cond>
-      <phil-cond>Gentler measures (a taper she agreed to, counseling) have already failed.</phil-cond>
-      <phil-cond>You restrict only the drug — the least intrusive step that works.</phil-cond>
-      <phil-cond>You support her through withdrawal and protect her dignity.</phil-cond>
-      <phil-cond>You'd set the same limit for any addicted patient.</phil-cond>
+        >
+      <phil-cond id="selfonly" gate frame
+          gateNote="The harm is falling on somebody else, so you are not weighing her good against her wishes at all.">
+        The harm falls on Ilinca alone.</phil-cond>
+      <phil-cond id="addictive">
+        Addiction makes her refusal less than free.</phil-cond>
+      <phil-cond id="tried" gate
+          gateNote="You have not yet run out of gentler options, so you have not reached the point where overruling her is the only thing left.">
+        Gentler measures have already failed.</phil-cond>
+      <phil-cond id="impartial">
+        You would set the same limit for the Count.</phil-cond>
+      <phil-cond decoy
+          decoyNote="Whether she is grateful afterwards is not what made the override defensible, and you cannot know it in advance.">
+        She will thank you once she is well.</phil-cond>
+      <phil-cond decoy
+          decoyNote="Her pack does not get to decide for a competent adult, any more than you do.">
+        Her pack has asked you to step in.</phil-cond>
+
+      <phil-case label="As written" holds="selfonly addictive tried impartial"
+          note="This is the only version of the five where the override is defensible. Every condition had to line up, which is how demanding they are."
+          residue="You still owe her honesty about the restriction, real support through withdrawal, and a plan she can consent to. And you should feel the weight of overruling her.">
+        Ilinca is addicted to moon-nectar, the drug that triggers the transformations injuring her. A taper she agreed to has failed twice. She is lucid, and she endangers no one else.
+      </phil-case>
+
+      <phil-case label="Twice a year" holds="selfonly tried impartial"
+          note="Nothing here is addictive, so her refusal is simply a competent adult's choice about her own body. Without that, the beneficence case never gets off the ground — this is the version students most often get wrong, because the injuries are just as bad.">
+        Ilinca takes moon-nectar twice a year, at the solstices, and could stop tomorrow. She just does not want to. The transformations injure her just as badly.
+      </phil-case>
+
+      <phil-case label="No taper tried" holds="selfonly addictive impartial"
+          note="Necessity is a gate rather than a point. However addictive the drug is and however well the restriction would work, you have not earned the override while an untried gentler option is sitting there.">
+        Ilinca is addicted and badly hurt. You have offered her no taper, no counseling, nothing. You reach straight for the restriction.
+      </phil-case>
+
+      <phil-case label="Not the Count" holds="selfonly addictive tried"
+          note="Same drug, same dependence, different patient — and you would only overrule the one without a title. That is not a weighing at all, it is a failure of justice wearing a weighing's clothes.">
+        Ilinca is addicted and badly hurt, and you would restrict her supply. The Count is just as dependent on his cordial, and you would not touch it.
+      </phil-case>
+
+      <phil-case label="Names Sanda" holds="addictive tried impartial"
+          note="Every other condition still holds, and it no longer matters. Once the danger is to somebody else you have left paternalism entirely and arrived at the Count's problem: confidentiality against the duty to warn.">
+        Ilinca is addicted and badly hurt. She also tells you that when the change takes her this month, she means to go for Sanda, and she knows what she is saying.
+      </phil-case>
     </phil-balance>
   </phil-slide>
 
