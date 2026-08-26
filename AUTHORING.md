@@ -64,7 +64,9 @@ clean slide 1. Handy for re-running a lesson live in class.
   <phil-choice feedback="Hint shown if this wrong choice is picked.">Kant</phil-choice>
 </phil-mcq>
 ```
-Mark the right option with `correct`. Students can retry until right.
+Mark the right option with `correct`. Students can retry until right. **Write four
+options**, not three — a three-option question hands a pure guesser 33%, and a
+guesser who can eliminate one throwaway is down to a coin flip.
 
 ### Where do you stand? — `<phil-poll>` (ungraded)
 For "what would you do?" moments where reasonable people genuinely divide.
@@ -97,6 +99,25 @@ a right answer (what a theory claims, why two cases differ, what a protocol says
 </phil-checkset>
 ```
 Correct = the checked set exactly matches the `correct` statements.
+
+### Option order is shuffled for you
+
+The engine reshuffles the options of every `<phil-mcq>` and `<phil-checkset>` each
+time the page loads, so **the order you author in never reaches a student.** This
+matters most for checksets: writing one, you naturally list the true statements
+first and the distractors after, and a student who notices that can pass the whole
+lesson without reading a word. Shuffling kills that tell everywhere at once.
+
+Nothing is stored by index, so a reshuffle is safe — a restored answer is found by
+its `correct` flag, not its slot. `<phil-poll>` is the one exception: it saves the
+picked index, so polls are never shuffled and their options stay in authored order.
+
+Add `keep-order` to opt out for a question whose options are genuinely sequenced —
+a timeline, escalating degrees, an "all of the above":
+
+```html
+<phil-mcq keep-order prompt="Put the steps in order…">
+```
 
 ### Fill the blanks — `<phil-cloze>`
 ```html
@@ -167,19 +188,20 @@ genuinely optional side content.
 
 ## When you add a widget to the engine: bump `?v=`
 
-Lessons load the engine as `../../../shared/phil-core.js?v=2`. That query string
+Lessons load the engine as `../../../shared/phil-core.js?v=3`. That query string
 is a cache-buster, and it matters: a browser holding an older `phil-core.js` has
 never heard of your new element, so it never upgrades — the widget's authored
 children spill onto the slide as run-on text and the `prompt` attribute vanishes
 entirely. Students see a broken slide and have no idea why.
 
-So whenever you add or rename a `<phil-*>` element in `shared/phil-core.js`,
-bump the number everywhere in one go:
+So whenever you add or rename a `<phil-*>` element in `shared/phil-core.js` — or
+change how an existing one behaves, the way option shuffling did — bump the number
+everywhere in one go:
 
 ```bash
-# 2 -> 3, across all lessons and the homepage
+# 3 -> 4, across all lessons and the homepage
 grep -rl 'phil-core\.\(js\|css\)?v=' lessons/*/*/index.html index.html \
-  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=3/g'
+  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=4/g'
 ```
 
 As a backstop, `phil-core.css` hides the children of any `<phil-*>` element that
@@ -190,13 +212,19 @@ not a substitute for bumping the version.
 
 ## Quiz quality (auto-checked)
 
-Multiple-choice questions leak answers if you're not careful. Two tells matter most:
+Multiple-choice questions leak answers if you're not careful. Three tells matter most:
 
 1. **Similar lengths.** The correct answer should be about the same length as the
    distractors. A conspicuously longer (usually more qualified/detailed) or much
    shorter answer is a giveaway — students learn to pick the odd one out.
-2. **Varied position.** Across a lesson's MCQs, move the `correct` choice around
-   (A / B / C…). Don't park it in the same slot every time.
+2. **Four options.** Three options is a 33% free guess. Every MCQ should offer four,
+   and the fourth has to be a real misconception with feedback that names it, not
+   filler.
+3. **Varied position.** Across a lesson's MCQs, move the `correct` choice around
+   (A / B / C…). Don't park it in the same slot every time. The engine now shuffles
+   options at runtime, so this one no longer reaches students on its own — it still
+   applies to any `keep-order` question, and the printed answer order is worth
+   eyeballing while you write.
 
 It also checks the whole repo at once, because the worst tell is invisible one
 lesson at a time. If the correct answer is the longest option in most questions,
@@ -211,8 +239,13 @@ node tools/validate-quizzes.mjs --strict   # exit 1 if any issues (for CI/hooks)
 ```
 
 It scans every `<phil-mcq>`, prints each lesson's answer order (e.g. `B C A C`),
-and flags uneven option lengths, a correct answer that's the longest/shortest, and
-correct-answer positions that cluster. Aim for an all-`✓` report.
+and flags uneven option lengths, a correct answer that's the longest/shortest,
+questions with fewer than four options, and correct-answer positions that cluster.
+Aim for an all-`✓` report.
+
+The four-option rule arrived after most lessons were written, so the report
+currently lists eleven lessons with three-option questions. That is a real backlog
+rather than noise — work through it a lesson at a time.
 
 Writing tips that keep you passing it:
 - Give every option a full sentence of comparable length; don't let the right one

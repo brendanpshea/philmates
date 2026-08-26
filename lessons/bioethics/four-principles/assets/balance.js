@@ -8,12 +8,12 @@
    Ungraded exploration (not a quiz widget).
    Authoring:
      <phil-balance
-        case="The werewolf hurts himself every transformation but refuses sedation."
-        action="Sedate him against his wishes, for his own safety"
+        case="Ilinca the werewolf hurts herself every transformation but refuses sedation."
+        action="Sedate her against her wishes, for her own safety"
         infringed="Respect for autonomy"
         honored="Beneficence / nonmaleficence"
-        residue="You still owe him an honest debrief, an apology, and a plan he can consent to next time.">
-       <phil-cond>You have good reasons: untreated, he is seriously and repeatedly injured.</phil-cond>
+        residue="You still owe her an honest debrief, an apology, and a plan she can consent to next time.">
+       <phil-cond>You have good reasons: untreated, she is seriously and repeatedly injured.</phil-cond>
        ...
      </phil-balance>
    ===================================================================== */

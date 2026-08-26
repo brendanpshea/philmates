@@ -39,19 +39,36 @@ case. Lean into mood, lighting, and a clear silhouette.
 > *Teaches:* autonomy vs. his own dangerous appetites — respecting a patient's
 > choices even when you fear them.
 
-### `werewolf.png` — the werewolf (a patient)
+### `werewolf.png` — Ilinca, the werewolf (a patient)
 > A shaggy brown werewolf perched on an exam table, pointed ears, amber eyes, fangs,
-> and a comically re-wrapped white head-bandage (he keeps re-injuring himself),
-> looking sheepish.
+> and a comically re-wrapped white head-bandage (she keeps re-injuring herself),
+> looking sheepish. Nothing in the pose or palette needs to gender her. She is a
+> wolf, and the prose names her.
 > *Teaches:* beneficence and non-maleficence — helping a patient who keeps doing
-> himself harm.
+> herself harm, and the paternalism question that raises.
 
 ### `creature.png` — the Creature (a vulnerable patient)
 > Frankenstein's creature drawn gentle and sorrowful: a flat-topped stitched head,
 > neck bolts catching a faint blue spark, mismatched sickly-green skin, soft
 > pleading eyes, a blanket around the shoulders.
-> *Teaches:* justice — the patient whose standing is easiest to overlook still gets
-> equal moral weight.
+> *Teaches:* capacity — newly risen, he cannot yet grasp his options, so respecting
+> his autonomy means assessing capacity and finding a surrogate.
+
+## Unillustrated cast
+
+Two characters carry cases without art of their own. If you ever add portraits,
+these are the briefs.
+
+### Sanda, the village midwife
+> A human patient: middle-aged, calloused hands, a plain woolen shawl, a midwife's
+> satchel. She needs the same scarce synthetic blood the Count does, and she is the
+> villager he names when he says who he intends to feed on.
+> *Teaches:* justice — she has no fangs, no title, and exactly equal standing.
+
+### the Countess Dolingen
+> A vampire elder, four hundred years old and plainly tired of it: silvered hair
+> under a dark veil, deep-set eyes, hands folded and still.
+> *Teaches:* end-of-life autonomy — a settled, repeated request to die.
 
 ## Objects
 

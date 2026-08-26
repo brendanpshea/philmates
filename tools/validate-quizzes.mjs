@@ -1,11 +1,20 @@
 #!/usr/bin/env node
-/* Auto-validate multiple-choice questions across all lessons for two classic
+/* Auto-validate multiple-choice questions across all lessons for the classic
    "test-taking tells" that let students guess without knowing the material:
 
      1. LENGTH  — the correct answer should be a similar length to the
                   distractors (a conspicuously longer/shorter answer gives it away).
-     2. POSITION — across a lesson's MCQs, the correct answer's position should
+     2. COUNT   — four options, not three. A three-option question hands a pure
+                  guesser 33%, and a guesser who can eliminate one obvious
+                  throwaway is down to a coin flip.
+     3. POSITION — across a lesson's MCQs, the correct answer's position should
                   vary (don't park the answer at "A" every time).
+
+   Position is now also handled at runtime: the engine shuffles the options of
+   every <phil-mcq> and <phil-checkset> on load, so authored order no longer
+   reaches students. The position check stays because it still applies to any
+   question marked `keep-order`, and because the printed answer order is a
+   useful thing to eyeball while writing.
 
    Scans lessons/<topic>/<lesson>/index.html. Run:
      node tools/validate-quizzes.mjs            # report
@@ -26,6 +35,7 @@ const LEN_SPREAD_MIN   = 15;    // ...but ignore tiny absolute gaps (chars)
 const CORRECT_LONG_RATIO = 1.3; // correct vs avg-wrong length before "too long"
 const CORRECT_LONG_MIN   = 12;  // ...minimum absolute gap (chars)
 const POSITION_SHARE   = 0.6;   // share of answers allowed at one position
+const MIN_OPTIONS      = 4;     // options per MCQ; three is a 33% free guess
 
 /* Repo-wide thresholds. A tell can sit under every per-item threshold and
    still be plain across the whole set: if the correct answer is the longest
@@ -56,7 +66,7 @@ function parseMcqs(html) {
       const attrs = c[1].replace(/"[^"]*"/g, '');          // drop attr values (avoid matching "correct" inside feedback)
       choices.push({ correct: /\bcorrect\b/.test(attrs), len: stripTags(c[2]).length });
     }
-    mcqs.push({ prompt, choices });
+    mcqs.push({ prompt, choices, keepOrder: /keep-order/.test(m[1].replace(/"[^"]*"/g, '')) });
   }
   return mcqs;
 }
@@ -102,7 +112,7 @@ function checkPositions(mcqs) {
 }
 
 async function run() {
-  let lessonCount = 0, mcqCount = 0, problemCount = 0;
+  let lessonCount = 0, mcqCount = 0, problemCount = 0, thinTotal = 0;
   const allMcqs = [];
 
   for (const topic of await ls(LESSONS)) {
@@ -125,6 +135,17 @@ async function run() {
           issues.forEach(x => lines.push(`      - ${x}`));
         }
       });
+      /* One line per lesson rather than one per question: a lesson written
+         before the four-option rule has this on every question, and twelve
+         identical warnings bury the tells that need actual judgment. */
+      const thin = mcqs.filter(q => q.choices.length < MIN_OPTIONS);
+      if (thin.length) {
+        problemCount++;
+        thinTotal += thin.length;
+        lines.push(`  ⚠ ${thin.length}/${mcqs.length} MCQ have fewer than ${MIN_OPTIONS} options `
+          + `(${thin.map((q, i) => `Q${mcqs.indexOf(q) + 1}:${q.choices.length}`).join(' ')}) — add a distractor`);
+      }
+
       const pos = checkPositions(mcqs);
       if (pos.issues.length) { problemCount += pos.issues.length; pos.issues.forEach(x => lines.push(`  ⚠ positions: ${x}`)); }
 
@@ -164,6 +185,10 @@ async function run() {
     console.log('\n\u26a0 across all lessons:');
     globals.forEach(g => console.log(`  - ${g}`));
   }
+
+  if (thinTotal)
+    console.log(`\n${thinTotal}/${mcqCount} MCQ still have fewer than ${MIN_OPTIONS} options. Each needs one more `
+      + `plausible distractor — a real misconception, with feedback that names it.`);
 
   console.log(`\nScanned ${mcqCount} MCQ across ${lessonCount} lesson(s) — ${problemCount} issue(s).`);
   if (problemCount && STRICT) process.exit(1);

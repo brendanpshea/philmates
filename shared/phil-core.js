@@ -13,6 +13,31 @@ const el = (tag, cls, html) => {
   return n;
 };
 const isTyping = () => /^(input|select|textarea)$/i.test(document.activeElement?.tagName || '');
+/* Fisher-Yates on a copy. Used to shuffle answer options at build time — see
+   `shuffledOptions` below for why that matters. */
+const shuffle = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+/* Answer options are shuffled on every load, because authored order leaks the
+   answer. Writing a checkset, you naturally list the true statements first and
+   the distractors after; a student who notices can pass without reading. The
+   same habit parks the MCQ answer in slot B. Shuffling here fixes every existing
+   lesson at once and means an author never has to think about it again.
+
+   Order is *not* stable across reloads, and doesn't need to be: nothing is
+   stored by index. A restored answer is found by its `correct` flag, so a
+   reshuffle still highlights the right row. (<phil-poll> is the exception — it
+   saves the picked index — so polls are never shuffled.)
+
+   `keep-order` opts out for the rare question whose options are genuinely
+   sequenced (a timeline, escalating degrees, "all of the above"). */
+const shuffledOptions = (host, nodes) =>
+  host.hasAttribute('keep-order') ? [...nodes] : shuffle(nodes);
 // Checked at call time, not module load — users change this setting mid-session.
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
@@ -485,7 +510,7 @@ class PhilWidget extends HTMLElement {
 ------------------------------------------------------------------ */
 class PhilMcq extends PhilWidget {
   build() {
-    const choices = [...this.querySelectorAll('phil-choice')];
+    const choices = shuffledOptions(this, this.querySelectorAll('phil-choice'));
     this.innerHTML = '';
     this.append(this.promptNode(this.getAttribute('prompt') || '', 'radiogroup'));
     const list = el('div', 'phil-options');
@@ -604,7 +629,7 @@ class PhilPoll extends HTMLElement {
 ------------------------------------------------------------------ */
 class PhilCheckset extends PhilWidget {
   build() {
-    const items = [...this.querySelectorAll('phil-statement')];
+    const items = shuffledOptions(this, this.querySelectorAll('phil-statement'));
     this.innerHTML = '';
     this.append(this.promptNode(this.getAttribute('prompt') || 'Check every statement that is TRUE.', 'group'));
     const list = el('div', 'phil-options');
