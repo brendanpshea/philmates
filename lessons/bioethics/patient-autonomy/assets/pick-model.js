@@ -35,13 +35,13 @@ const STYLE = `
       border:3px solid var(--border); box-shadow:0 5px 0 var(--shadow); font-size:16px; line-height:1.45; }
 .pm-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:0 0 6px; }
 .pm-score { font-family:var(--pixel); font-size:10px; color:var(--muted); white-space:nowrap; }
-.pm-item { margin-top:14px; padding-top:14px; border-top:3px solid var(--border); }
+.pm-item { margin-top:10px; padding-top:10px; border-top:3px solid var(--border); }
 .pm-item:first-of-type { margin-top:8px; padding-top:0; border-top:none; }
-.pm-quote { font-style:italic; margin:0 0 10px; }
+.pm-quote { font-style:italic; margin:0 0 8px; }
 .pm-opts { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }
 .pm-opts button { font-family:var(--pixel); font-size:11px; color:var(--ink); text-align:left;
       background:var(--panel); border:3px solid var(--border); box-shadow:0 3px 0 var(--shadow);
-      padding:11px 10px; cursor:pointer; }
+      padding:9px 10px; cursor:pointer; }
 .pm-opts button:hover:not(:disabled) { background:#2b3252; }
 .pm-opts button:active:not(:disabled) { transform:translateY(3px); box-shadow:none; }
 .pm-opts button.right { background:#133a24; border-color:var(--good); color:var(--good); }
@@ -71,7 +71,9 @@ class PhilPick extends HTMLElement {
   }
 
   build() {
-    this.classList.add('pm');
+    // phil-dense: see the note in phil-core.css — a widget's own font-size
+    // loses to the slide-body rule, so the quotes render at 23px without it.
+    this.classList.add('pm', 'phil-dense');
     this.innerHTML = '';
     const head = el('div', 'pm-head');
     head.append(el('span', null, `<strong>${this.prompt}</strong>`));

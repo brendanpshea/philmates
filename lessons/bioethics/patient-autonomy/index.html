@@ -6,8 +6,8 @@
   <title>House Calls in the Hedgerow: Patient Autonomy · PhilMates</title>
   <meta name="description" content="A country doctor in the world of Peter Rabbit learns what makes consent truly informed, and Emanuel's four models of the doctor–patient relationship.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=3">
-  <script type="module" src="../../../shared/phil-core.js?v=3"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=4">
+  <script type="module" src="../../../shared/phil-core.js?v=4"></script>
   <script type="module" src="./assets/consent.js"></script>
   <script type="module" src="./assets/pick-model.js"></script>
 </head>
@@ -173,16 +173,16 @@
   <!-- 12. Viz: consent-o-meter -->
   <phil-slide>
     <h1>Test It: The Consent-o-Meter</h1>
-    <p>Here is Peter's case. <strong>Toggle each element</strong> the case actually has. The consent is valid only when all five light up.</p>
+    <p><strong>Toggle each element Peter's case actually has.</strong> All five, or the consent is not valid.</p>
     <phil-consent
-        case="Peter is alert and in pain with a hind leg broken in McGregor's snare. You propose setting and splinting it: weeks of rest, a good chance of a working leg, but no guarantee."
+        case="Peter is alert and in pain, a hind leg broken in McGregor's snare. You propose setting and splinting it: weeks of rest, a good chance of a working leg, no guarantee."
         action="Set Peter's leg on the basis of his consent"
         prompt="Switch on each requirement the case truly meets:">
-      <phil-req fail="No capacity — Peter can't understand, appreciate, and reason about this decision.">Peter can understand, appreciate, and reason about the choice (capacity).</phil-req>
-      <phil-req fail="No disclosure — he wasn't told the diagnosis, risks, benefits, and alternatives.">You disclosed the diagnosis, risks, benefits, and alternatives.</phil-req>
-      <phil-req fail="No understanding — teach-back shows he didn't actually grasp the plan.">Peter understood the plan (teach-back confirmed).</phil-req>
-      <phil-req fail="Not voluntary — he's being pressured or manipulated into it.">His choice is voluntary — no coercion or manipulation.</phil-req>
-      <phil-req fail="No authorization — he never actually agreed to go ahead.">Peter explicitly agreed to go ahead (authorization).</phil-req>
+      <phil-req fail="No capacity — Peter can't understand, appreciate, and reason about this decision.">Capacity: he can understand and reason</phil-req>
+      <phil-req fail="No disclosure — he wasn't told the diagnosis, risks, benefits, and alternatives.">Disclosure: you told him risks and options</phil-req>
+      <phil-req fail="No understanding — teach-back shows he didn't actually grasp the plan.">Understanding: teach-back confirmed it</phil-req>
+      <phil-req fail="Not voluntary — he's being pressured or manipulated into it.">Voluntary: no coercion or manipulation</phil-req>
+      <phil-req fail="No authorization — he never actually agreed to go ahead.">Authorization: he explicitly agreed</phil-req>
     </phil-consent>
   </phil-slide>
 
@@ -209,6 +209,7 @@
       <phil-choice feedback="He was told plenty and repeated it. Disclosure isn't the gap; appreciating it is.">Disclosure of the facts</phil-choice>
       <phil-choice correct>Capacity to decide this</phil-choice>
       <phil-choice feedback="No one is pressuring him — the gap is in appreciating and weighing the danger.">Voluntariness of consent</phil-choice>
+      <phil-choice feedback="He understands it well enough to repeat it back. What is missing is that he does not accept it applies to him, which is appreciation rather than understanding.">Understanding of the information</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -220,6 +221,7 @@
       <phil-choice correct>Manipulation made her "yes" not truly voluntary.</phil-choice>
       <phil-choice feedback="A natural mix-up between two of the five ingredients. Jemima understands perfectly well what dinner is — she is competent. What the fox interfered with is whether the yes was freely given.">She was frightened and alone, so she lacked the capacity to decide.</phil-choice>
       <phil-choice feedback="She did say yes — the trouble is how that yes was produced.">She didn't put her agreement in writing.</phil-choice>
+      <phil-choice feedback="There is no minimum waiting time. A quick yes can be perfectly valid, and what spoils this one is how it was produced.">She agreed too quickly for the agreement to count.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -326,8 +328,8 @@
   <!-- 24. Viz: pick the model -->
   <phil-slide>
     <h1>Name That Model</h1>
-    <p>Peter's leg will heal, but he is already itching to go back to the garden that snared him and killed his father. Four doctors take very different approaches. <strong>Identify each model.</strong></p>
-    <phil-pick prompt="Read each doctor's line and pick the model it shows:">
+    <p>Peter's leg will heal, and he is already itching to go back to the garden that killed his father. <strong>Identify the model each doctor is using.</strong></p>
+    <phil-pick prompt="">
       <phil-scenario model="paternalistic" why="The doctor decides and expects Peter to fall in line.">
         “I've cancelled your garden privileges and put you on a carrot regimen. Doctor knows best.”
       </phil-scenario>
@@ -352,6 +354,7 @@
       <phil-choice correct>Dr Fisher clarifies what Peter values; Dr Brock argues some values are better.</phil-choice>
       <phil-choice feedback="Neither overrides him. Dr Brock makes an argument and leaves the choice with Peter, which is persuasion — the thing the voluntariness rule permits. Overriding would be a different model entirely.">Dr Fisher respects Peter&#39;s autonomy, and Dr Brock overrides it entirely.</phil-choice>
       <phil-choice feedback="Both have finished it. Peter&#39;s consent was already valid before either doctor opened her mouth, which is exactly why neither conversation is about consent.">Dr Fisher is still securing consent and Dr Brock has finished.</phil-choice>
+      <phil-choice feedback="Neither sits at those poles. The informative doctor offers no view at all, and the paternalistic one decides for him. Both of these engage his values and leave him the choice.">Dr Fisher uses the informative model and Dr Brock the paternalistic one.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -403,6 +406,7 @@
       <phil-choice feedback="That is their worry about the paternalistic doctor, who decides for the patient. The informative doctor has the opposite problem: she offers no view at all.">It gives the doctor too much influence over which values the patient ends up holding.</phil-choice>
       <phil-choice feedback="She secures it perfectly — that is the whole point of the objection. Peter&#39;s consent was valid, and the Emanuels still think something was owed him.">It fails to secure valid informed consent from the patient.</phil-choice>
       <phil-choice correct>It leaves the patient to choose alone, which is not the same as respecting him.</phil-choice>
+      <phil-choice feedback="Their objection is not about volume. She could disclose perfectly and still, on their view, be leaving him alone with the decision.">It gives the patient more information than he is able to use.</phil-choice>
     </phil-mcq>
   </phil-slide>
 

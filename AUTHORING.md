@@ -188,7 +188,7 @@ genuinely optional side content.
 
 ## When you add a widget to the engine: bump `?v=`
 
-Lessons load the engine as `../../../shared/phil-core.js?v=3`. That query string
+Lessons load the engine as `../../../shared/phil-core.js?v=4`. That query string
 is a cache-buster, and it matters: a browser holding an older `phil-core.js` has
 never heard of your new element, so it never upgrades — the widget's authored
 children spill onto the slide as run-on text and the `prompt` attribute vanishes
@@ -199,9 +199,9 @@ change how an existing one behaves, the way option shuffling did — bump the nu
 everywhere in one go:
 
 ```bash
-# 3 -> 4, across all lessons and the homepage
+# 4 -> 5, across all lessons and the homepage
 grep -rl 'phil-core\.\(js\|css\)?v=' lessons/*/*/index.html index.html \
-  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=4/g'
+  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=5/g'
 ```
 
 As a backstop, `phil-core.css` hides the children of any `<phil-*>` element that
@@ -346,8 +346,47 @@ failed. Two habits keep you inside the frame:
   `node tools/check-density.mjs` (add `--strict` for CI).
 - **Four bullets per slide, maximum.** If you have six, you have two slides.
 
-Same rule for any custom widget you write: nothing below 15px. The reference
-sizes are in `lessons/bioethics/trolley-and-triage/assets/switchboard.js`.
+### Measure before you ship
+
+`check-density.mjs` estimates height from markup, which is fast and wrong about
+widgets — it cannot see what a widget's CSS does. Add `--measure` to open the
+real page in Chromium and read the real `scrollHeight` of every slide against a
+1080p frame:
+
+```bash
+node tools/check-density.mjs              # fast estimate, for the writing loop
+node tools/check-density.mjs --measure    # real heights, ~40s (needs playwright)
+```
+
+Run `--measure` after touching a widget or adding options to a question. The
+four-principles balance slide sat at 1394px against a 910px frame for months
+while the estimate reported a comfortable 805px.
+
+A slide whose only widget is a `<phil-beliefs>` probe is exempt: a Likert grid
+of five statements cannot fit a frame and was never meant to. Everything else
+has to fit, including custom widgets — if a student has to scroll to find the
+button that finishes the question, the slide failed.
+
+### Widget text: use `phil-dense`
+
+Setting `font-size` on your widget's own root **does not work**. `phil-slide p,
+phil-slide li` in `phil-core.css` is more specific than inheritance, so every
+paragraph and list item inside snaps back to the 23px slide-body size. Three
+widgets shipped oversized this way before anyone noticed.
+
+Put `phil-dense` on the host element instead:
+
+```js
+this.classList.add('cm', 'phil-dense');   // → clamp(16px, 1.5vw, 19px)
+```
+
+That is the same size as the belief probe, so it is already proven at projector
+distance, and it stays above the 15px floor. Never go below that floor; the
+reference sizes are in `lessons/bioethics/trolley-and-triage/assets/switchboard.js`.
+
+Two columns help too: a list of five or six short switches fits a frame as
+`grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))` and does not as a
+single stack.
 
 ## Accessibility (auto-checked)
 

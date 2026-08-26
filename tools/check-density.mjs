@@ -11,6 +11,13 @@
      2. BULLET LENGTH — past ~170 characters a single bullet wraps to four or
                         five lines and stops reading as a bullet.
 
+   The estimate is a fast approximation for the authoring loop. `--measure`
+   opens the real page in Chromium and reads the real scrollHeight of every
+   slide, which is the only way to catch a slide whose height lives in a
+   widget's rendered CSS rather than in its markup. Prefer it before shipping.
+   The four-principles balance slide sat at 1394px against a 910px frame for
+   months while the estimate reported 805px and a clean bill of health.
+
    Two things the estimate gets right that a naive count doesn't:
      - Nested lists. The engine reveals `[reveal] > *`, i.e. direct children
        only, so sub-items appear with their parent. They add height but are not
@@ -20,17 +27,22 @@
        excluded from the prose pass so nothing is counted twice.
 
    Scans lessons/<topic>/<lesson>/index.html. Run:
-     node tools/check-density.mjs            # report
+     node tools/check-density.mjs            # fast estimate
+     node tools/check-density.mjs --measure  # real heights, in a browser
      node tools/check-density.mjs --strict   # exit 1 if any issues (for CI)
 */
 
 import { readFile, readdir, stat } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { createServer } from 'node:http';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LESSONS = path.join(ROOT, 'lessons');
 const STRICT = process.argv.includes('--strict');
+const MEASURE = process.argv.includes('--measure');
 
 /* ---- tunable thresholds ---- */
 const BULLET_MAX_CHARS = 170;   // one bullet past this wraps to 4-5 lines
@@ -39,6 +51,16 @@ const BULLET_MAX_CHARS = 170;   // one bullet past this wraps to 4-5 lines
    laptop" and "overflow" is roughly "scrolls even on a 1080p projector". */
 const TIGHT_PX = 640;           // body column taller than this is cramped
 const OVERFLOW_PX = 820;        // ...and past this it definitely scrolls
+/* --measure only. A Likert probe is a grid of five statements with a 1-5 scale
+   on each; it cannot fit a frame and was never meant to. Students work down it
+   like a form, so it is exempt from the measured height rule.
+   
+   Nothing else is. An interactive widget that ends in an answer, a verdict or a
+   button is a slide the room reads together, and if the student has to scroll to
+   find the button then the slide failed -- which is exactly how the four-
+   principles balance widget sat at 1394px for months. */
+const LIKERT_TAGS = new Set(['phil-beliefs', 'phil-beliefs-review']);
+const MEASURED_SLACK_PX = 40;   // scrollbar and sub-pixel rounding
 
 /* ---- rendering model (from phil-core.css) ---- */
 const CPL_ART = 46;             // chars per line when art takes the right column
@@ -112,8 +134,9 @@ function parseSlides(html) {
     const lines = t => Math.max(1, Math.ceil(t.length / cpl));
 
     let px = H1_PX, widgetOnly = 0, w;
+    const tags = [];
     const wre = new RegExp(WIDGET_RE.source, 'gi');
-    while ((w = wre.exec(body))) widgetOnly += widgetPx(w[1].toLowerCase(), w[0], cpl);
+    while ((w = wre.exec(body))) { tags.push(w[1].toLowerCase()); widgetOnly += widgetPx(w[1].toLowerCase(), w[0], cpl); }
     px += widgetOnly;
     const prose = body.replace(new RegExp(WIDGET_RE.source, 'gi'), '');
 
@@ -131,16 +154,113 @@ function parseSlides(html) {
         + bullets.reduce((s, t) => s + lines(t) * LINE_PX + BULLET_GAP_PX, 0);
 
     // A slide that is mostly widget (a Likert probe, a 5-statement checkset) is
-    // an interactive form, not projected prose. Students work down it at their own
-    // pace and scrolling is fine, so the height rule doesn't apply to it.
+    // an interactive form, not projected prose. Students work down it at their
+    // own pace, so the *estimate* does not police its height — the estimate of a
+    // widget is a guess at its markup and cannot see what its CSS does.
+    //
+    // `--measure` does police it, against a looser limit. Scrolling a Likert
+    // probe is genuinely fine; scrolling past the answer button is not, and only
+    // a real measurement can tell those apart.
     const interactive = widgetOnly > px / 2;
-    slides.push({ title: h1 ? strip(h1[1]) : '(untitled)', hasArt, bullets, interactive, px: Math.round(px) });
+    // A slide is a Likert form only if that is ALL it is; a probe next to a
+    // checkset still has to fit.
+    const likert = tags.length > 0 && tags.every(t => LIKERT_TAGS.has(t));
+    slides.push({ title: h1 ? strip(h1[1]) : '(untitled)', hasArt, bullets, interactive, likert, px: Math.round(px) });
   }
   return slides;
 }
 
+/* =====================================================================
+   --measure: real heights from a real browser
+   ===================================================================== */
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css',
+               '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg',
+               '.woff2': 'font/woff2', '.json': 'application/json', '.mp3': 'audio/mpeg' };
+
+function serve() {
+  return new Promise(resolve => {
+    const server = createServer(async (req, res) => {
+      let rel = decodeURIComponent(req.url.split('?')[0]);
+      if (rel.endsWith('/')) rel += 'index.html';
+      const file = path.join(ROOT, rel);
+      if (!file.startsWith(ROOT) || !existsSync(file)) { res.writeHead(404); return res.end('not found'); }
+      try {
+        res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
+        res.end(await readFile(file));
+      } catch { res.writeHead(500); res.end('error'); }
+    });
+    server.listen(0, '127.0.0.1', () => resolve({ server, port: server.address().port }));
+  });
+}
+
+/* 1920x1080 is the projector this rule is written for. A slide that fits here
+   and scrolls on a laptop is acceptable; one that scrolls here is not. */
+const VIEWPORT = { width: 1920, height: 1080 };
+
+async function measureAll() {
+  const require = createRequire(import.meta.url);
+  let chromium;
+  try { ({ chromium } = require('playwright')); }
+  catch {
+    console.error(`
+--measure needs Chromium. From the repo root:
+
+  npm install --no-save playwright
+  npx playwright install chromium
+
+The default estimate needs nothing.
+`);
+    process.exit(2);
+  }
+
+  const { server, port } = await serve();
+  const browser = await chromium.launch();
+  const page = await browser.newPage({ viewport: VIEWPORT });
+  const out = new Map();
+
+  for (const topic of (await ls(LESSONS)).sort()) {
+    if (!(await isDir(path.join(LESSONS, topic)))) continue;
+    for (const lesson of (await ls(path.join(LESSONS, topic))).sort()) {
+      const rel = `lessons/${topic}/${lesson}/index.html`;
+      if (!existsSync(path.join(ROOT, rel))) continue;
+      await page.goto(`http://127.0.0.1:${port}/${rel}`, { waitUntil: 'networkidle' });
+      /* `lesson.slides`, not a DOM query: the engine moves every slide into its
+         shell on build, so they are no longer children of <phil-lesson> and a
+         `:scope >` query finds nothing.
+
+         Un-revealed steps need no special handling. .phil-step uses
+         visibility:hidden, which still reserves its layout box precisely so the
+         slide doesn't jump as steps appear — so a slide measures the same
+         before and after the presenter clicks through it. */
+      const rows = await page.evaluate(async () => {
+        const lesson = document.querySelector('phil-lesson');
+        const slides = lesson.slides || [];
+        const sleep = ms => new Promise(r => setTimeout(r, ms));
+        const out = [];
+        for (const s of slides) {
+          lesson.show(s);
+          await sleep(30);
+          out.push({
+            title: (s.querySelector('h1')?.textContent || '(untitled)').trim(),
+            art: !!s.querySelector('[slot="art"]'),
+            scroll: s.scrollHeight,
+            frame: s.clientHeight,
+          });
+        }
+        return out;
+      });
+      out.set(`${topic}/${lesson}`, rows);
+    }
+  }
+
+  await browser.close();
+  server.close();
+  return out;
+}
+
 async function run() {
   let lessonCount = 0, slideCount = 0, problemCount = 0;
+  const measured = MEASURE ? await measureAll() : null;
 
   for (const topic of (await ls(LESSONS)).sort()) {
     if (!(await isDir(path.join(LESSONS, topic)))) continue;
@@ -153,10 +273,21 @@ async function run() {
       if (!slides.length) continue;
       lessonCount++; slideCount += slides.length;
 
+      const real = measured?.get(`${topic}/${lesson}`);
       const lines = [];
       slides.forEach((s, i) => {
         const where = `slide ${i + 1} "${s.title.slice(0, 44)}"${s.hasArt ? ' [art]' : ''}`;
-        if (s.interactive) { /* form slide — height is the student's to scroll */ }
+        const r = real?.[i];
+        if (r) {
+          /* A real number beats the estimate, so the estimate's thresholds and
+             its widget exemption both step aside here. Only a pure Likert probe
+             is excused. */
+          const over = r.scroll - r.frame;
+          if (!s.likert && over > MEASURED_SLACK_PX) {
+            problemCount++;
+            lines.push(`  ⚠ ${where} — ${r.scroll}px in a ${r.frame}px frame, scrolls by ${over}px`);
+          }
+        } else if (s.interactive) { /* form slide — the estimate can't judge it */ }
         else if (s.px > OVERFLOW_PX) {
           problemCount++;
           lines.push(`  ⚠ ${where} — ~${s.px}px, will scroll (limit ${OVERFLOW_PX})`);
@@ -172,8 +303,9 @@ async function run() {
 
       const all = slides.flatMap(s => s.bullets);
       const avg = Math.round(mean(all.map(b => b.length)));
-      const tallest = Math.max(...slides.map(s => s.px));
-      console.log(`${lines.length ? '⚠' : '✓'} ${topic}/${lesson}  (${slides.length} slides, ${all.length} bullets, avg ${avg} chars, tallest ~${tallest}px)`);
+      const tallest = real ? Math.max(...real.map(r => r.scroll)) : Math.max(...slides.map(s => s.px));
+      const how = real ? `tallest ${tallest}px measured` : `tallest ~${tallest}px est`;
+      console.log(`${lines.length ? '⚠' : '✓'} ${topic}/${lesson}  (${slides.length} slides, ${all.length} bullets, avg ${avg} chars, ${how})`);
       lines.forEach(l => console.log(l));
     }
   }

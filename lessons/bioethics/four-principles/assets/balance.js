@@ -90,12 +90,8 @@ const STYLE = `
 
 .pb-conds { list-style:none; padding:0; margin:0 0 8px; display:grid; gap:6px;
             grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); }
-/* Slide body text is clamp(18px, 2.1vw, 23px), which is right for a bullet and
-   too loose for a dense switch list. This matches .phil-belief__text in the
-   shared engine — the same projector, the same reading distance, already proven
-   at this size — and stays well above the 15px floor for widget text. */
+/* Sizing lives in .phil-dense in phil-core.css, which this host opts into. */
 .pb-conds li { background:var(--panel); border:3px solid var(--border); padding:7px 9px; }
-.pb-conds li, .pb-conds label { font-size:clamp(16px, 1.5vw, 19px); line-height:1.35; }
 .pb-case, .pb-action { font-size:clamp(16px, 1.6vw, 20px); line-height:1.45; }
 /* the flex row moved onto the label so the whole row stays clickable */
 .pb-conds label { display:flex; gap:10px; align-items:flex-start; cursor:pointer; }
@@ -161,7 +157,7 @@ class PhilBalance extends HTMLElement {
   }
 
   build() {
-    this.classList.add('pb');
+    this.classList.add('pb', 'phil-dense');
     this.innerHTML = '';
 
     // case switcher

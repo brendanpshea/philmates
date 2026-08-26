@@ -6,8 +6,8 @@
   <title>Dr. Frankenstein and the Problem of Alignment · PhilMates</title>
   <meta name="description" content="Six questions you have to answer before you build something powerful, worked through Mary Shelley's Frankenstein — specification, training data, capability before guidance, what a system copies from its maker, irreversibility, and oversight.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=3">
-  <script type="module" src="../../../shared/phil-core.js?v=3"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=4">
+  <script type="module" src="../../../shared/phil-core.js?v=4"></script>
   <script type="module" src="./assets/wishes.js"></script>
   <style>
     blockquote.source {
@@ -144,6 +144,7 @@
       <phil-choice feedback="Care helps, but it does not close the gap. Each instruction in the tester was written carefully, and each one still missed something that only became obvious later.">Each instruction was written carelessly, and a slower writer would have caught the gap.</phil-choice>
       <phil-choice correct>You have to say what you want in advance, about situations you have not seen yet.</phil-choice>
       <phil-choice feedback="Length is not the issue. A longer instruction has more words but still has to guess which situations will come up, and it will still miss the ones nobody imagined.">The instructions were too short, and a long enough one would eventually cover everything.</phil-choice>
+      <phil-choice feedback="These are the gaps found in deployed systems too. Building the thing bigger does not tell you which situations you forgot to describe.">The tester is a toy, and a real system would not leave gaps like these.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -427,6 +428,7 @@
       <phil-choice feedback="The creature had actually kept its word up to this point. The worry Victor acts on is not about this creature's honesty at all.">The creature had already broken its promises, so its offer could not be believed.</phil-choice>
       <phil-choice feedback="Physical strength was not what stopped him. He was worried about something he could not undo later, not about something he could not fight.">A second creature would double the physical danger, and he could not fight both.</phil-choice>
       <phil-choice correct>Some decisions cannot be reversed later, so a mistake made once stays made.</phil-choice>
+      <phil-choice feedback="Secrecy is not the worry he acts on. What stops him is that a second creature could not be taken back once made, however well hidden.">Two creatures would be twice as hard to keep hidden from the villagers.</phil-choice>
     </phil-mcq>
   </phil-slide>
 

@@ -25,22 +25,25 @@ const el = (tag, cls, html) => {
 const STYLE = `
 .cm { display:block; margin:14px 0; padding:14px 16px; background:var(--panel-2);
       border:3px solid var(--border); box-shadow:0 5px 0 var(--shadow); font-size:15px; line-height:1.4; }
-.cm-case { margin:0 0 4px; }
-.cm-action { margin:0 0 10px; color:var(--accent-3); }
+.cm-case { margin:0 0 2px; }
+.cm-action { margin:0 0 8px; color:var(--accent-3); }
 .cm-action b { color:var(--ink); }
 
 .cm-meter { height:20px; background:var(--panel); border:3px solid var(--border); overflow:hidden; margin:0 0 6px; }
 .cm-meter > i { display:block; height:100%; width:0; background:repeating-linear-gradient(45deg,var(--bad) 0 8px,#d4515f 8px 16px); transition:width .25s steps(6), background .2s; }
 .cm-meter.ok > i { background:repeating-linear-gradient(45deg,var(--accent) 0 8px,#38c466 8px 16px); }
 
-.cm-conds { list-style:none; padding:0; margin:10px 0; display:flex; flex-direction:column; gap:6px; }
-.cm-conds li { background:var(--panel); border:3px solid var(--border); padding:8px 10px; }
+/* Two columns on a projector, one on a phone: five stacked rows pushed the
+   verdict off the bottom of the frame. */
+.cm-conds { list-style:none; padding:0; margin:8px 0; display:grid; gap:6px;
+            grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); }
+.cm-conds li { background:var(--panel); border:3px solid var(--border); padding:7px 9px; }
 /* the flex row moved onto the label so the whole row stays clickable */
 .cm-conds label { display:flex; gap:10px; align-items:flex-start; cursor:pointer; }
 .cm-conds li.on { border-color:var(--good); }
 .cm-conds input { width:18px; height:18px; flex:none; margin-top:2px; accent-color:var(--good); }
 
-.cm-verdict { font-family:var(--pixel); font-size:11px; line-height:1.5; padding:12px; border:3px solid var(--border); }
+.cm-verdict { font-family:var(--pixel); font-size:11px; line-height:1.5; padding:10px; border:3px solid var(--border); }
 .cm-verdict.no { background:#3a1620; color:var(--bad); }
 .cm-verdict.yes { background:#133a24; color:var(--good); }
 .cm-defects { margin:8px 0 0; padding-left:18px; font-size:14px; color:var(--bad); }
@@ -68,7 +71,9 @@ class PhilConsent extends HTMLElement {
   }
 
   build() {
-    this.classList.add('cm');
+    // phil-dense: without it phil-core's `phil-slide p, phil-slide li` rule
+    // beats this widget's own font-size and every row renders at 23px.
+    this.classList.add('cm', 'phil-dense');
     this.innerHTML = '';
     if (this.data.caseText) this.append(el('p', 'cm-case', `<em>${this.data.caseText}</em>`));
     if (this.data.action) this.append(el('p', 'cm-action', `<b>Action:</b> ${this.data.action}`));
