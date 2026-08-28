@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 246" shape-rendering="crispEdges" role="img" aria-label="Two ways of splitting the same twelve patients, six of whom are much sicker. On the left, assigned by need: all six of the sickest go to the drug arm and all six of the healthier go to the placebo arm, so the two arms are not comparable and the drug is measured against an easier group. On the right, assigned at random: each arm ends up with about three sicker and three healthier patients, so the arms start level and the only remaining difference is the drug.">
+  <rect width="640" height="246" fill="#1a1f31"/>
+  <g font-family="Verdana, DejaVu Sans, sans-serif">
+
+    <!-- ============ LEFT: assigned by need ============ -->
+    <text x="16" y="24" fill="#ff6ad5" font-size="15" font-weight="bold">assigned by need</text>
+    <text x="16" y="42" fill="#d8a8c6" font-size="14">the sickest get the new drug</text>
+
+    <rect x="16" y="56" width="132" height="76" fill="#232838" stroke="#4cc2ff" stroke-width="3"/>
+    <text x="82" y="76" fill="#4cc2ff" font-size="14" text-anchor="middle">HJ-9 arm</text>
+    <g><rect x="28" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="46" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="64" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="82" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="100" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="118" y="88" width="14" height="18" fill="#ffcf5a"/></g>
+    <text x="82" y="126" fill="#ffcf5a" font-size="13" text-anchor="middle">all six sickest</text>
+
+    <rect x="16" y="142" width="132" height="76" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <text x="82" y="162" fill="#cdd3e8" font-size="14" text-anchor="middle">placebo arm</text>
+    <g><rect x="28" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="46" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="64" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="82" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="100" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="118" y="174" width="14" height="18" fill="#8fd9a8"/></g>
+    <text x="82" y="212" fill="#8fd9a8" font-size="13" text-anchor="middle">all six healthier</text>
+
+    <g stroke="#ff6ad5" stroke-width="4">
+      <path d="M166 122 L186 142"/><path d="M186 122 L166 142"/>
+    </g>
+    <text x="176" y="172" fill="#ff6ad5" font-size="13" text-anchor="middle">not</text>
+    <text x="176" y="188" fill="#ff6ad5" font-size="13" text-anchor="middle">comparable</text>
+
+    <!-- divider -->
+    <path d="M320 40 L320 226" stroke="#3a4160" stroke-width="3"/>
+
+    <!-- ============ RIGHT: assigned at random ============ -->
+    <text x="344" y="24" fill="#46e07a" font-size="15" font-weight="bold">assigned at random</text>
+    <text x="344" y="42" fill="#8fd9a8" font-size="14">chance decides, so both arms get a mix</text>
+
+    <rect x="344" y="56" width="132" height="76" fill="#232838" stroke="#4cc2ff" stroke-width="3"/>
+    <text x="410" y="76" fill="#4cc2ff" font-size="14" text-anchor="middle">HJ-9 arm</text>
+    <g><rect x="356" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="374" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="392" y="88" width="14" height="18" fill="#ffcf5a"/><rect x="410" y="88" width="14" height="18" fill="#8fd9a8"/><rect x="428" y="88" width="14" height="18" fill="#8fd9a8"/><rect x="446" y="88" width="14" height="18" fill="#8fd9a8"/></g>
+    <text x="410" y="126" fill="#cdd3e8" font-size="13" text-anchor="middle">three of each</text>
+
+    <rect x="344" y="142" width="132" height="76" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <text x="410" y="162" fill="#cdd3e8" font-size="14" text-anchor="middle">placebo arm</text>
+    <g><rect x="356" y="174" width="14" height="18" fill="#ffcf5a"/><rect x="374" y="174" width="14" height="18" fill="#ffcf5a"/><rect x="392" y="174" width="14" height="18" fill="#ffcf5a"/><rect x="410" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="428" y="174" width="14" height="18" fill="#8fd9a8"/><rect x="446" y="174" width="14" height="18" fill="#8fd9a8"/></g>
+    <text x="410" y="212" fill="#cdd3e8" font-size="13" text-anchor="middle">three of each</text>
+
+    <rect x="492" y="96" width="132" height="86" fill="#133a24" stroke="#46e07a" stroke-width="3"/>
+    <text x="558" y="120" fill="#46e07a" font-size="14" text-anchor="middle">both arms start</text>
+    <text x="558" y="138" fill="#46e07a" font-size="14" text-anchor="middle">level, so the</text>
+    <text x="558" y="156" fill="#46e07a" font-size="14" text-anchor="middle">drug is the only</text>
+    <text x="558" y="174" fill="#46e07a" font-size="14" text-anchor="middle">difference left</text>
+  </g>
+</svg>

@@ -6,9 +6,9 @@
   <title>The Jekyll Protocol: Clinical Equipoise · PhilMates</title>
   <meta name="description" content="Dr. Helen Jekyll, great-granddaughter of the original, runs a modern clinical trial the right way — teaching the apparatus of research and the principle of equipoise against her ancestor's reckless self-experiment.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=4">
-  <script type="module" src="../../../shared/phil-core.js?v=4"></script>
-  <script type="module" src="./assets/equipoise.js"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=5">
+  <script type="module" src="../../../shared/phil-core.js?v=5"></script>
+  <script type="module" src="./assets/trial.js"></script>
 </head>
 <body>
 
@@ -90,6 +90,29 @@
     </ul>
   </phil-slide>
 
+  <!-- 6b. Run it: one patient -->
+  <phil-slide>
+    <h1>Try It: One Patient</h1>
+    <p>Here is a patient with the illness HJ-9 is meant to treat. Give her the drug, then keep pressing to see other patients.</p>
+    <phil-trial mode="one"
+        action="Give her HJ-9"
+        action-again="Try another patient"
+        verdict="She got better, and you have learned almost nothing. People recover from this illness on their own all the time. You cannot tell which kind of recovery you just watched, and no amount of care in watching her would tell you."
+        verdict2="Same drug, same illness, and the patients keep disagreeing with each other. Any one of them could have been the one you saw first. That is exactly how much a single patient is worth."></phil-trial>
+  </phil-slide>
+
+  <!-- 6c. Run it: a dozen patients, still no control -->
+  <phil-slide>
+    <h1>Try It: A Dozen Patients</h1>
+    <p>One patient was not enough. Try twelve, and treat every one of them. Run it more than once.</p>
+    <phil-trial mode="many" n="12"
+        action="Give all twelve HJ-9"
+        action-again="Run another twelve"
+        action2="Now: what if none of them had been treated?"
+        verdict="That looks like a working drug. Before you believe it, there is one number you have not seen."
+        verdict2="This illness eases on its own in about a third of patients. Some of the recoveries you just counted were going to happen anyway, and nothing in the treated group tells you which ones. Twelve patients was not the problem. Having nobody to compare them with was."></phil-trial>
+  </phil-slide>
+
   <phil-slide>
     <img slot="art" src="./assets/serum-vial.png" alt="Henry Jekyll's murky serum vial">
     <h1>The Control Group</h1>
@@ -98,6 +121,16 @@
       <li>The second arm gets a placebo, or the best treatment already available. Doctors call that the <strong>standard of care</strong>.</li>
       <li>Henry's serum seemed to work. But compared to <em>what</em>? He had no second arm at all.</li>
     </ul>
+  </phil-slide>
+
+  <!-- 7a. The shape of a trial -->
+  <phil-slide>
+    <h1>The Shape of a Trial</h1>
+    <p>Every trial in this lesson has the same five steps.</p>
+    <figure class="phil-figure">
+      <img src="./assets/trial-flow.svg" alt="Flowchart: volunteers who consented go into one pool, chance splits them into an HJ-9 arm and a placebo arm, each arm produces a count of how many got better, and the last step compares the two counts">
+      <figcaption>The shape of every trial in this lesson. Chance does the splitting, and the answer lives in the comparison at the end.</figcaption>
+    </figure>
   </phil-slide>
 
   <!-- 7b. Why the second arm is needed -->
@@ -122,6 +155,27 @@
       <li>Henry's trial had one arm with one person in it. He was the researcher, the patient, and the judge of the result.</li>
       <li>There was nothing to spread out, and nobody to compare himself with.</li>
     </ul>
+  </phil-slide>
+
+  <!-- 7c. Why not just assign sensibly? -->
+  <phil-slide>
+    <h1>Why Not Just Assign Them Sensibly?</h1>
+    <p>Randomizing feels careless. Surely the sickest patients should get the new drug?</p>
+    <figure class="phil-figure">
+      <img src="./assets/confounded.svg" alt="The same twelve patients split two ways. Assigned by need, all six of the sickest go to the drug arm and all six healthier to the placebo arm, so the arms are not comparable. Assigned at random, each arm gets about three of each, so the arms start level.">
+      <figcaption>Put the sickest patients on the drug and you have measured HJ-9 against an easier group. The kindest assignment is the one that destroys the answer.</figcaption>
+    </figure>
+  </phil-slide>
+
+  <!-- 7d. Run it both ways -->
+  <phil-slide>
+    <h1>Try It: Both Ways</h1>
+    <p>Twenty-four patients, half of them much sicker. HJ-9 genuinely works in both runs. Press the two buttons back and forth and watch what changes.</p>
+    <phil-trial mode="compare" n="24"
+        action="Assign the way a caring doctor would"
+        action2="Assign at random"
+        verdict="The drug arm was loaded with the sickest patients, so HJ-9 had to clear a higher bar to look like anything. It works, and the trial says it does not. Nobody lied and nobody was careless."
+        verdict2="Chance spread the sick and the healthy across both arms, including the differences nobody thought to measure. Now the only thing left that differs between the arms is the drug."></phil-trial>
   </phil-slide>
 
   <!-- 8. Compare: randomized vs historical -->
@@ -280,48 +334,26 @@
 
   <!-- 20. Viz: panel of experts -->
   <phil-slide>
-    <h1>The Panel of Experts</h1>
-    <p>Helen's trial for HJ-9 is underway. <strong>Step through the interim results</strong> and watch whether clinical equipoise still holds.</p>
-    <phil-equipoise prompt="Click Next to move through each interim look at the data.">
-      <phil-stage label="Trial opens — five reviewers, five honest opinions" verdict="holds"
-                  note="Five respected clinicians, genuinely divided. This is exactly the state that makes randomizing patients defensible.">
-        <phil-expert lean="for">Dr. Álvarez</phil-expert>
-        <phil-expert lean="against">Dr. Boyko</phil-expert>
-        <phil-expert lean="neutral">Dr. Chen</phil-expert>
-        <phil-expert lean="against">Dr. Devi</phil-expert>
-        <phil-expert lean="neutral">Dr. Osei</phil-expert>
-      </phil-stage>
-      <phil-stage label="Interim look #1 — a mild signal favoring HJ-9" verdict="holds"
-                  note="A first look at unblinded interim data. Opinions shift, but the panel is still split down the middle — equipoise holds.">
-        <phil-expert lean="for">Dr. Álvarez</phil-expert>
-        <phil-expert lean="against">Dr. Boyko</phil-expert>
-        <phil-expert lean="for">Dr. Chen</phil-expert>
-        <phil-expert lean="against">Dr. Devi</phil-expert>
-        <phil-expert lean="neutral">Dr. Osei</phil-expert>
-      </phil-stage>
-      <phil-stage label="Interim look #2 — the effect widens, one holdout remains" verdict="holds"
-                  note="Four of five now lean toward HJ-9 — but Dr. Boyko, an experienced skeptic, isn't convinced. As long as one respected expert holds out in good faith, the disagreement is real.">
-        <phil-expert lean="for">Dr. Álvarez</phil-expert>
-        <phil-expert lean="against">Dr. Boyko</phil-expert>
-        <phil-expert lean="for">Dr. Chen</phil-expert>
-        <phil-expert lean="for">Dr. Devi</phil-expert>
-        <phil-expert lean="for">Dr. Osei</phil-expert>
-      </phil-stage>
-      <phil-stage label="Interim look #3 — even the skeptics come around" verdict="collapsed"
-                  note="Even Dr. Boyko concedes: the data now looks decisive. There's no honest disagreement left to protect — continuing to randomize patients to placebo can no longer be justified.">
-        <phil-expert lean="for">Dr. Álvarez</phil-expert>
-        <phil-expert lean="for">Dr. Boyko</phil-expert>
-        <phil-expert lean="for">Dr. Chen</phil-expert>
-        <phil-expert lean="for">Dr. Devi</phil-expert>
-        <phil-expert lean="for">Dr. Osei</phil-expert>
-      </phil-stage>
-    </phil-equipoise>
+    <h1>How Strong Is Strong Enough?</h1>
+    <p>As a trial runs, the gap between the arms gets harder to explain away as luck. There is no line in nature that says when it stops being luck.</p>
+    <figure class="phil-figure">
+      <img src="./assets/equipoise-bands.svg" alt="A bar in three bands. On the left, a gap luck would produce more than 1 time in 10: keep randomizing, nobody is being denied. On the right, rarer than 1 in 100: hard to keep going, the placebo arm is losing out. Between them a middle band marked judgment lives here, where the number stops deciding.">
+      <figcaption>The two outer bands are easy. Everything interesting happens in the middle one.</figcaption>
+    </figure>
+  </phil-slide>
+
+  <!-- 20b. Run the whole trial -->
+  <phil-slide>
+    <h1>Run the Trial</h1>
+    <p>Helen's trial of HJ-9 opens. More patients enroll between each look, and you decide at every one whether to keep randomizing.</p>
+    <phil-trial mode="trial"
+        ask="More patients enroll next week, and half of them will get the placebo. Does continuing still respect clinical equipoise?"></phil-trial>
   </phil-slide>
 
   <!-- 21. MCQ: does equipoise hold -->
   <phil-slide>
-    <h1>Does the Panel Still Disagree?</h1>
-    <phil-poll prompt="At Interim Look #2, four of five experts favour HJ-9 and one respected sceptic still disagrees in good faith. Does clinical equipoise still hold?"
+    <h1>Does the Disagreement Still Count?</h1>
+    <phil-poll prompt="The gap is one luck would produce about 1 time in 50. Most of the expert community now favours HJ-9, and one respected skeptic still disagrees in good faith. Does clinical equipoise still hold?"
                explain="Freedman&#39;s standard asks whether honest disagreement remains in the expert community, and on a strict reading four-to-one with a sincere holdout is still disagreement. But nobody thinks one immovable sceptic can keep a trial running forever, and Freedman never said where the line falls. This is exactly why real trials do not leave it to judgment: the stopping rules are written down in advance, before anyone knows which way the data will go."
       >
       <phil-choice note="The strict reading of Freedman. Equipoise asks whether the disagreement is genuine, not whether it is evenly balanced — and a sincere holdout is genuine.">Yes. A lopsided disagreement is still a real disagreement.</phil-choice>
@@ -374,6 +406,18 @@
       <phil-choice feedback="A DSMB doesn't exist to speed up recruitment — it exists to protect participants once the ethical basis for continuing shifts.">To help the trial finish enrolling patients faster than planned</phil-choice>
       <phil-choice feedback="It's independent of the research team for exactly this reason — investigators aren't the ones who decide when to stop their own trial.">To give Helen and her own team more control over the results</phil-choice>
       <phil-choice feedback="Withdrawing is always the participant&#39;s own call and needs nobody&#39;s permission. The board watches the data, not the door.">To decide which participants may withdraw from the trial</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 25b. Checkpoint: what the middle band is -->
+  <phil-slide>
+    <h1>Checkpoint: The Middle Band</h1>
+    <phil-mcq prompt="A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do?"
+              explain="Nothing about the number settles it, which is the point of the middle band. Freedman's standard asks a question about people rather than about data: is there still honest disagreement among the experts? That is why trials fix their stopping rules in advance, before anyone knows which way the numbers will fall.">
+      <phil-choice feedback="Waiting for certainty is not free. Every extra week puts more patients on the placebo arm who might have had the drug, and the trial can pass the point where that is defensible.">Keep going until the evidence is certain, because stopping early risks a false result.</phil-choice>
+      <phil-choice correct>Ask whether the expert community still honestly disagrees, and check the rules set in advance.</phil-choice>
+      <phil-choice feedback="Halving the arm quietly abandons the comparison the trial was built on, and it does it without telling anyone. A trial that drifts is worse than one that stops.">Shrink the placebo arm gradually so fewer patients are exposed to it.</phil-choice>
+      <phil-choice feedback="Freedman's whole objection to theoretical equipoise is that one physician's confidence is too fragile to hang a trial on. It shifts with every look at the data.">Stop as soon as the researcher personally believes the drug is working.</phil-choice>
     </phil-mcq>
   </phil-slide>
 

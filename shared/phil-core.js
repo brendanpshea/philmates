@@ -611,7 +611,10 @@ class PhilPoll extends HTMLElement {
   _pick(i) {
     this._rows.forEach(r => r.classList.remove('picked'));
     this._rows[i].classList.add('picked');
-    if (this.store) { this.store.polls[this.key] = i; this.store.save(); }
+    // `||=` rather than a bare assignment: a progress store that arrives
+    // without this field should lose the saved pick, not throw and take
+    // the completion counter down with it.
+    if (this.store) { (this.store.polls ||= {})[this.key] = i; this.store.save(); }
     this.lesson?.setTaskDone(this.taskId, true);
     const note = this._rows[i]._note;
     const ex = this.getAttribute('explain') || '';

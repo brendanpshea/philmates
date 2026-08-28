@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 252" shape-rendering="crispEdges" role="img" aria-label="Flowchart of a randomized controlled trial. Volunteers who consent go into one pool. Chance splits the pool into two arms: one arm receives HJ-9 and the other receives a placebo. Each arm produces a count of how many got better, and the final step compares the two counts. A note marks that the comparison, not either arm on its own, is what tells you anything.">
+  <rect width="640" height="252" fill="#1a1f31"/>
+  <g font-family="Verdana, DejaVu Sans, sans-serif" text-anchor="middle">
+
+    <!-- pool -->
+    <rect x="14" y="88" width="118" height="56" fill="#232838" stroke="#cdd3e8" stroke-width="3"/>
+    <text x="73" y="112" fill="#eef1ff" font-size="15">volunteers</text>
+    <text x="73" y="132" fill="#9aa3c7" font-size="14">who consented</text>
+
+    <path d="M132 116 L166 116" stroke="#9aa3c7" stroke-width="3"/>
+    <path d="M160 110 L172 116 L160 122 Z" fill="#9aa3c7"/>
+
+    <!-- the coin -->
+    <rect x="172" y="88" width="112" height="56" fill="#3a3418" stroke="#ffcf5a" stroke-width="3"/>
+    <text x="228" y="112" fill="#ffcf5a" font-size="15" font-weight="bold">chance</text>
+    <text x="228" y="132" fill="#ddcb9a" font-size="14">decides, not you</text>
+
+    <!-- split -->
+    <g stroke="#9aa3c7" stroke-width="3" fill="none">
+      <path d="M284 116 L308 116 L308 52 L342 52"/>
+      <path d="M284 116 L308 116 L308 180 L342 180"/>
+    </g>
+    <path d="M336 46 L348 52 L336 58 Z" fill="#9aa3c7"/>
+    <path d="M336 174 L348 180 L336 186 Z" fill="#9aa3c7"/>
+
+    <!-- two arms -->
+    <rect x="348" y="26" width="130" height="52" fill="#232838" stroke="#4cc2ff" stroke-width="3"/>
+    <text x="413" y="48" fill="#4cc2ff" font-size="15" font-weight="bold">HJ-9 arm</text>
+    <text x="413" y="68" fill="#a8c4dd" font-size="14">gets the drug</text>
+
+    <rect x="348" y="154" width="130" height="52" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <text x="413" y="176" fill="#cdd3e8" font-size="15" font-weight="bold">placebo arm</text>
+    <text x="413" y="196" fill="#9aa3c7" font-size="14">gets no drug</text>
+
+    <!-- counts -->
+    <path d="M478 52 L512 52" stroke="#9aa3c7" stroke-width="3"/>
+    <path d="M506 46 L518 52 L506 58 Z" fill="#9aa3c7"/>
+    <path d="M478 180 L512 180" stroke="#9aa3c7" stroke-width="3"/>
+    <path d="M506 174 L518 180 L506 186 Z" fill="#9aa3c7"/>
+
+    <rect x="518" y="30" width="108" height="44" fill="#232838" stroke="#46e07a" stroke-width="3"/>
+    <text x="572" y="58" fill="#46e07a" font-size="15">how many</text>
+    <rect x="518" y="158" width="108" height="44" fill="#232838" stroke="#46e07a" stroke-width="3"/>
+    <text x="572" y="186" fill="#46e07a" font-size="15">how many</text>
+
+    <!-- the comparison -->
+    <g stroke="#46e07a" stroke-width="3" fill="none">
+      <path d="M572 74 L572 100"/>
+      <path d="M572 158 L572 132"/>
+    </g>
+    <rect x="470" y="100" width="156" height="32" fill="#133a24" stroke="#46e07a" stroke-width="3"/>
+    <text x="548" y="122" fill="#46e07a" font-size="15" font-weight="bold">compare the two</text>
+
+    <text x="16" y="240" fill="#cdd3e8" font-size="14" text-anchor="start">Neither arm on its own tells you anything. Only the gap between them does.</text>
+  </g>
+</svg>

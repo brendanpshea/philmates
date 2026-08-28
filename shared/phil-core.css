@@ -263,20 +263,38 @@ phil-slide[tabindex="-1"]:focus { outline: none; }
    Hide the raw children immediately (no flash, content just appears a moment
    later), but hold the warning back 3s so it only ever shows when the engine
    genuinely didn't arrive. Bump the ?v= on the engine URL when adding a widget.
+
+   TWO selector groups, because there are two different failures.
+
+   The named list catches a dead ENGINE. If phil-core.js itself never arrives
+   there is no .phil-slide__body — the engine builds that — so a selector
+   depending on it would match nothing precisely when it is needed most. These
+   rules are written against the authored markup and work with no JS at all.
+
+   `.phil-slide__body > :not(:defined)` catches a dead LESSON WIDGET: the engine
+   ran, built the slide, and some lesson-local element like <phil-balance> or
+   <phil-trial> never registered. Those used to fail silently as an empty box
+   with nothing to explain it. Matching the wrapper's direct children is what
+   keeps authored inner elements out of it — <phil-choice>, <phil-cond>,
+   <phil-statement> and friends are deliberately never registered, and they
+   always sit one level deeper inside the widget that consumes them.
    --------------------------------------------------------------------- */
 phil-mcq:not(:defined), phil-poll:not(:defined), phil-checkset:not(:defined),
 phil-cloze:not(:defined), phil-compare:not(:defined), phil-branch:not(:defined),
-phil-beliefs:not(:defined), phil-beliefs-review:not(:defined) { display: block; }
+phil-beliefs:not(:defined), phil-beliefs-review:not(:defined),
+.phil-slide__body > :not(:defined) { display: block; }
 
 phil-mcq:not(:defined) > *, phil-poll:not(:defined) > *,
 phil-checkset:not(:defined) > *, phil-cloze:not(:defined) > *,
 phil-compare:not(:defined) > *, phil-branch:not(:defined) > *,
-phil-beliefs:not(:defined) > *, phil-beliefs-review:not(:defined) > * { display: none; }
+phil-beliefs:not(:defined) > *, phil-beliefs-review:not(:defined) > *,
+.phil-slide__body > :not(:defined) > * { display: none; }
 
 phil-mcq:not(:defined)::after, phil-poll:not(:defined)::after,
 phil-checkset:not(:defined)::after, phil-cloze:not(:defined)::after,
 phil-compare:not(:defined)::after, phil-branch:not(:defined)::after,
-phil-beliefs:not(:defined)::after, phil-beliefs-review:not(:defined)::after {
+phil-beliefs:not(:defined)::after, phil-beliefs-review:not(:defined)::after,
+.phil-slide__body > :not(:defined)::after {
   content: "\26A0 This activity didn't load. Hard-refresh the page \2014 Ctrl+Shift+R (\2318\21E7R on a Mac).";
   display: block;
   visibility: hidden;                       /* ...until the delay below elapses */

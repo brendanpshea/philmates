@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 226" shape-rendering="crispEdges" role="img" aria-label="A bar divided into three bands showing how strong the evidence is as a trial goes on. On the left, weaker than 1 in 10: luck explains it easily, and randomizing is clearly still allowed. On the right, stronger than 1 in 100: luck is a poor explanation, and continuing to randomize is hard to defend. Between them is a middle band marked judgment lives here, where the numbers stop settling the question and clinical equipoise asks instead whether the expert community still honestly disagrees.">
+  <rect width="640" height="226" fill="#1a1f31"/>
+  <g font-family="Verdana, DejaVu Sans, sans-serif">
+
+    <text x="16" y="26" fill="#eef1ff" font-size="15">How often would luck alone produce a gap this big?</text>
+
+    <!-- the three bands -->
+    <rect x="16"  y="42" width="196" height="52" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <rect x="212" y="42" width="196" height="52" fill="#2a2612" stroke="#ffcf5a" stroke-width="3"/>
+    <rect x="408" y="42" width="216" height="52" fill="#133a24" stroke="#46e07a" stroke-width="3"/>
+
+    <text x="114" y="64" fill="#cdd3e8" font-size="15" text-anchor="middle" font-weight="bold">often</text>
+    <text x="114" y="84" fill="#9aa3c7" font-size="14" text-anchor="middle">more than 1 in 10</text>
+
+    <text x="310" y="64" fill="#ffcf5a" font-size="15" text-anchor="middle" font-weight="bold">sometimes</text>
+    <text x="310" y="84" fill="#ddcb9a" font-size="14" text-anchor="middle">1 in 10 to 1 in 100</text>
+
+    <text x="516" y="64" fill="#46e07a" font-size="15" text-anchor="middle" font-weight="bold">hardly ever</text>
+    <text x="516" y="84" fill="#8fd9a8" font-size="14" text-anchor="middle">rarer than 1 in 100</text>
+
+    <!-- the trial moves left to right -->
+    <path d="M16 108 L600 108" stroke="#3a4160" stroke-width="3"/>
+    <path d="M594 102 L606 108 L594 114 Z" fill="#3a4160"/>
+    <text x="620" y="113" fill="#9aa3c7" font-size="14" text-anchor="end">as the trial goes on →</text>
+
+    <!-- what each band means for the ethics -->
+    <rect x="16"  y="126" width="196" height="48" fill="#232838" stroke="#9aa3c7" stroke-width="3"/>
+    <text x="114" y="146" fill="#cdd3e8" font-size="14" text-anchor="middle">keep randomizing</text>
+    <text x="114" y="164" fill="#9aa3c7" font-size="14" text-anchor="middle">nobody is being denied</text>
+
+    <rect x="212" y="126" width="196" height="48" fill="#2a2612" stroke="#ffcf5a" stroke-width="3"/>
+    <text x="310" y="152" fill="#ffcf5a" font-size="15" text-anchor="middle" font-weight="bold">judgment lives here</text>
+    <text x="310" y="168" fill="#ddcb9a" font-size="13" text-anchor="middle">the number stops deciding</text>
+
+    <rect x="408" y="126" width="216" height="48" fill="#133a24" stroke="#46e07a" stroke-width="3"/>
+    <text x="516" y="146" fill="#46e07a" font-size="14" text-anchor="middle">hard to keep going</text>
+    <text x="516" y="164" fill="#8fd9a8" font-size="14" text-anchor="middle">the placebo arm is losing out</text>
+
+    <text x="16" y="204" fill="#cdd3e8" font-size="14">In the middle band the question is no longer statistical. It is whether the experts</text>
+    <text x="16" y="220" fill="#cdd3e8" font-size="14">still honestly disagree, which is what clinical equipoise asks.</text>
+  </g>
+</svg>

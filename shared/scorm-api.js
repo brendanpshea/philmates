@@ -17,7 +17,7 @@
                                   "incomplete".
      cmi.core.score.raw       <- round(correct / total * 100). Reported even
                                   mid-lesson so the gradebook shows partial work.
-     cmi.suspend_data         <- compact JSON of {v,c,d,b} for resume. SCORM 1.2
+     cmi.suspend_data         <- compact JSON of {v,c,d,b,p} for resume. SCORM 1.2
                                   caps this at 4096 chars; we store question IDs,
                                   not labels, and warn if we approach the limit.
    ===================================================================== */
@@ -72,6 +72,14 @@
       this.correct   = new Set(data.c || []);
       this.completed = !!data.d;
       this.beliefs   = data.b || {};
+      // Every field phil-core's ProgressStore exposes has to be here. `polls`
+      // was missing, so <phil-poll> threw on every pick in packaged builds:
+      // the ✔ counter never moved, polls never restored on resume, and
+      // completion could never fire because tasksDone never reached its total.
+      // The score still climbed, because that is computed from the graded
+      // questions alone — which is why the gradebook looked right while the
+      // lesson looked broken.
+      this.polls     = data.p || {};
 
       // First launch: move "not attempted" to "incomplete" so the LMS shows
       // the lesson as in-progress the moment it opens.
@@ -103,6 +111,7 @@
         c: [...this.correct],
         d: this.completed,
         b: this.beliefs,
+        p: this.polls,
       });
       if (payload.length > 4000) {
         console.warn(`[scorm] suspend_data is ${payload.length} chars — close to SCORM 1.2's 4096 limit.`);
@@ -118,6 +127,7 @@
       this.correct.clear();
       this.completed = false;
       this.beliefs = {};
+      this.polls = {};
       set('cmi.suspend_data', '');
       set('cmi.core.lesson_status', 'incomplete');
       set('cmi.core.score.raw', '');

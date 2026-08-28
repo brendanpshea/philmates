@@ -55,6 +55,19 @@ The top bar also has a **↺ Reset** button (built in — you don't author it). 
 pops a confirmation, then clears this lesson's saved progress and reloads to a
 clean slide 1. Handy for re-running a lesson live in class.
 
+## `reveal` is a reserved attribute name
+
+The engine builds a slide's step-by-step reveal from `[reveal] > *` — every
+direct child of any element carrying a `reveal` attribute becomes a hidden step.
+That is what `<ul reveal>` is doing.
+
+So **never name a widget attribute `reveal`.** `<phil-trial reveal="…">` turns
+every child the widget renders into a reveal step, and `.phil-step` uses
+`visibility: hidden`, which still reserves layout. The result is an empty box of
+exactly the right size that fills in only once the presenter has clicked to the
+end of the slide, with no error anywhere to explain it. Use `action2`,
+`verdict2`, or anything else.
+
 ## Widgets
 
 ### Multiple choice — `<phil-mcq>`
@@ -188,7 +201,7 @@ genuinely optional side content.
 
 ## When you add a widget to the engine: bump `?v=`
 
-Lessons load the engine as `../../../shared/phil-core.js?v=4`. That query string
+Lessons load the engine as `../../../shared/phil-core.js?v=5`. That query string
 is a cache-buster, and it matters: a browser holding an older `phil-core.js` has
 never heard of your new element, so it never upgrades — the widget's authored
 children spill onto the slide as run-on text and the `prompt` attribute vanishes
@@ -199,9 +212,9 @@ change how an existing one behaves, the way option shuffling did — bump the nu
 everywhere in one go:
 
 ```bash
-# 4 -> 5, across all lessons and the homepage
+# 5 -> 6, across all lessons and the homepage
 grep -rl 'phil-core\.\(js\|css\)?v=' lessons/*/*/index.html index.html \
-  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=5/g'
+  | xargs sed -i 's/phil-core\.\(js\|css\)?v=[0-9]\+/phil-core.\1?v=6/g'
 ```
 
 As a backstop, `phil-core.css` hides the children of any `<phil-*>` element that
