@@ -1793,3 +1793,61 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
   overly theatrical or staccato conclusions.
 - All twelve cast and scene portraits generated in 2x2 grids, split to 512×512 PNGs, and
   placed in `assets/`.
+
+---
+
+## AI Ethics: Technomoral Virtues — "Growing Up in Springfield"
+
+- **Path:** `lessons/ai-ethics/technomoral-virtues/`
+- **Lesson id:** `ai-ethics-technomoral`
+- **Subject:** `Technomoral Virtues`
+- **Cast:** The Simpsons family (Homer, Marge, Bart, Lisa, Maggie, Ned Flanders, Mr. Burns).
+- **Core scenario:** You step into Homer and Marge's shoes raising children as Springfield shifts from the media landscape of 1989 (broadcast TV, copper landlines, arcade coin-ops) to today (algorithmic feeds, generative AI, doomscrolling, surveillance capitalism).
+- **Philosophy:** Classical virtue traditions (Aristotle's eudaimonia and hexis, Confucian ren and li, Buddhist upāya) integrated with Shannon Vallor's *Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting* (2016).
+
+### Outline
+
+**Act 0 — Welcome to 742 Evergreen Terrace**
+1. **[T]** Title — "Growing Up in Springfield" (art: Homer contemplating a donut). Introduces the shift from 1989 broadcast television to modern algorithmic environments.
+2. **[T]** Parenting at the breaking point (art: Marge). Marge struggles to maintain traditional household rules as portable digital media bypasses domestic boundaries.
+3. **[P]** Belief probe (start) — 5 value statements on digital limits, rules, technology neutrality, engagement algorithms, and new virtues.
+
+**Act 1 — What happened to Bart's world?**
+4. **[T]** What happened to Bart's world? (art: Bart). Contrasts the shared living room CRT television of 1989 with individualized, 24/7 personalized mobile immersion.
+5. **[T]** Why rule-following falls short — Device bans produce evasion, school honor codes lag generative AI, and algorithms manipulate attention beneath conscious compliance.
+6. **[C]** **Rules vs Virtues in Digital Life** — External prohibitions that trigger punishment vs. cultivated internal dispositions that govern action when no authority watches.
+7. **[Q · MCQ]** Diagnosing the limits of rules (answer: algorithmic systems evolve faster than rules and exploit cognitive vulnerabilities beneath conscious compliance; distractors: kids lack cognitive capacity / tools possess autonomous agency / families abandoned values).
+
+**Act 2 — Classical roots of character**
+8. **[T]** **Virtue as an acquired disposition** (art: Homer). Aristotle's hexis: virtue is a stable character habit built through ongoing practice, not a fleeting mood or genetic trait.
+9. **[T]** **The doctrine of the mean** — Navigating between deficiency and excess: courage between cowardice and rashness; temperance between Homer's indulgence and Flanders' joyless austerity.
+10. **[T]** **Cross-cultural traditions of virtue** — Confucian ren and li (Marge's family attunement); Buddhist upāya and karuṇā (skillful means and compassionate adaptability).
+11. **[T]** **Re-evaluating Bart's virtues** (art: Bart). Looking beyond vices to recognize Bart's loyalty, tactical creativity, and courage in challenging hypocritical authority.
+12. **[Q · Checkset]** Core tenets of virtue ethics across traditions (acquired habituation / human flourishing / moral motivation; distractors: fixed genetics / algorithmic rules / emotional isolation).
+
+**Act 3 — Shannon Vallor's technomoral virtues**
+13. **[T]** **New tools, new habits** (art: Lisa). Shannon Vallor (2016): why unprecedented technological scale and opacity demand adapted technomoral virtues.
+14. **[T]** **Technomoral self-control** — Cultivating intentional cognitive attention against commercial algorithms engineered to trigger compulsive dopamine loops.
+15. **[T]** **Technomoral honesty** — Seeking truth and authentic communication amid deepfakes, AI text generators, and viral rage-bait.
+16. **[T]** **Technomoral empathy** — Seeing and honoring the vulnerable human reality behind screens, avatars, and comment threads.
+17. **[Q · Cloze]** A virtue is a stable _disposition_. Technomoral self-control protects _attention_. Technomoral honesty seeks _truth_. Digital empathy perceives the _human_ behind the screen.
+18. **[Q · MCQ]** Recognizing digital empathy (answer: pausing before responding to hostile comments to consider real distress; distractors: automated sentiment scoring / public shaming / unfollowing all disagreement).
+
+**Act 4 — Parenting in the digital age**
+19. **[V]** **"Parenting in Springfield" (`<phil-parent>`)** — Interactive debrief of 3 modern digital dilemmas: Bart's AI homework shortcut, Lisa's late-night algorithmic doomscrolling, and Maggie's high-stimulus autoplay video pacifier.
+20. **[T]** **How digital environments shape habit** (art: Maggie). Aristotle on early habituation: designing calm physical environments before conscious reflection develops.
+21. **[T]** **Extractive capitalism and justice** (art: Mr. Burns). Technomoral justice resists corporate surveillance capitalism and protects vulnerable human labor.
+22. **[T]** **The danger of rigid moralism** (art: Ned Flanders). Technomoral flexibility vs. brittle rulebooks when confronting novel, ambiguous technologies.
+23. **[Poll]** Decision point: School phone bans — Strict bans vs. voluntary mindfulness vs. structured instructional boundaries.
+24. **[T]** **Technomoral wisdom (phronesis)** — The master virtue that integrates self-control, honesty, and empathy into situational real-time judgment.
+25. **[Q · MCQ]** Evaluating educational AI (answer: using AI for brainstorming while safeguarding the irreplaceable labor of cultivating one's own voice; distractors: full automation / total computer bans / perfunctory disclaimers).
+
+**Act 5 — The future worth wanting**
+26. **[T]** **Technomoral perspective** (art: Lisa). Distinguishing technological novelty, speed, and optimization from genuine human flourishing.
+27. **[T]** **Technomoral care and stewardship** — Sustained moral commitment to repair digital systems and protect ecological commons from massive energy/water footprints.
+28. **[C]** **Technochauvinism vs Technomoral Wisdom** — Solutionist belief that every problem has an algorithmic app fix vs. discerning which goods require embodied human presence.
+29. **[Q · Cloze]** Master virtue is _phronesis_. Technochauvinism assumes solutions must be an _algorithm_. Perspective targets human _flourishing_. The goal is a future worth _wanting_.
+
+**Closing rounds**
+30. **[P]** Belief probe (revisit) — Reflecting on shifts in perspective across the five statements.
+31. **[T]** The living room couch (art: Homer). Character as the true compass: human virtues, patiently cultivated, are our greatest safeguard for an uncharted future.
