@@ -1566,259 +1566,168 @@ Plus `prompts.md`.
 - **Topic:** Bioethics — virtue ethics for clinicians. Assumes the four-principles
   lesson ("Rounds with Van Helsing") has been taken; refers back to that
   vocabulary rather than re-teaching it (one refresher line covers standalone use).
-- **Audience:** nursing and medical students, not philosophers. Every concept is
+- **Audience:** Nursing and medical students, not philosophers. Every concept is
   introduced through a bedside case first and named second.
-- **Approach:** Teach **care as a virtue** (following Beauchamp & Childress's
-  "Moral Character" chapter) that **works with principlism, not against it**. The
-  recurring test on every case: *what does the principle require, and what does care
-  add?* Aristotle's machinery (disposition, habituation, the mean, practical wisdom)
-  is compressed into one short act and reused throughout. The feminist origins of
-  care ethics and the cross-cultural recognition of care each get one slide of honest
-  acknowledgement, not an act.
+- **Approach:** Teach **care as a clinical virtue** (drawing on Beauchamp & Childress's
+  influential framework) that works alongside biomedical principles rather than
+  competing with them. The recurring question across cases: *what does the principle
+  require, and what does the virtue of care add?* Aristotle's foundation (virtue as
+  an acquired disposition developed through habituation and guided practice) is
+  grounded through clinical mentorship rather than abstract geometry. The feminist
+  origins of care ethics and the cross-cultural recognition of care each get clear,
+  respectful treatment.
 - **Narrative frame — a small-town family practice in winter:** **Orchard Falls**, a
-  present-day New England town with one family practice and a small critical-access
+  present-day New England town with one family practice and a small community
   hospital. Your guide is **Dr. Josephine "Jo" March**, the town's family physician:
-  blunt, fast, allergic to paperwork, writes fiction at night, and *not naturally
-  warm*. That is the pedagogical point: she will tell you on slide 2 that she is not
-  a warm person, and by the end you will understand why that does not stop her being
-  a caring one. Care is a cultivated disposition, not a temperament. The cast takes
-  names and personalities from *Little Women* as raw material only; the lesson
-  assumes no knowledge of the book and never references it.
+  sharp, direct, allergic to bureaucratic pretense, and *not naturally warm*. Her
+  opening lesson: care is not a sunny personality trait; it is a learned clinical
+  disposition. The cast takes names and roles from *Little Women* as raw material,
+  assuming no prior knowledge of the book.
 - **Recurring cast (all invented, present day):**
-  - **Dr. Jo March** — the guide. Family physician, 40s. Sharp, impatient, honest
-    about her own limits. Learned care in residency the hard way.
-  - **Marmee** — Jo's mother, a retired nurse (forty years, community and hospice).
-    The town calls her Marmee. Appears as the mentor voice: "Nobody is born a nurse."
-  - **Meg** — eldest sister. Part-time teacher, two kids, and now the unpaid primary
-    caregiver for Aunt March. The invisible-labor thread.
-  - **Beth** — 24, a heart condition she has had since childhood, frequent
-    admissions. Apologizes for being a burden. The **care-receiving** case.
-  - **Amy** — youngest sister, a first-year resident rotating through the hospital
-    on her way to a competitive specialty. Precise, by the book, and her patients
-    feel unseen. The **deficiency** case, and sympathetic: she is good and will be
-    better.
-  - **Theo "Laurie" Laurence** — Jo's best friend, an ICU nurse. Generous to a
-    fault: covers every shift, works sick, has no boundaries. The **excess** case,
-    and a male caregiver so the lesson never reads as a women's ethic.
-  - **Mr. Laurence** — Laurie's grandfather, 82, widower, heart failure, lives next
-    door to Jo. Gruff, hates fuss. "I was processed." The **boundaries** case.
-  - **Aunt March** — 88, wealthy, imperious, refusing hospitalization. Wants to
-    stay in her own house on her own terms. The **autonomy and non-abandonment** case.
-  - **Hannah** — home health aide, thirty years with the family, now paid by an
-    agency by the hour. The **justice** case: care work that nobody counts.
-  - **John Brooke** — Meg's husband, a hospice nurse. Appears on the eudaimonia
-    slide: a life of good care as a good life.
-  - **The Hummels** — a farmworker family with a sick baby and no insurance. The
-    justice slide.
+  - **Dr. Jo March** — Family physician, 40s. Experienced, candid, and attentive.
+    Learned clinical care through years of guided practice.
+  - **Marmee** — Jo's mother, retired nurse (forty years in community and hospice care).
+    Serves as the voice of habituation: clinical excellence is built through decades
+    of practice.
+  - **Meg** — Eldest sister, part-time teacher, mother of two, and unpaid primary
+    caregiver for Aunt March. Illustrates the reality of invisible caregiving labor.
+  - **Beth** — 24, living with a chronic cardiac condition, frequently hospitalized.
+    Illustrates care-receiving, responsiveness, and the vulnerability of feeling like
+    a burden.
+  - **Amy** — Youngest sister, a first-year resident rotating through the hospital.
+    Bright, highly skilled with protocols and technology, but prone to emotional
+    detachment and treating checklists as care.
+  - **Theo "Laurie" Laurence** — Jo's close friend, an ICU nurse. Devoted and generous,
+    but struggles with over-involvement and exhaustion. Illustrates why sustainable
+    care requires boundaries.
+  - **Mr. Laurence** — Laurie's grandfather, 82, living with heart failure next door
+    to Jo. Proud and wary of being a nuisance. Illustrates the gap between technical
+    protocol and being cared for.
+  - **Aunt March** — 88, fiercely independent, refusing hospitalization to remain in
+    her home. Illustrates autonomy, non-abandonment, and family webs of care.
+  - **Hannah** — Home health aide, paid hourly through an agency. Illustrates the
+    essential, often under-compensated workforce that sustains community care.
+  - **John Brooke** — Meg's husband, a hospice nurse. Demonstrates calm, competent care
+    at the end of life and counters the stereotype that care is exclusively gendered.
+  - **The Hummel Family** — A farmworker family with a feverish baby and no insurance.
+    Raises the question of justice: whom does our care reach, and who bears the cost?
 
 ### Accuracy note (real, not invented)
-The virtue framing follows **Beauchamp & Childress, *Principles of Biomedical
-Ethics***, ch. 2 "Moral Character": a **virtue** is a dispositional trait of
-character that is socially valued (a *moral* virtue is morally valued and involves
-motivation, not just behavior); the **five focal virtues** for health professionals
-are **compassion, discernment, trustworthiness, integrity, conscientiousness**; the
-ethics of care is presented there as emphasizing traits valued in close
-relationships, and **care** is glossed as *care for, emotional commitment to, and
-willingness to act on behalf of persons with whom one has a significant
-relationship*. B&C's own position is that **virtues and principles are complementary**
-(the virtuous person is disposed to act on the principles; the principles make
-public what the virtuous person does). Care ethics' two standing criticisms of
-principle-based theory — over-reliance on **impartiality/detachment** and **neglect
-of emotion** — are B&C's summary and should be presented as such. Verify wording
-against the edition in use before quoting. The anatomy of care (attentiveness,
-responsibility, competence, responsiveness) is **Joan Tronto, *Moral Boundaries***
-(1993); the "maintain, continue, and repair our world" definition is **Fisher &
-Tronto (1990)**. Origins: **Carol Gilligan, *In a Different Voice*** (1982);
-**Nel Noddings, *Caring*** (1984); **Virginia Held** (2006) is the one who argues care
-ethics is *not* a virtue ethics — name her once when acknowledging the disagreement.
-**Eva Kittay, *Love's Labor*** (1999) on dependency work. Cross-cultural: Confucian
-**ren** and Mencius's child at the well (*Mencius* 2A6); Buddhist **karuṇā**;
-**ubuntu**; Christian **caritas**; Islamic **raḥma**; Hippocratic tradition;
-Nightingale, *Notes on Nursing* (1859). Professional codes: **ANA Code of Ethics for
-Nurses**, Provision 1 (compassion and respect for dignity). Aristotle as in the
-virtue-ethics lesson (NE I, II, VI). Burnout, compassion fatigue, and moral injury
-are descriptive clinical terms; do not attribute a theory of them to anyone.
+The clinical virtue framing draws on the influential account in Beauchamp & Childress's
+*Principles of Biomedical Ethics* (chapter 2, "Moral Character"), which defines a
+**virtue** as an acquired, socially valued disposition involving moral motivation, and
+identifies **five focal virtues** for health professionals: compassion, discernment,
+trustworthiness, integrity, and conscientiousness. Their position is that
+**virtues and principles are complementary**: principles define public standards for
+action, while virtues shape how a clinician perceives needs, decides, and carries out
+care. Care ethics' foundational criticisms of principle-based theory—its tendency toward
+emotional detachment and excessive reliance on abstract impartiality—are presented
+clearly alongside the principles tradition's strengths. The anatomy of care
+(attentiveness, responsibility, competence, responsiveness) comes from
+**Joan Tronto, *Moral Boundaries*** (1993); the broader definition ("everything we do to
+maintain, continue, and repair our world") is from **Berenice Fisher & Joan Tronto (1990)**.
+Origins: **Carol Gilligan, *In a Different Voice*** (1982); **Nel Noddings, *Caring*** (1984);
+**Virginia Held** (2006) on care ethics as an independent moral framework;
+**Eva Kittay, *Love's Labor*** (1999) on dependency work. Cross-cultural traditions of care:
+Confucian **ren** and Mencius's child at the well (*Mencius* 2A6); Buddhist **karuṇā**;
+**ubuntu**; Christian **caritas**; Islamic **raḥma**; the Hippocratic tradition; and
+Florence Nightingale, *Notes on Nursing* (1859). Professional codes: **ANA Code of Ethics for
+Nurses**, Provision 1 (compassion and respect for dignity). Aristotle's treatment of
+disposition and habituation (*Nicomachean Ethics* I, II, VI).
 
 ### Learning goals
-- Define a **virtue** as a stable, acquired **disposition** involving motivation
-  (Aristotle's *hexis*; B&C's definition), and explain why it is not a feeling, a
-  personality type, or a rule.
-- Define **care** as a virtue (B&C) and describe its **anatomy** (Tronto:
-  attentiveness, responsibility, competence, responsiveness), including why care
-  without competence is sentimentality.
-- Name B&C's **five focal virtues** and place them as the instruments of care;
-  distinguish **care from compassion** and from mere warmth.
-- Apply the **doctrine of the mean** to care: detachment (deficiency) vs
-  over-involvement, paternalism, and self-sacrificing exhaustion (excess), with the
-  mean found by **discernment** (phronesis) rather than a rule.
-- Show how care **complements each of the four principles** — what the principle
-  requires and what care adds — and state B&C's reply to the care-ethics critique.
-- Acknowledge the **feminist origins** of care ethics and the **cross-cultural**
-  recognition of care, and connect care to **justice** for care workers.
-- Explain why **sustainable care** is part of the virtue and why its failure is
-  usually **institutional** (Aristotle's polis; Tronto's caring institutions), not a
-  personal defect.
+- Define a **virtue** as a stable, acquired **disposition** involving motivation,
+  and distinguish it from a fleeting feeling, a natural personality trait, or a rule.
+- Define **care** as a clinical virtue and describe its four-part anatomy (Tronto:
+  attentiveness, responsibility, competence, responsiveness), explaining why care
+  requires technical competence rather than mere sentiment.
+- Identify the **five focal clinical virtues** (compassion, discernment, trustworthiness,
+  integrity, conscientiousness) as practical instruments of care, distinguishing
+  clinical care from mere warmth.
+- Analyze clinical mentorship and habituation: how clinicians develop the capacity
+  to perceive unspoken patient needs, communicate effectively, and maintain healthy
+  professional boundaries.
+- Examine how care **complements each of the four biomedical principles** (autonomy,
+  beneficence, nonmaleficence, justice)—clarifying what a principle requires and what
+  the virtue of care adds in practice.
+- Recognize the **feminist origins** of care ethics and its cross-cultural presence,
+  connecting the virtue of care to **justice** for paid and unpaid caregivers.
+- Explain why **sustainable care** requires institutional support, showing how burnout
+  and moral injury reflect workplace conditions rather than individual moral failure.
 
 ### Slide-by-slide
 
 **Act 0 — Orchard Falls**
 1. **[T]** Title — "The March Practice" (art: the clinic on a snowy main street).
-   Pun the lesson leans on at the end: a *practice* is a clinic and also what a
-   virtue requires.
-2. **[T]** Meet Dr. March — "I am not a warm person. I want to be clear about that
-   before we start." She is the town's only family doctor; it's January; she has
-   six patients to see and one thing to teach, `reveal`.
-3. **[P]** Belief probe (start) — 5 statements (see below).
+   Introduces the setting and the double meaning: a practice is both a physical
+   clinic and the continuous habit through which a virtue is cultivated.
+2. **[T]** Meet Dr. March — "I am not a warm person. I don't do cheerful bedside small talk." Dr. Jo March establishes that clinical care is an acquired virtue grounded in attentiveness and competence, not an outgoing personality trait.
+3. **[P]** Belief probe (start) — 5 value statements revisited at the close.
 
 **Act 1 — Nobody broke a rule**
-4. **[T]** The discharge — Amy discharges Mr. Laurence after a heart-failure
-   admission. Consent obtained, meds reconciled, instructions printed, follow-up
-   booked, every box ticked. He goes home and tells Jo over the fence: "I was
-   processed," `reveal`.
-5. **[T]** What was missing? — No principle was violated. Autonomy respected,
-   benefit delivered, no harm done, nothing unfair. And the patient was unseen.
-   The thesis: **principles tell you what is owed; care is the disposition that
-   notices when a principle applies, supplies the will to act on it, and shapes how
-   the act is done.** Refresher line on the four principles for standalone use,
-   `reveal`.
-6. **[C]** **Principles vs Virtues** — action-guides for *what to do* (public,
-   checkable, specify and balance) vs traits of character for *who to be* (private,
-   habitual, show up in the manner of the act). B&C: complementary, not competing.
-7. **[Q · MCQ]** What did Amy's discharge lack? (answer: the virtue with which the
-   right act was done; distractors: it violated respect for autonomy / it failed
-   beneficence because the plan was wrong / it was unjust to other patients).
+4. **[T]** "I Was Processed" — Mr. Laurence is discharged with flawless quality metrics and zero chart violations in eleven minutes, yet leaves clutching a packet he cannot read: "I was processed." Sets up the central bedside reality: every clinical box was checked, but nobody looked him in the eye.
+5. **[T]** Why rule-following falls short — Autonomy became paperwork (getting a signature); beneficence became drug titration without asking what he feared about going home alone. Cultivating the virtue of care is not an optional extra added to principles; it is the clinical perceptual faculty that makes genuine adherence to the four principles possible.
+6. **[C]** **Principles vs Virtues** — Principles provide public, verifiable action-guides for *what to do*; virtues provide acquired character traits for *how to be*. In clinical ethics, they support and complete one another.
+7. **[Q · MCQ]** What did the mechanical discharge lack? (answer: the clinical character and attentiveness that allow principles to be genuinely fulfilled at the bedside; distractors: valid informed consent was missing / wrong clinical drugs / unfair patient prioritization).
 
-**Act 2 — What a virtue is (Aristotle, compressed)**
-8. **[T]** **Virtue is a disposition** — B&C: a dispositional trait of character
-   that is socially valued; a moral virtue involves *motivation*, not just
-   behavior. Aristotle: *hexis*, a stable state, not a mood. Jo: "I don't feel warm.
-   I do care. Those are different things," `reveal`.
-9. **[T]** **Habituation** — "we become just by doing just acts" (NE II.1).
-   Marmee: "Nobody is born a nurse." Jo's residency story: the attending who made
-   her sit down at every bedside for a year until sitting down was who she was,
-   `reveal`.
-10. **[T]** **The mean and discernment** — each virtue sits between excess and
-    deficiency, relative to the person and the situation, and found by practical
-    wisdom (NE II.6, VI). B&C's name for phronesis in the clinic is
-    **discernment**. Preview: care has a deficiency *and* an excess, `reveal`.
-11. **[V]** **"The Mean of Care"** (`<phil-mean>` reloaded) — pick a character and a
-    facet of care (attentiveness, involvement, honesty with patients, advocacy,
-    self-care); the spectrum runs Deficiency → Mean → Excess with each character's
-    marker pre-placed (Amy toward detachment on attentiveness; Laurie pegged toward
-    excess on involvement and deficiency on self-care; Marmee near the mean on
-    most). Ungraded.
-12. **[T]** **Eudaimonia, briefly** — virtue is part of the *carer's* flourishing,
-    not a tax on it (NE I.7). A life of good care is a good life, which is why care
-    that destroys the carer has gone wrong. Sets up Act 4, `reveal`.
-13. **[Q · Checkset]** Which statements are true of a virtue? (correct: a stable
-    disposition, not a single act / acquired by practice / involves motivation, not
-    just behavior; distractors: a virtue is a strong feeling / you are born with it
-    or not / a virtue is a rule you follow).
+**Act 2 — Cultivating virtue through mentorship**
+8. **[T]** **Virtue as an acquired disposition** — A virtue is a stable, cultivated habit of character, not a temporary mood or an innate personality trait. Jo notes that while she lacks an easy, effusive bedside manner, she has trained herself to listen closely and follow through reliably.
+9. **[T]** **How virtue is cultivated** — Jo learns clinical character in three progressive stages: first from family/parents (observing Marmee care for sick neighbors), then from mentors (correcting early mistakes), and finally through self-habituation (sitting at every bedside until it became second nature).
+10. **[T]** **Mentorship in clinical care** — Clinicians develop character through guided feedback from experienced peers. Helping a capable, protocol-driven resident learn to look beyond the computer screen to perceive the human being.
+11. **[V]** **"You're the Mentor: Rounds with Amy" (`<phil-mentor>`)** — The student steps into Dr. Jo March's role to debrief three realistic clinical encounters with resident Amy (presence vs. screen, responsiveness vs. schedule, sustainable care vs. martyrdom). Mentoring feedback must diagnose Amy's blind spot while modeling the virtue of care toward Amy as a learner.
+12. **[T]** **Care and clinician flourishing** — Aristotelian eudaimonia: why cultivate a virtue at all? The ancient answer concerns the caregiver as much as the patient. Practicing genuine care brings purpose and fulfillment, protecting against moral injury and burnout.
+13. **[Q · Checkset]** Which statements are true of a moral virtue? (correct: a stable disposition of character / acquired through repeated practice / involves moral motivation, not just outward compliance; distractors: an innate temperament / a momentary emotional state / a set of codified rules).
 
-**Act 3 — Care, defined**
-14. **[T]** **Care as a virtue** — B&C's gloss: care for, emotional commitment to,
-    and willingness to act on behalf of persons with whom one has a significant
-    relationship. In medicine the relationship is the clinical one, and care is the
-    virtue the other clinical virtues serve. Fisher & Tronto's wider definition
-    (everything we do to maintain, continue, and repair our world) in one line,
-    `reveal`.
-15. **[T]** **The anatomy of care** (Tronto) — **attentiveness** (noticing the
-    need), **responsibility** (taking it on), **competence** (meeting it well),
-    **responsiveness** (checking how it landed for the person). Beth's case: a
-    volunteer who holds her hand and gets her meds wrong is not caring for her.
-    Care without competence is sentimentality, `reveal`.
-16. **[T]** **The five focal virtues** (B&C) as care's instruments —
-    **compassion** (the feeling), **discernment** (the judgment), **trustworthiness**
-    (the reliability), **integrity** (the wholeness), **conscientiousness** (the
-    follow-through). Professional codes specify character for a role: ANA Code
-    Provision 1 opens with compassion and respect. Laurie is the reason Beth trusts
-    the ICU, `reveal`.
-17. **[C]** **Care vs Warmth** — warmth is a temperament (some have it, some don't;
-    it can be faked and it can be absent in excellent carers) vs care is a
-    disposition plus competence (learned, reliable, shows in what you do when the
-    patient is difficult). Jo is the walking example.
-18. **[Q · Cloze]** A virtue is a stable _disposition_ of character. Care involves
-    emotional _commitment_ and a willingness to _act_ for the person. Care without
-    _competence_ is sentimentality.
-19. **[Q · MCQ]** Case: which of these is care in the full sense? (answer: the aide
-    who notices Beth has stopped asking questions, finds out why, adjusts, and
-    checks back; distractors: the friend who feels terrible for her / the resident
-    who orders the right tests and never learns her name / the relative who insists
-    on a treatment she has refused).
+**Act 3 — The anatomy of care**
+14. **[T]** **Care as skilled labor** — Hannah arriving at a rural doorstep at dusk shows that clinical care is not a slogan or warm sentiment, but demanding, skilled physical and emotional labor to sustain vulnerable human lives.
+15. **[T]** **The four phases of care (Tronto)** — Illustrated directly through Beth's clinic visit: 1) Attentiveness (noticing her silence), 2) Responsibility (stepping in rather than passing it to night shift), 3) Competence (accurate medication titration), and 4) Responsiveness (checking how the care landed with Beth).
+16. **[T]** **The instruments of care** — Five focal virtues serve as practical instruments of care: compassion (attuned perception of suffering), discernment (sound judgment in ambiguous situations), trustworthiness (earning confidence), integrity (coherence of values and action), and conscientiousness (diligent effort).
+17. **[C]** **Care vs Warmth** — Warmth is a natural temperament that varies by personality; care is a learned, reliable clinical disposition grounded in attentiveness and technical competence.
+18. **[Q · Cloze]** A virtue is a stable _disposition_ of character. Care involves emotional _commitment_ and a willingness to _act_. Without technical _competence_, good intentions become sentimentality.
+19. **[Q · MCQ]** Which scenario illustrates care in its full sense? (answer: a clinician who notices Beth has stopped asking questions, investigates why, adjusts the plan, and checks how she feels; distractors: an acquaintance who feels deep sympathy but takes no action / a resident who orders tests without speaking to the patient / a family member who overrides a patient's clear refusal).
 
-**Act 4 — Care at the mean**
-20. **[C]** **Detachment vs Over-involvement** — deficiency: Amy's "processing";
-    also the veteran who has withdrawn to survive vs excess: Laurie covering every
-    shift, working sick, texting patients' families at midnight. Both ends fail the
-    patient; one of them also destroys the carer.
-21. **[T]** **Paternalism is an excess of care** — Meg quietly cancels Aunt March's
-    plans and books the nursing-home tour "for her own good." Care that stops
-    listening has tipped over. Callback to the four-principles lesson: the mean of
-    care is where beneficence and respect for autonomy meet, `reveal`.
-22. **[T]** **The soup** — Jo lives next door to Mr. Laurence. On Sunday she makes
-    soup. Is bringing it care, or a dual relationship that compromises her
-    judgment? Small-town medicine makes dual roles unavoidable; discernment, not a
-    rule, decides. What matters: knowing which hat you are wearing and being honest
-    with him about it, `reveal`.
-23. **[Poll]** Decision point: the soup. (Bring it — care does not stop at the
-    clinic door / Don't — dual relationships compromise clinical judgment / Bring
-    it as a neighbour, and say so — the mean is a judgment about roles, not a ban).
-    Notes on each, none graded.
-24. **[T]** **Sustainable care is part of the virtue** — burnout, compassion
-    fatigue, moral injury. When a whole unit slides toward detachment, the cause is
-    staffing, not character. Aristotle: whether people can be virtuous depends on
-    the polis (*Politics* I.2). Tronto: institutions must be built to care. This
-    slide does not moralize; it puts the responsibility where it lives, `reveal`.
-25. **[Q · MCQ]** Laurie has covered nine extra shifts this month and came in with a
-    fever. What does a virtue account say? (answer: this is care at its excess —
-    care that undermines the carer's capacity to keep caring is not the virtue;
-    distractors: this is the virtue at its highest / it only breaks a duty-hours
-    rule, nothing about character / care has no upper limit by definition).
+**Act 4 — Boundaries, paternalism, and sustainable care**
+20. **[C]** **Detachment vs Over-involvement** — Detachment reduces patients to clinical data and charts; over-involvement leads clinicians to overstep boundaries, sacrifice essential rest, and risk poor judgment. Both extremes harm patient care.
+21. **[T]** **Paternalism as misdirected care** — When caregivers assume they know what is best and stop listening to the patient, care degenerates into control. Meg's instinct to manage Aunt March's living arrangements highlights the danger of caring for someone while ignoring their expressed wishes.
+22. **[T]** **The dilemma of the soup** — Jo has soup on a freezing Sunday and knows Mr. Laurence is home alone. Contrasts strict professional codes against dual relationships with the human demands of small-town community practice, leaving the tension unresolved for the poll.
+23. **[Poll]** Decision point: The soup — Should Jo bring soup to her elderly neighbor? Evaluates the dilemma; debrief explains how practical discernment and explicit role communication navigate dual relationships.
+24. **[T]** **When care becomes martyrdom** — Laurie works his tenth consecutive ICU shift with a fever. Poses the question of limits: an exhausted, sick clinician cannot protect patients, showing that care without boundaries destroys the caregiver.
+25. **[Q · MCQ]** Evaluating over-involvement — Evaluates Laurie working sick; debrief explains that when healthcare systems rely on heroic self-sacrifice, the institution—not clinician character—is failing.
 
-**Act 5 — Care and the four principles**
-26. **[T]** **Autonomy** — Aunt March refuses hospitalization; she wants to die in
-    her own chair if it comes to that. The principle says respect the refusal.
-    Care says respecting a refusal is not walking away: stay, plan, revisit, keep
-    the door open. Her choice is made inside a web (Meg, Hannah, Jo), and care
-    attends to the web. Non-abandonment, `reveal`.
-27. **[T]** **Beneficence & nonmaleficence** — Beth apologizes for being a burden.
-    The principles say benefit her and don't harm her. Care specifies what *benefit*
-    means for *this* patient (she wants to stay home for her niece's recital more
-    than she wants a longer admission) and catches the harm no checklist names (the
-    patient who stops asking questions), `reveal`.
-28. **[T]** **Justice** — Hannah's wages, Meg's unpaid hours, the Hummels with no
-    insurance and a sick baby. Care work is gendered and underpaid, and a virtue of
-    care without a justice of care is sentiment. The impartiality worry, answered:
-    partiality toward *your* patient is legitimate and expected; justice governs
-    the distribution, care governs the bedside, `reveal`.
-29. **[T]** **Where the idea came from, and where it is found** — Gilligan (1982)
-    heard a moral voice the tradition had scored as immature; Noddings (1984) built
-    an ethic on the caring relation. Feminist philosophy defended something the
-    tradition had dismissed as women's work. And care is nobody's invention:
-    Mencius's child at the well (*ren*), Buddhist *karuṇā*, *ubuntu*, *caritas*,
-    *raḥma*, the Hippocratic tradition, Nightingale. Held's dissent (care ethics is
-    not a virtue ethics) in one honest line, `reveal`.
-30. **[C]** **What care corrects vs What principles protect** — care ethics' charge
-    against principles: too impartial, too detached, blind to emotion vs what
-    principles give care: public accountability, a guard against favoritism and
-    paternalism, a way to argue when carers disagree. B&C: complementary.
-31. **[Q · MCQ]** Aunt March case: what does care add to respecting her refusal?
-    (answer: continued presence, follow-up, and a plan for what she does want;
-    distractors: overriding her, since caring means doing what's best / documenting
-    the refusal and closing the chart / persuading until she agrees).
-32. **[Q · Cloze]** B&C hold that principles and virtues are _complementary_. Care
-    ethics charges principle-based theory with over-valuing _impartiality_ and
-    neglecting _emotion_. Partiality toward one's own _patient_ is legitimate;
-    _justice_ governs how care is distributed.
+**Act 5 — Care and the biomedical principles**
+26. **[T]** **Autonomy and non-abandonment** — When Aunt March refuses hospital admission,
+    respect for autonomy requires accepting her decision. The virtue of care adds
+    non-abandonment: staying involved, creating a home-based care plan, and supporting
+    her family care network.
+27. **[T]** **Beneficence and responsiveness** — When Beth apologizes for taking up staff
+    time, beneficence aims to improve her health. Care attends to what benefit means to
+    her specifically, addressing her fear of being a burden.
+28. **[T]** **Justice and the care economy** — Hannah's hourly agency wages and Meg's
+    unpaid domestic labor show that care is economically vulnerable and unevenly distributed.
+    Care at the bedside must be matched by structural justice for care workers.
+29. **[T]** **Origins and traditions of care** — Feminist philosophers (Gilligan, Noddings,
+    Held) recovered care as a central moral voice that ethical theory had neglected. Care
+    is also reflected across cultural traditions, including Confucian *ren*, Buddhist
+    *karuṇā*, *ubuntu*, and early nursing traditions.
+30. **[C]** **What care corrects vs What principles protect** — Care ethics warns against
+    impersonal detachment, rigid formulas, and ignoring emotion; principles protect
+    against favouritism, bias, and paternalistic overreach.
+31. **[Q · MCQ]** What does the virtue of care add to respecting a patient's treatment
+    refusal? (answer: continued clinical presence, relational support, and collaborative
+    planning; distractors: persuading the patient until they change their mind /
+    withdrawing completely once the waiver is signed / overriding the decision for their
+    own good).
+32. **[Q · Cloze]** Principles and virtues are _complementary_. Care ethics cautions
+    against excessive _impartiality_ and the neglect of _emotion_. Clinicians owe
+    attentive care to their _patient_, while public _justice_ governs resource distribution.
 
 **Closing rounds**
-33. **[P]** Belief probe (revisit) — where do you stand now, and can you say why?
-34. **[T]** Jo's parting — "This is a practice. That is not an accident of
-    language." Recap: a virtue is a disposition you build → care is the orienting
-    clinical virtue, with an anatomy and instruments → it has a mean, and the
-    institution owns much of where you land → it completes the principles rather
-    than replacing them → it was named by feminist philosophy and recognized
-    everywhere → keep practicing, `reveal`.
+33. **[P]** Belief probe (revisit) — Revisit the opening statements to reflect on shifts
+    in understanding.
+34. **[T]** Jo's closing — "A practice is not an accident of language." Summary: virtue
+    is built through disciplined habituation; care combines emotional commitment with
+    technical competence; boundaries protect both patient and clinician; and virtues
+    give living warmth to biomedical principles.
 
 ### Belief-probe statements (start; revisited at end)
 1. Caring is a personality trait: some people have it and some don't.
@@ -1834,30 +1743,34 @@ are descriptive clinical terms; do not attribute a theory of them to anyone.
 Principles vs Virtues (6) · Care vs Warmth (17) · Detachment vs Over-involvement
 (20) · What care corrects vs What principles protect (30).
 
-### Interactive viz (reused, generalized)
-**`<phil-mean>` ("The Mean of Care")** — the virtue-ethics lesson's widget, now
-generalized as `shared/phil-mean.js`. Each lesson supplies its own data as an
-inline `<script type="application/json">` block inside the element (keys:
-`domains`, `characters`), plus `domain-label` and `character-label` attributes.
-The virtue-ethics lesson was switched to the same shared file and its embedded
-`golden-mean.js` removed. Facets here: attentiveness, involvement, honesty,
-advocacy, self-care. Characters: Jo, Marmee, Meg, Beth (as a carer of others),
-Amy, Laurie, Hannah.
+### Interactive widget
+**`<phil-mentor>` ("Rounds with Amy")** — A dialogue-driven mentoring widget. The learner
+acts as Dr. Jo March debriefing three clinical encounters with resident Amy.
+- *Round 1 (Presence vs Screen):* Amy successfully reconciled Mr. Laurence's complex
+  medications on her tablet, but failed to notice his distress and crushed discharge
+  papers. Learner coaches her on presence and attentiveness.
+- *Round 2 (Responsiveness vs Procedure):* Beth apologized for taking up clinic time, and
+  Amy responded with a cheerful comment about scheduling slots. Learner coaches Amy on
+  hearing unspoken patient vulnerability.
+- *Round 3 (Sustainable Care vs Burnout):* Amy considers emulating Laurie's exhausted,
+  limitless shifts to prove her dedication. Learner helps her understand why healthy
+  boundaries are necessary for enduring clinical competence.
+Each option demonstrates a distinct feedback style: cynical/punitive, superficial/procedural,
+or virtuous mentorship that balances high standards with compassionate teaching.
 
 ### Decision points (`<phil-poll>`, ungraded)
-The soup (23). If a second is wanted: Beth's apology — what do you say back?
-(reassure / redirect to the plan / ask what she is afraid of being).
+The soup (23) — Navigating dual relationships and boundaries in community healthcare.
 
 ### Art assets (16-bit PNGs)
 `jo-march`, `marmee`, `meg`, `beth`, `amy`, `laurie`, `mr-laurence`, `aunt-march`,
-`hannah`, `john-brooke`, `hummel-family`; scene `orchard-falls`. Real thinkers (Beauchamp & Childress, Tronto,
-Gilligan, Noddings, Mencius, Nightingale) get idea-emblem relic cards, never
-portraits. Prompts in `prompts.md`.
+`hannah`, `john-brooke`, `hummel-family`; scene `orchard-falls`. Real thinkers (Beauchamp &
+Childress, Tronto, Gilligan, Noddings, Mencius, Nightingale) get idea-emblem relic cards,
+never portraits. Prompts in `prompts.md`.
 
 ### Sources to cite (so nothing is invented)
 - Beauchamp & Childress, *Principles of Biomedical Ethics*, ch. 2 "Moral Character"
   (virtue defined; five focal virtues; care and the ethics of care; virtues and
-  principles as complementary; the two care-ethics criticisms).
+  principles as complementary).
 - Aristotle, *Nicomachean Ethics* I.7, II.1, II.6, VI; *Politics* I.2.
 - Joan Tronto, *Moral Boundaries* (1993); Berenice Fisher & Joan Tronto, "Toward a
   Feminist Theory of Caring" (1990).
@@ -1865,18 +1778,18 @@ portraits. Prompts in `prompts.md`.
   Virginia Held, *The Ethics of Care* (2006); Eva Kittay, *Love's Labor* (1999).
 - *Mencius* 2A6 (the child at the well); Florence Nightingale, *Notes on Nursing*
   (1859); ANA *Code of Ethics for Nurses*, Provision 1.
-- Cross-lesson link: Shannon Vallor, *Technology and the Virtues* (2016) defines
-  care as a technomoral virtue using Tronto's four elements — reuse if the AI-ethics
-  virtue lesson is built.
 
 ### Counts (target)
-~34 slides. 8 graded (4 MCQ, 1 checkset, 2 cloze, +1 case MCQ) + 1 poll + 1 viz +
-4 comparisons ≈ 40% interactive. Vary correct-answer positions and balance option
-lengths; run `node tools/validate-quizzes.mjs` before commit.
+~34 slides. 8 graded (4 MCQ, 1 checkset, 2 cloze, +1 case MCQ) + 1 poll + 1 interactive
+mentor widget + 4 comparisons ≈ 40% interactive. Vary correct-answer positions and balance
+option lengths; run `node tools/validate-quizzes.mjs` before commit.
 
 ### Decisions made while building
-- `<phil-mean>` was generalized first (see above).
-- The four-principles refresher is two bullets on the "What Was Missing?" slide,
-  not a slide of its own.
-- One decision point (the soup). Beth's apology stays a teaching slide.
-- The Hummels and John Brooke got portraits, so both appear on slides.
+- Replaced `<phil-mean>` with `<phil-mentor>` ("Rounds with Amy") to focus on habituation
+  and guided clinical growth rather than the geometric doctrine of the mean.
+- Mentioned Beauchamp & Childress up front as the foundational framework, keeping subsequent
+  slides focused on clinical concepts rather than repeated citations.
+- Structured narrative and dialogue in a grounded, realistic clinical voice, avoiding
+  overly theatrical or staccato conclusions.
+- All twelve cast and scene portraits generated in 2x2 grids, split to 512×512 PNGs, and
+  placed in `assets/`.

@@ -1,21 +1,19 @@
 # Image prompts — Bioethics: The Virtue of Care ("The March Practice")
 
-Every asset below ships as a generated PNG in `/assets/`, and the `src` in
-`index.html` points at it. To regenerate one, use the prompt below, drop the new
-PNG in `/assets/` with the matching name (e.g. `jo-march.png`), and inspect it
-full-size for baked-in text. Aim for the *best* version of each: warm, memorable,
-and **informative** — every portrait carries a visual cue that teaches the idea
-the character embodies.
+Every asset below ships as a generated 512×512 PNG in `/assets/`, and the `src` in
+`index.html` points at it. To regenerate assets, use the prompts below, generate
+in 2×2 grids, and crop into individual PNGs. Each portrait carries visual cues
+that ground the clinical concepts in concrete human practice.
 
-The cast is **invented** (a present-day small-town practice), so full character
-portraits are fair game. Two hard rules:
+The cast is **invented** (a present-day small-town medical practice in New England),
+with names borrowed from *Little Women* but completely original character designs
+and an intentionally diverse cast. Two rules:
 
 1. **No likeness to any actor from any film or TV adaptation of *Little Women*.**
    The names are borrowed; the faces are original. Do not name the book or any
-   adaptation in the prompt. If a generator drifts toward a recognizable performer,
-   change hair, build, and age until it stops.
-2. **No portraits of real thinkers.** Beauchamp, Childress, Tronto, Gilligan,
-   Noddings, Mencius, and Nightingale get idea-emblem relic cards (see the end).
+   adaptation in the prompt.
+2. **No portraits of real thinkers.** Thinkers (Tronto, Gilligan, Noddings,
+   Mencius, Nightingale) receive idea-emblem relic cards rather than portraits.
 
 ## House style (prepend to every prompt)
 
@@ -32,148 +30,119 @@ portraits are fair game. Two hard rules:
 ## Cast
 
 ### `jo-march.png` — Dr. Josephine "Jo" March, family physician (the guide)
-> A woman in her forties, white coat thrown over a flannel shirt, **sleeves shoved
-> up past the elbows**, dark hair pulled back fast and coming loose. A pen behind
-> one ear; **ink stains on the fingers** of one hand; a battered notebook bulging
-> from the coat pocket with loose pages sticking out. Stethoscope slung, not
-> arranged. Expression: sharp, impatient, direct eye contact — but the eyes are
-> kind despite her. A snow-dusted scarf half off one shoulder, as if she just came
-> in from a house call and has not stopped moving.
-> *Teaches:* care as a cultivated disposition, not a temperament. She is not warm,
-> and she is the most caring clinician in the lesson. The rolled sleeves = care is
-> work; the notebook = the other life she keeps; the ink = she gets her hands dirty.
+> A Latina woman in her forties with warm olive skin, dark wavy hair pulled back
+> fast and coming loose, white coat thrown over a flannel shirt, sleeves pushed up
+> past the elbows. A pen behind one ear; ink stains on the fingers of one hand;
+> a notebook in the coat pocket. Stethoscope slung over one shoulder. Expression:
+> sharp, direct, and attentive, with a kind glint in her eyes. A snow-dusted scarf
+> on her shoulder from a recent house call.
+> *Pedagogical role:* Care as a cultivated clinical disposition rather than natural
+> warmth. The pushed-up sleeves and notebook show care as active, deliberate labor.
 
 ### `marmee.png` — Marmee, retired nurse (the mentor)
-> A woman in her seventies in a soft cardigan, reading glasses on a chain, grey hair
-> in a loose knot. She holds a **mug in both hands** and the hands are the key
-> visual — large, capable, a little swollen at the knuckles, forty years of work in
-> them. A faded **nursing pin** on the cardigan and an old **fob watch** pinned
-> upside-down at the chest, the way nurses wear them. Expression: calm, amused,
-> looking slightly past the viewer as if at a student she has already decided will
-> be fine.
-> *Teaches:* habituation — "Nobody is born a nurse." The hands = care lives in
-> practice, built over decades; the upside-down watch = a professional habit so old
-> it is part of her.
+> A Black woman in her seventies in a soft cardigan, reading glasses on a chain,
+> silver-grey hair in a loose knot. She holds a ceramic mug in both hands, showing
+> capable, weathered hands shaped by decades of clinical work. A faded nursing pin
+> and an upside-down nurse's fob watch pinned at the chest. Expression: calm, amused,
+> and reassuring.
+> *Pedagogical role:* Habituation and mentorship. Clinical excellence and bedside
+> presence are learned through decades of continuous practice.
 
 ### `meg.png` — Meg, the unpaid caregiver
-> A woman in her mid-forties at a kitchen table at night, lit by one lamp. In front
-> of her, side by side: **a child's lunchbox and a weekly pill organizer**, the
-> organizer's compartments half-filled. A school-paper stack under one elbow; a
-> phone face-down. A child's crayon drawing on the fridge behind. Expression:
-> tired, competent, chin on hand, the look of someone doing a second shift nobody
-> scheduled.
-> *Teaches:* invisible care labor and the justice question. The lunchbox next to the
-> pill organizer = the double shift; the lamp at night = when unpaid care happens.
-> Also the paternalism beat: she is the one who cancels Aunt March's plans "for her
-> own good."
+> An East Asian woman in her mid-forties at a wooden kitchen table at night, lit
+> by a single warm desk lamp. In front of her sit a child's lunchbox and a weekly
+> compartmentalized pill organizer. One hand supports her chin. Expression: tired,
+> competent, and thoughtful.
+> *Pedagogical role:* Invisible caregiving labor and the challenge of balancing
+> family responsibilities with respect for patient autonomy.
 
 ### `beth.png` — Beth, the care-receiver
-> A young woman, 24, in a hospital bed cranked half up, a blanket over her knees and
-> a **slim oxygen cannula** under her nose. Beside the bed, a small **portable
-> keyboard** on a tray table, one hand resting on the keys. The key visual: she is
-> **pulling the blanket in and shrinking toward the edge of the bed**, as if trying
-> to take up less room, with an **apologetic half-smile** toward the viewer. Her
-> eyes are bright and alert. A get-well card propped on the monitor.
-> *Teaches:* care-receiving, and the apology for being a burden. Shrinking in the
-> bed = the patient who stops asking questions; the keyboard = a whole person, not a
-> diagnosis; the half-smile = Tronto's fourth element, responsiveness: did the care
-> land for *her*?
+> A mixed-race young woman (24) in a hospital bed with a blanket over her knees and
+> a slim oxygen cannula. A small portable musical keyboard rests on her tray table
+> with one hand on the keys. She leans gently toward the edge of the bed with a
+> modest, apologetic half-smile, looking alert and thoughtful.
+> *Pedagogical role:* The experience of receiving care, responsiveness, and the common
+> fear among chronically ill patients of being a burden to others.
 
-### `amy.png` — Amy, first-year resident (deficiency, sympathetic)
-> A young woman, mid-twenties, in **crisp, perfect scrubs**, hair immaculate, a
-> badge reel heavy with pins and credentials. She holds a **tablet** and the
-> **screen-glow lights her face from below**; her eyes are on the screen, not the
-> viewer. At the very edge of the frame, out of the light, the **soft silhouette of
-> a patient in a bed**, unattended. Expression: focused, intelligent, faintly
-> pleased with herself — not cold, not a villain, just not *here*. One small human
-> note: a coffee ring on the tablet cover.
-> *Teaches:* detachment — protocol without presence. Every box ticked and the
-> patient in shadow. She is good and will be better; draw her likeable.
+### `amy.png` — Amy, first-year resident (mentee)
+> A young South Asian woman in her mid-twenties in crisp scrubs and an identification
+> badge reel. She holds a tablet computer that casts a blue-white screen glow across
+> her face from below, her eyes focused downward on the display. In the darker corner
+> behind her is the soft outline of a patient's bed. Expression: sharp, focused, and
+> eager to follow protocol.
+> *Pedagogical role:* The common novice pitfall of prioritizing digital documentation
+> and checklist compliance over personal presence and attentiveness.
 
-### `laurie.png` — Theo "Laurie" Laurence, ICU nurse (excess)
-> A man in his late twenties, scrubs under an unzipped hoodie, dark curly hair,
-> **deep shadows under warm, still-smiling eyes**, a coffee cup in one hand. Behind
-> him, a break-room wall **papered with sticky-note shift swaps**, dozens of them,
-> all in his handwriting (no legible text — just the density of notes). A wrapped
-> tissue box tucked under one arm; a thermometer strip on his forehead reads
-> nothing, but he looks flushed. Expression: generous, open, exhausted, about to
-> say "it's fine."
-> *Teaches:* care at its excess — every shift covered, working sick, no boundaries.
-> The wall of notes = the cost nobody sees until he breaks; the smile = why it is
-> so hard to call this a failing.
+### `laurie.png` — Theo "Laurie" Laurence, ICU nurse
+> A Latino young man in his late twenties, scrubs under an unzipped hoodie, dark curly
+> hair, tired shadows under warm, smiling eyes, holding a coffee mug. Behind him is
+> a break-room wall filled with shift-swap notes. A temperature strip on his forehead;
+> flushed from working through a cold. Expression: generous, open, and exhausted.
+> *Pedagogical role:* Care without boundaries. Demonstrates why sustainable care requires
+> self-care and institutional support, since unchecked self-sacrifice leads to burnout.
 
-### `mr-laurence.png` — James Laurence, 82, next door (boundaries)
-> An elderly man in a cardigan over a shirt buttoned to the collar, a cane hooked
-> over one arm, standing at a **snowy porch rail** with a **warm lit window**
-> behind him. In one fist, a **crumpled hospital discharge packet**, half-crushed.
-> Expression: glaring, jaw set, but the eyes are wet at the edges and he is looking
-> toward the neighbouring house. Slippers in the snow.
-> *Teaches:* "I was processed." The crumpled packet = a perfect discharge that
-> failed him; the porch light = he lives next door to his doctor, and the soup
-> question; the wet eyes = the gruff patient who needs care and hates needing it.
+### `mr-laurence.png` — James Laurence, 82, neighbor
+> An elderly Black gentleman in a buttoned cardigan and shirt, cane hooked over one arm,
+> standing on a snowy porch rail outside his house with a warm lit window behind. In one
+> hand, he clutches a crumpled hospital discharge packet. Expression: proud, reserved,
+> and slightly frustrated, looking out across the snowy yard.
+> *Pedagogical role:* The gap between bureaucratic compliance and genuine care. He received
+> all appropriate paperwork, yet felt treated like a case rather than a person.
 
-### `aunt-march.png` — Aunt March, 88 (autonomy and non-abandonment)
-> An imperious elderly woman seated in **her own wingback armchair in her own
-> sitting room**, spine straight, hands folded on a cane, pearls, an expression of
-> total unbudging authority. On the side table beside her: a teacup, and a
-> **hospital wristband snipped in half** with a pair of nail scissors next to it.
-> A window behind shows snow and a long drive. The chair is worn where she always
-> sits.
-> *Teaches:* refusal of hospitalization, and what care adds to respecting it. The
-> cut wristband = the refusal; the worn chair = "on my own terms, in my own house";
-> the empty room around her = the web (Meg, Hannah, Jo) that has to stay.
+### `aunt-march.png` — Aunt March, 88
+> A resolute elderly matriarch in her own wingback armchair in her sitting room,
+> spine straight, hands resting on a cane, pearls, an expression of firm independence.
+> On the side table next to her are a teacup and a hospital identification wristband
+> neatly snipped in half with scissors.
+> *Pedagogical role:* Respect for autonomy combined with non-abandonment. Demonstrates
+> that honoring a patient's refusal of hospital admission requires continued presence
+> and home-based support.
 
-### `hannah.png` — Hannah, home health aide (justice)
-> A woman in her sixties in a fleece over an agency polo, an **agency lanyard and
-> badge** at the chest, a **gait belt** slung over one shoulder, **car keys** in one
-> hand and a canvas tote in the other. She is on a doorstep in the blue dusk,
-> between the last house and the next. Expression: kind, unhurried, a little tired,
-> the face of someone every family in town knows and no chart names.
-> *Teaches:* the care workforce nobody counts. The lanyard = paid by the hour by an
-> agency; the keys = driving between clients on her own time; the gait belt = the
-> competence that makes care more than sentiment.
+### `hannah.png` — Hannah, home health aide
+> An Afro-Caribbean woman in her sixties in a fleece jacket over an agency polo shirt,
+> wearing an agency lanyard and photo badge, with a canvas gait belt slung over one
+> shoulder. She holds car keys in one hand and a tote bag in the other, standing on a
+> doorstep at dusk. Expression: kind, patient, and experienced.
+> *Pedagogical role:* The frontline caregiving workforce and questions of economic
+> justice for paid care workers.
 
 ### `orchard-falls.png` — Orchard Falls, Main Street in January (scene)
-> A wide establishing shot of a small New England main street at dusk under fresh
-> snow. Center: a modest **clapboard family practice** with a lit front window and
-> a small unreadable shingle. Next door, a larger old house with one warm upstairs
-> light (the Laurence place). A pickup truck parked, a streetlamp on, a church
-> steeple in the distance, plowed snowbanks. Present day: a bike rack, a mailbox, a
-> cell tower faint on the ridge. No characters. Mood: cold outside, warm inside — a
-> place where everyone knows everyone, which is both the comfort and the boundary
-> problem.
-> *Teaches:* the setting. One practice, one town, dual relationships unavoidable.
+> A wide landscape establishing shot of a small New England town main street at dusk
+> under fresh snow. Center: a clapboard family medical clinic with warm lit windows.
+> Nearby houses with glowing upstairs lights, a pickup truck parked beside a snowbank,
+> streetlamps glowing amber against blue twilight, and a church steeple in the distance.
+> *Pedagogical role:* The small-town setting where dual relationships are common,
+> requiring thoughtful boundaries and discernment.
 
 ## Supporting cast
 
 ### `john-brooke.png` — John Brooke, hospice nurse
-> A quiet man in his forties in plain scrubs, a hospice badge, and a wedding ring;
-> standing in a doorway with a folded blanket over one arm. Meg's husband and the
-> lesson's second male caregiver.
-> *Teaches:* care is not a women's ethic; and the calm, competent presence at the
-> end of life.
+> An Asian-American man in his forties in navy scrubs, wearing a hospice ID badge
+> and wedding ring, standing in a warm doorway with a folded blanket over one arm.
+> Expression: steady, compassionate, and calm.
+> *Pedagogical role:* Demonstrates that care is a universal human capacity rather than
+> an exclusively gendered trait, highlighting calm presence in palliative care.
 
 ### `hummel-family.png` — The Hummel family
-> A young farmworker couple in a small kitchen with a feverish baby, a space heater,
-> a pharmacy receipt on the table. No insurance.
-> *Teaches:* justice — whom does care extend to, and who pays for it.
+> A young Latino farmworker couple in a modest kitchen at night. The mother holds a
+> swaddled feverish baby, the father stands beside them near a glowing electric space
+> heater. On the table sits an infant thermometer and a medicine receipt.
+> *Pedagogical role:* Justice in healthcare access, highlighting how social factors
+> and insurance status impact the ability to give and receive care.
 
 ---
 
-## Real thinkers (idea-emblem relic cards)
+## Thinkers (idea-emblem relic cards)
 
-Per the PhilMates art guidelines: **no portraits of real people**. Each gets an
-**idea-emblem relic card** — a framed 80×108 SVG with a central icon encoding
-their core move. Dark border, accent inner frame, a rank gem in the top bar,
-rarity pips at the bottom. Hand-authored SVGs, not generated. Listed here for
-completeness:
+Hand-authored SVGs (80×108) with dark borders and central icons representing core concepts:
 
-- **Beauchamp & Childress** — four small equal circles (the principles) with a
-  fifth, warmer shape beneath them, holding them up: virtue under principle.
-- **Joan Tronto** — a ring of four linked arrows (attentiveness → responsibility
-  → competence → responsiveness), closed into a loop.
-- **Carol Gilligan** — a speech-bubble with two overlapping voices, one smaller,
-  drawn in a different accent color.
-- **Nel Noddings** — two hands, one supporting the other, no faces.
-- **Mencius** — a well-mouth with a small figure at the edge and a reaching hand.
-- **Florence Nightingale** — a lamp, amber flame, alone on a dark field.
+- **Joan Tronto** — A closed ring of four connected arrows representing attentiveness,
+  responsibility, competence, and responsiveness.
+- **Carol Gilligan** — Two overlapping voice bubbles in complementary accent colors,
+  representing the distinct moral voice of relationship and care.
+- **Nel Noddings** — Two stylized hands supporting each other, illustrating the relational
+  bond between the one-caring and the cared-for.
+- **Mencius** — A traditional well rim with a reaching hand, symbolizing the innate human
+  sprout of compassion (*ren*).
+- **Florence Nightingale** — A glowing oil lamp against a dark background, representing
+  vigilance, nursing competence, and attentive presence.
