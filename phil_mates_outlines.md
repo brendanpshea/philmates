@@ -1840,7 +1840,7 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 22. **[T]** **The danger of rigid moralism** (art: Ned Flanders). Technomoral flexibility vs. brittle rulebooks when confronting novel, ambiguous technologies.
 23. **[Poll]** Decision point: School phone bans — Evaluating bell-to-bell bans vs. gradual autonomy in an actively evolving area of developmental research.
 24. **[T]** **Technomoral wisdom (phronesis)** — The master virtue that integrates self-control, honesty, and empathy into situational real-time judgment.
-25. **[Q · MCQ]** Evaluating educational AI (answer: using AI for brainstorming while safeguarding the irreplaceable labor of cultivating one's own voice; distractors: full automation / total computer bans / perfunctory disclaimers).
+25. **[Q · MCQ]** The defining role of technomoral wisdom (answer: it acts as an integrative master virtue that harmonizes specific virtues to guide practical judgment in novel situations; distractors: a mechanical quantitative algorithm / total rejection of technology / an isolated skill for computer scientists).
 
 **Act 5 — The future worth wanting**
 26. **[T]** **Technomoral perspective** (art: Lisa). Distinguishing technological novelty, speed, and optimization from genuine human flourishing.
