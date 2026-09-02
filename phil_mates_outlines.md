@@ -1814,9 +1814,9 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 
 **Act 1 — What happened to Bart's world?**
 4. **[T]** What happened to Bart's world? (art: Bart). Contrasts the shared living room CRT television of 1989 with individualized, 24/7 personalized mobile immersion.
-5. **[T]** Why rule-following falls short — Device bans produce evasion, school honor codes lag generative AI, and algorithms manipulate attention beneath conscious compliance.
-6. **[C]** **Rules vs Virtues in Digital Life** — External prohibitions that trigger punishment vs. cultivated internal dispositions that govern action when no authority watches.
-7. **[Q · MCQ]** Diagnosing the limits of rules (answer: algorithmic systems evolve faster than rules and exploit cognitive vulnerabilities beneath conscious compliance; distractors: kids lack cognitive capacity / tools possess autonomous agency / families abandoned values).
+5. **[T]** Rules as developmental scaffolding — External boundaries protect cognitive space and sleep, but their true ethical role is scaffolding that helps adolescents build internal self-regulation over time.
+6. **[C]** **Rules vs Virtues in Digital Life** — External scaffolding that safeguards habits while developing vs. internal dispositions and discernment that govern choices when young people are on their own.
+7. **[Q · MCQ]** The developmental role of rules (answer: rules serve as temporary scaffolding that protects cognitive space and sleep, helping adolescents gradually internalize self-regulation; distractors: rules are completely futile / rules permanently substitute for character / rules require total consensus).
 
 **Act 2 — Classical roots of character**
 8. **[T]** **Virtue as an acquired disposition** (art: Homer). Aristotle's hexis: virtue is a stable character habit built through ongoing practice, not a fleeting mood or genetic trait.
@@ -1834,11 +1834,11 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 18. **[Q · MCQ]** Recognizing digital empathy (answer: pausing before responding to hostile comments to consider real distress; distractors: automated sentiment scoring / public shaming / unfollowing all disagreement).
 
 **Act 4 — Parenting in the digital age**
-19. **[V]** **"Parenting in Springfield" (`<phil-parent>`)** — Interactive debrief of 3 modern digital dilemmas: Bart's AI homework shortcut, Lisa's late-night algorithmic doomscrolling, and Maggie's high-stimulus autoplay video pacifier.
+19. **[V]** **"Parenting in Springfield" (`<phil-parent>`)** — Interactive debrief of 3 modern digital dilemmas (Bart's AI homework, Lisa's doomscrolling, Maggie's autoplay screen). Each dilemma presents two cartoonishly bad blunders and two constructive approaches (internal reflection vs. structured environmental scaffolding).
 20. **[T]** **How digital environments shape habit** (art: Maggie). Aristotle on early habituation: designing calm physical environments before conscious reflection develops.
 21. **[T]** **Extractive capitalism and justice** (art: Mr. Burns). Technomoral justice resists corporate surveillance capitalism and protects vulnerable human labor.
 22. **[T]** **The danger of rigid moralism** (art: Ned Flanders). Technomoral flexibility vs. brittle rulebooks when confronting novel, ambiguous technologies.
-23. **[Poll]** Decision point: School phone bans — Strict bans vs. voluntary mindfulness vs. structured instructional boundaries.
+23. **[Poll]** Decision point: School phone bans — Evaluating bell-to-bell bans vs. gradual autonomy in an actively evolving area of developmental research.
 24. **[T]** **Technomoral wisdom (phronesis)** — The master virtue that integrates self-control, honesty, and empathy into situational real-time judgment.
 25. **[Q · MCQ]** Evaluating educational AI (answer: using AI for brainstorming while safeguarding the irreplaceable labor of cultivating one's own voice; distractors: full automation / total computer bans / perfunctory disclaimers).
 

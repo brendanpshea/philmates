@@ -20,36 +20,39 @@ const CASES = [
     kidAvatar: "./assets/bart.png",
     kidName: "Bart",
     situation: "Bart used an uncensored AI chatbot to write his entire book report on To Kill a Mockingbird in twenty seconds, complete with synthetic quotes, and generated a viral deepfake video roasting Principal Skinner.",
-    prompt: "How do you debrief Bart on his generative AI shortcuts?",
+    prompt: "How do you respond to Bart's generative AI shortcuts?",
     choices: [
       {
-        text: "You are grounded for a month, your phone is locked in the safe, and you are going to rewrite that report by hand in front of me.",
-        type: "punitive",
-        tag: "Pure Punishment / Evasion",
-        reaction: "Bart rolls his eyes and crosses his arms: 'Milhouse has three burner phones under his bed. You can't unplug the entire internet, Mom.'",
-        analysis: "Confiscating devices treats technology as contraband, prompting kids to sneak access without developing internal judgment or intellectual honesty."
+        text: "You are grounded for life, all electronics in this house are going into the fireplace, and you will rewrite that report in calligraphy.",
+        type: "flaw",
+        tag: "Punitive Overkill",
+        isConstructive: false,
+        reaction: "Bart laughs: 'Go ahead, Dad! Milhouse already backed up my Skinner deepfakes to three cloud servers and a thumb drive.'",
+        analysis: "Extreme punitive overreaction treats technology as contraband, instantly triggering evasion and turning digital rebellion into a badge of honor."
       },
       {
-        text: "The chatbot wrote a smooth report, Bart, but it took away your own voice. If an algorithm does your thinking, you lose the sharp wit that makes you you.",
-        type: "target",
-        tag: "Technomoral Mentorship",
-        isTarget: true,
-        reaction: "Bart pauses, looking down at his paper with a sheepish grin: 'You really think my own jokes are sharper than the bot's?'",
-        analysis: "This affirms Bart's genuine human agency and creativity, showing that outsourcing cognition atrophies his own voice and character."
+        text: "The chatbot wrote a slick paper, Bart, but it took your voice. If an algorithm does your thinking, you lose the wit that makes you you.",
+        type: "constructive",
+        tag: "Reflective Mentorship",
+        isConstructive: true,
+        reaction: "Bart pauses, glancing at his paper with a sheepish grin: 'You really think my own jokes are sharper than the bot's?'",
+        analysis: "Constructive strategy (Internal Motivation): appeals to Bart's authentic voice, showing that outsourcing cognition atrophies his real talent."
       },
       {
-        text: "Honestly, that Skinner parody was hilarious, and using AI tools to save time on boring homework is just smart modern efficiency.",
-        type: "permissive",
-        tag: "Uncritical Permissiveness",
-        reaction: "Bart smirks and high-fives Homer: 'Awesome! Tomorrow I'm having the chatbot write all my history essays and excuses for gym class!'",
-        analysis: "Celebrating digital shortcuts confuses technological convenience with genuine learning, depriving the child of intellectual discipline."
+        text: "Honestly, that Skinner deepfake is comedy gold. Can you show me how to use this bot to automate my safety reports at the nuclear plant?",
+        type: "flaw",
+        tag: "Cynical Surrender",
+        isConstructive: false,
+        reaction: "Bart grins and slaps Homer five: 'Done! Let's automate your job so you can take four-hour donut breaks every afternoon!'",
+        analysis: "Celebrating shortcuts confuses lazy evasion with intelligence, completely abandoning parental guidance and intellectual discipline."
       },
       {
-        text: "Using artificial intelligence on school assignments violates district academic integrity code section four, which carries an automatic detention.",
-        type: "bureaucratic",
-        tag: "Legalistic Rule Compliance",
-        reaction: "Bart shrugs indifferently: 'Skinny hasn't updated that handbook since 1997. It doesn't say anything about neural networks.'",
-        analysis: "Citing static institutional codes fails because generative technology evolves much faster than rulebooks can be updated."
+        text: "You're writing your own thesis by hand first, Bart. Then we can use the chatbot together to find counterarguments and test your ideas.",
+        type: "constructive",
+        tag: "Structured Scaffolding",
+        isConstructive: true,
+        reaction: "Bart grumbles but pulls out a pen: 'Fine. But if my thesis roasts Atticus Finch's courtroom strategy, you have to read it.'",
+        analysis: "Constructive strategy (Developmental Scaffolding): uses boundaries to guarantee independent thinking before introducing AI as an analytical partner."
       }
     ]
   },
@@ -63,33 +66,36 @@ const CASES = [
     prompt: "How do you help Lisa navigate algorithmic comparison and digital despair?",
     choices: [
       {
-        text: "Turn that thing off right now. You are crying over strangers on a tiny screen who probably don't even play their own instruments.",
-        type: "dismissive",
-        tag: "Dismissive Minimization",
-        reaction: "Lisa snaps her phone face-down with frustration: 'You don't understand, Dad! It's not just a screen, it's the real world!'",
-        analysis: "Dismissing youth digital anxiety as trivial alienates the child and ignores how intense algorithmic social comparison feels to a developing mind."
+        text: "Turn off that glowing rectangle right now! You are crying over strangers who probably fake their videos with filters and autotune anyway.",
+        type: "flaw",
+        tag: "Harsh Dismissal",
+        isConstructive: false,
+        reaction: "Lisa snaps her phone face-down in tears: 'You don't understand, Dad! It's not just a screen, it's the state of the world!'",
+        analysis: "Dismissing youth digital anxiety as trivial alienates the teenager and shuts down future communication about mediated distress."
       },
       {
-        text: "If jazz videos make you sad, just switch to watching cute kitten reels or funny cartoon clips until you fall asleep peacefully.",
-        type: "numbing",
-        tag: "Algorithmic Numbing",
-        reaction: "Lisa sighs wearily: 'Distracting my brain with silly videos doesn't make the climate crisis or my insecurities disappear.'",
-        analysis: "Treating social media as an emotional anesthetic reinforces compulsive scrolling rather than addressing the vulnerability beneath it."
-      },
-      {
-        text: "These algorithms feed you whatever keeps you anxious and watching, Lisa. Let's play your sax together on the porch and ground ourselves in real music.",
-        type: "target",
-        tag: "Technomoral Perspective",
-        isTarget: true,
+        text: "These algorithms feed you whatever keeps you anxious, Lisa. Let's play your sax together on the porch and ground ourselves in real music.",
+        type: "constructive",
+        tag: "Embodied Grounding",
+        isConstructive: true,
         reaction: "Lisa takes a slow breath and sets the phone on her desk: 'I forgot that music is supposed to be felt, not ranked by engagement algorithms.'",
-        analysis: "Cultivates technomoral perspective: revealing how engagement algorithms monetize insecurity, while restoring embodied human presence."
+        analysis: "Constructive strategy (Perspective & Embodied Art): demystifies engagement algorithms while restoring human presence and musical joy."
       },
       {
-        text: "If those kids practice six hours a day, you just need to practice eight hours tomorrow so you can post your own viral performance.",
-        type: "competitive",
-        tag: "Toxic Performance Culture",
-        reaction: "Lisa looks utterly overwhelmed: 'I can't compete with the entire internet, Mom. It's too exhausting.'",
-        analysis: "Feeding into algorithmic comparison accelerates perfectionism and burnout, confusing follower metrics with artistic joy."
+        text: "If prodigies and climate change make you sad, honey, just switch over to funny panda reels or shopping hauls until you fall asleep.",
+        type: "flaw",
+        tag: "Algorithmic Numbing",
+        isConstructive: false,
+        reaction: "Lisa sighs wearily: 'Distracting my brain with consumer junk doesn't solve the climate crisis or my insecurities, Mom.'",
+        analysis: "Treating social feeds as an emotional pacifier reinforces compulsive scrolling rather than helping the child confront vulnerability."
+      },
+      {
+        text: "No phones in bedrooms after ten, starting with mine. We leave devices in the kitchen basket so your brain has protected quiet to rest.",
+        type: "constructive",
+        tag: "Protective Boundary",
+        isConstructive: true,
+        reaction: "Lisa looks relieved as she places the phone in the basket: 'Honestly... my eyes hurt, and I didn't know how to stop scrolling.'",
+        analysis: "Constructive strategy (Environmental Scaffolding): provides a clear, household-wide boundary modeled by parents to safeguard sleep and focus."
       }
     ]
   },
@@ -104,32 +110,35 @@ const CASES = [
     choices: [
       {
         text: "High-stimulus autoplay trains her brain to crave nonstop sensory surges, Homer. A quiet toddler today means an attention span broken tomorrow.",
-        type: "target",
-        tag: "Technomoral Self-Control",
-        isTarget: true,
-        reaction: "Homer blinks at Maggie, who is staring wide-eyed at the rapid flashing screen: 'Wait... is that why she cries whenever the video stops?'",
-        analysis: "Early digital environments shape habits of attention before conscious reflection develops. Technomoral virtue requires designing environments that nurture calm focus."
+        type: "constructive",
+        tag: "Attentional Habituation",
+        isConstructive: true,
+        reaction: "Homer blinks at Maggie, who is staring wide-eyed at the flashing screen: 'Wait... is that why she cries whenever the video stops?'",
+        analysis: "Constructive strategy (Developmental Awareness): highlights how early sensory environments shape baseline habits before conscious reflection develops."
       },
       {
-        text: "Screens are pure poison that destroy human souls. We must ban all electronic devices from this house forever starting immediately.",
-        type: "luddite",
-        tag: "Unrealistic Moral Panic",
-        reaction: "Homer groans in despair: 'No screens forever? What am I supposed to do on weekends, read poetry?'",
-        analysis: "Reacting with total moral panic is brittle and unsustainable in modern society, preventing families from developing healthy digital habits."
+        text: "Screens are digital radiation that rot human souls! We must smash every television, phone, and microwave in Springfield this instant!",
+        type: "flaw",
+        tag: "Hysterical Moral Panic",
+        isConstructive: false,
+        reaction: "Homer shrieks and hugs the microwave: 'Not the microwave! How will I heat my frozen burritos?!'",
+        analysis: "Hysterical moral panic is brittle and unsustainable, alienating family members instead of cultivating balanced, healthy habits."
       },
       {
-        text: "It keeps her happy, it gives us a break, and modern kids are going to use screens anyway, so there is no harm in starting early.",
-        type: "surrender",
-        tag: "Passive Parental Surrender",
-        reaction: "Homer relaxes and opens another can of soda: 'Exactly! The tablet is basically a free, glowing babysitter.'",
-        analysis: "Surrendering parental responsibility to automated sensory feeds delegates the moral formation of the child to commercial engagement algorithms."
+        text: "It keeps her completely silent, it lets us watch the game, and all modern kids use screens anyway, so who cares if she starts early?",
+        type: "flaw",
+        tag: "Passive Surrender",
+        isConstructive: false,
+        reaction: "Homer kicks back on the couch and opens a soda: 'Exactly! That glowing plastic rectangle is the best parent in this house.'",
+        analysis: "Surrendering parental presence to commercial auto-play outsources infant sensory habituation to engagement algorithms."
       },
       {
-        text: "The American Academy of Pediatrics says zero screens under two years old, so shut off the power once sixty minutes have passed.",
-        type: "confused_rule",
-        tag: "Contradictory Rule Compliance",
-        reaction: "Homer scratches his head: 'Wait, so is it zero minutes or sixty minutes? Rules make my head hurt.'",
-        analysis: "Half-remembered guidelines without understanding developmental dynamics lead to arbitrary, ineffective enforcement."
+        text: "Turn off the screen and give her wooden blocks on the rug. If we want her to learn focus and patience, she needs tactile play, not pixels.",
+        type: "constructive",
+        tag: "Tactile Environmental Design",
+        isConstructive: true,
+        reaction: "Homer turns off the tablet and hands Maggie a stack of blocks; she begins tapping them together with focused curiosity.",
+        analysis: "Constructive strategy (Environmental Substitution): replaces passive sensory saturation with active tactile exploration to support natural cognitive growth."
       }
     ]
   }
@@ -273,12 +282,12 @@ const STYLE = `
   background: #212940;
 }
 
-.mnt-opt-btn.is-target {
+.mnt-opt-btn.is-constructive {
   border-color: var(--good, #46e07a);
   background: rgba(70, 224, 122, 0.12);
 }
 
-.mnt-opt-btn.is-other {
+.mnt-opt-btn.is-flaw {
   border-color: var(--bad, #ff6a6a);
   opacity: 0.85;
 }
@@ -292,7 +301,7 @@ const STYLE = `
   animation: fadeIn 0.2s ease;
 }
 
-.mnt-feedback.target {
+.mnt-feedback.constructive {
   border-left-color: var(--good, #46e07a);
 }
 
@@ -307,7 +316,7 @@ const STYLE = `
   color: var(--accent-3, #4cc2ff);
 }
 
-.mnt-feedback.target .mnt-feedback-badge {
+.mnt-feedback.constructive .mnt-feedback-badge {
   color: var(--good, #46e07a);
 }
 
@@ -401,13 +410,13 @@ class PhilParent extends HTMLElement {
     const completedCount = Object.keys(this.results).filter(
       id => {
         const cObj = CASES.find(item => item.id === id);
-        return cObj && cObj.choices[this.results[id]]?.isTarget;
+        return cObj && cObj.choices[this.results[id]]?.isConstructive;
       }
     ).length;
 
     const tabsHtml = CASES.map((item, idx) => {
       const isCurrent = idx === this.currentCaseIndex;
-      const isDone = this.results[item.id] !== undefined && item.choices[this.results[item.id]].isTarget;
+      const isDone = this.results[item.id] !== undefined && item.choices[this.results[item.id]].isConstructive;
       return `
         <button role="tab" class="mnt-tab ${isDone ? 'completed' : ''}" 
                 aria-selected="${isCurrent ? 'true' : 'false'}"
@@ -421,9 +430,7 @@ class PhilParent extends HTMLElement {
       let extraClass = "";
       if (selectedIdx !== undefined) {
         if (idx === selectedIdx) {
-          extraClass = choice.isTarget ? "is-target selected" : "is-other selected";
-        } else if (choice.isTarget && selectedChoice && !selectedChoice.isTarget) {
-          extraClass = "is-target";
+          extraClass = choice.isConstructive ? "is-constructive selected" : "is-flaw selected";
         }
       }
       return `
@@ -435,10 +442,10 @@ class PhilParent extends HTMLElement {
 
     let feedbackHtml = "";
     if (selectedChoice) {
-      const isTarget = selectedChoice.isTarget;
+      const isConstructive = selectedChoice.isConstructive;
       feedbackHtml = `
-        <div class="mnt-feedback ${isTarget ? 'target' : 'flaw'}">
-          <div class="mnt-feedback-badge">${selectedChoice.tag}</div>
+        <div class="mnt-feedback ${isConstructive ? 'constructive' : 'flaw'}">
+          <div class="mnt-feedback-badge">${isConstructive ? '✓ Constructive Approach' : '⚠ Parental Blunder'}: ${selectedChoice.tag}</div>
           <p class="mnt-feedback-rx">${selectedChoice.reaction}</p>
           <p class="mnt-feedback-analysis">${selectedChoice.analysis}</p>
         </div>
