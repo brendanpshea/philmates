@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
   <link rel="stylesheet" href="../../../shared/phil-core.css?v=5">
   <script type="module" src="../../../shared/phil-core.js?v=5"></script>
-  <script type="module" src="./assets/golden-mean.js"></script>
+  <script type="module" src="../../../shared/phil-mean.js"></script>
 </head>
 <body>
 
@@ -216,7 +216,63 @@
   <phil-slide>
     <h1>Explore the Mean</h1>
     <p><strong>Pick a character and a virtue domain.</strong> The marker shows where their myth places them on the spectrum. Green means near the mean; amber or magenta means trouble.</p>
-    <phil-mean prompt="Choose a character and virtue to explore:"></phil-mean>
+    <phil-mean prompt="Choose a character and virtue to explore:" domain-label="Virtue domain">
+      <script type="application/json">
+      {
+        "domains": [
+          { "id": "courage",      "virtue": "Courage",      "deficiency": "Cowardice",        "excess": "Rashness" },
+          { "id": "temperance",   "virtue": "Temperance",   "deficiency": "Insensibility",    "excess": "Self-indulgence" },
+          { "id": "generosity",   "virtue": "Generosity",   "deficiency": "Stinginess",       "excess": "Prodigality" },
+          { "id": "truthfulness", "virtue": "Truthfulness", "deficiency": "Self-deprecation", "excess": "Boastfulness" },
+          { "id": "justice",      "virtue": "Justice",      "deficiency": "Passivity",        "excess": "Vigilantism" }
+        ],
+        "characters": [
+          { "id": "achilles", "name": "Achilles", "positions": {
+            "courage":      { "pos": 0.85, "note": "Legendary bravery tipped into blind rage — his wrath drove the Iliad." },
+            "temperance":   { "pos": 0.80, "note": "Feasts, glory, Briseis — Achilles rarely held back from anything." },
+            "generosity":   { "pos": 0.55, "note": "Generous with allies in victory, but only on his own terms." },
+            "truthfulness": { "pos": 0.65, "note": "Blunt and direct, sometimes brutally so — a shade past honest." },
+            "justice":      { "pos": 0.75, "note": "Desecrating Hector's body crossed the line from justice into vengeance." }
+          } },
+          { "id": "odysseus", "name": "Odysseus", "positions": {
+            "courage":      { "pos": 0.50, "note": "Brave when needed, cautious when wise — the Cyclops cave, the Sirens." },
+            "temperance":   { "pos": 0.50, "note": "Patient for twenty years; endured humiliation to reclaim Ithaca." },
+            "generosity":   { "pos": 0.45, "note": "Shared spoils and credit, but always kept an eye on his own survival." },
+            "truthfulness": { "pos": 0.30, "note": "The great deceiver — \"Nobody\" in the cave, lies to Penelope, endless cunning." },
+            "justice":      { "pos": 0.55, "note": "Mostly fair, though the slaughter of the suitors was… thorough." }
+          } },
+          { "id": "penelope", "name": "Penelope", "positions": {
+            "courage":      { "pos": 0.50, "note": "Held Ithaca for twenty years against the suitors — steadfast, not reckless." },
+            "temperance":   { "pos": 0.50, "note": "The weaving trick: patience as strategy, not passivity." },
+            "generosity":   { "pos": 0.50, "note": "Managed a household with care, neither hoarding nor wasting." },
+            "truthfulness": { "pos": 0.45, "note": "Honest at heart, but the shroud trick was a necessary deception." },
+            "justice":      { "pos": 0.50, "note": "Kept faith with her household and her absent husband — the model of fairness." }
+          } },
+          { "id": "medea", "name": "Medea", "positions": {
+            "courage":      { "pos": 0.70, "note": "Fearless in pursuit of revenge — but courage without wisdom is dangerous." },
+            "temperance":   { "pos": 0.90, "note": "Consumed by passion: love became vengeance, and she burned everything." },
+            "generosity":   { "pos": 0.25, "note": "Gave everything for Jason, then took everything back — and more." },
+            "truthfulness": { "pos": 0.35, "note": "Manipulated and deceived to achieve her ends." },
+            "justice":      { "pos": 0.85, "note": "Punished betrayal with annihilation — justice curdled into revenge." }
+          } },
+          { "id": "icarus", "name": "Icarus", "positions": {
+            "courage":      { "pos": 0.80, "note": "Flew too high despite clear warnings — recklessness, not courage." },
+            "temperance":   { "pos": 0.85, "note": "Could not resist the thrill of the sun — the failure of the mean, literally." },
+            "generosity":   { "pos": 0.50, "note": "No real data — his story is about self-control, not giving." },
+            "truthfulness": { "pos": 0.50, "note": "No deception — just youthful heedlessness." },
+            "justice":      { "pos": 0.50, "note": "His tragedy is personal, not interpersonal." }
+          } },
+          { "id": "prometheus", "name": "Prometheus", "positions": {
+            "courage":      { "pos": 0.55, "note": "Defied Zeus for humanity — brave, and he knew the cost." },
+            "temperance":   { "pos": 0.50, "note": "Endured eternal punishment without breaking — supreme steadfastness." },
+            "generosity":   { "pos": 0.70, "note": "Gave fire (civilization itself) to mortals — generosity at its most radical." },
+            "truthfulness": { "pos": 0.40, "note": "Stole fire by trickery — the gift was honest, the method wasn't." },
+            "justice":      { "pos": 0.60, "note": "Just toward humanity, but did his justice require unjust means?" }
+          } }
+        ]
+      }
+      </script>
+    </phil-mean>
   </phil-slide>
 
   <!-- 14. Checkset: doctrine of the mean -->

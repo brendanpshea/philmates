@@ -199,6 +199,23 @@ from the linear sequence and the completion count, and automatically gets a
 "◀ Back to lesson" button. Keep most lessons linear; use branches only for
 genuinely optional side content.
 
+### The mean spectrum — `<phil-mean>` (ungraded, opt-in)
+A Deficiency → Mean → Excess bar with a movable character marker, for any
+virtue-ethics lesson. It is not part of the engine; load it per lesson and give it
+its data as an inline JSON block:
+```html
+<script type="module" src="../../../shared/phil-mean.js"></script>
+...
+<phil-mean prompt="Pick a person and a facet:" domain-label="Facet of care" character-label="Person">
+  <script type="application/json">
+  { "domains":    [{ "id": "honesty", "virtue": "Honesty", "deficiency": "Evasion", "excess": "Bluntness" }],
+    "characters": [{ "id": "jo", "name": "Jo", "positions": { "honesty": { "pos": 0.65, "note": "…" } } }] }
+  </script>
+</phil-mean>
+```
+`pos` runs 0 (deficiency) to 1 (excess); 0.5 is the mean. Used by the virtue-ethics
+and care lessons.
+
 ## When you add a widget to the engine: bump `?v=`
 
 Lessons load the engine as `../../../shared/phil-core.js?v=5`. That query string

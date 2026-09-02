@@ -1,132 +1,56 @@
 /**
- * <phil-mean> — "The Golden Mean" interactive visualization
+ * <phil-mean> — a Deficiency → Mean → Excess spectrum, for any virtue-ethics lesson
  *
- * Pick a character and a virtue domain; a spectrum runs from Deficiency
- * through the Mean (virtue) to Excess, with the character's mythic position
- * marked. Ungraded — purely for exploration.
+ * Pick a character and a domain (a virtue, or a facet of one); a spectrum runs
+ * from Deficiency through the Mean to Excess, with the character's position
+ * marked and a one-line note. Ungraded — purely for exploration.
  *
- * Usage (in index.html):
- *   <phil-mean prompt="Explore the mean:"></phil-mean>
+ * The lesson supplies its own data as an inline JSON block, so the same widget
+ * serves the Greek heroes in the virtue-ethics lesson and the clinicians in the
+ * care lesson:
  *
- * Data is embedded here so the component is self-contained.
+ *   <phil-mean prompt="Explore the mean:" domain-label="Virtue domain">
+ *     <script type="application/json">
+ *     {
+ *       "domains": [
+ *         { "id": "courage", "virtue": "Courage", "deficiency": "Cowardice", "excess": "Rashness" }
+ *       ],
+ *       "characters": [
+ *         { "id": "achilles", "name": "Achilles",
+ *           "positions": { "courage": { "pos": 0.85, "note": "…" } } }
+ *       ]
+ *     }
+ *     </script>
+ *   </phil-mean>
+ *
+ * pos: 0 = pure deficiency, 0.5 = the mean, 1 = pure excess. A character with no
+ * entry for a domain sits at the mean with no note.
+ *
+ * Attributes: `prompt`, `domain-label` (default "Virtue domain"),
+ * `character-label` (default "Character"). Do not name any attribute `reveal`.
  */
-
-const VIRTUES = [
-  {
-    id: 'courage',
-    virtue: 'Courage',
-    deficiency: 'Cowardice',
-    excess: 'Rashness',
-  },
-  {
-    id: 'temperance',
-    virtue: 'Temperance',
-    deficiency: 'Insensibility',
-    excess: 'Self-indulgence',
-  },
-  {
-    id: 'generosity',
-    virtue: 'Generosity',
-    deficiency: 'Stinginess',
-    excess: 'Prodigality',
-  },
-  {
-    id: 'truthfulness',
-    virtue: 'Truthfulness',
-    deficiency: 'Self-deprecation',
-    excess: 'Boastfulness',
-  },
-  {
-    id: 'justice',
-    virtue: 'Justice',
-    deficiency: 'Passivity',
-    excess: 'Vigilantism',
-  },
-];
-
-// position: 0 = pure deficiency, 0.5 = mean, 1 = pure excess
-const CHARACTERS = [
-  {
-    id: 'achilles',
-    name: 'Achilles',
-    positions: {
-      courage:      { pos: 0.85, note: 'Legendary bravery tipped into blind rage — his wrath drove the Iliad.' },
-      temperance:   { pos: 0.80, note: 'Feasts, glory, Briseis — Achilles rarely held back from anything.' },
-      generosity:   { pos: 0.55, note: 'Generous with allies in victory, but only on his own terms.' },
-      truthfulness: { pos: 0.65, note: 'Blunt and direct, sometimes brutally so — a shade past honest.' },
-      justice:      { pos: 0.75, note: 'Desecrating Hector\'s body crossed the line from justice into vengeance.' },
-    },
-  },
-  {
-    id: 'odysseus',
-    name: 'Odysseus',
-    positions: {
-      courage:      { pos: 0.50, note: 'Brave when needed, cautious when wise — the Cyclops cave, the Sirens.' },
-      temperance:   { pos: 0.50, note: 'Patient for twenty years; endured humiliation to reclaim Ithaca.' },
-      generosity:   { pos: 0.45, note: 'Shared spoils and credit, but always kept an eye on his own survival.' },
-      truthfulness: { pos: 0.30, note: 'The great deceiver — "Nobody" in the cave, lies to Penelope, endless cunning.' },
-      justice:      { pos: 0.55, note: 'Mostly fair, though the slaughter of the suitors was… thorough.' },
-    },
-  },
-  {
-    id: 'penelope',
-    name: 'Penelope',
-    positions: {
-      courage:      { pos: 0.50, note: 'Held Ithaca for twenty years against the suitors — steadfast, not reckless.' },
-      temperance:   { pos: 0.50, note: 'The weaving trick: patience as strategy, not passivity.' },
-      generosity:   { pos: 0.50, note: 'Managed a household with care, neither hoarding nor wasting.' },
-      truthfulness: { pos: 0.45, note: 'Honest at heart, but the shroud trick was a necessary deception.' },
-      justice:      { pos: 0.50, note: 'Kept faith with her household and her absent husband — the model of fairness.' },
-    },
-  },
-  {
-    id: 'medea',
-    name: 'Medea',
-    positions: {
-      courage:      { pos: 0.70, note: 'Fearless in pursuit of revenge — but courage without wisdom is dangerous.' },
-      temperance:   { pos: 0.90, note: 'Consumed by passion: love became vengeance, and she burned everything.' },
-      generosity:   { pos: 0.25, note: 'Gave everything for Jason, then took everything back — and more.' },
-      truthfulness: { pos: 0.35, note: 'Manipulated and deceived to achieve her ends.' },
-      justice:      { pos: 0.85, note: 'Punished betrayal with annihilation — justice curdled into revenge.' },
-    },
-  },
-  {
-    id: 'icarus',
-    name: 'Icarus',
-    positions: {
-      courage:      { pos: 0.80, note: 'Flew too high despite clear warnings — recklessness, not courage.' },
-      temperance:   { pos: 0.85, note: 'Could not resist the thrill of the sun — the failure of the mean, literally.' },
-      generosity:   { pos: 0.50, note: 'No real data — his story is about self-control, not giving.' },
-      truthfulness: { pos: 0.50, note: 'No deception — just youthful heedlessness.' },
-      justice:      { pos: 0.50, note: 'His tragedy is personal, not interpersonal.' },
-    },
-  },
-  {
-    id: 'prometheus',
-    name: 'Prometheus',
-    positions: {
-      courage:      { pos: 0.55, note: 'Defied Zeus for humanity — brave, and he knew the cost.' },
-      temperance:   { pos: 0.50, note: 'Endured eternal punishment without breaking — supreme steadfastness.' },
-      generosity:   { pos: 0.70, note: 'Gave fire (civilization itself) to mortals — generosity at its most radical.' },
-      truthfulness: { pos: 0.40, note: 'Stole fire by trickery — the gift was honest, the method wasn\'t.' },
-      justice:      { pos: 0.60, note: 'Just toward humanity, but did his justice require unjust means?' },
-    },
-  },
-];
 
 class PhilMean extends HTMLElement {
   connectedCallback() {
     const prompt = this.getAttribute('prompt') || 'Explore the mean:';
+    const domainLabel = this.getAttribute('domain-label') || 'Virtue domain';
+    const charLabel = this.getAttribute('character-label') || 'Character';
+
+    const data = this._readData();
+    if (!data) return;
+    this._domains = data.domains || data.virtues || [];
+    this._chars = data.characters || [];
+
     this.innerHTML = `
       <div class="mean-viz">
         <p class="mean-prompt">${prompt}</p>
         <div class="mean-controls">
           <label>
-            <span class="mean-label">Character</span>
+            <span class="mean-label">${charLabel}</span>
             <select class="mean-char-select"></select>
           </label>
           <label>
-            <span class="mean-label">Virtue domain</span>
+            <span class="mean-label">${domainLabel}</span>
             <select class="mean-virtue-select"></select>
           </label>
         </div>
@@ -146,12 +70,12 @@ class PhilMean extends HTMLElement {
     const charSel = this.querySelector('.mean-char-select');
     const virtSel = this.querySelector('.mean-virtue-select');
 
-    CHARACTERS.forEach(c => {
+    this._chars.forEach(c => {
       const o = document.createElement('option');
       o.value = c.id; o.textContent = c.name;
       charSel.appendChild(o);
     });
-    VIRTUES.forEach(v => {
+    this._domains.forEach(v => {
       const o = document.createElement('option');
       o.value = v.id; o.textContent = `${v.virtue} (${v.deficiency} ↔ ${v.excess})`;
       virtSel.appendChild(o);
@@ -163,14 +87,30 @@ class PhilMean extends HTMLElement {
     this._update();
   }
 
+  /* Parse the inline JSON block. A missing or broken block renders a legible
+     message on the slide instead of an empty box. */
+  _readData() {
+    const block = this.querySelector('script[type="application/json"]');
+    try {
+      if (!block) throw new Error('no data block');
+      return JSON.parse(block.textContent);
+    } catch (err) {
+      this.innerHTML = `<p class="mean-error">This widget has no data to show. ` +
+        `Author: give &lt;phil-mean&gt; an inline &lt;script type="application/json"&gt; block ` +
+        `with "domains" and "characters".</p>`;
+      console.error('<phil-mean>: could not read data —', err);
+      return null;
+    }
+  }
+
   _update() {
     const charId = this.querySelector('.mean-char-select').value;
     const virtId = this.querySelector('.mean-virtue-select').value;
-    const ch = CHARACTERS.find(c => c.id === charId);
-    const vt = VIRTUES.find(v => v.id === virtId);
+    const ch = this._chars.find(c => c.id === charId);
+    const vt = this._domains.find(v => v.id === virtId);
     if (!ch || !vt) return;
 
-    const data = ch.positions[virtId];
+    const data = (ch.positions || {})[virtId];
     const pos = data ? data.pos : 0.5;
     const note = data ? data.note : '';
 
@@ -182,18 +122,18 @@ class PhilMean extends HTMLElement {
     marker.style.left = `${pos * 100}%`;
     marker.textContent = ch.name;
 
-    // Color hint: green near center, magenta at extremes
+    // Color hint: green near center, amber further out, magenta at the extremes.
+    // The word in the note carries the same information for anyone who cannot
+    // tell the colors apart.
     const dist = Math.abs(pos - 0.5) * 2; // 0–1
     if (dist < 0.2) {
       marker.style.background = 'var(--go, #46e07a)';
-      marker.style.color = '#11131f';
     } else if (dist < 0.5) {
       marker.style.background = 'var(--amber, #ffcf5a)';
-      marker.style.color = '#11131f';
     } else {
       marker.style.background = 'var(--mag, #ff6ad5)';
-      marker.style.color = '#11131f';
     }
+    marker.style.color = '#11131f';
 
     this.querySelector('.mean-note').textContent = note;
   }
@@ -213,6 +153,11 @@ if (!document.getElementById('phil-mean-styles')) {
     .mean-prompt {
       font-weight: 600;
       margin-bottom: .75rem;
+    }
+    .mean-error {
+      padding: .75rem 1rem;
+      border: 1px solid var(--mag, #ff6ad5);
+      border-radius: 6px;
     }
     .mean-controls {
       display: flex; gap: 1rem; flex-wrap: wrap;
