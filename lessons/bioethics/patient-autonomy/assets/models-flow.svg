@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" shape-rendering="crispEdges" role="img" aria-label="Decision flowchart for Emanuel and Emanuel's four models of the doctor-patient relationship. Depending on the clinical urgency and the patient's values, four distinct models apply: 1. In emergencies with incapacity, the Paternalistic model positions the doctor as a guardian where the patient assents. 2. When patient values are fixed and known, the Informative model positions the doctor as a technician who provides facts while the patient chooses alone. 3. When patient values are unclear or conflicted, the Interpretive model positions the doctor as a counselor to clarify existing values. 4. When health values are open to dialogue and growth, the Deliberative model (the Emanuels' ideal) positions the doctor as a teacher and friend who engages in persuasion without coercion.">
+  <rect width="640" height="250" fill="#1a1f31"/>
+  <g font-family="Verdana, DejaVu Sans, sans-serif" text-anchor="middle">
+
+    <!-- Header / Root Question -->
+    <rect x="14" y="14" width="612" height="34" fill="#232838" stroke="#ffcf5a" stroke-width="2"/>
+    <text x="320" y="36" fill="#ffcf5a" font-size="13" font-weight="bold">Clinical Decision: How should the doctor engage the patient's values?</text>
+
+    <!-- Branch Lines from Root -->
+    <g stroke="#9aa3c7" stroke-width="2" fill="none">
+      <path d="M88 48 L88 68"/>
+      <path d="M242 48 L242 68"/>
+      <path d="M398 48 L398 68"/>
+      <path d="M552 48 L552 68"/>
+    </g>
+
+    <!-- Column 1: Paternalistic -->
+    <rect x="14" y="68" width="148" height="42" fill="#2d1c24" stroke="#ff6a6a" stroke-width="2"/>
+    <text x="88" y="86" fill="#ff6a6a" font-size="11" font-weight="bold">Emergency / Crisis</text>
+    <text x="88" y="101" fill="#e8a2a8" font-size="10">Patient incapacitated</text>
+
+    <path d="M88 110 L88 126" stroke="#ff6a6a" stroke-width="2" fill="none"/>
+    <path d="M84 122 L88 130 L92 122 Z" fill="#ff6a6a"/>
+
+    <rect x="14" y="130" width="148" height="74" fill="#232838" stroke="#ff6a6a" stroke-width="2.5"/>
+    <text x="88" y="150" fill="#ff6a6a" font-size="13" font-weight="bold">Paternalistic</text>
+    <text x="88" y="168" fill="#eef1ff" font-size="11">Doctor as Guardian</text>
+    <text x="88" y="185" fill="#9aa3c7" font-size="10">Patient assents</text>
+    <text x="88" y="197" fill="#9aa3c7" font-size="9.5">to expert choice</text>
+
+    <!-- Column 2: Informative -->
+    <rect x="168" y="68" width="148" height="42" fill="#1f2436" stroke="#cdd3e8" stroke-width="2"/>
+    <text x="242" y="86" fill="#cdd3e8" font-size="11" font-weight="bold">Fixed, Settled Values</text>
+    <text x="242" y="101" fill="#9aa3c7" font-size="10">Patient seeks facts</text>
+
+    <path d="M242 110 L242 126" stroke="#cdd3e8" stroke-width="2" fill="none"/>
+    <path d="M238 122 L242 130 L246 122 Z" fill="#cdd3e8"/>
+
+    <rect x="168" y="130" width="148" height="74" fill="#232838" stroke="#cdd3e8" stroke-width="2.5"/>
+    <text x="242" y="150" fill="#eef1ff" font-size="13" font-weight="bold">Informative</text>
+    <text x="242" y="168" fill="#eef1ff" font-size="11">Doctor as Technician</text>
+    <text x="242" y="185" fill="#9aa3c7" font-size="10">Patient decides alone</text>
+    <text x="242" y="197" fill="#9aa3c7" font-size="9.5">execution of choice</text>
+
+    <!-- Column 3: Interpretive -->
+    <rect x="324" y="68" width="148" height="42" fill="#192638" stroke="#4cc2ff" stroke-width="2"/>
+    <text x="398" y="86" fill="#4cc2ff" font-size="11" font-weight="bold">Unclear / Conflicted</text>
+    <text x="398" y="101" fill="#a8c4dd" font-size="10">Values need clarifying</text>
+
+    <path d="M398 110 L398 126" stroke="#4cc2ff" stroke-width="2" fill="none"/>
+    <path d="M394 122 L398 130 L402 122 Z" fill="#4cc2ff"/>
+
+    <rect x="324" y="130" width="148" height="74" fill="#232838" stroke="#4cc2ff" stroke-width="2.5"/>
+    <text x="398" y="150" fill="#4cc2ff" font-size="13" font-weight="bold">Interpretive</text>
+    <text x="398" y="168" fill="#eef1ff" font-size="11">Doctor as Counselor</text>
+    <text x="398" y="185" fill="#9aa3c7" font-size="10">Elucidate existing values</text>
+    <text x="398" y="197" fill="#9aa3c7" font-size="9.5">self-understanding</text>
+
+    <!-- Column 4: Deliberative -->
+    <rect x="478" y="68" width="148" height="42" fill="#143324" stroke="#46e07a" stroke-width="2"/>
+    <text x="552" y="86" fill="#46e07a" font-size="11" font-weight="bold">Open to Dialogue</text>
+    <text x="552" y="101" fill="#a8e6b8" font-size="10">Values can be grown</text>
+
+    <path d="M552 110 L552 126" stroke="#46e07a" stroke-width="2" fill="none"/>
+    <path d="M548 122 L552 130 L556 122 Z" fill="#46e07a"/>
+
+    <rect x="478" y="130" width="148" height="74" fill="#183627" stroke="#46e07a" stroke-width="3"/>
+    <text x="552" y="150" fill="#46e07a" font-size="13" font-weight="bold">Deliberative ★</text>
+    <text x="552" y="168" fill="#eef1ff" font-size="11">Teacher &amp; Friend</text>
+    <text x="552" y="185" fill="#a8e6b8" font-size="10">Moral self-development</text>
+    <text x="552" y="197" fill="#a8e6b8" font-size="9.5">persuasion, not force</text>
+
+    <!-- Footer Summary Note -->
+    <rect x="14" y="214" width="612" height="24" fill="#141824" stroke="#2d354d" stroke-width="1.5"/>
+    <text x="320" y="230" fill="#cdd3e8" font-size="11">The Emanuels defend the Deliberative model as the ideal: genuine care deliberates about what is worth wanting.</text>
+  </g>
+</svg>
