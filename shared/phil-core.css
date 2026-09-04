@@ -58,12 +58,12 @@ img[src$=".png"], img[data-pixel] { image-rendering: pixelated; }
   height: 100vh;
   max-width: var(--stage-max);
   margin: 0 auto;
-  padding: 12px;
-  gap: 12px;
+  padding: 10px;
+  gap: 10px;
 }
 
 /* ---- top bar: title + progress ---- */
-.phil-top { display: flex; flex-direction: column; gap: 8px; }
+.phil-top { display: flex; flex-direction: column; gap: 6px; }
 .phil-top__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-top__right { display: flex; align-items: center; gap: 12px; }
 .phil-reset { font-size: 9px; padding: 8px 10px; }
@@ -79,20 +79,24 @@ phil-narration { display: none; }
   margin: 0;
   letter-spacing: .5px;
 }
-.phil-tally { font-family: var(--pixel); font-size: 9px; color: var(--muted); white-space: nowrap; }
+/* slide counter + score tally sit together in the top-right; both are status
+   text, so they share one look */
+.phil-tally, .phil-counter { font-family: var(--pixel); font-size: 9px; color: var(--muted); white-space: nowrap; }
+.phil-counter { color: var(--ink); }
 
+/* Progress is a thin strip, not a second bar: the stage is the point of the
+   page, and every band above it is height the slide can't use. */
 .phil-progress {
   position: relative;
-  height: 18px;
+  height: 10px;
   background: var(--panel);
-  border: 3px solid var(--border);
-  box-shadow: 0 3px 0 var(--shadow);
+  border: 2px solid var(--border);
   overflow: hidden;
 }
 .phil-progress__fill {
   height: 100%;
   width: 0%;
-  background: repeating-linear-gradient(45deg, var(--accent) 0 8px, #38c466 8px 16px);
+  background: repeating-linear-gradient(45deg, var(--accent) 0 6px, #38c466 6px 12px);
   transition: width .25s steps(8);
 }
 
@@ -112,8 +116,10 @@ phil-slide {
   display: none;
   grid-template-columns: 1fr;
   align-content: safe center;          /* vertically center the content block */
-  gap: 24px;
-  padding: clamp(20px, 4vw, 52px);
+  gap: 20px;
+  /* The stage is capped at --stage-max, so 4vw on a wide monitor bought
+     nothing but a 52px frame around the words. Cap it low. */
+  padding: clamp(18px, 2.6vw, 32px);
   overflow: auto;
   animation: phil-in .18s ease-out;
 }
@@ -132,7 +138,7 @@ phil-slide.has-art { grid-template-columns: 1fr minmax(200px, 340px); align-item
 }
 .phil-slide__art img, .phil-slide__art svg { max-width: 100%; height: auto; max-height: 60vh; }
 
-phil-slide h1 { font-family: var(--pixel); font-size: clamp(18px, 3.6vw, 30px); color: var(--accent); line-height: 1.4; margin: 0 0 .7em; text-shadow: 2px 2px 0 var(--border); }
+phil-slide h1 { font-family: var(--pixel); font-size: clamp(18px, 3.6vw, 30px); color: var(--accent); line-height: 1.4; margin: 0 0 .55em; text-shadow: 2px 2px 0 var(--border); }
 phil-slide h2 { font-family: var(--pixel); font-size: clamp(13px, 2.4vw, 17px); color: var(--accent-3); margin: 1.2em 0 .5em; }
 phil-slide p, phil-slide li { max-width: 62ch; font-size: clamp(18px, 2.1vw, 23px); line-height: 1.65; }
 
@@ -192,7 +198,6 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
 /* ---- bottom bar: navigation ---- */
 .phil-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-nav { display: flex; gap: 10px; }
-.phil-counter { font-family: var(--pixel); font-size: 9px; color: var(--muted); }
 
 /* =====================================================================
    Focus
@@ -478,6 +483,24 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
 }
 
 /* =====================================================================
+   Short-viewport tier — laptops (1366x768 minus browser chrome) and
+   projectors. Width is plentiful; height is what runs out. Everything that
+   isn't the slide gets tighter, and the slide's own frame shrinks too.
+   ===================================================================== */
+@media (max-height: 820px) {
+  .phil-app { padding: 6px; gap: 6px; }
+  .phil-top { gap: 4px; }
+  .phil-progress { height: 8px; }
+  .phil-reset { padding: 7px 9px; }
+  .phil-sfx, .phil-audio { padding: 6px 8px; }
+  .phil-bottom .phil-btn { padding: 9px 13px; }
+  phil-slide { padding: clamp(14px, 2vw, 22px); gap: 14px; }
+  phil-slide h1 { font-size: clamp(16px, 3vw, 24px); margin-bottom: .45em; }
+  .phil-slide__art img, .phil-slide__art svg { max-height: 52vh; }
+  phil-slide .phil-figure img, phil-slide .phil-figure svg { max-height: 40vh; }
+}
+
+/* =====================================================================
    Phone tier — mobile-only refinements. Everything here lives inside a
    max-width query, so the desktop / projector layout is untouched.
    ===================================================================== */
@@ -491,8 +514,12 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
 
   /* let the title wrap to its own line instead of crushing the controls */
   .phil-top__row { flex-wrap: wrap; row-gap: 6px; }
+  /* counter + tally + two buttons share one 374px line: tighter gap and text,
+     and labels never break (a wrapped Reset costs a whole extra row) */
+  .phil-top__right { gap: 8px; flex-wrap: wrap; row-gap: 6px; }
+  .phil-reset { white-space: nowrap; }
   .phil-title { font-size: 12px; }
-  .phil-tally { font-size: 8px; }
+  .phil-tally, .phil-counter { font-size: 8px; }
   .phil-reset { font-size: 8px; padding: 7px 8px; }
 
   /* tighter slide padding reclaims horizontal room for text */

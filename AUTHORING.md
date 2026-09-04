@@ -445,9 +445,15 @@ green, which is how one lesson's active tab ended up white-on-green at 1.7:1.
 Run the audit after any of that:
 
 ```bash
-node tools/a11y-audit.mjs                  # walks every slide of every lesson
+node tools/a11y-audit.mjs                  # walks every slide of every lesson (minutes)
 node tools/a11y-audit.mjs --strict         # exit 1 if any issues (for CI/hooks)
+node tools/a11y-audit.mjs --quick          # index + one widget-rich lesson, walked (~30s)
+node tools/a11y-audit.mjs --page lessons/<topic>/<lesson>/index.html   # just the one you're writing
 ```
+
+`--quick` is the right loop for shell changes (`shared/phil-core.*`): every
+lesson wears the same chrome, so one walked lesson catches a regression there.
+Use `--page` while writing a lesson, and the full run before shipping it.
 
 Full findings, method and limits: [docs/accessibility.md](docs/accessibility.md).
 

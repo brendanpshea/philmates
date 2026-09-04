@@ -24,6 +24,13 @@
      node tools/a11y-audit.mjs --page lessons/bioethics/four-principles/index.html
      node tools/a11y-audit.mjs --json report.json  # full machine-readable dump
      node tools/a11y-audit.mjs --no-walk           # first slide only (fast)
+     node tools/a11y-audit.mjs --quick             # the index + one lesson, walked (~30s)
+
+   --quick is for shell work (phil-core.css / phil-core.js): the chrome is
+   identical on every lesson, so walking one is enough to catch a regression
+   there. It picks the lesson that uses the widest range of widgets, so the
+   widget markup gets covered too. It is not a substitute for the full run
+   before shipping a lesson.
 
    Dev-only, and the one thing in tools/ that needs npm — authoring and running
    lessons still requires no install at all. From the repo root:
@@ -49,6 +56,7 @@ const opt = n => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null
 
 const STRICT = flag('--strict');
 const WALK = !flag('--no-walk');
+const QUICK = flag('--quick');
 const ONLY = opt('--page');
 const JSON_OUT = opt('--json');
 
@@ -108,7 +116,16 @@ async function findPages() {
       if (existsSync(path.join(ROOT, rel))) pages.push(rel);
     }
   }
-  return pages;
+  if (!QUICK) return pages;
+  // One lesson: the one with the most distinct widget kinds, so a shell
+  // regression and the widest slice of widget markup are both seen once.
+  let best = null, kinds = -1;
+  for (const rel of pages.slice(1)) {
+    const html = await readFile(path.join(ROOT, rel), 'utf8');
+    const n = new Set(html.match(/<phil-[a-z-]+/g)).size;
+    if (n > kinds) { kinds = n; best = rel; }
+  }
+  return best ? ['index.html', best] : pages;
 }
 
 /* Freeze every animation and force all reveal-steps visible. Re-applied after

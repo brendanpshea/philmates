@@ -147,7 +147,10 @@ class PhilLesson extends HTMLElement {
     reset.setAttribute('aria-label', 'Reset this lesson’s progress');
     reset.onclick = () => this._confirmReset();
     const right = el('div', 'phil-top__right');
-    right.append(this._tally);
+    // Position and score live together up here so the bottom bar is nothing
+    // but navigation.
+    this._counter = el('span', 'phil-counter', '');
+    right.append(this._counter, this._tally);
     // Icon-only toggles: the emoji swap is the visual state, aria-pressed is the
     // programmatic one. title alone is the weakest naming source and says nothing
     // about on/off.
@@ -192,7 +195,6 @@ class PhilLesson extends HTMLElement {
     const bottom = el('footer', 'phil-bottom');
     this._prevBtn = el('button', 'phil-btn', '◀ Back');
     this._nextBtn = el('button', 'phil-btn phil-btn--primary', 'Next ▶');
-    this._counter = el('span', 'phil-counter', '');
     this._prevBtn.onclick = () => this.prev();
     this._nextBtn.onclick = () => this.next();
     const fs = el('button', 'phil-btn phil-btn--ghost', '⛶');
@@ -201,7 +203,6 @@ class PhilLesson extends HTMLElement {
     fs.onclick = () => this.toggleFullscreen();
     bottom.append(
       this._wrap('phil-nav', [this._prevBtn]),
-      this._counter,
       this._wrap('phil-nav', [fs, this._nextBtn])
     );
 
