@@ -12,3 +12,4 @@ temp/**
 .env
 # Dev-only: tools/a11y-audit.mjs asks for playwright + axe-core.
 node_modules/
+scratch/
