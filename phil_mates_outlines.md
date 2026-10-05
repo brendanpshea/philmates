@@ -2258,3 +2258,483 @@ on slide 13), the time of a killing, the privacy branch, and
 
 **Mix:** 2 graded (1 MCQ, 1 checkset), 5 polls, 1 viz, 2 comparisons, belief
 probe. Delete the unused PNGs to trim the SCORM zip.
+
+---
+
+## Bioethics: Germline Gene Editing — "The Villa Diodati Clinic"  *(built)*
+
+- **Path:** `lessons/bioethics/germline-editing/`
+- **Lesson id:** `germline-editing`
+- **Subject (catalog):** `Germline Gene Editing`
+- **Topic:** Bioethics (genetics). Pitched at "explain it like I'm twelve": a
+  few arguments taught well, not a survey.
+- **Approach:** Teach the somatic/germline distinction first, because every
+  argument depends on it. Then a three-item menu (fix a disease, lower a risk,
+  add an advantage) turns "is germline editing OK?" into "where do you stop?"
+  Two arguments for and three against, each with its own slide, picture, and
+  check. No verdict is graded.
+- **Frame:** A few years from now, Mary and Percy arrive at a clinic on Lake
+  Geneva run by Dr. Byron. The names nod to the summer of 1816 that produced
+  *Frankenstein*; the novel appears only in the last line of the recap. No
+  monster or mad-scientist imagery, since that would argue the case against
+  editing before the student hears it.
+- **The case:** Both Mary and Percy have cystic fibrosis, so every embryo of
+  theirs inherits two faulty copies. That is the rare situation where embryo
+  screening cannot help, which is why editing is on the table at all.
+- **Recurring devices:** the family tree (an edit, then a mistake, travelling
+  down four generations) and the three-item menu (seal and flask colors match
+  across `byron-menu` and `three-envelopes`).
+- **Thinkers and cases:** Joel Feinberg (open future, relic card); He Jiankui
+  (2018, relic card); Casgevy as the somatic anchor. Mary voices the objections
+  and Percy the case for.
+- **Left out on purpose:** the disability-rights (expressivist) critique,
+  Sandel's giftedness argument, Savulescu's procreative beneficence,
+  mitochondrial replacement, base and prime editing. Eugenics history gets one
+  bullet on the fairness slide. The disability critique is the best candidate
+  for an optional `<phil-branch>` later.
+- **Cross-references:** `patient-autonomy` (consent), `four-principles`
+  (beneficence, justice), `moral-status` (embryos, which this lesson brackets),
+  `harm-principle` (parental liberty).
+
+### Accuracy note (real, not invented)
+- **Cystic fibrosis** is autosomal recessive (CFTR). Two affected parents pass a
+  faulty copy each to every child. Most men with CF are infertile without
+  sperm retrieval and IVF; the story already assumes IVF. CFTR modulators
+  (2019 onward) help roughly 90% of patients, hence "most people."
+- **Casgevy** (exagamglogene autotemcel): UK approval November 2023, FDA
+  December 2023, for sickle cell disease in patients 12 and older. US list
+  price about $2.2 million.
+- **CRISPR-Cas9** as an editing tool: Jinek, Doudna, Charpentier et al.,
+  *Science* (2012).
+- **He Jiankui** announced the twins in November 2018 (CCR5, HIV resistance). A
+  third child was born later. Sentenced December 2019 to three years. The data
+  he presented indicated mosaicism and unintended edits; the slide says
+  "suggested."
+- **Law:** Baylis et al. (*The CRISPR Journal*, 2020) surveyed 96 countries; 75
+  prohibit heritable genome editing and none explicitly permits it. In the US
+  an appropriations rider (since 2015) bars the FDA from reviewing such
+  applications. **Re-check before each term.**
+- **Open future:** Feinberg, "The Child's Right to an Open Future" (1980).
+  Applied to genetics by Dena Davis (1997).
+- **Polygenic traits:** adult height is associated with over 12,000 variants
+  (Yengo et al., *Nature*, 2022). The slide says "thousands of genes."
+- **Low-cholesterol variant:** natural loss-of-function variants in PCSK9
+  lower LDL and heart disease risk. Menu item 2 is modeled on this.
+- **Growth hormone:** FDA approved it for idiopathic short stature in 2003.
+- **Sterilization:** more than 60,000 people under laws in about 30 US states.
+- ***Frankenstein*:** conceived in June 1816 during the Shelleys' visits to
+  Byron's Villa Diodati; published 1818.
+- **Simplification to know about:** a germline edit is not inherited by
+  *every* descendant, since each child gets half of a parent's DNA. The ripple
+  widget marks descendants "may inherit" for that reason.
+
+### Learning goals
+- Distinguish **somatic** from **germline** editing by which cells change, and
+  explain why only germline edits are **heritable**.
+- Explain why embryo screening cannot help a couple who both have a recessive
+  disease.
+- Define **treatment** and **enhancement**, and say why middle cases (vaccines,
+  lowering a risk) are hard to sort.
+- State two arguments for germline editing (preventing suffering; parents
+  already shape children) and three against (safety and irreversibility;
+  consent and the open future; fairness).
+- Tell which objections better science or funding could answer (safety,
+  fairness) and which would remain (consent).
+
+### Slide-by-slide (33)
+
+**Act 0 — Arrival**
+1. **[T]** Title (`villa-diodati`).
+2. **[P]** Belief probe (statements below).
+3. **[T]** Meet Mary and Percy (both portraits in the body). What CF is. `reveal`.
+4. **[T]** Why not pick a healthy embryo? (`all-the-same`). Gene pairs, embryo
+   screening, and why it fails here. `reveal`.
+
+**Act 1 — Two kinds of edit**
+5. **[T]** DNA is a recipe book (`recipe-book`). Gene, gene editing, CRISPR.
+6. **[T]** Two kinds of cells (`two-cells`). Somatic, germline, heritable.
+7. **[T]** Somatic editing is already here (`somatic-infusion`). Casgevy.
+8. **[T]** An edit that travels (`family-tree`). Promise and worry.
+9. **[V]** `<phil-ripple>`: somatic vs. germline over four generations.
+10. **[C]** Somatic vs. germline.
+11. **[Q · Checkset]** Which edits could be inherited? (Distractor to watch: a
+    newborn's liver cells. Young patient does not mean germline.)
+
+**Act 2 — Dr. Byron's menu**
+12. **[T]** Dr. Byron (`dr-byron`). The law today; the story supposes it changed.
+13. **[T]** Three things on the menu (`byron-menu`). Reality check on item 3.
+14. **[T]** Treatment or enhancement? Vaccines and growth hormone.
+15. **[V]** `<phil-line>`: six edits on a treat/enhance scale, then draw a line.
+16. **[Q · MCQ]** Why is a vaccine a puzzle for the line? (✓ It prevents disease
+    by improving a healthy body.)
+
+**Act 3 — The case for**
+17. **[T]** Prevent suffering (`easy-breath`). Flags the word "safely."
+18. **[T]** Parents already choose (`already-choosing`).
+19. **[C]** Shaping by upbringing vs. by germline edit, with Percy's reply.
+20. **[Q · MCQ]** What must a critic show to defeat Percy's comparison? (✓ A
+    difference that matters morally.)
+21. **[Poll]** Should they be allowed item 1, on the case for alone?
+
+**Act 4 — The case against**
+22. **[T]** Is it safe? (`relic-2018`). He Jiankui.
+23. **[T]** It can't be taken back (`ink-in-the-spring`). Off-target edits.
+24. **[V]** `<phil-ripple mistake>`: the same tree with an error.
+25. **[T]** Nobody asked the child (`open-doors`). Consent, and Percy's reply.
+26. **[T]** The right to an open future (`relic-feinberg`).
+27. **[T]** Is it fair? (`two-staircases`). Cost, inherited gaps, sterilization
+    history, Percy's reply.
+28. **[Q · Cloze]** Four speakers; pick the argument each uses.
+29. **[Q · MCQ]** If editing were perfectly safe and free, which objection
+    remains? (✓ Consent.)
+
+**Act 5 — The decision**
+30. **[T]** Three envelopes (`three-envelopes`). The five arguments in brief.
+31. **[V]** `<phil-verdict>`: Allow / Not yet / Never per item, the arguments
+    that mattered, and a reflection on how they fit.
+32. **[P]** Belief review.
+33. **[T]** Recap (`villa-diodati`), ending on *Frankenstein*.
+
+### Belief probe
+1. Parents should be free to use medicine to prevent a serious disease in their
+   future child.
+2. Curing a disease and making a healthy child "better" are morally different
+   things.
+3. A change that can never be undone should not be made, however good the reason.
+4. It is wrong to make a permanent change to a person who cannot agree to it.
+5. If only rich families could afford a new medical technology, it would be
+   better if nobody had it.
+
+**Mix:** 5 graded (3 MCQ, 1 checkset, 1 cloze), 1 poll, 4 viz (3 widgets, one
+used twice), 2 comparisons, belief probe. Widgets live in
+`assets/germline.js`. The four `sheet-*.png` source grids are unused by the
+slides and add about 5 MB to the SCORM zip.
+
+---
+
+## Computing & AI Ethics: Digital Cash — "Why Supervillains Prefer to Be Paid in Crypto"  *(built)*
+
+- **Path:** `lessons/ai-ethics/villains-ledger/`
+- **Lesson id:** `villains-ledger`
+- **Top-bar title:** `The Villain's Ledger` · **Subject:** `Cryptocurrency`
+- **Slot:** Week 7, Lecture 5 (Digital Cash). Replaces the placeholder "The
+  Dragon's Ledger" in `docs/ai-ethics-semester-plan.md`.
+- **Narrative frame:** You are the new intern in Accounts on Calamity Island.
+  **Doctor Calamity** has stolen the Great Harbor Duck, a three-storey rubber
+  duck, and wants a billion dollars for it. **Penny**, Chief Henchperson of
+  Accounts, has to explain why getting paid is harder than stealing the duck.
+  Cash weighs ten tonnes. The bank asks who she is and can say no. Then Penny
+  finds a kind of money with nobody in the middle. The third character is
+  **Amara**, a reporter whose bank account was frozen for her reporting. She
+  wants exactly the same four things from a payment that the Doctor wants.
+- **Register:** comic for the lair, plain for the real world. The hostage is a
+  duck so the jokes are safe. The real cases (2008, frozen accounts,
+  hyperinflation, hospital ransomware) are told straight.
+
+### The thesis
+
+A bank does four jobs: it keeps the list, it checks who you are, it can undo or
+refuse a payment, and a government stands behind the money. Cryptocurrency
+removes all four on purpose. Each major ethical complaint is what one missing
+job looks like from the outside:
+
+| Removed on purpose | What had to replace it | The complaint |
+|---|---|---|
+| A keeper who decides which list is real | A contest that is expensive to win (proof of work) | Energy use |
+| A government standing behind the value | Nothing. The price is what the next buyer pays | Speculation and gambling |
+| Someone who can undo or refuse a payment | Nothing. Whoever has the key has the coins | Scams, lost keys, ransomware |
+| Someone who checks who you are | A public list of pseudonyms | Crime, and also total exposure once a name leaks |
+
+The second half of the thesis is the part students should leave with: **every
+fix that works brings a keeper back.** Stablecoins fix the price by adding a
+company that holds dollars and can freeze accounts. Exchanges fix lost keys by
+holding them for you, which is a bank. ID checks go after crime by adding a doorman, and the doorman often misses it.
+A system that cannot stop Doctor Calamity cannot stop Amara's government either,
+and a system that can stop one can stop the other.
+
+### Where the claims need care (teach these, don't hide them)
+
+- **Say "Bitcoin," not "cryptocurrency," on the energy slide.** Bitcoin is more
+  than half of all crypto by value, it runs on proof of work, and it uses
+  nearly all of the electricity. Most *other* coins, Ethereum included, use
+  proof of stake. So the defensible sentence is: "The biggest cryptocurrency
+  by far runs on proof of work, and there is no realistic path to changing
+  it." The reason it won't change is the thesis again. A rule change needs
+  nearly everyone to agree, nobody is in charge to make them, and miners have
+  spent billions on machines that do nothing else.
+- **Never say "most crypto is crime."** Measured illicit activity is under 1%
+  of traceable volume, and a student can look that up in a minute. The claim
+  that holds is about what crypto is *for*. See "The three-piles claim" below.
+- **The list is public.** Pseudonymous is not anonymous. The FBI recovered most
+  of the Colonial Pipeline ransom in 2021 by following it.
+
+### Skepticism about the sympathetic cases
+
+The frame gives Amara the same wish list as the Doctor, which risks implying
+crypto serves her as well as it serves him. It has not. The slide "Did It Help
+the People Shut Out?" makes four points:
+
+- **Technology.** Of the 1.3 billion adults with no account, about 530 million
+  have a smartphone (World Bank Global Findex 2025). So roughly six in ten do
+  not, and the most common reason people give for having no account is having
+  too little money, which crypto does nothing about.
+- **Volatility.** People living week to week cannot hold savings that may
+  halve.
+- **Who actually used it.** In El Salvador fewer than 60% of people with phones
+  downloaded the government wallet, only 20% kept using it after spending the
+  $30 bonus, and use was concentrated among the banked, educated, young, and
+  male (Alvarez, Argente, and Van Patten, NBER 2022).
+- **Cashing out needs a keeper.** Coins have to be traded for local money at an
+  exchange, and a government can cut exchanges off. Nigeria's central bank
+  told banks to close crypto-related accounts on 5 February 2021. The bank said
+  this restated a 2017 rule, so the slide gives the date and does not claim it
+  was aimed at the protesters.
+
+The muted line adds that crypto's own keepers fail: FTX collapsed in November
+2022 with about $8 billion of customer money missing, and its founder was
+sentenced to 25 years in March 2024.
+
+### The three-piles claim (replaces "predominantly illicit")
+
+Ask one question: **what can you do with crypto that you can't do with a bank
+card?** There are two answers, and each one has a pile.
+
+1. **You can bet on its price.** This is the big pile. Most people who own
+   crypto hold it hoping it goes up. In the Federal Reserve's household survey
+   for 2025, nearly 1 US adult in 10 held crypto as an investment and about 1
+   in 50 used it to pay for anything.
+2. **You can make a payment nobody is able to stop.** That only matters to
+   someone a keeper *would* stop. Some of those people are criminals: ransomware
+   gangs, darknet sellers, governments under sanctions. Some are people like
+   Amara, or savers in a country whose money is collapsing.
+3. **Everyday buying is the small pile.** For a person with a working bank
+   account, crypto is slower, the price jumps around, and a mistake can't be
+   undone. So almost nobody buys groceries with it. El Salvador made bitcoin
+   legal money in 2021, few people used it, and the law was reversed in 2025.
+
+The sentence for students: *crypto is not mostly crime. It is mostly betting.
+The part that is used as money is used mainly by people a bank would turn
+away, and that group includes both the worst customers and some of the most
+sympathetic ones.*
+
+This is deliberately a claim about comparative advantage, not about totals. It
+does not rank pile two against pile three, because nobody can measure that
+well, and the art shows them the same size.
+
+### Accuracy note (figures checked 2026-10-05)
+
+Checked against the sources named. Re-check the three marked *moving* each
+term.
+
+- **Cash weight.** A US banknote weighs about 1 g, so $1 million in $100 bills
+  is about 10 kg and $1 billion is about ten tons.
+- **Bitcoin's origin.** Paper posted 31 Oct 2008. First block mined 3 Jan 2009,
+  carrying the *Times* headline "Chancellor on brink of second bailout for
+  banks." Satoshi's last known email is dated 23 April 2011.
+- **WikiLeaks.** PayPal cut off donations on 3 Dec 2010. Visa and Mastercard
+  followed on 7 Dec.
+- **Nigeria.** A federal court froze 20 accounts tied to the #EndSARS protests
+  on 4 Nov 2020, at the central bank's request and without the account holders
+  present. The stated ground was suspected terrorism financing. Nobody had been
+  convicted, which is all the slide claims.
+- **Zimbabwe.** Hanke and Kwok (2009) estimate that in mid-November 2008 prices
+  doubled every 24.7 hours. The 100 trillion dollar note is real.
+- **James Howells.** About 8,000 bitcoins, drive thrown out in 2013, Newport,
+  Wales. UK courts refused his claim to dig up the landfill in January and
+  March 2025. Accounts differ on who threw it out, so the slide uses the
+  passive.
+- **Electricity** (*moving*). Cambridge's index put Bitcoin at about 138 TWh a
+  year in its April 2025 report and nearer 175 TWh since. Poland used about 158
+  to 171 TWh in 2024 depending on what is counted. "About as much as Poland"
+  holds across that range.
+- **Bitcoin's share** (*moving*). About 58 to 59% of all crypto by market value
+  in early October 2026.
+- **Price falls.** Bitcoin fell 73% over 2018 and 64% over 2022.
+- **Who uses it for what** (*moving*). Federal Reserve household survey for
+  2025: 10% of US adults used crypto, nearly 1 in 10 held it as an investment,
+  and 2% used it to buy something or make a payment. For 2024 the figures were
+  8%, 7%, and 2%.
+- **El Salvador.** Legal tender from September 2021. The legislature removed
+  that status on 29 January 2025 as a condition of a $1.4 billion IMF loan. In
+  a 2024 survey 92% of Salvadorans said they did not use bitcoin.
+- **Ransomware.** Chainalysis: $1.25 billion in 2023 (first reported as $1.1
+  billion), about $813 million in 2024 (later raised to about $892 million),
+  about $820 million in 2025. The London case is the June 2024 attack on the
+  lab company Synnovis: NHS England counted 10,152 outpatient appointments and
+  1,710 procedures postponed.
+- **Colonial Pipeline.** 75 bitcoins paid in early May 2021. The Justice
+  Department announced the seizure of 63.7 of them on 7 June 2021.
+- **Crime's share.** Chainalysis 2026 report: illicit addresses received at
+  least $154 billion in 2025, which is still under 1% of the volume it can
+  attribute.
+- **Stablecoin freezes.** Tether froze about $3.3 billion across some 7,000
+  addresses between 2023 and 2025. Circle froze about $109 million.
+- **Winner.** "Do Artifacts Have Politics?" (1980). Joerges, "Do Politics Have
+  Artefacts?" (1999) disputes the low-bridges story.
+
+**One finding cuts against the doorman slide.** Chainalysis reports that 84% of
+illicit volume in 2025 moved in stablecoins, the dollar-tied coins whose
+issuers can freeze accounts. So a doorman exists there and criminals use those
+coins anyway, because freezes come case by case and after the fact. This is
+part of the worry, and the deck says so: the doorman slide, the poll, and
+Build-a-Coin all say a doorman *can* stop a ransom if it is caught, never that
+one does.
+
+### Learning goals
+
+- Explain in plain words what a ledger is, what double spending is, and how a
+  blockchain gets agreement without a keeper (copies, fingerprints, proof of
+  work, keys).
+- Name the real worries that motivated it: bank failure, frozen accounts,
+  and inflation.
+- Say accurately what crypto is used for: mostly betting, rarely everyday
+  buying, and as money mainly by people a keeper would turn away.
+- Trace each ethical complaint back to the design choice that produces it.
+- Tell a growing pain from a built-in consequence, and say what each proposed
+  fix gives back.
+- Apply Winner's claim that designs have politics, and decide where they stand
+  on a payment system nobody can stop.
+
+### Slide-by-slide (32)
+
+**Act 0 — The ransom problem**
+1. **[T]** Title and the duck (`harbor-duck`). Stealing it was the easy part.
+2. **[P]** Belief probe (start).
+3. **[T]** Option one: cash (`cash-pallet`). Ten kilograms per million. Villains
+   get caught at the pickup.
+4. **[T]** Option two: the bank (`bank-counter`). It knows who you are, it can
+   refuse, it can freeze, it can undo.
+5. **[Q · MCQ]** Why can't she use a bank transfer? (Answer: the bank keeps the
+   record and can refuse or reverse it. Distractors: transfers are too slow /
+   banks can't move that much / banks charge too much.)
+
+**Act 1 — Money is a list**
+6. **[T]** Most money is a list (`penny`). A dollar in your account is a line in
+   a bank's records. Paying someone changes two lines.
+7. **[T]** The keeper's four jobs (`two-ledgers`). Keep the list, check who you
+   are, undo or refuse, and a government behind it.
+
+**Act 2 — Why some people wanted out** (plain register)
+8. **[T]** The keeper can fail (`bailout`). 2008.
+9. **[T]** The keeper can say no to the wrong people (`frozen-card`). Amara,
+   then WikiLeaks and Nigeria.
+10. **[T]** The keeper can print (`wheelbarrow`). Hyperinflation.
+11. **[T]** Satoshi's proposal (`relic-satoshi`). Electronic cash with no keeper.
+
+**Act 3 — How it works**
+12. **[T]** The copy problem. A file can be copied, so a digital coin could be
+    spent twice. A keeper solves this by having the only list.
+13. **[T]** Everyone keeps the list (`two-ledgers` again). Thousands of
+    identical public copies.
+14. **[T]** Pages and fingerprints. A block is a page of payments. A hash is a
+    fingerprint of a page, and each page includes the fingerprint of the one
+    before it.
+15. **[V]** `<phil-chain>`: change one old payment and watch every later
+    fingerprint stop matching.
+16. **[T]** Who adds the next page? (`cardboard-crowd`). Voting fails because
+    fake voters are free.
+17. **[T]** A lottery paid for in electricity (`mining-hall`). Proof of work.
+    The winner adds the page and is paid in new coins.
+18. **[T]** Keys, and no undo (`lost-key`). No names and no accounts. Whoever
+    has the secret key has the coins. Lost keys and scam payments stay lost.
+19. **[Q · MCQ]** Why does proof of work have to be expensive? (Answer: so that
+    faking a majority costs more than anyone can pay. Distractors: the math is
+    just hard / to slow payments down / to keep coins scarce.)
+
+**Act 4 — The bill arrives**
+20. **[T]** Penny's report (`doctor-calamity`). No pickup, no questions, no
+    refusal, no undo. It is the same list Amara wanted.
+21. **[T]** Energy (`power-town`). The electricity is the lock. Better machines
+    don't lower it, because the contest gets harder to match. Last bullet:
+    other coins found another way, and Bitcoin has no one who could order the
+    switch.
+22. **[T]** Price (`coaster`). Nobody stands behind it, so it acts like a bet.
+23. **[T]** What is it actually used for? (`three-piles`). The three-piles
+    claim.
+24. **[T]** Ransomware (`locked-screen`). No jokes. Before crypto, ransom had a
+    pickup problem.
+25. **[T]** The list is public (`glass-trail`). Colonial Pipeline. Why "most
+    crypto is crime" is wrong, in one bullet.
+26. **[V]** `<phil-coinlab>` Build-a-Coin.
+27. **[Q · Checkset]** Built in or growing pain? Check every problem that comes
+    from having no keeper.
+
+**Act 5 — The door with no doorman**
+28. **[C]** No doorman vs. doorman (`same-door`, `doorman-returns`). Every fix
+    that works brings a keeper back.
+29. **[T]** Do designs have politics? (`relic-winner`).
+30. **[Poll]** Would you take the doorman away?
+31. **[P]** Belief probe (revisit).
+32. **[T]** Recap (`lair`). The duck goes home. The Doctor brags with a
+    photo that shows her secret key, loses the coins, and is found.
+
+**Cut to reach 32:** remittance fees and the unbanked, surveillance and the
+cypherpunks, the four-jobs cloze, the "which worry" poll, the proof-of-stake
+slide (now one bullet), stablecoins and exchanges as separate fixes (now inside
+Build-a-Coin and the door comparison), and the Lessig callback.
+
+### Belief-probe statements (start; revisited at end)
+
+1. A payment system should be able to block payments to criminals.
+2. No company or government should be able to stop me from spending my own
+   money.
+3. If a tool is used mostly for gambling and crime, that is the fault of the
+   users and not the tool.
+4. Adults should be free to bet their savings on anything they like.
+5. Using a country's worth of electricity is fine if the people using it pay
+   the bill.
+
+Statements 1 and 2 cannot both be fully true. Most students will agree with
+both at the start, which is the point of asking again at the end.
+
+### Interactive viz to build
+
+- **`<phil-chain>` (ungraded).** Four pages, each with three payments, its own
+  fingerprint, and the previous page's fingerprint. The student edits one
+  amount on page two. That page's fingerprint changes, and pages three and four
+  flag a mismatch. A "redo the work" button repairs one page at a time while a
+  counter shows the honest network adding pages faster. Fingerprints are a toy
+  hash shown as four colored blocks plus a short code, so color is never the
+  only signal.
+- **`<phil-coinlab>` Build-a-Coin (ungraded, the signature widget).** Four
+  switches, one per keeper job: who keeps the list (one keeper / everyone), who
+  can join (ID checked / anyone), can a payment be stopped or undone (yes /
+  no), what stands behind the price (a government / a company's reserves /
+  nothing). Read-outs: electricity, price swings, "can Doctor Calamity get
+  paid?", "can Amara get paid?", and "who do you have to trust?". Presets load
+  a bank account, Bitcoin, a proof-of-stake coin, and a dollar stablecoin. The
+  student is asked to find a setting where Amara gets paid and the Doctor does
+  not. There isn't one, and the widget says why in one sentence: both readings
+  come from the same switch.
+
+### Art assets
+
+Twenty PNGs in five sheets and two relic SVGs. Eighteen PNGs are placed in
+the 32-slide plan; `penny` and `mining-hall` are each used once. Prompts, cast, and rules are in
+`lessons/ai-ethics/villains-ledger/prompts.md`, with notes on where the
+panels differ from the prompts.
+
+### Sources to cite (so nothing is invented)
+
+- Nakamoto, "Bitcoin: A Peer-to-Peer Electronic Cash System" (2008).
+- Chaum, "Blind Signatures for Untraceable Payments" (1983).
+- Hughes, "A Cypherpunk's Manifesto" (1993).
+- Douceur, "The Sybil Attack" (2002), for why voting fails.
+- Winner, "Do Artifacts Have Politics?" *Daedalus* 109(1), 1980. Joerges, "Do
+  Politics Have Artefacts?" (1999) for the dispute.
+- Lessig, *Code and Other Laws of Cyberspace* (1999).
+- Schneier, "There's No Good Reason to Trust Blockchain Technology," *Wired*
+  (2019): the technology moves trust, it does not remove it.
+- Cambridge Bitcoin Electricity Consumption Index. Chainalysis Crypto Crime
+  Reports. BIS Bulletin 69. World Bank Global Findex and Remittance Prices
+  Worldwide. Alvarez, Argente and Van Patten on El Salvador (NBER, 2022).
+
+### As built
+
+33 slides: the 32 listed above plus "Did It Help the People Shut Out?",
+added after "What Is It Actually Used For?". Two graded MCQs and one checkset, one poll, one
+comparison, the belief probe, and both widgets (`assets/ledger.js`). In
+`<phil-coinlab>` the "who can join" switch was dropped: three switches were
+enough to make the point, and a keeper holding the only list forces the
+"can a payment be stopped" switch to Yes. The figures on the slides were
+checked on 2026-10-05; see the accuracy note.

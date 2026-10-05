@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Satoshi Nakamoto — a folded newspaper sealed inside a stone block, with a chain link leading off each side">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#ffcf5a"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#ffcf5a"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="38" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="44" y="93" width="4" height="4" fill="#ffcf5a"/>
+
+  <!-- chain links leading off each side -->
+  <rect x="7" y="50" width="11" height="8" fill="none" stroke="#ffcf5a" stroke-width="2"/>
+  <rect x="14" y="52" width="10" height="4" fill="#c79a2e"/>
+  <rect x="62" y="50" width="11" height="8" fill="none" stroke="#ffcf5a" stroke-width="2"/>
+  <rect x="56" y="52" width="10" height="4" fill="#c79a2e"/>
+
+  <!-- stone block -->
+  <rect x="20" y="32" width="40" height="44" fill="#11131f"/>
+  <rect x="22" y="34" width="36" height="40" fill="#4a5278"/>
+  <rect x="22" y="34" width="36" height="3" fill="#6b74a0"/>
+  <rect x="22" y="71" width="36" height="3" fill="#343b5c"/>
+  <rect x="55" y="37" width="3" height="34" fill="#343b5c"/>
+  <!-- corner bolts -->
+  <rect x="24" y="38" width="3" height="3" fill="#ffcf5a"/>
+  <rect x="51" y="38" width="3" height="3" fill="#ffcf5a"/>
+  <rect x="24" y="67" width="3" height="3" fill="#ffcf5a"/>
+  <rect x="51" y="67" width="3" height="3" fill="#ffcf5a"/>
+
+  <!-- window cut into the block -->
+  <rect x="28" y="41" width="24" height="26" fill="#11131f"/>
+
+  <!-- folded newspaper inside: bars stand in for print -->
+  <rect x="30" y="43" width="20" height="22" fill="#eef1ff"/>
+  <rect x="30" y="53" width="20" height="1" fill="#aab2d4"/>
+  <rect x="32" y="45" width="16" height="3" fill="#1d2235"/>
+  <rect x="32" y="50" width="7" height="1" fill="#6b74a0"/>
+  <rect x="41" y="50" width="7" height="1" fill="#6b74a0"/>
+  <rect x="32" y="56" width="7" height="1" fill="#6b74a0"/>
+  <rect x="32" y="58" width="7" height="1" fill="#6b74a0"/>
+  <rect x="32" y="60" width="5" height="1" fill="#6b74a0"/>
+  <rect x="41" y="56" width="7" height="6" fill="#aab2d4"/>
+
+  <!-- glow -->
+  <rect x="18" y="30" width="44" height="48" fill="none" stroke="#ffcf5a" stroke-width="1" opacity="0.4"/>
+</svg>

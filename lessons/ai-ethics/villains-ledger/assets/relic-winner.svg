@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Langdon Winner — a low stone bridge over a road, a tall bus stopped in front of it and a small car passing underneath">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#ff6ad5"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#ff6ad5"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#ff6ad5"/>
+  <rect x="38" y="93" width="4" height="4" fill="#ff6ad5"/>
+  <rect x="44" y="93" width="4" height="4" fill="#ff6ad5"/>
+
+  <!-- sky -->
+  <rect x="7" y="21" width="66" height="55" fill="#11131f"/>
+  <rect x="14" y="27" width="2" height="2" fill="#eef1ff"/>
+  <rect x="30" y="24" width="1" height="1" fill="#eef1ff"/>
+  <rect x="58" y="29" width="2" height="2" fill="#eef1ff"/>
+  <rect x="66" y="24" width="1" height="1" fill="#eef1ff"/>
+
+  <!-- road -->
+  <rect x="7" y="76" width="66" height="11" fill="#2b3252"/>
+  <rect x="10" y="81" width="6" height="1" fill="#ffcf5a"/>
+  <rect x="22" y="81" width="6" height="1" fill="#ffcf5a"/>
+  <rect x="34" y="81" width="6" height="1" fill="#ffcf5a"/>
+  <rect x="46" y="81" width="6" height="1" fill="#ffcf5a"/>
+  <rect x="58" y="81" width="6" height="1" fill="#ffcf5a"/>
+
+  <!-- low stone bridge: deck, parapet, pier -->
+  <rect x="42" y="52" width="31" height="8" fill="#8a93b8"/>
+  <rect x="42" y="52" width="31" height="2" fill="#aab2d4"/>
+  <rect x="42" y="48" width="31" height="4" fill="#6b74a0"/>
+  <rect x="45" y="49" width="3" height="2" fill="#11131f"/>
+  <rect x="51" y="49" width="3" height="2" fill="#11131f"/>
+  <rect x="57" y="49" width="3" height="2" fill="#11131f"/>
+  <rect x="63" y="49" width="3" height="2" fill="#11131f"/>
+  <rect x="69" y="49" width="3" height="2" fill="#11131f"/>
+  <rect x="42" y="60" width="5" height="16" fill="#6b74a0"/>
+  <rect x="42" y="60" width="2" height="16" fill="#8a93b8"/>
+  <!-- stone joints -->
+  <rect x="50" y="55" width="1" height="4" fill="#6b74a0"/>
+  <rect x="58" y="55" width="1" height="4" fill="#6b74a0"/>
+  <rect x="66" y="55" width="1" height="4" fill="#6b74a0"/>
+
+  <!-- clearance line: the height of the gap, carried left across the bus -->
+  <rect x="9" y="60" width="3" height="1" fill="#ff6ad5"/>
+  <rect x="15" y="60" width="3" height="1" fill="#ff6ad5"/>
+  <rect x="21" y="60" width="3" height="1" fill="#ff6ad5"/>
+  <rect x="27" y="60" width="3" height="1" fill="#ff6ad5"/>
+  <rect x="33" y="60" width="3" height="1" fill="#ff6ad5"/>
+  <rect x="38" y="60" width="3" height="1" fill="#ff6ad5"/>
+
+  <!-- small car passing underneath -->
+  <rect x="53" y="70" width="14" height="5" fill="#46e07a"/>
+  <rect x="56" y="66" width="8" height="4" fill="#46e07a"/>
+  <rect x="57" y="67" width="3" height="3" fill="#11131f"/>
+  <rect x="61" y="67" width="2" height="3" fill="#11131f"/>
+  <rect x="55" y="74" width="3" height="3" fill="#050610"/>
+  <rect x="62" y="74" width="3" height="3" fill="#050610"/>
+
+  <!-- tall bus stopped in front of the bridge -->
+  <rect x="11" y="49" width="27" height="26" fill="#4cc2ff"/>
+  <rect x="11" y="49" width="27" height="2" fill="#8fdcff"/>
+  <rect x="13" y="53" width="5" height="6" fill="#11131f"/>
+  <rect x="20" y="53" width="5" height="6" fill="#11131f"/>
+  <rect x="27" y="53" width="5" height="6" fill="#11131f"/>
+  <rect x="34" y="53" width="4" height="9" fill="#11131f"/>
+  <rect x="11" y="66" width="27" height="2" fill="#2f8fc4"/>
+  <rect x="15" y="73" width="5" height="5" fill="#050610"/>
+  <rect x="29" y="73" width="5" height="5" fill="#050610"/>
+  <rect x="37" y="70" width="2" height="2" fill="#ffcf5a"/>
+</svg>

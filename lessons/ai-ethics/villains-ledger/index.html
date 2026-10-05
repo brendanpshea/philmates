@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Supervillains Prefer to Be Paid in Crypto · PhilMates</title>
+  <meta name="description" content="How cryptocurrency works, why some people wanted money with no bank in the middle, and why its energy use, its gambling, and its usefulness for ransom all follow from that design, told through a supervillain who can't work out how to get paid.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=5">
+  <script type="module" src="../../../shared/phil-core.js?v=5"></script>
+  <script type="module" src="./assets/ledger.js"></script>
+  <style>
+    phil-side img.door { float: right; width: clamp(96px, 10vw, 140px); height: auto; margin: 0 0 6px 12px; border: 3px solid var(--border); }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     Doctor Calamity, Penny, Amara, and the Great Harbor Duck are invented.
+     Everything in Act 2 and every figure in Act 4 is real (sources are in
+     phil_mates_outlines.md). The comic register stops for the 2008 crisis,
+     frozen accounts, hyperinflation, and ransomware.
+     Two claims are worded with care. The energy slide says "Bitcoin," not
+     "cryptocurrency," because most other coins no longer use proof of work.
+     And the lesson never says most crypto is crime. It says most crypto use is
+     betting, and that as money it mainly serves people a bank would turn away.
+     It is also skeptical that crypto has helped the sympathetic cases. The
+     "Did It Help the People Shut Out?" slide gives the evidence.
+     The only moral verdict asked for is an ungraded <phil-poll>. -->
+
+<phil-lesson id="villains-ledger" title="The Villain's Ledger" subject="Cryptocurrency">
+
+  <!-- ============ ACT 0 — THE RANSOM PROBLEM ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/harbor-duck.png" alt="A giant yellow rubber duck under a glass dome in a purple cave, ringed by a red velvet rope and guarded by two small figures in gray armor">
+    <h1>Why Supervillains Prefer to Be Paid in Crypto</h1>
+    <p class="lead">Doctor Calamity has stolen the Great Harbor Duck. She wants one billion dollars to give it back.</p>
+    <p>You are the new intern in her Accounts office. Stealing the duck was the easy part. Your job is to work out how she can get paid.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>A payment system should be able to block payments to criminals.</phil-statement>
+      <phil-statement>No company or government should be able to stop me from spending my own money.</phil-statement>
+      <phil-statement>If a tool is used mostly for gambling and crime, that is the fault of the users and not the tool.</phil-statement>
+      <phil-statement>Adults should be free to bet their savings on anything they like.</phil-statement>
+      <phil-statement>Using a country's worth of electricity is fine if the people using it pay the bill.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- 3. Option one: cash -->
+  <phil-slide>
+    <img slot="art" src="./assets/cash-pallet.png" alt="A worker in gray overalls holding a briefcase scratches his head beside a pallet stacked taller than he is with bundles of green banknotes; a forklift is parked behind">
+    <h1>Option One: Cash</h1>
+    <p>Your boss in Accounts is Penny. She starts with the oldest plan there is, a suitcase full of cash.</p>
+    <ul reveal>
+      <li>A $100 bill weighs about one gram. One million dollars in $100 bills weighs about 10 kilograms, or 22 pounds.</li>
+      <li>One billion dollars weighs about ten tons. That needs a forklift, not a suitcase.</li>
+      <li>Somebody has to hand the cash over, and somebody has to collect it. The police wait at the pickup.</li>
+      <li>Cash does have one advantage for a villain. Nobody has to give a name to use it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Option two: the bank -->
+  <phil-slide>
+    <img slot="art" src="./assets/bank-counter.png" alt="At a bank counter, a figure in a purple coat with black hair and a large mustache faces a teller in a vest who holds up one hand to say stop; a round steel vault door stands behind them">
+    <h1>Option Two: The Bank</h1>
+    <p>Doctor Calamity puts on a wig and a false mustache and goes to a bank. She asks to receive one billion dollars by transfer.</p>
+    <ul reveal>
+      <li>The bank asks who she is. By law, a bank must check a customer's identity before it opens an account.</li>
+      <li>The bank can <strong>refuse</strong> a payment that looks like crime, and it has to report it.</li>
+      <li>The bank can <strong>freeze</strong> an account, so that the money in it cannot be moved.</li>
+      <li>The bank can <strong>undo</strong> a payment that turns out to be fraud.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. MCQ: why not a bank [correct: B] -->
+  <phil-slide>
+    <h1>The Trouble With Banks</h1>
+    <phil-mcq prompt="Doctor Calamity can't use a bank transfer for the ransom. What is the main reason?"
+              explain="Right. A bank transfer is a change to the bank's own records, so the bank decides whether it happens. It can ask who she is, refuse, freeze the account, or reverse the payment later.">
+      <phil-choice feedback="Large transfers between banks usually arrive within days. Speed is not what stops her.">A bank transfer of that size would take months to arrive</phil-choice>
+      <phil-choice correct>The bank keeps the record and can refuse the payment</phil-choice>
+      <phil-choice feedback="Banks move far more than that every day. Her problem is that a bank is able to say no.">Banks do not hold enough money to move a billion dollars</phil-choice>
+      <phil-choice feedback="Fees are small next to a billion dollars. Her problem is that someone else controls the payment.">The fees on a billion-dollar transfer would be too high</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — MONEY IS A LIST ============ -->
+
+  <!-- 6. Most money is a list -->
+  <phil-slide>
+    <img slot="art" src="./assets/penny.png" alt="Penny: an accountant with curly brown hair, a green eyeshade visor, and round glasses, in a gray jumpsuit, working a wooden abacus in front of gray filing cabinets">
+    <h1>Most Money Is a List</h1>
+    <p>Penny puts down her abacus. "Before we go on," she says, "you need to know what money is."</p>
+    <ul reveal>
+      <li>Some money is paper and coins. Most of it is numbers in a bank's records.</li>
+      <li>A list of who owns how much is called a <strong>ledger</strong>. Your bank balance is one line in your bank's ledger.</li>
+      <li>When you pay with a card, no cash moves. The bank lowers your line and raises the shop's line.</li>
+      <li>So whoever keeps the ledger decides which payments happen.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. The keeper's four jobs -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-ledgers.png" alt="Left: an old man holding large keys stands by one huge open book on a wooden desk. Right: eight villagers stand in a ring, each holding an identical small book that glows green">
+    <h1>The Keeper's Four Jobs</h1>
+    <p>Call whoever keeps the ledger the <strong>keeper</strong>. For most money, the keeper is a bank with a government behind it.</p>
+    <ul reveal>
+      <li><strong>Keep the list.</strong> There is one official ledger, and the keeper holds it.</li>
+      <li><strong>Check who you are.</strong> The keeper knows the name behind every account.</li>
+      <li><strong>Say no, or undo.</strong> The keeper can refuse, freeze, or reverse a payment.</li>
+      <li><strong>Stand behind the money.</strong> The government insures deposits and works to keep prices steady.</li>
+    </ul>
+    <p class="muted">Each job protects ordinary customers. Each job is also a power the keeper holds over them.</p>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — WHY SOME PEOPLE WANTED OUT ============ -->
+
+  <!-- 8. The keeper can fail -->
+  <phil-slide>
+    <img slot="art" src="./assets/bailout.png" alt="A cracked stone bank building propped up with timber braces while a crane lowers a large sack of gold coins onto its roof; small houses with boarded windows stand in front">
+    <h1>The Keeper Can Fail</h1>
+    <p>Some people have serious reasons to distrust the keeper. Here are three, and all of them really happened.</p>
+    <ul reveal>
+      <li>In 2008, large banks in the US and Europe lost huge sums on risky bets tied to home loans.</li>
+      <li>Governments spent hundreds of billions of dollars of public money to keep those banks from collapsing.</li>
+      <li>In the crisis that followed, millions of ordinary people lost their jobs or their homes.</li>
+      <li>Many people concluded that the keepers had been careless with other people's money and were rescued anyway.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. The keeper can say no to the wrong people -->
+  <phil-slide>
+    <img slot="art" src="./assets/frozen-card.png" alt="Amara, a reporter in a blue coat holding a microphone, looks at a cash machine frozen inside a block of ice, with a padlock on its screen, on a snowy street at night">
+    <h1>The Keeper Can Say No to the Wrong People</h1>
+    <p>Amara is a reporter. After she wrote about corruption in her government, her bank card stopped working. Amara is invented, but cases like hers are real.</p>
+    <ul reveal>
+      <li>In 2010 the website WikiLeaks published secret US government files. Visa, Mastercard, and PayPal stopped handling donations to it.</li>
+      <li>In 2020, Nigerians protested against police violence. Bank accounts of people who organized the protests were frozen.</li>
+      <li>In both cases the money was cut off before any court had found the account holders guilty of a crime.</li>
+      <li>The power that turned Doctor Calamity away is the same power that stopped Amara.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. The keeper can print -->
+  <phil-slide>
+    <img slot="art" src="./assets/wheelbarrow.png" alt="A man pushes a wheelbarrow heaped with green banknotes up to a bakery stall, where the baker holds out a single loaf of bread; loose banknotes blow along the street">
+    <h1>The Keeper Can Print</h1>
+    <ul reveal>
+      <li><strong>Inflation</strong> means prices rise, so each dollar or peso buys less than it did.</li>
+      <li>A government that controls the money can create more of it. If it creates far too much, prices explode.</li>
+      <li>In Zimbabwe in 2008, prices doubled about once a day. The government printed a 100 trillion dollar bill.</li>
+      <li>People who had saved for years found that their savings would not buy a loaf of bread.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Satoshi's proposal -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-satoshi.svg" alt="Relic card for Satoshi Nakamoto: a folded newspaper sealed inside a stone block, with a gold chain link leading off each side">
+    <h1>A Proposal With No Keeper</h1>
+    <p>In October 2008, in the middle of the bank crisis, someone using the name <strong>Satoshi Nakamoto</strong> posted a nine-page paper online.</p>
+    <ul reveal>
+      <li>It described <strong>Bitcoin</strong>, the first <strong>cryptocurrency</strong>: digital money with no bank and no government in the middle.</li>
+      <li>Bitcoin's first records, from January 2009, include a newspaper headline about a second bailout for banks.</li>
+      <li>Nobody knows who Satoshi is. Satoshi stopped writing in 2011 and has not been heard from since.</li>
+      <li>The plan was to remove all four of the keeper's jobs at once. To see what that costs, you need to know how it works.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — HOW IT WORKS ============ -->
+
+  <!-- 12. The copy problem -->
+  <phil-slide>
+    <h1>The Copy Problem</h1>
+    <p>Digital money has a problem that paper money does not have.</p>
+    <ul reveal>
+      <li>A digital thing is easy to copy. You can send a photo to a friend and still have the photo.</li>
+      <li>If a coin were just a file, you could pay two people with the same coin. This is called <strong>double spending</strong>.</li>
+      <li>A keeper solves this easily. There is one ledger, and the keeper checks your line before every payment.</li>
+      <li>Without a keeper, something else has to stop double spending. Bitcoin's answer has three parts.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Everyone keeps the list -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-ledgers.png" alt="Left: an old man holding large keys stands by one huge open book on a wooden desk. Right: eight villagers stand in a ring, each holding an identical small book that glows green">
+    <h1>Part One: Everyone Keeps the List</h1>
+    <ul reveal>
+      <li>Bitcoin still has a ledger. It is called the <strong>blockchain</strong>, and it lists every payment ever made.</li>
+      <li>There is no single keeper. Thousands of computers around the world each hold a full copy.</li>
+      <li>Anyone may join, and anyone may read the ledger. The whole list is public.</li>
+      <li>That leaves two questions. Can someone change an old page? And who gets to write the next one?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Pages and fingerprints -->
+  <phil-slide>
+    <h1>Part Two: Pages and Fingerprints</h1>
+    <p>The first question is whether someone could quietly change an old payment.</p>
+    <ul reveal>
+      <li>New payments are gathered into a page called a <strong>block</strong>. Bitcoin adds one block about every ten minutes.</li>
+      <li>Every block gets a <strong>hash</strong>: a short code worked out from everything written in the block. Think of it as a fingerprint.</li>
+      <li>Change one digit in a block and its fingerprint comes out completely different.</li>
+      <li>Each block also records the fingerprint of the block before it. That is what links the blocks into a chain.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Chain viz -->
+  <phil-slide>
+    <h1>Try to Cheat the Chain</h1>
+    <phil-chain prompt="Here are four blocks from a small blockchain. Pick an old block and change a payment in it."></phil-chain>
+  </phil-slide>
+
+  <!-- 16. Voting fails -->
+  <phil-slide>
+    <img slot="art" src="./assets/cardboard-crowd.png" alt="A figure in a purple coat with a large mustache stands with arms folded in front of rows of brown cardboard cutout henchmen, one of which has fallen flat; two workers in gray overalls look on">
+    <h1>Part Three: Who Writes the Next Page?</h1>
+    <p>Suppose the computers simply voted on the next block, with one vote each.</p>
+    <ul reveal>
+      <li>Doctor Calamity, still wearing her bank mustache, sees the flaw at once.</li>
+      <li>Anyone may join, and nobody checks names. So one person can pretend to be a million computers.</li>
+      <li>Her cardboard henchmen would outvote everyone. She could approve a block that pays her twice.</li>
+      <li>A vote only works if a voter is costly to fake.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Proof of work -->
+  <phil-slide>
+    <img slot="art" src="./assets/mining-hall.png" alt="A long hall lined on both sides with racks of machines with large fans, thick cables snaking across the floor, and a brass raffle drum full of colored tickets in the foreground">
+    <h1>A Lottery You Enter With Electricity</h1>
+    <ul reveal>
+      <li>To write the next block, a computer has to win a guessing game. Each guess is like one lottery ticket.</li>
+      <li>Guessing takes electricity. The more machines you run, the more tickets you hold.</li>
+      <li>This is called <strong>proof of work</strong>. The computers that play are called <strong>miners</strong>.</li>
+      <li>The winner writes the block and is paid in newly created coins. That payment is why miners play.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Keys, and no undo -->
+  <phil-slide>
+    <img slot="art" src="./assets/lost-key.png" alt="On a wooden pier under a full moon, a man kneels with his face in his hands beside a locked treasure chest; below the pier, a small golden key sinks through dark water">
+    <h1>Keys, and No Undo</h1>
+    <ul reveal>
+      <li>The blockchain holds no names. Coins belong to an <strong>address</strong>, which is a long string of letters and numbers.</li>
+      <li>Each address has a secret <strong>key</strong>, like a password. Whoever has the key can spend the coins.</li>
+      <li>With no keeper, there is no help desk. A lost key cannot be reset, and a payment cannot be reversed.</li>
+      <li>In 2013 a hard drive holding the keys to about 8,000 bitcoins was thrown out by mistake in Wales. It is still in a landfill.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. MCQ: why costly [correct: C] -->
+  <phil-slide>
+    <h1>Why So Much Work?</h1>
+    <phil-mcq prompt="Proof of work makes every guess cost electricity. Why does Bitcoin need guessing to be costly?"
+              explain="Right. Fake voters are free, so Bitcoin counts work in place of votes. To approve a false block, a cheat would have to out-guess all the honest miners together, and that costs more electricity than the cheat could gain.">
+      <phil-choice feedback="Nobody checks blocks by hand. The cost is there to make fake voters expensive.">So that payments are slow enough for people to check them by hand</phil-choice>
+      <phil-choice feedback="The supply of coins is set by a separate rule. The cost of guessing protects the ledger.">So that the number of coins stays small and each one stays valuable</phil-choice>
+      <phil-choice correct>So that outvoting the honest miners costs more than a cheat can pay</phil-choice>
+      <phil-choice feedback="Anyone may join. The cost matters because it makes pretending to be many miners expensive.">So that only large companies with good computers are able to join</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — THE BILL ARRIVES ============ -->
+
+  <!-- 20. Penny's report -->
+  <phil-slide>
+    <img slot="art" src="./assets/doctor-calamity.png" alt="Doctor Calamity: a woman with towering silver hair, brass goggles pushed up on her forehead, and a purple coat with a high magenta collar, grinning">
+    <h1>Penny's Report</h1>
+    <p>Penny reports to Doctor Calamity. A ransom paid in bitcoin gives her everything the bank would not.</p>
+    <ul reveal>
+      <li><strong>No pickup.</strong> The coins cross the world in minutes, to an address with no name on it.</li>
+      <li><strong>No questions.</strong> Nobody checks who she is before she can receive them.</li>
+      <li><strong>No refusal and no undo.</strong> Nobody is able to block the payment or take it back.</li>
+      <li>Amara wanted exactly these things too. Then Penny reads out what they cost.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Cost: electricity -->
+  <phil-slide>
+    <img slot="art" src="./assets/power-town.png" alt="A power pylon seen from above, with glowing cables running from it to two large blocks of computer racks and to a neighborhood of small lit houses">
+    <h1>Cost One: Electricity</h1>
+    <ul reveal>
+      <li>The electricity is what makes cheating expensive. Miners use as much of it as the prize will pay for.</li>
+      <li>Bitcoin mining uses about as much electricity each year as a mid-sized country such as Poland.</li>
+      <li>Faster machines do not lower the total. The game gets harder, so that a block still takes ten minutes.</li>
+      <li>Some newer coins use another method and far less power. Bitcoin is over half of all crypto by value, and nobody is in charge to order a change.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Cost: the price -->
+  <phil-slide>
+    <img slot="art" src="./assets/coaster.png" alt="A roller coaster at night whose supports form a jagged green price chart; a cart of three riders with their arms up crests the top as gold coins fly out behind them">
+    <h1>Cost Two: The Price</h1>
+    <ul reveal>
+      <li>A government stands behind the dollar. It works to keep prices steady, and it collects taxes in dollars.</li>
+      <li>Nothing stands behind a bitcoin. It earns no profit and pays no interest. It is worth what the next buyer will pay.</li>
+      <li>So the price swings. Bitcoin lost more than half its value in 2018, and did so again in 2022.</li>
+      <li>Money that may lose half its value is hard to shop with or save in. It works better as a bet.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. What is it used for -->
+  <phil-slide>
+    <img slot="art" src="./assets/three-piles.png" alt="A huge heap of gold coins rises behind a table that holds a roulette wheel; on the same table sit two tiny piles of coins and a small basket of food, with a closed door behind them">
+    <h1>What Is It Actually Used For?</h1>
+    <p>Ask one question. What can you do with crypto that you can't do with a bank card?</p>
+    <ul reveal>
+      <li><strong>You can bet on the price.</strong> This is the main use. In a 2025 US survey, nearly 1 adult in 10 held crypto to invest. About 1 in 50 paid with it.</li>
+      <li><strong>You can make a payment nobody can stop.</strong> That matters only to someone a keeper would stop.</li>
+      <li>Some of those people are criminals. Others are people like Amara. Whether it serves them well is a separate question.</li>
+      <li><strong>Everyday shopping is rare.</strong> El Salvador made bitcoin official money in 2021. Few people used it, and the law was reversed in 2025.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Did it help -->
+  <phil-slide>
+    <img slot="art" src="./assets/frozen-card.png" alt="Amara, a reporter in a blue coat holding a microphone, looks at a cash machine frozen inside a block of ice, with a padlock on its screen, on a snowy street at night">
+    <h1>Did It Help the People Shut Out?</h1>
+    <p>Supporters often say crypto will rescue people the banks have failed. So far it has not done much for them.</p>
+    <ul reveal>
+      <li>About 1.3 billion adults have no bank account. Roughly six in ten of them have no smartphone, and crypto needs one.</li>
+      <li>The price swings. A family living week to week cannot keep savings in something that may lose half its value.</li>
+      <li>In El Salvador, the people who did use bitcoin were mostly young, educated, and already had bank accounts.</li>
+      <li>To buy food, Amara must trade coins for local money at an exchange. In 2021 Nigeria ordered its banks to stop serving them.</li>
+    </ul>
+    <p class="muted">Crypto's own keepers fail too. The exchange FTX collapsed in 2022 with about 8 billion dollars of customers' money missing.</p>
+  </phil-slide>
+
+  <!-- 25. Ransomware -->
+  <phil-slide>
+    <img slot="art" src="./assets/locked-screen.png" alt="An empty hospital nurses' station at night; four computer monitors each show only a magenta padlock, and an empty bed waits in the corridor">
+    <h1>Cost Three: Real Ransoms</h1>
+    <p>Doctor Calamity is made up. Ransoms paid in crypto are real.</p>
+    <ul reveal>
+      <li><strong>Ransomware</strong> is software that locks a victim's files. The attacker demands a payment to unlock them.</li>
+      <li>Hospitals, schools, and cities have been hit. A 2024 attack on a London lab postponed over 10,000 hospital appointments.</li>
+      <li>Ransomware gangs collected more than one billion dollars in crypto in 2023, and over 800 million in 2024.</li>
+      <li>Before crypto, a ransom of this kind had the pickup problem. Crypto removed it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. The list is public -->
+  <phil-slide>
+    <img slot="art" src="./assets/glass-trail.png" alt="A detective in a trench coat and hat holds a magnifying glass over a trail of glowing green footprints that crosses a floor of giant ledger pages; ahead, a figure in a purple cape runs out of sight">
+    <h1>The List Is Public</h1>
+    <ul reveal>
+      <li>Every bitcoin payment stays on the public ledger forever. Addresses carry no names, but the trail between them can be followed.</li>
+      <li>In 2021 criminals locked the computers of Colonial Pipeline, a major US fuel pipeline. The company paid 75 bitcoins.</li>
+      <li>The FBI followed the coins and took back about 64 of them within a month.</li>
+      <li>So "most crypto is crime" is false. The leading firm that tracks it puts crime at under 1 percent of the crypto activity it can trace.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. Build-a-Coin viz -->
+  <phil-slide>
+    <h1>Build a Coin</h1>
+    <phil-coinlab prompt="Design a kind of money by setting three switches. Each switch is one thing a keeper does."></phil-coinlab>
+  </phil-slide>
+
+  <!-- 28. Checkset: built in or growing pain -->
+  <phil-slide>
+    <h1>Built In, or Growing Pain?</h1>
+    <phil-checkset prompt="Some of crypto's problems could be fixed with better apps or clearer laws. Check every problem that comes from having no keeper."
+                   explain="Right. Confusing apps, unclear tax rules, and dishonest ads can all be fixed without changing what crypto is. The other four come from removing the keeper. Nobody can undo a payment, nobody stands behind the price, nobody checks a name, and a costly lottery stands in for a trusted list.">
+      <phil-statement correct>A payment sent to a scammer cannot be reversed by anyone</phil-statement>
+      <phil-statement correct>Protecting Bitcoin's ledger uses a country's worth of electricity</phil-statement>
+      <phil-statement correct>The price can fall by half because nothing stands behind it</phil-statement>
+      <phil-statement correct>A ransom can be collected with no pickup and no name</phil-statement>
+      <phil-statement>Wallet apps are confusing for people who are new to them</phil-statement>
+      <phil-statement>Tax rules for crypto are unclear in many countries</phil-statement>
+      <phil-statement>Some crypto advertising has made promises that were not true</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE DOOR WITH NO DOORMAN ============ -->
+
+  <!-- 29. Compare: doorman -->
+  <phil-slide>
+    <h1>The Door With No Doorman</h1>
+    <p>Think of the keeper as a doorman. Each fix for crypto's problems puts some kind of doorman back.</p>
+    <phil-compare>
+      <phil-side label="No Doorman" tag="Bitcoin">
+        <img class="door" src="./assets/same-door.png" alt="An open arched doorway with an empty stool and a doorman's cap beside it; a figure in a purple coat and a figure in a blue raincoat walk through together">
+        <p>Nobody can block a payment. Doctor Calamity gets her ransom. Amara's coins arrive too, but she still has to turn them into money she can spend.</p>
+        <p>Nobody can undo a mistake, check a name, or steady the price.</p>
+      </phil-side>
+      <phil-side label="A Doorman" tag="Banks, and most fixes">
+        <img class="door" src="./assets/doorman-returns.png" alt="The same arched doorway with a uniformed doorman holding a clipboard behind a red velvet rope; a figure in a purple coat and a figure in a blue raincoat wait in front of it">
+        <p>Somebody can block a payment. A ransom is stopped only if the doorman catches it, and the same somebody decides about Amara.</p>
+        <p>Coins tied to the dollar work this way. The company behind them can freeze any account, yet most crypto crime now moves in these coins.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 30. Winner -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-winner.svg" alt="Relic card for Langdon Winner: a low stone bridge over a road, with a tall blue bus stopped in front of it and a small green car passing underneath">
+    <h1>Do Designs Take Sides?</h1>
+    <p>In 1980 the scholar Langdon Winner asked whether a design can have politics built into it.</p>
+    <ul reveal>
+      <li>A common view says tools are neutral. Only the people who use them are good or bad.</li>
+      <li>Winner disagreed. He argued that some designs settle in advance who gets through and who is kept out.</li>
+      <li>His best-known example was a set of low bridges said to be built to block buses. Historians dispute that story.</li>
+      <li>Bitcoin fits his idea better. Its design settles that nobody can be stopped, and that was chosen on purpose.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. Poll -->
+  <phil-slide>
+    <h1>Your Call</h1>
+    <phil-poll prompt="Should there be a kind of money that no bank, company, or government is able to stop?"
+               explain="Every answer here accepts a cost. A doorman who can block a ransom can also block a reporter, and real doormen miss a great deal of crime. A system with no doorman carries both. Mill's Harm Principle says society may step in to prevent harm to others. Stepping in takes a doorman.">
+      <phil-choice note="Then decide what you would say to a hospital whose files were locked. Ask also how much it has really helped people like Amara.">Yes. People like Amara need it, and the crime is a price worth paying.</phil-choice>
+      <phil-choice note="Check each fix you have in mind. Does it bring a keeper back?">Yes, but only if its electricity use and scams can be brought down.</phil-choice>
+      <phil-choice note="Then decide what you would say to Amara, and who watches the keeper.">No. Stopping ransoms and fraud matters more, so keep the keeper.</phil-choice>
+      <phil-choice note="That answers the 2008 worry. It is harder where the government itself is the problem.">No. Fix the banks instead, so that fewer people need a way out.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 32. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 33. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/lair.png" alt="A volcano island at night under a crescent moon, with a glowing magenta crater and pink smoke, a round steel vault door set into the rock, and a small submarine moored at a wooden dock">
+    <h1>The Duck Goes Home</h1>
+    <ul reveal>
+      <li>A <strong>keeper</strong> holds the ledger, checks names, can refuse or undo a payment, and has a government behind it.</li>
+      <li>Bitcoin replaces the keeper with public copies, linked fingerprints, and a costly lottery called <strong>proof of work</strong>.</li>
+      <li>Its costs come from that design: heavy electricity use, a price that acts like a bet, no undo, and payments nobody can stop.</li>
+      <li>Most crypto use is betting. As money it has worked well for ransoms, and poorly for most people the banks shut out.</li>
+    </ul>
+    <p class="muted">The city paid in bitcoin. Doctor Calamity posted a photo of her screen to brag, with her secret key in plain view. A stranger emptied the address within the hour, and the photo led the police to the island. Penny had sent her a memo about keys.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

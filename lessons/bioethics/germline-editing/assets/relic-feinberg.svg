@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Joel Feinberg — ring of keys held out in an open palm">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+
+  <!-- open palm holding keys -->
+  <!-- forearm & wrist -->
+  <rect x="32" y="76" width="16" height="10" fill="#d9a07a"/>
+  <rect x="30" y="82" width="20" height="4" fill="#2b3252"/>
+  <!-- palm -->
+  <polygon points="26,70 54,70 52,78 28,78" fill="#e8b18a"/>
+  <!-- fingers cupped upward/outward -->
+  <rect x="22" y="62" width="6" height="10" fill="#d9a07a" rx="2"/>
+  <rect x="29" y="58" width="5" height="13" fill="#e8b18a" rx="2"/>
+  <rect x="36" y="56" width="5" height="15" fill="#e8b18a" rx="2"/>
+  <rect x="43" y="58" width="5" height="13" fill="#e8b18a" rx="2"/>
+  <rect x="50" y="63" width="5" height="10" fill="#d9a07a" rx="2"/>
+
+  <!-- key ring floating above / resting in palm -->
+  <circle cx="39" cy="40" r="9" fill="none" stroke="#eef1ff" stroke-width="2"/>
+  <circle cx="39" cy="40" r="7" fill="none" stroke="#4cc2ff" stroke-width="1"/>
+
+  <!-- Key 1: antique skeleton key pointing lower-left -->
+  <line x1="33" y1="44" x2="23" y2="54" stroke="#ffcf5a" stroke-width="2"/>
+  <circle cx="33" cy="44" r="3" fill="none" stroke="#ffcf5a" stroke-width="1.5"/>
+  <rect x="22" y="52" width="4" height="2" fill="#ffcf5a" transform="rotate(45 24 53)"/>
+  <rect x="24" y="50" width="3" height="2" fill="#ffcf5a" transform="rotate(45 25 51)"/>
+
+  <!-- Key 2: modern notched key pointing straight down -->
+  <line x1="39" y1="48" x2="39" y2="64" stroke="#4cc2ff" stroke-width="2"/>
+  <polygon points="37,47 41,47 40,43 38,43" fill="#4cc2ff"/>
+  <rect x="39" y="54" width="3" height="2" fill="#4cc2ff"/>
+  <rect x="39" y="58" width="2" height="2" fill="#4cc2ff"/>
+  <rect x="39" y="62" width="4" height="2" fill="#4cc2ff"/>
+
+  <!-- Key 3: ornate clover-headed key pointing lower-right -->
+  <line x1="45" y1="44" x2="55" y2="54" stroke="#ff6ad5" stroke-width="2"/>
+  <circle cx="45" cy="44" r="3" fill="none" stroke="#ff6ad5" stroke-width="1.5"/>
+  <rect x="53" y="52" width="4" height="2" fill="#ff6ad5" transform="rotate(-45 55 53)"/>
+  <rect x="51" y="50" width="2" height="2" fill="#ff6ad5" transform="rotate(-45 52 51)"/>
+
+  <!-- glowing aura around open future keys -->
+  <circle cx="39" cy="40" r="14" fill="none" stroke="#4cc2ff" stroke-width="1" opacity="0.4"/>
+</svg>

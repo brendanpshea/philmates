@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: 2018 — laboratory door ajar with broken padlock and light spilling onto floor">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#ffcf5a"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#ffcf5a"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="38" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="44" y="93" width="4" height="4" fill="#ffcf5a"/>
+
+  <!-- door frame & dark lab interior -->
+  <rect x="22" y="25" width="36" height="58" fill="#11131f"/>
+  <rect x="20" y="23" width="40" height="2" fill="#3a4260"/>
+  <rect x="20" y="23" width="2" height="60" fill="#3a4260"/>
+  <rect x="58" y="23" width="2" height="60" fill="#3a4260"/>
+
+  <!-- door slightly ajar (angled door panel) -->
+  <polygon points="22,25 48,27 48,82 22,83" fill="#2b334d"/>
+  <polygon points="46,27 48,27 48,82 46,82" fill="#3d476b"/>
+  <!-- small door window -->
+  <rect x="28" y="32" width="12" height="16" fill="#161b2b"/>
+  <line x1="34" y1="32" x2="34" y2="48" stroke="#2b334d" stroke-width="1"/>
+
+  <!-- light spilling through open gap onto floor -->
+  <polygon points="48,27 58,25 58,83 48,82" fill="#ffcf5a" opacity="0.35"/>
+  <polygon points="48,80 58,80 66,86 44,86" fill="#ffcf5a" opacity="0.5"/>
+  <line x1="48" y1="83" x2="68" y2="87" stroke="#ffcf5a" stroke-width="1.5"/>
+
+  <!-- broken padlock and latch on door edge -->
+  <!-- latch plate -->
+  <rect x="45" y="52" width="4" height="6" fill="#8a95b0"/>
+  <!-- broken shackle (open U shape) -->
+  <path d="M 47,48 A 3 3 0 0 1 53,48 L 53,52" fill="none" stroke="#ffcf5a" stroke-width="1.5"/>
+  <!-- padlock body hanging askew -->
+  <rect x="47" y="52" width="7" height="6" fill="#d49b28" rx="1"/>
+  <circle cx="50.5" cy="55" r="1" fill="#11131f"/>
+</svg>

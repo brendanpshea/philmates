@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Villa Diodati Clinic: Germline Gene Editing · PhilMates</title>
+  <meta name="description" content="Somatic versus germline gene editing, the treatment/enhancement line, and the main arguments for and against editing the genes of future children, told through one couple's night at a lakeside clinic.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=5">
+  <script type="module" src="../../../shared/phil-core.js?v=5"></script>
+  <script type="module" src="./assets/germline.js"></script>
+  <style>
+    .duo { display: flex; gap: 16px; margin: 4px 0 10px; }
+    .duo figure { margin: 0; }
+    .duo img { display: block; width: clamp(84px, 17vh, 150px); height: auto; border: 3px solid var(--border); box-shadow: 0 4px 0 var(--shadow); }
+    .duo figcaption { font-family: var(--pixel); font-size: 10px; line-height: 1.6; color: var(--muted); margin-top: 6px; text-align: center; }
+    phil-cloze .line { display: block; margin: 0 0 .4em; line-height: 1.45; font-size: clamp(17px, 1.7vw, 20px); }
+    phil-cloze .line .phil-blank { margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     The story is fiction set a few years ahead; the science, law, and cases are
+     real as of 2026 (see phil_mates_outlines.md for sources). Heritable genome
+     editing is not lawful clinical practice anywhere today, and the slides say so.
+     The lesson never grades a moral verdict. "Should they?" questions are an
+     ungraded <phil-poll> or one of the three exploration widgets; MCQs ask only
+     what an argument claims or which objection a change would answer.
+     Mary and Percy both have cystic fibrosis. That is the rare case where embryo
+     screening cannot help, which is why editing is on the table at all. -->
+
+<phil-lesson id="germline-editing" title="The Villa Diodati Clinic" subject="Germline Gene Editing">
+
+  <!-- ============ ACT 0 — ARRIVAL ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/villa-diodati.png" alt="A gothic stone villa with glowing amber windows stands on a cliff above a dark lake at night, lightning in the sky and a small rowing boat on the water">
+    <h1>The Villa Diodati Clinic</h1>
+    <p class="lead">It is a few years from now. On a stormy night, Mary and Percy arrive at a clinic on the shore of Lake Geneva.</p>
+    <p>They want a child. A doctor here says she can edit that child's genes before the pregnancy begins. You will help them decide what would be acceptable.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>Parents should be free to use medicine to prevent a serious disease in their future child.</phil-statement>
+      <phil-statement>Curing a disease and making a healthy child "better" are morally different things.</phil-statement>
+      <phil-statement>A change that can never be undone should not be made, however good the reason.</phil-statement>
+      <phil-statement>It is wrong to make a permanent change to a person who cannot agree to it.</phil-statement>
+      <phil-statement>If only rich families could afford a new medical technology, it would be better if nobody had it.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- 3. Meet the couple -->
+  <phil-slide>
+    <h1>Meet Mary and Percy</h1>
+    <div class="duo">
+      <figure>
+        <img src="./assets/mary.png" alt="Mary: a woman with short dark curls and round gold glasses, in a magenta cardigan, writing in a notebook">
+        <figcaption>Mary</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/percy.png" alt="Percy: a man with untidy sandy hair, a green striped scarf, and a navy jacket with a blue inhaler in the chest pocket">
+        <figcaption>Percy</figcaption>
+      </figure>
+    </div>
+    <p>Mary and Percy met in a hospital waiting room. Both were born with <strong>cystic fibrosis</strong>, or CF.</p>
+    <ul reveal>
+      <li>CF is a <strong>genetic disease</strong>. It comes from a person's genes, not from a germ, so nobody can catch it.</li>
+      <li>It makes the mucus in the lungs thick and sticky. Breathing gets harder and lung infections are common.</li>
+      <li>New medicines help most people with CF live much longer. They still need treatment every day for life.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Why screening can't help -->
+  <phil-slide>
+    <img slot="art" src="./assets/all-the-same.png" alt="Two rows of round glass dishes on a lab bench, each holding a small cluster of cells with the same magenta dot; a magnifying glass above one dish shows the dot enlarged">
+    <h1>Why Not Pick a Healthy Embryo?</h1>
+    <p>Genes come in pairs, one copy from each parent. A person has CF only if <strong>both</strong> copies of one gene are faulty.</p>
+    <ul reveal>
+      <li>An <strong>embryo</strong> is the tiny ball of cells a fertilized egg grows into. Most at-risk couples can have several made in a lab and tested.</li>
+      <li>Doctors then use an embryo without the disease. This is called <strong>embryo screening</strong>.</li>
+      <li>Mary has two faulty copies, and so does Percy. Every embryo of theirs gets a faulty copy from each parent.</li>
+      <li>Screening can only choose, and here there is no embryo without CF to choose. The gene would have to be changed.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — TWO KINDS OF EDIT ============ -->
+
+  <!-- 5. DNA as a recipe book -->
+  <phil-slide>
+    <img slot="art" src="./assets/recipe-book.png" alt="An old book lies open on a wooden table, its pages filled with rows of tiny colored squares; a glowing double helix rises from the spine">
+    <h1>DNA Is a Recipe Book</h1>
+    <p>Almost every cell in your body holds a copy of your <strong>DNA</strong>: the instructions for building and running you.</p>
+    <ul reveal>
+      <li>Think of DNA as a recipe book. A <strong>gene</strong> is one recipe, and it tells the cell how to make one part.</li>
+      <li>The CF gene is the recipe for a part that moves salt and water out of cells. A mistake in that recipe makes the mucus thick.</li>
+      <li><strong>Gene editing</strong> means changing a recipe on purpose. A tool called CRISPR, first described in 2012, can find one spot in the DNA and cut it.</li>
+      <li>The book is about three billion letters long. Editing aims to fix one typo and leave the rest alone.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Somatic vs germline cells -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-cells.png" alt="Left: a dark human outline with one glowing green spot in the chest. Right: a round glass dish holding seven glowing green clusters of cells">
+    <h1>Two Kinds of Cells</h1>
+    <p>What an edit does depends on which cells it changes.</p>
+    <ul reveal>
+      <li><strong>Somatic cells</strong> are the cells of your body: lungs, skin, blood, brain. An edit there stays in that one person.</li>
+      <li><strong>Germline cells</strong> are eggs and sperm, and the cells that make them. They carry DNA to the next generation.</li>
+      <li>A brand-new embryo counts as germline too. An edit there is copied into every cell the person will ever have, eggs or sperm included.</li>
+      <li>So a germline edit is <strong>heritable</strong>: it can be passed down to children.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. Somatic editing is real -->
+  <phil-slide>
+    <img slot="art" src="./assets/somatic-infusion.png" alt="A young man sits in an armchair by a window at night, reading a book, while a drip bag of glowing green fluid on a stand runs a line to his arm">
+    <h1>Somatic Editing Is Already Here</h1>
+    <p>In 2023 the US and UK approved Casgevy, the first medicine that uses CRISPR. It treats <strong>sickle cell disease</strong>, a painful genetic blood disease.</p>
+    <ul reveal>
+      <li>Doctors take out some of the patient's blood-making cells, edit them in a lab, and put them back.</li>
+      <li>The edited cells make healthy blood. The patient's eggs or sperm are not changed, so nothing is passed on.</li>
+      <li>The patient can be told the risks and can agree or refuse.</li>
+      <li>Few people object to somatic editing itself. The arguments about it are over cost and safety.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Germline: the edit travels -->
+  <phil-slide>
+    <img slot="art" src="./assets/family-tree.png" alt="A large tree at night hung with glowing green lanterns in tiers: one at the top, then two, then four, then eight, with a few more below">
+    <h1>An Edit That Travels</h1>
+    <p>Mary and Percy would need a <strong>germline</strong> edit: fixing the CF gene in a brand-new embryo.</p>
+    <ul reveal>
+      <li>Their child would grow up without CF. That child's children could inherit the fixed gene too.</li>
+      <li>This is the promise of germline editing. One edit could remove a disease from a whole family line.</li>
+      <li>It is also the worry. Everyone below the top lantern receives the change without being asked.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Ripple viz -->
+  <phil-slide>
+    <h1>Watch the Edit Travel</h1>
+    <phil-ripple prompt="Each circle is one person in a family, over four generations. Choose which kind of edit the person at the top receives."></phil-ripple>
+  </phil-slide>
+
+  <!-- 10. Compare -->
+  <phil-slide>
+    <h1>Somatic vs. Germline</h1>
+    <p>Both use the same editing tool. They differ in which cells are changed, and so in who is affected.</p>
+    <phil-compare>
+      <phil-side label="Somatic Editing" tag="One patient">
+        <p>Changes body cells in a person who is already here. The change ends with that person.</p>
+        <p class="case">Casgevy edits a patient's blood-making cells to treat sickle cell disease.</p>
+      </phil-side>
+      <phil-side label="Germline Editing" tag="The family line">
+        <p>Changes an egg, a sperm, or a brand-new embryo. The change is in every cell and can be passed on.</p>
+        <p class="case">Mary and Percy's request: fix the CF gene in an embryo before pregnancy begins.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 11. Checkset: which are heritable -->
+  <phil-slide>
+    <h1>Which Edits Could Be Passed On?</h1>
+    <phil-checkset prompt="Check every edit that the patient's future children could inherit."
+                   explain="Right. What matters is which cells change, not how young the patient is. A newborn's liver cells are body cells, so that edit ends with the baby. Eggs, sperm, the cells that make them, and a just-fertilized egg all carry DNA to the next generation.">
+      <phil-statement correct>Editing a fertilized egg in the lab before it starts to divide</phil-statement>
+      <phil-statement correct>Editing the cells in a man's body that make his sperm</phil-statement>
+      <phil-statement correct>Editing an egg cell before it has been fertilized</phil-statement>
+      <phil-statement>Editing the blood-making cells of a teenager with sickle cell disease</phil-statement>
+      <phil-statement>Editing the lung cells of an adult who has cystic fibrosis</phil-statement>
+      <phil-statement>Editing the liver cells of a newborn baby with a rare disease</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — DR. BYRON'S MENU ============ -->
+
+  <!-- 12. Dr. Byron -->
+  <phil-slide>
+    <img slot="art" src="./assets/dr-byron.png" alt="Dr. Byron: a doctor with a silver streak in her black bob, wearing a white coat and a name badge, smiling in a clinic consulting room">
+    <h1>Dr. Byron Has a Menu</h1>
+    <p>Dr. Byron runs the clinic. She offers more than Mary and Percy came to ask for.</p>
+    <ul reveal>
+      <li>First, the real world. Today dozens of countries ban germline editing for making babies, and none clearly allows it.</li>
+      <li>In this story the law has changed, and the clinic is legal.</li>
+      <li>Dr. Byron says she can fix the CF gene. Then she slides a menu across her desk.</li>
+      <li>"While we are editing," she says, "we could do more than fix things."</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. The menu -->
+  <phil-slide>
+    <img slot="art" src="./assets/byron-menu.png" alt="A silver tray holding three glass flasks, a small green one, a medium blue one, and a large magenta one, beside a leather-bound menu">
+    <h1>Three Things on the Menu</h1>
+    <ul reveal>
+      <li><strong>1. Fix a disease.</strong> Correct the CF gene, so the child does not have cystic fibrosis.</li>
+      <li><strong>2. Lower a risk.</strong> Add a rare gene version that keeps cholesterol low and protects against heart disease in old age.</li>
+      <li><strong>3. Add an advantage.</strong> Edits meant to make the child taller, or better at remembering.</li>
+      <li>A reality check: height and memory depend on thousands of genes and on how you live. Nobody can do item 3 today.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Treatment vs enhancement -->
+  <phil-slide>
+    <h1>Treatment or Enhancement?</h1>
+    <p>Philosophers sort Dr. Byron's menu with two words.</p>
+    <ul reveal>
+      <li><strong>Treatment</strong>: fixing or preventing a disease, to bring a person to normal health.</li>
+      <li><strong>Enhancement</strong>: improving a healthy person beyond normal health.</li>
+      <li>Many people say treatment is acceptable and enhancement is not. The cases in the middle are hard to sort.</li>
+      <li>A vaccine gives a healthy child protection nobody is born with. Doctors sometimes give growth hormone to healthy children who are very short.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Line-drawer viz -->
+  <phil-slide>
+    <h1>Draw Your Line</h1>
+    <phil-line prompt="Slide each edit to where you think it belongs. Then set your line: you would allow every edit to the left of it."
+               left="Treats a disease" right="Adds an advantage">
+      <script type="application/json">
+      { "items": [
+          "Fix the gene that causes cystic fibrosis",
+          "Lower the risk of heart disease in old age",
+          "Prevent ever needing glasses",
+          "Resist a virus the child may never meet",
+          "Grow three inches taller",
+          "Remember things more easily"
+      ] }
+      </script>
+    </phil-line>
+  </phil-slide>
+
+  <!-- 16. MCQ: why the line is fuzzy [correct: A] -->
+  <phil-slide>
+    <h1>Why the Line Is Hard to Draw</h1>
+    <phil-mcq prompt="A vaccine protects a healthy child in a way nobody is born with. Why is that a puzzle for the line between treatment and enhancement?"
+              explain="Right. A vaccine prevents disease, which sounds like treatment. It also gives a healthy body a power it did not have, which sounds like enhancement. The second item on Dr. Byron's menu has the same problem.">
+      <phil-choice correct>It prevents disease by improving a healthy body, so both labels fit</phil-choice>
+      <phil-choice feedback="A vaccine works on body cells and is not inherited. This puzzle is about treatment and enhancement, not about germline editing.">It changes eggs and sperm, so the protection is passed to children</phil-choice>
+      <phil-choice feedback="Vaccines are given to healthy people. That is the reason the case is hard to label.">It only helps people who are sick, so it is plainly a treatment</phil-choice>
+      <phil-choice feedback="That goes too far. Both ends have clear cases, like cystic fibrosis and extra height. The puzzle is in the middle.">It shows that nobody can tell a disease from a healthy body at all</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE CASE FOR ============ -->
+
+  <!-- 17. Preventing suffering -->
+  <phil-slide>
+    <img slot="art" src="./assets/easy-breath.png" alt="A laughing child in a red shirt runs along a grassy lakeshore flying a red kite, with mountains behind">
+    <h1>The Case For: Prevent Suffering</h1>
+    <p>Percy speaks first. He has spent an hour or two of every day on treatments, and he does not want that for his child.</p>
+    <ul reveal>
+      <li>The argument: a serious disease causes real suffering. If we can safely prevent it, we have a strong reason to.</li>
+      <li>We already reason this way. It is why we vaccinate children and treat sick babies.</li>
+      <li>A germline fix could also spare the child's own children. No other treatment does that.</li>
+      <li>Notice the word <em>safely</em>. The argument depends on it, and Mary will ask about it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Parents already choose -->
+  <phil-slide>
+    <img slot="art" src="./assets/already-choosing.png" alt="At a kitchen table in the evening, a parent helps a child in glasses with schoolwork; a glass of milk sits on the table and a violin leans against a chair">
+    <h1>The Case For: Parents Already Choose</h1>
+    <p>Percy's second argument defends item 3, the advantages.</p>
+    <ul reveal>
+      <li>Parents shape their children all the time. They pick the school, the food, the music lessons, the braces.</li>
+      <li>Nobody asks a baby whether it wants vitamins or a tutor. We think good parents provide them.</li>
+      <li>So Percy asks: if helping a child through upbringing is fine, why is helping through genes wrong?</li>
+      <li>To answer him, you have to find a difference between the two that matters morally.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Compare: upbringing vs editing -->
+  <phil-slide>
+    <h1>Is Editing Just More Parenting?</h1>
+    <p>Mary thinks the two differ. She compares a child shaped by lessons with a child shaped by an edit.</p>
+    <phil-compare>
+      <phil-side label="Shaping by Upbringing" tag="Lessons, food, school">
+        <p>The child takes part. They can push back, quit, or choose differently as an adult.</p>
+        <p class="case">A girl made to play violin at seven can stop at fifteen. Her own children start fresh.</p>
+      </phil-side>
+      <phil-side label="Shaping by Germline Edit" tag="Chosen before birth">
+        <p>It is fixed before the child exists. They cannot push back or undo it, and they may pass it on.</p>
+        <p class="case">A girl edited for height stays that height. Her children may inherit the edit.</p>
+      </phil-side>
+    </phil-compare>
+    <p class="muted">Percy's reply: some upbringing can't be undone either, like the first language you learn.</p>
+  </phil-slide>
+
+  <!-- 20. MCQ: the parity argument [correct: C] -->
+  <phil-slide>
+    <h1>Percy's Argument, Examined</h1>
+    <phil-mcq prompt="Percy says editing for advantages is no different from tutoring or music lessons. What would a critic have to show to defeat that argument?"
+              explain="Right. Percy argues by comparison: the two things are alike, so they should be judged alike. A reply has to name a difference that matters, such as whether the child can undo the change or whether it gets passed on.">
+      <phil-choice feedback="That accepts Percy's comparison and then rejects ordinary parenting too. Few critics want to say that.">That tutoring and music lessons are also wrong for parents to choose</phil-choice>
+      <phil-choice feedback="What most people would choose does not settle whether it is right. Percy's claim is that the two cases are alike.">That most parents today would not choose to edit their children</phil-choice>
+      <phil-choice correct>That editing and upbringing differ in a way that matters morally</phil-choice>
+      <phil-choice feedback="True today. But Percy is asking whether it would be acceptable if it could be done.">That editing for height and memory is not yet possible to do</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- 21. Poll: the first item -->
+  <phil-slide>
+    <h1>Decision Point: The First Item</h1>
+    <phil-poll prompt="You have heard only the case in favor. Should Mary and Percy be allowed to fix the CF gene in their embryo?"
+               explain="Remember your answer. Mary has three objections, and the first is about the word 'safely.'">
+      <phil-choice note="This is Percy's view. It depends on the edit being safe, which is Mary's first question.">Yes. Preventing a serious disease is reason enough.</phil-choice>
+      <phil-choice note="Then you need the line between treatment and enhancement to hold, including in the middle cases.">Yes, but only for diseases and never for advantages.</phil-choice>
+      <phil-choice note="Mary starts in the same place.">Not yet. I would need to know more about the risks.</phil-choice>
+      <phil-choice note="Then you think germline editing would be wrong even if it were safe. Watch for the objection that explains why.">No. Nobody should change a family line.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — THE CASE AGAINST ============ -->
+
+  <!-- 22. Safety: 2018 -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-2018.svg" alt="Relic card for the 2018 case: a laboratory door standing ajar with a broken padlock, light spilling onto the floor">
+    <h1>Objection 1: Is It Safe?</h1>
+    <p>Mary opens her notebook. "This has been tried once," she says.</p>
+    <ul reveal>
+      <li>In 2018 a scientist in China, He Jiankui, announced the birth of twin girls whose genes he had edited as embryos.</li>
+      <li>He was trying to make them resist HIV. Safer, proven ways to protect them already existed.</li>
+      <li>His data suggested the edits did not come out as planned, and that only some of the girls' cells were edited.</li>
+      <li>Scientists around the world condemned the experiment. A Chinese court sent him to prison for three years.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. Irreversibility -->
+  <phil-slide>
+    <img slot="art" src="./assets/ink-in-the-spring.png" alt="A drop of magenta ink falls into a mountain spring; the magenta spreads down the stream past three stone cottages while the water farther down is still blue">
+    <h1>It Can't Be Taken Back</h1>
+    <p>Mary explains why a germline mistake is worse than an ordinary medical mistake.</p>
+    <ul reveal>
+      <li>Editing tools sometimes cut in the wrong place. This is an <strong>off-target edit</strong>, and it can damage a healthy gene.</li>
+      <li>In a somatic treatment, a mistake harms one patient, who agreed to the risk.</li>
+      <li>In an embryo, a mistake is copied into every cell. Like ink dropped in a spring, it flows on to everyone downstream.</li>
+      <li>Some harms might not show for decades. By then the mistake could already be in grandchildren.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Ripple viz, with a mistake -->
+  <phil-slide>
+    <h1>Watch a Mistake Travel</h1>
+    <phil-ripple mistake prompt="The same family. This time the edit has an off-target mistake. Choose where it happens."></phil-ripple>
+  </phil-slide>
+
+  <!-- 25. Consent -->
+  <phil-slide>
+    <img slot="art" src="./assets/open-doors.png" alt="A child with a backpack, seen from behind, stands in a hallway of open doors in green, yellow, blue, and red; one doorway at the side is bricked shut">
+    <h1>Objection 2: Nobody Asked the Child</h1>
+    <p>The safety objection says <em>not yet</em>. If editing became safe, it would be answered. Mary's second worry would remain.</p>
+    <ul reveal>
+      <li>In medicine, <strong>consent</strong> means a patient agrees to a treatment after hearing the risks.</li>
+      <li>An embryo cannot consent. Neither can the grandchildren who inherit the edit.</li>
+      <li>Percy objects that no baby consents to anything. Parents decide for young children every day.</li>
+      <li>Mary agrees. So the question becomes which decisions parents may make, and which belong to the child.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Open future -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-feinberg.svg" alt="Relic card for Joel Feinberg: a ring of three different keys held above an open palm">
+    <h1>The Right to an Open Future</h1>
+    <p>The philosopher Joel Feinberg gave an answer in 1980. He said children have a right to an <strong>open future</strong>.</p>
+    <ul reveal>
+      <li>Some choices are the child's to make later: what work to do, what to believe, what kind of life to lead.</li>
+      <li>Parents hold those choices in trust. Their job is to keep the doors open until the child can choose.</li>
+      <li>On this view, fixing CF is acceptable. A healthy child has more doors open, not fewer.</li>
+      <li>Editing for a trait the parents want is different. It steers the child toward a life the parents picked.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. Fairness -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-staircases.png" alt="Two staircases side by side: a smooth escalator edged in amber light and a cracked, mossy stone stair, with two pairs of shoes waiting at the bottom">
+    <h1>Objection 3: Is It Fair?</h1>
+    <p>Mary's last worry is about everyone else's children.</p>
+    <ul reveal>
+      <li>Gene medicine is expensive. Casgevy costs about $2.2 million per patient in the US.</li>
+      <li>If only rich families can buy edits, their children start ahead. Germline edits are inherited, so the gap could grow each generation.</li>
+      <li>History adds a warning. In the 1900s, US states sterilized more than 60,000 people they judged "unfit" to have children.</li>
+      <li>Percy's reply: new medicine often starts expensive. The answer may be to pay for everyone, as with vaccines.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. Cloze: name the argument -->
+  <phil-slide>
+    <h1>Name That Argument</h1>
+    <p>Pick the argument each speaker is using.</p>
+    <phil-cloze explain="Right. The first speaker worries about harm nobody can predict or reverse, which is safety. The second points to people who can't be asked, which is consent. The third describes a gap between families, which is fairness. The fourth compares editing with ordinary parenting, which is Percy's second argument.">
+      <span class="line">"We can't know what this edit does in forty years, and we could never call it back."
+        <phil-blank answer="safety" options="consent,fairness,parents already choose,safety">safety</phil-blank></span>
+      <span class="line">"Her great-grandchildren will carry this change, and nobody can check with them first."
+        <phil-blank answer="consent" options="consent,fairness,parents already choose,safety">consent</phil-blank></span>
+      <span class="line">"In fifty years, families who could pay will have healthier, taller children than everyone else."
+        <phil-blank answer="fairness" options="consent,fairness,parents already choose,safety">fairness</phil-blank></span>
+      <span class="line">"We give her vitamins and piano lessons without asking. How is this any different?"
+        <phil-blank answer="parents already choose" options="consent,fairness,parents already choose,safety">parents already choose</phil-blank></span>
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- 29. MCQ: which objection survives [correct: B] -->
+  <phil-slide>
+    <h1>Change One Fact</h1>
+    <phil-mcq prompt="Suppose germline editing became perfectly safe and free for every family. Which of Mary's objections would still stand?"
+              explain="Right. Safety and fairness are worries about how editing might go wrong, and better science and fair funding could answer them. The consent objection is about who gets to decide, so it remains. Feinberg's open future is one way to judge how strong it is.">
+      <phil-choice feedback="If editing were perfectly safe, there would be no mistake to take back. Safety is the objection that says 'not yet.'">The safety objection, because a mistake still can't be taken back</phil-choice>
+      <phil-choice correct>The consent objection, because future people still aren't asked</phil-choice>
+      <phil-choice feedback="If it were free for every family, cost would no longer put anyone ahead.">The fairness objection, because rich families still get there first</phil-choice>
+      <phil-choice feedback="Two of them do depend on cost or risk. One is about who gets to decide, and that does not change.">None of them, because all three depend on the cost and the risk</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE DECISION ============ -->
+
+  <!-- 30. Three envelopes -->
+  <phil-slide>
+    <img slot="art" src="./assets/three-envelopes.png" alt="Three sealed envelopes on a wooden table, with wax seals in green, blue, and magenta; a pair of hands rests on the table edge below them">
+    <h1>Three Envelopes</h1>
+    <p>It is nearly morning. Dr. Byron leaves three envelopes on the table, one for each item on her menu.</p>
+    <ul reveal>
+      <li><strong>For:</strong> preventing suffering, and the comparison with ordinary parenting.</li>
+      <li><strong>Against:</strong> safety, consent and the open future, and fairness.</li>
+      <li>The arguments do not apply equally to every envelope. The case for fixing CF is not the case for extra height.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. Verdict viz -->
+  <phil-slide>
+    <h1>Your Decision</h1>
+    <phil-verdict prompt="Answer each envelope for Mary and Percy. Then pick the arguments that mattered most to you.">
+      <script type="application/json">
+      {
+        "items": [
+          { "id": "fix",  "label": "1. Fix the CF gene" },
+          { "id": "risk", "label": "2. Lower heart disease risk" },
+          { "id": "adv",  "label": "3. Add height or memory" }
+        ],
+        "reasons": [
+          { "id": "suffering", "label": "Preventing suffering" },
+          { "id": "parents",   "label": "Parents already choose" },
+          { "id": "safety",    "label": "Safety" },
+          { "id": "consent",   "label": "Consent and the open future" },
+          { "id": "fairness",  "label": "Fairness" }
+        ]
+      }
+      </script>
+    </phil-verdict>
+  </phil-slide>
+
+  <!-- 32. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 33. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/villa-diodati.png" alt="A gothic stone villa with glowing amber windows stands on a cliff above a dark lake at night, lightning in the sky and a small rowing boat on the water">
+    <h1>Morning at the Villa</h1>
+    <ul reveal>
+      <li><strong>Somatic</strong> edits change one person's body cells. <strong>Germline</strong> edits are in every cell and can be inherited.</li>
+      <li><strong>Treatment</strong> fixes or prevents disease. <strong>Enhancement</strong> goes beyond health. The middle cases are hard to sort.</li>
+      <li><strong>For:</strong> preventing serious suffering, and the comparison with ordinary parenting.</li>
+      <li><strong>Against:</strong> safety says not yet, consent asks who decides, and fairness asks who is left behind.</li>
+    </ul>
+    <p class="muted">The idea for <em>Frankenstein</em> came to Mary Shelley at the real Villa Diodati in 1816. Her scientist makes a living being and then abandons it.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
