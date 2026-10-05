@@ -1851,3 +1851,410 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 **Closing rounds**
 30. **[P]** Belief probe (revisit) — Reflecting on shifts in perspective across the five statements.
 31. **[T]** The living room couch (art: Homer). Character as the true compass: human virtues, patiently cultivated, are our greatest safeguard for an uncharted future.
+
+---
+
+## Bioethics: Thomson's Thought Experiments — "Six Impossible Things Before Breakfast"  *(built)*
+
+- **Path:** `lessons/bioethics/thomson-thought-experiments/`
+- **Lesson id:** `thomson-thought-experiments`
+- **Subject (catalog):** `Thought Experiments (Thomson)`
+- **Topic:** Bioethics first, but built in detachable acts so it can be taught
+  elsewhere (see "Teaching it outside bioethics" below).
+- **Approach:** Method-first, and Thomson's own cases do the heavy lifting.
+  Each case gets the same treatment: state it in her words, take a vote, name the
+  claim it targets, then **turn the knobs** (Dennett, after Hofstadter) to see
+  whether the intuition survives. The through-line is that **Thomson turned her
+  own knobs**. She answered her critics with new cases (people-seeds) and, in
+  2008, reversed her own verdict on the trolley bystander.
+- **Frame (light touch):** The White Queen in *Through the Looking-Glass* (1871,
+  public domain) says she has believed "as many as six impossible things before
+  breakfast." That line opens and closes the lesson, and the six covered dishes
+  in the title art are Thomson's six cases. Carroll's world shows up only in the
+  art. The White Knight's contraption stands in for Dennett's knob-turning,
+  since real thinkers get relic cards, not portraits. Nobody from Carroll
+  narrates, there are no Carroll quotes beyond the title and recap, and the
+  slide text is about Thomson.
+- **The six impossible things:** (1) the violinist, (2) Henry Fonda's cool hand,
+  (3) the tiny house, (4) the people-seeds, (5) the bystander who could turn the
+  trolley onto himself, (6) the killing that happens at no clear time.
+- **Recurring device — "Turn the knob":** after each case, a slide or widget
+  step changes exactly one detail and asks whether the verdict moved. A ⚙ glyph
+  marks knob moments.
+- **Thinkers covered:** Judith Jarvis Thomson (main); Daniel Dennett and Douglas
+  Hofstadter (intuition pumps, knobs); Philippa Foot (trolley origin); Galileo
+  (warm-up case). Critics and interlocutors: Mary Anne Warren, John Finnis,
+  Rosalind Hursthouse, Frances Kamm, Rebecca Dresser, Ronald Dworkin. Skeptics
+  of the method: Kathleen Wilkes, Schwitzgebel & Cushman, Allen Wood.
+- **Cross-references:** `trolley-and-triage` teaches switch, footbridge, loop,
+  transplant, and double effect in depth. This lesson recaps them in one line and
+  covers what that lesson doesn't. Also `moral-status` (personhood, which Thomson
+  brackets), `patient-autonomy` (refusal, advance directives), and
+  `harm-principle` (bodily sovereignty).
+
+### Accuracy note (real, not invented)
+- **Thomson** (1929–2020) taught at MIT. "A Defense of Abortion,"
+  *Philosophy & Public Affairs* 1:1 (1971) contains the violinist, the
+  expanding child in the tiny house, Henry Fonda's cool hand, the people-seeds,
+  the burglar, the box of chocolates, the coat that belongs to Smith, and the
+  Good Samaritan / Minimally Decent Samaritan distinction. It predates *Roe v.
+  Wade* (1973).
+- Thomson **grants that the fetus is a person from conception** for the sake of
+  argument. Her conclusions are limited, and the slides must say so:
+  - The right to life is not a right to be given use of another person's body.
+  - Some abortions would still be indecent (her example: the seventh month, to
+    avoid postponing a trip abroad).
+  - Her argument gives no right to *secure the death* of a fetus that could
+    survive detachment.
+- **Trolley origin:** Philippa Foot, "The Problem of Abortion and the Doctrine
+  of the Double Effect," *Oxford Review* 5 (1967). The trolley case was born in
+  an abortion paper, with a *driver*. Thomson coined "the trolley problem" in
+  "Killing, Letting Die, and the Trolley Problem," *The Monist* 59 (1976), which
+  also has the transplant surgeon. "The Trolley Problem," *Yale Law Journal* 94
+  (1985) adds the bystander, the footbridge, and the loop. "Turning the Trolley,"
+  *Philosophy & Public Affairs* 36 (2008) reverses her bystander verdict using a
+  three-option variant in which the bystander could turn the trolley onto
+  himself. Kamm replies in *The Trolley Problem Mysteries* (2015).
+- **Intuition pump** is Dennett's coinage, from his 1980 *Behavioral and Brain
+  Sciences* commentary on Searle's Chinese Room. *Intuition Pumps and Other Tools
+  for Thinking* (2013) credits Hofstadter (*The Mind's I*, 1981) with the advice
+  to "turn all the knobs" and see whether the same intuitions still get pumped.
+  "Boom crutch" is Dennett's term for a thinking tool that backfires.
+  **Verify the exact wording and page before quoting either phrase.**
+- Other Thomson papers used: "The Time of a Killing," *Journal of Philosophy* 68
+  (1971); "The Right to Privacy," *Philosophy & Public Affairs* 4 (1975);
+  "Parthood and Identity Across Time," *Journal of Philosophy* 80 (1983);
+  "Self-Defense," *Philosophy & Public Affairs* 20 (1991).
+- **Verify before quoting:** Thomson's "crazy metaphysic" phrase for temporal
+  parts (1983); Warren's claim that Thomson's argument settles only rape cases
+  (1973); the *McFall v. Shimp* judge calling the refusal "morally indefensible";
+  Wood's trolley critique (in Parfit, *On What Matters*, vol. 2, 2011).
+- **Avoid** Thomson's Kitty Genovese example unless it carries a correction: the
+  "38 silent witnesses" story she relied on was later shown to be largely wrong.
+
+### Learning goals
+- Define a **thought experiment** and explain three jobs it does in moral
+  reasoning: counterexample to a general principle, isolating one variable, and
+  feeding **reflective equilibrium**.
+- Explain Dennett's **intuition pump** and Hofstadter's **knob-turning** test,
+  and use it to tell a case that tracks the feature it claims to test from one
+  that rides on a hidden detail (a **boom crutch**).
+- Reconstruct Thomson's violinist argument: the conceded premise, the
+  distinction between a right not to be killed unjustly and a right to be given
+  what one needs, and the **Good Samaritan / Minimally Decent Samaritan** line.
+- Say what the tiny house and the people-seeds each target (the "extreme view";
+  the consent objection), and state the strongest replies: killing vs. letting
+  die, special parental duties, Hursthouse's virtue critique.
+- Locate the trolley problem's origin in the abortion debate, explain the
+  driver/bystander knob, and explain why Thomson reversed herself in 2008.
+- Apply Thomson's other work to bioethics: bodily-integrity law (compelled
+  donation, forced cesarean), the timing of delayed deaths, and identity across
+  time in **advance directives**.
+- Weigh the skeptics: framing and order effects, bizarre cases, and distance
+  from real decisions.
+
+### Slide-by-slide (36)
+
+**Act 0 — Breakfast**
+1. **[T]** Title — "Six Impossible Things Before Breakfast" (`white-queen`). The
+   Queen's line, once. Philosophers believe impossible things on purpose, to
+   learn about possible ones. Six of Thomson's cases are on the menu.
+2. **[T]** Who was Judith Jarvis Thomson? (`relic-thomson`). MIT moral
+   philosopher and metaphysician, known for cases that other philosophers still
+   argue about. `reveal`: the violinist; she named the trolley problem; privacy;
+   identity across time.
+3. **[P]** Belief probe (statements below).
+
+**Act 1 — A laboratory in the head** *(detachable: intro to method)*
+4. **[T]** Galileo's two stones (`looking-glass-lab`). If heavy things fall
+   faster, two stones tied together should fall both faster and slower. The
+   theory contradicts itself, and no tower was needed. Definition: an imagined
+   case built to test a claim by what we judge would happen in it, or would be
+   right in it. `reveal`.
+5. **[T]** Why ethics uses them. `reveal`: (1) one clear counterexample can sink
+   a general principle; (2) an imagined case can hold everything fixed but one
+   detail, like a controlled experiment; (3) **reflective equilibrium**: adjust
+   principles and case verdicts against each other until they fit (Rawls).
+6. **[T]** Intuition pumps and knobs (`white-knight`, `relic-dennett` inline).
+   Dennett's term: a case built to produce one intuition. Hofstadter's advice:
+   turn the knobs one at a time. If the verdict flips when an irrelevant knob
+   turns, the pump was misleading you. `reveal`.
+7. **[C]** *A good pump vs. a boom crutch.* Good: the verdict moves only when the
+   feature under test moves. Boom crutch: the verdict rides on vividness, a
+   sympathetic victim, loaded wording, or a detail nobody meant to include.
+8. **[Q · MCQ]** A case is offered to show that *consent* is what makes a burden
+   permissible. What is the best knob test? (✓ Build a twin case that differs
+   only in consent. ✗ Make the case more vivid. ✗ Poll a larger group. ✗ Add
+   realistic detail until it resembles a real case.)
+
+**Act 2 — The violinist** *(impossible things #1 and #2)*
+9. **[T]** The violinist (`violinist`). `reveal`: first the argument she was
+   answering (the fetus is a person; persons have a right to life; that right
+   outweighs a woman's right over her body). Then her move: **grant the first
+   premise**. Then the case, close to her words: the Society of Music Lovers, the
+   kidney ailment, your blood type, nine months.
+10. **[Poll]** Must you stay plugged in? (Must stay / May unplug, but staying
+    would be kind / May unplug, nothing further owed / Depends on how long.)
+    `explain=`: Thomson's verdict and her reason, shown to everyone.
+11. **[T]** What is a right to life? (`humpty-dumpty`, a lecturer on a wall
+    between two signposts). `reveal`: a right not to be killed unjustly vs. a
+    right to be given whatever you need. Only the second would require you to
+    stay plugged in, and Thomson says no one has it. Unplugging doesn't kill the
+    violinist *unjustly*.
+12. **[T]** Henry Fonda's cool hand (`cool-hand`). If only his touch will save
+    you, you still have no right to it. But if he is just across the room, he'd
+    be a cad not to cross it. `reveal`: the one-hour violinist, where decency asks
+    for the hour but he still has no right to it.
+13. **[C]** *Good Samaritan vs. Minimally Decent Samaritan.* Nine months vs. one
+    hour. The box of chocolates as the contrast case: there, refusing *is*
+    unjust, because the chocolates were given to both brothers.
+14. **[Q · MCQ]** Why does Thomson grant that the fetus is a person? (✓ To show
+    the argument fails even if its most disputed premise is true. ✗ Because she
+    believed personhood begins at conception. ✗ To show personhood never matters
+    morally. ✗ To concede that most abortions are wrong.)
+15. **[Q · Cloze]** A right to life is a right not to be killed *unjustly*; it is
+    not a right to use another person's *body*. Thomson asks only that we be
+    *Minimally Decent* Samaritans, not *Good* ones.
+
+**Act 3 — Thomson turns her own knobs** *(impossible things #3 and #4)*
+16. **[T]** The tiny house (`rabbit-house`). You are trapped in a tiny house with
+    a child who is growing; you will be crushed, and he will walk out. `reveal`:
+    a bystander may say "we can't choose between you," but the person in the
+    house may act; the coat that belongs to Smith. Target: the extreme view that
+    abortion is wrong even to save the woman's life. She returns to innocent
+    threats in "Self-Defense" (1991).
+17. **[T]** ⚙ The critics' first knob: consent. The violinist was kidnapped, and
+    most pregnancies don't begin that way. `reveal`: the responsibility
+    objection; Warren's verdict that the argument works cleanly only for rape.
+18. **[T]** The people-seeds (`people-seeds`). Thomson turns the consent knob
+    herself: fine mesh screens, one defective; the burglar through the window
+    opened for air. Does a precaution that fails give the seed a right to your
+    house? `reveal`.
+19. **[T]** ⚙ The knobs she didn't turn. `reveal`: killing vs. letting die
+    (unplugging withdraws support, but most abortion methods don't: Finnis);
+    stranger vs. your own child (special duties); a medical kidnapping vs. a
+    normal bodily process; Hursthouse: rights-talk skips what a good person would
+    do.
+20. **[V]** **The Knob Board** (`<phil-knobs>`, `white-knight`; spec below).
+21. **[Q · Checkset]** Which are Thomson's own claims? ✓ She grants personhood
+    for the argument. ✓ Some abortions would be indecent. ✓ The right to life
+    doesn't guarantee use of another's body. ✓ Her argument gives no right to
+    secure the fetus's death. ✗ The fetus is not a person. ✗ Every abortion is
+    permissible. ✗ Consent is irrelevant to what we owe. ✗ Her argument depends
+    on the fetus lacking consciousness.
+22. **[T]** In the clinic. Thomson's principle outside abortion. `reveal`:
+    *McFall v. Shimp* (Pa. 1978), where a court refused to compel bone-marrow
+    donation to a dying cousin; no organ retrieval, even after death, without
+    authorization; *In re A.C.* (D.C. 1990), where a forced cesarean was ruled
+    wrong.
+23. **[Poll]** Which knob moves your own verdict most? (Consent / Relationship /
+    Killing vs. letting die / Length of the burden.) `explain=` is the same for
+    everyone: these are the four places the debate actually lives.
+
+**Act 4 — The trolley, turned around** *(impossible thing #5; detachable for
+intro ethics)*
+24. **[T]** The surprise origin (`trolley-driver`, `relic-foot` inline).
+    `reveal`: Foot's 1967 *abortion* paper, with a driver; Thomson names it in
+    1976 and adds the surgeon; 1985 brings the bystander, footbridge, and loop.
+    One line pointing to "The Switch and the Scalpel" for the full tour.
+25. **[C]** *Driver vs. bystander.* The driver kills either way, so it's one
+    death vs. five. The bystander who does nothing only lets five die. This is
+    the killing / letting-die knob again, the same one the critics turned on the
+    violinist. `class="case"` on the bystander side: clinical ethics (AMA Code,
+    Opinion 5.3) treats withholding and withdrawing life support as equivalent,
+    though philosophers still argue about doing vs. allowing.
+26. **[Poll]** You're the bystander. Turn the trolley? (Turn / Don't turn.)
+27. **[Poll]** ⚙ Thomson's 2008 knob (`three-tracks`). A third track holds
+    *you*. (Turn onto the one / Turn onto yourself / Do nothing.)
+28. **[T]** Thomson changes her mind. `reveal`: if you wouldn't pay the cost
+    yourself, you may not make the one pay it, so the bystander may not turn. The
+    driver still may. Maybe there was never a trolley *problem*. Kamm and others
+    were unconvinced. Changing your mind for a stated reason is part of the
+    method.
+29. **[Q · MCQ]** What did Thomson change in 2008? (✓ She gave the bystander the
+    option of turning the trolley onto himself. ✗ She made the one person
+    responsible for the danger. ✗ She swapped the switch for a push from a
+    bridge. ✗ She made the bystander a surgeon with five patients.)
+
+**Act 5 — Time and identity** *(impossible thing #6; detachable for
+metaphysics)*
+30. **[T]** The time of a killing (`hatter-watch`). A shoots B on Monday, A dies
+    Tuesday, B dies Wednesday. When did A kill B? It can't be Wednesday, since A
+    was dead by then. `reveal`: bioethics version: a death days after a treatment
+    decision. Who caused it, and when?
+31. **[T]** One person, two selves (`two-selves`). Thomson (1983) rejects the
+    view that you are a series of temporal parts. `reveal`: an advance directive
+    is one person speaking for a later self; Margo, Firlik's real patient with
+    dementia, content now; Dworkin says honor the earlier self's critical
+    interests, Dresser says protect the present patient.
+32. **[Poll]** Margo gets pneumonia. Her old directive refuses treatment. (Honor
+    the directive / Treat her, since she's content now / It depends on what "she"
+    means.)
+33. **[Q · MCQ]** Which view gives an advance directive authority over a later,
+    contented patient? (✓ Dworkin: the earlier self's critical interests govern.
+    ✗ Dresser: the present patient's interests govern. ✗ Temporal parts: each
+    stage owns only its own choices. ✗ Thomson: rights over the body lapse with
+    capacity.)
+    **[B]** Branch after this slide: "Thomson on privacy?" →
+    **[opt]** "The Right to Privacy" (1975): privacy is not one right but a
+    cluster derived from rights over your person and property (the X-ray device
+    that sees into your safe). Rachels and Scanlon reply. Application: genetic
+    data, where "your" information is also your relatives'. (Not counted in 36.)
+
+**Act 6 — After breakfast**
+34. **[Q · Cloze]** Glossary: *intuition pump*; turn the *knobs*;
+    *counterexample*; reflective *equilibrium*; *boom crutch*.
+35. **[T]** Does the method survive its critics? (`white-queen`). `reveal`:
+    framing and order effects, even for professional philosophers (Petrinovich &
+    O'Neill; Schwitzgebel & Cushman); bizarre cases (Wilkes); trolleys far from
+    real life (Wood). Then Thomson's toolkit as the answer: grant your opponent's
+    strongest premise, build the counterexample, turn your own knobs before your
+    critics do, separate what's owed from what's decent, and change your mind
+    when a new knob shows up.
+36. **[P]** Belief probe review.
+
+### Belief-probe statements (start; revisited at end)
+1. Made-up cases, however strange, can teach us something true about real moral
+   decisions.
+2. If someone has a right to life, others must give them whatever they need to
+   stay alive.
+3. If you knowingly took a risk, you're responsible for what follows, even if
+   you took precautions.
+4. A bystander may turn a runaway trolley so it kills one person instead of five.
+5. A written advance directive should bind a later version of you who no longer
+   remembers writing it.
+
+### Comparisons (where each `<phil-compare>` lives)
+Good pump vs. boom crutch (7) · Good Samaritan vs. Minimally Decent Samaritan
+(13) · Driver vs. bystander (25).
+
+### Decision points (`<phil-poll>`, ungraded)
+The violinist (10) · Which knob moves you (23) · Bystander (26) · Three tracks
+(27) · Margo (32). Moral verdicts are never graded; MCQs ask only what a
+position claims or what a case changes.
+
+### New interactive viz to build
+**`<phil-knobs>` ("The Knob Board")** — a console of five knobs with 2–3 detents
+each:
+- **How you got connected:** kidnapped / precautions failed / invited, knowing
+  the risk
+- **How long:** one hour / nine months / nine years
+- **Who they are:** a stranger / your own child
+- **What ending it takes:** unplugging / actively killing
+- **Risk to your life:** none / grave
+
+Readouts: the nearest named case (violinist, one-hour violinist, people-seeds,
+burglar, tiny house, or "the critics' case": your own child, invited, killing),
+Thomson's verdict for that case, and the strongest objection to it. After each
+turn the student answers "Did your verdict change?" (yes/no). The end screen
+lists the knobs they said mattered, which sets up the poll at slide 23. Data is
+per knob plus a small table of named cases matched by nearest distance, not one
+entry per combination (there are 72). Ungraded. Lives in `assets/thomson.js`;
+use `phil-dense` and the two-column grid from `switchboard.js`. Written so later
+thought-experiment lessons (experience machine, Chinese Room, Mary's room) can
+reuse it with new JSON.
+
+### Art assets (in `assets/`, generated 2026-09-23)
+| Asset | Slide(s) | Status |
+|---|---|---|
+| `white-queen.png` | 1, 35 | ✓ |
+| `relic-thomson.svg` | 2 | ✓ |
+| `looking-glass-lab.png` | 4 | ✓ |
+| `white-knight.png` | 6, 20 | ✓ |
+| `relic-dennett.svg` | 6 | ✓ |
+| `violinist.png` | 9 | ✓ The violinist has long hair and reads as a woman. Write the alt text to match, or say "the violinist" without a pronoun. |
+| `humpty-dumpty.png` | 11 | ✓ Drawn as a stout man, not an egg. Fine, since the slide never names Humpty. |
+| `cool-hand.png` | 12 | ✓ Anonymous hand, no likeness. |
+| `rabbit-house.png` | 16 | ✓ Shows Carroll's scene, a giant arm through the window. The alt text should describe that, not Thomson's version. |
+| `people-seeds.png` | 18 | ✓ |
+| `trolley-driver.png` | 24 | ✓ Five on the left, one on the right. |
+| `relic-foot.svg` | 24 | ✓ |
+| `three-tracks.png` | 27 | ⚠ Shows a four-way crossing with groups of six and three and a figure off-track. It doesn't match the five / one / yourself case. Regenerate, or build the slide as a small inline SVG diagram. |
+| `hatter-watch.png` | 30 | ⚠ Roman numerals on the watch face. Minor, but it breaks the no-numbers rule. |
+| `two-selves.png` | 31 | ✓ The left figure is already grey-haired, so the age gap reads smaller than intended. |
+| `caterpillar.png` | — | ✗ Unused. The Alice in it has the 1951-film look that `prompts.md` forbids. |
+
+### Sources to cite (so nothing is invented)
+- Judith Jarvis Thomson, "A Defense of Abortion" (1971); "The Time of a Killing"
+  (1971); "The Right to Privacy" (1975); "Killing, Letting Die, and the Trolley
+  Problem" (1976); "Parthood and Identity Across Time" (1983); "The Trolley
+  Problem" (1985); "Self-Defense" (1991); "Turning the Trolley" (2008).
+- Philippa Foot, "The Problem of Abortion and the Doctrine of the Double
+  Effect" (1967).
+- Daniel Dennett, BBS commentary on Searle (1980); *Intuition Pumps and Other
+  Tools for Thinking* (2013). Hofstadter & Dennett, *The Mind's I* (1981).
+- Galileo, *Two New Sciences* (1638); John Rawls, *A Theory of Justice* (1971).
+- Mary Anne Warren, "On the Moral and Legal Status of Abortion" (1973); John
+  Finnis, "The Rights and Wrongs of Abortion" (1973); Rosalind Hursthouse,
+  "Virtue Theory and Abortion" (1991); F. M. Kamm, *The Trolley Problem
+  Mysteries* (2015).
+- Rebecca Dresser, "Life, Death, and Incompetent Patients" (1986); Ronald
+  Dworkin, *Life's Dominion* (1993); Andrew Firlik, "Margo's Logo," *JAMA*
+  (1991).
+- *McFall v. Shimp* (Pa. Ct. Com. Pl. 1978); *In re A.C.*, 573 A.2d 1235 (D.C.
+  1990); AMA *Code of Medical Ethics* Opinion 5.3.
+- Kathleen Wilkes, *Real People* (1988); Petrinovich & O'Neill (1996);
+  Schwitzgebel & Cushman, "Expertise in Moral Reasoning?" (2012); Allen Wood in
+  Parfit, *On What Matters* vol. 2 (2011).
+- Lewis Carroll, *Through the Looking-Glass* (1871), public domain; title line
+  and art only.
+
+### Counts (target)
+36 slides. Belief probe (start + revisit) + 7 graded (4 MCQ, 1 checkset,
+2 cloze) + 5 polls + 1 viz + 3 comparisons = 18 interactive, 50%. Vary
+correct-answer positions and balance option lengths; run
+`node tools/validate-quizzes.mjs` and `node tools/check-density.mjs --measure`.
+
+### Teaching it outside bioethics
+- **Intro to philosophy / critical thinking:** Acts 0, 1, 4, and 6 alone make a
+  ~20-slide lesson on thought experiments as a method.
+- **Intro ethics:** Acts 1–4.
+- **Metaphysics / philosophy of mind:** Acts 1 and 5, with the knob board
+  loaded with other cases.
+The act headings are the seams. Each detachable act opens by restating the
+knob-turning test so it doesn't depend on Act 1.
+
+### Open decisions before building
+- **Sensitivity.** Abortion is the most contested topic in the repo. Present
+  Thomson's argument and its strongest critics with equal care, never grade a
+  verdict, and add an instructor note at the top of `index.html`. The belief
+  probe deliberately has no statement about abortion itself.
+- **Overlap with `trolley-and-triage`.** Act 4 covers only the origin, the
+  driver/bystander knob, and the 2008 reversal. Confirm that's the right split.
+- **Privacy as core or branch.** Currently a branch; promote it if the course
+  covers health-data privacy.
+- **Knob board scope.** Build it in v1, or ship slide 20 as a sequence of polls
+  and add the widget later.
+- **`three-tracks` art.** Regenerate or replace with an inline SVG diagram
+  before building slide 27.
+
+### As built (32 slides) — supersedes the slide-by-slide plan above
+The first build followed the plan above. It was then rewritten to teach the
+cases instead of pointing at them, and cut to 32 slides:
+
+1. Title · 2. Belief probe · 3. What is a thought experiment? (Galileo)
+4. The argument Thomson answered (four premises; she grants premise 2)
+5. The violinist (her opening, the kidnapping) · 6. The director's speech ·
+   7. "Nine years": the director's reply is the anti-abortion argument ·
+   8. Poll · 9. What a right to life is · 10. Henry Fonda's cool hand ·
+   11. One-hour violinist + Good / Minimally Decent Samaritan compare
+12. Intuition pumps and knobs (Dennett, Hofstadter) · 13. Good pump vs.
+    boom crutch · 14. MCQ: the twin-case test
+15. The tiny house (with the extreme view) · 16. Smith's coat
+17. The responsibility objection · 18. People-seeds and the burglar ·
+    19. Where Thomson's argument stops · 20. Critics · 21. Knob board ·
+    22. Checkset: what Thomson claimed · 23. Bodily rights in the clinic
+24. Foot's tram and the judge · 25. Transplant surgeon and bystander ·
+    26. Bystander poll · 27. Third track (inline SVG) + poll ·
+    28. Thomson changes her mind
+29. The same person? (Margo, Dworkin's hypothetical directive) · 30. Margo poll
+31. Belief probe review · 32. Recap
+
+**Cut in the rewrite:** the chocolates, the violinist cloze, the "why grant
+personhood" / 2008 / Dworkin MCQs, the intuition-skeptics slide (one line kept
+on slide 13), the time of a killing, the privacy branch, and
+`three-tracks.png`, `caterpillar.png`, `humpty-dumpty.png`,
+`white-knight.png`, `hatter-watch.png` (all now unused in `assets/`).
+
+**Mix:** 2 graded (1 MCQ, 1 checkset), 5 polls, 1 viz, 2 comparisons, belief
+probe. Delete the unused PNGs to trim the SCORM zip.

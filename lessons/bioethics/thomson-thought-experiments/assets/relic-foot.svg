@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Philippa Foot — switch lever and branching railway track">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#ffcf5a"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#ffcf5a"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="38" y="93" width="4" height="4" fill="#ffcf5a"/>
+  <rect x="44" y="93" width="4" height="4" fill="#ffcf5a"/>
+
+  <!-- railway tracks: split in two -->
+  <!-- ballast bed -->
+  <polygon points="20,84 60,84 50,48 30,48" fill="#181c2b"/>
+  <!-- ties (sleepers) -->
+  <rect x="22" y="80" width="36" height="3" fill="#504838"/>
+  <rect x="24" y="72" width="32" height="3" fill="#504838"/>
+  <rect x="26" y="64" width="28" height="3" fill="#504838"/>
+  <rect x="28" y="56" width="24" height="3" fill="#504838"/>
+  <rect x="30" y="50" width="20" height="2" fill="#504838"/>
+
+  <!-- main rails (bottom single track) -->
+  <rect x="34" y="72" width="2" height="12" fill="#9aa3c7"/>
+  <rect x="44" y="72" width="2" height="12" fill="#9aa3c7"/>
+
+  <!-- switch frogs & branching rails -->
+  <!-- left branch curving left -->
+  <rect x="34" y="66" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="32" y="60" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="30" y="54" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="28" y="48" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="26" y="42" width="2" height="6" fill="#9aa3c7"/>
+  <!-- left branch inner rail -->
+  <rect x="42" y="66" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="39" y="60" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="36" y="54" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="33" y="48" width="2" height="6" fill="#9aa3c7"/>
+
+  <!-- right branch straight/diverging right -->
+  <rect x="44" y="66" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="46" y="60" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="48" y="54" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="50" y="48" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="52" y="42" width="2" height="6" fill="#9aa3c7"/>
+  <!-- right branch inner rail -->
+  <rect x="43" y="54" width="2" height="6" fill="#9aa3c7"/>
+  <rect x="45" y="48" width="2" height="6" fill="#9aa3c7"/>
+
+  <!-- switch stand base -->
+  <rect x="54" y="32" width="10" height="6" fill="#2b3147"/>
+  <rect x="56" y="30" width="6" height="2" fill="#3d4566"/>
+  <!-- lever pivot & brass rod -->
+  <rect x="58" y="24" width="2" height="8" fill="#d49b28"/>
+  <!-- angled handle -->
+  <polygon points="58,24 60,24 54,16 52,17" fill="#ffcf5a"/>
+  <!-- switch lever weighted ball / indicator -->
+  <rect x="50" y="15" width="4" height="4" fill="#ff6ad5"/>
+</svg>

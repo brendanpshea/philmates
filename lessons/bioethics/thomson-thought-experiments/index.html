@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Six Impossible Things Before Breakfast: Thomson's Thought Experiments · PhilMates</title>
+  <meta name="description" content="Judith Jarvis Thomson's thought experiments (the violinist, the tiny house, the people-seeds, the trolley she turned around) and how to test a thought experiment by turning its knobs.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=5">
+  <script type="module" src="../../../shared/phil-core.js?v=5"></script>
+  <script type="module" src="./assets/thomson.js"></script>
+  <style>
+    blockquote.source {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(17px, 1.9vw, 21px);
+      line-height: 1.5;
+      background: var(--panel);
+      border-left: 4px solid var(--accent-3);
+      padding: 10px 14px;
+      margin: 12px 0;
+      max-width: 62ch;
+    }
+    blockquote .cite {
+      display: block;
+      margin-top: 8px;
+      font-family: var(--pixel);
+      font-style: normal;
+      font-size: 10px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    ol.argument { margin: 10px 0; }
+    ol.argument li { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     Acts 1–4 teach Thomson's "A Defense of Abortion" (1971). The lesson presents
+     her argument and its strongest critics with equal care, and it never grades a
+     moral verdict: every "what would you do?" question is an ungraded <phil-poll>.
+     MCQs ask only what a position claims or what a case changes. The belief probe
+     deliberately contains no statement about abortion itself.
+     Quotations from Thomson follow the 1971 text; check them against your edition
+     before assigning page numbers. See phil_mates_outlines.md for sources. -->
+
+<phil-lesson id="thomson-thought-experiments" title="Six Impossible Things" subject="Thought Experiments (Thomson)">
+
+  <!-- ============ ACT 0 — BREAKFAST ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/white-queen.png" alt="A queen in a rumpled white gown and silver crown sits at a breakfast table set with six silver covered dishes; a tall mirror behind her reflects the table">
+    <h1>Six Impossible Things Before Breakfast</h1>
+    <p class="lead">"Why, sometimes I've believed as many as six impossible things before breakfast," says the White Queen in <em>Through the Looking-Glass</em>.</p>
+    <p>Judith Jarvis Thomson (1929–2020), a philosopher at MIT, made moral arguments out of impossible stories. You are about to meet six of them.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>Made-up cases, however strange, can teach us something true about real moral decisions.</phil-statement>
+      <phil-statement>If someone has a right to life, others must give them whatever they need to stay alive.</phil-statement>
+      <phil-statement>If you knowingly took a risk, you're responsible for what follows, even if you took precautions.</phil-statement>
+      <phil-statement>A bystander may turn a runaway trolley so it kills one person instead of five.</phil-statement>
+      <phil-statement>A written advance directive should bind a later version of you who no longer remembers writing it.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- 3. What is a thought experiment -->
+  <phil-slide>
+    <img slot="art" src="./assets/looking-glass-lab.png" alt="Inside a gilded oval mirror frame, a large stone and a small stone tied together by a rope fall past a stone tower">
+    <h1>What Is a Thought Experiment?</h1>
+    <p>A <strong>thought experiment</strong> is an imagined situation used to test a claim. You don't run it. You work out what would happen in it, or what would be right.</p>
+    <ul reveal>
+      <li>Aristotle taught that heavier objects fall faster. Galileo asked you to imagine tying a heavy stone to a light one.</li>
+      <li>The light stone should slow the heavy one down, so the pair falls slower. But the pair weighs more, so it should fall faster.</li>
+      <li>The theory predicts both at once, so it must be false. Galileo refuted it without dropping anything.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — THE VIOLINIST ============ -->
+
+  <!-- 4. The argument Thomson answers -->
+  <phil-slide>
+    <h1>The Argument Thomson Answered</h1>
+    <p>In 1971, two years before <em>Roe v. Wade</em>, Thomson published "A Defense of Abortion." It opens with a common argument against abortion:</p>
+    <ol class="argument">
+      <li>Every person has a right to life.</li>
+      <li>The fetus is a person from the moment of conception.</li>
+      <li>A woman has a right to decide what happens in and to her body.</li>
+      <li>A person's right to life is stronger than that right. So abortion is wrong.</li>
+    </ol>
+    <ul reveal>
+      <li>Most debate is over premise 2. Thomson thought it false: a fertilized egg is no more a person than an acorn is an oak tree.</li>
+      <li>She <strong>grants</strong> premise 2 anyway, for the sake of argument, and attacks premise 4 with a story.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. The violinist: setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/violinist.png" alt="A dark hospital room. An unconscious long-haired violinist lies in the near bed with a violin case beside them. A clear tube runs to a person just waking in the far bed, and figures in evening clothes watch from the doorway.">
+    <h1>The Violinist</h1>
+    <blockquote class="source">
+      "You wake up in the morning and find yourself back to back in bed with an unconscious violinist. A famous unconscious violinist."
+      <span class="cite">&mdash; Thomson, "A Defense of Abortion" (1971)</span>
+    </blockquote>
+    <ul reveal>
+      <li>He has a fatal kidney disease. The Society of Music Lovers searched the medical records and found that only you have the right blood type.</li>
+      <li>Last night they kidnapped you. They plugged his circulatory system into yours, so your kidneys now clean his blood as well as your own.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. The director's offer -->
+  <phil-slide>
+    <h1>The Hospital Director Explains</h1>
+    <blockquote class="source">
+      "Look, we're sorry the Society of Music Lovers did this to you&mdash;we would never have permitted it if we had known. But still, they did it, and the violinist now is plugged into you. To unplug you would be to kill him. But never mind, it's only for nine months. By then he will have recovered from his ailment, and can safely be unplugged from you."
+      <span class="cite">&mdash; Thomson, "A Defense of Abortion"</span>
+    </blockquote>
+    <p>Thomson asks: are you morally required to stay? It would be very kind of you. But do you <em>have</em> to?</p>
+  </phil-slide>
+
+  <!-- 7. Nine years -->
+  <phil-slide>
+    <h1>What If It Were Nine Years?</h1>
+    <p>Suppose the director says it's nine years, or the rest of your life. You protest. He replies:</p>
+    <blockquote class="source">
+      "Tough luck. &hellip; All persons have a right to life, and violinists are persons. Granted you have a right to decide what happens in and to your body, but a person's right to life outweighs your right to decide what happens in and to your body. So you cannot ever be unplugged from him."
+      <span class="cite">&mdash; Thomson, "A Defense of Abortion"</span>
+    </blockquote>
+    <ul reveal>
+      <li>Thomson expects you to find this outrageous. But the director's reasoning is the argument against abortion, word for word.</li>
+      <li>If his reasoning fails here, then premise 4 is false as stated. A right to life doesn't automatically win.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Poll: the violinist -->
+  <phil-slide>
+    <h1>Decision Point: Stay Plugged In?</h1>
+    <phil-poll prompt="You wake up connected to the violinist. Unplugging will kill him. Must you stay connected for nine months?"
+               explain="Thomson's answer: you may unplug. Staying would be a great kindness, but it is not something the violinist has a right to. And if you may unplug, then a person's right to life does not always outweigh another person's right over their own body.">
+      <phil-choice note="Then a right to life can require other people to give up the use of their bodies. Thomson thinks few people believe that once they picture the case.">Yes. His right to life means I must stay.</phil-choice>
+      <phil-choice note="This is Thomson's own answer. Staying would be generous, but it isn't owed to him.">No, but it would be generous to stay.</phil-choice>
+      <phil-choice note="Thomson disagrees slightly. She thinks some small sacrifices would be indecent to refuse, as the one-hour version shows.">No, and I owe him nothing at all.</phil-choice>
+      <phil-choice note="Thomson agrees that length matters to what decency asks. She still holds that he has no right to your kidneys at any length.">It depends on how long it lasts.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 9. What a right to life is -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-thomson.svg" alt="Relic card for Judith Jarvis Thomson: an unplugged medical cord curled around a small violin">
+    <h1>What Is a Right to Life?</h1>
+    <p>If you may unplug, what does the violinist's right to life actually give him? Thomson separates two things it might mean:</p>
+    <ul reveal>
+      <li><strong>A right to be given whatever you need to live.</strong> If he had this, he'd have a right to your kidneys. Thomson says no one has this right.</li>
+      <li><strong>A right not to be killed unjustly.</strong> This is the right to life everyone really has.</li>
+      <li>Unplugging does kill the violinist. But it doesn't kill him <em>unjustly</em>, because he never had a right to use your body.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Henry Fonda -->
+  <phil-slide>
+    <img slot="art" src="./assets/cool-hand.png" alt="A feverish patient lies with eyes closed on a pillow as an anonymous hand, glowing cool blue at the fingertips, reaches toward their brow from outside the frame">
+    <h1>Henry Fonda's Cool Hand</h1>
+    <p>Thomson's second case shows the same point with no kidnapping at all. Henry Fonda was a famous film star.</p>
+    <blockquote class="source">
+      "If I am sick unto death, and the only thing that will save my life is the touch of Henry Fonda's cool hand on my fevered brow, then all the same, I have no right to be given the touch of Henry Fonda's cool hand on my fevered brow."
+      <span class="cite">&mdash; Thomson, "A Defense of Abortion"</span>
+    </blockquote>
+    <p>It would be "frightfully nice" of him to fly in from the West Coast. But you can't demand it.</p>
+  </phil-slide>
+
+  <!-- 11. One-hour violinist & Samaritans -->
+  <phil-slide>
+    <h1>The One-Hour Violinist</h1>
+    <p>Now shrink the burden. The violinist needs your kidneys for only one hour. Thomson says you ought to stay. Does he now have a right to that hour?</p>
+    <phil-compare>
+      <phil-side label="Good Samaritan" tag="Above and beyond">
+        <p>Helps a stranger at great cost to themselves. We admire this, but no one may demand it.</p>
+        <p class="case">Staying plugged in for nine months. Flying across the country to touch a stranger's brow.</p>
+      </phil-side>
+      <phil-side label="Minimally Decent Samaritan" tag="Basic decency">
+        <p>Helps when it costs little. Refusing is indecent. It is still not a violation of anyone's rights.</p>
+        <p class="case">Staying the one hour. Henry Fonda crossing the room, if he were already there.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — HOW TO TEST A THOUGHT EXPERIMENT ============ -->
+
+  <!-- 12. Intuition pumps and knobs -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-dennett.svg" alt="Relic card for Daniel Dennett: an old hand water pump with three round knobs on its barrel and a drop at the spout">
+    <h1>Intuition Pumps and Their Knobs</h1>
+    <p>The philosopher Daniel Dennett called cases like the violinist <strong>intuition pumps</strong>: stories built to produce a particular judgment in you.</p>
+    <ul reveal>
+      <li>Dennett credits Douglas Hofstadter with a test: treat the story like a machine with knobs, and turn one knob at a time.</li>
+      <li>Thomson did this herself. She turned "nine months" to "one hour," and your duty changed from none to decency.</li>
+      <li>If turning a knob that shouldn't matter changes your judgment, the story was steering you with that detail.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Compare: good pump vs boom crutch -->
+  <phil-slide>
+    <h1>Good Pump or Misleading Pump?</h1>
+    <p>Dennett's name for a thinking tool that misleads you is a <strong>boom crutch</strong>. Studies find that even professional philosophers change their verdicts depending on the order they hear cases in.</p>
+    <phil-compare>
+      <phil-side label="A Good Pump" tag="Tracks its target">
+        <p>Your judgment changes when the feature being tested changes, and stays put when anything else changes.</p>
+        <p class="case">Make the violinist your own child and many people's answer shifts. Make him a cellist and nothing shifts.</p>
+      </phil-side>
+      <phil-side label="A Boom Crutch" tag="Rides a hidden detail">
+        <p>Your judgment depends on wording, vividness, or a detail nobody meant to test.</p>
+        <p class="case">Doctors choose surgery more often when told "90% survive" than "10% die." The facts are identical.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 14. MCQ: the twin-case test [correct: A] -->
+  <phil-slide>
+    <h1>Testing the Test</h1>
+    <phil-mcq prompt="Someone offers a case to show that consent is what makes a burden permissible. What is the best knob test of that claim?"
+              explain="Right. A twin case that differs only in consent isolates that one feature. If the verdict changes, consent is doing the work. If it doesn't, something else in the case is producing the judgment.">
+      <phil-choice correct>Build a twin case that is the same except for consent</phil-choice>
+      <phil-choice feedback="Vividness is one of the details that can make a pump misleading. A more vivid case tests your imagination, not the claim.">Retell the case with more vivid and memorable detail</phil-choice>
+      <phil-choice feedback="A bigger poll tells you what more people think about the same case. It can't tell you which feature they are reacting to.">Ask a much larger group whether they share the verdict</phil-choice>
+      <phil-choice feedback="Realism adds details, and each one is another knob that might be driving the verdict. The test changes one thing, not many.">Add realistic details until it resembles a real case</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE TINY HOUSE ============ -->
+
+  <!-- 15. The tiny house -->
+  <phil-slide>
+    <img slot="art" src="./assets/rabbit-house.png" alt="A small half-timbered cottage bulging at the seams, roof tiles flying, as a giant arm reaches out of an upstairs window; a white rabbit in a waistcoat and a lizard holding a ladder look on">
+    <h1>The Tiny House</h1>
+    <p>Some opponents held the <strong>extreme view</strong>: abortion is wrong even when the pregnancy will kill the woman, because directly killing an innocent person is always wrong.</p>
+    <blockquote class="source">
+      "Suppose you find yourself trapped in a tiny house with a growing child. I mean a very tiny house, and a rapidly growing child&mdash;you are already up against the wall of the house and in a few minutes you'll be crushed to death."
+      <span class="cite">&mdash; Thomson, "A Defense of Abortion"</span>
+    </blockquote>
+    <ul reveal>
+      <li>The child won't be crushed. If nothing stops him, he'll burst out of the house and walk away.</li>
+      <li>Thomson says you may act to save yourself, even though the child is innocent and it will kill him.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Smith's coat -->
+  <phil-slide>
+    <h1>Whose House Is It?</h1>
+    <p>An outsider might say, "I can't choose between your life and the child's." Thomson says that isn't neutral, and she explains why with a coat.</p>
+    <ul reveal>
+      <li>Smith and Jones will both freeze without a certain coat. Jones has grabbed it. But the coat belongs to Smith.</li>
+      <li>A bystander who says "I can't choose between you" is siding with Jones, who has taken what isn't his.</li>
+      <li>In the tiny house, the house is yours. It is the woman's body that the fetus occupies.</li>
+      <li>So the extreme view fails: a woman may save her own life, and others may help her do it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — CONSENT: THE PEOPLE-SEEDS ============ -->
+
+  <!-- 17. The responsibility objection -->
+  <phil-slide>
+    <h1>The Obvious Objection</h1>
+    <p>The violinist was kidnapped. That makes it like pregnancy from rape. But most pregnancies follow sex the woman chose to have.</p>
+    <ul reveal>
+      <li>The <strong>responsibility objection</strong>: if you knowingly risked creating a dependent person, you are responsible for them.</li>
+      <li>On this view, the fetus gains a right to your body because of what you chose to do.</li>
+      <li>Mary Anne Warren, who defended abortion rights herself, thought the violinist argument clearly worked only for rape.</li>
+      <li>Thomson replies with two more cases, both about a risk you knew of and tried to avoid.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. People-seeds -->
+  <phil-slide>
+    <img slot="art" src="./assets/people-seeds.png" alt="A cozy parlor at dusk: glowing green seed-puffs drift through an open window whose mesh screen has a small tear, and one has taken root as a sprout on the carpet">
+    <h1>The People-Seeds</h1>
+    <p>Imagine that "people-seeds drift about in the air like pollen." If one lands in your carpet, it takes root and grows into a person.</p>
+    <ul reveal>
+      <li>You don't want children, so you put the best mesh screens you can buy on your windows. One is defective, and a seed takes root.</li>
+      <li>Does it now have a right to the use of your house? Thomson says surely not, though you chose to open your windows.</li>
+      <li>Her simpler case: you open a window for air and a burglar climbs in. Knowing burglars exist gives him no right to stay.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Where Thomson stops -->
+  <phil-slide>
+    <h1>Where Thomson's Argument Stops</h1>
+    <p>Thomson did not argue that every abortion is permissible. She drew these limits herself:</p>
+    <ul reveal>
+      <li>If you choose to take on a person's care, as parents do when they take a newborn home, you owe them far more.</li>
+      <li>Some abortions would be indecent. Her example: ending a pregnancy in the seventh month to avoid postponing a trip abroad.</li>
+      <li>You may unplug. But if the violinist survives by a miracle, you have no right to kill him afterward.</li>
+      <li>So a right to end a pregnancy is not a right to ensure the death of a fetus that could live on its own.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Critics -->
+  <phil-slide>
+    <h1>Replies from Thomson's Critics</h1>
+    <ul reveal>
+      <li><strong>Killing vs. letting die.</strong> Unplugging stops help. John Finnis argued that most abortion methods act directly on the fetus instead.</li>
+      <li><strong>Stranger vs. child.</strong> The violinist is a stranger. Many argue parents owe their children help whether they chose it or not.</li>
+      <li><strong>Unusual vs. ordinary.</strong> Being plugged into a stranger is bizarre. Pregnancy is a normal part of human life.</li>
+      <li><strong>Rights vs. character.</strong> Rosalind Hursthouse asked what a wise, good person would do, not only what rights allow.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Knob board viz -->
+  <phil-slide>
+    <h1>The Knob Board</h1>
+    <phil-knobs prompt="Set the details of the case. The board finds Thomson's closest case, what she says about it, and the strongest objection.">
+      <script type="application/json">
+      {
+        "knobs": [
+          { "id": "connect", "label": "How you got connected", "options": ["Kidnapped", "Precautions failed", "Knowingly took the risk"] },
+          { "id": "length",  "label": "How long it lasts",     "options": ["One hour", "Nine months", "Nine years"] },
+          { "id": "who",     "label": "Who depends on you",    "options": ["A stranger", "Your own child"] },
+          { "id": "ending",  "label": "What ending it takes",  "options": ["Unplugging", "Actively killing"] },
+          { "id": "risk",    "label": "Risk to your life",     "options": ["None", "Your life is at stake"] }
+        ],
+        "cases": [
+          { "name": "The violinist",
+            "set": { "connect": 0, "length": 1, "who": 0, "ending": 0, "risk": 0 },
+            "says": "You may unplug. His right to life is not a right to use your kidneys. Staying would be generous, not owed.",
+            "objection": "You were kidnapped. Most pregnancies begin with voluntary sex, so this case may not carry over." },
+          { "name": "The one-hour violinist",
+            "set": { "connect": 0, "length": 0, "who": 0, "ending": 0, "risk": 0 },
+            "says": "You ought to stay the hour. Refusing would be indecent, but he still has no right to it.",
+            "objection": "If decency can demand an hour, why not nine months? Thomson never says exactly where the line falls." },
+          { "name": "The nine-year violinist",
+            "set": { "connect": 0, "length": 2, "who": 0, "ending": 0, "risk": 0 },
+            "says": "Even more clearly, you may unplug. Nine years of your body is far beyond what decency asks.",
+            "objection": "Few critics object here. The debate is over whether pregnancy resembles this case at all." },
+          { "name": "The people-seeds",
+            "set": { "connect": 1, "length": 1, "who": 0, "ending": 0, "risk": 0 },
+            "says": "A screen that fails doesn't give the seed a right to your house. You took care not to invite it.",
+            "objection": "A seed is a stranger. Critics say a child you conceived is your own, and parenthood brings duties." },
+          { "name": "The burglar",
+            "set": { "connect": 2, "length": 1, "who": 0, "ending": 0, "risk": 0 },
+            "says": "Opening a window for air gives a burglar no right to stay, even though you knew burglars exist.",
+            "objection": "Critics say voluntary sex is less like airing a room and more like an invitation." },
+          { "name": "The tiny house",
+            "set": { "connect": 0, "length": 1, "who": 0, "ending": 1, "risk": 1 },
+            "says": "You may act to save your own life. A bystander may hesitate, but the house is yours.",
+            "objection": "The child is innocent. Some hold that you may never directly kill an innocent person, even to save yourself." },
+          { "name": "The violinist, actively killed",
+            "set": { "connect": 0, "length": 1, "who": 0, "ending": 1, "risk": 0 },
+            "says": "Thomson grants that unplugging kills him too. What matters to her is whether the killing is unjust.",
+            "objection": "Finnis: withdrawing help differs from attacking a body directly, and most abortion methods do the second." },
+          { "name": "Your own child, plugged in",
+            "set": { "connect": 0, "length": 1, "who": 1, "ending": 0, "risk": 0 },
+            "says": "Special duties come from taking on responsibility, not biology alone. If you took the child home, you owe more.",
+            "objection": "Many think parents owe their children help whether or not they chose to take it on." },
+          { "name": "The critics' case",
+            "set": { "connect": 2, "length": 1, "who": 1, "ending": 1, "risk": 0 },
+            "says": "None of Thomson's cases is set up like this. It combines the three details her critics stress most.",
+            "objection": "Many critics say this setting is ordinary pregnancy, and that none of Thomson's verdicts carries over to it." }
+        ]
+      }
+      </script>
+    </phil-knobs>
+  </phil-slide>
+
+  <!-- 22. Checkset: Thomson's own claims -->
+  <phil-slide>
+    <h1>What Thomson Actually Claimed</h1>
+    <phil-checkset prompt="Check every claim Thomson herself makes in &quot;A Defense of Abortion.&quot;"
+                   explain="Right. She grants personhood for the argument, denies that a right to life guarantees the use of another's body, and says some abortions would be indecent. She also says her argument gives no right to ensure the death of a fetus that could survive. She never says consent is irrelevant: the burglar and the people-seeds are her attempt to show when it matters.">
+      <phil-statement correct>For the sake of argument, the fetus is a person from conception</phil-statement>
+      <phil-statement correct>Some abortions would be indecent, such as one to avoid postponing a trip</phil-statement>
+      <phil-statement correct>A right to life doesn't guarantee the use of another person's body</phil-statement>
+      <phil-statement correct>No one has a right to ensure the death of a fetus that could survive</phil-statement>
+      <phil-statement>The fetus is not a person, so it has no right to life of any kind</phil-statement>
+      <phil-statement>Every abortion is permissible, at every stage and for every reason</phil-statement>
+      <phil-statement>Whether you consented to a risk makes no difference to what you owe</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- 23. In the clinic -->
+  <phil-slide>
+    <h1>Bodily Rights in the Clinic</h1>
+    <p>Thomson's principle, that no one has a right to the use of your body, also shows up in medical law:</p>
+    <ul reveal>
+      <li><em>McFall v. Shimp</em> (Pa. 1978): a dying man needed bone marrow from his cousin. The judge called the refusal wrong but would not force it.</li>
+      <li>US law takes no organs, even from the dead, without authorization from the person or their family.</li>
+      <li><em>In re A.C.</em> (D.C. 1990): after a court ordered a cesarean, the appeals court held the patient's choice should control.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE TROLLEY ============ -->
+
+  <!-- 24. Foot's driver -->
+  <phil-slide>
+    <img slot="art" src="./assets/trolley-driver.png" alt="View from a vintage streetcar's cab: the driver grips a brass lever as sparks fly toward a fork in the track, with five people on the left branch and one on the right">
+    <h1>Foot's Runaway Tram</h1>
+    <p>The trolley problem began in a 1967 paper on abortion by the Oxford philosopher Philippa Foot.</p>
+    <ul reveal>
+      <li>A tram's brakes fail. Ahead, five workers are on the track. The driver can steer onto a side track where one worker stands.</li>
+      <li>Foot said the driver should steer. Either way he kills someone, so he should kill one rather than five.</li>
+      <li>Compare a judge who could stop a deadly riot by framing an innocent man. Foot said he may not, though it also saves more lives.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Transplant and bystander -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-foot.svg" alt="Relic card for Philippa Foot: a railway switch lever above a track that splits in two">
+    <h1>Thomson's Two New Cases</h1>
+    <p>Thomson named this "the trolley problem" in 1976 and added two cases.</p>
+    <ul reveal>
+      <li><strong>The transplant surgeon.</strong> Five patients will die without new organs. A healthy visitor's organs match. May the surgeon cut him up to save them? Clearly not.</li>
+      <li><strong>The bystander</strong> (1985). You aren't the driver. You're standing beside the track, next to a switch that would send the trolley onto the one.</li>
+      <li>The driver kills either way. The bystander who does nothing only lets five die. If he turns the trolley, he kills one.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Poll: bystander -->
+  <phil-slide>
+    <h1>Decision Point: The Bystander</h1>
+    <phil-poll prompt="A runaway trolley will kill five workers. You are standing by a switch that would turn it onto a side track, where it will kill one. Do you turn it?"
+               explain="In 1985 Thomson said the bystander may turn the trolley. Turning it redirects a threat that already exists, while the surgeon would have to attack someone to save the five. Most people who are asked agree with her. In 2008 she changed her mind, for the reason on the next slide.">
+      <phil-choice note="The majority answer, and Thomson's own view in 1985.">Turn it. One death is better than five.</phil-choice>
+      <phil-choice note="You would be killing the one, where doing nothing only lets five die. Some think that difference decides it.">Don't turn it. I would be killing the one.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 27. Three options -->
+  <phil-slide>
+    <svg slot="art" viewBox="0 0 200 240" role="img" aria-label="Diagram: a single track splits into three branches. Five figures stand on the left branch, one figure on the middle branch, and the bystander, in a gold cap, stands on the right branch. A trolley approaches from below." shape-rendering="crispEdges">
+      <rect width="200" height="240" fill="#1d2235"/>
+      <g stroke="#9aa3c7" stroke-width="6" fill="none">
+        <line x1="100" y1="240" x2="100" y2="150"/>
+        <line x1="100" y1="150" x2="30" y2="20"/>
+        <line x1="100" y1="150" x2="100" y2="20"/>
+        <line x1="100" y1="150" x2="170" y2="20"/>
+      </g>
+      <g stroke="#11131f" stroke-width="2" stroke-dasharray="2 8" fill="none">
+        <line x1="100" y1="240" x2="100" y2="150"/>
+        <line x1="100" y1="150" x2="30" y2="20"/>
+        <line x1="100" y1="150" x2="100" y2="20"/>
+        <line x1="100" y1="150" x2="170" y2="20"/>
+      </g>
+      <rect x="86" y="196" width="28" height="36" fill="#ff5d6c"/>
+      <rect x="90" y="200" width="20" height="8" fill="#eef1ff"/>
+      <rect x="112" y="150" width="4" height="14" fill="#ffcf5a"/>
+      <rect x="108" y="146" width="12" height="4" fill="#ffcf5a"/>
+      <g fill="#4cc2ff">
+        <rect x="18" y="16" width="6" height="6"/><rect x="17" y="22" width="8" height="10"/>
+        <rect x="30" y="24" width="6" height="6"/><rect x="29" y="30" width="8" height="10"/>
+        <rect x="24" y="38" width="6" height="6"/><rect x="23" y="44" width="8" height="10"/>
+        <rect x="38" y="42" width="6" height="6"/><rect x="37" y="48" width="8" height="10"/>
+        <rect x="44" y="58" width="6" height="6"/><rect x="43" y="64" width="8" height="10"/>
+      </g>
+      <g fill="#4cc2ff"><rect x="97" y="30" width="6" height="6"/><rect x="96" y="36" width="8" height="10"/></g>
+      <g><rect x="152" y="52" width="10" height="4" fill="#ffcf5a"/><rect x="154" y="56" width="6" height="6" fill="#eef1ff"/><rect x="153" y="62" width="8" height="12" fill="#ff6ad5"/></g>
+    </svg>
+    <h1>A Third Track</h1>
+    <p>In 2008 Thomson changed one detail. The switch now has three positions. The third sends the trolley onto a track where <strong>you</strong> are standing.</p>
+    <phil-poll prompt="You can turn the trolley onto the one, onto yourself, or do nothing. What do you do?"
+               explain="Thomson says you are not required to turn it onto yourself. No one must give their life to save five strangers. But if you wouldn't turn it onto yourself, she asks, how can you turn it onto the one?">
+      <phil-choice note="You would make the one pay a price that you just declined to pay yourself.">Turn it onto the one</phil-choice>
+      <phil-choice note="Admirable, and more than anyone could demand of you.">Turn it onto myself</phil-choice>
+      <phil-choice note="Five die, but you kill no one.">Do nothing</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 28. Thomson changes her mind -->
+  <phil-slide>
+    <h1>Thomson Changes Her Mind</h1>
+    <p>In "Turning the Trolley" (2008), Thomson used the three-track case to reverse her 1985 answer.</p>
+    <ul reveal>
+      <li>Saving the five would cost a life. You may refuse to pay that cost with your own life.</li>
+      <li>But then you may not make the one pay it instead. That is making someone else give what you won't give yourself.</li>
+      <li>So in the ordinary two-track case, the bystander may not turn the trolley either. The driver still may, because he kills either way.</li>
+      <li>The philosopher Frances Kamm and many others disagreed. Most people asked still say the bystander should turn it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 6 — IDENTITY OVER TIME ============ -->
+
+  <!-- 29. Margo -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-selves.png" alt="A split scene divided by a tall mirror: on the left a grey-haired woman seals a letter with red wax at a desk; on the right the same woman, older and smiling, paints bright flowers at an easel, the sealed letter beside her">
+    <h1>The Same Person?</h1>
+    <p>Thomson also wrote about identity over time. She argued that you exist whole at each moment of your life, not as a series of slices. Medicine faces the question too.</p>
+    <ul reveal>
+      <li>In 1991 a medical student, Andrew Firlik, described Margo, a patient with Alzheimer's disease. He called her one of the happiest people he knew.</li>
+      <li>The philosopher Ronald Dworkin imagined that, years earlier, Margo had signed an <strong>advance directive</strong>: no treatment if she became demented.</li>
+      <li>Now she gets pneumonia, which antibiotics could easily cure.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. Poll: Margo -->
+  <phil-slide>
+    <h1>Decision Point: Margo's Directive</h1>
+    <phil-poll prompt="Margo, content in her dementia, has pneumonia. Her earlier directive refuses treatment. What should her doctors do?"
+               explain="Dworkin argued the directive should govern, because it expresses Margo's critical interests: her considered view of how her whole life should go. Rebecca Dresser argued the present patient's interests should govern, because it is today's Margo who lives or dies. Each answer depends on how the earlier and later Margo are related.">
+      <phil-choice note="Dworkin's view. The earlier self's considered values carry authority over the later self.">Honor the directive and don't treat</phil-choice>
+      <phil-choice note="Dresser's view. Protect the person in the bed, whose interests are here and now.">Treat her, since she's content now</phil-choice>
+      <phil-choice note="Then a question about personal identity has become a practical medical question.">It depends on whether she's the same person</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- ============ ACT 7 — AFTER BREAKFAST ============ -->
+
+  <!-- 31. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 32. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/white-queen.png" alt="A queen in a rumpled white gown and silver crown sits at a breakfast table set with six silver covered dishes; a tall mirror behind her reflects the table">
+    <h1>Six Impossible Things</h1>
+    <ul reveal>
+      <li><strong>The violinist</strong> and <strong>Henry Fonda's hand</strong>: a right to life is not a right to the use of someone else's body.</li>
+      <li><strong>The tiny house</strong>: you may defend your life even against an innocent threat, and others may help you.</li>
+      <li><strong>The burglar</strong> and <strong>the people-seeds</strong>: knowing about a risk you tried to prevent is not consenting to it.</li>
+      <li><strong>The third track</strong>: Thomson changed one detail of her own trolley case, and it reversed her verdict.</li>
+    </ul>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

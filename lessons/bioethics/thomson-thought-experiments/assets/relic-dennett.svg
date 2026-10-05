@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Daniel Dennett — hand water pump with three adjustment knobs and a water droplet">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+
+  <!-- stone pedestal base -->
+  <rect x="24" y="78" width="32" height="6" fill="#2b3147"/>
+  <rect x="28" y="75" width="24" height="3" fill="#3d4566"/>
+
+  <!-- iron water pump barrel -->
+  <rect x="34" y="32" width="12" height="43" fill="#4a5568"/>
+  <rect x="32" y="30" width="16" height="2" fill="#718096"/>
+  <rect x="33" y="42" width="14" height="2" fill="#718096"/>
+  <rect x="33" y="58" width="14" height="2" fill="#718096"/>
+  <rect x="32" y="73" width="16" height="2" fill="#718096"/>
+
+  <!-- pump handle on right -->
+  <!-- pivot bracket -->
+  <rect x="44" y="34" width="4" height="4" fill="#718096"/>
+  <!-- iron handle curving downward -->
+  <rect x="48" y="35" width="4" height="2" fill="#a0aec0"/>
+  <rect x="52" y="37" width="3" height="3" fill="#a0aec0"/>
+  <rect x="55" y="40" width="2" height="6" fill="#a0aec0"/>
+  <rect x="57" y="46" width="2" height="8" fill="#a0aec0"/>
+  <rect x="56" y="54" width="4" height="4" fill="#cbd5e1"/>
+
+  <!-- spout on left -->
+  <polygon points="34,48 24,52 24,56 34,54" fill="#718096"/>
+  <rect x="22" y="52" width="2" height="4" fill="#4a5568"/>
+
+  <!-- single water droplet falling from spout -->
+  <polygon points="23,60 21,63 25,63" fill="#4cc2ff"/>
+  <rect x="21" y="63" width="4" height="2" fill="#4cc2ff"/>
+  <rect x="22" y="65" width="2" height="1" fill="#4cc2ff"/>
+
+  <!-- three adjustment knobs mounted vertically on the pump barrel -->
+  <!-- knob 1 (top): amber -->
+  <rect x="37" y="36" width="6" height="4" fill="#ffcf5a"/>
+  <rect x="39" y="35" width="2" height="6" fill="#ffe9a8"/>
+  <rect x="38" y="37" width="4" height="2" fill="#d49b28"/>
+
+  <!-- knob 2 (middle): magenta -->
+  <rect x="37" y="48" width="6" height="4" fill="#ff6ad5"/>
+  <rect x="39" y="47" width="2" height="6" fill="#ffa8ec"/>
+  <rect x="38" y="49" width="4" height="2" fill="#c43b9c"/>
+
+  <!-- knob 3 (bottom): info-blue -->
+  <rect x="37" y="64" width="6" height="4" fill="#4cc2ff"/>
+  <rect x="39" y="63" width="2" height="6" fill="#a8e3ff"/>
+  <rect x="38" y="65" width="4" height="2" fill="#2098d4"/>
+</svg>
