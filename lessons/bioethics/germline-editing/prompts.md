@@ -47,6 +47,9 @@ was drawn):
   in front of the other two.
 - `two-staircases.png` puts both pairs of shoes in front of the stone stair.
 
+The sheet PNGs were deleted after splitting (2026-10-05) to keep the SCORM zip
+small. Regenerate a sheet from its prompt if a panel needs redoing.
+
 ## House style (already included in each sheet prompt)
 
 > **16-bit SNES/JRPG pixel art**, near-future clinic inside an old lakeside

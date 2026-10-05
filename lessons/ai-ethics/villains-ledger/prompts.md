@@ -50,10 +50,10 @@ Notes from building the deck (2026-10-05). Where the panels differ from the prom
 
 - **`bailout.png` was re-cropped from the sheet and scrubbed a second time**
   while building the deck, replacing the earlier scrubbed copy. The word BANK
-  is painted out with the surrounding stone color. The sheet still has it.
+  is painted out with the surrounding stone color.
 - **`glass-trail.png` had digit-like marks on the ledger pages.** The
   lower-right page was refilled and redrawn as plain ruled bars, and the left
-  wall was coarsened. The sheet still has them.
+  wall was coarsened.
 - **Doctor Calamity is off-model on sheet B.** In `bank-counter.png` and
   `cardboard-crowd.png` she is a figure with black hair and a mustache. That
   suits the bank disguise, so the cardboard slide says she is "still wearing
@@ -68,6 +68,9 @@ Notes from building the deck (2026-10-05). Where the panels differ from the prom
 - `mining-hall.png` has no window or power station.
 
 Alt text in `index.html` describes the panels as they are.
+
+The sheet PNGs were deleted after splitting (2026-10-05) to keep the SCORM zip
+small. Regenerate a sheet from its prompt if a panel needs redoing.
 
 ## House style (already included in each sheet prompt)
 
