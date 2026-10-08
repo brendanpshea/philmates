@@ -2738,3 +2738,231 @@ comparison, the belief probe, and both widgets (`assets/ledger.js`). In
 enough to make the point, and a keeper holding the only list forces the
 "can a payment be stopped" switch to Yes. The figures on the slides were
 checked on 2026-10-05; see the accuracy note.
+
+---
+
+## Bioethics: Double Effect — "The Case of the Merciful Dose"  *(built)*
+
+- **Path:** `lessons/bioethics/double-effect/`
+- **Lesson id:** `double-effect`
+- **Subject (catalog):** `Double Effect & Killing vs. Letting Die`
+- **Topic:** Bioethics, death and dying unit. Pitched at "explain it like I'm
+  twelve": two distinctions and the best objections to each.
+- **Approach:** The traditional view of end-of-life care rests on two
+  distinctions: **intending vs. foreseeing** (the doctrine of double effect)
+  and **killing vs. letting die**. Teach the doctrine on one case, show where
+  medicine and law use both distinctions, then test each with one of James
+  Rachels' twin cases. Defenders get their replies. No verdict is graded.
+- **Frame:** Dr. Watson has a dying patient, Mr. Thorne, whose pain needs a
+  dose of morphine that might shorten his life. He asks Holmes whether giving
+  it would be killing. Holmes tests the doctrine the way he tests an alibi, with
+  cases. Lestrade speaks for the rules as written. Holmes and Watson are from
+  the 1890s; the slides say plainly that the rules they are testing govern
+  hospitals now.
+- **Who says what:** Holmes *presents* Rachels' cases and credits him. The
+  arguments are never passed off as Holmes's own. Watson voices the defenders,
+  since the doctrine protects what he does.
+- **Recurring devices:** the two shadows (green for the intended effect,
+  magenta for the foreseen one) and things in pairs (two candles, two hats, two
+  visitors) for the twin-case method.
+- **Thinkers and cases:** Thomas Aquinas (origin, relic card); James Rachels
+  (Smith and Jones; Jack and Jill; relic card); Timothy Quill (mixed motives,
+  relic card); Winston Nesbitt and Thomas Sullivan (replies to Rachels); Oliver
+  Wendell Holmes Jr. (the stumbled-over dog).
+- **Left out on purpose:** the craniotomy and hysterectomy cases, the terror
+  and tactical bombers, Rachels' infant case, the closeness problem beyond one
+  bullet, Kagan's additive fallacy by name, and the legal debate over assisted
+  dying.
+- **Cross-references:** `trolley-and-triage` gives double effect one slide and a
+  cloze; this lesson is the full treatment. `thomson-thought-experiments`
+  teaches the twin-case method (turn one knob) that Rachels uses here.
+  `patient-autonomy` covers refusal of treatment.
+
+### Accuracy note (real, not invented)
+- **The "evil uncles"** is a classroom nickname. In Rachels' text Smith and
+  Jones each stand to inherit if their six-year-old **cousin** dies. Smith
+  drowns the child in the bath. Jones comes in meaning to do the same, sees the
+  child slip and hit his head, and stands by, ready to push his head back
+  under, while he drowns. The slides say "cousin."
+- **Smith and Jones target killing vs. letting die**, not double effect.
+  Rachels, "Active and Passive Euthanasia," *New England Journal of Medicine*
+  292 (1975). The same paper has the patient with incurable throat cancer, for
+  whom being allowed to die may mean a longer and more painful death.
+- **The AMA statement** Rachels quotes was adopted by the House of Delegates
+  on December 4, 1973. **Check the wording before quoting it.**
+- **Sullivan's reply:** Thomas D. Sullivan, "Active and Passive Euthanasia: An
+  Impertinent Distinction?" (1977) argues the traditional view was always about
+  intention, not about acting versus refraining.
+- **Jack and Jill:** Rachels, "More Impertinent Distinctions and a Defense of
+  Active Euthanasia" (1978), and *The End of Life* (1986). Jack visits his sick
+  grandmother to cheer her up. Jill does the same, hoping to be remembered in
+  the will. Rachels: they did the same thing, and the intention bears on their
+  character, not on the act.
+- **Nesbitt's reply:** Winston Nesbitt, "Is Killing No Worse Than Letting
+  Die?" *Journal of Applied Philosophy* 12 (1995). Jones was ready to kill, so
+  the pair shows only that both men are equally bad.
+- **Double effect:** Aquinas, *Summa Theologiae* II-II, q. 64, a. 7
+  (self-defense). The four-condition form is later; the slides use the version
+  in Beauchamp and Childress.
+- ***Vacco v. Quill*, 521 U.S. 793 (1997):** upheld New York's ban on assisted
+  suicide, distinguished it from refusing treatment by causation and intent,
+  and accepted pain relief that may hasten death when the intent is to ease
+  pain.
+- **Quill's critique:** Quill, Dresser, and Brock, "The Rule of Double Effect:
+  A Critique of Its Role in End-of-Life Decision Making," *NEJM* 337 (1997).
+- **Opioids:** Fohr, "The Double Effect of Pain Medication: Separating Myth
+  from Reality," *Journal of Palliative Medicine* 1 (1998); Sykes and Thorns,
+  *Lancet Oncology* 4 (2003). Opioids raised step by step to control pain
+  rarely shorten life. **Re-check current palliative-care guidance.**
+- **The dog:** Oliver Wendell Holmes Jr., *The Common Law* (1881): "even a dog
+  distinguishes between being stumbled over and being kicked." He is the
+  judge, not the detective, and the slide says so.
+- **Period detail:** morphine for cancer pain is right for the 1890s.
+
+### Learning goals
+- Tell an **intended** effect from a **foreseen** one, and state the four
+  conditions of the **doctrine of double effect**.
+- Apply the four conditions to a case and say which one fails.
+- Tell **killing** from **letting die**, and say where medicine and law rely on
+  each distinction.
+- Explain what a **twin case** is, what Smith and Jones are meant to show, and
+  one reply.
+- State three criticisms of the intention test (it judges the person and not
+  the act; acts can be redescribed; motives are mixed and hidden) and the
+  defenders' replies.
+
+### Slide-by-slide (33)
+
+**Act 0 — The case**
+1. **[T]** Title (`baker-street`). Watson arrives late with a question.
+2. **[P]** Belief probe (statements below).
+3. **[T]** Holmes and Watson (both portraits in the body). Watson is a
+   physician; Holmes works out what people intended from what they did.
+4. **[T]** Mr. Thorne (`mr-thorne`). Incurable throat cancer, weeks to live,
+   severe pain. Smaller doses no longer work. He is clear-headed and has asked
+   for relief, knowing the risk. `reveal`.
+5. **[T]** The dose (`the-dose`). Morphine eases pain. A large dose can slow
+   breathing and might shorten his life. Watson's question: if I give it and he
+   dies tonight, have I killed him? `reveal`.
+
+**Act 1 — The doctrine**
+6. **[T]** One act, two effects (`two-effects`). An **effect** is something an
+   act causes. Many acts have a good one and a bad one. A dentist who drills
+   **foresees** the pain and does not **intend** it. `reveal`.
+7. **[T]** The doctrine of double effect (`relic-aquinas`). From Aquinas on
+   self-defense, one line. The claim: an act with a bad effect can be
+   permitted if four conditions hold.
+8. **[T]** Conditions 1 and 2. (1) The act itself is not wrong. (2) You intend
+   only the good effect. Each tested on Watson's dose. `reveal`.
+9. **[T]** Conditions 3 and 4 (`scales`). (3) The bad effect is not how the
+   good one comes about: the pain stops because of the drug, not because the
+   patient dies. (4) The good is large enough to justify the risk. `reveal`.
+10. **[C]** *Watson's dose vs. the poisoner's dose.* Same drug, same amount,
+    same patient. One aims at relief and accepts a risk; the other aims at
+    death as the way to end the pain.
+11. **[V]** `<phil-conditions>`: pick a case, judge each condition, see which
+    fails. Cases: Watson's dose; the same dose given to end his life; the
+    dentist; a surgeon who takes one patient's organs to save five (fails 3);
+    a risky dose for a mild headache (fails 4).
+12. **[Q · Checkset]** What does the doctrine claim? (✓ A foreseen bad effect
+    can be permitted. ✓ The bad effect may not be the means. ✓ The good must be
+    in proportion. ✗ Good intentions excuse any act. ✗ An effect you did not
+    intend is not your responsibility. ✗ Only results matter.)
+
+**Act 2 — The two pillars**
+13. **[T]** Killing vs. letting die (`two-candles`). Stopping a treatment the
+    patient no longer wants, and letting the disease take its course, is
+    treated differently from causing death. `reveal`.
+14. **[T]** Medicine and the law (`lestrade`). The move to the present day.
+    The AMA in 1973: doctors may not intentionally end a life, but treatment
+    may be stopped. The Supreme Court in *Vacco v. Quill* (1997) relied on both
+    distinctions. `reveal`.
+15. **[C]** *The two pillars.* Intending vs. foreseeing permits pain relief
+    that may shorten life. Killing vs. letting die permits withdrawing
+    treatment. Both forbid giving a drug in order to cause death.
+16. **[Q · MCQ]** A doctor says, "I turned off the machine she had refused; the
+    disease did the rest." Which distinction is that? (✓ Killing vs. letting
+    die. ✗ Intending vs. foreseeing. ✗ Proportion. ✗ Neither, since it is
+    about consent only.)
+
+**Act 3 — The two uncles**
+17. **[T]** Holmes brings a case (`the-will`). In 1975 the philosopher James
+    Rachels tested the second pillar with a **twin case**: two stories alike in
+    everything but one feature. Two men each inherit a fortune if a young
+    cousin dies.
+18. **[T]** Smith (`closed-door`). He drowns the child and makes it look like
+    an accident.
+19. **[T]** Jones (`the-watcher`). He comes in meaning to do the same. The
+    child slips and hits his head. Jones stands by and lets him drown.
+20. **[Poll]** Did Jones behave any better than Smith? (No, they are equally
+    bad / Yes, a little, because he did not do it himself / Yes, a lot.)
+    `explain=`: most people say no, and that is the answer Rachels needs.
+21. **[T]** What Rachels concludes (`relic-rachels`). The only difference is
+    killing versus letting die, and it made no moral difference. He adds a
+    second point close to Mr. Thorne's case: letting a patient die can mean a
+    slower, more painful death than the one a doctor could give. `reveal`.
+22. **[T]** Replies to Rachels. Nesbitt: Jones was ready to kill, so the pair
+    shows only that both men are bad. One pair where the difference does not
+    matter cannot show it never matters. Sullivan: the line was always
+    intention. That returns the argument to double effect. `reveal`.
+23. **[Q · MCQ]** If you accept that Smith and Jones are equally bad, what
+    follows? (✓ That killing versus letting die did not matter in this pair.
+    ✗ That killing and letting die are always the same. ✗ That intentions
+    never matter. ✗ That Jones did nothing wrong.)
+
+**Act 4 — Does intention matter?**
+24. **[T]** Jack and Jill (`jack-and-jill`). Rachels' second twin case. Both
+    visit a sick grandmother. Jack wants to cheer her up; Jill wants a place
+    in the will. `reveal`.
+25. **[T]** Criticism 1: the person, not the act. Rachels says they did the
+    same thing. The intention tells you what Jill is like. If Watson's act is
+    right for a doctor who means well, how can the same act be wrong for one
+    who does not? `reveal`.
+26. **[T]** Criticisms 2 and 3 (`tangled-threads`, `relic-quill` inline).
+    Redescription: almost anyone can say "I only meant to stop the pain."
+    Mixed and hidden motives: Timothy Quill, a palliative-care doctor, wrote
+    that a doctor may want the pain to end, want the dying to be short, and
+    hope not to be blamed, all at once. `reveal`.
+27. **[T]** A fact that changes the example (`the-dose`). Studies find that
+    opioids raised step by step to control pain rarely shorten life. So the
+    hard case is less common than the textbooks suggest. The doctrine still
+    matters for the cases that remain, and for what doctors fear. `reveal`.
+28. **[T]** The defenders reply (`stumbled-over`). The judge Oliver Wendell
+    Holmes Jr.: "even a dog distinguishes between being stumbled over and
+    being kicked." Law separates murder from accident by intent. And without
+    the doctrine, a doctor afraid of being called a killer may leave patients
+    in pain. `reveal`.
+29. **[V]** `<phil-fourbox>`: a two-by-two grid. The patient dies in every
+    box. Rows: the doctor acts, or stops treatment. Columns: death is the aim,
+    or only foreseen. The student rates each box. The widget reports which
+    distinction their ratings follow and who agrees: the traditional view,
+    Rachels, or neither.
+30. **[Q · Cloze]** Four speakers; pick the objection or reply each is using
+    (person not act / redescription / mixed motives / the law's reply).
+
+**Act 5 — The decision**
+31. **[Poll]** Watson's decision (`watson-decides`). Give the dose because the
+    aim is relief / Give it, and intention has nothing to do with why / Give a
+    smaller dose and accept more pain / Don't give it. `explain=`: which
+    position each answer commits you to.
+32. **[P]** Belief review.
+33. **[T]** Recap (`baker-street`). The four conditions; the two pillars; the
+    two twin cases and what each tests; the replies.
+
+### Belief probe
+1. A doctor who gives a dying patient enough medicine to stop the pain has done
+   nothing wrong, even if it shortens the patient's life.
+2. What you were trying to do matters to whether your act was right, not only
+   what happened.
+3. Letting someone die is not as bad as killing them.
+4. If two acts have the same result and the same motive, they are equally
+   right or wrong.
+5. You can judge whether an act was right without knowing what the person
+   intended.
+
+**Mix:** 4 graded (2 MCQ, 1 checkset, 1 cloze), 2 polls, 2 viz, 2
+comparisons, belief probe. Widgets live in `assets/double-effect.js`. As built,
+`relic-quill` is not used on a slide (slide 26 carries `tangled-threads`
+alone), and the cloze options are "judges the person", "redescription", "mixed
+motives", and "intent in law". Sixteen scene PNGs from four sheets and three relic
+cards; `the-dose` and `baker-street` are each used twice.

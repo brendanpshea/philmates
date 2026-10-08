@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Case of the Merciful Dose: Double Effect · PhilMates</title>
+  <meta name="description" content="The doctrine of double effect and the difference between killing and letting die, tested with James Rachels' twin cases, as Dr. Watson decides how to treat a dying patient's pain.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=5">
+  <script type="module" src="../../../shared/phil-core.js?v=5"></script>
+  <script type="module" src="./assets/double-effect.js"></script>
+  <style>
+    .duo { display: flex; gap: 16px; margin: 4px 0 10px; }
+    .duo figure { margin: 0; }
+    .duo img { display: block; width: clamp(84px, 17vh, 150px); height: auto; border: 3px solid var(--border); box-shadow: 0 4px 0 var(--shadow); }
+    .duo figcaption { font-family: var(--pixel); font-size: 10px; line-height: 1.6; color: var(--muted); margin-top: 6px; text-align: center; }
+    phil-cloze .line { display: block; margin: 0 0 .4em; line-height: 1.45; font-size: clamp(17px, 1.7vw, 20px); }
+    phil-cloze .line .phil-blank { margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     Holmes, Watson, and Lestrade are borrowed from Conan Doyle; Mr. Thorne is
+     invented. The doctrine, the cases, the AMA statement, and Vacco v. Quill are
+     real (sources in phil_mates_outlines.md). Holmes presents James Rachels'
+     cases and credits him; the arguments are Rachels', not the detective's.
+     The lesson never grades a moral verdict. "Should he?" questions are an
+     ungraded <phil-poll> or one of the two exploration widgets. MCQs ask only
+     what a distinction says or what a case shows.
+     The Smith and Jones case involves the drowning of a child. It is told in
+     Rachels' own spare terms and never illustrated. -->
+
+<phil-lesson id="double-effect" title="The Merciful Dose" subject="Double Effect &amp; Killing vs. Letting Die">
+
+  <!-- ============ ACT 0 — THE CASE ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/baker-street.png" alt="A foggy London street at night: a brick townhouse with one glowing bow window, a gas lamp, and a horse-drawn cab waiting on wet cobblestones">
+    <h1>The Case of the Merciful Dose</h1>
+    <p class="lead">London, 1895. Close to midnight, Dr. Watson climbs the stairs at Baker Street with a question he can't answer alone.</p>
+    <p>He has a dying patient in terrible pain. The medicine that would stop the pain might also shorten the man's life. Sherlock Holmes will help him test the rule doctors use for cases like this.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>A doctor who gives a dying patient enough medicine to stop the pain has done nothing wrong, even if it shortens the patient's life.</phil-statement>
+      <phil-statement>What you were trying to do matters to whether your act was right, not only what happened.</phil-statement>
+      <phil-statement>Letting someone die is not as bad as killing them.</phil-statement>
+      <phil-statement>If two acts have the same result and the same motive, they are equally right or wrong.</phil-statement>
+      <phil-statement>You can judge whether an act was right without knowing what the person intended.</phil-statement>
+    </phil-beliefs>
+  </phil-slide>
+
+  <!-- 3. Holmes and Watson -->
+  <phil-slide>
+    <h1>Holmes and Watson</h1>
+    <div class="duo">
+      <figure>
+        <img src="./assets/watson.png" alt="Dr. Watson: a sturdy man with a dark moustache, in a brown tweed suit and green tie, holding a worn leather doctor's bag">
+        <figcaption>Watson</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/holmes.png" alt="Sherlock Holmes: a lean man with dark swept-back hair, in a gray dressing gown, holding up a brass magnifying glass beside a fireplace">
+        <figcaption>Holmes</figcaption>
+      </figure>
+    </div>
+    <ul reveal>
+      <li>Dr. John Watson is a physician. Tonight he must decide how to treat a dying man.</li>
+      <li>Sherlock Holmes is a detective. His skill is working out what people meant to do from what they did.</li>
+      <li>That skill matters here. The rule Watson was taught says the rightness of his act depends on what he <strong>intends</strong>.</li>
+      <li>The two of them belong to the 1890s. The rule they are testing is used in hospitals and courts today.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Mr. Thorne -->
+  <phil-slide>
+    <img slot="art" src="./assets/mr-thorne.png" alt="Mr. Thorne: an old man with a white beard sits in an armchair by a window, in a navy jersey and scarf with a tartan blanket over his knees, one hand raised in greeting; a model lighthouse stands on the mantel">
+    <h1>Watson's Patient</h1>
+    <p>The patient is Mr. Thorne, a retired lighthouse keeper.</p>
+    <ul reveal>
+      <li>He has cancer of the throat. It can't be cured, and he has a few weeks to live.</li>
+      <li>The pain is severe and getting worse. The doses that used to control it no longer work.</li>
+      <li>His mind is clear. He has asked Watson for enough medicine to stop the pain.</li>
+      <li>Watson has told him the risk, and Mr. Thorne accepts it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. The dose -->
+  <phil-slide>
+    <img slot="art" src="./assets/the-dose.png" alt="A bedside table by candlelight holding a brown glass medicine bottle with a blank label, a small glass, a silver spoon, and an open pocket watch">
+    <h1>The Dose</h1>
+    <p>The medicine is <strong>morphine</strong>, a strong painkiller that doctors still use.</p>
+    <ul reveal>
+      <li>Morphine relieves severe pain. It also slows a person's breathing.</li>
+      <li>The dose Mr. Thorne now needs is large. In a man this weak, it might shorten his life.</li>
+      <li>"If I give it and he dies tonight, Holmes, have I killed him?"</li>
+      <li>Doctors have long had a rule for this question. It is called the <strong>doctrine of double effect</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ ACT 1 — THE DOCTRINE ============ -->
+
+  <!-- 6. One act, two effects -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-effects.png" alt="An open hand held out beside a brass oil lamp casts two shadows on the wall behind it, one green and one magenta">
+    <h1>One Act, Two Effects</h1>
+    <p>An <strong>effect</strong> is something an act causes. One act can have several.</p>
+    <ul reveal>
+      <li>A dentist drills a tooth. One effect is a repaired tooth. Another is pain.</li>
+      <li>The dentist <strong>intends</strong> the repair. It is what she is trying to bring about.</li>
+      <li>She only <strong>foresees</strong> the pain. She knows it will come, but it is not her aim, and she would avoid it if she could.</li>
+      <li>Double effect is about acts like this one, with a good effect you intend and a bad effect you only foresee.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. The doctrine -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-aquinas.svg" alt="Relic card for Thomas Aquinas: a round shield raised against a falling sword, casting one green shadow and one magenta shadow">
+    <h1>The Doctrine of Double Effect</h1>
+    <p>The idea goes back to Thomas Aquinas in the 1200s. He asked how it could be right to kill an attacker to save your own life.</p>
+    <ul reveal>
+      <li>His answer: you aim at saving your life. The attacker's death is a second effect that you did not aim at.</li>
+      <li>Later thinkers turned his answer into four conditions.</li>
+      <li>The <strong>doctrine of double effect</strong> says an act with a bad effect is permitted only if it passes all four.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Conditions 1 and 2 -->
+  <phil-slide>
+    <h1>Conditions 1 and 2</h1>
+    <p>Holmes writes the conditions on the back of an envelope and tests Watson's dose against each.</p>
+    <ul reveal>
+      <li><strong>1. The act itself is not wrong.</strong> Giving a patient medicine is ordinary care, so the dose passes.</li>
+      <li><strong>2. You intend only the good effect.</strong> Watson aims at relief. The risk to life is foreseen and not aimed at.</li>
+      <li>Holmes has a test for condition 2. Suppose the pain stopped and Mr. Thorne lived on. Would Watson be content?</li>
+      <li>He would. So Mr. Thorne's death is no part of what Watson is trying to do.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Conditions 3 and 4 -->
+  <phil-slide>
+    <img slot="art" src="./assets/scales.png" alt="A brass balance scale on a desk: a small green flame sits in the left pan and an hourglass of magenta sand in the right">
+    <h1>Conditions 3 and 4</h1>
+    <ul reveal>
+      <li><strong>3. The bad effect is not the means.</strong> A <strong>means</strong> is the way you get a result.</li>
+      <li>The morphine stops the pain directly. It does not work by ending his life, so his death is not the means.</li>
+      <li><strong>4. The good is in proportion to the bad.</strong> The reason must be serious enough to justify the risk.</li>
+      <li>Severe pain in a dying man is a serious reason. Watson's dose passes all four conditions.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Compare: two doses -->
+  <phil-slide>
+    <h1>Two Doses</h1>
+    <p>Holmes imagines a second doctor at the same bedside, giving the same drug in the same amount.</p>
+    <phil-compare>
+      <phil-side label="Watson's Dose" tag="Aims at relief">
+        <p>Gives the amount needed to stop the pain, and accepts that it may shorten life.</p>
+        <p class="case">If Mr. Thorne wakes tomorrow free of pain, Watson's plan has worked.</p>
+      </phil-side>
+      <phil-side label="The Other Doctor's Dose" tag="Aims at death">
+        <p>Gives the same amount in order to end the patient's life, because death will end the pain.</p>
+        <p class="case">If Mr. Thorne wakes tomorrow free of pain, this doctor's plan has failed.</p>
+      </phil-side>
+    </phil-compare>
+    <p class="muted">The doctrine permits the first dose and forbids the second.</p>
+  </phil-slide>
+
+  <!-- 11. Condition tester viz -->
+  <phil-slide>
+    <h1>Test the Conditions</h1>
+    <phil-conditions prompt="Pick a case and answer each condition. Then see what the doctrine says.">
+      <script type="application/json">
+      {
+        "conditions": [
+          { "id": "act",   "label": "The act itself",  "q": "Leaving its effects aside, is the act acceptable?" },
+          { "id": "aim",   "label": "The intention",   "q": "Is the good effect the only thing aimed at?" },
+          { "id": "means", "label": "The means",       "q": "Does the good effect come about without going through the bad one?" },
+          { "id": "prop",  "label": "Proportion",      "q": "Is the good serious enough to justify the bad?" }
+        ],
+        "cases": [
+          { "name": "Watson's dose",
+            "story": "Watson gives Mr. Thorne enough morphine to stop his pain, knowing it may shorten his life.",
+            "pass": { "act": true, "aim": true, "means": true, "prop": true },
+            "why": { "act": "Giving a patient medicine is ordinary care.",
+                     "aim": "Watson would be content if the pain stopped and Mr. Thorne lived on.",
+                     "means": "The drug stops the pain directly, whether or not life is shortened.",
+                     "prop": "Severe pain in a dying man is a serious reason." },
+            "verdict": "<strong>Permitted.</strong> The dose passes all four conditions. This is the case the doctrine was built to allow." },
+          { "name": "The other doctor",
+            "story": "A doctor gives the same dose in order to end Mr. Thorne's life, because death will end the pain.",
+            "pass": { "act": true, "aim": false, "means": false, "prop": true },
+            "why": { "act": "The act, giving a medicine, is the same as Watson's.",
+                     "aim": "This doctor aims at the death. If the patient lived, the plan would have failed.",
+                     "means": "The pain is meant to end because the patient dies. Death is the means.",
+                     "prop": "The pain is the same serious reason as before." },
+            "verdict": "<strong>Forbidden.</strong> It fails conditions 2 and 3. Nothing a camera could record separates it from Watson's dose." },
+          { "name": "The dentist",
+            "story": "A dentist drills a decayed tooth, knowing the drilling will hurt.",
+            "pass": { "act": true, "aim": true, "means": true, "prop": true },
+            "why": { "act": "Repairing a tooth is ordinary care.",
+                     "aim": "She would gladly do it with no pain at all.",
+                     "means": "The tooth is fixed by the drilling. The pain does no work.",
+                     "prop": "A sound tooth is worth some minutes of pain." },
+            "verdict": "<strong>Permitted.</strong> Most of medicine is like this: a good effect with a bad one that is foreseen and accepted." },
+          { "name": "The surgeon",
+            "story": "Five patients will die without new organs. A surgeon takes the organs of one healthy visitor, who dies, and saves the five.",
+            "pass": { "act": false, "aim": false, "means": false, "prop": true },
+            "why": { "act": "Cutting into a healthy person who has not agreed is wrong before any effects are counted.",
+                     "aim": "Taking the visitor's organs is the plan, and he can't live without them.",
+                     "means": "The five are saved by what is done to the one. His loss is the means.",
+                     "prop": "Five lives against one. On numbers alone it passes." },
+            "verdict": "<strong>Forbidden.</strong> It passes only condition 4. A good result is not enough when a person is used as the means." },
+          { "name": "The headache",
+            "story": "A doctor gives a patient with a mild headache a dose of morphine large enough to risk stopping his breathing.",
+            "pass": { "act": true, "aim": true, "means": true, "prop": false },
+            "why": { "act": "Giving a medicine is ordinary care.",
+                     "aim": "The doctor aims only at relief.",
+                     "means": "The headache goes because of the drug, not because of any harm.",
+                     "prop": "A mild headache does not justify a risk to life." },
+            "verdict": "<strong>Forbidden.</strong> It fails condition 4. A good aim does not excuse a risk far larger than the benefit." }
+        ]
+      }
+      </script>
+    </phil-conditions>
+  </phil-slide>
+
+  <!-- 12. Checkset: what the doctrine says -->
+  <phil-slide>
+    <h1>What the Doctrine Says</h1>
+    <phil-checkset prompt="Check every claim the doctrine of double effect makes."
+                   explain="Right. The doctrine is strict. A good aim is required, and it is not enough: the act, the means, and the proportion must pass too. You also stay responsible for what you foresee, which is why condition 4 makes you weigh it.">
+      <phil-statement correct>A bad effect you foresee but do not aim at can sometimes be permitted</phil-statement>
+      <phil-statement correct>The bad effect must not be the way the good effect is produced</phil-statement>
+      <phil-statement correct>The good effect must be serious enough to justify the bad one</phil-statement>
+      <phil-statement>A good intention makes any act acceptable, whatever the act is</phil-statement>
+      <phil-statement>You are not responsible for an effect that you did not intend</phil-statement>
+      <phil-statement>Only the results of an act matter, not what the person aimed at</phil-statement>
+    </phil-checkset>
+  </phil-slide>
+
+  <!-- ============ ACT 2 — THE TWO PILLARS ============ -->
+
+  <!-- 13. Killing vs letting die -->
+  <phil-slide>
+    <img slot="art" src="./assets/two-candles.png" alt="Two candles in brass holders: a hand lowers a snuffer over the tall one on the left, while the short one on the right burns low beside a pair of resting hands">
+    <h1>Killing and Letting Die</h1>
+    <p>Double effect is one of two distinctions doctors rely on at the end of life. This is the second.</p>
+    <ul reveal>
+      <li><strong>Killing</strong> is causing a death by what you do. <strong>Letting die</strong> is not preventing a death that something else causes.</li>
+      <li>A patient may refuse a treatment. If the doctors then stop it, the disease causes the death.</li>
+      <li>On the traditional view that is letting die, and it can be right even where killing would be wrong.</li>
+      <li>Both candles go out. The traditional view says it matters how.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Medicine and the law -->
+  <phil-slide>
+    <img slot="art" src="./assets/lestrade.png" alt="Inspector Lestrade: a sharp-eyed woman with gray hair pinned up under a bowler hat, in a dark overcoat, holding a notebook, with a blue police lamp behind her">
+    <h1>Medicine and the Law</h1>
+    <p>Inspector Lestrade likes her rules written down. Here are two real ones, from long after her time.</p>
+    <ul reveal>
+      <li>In 1973 the American Medical Association said doctors must not intentionally end a patient's life.</li>
+      <li>The same statement allowed stopping treatment that only prolongs dying, if the patient or family decides.</li>
+      <li>In 1997 the US Supreme Court ruled, in <em>Vacco v. Quill</em>, that states may ban doctors from helping patients end their lives.</li>
+      <li>The Court said refusing treatment is different. So is pain relief that may hasten death, when the aim is to ease pain.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Compare: the two pillars -->
+  <phil-slide>
+    <h1>The Two Pillars</h1>
+    <p>The traditional view of care for the dying stands on both distinctions.</p>
+    <phil-compare>
+      <phil-side label="Intending vs. Foreseeing" tag="Double effect">
+        <p>What matters is what the doctor aims at. A foreseen death can be permitted. An intended death cannot.</p>
+        <p class="case">Permits Watson's dose. Forbids the same dose given in order to end a life.</p>
+      </phil-side>
+      <phil-side label="Killing vs. Letting Die" tag="Doing and allowing">
+        <p>What matters is whether the doctor causes the death or allows the disease to cause it.</p>
+        <p class="case">Permits stopping a treatment the patient refuses. Forbids giving a drug to cause death.</p>
+      </phil-side>
+    </phil-compare>
+  </phil-slide>
+
+  <!-- 16. MCQ: which pillar [correct: B] -->
+  <phil-slide>
+    <h1>Which Pillar?</h1>
+    <phil-mcq prompt="A doctor says: &quot;She refused the breathing machine, so I turned it off. Her illness did the rest.&quot; Which distinction is the doctor relying on?"
+              explain="Right. The doctor's point is about what caused the death: the illness, with the machine no longer holding it back. She has said nothing about what she was aiming at, which is what double effect would ask.">
+      <phil-choice feedback="The doctor says nothing about her aim. Her point is about what caused the death.">Intending vs. foreseeing: the doctor did not aim at the patient's death</phil-choice>
+      <phil-choice correct>Killing vs. letting die: the illness caused the death, not the doctor</phil-choice>
+      <phil-choice feedback="Proportion is one condition of double effect. The doctor is not weighing effects here. She is saying what caused the death.">Proportion: the benefit of stopping was larger than the harm it did</phil-choice>
+      <phil-choice feedback="The refusal matters. But &quot;her illness did the rest&quot; adds a claim about what caused the death.">Neither one: the doctor is only reporting what the patient asked for</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 3 — THE TWO UNCLES ============ -->
+
+  <!-- 17. The twin case: setup -->
+  <phil-slide>
+    <img slot="art" src="./assets/the-will.png" alt="A hall table under a lamp holds a folded document with a red wax seal and a toy sailing boat; two identical top hats and two pairs of gray gloves hang on the stand behind">
+    <h1>Holmes Brings a Case</h1>
+    <p>Holmes has a case to test the second pillar. It comes from the philosopher James Rachels, who published it in 1975.</p>
+    <ul reveal>
+      <li>Rachels used a <strong>twin case</strong>: two stories that are the same in every way but one.</li>
+      <li>If you judge the two stories the same, then the one difference did not matter.</li>
+      <li>Two men, Smith and Jones, will each inherit a fortune if their six-year-old cousin dies.</li>
+      <li>Both want the money. Both plan to drown the child in his bath.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Smith -->
+  <phil-slide>
+    <img slot="art" src="./assets/closed-door.png" alt="An upstairs landing at night: a closed door with light at its edges and a trickle of water running out beneath it, a pair of shoes on the floor, and a top hat on a chair">
+    <h1>Smith</h1>
+    <ul reveal>
+      <li>One evening Smith slips into the bathroom while the child is in the bath.</li>
+      <li>He drowns the boy, and then arranges things to look like an accident.</li>
+      <li>Smith <strong>killed</strong> his cousin.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Jones -->
+  <phil-slide>
+    <img slot="art" src="./assets/the-watcher.png" alt="The same landing: the door stands open on a room full of steam, and a man in a dark coat stands in the doorway, seen from behind, his hands clasped behind his back holding a pair of gloves">
+    <h1>Jones</h1>
+    <ul reveal>
+      <li>Jones slips in with the same plan. As he enters, the child slips, hits his head, and falls face down in the water.</li>
+      <li>Jones is delighted. He stands by, ready to push the boy's head back under if he has to.</li>
+      <li>He does not have to. The child drowns while Jones watches.</li>
+      <li>Jones <strong>let</strong> his cousin <strong>die</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Poll: Smith and Jones -->
+  <phil-slide>
+    <h1>Decision Point: Smith and Jones</h1>
+    <phil-poll prompt="Smith drowned the child. Jones watched the child drown and did nothing. Did Jones behave any better than Smith?"
+               explain="Most people answer that the two men are equally bad. Rachels is counting on that answer.">
+      <phil-choice note="This is the answer Rachels expects.">No. They are equally bad.</phil-choice>
+      <phil-choice note="Then you think the difference between killing and letting die carries some weight, even here.">Yes, slightly. At least he didn't do it himself.</phil-choice>
+      <phil-choice note="A court might agree with you. Rachels asks whether morality does, given that Jones wanted the death and could easily have prevented it.">Yes, clearly. Watching is not murder.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 21. What Rachels concludes -->
+  <phil-slide>
+    <img slot="art" src="./assets/relic-rachels.svg" alt="Relic card for James Rachels: two identical top hats side by side above one closed door">
+    <h1>What Rachels Concludes</h1>
+    <ul reveal>
+      <li>Smith killed and Jones let die. That is the only difference between them, and it made no moral difference.</li>
+      <li>So Rachels argues that killing is not worse in itself than letting die. What matters is the motive and the result.</li>
+      <li>His second point is about patients like Mr. Thorne. Being allowed to die can mean days of suffering.</li>
+      <li>If death is coming either way, he asks why the slower and more painful way should be the one allowed.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Replies to Rachels -->
+  <phil-slide>
+    <h1>Replies to Rachels</h1>
+    <p>Watson is not convinced, and neither were many philosophers.</p>
+    <ul reveal>
+      <li><strong>Jones was ready to kill.</strong> Winston Nesbitt replied that this is why he seems as bad as Smith. A Jones who would never have touched the boy seems less bad.</li>
+      <li><strong>One pair is not every pair.</strong> Showing that the difference did not matter here does not show that it never matters.</li>
+      <li><strong>The line was always intention.</strong> Thomas Sullivan replied that the traditional view forbids aiming at death, by acting or by standing back.</li>
+      <li>If Sullivan is right, everything rests on the first pillar: intending versus foreseeing.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. MCQ: what the twin case shows [correct: A] -->
+  <phil-slide>
+    <h1>What the Twin Case Shows</h1>
+    <phil-mcq prompt="Suppose you agree that Smith and Jones are equally bad. What is the most that follows from that?"
+              explain="Right. A twin case shows what its one difference did in that pair. Rachels goes on to a general claim about all killing and letting die, and his critics accept the pair while refusing that further step.">
+      <phil-choice correct>In this pair, killing versus letting die made no moral difference</phil-choice>
+      <phil-choice feedback="That is Rachels' wider conclusion, and it takes more than one pair to reach it. His critics accept the pair and deny this step.">Killing and letting die are morally the same in every possible case</phil-choice>
+      <phil-choice feedback="Smith and Jones have the same intention, so this pair cannot test intention at all.">What a person intends never affects whether their act was wrong</phil-choice>
+      <phil-choice feedback="If the two are equally bad, then what Jones did is as bad as murder.">Jones did nothing wrong, because he never laid a hand on the child</phil-choice>
+    </phil-mcq>
+  </phil-slide>
+
+  <!-- ============ ACT 4 — DOES INTENTION MATTER? ============ -->
+
+  <!-- 24. Jack and Jill -->
+  <phil-slide>
+    <img slot="art" src="./assets/jack-and-jill.png" alt="A smiling grandmother with white hair sits in an armchair between two visitors, a young man in a waistcoat and a young woman in a blue dress, who each offer her yellow flowers; a thought bubble above him holds a heart, and one above her holds a gold coin">
+    <h1>Jack and Jill</h1>
+    <p>Now the first pillar. Rachels has a twin case for intention too.</p>
+    <ul reveal>
+      <li>Jack visits his sick, lonely grandmother and spends the afternoon cheering her up. He loves her.</li>
+      <li>Jill visits her grandmother and does the same things. She is hoping to be remembered in the will.</li>
+      <li>Their acts are alike in every way you could see. Only their intentions differ.</li>
+      <li>Rachels asks: did Jack do the right thing and Jill the wrong thing?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Criticism 1 -->
+  <phil-slide>
+    <h1>Criticism 1: The Person, Not the Act</h1>
+    <ul reveal>
+      <li>Rachels' answer: they did the same thing, and it was a good thing to do. Jill's grandmother was comforted too.</li>
+      <li>Jill's intention tells you about <em>Jill</em>. She is calculating. It does not change what she did.</li>
+      <li>Now apply that to the two doses. If the dose is right when Watson gives it, how can the same dose be wrong when the other doctor gives it?</li>
+      <li>On this view, intention is for judging people. It cannot turn a right act into a wrong one.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Criticisms 2 and 3 -->
+  <phil-slide>
+    <img slot="art" src="./assets/tangled-threads.png" alt="A hand holds a magnifying glass over a tweed waistcoat; through the lens, a knot of green, magenta, blue, and amber threads">
+    <h1>Criticisms 2 and 3: Reading a Mind</h1>
+    <ul reveal>
+      <li><strong>Redescription.</strong> Almost any doctor can say, "I only meant to stop the pain." The doctrine cannot tell an honest report from a convenient one.</li>
+      <li><strong>Mixed motives.</strong> Timothy Quill, a doctor who cares for dying patients, wrote that real intentions come tangled together.</li>
+      <li>A doctor may want the pain to stop, hope the dying is short, and fear being blamed, all in the same moment.</li>
+      <li>Quill argued that the patient's wishes and suffering are better guides than a search of the doctor's mind.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. The opioid fact -->
+  <phil-slide>
+    <img slot="art" src="./assets/the-dose.png" alt="A bedside table by candlelight holding a brown glass medicine bottle with a blank label, a small glass, a silver spoon, and an open pocket watch">
+    <h1>A Fact That Changes the Example</h1>
+    <p>Modern research adds something the philosophers often leave out.</p>
+    <ul reveal>
+      <li>Studies of dying patients find that morphine, raised step by step to match the pain, rarely shortens life.</li>
+      <li>The body gets used to the drug's effect on breathing. Carefully managed doses are safer than most people assume.</li>
+      <li>So the case where relief truly risks death is less common than the textbooks suggest.</li>
+      <li>The doctrine still matters for the cases that remain. It also matters because a doctor who fears the risk may give too little.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. The defenders reply -->
+  <phil-slide>
+    <img slot="art" src="./assets/stumbled-over.png" alt="A scruffy terrier sits unhurt on a hearth rug, looking up as a person, only legs and boots in view, stumbles past with books and an umbrella flying">
+    <h1>The Defenders Reply</h1>
+    <p>Watson defends the rule he was taught.</p>
+    <ul reveal>
+      <li>Another Holmes, the judge Oliver Wendell Holmes Jr., wrote that "even a dog distinguishes between being stumbled over and being kicked."</li>
+      <li>The law agrees. A murder and an accident can have the same result, and intent is what separates them.</li>
+      <li>Intentions can be hard to read, but courts work them out from evidence every day.</li>
+      <li>Without the doctrine, a doctor who fears being called a killer may leave patients like Mr. Thorne in pain.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 29. Four-box viz -->
+  <phil-slide>
+    <h1>Four Doctors, One Outcome</h1>
+    <phil-fourbox prompt="Each doctor has a dying patient in severe pain who has asked for this. In every box the patient dies tonight. Mark each one.">
+      <script type="application/json">
+      {
+        "rows": ["Gives a drug", "Stops treatment"],
+        "cols": ["Aims at death", "Aims at comfort"],
+        "cells": [
+          "Gives a large dose in order to end the patient's life.",
+          "Gives a large dose to stop the pain, knowing it may shorten life.",
+          "Stops a treatment in order that the patient dies sooner.",
+          "Stops a treatment the patient has refused, knowing death will follow."
+        ]
+      }
+      </script>
+    </phil-fourbox>
+  </phil-slide>
+
+  <!-- 30. Cloze: name the argument -->
+  <phil-slide>
+    <h1>Name That Argument</h1>
+    <p>Pick the argument each speaker is using.</p>
+    <phil-cloze explain="Right. The first speaker separates what Jill is like from what she did. The second doubts that a report of intention can be trusted. The third finds several aims in one mind. The fourth points out that courts already judge by intent.">
+      <span class="line">"She's a schemer, I grant you. But the old lady had her visit all the same."
+        <phil-blank answer="judges the person" options="intent in law,judges the person,mixed motives,redescription">judges the person</phil-blank></span>
+      <span class="line">"Afterwards every one of them says the same thing: he was only treating the pain."
+        <phil-blank answer="redescription" options="intent in law,judges the person,mixed motives,redescription">redescription</phil-blank></span>
+      <span class="line">"I wanted her comfortable. I also wanted it over, for her sake and for mine. Which was my aim?"
+        <phil-blank answer="mixed motives" options="intent in law,judges the person,mixed motives,redescription">mixed motives</phil-blank></span>
+      <span class="line">"We jail the man who meant to do it and free the man who slipped. Juries can tell them apart."
+        <phil-blank answer="intent in law" options="intent in law,judges the person,mixed motives,redescription">intent in law</phil-blank></span>
+    </phil-cloze>
+  </phil-slide>
+
+  <!-- ============ ACT 5 — THE DECISION ============ -->
+
+  <!-- 31. Poll: Watson's dose -->
+  <phil-slide>
+    <img slot="art" src="./assets/watson-decides.png" alt="Watson, seen from behind, stands at a tall window in early morning light with his hands on the sill; a medicine bottle and a small glass stand on the sill, and his doctor's bag rests on a chair">
+    <h1>Decision Point: Watson's Dose</h1>
+    <phil-poll prompt="It is nearly dawn. What should Watson do?"
+               explain="The first answer accepts double effect. The second reaches the same act by the route Rachels and Quill prefer: the patient's wishes and suffering justify it, whatever the doctor aims at. The last two put the risk to life ahead of relief, which neither the doctrine nor its critics require.">
+      <phil-choice note="This is the doctrine of double effect.">Give the dose. His aim is relief, so it is not killing.</phil-choice>
+      <phil-choice note="This is closer to Rachels and Quill. The patient's wishes and suffering decide it.">Give the dose. Mr. Thorne asked for it, whatever Watson's aim.</phil-choice>
+      <phil-choice note="Then you weigh the risk to life more heavily than condition 4 does.">Give a smaller dose and accept that some pain remains.</phil-choice>
+      <phil-choice note="Then Mr. Thorne's pain goes on. Refusing is also a choice with an effect you can foresee.">Don't give it. The risk of causing his death is too great.</phil-choice>
+    </phil-poll>
+  </phil-slide>
+
+  <!-- 32. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+  </phil-slide>
+
+  <!-- 33. Recap -->
+  <phil-slide>
+    <img slot="art" src="./assets/baker-street.png" alt="A foggy London street at night: a brick townhouse with one glowing bow window, a gas lamp, and a horse-drawn cab waiting on wet cobblestones">
+    <h1>The Case, Summed Up</h1>
+    <ul reveal>
+      <li><strong>Double effect</strong>: a foreseen bad effect can be permitted if the act, the aim, the means, and the proportion all pass.</li>
+      <li><strong>The two pillars</strong>: intending versus foreseeing, and killing versus letting die.</li>
+      <li><strong>Smith and Jones</strong> test the second pillar. <strong>Jack and Jill</strong> test the first.</li>
+      <li><strong>The replies</strong>: one pair does not settle every case, and the law already treats intent as mattering.</li>
+    </ul>
+    <p class="muted">Watson goes back to his patient. The decision is his, and yours.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

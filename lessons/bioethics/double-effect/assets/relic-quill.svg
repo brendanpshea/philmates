@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" role="img" aria-label="Relic card: Timothy Quill — a stethoscope whose tubing is tied in a knot">
+  <!-- card frame -->
+  <g shape-rendering="crispEdges">
+    <rect width="80" height="108" fill="#050610"/>
+    <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+    <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+    <!-- title bar + rank gem -->
+    <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+    <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+    <!-- bottom plate + rarity pips -->
+    <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+    <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+    <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+    <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+  </g>
+
+  <!-- ear pieces and the two arms -->
+  <path d="M26 26 L26 38 Q26 46 40 48" fill="none" stroke="#8a95b0" stroke-width="3"/>
+  <path d="M54 26 L54 38 Q54 46 40 48" fill="none" stroke="#8a95b0" stroke-width="3"/>
+  <rect x="23" y="23" width="6" height="5" fill="#eef1ff"/>
+  <rect x="51" y="23" width="6" height="5" fill="#eef1ff"/>
+
+  <!-- tubing tied in a knot -->
+  <path d="M40 48 C40 56 52 54 50 62 C48 70 30 68 31 60 C32 53 47 55 46 64 C45 70 40 70 40 76"
+        fill="none" stroke="#4cc2ff" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M46 57 C49 59 49 62 47 65" fill="none" stroke="#1d2235" stroke-width="1.5"/>
+
+  <!-- chest piece -->
+  <circle cx="40" cy="80" r="6" fill="#8a95b0"/>
+  <circle cx="40" cy="80" r="3.5" fill="#eef1ff"/>
+</svg>
