@@ -2966,3 +2966,266 @@ comparisons, belief probe. Widgets live in `assets/double-effect.js`. As built,
 alone), and the cloze options are "judges the person", "redescription", "mixed
 motives", and "intent in law". Sixteen scene PNGs from four sheets and three relic
 cards; `the-dose` and `baker-street` are each used twice.
+
+---
+
+## Computing & AI Ethics: Group Privacy — "Nobody Asked Nell"  *(built)*
+
+- **Path:** `lessons/ai-ethics/nobody-asked-nell/`
+- **Lesson id:** `nobody-asked-nell`
+- **Top-bar title:** `Nobody Asked Nell` · **Subject:** `Group Privacy`
+- **Slot:** the Surveillance and Privacy lecture. Replaces "The Thousand-Eyed
+  Garden" in `docs/ai-ethics-semester-plan.md`. Bentham, chilling effects,
+  "nothing to hide," and contextual integrity are not covered.
+- **Narrative frame:** **Nell** says no to everything. She has never taken a
+  DNA test, has no social media, and owns no smart devices. Four talking
+  gadgets that belong to other people learn about her anyway: **Tube** (her
+  cousin's DNA kit), **Tally** (a machine that guesses from people like her),
+  **Buzz** (her friends' phones), and **Peep** (the neighbor's doorbell
+  camera). Each act is one gadget telling what it knows.
+- **Register:** light for the gadgets, plain for the real cases. The Havasupai
+  slide is serious and has no characters.
+
+### The question
+
+The usual rule for privacy is consent: ask me before you collect or share
+information about me. Nell was never asked, because nobody needed her
+information to learn about her. Did anyone violate her privacy? And if the
+individual rule cannot protect her, does a group need a right of its own?
+
+### Two theories (and only two)
+
+1. **The control view.** Privacy is each person's control over information
+   about themselves (Alan Westin, 1967). A violation is taking or sharing my
+   information without my say. Its tool is individual consent.
+2. **The group view.** Some privacy interests are shared, so individual consent
+   cannot protect them. It comes in two strengths, and students should leave
+   able to say which one they mean:
+   - **Weak reading:** privacy is still each person's right, but it can only be
+     protected by rules that cover everyone, the way clean air is.
+   - **Strong reading:** the group itself holds the right, the way a people
+     holds a right to govern itself.
+
+### Three ways it happens (one per act)
+
+| Way | Gadget | Real case | What makes it hard for the control view |
+|---|---|---|---|
+| Shared data | Tube | Golden State Killer, 2018 | The information is partly Nell's, and someone else had every right to share it |
+| Inference from people like you | Tally, Buzz | Facebook "likes" study, 2013; Cambridge Analytica, 2018 | Nobody took Nell's information at all |
+| Other people's devices | Peep | Scraped-photo face recognition; the 2018 fitness heat map | Consent was given, by someone else |
+
+### Where the lesson has to be careful
+
+- **A good guess may not be a violation.** A study showing that smoking causes
+  cancer changes what an insurer believes about every smoker, including those
+  who were never in the study. Computer scientists who design privacy
+  protections use this exact example and say it is *not* a privacy violation,
+  because the smoker is affected the same whether or not they took part. The
+  lesson needs this as the control view's best reply.
+- **A group right gives Nell a veto over her cousin.** Cora's DNA is Cora's
+  too. Who counts as the group, and who speaks for it?
+- **Not every data harm is a privacy harm.** Being charged more because of a
+  prediction may be better called discrimination. Students ask three questions
+  separately: was something learned, was that wrong, and was it a *privacy*
+  wrong.
+- **There are real benefits.** A serial killer was caught. Medical research
+  depends on pooled data.
+- **The gadgets are not villains.** Nothing in the frame or the art should
+  settle whether anyone did wrong.
+
+### Accuracy note (checked 2026-10-12 unless marked)
+
+- **Golden State Killer.** Investigators uploaded crime-scene DNA to the
+  genealogy site GEDmatch, found third-to-fourth cousins of the suspect, and
+  spent about four months building family trees. Joseph DeAngelo was arrested
+  in April 2018. He was never in the database himself.
+- **How many are findable.** Erlich et al., *Science* (2018), worked with a
+  database of 1.28 million people and projected that about 60% of searches for
+  Americans of European descent would return a third cousin or closer. A match
+  to a relative is a lead, not an identification, so the slide says "could be
+  traced through a relative," not "can be identified." The claim that a
+  database covering 2% of a population reaches nearly everyone could not be
+  checked against the paper, so it is not on any slide.
+- **The "likes" study.** Kosinski, Stillwell, and Graepel, *PNAS* (2013), used
+  the likes of about 58,000 volunteers. The often-quoted "88% accurate" for
+  sexual orientation is not percent correct. It means that given one gay man
+  and one straight man, the model picked which was which 88% of the time. The
+  slide must use that wording.
+- **Cambridge Analytica.** About 270,000 people took a paid personality quiz in
+  2014. The app also pulled data on their friends. Facebook's figure of "up to
+  87 million" is a ceiling it calculated; the company itself said it could not
+  know the exact number.
+- **Face recognition.** Clearview AI built its database by copying photos from
+  public websites. Regulators and the company put it between 20 and 50 billion
+  images. The Dutch regulator fined it €30.5 million in 2024.
+- **The fitness map.** In January 2018 the fitness app Strava's public map of
+  its users' exercise routes showed the outlines of military bases, first
+  pointed out by a 20-year-old student, Nathan Ruser.
+- **Havasupai.** Starting in 1990, members of the Havasupai Tribe gave blood to
+  Arizona State University researchers for a diabetes study. The samples were
+  later used to study schizophrenia, inbreeding, and the tribe's ancient
+  migration. The tribe sued in 2004. In April 2010 the university paid $700,000
+  to 41 members, apologized, and returned the samples. Sources give between 200
+  and 400 donors, so the slide gives no count.
+- **The smoking example.** Dwork and Roth, *The Algorithmic Foundations of
+  Differential Privacy* (2014).
+- **The Target "pregnant teenager" story is left out.** It is unverified.
+- **Westin.** *Privacy and Freedom* (1967): privacy is "the claim of
+  individuals, groups, or institutions to determine for themselves when, how,
+  and to what extent information about them is communicated to others." The
+  slide paraphrases it. Note that Westin's own wording already mentions groups.
+- **Shared DNA.** About 50% with a parent, child, or full sibling and about
+  12.5% with a first cousin, on average.
+- **The 2008 law.** The Genetic Information Nondiscrimination Act bars health
+  insurers and employers with 15 or more workers from using genetic
+  information. It does not cover life, disability, or long-term care
+  insurance, so the slide says "health insurers and most employers" only.
+
+### Learning goals
+
+- State the control view and why consent is its tool.
+- Describe three ways one person's data reveals another person, with a real
+  case for each.
+- Explain why each is a problem for the control view.
+- Tell the weak reading of a group right from the strong one.
+- Give the two main objections: a good guess is not a violation, and a group
+  right overrides its own members.
+- Separate "something was learned," "that was wrong," and "that was a privacy
+  wrong."
+
+### Slide-by-slide (32)
+
+**Act 0 — Nell says no**
+1. **[T]** Title (`nell-house`). Nell has none of these gadgets. All of them
+   know something about her.
+2. **[P]** Belief probe (start).
+3. **[T]** Meet Nell (`nell`). No DNA test, no social media, no smart devices.
+   She reads the terms and clicks no.
+4. **[T]** The control view (`relic-westin`). Privacy is deciding for yourself
+   who knows what about you. The tool is **consent**.
+5. **[Q · MCQ]** On the control view, what makes something a privacy violation?
+   (Answer: information about you is taken or shared without your agreement.
+   Distractors: someone learns something embarrassing / a company makes money
+   from data / information about you exists anywhere.)
+
+**Act 1 — Tube: shared data**
+6. **[T]** Cousin Cora's kit (`tube`). Cora mails in a tube of spit. She agreed
+   to everything. Nell was not asked.
+7. **[T]** Your DNA is not only yours (`linked-hands`). You share about half
+   with a parent or sibling and less with each more distant relative. Cora's
+   result is partly a result about Nell.
+8. **[T]** The Golden State Killer (`cousin-strings`). Found in 2018 through
+   distant cousins who had uploaded their DNA. He never had.
+9. **[T]** The few decide for the many (`two-say-yes`). In 2018, about 60% of
+   Americans of European descent could be traced through a relative in one
+   database of 1.28 million people.
+10. **[Poll]** Did Cora do anything wrong to Nell? `explain`: on the control
+    view Cora shared her own information, so no. The puzzle is that Nell is
+    exposed anyway.
+
+**Act 2 — Tally and Buzz: inference**
+11. **[T]** The guessing machine (`tally`). Tally studies people who share, then
+    guesses about people who don't. Define **inference**.
+12. **[T]** People like you (`lookalikes`). The 2013 likes study, with the
+    accuracy described correctly.
+13. **[T]** The profile of someone who never signed up (`shadow-profile`).
+    Friends' phones upload contact lists. Cambridge Analytica: 270,000 quiz
+    takers, up to 87 million profiles.
+14. **[V]** `<phil-shadow>`: What they know about Nell.
+15. **[T]** The objection: a good guess is not a violation (`smoke-study`). The
+    smoking study.
+16. **[C]** Taking a secret vs. guessing it (`take-vs-guess`).
+17. **[Q · MCQ]** Why is inference a harder case for the control view than a
+    data breach? (Answer: nobody took or shared Nell's own information.
+    Distractors: the guesses are usually wrong / guessing is done by machines /
+    Nell agreed to it without noticing.)
+
+**Act 3 — Peep: other people's devices**
+18. **[T]** The neighbor's doorbell (`peep`, `doorbell-street`). Nell has no
+    camera and is on four.
+19. **[T]** Faces from scraped photos (`photo-scrape`). You are in the database
+    if anyone ever posted a photo of you.
+20. **[T]** The fitness map (`heatmap`). No single runner was exposed. The base
+    was. A secret that belongs to a group.
+21. **[Q · Cloze]** Match each case to the way it happens: shared data,
+    inference, or someone else's device.
+
+**Act 4 — A group right?**
+22. **[T]** The group view (`relic-group`). Individual consent could not have
+    protected Nell in any of the three cases.
+23. **[T]** The weak reading (`one-canopy`). Still Nell's right, protected by a
+    rule that covers everyone. Example: a law against using genetic results in
+    hiring or health insurance.
+24. **[T]** The strong reading (`fish-school`). The group itself holds the
+    right. Some groups are made by the machine: "people who shop like this."
+25. **[T]** The Havasupai case (`sample-vials`). Serious, no characters.
+26. **[C]** Weak reading vs. strong reading.
+27. **[T]** Objections (`family-table`). Who is the group? Who speaks for it?
+    Does Nell get a veto over Cora's own body?
+28. **[T]** Is it a privacy wrong at all? (`scale`). Three questions: was
+    something learned, was it wrong, was it a privacy wrong. What the data buys.
+29. **[Q · MCQ]** "Each person has a right to privacy, but only a law covering
+    everyone can protect it." Which view is this? (Answer: the weak reading of
+    the group view. Distractors: the control view / the strong reading / the
+    good-guess objection.)
+30. **[Poll]** Should Cora need her relatives' agreement before taking the
+    test?
+31. **[P]** Belief probe (revisit).
+32. **[T]** Recap (`nell-house`).
+
+**Mix:** 3 MCQs and 1 cloze graded, 2 polls, 2 comparisons, 1 widget, the
+belief probe.
+
+### Belief-probe statements (start; revisited at end)
+
+1. If I never share my data, my privacy is safe.
+2. My DNA results are mine to share with whoever I choose.
+3. Guessing a fact about someone from statistics does not invade their privacy.
+4. It is worth everyone giving up some privacy if it catches violent criminals.
+5. A group, such as a family or a tribe, can have a right to privacy that no
+   single member has.
+
+Statement 1 is the one the lesson is built to shake. Statements 2 and 5 pull
+against each other, which is the final poll.
+
+### Interactive viz to build
+
+- **`<phil-shadow>` (ungraded, the only widget).** Nell's own switches are all
+  off and locked. The student turns on things *other people* did: cousin Cora
+  took a DNA test, three friends uploaded their contacts, people with Nell's
+  shopping habits shared their profiles, a neighbor installed a camera. A
+  profile card for Nell fills in line by line, each line marked as "known" or
+  "a guess" and naming which switch supplied it. A counter shows how many of
+  the lines Nell agreed to, which stays at zero. Known-versus-guess is shown in
+  words and shape, never by color alone.
+
+### Art assets
+
+Twenty PNGs in five sheets and two relic SVGs. Prompts, cast, and rules are in
+`lessons/ai-ethics/nobody-asked-nell/prompts.md`. Nothing is generated or drawn
+yet.
+
+### Sources to cite (so nothing is invented)
+
+- Westin, *Privacy and Freedom* (1967).
+- Erlich et al., "Identity inference of genomic data using long-range familial
+  searches," *Science* (2018).
+- Kosinski, Stillwell, and Graepel, "Private traits and attributes are
+  predictable from digital records of human behavior," *PNAS* (2013).
+- Barocas and Nissenbaum, "Big Data's End Run around Anonymity and Consent"
+  (2014), for the few deciding for the many.
+- Floridi, Taylor, and van der Sloot, eds., *Group Privacy* (2017). Mittelstadt,
+  "From Individual to Group Privacy in Big Data Analytics" (2017), for groups
+  made by the machine.
+- Dwork and Roth, *The Algorithmic Foundations of Differential Privacy* (2014).
+- Mello and Wolf, "The Havasupai Indian Tribe Case," *NEJM* (2010).
+
+### As built
+
+32 slides, as listed. The semester plan now names this lesson for week 8.
+Changes from the plan: `peep.png` is unused (the doorbell slide shows the
+whole street), `take-vs-guess.png` sits on the MCQ after the comparison, and
+the Havasupai slide ends with one unrevealed sentence tying the case to the
+strong reading. `<phil-shadow>` has five switches and ten profile lines; the
+"people who shop like Nell" switch produces nothing until at least one known
+fact about Nell is switched on.

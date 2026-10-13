@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Alan Westin — a hand resting on a tap, with a single drop falling from the spout">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+
+  <!-- wall plate and pipe -->
+  <rect x="9" y="42" width="5" height="20" fill="#6b74a0"/>
+  <rect x="14" y="48" width="38" height="7" fill="#aab2d4"/>
+  <rect x="14" y="48" width="38" height="2" fill="#eef1ff"/>
+  <rect x="14" y="53" width="38" height="2" fill="#6b74a0"/>
+  <!-- spout -->
+  <rect x="45" y="55" width="7" height="8" fill="#aab2d4"/>
+  <rect x="50" y="55" width="2" height="8" fill="#6b74a0"/>
+  <rect x="44" y="63" width="9" height="2" fill="#6b74a0"/>
+  <!-- handle stem and bar -->
+  <rect x="29" y="41" width="5" height="7" fill="#6b74a0"/>
+  <rect x="21" y="37" width="21" height="4" fill="#4cc2ff"/>
+  <rect x="21" y="37" width="21" height="1" fill="#8fdcff"/>
+  <!-- hand on the handle, arm coming in from the upper right -->
+  <rect x="26" y="30" width="15" height="7" fill="#e8b18a"/>
+  <rect x="26" y="37" width="3" height="5" fill="#d9a07a"/>
+  <rect x="30" y="41" width="3" height="2" fill="#d9a07a"/>
+  <rect x="34" y="37" width="3" height="5" fill="#d9a07a"/>
+  <rect x="38" y="37" width="3" height="4" fill="#d9a07a"/>
+  <rect x="41" y="27" width="10" height="8" fill="#e8b18a"/>
+  <rect x="51" y="24" width="16" height="10" fill="#2b3252"/>
+  <rect x="51" y="24" width="3" height="10" fill="#4cc2ff"/>
+  <rect x="67" y="22" width="6" height="12" fill="#2b3252"/>
+  <!-- one drop -->
+  <polygon points="48.5,68 45,75 48.5,79 52,75" fill="#4cc2ff"/>
+  <rect x="47" y="73" width="1" height="2" fill="#eef1ff"/>
+  <!-- basin line -->
+  <rect x="34" y="84" width="30" height="2" fill="#6b74a0"/>
+  <rect x="40" y="82" width="6" height="1" fill="#4cc2ff"/>
+  <rect x="51" y="82" width="6" height="1" fill="#4cc2ff"/>
+</svg>

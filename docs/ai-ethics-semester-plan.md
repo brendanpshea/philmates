@@ -16,7 +16,7 @@ narrative frame + relic-card thinkers + one signature widget per lesson (see
 | 5 | Sep 21–25 | Essay 1 | **The Cartographer's Draft** (new) |
 | 6 | Sep 28–Oct 2 | 4: Owning Ideas | **The Songsmith's Ghost** (new) |
 | 7 | Oct 5–9 | 5: Digital Cash | **The Dragon's Ledger** (new) |
-| 8 | Oct 12–16 | 6: Surveillance and Privacy | **The Thousand-Eyed Garden** (new) |
+| 8 | Oct 12–16 | 6: Surveillance and Privacy | **Nobody Asked Nell** (new, built) |
 | 9 | Oct 19–23 | Exam 1 (L1–6) | **The Gauntlet of Six Gates** (new, review) |
 | 10 | Oct 26–30 | 7: What Is AI? | **The Masquerade of Silverport** (new) |
 | 11 | Nov 2–6 | 8: Future of Work and Art | **The Loom and the Lark** (new) |
@@ -104,13 +104,14 @@ keeper) vs. a rebel ledger copied into every villager's almanac.
 shatter. Ethics payload: speculation and scams, banking the unbanked,
 ransomware, whether "trustlessness" is a virtue.
 
-## Week 8 — The Thousand-Eyed Garden (Surveillance & Privacy)
+## Week 8 — Nobody Asked Nell (Surveillance & Privacy)
 
-Bentham returns (recurring character from the utilitarianism lesson) as
-architect of the Panopticon tower at the garden's center.
-**Widget:** data-trail visualizer — pick five mundane actions from your day,
-watch inferences accumulate (the aggregation effect) until the garden knows
-you're pregnant/broke/leaving. Concepts: chilling effects, "nothing to hide,"
+Built. Replaces the planned "Thousand-Eyed Garden." Nell shares nothing, and
+four gadgets that belong to other people learn about her anyway: a cousin's DNA
+kit, a guessing machine, friends' phones, and a neighbor's doorbell. Two views
+of privacy (control, and group in a weak and a strong reading).
+**Widget:** switch on what other people did and watch Nell's profile fill in.
+Not covered: Bentham's Panopticon, chilling effects, "nothing to hide," and
 Nissenbaum's contextual integrity.
 
 ## Week 9 — The Gauntlet of Six Gates (Exam 1 review)
