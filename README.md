@@ -13,7 +13,7 @@ advance, **F** for fullscreen. Progress saves on your device.
 
 ## For instructors
 
-Three ways to use a lesson (see the **For Instructors** section on the homepage):
+Three ways to use a lesson (see the **For Instructors** page, `instructors.html`):
 
 1. **Project it** in class and click through together.
 2. **Share the link** for homework or flipped prep.
@@ -24,7 +24,8 @@ Three ways to use a lesson (see the **For Instructors** section on the homepage)
 
 - `lessons/<topic>/<slug>/` — one `index.html` + `assets/` per lesson.
 - `shared/` — the engine (`phil-core.js`), styles, and the SCORM adapter.
-- `tools/` — `new-lesson`, `build-index` (homepage catalog), `build-scorm`
+- `tools/` — `new-lesson`, `build-index` (the catalog and instructor pages),
+  `build-thumbs` (small card images for the catalog), `build-scorm`
   (LMS packages), `validate-quizzes`, `a11y-audit`.
 - `docs/` — SCORM packaging, audio narration, and accessibility notes.
 

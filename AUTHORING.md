@@ -10,7 +10,8 @@ feedback, and completion. **No build step**; it serves straight from GitHub Page
 ```bash
 node tools/new-lesson.mjs ethical-theory deontology "Kant's Categorical Imperative"
 # edit the generated lessons/ethical-theory/deontology/index.html
-node tools/build-index.mjs       # refresh the homepage catalog
+python tools/build-thumbs.py     # small card image for the catalog (optional; needs Pillow)
+node tools/build-index.mjs       # refresh index.html and instructors.html
 ```
 
 To preview locally, serve the repo root (paths are absolute, e.g. `/shared/...`):
@@ -18,6 +19,22 @@ To preview locally, serve the repo root (paths are absolute, e.g. `/shared/...`)
 ```bash
 npx serve .        # or: python -m http.server
 ```
+
+## Where a new lesson shows up
+
+`build-index.mjs` writes two pages. `index.html` is the catalog: one compact card
+per lesson, grouped by topic, with a topic filter. `instructors.html` holds the
+how-to-use notes, the SCORM downloads, and the about text. Never edit either by
+hand.
+
+- **Card picture.** The card uses the lesson's first `slot="art"` image.
+  `build-thumbs.py` makes a 192px copy in `shared/thumbs/` so the catalog stays
+  light. Skip it and the card loads the full-size image instead.
+- **Card text.** The title and `subject` come from `<phil-lesson>`. The
+  description is the page's `<meta name="description">`, cut off after two
+  lines, so put the hook in its first dozen words.
+- **Order.** Lessons appear in the order listed in `lessons/order.json`. A
+  lesson that is not listed goes at the end of its topic.
 
 ## Skeleton
 

@@ -1,0 +1,28 @@
+{
+  "ai-ethics": [
+    "amberville",
+    "internet-no-middle",
+    "technomoral-virtues",
+    "villains-ledger",
+    "nobody-asked-nell",
+    "frankenstein-alignment"
+  ],
+  "bioethics": [
+    "four-principles",
+    "patient-autonomy",
+    "virtue-of-care",
+    "clinical-equipoise",
+    "trolley-and-triage",
+    "double-effect",
+    "thomson-thought-experiments",
+    "germline-editing"
+  ],
+  "ethical-theory": [
+    "utilitarianism",
+    "kantian-deontology",
+    "virtue-ethics",
+    "harm-principle",
+    "lockean-proviso",
+    "moral-status"
+  ]
+}

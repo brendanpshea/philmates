@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Instructors — PhilMates</title>
+  <meta name="description" content="How to use PhilMates lessons in a class: project one, share a link, or load a SCORM 1.2 package into your LMS. Free and openly licensed.">
+  <link rel="icon" type="image/svg+xml" href="shared/assets/favicon.svg">
+  <link rel="stylesheet" href="shared/phil-core.css">
+  <style>
+    body { padding: 0; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px 72px; }
+    a { color: var(--accent-3); }
+
+    /* skip link — visible only once focused */
+    .skip { position: absolute; left: -9999px; top: 0; z-index: 20;
+            font-family: var(--pixel); font-size: 11px; color: var(--bg);
+            background: var(--accent-3); padding: 12px 16px; text-decoration: none; }
+    .skip:focus { left: 8px; top: 8px; }
+
+    /* focus indicator — the UA default is not guaranteed on this dark theme */
+    :where(a, button, input, select, textarea):focus-visible {
+      outline: 3px solid var(--accent-3); outline-offset: 2px;
+    }
+
+    /* sticky mini-nav */
+    .nav { position: sticky; top: 0; z-index: 10; background: var(--panel);
+           border-bottom: 3px solid var(--border); box-shadow: 0 3px 0 var(--shadow); }
+    .nav__in { max-width: 1000px; margin: 0 auto; padding: 10px 16px; display: flex;
+               flex-wrap: wrap; align-items: center; gap: 8px 18px; }
+    .nav__brand { font-family: var(--pixel); color: var(--accent-2); font-size: 13px; margin-right: auto; text-decoration: none; }
+    .nav a:not(.nav__brand) { font-family: var(--pixel); font-size: 9px; color: var(--muted); text-decoration: none; }
+    .nav a:not(.nav__brand):hover, .nav a[aria-current="page"] { color: var(--accent); }
+
+    .h-pixel { font-family: var(--pixel); color: var(--accent-3); font-size: 16px; }
+    .lead { color: var(--muted); max-width: 64ch; }
+    code, .mono { font-family: ui-monospace, Menlo, Consolas, monospace; background: var(--panel); padding: 2px 6px; border: 2px solid var(--border); }
+
+    /* buttons */
+    /* dark ink on the green, not --ink: near-white on #46e07a is 1.52:1. */
+    .btn { display: inline-block; font-family: var(--pixel); font-size: 11px; text-decoration: none;
+           color: var(--bg); background: var(--accent); border: 3px solid var(--border);
+           box-shadow: 0 5px 0 var(--shadow); padding: 14px 18px; transition: transform .05s; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--shadow); }
+    .btn--sm { font-size: 9px; padding: 8px 10px; box-shadow: 0 3px 0 var(--shadow); }
+
+    /* a page-level landmark, so it sits outside <main> and carries .wrap itself */
+    footer.wrap { margin-top: 56px; padding-top: 22px; border-top: 3px solid var(--border); color: var(--muted); font-size: .85em; }
+
+    .hero { padding: 30px 0 0; }
+    .hero h1 { font-family: var(--pixel); color: var(--accent-2); font-size: 22px; line-height: 1.5;
+               text-shadow: 3px 3px 0 var(--border); margin: 0 0 10px; }
+    section { margin-top: 44px; scroll-margin-top: 64px; }
+
+    .features, .ways { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; }
+    .feature, .way { background: var(--panel-2); border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 18px; }
+    .feature h3, .way h3 { font-family: var(--pixel); font-size: 11px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
+    .feature p, .way p { color: var(--muted); font-size: .92em; margin: 0; }
+    .way .n { font-family: var(--pixel); font-size: 18px; color: var(--accent-2); margin-bottom: 8px; }
+
+    .panel { background: var(--panel-2); border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 22px; margin-top: 22px; }
+    .panel h3 { font-family: var(--pixel); font-size: 12px; color: var(--accent-2); margin: 0 0 6px; }
+    .panel h4 { font-family: var(--pixel); font-size: 10px; color: var(--accent-3); margin: 22px 0 0; }
+    .dl-list { list-style: none; padding: 0; margin: 8px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); column-gap: 28px; }
+    .dl-list li { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-top: 2px solid var(--border); }
+    .dl-title { flex: 1; }
+    .dl-sub { color: var(--muted); font-size: .85em; }
+    .dl-pending { color: var(--muted); font-size: .8em; font-style: italic; }
+    .note { color: var(--muted); font-size: .85em; margin-top: 14px; }
+    .about p { max-width: 68ch; }
+    @media (max-width: 460px) { .dl-list { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Site"><div class="nav__in">
+    <a class="nav__brand" href="index.html">★ PhilMates</a>
+    <a href="index.html">Lessons</a>
+    <a href="instructors.html" aria-current="page">For Instructors</a>
+    <a href="instructors.html#about">About</a>
+  </div></nav>
+
+  <main class="wrap" id="main">
+
+    <header class="hero">
+      <h1>For Instructors</h1>
+      <p class="lead">PhilMates is free and openly licensed (CC BY-NC 4.0). Use it and adapt it for your classes.</p>
+    </header>
+
+    <section id="what">
+      <h2 class="h-pixel">What is PhilMates?</h2>
+      <p class="lead">Most intros to philosophy ask students to read first and care later. PhilMates flips that: every lesson is a small narrative — Van Helsing's clinic, a courtroom of philosophers — that earns attention first, then teaches the concept underneath. They're built for a single class period or a solo study session.</p>
+      <div class="features">
+        <div class="feature"><h3>Story first</h3><p>Each topic is wrapped in a memorable scenario with characters and stakes, not a wall of definitions. Concepts arrive when you already want the answer.</p></div>
+        <div class="feature"><h3>Actually interactive</h3><p>Multiple choice, fill-in-the-blank, and "where do you stand?" belief probes that revisit your earlier answers — so students see their own thinking change.</p></div>
+        <div class="feature"><h3>Works anywhere</h3><p>Pure HTML, CSS, and JavaScript. No accounts, no tracking, no install. Progress saves locally, and completion reports cleanly to an LMS via SCORM.</p></div>
+      </div>
+    </section>
+
+    <section id="use">
+      <h2 class="h-pixel">Three ways to run a lesson</h2>
+      <div class="ways">
+        <div class="way"><div class="n">1</div><h3>Project it</h3><p>Open a lesson on the classroom display and click through together. The <span class="mono">↺ Reset</span> button clears progress so you can re-run it live each period.</p></div>
+        <div class="way"><div class="n">2</div><h3>Share the link</h3><p>Send students straight to a lesson URL for homework or flipped prep. Works on phones; progress saves on their device. Nothing to install.</p></div>
+        <div class="way"><div class="n">3</div><h3>Load into your LMS</h3><p>Download the SCORM package below and upload it to Canvas, Blackboard, Moodle, or D2L. Completion <em>and</em> a score report to your gradebook automatically.</p></div>
+      </div>
+      <p class="note">To send students to one subject, link to the catalog with the topic on the end, such as <span class="mono">index.html#bioethics</span>.</p>
+    </section>
+
+    <section id="scorm">
+      <h2 class="h-pixel">SCORM packages</h2>
+      <div class="panel">
+        <h3>SCORM 1.2, one package per lesson</h3>
+        <p class="lead">Each lesson is a self-contained, single-SCO package. On finishing, the LMS records <strong>completed/passed</strong> plus a <strong>score</strong>; learners can leave and resume where they left off. Upload the <span class="mono">.zip</span> as-is — don't unzip it.</p>
+        
+        <h4>AI Ethics</h4>
+        <ul class="dl-list">
+          <li>
+            <span class="dl-title">High Noon in Amberville <span class="dl-sub">— Computing &amp; AI Ethics — Overview</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ai-ethics-overview-amberville-scorm12.zip" download aria-label="Download the SCORM package for High Noon in Amberville">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Network With No Middle <span class="dl-sub">— How the Internet Was Built — and What It Built</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ai-ethics-internet-no-middle-scorm12.zip" download aria-label="Download the SCORM package for The Network With No Middle">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">Growing Up in Springfield <span class="dl-sub">— Technomoral Virtues</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ai-ethics-technomoral-virtues-scorm12.zip" download aria-label="Download the SCORM package for Growing Up in Springfield">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Villain's Ledger <span class="dl-sub">— Cryptocurrency</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ai-ethics-villains-ledger-scorm12.zip" download aria-label="Download the SCORM package for The Villain's Ledger">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">Nobody Asked Nell <span class="dl-sub">— Group Privacy</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ai-ethics-nobody-asked-nell-scorm12.zip" download aria-label="Download the SCORM package for Nobody Asked Nell">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">Frankenstein's Mistake <span class="dl-sub">— AI Alignment</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ai-ethics-frankenstein-alignment-scorm12.zip" download aria-label="Download the SCORM package for Frankenstein's Mistake">SCORM ↓</a>
+          </li>
+        </ul>
+        <h4>Bioethics</h4>
+        <ul class="dl-list">
+          <li>
+            <span class="dl-title">Rounds with Van Helsing <span class="dl-sub">— Bioethics: Four Principles</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-four-principles-van-helsing-scorm12.zip" download aria-label="Download the SCORM package for Rounds with Van Helsing">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">House Calls in the Hedgerow <span class="dl-sub">— Patient Autonomy</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-patient-autonomy-hedgerow-scorm12.zip" download aria-label="Download the SCORM package for House Calls in the Hedgerow">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The March Practice <span class="dl-sub">— Care as a Virtue</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-virtue-of-care-scorm12.zip" download aria-label="Download the SCORM package for The March Practice">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Jekyll Protocol <span class="dl-sub">— Clinical Equipoise</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-clinical-equipoise-jekyll-scorm12.zip" download aria-label="Download the SCORM package for The Jekyll Protocol">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Switch and the Scalpel <span class="dl-sub">— Trolley Problems &amp; Medical Triage</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-trolley-and-triage-scales-scorm12.zip" download aria-label="Download the SCORM package for The Switch and the Scalpel">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Merciful Dose <span class="dl-sub">— Double Effect &amp; Killing vs. Letting Die</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-double-effect-scorm12.zip" download aria-label="Download the SCORM package for The Merciful Dose">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">Six Impossible Things <span class="dl-sub">— Thought Experiments (Thomson)</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-thomson-thought-experiments-scorm12.zip" download aria-label="Download the SCORM package for Six Impossible Things">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Villa Diodati Clinic <span class="dl-sub">— Germline Gene Editing</span></span>
+            <a class="btn btn--sm" href="dist/scorm/bioethics-germline-editing-scorm12.zip" download aria-label="Download the SCORM package for The Villa Diodati Clinic">SCORM ↓</a>
+          </li>
+        </ul>
+        <h4>Ethical Theory</h4>
+        <ul class="dl-list">
+          <li>
+            <span class="dl-title">The Midnight Tribunal <span class="dl-sub">— Utilitarianism</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ethical-theory-utilitarianism-tribunal-scorm12.zip" download aria-label="Download the SCORM package for The Midnight Tribunal">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Cat at the Door <span class="dl-sub">— Kantian Deontology</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ethical-theory-kantian-deontology-cat-door-scorm12.zip" download aria-label="Download the SCORM package for The Cat at the Door">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Labors of Arête <span class="dl-sub">— Virtue Ethics</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ethical-theory-virtue-ethics-arete-scorm12.zip" download aria-label="Download the SCORM package for The Labors of Arête">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Emerald Constitution <span class="dl-sub">— Mill's Harm Principle &amp; Liberalism</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ethical-theory-harm-principle-ozma-scorm12.zip" download aria-label="Download the SCORM package for The Emerald Constitution">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">Enough and As Good <span class="dl-sub">— Property &amp; the Lockean Proviso</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ethical-theory-lockean-proviso-scorm12.zip" download aria-label="Download the SCORM package for Enough and As Good">SCORM ↓</a>
+          </li>
+          <li>
+            <span class="dl-title">The Ambassador's Manifest <span class="dl-sub">— Moral Status &amp; the Moral Circle</span></span>
+            <a class="btn btn--sm" href="dist/scorm/ethical-theory-moral-status-manifest-scorm12.zip" download aria-label="Download the SCORM package for The Ambassador's Manifest">SCORM ↓</a>
+          </li>
+        </ul>
+        
+        <p class="note">Technical details, version notes, and how scoring maps to the gradebook are in <a href="docs/scorm.md">docs/scorm.md</a>.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="h-pixel">About</h2>
+      <p><strong>PhilMates</strong> grew out of a simple classroom observation: students engage with philosophy far more readily when an idea is a <em>story</em> they're inside than when it's a chapter they're assigned. Each lesson is designed as a short, self-contained activity that hooks first and explains second — and that a busy instructor can adopt without changing how they already run their course.</p>
+      <p>PhilMates is built and maintained by <strong>Brendan Shea</strong>, Professor of Philosophy and Computer Science at Rochester Community and Technical College and a Resident Fellow at the Minnesota Center for Philosophy of Science (University of Minnesota–Twin Cities). His teaching and research center on philosophy of science and applied ethics — especially bioethics and the ethics of AI — alongside logic and philosophical pedagogy. He teaches everything from Bioethics and Logic to Intro to Computer Science, and does a fair amount of public philosophy through popular writing, community courses, and service on scientific review boards.</p>
+      <p>Get in touch: <a href="mailto:brendanpshea@gmail.com">brendanpshea@gmail.com</a>. Contributions and classroom feedback are welcome.</p>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <p>★ PhilMates — open educational resources for philosophy. Licensed under <a href="LICENSE">CC BY-NC 4.0</a>. Authoring guide: <a href="AUTHORING.md">AUTHORING.md</a>.</p>
+  </footer>
+
+</body>
+</html>

@@ -106,7 +106,7 @@ function serve() {
 /* ---------- page discovery ---------- */
 async function findPages() {
   if (ONLY) return [ONLY.replace(/^\.?\//, '')];
-  const pages = ['index.html'];
+  const pages = ['index.html', 'instructors.html'];
   const lessons = path.join(ROOT, 'lessons');
   for (const topic of await readdir(lessons, { withFileTypes: true })) {
     if (!topic.isDirectory()) continue;
@@ -120,7 +120,7 @@ async function findPages() {
   // One lesson: the one with the most distinct widget kinds, so a shell
   // regression and the widest slice of widget markup are both seen once.
   let best = null, kinds = -1;
-  for (const rel of pages.slice(1)) {
+  for (const rel of pages.filter(p => p.startsWith('lessons/'))) {
     const html = await readFile(path.join(ROOT, rel), 'utf8');
     const n = new Set(html.match(/<phil-[a-z-]+/g)).size;
     if (n > kinds) { kinds = n; best = rel; }
@@ -146,7 +146,7 @@ async function auditPage(browser, base, rel) {
   await page.addScriptTag({ content: AXE_SOURCE });
 
   const found = new Map();                              // rule id -> { …, nodes:Set }
-  const isLesson = rel !== 'index.html';
+  const isLesson = rel.startsWith('lessons/');
   let states = 0;
 
   for (let guard = 0; guard < 500; guard++) {
@@ -205,7 +205,7 @@ const reports = [];
 for (const rel of pages) {
   const r = await auditPage(browser, base, rel);
   reports.push(r);
-  const label = rel === 'index.html' ? 'index.html' : rel.split('/').slice(1, 3).join('/');
+  const label = rel.startsWith('lessons/') ? rel.split('/').slice(1, 3).join('/') : rel;
   const total = r.violations.reduce((a, v) => a + v.nodes.length, 0);
   console.log(`${total ? '✘' : '✔'} ${label.padEnd(38)} ${String(r.states).padStart(4)} state(s)  ${total} finding(s)`);
   for (const v of r.violations.sort((a, b) => b.nodes.length - a.nodes.length)) {

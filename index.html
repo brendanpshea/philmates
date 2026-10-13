@@ -28,16 +28,13 @@
            border-bottom: 3px solid var(--border); box-shadow: 0 3px 0 var(--shadow); }
     .nav__in { max-width: 1000px; margin: 0 auto; padding: 10px 16px; display: flex;
                flex-wrap: wrap; align-items: center; gap: 8px 18px; }
-    .nav__brand { font-family: var(--pixel); color: var(--accent-2); font-size: 13px; margin-right: auto; }
-    .nav a { font-family: var(--pixel); font-size: 9px; color: var(--muted); text-decoration: none; }
-    .nav a:hover { color: var(--accent); }
+    .nav__brand { font-family: var(--pixel); color: var(--accent-2); font-size: 13px; margin-right: auto; text-decoration: none; }
+    .nav a:not(.nav__brand) { font-family: var(--pixel); font-size: 9px; color: var(--muted); text-decoration: none; }
+    .nav a:not(.nav__brand):hover, .nav a[aria-current="page"] { color: var(--accent); }
 
-    /* hero */
-    .hero { padding: 56px 0 8px; }
-    .hero h1 { font-family: var(--pixel); color: var(--accent-2); font-size: 30px; line-height: 1.4;
-               text-shadow: 3px 3px 0 var(--border); margin: 0 0 16px; }
-    .hero .tag { color: var(--ink); max-width: 60ch; font-size: 1.15em; }
-    .hero .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
+    .h-pixel { font-family: var(--pixel); color: var(--accent-3); font-size: 16px; }
+    .lead { color: var(--muted); max-width: 64ch; }
+    code, .mono { font-family: ui-monospace, Menlo, Consolas, monospace; background: var(--panel); padding: 2px 6px; border: 2px solid var(--border); }
 
     /* buttons */
     /* dark ink on the green, not --ink: near-white on #46e07a is 1.52:1. */
@@ -46,385 +43,409 @@
            box-shadow: 0 5px 0 var(--shadow); padding: 14px 18px; transition: transform .05s; }
     .btn:hover { transform: translateY(-2px); }
     .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--shadow); }
-    .btn--ghost { background: var(--panel-2); color: var(--accent-3); }
     .btn--sm { font-size: 9px; padding: 8px 10px; box-shadow: 0 3px 0 var(--shadow); }
 
-    /* generic section */
-    section { margin-top: 56px; scroll-margin-top: 64px; }
-    .h-pixel { font-family: var(--pixel); color: var(--accent-3); font-size: 16px; }
-    .lead { color: var(--muted); max-width: 64ch; }
-
-    /* "what is" feature row */
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; }
-    .feature { background: var(--panel-2); border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 18px; }
-    .feature h3 { font-family: var(--pixel); font-size: 11px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
-    .feature p { color: var(--muted); font-size: .92em; margin: 0; }
-
-    /* lesson cards */
-    .topic h3 { font-family: var(--pixel); color: var(--accent-3); font-size: 15px; margin-top: 36px; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-    .card { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: var(--panel-2);
-            border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 18px; transition: transform .05s; }
-    .card:hover { transform: translateY(-3px); background: #2b3252; }   /* #313a5e put .card p at 4.45:1 */
-    .card:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--shadow); }
-    .card h4 { font-family: var(--pixel); font-size: 12px; color: var(--accent); margin: 0 0 8px; line-height: 1.5; }
-    .card-topic { font-family: var(--body); font-weight: 400; font-size: 15px; color: var(--accent-3); }
-    .card p { color: var(--muted); font-size: .9em; margin: 0 0 14px; }
-    .card .meta { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; }
-    .badge { font-family: var(--pixel); font-size: 8px; color: var(--muted); background: var(--panel);
-             border: 2px solid var(--border); padding: 5px 7px; }
-
-    /* instructor lane */
-    .ways { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 20px; }
-    .way { background: var(--panel-2); border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 18px; }
-    .way .n { font-family: var(--pixel); font-size: 18px; color: var(--accent-2); }
-    .way h3 { font-family: var(--pixel); font-size: 11px; color: var(--accent); margin: 8px 0; line-height: 1.5; }
-    .way p { color: var(--muted); font-size: .9em; margin: 0; }
-    .panel { background: var(--panel-2); border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 22px; margin-top: 22px; }
-    .panel h3 { font-family: var(--pixel); font-size: 12px; color: var(--accent-2); margin: 0 0 6px; }
-    .dl-list { list-style: none; padding: 0; margin: 14px 0 0; }
-    .dl-list li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-top: 2px solid var(--border); }
-    .dl-title { flex: 1; }
-    .dl-sub { color: var(--muted); font-size: .85em; }
-    .dl-pending { color: var(--muted); font-size: .8em; font-style: italic; }
-    code, .mono { font-family: ui-monospace, Menlo, Consolas, monospace; background: var(--panel); padding: 2px 6px; border: 2px solid var(--border); }
-    .note { color: var(--muted); font-size: .85em; margin-top: 14px; }
-
-    /* about */
-    .about p { max-width: 68ch; }
-
     /* a page-level landmark, so it sits outside <main> and carries .wrap itself */
-    footer.wrap { margin-top: 64px; padding-top: 22px; border-top: 3px solid var(--border); color: var(--muted); font-size: .85em; }
+    footer.wrap { margin-top: 56px; padding-top: 22px; border-top: 3px solid var(--border); color: var(--muted); font-size: .85em; }
+
+    /* hero: short, so the lessons start on the first screen */
+    .hero { padding: 30px 0 0; }
+    .hero h1 { font-family: var(--pixel); color: var(--accent-2); font-size: 22px; line-height: 1.5;
+               text-shadow: 3px 3px 0 var(--border); margin: 0 0 10px; }
+    .hero p { color: var(--muted); max-width: 70ch; margin: 0; }
+
+    /* topic filter */
+    .filter { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 0; }
+    .chip { font-family: var(--pixel); font-size: 10px; line-height: 1.4; color: var(--muted); background: var(--panel-2);
+            border: 3px solid var(--border); box-shadow: 0 4px 0 var(--shadow); padding: 10px 12px; cursor: pointer; }
+    .chip:hover { color: var(--ink); }
+    .chip[aria-pressed="true"] { color: var(--bg); background: var(--accent); }
+    .chip__n { font-family: var(--body); font-size: 14px; font-weight: 600; margin-left: 4px; }   /* the pixel font's 6 and 8 read as G and & */
+    .filter-status { position: absolute; left: -9999px; }
+
+    /* lesson cards: picture left, text right */
+    .topic { scroll-margin-top: 64px; }
+    .topic h3 { font-family: var(--pixel); color: var(--accent-3); font-size: 14px; margin: 30px 0 12px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+    .card { display: grid; grid-template-columns: auto 1fr; grid-template-rows: 1fr auto; gap: 10px 12px; align-items: start; text-decoration: none; color: var(--ink); background: var(--panel-2);
+            border: 3px solid var(--border); box-shadow: 0 5px 0 var(--shadow); padding: 12px; transition: transform .05s; }
+    .card:hover { transform: translateY(-3px); background: #2b3252; }   /* #313a5e put the muted text at 4.45:1 */
+    .card:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--shadow); }
+    .card__img { flex: none; width: 96px; height: 96px; object-fit: cover; image-rendering: pixelated;
+                 border: 3px solid var(--border); background: var(--panel); }
+    .card__img--none { display: grid; place-items: center; font-size: 28px; color: var(--accent-2); }
+    .card__body { min-width: 0; }
+    .card h4 { font-family: var(--pixel); font-size: 11px; color: var(--accent); margin: 0 0 4px; line-height: 1.5; }
+    .card__subject { color: var(--accent-3); font-size: .9em; line-height: 1.35; margin: 0 0 4px;
+                     display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+    .card__desc { color: var(--muted); font-size: .85em; line-height: 1.4; margin: 0;
+                  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+    .card .meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+    .badge { font-family: var(--pixel); font-size: 8px; color: var(--muted); background: var(--panel);
+             border: 2px solid var(--border); padding: 4px 6px; }
+    .badge--progress { color: var(--accent); }
+    .badge--progress.is-done { color: var(--bg); background: var(--accent); }
+
+    .more { margin-top: 40px; color: var(--muted); }
+    @media (max-width: 420px) { .card__img { width: 72px; height: 72px; } .hero h1 { font-size: 17px; } }
   </style>
 </head>
 <body>
 
-  <a class="skip" href="#what">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <nav class="nav" aria-label="Section"><div class="nav__in">
-    <span class="nav__brand">★ PhilMates</span>
-    <a href="#what">What</a>
-    <a href="#lessons">Lessons</a>
-    <a href="#instructors">For Instructors</a>
-    <a href="#about">About</a>
+  <nav class="nav" aria-label="Site"><div class="nav__in">
+    <a class="nav__brand" href="index.html">★ PhilMates</a>
+    <a href="index.html" aria-current="page">Lessons</a>
+    <a href="instructors.html">For Instructors</a>
+    <a href="instructors.html#about">About</a>
   </div></nav>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
 
     <header class="hero">
-      <h1>Philosophy you can<br>actually finish.</h1>
-      <p class="tag">PhilMates turns one big idea into a short, playable story — answer questions, make choices, and watch your own beliefs shift. Free to use, runs in any browser, no install or sign-up. Project it in class, send the link, or drop it into your LMS.</p>
-      <div class="ctas">
-        <a class="btn" href="#lessons">▶ Browse lessons</a>
-        <a class="btn btn--ghost" href="#instructors">For instructors →</a>
-      </div>
+      <h1>Philosophy you can actually finish.</h1>
+      <p>Each lesson is one big idea told as a short, playable story. Pick one and start: no sign-up, and your progress is saved on this device.</p>
     </header>
 
-    <section id="what">
-      <h2 class="h-pixel">What is PhilMates?</h2>
-      <p class="lead">Most intros to philosophy ask students to read first and care later. PhilMates flips that: every lesson is a small narrative — Van Helsing's clinic, a courtroom of philosophers — that earns attention first, then teaches the concept underneath. They're built for a single class period or a solo study session.</p>
-      <div class="features">
-        <div class="feature"><h3>Story first</h3><p>Each topic is wrapped in a memorable scenario with characters and stakes, not a wall of definitions. Concepts arrive when you already want the answer.</p></div>
-        <div class="feature"><h3>Actually interactive</h3><p>Multiple choice, fill-in-the-blank, and "where do you stand?" belief probes that revisit your earlier answers — so students see their own thinking change.</p></div>
-        <div class="feature"><h3>Works anywhere</h3><p>Pure HTML, CSS, and JavaScript. No accounts, no tracking, no install. Progress saves locally, and completion reports cleanly to an LMS via SCORM.</p></div>
+    <section id="lessons" aria-labelledby="lessons-h">
+      <h2 class="h-pixel" id="lessons-h" style="position:absolute;left:-9999px">Lessons</h2>
+      <div class="filter" role="group" aria-label="Show lessons from">
+        <button type="button" class="chip" data-topic="all" aria-pressed="true">All <span class="chip__n">20</span></button>
+        <button type="button" class="chip" data-topic="ai-ethics" aria-pressed="false">AI Ethics <span class="chip__n">6</span></button>
+        <button type="button" class="chip" data-topic="bioethics" aria-pressed="false">Bioethics <span class="chip__n">8</span></button>
+        <button type="button" class="chip" data-topic="ethical-theory" aria-pressed="false">Ethical Theory <span class="chip__n">6</span></button>
       </div>
-    </section>
+      <p class="filter-status" role="status" aria-live="polite"></p>
 
-    <section id="lessons">
-      <h2 class="h-pixel">Lessons</h2>
-      <p class="lead">Pick any lesson and start — no setup. Use <span class="mono">→</span> / <strong>Next</strong> to advance, <strong>F</strong> for fullscreen. Your progress is saved on this device.</p>
-
-      <section class="topic">
-        <h3>Ai Ethics</h3>
+      <section class="topic" id="ai-ethics" data-topic="ai-ethics">
+        <h3>AI Ethics</h3>
         <div class="cards">
           
-          <a class="card" href="lessons/ai-ethics/amberville/index.html">
-            <h4>High Noon in Amberville <span class="card-topic">(Computing &amp; AI Ethics — Overview)</span></h4>
-            <p>A frontier town receives a new machine every month, and a three-person committee decides what to keep — an introduction to computing and AI ethics: bias, accountability, dark patterns, surveillance, work, hidden costs, and what happens when a machine is given a goal instead of a rule.</p>
+          <a class="card" href="lessons/ai-ethics/amberville/index.html" data-lesson="amberville" data-slides="36">
+            <img class="card__img" src="shared/thumbs/ai-ethics--amberville.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>High Noon in Amberville</h4>
+              <p class="card__subject">Computing &amp; AI Ethics — Overview</p>
+              <p class="card__desc">A frontier town receives a new machine every month, and a three-person committee decides what to keep — an introduction to computing and AI ethics: bias, accountability, dark patterns, surveillance, work, hidden costs, and what happens when a machine is given a goal instead of a rule.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 7 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">7 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ai-ethics/frankenstein-alignment/index.html">
-            <h4>Frankenstein's Mistake <span class="card-topic">(AI Alignment)</span></h4>
-            <p>Six questions you have to answer before you build something powerful, worked through Mary Shelley's Frankenstein — specification, training data, capability before guidance, what a system copies from its maker, irreversibility, and oversight.</p>
+          <a class="card" href="lessons/ai-ethics/internet-no-middle/index.html" data-lesson="internet-no-middle" data-slides="43">
+            <img class="card__img" src="shared/thumbs/ai-ethics--internet-no-middle.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Network With No Middle</h4>
+              <p class="card__subject">How the Internet Was Built — and What It Built</p>
+              <p class="card__desc">How the internet actually works and where its shape came from — packet switching, the end-to-end principle, open protocols, DNS, the Web and the advertising bargain — and how each engineering choice was made by somebody's values and then went on to shape everybody's.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~25 min</span>
-              <span class="badge">❓ 6 questions</span>
+              <span class="badge">~25 min</span>
+              <span class="badge">7 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ai-ethics/internet-no-middle/index.html">
-            <h4>The Network With No Middle <span class="card-topic">(How the Internet Was Built — and What It Built)</span></h4>
-            <p>How the internet actually works and where its shape came from — packet switching, the end-to-end principle, open protocols, DNS, the Web and the advertising bargain — and how each engineering choice was made by somebody's values and then went on to shape everybody's.</p>
+          <a class="card" href="lessons/ai-ethics/technomoral-virtues/index.html" data-lesson="ai-ethics-technomoral" data-slides="31">
+            <img class="card__img" src="shared/thumbs/ai-ethics--technomoral-virtues.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>Growing Up in Springfield</h4>
+              <p class="card__subject">Technomoral Virtues</p>
+              <p class="card__desc">Homer and Marge navigate parenting in a digital world. Explore how emerging technologies reshape moral habituation, using Shannon Vallor's technomoral virtues.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~25 min</span>
-              <span class="badge">❓ 7 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">6 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ai-ethics/nobody-asked-nell/index.html">
-            <h4>Nobody Asked Nell <span class="card-topic">(Group Privacy)</span></h4>
-            <p>How other people's DNA tests, phones, and cameras reveal someone who shared nothing, why that is a problem for consent, and whether groups need a right to privacy of their own, told through one careful woman and four gossiping gadgets.</p>
+          <a class="card" href="lessons/ai-ethics/villains-ledger/index.html" data-lesson="villains-ledger" data-slides="33">
+            <img class="card__img" src="shared/thumbs/ai-ethics--villains-ledger.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Villain's Ledger</h4>
+              <p class="card__subject">Cryptocurrency</p>
+              <p class="card__desc">How cryptocurrency works, why some people wanted money with no bank in the middle, and why its energy use, its gambling, and its usefulness for ransom all follow from that design, told through a supervillain who can't work out how to get paid.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 4 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">3 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ai-ethics/technomoral-virtues/index.html">
-            <h4>Growing Up in Springfield <span class="card-topic">(Technomoral Virtues)</span></h4>
-            <p>Homer and Marge navigate parenting in a digital world. Explore how emerging technologies reshape moral habituation, using Shannon Vallor's technomoral virtues.</p>
+          <a class="card" href="lessons/ai-ethics/nobody-asked-nell/index.html" data-lesson="nobody-asked-nell" data-slides="32">
+            <img class="card__img" src="shared/thumbs/ai-ethics--nobody-asked-nell.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>Nobody Asked Nell</h4>
+              <p class="card__subject">Group Privacy</p>
+              <p class="card__desc">How other people's DNA tests, phones, and cameras reveal someone who shared nothing, why that is a problem for consent, and whether groups need a right to privacy of their own, told through one careful woman and four gossiping gadgets.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 6 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">4 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ai-ethics/villains-ledger/index.html">
-            <h4>The Villain's Ledger <span class="card-topic">(Cryptocurrency)</span></h4>
-            <p>How cryptocurrency works, why some people wanted money with no bank in the middle, and why its energy use, its gambling, and its usefulness for ransom all follow from that design, told through a supervillain who can't work out how to get paid.</p>
+          <a class="card" href="lessons/ai-ethics/frankenstein-alignment/index.html" data-lesson="frankenstein-alignment" data-slides="40">
+            <img class="card__img" src="shared/thumbs/ai-ethics--frankenstein-alignment.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>Frankenstein's Mistake</h4>
+              <p class="card__subject">AI Alignment</p>
+              <p class="card__desc">Six questions you have to answer before you build something powerful, worked through Mary Shelley's Frankenstein — specification, training data, capability before guidance, what a system copies from its maker, irreversibility, and oversight.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 3 questions</span>
+              <span class="badge">~25 min</span>
+              <span class="badge">6 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
         </div>
       </section>
 
-      <section class="topic">
+      <section class="topic" id="bioethics" data-topic="bioethics">
         <h3>Bioethics</h3>
         <div class="cards">
           
-          <a class="card" href="lessons/bioethics/clinical-equipoise/index.html">
-            <h4>The Jekyll Protocol <span class="card-topic">(Clinical Equipoise)</span></h4>
-            <p>Dr. Helen Jekyll, great-granddaughter of the original, runs a modern clinical trial the right way — teaching the apparatus of research and the principle of equipoise against her ancestor's reckless self-experiment.</p>
+          <a class="card" href="lessons/bioethics/four-principles/index.html" data-lesson="bioethics-four-principles" data-slides="34">
+            <img class="card__img" src="shared/thumbs/bioethics--four-principles.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>Rounds with Van Helsing</h4>
+              <p class="card__subject">Bioethics: Four Principles</p>
+              <p class="card__desc">Train under Doctor Van Helsing in Transylvania and learn principlism — the four principles of bioethics — through the dilemmas of monstrous patients.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~25 min</span>
-              <span class="badge">❓ 7 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">8 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/double-effect/index.html">
-            <h4>The Merciful Dose <span class="card-topic">(Double Effect &amp; Killing vs. Letting Die)</span></h4>
-            <p>The doctrine of double effect and the difference between killing and letting die, tested with James Rachels' twin cases, as Dr. Watson decides how to treat a dying patient's pain.</p>
+          <a class="card" href="lessons/bioethics/patient-autonomy/index.html" data-lesson="bioethics-autonomy" data-slides="34">
+            <img class="card__img" src="shared/thumbs/bioethics--patient-autonomy.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>House Calls in the Hedgerow</h4>
+              <p class="card__subject">Patient Autonomy</p>
+              <p class="card__desc">A country doctor in the world of Peter Rabbit learns what makes consent truly informed, and Emanuel's four models of the doctor–patient relationship.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 4 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">6 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/four-principles/index.html">
-            <h4>Rounds with Van Helsing <span class="card-topic">(Bioethics: Four Principles)</span></h4>
-            <p>Train under Doctor Van Helsing in Transylvania and learn principlism — the four principles of bioethics — through the dilemmas of monstrous patients.</p>
+          <a class="card" href="lessons/bioethics/virtue-of-care/index.html" data-lesson="bioethics-care" data-slides="34">
+            <img class="card__img" src="shared/thumbs/bioethics--virtue-of-care.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The March Practice</h4>
+              <p class="card__subject">Care as a Virtue</p>
+              <p class="card__desc">A small-town family doctor teaches care as a clinical virtue — what a virtue is, the anatomy of care, mentorship, and how it completes the four principles rather than replacing them.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 8 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">7 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/germline-editing/index.html">
-            <h4>The Villa Diodati Clinic <span class="card-topic">(Germline Gene Editing)</span></h4>
-            <p>Somatic versus germline gene editing, the treatment/enhancement line, and the main arguments for and against editing the genes of future children, told through one couple's night at a lakeside clinic.</p>
+          <a class="card" href="lessons/bioethics/clinical-equipoise/index.html" data-lesson="bioethics-equipoise" data-slides="40">
+            <img class="card__img" src="shared/thumbs/bioethics--clinical-equipoise.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Jekyll Protocol</h4>
+              <p class="card__subject">Clinical Equipoise</p>
+              <p class="card__desc">Dr. Helen Jekyll, great-granddaughter of the original, runs a modern clinical trial the right way — teaching the apparatus of research and the principle of equipoise against her ancestor's reckless self-experiment.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 5 questions</span>
+              <span class="badge">~25 min</span>
+              <span class="badge">7 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/patient-autonomy/index.html">
-            <h4>House Calls in the Hedgerow <span class="card-topic">(Patient Autonomy)</span></h4>
-            <p>A country doctor in the world of Peter Rabbit learns what makes consent truly informed, and Emanuel's four models of the doctor–patient relationship.</p>
+          <a class="card" href="lessons/bioethics/trolley-and-triage/index.html" data-lesson="trolley-triage" data-slides="32">
+            <img class="card__img" src="shared/thumbs/bioethics--trolley-and-triage.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Switch and the Scalpel</h4>
+              <p class="card__subject">Trolley Problems &amp; Medical Triage</p>
+              <p class="card__desc">Explore what makes a moral dilemma through Philippa Foot and Judith Jarvis Thomson's classic trolley problems, Thomson's organ transplant puzzle, and real-world medical triage protocols.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 6 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">5 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/thomson-thought-experiments/index.html">
-            <h4>Six Impossible Things <span class="card-topic">(Thought Experiments (Thomson))</span></h4>
-            <p>Judith Jarvis Thomson's thought experiments (the violinist, the tiny house, the people-seeds, the trolley she turned around) and how to test a thought experiment by turning its knobs.</p>
+          <a class="card" href="lessons/bioethics/double-effect/index.html" data-lesson="double-effect" data-slides="33">
+            <img class="card__img" src="shared/thumbs/bioethics--double-effect.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Merciful Dose</h4>
+              <p class="card__subject">Double Effect &amp; Killing vs. Letting Die</p>
+              <p class="card__desc">The doctrine of double effect and the difference between killing and letting die, tested with James Rachels' twin cases, as Dr. Watson decides how to treat a dying patient's pain.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 2 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">4 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/trolley-and-triage/index.html">
-            <h4>The Switch and the Scalpel <span class="card-topic">(Trolley Problems &amp; Medical Triage)</span></h4>
-            <p>Explore what makes a moral dilemma through Philippa Foot and Judith Jarvis Thomson's classic trolley problems, Thomson's organ transplant puzzle, and real-world medical triage protocols.</p>
+          <a class="card" href="lessons/bioethics/thomson-thought-experiments/index.html" data-lesson="thomson-thought-experiments" data-slides="32">
+            <img class="card__img" src="shared/thumbs/bioethics--thomson-thought-experiments.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>Six Impossible Things</h4>
+              <p class="card__subject">Thought Experiments (Thomson)</p>
+              <p class="card__desc">Judith Jarvis Thomson's thought experiments (the violinist, the tiny house, the people-seeds, the trolley she turned around) and how to test a thought experiment by turning its knobs.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 5 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">2 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/bioethics/virtue-of-care/index.html">
-            <h4>The March Practice <span class="card-topic">(Care as a Virtue)</span></h4>
-            <p>A small-town family doctor teaches care as a clinical virtue — what a virtue is, the anatomy of care, mentorship, and how it completes the four principles rather than replacing them.</p>
+          <a class="card" href="lessons/bioethics/germline-editing/index.html" data-lesson="germline-editing" data-slides="33">
+            <img class="card__img" src="shared/thumbs/bioethics--germline-editing.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Villa Diodati Clinic</h4>
+              <p class="card__subject">Germline Gene Editing</p>
+              <p class="card__desc">Somatic versus germline gene editing, the treatment/enhancement line, and the main arguments for and against editing the genes of future children, told through one couple's night at a lakeside clinic.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 7 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">5 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
         </div>
       </section>
 
-      <section class="topic">
+      <section class="topic" id="ethical-theory" data-topic="ethical-theory">
         <h3>Ethical Theory</h3>
         <div class="cards">
           
-          <a class="card" href="lessons/ethical-theory/harm-principle/index.html">
-            <h4>The Emerald Constitution <span class="card-topic">(Mill's Harm Principle &amp; Liberalism)</span></h4>
-            <p>Princess Ozma's council revises the Wizard's old constitution — a mess of paternalism and negligence — using Mill's Harm Principle, with political and bioethical applications.</p>
+          <a class="card" href="lessons/ethical-theory/utilitarianism/index.html" data-lesson="util-history" data-slides="29">
+            <img class="card__img" src="shared/thumbs/ethical-theory--utilitarianism.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Midnight Tribunal</h4>
+              <p class="card__subject">Utilitarianism</p>
+              <p class="card__desc">You ate a $40 cake alone and now three philosophers haunt your dreams. A story-driven tour of hedonism, classical utilitarianism, and Peter Singer.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~25 min</span>
-              <span class="badge">❓ 8 questions</span>
+              <span class="badge">~15 min</span>
+              <span class="badge">6 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ethical-theory/kantian-deontology/index.html">
-            <h4>The Cat at the Door <span class="card-topic">(Kantian Deontology)</span></h4>
-            <p>A cat asks a mouse where its friends are hiding. A story-driven tour of Kant's categorical imperative, who counts as an end, and how Korsgaard and O'Neill respond.</p>
+          <a class="card" href="lessons/ethical-theory/kantian-deontology/index.html" data-lesson="kant-cat-door" data-slides="31">
+            <img class="card__img" src="shared/thumbs/ethical-theory--kantian-deontology.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Cat at the Door</h4>
+              <p class="card__subject">Kantian Deontology</p>
+              <p class="card__desc">A cat asks a mouse where its friends are hiding. A story-driven tour of Kant's categorical imperative, who counts as an end, and how Korsgaard and O'Neill respond.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 7 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">7 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ethical-theory/lockean-proviso/index.html">
-            <h4>Enough and As Good <span class="card-topic">(Property &amp; the Lockean Proviso)</span></h4>
-            <p>Forty people land on a world that could hold a billion. Do they own it? Locke's labour theory of property, the proviso that limits it, the money argument that loosens it, Nozick's tomato juice, the colonial uses the theory was put to, the left and right libertarian split, and whether any of it applies to ideas.</p>
+          <a class="card" href="lessons/ethical-theory/virtue-ethics/index.html" data-lesson="aristotle-virtue" data-slides="41">
+            <img class="card__img" src="shared/thumbs/ethical-theory--virtue-ethics.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Labors of Arête</h4>
+              <p class="card__subject">Virtue Ethics</p>
+              <p class="card__desc">Athena guides you through Aristotle's virtue ethics — eudaimonia, the doctrine of the mean, phronesis, and the polis — using Greek myths as case studies.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~20 min</span>
-              <span class="badge">❓ 6 questions</span>
+              <span class="badge">~25 min</span>
+              <span class="badge">8 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ethical-theory/moral-status/index.html">
-            <h4>The Ambassador's Manifest <span class="card-topic">(Moral Status &amp; the Moral Circle)</span></h4>
-            <p>As the Moral Status Officer on a first-contact survey ship, you classify seven impossible aliens against Mary Anne Warren's checklist — and discover you have been ruling on animals, abortion, end-of-life care, AI, and extinction the whole time.</p>
+          <a class="card" href="lessons/ethical-theory/harm-principle/index.html" data-lesson="harm-principle" data-slides="39">
+            <img class="card__img" src="shared/thumbs/ethical-theory--harm-principle.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Emerald Constitution</h4>
+              <p class="card__subject">Mill's Harm Principle &amp; Liberalism</p>
+              <p class="card__desc">Princess Ozma's council revises the Wizard's old constitution — a mess of paternalism and negligence — using Mill's Harm Principle, with political and bioethical applications.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~25 min</span>
-              <span class="badge">❓ 10 questions</span>
+              <span class="badge">~25 min</span>
+              <span class="badge">8 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ethical-theory/utilitarianism/index.html">
-            <h4>The Midnight Tribunal <span class="card-topic">(Utilitarianism)</span></h4>
-            <p>You ate a $40 cake alone and now three philosophers haunt your dreams. A story-driven tour of hedonism, classical utilitarianism, and Peter Singer.</p>
+          <a class="card" href="lessons/ethical-theory/lockean-proviso/index.html" data-lesson="lockean-proviso" data-slides="35">
+            <img class="card__img" src="shared/thumbs/ethical-theory--lockean-proviso.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>Enough and As Good</h4>
+              <p class="card__subject">Property &amp; the Lockean Proviso</p>
+              <p class="card__desc">Forty people land on a world that could hold a billion. Do they own it? Locke's labour theory of property, the proviso that limits it, the money argument that loosens it, Nozick's tomato juice, the colonial uses the theory was put to, the left and right libertarian split, and whether any of it applies to ideas.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~15 min</span>
-              <span class="badge">❓ 6 questions</span>
+              <span class="badge">~20 min</span>
+              <span class="badge">6 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
-          <a class="card" href="lessons/ethical-theory/virtue-ethics/index.html">
-            <h4>The Labors of Arête <span class="card-topic">(Virtue Ethics)</span></h4>
-            <p>Athena guides you through Aristotle's virtue ethics — eudaimonia, the doctrine of the mean, phronesis, and the polis — using Greek myths as case studies.</p>
+          <a class="card" href="lessons/ethical-theory/moral-status/index.html" data-lesson="moral-status" data-slides="45">
+            <img class="card__img" src="shared/thumbs/ethical-theory--moral-status.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h4>The Ambassador's Manifest</h4>
+              <p class="card__subject">Moral Status &amp; the Moral Circle</p>
+              <p class="card__desc">As the Moral Status Officer on a first-contact survey ship, you classify seven impossible aliens against Mary Anne Warren's checklist — and discover you have been ruling on animals, abortion, end-of-life care, AI, and extinction the whole time.</p>
+            </div>
             <div class="meta">
-              <span class="badge">⏱ ~25 min</span>
-              <span class="badge">❓ 8 questions</span>
+              <span class="badge">~25 min</span>
+              <span class="badge">10 questions</span>
+              <span class="badge badge--progress" hidden></span>
             </div>
           </a>
         </div>
       </section>
     </section>
 
-    <section id="instructors">
-      <h2 class="h-pixel">For Instructors</h2>
-      <p class="lead">PhilMates is free and openly licensed (CC BY-NC 4.0) — use and adapt it for your classes. Three ways to run it — pick whatever fits your room and tools.</p>
-      <div class="ways">
-        <div class="way"><div class="n">1</div><h3>Project it</h3><p>Open a lesson on the classroom display and click through together. The <span class="mono">↺ Reset</span> button clears progress so you can re-run it live each period.</p></div>
-        <div class="way"><div class="n">2</div><h3>Share the link</h3><p>Send students straight to a lesson URL for homework or flipped prep. Works on phones; progress saves on their device. Nothing to install.</p></div>
-        <div class="way"><div class="n">3</div><h3>Load into your LMS</h3><p>Download the SCORM package below and upload it to Canvas, Blackboard, Moodle, or D2L. Completion <em>and</em> a score report to your gradebook automatically.</p></div>
-      </div>
-
-      <div class="panel">
-        <h3>SCORM packages (SCORM 1.2)</h3>
-        <p class="lead">Each lesson is a self-contained, single-SCO package. On finishing, the LMS records <strong>completed/passed</strong> plus a <strong>score</strong>; learners can leave and resume where they left off. Upload the <span class="mono">.zip</span> as-is — don't unzip it.</p>
-        <ul class="dl-list">
-          <li>
-            <span class="dl-title">High Noon in Amberville <span class="dl-sub">— Computing &amp; AI Ethics — Overview</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ai-ethics-overview-amberville-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">Frankenstein's Mistake <span class="dl-sub">— AI Alignment</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ai-ethics-frankenstein-alignment-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Network With No Middle <span class="dl-sub">— How the Internet Was Built — and What It Built</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ai-ethics-internet-no-middle-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">Nobody Asked Nell <span class="dl-sub">— Group Privacy</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ai-ethics-nobody-asked-nell-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">Growing Up in Springfield <span class="dl-sub">— Technomoral Virtues</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ai-ethics-technomoral-virtues-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Villain's Ledger <span class="dl-sub">— Cryptocurrency</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ai-ethics-villains-ledger-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Jekyll Protocol <span class="dl-sub">— Clinical Equipoise</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-clinical-equipoise-jekyll-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Merciful Dose <span class="dl-sub">— Double Effect &amp; Killing vs. Letting Die</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-double-effect-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">Rounds with Van Helsing <span class="dl-sub">— Bioethics: Four Principles</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-four-principles-van-helsing-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Villa Diodati Clinic <span class="dl-sub">— Germline Gene Editing</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-germline-editing-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">House Calls in the Hedgerow <span class="dl-sub">— Patient Autonomy</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-patient-autonomy-hedgerow-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">Six Impossible Things <span class="dl-sub">— Thought Experiments (Thomson)</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-thomson-thought-experiments-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Switch and the Scalpel <span class="dl-sub">— Trolley Problems &amp; Medical Triage</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-trolley-and-triage-scales-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The March Practice <span class="dl-sub">— Care as a Virtue</span></span>
-            <a class="btn btn--sm" href="dist/scorm/bioethics-virtue-of-care-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Emerald Constitution <span class="dl-sub">— Mill's Harm Principle &amp; Liberalism</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ethical-theory-harm-principle-ozma-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Cat at the Door <span class="dl-sub">— Kantian Deontology</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ethical-theory-kantian-deontology-cat-door-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">Enough and As Good <span class="dl-sub">— Property &amp; the Lockean Proviso</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ethical-theory-lockean-proviso-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Ambassador's Manifest <span class="dl-sub">— Moral Status &amp; the Moral Circle</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ethical-theory-moral-status-manifest-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Midnight Tribunal <span class="dl-sub">— Utilitarianism</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ethical-theory-utilitarianism-tribunal-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li>
-          <li>
-            <span class="dl-title">The Labors of Arête <span class="dl-sub">— Virtue Ethics</span></span>
-            <a class="btn btn--sm" href="dist/scorm/ethical-theory-virtue-ethics-arete-scorm12.zip" download>SCORM 1.2 ↓</a>
-          </li></ul>
-        
-        <p class="note">Technical details, version notes, and how scoring maps to the gradebook are in <a href="docs/scorm.md">docs/scorm.md</a>.</p>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <h2 class="h-pixel">About</h2>
-      <p><strong>PhilMates</strong> grew out of a simple classroom observation: students engage with philosophy far more readily when an idea is a <em>story</em> they're inside than when it's a chapter they're assigned. Each lesson is designed as a short, self-contained activity that hooks first and explains second — and that a busy instructor can adopt without changing how they already run their course.</p>
-      <p>PhilMates is built and maintained by <strong>Brendan Shea</strong>, Professor of Philosophy and Computer Science at Rochester Community and Technical College and a Resident Fellow at the Minnesota Center for Philosophy of Science (University of Minnesota–Twin Cities). His teaching and research center on philosophy of science and applied ethics — especially bioethics and the ethics of AI — alongside logic and philosophical pedagogy. He teaches everything from Bioethics and Logic to Intro to Computer Science, and does a fair amount of public philosophy through popular writing, community courses, and service on scientific review boards.</p>
-      <p>Get in touch: <a href="mailto:brendanpshea@gmail.com">brendanpshea@gmail.com</a>. Contributions and classroom feedback are welcome.</p>
-    </section>
+    <p class="more">Teaching with these? <a href="instructors.html">For instructors</a> covers how to run a lesson in class and has the SCORM packages for your LMS.</p>
 
   </main>
 
   <footer class="wrap">
     <p>★ PhilMates — open educational resources for philosophy. Licensed under <a href="LICENSE">CC BY-NC 4.0</a>. Authoring guide: <a href="AUTHORING.md">AUTHORING.md</a>.</p>
   </footer>
+
+  <script>
+    /* Topic filter. Without this script every topic simply stays visible. */
+    (() => {
+      const chips = [...document.querySelectorAll('.chip')];
+      const sections = [...document.querySelectorAll('.topic')];
+      const status = document.querySelector('.filter-status');
+      const known = t => t === 'all' || sections.some(s => s.dataset.topic === t);
+      const show = (topic, announce) => {
+        if (!known(topic)) topic = 'all';
+        sections.forEach(s => { s.hidden = topic !== 'all' && s.dataset.topic !== topic; });
+        chips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.topic === topic)));
+        try { localStorage.setItem('philmates:home-topic', topic); } catch {}
+        if (announce) {
+          const n = sections.filter(s => !s.hidden).reduce((k, s) => k + s.querySelectorAll('.card').length, 0);
+          status.textContent = 'Showing ' + n + ' lesson' + (n === 1 ? '' : 's') + '.';
+        }
+      };
+      chips.forEach(c => c.addEventListener('click', () => {
+        show(c.dataset.topic, true);
+        history.replaceState(null, '', c.dataset.topic === 'all' ? location.pathname : '#' + c.dataset.topic);
+      }));
+      let saved = null;
+      try { saved = localStorage.getItem('philmates:home-topic'); } catch {}
+      show(location.hash.slice(1) || saved || 'all', false);
+
+      /* Progress badges, read from what each lesson saved on this device. */
+      document.querySelectorAll('.card[data-lesson]').forEach(card => {
+        let data;
+        try { data = JSON.parse(localStorage.getItem('philmates:' + card.dataset.lesson) || 'null'); } catch {}
+        if (!data) return;
+        const badge = card.querySelector('.badge--progress');
+        const total = Number(card.dataset.slides), seen = Math.min((data.visited || []).length, total);
+        if (data.completed) { badge.textContent = '✔ Completed'; badge.classList.add('is-done'); }
+        else if (seen > 0) badge.textContent = seen + ' of ' + total + ' slides';
+        else return;
+        badge.hidden = false;
+      });
+    })();
+  </script>
 </body>
 </html>
