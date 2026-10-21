@@ -57,6 +57,10 @@ const prompts = `# Image prompts — ${title}
 House style: 16-bit SNES-era pixel art, limited palette, hard edges,
 dark slate-blue background (#1d2235), no text.
 
+People: vary age, gender, and skin color in every panel that shows people.
+Name each figure's age, gender, and skin color; describe crowds as mixed.
+Give recurring characters one fixed description and reuse it word for word.
+
 | File | Subject | Prompt |
 |------|---------|--------|
 | example.png | … | … |

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: Albert Jonsen — a life ring on a rope floats on dark water">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#4cc2ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#4cc2ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#4cc2ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#4cc2ff"/>
+
+  <!-- rope from above -->
+  <polyline points="70,22 62,30 58,40 54,44" stroke="#c9b88f" stroke-width="2" fill="none"/>
+  <!-- dark water -->
+  <rect x="7" y="62" width="66" height="24" fill="#16304d"/>
+  <rect x="12" y="68" width="10" height="2" fill="#23507a"/>
+  <rect x="52" y="74" width="12" height="2" fill="#23507a"/>
+  <rect x="24" y="80" width="14" height="2" fill="#23507a"/>
+  <!-- the life ring -->
+  <circle cx="40" cy="56" r="15" fill="none" stroke="#eef1ff" stroke-width="7"/>
+  <circle cx="40" cy="56" r="15" fill="none" stroke="#4cc2ff" stroke-width="7" stroke-dasharray="11.78 11.78"/>
+  <circle cx="40" cy="56" r="18.5" fill="none" stroke="#050610" stroke-width="1"/>
+  <circle cx="40" cy="56" r="11.5" fill="none" stroke="#050610" stroke-width="1"/>
+  <!-- water line across the ring -->
+  <rect x="21" y="62" width="38" height="2" fill="#4cc2ff" opacity=".55"/>
+</svg>

@@ -474,10 +474,42 @@ Use `--page` while writing a lesson, and the full run before shipping it.
 
 Full findings, method and limits: [docs/accessibility.md](docs/accessibility.md).
 
+## Casting
+
+A lesson with an all-male cast is not acceptable, and neither is art where
+everyone is the same age and color. The rule covers the writing as much as the
+pictures.
+
+- **Named characters** vary in gender, age, and background. When a borrowed
+  story has an all-male cast, recast it: Lestrade, Captain Smollett, and
+  several of the sailors in "The Ship's Chest" are women.
+- **Unnamed people** in examples and questions vary too. Don't default every
+  patient, doctor, and bystander to "he."
+- **Real people and quotations stay as they were.** Recast the story, never
+  the historical record.
+- **Art** follows the same rule. See "Vary the people in every prompt" below.
+
+**Arguments belong to philosophers, not characters.** The cast is the setting,
+and it supplies the cases: a lost leg, a fever, a vote. Credit every argument
+by name to its philosopher or theory ("Daniels argues," "a utilitarian
+counts"), never to a character ("Livesey's argument," "Smollett's ledger").
+Don't put a character's portrait on a slide that teaches a theory; use the
+thinker's relic card. Characters can still ask the question, live through the
+case, and face the choice in a poll.
+
 ## Art & style
 
 - Reference aesthetic: **16-bit console era**. Hand-authored SVGs preferred;
   PNGs from an image generator are fine for richer scenes.
+- **Vary the people in every prompt.** Image models default to young, white,
+  male figures unless told otherwise. So every panel that shows people names
+  each figure's age, gender, and skin color, and every crowd is described as
+  mixed: men and women, young and old, a range of skin tones. Invented and
+  borrowed characters can be recast from their source; Watson, Lestrade, and
+  Captain Smollett all were. Give each recurring character one fixed
+  description and paste it word for word, or the model redraws them as
+  someone else. Check the finished panels for this too, and re-roll any that
+  came out all one kind.
 - **Don't draw portraits of real (contemporary or historical) thinkers.** At
   pixel resolution a face can't carry a likeness — it just reads as "generic
   person," so the payoff of recognizing Mill or Kant never lands. Instead give

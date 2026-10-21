@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 108" shape-rendering="crispEdges" role="img" aria-label="Relic card: John Rawls — three starting blocks set on one level beam above uneven ground, with a star ahead">
+  <!-- card frame -->
+  <rect width="80" height="108" fill="#050610"/>
+  <rect x="2" y="2" width="76" height="104" fill="#eef1ff"/>
+  <rect x="4" y="4" width="72" height="100" fill="#1d2235"/>
+  <!-- title bar + rank gem -->
+  <rect x="7" y="7" width="66" height="12" fill="#262c44"/>
+  <polygon points="40,8 45,13 40,18 35,13" fill="#eef1ff"/>
+  <!-- bottom plate + rarity pips -->
+  <rect x="7" y="89" width="66" height="12" fill="#262c44"/>
+  <rect x="32" y="93" width="4" height="4" fill="#eef1ff"/>
+  <rect x="38" y="93" width="4" height="4" fill="#eef1ff"/>
+  <rect x="44" y="93" width="4" height="4" fill="#eef1ff"/>
+
+  <!-- the goal ahead -->
+  <polygon points="40,24 42,30 48,30 43,34 45,40 40,36 35,40 37,34 32,30 38,30" fill="#ffcf5a"/>
+  <!-- uneven ground -->
+  <polygon points="8,86 8,74 18,70 28,79 40,66 52,77 62,70 72,75 72,86" fill="#3a4260"/>
+  <!-- stilts of different heights hold the beam level -->
+  <rect x="17" y="58" width="3" height="13" fill="#9aa3c7"/>
+  <rect x="39" y="58" width="3" height="9" fill="#9aa3c7"/>
+  <rect x="61" y="58" width="3" height="13" fill="#9aa3c7"/>
+  <!-- the level beam -->
+  <rect x="11" y="55" width="58" height="3" fill="#eef1ff"/>
+  <!-- three identical starting blocks -->
+  <g id="block">
+    <polygon points="13,55 23,55 23,48" fill="#4cc2ff"/>
+    <rect x="13" y="53" width="10" height="2" fill="#050610"/>
+  </g>
+  <use href="#block" x="22"/>
+  <use href="#block" x="44"/>
+</svg>

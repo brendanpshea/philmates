@@ -3229,3 +3229,223 @@ the Havasupai slide ends with one unrevealed sentence tying the case to the
 strong reading. `<phil-shadow>` has five switches and ten profile lines; the
 "people who shop like Nell" switch produces nothing until at least one known
 fact about Nell is switched on.
+
+---
+
+## Bioethics: The Right to Health Care — "The Ship's Chest"  *(built)*
+
+- **Path:** `lessons/bioethics/right-to-health-care/`
+- **Lesson id:** `right-to-health-care`
+- **Top-bar title:** `The Ship's Chest` · **Subject:** `Right to Health Care`
+- **Topic:** Bioethics, justice and resource allocation. Pitched at "explain it
+  like I'm twelve": one main argument (Daniels), one rival ground (utilitarian),
+  one objection (Engelhardt), then the problem of limits.
+- **Approach:** Separate the kinds of right first (negative vs. positive, moral
+  vs. legal, health vs. health care). Build Norman Daniels's three-step
+  argument. Show where a utilitarian agrees (universal access, prevention) and
+  where they split (aggregation). Test Daniels from both sides: Engelhardt says
+  it covers too much; the twin cabin boys and the dying sailor say it covers
+  too little. End with rationing (Oregon, the rule of rescue) and Daniels and
+  Sabin's fair-process answer. No verdict is graded.
+- **Frame:** Bristol, before the *Hispaniola* sails (Stevenson, *Treasure
+  Island*, 1883). The crew is signing its articles, and one article is blank:
+  what does the crew owe a hand who falls sick or gets hurt? The student is the
+  ship's clerk who writes it. The chest holds a fixed sum, which makes limits
+  concrete. Real pirate articles and the Navy's Chatham Chest show the question
+  is old.
+- **Who says what:** Arguments are credited to the philosophers by name, never
+  to the crew. The crew are the setting and the cases: Silver's lost leg (the
+  natural lottery, the sixpence poll), Kit's fever (aggregation), Redruth's
+  last weeks (palliative care). Theory slides carry relic cards, not portraits.
+- **Cast:** Livesey (Black, male), Smollett (woman), Silver, Ben Gunn, and
+  minor sailors from the novel. Gray, Hunter, and Redruth are recast as women;
+  the cabin boy Dick becomes a cabin girl, Kit. Tom and Jem stay boys because
+  they stand in for Allen and Fost's Johnny and Billy.
+- **Thinkers and cases:** Norman Daniels (relic card), Christopher Boorse, John
+  Rawls (relic card), J. S. Mill (relic card reused), James Lind,
+  H. Tristram Engelhardt Jr. (relic card), Allen and Fost's Johnny and Billy, Coby Howard and the Oregon list, Albert Jonsen
+  (relic card, not yet placed on a slide), Daniels and Sabin.
+- **Left out on purpose:** Dworkin's prudent insurance, Daniels's prudential
+  lifespan account (age rationing), luck egalitarianism by name, social
+  determinants beyond one bullet, US policy design (single payer, the ACA),
+  QALY arithmetic beyond the chest widget.
+- **Cross-references:** `four-principles` (justice), `trolley-and-triage`
+  (micro-allocation and QALYs; this lesson is macro-allocation),
+  `utilitarianism` (diminishing marginal utility, Mill), `lockean-proviso`
+  (Nozick and property), `germline-editing` (treatment vs. enhancement, growth
+  hormone).
+
+### Accuracy note (checked 2026-10-21)
+- **Roberts's articles:** Johnson, *A General History of the Pyrates* (2nd ed.,
+  1724), Article IX: "800 Dollars, out of the publick Stock." Johnson calls
+  them "the Substance of the Articles," a summary rather than a copy.
+- **Chatham Chest:** about 1590 (traditionally 1588); sixpence a month from
+  seamen's wages; pensions for men "hurt or maimed." Black, *Archaeologia
+  Cantiana* 111.
+- **Lind:** *A Treatise of the Scurvy* (1753). Twelve patients on the
+  *Salisbury*, 20 May 1747, in six pairs; the oranges-and-lemons pair recovered
+  fastest. The Navy issued lemon juice only from 1795.
+- **EMTALA:** 42 U.S.C. §1395dd (1986). Screening exam, then stabilize or
+  transfer, with no delay to ask about payment. It does not make care free, and
+  the duty ends at stabilization.
+- **UDHR Art. 25(1) and ICESCR Art. 12(1):** wording checked. The US signed
+  the ICESCR on 5 Oct 1977 and has never ratified it.
+- **President's Commission (1983):** "an adequate level of care without
+  excessive burdens." It "has chosen not to develop the case ... through the
+  assertion of a right to health care."
+- **Coby Howard:** Adam "Coby" Howard, 7, of Gresham, relapsed acute
+  lymphoblastic leukemia, on Medicaid. The 1987 legislature ended Medicaid
+  funding for heart, liver, pancreas, and bone-marrow transplants (kidney and
+  cornea stayed) and moved the money to basic care for more low-income children
+  and pregnant women. The transplant would cost about $100,000; on 27 Nov 1987
+  the family still needed $40,000. He died 2 Dec 1987. The often-repeated
+  "$1.1 million for prenatal care for 1,500 women" could not be sourced and is
+  not on the slide. Sources: UPI, 27 Nov 1987; Oberlander et al., *CMAJ* 2001.
+- **The Oregon list:** draft released May 1990, about 1,600 condition-treatment
+  pairs. Hadorn, *JAMA* 1991: surgery for ectopic pregnancy and for
+  appendicitis ranked below dental caps and TMJ splints. The 1991 list had 709
+  pairs, funded through line 587.
+- **1992 rejection:** HHS Secretary Louis Sullivan, 3 Aug 1992, under the ADA;
+  the plan "values the life of a person with a disability less." Approved
+  19 Mar 1993; launched 1 Feb 1994.
+- **Rawls:** §17 quotation checked (rev. ed. p. 87). The fair-equality
+  paraphrase follows §12.
+- **Daniels:** normal opportunity range, *Just Health Care* (1985) p. 33. The
+  right is "system relative," to "fair shares of the opportunity range under
+  reasonable resource constraints" (*Just Health*, 2008). On terminal care:
+  these services raise issues "about compassion and beneficence, that go beyond
+  questions of justice." Do not attribute "pain itself limits opportunity" to
+  him; it could not be found.
+- **Boorse (1977):** "normal" is statistical within a reference class ("an age
+  group of a sex of a species"). The slide's "the way human bodies typically
+  work" follows Daniels's gloss.
+- **Engelhardt (1986):** natural vs. social lottery; "unfortunate" vs.
+  "unfair."
+- **Mill:** *Utilitarianism* ch. V, para. 25, "general utility."
+- **Jonsen (1986):** "We throw a rope to the drowning," checked in the
+  *Choices and Conflict* reprint.
+- **Daniels (1993):** four unsolved rationing problems: fair chances vs. best
+  outcomes, priorities, aggregation, democracy. The cloze uses the first three
+  plus the rule of rescue.
+- **Daniels and Sabin:** *Philosophy & Public Affairs* 1997; *Setting Limits
+  Fairly* (2002). The book calls the fourth condition "Regulative"; its index
+  cross-references "Enforcement."
+- **Johnny and Billy:** Allen and Fost, *J Pediatr* 117 (1990). GH deficiency
+  from a brain tumor vs. short parents; both predicted to reach 160 cm.
+- **Left off the slides:** the claim that Navy cooks' posts went to Chatham
+  Chest pensioners. Giving cooks' posts to disabled seamen is documented; the
+  Chest link is not.
+
+### Learning goals
+- Tell a **negative** right from a **positive** one, a **moral** right from a
+  **legal** one, and a right to **health** from a right to **health care**.
+- State what EMTALA guarantees and what it does not.
+- State Daniels's argument in three steps: **normal functioning**, the **normal
+  opportunity range**, and Rawls's **fair equality of opportunity**.
+- Explain why the right is to a **fair share** and covers public health.
+- Give the utilitarian case for care, and say where it agrees with Daniels and
+  where it splits (aggregation).
+- State Engelhardt's **natural lottery** objection (unfortunate vs. unfair) and
+  the reply from Rawls.
+- Name the rationing problems (aggregation, fair chances, priority to the
+  sickest, the rule of rescue) and the four conditions of **accountability for
+  reasonableness**.
+
+### Slide-by-slide (35)
+
+**Act 0 — Signing on**
+1. **[T]** Title (`hispaniola-dock`). The blank article.
+2. **[P]** Belief probe.
+3. **[T]** Pirates had sick pay (`the-chest`). Roberts's articles; the Chatham
+   Chest; both a kind of insurance. `reveal`.
+4. **[T]** Meet the crew (three portraits in the body). `reveal`.
+
+**Act 1 — What kind of right?**
+5. **[C]** Negative vs. positive rights (`ben-gunn`). Not being thrown
+   overboard vs. being pulled out.
+6. **[T]** Health or health care? (`squall`). `reveal`.
+7. **[T]** What the law says today. EMTALA, the UDHR, the ICESCR (signed, not
+   ratified). `reveal`.
+8. **[Q · MCQ]** What EMTALA guarantees a woman with a broken arm. (✓ An exam
+   and stabilization, whether or not she can pay.)
+
+**Act 2 — Daniels's argument**
+9. **[T]** Is health care special? (`relic-daniels`). Hats vs. splints.
+10. **[T]** Step 1: normal functioning (no art). Boorse.
+11. **[T]** Step 2: the opportunity range (`the-rigging`).
+12. **[V]** `<phil-lanterns>`.
+13. **[T]** Step 3: fair equality of opportunity (`relic-rawls`).
+14. **[Q · Cloze]** Put the argument together (functioning / opportunity /
+    equality / health care).
+15. **[T]** A fair share, not everything (`the-chest`). Public health; the 1983
+    President's Commission.
+16. **[Q · Checkset]** What follows from Daniels's argument?
+
+**Act 3 — The utilitarian case**
+17. **[T]** The utilitarian case (`relic-mill`). Diminishing marginal
+    utility, Mill on rights.
+18. **[T]** Limes for everyone (`lime-barrel`). Lind, 1747.
+19. **[C]** Two reasons for care: Daniels vs. utilitarianism. Kit's fever vs.
+    thirty toothaches.
+20. **[Q · MCQ]** Where they split. (✓ Whether many small benefits can outweigh
+    one person's large need.)
+
+**Act 4 — Too much, or too little?**
+21. **[T]** The natural lottery (`relic-engelhardt`). Natural lottery;
+    unfortunate vs. unfair; charity, not a right.
+22. **[T]** A reply (`two-storms`). Rawls on "natural facts"; much
+    illness isn't luck.
+23. **[Poll]** Silver's sixpence (`silver`). `explain=` notes that a crew signs
+    its articles and a country's citizens never do.
+24. **[T]** Too little? The two cabin boys (`two-boys`). Johnny and Billy.
+25. **[T]** Too little? The last watch (`last-watch`). Palliative care.
+
+**Act 5 — The chest runs short**
+26. **[T]** The bottomless hull (`bailing`). Rationing by price, queue, or rule.
+27. **[V]** `<phil-chest>`.
+28. **[T]** Oregon, 1987. Coby Howard. No art, no characters.
+29. **[Poll]** Man overboard (`man-overboard`). Jonsen's rule of rescue.
+30. **[T]** The Oregon list (`many-and-one`). Aggregation; the 1992 ADA
+    rejection.
+31. **[Q · Cloze]** Name the problem: aggregation / fair chances / the sickest
+    first / rule of rescue.
+
+**Act 6 — Signing the articles**
+32. **[T]** When principles run out (`the-vote`). Accountability for
+    reasonableness, four conditions.
+33. **[V]** `<phil-articles>`.
+34. **[P]** Belief review.
+35. **[T]** Recap (`hispaniola-dock`).
+
+### Belief probe
+1. Everyone has a right to health care, whether or not they can pay for it.
+2. If someone's illness is just bad luck, nobody else is obliged to pay for
+   their treatment.
+3. Health care is different from other things people buy, like cars or phones.
+4. We should spend whatever it takes to save a person whose life is in danger.
+5. It is fair to deny one person an expensive treatment if the money would help
+   many more people.
+
+Statement 2 is Engelhardt; statement 3 is Daniels's "is health care special?";
+statements 4 and 5 pull against each other, and Act 5 is built on that.
+
+**Mix:** 5 graded (2 MCQ, 2 cloze, 1 checkset), 2 polls, 3 widgets, 2
+comparisons, belief probe. Widgets live in `assets/ships-chest.js`.
+
+### Widgets
+- **`<phil-lanterns>`**: a pixel ship with a lantern at each of eight
+  stations. Seven sailors: Silver (leg), Gray (eyes), Anderson (scurvy), Tom
+  (stunted by fever), Jem (short like his parents), Redruth (dying, with a pain
+  gauge), Hunter (can't read; schooling, not medicine). Tom and Jem plant the
+  baseline objection; Redruth plants the palliative objection; Hunter shows
+  that health is only one part of fair opportunity.
+- **`<phil-chest>`**: 100 coins against six claims totaling 130: limes (10, +20
+  healthy years), thirty teeth (30, +15), Gray's spectacles (10, +8), the
+  gunner's leg (20, +10), Kit's long-shot fever treatment (50, +10 expected),
+  Redruth's comfort (10, +0.1). Presets: Most healthy years (53.1, Kit
+  unfunded) and Restore stations first (48, Kit funded). Notes name aggregation,
+  fair chances, priority to the sickest, and the comfort gap.
+- **`<phil-articles>`**: three choices (what the chest owes, who fills it, who
+  decides when it runs short) write Article the Ninth on parchment, report
+  how Engelhardt, a utilitarian, and Daniels would judge it, and score the process
+  against Daniels and Sabin's four conditions.
