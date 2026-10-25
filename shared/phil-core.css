@@ -401,6 +401,32 @@ phil-side .cake::before { content: "🍰 "; }
 phil-side .case { border-left-color: var(--accent-3); }
 phil-side .case::before { content: "🩺 "; }
 
+/* ---- thinker card: stands in for a portrait of a real thinker ---- */
+.phil-thinker {
+  --phil-thinker-accent: var(--accent-3);
+  display: block; width: 100%; max-width: 340px;
+  background: var(--panel-2); border: 4px solid var(--border);
+  box-shadow: inset 0 0 0 3px var(--phil-thinker-accent), 0 6px 0 var(--shadow);
+  padding: 12px;
+}
+.phil-thinker__head { text-align: center; }
+.phil-slide__art .phil-thinker__img, .phil-thinker__img {
+  display: block; width: 100%; height: auto; max-height: 30vh; object-fit: cover; aspect-ratio: 1;
+  border: 3px solid var(--border); image-rendering: pixelated; margin: 0 auto 10px;
+}
+phil-slide .phil-thinker p { max-width: none; margin: 0 0 6px; }
+phil-slide .phil-thinker .phil-thinker__name {
+  font-family: var(--pixel); font-size: clamp(11px, 1vw, 14px); line-height: 1.5;
+  color: var(--phil-thinker-accent); text-shadow: 2px 2px 0 var(--border); margin-bottom: 4px;
+}
+phil-slide .phil-thinker .phil-thinker__meta { font-size: clamp(14px, 1.15vw, 16px); line-height: 1.35; color: var(--muted); }
+.phil-thinker__text { border-top: 2px solid var(--border); margin-top: 8px; padding-top: 8px; }
+phil-slide .phil-thinker__text p { font-size: clamp(15px, 1.3vw, 18px); line-height: 1.4; font-weight: 600; color: var(--ink); }
+phil-slide .phil-thinker blockquote {
+  margin: 8px 0 0; padding: 6px 10px; border-left: 4px solid var(--phil-thinker-accent);
+  background: var(--panel); font-style: italic; font-size: clamp(15px, 1.25vw, 17px); line-height: 1.4; color: var(--ink);
+}
+
 /* VS badge — the two principle colors meeting, with a dark center plate */
 .phil-vs {
   position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);

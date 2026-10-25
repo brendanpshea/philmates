@@ -125,8 +125,11 @@ demanding a mini-quiz. Retrieval practice dressed as a dungeon; the built-in
 Imitation-game masked ball — unmask the automaton among the guests — with
 Searle's Chinese Room as a literal locked room mid-lesson: *you* push symbols
 you don't understand, then the lesson asks whether the room understood the
-conversation you just aced. **Widget:** judge chat transcripts as human or
-machine, then get the reveal and your accuracy score.
+conversation you just aced. **Built** as `lessons/ai-ethics/masquerade-silverport/`.
+**Widgets:** a working reconstruction of Weizenbaum's 1966 ELIZA, the Room
+played from inside, and "Where is the understanding?" for the replies to
+Searle. The planned transcript-guessing game was dropped, because it needs
+real human answers and invented ones would defeat it.
 
 ## Week 11 — The Loom and the Lark (Work and Art)
 

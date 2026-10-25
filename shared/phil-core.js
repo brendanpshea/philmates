@@ -789,6 +789,40 @@ class PhilCompare extends HTMLElement {
   }
 }
 
+/* ---------- thinker card ----------
+   Stands in for a portrait of a real thinker. The face is HTML so it stays
+   crisp on a projector; the picture is an idea scene, never a face.
+     <phil-thinker slot="art" name="John Searle" dates="1932–2025"
+                   work="“Minds, Brains, and Programs” (1980)"
+                   img="./assets/idea-searle.png" alt="…" accent="#4cc2ff">
+       <p>The core claim, in about twelve words.</p>
+       <blockquote>An optional short, verified quotation.</blockquote>
+     </phil-thinker>
+   `img`/`alt` and `accent` are optional; `alt` is required when `img` is set.
+------------------------------------------------------------------ */
+class PhilThinker extends HTMLElement {
+  connectedCallback() {
+    if (this._init) return; this._init = true;
+    this.classList.add('phil-thinker');
+    const accent = this.getAttribute('accent');
+    if (accent) this.style.setProperty('--phil-thinker-accent', accent);
+    const body = [...this.childNodes];
+    const head = el('div', 'phil-thinker__head');
+    if (this.hasAttribute('img')) {
+      const img = el('img', 'phil-thinker__img');
+      img.src = this.getAttribute('img');
+      img.alt = this.getAttribute('alt') || '';
+      head.append(img);
+    }
+    head.append(el('p', 'phil-thinker__name', this.getAttribute('name') || ''));
+    const meta = [this.getAttribute('dates'), this.getAttribute('work')].filter(Boolean).join(' · ');
+    if (meta) head.append(el('p', 'phil-thinker__meta', meta));
+    const text = el('div', 'phil-thinker__text');
+    text.append(...body);
+    this.append(head, text);
+  }
+}
+
 /* ---------- belief probe (Likert "anticipation guide") ----------
    Ungraded. Rate agreement up front, revisit at the end to see what shifted.
      <phil-beliefs prompt="...">          (near the start)
@@ -986,5 +1020,6 @@ customElements.define('phil-checkset', PhilCheckset);
 customElements.define('phil-cloze', PhilCloze);
 customElements.define('phil-branch', PhilBranch);
 customElements.define('phil-compare', PhilCompare);
+customElements.define('phil-thinker', PhilThinker);
 customElements.define('phil-beliefs', PhilBeliefs);
 customElements.define('phil-beliefs-review', PhilBeliefsReview);

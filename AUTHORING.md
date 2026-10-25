@@ -180,6 +180,25 @@ concrete example. `<p class="case">` is the same thing with a 🩺 marker and a 
 border, for clinical/case examples. Two sides stack on narrow screens. (For three
 positions, add a third `<phil-side>`; the VS badge only appears with exactly two.)
 
+### Thinker card — `<phil-thinker>` (teaching, not graded)
+Stands in for a portrait of a real thinker. Put it in the art column with
+`slot="art"`. The face is HTML, so it stays crisp on a projector.
+```html
+<phil-thinker slot="art" name="John Searle" work="“Minds, Brains, and Programs” (1980)"
+              img="./assets/idea-searle.png"
+              alt="A closed door with slips of wavy shapes sliding out under it" accent="#4cc2ff">
+  <p>Running a program is not the same as understanding.</p>
+  <blockquote>A short quotation, checked against the source.</blockquote>
+</phil-thinker>
+```
+- The `<p>` is the core claim in about twelve words. The `<blockquote>` is
+  optional, and it must be verified wording.
+- `img` is an idea scene with no face. `alt` is required whenever `img` is set.
+- `accent` colors the frame and the name. Give each thinker in a lesson a
+  different one.
+- Put dates and quotes on the card only once they are verified. Leave
+  `dates` off rather than guess.
+
 ### Belief probe — `<phil-beliefs>` + `<phil-beliefs-review>` (ungraded)
 A before/after attitude check ("anticipation guide"). Place `<phil-beliefs>` near
 the start with value statements; place `<phil-beliefs-review>` near the end to show
@@ -494,7 +513,7 @@ and it supplies the cases: a lost leg, a fever, a vote. Credit every argument
 by name to its philosopher or theory ("Daniels argues," "a utilitarian
 counts"), never to a character ("Livesey's argument," "Smollett's ledger").
 Don't put a character's portrait on a slide that teaches a theory; use the
-thinker's relic card. Characters can still ask the question, live through the
+thinker's card. Characters can still ask the question, live through the
 case, and face the choice in a poll.
 
 ## Art & style
@@ -513,13 +532,15 @@ case, and face the choice in a poll.
 - **Don't draw portraits of real (contemporary or historical) thinkers.** At
   pixel resolution a face can't carry a likeness — it just reads as "generic
   person," so the payoff of recognizing Mill or Kant never lands. Instead give
-  each real thinker an **idea-emblem on a relic card**: a framed 80×108 SVG whose
-  central icon encodes their core move (Bentham → a felicific-calculus tablet,
-  Singer → an expanding circle, Kant → a starry sky over a compass). The emblem
-  doubles as a mnemonic and gives the "collect the thinkers" game feel. Keep the
-  card frame consistent (dark border, accent inner frame, a rank gem in the top
-  bar, rarity pips at the bottom) and give each thinker a distinct accent color.
-  See `lessons/ethical-theory/*/assets/` for the seven reference cards.
+  each real thinker a **thinker card** (`<phil-thinker>`, below): name, dates,
+  key work, and core claim in real text, with a generated **idea scene** on top
+  that pictures their central move without a face (Searle: a locked door with
+  slips coming under it). Generate the idea scenes in the lesson's sheets like
+  any other panel.
+- **Relic cards are retired for new lessons.** Older lessons still use the
+  80×108 SVG emblems in `assets/relic-*.svg`. Their emblems weren't explained on
+  the slides and carried no name, so students couldn't read them. A relic SVG
+  can serve as a thinker card's `img` until an idea scene replaces it.
 - Portraits are still fine for **invented characters** (e.g. Van Helsing) — there's
   no real likeness to fail at, and you own the canon. Objects, creatures, tools,
   and scenes all pixel well; faces of real people don't.

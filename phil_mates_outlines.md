@@ -3449,3 +3449,76 @@ comparisons, belief probe. Widgets live in `assets/ships-chest.js`.
   decides when it runs short) write Article the Ninth on parchment, report
   how Engelhardt, a utilitarian, and Daniels would judge it, and score the process
   against Daniels and Sabin's four conditions.
+
+---
+
+## Computing & AI Ethics: The Turing Test and the Chinese Room — "The Masquerade of Silverport"  *(built)*
+
+- **Path:** `lessons/ai-ethics/masquerade-silverport/`
+- **Lesson id:** `masquerade-silverport`
+- **Top-bar title:** `The Masquerade of Silverport` · **Subject:** `Turing Test & Chinese Room`
+- **Slot:** Week 10 (What Is AI?) in `docs/ai-ethics-semester-plan.md`. The
+  planned transcript-guessing widget was dropped: we could not collect real
+  human answers, and invented transcripts would defeat the game. A live
+  ELIZA replaced it.
+- **Frame:** a masked ball. The host, Countess Adaeze Vane, says one guest is
+  a machine; questions go by note through a curtain, so only written answers
+  count. Halfway through, the student is sent to a locked cellar room and
+  plays Searle's Room from inside. The cast is the setting; every argument is
+  credited by name to Turing, Lovelace, Weizenbaum, Searle, or the critics.
+- **First lesson with `<phil-thinker>` cards** (Turing, Weizenbaum, Lovelace,
+  Searle), each with a generated idea scene from Sheet E and a verified quote.
+- **Left out on purpose:** Turing's other six objections, the combination and
+  many-mansions replies, Searle's 2019 emeritus revocation, consciousness
+  beyond one slide, and whether LLMs understand (one octopus slide only).
+
+### Accuracy note (checked 2026-10-25)
+- **Turing (1912–1954):** *Mind* 59 (1950), pp. 433–460. Opening line,
+  imitation game, and sample dialogue (sum 105621, correct 105721) checked.
+  Prediction (p. 442): an average interrogator will have "not more than 70 per
+  cent. chance of making the right identification after five minutes." It is a
+  forecast, not a pass mark; the 30% threshold is a later reading. "The
+  polite convention that everyone thinks" (p. 446). Disabilities list includes
+  "enjoy strawberries and cream."
+- **Lovelace (1815–1852):** Note G (1843): "has no pretensions whatever to
+  originate any thing." Turing's quotation drops "whatever."
+- **Mechanical Turk:** von Kempelen, 1770; hidden chess player; burned 1854.
+  The Napoleon and Franklin games are reported, not firmly documented, and are
+  not on the slides.
+- **ELIZA:** Weizenbaum (1923–2008), *CACM* 9(1), Jan 1966. "DOCTOR" is a
+  later name. The secretary "asked me to leave the room" (*Computer Power and
+  Human Reason*, 1976, p. 6). The original code was found in 2021 and released
+  CC0. The widget is our own reconstruction from the published script; it
+  reproduces the 1966 sample conversation.
+- **Eugene Goostman:** 7 June 2014, Royal Society, organized by Kevin Warwick;
+  33% of 30 judges; a 13-year-old from Odesa.
+- **Jones and Bergen:** arXiv 2503.23674 (2025), *PNAS* 2026. GPT-4.5 with a
+  persona prompt judged human 73%; ELIZA 23%.
+- **Searle (1932–2025):** *BBS* 3 (1980). Strong vs. weak AI, the replies and
+  his answers (memorize the rules; water pipes) checked against the preprint.
+  Axiom 3 quoted from *Scientific American*, Jan 1990, p. 27.
+- **Bender and Koller:** ACL 2020, the octopus test. The bear and the coconut
+  catapult are separate examples.
+- **Disclosure law:** Cal. Bus. & Prof. Code §17941 (from July 2019) bans bots
+  that deceive about being bots to drive a sale or a vote. EU AI Act Art.
+  50(1) applies from 2 Aug 2026.
+- **Not on any slide:** the 1991 Loebner contest, where human Cynthia Clay was
+  judged a computer for knowing too much Shakespeare (Shieber). A good live
+  aside.
+
+### Slide-by-slide (35)
+Act 0, the ball: title; belief probe; the host's challenge; the Mechanical
+Turk. Act 1, Turing's game: Turing's question (card); the imitation game;
+Turing's imagined dialogue; MCQ what the test measures; the prediction. Act 2,
+the automata: meet ELIZA (card); **[V] `<phil-eliza>`**; how ELIZA works;
+Eugene Goostman; the 2025 study; checkset, tricks of the trade. Act 3,
+objections: consciousness and the polite convention; Lovelace (card); the
+disabilities; cloze matching objections. Act 4, the Room: down to the cellar;
+**[V] `<phil-room>`**; poll, who understood?; Searle's argument (card); [C]
+weak vs. strong AI; MCQ what the Room shows. Act 5, replies: systems;
+Searle's memorize answer; robot; brain simulator; **[V] `<phil-where>`**; MCQ
+name that reply. Act 6: the octopus; poll, must it unmask?; belief review;
+recap.
+
+**Mix:** 5 graded (3 MCQ, 1 checkset, 1 cloze), 2 polls, 3 widgets, 1
+comparison, belief probe. Widgets live in `assets/masquerade.js`.
