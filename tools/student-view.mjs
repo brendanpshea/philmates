@@ -81,15 +81,17 @@ function render(html) {
       ch.forEach((c, i) => {
         out.push(`  ${String.fromCharCode(65 + i)}. ${text(c[2])}`);
         if (flag(c[1], 'correct')) keys.push(`  KEY: ${String.fromCharCode(65 + i)}. ${text(c[2])}`);
+        else if (attr(c[1], 'feedback')) keys.push(`  ${String.fromCharCode(65 + i)} feedback: ${attr(c[1], 'feedback')}`);
       });
       return out.join('\n');
     },
     cloze(open, body) {
       keys.push(`Q${q} CLOZE${reviewNote(open)}`);
       let n = 0;
-      body = body.replace(/<phil-blank\b([^>]*)>[\s\S]*?<\/phil-blank>/g, (_, a) => {
+      body = body.replace(/<phil-blank\b([^>]*)>([\s\S]*?)<\/phil-blank>/g, (_, a, inner) => {
         n++;
-        keys.push(`  Blank ${n} KEY: ${attr(a, 'answer')}`);
+        // Like the engine: a dropdown blank's answer is its text when it has no answer=.
+        keys.push(`  Blank ${n} KEY: ${attr(a, 'answer') || text(inner)}`);
         const opts = attr(a, 'options');
         return opts ? ` [BLANK ${n}: choose from ${opts.split(',').join(' / ')}] ` : ` [BLANK ${n}: type a word] `;
       });
@@ -104,7 +106,13 @@ function render(html) {
     const stash = s => { blocks.push(s); return `\u0000${blocks.length - 1}\u0000`; };
     for (const kind of Object.keys(items)) {
       body = body.replace(new RegExp(`<phil-${kind}\\b([^>]*)>([\\s\\S]*?)</phil-${kind}>`, 'g'),
-        (_, open, inner) => { q++; return stash(items[kind](open, inner)); });
+        (_, open, inner) => {
+          q++;
+          const block = stash(items[kind](open, inner));
+          // Feedback text students read after answering gets fact-checked too.
+          if (attr(open, 'explain')) keys.push(`  EXPLAIN: ${attr(open, 'explain')}`);
+          return block;
+        });
     }
     body = body.replace(/<phil-poll\b([^>]*)>([\s\S]*?)<\/phil-poll>/g, (_, open, inner) => {
       const ch = [...inner.matchAll(/<phil-choice\b[^>]*>([\s\S]*?)<\/phil-choice>/g)].map(c => text(c[1]));

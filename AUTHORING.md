@@ -417,6 +417,15 @@ two blind reviewers (about 75k each), the adversary (130k), and one re-check
 no slide had taught. When three reviewers independently rate the same row
 "likely," treat it as a flag, not polish.
 
+Batch 2 (four principles, patient autonomy, equipoise, the virtue of care) cost
+about 405k, or about 100k a lesson. The adversary cost more here (165k)
+because it also checked the new attributions on slides. Its one outright
+factual failure was an outdated Declaration of Helsinki exception, on a slide
+and in a checkset row. The same error sat in an explain line that no reviewer
+saw, and it was found only by chance. The keys file now includes every
+`explain=` and MCQ `feedback=`, so the adversary checks what students read
+after they answer.
+
 ## Quiz quality (auto-checked)
 
 **Format mix.** Aim for 4–6 graded items per lesson, mostly classify, cloze,

@@ -300,6 +300,9 @@ faithful: four co-equal, **prima facie** principles (prima facie = W. D. Ross);
 justified infringement** are B&C's; **moral residue/remainder** traces to Bernard
 Williams, and clinician **moral distress** to Andrew Jameton. Don't invent
 conditions or quotations. Monsters are the *examples*; the framework is real.
+Moral distress (Jameton) is knowing the right act and being blocked from doing
+it, not the regret after a justified override. In *Tarasoff*, Poddar never
+named the victim; the court called her "readily identifiable."
 
 ### Learning goals
 - Say what the **common morality** is and why bioethics must **specify/extend** it.
@@ -382,11 +385,13 @@ conditions or quotations. Monsters are the *examples*; the framework is real.
 
 **Act 6 — Moral residue**
 27. **[T]** **Moral residue** — even a *justified* override leaves a remainder:
-    regret, and residual duties (disclose, apologize, follow up, make amends); link
-    to clinician **moral distress**, `reveal`.
+    regret, and residual duties (disclose, apologize, follow up, make amends);
+    credit the remainder to Bernard Williams, `reveal`. (Not "moral distress":
+    see the accuracy note.)
 28. **[C]** Justified infringement (you acted rightly) vs Moral residue (something is
     still owed) — the two coexist.
-29. **[Q · MCQ]** What moral residue is and what it asks of you.
+29. **[Q · Classify]** Justified infringement or moral residue? (Built as a
+    classify item.)
 
 **Graduation**
 30. **[T]** Van Helsing's parting lesson — principlism is a disciplined way to
@@ -899,7 +904,11 @@ branch planned yet (candidate: a deep dive on friendship / philia types).
 - The **placebo-control controversy** (placebo vs. active/standard-of-care
   control) follows the real debate around the **Declaration of Helsinki**
   (WMA, most relevant to its 2000 revision and para. 33 of the 2013 revision),
-  which restricts placebo use when proven effective treatment exists.
+  which restricts placebo use when proven effective treatment exists. The
+  current exception (2013, kept in 2024) needs compelling methodological
+  reasons and no risk of serious or irreversible harm. The "minor condition"
+  wording comes from the 2002 note of clarification; don't present it as
+  today's rule.
 - **Therapeutic misconception** is a real term (Appelbaum, Roth & Lidz, 1982) for
   research subjects mistakenly believing a trial is designed for their personal
   benefit rather than to generate knowledge.

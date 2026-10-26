@@ -33,7 +33,8 @@
       <li>Her trial tests a new drug for people who cannot control their impulses. Henry worked on the same problem.</li>
       <li>Henry had an idea and a syringe, and he tested it on himself. Nobody else knew he was doing it.</li>
       <li>The serum released a second self, Mr Hyde, who did what Henry would not. There was nobody there to stop him.</li>
-      <li>Helen has colleagues, a committee, and people watching. She also has a reason why it is <em>fair</em> to test a drug on somebody else.</li>
+      <li>Helen has colleagues, a committee, and people watching.</li>
+      <li>She also has an answer, from philosophers you will meet, to why it is <em>fair</em> to test a drug on somebody else.</li>
     </ul>
   </phil-slide>
 
@@ -84,7 +85,7 @@
     <p>One person cannot tell you whether a drug works, however carefully you watch them.</p>
     <ul reveal>
       <li>People differ. Some recover on their own; some would have worsened whatever you gave them.</li>
-      <li>With one patient you cannot tell which of those you are watching. With four hundred, the differences even out and what is left is the drug.</li>
+      <li>With one patient you cannot tell which of those you are watching. With four hundred, the differences mostly even out, and what is left is the drug plus a little luck.</li>
       <li>So a trial needs a crowd. That is where the ethics get hard, because each of those people takes a risk that mostly helps somebody else.</li>
       <li>Henry had one subject: himself. Whatever happened that night, he could not have learned anything from it.</li>
     </ul>
@@ -134,7 +135,7 @@
   </phil-slide>
 
   <!-- 7b. Why the second arm is needed -->
-  <phil-slide>
+  <phil-slide id="second-arm">
     <h1>Why You Need the Second Arm</h1>
     <p>Without one, three other things can look exactly like a drug working.</p>
     <ul reveal>
@@ -146,7 +147,7 @@
   </phil-slide>
 
   <!-- 7. Randomization -->
-  <phil-slide>
+  <phil-slide id="randomization">
     <img slot="art" src="./assets/trial-vial.png" alt="Helen Jekyll's modern trial-drug vial">
     <h1>Randomization</h1>
     <p>Letting chance decide who goes in which arm spreads the differences between people evenly. That includes the differences nobody thought of.</p>
@@ -208,26 +209,31 @@
   <!-- 10. Checkset: purposes of randomization/blinding -->
   <phil-slide>
     <h1>What These Tools Are Actually For</h1>
-    <phil-checkset prompt="Check every genuine purpose of randomization and blinding."
+    <phil-checkset review="randomization" prompt="Check every genuine purpose of randomization and blinding."
                    explain="Right — both tools exist to keep bias from contaminating the comparison. The two false ones are worth pausing on. Blinding never removes the duty to tell people a placebo is possible: consent covers that before the trial starts. And randomizing makes the groups probably similar, not certainly so — it lowers the odds of a lopsided confounder, it does not abolish them.">
       <phil-statement correct>Spreading confounders — other differences between patients that could explain the result — evenly across the arms</phil-statement>
-      <phil-statement correct>Preventing the placebo effect from being mistaken for the drug's own effect</phil-statement>
+      <phil-statement correct>Keeping patients' knowledge of their arm from changing how they feel</phil-statement>
       <phil-statement correct>Stopping a clinician's expectations from biasing how symptoms are assessed</phil-statement>
       <phil-statement>Removing the need to tell patients they might receive a placebo</phil-statement>
       <phil-statement>Guaranteeing that any difference between the groups was caused by the drug</phil-statement>
     </phil-checkset>
   </phil-slide>
 
-  <!-- 11. MCQ: why control group -->
+  <!-- 11. Classify: which tool -->
   <phil-slide>
-    <h1>Why Bother With a Control?</h1>
-    <phil-mcq prompt="Why does a trial need a control group at all?"
-              explain="Right. Without a comparison arm, you can't tell the drug's real effect apart from natural recovery, regression to the mean, or the placebo effect — which is exactly the gap in Henry's one-man experiment.">
-      <phil-choice feedback="A common mix-up between two different things. How many patients you need is a question about sample size; whether you can interpret the result at all is what the control answers.">So that the trial has enough patients for the result to count</phil-choice>
-      <phil-choice correct>To tell the drug's effect apart from recovery or placebo</phil-choice>
-      <phil-choice feedback="Tempting, and backwards. The control arm is not the safe arm — nobody knows which arm is safer, and that uncertainty is the whole reason the trial is permitted to run.">To keep half the patients safe in case the new drug turns out to be harmful</phil-choice>
-      <phil-choice feedback="Nobody chooses, and nobody yet knows which is better. Assignment is random precisely because that knowledge does not exist.">So doctors can put each patient on whichever drug suits them better</phil-choice>
-    </phil-mcq>
+    <h1>Which Tool Fixes It?</h1>
+    <phil-classify review="second-arm" prompt="Each problem could make a trial give the wrong answer. Which tool deals with it?"
+                   explain="Right. A control group shows what would have happened anyway, such as natural recovery or regression to the mean. Randomization keeps the arms alike, so differences between patients don't clump on one side. Blinding stops knowledge of who got what from changing how patients feel and how doctors judge them.">
+      <phil-col key="ctrl">A control group</phil-col>
+      <phil-col key="rand">Randomization</phil-col>
+      <phil-col key="blind">Blinding</phil-col>
+      <phil-item answer="ctrl" why="An illness running its course looks like a drug working. Only a second arm shows what happens without the drug.">The patients might have got better on their own anyway</phil-item>
+      <phil-item answer="ctrl" why="This is regression to the mean. A second arm, enrolled the same way, shows how much patients improve without the drug.">People enrol when they feel worst, and would soon feel better anyway</phil-item>
+      <phil-item answer="rand" why="Assigning by need loads one arm with the sickest patients. Chance spreads them evenly.">A caring doctor might put all the sickest patients on the new drug</phil-item>
+      <phil-item answer="rand" why="Chance spreads hopeful and doubtful patients across both arms, so they don't clump on one side.">The hopeful patients might all end up in one arm</phil-item>
+      <phil-item answer="blind" why="Double-blinding hides the arm from the doctor, so expectations can't color how symptoms are judged.">A doctor who knows who got the drug might rate those patients as doing better</phil-item>
+      <phil-item answer="blind" why="Knowing which arm you are in changes how you feel. Single-blinding hides it from the patient.">A patient who knows which arm she is in might feel better or worse because of it</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 2 — CONSENTING TO RESEARCH ============ -->
@@ -244,7 +250,7 @@
   </phil-slide>
 
   <!-- 13. Compare: clinical vs research consent -->
-  <phil-slide>
+  <phil-slide id="two-kinds-of-yes">
     <h1>Two Kinds of "Yes"</h1>
     <phil-compare>
       <phil-side label="Clinical Consent" tag="This treatment, for you">
@@ -258,17 +264,20 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 14. MCQ: therapeutic misconception -->
+  <!-- 14. Classify: clinical or research consent -->
   <phil-slide>
     <h1>"But This Is Supposed to Help Me"</h1>
-    <phil-mcq prompt="A participant tells Helen, 'I signed up because I knew you'd give me the good drug.' What's the name for this mistake?"
-              explain="Right. The therapeutic misconception is exactly this: treating a research protocol, which may randomize you to placebo, as if it were personalized treatment chosen for your benefit."
-    >
-      <phil-choice feedback="Voluntariness is about freedom from coercion — this patient wasn't coerced, just confused about what the trial is for.">A failure of voluntariness</phil-choice>
-      <phil-choice feedback="Capacity is about the ability to reason through a decision — the confusion here is about what the trial promises, not whether he can reason.">A failure of capacity</phil-choice>
-      <phil-choice correct>The therapeutic misconception</phil-choice>
-      <phil-choice feedback="Equipoise is a fact about what the expert community does not yet know. This is a belief in the patient&#39;s head about what the trial promises him.">A breach of clinical equipoise</phil-choice>
-    </phil-mcq>
+    <phil-classify review="two-kinds-of-yes" prompt="A patient who mistakes research consent for clinical consent has the therapeutic misconception. Which kind of consent does each line describe?"
+                   explain="Right. Clinical consent is to a treatment chosen as your best option. Research consent is to a protocol that may give you the drug or the placebo, run to learn something general. Treating the second as if it were the first is the therapeutic misconception.">
+      <phil-col key="clin">Clinical consent</phil-col>
+      <phil-col key="res">Research consent</phil-col>
+      <phil-item answer="clin" why="In clinical care the treatment is chosen because it is believed to be your best option.">Your doctor picks the drug she believes will help you most</phil-item>
+      <phil-item answer="res" why="In a controlled trial you may get the study drug or the placebo, and nobody knows which until the end.">You may get the study drug, or you may get a placebo</phil-item>
+      <phil-item answer="res" why="The point of research is what everyone learns, not a benefit promised to you.">The goal is to learn something general about the drug</phil-item>
+      <phil-item answer="clin" why="Clinical treatment is tailored to your case.">The treatment was chosen to fit your case</phil-item>
+      <phil-item answer="res" why="Research consent says plainly that the trial is not built around helping you.">The plan is not built around helping you</phil-item>
+      <phil-item answer="clin" why="A recommendation made for your own good is clinical consent.">"I recommend this because it's what's best for you"</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 3 — EQUIPOISE ============ -->
@@ -296,7 +305,7 @@
   </phil-slide>
 
   <!-- 17. Clinical equipoise -->
-  <phil-slide>
+  <phil-slide id="clinical-equipoise">
     <img slot="art" src="./assets/expert-panel.png" alt="A row of clinician silhouettes, some leaning for and some against">
     <h1>Freedman's Fix: Clinical Equipoise</h1>
     <p>Benjamin Freedman's revision: forget any one doctor's internal balance. What matters is genuine, honest disagreement within the <strong>expert clinical community</strong> about which treatment is better.</p>
@@ -307,7 +316,7 @@
   </phil-slide>
 
   <!-- 18. Compare: theoretical vs clinical equipoise -->
-  <phil-slide>
+  <phil-slide id="equipoise-compare">
     <h1>Individual Balance vs Community Disagreement</h1>
     <phil-compare>
       <phil-side label="Theoretical Equipoise" tag="Fried — individual">
@@ -324,11 +333,11 @@
   <!-- 19. Cloze -->
   <phil-slide>
     <h1>Name the Standard</h1>
-    <phil-cloze explain="Clinical equipoise looks at the community of experts; theoretical equipoise looks inward at one physician's own uncertainty — which is why clinical equipoise is the workable standard.">
+    <phil-cloze review="equipoise-compare" explain="Clinical equipoise looks at the community of experts; theoretical equipoise looks inward at one physician's own uncertainty — which is why clinical equipoise is the workable standard.">
       <phil-blank options="clinical,theoretical,statistical,personal">Clinical</phil-blank> equipoise means genuine disagreement in the expert
-      <phil-blank answer="community|profession|field|expert community">community</phil-blank>, while
+      <phil-blank answer="community|profession|field|expert community|panel">community</phil-blank>, while
       <phil-blank options="theoretical,clinical,collective,legal">theoretical</phil-blank> equipoise is about one
-      <phil-blank answer="individual|physician's own">individual</phil-blank> physician's own uncertainty.
+      <phil-blank answer="individual|single|particular|physician's own">individual</phil-blank> physician's own uncertainty.
     </phil-cloze>
   </phil-slide>
 
@@ -365,14 +374,14 @@
   <!-- ============ ACT 4 — MONITORING & STOPPING ============ -->
 
   <!-- 22. DSMB -->
-  <phil-slide>
+  <phil-slide id="dsmb">
     <img slot="art" src="./assets/dsmb-eye.png" alt="A watchful eye, the monitoring board keeping watch over the trial">
     <h1>Someone Has to Be Watching</h1>
     <p>Trials don't run blind to their own data forever.</p>
     <ul reveal>
       <li><strong>Interim analyses</strong> check the accumulating data at pre-planned points.</li>
       <li>Pre-set <strong>stopping rules</strong> say, in advance, what result would end the trial early.</li>
-      <li>An independent <strong>Data and Safety Monitoring Board</strong>, or DSMB, reviews the unblinded data and decides. Not Helen, and not her team.</li>
+      <li>An independent <strong>Data and Safety Monitoring Board</strong>, or DSMB, reviews the unblinded data and recommends whether to stop. Not Helen, and not her team.</li>
     </ul>
   </phil-slide>
 
@@ -397,22 +406,25 @@
     </ul>
   </phil-slide>
 
-  <!-- 25. MCQ: DSMB purpose -->
+  <!-- 25. Checkset: the DSMB -->
   <phil-slide>
     <h1>Why an Outside Board?</h1>
-    <phil-mcq prompt="What is the purpose of a DSMB and its pre-set stopping rules?"
-              explain="Right. An independent board reviewing unblinded data against rules fixed in advance protects patients from a trial continuing past the point where honest disagreement has essentially disappeared.">
-      <phil-choice correct>To let an outside body stop the trial once it's no longer uncertain</phil-choice>
-      <phil-choice feedback="A DSMB doesn't exist to speed up recruitment — it exists to protect participants once the ethical basis for continuing shifts.">To help the trial finish enrolling patients faster than planned</phil-choice>
-      <phil-choice feedback="It's independent of the research team for exactly this reason — investigators aren't the ones who decide when to stop their own trial.">To give Helen and her own team more control over the results</phil-choice>
-      <phil-choice feedback="Withdrawing is always the participant&#39;s own call and needs nobody&#39;s permission. The board watches the data, not the door.">To decide which participants may withdraw from the trial</phil-choice>
-    </phil-mcq>
+    <phil-checkset review="dsmb" prompt="Check every true statement about the DSMB and its stopping rules."
+                   explain="Right. An independent board watches the unblinded data at planned points, against rules written in advance. If the results turn clearly one-sided, the board can recommend stopping, and the better treatment goes to everyone still enrolled. That judgment is not left to Helen.">
+      <phil-statement correct>The stopping rules are set in advance</phil-statement>
+      <phil-statement correct>The board is independent of Helen and her team</phil-statement>
+      <phil-statement correct>The board reviews the unblinded data while the trial runs</phil-statement>
+      <phil-statement correct>If the results turn clearly one-sided, the trial can be stopped early</phil-statement>
+      <phil-statement>Helen decides when to stop, because it is her trial</phil-statement>
+      <phil-statement>The board's job is to help the trial enroll patients faster</phil-statement>
+      <phil-statement>Once a trial starts, it must run to the end, whatever the data show</phil-statement>
+    </phil-checkset>
   </phil-slide>
 
   <!-- 25b. Checkpoint: what the middle band is -->
   <phil-slide>
     <h1>Checkpoint: The Middle Band</h1>
-    <phil-mcq prompt="A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do?"
+    <phil-mcq review="clinical-equipoise" prompt="A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do?"
               explain="Nothing about the number settles it, which is the point of the middle band. Freedman's standard asks a question about people rather than about data: is there still honest disagreement among the experts? That is why trials fix their stopping rules in advance, before anyone knows which way the numbers will fall.">
       <phil-choice feedback="Waiting for certainty is not free. Every extra week puts more patients on the placebo arm who might have had the drug, and the trial can pass the point where that is defensible.">Keep going until the evidence is certain, because stopping early risks a false result.</phil-choice>
       <phil-choice correct>Ask whether the expert community still honestly disagrees, and check the rules set in advance.</phil-choice>
@@ -431,12 +443,12 @@
     <ul reveal>
       <li>Denying patients a treatment already known to work, just to get a cleaner comparison, can itself violate equipoise.</li>
       <li>The <strong>Declaration of Helsinki</strong> restricts placebo use for exactly this reason.</li>
-      <li>It allows one narrow exception: a condition that is minor and short-lived, with participants watched closely throughout.</li>
+      <li>It allows one narrow exception: a placebo is scientifically necessary, and those who get it face no risk of serious or irreversible harm.</li>
     </ul>
   </phil-slide>
 
   <!-- 27. Compare: placebo vs active control -->
-  <phil-slide>
+  <phil-slide id="placebo-vs-active">
     <h1>Placebo-Controlled vs Active-Controlled</h1>
     <phil-compare>
       <phil-side label="Placebo-Controlled" tag="Compared to nothing">
@@ -445,7 +457,7 @@
       </phil-side>
       <phil-side label="Active-Controlled" tag="Compared to standard care">
         <p>The control arm receives the current best-known treatment instead.</p>
-        <p class="case">Required when an effective treatment already exists. Nobody should be denied it just for a cleaner comparison.</p>
+        <p class="case">Usually required when an effective treatment already exists. Nobody should be denied it just for a cleaner comparison.</p>
       </phil-side>
     </phil-compare>
   </phil-slide>
@@ -453,10 +465,10 @@
   <!-- 28. Checkset: when placebo is defensible -->
   <phil-slide>
     <h1>When Is a Placebo Arm Defensible?</h1>
-    <phil-checkset prompt="Check every case where a placebo-controlled design is ethically defensible."
-                   explain="Right — a placebo arm is defensible when no proven effective treatment exists, or for a minor, short-term condition under close monitoring. Cost and disease severity alone don't settle the question.">
+    <phil-checkset review="placebo-vs-active" prompt="Check every case where a placebo-controlled design is ethically defensible."
+                   explain="Right. A placebo arm is defensible when no proven effective treatment exists, or in the narrow case where a placebo is scientifically necessary and nobody who gets it risks serious or irreversible harm. Cost and disease severity alone don't settle the question.">
       <phil-statement correct>No proven effective treatment currently exists for the condition</phil-statement>
-      <phil-statement correct>The condition is minor and short-term, and participants are closely monitored</phil-statement>
+      <phil-statement correct>A placebo is scientifically necessary, and going without the proven treatment risks no serious or lasting harm</phil-statement>
       <phil-statement>Whenever a placebo arm would be cheaper to run</phil-statement>
       <phil-statement>Whenever the condition is serious enough to justify anything that gets an answer fast</phil-statement>
     </phil-checkset>
@@ -494,7 +506,7 @@
       <li><strong>Research consent</strong>: the goal disclosed, the right to withdraw, the therapeutic misconception.</li>
       <li><strong>Equipoise</strong>: theoretical (Fried) against clinical (Freedman, community disagreement).</li>
       <li><strong>Monitoring</strong>: DSMBs and stopping rules fire the moment equipoise collapses.</li>
-      <li><strong>Placebo ethics</strong>: fair when nothing proven exists, not once something does.</li>
+      <li><strong>Placebo ethics</strong>: fair when nothing proven exists, and only in narrow cases once something does.</li>
     </ul>
     <p class="muted">Visit every slide, answer every question, and submit both belief probes.</p>
   </phil-slide>

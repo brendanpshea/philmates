@@ -78,7 +78,7 @@
   </phil-slide>
 
   <!-- 6. Compare: principles vs virtues -->
-  <phil-slide>
+  <phil-slide id="principles-virtues">
     <h1>Two Moral Questions</h1>
     <p>Ethics asks two complementary questions: principles address action; virtues address character.</p>
     <phil-compare>
@@ -93,22 +93,26 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 7. MCQ: what the discharge lacked -->
+  <!-- 7. Classify: principles or virtues -->
   <phil-slide>
     <h1>Diagnosing the Gap</h1>
-    <phil-mcq prompt="What did the mechanical discharge of Mr. Laurence lack?"
-              explain="Correct. Every biomedical principle was satisfied on paper. What was missing was the clinical character and attentiveness that allow principles to be genuinely fulfilled at the bedside.">
-      <phil-choice feedback="He signed the forms, understood the directions, and agreed to the plan. The consent was valid. What was missing was relational presence.">Respect for autonomy, because valid informed consent was never obtained.</phil-choice>
-      <phil-choice correct>The clinical character and attentiveness that allow principles to be genuinely fulfilled.</phil-choice>
-      <phil-choice feedback="The medical plan itself was accurate and evidence-based. A correct regimen delivered without personal attention illustrates the exact gap in question.">Beneficence, because the medical discharge plan was clinically mistaken.</phil-choice>
-      <phil-choice feedback="He was treated according to standard service procedures. No patient received preferential treatment over him.">Justice, because other ward patients were unfairly prioritized ahead of him.</phil-choice>
-    </phil-mcq>
+    <phil-classify review="principles-virtues" prompt="Principles or virtues? Sort each description."
+                   explain="Right. Principles answer what to do: public action-guides, and Mr. Laurence's discharge met every one on paper. Virtues answer who to be: stable traits of character that shape how a clinician sees a patient's needs. His discharge was missing those.">
+      <phil-col key="prin">Principles</phil-col>
+      <phil-col key="virt">Virtues</phil-col>
+      <phil-item answer="prin" why="Principles address action.">They answer the question "What should I do?"</phil-item>
+      <phil-item answer="virt" why="Virtues address character.">They answer the question "Who should I be?"</phil-item>
+      <phil-item answer="prin" why="Principles are public, verifiable action-guides that clinicians specify, weigh, and justify.">Public guides to action that clinicians specify, weigh, and justify</phil-item>
+      <phil-item answer="virt" why="A virtue is a stable trait of character.">Stable traits of a clinician's character</phil-item>
+      <phil-item answer="virt" why="Virtues govern how a clinician perceives needs and the manner in which care is delivered.">They shape how a clinician perceives what a patient needs</phil-item>
+      <phil-item answer="prin" why="His discharge satisfied every formal principle requirement on paper.">Mr. Laurence's discharge met every one of them on paper</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 2 — CULTIVATING VIRTUE ============ -->
 
   <!-- 8. Virtue is a disposition -->
-  <phil-slide>
+  <phil-slide id="disposition">
     <img slot="art" src="./assets/jo-march.png" alt="Dr. Jo March, sleeves rolled, looking straight at you">
     <h1>Virtue as a Disposition</h1>
     <p>"I do not feel warm," Jo says. "I do care. Those are different things, and the distinction matters."</p>
@@ -129,7 +133,7 @@
       <li><strong>First, from parents:</strong> Watching Marmee care for sick neighbors taught her attentiveness early.</li>
       <li><strong>Next, from mentors:</strong> Senior clinicians taught her to look past the chart to see the patient.</li>
       <li><strong>Finally, through habit:</strong> Deliberately sitting at every bedside until it became second nature.</li>
-      <li>Virtue is not an innate gift; it is built through patient, guided repetition.</li>
+      <li>Virtue is not an innate gift; it is built through guided repetition. Aristotle said the same: we become just by doing just acts.</li>
     </ul>
   </phil-slide>
 
@@ -168,7 +172,7 @@
   <!-- 13. Checkset: what a virtue is -->
   <phil-slide>
     <h1>Evaluating the Concept</h1>
-    <phil-checkset prompt="Check every TRUE statement about a moral virtue."
+    <phil-checkset review="disposition" prompt="Check every TRUE statement about a moral virtue."
                    explain="Correct. A virtue is an acquired disposition developed through ongoing practice, motivated by a commitment to good patient care. It is neither an innate personality quirk nor an external administrative rule.">
       <phil-statement correct>A virtue is a stable disposition of character, not a solitary good act.</phil-statement>
       <phil-statement correct>Virtues are acquired through repeated practice, much like clinical skills.</phil-statement>
@@ -182,27 +186,27 @@
   <!-- ============ ACT 3 — CARE, DEFINED ============ -->
 
   <!-- 14. Care as a virtue -->
-  <phil-slide>
+  <phil-slide id="skilled-labor">
     <img slot="art" src="./assets/hannah.png" alt="Hannah: home health aide on a client's doorstep at dusk">
     <h1>Care as Skilled Labor</h1>
     <p class="lead">Hannah is a home health aide arriving at her fourth client's home at dusk in the snow.</p>
     <ul reveal>
       <li>Hospital posters treat "care" as a slogan. In clinical ethics, it is demanding, skilled work.</li>
-      <li>Care requires <strong>emotional commitment</strong> combined with the <strong>active willingness to act</strong>.</li>
-      <li>It is everything clinicians do to sustain, assist, and repair vulnerable human lives.</li>
+      <li>Beauchamp and Childress define care as <strong>emotional commitment</strong> to a person, combined with the <strong>active willingness to act</strong> on their behalf.</li>
+      <li>Berenice Fisher and Joan Tronto put it more broadly: care is everything we do to maintain, continue, and repair our world.</li>
       <li>Notice what this demands: not performative cheerfulness, but dependable presence and skilled effort.</li>
     </ul>
   </phil-slide>
 
   <!-- 15. Anatomy of care -->
-  <phil-slide>
+  <phil-slide id="four-phases">
     <img slot="art" src="./assets/beth.png" alt="Beth: a young woman in a hospital bed with an oxygen cannula and portable keyboard">
     <h1>The Four Phases of Care</h1>
-    <p class="lead">Beth, 24, has lived with chronic illness for years. Caring for her requires four distinct phases.</p>
+    <p class="lead">The political theorist Joan Tronto names four parts of good care. Beth, 24, has lived with chronic illness for years. Caring for her takes all four.</p>
     <ul reveal>
       <li><strong>1. Attentiveness:</strong> Noticing the need. Beth has grown quiet and stopped asking about medications.</li>
       <li><strong>2. Responsibility:</strong> Stepping in to address her withdrawal rather than passing it to night shift.</li>
-      <li><strong>3. Competence:</strong> Executing care skillfully. Kind words with incorrect medication is failure, not care.</li>
+      <li><strong>3. Competence:</strong> Executing care skillfully. Kind words with incorrect medication is sentimentality, not care.</li>
       <li><strong>4. Responsiveness:</strong> Checking how the care landed with Beth—because only the recipient knows.</li>
     </ul>
   </phil-slide>
@@ -211,10 +215,10 @@
   <phil-slide>
     <img slot="art" src="./assets/laurie.png" alt="A nurse in scrubs and hoodie with coffee in hand">
     <h1>The Instruments of Care</h1>
-    <p class="lead">Biomedical ethics identifies five focal virtues that serve as practical instruments of care.</p>
+    <p class="lead">Beauchamp and Childress name five focal virtues that serve as practical instruments of care.</p>
     <ul reveal>
       <li><strong>Compassion</strong> provides awareness of suffering. <strong>Discernment</strong> judges what this patient needs right now.</li>
-      <li><strong>Trustworthiness</strong> ensures reliability. <strong>Integrity</strong> means practicing well even when unobserved.</li>
+      <li><strong>Trustworthiness</strong> ensures reliability. <strong>Integrity</strong> holds your values and actions together.</li>
       <li><strong>Conscientiousness</strong> is the follow-through: orders placed, labs verified, families updated.</li>
       <li>The nursing code of ethics opens with compassion and respect for the dignity of every patient.</li>
     </ul>
@@ -239,30 +243,36 @@
   <!-- 18. Cloze: care defined -->
   <phil-slide>
     <h1>Defining the Elements</h1>
-    <phil-cloze explain="A virtue is an acquired disposition. Care demands both emotional commitment and effective clinical action, and it requires competence to truly benefit the patient.">
+    <phil-cloze review="skilled-labor" explain="A virtue is an acquired disposition. Care demands both emotional commitment and effective clinical action, and it requires competence to truly benefit the patient.">
       A virtue is a stable <phil-blank options="disposition,feeling,rule">disposition</phil-blank> of character.
-      Care involves emotional <phil-blank answer="commitment|attachment|investment">commitment</phil-blank> to a person
-      and a willingness to <phil-blank answer="act|help">act</phil-blank> on their behalf.
+      Care involves emotional <phil-blank answer="commitment|attachment|investment|dedication|devotion">commitment</phil-blank> to a person
+      and a willingness to <phil-blank answer="act|help|intervene">act</phil-blank> on their behalf.
       Care without <phil-blank options="competence,warmth,consent">competence</phil-blank> is sentimentality.
     </phil-cloze>
   </phil-slide>
 
-  <!-- 19. MCQ: care in the full sense -->
+  <!-- 19. Classify: the four parts of care -->
   <phil-slide>
     <h1>Recognizing Complete Care</h1>
-    <phil-mcq prompt="Beth has grown unusually quiet in the clinic. Which response demonstrates care in the full sense?"
-              explain="Correct. All four phases are present: noticing the change, accepting responsibility, taking competent clinical action, and following up to see how it was received. The other options provide partial elements without complete care.">
-      <phil-choice feedback="That is sympathetic emotion alone. Genuine care begins with compassion and translates it into skilled, responsible action.">An acquaintance who expresses deep sorrow about her illness but takes no constructive action.</phil-choice>
-      <phil-choice feedback="This shows technical competence, but lacks attentiveness to the patient's emotional state and responsiveness to her experience.">A resident who reviews her lab orders accurately but never speaks directly with her.</phil-choice>
-      <phil-choice correct>A nurse who notices Beth has gone quiet, inquires gently, adjusts the plan, and follows up later.</phil-choice>
-      <phil-choice feedback="This illustrates well-intentioned paternalism. Overriding a patient's clear refusal ignores their agency and responsiveness.">A relative who insists on an unproven intervention that Beth has already explicitly declined.</phil-choice>
-    </phil-mcq>
+    <phil-classify review="four-phases" prompt="Beth has grown unusually quiet in the clinic. Which part of care does each action show?"
+                   explain="Right. Attentiveness notices the need. Responsibility takes it on instead of passing it along. Competence carries the care out skillfully. Responsiveness checks with Beth how it landed, because only she knows.">
+      <phil-col key="att">Attentiveness</phil-col>
+      <phil-col key="resp">Responsibility</phil-col>
+      <phil-col key="comp">Competence</phil-col>
+      <phil-col key="rsv">Responsiveness</phil-col>
+      <phil-item answer="att" why="Noticing the need is attentiveness.">A nurse notices that Beth has stopped asking about her medications</phil-item>
+      <phil-item answer="att" why="Spotting a quiet sign of distress is attentiveness.">A resident spots that Beth apologizes every time staff come in</phil-item>
+      <phil-item answer="resp" why="Stepping in instead of passing it to night shift is responsibility.">Rather than leave it for the night shift, the nurse takes the problem on herself</phil-item>
+      <phil-item answer="comp" why="Carrying out care skillfully is competence.">The nurse double-checks the new dose before giving it</phil-item>
+      <phil-item answer="comp" why="Kind words with the wrong medication is sentimentality, not care. Getting it right is competence.">Kind words aren't enough, so the nurse gets Beth's medication exactly right</phil-item>
+      <phil-item answer="rsv" why="Checking how the care landed with the person receiving it is responsiveness.">The next day, the nurse asks Beth how the change has worked for her</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 4 — BOUNDARIES & SUSTAINABLE CARE ============ -->
 
   <!-- 20. Compare: detachment vs over-involvement -->
-  <phil-slide>
+  <phil-slide id="two-failures">
     <h1>Detachment and Over-Involvement</h1>
     <p>Clinical care can fail in two opposite directions. Both harm the patient, and one also depletes the caregiver.</p>
     <phil-compare>
@@ -328,22 +338,27 @@
     </ul>
   </phil-slide>
 
-  <!-- 25. MCQ: Laurie's fever -->
+  <!-- 25. Classify: how care goes wrong -->
   <phil-slide>
     <h1>Evaluating Over-Involvement</h1>
-    <phil-mcq prompt="Laurie has covered ten extra ICU shifts and reported to work feverish. How does care ethics evaluate this?"
-              explain="Correct. Care ethics recognizes that care must be sustainable. Working while febrile is an unsustainable excess that impairs clinical safety, leading inevitably to burnout and moral injury. When a healthcare system relies on heroic self-sacrifice, the institution—not the clinician's character—is failing.">
-      <phil-choice feedback="Working while febrile in an intensive care unit risks patient safety and confuses genuine care with martyrdom.">It demonstrates the highest ideal of clinical virtue because he sacrificed himself for the unit.</phil-choice>
-      <phil-choice feedback="Duty-hour guidelines exist precisely to safeguard clinical judgment. Chronic self-neglect directly impacts clinical ethics.">It violates an administrative hospital policy on shift limits, but carries no broader ethical meaning.</phil-choice>
-      <phil-choice feedback="Genuine care involves discernment regarding human limits. An ethic demanding endless self-harm is exploitative.">Because clinical care has no appropriate boundaries, his dedication cannot be ethically questioned.</phil-choice>
-      <phil-choice correct>It represents an unsustainable excess that undermines his ability to care safely for patients and himself.</phil-choice>
-    </phil-mcq>
+    <phil-classify review="two-failures" prompt="Each is a way care can go wrong. Which one is it?"
+                   explain="Right. Detachment is too little presence: the patient becomes a case. Over-involvement is too much: no boundaries, ending in exhaustion. Paternalism is care that stops listening and decides for the person.">
+      <phil-col key="det">Detachment</phil-col>
+      <phil-col key="over">Over-involvement</phil-col>
+      <phil-col key="pat">Paternalism</phil-col>
+      <phil-item answer="over" why="Taking on every burden personally, to the point of exhaustion, is over-involvement.">Laurie works ten extra shifts this month and comes in with a fever</phil-item>
+      <phil-item answer="det" why="Protocols completed with no personal presence is detachment.">Mr. Laurence's discharge takes eleven minutes, and nobody looks him in the eye</phil-item>
+      <phil-item answer="pat" why="Deciding for Aunt March without asking her is the lesson's example of paternalism.">Meg books an assisted-living tour for Aunt March without asking her</phil-item>
+      <phil-item answer="over" why="No boundaries, and burnout on the way, is over-involvement.">A nurse answers patients' families at midnight, every night, and is worn out</phil-item>
+      <phil-item answer="det" why="Treating the patient as a case or a dataset is detachment.">A doctor deals with a patient as nothing more than a set of lab results</phil-item>
+      <phil-item answer="pat" why="Care that stops listening and does things to a person, not with them, is paternalism.">Sure that her father shouldn't drive, a daughter sells his car without asking him</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 5 — CARE AND THE PRINCIPLES ============ -->
 
   <!-- 26. Autonomy -->
-  <phil-slide>
+  <phil-slide id="non-abandonment">
     <img slot="art" src="./assets/aunt-march.png" alt="Aunt March: an elderly woman in a wingback chair with a snipped hospital wristband">
     <h1>Autonomy and Non-Abandonment</h1>
     <p class="lead">Aunt March is 88, has capacity, and has snipped off her hospital wristband. She refuses admission.</p>
@@ -394,7 +409,7 @@
   </phil-slide>
 
   <!-- 30. Compare: what care corrects vs what principles protect -->
-  <phil-slide>
+  <phil-slide id="complementary">
     <h1>Complementary Frameworks</h1>
     <p>Care ethics identifies two longstanding weaknesses in principle-based theory, while principles provide essential safeguards for care.</p>
     <phil-compare>
@@ -412,7 +427,7 @@
   <!-- 31. MCQ: what care adds to a refusal -->
   <phil-slide>
     <h1>Non-Abandonment in Practice</h1>
-    <phil-mcq prompt="Aunt March has decision-making capacity and refuses hospital admission. What does the virtue of care add to respecting her refusal?"
+    <phil-mcq review="non-abandonment" prompt="Aunt March has decision-making capacity and refuses hospital admission. What does the virtue of care add to respecting her refusal?"
               explain="Correct. Respect for autonomy is satisfied once the refusal is documented. The virtue of care requires non-abandonment: maintaining clinical connection, establishing an alternative home-based plan, and supporting the family caregivers.">
       <phil-choice feedback="That illustrates paternalism. Respecting an autonomous refusal means honoring the patient's decision rather than imposing hospital admission against her will.">Overriding her refusal, because genuine care always requires clinical hospitalization.</phil-choice>
       <phil-choice feedback="Documenting the refusal satisfies administrative compliance, but closing the chart without follow-up constitutes clinical abandonment.">Documenting the refusal on the electronic chart and discontinuing all medical contact.</phil-choice>
@@ -424,12 +439,12 @@
   <!-- 32. Cloze: partners -->
   <phil-slide>
     <h1>Synthesizing the Framework</h1>
-    <phil-cloze explain="Clinical ethics treats principles and virtues as complementary. Care ethics cautions against excessive impartiality and the neglect of emotion, while recognizing that justice governs resource allocation and care governs personal clinical relationships.">
+    <phil-cloze review="complementary" explain="Clinical ethics treats principles and virtues as complementary. Care ethics cautions against excessive impartiality and the neglect of emotion, while recognizing that justice governs resource allocation and care governs personal clinical relationships.">
       Clinical ethics holds that principles and virtues are <phil-blank options="complementary,rivals,identical">complementary</phil-blank>.
       Care ethics charges principle-based theory with overvaluing <phil-blank answer="impartiality|detachment">impartiality</phil-blank>
-      and neglecting <phil-blank answer="emotion|emotions|feeling|feelings">emotion</phil-blank>.
+      and neglecting <phil-blank answer="emotion|emotions|feeling|feelings|relationship|relationships">emotion</phil-blank>.
       Partiality toward your own <phil-blank options="patient,colleague,hospital">patient</phil-blank> is legitimate;
-      <phil-blank answer="justice">justice</phil-blank> governs how care is distributed.
+      <phil-blank answer="justice|public justice|fairness">justice</phil-blank> governs how care is distributed.
     </phil-cloze>
   </phil-slide>
 
