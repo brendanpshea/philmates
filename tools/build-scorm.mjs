@@ -8,8 +8,10 @@
      - a generated imsmanifest.xml
 
    Tracking: completion + score. cmi.core.lesson_status becomes "passed" when
-   the learner finishes (completion already requires every question correct);
-   cmi.core.score.raw carries correct/total*100, reported even mid-lesson.
+   the learner finishes (completion still requires every question correct);
+   cmi.core.score.raw carries earned credit, where each wrong try halves a
+   question's worth (see shared/scorm-api.js). No masteryscore: with graded
+   credit, a mastery score of 100 would let some LMSs mark finishers "failed".
 
    Usage:
      node tools/build-scorm.mjs --all                 # every lesson
@@ -111,7 +113,6 @@ function manifest({ id, title, files }) {
       <title>${xml(title)}</title>
       <item identifier="ITEM-${xml(id)}" identifierref="RES-${xml(id)}" isvisible="true">
         <title>${xml(title)}</title>
-        <adlcp:masteryscore>100</adlcp:masteryscore>
       </item>
     </organization>
   </organizations>

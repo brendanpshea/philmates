@@ -37,14 +37,24 @@ build installs `globalThis.PhilProgressStore` from
 | PhilMates state                       | SCORM 1.2 element            |
 | ------------------------------------- | --------------------------- |
 | `phil:complete` (all questions right) | `cmi.core.lesson_status` = `passed` |
-| correct / total questions             | `cmi.core.score.raw` (0–100, also reported mid-lesson) |
-| visited slides, correct, beliefs      | `cmi.suspend_data` (resume) |
+| earned credit / total questions       | `cmi.core.score.raw` (0–100, also reported mid-lesson) |
+| time in the lesson this session       | `cmi.core.session_time` (on exit; the LMS sums it into total time) |
+| visited slides, correct, beliefs, wrong tries, credit | `cmi.suspend_data` (resume) |
 
 Notes:
 
-- Completion already requires every question correct, so a *finished* lesson
-  always scores 100. The useful gradebook signal is the **partial** score the
-  adapter reports when a learner leaves early.
+- **Grade on the score, not the status.** `passed` means the student finished.
+  The score is the earned credit: each wrong try halves what a question is
+  worth (100%, 50%, 25% …), so a student who guessed through scores well below
+  one who read. See "Scoring" in [AUTHORING.md](../AUTHORING.md).
+- **Total time** in the LMS's activity report shows who clicked through in a
+  few minutes.
+- **Reset never raises a score.** In a package, Reset clears slides and answers
+  but keeps wrong-try counts and credit, and a `passed` lesson stays `passed`.
+- The manifest has **no `masteryscore`**. With graded credit, a mastery score of
+  100 would let some LMSs mark finishers as `failed`.
+- Progress saved before graded credit existed keeps full credit for questions
+  already solved.
 - SCORM 1.2 caps `suspend_data` at 4096 chars; the adapter stores question IDs
   (not labels) and warns in the console if a lesson approaches the limit.
 - The `.xsd` schema files are intentionally omitted — every major LMS validates

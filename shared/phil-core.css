@@ -354,6 +354,15 @@ phil-beliefs:not(:defined)::after, phil-beliefs-review:not(:defined)::after,
    The input stays enabled (not disabled) so the chosen answer keeps its colour
    and a screen-reader user can still reach it to review what they picked. */
 .phil-choice.locked { cursor: default; pointer-events: none; }
+/* a wrong option already tried: struck through, and it can't be picked again */
+.phil-choice.tried { cursor: not-allowed; }
+.phil-choice.tried > span { text-decoration: line-through; }
+
+/* after a miss: the review link or cooldown under the feedback */
+.phil-retry { margin: 10px 0 0; color: var(--ink); font-size: 1em; }
+phil-slide .phil-retry__go { margin-left: 6px; padding: 8px 10px; background: var(--accent-3); color: var(--bg); }
+.phil-review-return[hidden] { display: none; }
+.phil-review-return { background: var(--accent-2); color: var(--bg); }
 
 /* Cloze */
 .phil-cloze { line-height: 2.9; font-size: clamp(18px, 2.1vw, 23px); }

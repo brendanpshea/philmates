@@ -6,8 +6,8 @@
   <title>The Ship's Chest: The Right to Health Care · PhilMates</title>
   <meta name="description" content="A ship's crew decides what its common chest owes a sailor who falls sick. Norman Daniels's opportunity argument for a right to health care, a utilitarian ledger, Engelhardt's natural lottery, Oregon's rationing list, and the rule of rescue.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=6">
-  <script type="module" src="../../../shared/phil-core.js?v=6"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
+  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
   <script type="module" src="./assets/ships-chest.js"></script>
   <style>
     .trio { display: flex; gap: 14px; margin: 4px 0 10px; flex-wrap: wrap; }
@@ -136,7 +136,7 @@
   </phil-slide>
 
   <!-- 7. What the law says -->
-  <phil-slide>
+  <phil-slide id="the-law">
     <h1>What the Law Says Today</h1>
     <p>A <strong>legal right</strong> is one the law enforces. A <strong>moral right</strong> is one you have whether or not the law agrees. Here are some legal ones.</p>
     <ul reveal>
@@ -150,7 +150,7 @@
   <!-- 8. MCQ: EMTALA [correct: C] -->
   <phil-slide>
     <h1>The Emergency Room</h1>
-    <phil-mcq prompt="A woman with a badly broken arm and no insurance walks into a US emergency room. What does EMTALA guarantee her?"
+    <phil-mcq review="the-law" prompt="A woman with a badly broken arm and no insurance walks into a US emergency room. What does EMTALA guarantee her?"
               explain="Right. EMTALA is a narrow legal right. She gets an exam and enough treatment to make her stable, and the hospital can still bill her. Whether she is owed more than that is a moral question, and it is the one this lesson is about.">
       <phil-choice feedback="EMTALA does not make care free. The hospital can bill her afterward, and follow-up care is not covered by the law.">Free treatment for the arm, including any follow-up visits he needs</phil-choice>
       <phil-choice feedback="Turning away emergency patients who can't pay is what EMTALA was passed to stop.">Nothing, since an emergency room may turn away a woman who can't pay</phil-choice>
@@ -177,7 +177,7 @@
   </phil-slide>
 
   <!-- 10. Step 1: normal functioning -->
-  <phil-slide>
+  <phil-slide id="normal-functioning">
     <h1>Step 1: Normal Functioning</h1>
     <ul reveal>
       <li>Daniels starts from a plain idea of health. Health is <strong>normal functioning</strong>: your body and mind working the way human bodies and minds typically work.</li>
@@ -289,7 +289,7 @@
   <phil-slide>
     <h1>Put the Argument Together</h1>
     <p>Fill in each step of Daniels's argument.</p>
-    <phil-cloze explain="Right. Health care protects normal functioning, normal functioning protects your share of opportunity, and justice requires fair equality of opportunity. So health care is owed as a matter of justice. The conclusion is health care, not health, because nobody can owe you health.">
+    <phil-cloze review="normal-functioning" explain="Right. Health care protects normal functioning, normal functioning protects your share of opportunity, and justice requires fair equality of opportunity. So health care is owed as a matter of justice. The conclusion is health care, not health, because nobody can owe you health.">
       <span class="line">1. Health is normal
         <phil-blank answer="functioning" options="happiness,functioning,strength,wealth">functioning</phil-blank>.</span>
       <span class="line">2. Disease shrinks a person's share of the normal
@@ -302,7 +302,7 @@
   </phil-slide>
 
   <!-- 15. A fair share -->
-  <phil-slide>
+  <phil-slide id="fair-share">
     <img slot="art" src="./assets/the-chest.png" alt="An open chest of gold coins on a ship's deck beside a barrel with a quill and inkpot; above it, a blank parchment with a red wax seal and two inky thumbprints is pinned to the mast">
     <h1>A Fair Share, Not Everything</h1>
     <ul reveal>
@@ -316,7 +316,7 @@
   <!-- 16. Checkset: what follows -->
   <phil-slide>
     <h1>What Follows?</h1>
-    <phil-checkset prompt="Check every claim that follows from Daniels's argument."
+    <phil-checkset review="fair-share" prompt="Check every claim that follows from Daniels's argument."
                    explain="Right. The right is to a fair share, set by what a society can provide, and it covers anything that protects normal functioning. It is not a right to health, which nobody can owe. And the reason is fairness about opportunity, not the most happiness overall. That second kind of reason is the utilitarian's.">
       <phil-statement correct>Public health measures, like clean water, are covered as well as doctors</phil-statement>
       <phil-statement correct>What a person is owed depends partly on what their society can afford</phil-statement>
@@ -355,7 +355,7 @@
   </phil-slide>
 
   <!-- 19. Compare: Daniels and the utilitarians -->
-  <phil-slide>
+  <phil-slide id="two-reasons">
     <h1>Two Reasons for Care</h1>
     <p>Both views back care for everyone. They give different reasons, and the reasons matter when the chest runs short.</p>
     <phil-compare>
@@ -373,7 +373,7 @@
   <!-- 20. MCQ: where they split [correct: B] -->
   <phil-slide>
     <h1>Where They Split</h1>
-    <phil-mcq prompt="The chest can pay for Kit's long treatment or for small cures for thirty sailors, not both. Where do Daniels and the utilitarian really disagree?"
+    <phil-mcq review="two-reasons" prompt="The chest can pay for Kit's long treatment or for small cures for thirty sailors, not both. Where do Daniels and the utilitarian really disagree?"
               explain="Right. A utilitarian adds benefits up, so enough small ones can outweigh one large one. Daniels looks at each person's share of opportunity, so one girl's whole future is hard to outweigh with thirty toothaches.">
       <phil-choice feedback="Both of them buy the limes. Cheap prevention is where they agree most.">Whether cheap prevention, like limes, is worth buying for the crew</phil-choice>
       <phil-choice correct>Whether many small benefits can outweigh one person's large need</phil-choice>
@@ -518,7 +518,7 @@
   </phil-slide>
 
   <!-- 30. The Oregon list -->
-  <phil-slide>
+  <phil-slide id="oregon-list">
     <img slot="art" src="./assets/many-and-one.png" alt="A brass balance scale on a ship's deck: a glowing magenta heart in one pan is outweighed by a heap of small gold pebbles in the other">
     <h1>The Oregon List</h1>
     <ul reveal>
@@ -533,7 +533,7 @@
   <phil-slide>
     <h1>Name the Problem</h1>
     <p>Each sailor is arguing about the chest. Pick the problem each one raises.</p>
-    <phil-cloze explain="Right. The first adds small benefits up. The second wants each person to have an equal chance. The third puts the worst off first. The fourth is the pull of a life you can see. Daniels calls the first three unsolved rationing problems. No formula settles them, which is why he turns to fair process.">
+    <phil-cloze review="oregon-list" explain="Right. The first adds small benefits up. The second wants each person to have an equal chance. The third puts the worst off first. The fourth is the pull of a life you can see. Daniels calls the first three unsolved rationing problems. No formula settles them, which is why he turns to fair process.">
       <span class="line">"Thirty toothaches cured is more good than one fever treated, once you add it all up."
         <phil-blank answer="aggregation" options="aggregation,fair chances,the sickest first,rule of rescue">aggregation</phil-blank></span>
       <span class="line">"If we can only treat one of them, flip a coin. Each deserves an equal shot."

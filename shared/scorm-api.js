@@ -15,11 +15,19 @@
      cmi.core.lesson_status   <- "passed" once complete (completion already
                                   requires every question correct), else
                                   "incomplete".
-     cmi.core.score.raw       <- round(correct / total * 100). Reported even
-                                  mid-lesson so the gradebook shows partial work.
-     cmi.suspend_data         <- compact JSON of {v,c,d,b,p} for resume. SCORM 1.2
-                                  caps this at 4096 chars; we store question IDs,
+     cmi.core.score.raw       <- round(earned credit / total * 100). Each wrong
+                                  try halves a question's credit (100, 50, 25 …);
+                                  credit is locked in when first solved. Reported
+                                  even mid-lesson so the gradebook shows partial work.
+     cmi.core.session_time    <- time in the lesson this session, on exit. The
+                                  LMS adds it up into total time.
+     cmi.suspend_data         <- compact JSON of {v,c,d,b,p,m,k} for resume. SCORM
+                                  1.2 caps this at 4096 chars; we store question IDs,
                                   not labels, and warn if we approach the limit.
+
+   Reset never raises a score. It clears the slides and answers so a student
+   can run the lesson again, but keeps wrong-try counts and earned credit, and
+   never moves a "passed" lesson back to "incomplete".
    ===================================================================== */
 (function () {
   'use strict';
@@ -80,10 +88,17 @@
       // questions alone — which is why the gradebook looked right while the
       // lesson looked broken.
       this.polls     = data.p || {};
+      this.misses    = data.m || {};
+      this.credit    = data.k || {};
+      // Progress saved before graded credit existed keeps full credit.
+      for (const q of this.correct) if (!(q in this.credit)) this.credit[q] = 1;
+      this.keepsCredit = true;   // phil-core tells the student Reset won't raise the score
+      this._t0 = Date.now();
 
       // First launch: move "not attempted" to "incomplete" so the LMS shows
       // the lesson as in-progress the moment it opens.
       const status = get('cmi.core.lesson_status');
+      this.passedOnce = status === 'passed' || this.completed;
       if (initialized && (!status || status === 'not attempted')) {
         set('cmi.core.lesson_status', 'incomplete');
         commit();
@@ -99,7 +114,8 @@
     _writeScore() {
       const total = totalQuestions();
       if (!total) return;
-      const raw = Math.round((this.correct.size / total) * 100);
+      const earned = Object.values(this.credit).reduce((s, c) => s + c, 0);
+      const raw = Math.round((Math.min(earned, total) / total) * 100);
       set('cmi.core.score.min', '0');
       set('cmi.core.score.max', '100');
       set('cmi.core.score.raw', raw);
@@ -112,13 +128,15 @@
         d: this.completed,
         b: this.beliefs,
         p: this.polls,
+        m: this.misses,
+        k: this.credit,
       });
       if (payload.length > 4000) {
         console.warn(`[scorm] suspend_data is ${payload.length} chars — close to SCORM 1.2's 4096 limit.`);
       }
       set('cmi.suspend_data', payload);
       this._writeScore();
-      if (this.completed) set('cmi.core.lesson_status', 'passed');
+      if (this.completed) { this.passedOnce = true; set('cmi.core.lesson_status', 'passed'); }
       commit();
     }
 
@@ -128,15 +146,21 @@
       this.completed = false;
       this.beliefs = {};
       this.polls = {};
-      set('cmi.suspend_data', '');
-      set('cmi.core.lesson_status', 'incomplete');
-      set('cmi.core.score.raw', '');
+      // Keep misses and credit (in suspend_data and the score) so a reset
+      // can't farm first-try credit, and keep a lesson that was passed passed.
+      set('cmi.suspend_data', JSON.stringify({ m: this.misses, k: this.credit }));
+      if (!this.passedOnce) set('cmi.core.lesson_status', 'incomplete');
+      this._writeScore();
       commit();
     }
 
     finish() {
       if (!initialized || this._finished) return;
       this._finished = true;
+      // SCORM 1.2 CMITimespan: HHHH:MM:SS (hours may be 2-4 digits).
+      const secs = Math.max(0, Math.round((Date.now() - this._t0) / 1000));
+      const pad = n => String(n).padStart(2, '0');
+      set('cmi.core.session_time', `${pad(Math.floor(secs / 3600))}:${pad(Math.floor(secs / 60) % 60)}:${pad(secs % 60)}`);
       set('cmi.core.exit', this.completed ? '' : 'suspend');
       commit();
       API.LMSFinish('');

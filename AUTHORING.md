@@ -70,7 +70,43 @@ later hook in.
 
 The top bar also has a **↺ Reset** button (built in — you don't author it). It
 pops a confirmation, then clears this lesson's saved progress and reloads to a
-clean slide 1. Handy for re-running a lesson live in class.
+clean slide 1. Handy for re-running a lesson live in class. In a SCORM build,
+Reset keeps the score: it clears slides and answers, but never the wrong-try
+counts or earned credit.
+
+## Scoring: credit halves with each wrong try
+
+Completion still needs every question right eventually, but the **score** (shown
+as `★ Score` in the top bar and sent to the LMS) rewards getting it right early.
+Students were clicking through whole lessons in five minutes and guessing until
+each answer turned green, which earned full marks and taught nothing.
+
+- **Each wrong try halves what the question is worth:** 100%, 50%, 25%, 12.5% …
+  Credit is locked in when the question is first solved. Wrong tries are saved,
+  so reloading the page doesn't reset them.
+- **A wrong MCQ option is struck through** and can't be picked again. The
+  options reshuffle before the next try.
+- **Re-checking a checkset or cloze without changing anything is free.** It
+  says "Same answers as before" instead of costing a try.
+- **After a miss, the question locks until the student reviews.** Give the
+  question `review="slide-id"` and the feedback offers a button to that slide;
+  the question unlocks once they've visited it, and a "↩ Back to the question"
+  button brings them back. With no `review`, the question unlocks after a
+  10-second pause instead.
+
+**Give every graded question a `review` target.** Point it at the slide that
+teaches the answer, and give that slide an explicit `id` (`<phil-slide
+id="imitation-game">`). Auto ids like `s7` shift whenever a slide is added.
+
+```html
+<phil-slide id="imitation-game"> … teaches it … </phil-slide>
+…
+<phil-mcq review="imitation-game" prompt="…" explain="…"> … </phil-mcq>
+```
+
+Adding an `id` to a slide that already has saved progress makes students
+revisit that one slide before the lesson counts as complete. That's harmless,
+but do it before a term rather than during one.
 
 ## `reveal` is a reserved attribute name
 

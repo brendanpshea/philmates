@@ -38,6 +38,10 @@ const shuffle = (arr) => {
    sequenced (a timeline, escalating degrees, "all of the above"). */
 const shuffledOptions = (host, nodes) =>
   host.hasAttribute('keep-order') ? [...nodes] : shuffle(nodes);
+/* Seconds a missed question waits before the next try, when it has no
+   `review` slide to send the student to. */
+const RETRY_COOLDOWN = 10;
+const pctText = (c) => `${Math.round(c * 1000) / 10}%`;
 // Checked at call time, not module load — users change this setting mid-session.
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
@@ -87,6 +91,8 @@ class ProgressStore {
     this.completed = !!data.completed;
     this.beliefs = data.beliefs || {};      // ungraded Likert ratings { key: {statements, pre, post} }
     this.polls = data.polls || {};          // ungraded forced-choice picks { key: choiceIndex }
+    this.misses = data.misses || {};        // wrong tries per question { qid: n }
+    this.credit = data.credit || {};        // credit locked in when first solved { qid: 1 | .5 | .25 … }
   }
   save() {
     localStorage.setItem(this.key, JSON.stringify({
@@ -95,6 +101,8 @@ class ProgressStore {
       completed: this.completed,
       beliefs: this.beliefs,
       polls: this.polls,
+      misses: this.misses,
+      credit: this.credit,
     }));
   }
   reset() { localStorage.removeItem(this.key); }
@@ -201,9 +209,13 @@ class PhilLesson extends HTMLElement {
     fs.title = 'Fullscreen (F)';
     fs.setAttribute('aria-label', 'Toggle fullscreen');
     fs.onclick = () => this.toggleFullscreen();
+    // Shown only while a missed question has sent the student to review a slide.
+    this._reviewBtn = el('button', 'phil-btn phil-review-return', '↩ Back to the question');
+    this._reviewBtn.hidden = true;
+    this._reviewBtn.onclick = () => this._returnFromReview();
     bottom.append(
       this._wrap('phil-nav', [this._prevBtn]),
-      this._wrap('phil-nav', [fs, this._nextBtn])
+      this._wrap('phil-nav', [this._reviewBtn, fs, this._nextBtn])
     );
 
     this.append(top, this._live, this._stage, bottom);
@@ -238,6 +250,9 @@ class PhilLesson extends HTMLElement {
       title,
       el('p', null, 'This clears your progress — every slide and question starts over. This can’t be undone.')
     );
+    if (this.store.keepsCredit) {
+      box.append(el('p', null, 'Your score so far is kept. Answering the questions again won’t raise it.'));
+    }
     const cancel = el('button', 'phil-btn', 'Cancel');
     const confirm = el('button', 'phil-btn phil-btn--danger', 'Yes, reset');
     const actions = el('div', 'phil-modal__actions');
@@ -317,6 +332,7 @@ class PhilLesson extends HTMLElement {
   show(slide) {
     this.slides.forEach(s => s.classList.toggle('is-current', s === slide));
     this.current = slide;
+    if (this._reviewFrom === slide) this._reviewFrom = null;   // back at the question by any route
     this._applyReveal(slide);
     if (!slide.hasAttribute('optional')) {
       this._returnIndex = this.linear.indexOf(slide);
@@ -344,6 +360,19 @@ class PhilLesson extends HTMLElement {
     }
     this._announceSlide(slide, heading);
     this._playSlideAudio(slide);
+    // Questions waiting on a review listen for this.
+    this.dispatchEvent(new CustomEvent('phil:slide', { detail: { id: slide.id } }));
+  }
+
+  /* ---- review after a miss: visit a slide, then come back ---- */
+  review(fromSlide, toId) {
+    this._reviewFrom = fromSlide;
+    this.goToId(toId);
+  }
+  _returnFromReview() {
+    const s = this._reviewFrom;
+    this._reviewFrom = null;
+    if (s) this.show(s);
   }
   /* Focusing the heading is what a sighted keyboard user needs; this is what a
      screen-reader user needs. Both, because they're different people. */
@@ -399,14 +428,40 @@ class PhilLesson extends HTMLElement {
   /* ---- widget coordination ---- */
   registerWidget(w) {
     if (!w.dataset.qid) w.dataset.qid = `${this.lessonId}:q${this.widgets.length + 1}`;
+    const qid = w.dataset.qid;
+    // Progress saved before graded credit existed: a question already solved
+    // keeps full credit, so nobody loses points to the upgrade.
+    this.store.credit ||= {};
+    if (this.store.correct.has(qid) && !(qid in this.store.credit)) this.store.credit[qid] = 1;
     this.widgets.push(w);
     this._refresh();   // denominator just grew; keep the tally/bar honest
-    return { qid: w.dataset.qid, alreadyCorrect: this.store.correct.has(w.dataset.qid) };
+    return { qid, alreadyCorrect: this.store.correct.has(qid) };
+  }
+
+  /* ---- graded credit ----
+     Each wrong try halves what a question is worth: 100%, 50%, 25%, 12.5% …
+     The credit is locked in the first time the question is solved, and wrong
+     tries are saved, so reloading the page never resets them. */
+  misses(qid) { return this.store.misses?.[qid] || 0; }
+  creditOf(qid) { return this.store.credit?.[qid] ?? 0.5 ** this.misses(qid); }
+  reportMiss(qid) {
+    const m = (this.store.misses ||= {});
+    m[qid] = (m[qid] || 0) + 1;
+    this.store.save();
+    this._refresh();
   }
   reportCorrect(qid) {
     this.store.correct.add(qid);
+    const credit = (this.store.credit ||= {});
+    if (!(qid in credit)) credit[qid] = 0.5 ** this.misses(qid);
     this.store.save();
     this._refresh();
+  }
+  /* Percent of the lesson's available credit earned, or null with no questions. */
+  score() {
+    if (!this.widgets.length) return null;
+    const earned = this.widgets.reduce((s, w) => s + (this.store.credit?.[w.dataset.qid] || 0), 0);
+    return Math.round((earned / this.widgets.length) * 100);
   }
   // ungraded activities that still count toward completion (any answer is fine)
   registerTask() { const id = `k${this.tasks.length + 1}`; this.tasks.push(id); return id; }
@@ -429,9 +484,12 @@ class PhilLesson extends HTMLElement {
     this._bar.setAttribute('aria-valuemax', String(this.linear.length));
     this._bar.setAttribute('aria-valuenow', String(idx + 1));
     this._bar.setAttribute('aria-valuetext', `Slide ${idx + 1} of ${this.linear.length}`);
-    let tally = `★ ${this.store.correct.size}/${this.widgets.length} correct`;
-    if (this.tasks.length) tally += ` · ✔ ${this.tasksDone.size}/${this.tasks.length}`;
-    this._tally.textContent = tally;
+    const solved = this.widgets.filter(w => this.store.correct.has(w.dataset.qid)).length;
+    const parts = [];
+    if (this.widgets.length) parts.push(`★ Score ${this.score()}%`, `${solved}/${this.widgets.length} solved`);
+    if (this.tasks.length) parts.push(`✔ ${this.tasksDone.size}/${this.tasks.length}`);
+    this._tally.textContent = parts.join(' · ');
+    this._reviewBtn.hidden = !(this._reviewFrom && this.current !== this._reviewFrom);
 
     this._prevBtn.disabled = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === 0;
     const last = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === this.linear.length - 1;
@@ -479,16 +537,64 @@ class PhilWidget extends HTMLElement {
     }
     return this._fb;
   }
-  showFeedback(ok, msg) {
+  showFeedback(ok, msg, head) {
     const fb = this.feedbackBox();
     fb.className = 'phil-feedback show ' + (ok ? 'good' : 'bad');
-    fb.innerHTML = `<strong>${ok ? '✔ Correct' : '✘ Try again'}</strong>${msg || ''}`;
+    fb.innerHTML = `<strong>${head || (ok ? '✔ Correct' : '✘ Try again')}</strong>${msg || ''}`;
     if (!this._restoring) PhilSfx[ok ? 'correct' : 'wrong']();
   }
   solved() {
     this.lesson?.reportCorrect(this.qid);
+    const c = this.lesson ? this.lesson.creditOf(this.qid) : 1;
+    const head = c >= 1 ? '✔ Correct — full credit' : `✔ Correct — ${pctText(c)} credit`;
     const ex = this.getAttribute('explain');
-    this.showFeedback(true, ex || this.dataset.explain || '');
+    this.showFeedback(true, ex || this.dataset.explain || '', head);
+  }
+  /* A wrong try: record it, say what the question is now worth, and hold the
+     next try until the student has reviewed (or, with no review slide, paused). */
+  miss(hint) {
+    this.lesson?.reportMiss(this.qid);
+    const worth = 0.5 ** (this.lesson ? this.lesson.misses(this.qid) : 1);
+    this.showFeedback(false, hint || '', `✘ Not yet — this question is now worth ${pctText(worth)}`);
+    this._block();
+  }
+  _block() {
+    this._blocked = true;
+    this.onBlockChange?.(true);
+    const line = el('p', 'phil-retry');
+    this.feedbackBox().append(line);
+    const rev = this.getAttribute('review');
+    const target = rev && this.lesson?.slides.find(s => s.id === rev);
+    if (target) {
+      const title = (target.querySelector('h1')?.textContent || 'the lesson').trim();
+      line.append(document.createTextNode('Review before you try again: '));
+      const go = el('button', 'phil-btn phil-retry__go', `↗ ${title}`);
+      go.type = 'button';
+      go.onclick = () => this.lesson.review(this.closest('phil-slide'), rev);
+      line.append(go);
+      const onSlide = e => {
+        if (e.detail.id !== rev) return;
+        this.lesson.removeEventListener('phil:slide', onSlide);
+        this._unblock();
+      };
+      this.lesson.addEventListener('phil:slide', onSlide);
+    } else {
+      let n = RETRY_COOLDOWN;
+      const tick = () => {
+        if (n <= 0) return this._unblock();
+        line.textContent = `Think it over. You can try again in ${n}s.`;
+        n--;
+        this._timer = setTimeout(tick, 1000);
+      };
+      tick();
+    }
+  }
+  _unblock() {
+    clearTimeout(this._timer);
+    this._blocked = false;
+    this.onBlockChange?.(false);
+    const line = this._fb?.querySelector('.phil-retry');
+    if (line) line.textContent = 'Try again when you’re ready.';
   }
   build() {}     // overridden
   restore() { this.solved(); this.lock?.(); }
@@ -525,20 +631,35 @@ class PhilMcq extends PhilWidget {
       // that greys the radio out (the chosen answer stops being visible) and
       // drops it from the tab order, so a screen-reader user reviewing the
       // question can no longer reach their own answer.
-      input.addEventListener('click', e => { if (this._locked) e.preventDefault(); });
+      // A wrong option can only be tried once, and nothing can be picked while
+      // the question waits on a review.
+      input.addEventListener('click', e => { if (this._locked || this._blocked || row._tried) e.preventDefault(); });
       input.onchange = () => {
         if (this._locked) return this._reassert();
+        if (this._blocked || row._tried) { input.checked = false; return; }
         this._answer(row);
       };
       list.append(row);
       return row;
     });
+    this._list = list;
     this.append(list);
   }
   _answer(row) {
-    this._rows.forEach(r => r.classList.remove('correct', 'wrong'));
+    this._rows.forEach(r => { if (!r._tried) r.classList.remove('correct', 'wrong'); });
     if (row._correct) { row.classList.add('correct'); this.lock(); this.solved(); }
-    else { row.classList.add('wrong'); this.showFeedback(false, row._wrongHint); }
+    else {
+      row._tried = true;
+      row.classList.add('wrong', 'tried');
+      row.querySelector('input').setAttribute('aria-disabled', 'true');
+      this.miss(row._wrongHint);
+    }
+  }
+  // When a retry opens, clear the pick and reshuffle so position memory can't help.
+  onBlockChange(blocked) {
+    if (blocked) return;
+    this._rows.forEach(r => { r.querySelector('input').checked = false; });
+    if (!this.hasAttribute('keep-order')) shuffle(this._rows).forEach(r => this._list.append(r));
   }
   // pointer-events:none only stops the mouse — a keyboard user could still change
   // a locked-in answer. _locked closes that gap for every input modality.
@@ -653,6 +774,8 @@ class PhilCheckset extends PhilWidget {
     this._btn = btn;
   }
   _check() {
+    if (this._blocked) return;
+    const sig = this._rows.map(r => (r._input.checked ? 1 : 0)).join('');
     let ok = true;
     this._rows.forEach(r => {
       r.classList.remove('correct', 'wrong');
@@ -660,9 +783,16 @@ class PhilCheckset extends PhilWidget {
       if (want && got) r.classList.add('correct');
       else if (want !== got) { r.classList.add('wrong'); ok = false; }
     });
-    if (ok) { this.lock(); this.solved(); }
-    else this.showFeedback(false, 'Some are off — red rows are wrong. Adjust and check again.');
+    if (ok) { this.lock(); this.solved(); return; }
+    // Checking the same answers twice isn't a new try, so it costs nothing.
+    if (sig === this._lastSig) {
+      this.showFeedback(false, 'Change at least one answer before checking again.', '✘ Same answers as before');
+      return;
+    }
+    this._lastSig = sig;
+    this.miss('Red rows are wrong.');
   }
+  onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() {
     this._locked = true;
     this._rows.forEach(r => { r.classList.add('locked'); r._input.setAttribute('aria-disabled', 'true'); });
@@ -715,6 +845,8 @@ class PhilCloze extends PhilWidget {
   }
   _val(f) { return (f.value || '').trim().toLowerCase(); }
   _check() {
+    if (this._blocked) return;
+    const sig = this._blanks.map(f => this._val(f)).join('|');
     let ok = true;
     this._blanks.forEach(f => {
       const good = f._accepted.includes(this._val(f));
@@ -722,9 +854,15 @@ class PhilCloze extends PhilWidget {
       f.classList.toggle('wrong', !good);
       if (!good) ok = false;
     });
-    if (ok) { this.lock(); this.solved(); }
-    else this.showFeedback(false, 'Red blanks aren’t right yet.');
+    if (ok) { this.lock(); this.solved(); return; }
+    if (sig === this._lastSig) {
+      this.showFeedback(false, 'Change at least one blank before checking again.', '✘ Same answers as before');
+      return;
+    }
+    this._lastSig = sig;
+    this.miss('Red blanks aren’t right yet.');
   }
+  onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() { this._blanks.forEach(f => f.disabled = true); this._btn.disabled = true; }
   restore() {
     this._blanks.forEach(f => {
