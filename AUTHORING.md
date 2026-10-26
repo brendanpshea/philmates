@@ -461,6 +461,14 @@ most common failure: two blanks whose answers can swap order, a missing
 British spelling, and the slide's own word left off the accept list. When a
 cloze has typed blanks, list every form a careful student could write.
 
+Batch 5 (Locke's proviso, Amberville, Frankenstein) cost about 415k for three
+lessons. The adversary's web checks (about 170k) cost about the same as in a
+four-lesson batch, so small batches cost more per lesson. That finished the
+conversion: every lesson now has at most one MCQ, and every graded item has a
+review slide and a permanent `data-qid`. Across the five batches, review cost
+about 2.0M tokens for 19 lessons, roughly 105k each. Student views now mark
+optional slides, so reviewers can tell which teaching some students skip.
+
 ## Quiz quality (auto-checked)
 
 **Format mix.** Aim for 4–6 graded items per lesson, mostly classify, cloze,

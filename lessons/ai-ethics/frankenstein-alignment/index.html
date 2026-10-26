@@ -43,7 +43,7 @@
   <phil-slide>
     <img slot="art" src="./assets/arctic-ship.png" alt="A wooden three-masted sailing ship locked in Arctic pack ice at night under green and violet aurora, with two tiny lantern-lit figures on deck and jagged ridges of ice stretching to the horizon">
     <h1>Dr. Frankenstein and the Problem of Alignment</h1>
-    <p class="lead">In 1818 the eighteen-year-old Mary Shelley published <em>Frankenstein</em>, a book about a man who built something powerful and then could not take it back.</p>
+    <p class="lead">In 1818 Mary Shelley, then twenty, published <em>Frankenstein</em>, a book about a man who built something powerful and then could not take it back.</p>
     <p>Two hundred years later, the people who build powerful computer systems work on that same problem full time.</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
@@ -61,14 +61,14 @@
   </phil-slide>
 
   <!-- 3. The story -->
-  <phil-slide>
+  <phil-slide id="the-story">
     <h1>The Story, in One Page</h1>
     <p>If you are not familiar with the story, here are the basics.</p>
     <ul reveal>
       <li>Victor Frankenstein, a student, works out how to bring dead matter to life.</li>
       <li>Over two years, alone and in secret, he builds a person out of parts.</li>
       <li>The night it wakes, he is horrified by it and runs out of the building.</li>
-      <li>The creature teaches itself to speak and read, is driven off by everyone it meets, and comes back to find him.</li>
+      <li>The creature is never given a name. It teaches itself to speak and read, is driven off by everyone it meets, and comes back to find him.</li>
       <li>Almost everything else people picture was invented for the films: the lightning, the laboratory tower, the assistant.</li>
     </ul>
   </phil-slide>
@@ -76,11 +76,11 @@
   <!-- 4. Checkset: the film myths -->
   <phil-slide>
     <h1>What the Films Changed</h1>
-    <phil-checkset data-qid="frankenstein-alignment:q3" prompt="Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is TRUE of Mary Shelley's novel."
+    <phil-checkset data-qid="frankenstein-alignment:q3" review="the-story" prompt="Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is TRUE of Mary Shelley's novel."
                    explain="In the novel the creature is never given a name, and Frankenstein is Victor, the man who made it. It teaches itself to read and it speaks better than most characters in the book. The lightning, the laboratory tower and the hunchbacked assistant were all invented for the 1931 film. That difference matters. A mindless brute would make this a story about a monster, and it is a story about a maker.">
       <phil-statement correct>The creature has no name. Frankenstein is the man who made it.</phil-statement>
-      <phil-statement correct>The creature learns to speak, and argues with Victor in full sentences.</phil-statement>
-      <phil-statement correct>The creature teaches itself to read, and quotes the books it has read back at Victor.</phil-statement>
+      <phil-statement correct>The creature learns to speak.</phil-statement>
+      <phil-statement correct>The creature teaches itself to read.</phil-statement>
       <phil-statement>A bolt of lightning brings the creature to life in a laboratory tower.</phil-statement>
       <phil-statement>The creature is a mindless brute that can only groan and lash out.</phil-statement>
     </phil-checkset>
@@ -117,7 +117,7 @@
   <!-- ============ PART 1 — BUILD IT ============ -->
 
   <!-- 7. Victor's instruction -->
-  <phil-slide>
+  <phil-slide id="instruction">
     <img slot="art" src="./assets/victor-workshop.png" alt="A cluttered attic laboratory at night: a long workbench crowded with glass jars, coiled copper wire and stacked books, a large form under a heavy sheet at the far end, one guttering candle, and rain streaking a tall arched window">
     <h1>How Do You Say What You Want?</h1>
     <p class="lead">Victor Frankenstein is a student. He works out how to give life to dead matter, then spends two years building a person out of parts.</p>
@@ -132,14 +132,14 @@
   <!-- 8. The wish tester -->
   <phil-slide>
     <h1>Try to Write a Better Instruction</h1>
-    <p>Victor's instruction was <em>make it alive</em>. Below are five attempts to do better than that. Work down them in order and read what each one would actually get you.</p>
+    <p>Victor's instruction was <em>make it alive</em>. Below are five attempts to do better than that. Work down them in order and read what each one would actually get you. Whatever you write, you write in advance, about situations you have not seen yet.</p>
     <phil-wish-tester prompt="Start at the top. Each instruction fixes the hole in the one above it."></phil-wish-tester>
   </phil-slide>
 
   <!-- 9. MCQ 1 [correct: B] -->
   <phil-slide>
     <h1>Checkpoint: Saying What You Want</h1>
-    <phil-mcq data-qid="frankenstein-alignment:q1" prompt="Each instruction above was more careful than the one before it, and every one still left something out. What best explains that?"
+    <phil-mcq data-qid="frankenstein-alignment:q1" review="instruction" prompt="Each instruction above was more careful than the one before it, and every one still left something out. What best explains that?"
               explain="Right. You have to write the instruction before the thing exists, which means writing it about situations you have never seen. The gap you left is obvious afterwards and almost invisible beforehand. That difficulty is the specification problem, and care alone does not solve it.">
       <phil-choice feedback="Care helps, but it does not close the gap. Each instruction in the tester was written carefully, and each one still missed something that only became obvious later.">Each instruction was written carelessly, and a slower writer would have caught the gap.</phil-choice>
       <phil-choice correct>You have to say what you want in advance, about situations you have not seen yet.</phil-choice>
@@ -171,7 +171,7 @@
     <ul reveal>
       <li>Victor looks at what he has made, is horrified by it, and runs out of the room.</li>
       <li>He leaves the building, walks the streets until dawn, and does not go back.</li>
-      <li>When he does return, days later, the creature is gone.</li>
+      <li>When he does return, the next morning, the creature is gone.</li>
       <li>He never speaks a single word to it.</li>
     </ul>
   </phil-slide>
@@ -201,7 +201,7 @@
   </phil-slide>
 
   <!-- 14. Teaching: capability vs alignment -->
-  <phil-slide>
+  <phil-slide id="strong-before-good">
     <h1>Strong Before It Is Good</h1>
     <p class="lead">The creature could act on the world long before it had any idea how it ought to act. Those two things did not arrive together.</p>
     <ul reveal>
@@ -247,14 +247,14 @@
     <p class="lead">The creature has learned gentleness from one family it has never spoken to. Then it meets everybody else.</p>
     <ul reveal>
       <li>The first villagers who see it throw stones and drive it out with sticks.</li>
-      <li>It pulls a drowning girl out of a river, and the man with her shoots it.</li>
       <li>It finally speaks to the family's blind father, who is kind to it, because he cannot see it.</li>
       <li>The others come home, beat it, and move away. It never finds them again.</li>
+      <li>Later it pulls a drowning girl out of a river, and the man with her shoots it.</li>
     </ul>
   </phil-slide>
 
   <!-- 18. Teaching: training data and feedback -->
-  <phil-slide>
+  <phil-slide id="training-data">
     <h1>It Learns From Whatever Is Nearby</h1>
     <p class="lead">Nobody ever sat down and taught the creature anything. Everything it knows it picked up from whatever happened to be within reach.</p>
     <ul reveal>
@@ -269,15 +269,15 @@
   <phil-slide>
     <h1>Fill In: What It Learned</h1>
     <p>Complete the summary of how the creature came to know anything at all:</p>
-    <phil-cloze data-qid="frankenstein-alignment:q5" explain="Nothing about the creature's education was chosen. It learned language and kindness from the one household it could see, and it learned fear and anger from everyone who met it. Both lessons came from the same thing: whatever happened to be nearby while Victor was somewhere else.">
+    <phil-cloze data-qid="frankenstein-alignment:q5" review="training-data" explain="Nothing about the creature's education was chosen. It learned language and kindness from the one household it could see, and it learned fear and anger from everyone who met it. Both lessons came from the same thing: whatever happened to be nearby while Victor was somewhere else.">
       The creature taught itself to speak by listening to one family through a
       <phil-blank options="wall,book,teacher">wall</phil-blank>.
       Whatever a system learns from is called its
       <phil-blank options="training data,instruction manual,operating system">training data</phil-blank>.
       It also learned from the way people treated it, and every person who attacked it taught it that people
-      <phil-blank answer="attack|attacked|hurt|are dangerous">attack</phil-blank>.
+      <phil-blank answer="attack|attacked|hurt|harm|are cruel|are violent|are dangerous">attack</phil-blank>.
       Victor chose none of these lessons, because he was not
-      <phil-blank answer="there|present|watching">there</phil-blank>.
+      <phil-blank answer="there|present|watching|around|nearby|involved">there</phil-blank>.
     </phil-cloze>
   </phil-slide>
 
@@ -420,18 +420,6 @@
     </ul>
   </phil-slide>
 
-  <!-- 30. MCQ 2 [correct: C] -->
-  <phil-slide>
-    <h1>Checkpoint: Taking It Back</h1>
-    <phil-mcq data-qid="frankenstein-alignment:q2" prompt="Victor stopped because he decided two creatures could never be undone. What is the strongest version of that worry?"
-              explain="Right. This is the one worry that survives even a perfectly honest creature. If a decision can be reversed, a mistake costs you the time it takes to reverse it. If it cannot, the mistake is permanent, so it has to be got right the first time — and Victor has already shown he does not get things right the first time.">
-      <phil-choice feedback="The creature had actually kept its word up to this point. The worry Victor acts on is not about this creature's honesty at all.">The creature had already broken its promises, so its offer could not be believed.</phil-choice>
-      <phil-choice feedback="Physical strength was not what stopped him. He was worried about something he could not undo later, not about something he could not fight.">A second creature would double the physical danger, and he could not fight both.</phil-choice>
-      <phil-choice correct>Some decisions cannot be reversed later, so a mistake made once stays made.</phil-choice>
-      <phil-choice feedback="Secrecy is not the worry he acts on. What stops him is that a second creature could not be taken back once made, however well hidden.">Two creatures would be twice as hard to keep hidden from the villagers.</phil-choice>
-    </phil-mcq>
-  </phil-slide>
-
 
   <!-- ============ PART 6 — NOBODY OUTSIDE THE PROJECT ============ -->
 
@@ -468,7 +456,7 @@
     <ul reveal>
       <li>Walton wants to be the first man there, and he is willing to risk his crew to manage it.</li>
       <li>His ship gets trapped in the ice, and Victor, dying, tells him the entire story.</li>
-      <li>Walton turns the ship around and sails home.</li>
+      <li>His crew insists on turning back, and Walton agrees, though Victor urges them on.</li>
       <li>He is the only person in the book who is told what will happen and changes course.</li>
     </ul>
   </phil-slide>
@@ -477,15 +465,15 @@
   <phil-slide>
     <h1>Fill In: What Victor Got Wrong</h1>
     <p>Complete the account of what Victor got wrong:</p>
-    <phil-cloze data-qid="frankenstein-alignment:q6" explain="Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel.">
+    <phil-cloze data-qid="frankenstein-alignment:q6" review="strong-before-good" explain="Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel.">
       Victor's instruction to himself was to make it
       <phil-blank options="alive,kind,useful">alive</phil-blank>,
       and he never said what sort of life it ought to have. He gave it a powerful body and no guidance, so its
-      <phil-blank options="capability,honesty,size">capability</phil-blank>
+      <phil-blank options="capability,honesty,name">capability</phil-blank>
       arrived years before anything like judgment. He destroyed the second creature because some choices can never be
-      <phil-blank answer="reversed|undone|taken back|unmade">reversed</phil-blank>.
+      <phil-blank answer="reversed|undone|taken back|unmade|corrected|fixed">reversed</phil-blank>.
       And he worked alone the entire time, so nobody was ever in a position to
-      <phil-blank answer="stop|warn|check|correct">stop</phil-blank> him.
+      <phil-blank answer="stop|warn|check|correct|help|advise|oversee">stop</phil-blank> him.
     </phil-cloze>
   </phil-slide>
 
@@ -493,15 +481,33 @@
   <!-- ============ PART 7 — NOT ONLY COMPUTERS ============ -->
 
   <!-- 35. The modern names -->
-  <phil-slide>
+  <phil-slide id="modern-names">
     <h1>Where This Turns Up Now</h1>
     <p class="lead">Each of Victor's failures has a name in the work people do on computer systems today.</p>
     <ul reveal>
       <li>Writing down what you actually want, in advance and in words, is the <strong>specification</strong> problem.</li>
       <li>Choosing what a system learns from, rather than letting it learn from whatever is nearby, is <strong>training data</strong> work.</li>
-      <li>Making sure a system can still be corrected once it is running is called <strong>corrigibility</strong>.</li>
+      <li>Making sure a system can still be corrected once it is running is called <strong>corrigibility</strong>. A choice that can never be undone has given it up.</li>
       <li>Having somebody outside the project who is able to say stop is <strong>oversight</strong>.</li>
     </ul>
+  </phil-slide>
+
+  <!-- 35b. Classify: the modern names -->
+  <phil-slide>
+    <h1>Name the Failure</h1>
+    <phil-classify data-qid="frankenstein-alignment:q2" review="modern-names" prompt="Each of Victor's failures now has a name. Which one is each?"
+                   explain="Right. The specification problem is saying in advance what you actually want. Training data work is choosing what a system learns from. Corrigibility is keeping the power to correct a system once it runs, and a choice that can never be undone leaves nothing to correct. Oversight is somebody outside the project who can say stop.">
+      <phil-col key="spec">Specification</phil-col>
+      <phil-col key="train">Training data</phil-col>
+      <phil-col key="corr">Corrigibility</phil-col>
+      <phil-col key="over">Oversight</phil-col>
+      <phil-item answer="spec" why="Victor never said what he actually wanted, only that it should live. That is the specification problem.">His whole instruction to himself was to give life to something that did not have it</phil-item>
+      <phil-item answer="train" why="What a system learns from is its training data, and nobody chose the creature's.">The creature learned to speak by listening to one family through a wall</phil-item>
+      <phil-item answer="corr" why="Corrigibility is keeping the power to correct a system later. A choice that can never be undone gives that up.">Two creatures could never be undone, whatever either of them promised</phil-item>
+      <phil-item answer="over" why="Oversight is somebody outside the project who is able to say stop. Victor told nobody.">Victor told no teacher what he was attempting, so nobody could tell him to stop</phil-item>
+      <phil-item answer="train" why="What a system learns from is its training data: here, one family it watched.">It learned what kindness looks like by watching the De Lacey family</phil-item>
+      <phil-item answer="spec" why="He knew how to build it but never said what it was for, which is the specification problem.">He knew how he wanted to build it, but never said what he wanted it to be</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 36. Midgley and the Therac-25 -->
@@ -510,9 +516,9 @@
     <p class="lead">None of Victor's failures need a machine that thinks. They turn up wherever somebody builds something that then acts on its own.</p>
     <ul reveal>
       <li><strong>Thomas Midgley Jr.</strong> gave the world leaded gasoline, and then CFCs. One chemist, two irreversible harms at planetary scale.</li>
-      <li>Both were reviewed by the industries that profited from them, and by nobody else.</li>
+      <li>Both were vouched for chiefly by the industries that profited from them.</li>
       <li><strong>The Therac-25</strong> moved a radiation machine's safety locks out of hardware and into software, with no independent review of the code.</li>
-      <li>It gave massive overdoses to six patients. Operators could see something was wrong and had no way to override it.</li>
+      <li>It gave massive overdoses to six patients. Its error messages were cryptic, and operators routinely pressed on past them.</li>
     </ul>
   </phil-slide>
 
@@ -520,7 +526,7 @@
   <phil-slide>
     <span class="phil-date">1975</span>
     <h1>The Field That Stopped Itself</h1>
-    <p class="lead">In 1974 a group of biologists worked out how to move genes between organisms. Then they did something unusual. They stopped.</p>
+    <p class="lead">In 1973 biologists worked out how to move genes between organisms. In 1974 they did something unusual. They stopped.</p>
     <ul reveal>
       <li>They called for a halt on their own most promising experiments until the risks had been worked out.</li>
       <li>At Asilomar in 1975 about 140 scientists, lawyers and journalists spent four days deciding what would be allowed.</li>
@@ -532,10 +538,10 @@
   <!-- 38. Checkset: what went wrong -->
   <phil-slide>
     <h1>Checkpoint: What Went Wrong</h1>
-    <phil-checkset data-qid="frankenstein-alignment:q4" prompt="Check every TRUE statement about how the disaster in the novel came about."
-                   explain="The three true statements are three separate failures, and none of them required Victor to be cruel. The two false ones are the readings the story is built to rule out: the creature was gentle for a long time before it was violent, and a weaker creature abandoned in the same way would still have been a wrong done to it."
+    <phil-checkset data-qid="frankenstein-alignment:q4" review="training-data" prompt="Check every TRUE statement about how the disaster in the novel came about."
+                   explain="The three true statements are three separate failures, and none of them required Victor to be cruel. The two false ones are the readings the story is built to rule out: the creature was gentle for a long time before it was violent, and the deaths followed from how it was treated, not from its strength alone."
                    >
-      <phil-statement correct>Victor never wrote down what he wanted the creature to be like, only that it should live.</phil-statement>
+      <phil-statement correct>Victor planned how to build the creature, not what it would need once alive.</phil-statement>
       <phil-statement correct>The creature learned what it knew from whatever it happened to be near.</phil-statement>
       <phil-statement correct>Victor gave the creature a powerful body and no guidance at all.</phil-statement>
       <phil-statement>The creature was violent from the moment it woke, before anyone had treated it badly.</phil-statement>

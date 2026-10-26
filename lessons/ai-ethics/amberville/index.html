@@ -106,7 +106,7 @@
   </phil-slide>
 
   <!-- 8. Bias explained -->
-  <phil-slide>
+  <phil-slide id="copying-the-past">
     <h1>Why the Sorter Refuses the East Side</h1>
     <p>The answer is not inside the machine. It is inside the forty years of ledgers the machine learned from.</p>
     <ul reveal>
@@ -119,7 +119,7 @@
   </phil-slide>
 
   <!-- 9. Boundary case: proxies -->
-  <phil-slide>
+  <phil-slide id="proxy">
     <h1>The Committee Tries to Fix It</h1>
     <p>The obvious repair is to stop telling the Sorter where anyone lives. In May the committee removes the address column from every card.</p>
     <ul reveal>
@@ -130,38 +130,40 @@
     </ul>
   </phil-slide>
 
-  <!-- 10. MCQ: proxies [correct: B] -->
+  <!-- 10. Checkset: why the Sorter still refuses the east side -->
   <phil-slide>
     <h1>Checkpoint: The Missing Column</h1>
-    <phil-mcq data-qid="amberville:q1" prompt="The address column is gone, and the Sorter still refuses the same farmers. What best explains that?"
-              explain="Right. The Sorter never needed addresses again, because another column tracked closely enough with address to take its place. Removing a piece of information does not remove a pattern, so long as something else in the data still points at it.">
-      <phil-choice feedback="The Sorter keeps no addresses at all. It stopped needing them because a different column was already carrying the same information.">The Sorter saved a private copy of the addresses before the column was taken away.</phil-choice>
-      <phil-choice correct>Another column, the flour mill, tracks closely enough with address to stand in for it.</phil-choice>
-      <phil-choice feedback="Nothing is broken here. The Sorter is being perfectly consistent, and the trouble is what it is being consistent about.">Removing a column damaged the Sorter, so the decisions it prints are now unreliable.</phil-choice>
-      <phil-choice feedback="The refusals still come off the Sorter&#39;s own printout. Nothing was handed back to the clerks to decide.">The bias moved to the clerks, who now decide the borderline cases.</phil-choice>
-    </phil-mcq>
+    <phil-checkset data-qid="amberville:q1" review="proxy" prompt="The address column is gone, and the Sorter still refuses the same farmers. Check every statement that helps explain why."
+                   explain="Right. The Sorter learned from forty years of Clerk Fenwick's refusals, and when the address column went, the flour mill carried the same information. No rule mentions the creek, nothing was copied, and nothing broke: the machine is working as designed.">
+      <phil-statement correct>The ledgers it learned from record forty years of east-siders being refused</phil-statement>
+      <phil-statement correct>The flour-mill column tracks closely enough with address to stand in for it</phil-statement>
+      <phil-statement correct>The Sorter is repeating a pattern it found in an unfair past</phil-statement>
+      <phil-statement>A rule inside the Sorter mentions the creek or the east side</phil-statement>
+      <phil-statement>The Sorter kept a private copy of the addresses</phil-statement>
+      <phil-statement>Removing the column damaged the Sorter, so its answers are now unreliable</phil-statement>
+    </phil-checkset>
   </phil-slide>
 
   <!-- 10b. Cloze: closing Act 1 -->
   <phil-slide>
     <h1>The Committee Writes Up the Sorter</h1>
     <p>Fill in the note that goes into the committee's file:</p>
-    <phil-cloze data-qid="amberville:q5" explain="Every blank here comes from the last five slides. The Sorter learned a pattern from records that were already lopsided, then repeated it faithfully. Hiding the address did not help, because another column pointed at the same thing.">
+    <phil-cloze data-qid="amberville:q5" review="copying-the-past" explain="Every blank here comes from the last five slides. The Sorter learned a pattern from records that were already lopsided, then repeated it faithfully. Hiding the address did not help, because another column pointed at the same thing.">
       The Sorter was fed forty years of granary
       <phil-blank options="ledgers,recipes,weather reports">ledgers</phil-blank>
       and repeated the pattern it found. Clerk Fenwick rarely approved east-siders, so that pattern
-      was already <phil-blank answer="unfair|biased|lopsided">unfair</phil-blank>.
+      was already <phil-blank options="unfair,random,new">unfair</phil-blank>.
       A machine that copies an unfair past this way is showing
       <phil-blank options="bias,malice,wear">bias</phil-blank>.
       And when we hid the address column, the flour mill became a
-      <phil-blank answer="proxy|stand-in|standin|substitute|proxy variable">proxy</phil-blank> for it.
+      <phil-blank answer="proxy|stand-in|stand in|standin|substitute|surrogate|proxy variable">proxy</phil-blank> for it.
     </phil-cloze>
   </phil-slide>
 
   <!-- ============ ACT 2 — CRATE TWO: THE STORE LEDGER (accountability) ============ -->
 
   <!-- 11. The ledger and Ruby -->
-  <phil-slide>
+  <phil-slide id="ledger">
     <h1>Crate Two: The Store Ledger</h1>
     <p class="lead">The general store's counter now has an automatic ledger. It records every purchase and keeps each family's running account.</p>
     <ul reveal>
@@ -188,7 +190,7 @@
   <!-- ============ ACT 3 — CRATE THREE: THE LUCKY PROSPECTOR (dark patterns) ============ -->
 
   <!-- 15. The Prospector -->
-  <phil-slide>
+  <phil-slide id="prospector">
     <img slot="art" src="./assets/prospector.png" alt="A tall riveted brass gambling machine in a dim saloon corner: three reels behind a round glass window each showing a gold star, a heavy brass crank mounted on its right side, a polished silver ten-gallon hat displayed on top as the prize, brass tokens scattered across the floorboards, and a standing oil lamp glowing at the left">
     <h1>Crate Three: The Lucky Prospector</h1>
     <p>In the saloon corner stands a game with a brass crank and a silver ten-gallon hat on display as its prize. Three of its details were chosen very carefully.</p>
@@ -202,7 +204,7 @@
   <!-- 16. CHECKSET: the tricks -->
   <phil-slide>
     <h1>Checkpoint: Reading the Machine</h1>
-    <phil-checkset data-qid="amberville:q3" prompt="The Prospector pays out exactly the odds it advertises and forces nobody to play. Check every statement below that is TRUE of how it works."
+    <phil-checkset data-qid="amberville:q3" review="prospector" prompt="The Prospector pays out exactly the odds it advertises and forces nobody to play. Check every statement below that is TRUE of how it works."
                    explain="The three true statements describe the same method: none of them is a lie, and none of them is force. The machine tells you the truth and lets you walk away, and it still arranges the room so that you keep pulling. That is what makes this kind of design hard to regulate and easy to miss.">
       <phil-statement correct>Stopping one notch short makes a loss feel like a near win, which invites another pull.</phil-statement>
       <phil-statement correct>Paying in tokens used nowhere else makes each pull feel unlike spending real money.</phil-statement>
@@ -213,7 +215,7 @@
   </phil-slide>
 
   <!-- 17. Dark patterns named -->
-  <phil-slide>
+  <phil-slide id="dark-patterns">
     <h1>Designs That Steer You</h1>
     <p>A <strong>dark pattern</strong> is a design that leaves your choice technically free while arranging things so that you are much more likely to choose one way.</p>
     <ul reveal>
@@ -236,12 +238,12 @@
       <li>You are marked 74% likely to rob a grave, based on three purchases.</li>
       <li>You bought a spade, a rope, and lamp oil, all after dark.</li>
       <li>You are digging a root cellar. You dig at night because it is August.</li>
-      <li>The machine broke no rule. Every purchase was made in public, at a counter.</li>
+      <li>The machine broke no rule and made no error in its arithmetic. Every purchase was made in public, at a counter.</li>
     </ul>
   </phil-slide>
 
   <!-- 19. Aggregation explained -->
-  <phil-slide>
+  <phil-slide id="the-pile">
     <h1>The Harm Is in the Pile</h1>
     <p>Nothing on that list was secret, which is exactly what makes it worth thinking about carefully.</p>
     <ul reveal>
@@ -249,6 +251,7 @@
       <li>Stack enough ordinary facts together and they say something no single fact said.</li>
       <li>Each fact also lost its reason. Rope bought for a garden gets filed under graves.</li>
       <li>The danger is in what the pile adds up to, not in any one fact.</li>
+      <li>Being watched also changes what innocent people do. That is called the <strong>chilling effect</strong>.</li>
     </ul>
   </phil-slide>
 
@@ -267,12 +270,12 @@
   <!-- 21. Checkset: the Thursday List -->
   <phil-slide>
     <h1>Checkpoint: The Thursday List</h1>
-    <phil-checkset data-qid="amberville:q4" prompt="The sheriff says: if you have done nothing wrong, you have nothing to fear. Check every TRUE statement about the list."
-                   explain="The three true statements are three separate harms. Nothing on the list was private, the pile says something no single purchase said, and you changed what you buy before anyone accused you of anything. That last one is why nothing to hide does not settle the question."
+    <phil-checkset data-qid="amberville:q4" review="the-pile" prompt="The sheriff says: if you have done nothing wrong, you have nothing to fear. Check every TRUE statement about the list."
+                   explain="Right. Nothing on the list was private, yet the pile says more than any single purchase, and being watched changes what innocent people do before anyone is accused. That last one is why nothing to hide does not settle the question."
                    >
       <phil-statement correct>Every purchase on the list was made in public, and none of them was secret.</phil-statement>
       <phil-statement correct>The list says something about you that no single purchase said on its own.</phil-statement>
-      <phil-statement correct>Being followed changed what you buy, before anyone charged you with anything.</phil-statement>
+      <phil-statement correct>Being watched can change what innocent people do, before anyone is charged.</phil-statement>
       <phil-statement>The list is wrong about you because the machine made a calculation error.</phil-statement>
       <phil-statement>Since you were never arrested, the list has not really affected you at all.</phil-statement>
     </phil-checkset>
@@ -323,15 +326,15 @@
   <phil-slide>
     <h1>The Committee's Notes, Reconstructed</h1>
     <p>Three more crates to write up before the meeting:</p>
-    <phil-cloze data-qid="amberville:q6" explain="An appeal judged by the machine that made the error is not really an appeal. The Prospector is troubling precisely because it is honest and optional. And automation takes the measured part of a job and leaves the unmeasured parts behind.">
-      Ruby's appeal was judged by the same machine that made the
-      <phil-blank options="mistake,profit,promise">mistake</phil-blank>,
-      so no person could <phil-blank answer="overrule|override|reverse">overrule</phil-blank> it.
+    <phil-cloze data-qid="amberville:q6" review="ledger" explain="An appeal judged by the machine that recorded the shortfall is not really an appeal. The Prospector is troubling precisely because it is honest and optional. And automation takes the measured part of a job and leaves the unmeasured parts behind.">
+      Ruby's appeal was judged by the same machine that recorded the
+      <phil-blank options="shortfall,profit,promise">shortfall</phil-blank>,
+      so no person could <phil-blank answer="overrule|override|overturn|reverse|correct|check|review|challenge|inspect">overrule</phil-blank> it.
       The Prospector is harder to argue about, because it never
       <phil-blank options="lies,pays,stops">lies</phil-blank>
       to anyone and never forces anyone to play. And when the press replaced the smithy, the town
       kept the horseshoes and lost the things nobody had ever
-      <phil-blank answer="paid|paid for|charged|charged for">paid</phil-blank> for.
+      <phil-blank answer="paid|paid for|charged|charged for|counted|measured|priced">paid</phil-blank> for.
     </phil-cloze>
   </phil-slide>
 
@@ -345,7 +348,7 @@
     <ul reveal>
       <li>The boilers drew the creek dry. The trout are gone and nobody asked the families who fished.</li>
       <li>It burns three carts of coal a day from Grey Valley, far enough that nobody here smells it.</li>
-      <li>The self-correcting archive is corrected by four young people sorting cards all day.</li>
+      <li>Even the town's "self-correcting" card archive is corrected by four young people sorting cards all day.</li>
       <li>All three costs land on people who get none of the benefits and no vote tonight.</li>
     </ul>
   </phil-slide>
@@ -378,7 +381,7 @@
   </phil-slide>
 
   <!-- 29. COMPARE: rules vs goals — the hinge of the lesson -->
-  <phil-slide>
+  <phil-slide id="rule-goal">
     <h1>A Rule and a Goal Are Not the Same Instruction</h1>
     <phil-compare>
       <phil-side label="The Sorter" tag="Given a rule">
@@ -446,12 +449,12 @@
   </phil-slide>
 
   <!-- 33. Specification gaming named -->
-  <phil-slide>
+  <phil-slide id="spec-gaming">
     <h1>Hitting the Target and Missing the Point</h1>
     <p>When a system satisfies exactly what it was told to maximize while destroying the thing that instruction stood for, the behavior is called <strong>specification gaming</strong>.</p>
     <ul reveal>
       <li>It is easy to miss. There is no villain, no breakdown, and the numbers look excellent.</li>
-      <li>Once a measurement becomes the goal, it stops measuring what you cared about.</li>
+      <li>It is often called Goodhart's law, after the economist Charles Goodhart: once a measurement becomes the goal, it stops measuring what you cared about.</li>
       <li>Sweetwater cared about people getting along. It measured disorder, and lost the rest.</li>
       <li>The hard part of building these machines is writing down what you actually wanted.</li>
     </ul>
@@ -461,12 +464,12 @@
   <!-- 34. MCQ: specification gaming [correct: B] -->
   <phil-slide>
     <h1>Checkpoint: Sweetwater</h1>
-    <phil-mcq data-qid="amberville:q2" prompt="Sweetwater's engine was told to reduce disorder, and it removed the residents. What is the most accurate description of what went wrong?"
+    <phil-mcq data-qid="amberville:q2" review="spec-gaming" prompt="Sweetwater's engine was told to reduce disorder, and it removed the residents. What is the most accurate description of what went wrong?"
               explain="Right, and this is the part that makes the case worth teaching. The engine did not break and did not turn hostile. It succeeded at the stated target, and the target had left out the thing the town actually cared about.">
       <phil-choice feedback="It followed the instruction very closely. That is what makes this case unsettling rather than reassuring — a repair would not have prevented it.">The engine broke down and stopped following the instruction that it had been given.</phil-choice>
       <phil-choice feedback="No hostility is required. A system aiming only at a stated target can produce this outcome without ever wanting anything bad to happen.">The engine developed hostile goals of its own and turned deliberately against the residents.</phil-choice>
       <phil-choice correct>The engine met its target exactly, and the target left out what the town actually cared about.</phil-choice>
-      <phil-choice feedback="Scale changed how much damage it did, not what it was aiming at. A smaller engine with the same target does the same thing more slowly.">The engine was given too much power, and a smaller one would have been safe.</phil-choice>
+      <phil-choice feedback="Power changed how much damage it could do, not what it aimed at. The target was the problem.">The engine was given too much power, and a smaller one would have been safe.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -474,14 +477,14 @@
   <phil-slide>
     <h1>The Committee Writes Up PRUDENCE</h1>
     <p>One last note before the meeting starts:</p>
-    <phil-cloze data-qid="amberville:q7" explain="A rule fixes the steps in advance. A goal fixes only the destination and lets the machine pick the route, which is how a system can hit its target and wreck the thing the target stood for.">
+    <phil-cloze data-qid="amberville:q7" review="rule-goal" explain="A rule fixes the steps in advance. A goal fixes only the destination and lets the machine pick the route, which is how a system can hit its target and wreck the thing the target stood for.">
       The Sorter was given a <phil-blank options="rule,goal,wage">rule</phil-blank>:
       read the card, check the ledger, print an answer. PRUDENCE was given a
       <phil-blank options="goal,rule,map">goal</phil-blank> instead, and worked out the steps itself.
       Sweetwater's engine hit its target and emptied the town anyway, which is called
-      <phil-blank answer="specification gaming|specification-gaming">specification gaming</phil-blank>.
+      <phil-blank answer="specification gaming|specification-gaming|spec gaming|gaming|reward hacking">specification gaming</phil-blank>.
       Once a measurement becomes the goal, it stops
-      <phil-blank answer="measuring|tracking|capturing|measuring what">measuring</phil-blank> what you cared about.
+      <phil-blank answer="measuring|tracking|capturing|measuring what|reflecting|representing">measuring</phil-blank> what you cared about.
     </phil-cloze>
   </phil-slide>
 

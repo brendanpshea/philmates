@@ -1254,6 +1254,14 @@ Plus `prompts.md`.
 
 ## Computing & AI Ethics Overview — "High Noon in Amberville"  *(built)*
 
+> **Accuracy notes (batch 5 review):** "Once a measure becomes the goal, it stops measuring" is
+> Goodhart's law, and should be credited. Ruby's ledger "may not even be wrong", so don't call its
+> entry a mistake in graded text. The chilling effect must be taught on a slide, not only in a poll's
+> feedback. Related lessons, same review: Locke's proviso is nine words, not seven; in *Frankenstein*,
+> Shelley was twenty at publication, Victor returns the next morning, the drowning girl comes after
+> the De Laceys, Walton's crew forces the turn home, Therac-25 operators could and did press past
+> errors, and gene splicing dates from 1972–73 (the moratorium from 1974).
+
 - **Path:** `lessons/ai-ethics/amberville/`
 - **Lesson id:** `amberville`
 - **Topic:** Computing & AI ethics — whole-course overview (Week 1 opener for

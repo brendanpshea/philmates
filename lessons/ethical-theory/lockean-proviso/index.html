@@ -100,7 +100,7 @@
   </phil-slide>
 
   <!-- 6. The chain -->
-  <phil-slide>
+  <phil-slide id="the-chain">
     <h1>The Chain</h1>
     <p class="lead">Locke's argument runs in three steps, and each one has to hold for the next to work.</p>
     <ul reveal>
@@ -124,28 +124,33 @@
     </phil-poll>
   </phil-slide>
 
-  <!-- 8. MCQ 1 [correct: B] -->
+  <!-- 8. Classify: the three steps of the chain -->
   <phil-slide>
     <h1>Checkpoint: What the Argument Rests On</h1>
-    <phil-mcq data-qid="lockean-proviso:q1" prompt="One claim has to be true before any of the rest of Locke's argument can work. Which?"
-              explain="Right. Everything depends on self-ownership. The labour is only yours to mix in because your body is yours to begin with, so if you do not own yourself, mixing your work into something gives you no claim at all. That is why arguments about property so often turn into arguments about self-ownership.">
-      <phil-choice feedback="Locke does say this, and it matters later. But it is a claim about value, and it comes after the argument for ownership rather than holding it up.">That farmed land is more valuable than wild land.</phil-choice>
-      <phil-choice correct>That you own yourself, and therefore own the work your body does.</phil-choice>
-      <phil-choice feedback="Locke explicitly does not rely on arriving first. Being there early gives you the chance to work, but the work is what does the arguing.">That whoever finds something first has a stronger claim than later arrivals.</phil-choice>
-      <phil-choice feedback="Locke does start there, and it is the problem rather than the foundation. Common ownership is what makes private appropriation need an argument at all.">That the earth was given to everyone in common to begin with.</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="lockean-proviso:q1" review="the-chain" prompt="Locke's chain has three steps, and each has to hold for the next. Which step is each line?"
+                   explain="Right. Step one is self-ownership: your body, and so the work it does, is yours. Step two mixes that work into something nobody owns. Step three is the conclusion: the thing becomes yours. Everything rests on step one.">
+      <phil-col key="own">Step one: you own yourself</phil-col>
+      <phil-col key="mix">Step two: you mix your work in</phil-col>
+      <phil-col key="yours">Step three: it becomes yours</phil-col>
+      <phil-item answer="own" why="Self-ownership is the first step: your body is yours.">Your body is yours, and no one else's</phil-item>
+      <phil-item answer="own" why="Nobody else owns you. That is the self-ownership the chain starts from.">Nobody else owns you</phil-item>
+      <phil-item answer="mix" why="Mixing your work into something nobody owns is step two.">You mix your work with something that belongs to no one</phil-item>
+      <phil-item answer="mix" why="Clearing and ploughing mix your work into unowned land.">You clear and plough a field that no one has worked</phil-item>
+      <phil-item answer="yours" why="That is the conclusion: mixing in what was yours makes the thing yours.">The acorn stops being common and becomes yours</phil-item>
+      <phil-item answer="yours" why="The conclusion of the chain: the worked field is yours.">The field is now your property</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ PART 2 — WHAT STOPS YOU TAKING EVERYTHING? ============ -->
 
   <!-- 9. The proviso -->
-  <phil-slide>
+  <phil-slide id="proviso">
     <img slot="art" src="./assets/first-field.png" alt="A small neat rectangle of cleared and furrowed dark earth planted in tidy rows, sitting in the middle of a vast unbroken expanse of wild violet and magenta growth running to the horizon, with three tiny figures working at one edge and a low rough fence along one side">
     <h1>What Stops You Taking Everything?</h1>
     <p class="lead">Locke could see that the argument as stated would let one person take a continent, so he attached a condition to it.</p>
     <ul reveal>
       <li>You may take from what is unowned only where there is <strong>enough, and as good, left in common for others</strong>.</li>
-      <li>Those seven words are the <strong>Lockean proviso</strong>, and people have argued about them ever since.</li>
+      <li>Those nine words are the <strong>Lockean proviso</strong>, and people have argued about them ever since.</li>
       <li>Take one acorn from a forest full of oaks and nobody is worse off. Take the forest and they are.</li>
     </ul>
   </phil-slide>
@@ -172,7 +177,7 @@
   <!-- 12. Checkset 1 -->
   <phil-slide>
     <h1>Checkpoint: What Locke Actually Says</h1>
-    <phil-checkset data-qid="lockean-proviso:q3" prompt="Check every statement that is TRUE of Locke's argument."
+    <phil-checkset data-qid="lockean-proviso:q3" review="proviso" prompt="Check every statement that is TRUE of Locke's argument."
                    explain="The two false statements are the readings Locke is most often saddled with. He never says arriving first is enough — that is the position his labour argument replaces. And he holds that property exists before any government does, which is exactly why he thinks a government that seizes your property is doing something wrong rather than merely changing the rules.">
       <phil-statement correct>You may take what is unowned only if enough and as good is left for others.</phil-statement>
       <phil-statement correct>You may not take more than you can use before it spoils.</phil-statement>
@@ -185,7 +190,7 @@
   <!-- ============ PART 3 — MONEY DISSOLVES THE LIMITS ============ -->
 
   <!-- 13. Money -->
-  <phil-slide>
+  <phil-slide id="money">
     <h1>Then Money Arrives</h1>
     <p class="lead">Both of Locke's limits work only because things rot. Halfway through his own chapter, he removes one of them.</p>
     <ul reveal>
@@ -265,7 +270,7 @@
   <phil-slide>
     <h1>Fill In: The Argument and Its Limits</h1>
     <p>Complete the summary so far:</p>
-    <phil-cloze data-qid="lockean-proviso:q5" explain="Locke's chain runs from self-ownership through labour to property, and it is bounded by two conditions. The spoilage limit dissolves as soon as money exists, because coin does not rot. The proviso does not dissolve, which is why it is still the contested part.">
+    <phil-cloze data-qid="lockean-proviso:q5" review="money" explain="Locke's chain runs from self-ownership through labour to property, and it is bounded by two conditions. The spoilage limit dissolves as soon as money exists, because coin does not rot. The proviso does not dissolve, which is why it is still the contested part.">
       Locke begins by claiming that you own
       <phil-blank options="yourself,the land,nothing">yourself</phil-blank>,
       so the work of your body is already yours to mix into things. He limits this with the proviso, which says enough and as
@@ -273,7 +278,7 @@
       must be left for others, and with a second rule against taking more than you can use before it
       <phil-blank options="spoils,sells,grows">spoils</phil-blank>.
       The second limit stops mattering once there is money, because gold does not
-      <phil-blank answer="spoil|rot|decay|perish">spoil</phil-blank>.
+      <phil-blank answer="spoil|rot|decay|perish|go bad|deteriorate|rust|tarnish">spoil</phil-blank>.
     </phil-cloze>
   </phil-slide>
 
@@ -292,7 +297,7 @@
   </phil-slide>
 
   <!-- 21. How the limit was made toothless -->
-  <phil-slide>
+  <phil-slide id="vacant-land">
     <h1>How the Limit Was Made Toothless</h1>
     <p class="lead">Chapter Five talks about "the vacant places of America" and about people who leave land unenclosed.</p>
     <ul reveal>
@@ -306,7 +311,7 @@
   <!-- 22. MCQ 2 [correct: C] -->
   <phil-slide>
     <h1>Checkpoint: What Happened to the Proviso</h1>
-    <phil-mcq data-qid="lockean-proviso:q2" prompt="How did the argument about vacant land stop the proviso from doing any work?"
+    <phil-mcq data-qid="lockean-proviso:q2" review="vacant-land" prompt="How did the argument about vacant land stop the proviso from doing any work?"
               explain="Right, and this is the pattern worth carrying away. The proviso was never repealed or argued against. It was left in place and the facts were described so that it could not possibly be breached. A safeguard you can satisfy by choosing a description is not protecting anything.">
       <phil-choice feedback="The proviso stayed exactly where it was. Nothing replaced it, which is part of what makes the case instructive.">It was replaced with a different rule about who arrives somewhere first.</phil-choice>
       <phil-choice feedback="Enough and as good plainly was not left for the people already living there. The argument worked by not counting them as having anything to lose.">It was genuinely satisfied, because there really was enough for everyone involved.</phil-choice>
@@ -318,7 +323,7 @@
   <!-- ============ PART 6 — ONE PREMISE, TWO POLITICS ============ -->
 
   <!-- 23. The compare -->
-  <phil-slide>
+  <phil-slide id="two-politics">
     <h1>One Premise, Two Politics</h1>
     <p>Two traditions start from Locke's self-ownership and finish in opposite places. The proviso is where they part.</p>
     <phil-compare>
@@ -380,14 +385,14 @@
   </phil-slide>
 
   <!-- 27. The reversal -->
-  <phil-slide>
+  <phil-slide id="reversal">
     <h1>The Reversal</h1>
     <p class="lead">The same feature runs the other way the moment owning means the right to stop other people.</p>
     <ul reveal>
       <li>A patent takes nothing from an infinite pool. It removes from common use something everyone could use before.</li>
       <li>Yesterday anyone could use that method. Today one person may. That is less left for others, not more.</li>
       <li>And every idea is built out of earlier ones, so Locke's claim that labour supplies almost all the value runs backwards here.</li>
-      <li>The question becomes how much of a shared inheritance one person may fence, and for how long.</li>
+      <li>The question becomes how much of a shared inheritance one person may fence, and for how long. Patents and copyrights both run out after a term set by law.</li>
     </ul>
   </phil-slide>
 
@@ -407,11 +412,11 @@
   <!-- 29. Checkset 2 -->
   <phil-slide>
     <h1>Checkpoint: Ideas and the Proviso</h1>
-    <phil-checkset data-qid="lockean-proviso:q4" prompt="Check every statement that is TRUE."
+    <phil-checkset data-qid="lockean-proviso:q4" review="reversal" prompt="Check every statement that is TRUE."
                    explain="Non-rivalry means many people can hold the same idea at once, which is why the proviso looks easy to satisfy. But ownership of an idea means the right to exclude, and excluding does take something from the commons. Both false statements come from stopping the argument halfway: the first forgets what owning means, and the second forgets that every system of intellectual property has fought hard about duration.">
       <phil-statement correct>Using an idea does not use it up, so many people can hold the same one at once.</phil-statement>
-      <phil-statement correct>A patent removes from common use something that everyone could use before it existed.</phil-statement>
-      <phil-statement correct>Locke's claim that labour supplies most of a thing's value is harder to apply to ideas, which are built out of earlier ideas.</phil-statement>
+      <phil-statement correct>A patent removes from common use something everyone would otherwise be free to use.</phil-statement>
+      <phil-statement correct>Locke's claim that labour supplies almost all of a thing's value runs backwards for ideas, which are built out of earlier ones.</phil-statement>
       <phil-statement>Because ideas cannot run out, owning one can never breach the proviso.</phil-statement>
       <phil-statement>Copyright and patents last forever, so their duration raises no question.</phil-statement>
     </phil-checkset>
@@ -455,15 +460,15 @@
   <phil-slide>
     <h1>Fill In: Three Answers to One Question</h1>
     <p>Complete the account of where the argument ended up:</p>
-    <phil-cloze data-qid="lockean-proviso:q6" explain="The two libertarianisms share a premise and split on one question about the original world. Paine's answer keeps private improvement and adds a debt on the ground itself. Bentham refuses the question: on his account there is nothing to discover, because property is something law creates.">
+    <phil-cloze data-qid="lockean-proviso:q6" review="two-politics" explain="The two libertarianisms share a premise and split on one question about the original world. Paine's answer keeps private improvement and adds a debt on the ground itself. Bentham refuses the question: on his account there is nothing to discover, because property is something law creates.">
       Nozick and the left-libertarians both accept that you own
       <phil-blank options="yourself,the land,the state">yourself</phil-blank>,
       and disagree about whether the world began
-      <phil-blank answer="unowned|un-owned|owned by nobody">unowned</phil-blank>
+      <phil-blank answer="unowned|un-owned|owned by nobody|owned by no one|ownerless|unclaimed|nobody's">unowned</phil-blank>
       or owned by everyone in common. Paine held that improvers keep what they add but owe
-      <phil-blank options="rent,tax,nothing">rent</phil-blank>
+      <phil-blank options="rent,thanks,nothing">rent</phil-blank>
       on ground they did not make. Bentham rejected the question, holding that property is created by
-      <phil-blank answer="law|laws|government|the state">law</phil-blank>.
+      <phil-blank answer="law|laws|the law|legislation|government|governments|the state|convention">law</phil-blank>.
     </phil-cloze>
   </phil-slide>
 
@@ -500,7 +505,7 @@
     <h1>Where You Stand Now</h1>
     <p>Here is where you stood before any of the arguments. Re-rate each statement and see what moved.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
-    <p>Seven words have been carrying the weight the whole way: <em>enough, and as good, left in common for others</em>. Almost everyone agrees to them. Almost nobody agrees about what they mean, and the difference decides who gets a world.</p>
+    <p>Nine words have been carrying the weight the whole way: <em>enough, and as good, left in common for others</em>. Almost everyone agrees to them. Almost nobody agrees about what they mean, and the difference decides who gets a world.</p>
     <p class="muted">Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.</p>
   </phil-slide>
 

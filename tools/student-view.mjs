@@ -127,7 +127,9 @@ function render(html) {
     const local = [...m[2].matchAll(/<(phil-[a-z-]+)\b/g)].map(x => x[1]).filter(n => !ENGINE.has(n));
     const interactive = local.length
       ? ` [interactive widget here (${[...new Set(local)].join(', ')}): its contents are not shown, and a student may never open it]` : '';
-    view.push(`--- Slide ${i + 1} ---\n${rendered}${interactive}`);
+    // Optional slides sit on a branch some students skip, so say so.
+    const optional = flag(m[1], 'optional') ? ' (OPTIONAL: on a branch some students skip)' : '';
+    view.push(`--- Slide ${i + 1}${optional} ---\n${rendered}${interactive}`);
   });
   return { view: view.join('\n\n'), keys: keys.join('\n'), count: q };
 }
