@@ -71,6 +71,83 @@ function parseMcqs(html) {
   return mcqs;
 }
 
+/* <phil-classify> keys must be airtight: every row names a real column and
+   says why, every column is used, and there are enough rows to be worth a
+   slide. These are hard errors, not style tells. */
+/* Text a student has seen before a given point in the lesson: slide text only,
+   with graded items, widget data, attributes, and comments removed. A category
+   that appears only in a widget, a poll, or another question's feedback has not
+   been taught. */
+const GRADED_RE = /<phil-(mcq|checkset|cloze|classify|poll)\b[\s\S]*?<\/phil-\1>/gi;
+const norm = s => ` ${s.toLowerCase().replace(/[’']s\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim()} `;
+const seenBefore = (html, index) => norm(stripTags(html.slice(0, index)
+  .replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[\s\S]*?<\/script>/gi, ' ').replace(GRADED_RE, ' ')
+  // Comparison sides and thinker cards show these attributes as visible text.
+  .replace(/<phil-(side|thinker)\b([^>]*)>/gi, (_, t, a) =>
+    ' ' + [...a.matchAll(/\b(label|tag|name|work)="([^"]*)"/g)].map(x => x[2]).join(' ') + ' ')));
+/* Column labels that name a category must be taught first. Exempt: labels that
+   define themselves ("Disguise: hides …"), Both/Neither/True/False, and columns
+   marked `descriptive` ("The interrogator can see this"). */
+const EXEMPT_LABELS = new Set(['both', 'neither', 'true', 'false', 'not sure']);
+function untaughtColumns(html, index, body) {
+  const seen = seenBefore(html, index);
+  return [...body.matchAll(/<phil-col\b([^>]*)>([\s\S]*?)<\/phil-col>/gi)]
+    .filter(([, attrs, label]) => {
+      const plain = stripTags(label);
+      if (/\bdescriptive\b/.test(attrs.replace(/"[^"]*"/g, '')) || plain.includes(':')) return false;
+      const term = norm(plain).replace(/^ (a|an|the) /, ' ');
+      return !EXEMPT_LABELS.has(term.trim()) && !seen.includes(term);
+    })
+    .map(([, , label]) => stripTags(label));
+}
+
+function checkClassify(html) {
+  const out = [];
+  const re = /<phil-classify\b([^>]*)>([\s\S]*?)<\/phil-classify>/gi;
+  let m, n = 0;
+  while ((m = re.exec(html))) {
+    n++;
+    const open = m[1], body = m[2];
+    const prompt = (open.match(/\bprompt="([^"]*)"/i) || [])[1] || '(no prompt)';
+    const keys = [...body.matchAll(/<phil-col\b[^>]*\bkey="([^"]*)"/gi)].map(x => x[1]);
+    untaughtColumns(html, m.index, body).forEach(label =>
+      out.push({ prompt, issues: [`column "${label}" is never named on a slide before this item: teach it first, or mark the column descriptive`] }));
+    const items = [...body.matchAll(/<phil-item\b([^>]*)>([\s\S]*?)<\/phil-item>/gi)];
+    const issues = [];
+    if (keys.length < 2) issues.push(`needs at least 2 columns (has ${keys.length})`);
+    if (new Set(keys).size !== keys.length) issues.push('duplicate column keys');
+    if (items.length < 4) issues.push(`needs at least 4 rows (has ${items.length})`);
+    const used = new Set();
+    items.forEach((it, i) => {
+      const ans = (it[1].match(/\banswer="([^"]*)"/i) || [])[1];
+      const why = (it[1].match(/\bwhy="([^"]*)"/i) || [])[1];
+      const label = stripTags(it[2]).slice(0, 50);
+      if (!ans) issues.push(`row ${i + 1} "${label}" has no answer`);
+      else if (!keys.includes(ans)) issues.push(`row ${i + 1} "${label}" answers "${ans}", which is not a column`);
+      else used.add(ans);
+      if (!why || !why.trim()) issues.push(`row ${i + 1} "${label}" has no why= justification`);
+    });
+    keys.filter(k => !used.has(k)).forEach(k => issues.push(`column "${k}" is never the answer`));
+    if (!/\breview="/.test(open)) issues.push('no review= slide (add one so a miss sends the student back to the teaching)');
+    if (issues.length) out.push({ prompt, issues });
+  }
+  return { count: n, problems: out };
+}
+
+/* A review= target must be a slide id that comes before the question. A typo
+   would leave the student locked out with nowhere to go but the cooldown. */
+function checkReviewTargets(html) {
+  const ids = new Map([...html.matchAll(/<phil-slide\b[^>]*\bid="([^"]+)"/gi)].map(m => [m[1], m.index]));
+  const out = [];
+  for (const m of html.matchAll(/<phil-(mcq|checkset|cloze|classify)\b([^>]*)>/gi)) {
+    const target = (m[2].match(/\breview="([^"]*)"/i) || [])[1];
+    if (target === undefined) continue;
+    if (!ids.has(target)) out.push(`${m[1]} review="${target}" names no slide id`);
+    else if (ids.get(target) > m.index) out.push(`${m[1]} review="${target}" points forward, to a slide after the question`);
+  }
+  return out;
+}
+
 function checkLengths(mcq) {
   const issues = [];
   const lens = mcq.choices.map(c => c.len);
@@ -112,8 +189,9 @@ function checkPositions(mcqs) {
 }
 
 async function run() {
-  let lessonCount = 0, mcqCount = 0, problemCount = 0, thinTotal = 0;
+  let lessonCount = 0, mcqCount = 0, problemCount = 0, thinTotal = 0, classifyCount = 0;
   const allMcqs = [];
+  const mcqHeavy = [];
 
   for (const topic of await ls(LESSONS)) {
     const tdir = path.join(LESSONS, topic);
@@ -122,11 +200,21 @@ async function run() {
       const file = path.join(tdir, lesson, 'index.html');
       let html; try { html = await readFile(file, 'utf8'); } catch { continue; }
       const mcqs = parseMcqs(html);
-      if (!mcqs.length) continue;
-      lessonCount++; mcqCount += mcqs.length;
+      const cl = checkClassify(html);
+      const count = tag => (html.match(new RegExp(`<${tag}\\b`, 'gi')) || []).length;
+      const mix = { MCQ: mcqs.length, classify: cl.count, checkset: count('phil-checkset'), cloze: count('phil-cloze') };
+      if (!mcqs.length && !cl.count) continue;
+      lessonCount++; mcqCount += mcqs.length; classifyCount += cl.count;
       allMcqs.push(...mcqs);
+      if (mcqs.length > 1) mcqHeavy.push(`${topic}/${lesson} (${mcqs.length})`);
 
       const lines = [];
+      cl.problems.forEach(p => {
+        problemCount += p.issues.length;
+        lines.push(`  ✘ classify "${p.prompt.slice(0, 60)}${p.prompt.length > 60 ? '…' : ''}"`);
+        p.issues.forEach(x => lines.push(`      - ${x}`));
+      });
+      checkReviewTargets(html).forEach(x => { problemCount++; lines.push(`  ✘ ${x}`); });
       mcqs.forEach((q, i) => {
         const issues = checkLengths(q);
         if (issues.length) {
@@ -149,7 +237,8 @@ async function run() {
       const pos = checkPositions(mcqs);
       if (pos.issues.length) { problemCount += pos.issues.length; pos.issues.forEach(x => lines.push(`  ⚠ positions: ${x}`)); }
 
-      const header = `${lines.length ? '⚠' : '✓'} ${topic}/${lesson}  (${mcqs.length} MCQ, answer order: ${pos.summary})`;
+      const mixText = Object.entries(mix).filter(([, v]) => v).map(([k, v]) => `${v} ${k}`).join(', ');
+      const header = `${lines.length ? '⚠' : '✓'} ${topic}/${lesson}  (${mixText}${mcqs.length > 1 ? `; MCQ order: ${pos.summary}` : ''})`;
       console.log(header);
       lines.forEach(l => console.log(l));
     }
@@ -190,7 +279,12 @@ async function run() {
     console.log(`\n${thinTotal}/${mcqCount} MCQ still have fewer than ${MIN_OPTIONS} options. Each needs one more `
       + `plausible distractor — a real misconception, with feedback that names it.`);
 
-  console.log(`\nScanned ${mcqCount} MCQ across ${lessonCount} lesson(s) — ${problemCount} issue(s).`);
+  /* Not counted as issues: a backlog to work through, like the three-option one. */
+  if (mcqHeavy.length)
+    console.log(`\nℹ ${mcqHeavy.length} lesson(s) still use more than one MCQ. Prefer classify, cloze, or checkset `
+      + `items; keep at most one MCQ per lesson:\n  ${mcqHeavy.join(', ')}`);
+
+  console.log(`\nScanned ${mcqCount} MCQ and ${classifyCount} classify item(s) across ${lessonCount} lesson(s) — ${problemCount} issue(s).`);
   if (problemCount && STRICT) process.exit(1);
 }
 

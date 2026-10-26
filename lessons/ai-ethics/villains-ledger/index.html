@@ -6,8 +6,8 @@
   <title>Why Supervillains Prefer to Be Paid in Crypto · PhilMates</title>
   <meta name="description" content="How cryptocurrency works, why some people wanted money with no bank in the middle, and why its energy use, its gambling, and its usefulness for ransom all follow from that design, told through a supervillain who can't work out how to get paid.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
-  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
+  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
   <script type="module" src="./assets/ledger.js"></script>
   <style>
     phil-side img.door { float: right; width: clamp(96px, 10vw, 140px); height: auto; margin: 0 0 6px 12px; border: 3px solid var(--border); }
@@ -68,7 +68,7 @@
   </phil-slide>
 
   <!-- 4. Option two: the bank -->
-  <phil-slide>
+  <phil-slide id="the-bank">
     <img slot="art" src="./assets/bank-counter.png" alt="At a bank counter, a figure in a purple coat with black hair and a large mustache faces a teller in a vest who holds up one hand to say stop; a round steel vault door stands behind them">
     <h1>Option Two: The Bank</h1>
     <p>Doctor Calamity puts on a wig and a false mustache and goes to a bank. She asks to receive one billion dollars by transfer.</p>
@@ -80,16 +80,20 @@
     </ul>
   </phil-slide>
 
-  <!-- 5. MCQ: why not a bank [correct: B] -->
+  <!-- 5. Classify: cash or the bank -->
   <phil-slide>
-    <h1>The Trouble With Banks</h1>
-    <phil-mcq prompt="Doctor Calamity can't use a bank transfer for the ransom. What is the main reason?"
-              explain="Right. A bank transfer is a change to the bank's own records, so the bank decides whether it happens. It can ask who she is, refuse, freeze the account, or reverse the payment later.">
-      <phil-choice feedback="Large transfers between banks usually arrive within days. Speed is not what stops her.">A bank transfer of that size would take months to arrive</phil-choice>
-      <phil-choice correct>The bank keeps the record and can refuse the payment</phil-choice>
-      <phil-choice feedback="Banks move far more than that every day. Her problem is that a bank is able to say no.">Banks do not hold enough money to move a billion dollars</phil-choice>
-      <phil-choice feedback="Fees are small next to a billion dollars. Her problem is that someone else controls the payment.">The fees on a billion-dollar transfer would be too high</phil-choice>
-    </phil-mcq>
+    <h1>The Trouble With Both Options</h1>
+    <phil-classify review="the-bank" prompt="Each problem below stands in Doctor Calamity's way. Does it come from paying in cash, or from using the bank?"
+                   explain="Right. Cash is heavy and has to be handed over in person. The bank keeps the record of the payment, so it can ask who she is, refuse the payment, freeze the account, or undo the payment later.">
+      <phil-col key="cash">Cash</phil-col>
+      <phil-col key="bank">The bank</phil-col>
+      <phil-item answer="cash" why="A billion dollars in $100 bills weighs about ten tons.">The ransom would need a forklift, not a suitcase</phil-item>
+      <phil-item answer="cash" why="Cash has to be handed over in person, and the police wait at the pickup.">Somebody has to collect the ransom in person, and the police wait there</phil-item>
+      <phil-item answer="bank" why="By law, a bank must check a customer's identity before it opens an account.">She must prove who she is before an account is opened</phil-item>
+      <phil-item answer="bank" why="A bank can refuse a payment that looks like crime, and it has to report it.">The payment can be refused, and reported, if it looks like crime</phil-item>
+      <phil-item answer="bank" why="A bank can freeze an account so that the money in it cannot be moved.">The account can be frozen, so the money in it cannot be moved</phil-item>
+      <phil-item answer="bank" why="A bank can undo a payment that turns out to be fraud.">The payment can be undone later if it turns out to be fraud</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 1 — MONEY IS A LIST ============ -->
@@ -108,7 +112,7 @@
   </phil-slide>
 
   <!-- 7. The keeper's four jobs -->
-  <phil-slide>
+  <phil-slide id="four-jobs">
     <img slot="art" src="./assets/two-ledgers.png" alt="Left: an old man holding large keys stands by one huge open book on a wooden desk. Right: eight villagers stand in a ring, each holding an identical small book that glows green">
     <h1>The Keeper's Four Jobs</h1>
     <p>Call whoever keeps the ledger the <strong>keeper</strong>. For most money, the keeper is a bank with a government behind it.</p>
@@ -219,7 +223,7 @@
   </phil-slide>
 
   <!-- 16. Voting fails -->
-  <phil-slide>
+  <phil-slide id="voting-fails">
     <img slot="art" src="./assets/cardboard-crowd.png" alt="A figure in a purple coat with a large mustache stands with arms folded in front of rows of brown cardboard cutout henchmen, one of which has fallen flat; two workers in gray overalls look on">
     <h1>Part Three: Who Writes the Next Page?</h1>
     <p>Suppose the computers simply voted on the next block, with one vote each.</p>
@@ -258,7 +262,7 @@
   <!-- 19. MCQ: why costly [correct: C] -->
   <phil-slide>
     <h1>Why So Much Work?</h1>
-    <phil-mcq prompt="Proof of work makes every guess cost electricity. Why does Bitcoin need guessing to be costly?"
+    <phil-mcq review="voting-fails" prompt="Proof of work makes every guess cost electricity. Why does Bitcoin need guessing to be costly?"
               explain="Right. Fake voters are free, so Bitcoin counts work in place of votes. To approve a false block, a cheat would have to out-guess all the honest miners together, and that costs more electricity than the cheat could gain.">
       <phil-choice feedback="Nobody checks blocks by hand. The cost is there to make fake voters expensive.">So that payments are slow enough for people to check them by hand</phil-choice>
       <phil-choice feedback="The supply of coins is set by a separate rule. The cost of guessing protects the ledger.">So that the number of coins stays small and each one stays valuable</phil-choice>
@@ -367,10 +371,10 @@
   <!-- 28. Checkset: built in or growing pain -->
   <phil-slide>
     <h1>Built In, or Growing Pain?</h1>
-    <phil-checkset prompt="Some of crypto's problems could be fixed with better apps or clearer laws. Check every problem that comes from having no keeper."
-                   explain="Right. Confusing apps, unclear tax rules, and dishonest ads can all be fixed without changing what crypto is. The other four come from removing the keeper. Nobody can undo a payment, nobody stands behind the price, nobody checks a name, and a costly lottery stands in for a trusted list.">
+    <phil-checkset review="four-jobs" prompt="Some of crypto's problems could be fixed with better apps or clearer laws. Check every problem that comes from having no keeper."
+                   explain="Right. Confusing apps, unclear tax rules, and dishonest ads can all be fixed without changing what crypto is. The other four come from removing the keeper. Nobody can undo a payment, nobody stands behind the price, nobody checks a name, and a costly lottery stands in for a trusted list, with nobody in charge to change it.">
       <phil-statement correct>A payment sent to a scammer cannot be reversed by anyone</phil-statement>
-      <phil-statement correct>Protecting Bitcoin's ledger uses a country's worth of electricity</phil-statement>
+      <phil-statement correct>Protecting Bitcoin's ledger uses a country's worth of electricity, and nobody is in charge to order a change</phil-statement>
       <phil-statement correct>The price can fall by half because nothing stands behind it</phil-statement>
       <phil-statement correct>A ransom can be collected with no pickup and no name</phil-statement>
       <phil-statement>Wallet apps are confusing for people who are new to them</phil-statement>

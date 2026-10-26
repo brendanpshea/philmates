@@ -3429,8 +3429,19 @@ fact about Nell is switched on.
 Statement 2 is Engelhardt; statement 3 is Daniels's "is health care special?";
 statements 4 and 5 pull against each other, and Act 5 is built on that.
 
-**Mix:** 5 graded (2 MCQ, 2 cloze, 1 checkset), 2 polls, 3 widgets, 2
-comparisons, belief probe. Widgets live in `assets/ships-chest.js`.
+**Mix (revised 2026-10-25, now 36 slides):** 5 graded (3 classify, 1 cloze,
+1 checkset), no MCQ, 2 polls, 3 widgets, 2 comparisons, belief probe. Widgets
+live in `assets/ships-chest.js`. The graded items were rebuilt as the classify
+pilot and went through five rounds of blind and adversarial review (see
+"Answer keys" in AUTHORING.md). That added slide 30b, "Four Hard Questions",
+which defines fair chances and the sickest first so they can be graded. Other
+changes:
+- The EMTALA stem now states an emergency, and slide 7 gives the emergency
+  condition and the UN's "not … a right to be healthy" gloss.
+- The aggregation row no longer misstates Daniels, who permits some
+  aggregation.
+- Slide 28 adds that Coby Howard had no donor match.
+- Slide 21 credits "natural lottery" to Rawls.
 
 ### Widgets
 - **`<phil-lanterns>`**: a pixel ship with a lantern at each of eight
@@ -3520,5 +3531,16 @@ Searle's memorize answer; robot; brain simulator; **[V] `<phil-where>`**; MCQ
 name that reply. Act 6: the octopus; poll, must it unmask?; belief review;
 recap.
 
-**Mix:** 5 graded (3 MCQ, 1 checkset, 1 cloze), 2 polls, 3 widgets, 1
-comparison, belief probe. Widgets live in `assets/masquerade.js`.
+**Mix (revised 2026-10-25, now 36 slides):** 5 graded (4 classify, 1 MCQ),
+2 polls, 3 widgets, 1 comparison, belief probe. Widgets live in
+`assets/masquerade.js`. The graded items were rebuilt as the classify pilot and
+went through five rounds of blind and adversarial review. That added slide
+29b, "The Other-Minds Reply", with Searle's answer, so the reply can be graded.
+Other changes:
+- Slide 16 names the argument from consciousness.
+- Slide 18 separates "can't do X" from "does X without feeling", and notes
+  Turing's suspicion that many such claims are the consciousness objection in
+  disguise.
+- Slide 24 adds Searle's "We are precisely such machines".
+- Deliberate mistakes are credited to Turing's text, not his sample dialogue.
+- The octopus slide matches Bender and Koller.

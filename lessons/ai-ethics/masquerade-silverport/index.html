@@ -6,8 +6,8 @@
   <title>The Masquerade of Silverport: The Turing Test and the Chinese Room · PhilMates</title>
   <meta name="description" content="One guest at the masked ball is a machine. Can you tell which? Turing's imitation game, a working ELIZA, Searle's Chinese Room played from the inside, the replies to Searle, and whether chatbots should have to unmask.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
-  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
+  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
   <script type="module" src="./assets/masquerade.js"></script>
   <style>
     phil-cloze .line { display: block; margin: 0 0 .4em; line-height: 1.45; font-size: clamp(17px, 1.7vw, 20px); }
@@ -96,7 +96,7 @@
     <h1>Turing's Question</h1>
     <p>The host's game comes from the mathematician Alan Turing, who helped break German codes in the Second World War.</p>
     <ul reveal>
-      <li>In 1950 he asked, "Can machines think?" He then set the question aside as too vague to answer.</li>
+      <li>In 1950 he asked, "Can machines think?" Then he called that question "too meaningless to deserve discussion."</li>
       <li>Words like "machine" and "think" mean different things to different people. Arguing over definitions would go nowhere.</li>
       <li>So he replaced the question with a game that has a clear result. He called it the <strong>imitation game</strong>.</li>
     </ul>
@@ -118,7 +118,7 @@
   <phil-slide>
     <img slot="art" src="./assets/brass-guest.png" alt="A brass clockwork figure with gear joints, a feathered white mask, and a blue evening coat, bowing politely">
     <h1>Turing's Imagined Dialogue</h1>
-    <p>Turing's paper includes a sample exchange. He made it up to show the kind of answers a good machine might give.</p>
+    <p>Turing's paper includes a sample exchange. He made it up to show the kind of answers a player might give.</p>
     <div class="dialogue">
       <p><strong>Q:</strong> Please write me a sonnet on the subject of the Forth Bridge.</p>
       <p><strong>A:</strong> Count me out on this one. I never could write poetry.</p>
@@ -126,21 +126,27 @@
       <p><strong>A:</strong> (Pause about 30 seconds and then give as answer) 105621.</p>
     </div>
     <ul reveal>
-      <li>The sum is wrong. The right answer is 105721. A machine playing the game well would hide how fast and accurate it is.</li>
+      <li>The sum is wrong. The right answer is 105721.</li>
+      <li>Elsewhere in the paper, Turing says a machine playing the game would make deliberate mistakes, so its accuracy doesn't give it away.</li>
       <li>So passing the test can mean pretending to be worse than you are.</li>
     </ul>
   </phil-slide>
 
-  <!-- 8. MCQ: what the test measures [correct: C] -->
+  <!-- 8. Classify: what the test looks at -->
   <phil-slide>
     <h1>What Does the Test Measure?</h1>
-    <phil-mcq review="imitation-game" prompt="A machine plays Turing's imitation game and the interrogator can't pick it out. What has it shown?"
-              explain="Right. The test looks only at the written answers. Turing's bet is that this is all we ever have to go on, even with other people. Whether it shows thinking is the question the rest of the lesson argues about.">
-      <phil-choice feedback="The test never looks inside the machine. It checks only what comes out of it.">That it has feelings like ours, since it describes them so convincingly</phil-choice>
-      <phil-choice feedback="Turing's own sample answer gets a sum wrong on purpose. Accuracy is not what the test checks.">That it answers every question correctly and faster than a person</phil-choice>
-      <phil-choice correct>That its written answers can't be told apart from a person's</phil-choice>
-      <phil-choice feedback="The interrogator never sees the players. Their bodies are hidden by design.">That it looks and moves enough like a person to fool an observer</phil-choice>
-    </phil-mcq>
+    <phil-classify review="imitation-game" prompt="In Turing's game, what can the interrogator see?"
+                   explain="Right. The interrogator sees only the typed replies: what they say, whether they make sense, and any mistakes in them. Everything else about the player is hidden on purpose.">
+      <phil-col key="in" descriptive>The interrogator can see this</phil-col>
+      <phil-col key="out" descriptive>Hidden from the interrogator</phil-col>
+      <phil-item answer="in" why="The typed replies are exactly what the interrogator gets.">The words in each typed reply</phil-item>
+      <phil-item answer="in" why="Whether a reply answers the question is right there in the reply.">Whether each reply answers the question or changes the subject</phil-item>
+      <phil-item answer="in" why="A mistake shows up in the reply. Turing says a machine playing the game would make some on purpose.">A wrong number in a typed answer, like a bad sum</phil-item>
+      <phil-item answer="out" why="Answers come back typed, so the voice is never heard.">The player's voice</phil-item>
+      <phil-item answer="out" why="The players are in another room, out of sight.">What the player looks like</phil-item>
+      <phil-item answer="out" why="The interrogator never sees inside the player; working out what it is from the replies is the whole game.">A look inside the player, to check what it is made of</phil-item>
+      <phil-item answer="out" why="The test sees only what is written. Whether anything is felt behind the words is the consciousness objection.">Whether the player really feels anything, apart from what it writes</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 9. Turing's prediction -->
@@ -196,7 +202,7 @@
       <li>In 2014 a chatbot called Eugene Goostman was entered in a Turing test event in London.</li>
       <li>It played a 13-year-old boy from Ukraine whose first language wasn't English.</li>
       <li>That made its odd answers and gaps in knowledge look like a child's mistakes. A third of the judges took it for a person.</li>
-      <li>Critics said the test had been gamed. A good disguise is not the same as a good mind.</li>
+      <li>Critics said it gamed the test by dodging hard questions instead of answering them. A good disguise is not the same as a good mind.</li>
     </ul>
   </phil-slide>
 
@@ -207,22 +213,24 @@
       <li>In 2025, Cameron Jones and Benjamin Bergen at UC San Diego ran Turing's three-player game: an interrogator, a person, and a chatbot, chatting at once.</li>
       <li>GPT-4.5, told to play a shy young person who knows internet culture and uses slang, was picked as the human 73% of the time.</li>
       <li>That is more often than the real people were picked. ELIZA, in the same study, was picked 23% of the time.</li>
-      <li>By Turing's own standard, a machine has now passed. Whether it thinks is a separate question.</li>
+      <li>In Turing's own three-player setup, the machine was picked as the human more often than the humans were. Whether it thinks is a separate question.</li>
     </ul>
   </phil-slide>
 
-  <!-- 15. Checkset: tricks vs ability -->
+  <!-- 15. Classify: disguise or skill -->
   <phil-slide>
     <h1>Tricks of the Trade</h1>
-    <phil-checkset review="goostman" prompt="Check every move that could help a machine pass the test without making it any smarter."
-                   explain="Right. Playing a child, changing the subject, and slipping in typos or slow answers all lower what the judge expects. Turing's own imagined machine gets a sum wrong on purpose. Knowing more facts or following a long argument would be real ability, though even those don't settle whether it understands.">
-      <phil-statement correct>Claiming to be a young teenager with shaky English</phil-statement>
-      <phil-statement correct>Changing the subject whenever a question gets hard</phil-statement>
-      <phil-statement correct>Adding typos and slow, wrong answers to sums</phil-statement>
-      <phil-statement>Correctly answering a long chain of questions about one story</phil-statement>
-      <phil-statement>Explaining a joke the judge has just made up</phil-statement>
-      <phil-statement>Remembering what the judge said ten minutes ago</phil-statement>
-    </phil-checkset>
+    <phil-classify review="goostman" prompt="Each move could help a machine pass the test. Is it a disguise or a skill?"
+                   explain="Right. A disguise hides what the machine is, by excusing its failures or by faking human ones, so passing with one tells you little. A skill means actually getting something right. Even skill doesn't settle whether the machine understands, which is Searle's question.">
+      <phil-col key="dis">Disguise: hides what the machine is or what it can do</phil-col>
+      <phil-col key="skill">Skill: really answers the question well, like a right sum</phil-col>
+      <phil-item answer="dis" why="It excuses odd answers and gaps as a child's mistakes, as Eugene Goostman did.">Claiming to be a 13-year-old with shaky English</phil-item>
+      <phil-item answer="dis" why="It avoids the question instead of answering it, the criticism made of Eugene Goostman.">Changing the subject to avoid a question it can't answer</phil-item>
+      <phil-item answer="dis" why="Typos make replies look human without showing any ability.">Adding typos on purpose</phil-item>
+      <phil-item answer="dis" why="A wrong sum on purpose doesn't answer well. It hides the machine's accuracy, as Turing says a machine playing the game would.">Pausing, then giving a wrong sum on purpose</phil-item>
+      <phil-item answer="skill" why="Every answer has to be right; there is nothing to hide behind.">Correctly answering several questions about one story</phil-item>
+      <phil-item answer="skill" why="A joke that didn't exist before can't be met with a stock reply.">Explaining a joke the judge has just made up</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 3 — TURING ANSWERS HIS CRITICS ============ -->
@@ -230,9 +238,9 @@
   <!-- 16. The objection from consciousness -->
   <phil-slide id="objections">
     <h1>"But Does It Feel Anything?"</h1>
-    <p>Turing answered a list of objections in the same paper. The first one here is about inner experience.</p>
+    <p>Turing answered a list of objections in the same paper. He called this one the argument from consciousness. It grants that a machine might act as if it feels, and denies that it feels anything.</p>
     <ul reveal>
-      <li>A surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt.</li>
+      <li>A brain surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt.</li>
       <li>Turing replied: how do you know other <em>people</em> feel anything? You only see what they say and do.</li>
       <li>If you demand more of machines than of people, you would have to doubt everyone but yourself.</li>
       <li>So, Turing wrote, it is usual to have "the polite convention that everyone thinks."</li>
@@ -243,13 +251,13 @@
   <phil-slide>
     <phil-thinker slot="art" name="Ada Lovelace" dates="1815–1852" work="Note G on the Analytical Engine (1843)"
                   img="./assets/idea-lovelace.png" alt="A brass calculating engine of gears and columns beside stacks of cards, a quill, and an inkwell" accent="#ff6ad5">
-      <p>A machine can only do what we know how to tell it to do.</p>
+      <p>A machine originates nothing. It does what we know how to order it to do.</p>
       <blockquote>“The Analytical Engine has no pretensions whatever to originate any thing.”</blockquote>
     </phil-thinker>
     <h1>Lady Lovelace's Objection</h1>
     <ul reveal>
       <li>Ada Lovelace's notes on Charles Babbage's planned Analytical Engine, a mechanical computer, include what is often called the first published program.</li>
-      <li>She wrote that the Engine "has no pretensions whatever to originate any thing." It does only what we know how to order it to do.</li>
+      <li>She wrote that the Engine "has no pretensions whatever to originate any thing." It "can do whatever we know how to order it to perform," and nothing it thinks up itself.</li>
       <li>Turing's reply: machines surprise him all the time. And a machine that learns could do things its makers never planned.</li>
     </ul>
   </phil-slide>
@@ -258,25 +266,28 @@
   <phil-slide>
     <h1>"A Machine Could Never…"</h1>
     <ul reveal>
-      <li>Critics in Turing's day made lists: a machine could never be kind, have a sense of humor, fall in love, enjoy strawberries and cream, or make a mistake.</li>
-      <li>Turing called these the arguments from various disabilities.</li>
-      <li>His reply: people built these lists from the clumsy machines they had seen. That says little about what machines could become.</li>
-      <li>Some items have aged badly. Chatbots now joke, and Turing's own imagined machine makes mistakes on purpose.</li>
+      <li>Turing collected things critics said a machine could never do: be kind, have a sense of humor, fall in love, enjoy strawberries and cream, make a mistake.</li>
+      <li>He called these the arguments from various disabilities. As stated, they say a machine can't even <em>do</em> these things.</li>
+      <li>His reply: the lists came from the clumsy machines people had seen. He also suspected many were the consciousness objection in disguise.</li>
+      <li>Some items have aged badly. Chatbots now joke, and Turing says a machine playing his game would make mistakes on purpose.</li>
     </ul>
   </phil-slide>
 
-  <!-- 19. Cloze: objections and replies -->
+  <!-- 19. Classify: which objection -->
   <phil-slide>
     <h1>Match the Reply</h1>
-    <p>Pick the objection each guest is raising.</p>
-    <phil-cloze review="objections" explain="Right. Feelings you can't see is the consciousness objection, and Turing answers it with other minds. Only doing what it's told is Lovelace's objection, answered with learning machines. A list of things machines can't do is the argument from disabilities, answered by pointing out how the lists were made.">
-      <span class="line">"It writes lovely poems. But it feels nothing when it writes them."
-        <phil-blank answer="consciousness" options="consciousness,Lovelace's,disabilities">consciousness</phil-blank></span>
-      <span class="line">"It can't surprise us. It only follows the instructions someone gave it."
-        <phil-blank answer="Lovelace's" options="consciousness,Lovelace's,disabilities">Lovelace's</phil-blank></span>
-      <span class="line">"No machine will ever tell a good joke or fall in love."
-        <phil-blank answer="disabilities" options="consciousness,Lovelace's,disabilities">disabilities</phil-blank></span>
-    </phil-cloze>
+    <phil-classify review="objections" prompt="Each guest raises one of the objections Turing answered. Sort them by what each guest actually claims."
+                   explain="Right. Granting the behavior but denying the feeling is the consciousness objection, which Turing answers with other minds. Only doing what it's told is Lovelace's objection, which he answers with learning machines. 'You'll never build one that can…' is the argument from disabilities, which he answers by asking where the lists came from.">
+      <phil-col key="con">Consciousness</phil-col>
+      <phil-col key="love">Lovelace's objection</phil-col>
+      <phil-col key="dis">Various disabilities</phil-col>
+      <phil-item answer="con" why="It grants the poems and denies the feeling: Jefferson's point.">"It writes lovely poems, but it feels nothing as it writes them."</phil-item>
+      <phil-item answer="con" why="It grants all the behavior and denies only the inner feeling.">"It says 'that hurts' at all the right moments, but nothing ever hurts it."</phil-item>
+      <phil-item answer="love" why="Lovelace: the Engine originates nothing; it does whatever we know how to order it to perform. Turing treats 'it never does anything new' as her objection too.">"It originates nothing. It only does what someone told it to do."</phil-item>
+      <phil-item answer="love" why="The machine originates nothing; its instructions came from people.">"Everything it does, a programmer put there first."</phil-item>
+      <phil-item answer="dis" why="It says a machine can't even do this. Having a sense of humor is on Turing's list.">"You'll never build a machine with a sense of humor."</phil-item>
+      <phil-item answer="dis" why="It says a machine can't even do this. Making a mistake is on the same lists, and Turing says a machine playing the game would make them on purpose.">"You'll never build a machine that makes a mistake."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 4 — THE ROOM ============ -->
@@ -318,7 +329,7 @@
     <phil-thinker slot="art" name="John Searle" dates="1932–2025" work="“Minds, Brains, and Programs” (1980)"
                   img="./assets/idea-searle.png" alt="A closed door with paper slips of wavy marks sliding out of a slot near the floor, a book beside them" accent="#ffcf5a">
       <p>Running a program, however good, is not the same as understanding.</p>
-      <blockquote>“Syntax by itself is neither constitutive of nor sufficient for semantics.” (1990)</blockquote>
+      <blockquote>“Syntax by itself is neither constitutive of nor sufficient for semantics.” (<em>Scientific American</em>, 1990)</blockquote>
     </phil-thinker>
     <h1>Searle's Argument</h1>
     <ul reveal>
@@ -343,6 +354,7 @@
         <p class="case">On this view, the right program would understand the slips, as you did not.</p>
       </phil-side>
     </phil-compare>
+    <p class="muted">Searle doesn't say machines can't think. "We are precisely such machines," he wrote. What he denies is that running a program is enough.</p>
   </phil-slide>
 
   <!-- 25. MCQ: what the room shows [correct: B] -->
@@ -361,14 +373,14 @@
   <!-- ============ ACT 5 — REPLIES TO SEARLE ============ -->
 
   <!-- 26. The systems reply -->
-  <phil-slide>
+  <phil-slide id="systems-reply">
     <img slot="art" src="./assets/whole-room.png" alt="A cutaway of a small stone room: a person writing at a desk beside a giant book, baskets of paper slips, and a slot in the door">
     <h1>The Systems Reply</h1>
-    <p>Searle published his paper with replies from critics. The most common one goes like this.</p>
+    <p>In the paper, Searle answers objections he had heard when presenting the argument. One common reply goes like this.</p>
     <ul reveal>
-      <li>Of course the person in the room doesn't understand. The person is only one part, like one neuron in your brain.</li>
+      <li>Of course the person in the room doesn't understand. The person is only one part of the system.</li>
       <li>The whole system understands: person, rulebook, paper, and all.</li>
-      <li>Your neurons don't understand English either. You do.</li>
+      <li>Defenders often add a comparison: your neurons don't understand English either. You do.</li>
     </ul>
   </phil-slide>
 
@@ -405,6 +417,17 @@
       <li>If a brain understands, surely an exact copy of its workings does too.</li>
       <li>Searle's answer: run that copy with water pipes and valves, turned by a person following instructions.</li>
       <li>The pipes copy the brain's pattern but not its causal powers, he says. Nothing in them understands.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 29b. The other-minds reply -->
+  <phil-slide id="other-minds">
+    <h1>The Other-Minds Reply</h1>
+    <ul reveal>
+      <li>One more reply: how do you know that other <em>people</em> understand Chinese? Only from what they say and do.</li>
+      <li>So if you credit people with understanding because of their behavior, you should credit the room too.</li>
+      <li>This is Turing's polite convention again, now aimed at Searle.</li>
+      <li>Searle's answer: the question isn't how we know that someone understands. It's what we are saying is there when they do, and the room doesn't have it.</li>
     </ul>
   </phil-slide>
 
@@ -447,16 +470,22 @@
     </phil-where>
   </phil-slide>
 
-  <!-- 31. MCQ: which reply [correct: D] -->
+  <!-- 31. Classify: which reply -->
   <phil-slide>
     <h1>Name That Reply</h1>
-    <phil-mcq review="robot-reply" prompt="A critic says: &quot;The room only has slips. Give the program a camera to see cats and a speaker to call them, and its words would finally mean something.&quot; Which reply is this?"
-              explain="Right. Tying symbols to what a body sees and does is the robot reply. Searle answers that the camera's signals reach the person as more shapes to match.">
-      <phil-choice feedback="The systems reply is about the whole room understanding. This critic is adding senses and actions instead.">The systems reply</phil-choice>
-      <phil-choice feedback="That reply copies a brain's workings. This critic adds a camera and a speaker.">The brain simulator reply</phil-choice>
-      <phil-choice feedback="The other-minds reply is about how we judge understanding at all. This critic wants to change the machine.">The other-minds reply</phil-choice>
-      <phil-choice correct>The robot reply</phil-choice>
-    </phil-mcq>
+    <phil-classify review="systems-reply" prompt="Each critic is answering Searle. Which reply is it?"
+                   explain="Right. The systems reply puts understanding in the whole room. The robot reply ties the symbols to a body in the world. The brain simulator reply copies a brain's workings. The other-minds reply says behavior is all we ever go on.">
+      <phil-col key="sys">Systems reply</phil-col>
+      <phil-col key="rob">Robot reply</phil-col>
+      <phil-col key="brain">Brain simulator reply</phil-col>
+      <phil-col key="other">Other-minds reply</phil-col>
+      <phil-item answer="sys" why="Understanding belongs to the whole system, not to the person inside it.">"You don't understand, but you plus the book and the paper, taken together, do."</phil-item>
+      <phil-item answer="sys" why="No part understands, yet the whole does. That is about parts and wholes, not copying neurons, so it is the systems reply.">"No single neuron understands English, yet you do. The same goes for the room."</phil-item>
+      <phil-item answer="rob" why="Connecting symbols to what a body sees and does is the robot reply.">"Put the program in a body with cameras and wheels, so its symbols connect to the world."</phil-item>
+      <phil-item answer="rob" why="Cameras and arms tie the words to the things they name through a body.">"Give the room cameras and arms, so it can see and handle the things its words are about."</phil-item>
+      <phil-item answer="brain" why="Copying what a speaker's neurons do is the brain simulator reply.">"Make the program copy, step by step, what a Chinese speaker's neurons do."</phil-item>
+      <phil-item answer="other" why="Judging by behavior, as we do with people, is the other-minds reply.">"You only know other people understand from how they act. Judge the room the same way."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 6 — UNMASKING ============ -->
@@ -467,8 +496,8 @@
     <h1>A Room Under the Sea</h1>
     <ul reveal>
       <li>Today's chatbots learn from vast amounts of text. Do they understand it, or match its shapes?</li>
-      <li>In 2020 the linguists Emily Bender and Alexander Koller offered a new version of the Room.</li>
-      <li>An octopus taps a cable between two people on islands and learns to imitate their messages. It has never seen what the words refer to.</li>
+      <li>In 2020 the linguists Emily Bender and Alexander Koller offered a thought experiment in the spirit of the Room.</li>
+      <li>An octopus taps a cable between two islanders, learns to predict one's replies, then cuts the cable and pretends to be them. It never sees what the words refer to.</li>
       <li>When one person needs real help with something new, the octopus has nothing behind its fluent replies.</li>
     </ul>
   </phil-slide>
@@ -477,7 +506,7 @@
   <phil-slide>
     <img slot="art" src="./assets/brass-guest.png" alt="A brass clockwork figure with gear joints, a feathered white mask, and a blue evening coat, bowing politely">
     <h1>Decision Point: Must It Unmask?</h1>
-    <p>Whatever machines understand, they now pass for people. Since 2019 California has banned bots that hide what they are to sell something or sway a vote. From August 2026 the EU requires chatbots to tell people they are talking to an AI.</p>
+    <p>Whatever machines understand, they now pass for people. Since 2019 California has banned bots that hide what they are to sell something or sway a vote. Since August 2026 the EU has required chatbots to tell people they are talking to an AI.</p>
     <phil-poll prompt="Should a machine that talks with people always have to say that it is a machine?"
                explain="The case for yes is about deception, not about whether machines think. People share more, trust more, and buy more when they think they are talking to a person. The case against is that a label everywhere may be impractical, and that a useful tool needn't announce itself. Notice that you can answer this without settling Turing or Searle.">
       <phil-choice note="Then honesty with people matters more than whether the machine thinks.">Yes, always. People have a right to know.</phil-choice>

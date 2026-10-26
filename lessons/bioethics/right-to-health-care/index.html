@@ -6,8 +6,8 @@
   <title>The Ship's Chest: The Right to Health Care · PhilMates</title>
   <meta name="description" content="A ship's crew decides what its common chest owes a sailor who falls sick. Norman Daniels's opportunity argument for a right to health care, a utilitarian ledger, Engelhardt's natural lottery, Oregon's rationing list, and the rule of rescue.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
-  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
+  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
   <script type="module" src="./assets/ships-chest.js"></script>
   <style>
     .trio { display: flex; gap: 14px; margin: 4px 0 10px; flex-wrap: wrap; }
@@ -140,23 +140,27 @@
     <h1>What the Law Says Today</h1>
     <p>A <strong>legal right</strong> is one the law enforces. A <strong>moral right</strong> is one you have whether or not the law agrees. Here are some legal ones.</p>
     <ul reveal>
-      <li>EMTALA, a 1986 US law, says hospitals with emergency rooms that take Medicare must examine anyone who comes in, then stabilize or safely transfer them.</li>
+      <li>EMTALA (1986) says hospitals with emergency rooms that take Medicare must examine anyone who comes in and, if it is an emergency, stabilize or safely transfer them.</li>
       <li>That holds whether or not the patient can pay. But it is a right to emergency care only: the hospital can still bill, and nothing is owed once the patient is stable.</li>
       <li>The UN's Universal Declaration of Human Rights (1948) lists medical care as part of a decent standard of living.</li>
-      <li>A 1966 UN treaty promises "the highest attainable standard of physical and mental health." The US signed it in 1977 and has never ratified it.</li>
+      <li>A 1966 UN treaty recognizes a right to "the highest attainable standard of physical and mental health." The US signed it in 1977 and has never ratified it.</li>
     </ul>
+    <p class="muted">The UN explains that this right "is not to be understood as a right to be healthy." It covers the care and conditions that protect health.</p>
   </phil-slide>
 
-  <!-- 8. MCQ: EMTALA [correct: C] -->
+  <!-- 8. Classify: what EMTALA guarantees -->
   <phil-slide>
     <h1>The Emergency Room</h1>
-    <phil-mcq review="the-law" prompt="A woman with a badly broken arm and no insurance walks into a US emergency room. What does EMTALA guarantee her?"
-              explain="Right. EMTALA is a narrow legal right. She gets an exam and enough treatment to make her stable, and the hospital can still bill her. Whether she is owed more than that is a moral question, and it is the one this lesson is about.">
-      <phil-choice feedback="EMTALA does not make care free. The hospital can bill her afterward, and follow-up care is not covered by the law.">Free treatment for the arm, including any follow-up visits he needs</phil-choice>
-      <phil-choice feedback="Turning away emergency patients who can't pay is what EMTALA was passed to stop.">Nothing, since an emergency room may turn away a woman who can't pay</phil-choice>
-      <phil-choice correct>An exam, and treatment to stabilize her, whether or not she can pay</phil-choice>
-      <phil-choice feedback="EMTALA is about treatment in an emergency. It gives nobody insurance.">Health insurance through the hospital, starting from the day he arrives</phil-choice>
-    </phil-mcq>
+    <phil-classify review="the-law" prompt="A patient having a medical emergency, who can't pay, comes into the emergency room of a US hospital that takes Medicare. What does EMTALA guarantee?"
+                   explain="Right. EMTALA is a narrow legal right: an exam, then stabilizing treatment or a safe transfer. The hospital can still bill, and the duty ends once the patient is stable. Whether the patient is owed more is the moral question this lesson is about.">
+      <phil-col key="yes" descriptive>Guaranteed</phil-col>
+      <phil-col key="no" descriptive>Not guaranteed</phil-col>
+      <phil-item answer="yes" why="EMTALA requires a screening exam for anyone who comes in.">A screening exam</phil-item>
+      <phil-item answer="yes" why="In an emergency, the hospital must stabilize the patient or transfer them safely.">Treatment to stabilize them, or a safe transfer to a hospital that can</phil-item>
+      <phil-item answer="no" why="EMTALA requires care, not free care. The hospital can still send a bill afterward.">Free care: the hospital may not send a bill afterward</phil-item>
+      <phil-item answer="no" why="EMTALA's duty ends once the patient is stable; it requires no care after that.">Follow-up visits once the patient is stable</phil-item>
+      <phil-item answer="no" why="EMTALA is about emergency treatment. It gives nobody insurance.">Health insurance</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 2 — DANIELS'S ARGUMENT ============ -->
@@ -168,7 +172,7 @@
       <p>Illness shrinks your share of life's opportunities, so justice requires health care.</p>
     </phil-thinker>
     <h1>Is Health Care Special?</h1>
-    <p>One argument for a right to health care comes from the philosopher Norman Daniels, who first set it out in <em>Just Health Care</em> (1985).</p>
+    <p>One argument for a right to health care comes from the philosopher Norman Daniels, who set it out in full in <em>Just Health Care</em> (1985).</p>
     <ul reveal>
       <li>Nobody thinks you have a right to a fancy hat. You buy one if you want it and can afford it.</li>
       <li>Most people think a sailor with a broken leg should not be left on the dock because she is poor.</li>
@@ -281,7 +285,7 @@
       <li>Rawls argued that jobs and positions must be open to everyone, and not only on paper.</li>
       <li>People with the same talent and the same willingness to use it should have the same chances, wherever they started.</li>
       <li>He called this <strong>fair equality of opportunity</strong>. It is one reason schooling is public.</li>
-      <li>Daniels adds that illness takes opportunity away too. So justice must protect health, just as it protects schooling.</li>
+      <li>Daniels adds that illness takes opportunity away too. So justice requires health care, just as it requires schooling.</li>
     </ul>
   </phil-slide>
 
@@ -308,7 +312,7 @@
     <ul reveal>
       <li>The argument does not say you are owed every treatment that might help. You are owed your fair share.</li>
       <li>What is fair depends on what a society can afford. A ship's chest is not a city's treasury.</li>
-      <li>It reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too.</li>
+      <li>The argument also reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too.</li>
       <li>In 1983 a US presidential commission agreed that everyone should be able to get "an adequate level of care without excessive burdens." It chose not to call this a right.</li>
     </ul>
   </phil-slide>
@@ -316,11 +320,11 @@
   <!-- 16. Checkset: what follows -->
   <phil-slide>
     <h1>What Follows?</h1>
-    <phil-checkset review="fair-share" prompt="Check every claim that follows from Daniels's argument."
+    <phil-checkset review="fair-share" prompt="Check every claim that is part of Daniels's view, as this lesson presents it."
                    explain="Right. The right is to a fair share, set by what a society can provide, and it covers anything that protects normal functioning. It is not a right to health, which nobody can owe. And the reason is fairness about opportunity, not the most happiness overall. That second kind of reason is the utilitarian's.">
-      <phil-statement correct>Public health measures, like clean water, are covered as well as doctors</phil-statement>
+      <phil-statement correct>Things like clean water and limes, not just doctors' care, fall under the argument too</phil-statement>
       <phil-statement correct>What a person is owed depends partly on what their society can afford</phil-statement>
-      <phil-statement correct>Health care is owed for a different reason than goods like hats are</phil-statement>
+      <phil-statement correct>Health care is owed in a way that goods like hats are not</phil-statement>
       <phil-statement>Everyone is owed any treatment that might help them, whatever it costs</phil-statement>
       <phil-statement>A just society owes each of its members good health</phil-statement>
       <phil-statement>Care is owed because it makes the crew as happy as possible</phil-statement>
@@ -357,10 +361,10 @@
   <!-- 19. Compare: Daniels and the utilitarians -->
   <phil-slide id="two-reasons">
     <h1>Two Reasons for Care</h1>
-    <p>Both views back care for everyone. They give different reasons, and the reasons matter when the chest runs short.</p>
+    <p>Both views back care for everyone: both say a sick sailor who can't pay should still get care. They give different reasons, and the reasons matter when the chest runs short.</p>
     <phil-compare>
       <phil-side label="Daniels" tag="Fairness">
-        <p>Care is owed because illness takes away a fair share of opportunity. Each person's share counts on its own.</p>
+        <p>Care is owed because illness takes away a fair share of opportunity. What matters is each person's loss, not just the total.</p>
         <p class="anchor">Kit, a cabin girl, has a fever that may kill her. Her whole range is at stake, so her claim is strong.</p>
       </phil-side>
       <phil-side label="Utilitarianism" tag="The most good">
@@ -370,16 +374,21 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 20. MCQ: where they split [correct: B] -->
+  <!-- 20. Classify: Daniels, utilitarian, or both -->
   <phil-slide>
     <h1>Where They Split</h1>
-    <phil-mcq review="two-reasons" prompt="The chest can pay for Kit's long treatment or for small cures for thirty sailors, not both. Where do Daniels and the utilitarian really disagree?"
-              explain="Right. A utilitarian adds benefits up, so enough small ones can outweigh one large one. Daniels looks at each person's share of opportunity, so one girl's whole future is hard to outweigh with thirty toothaches.">
-      <phil-choice feedback="Both of them buy the limes. Cheap prevention is where they agree most.">Whether cheap prevention, like limes, is worth buying for the crew</phil-choice>
-      <phil-choice correct>Whether many small benefits can outweigh one person's large need</phil-choice>
-      <phil-choice feedback="Both care a great deal about health. They disagree about how to share out care for it.">Whether the crew's health matters at all when spending the chest</phil-choice>
-      <phil-choice feedback="That is the libertarian objection, and it comes next. Daniels and the utilitarian both say yes.">Whether a sailor who lost a leg should have to pay into the chest</phil-choice>
-    </phil-mcq>
+    <phil-classify review="two-reasons" prompt="Who would say this: Daniels, a utilitarian, or both?"
+                   explain="Right. Both views back care for everyone and cheap prevention. They split on the reason, and on whether the total is all that counts.">
+      <phil-col key="dan">Daniels</phil-col>
+      <phil-col key="util">A utilitarian</phil-col>
+      <phil-col key="both">Both</phil-col>
+      <phil-item answer="both" why="Limes keep every sailor's range open, and almost nothing buys more health per coin.">"The crew should buy limes for everyone."</phil-item>
+      <phil-item answer="both" why="Daniels: illness costs a fair share of opportunity. Utilitarian: a coin does more good as a poor sailor's medicine than as a rich man's wine.">"Sick sailors should get care even if they can't pay for it themselves."</phil-item>
+      <phil-item answer="util" why="Caring only about the sum, not who gets it, is the utilitarian method. Daniels cares how opportunity is shared.">"Only the total good counts, however it is spread across the crew."</phil-item>
+      <phil-item answer="util" why="The reason given is total well-being, not fairness.">"Care is worth buying because it does the most good overall."</phil-item>
+      <phil-item answer="dan" why="That is Daniels's reason for care: fair opportunity.">"Care is owed because illness takes away a fair share of opportunity."</phil-item>
+      <phil-item answer="dan" why="The reason given is her opportunity range, which is Daniels's measure.">"Kit's claim is strong because her whole opportunity range is at stake."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 4 — TOO MUCH, OR TOO LITTLE? ============ -->
@@ -390,7 +399,7 @@
     <h1>The Natural Lottery</h1>
     <p>Silver lost his leg, saved his pay, and bought a tavern with no help from anyone. Was he owed help? The philosopher H. Tristram Engelhardt (1986) said no.</p>
     <ul reveal>
-      <li>Some losses come from nature: storms, germs, a falling spar. Engelhardt called this the <strong>natural lottery</strong>.</li>
+      <li>Some losses come from nature: storms, germs, a falling spar. Engelhardt, borrowing a phrase from Rawls, called this the <strong>natural lottery</strong>.</li>
       <li>A loss in the natural lottery is <strong>unfortunate</strong>. It is <strong>unfair</strong> only if someone wronged you.</li>
       <li>If nobody wronged you, nobody owes you repair. Helping you is kind, but it is charity, not a right.</li>
       <li>People may still choose to pool their money for care. What they can't do is claim care from others as a right.</li>
@@ -403,7 +412,7 @@
     <h1>A Reply</h1>
     <ul reveal>
       <li>Defenders of a right to care can grant the first point. A storm wrongs nobody.</li>
-      <li>But Rawls wrote that the natural lottery is "neither just nor unjust." What is just or unjust is "the way that institutions deal with these facts."</li>
+      <li>But Rawls wrote that the natural distribution of talents is "neither just nor unjust." What is just or unjust is "the way that institutions deal with these facts."</li>
       <li>A crew that leaves its injured on the dock has made a choice. That choice can be unfair even when the storm was not.</li>
       <li>Much illness isn't pure luck, either. Silver lost his leg in a sea battle, doing the crew's most dangerous work.</li>
     </ul>
@@ -443,7 +452,7 @@
       <li>Old Redruth is dying. No treatment will give her back a single station.</li>
       <li>Laudanum and nursing would ease her pain in her last weeks. On the opportunity account, it is hard to say why that is owed.</li>
       <li>A utilitarian has no such trouble. Suffering is bad, and easing it does good, whatever your opportunities are.</li>
-      <li>Daniels agrees that care for the dying is owed. He says the reasons are "compassion and beneficence," which "go beyond questions of justice."</li>
+      <li>Daniels agrees that care for the dying is owed. He grants that it raises issues of compassion and beneficence that go beyond justice.</li>
     </ul>
   </phil-slide>
 
@@ -497,10 +506,10 @@
     <h1>Oregon, 1987</h1>
     <p class="lead">This trade-off has happened in real life.</p>
     <ul reveal class="serious">
-      <li>In 1987 Oregon stopped paying for heart, liver, pancreas, and bone-marrow transplants for poor patients on Medicaid.</li>
-      <li>The money went to basic care for more low-income children and pregnant women. Oregon's leaders argued that this would save more lives.</li>
-      <li>Coby Howard, age seven, had leukemia and needed a bone-marrow transplant. His family raised over half the $100,000 cost, but not in time. He died in December 1987.</li>
-      <li>The people helped instead were just as real, but nobody knew their names. His death made the trade-off hard to accept. That pull is called the rule of rescue.</li>
+      <li>In 1987 Oregon's Medicaid stopped paying for heart, liver, pancreas, and bone-marrow transplants. The money went to basic care for more poor children and pregnant women.</li>
+      <li>Coby Howard, age seven, needed a bone-marrow transplant for leukemia. His family raised over half the $100,000 it would cost.</li>
+      <li>He died in December 1987, still short of the money and without a donor match. Doctors disagreed on whether a transplant would have saved him.</li>
+      <li>Oregon's leaders said the trade would save more lives, and those people were just as real. His death made it hard to accept. That pull is the rule of rescue.</li>
     </ul>
   </phil-slide>
 
@@ -508,7 +517,7 @@
   <phil-slide>
     <img slot="art" src="./assets/man-overboard.png" alt="Sailors of many ages crowd a ship's rail and throw a life ring to a young woman swimming in rough waves">
     <h1>Decision Point: Man Overboard</h1>
-    <p>In 1986 the philosopher Albert Jonsen named the <strong>rule of rescue</strong>, the pull to save a person we can see from death, whatever it costs: "We throw a rope to the drowning."</p>
+    <p>In 1986 the bioethicist Albert Jonsen named the <strong>rule of rescue</strong>, the pull to save a person we can see from death, whatever it costs: "We throw a rope to the drowning."</p>
     <phil-poll prompt="A sailor falls overboard in a storm. Turning back will cost two days and stores the crew needs to reach port. What should the captain do?"
                explain="The rule of rescue fits how most people feel. Many utilitarians call it a bias: a life we can see counts no more than one we can't. The children and mothers who got basic care in Oregon were statistical lives. Coby Howard was an identified life.">
       <phil-choice note="This is the rule of rescue. Most people feel it strongly.">Turn back. You don't leave a shipmate in the water.</phil-choice>
@@ -529,20 +538,36 @@
     </ul>
   </phil-slide>
 
-  <!-- 31. Cloze: name the problem -->
+  <!-- 30b. Four hard questions -->
+  <phil-slide id="four-questions">
+    <h1>Four Hard Questions</h1>
+    <p>When the chest can't pay for everyone, these questions come up. Daniels says no formula settles the first three.</p>
+    <ul reveal>
+      <li><strong>Aggregation.</strong> Can many small benefits, added up, outweigh one large one? Thirty toothaches against one fever.</li>
+      <li><strong>Fair chances.</strong> Should each sailor in need get a chance, say by drawing lots, even if the chest would do more good elsewhere?</li>
+      <li><strong>The sickest first.</strong> How much extra weight should the sickest sailor get, even if treating others would do more good?</li>
+      <li><strong>The rule of rescue.</strong> The pull to save a person we can see in danger, whatever it costs.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. Classify: name the problem -->
   <phil-slide>
     <h1>Name the Problem</h1>
-    <p>Each sailor is arguing about the chest. Pick the problem each one raises.</p>
-    <phil-cloze review="oregon-list" explain="Right. The first adds small benefits up. The second wants each person to have an equal chance. The third puts the worst off first. The fourth is the pull of a life you can see. Daniels calls the first three unsolved rationing problems. No formula settles them, which is why he turns to fair process.">
-      <span class="line">"Thirty toothaches cured is more good than one fever treated, once you add it all up."
-        <phil-blank answer="aggregation" options="aggregation,fair chances,the sickest first,rule of rescue">aggregation</phil-blank></span>
-      <span class="line">"If we can only treat one of them, flip a coin. Each deserves an equal shot."
-        <phil-blank answer="fair chances" options="aggregation,fair chances,the sickest first,rule of rescue">fair chances</phil-blank></span>
-      <span class="line">"Kit is the worst-off soul aboard. That alone should move her up the list."
-        <phil-blank answer="the sickest first" options="aggregation,fair chances,the sickest first,rule of rescue">the sickest first</phil-blank></span>
-      <span class="line">"He's right there in the water. You can't put a price on that."
-        <phil-blank answer="rule of rescue" options="aggregation,fair chances,the sickest first,rule of rescue">rule of rescue</phil-blank></span>
-    </phil-cloze>
+    <phil-classify review="four-questions" prompt="Each sailor raises one of the four hard questions. Which one?"
+                   explain="Right. Aggregation adds small benefits up. Fair chances gives each person a shot. The sickest first puts the sickest ahead. The rule of rescue is the pull of a life you can see.">
+      <phil-col key="agg">Aggregation</phil-col>
+      <phil-col key="fair">Fair chances</phil-col>
+      <phil-col key="sick">The sickest first</phil-col>
+      <phil-col key="rescue">Rule of rescue</phil-col>
+      <phil-item answer="agg" why="Many small gains added together outweigh one large one.">"Thirty toothaches cured is more good than one fever treated, once you add it all up."</phil-item>
+      <phil-item answer="agg" why="Small benefits, summed, outrank one life: the aggregation problem behind the Oregon list.">"Add up enough cheap cures for small aches, and they can outrank saving one life."</phil-item>
+      <phil-item answer="fair" why="Each person gets an equal chance, whatever the expected outcome.">"If we can only treat one of them, flip a coin. Each deserves an equal shot."</phil-item>
+      <phil-item answer="fair" why="Drawing lots gives everyone in need a chance, not just the likeliest to benefit.">"Draw lots among them, so a sailor the chest would do less good for still gets a chance."</phil-item>
+      <phil-item answer="sick" why="Being sickest is the reason given for going first.">"The sickest sailor should come first, even if the chest does less good that way."</phil-item>
+      <phil-item answer="sick" why="Extra weight for the sickest, even at a cost in total good.">"Treat whoever is in the worst condition first, even if others would gain more."</phil-item>
+      <phil-item answer="rescue" why="A person in visible danger pulls us to save them whatever it costs.">"We can all see him out there in the water. Turn back, whatever it costs us."</phil-item>
+      <phil-item answer="rescue" why="Knowing the person makes the pull to save them, at any cost, stronger.">"We've seen her face and know her name, so we must pay whatever it takes to save her."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 6 — SIGNING THE ARTICLES ============ -->
@@ -551,7 +576,7 @@
   <phil-slide>
     <img slot="art" src="./assets/the-vote.png" alt="A mixed crew on deck at sunset with hands raised in a vote; in front stand the gray-haired captain in a tricorn hat, Dr. Livesey in his white wig, and the cook on his crutch">
     <h1>When Principles Run Out</h1>
-    <p>Daniels admits no principle settles these problems. So he and the psychiatrist James Sabin asked what makes a limit fair to impose. Their answer is <strong>accountability for reasonableness</strong>.</p>
+    <p>Daniels admits no principle settles the first three questions. So he and the psychiatrist James Sabin asked what makes a limit fair to impose. Their answer is <strong>accountability for reasonableness</strong>.</p>
     <ul reveal>
       <li><strong>Publicity.</strong> The rules for who gets what, and the reasons for them, are posted for everyone to see.</li>
       <li><strong>Relevance.</strong> The reasons are ones fair-minded people can accept, like evidence about what works.</li>

@@ -44,9 +44,11 @@ build installs `globalThis.PhilProgressStore` from
 Notes:
 
 - **Grade on the score, not the status.** `passed` means the student finished.
-  The score is the earned credit: each wrong try halves what a question is
-  worth (100%, 50%, 25% …), so a student who guessed through scores well below
-  one who read. See "Scoring" in [AUTHORING.md](../AUTHORING.md).
+  The score is the earned credit. On an MCQ each wrong try halves what it is
+  worth (100%, 50%, 25% …). A checkset or cloze is scored part by part on its
+  first check, with wrong parts counting against right ones, so guessing
+  averages zero. A student who guessed through scores well below one who read.
+  See "Scoring" in [AUTHORING.md](../AUTHORING.md).
 - **Total time** in the LMS's activity report shows who clicked through in a
   few minutes.
 - **Reset never raises a score.** In a package, Reset clears slides and answers

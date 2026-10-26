@@ -26,8 +26,8 @@ const html = `<!doctype html>
   <title>${title} · PhilMates</title>
   <meta name="description" content="TODO: one-line description for the catalog.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
-  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
+  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
 </head>
 <body>
 

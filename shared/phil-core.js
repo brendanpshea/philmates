@@ -41,7 +41,11 @@ const shuffledOptions = (host, nodes) =>
 /* Seconds a missed question waits before the next try, when it has no
    `review` slide to send the student to. */
 const RETRY_COOLDOWN = 10;
-const pctText = (c) => `${Math.round(c * 1000) / 10}%`;
+// Halves show exactly (12.5%); thirds and sixths round to whole percents (67%).
+const pctText = (c) => {
+  const p = c * 100;
+  return `${Number.isInteger(p * 2) ? p : Math.round(p)}%`;
+};
 // Checked at call time, not module load — users change this setting mid-session.
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
@@ -444,6 +448,16 @@ class PhilLesson extends HTMLElement {
      tries are saved, so reloading the page never resets them. */
   misses(qid) { return this.store.misses?.[qid] || 0; }
   creditOf(qid) { return this.store.credit?.[qid] ?? 0.5 ** this.misses(qid); }
+  hasCredit(qid) { return qid in (this.store.credit || {}); }
+  /* Multi-part questions (checkset, cloze) settle their credit on the first
+     check, part by part, instead of halving; see their _check(). */
+  isFirstCheck(qid) { return this.misses(qid) === 0 && !this.hasCredit(qid); }
+  lockCredit(qid, c) {
+    const credit = (this.store.credit ||= {});
+    if (!(qid in credit)) credit[qid] = Math.max(0, Math.min(1, c));
+    this.store.save();
+    this._refresh();
+  }
   reportMiss(qid) {
     const m = (this.store.misses ||= {});
     m[qid] = (m[qid] || 0) + 1;
@@ -541,7 +555,12 @@ class PhilWidget extends HTMLElement {
     const fb = this.feedbackBox();
     fb.className = 'phil-feedback show ' + (ok ? 'good' : 'bad');
     fb.innerHTML = `<strong>${head || (ok ? '✔ Correct' : '✘ Try again')}</strong>${msg || ''}`;
-    if (!this._restoring) PhilSfx[ok ? 'correct' : 'wrong']();
+    if (!this._restoring) {
+      PhilSfx[ok ? 'correct' : 'wrong']();
+      // On a tall slide the feedback (and a miss's review button) can land
+      // below the fold; bring it into view after the content settles.
+      requestAnimationFrame(() => fb.scrollIntoView({ block: 'nearest', behavior: prefersReducedMotion() ? 'auto' : 'smooth' }));
+    }
   }
   solved() {
     this.lesson?.reportCorrect(this.qid);
@@ -554,8 +573,11 @@ class PhilWidget extends HTMLElement {
      next try until the student has reviewed (or, with no review slide, paused). */
   miss(hint) {
     this.lesson?.reportMiss(this.qid);
-    const worth = 0.5 ** (this.lesson ? this.lesson.misses(this.qid) : 1);
-    this.showFeedback(false, hint || '', `✘ Not yet — this question is now worth ${pctText(worth)}`);
+    const L = this.lesson;
+    const head = L?.hasCredit(this.qid)
+      ? `✘ Not yet — your credit for this question is ${pctText(L.creditOf(this.qid))}`
+      : `✘ Not yet — this question is now worth ${pctText(L ? L.creditOf(this.qid) : 0.5)}`;
+    this.showFeedback(false, hint || '', head);
     this._block();
   }
   _block() {
@@ -790,7 +812,15 @@ class PhilCheckset extends PhilWidget {
       return;
     }
     this._lastSig = sig;
-    this.miss('Red rows are wrong.');
+    // The first check sets the credit, statement by statement: each right one
+    // counts for it and each wrong one against it, so random ticking averages
+    // zero. Red rows then show what to fix; later checks only finish the question.
+    if (this.lesson?.isFirstCheck(this.qid)) {
+      const n = this._rows.length;
+      const right = this._rows.filter(r => r._input.checked === r._correct).length;
+      this.lesson.lockCredit(this.qid, (right - (n - right)) / n);
+    }
+    this.miss('Red rows are wrong. Fix them to finish.');
   }
   onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() {
@@ -860,7 +890,20 @@ class PhilCloze extends PhilWidget {
       return;
     }
     this._lastSig = sig;
-    this.miss('Red blanks aren’t right yet.');
+    // The first check sets the credit, blank by blank. A wrong dropdown pick
+    // costs 1/(options − 1), so random picking averages zero; a wrong typed
+    // answer or an empty blank costs nothing, since nobody types it by luck.
+    if (this.lesson?.isFirstCheck(this.qid)) {
+      let score = 0;
+      this._blanks.forEach(f => {
+        const v = this._val(f);
+        if (!v || v === '—') return;
+        if (f._accepted.includes(v)) score += 1;
+        else if (f.tagName === 'SELECT') score -= 1 / Math.max(1, f.options.length - 2);
+      });
+      this.lesson.lockCredit(this.qid, score / this._blanks.length);
+    }
+    this.miss('Red blanks aren’t right. Fix them to finish.');
   }
   onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() { this._blanks.forEach(f => f.disabled = true); this._btn.disabled = true; }
@@ -870,6 +913,121 @@ class PhilCloze extends PhilWidget {
       if (f.tagName === 'SELECT') [...f.options].forEach(o => { if (o.text.toLowerCase() === ans) f.value = o.value; });
       else f.value = ans;
       f.classList.add('correct');
+    });
+    this.lock(); this.solved();
+  }
+}
+
+/* ---------- <phil-classify> : sort each item into one column ----------
+   <phil-classify prompt="..." explain="..." review="slide-id">
+     <phil-col key="sys">Systems reply</phil-col>
+     <phil-col key="rob">Robot reply</phil-col>
+     <phil-item answer="rob" why="Why this column, from the lesson.">An item</phil-item>
+   </phil-classify>
+   A grid: one row per item, one radio per column, plus "Not sure" unless the
+   host has `no-unsure`. Rows shuffle on load; columns keep authored order.
+   The first check sets the credit row by row: right +1, wrong −1/(columns−1),
+   not sure or blank 0, so random picking averages zero. Every row must be
+   right to finish. Each item's `why` is shown, on request, once solved.
+------------------------------------------------------------------ */
+class PhilClassify extends PhilWidget {
+  build() {
+    const cols = [...this.querySelectorAll('phil-col')].map(c => ({ key: c.getAttribute('key'), label: c.innerHTML }));
+    const items = shuffledOptions(this, this.querySelectorAll('phil-item'));
+    const unsure = !this.hasAttribute('no-unsure');
+    this._cols = cols;
+    this.innerHTML = '';
+    this.classList.add('phil-classify');
+    this.append(this.promptNode(this.getAttribute('prompt') || 'Put each item in the right column.', 'group'));
+
+    const wrap = el('div', 'phil-cl-wrap');
+    const table = el('table', 'phil-cl');
+    const head = el('tr');
+    head.append(el('th', 'phil-cl-item-h', '<span class="phil-sr-only">Item</span>'));
+    cols.forEach(c => { const th = el('th', null, c.label); th.scope = 'col'; head.append(th); });
+    if (unsure) { const th = el('th', 'phil-cl-unsure', 'Not sure'); th.scope = 'col'; head.append(th); }
+    const thead = el('thead'); thead.append(head);
+    const tbody = el('tbody');
+    this._rows = items.map((it, i) => {
+      const tr = el('tr', 'phil-cl-row');
+      const id = `${this.qid}-r${i}`;
+      const text = el('th', 'phil-cl-text', it.innerHTML); text.scope = 'row'; text.id = id;
+      tr.append(text);
+      const row = { tr, answer: it.getAttribute('answer'), why: it.getAttribute('why') || '', inputs: [] };
+      const options = [...cols.map(c => ({ key: c.key, label: c.label })), ...(unsure ? [{ key: '', label: 'Not sure' }] : [])];
+      options.forEach(o => {
+        const td = el('td', o.key ? null : 'phil-cl-unsure');
+        const lab = el('label', 'phil-cl-cell');
+        const input = el('input'); input.type = 'radio'; input.name = id; input.value = o.key;
+        input.setAttribute('aria-label', `${o.label.replace(/<[^>]+>/g, '')}`);
+        input.setAttribute('aria-describedby', id);
+        input.addEventListener('click', e => { if (this._locked) e.preventDefault(); });
+        lab.append(input);
+        td.append(lab); tr.append(td);
+        row.inputs.push(input);
+      });
+      tbody.append(tr);
+      const whyRow = el('tr', 'phil-cl-why'); whyRow.hidden = true;
+      const whyCell = el('td', null, row.why); whyCell.colSpan = options.length + 1;
+      whyRow.append(whyCell); tbody.append(whyRow);
+      row.whyRow = whyRow;
+      return row;
+    });
+    table.append(thead, tbody);
+    wrap.append(table);
+    const btn = el('button', 'phil-btn phil-btn--primary', 'Check answers');
+    btn.onclick = () => this._check();
+    this._whyBtn = el('button', 'phil-btn phil-cl-whybtn', 'Show why each answer is right');
+    this._whyBtn.hidden = true;
+    this._whyBtn.onclick = () => {
+      const show = this._rows[0]?.whyRow.hidden;
+      this._rows.forEach(r => { r.whyRow.hidden = !show; });
+      this._whyBtn.textContent = show ? 'Hide the reasons' : 'Show why each answer is right';
+    };
+    this.append(wrap, btn, this._whyBtn);
+    this._btn = btn;
+  }
+  _pick(row) { return row.inputs.find(i => i.checked)?.value ?? null; }
+  _check() {
+    if (this._blocked) return;
+    const picks = this._rows.map(r => this._pick(r));
+    const sig = picks.map(p => p ?? '-').join('|');
+    let ok = true;
+    this._rows.forEach((r, i) => {
+      const p = picks[i];
+      r.tr.classList.remove('correct', 'wrong', 'missing');
+      if (p === r.answer) r.tr.classList.add('correct');
+      else { ok = false; r.tr.classList.add(p ? 'wrong' : 'missing'); }
+    });
+    if (ok) { this.lock(); this.solved(); return; }
+    if (sig === this._lastSig) {
+      this.showFeedback(false, 'Change at least one answer before checking again.', '✘ Same answers as before');
+      return;
+    }
+    this._lastSig = sig;
+    if (this.lesson?.isFirstCheck(this.qid)) {
+      const penalty = 1 / Math.max(1, this._cols.length - 1);
+      const score = this._rows.reduce((s, r, i) => {
+        const p = picks[i];
+        return s + (!p ? 0 : p === r.answer ? 1 : -penalty);
+      }, 0);
+      this.lesson.lockCredit(this.qid, score / this._rows.length);
+    }
+    this.miss('Rows marked ✘ are wrong, and rows marked ? still need an answer. Fix them to finish.');
+  }
+  onBlockChange(blocked) { this._btn.disabled = blocked; }
+  lock() {
+    this._locked = true;
+    this._rows.forEach(r => r.inputs.forEach(i => i.setAttribute('aria-disabled', 'true')));
+    this.classList.add('is-locked');
+    this._btn.disabled = true;
+    if (this._rows.some(r => r.why)) this._whyBtn.hidden = false;
+  }
+  restore() {
+    this._rows.forEach(r => {
+      const right = r.inputs.find(i => i.value === r.answer);
+      if (right) right.checked = true;
+      r.tr.classList.add('correct');
     });
     this.lock(); this.solved();
   }
@@ -1156,6 +1314,7 @@ customElements.define('phil-mcq', PhilMcq);
 customElements.define('phil-poll', PhilPoll);
 customElements.define('phil-checkset', PhilCheckset);
 customElements.define('phil-cloze', PhilCloze);
+customElements.define('phil-classify', PhilClassify);
 customElements.define('phil-branch', PhilBranch);
 customElements.define('phil-compare', PhilCompare);
 customElements.define('phil-thinker', PhilThinker);

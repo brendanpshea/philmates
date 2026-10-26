@@ -81,9 +81,20 @@ as `★ Score` in the top bar and sent to the LMS) rewards getting it right earl
 Students were clicking through whole lessons in five minutes and guessing until
 each answer turned green, which earned full marks and taught nothing.
 
-- **Each wrong try halves what the question is worth:** 100%, 50%, 25%, 12.5% …
-  Credit is locked in when the question is first solved. Wrong tries are saved,
-  so reloading the page doesn't reset them.
+- **MCQs: each wrong try halves what the question is worth:** 100%, 50%, 25%,
+  12.5% … Credit is locked in when the question is first solved. Wrong tries
+  are saved, so reloading the page doesn't reset them.
+- **Checksets and cloze: the first check sets the credit, part by part.** Halving
+  doesn't fit them, because after a miss the red rows show exactly what to fix,
+  so a blank first check followed by flipping the red rows would earn 50%.
+  Instead:
+  - *Checkset:* (statements right − statements wrong) ÷ total, never below 0.
+    6 of 6 right is 100%, 5 of 6 is 67%, 4 of 6 is 33%, and random ticking or
+    a blank check averages 0.
+  - *Cloze:* each right blank counts 1; a wrong dropdown pick costs
+    1 ÷ (options − 1), so random picking averages 0. A wrong typed answer or an
+    empty blank costs nothing.
+  - Later checks only finish the question. They never change its credit.
 - **A wrong MCQ option is struck through** and can't be picked again. The
   options reshuffle before the next try.
 - **Re-checking a checkset or cloze without changing anything is free.** It
@@ -184,6 +195,36 @@ a timeline, escalating degrees, an "all of the above":
 ```html
 <phil-mcq keep-order prompt="Put the steps in order…">
 ```
+
+### Sort into columns — `<phil-classify>` (the default graded item)
+```html
+<phil-classify review="systems-reply" prompt="Each critic is answering Searle. Which reply is it?"
+               explain="Shown once every row is right.">
+  <phil-col key="sys">Systems reply</phil-col>
+  <phil-col key="rob">Robot reply</phil-col>
+  <phil-item answer="rob" why="Connecting symbols to what a body sees and does is the robot reply.">"Put the program in a body with cameras…"</phil-item>
+  …
+</phil-classify>
+```
+A grid: one row per item, one column per category, plus a **Not sure** column
+(turn it off with `no-unsure`). It asks five to eight judgments in the space an
+MCQ spends on one, and it is the best format we have for asking students to
+*apply* an idea to cases. Two columns make it a true/false grid; three or four
+make it matching.
+
+- Every `phil-item` needs an `answer` (a column `key`) and a `why`: one
+  sentence saying why that column is right, from what the lesson teaches. The
+  validator rejects an item without one. Students can open the reasons after
+  solving.
+- 4–8 rows, 2–4 columns. Every column must be the answer for at least one row.
+- A column that names a category ("Systems reply", "Fair chances") must be
+  named on a slide before the item; the validator checks this. Mark a column
+  that describes rather than names `descriptive`
+  (`<phil-col key="in" descriptive>The interrogator can see this</phil-col>`).
+  Labels with a colon ("Disguise: hides …") define themselves and are exempt.
+- Scoring: the first check sets the credit, row by row (right +1, wrong
+  −1/(columns−1), not sure 0), so guessing averages zero.
+- Rows shuffle on every load; columns keep their order.
 
 ### Fill the blanks — `<phil-cloze>`
 ```html
@@ -312,7 +353,77 @@ normal deferred-module load — shows a "hard-refresh this page" message in its
 place. That turns a silent mess into a legible failure, but it is a safety net,
 not a substitute for bumping the version.
 
+## Answer keys: unambiguous, or they don't ship
+
+A student must never be marked wrong for a defensible answer, or right for a
+wrong one. A key that a careful student could argue with is a defect, however
+right the author thinks it is.
+
+**Writing rules**
+
+- **Grade only what a slide teaches.** Every graded answer must follow from
+  visible slide text. Content that appears only inside an interactive widget,
+  or only in another question's feedback, is not taught: a student may never
+  see it. Put it on a slide first.
+- **Use the lesson's words for the categories.** If a column is called
+  "Consciousness," some slide must call it that.
+- **Columns must not overlap.** If a row could sit in two columns, rewrite the
+  row or the columns. Say how two similar categories differ, on a slide, before
+  grading the difference.
+- **No hidden assumptions.** "Owed for a different reason than hats are"
+  assumes hats are owed. Read each row for what it takes for granted.
+- **No conditions left implicit.** If a law applies only in an emergency, the
+  stem says there is an emergency.
+- **True to the source, not just to the slide.** A key that is defensible from
+  the lesson but misstates the philosopher is still wrong. Fix the slide too.
+- **Prefer cases and paraphrase** to sentences copied from the slides, and
+  **don't grade contested verdicts.** "Should Silver pay?" is a poll.
+- **No named character in a row unless the name is the point.** A row naming a
+  sailor in danger pulls toward the rule of rescue whatever else it says.
+
+**Verification, before any lesson ships**
+
+Review costs scale with the number of reviewers and rounds, not with lesson
+length, so batch lessons and let the scripts catch what they can.
+
+1. Run `node tools/validate-quizzes.mjs`. It catches missing `why` lines, bad
+   keys, unused columns, and categories graded before any slide names them.
+   That last one was the biggest source of round-one failures in the pilot.
+   It also checks that every `review=` names a slide id before the question.
+2. Run `node tools/student-view.mjs <topic/lesson> …` for a batch of about four
+   lessons. It writes `temp/review/<lesson>.view.txt` (key-free, as a student
+   sees it) and `<lesson>.keys.txt` (keys, `why` lines, review slides).
+3. Give the views for the whole batch to **two blind reviewers**. They answer
+   every row and flag any row where another answer is defensible.
+4. Give the views, keys, and the lessons' accuracy notes from
+   `phil_mates_outlines.md` to **one adversarial reviewer**. It tries to break
+   each key against the lesson and the real sources, and searches the web only
+   for claims the notes don't cover.
+5. **Stop rule.** Fix every row where another answer is at least as good, and
+   every key the adversary calls arguable or wrong. Then re-check **only the
+   changed rows** with one fresh reviewer. Don't polish rows that came back
+   "likely, weak alternative": in the pilot, a polish of that kind created a
+   new defect.
+
+The two pilot lessons ("The Ship's Chest" and "The Masquerade of Silverport")
+went through this. The first round caught untaught categories, a key that
+misstated Daniels, a missing emergency condition, and a statement that assumed
+hats are owed. All of those looked fine to the author.
+
+The first batch run (double effect, germline editing, Nell, the villain's
+ledger) cost about 350k subagent tokens for four lessons, or about 90k each:
+two blind reviewers (about 75k each), the adversary (130k), and one re-check
+(65k). Every flag was a real one. The worst was a cloze whose category names
+no slide had taught. When three reviewers independently rate the same row
+"likely," treat it as a flag, not polish.
+
 ## Quiz quality (auto-checked)
+
+**Format mix.** Aim for 4–6 graded items per lesson, mostly classify, cloze,
+and checkset items with 5–8 parts each. Keep at most one MCQ, for the single
+distinction the lesson can't do without. An MCQ spends a slide on one judgment,
+a guesser gets it a quarter of the time, and it is the format a chatbot answers
+best. `validate-quizzes.mjs` lists lessons that still use more than one.
 
 Multiple-choice questions leak answers if you're not careful. Three tells matter most:
 

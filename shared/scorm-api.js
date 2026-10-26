@@ -15,10 +15,12 @@
      cmi.core.lesson_status   <- "passed" once complete (completion already
                                   requires every question correct), else
                                   "incomplete".
-     cmi.core.score.raw       <- round(earned credit / total * 100). Each wrong
-                                  try halves a question's credit (100, 50, 25 …);
-                                  credit is locked in when first solved. Reported
-                                  even mid-lesson so the gradebook shows partial work.
+     cmi.core.score.raw       <- round(earned credit / total * 100). An MCQ's
+                                  credit halves with each wrong try (100, 50, 25 …);
+                                  a checkset or cloze is scored part by part on its
+                                  first check. Credit is locked in and never rises.
+                                  Reported even mid-lesson so the gradebook shows
+                                  partial work.
      cmi.core.session_time    <- time in the lesson this session, on exit. The
                                   LMS adds it up into total time.
      cmi.suspend_data         <- compact JSON of {v,c,d,b,p,m,k} for resume. SCORM
@@ -64,7 +66,7 @@
 
   /* total graded questions present in the lesson — the score denominator */
   const totalQuestions = () =>
-    document.querySelectorAll('phil-mcq, phil-checkset, phil-cloze').length;
+    document.querySelectorAll('phil-mcq, phil-checkset, phil-cloze, phil-classify').length;
 
   /* =====================================================================
      The store. Same shape phil-core expects from ProgressStore.

@@ -358,6 +358,36 @@ phil-beliefs:not(:defined)::after, phil-beliefs-review:not(:defined)::after,
 .phil-choice.tried { cursor: not-allowed; }
 .phil-choice.tried > span { text-decoration: line-through; }
 
+/* ---- <phil-classify>: a grid of items × columns ---- */
+.phil-cl-wrap { overflow-x: auto; }
+.phil-cl { border-collapse: collapse; width: 100%; font-size: clamp(15px, 1.35vw, 18px); line-height: 1.35; }
+.phil-cl th, .phil-cl td { border: 2px solid var(--border); padding: 0; }
+.phil-cl thead th { font-family: var(--pixel); font-size: clamp(9px, .8vw, 11px); line-height: 1.5; color: var(--accent-3);
+                    background: var(--panel); padding: 6px 4px; text-align: center; vertical-align: bottom; }
+.phil-cl thead th.phil-cl-unsure { color: var(--muted); }
+.phil-cl .phil-cl-text { text-align: left; font-weight: 600; padding: 4px 10px 4px 2em; position: relative; background: var(--panel-2); }
+.phil-cl td { width: 1%; }   /* radio columns shrink to their headers; the item text takes the rest */
+.phil-cl thead th:not(.phil-cl-item-h) { width: 1%; min-width: 64px; }
+.phil-cl-cell { display: flex; align-items: center; justify-content: center; min-height: 34px; min-width: 56px; padding: 0 6px; cursor: pointer; }
+.phil-cl-cell:hover { background: #2b3252; }
+.phil-cl-cell input { width: 20px; height: 20px; accent-color: var(--accent-3); cursor: pointer; }
+.phil-cl td.phil-cl-unsure { background: #00000022; }
+/* row results: marker + border, never colour alone */
+.phil-cl-row.correct .phil-cl-text::before,
+.phil-cl-row.wrong .phil-cl-text::before,
+.phil-cl-row.missing .phil-cl-text::before { position: absolute; left: .55em; font-weight: bold; }
+.phil-cl-row.correct .phil-cl-text::before { content: "✔"; color: var(--good); }
+.phil-cl-row.wrong .phil-cl-text::before { content: "✘"; color: var(--bad); }
+.phil-cl-row.missing .phil-cl-text::before { content: "?"; color: #ffcf5a; }
+.phil-cl-row.correct .phil-cl-text { box-shadow: inset 4px 0 0 var(--good); }
+.phil-cl-row.wrong .phil-cl-text { box-shadow: inset 4px 0 0 var(--bad); }
+.phil-cl-row.missing .phil-cl-text { box-shadow: inset 4px 0 0 #ffcf5a; }
+.phil-classify.is-locked .phil-cl-cell { cursor: default; pointer-events: none; }
+.phil-cl-why td { padding: 4px 10px 6px 2em; color: var(--ink); background: var(--panel); font-size: .92em; }
+.phil-cl-why[hidden] { display: none; }
+.phil-classify > .phil-btn { margin-top: 12px; margin-right: 8px; }
+.phil-cl-whybtn[hidden] { display: none; }
+
 /* after a miss: the review link or cooldown under the feedback */
 .phil-retry { margin: 10px 0 0; color: var(--ink); font-size: 1em; }
 phil-slide .phil-retry__go { margin-left: 6px; padding: 8px 10px; background: var(--accent-3); color: var(--bg); }

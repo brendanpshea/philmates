@@ -6,8 +6,8 @@
   <title>The Villa Diodati Clinic: Germline Gene Editing · PhilMates</title>
   <meta name="description" content="Somatic versus germline gene editing, the treatment/enhancement line, and the main arguments for and against editing the genes of future children, told through one couple's night at a lakeside clinic.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
-  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
+  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
   <script type="module" src="./assets/germline.js"></script>
   <style>
     .duo { display: flex; gap: 16px; margin: 4px 0 10px; }
@@ -106,14 +106,14 @@
   </phil-slide>
 
   <!-- 6. Somatic vs germline cells -->
-  <phil-slide>
+  <phil-slide id="two-kinds-of-cells">
     <img slot="art" src="./assets/two-cells.png" alt="Left: a dark human outline with one glowing green spot in the chest. Right: a round glass dish holding seven glowing green clusters of cells">
     <h1>Two Kinds of Cells</h1>
     <p>What an edit does depends on which cells it changes.</p>
     <ul reveal>
       <li><strong>Somatic cells</strong> are the cells of your body: lungs, skin, blood, brain. An edit there stays in that one person.</li>
       <li><strong>Germline cells</strong> are eggs and sperm, and the cells that make them. They carry DNA to the next generation.</li>
-      <li>A brand-new embryo counts as germline too. An edit there is copied into every cell the person will ever have, eggs or sperm included.</li>
+      <li>A fertilized egg, and the embryo it grows into, count as germline too. An edit there reaches every cell, eggs or sperm included.</li>
       <li>So a germline edit is <strong>heritable</strong>: it can be passed down to children.</li>
     </ul>
   </phil-slide>
@@ -168,7 +168,7 @@
   <!-- 11. Checkset: which are heritable -->
   <phil-slide>
     <h1>Which Edits Could Be Passed On?</h1>
-    <phil-checkset prompt="Check every edit that the patient's future children could inherit."
+    <phil-checkset review="two-kinds-of-cells" prompt="Check every edit that the patient's future children could inherit."
                    explain="Right. What matters is which cells change, not how young the patient is. A newborn's liver cells are body cells, so that edit ends with the baby. Eggs, sperm, the cells that make them, and a just-fertilized egg all carry DNA to the next generation.">
       <phil-statement correct>Editing a fertilized egg in the lab before it starts to divide</phil-statement>
       <phil-statement correct>Editing the cells in a man's body that make his sperm</phil-statement>
@@ -207,14 +207,14 @@
   </phil-slide>
 
   <!-- 14. Treatment vs enhancement -->
-  <phil-slide>
+  <phil-slide id="treatment-enhancement">
     <h1>Treatment or Enhancement?</h1>
     <p>Philosophers sort Dr. Byron's menu with two words.</p>
     <ul reveal>
       <li><strong>Treatment</strong>: fixing or preventing a disease, to bring a person to normal health.</li>
       <li><strong>Enhancement</strong>: improving a healthy person beyond normal health.</li>
       <li>Many people say treatment is acceptable and enhancement is not. The cases in the middle are hard to sort.</li>
-      <li>A vaccine gives a healthy child protection nobody is born with. Doctors sometimes give growth hormone to healthy children who are very short.</li>
+      <li>Two middle cases: a vaccine gives a healthy child protection nobody is born with, and doctors sometimes give growth hormone to healthy children who are very short.</li>
     </ul>
   </phil-slide>
 
@@ -236,16 +236,21 @@
     </phil-line>
   </phil-slide>
 
-  <!-- 16. MCQ: why the line is fuzzy [correct: A] -->
+  <!-- 16. Classify: treatment, enhancement, or a hard case -->
   <phil-slide>
     <h1>Why the Line Is Hard to Draw</h1>
-    <phil-mcq prompt="A vaccine protects a healthy child in a way nobody is born with. Why is that a puzzle for the line between treatment and enhancement?"
-              explain="Right. A vaccine prevents disease, which sounds like treatment. It also gives a healthy body a power it did not have, which sounds like enhancement. The second item on Dr. Byron's menu has the same problem.">
-      <phil-choice correct>It prevents disease by improving a healthy body, so both labels fit</phil-choice>
-      <phil-choice feedback="A vaccine works on body cells and is not inherited. This puzzle is about treatment and enhancement, not about germline editing.">It changes eggs and sperm, so the protection is passed to children</phil-choice>
-      <phil-choice feedback="Vaccines are given to healthy people. That is the reason the case is hard to label.">It only helps people who are sick, so it is plainly a treatment</phil-choice>
-      <phil-choice feedback="That goes too far. Both ends have clear cases, like cystic fibrosis and extra height. The puzzle is in the middle.">It shows that nobody can tell a disease from a healthy body at all</phil-choice>
-    </phil-mcq>
+    <phil-classify review="treatment-enhancement" prompt="Sort each case the way this lesson does: treatment, enhancement, or a hard case in the middle."
+                   explain="Right. Fixing a disease is treatment, and improving a healthy person beyond normal health is enhancement. A vaccine prevents disease by giving a healthy body a power nobody is born with, and growth hormone for a healthy short child aims at normal height in someone who is not ill. Neither label fits those two cleanly, so they sit in the middle.">
+      <phil-col key="treat">Treatment</phil-col>
+      <phil-col key="enh">Enhancement</phil-col>
+      <phil-col key="mid">Middle case: hard to sort</phil-col>
+      <phil-item answer="treat" why="It fixes a disease, so the child has normal health.">Fixing the gene that causes cystic fibrosis in an embryo</phil-item>
+      <phil-item answer="treat" why="It treats a disease in someone who is already sick.">Casgevy, which edits a patient's blood-making cells to treat sickle cell disease</phil-item>
+      <phil-item answer="enh" why="The child is already healthy. The edit aims beyond normal health.">An edit meant to make a healthy child of average height three inches taller</phil-item>
+      <phil-item answer="enh" why="The child is already healthy. The edit aims beyond normal health.">An edit meant to help a healthy child remember things more easily</phil-item>
+      <phil-item answer="mid" why="It prevents disease, as treatment does, but by giving a healthy body protection nobody is born with, as enhancement does. The lesson names it as a middle case.">A vaccine that gives a healthy child protection nobody is born with</phil-item>
+      <phil-item answer="mid" why="It aims at normal height, as treatment does, but the child has no disease to treat. The lesson names it as a middle case.">Growth hormone for a healthy child who is very short</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 3 — THE CASE FOR ============ -->
@@ -277,7 +282,7 @@
   </phil-slide>
 
   <!-- 19. Compare: upbringing vs editing -->
-  <phil-slide>
+  <phil-slide id="upbringing-vs-edit">
     <h1>Is Editing Just More Parenting?</h1>
     <p>Mary thinks the two differ. She compares a child shaped by lessons with a child shaped by an edit.</p>
     <phil-compare>
@@ -293,16 +298,20 @@
     <p class="muted">Percy's reply: some upbringing can't be undone either, like the first language you learn.</p>
   </phil-slide>
 
-  <!-- 20. MCQ: the parity argument [correct: C] -->
+  <!-- 20. Classify: upbringing or edit -->
   <phil-slide>
     <h1>Percy's Argument, Examined</h1>
-    <phil-mcq prompt="Percy says editing for advantages is no different from tutoring or music lessons. What would a critic have to show to defeat that argument?"
-              explain="Right. Percy argues by comparison: the two things are alike, so they should be judged alike. A reply has to name a difference that matters, such as whether the child can undo the change or whether it gets passed on.">
-      <phil-choice feedback="That accepts Percy's comparison and then rejects ordinary parenting too. Few critics want to say that.">That tutoring and music lessons are also wrong for parents to choose</phil-choice>
-      <phil-choice feedback="What most people would choose does not settle whether it is right. Percy's claim is that the two cases are alike.">That most parents today would not choose to edit their children</phil-choice>
-      <phil-choice correct>That editing and upbringing differ in a way that matters morally</phil-choice>
-      <phil-choice feedback="True today. But Percy is asking whether it would be acceptable if it could be done.">That editing for height and memory is not yet possible to do</phil-choice>
-    </phil-mcq>
+    <phil-classify review="upbringing-vs-edit" prompt="Some argue that an edit is just more parenting. To answer them, a critic has to find a difference that matters. Which kind of shaping does each line describe, as the lesson compares them?"
+                   explain="Right. These are the differences critics point to: a child takes part in her upbringing and can leave it behind, while an edit is fixed before she exists and can be passed on. To defeat the parents-already-choose argument, a critic has to show that one of these differences matters morally.">
+      <phil-col key="up">Shaping by upbringing</phil-col>
+      <phil-col key="edit">Shaping by germline edit</phil-col>
+      <phil-item answer="up" why="The first difference: a child takes part in her upbringing and can push back.">The child takes part in it, and can push back</phil-item>
+      <phil-item answer="edit" why="An edit is made to an embryo, before there is a child to take part.">It is fixed before the child exists</phil-item>
+      <phil-item answer="edit" why="A germline edit is heritable. Lessons and food are not.">Her own children may inherit it</phil-item>
+      <phil-item answer="up" why="The lesson's example: a girl made to play violin at seven can stop at fifteen.">She can quit the violin lessons at fifteen</phil-item>
+      <phil-item answer="up" why="Whatever her parents chose for her, her own children start fresh.">Her own children start fresh</phil-item>
+      <phil-item answer="edit" why="It was chosen before she was born, so there was nothing for her to refuse.">It was chosen before she was born, so she had no chance to push back</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 21. Poll: the first item -->
@@ -320,7 +329,7 @@
   <!-- ============ ACT 4 — THE CASE AGAINST ============ -->
 
   <!-- 22. Safety: 2018 -->
-  <phil-slide>
+  <phil-slide id="objection-safety">
     <img slot="art" src="./assets/relic-2018.svg" alt="Relic card for the 2018 case: a laboratory door standing ajar with a broken padlock, light spilling onto the floor">
     <h1>Objection 1: Is It Safe?</h1>
     <p>Mary opens her notebook. "This has been tried once," she says.</p>
@@ -352,7 +361,7 @@
   </phil-slide>
 
   <!-- 25. Consent -->
-  <phil-slide>
+  <phil-slide id="nobody-asked">
     <img slot="art" src="./assets/open-doors.png" alt="A child with a backpack, seen from behind, stands in a hallway of open doors in green, yellow, blue, and red; one doorway at the side is bricked shut">
     <h1>Objection 2: Nobody Asked the Child</h1>
     <p>The safety objection says <em>not yet</em>. If editing became safe, it would be answered. Mary's second worry would remain.</p>
@@ -394,7 +403,7 @@
   <phil-slide>
     <h1>Name That Argument</h1>
     <p>Pick the argument each speaker is using.</p>
-    <phil-cloze explain="Right. The first speaker worries about harm nobody can predict or reverse, which is safety. The second points to people who can't be asked, which is consent. The third describes a gap between families, which is fairness. The fourth compares editing with ordinary parenting, which is Percy's second argument.">
+    <phil-cloze review="objection-safety" explain="Right. The first speaker worries about harm nobody can predict or reverse, which is safety. The second points to people who can't be asked, which is consent. The third describes a gap between families, which is fairness. The fourth compares editing with ordinary parenting, which is the parents-already-choose argument.">
       <span class="line">"We can't know what this edit does in forty years, and we could never call it back."
         <phil-blank answer="safety" options="consent,fairness,parents already choose,safety">safety</phil-blank></span>
       <span class="line">"Her great-grandchildren will carry this change, and nobody can check with them first."
@@ -409,7 +418,7 @@
   <!-- 29. MCQ: which objection survives [correct: B] -->
   <phil-slide>
     <h1>Change One Fact</h1>
-    <phil-mcq prompt="Suppose germline editing became perfectly safe and free for every family. Which of Mary's objections would still stand?"
+    <phil-mcq review="nobody-asked" prompt="Suppose germline editing became perfectly safe and free for every family. Which of the three objections would still stand?"
               explain="Right. Safety and fairness are worries about how editing might go wrong, and better science and fair funding could answer them. The consent objection is about who gets to decide, so it remains. Feinberg's open future is one way to judge how strong it is.">
       <phil-choice feedback="If editing were perfectly safe, there would be no mistake to take back. Safety is the objection that says 'not yet.'">The safety objection, because a mistake still can't be taken back</phil-choice>
       <phil-choice correct>The consent objection, because future people still aren't asked</phil-choice>

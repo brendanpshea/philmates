@@ -6,8 +6,8 @@
   <title>The Case of the Merciful Dose: Double Effect · PhilMates</title>
   <meta name="description" content="The doctrine of double effect and the difference between killing and letting die, tested with James Rachels' twin cases, as Dr. Watson decides how to treat a dying patient's pain.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=7">
-  <script type="module" src="../../../shared/phil-core.js?v=7"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
+  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
   <script type="module" src="./assets/double-effect.js"></script>
   <style>
     .duo { display: flex; gap: 16px; margin: 4px 0 10px; }
@@ -132,13 +132,13 @@
   </phil-slide>
 
   <!-- 8. Conditions 1 and 2 -->
-  <phil-slide>
+  <phil-slide id="conditions">
     <h1>Conditions 1 and 2</h1>
     <p>Holmes writes the conditions on the back of an envelope and tests Watson's dose against each.</p>
     <ul reveal>
       <li><strong>1. The act itself is not wrong.</strong> Giving a patient medicine is ordinary care, so the dose passes.</li>
       <li><strong>2. You intend only the good effect.</strong> Watson aims at relief. The risk to life is foreseen and not aimed at.</li>
-      <li>Holmes has a test for condition 2. Suppose the pain stopped and Mr. Thorne lived on. Would Watson be content?</li>
+      <li>There is a simple test for condition 2. Suppose the pain stopped and Mr. Thorne lived on. Would Watson be content?</li>
       <li>He would. So Mr. Thorne's death is no part of what Watson is trying to do.</li>
     </ul>
   </phil-slide>
@@ -234,13 +234,13 @@
   <!-- 12. Checkset: what the doctrine says -->
   <phil-slide>
     <h1>What the Doctrine Says</h1>
-    <phil-checkset prompt="Check every claim the doctrine of double effect makes."
-                   explain="Right. The doctrine is strict. A good aim is required, and it is not enough: the act, the means, and the proportion must pass too. You also stay responsible for what you foresee, which is why condition 4 makes you weigh it.">
+    <phil-checkset review="conditions" prompt="Check every claim the doctrine of double effect makes."
+                   explain="Right. The doctrine is strict. A good aim is required, and it is not enough: the act, the means, and the proportion must pass too. A foreseen bad effect is permitted only when all four conditions pass.">
       <phil-statement correct>A bad effect you foresee but do not aim at can sometimes be permitted</phil-statement>
       <phil-statement correct>The bad effect must not be the way the good effect is produced</phil-statement>
       <phil-statement correct>The good effect must be serious enough to justify the bad one</phil-statement>
       <phil-statement>A good intention makes any act acceptable, whatever the act is</phil-statement>
-      <phil-statement>You are not responsible for an effect that you did not intend</phil-statement>
+      <phil-statement>A bad effect you foresee is always permitted, as long as you did not intend it</phil-statement>
       <phil-statement>Only the results of an act matter, not what the person aimed at</phil-statement>
     </phil-checkset>
   </phil-slide>
@@ -274,7 +274,7 @@
   </phil-slide>
 
   <!-- 15. Compare: the two pillars -->
-  <phil-slide>
+  <phil-slide id="two-pillars">
     <h1>The Two Pillars</h1>
     <p>The traditional view of care for the dying stands on both distinctions.</p>
     <phil-compare>
@@ -289,16 +289,20 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 16. MCQ: which pillar [correct: B] -->
+  <!-- 16. Classify: which pillar -->
   <phil-slide>
     <h1>Which Pillar?</h1>
-    <phil-mcq prompt="A doctor says: &quot;She refused the breathing machine, so I turned it off. Her illness did the rest.&quot; Which distinction is the doctor relying on?"
-              explain="Right. The doctor's point is about what caused the death: the illness, with the machine no longer holding it back. She has said nothing about what she was aiming at, which is what double effect would ask.">
-      <phil-choice feedback="The doctor says nothing about her aim. Her point is about what caused the death.">Intending vs. foreseeing: the doctor did not aim at the patient's death</phil-choice>
-      <phil-choice correct>Killing vs. letting die: the illness caused the death, not the doctor</phil-choice>
-      <phil-choice feedback="Proportion is one condition of double effect. The doctor is not weighing effects here. She is saying what caused the death.">Proportion: the benefit of stopping was larger than the harm it did</phil-choice>
-      <phil-choice feedback="The refusal matters. But &quot;her illness did the rest&quot; adds a claim about what caused the death.">Neither one: the doctor is only reporting what the patient asked for</phil-choice>
-    </phil-mcq>
+    <phil-classify review="two-pillars" prompt="Six doctors explain a patient's death. Which distinction is each doctor relying on?"
+                   explain="Right. A doctor who says the disease caused the death is relying on killing vs. letting die. A doctor who says what they aimed at, and what they only foresaw, is relying on intending vs. foreseeing.">
+      <phil-col key="aim">Intending vs. foreseeing</phil-col>
+      <phil-col key="cause">Killing vs. letting die</phil-col>
+      <phil-item answer="cause" why="The point is about what caused the death: the illness, once the machine stopped holding it back. The doctor says nothing about aim.">"She refused the breathing machine, so I turned it off. Her illness did the rest."</phil-item>
+      <phil-item answer="aim" why="The point is about the doctor's aim, relief, and a death the doctor foresaw but did not aim at.">"I aimed only at easing his pain. His death was a risk I accepted, not my goal."</phil-item>
+      <phil-item answer="cause" why="The point is that the kidney disease, not the doctor, caused the death.">"I stopped the dialysis he no longer wanted. His kidney disease caused his death, not me."</phil-item>
+      <phil-item answer="aim" why="This is the test for condition 2: would the doctor be content if the patient lived? It is a claim about aim.">"If the pain had stopped and she had lived on, I would have been glad. Her death was never my aim."</phil-item>
+      <phil-item answer="cause" why="The point is that the pneumonia caused the death. The doctor only did not prevent it.">"He refused the antibiotics, so I didn't give them. It was the pneumonia that killed him."</phil-item>
+      <phil-item answer="aim" why="The point is the difference between what the doctor aimed at and what the doctor only foresaw.">"I gave the dose to stop her suffering. I knew it might shorten her life, but I wasn't trying to end it."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 3 — THE TWO UNCLES ============ -->
@@ -363,7 +367,7 @@
   </phil-slide>
 
   <!-- 22. Replies to Rachels -->
-  <phil-slide>
+  <phil-slide id="replies-to-rachels">
     <h1>Replies to Rachels</h1>
     <p>Watson is not convinced, and neither were many philosophers.</p>
     <ul reveal>
@@ -377,7 +381,7 @@
   <!-- 23. MCQ: what the twin case shows [correct: A] -->
   <phil-slide>
     <h1>What the Twin Case Shows</h1>
-    <phil-mcq prompt="Suppose you agree that Smith and Jones are equally bad. What is the most that follows from that?"
+    <phil-mcq review="replies-to-rachels" prompt="Suppose you agree that Smith and Jones are equally bad. What is the most that follows from that?"
               explain="Right. A twin case shows what its one difference did in that pair. Rachels goes on to a general claim about all killing and letting die, and his critics accept the pair while refusing that further step.">
       <phil-choice correct>In this pair, killing versus letting die made no moral difference</phil-choice>
       <phil-choice feedback="That is Rachels' wider conclusion, and it takes more than one pair to reach it. His critics accept the pair and deny this step.">Killing and letting die are morally the same in every possible case</phil-choice>
@@ -402,7 +406,7 @@
   </phil-slide>
 
   <!-- 25. Criticism 1 -->
-  <phil-slide>
+  <phil-slide id="criticisms">
     <h1>Criticism 1: The Person, Not the Act</h1>
     <ul reveal>
       <li>Rachels' answer: they did the same thing, and it was a good thing to do. Jill's grandmother was comforted too.</li>
@@ -473,7 +477,7 @@
   <phil-slide>
     <h1>Name That Argument</h1>
     <p>Pick the argument each speaker is using.</p>
-    <phil-cloze explain="Right. The first speaker separates what Jill is like from what she did. The second doubts that a report of intention can be trusted. The third finds several aims in one mind. The fourth points out that courts already judge by intent.">
+    <phil-cloze review="criticisms" explain="Right. The first speaker separates what Jill is like from what she did. The second doubts that a report of intention can be trusted. The third finds several aims in one mind. The fourth points out that courts already judge by intent.">
       <span class="line">"She's a schemer, I grant you. But the old lady had her visit all the same."
         <phil-blank answer="judges the person" options="intent in law,judges the person,mixed motives,redescription">judges the person</phil-blank></span>
       <span class="line">"Afterwards every one of them says the same thing: he was only treating the pain."
