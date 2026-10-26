@@ -6,8 +6,8 @@
   <title>The Network With No Middle · PhilMates</title>
   <meta name="description" content="How the internet actually works and where its shape came from — packet switching, the end-to-end principle, open protocols, DNS, the Web and the advertising bargain — and how each engineering choice was made by somebody's values and then went on to shape everybody's.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/packets.js"></script>
   <style>
     blockquote.source {
@@ -150,7 +150,7 @@
   <phil-slide>
     <h1>Checkpoint: The Nuclear War Story</h1>
     <p>People often say the internet was built so it could survive a nuclear attack. That story is half right, and the half that is wrong is the interesting half.</p>
-    <phil-mcq prompt="What is the most accurate account of the connection?"
+    <phil-mcq data-qid="internet-no-middle:q1" prompt="What is the most accurate account of the connection?"
               explain="Right. Baran's survivable-communication work and the ARPANET project were separate, years apart, and had different funders and goals. What they shared was an engineering answer. The popular story welds them together and loses the useful point: two unrelated sets of values can push toward the same design.">
       <phil-choice feedback="The story is not simply false. Baran really was working on communication that could survive an attack, and that work really did help establish packet switching.">The story is invented. Nobody working on these systems ever thought about surviving an attack.</phil-choice>
       <phil-choice feedback="ARPANET was funded by a defense agency, but its stated purpose was letting researchers share scarce computers, not withstanding a strike.">The story is exact. ARPANET was commissioned and built specifically to keep working during a nuclear war.</phil-choice>
@@ -268,7 +268,7 @@
   <phil-slide>
     <h1>Fill In: The First Two Decisions</h1>
     <p>Complete the summary so far:</p>
-    <phil-cloze explain="These are the two decisions everything else rests on. Cutting messages into packets removed the center, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
+    <phil-cloze data-qid="internet-no-middle:q6" explain="These are the two decisions everything else rests on. Cutting messages into packets removed the center, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
       A message is cut into numbered pieces called
       <phil-blank options="packets,parcels,programs">packets</phil-blank>,
       and each piece finds its own way, so there is no
@@ -308,7 +308,7 @@
   <!-- 21. MCQ 2 [correct: A] -->
   <phil-slide>
     <h1>Checkpoint: Open Rules</h1>
-    <phil-mcq prompt="Why does it matter that the internet's protocols are public documents nobody owns?"
+    <phil-mcq data-qid="internet-no-middle:q2" prompt="Why does it matter that the internet's protocols are public documents nobody owns?"
               explain="Right. Because the rules are public and free, anyone can build a machine or a program that joins in, without a license and without asking. That is the reason there are thousands of competing browsers, mail programs and servers rather than one approved product.">
       <phil-choice correct>Anyone can build something that joins the network without needing a license or permission.</phil-choice>
       <phil-choice feedback="Public rules are not automatically more secure. Several early protocols had serious weaknesses, and being readable is what let people find them.">Public rules are harder to attack, because an attacker cannot see how any of the system works.</phil-choice>
@@ -414,7 +414,7 @@
   <!-- 28. Checkset: internet vs web -->
   <phil-slide>
     <h1>Checkpoint: Which Layer Is Which?</h1>
-    <phil-checkset prompt="Check every statement that is TRUE."
+    <phil-checkset data-qid="internet-no-middle:q4" prompt="Check every statement that is TRUE."
                    explain="The internet is the packet-moving layer from 1969, and the web is one thing built on top of it in 1989. Email is older than the web and is not part of it. A game or a video call uses the internet without touching the web at all. Getting this order right is what makes the rest of the story make sense.">
       <phil-statement correct>The internet existed for about twenty years before the web was invented.</phil-statement>
       <phil-statement correct>Email travels over the internet but is not part of the web.</phil-statement>
@@ -455,7 +455,7 @@
   <!-- 31. Checkset: cookies -->
   <phil-slide>
     <h1>Checkpoint: What a Cookie Is</h1>
-    <phil-checkset prompt="Check every statement that is TRUE."
+    <phil-checkset data-qid="internet-no-middle:q5" prompt="Check every statement that is TRUE."
                    explain="A cookie is data, not a program. It cannot run, and it cannot read anything on your machine. It was built so a shop could remember your basket from one page to the next. Nothing new had to be invented to follow people between sites — a company whose code sits on thousands of sites simply uses the basket mechanism exactly as it was written.">
       <phil-statement correct>A cookie is a small piece of data a site asks your browser to keep and hand back later.</phil-statement>
       <phil-statement correct>Cookies were invented to solve a problem with shopping baskets.</phil-statement>
@@ -549,7 +549,7 @@
   <!-- 34e. Checkpoint -->
   <phil-slide>
     <h1>Checkpoint: What Actually Changed</h1>
-    <phil-mcq prompt="The web ended up concentrated in a few companies. What changed to allow it?"
+    <phil-mcq data-qid="internet-no-middle:q3" prompt="The web ended up concentrated in a few companies. What changed to allow it?"
               explain="Nothing in the protocol. A packet is routed today the way it was routed in 1969, and no rule was rewritten to send traffic through anybody's servers. The concentration was produced by money and convenience on top of a design that still has no center, which is why fixing it is so much harder than repealing a rule.">
       <phil-choice feedback="No such rewrite ever happened. A packet today takes its own path through routers exactly as it did in 1969.">The protocol was rewritten to route traffic through central servers.</phil-choice>
       <phil-choice correct>Nothing in the protocol. The concentration came from economics, not a rule.</phil-choice>
@@ -562,7 +562,7 @@
   <phil-slide>
     <h1>Fill In: The Last Four Decisions</h1>
     <p>Complete the second half of the account:</p>
-    <phil-cloze explain="Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. The web was a layer added on top of a network that was already twenty years old. And it costs nothing because somebody else is paying for your attention.">
+    <phil-cloze data-qid="internet-no-middle:q7" explain="Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. The web was a layer added on top of a network that was already twenty years old. And it costs nothing because somebody else is paying for your attention.">
       The internet&apos;s rules are published where anyone can read them, so building something that joins the
       network needs no <phil-blank options="license,degree,cable">license</phil-blank>.
       Names are handled by a tree called the <phil-blank answer="DNS|domain name system">DNS</phil-blank>,

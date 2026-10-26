@@ -9,8 +9,8 @@
 
    Tracking: completion + score. cmi.core.lesson_status becomes "passed" when
    the learner finishes (completion still requires every question correct);
-   cmi.core.score.raw carries earned credit, where each wrong try halves a
-   question's worth (see shared/scorm-api.js). No masteryscore: with graded
+   cmi.core.score.raw carries earned credit, where each wrong try lowers a
+   question's worth to 80% of the last (see shared/scorm-api.js). No masteryscore: with graded
    credit, a mastery score of 100 would let some LMSs mark finishers "failed".
 
    Usage:

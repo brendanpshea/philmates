@@ -6,8 +6,8 @@
   <title>The Jekyll Protocol: Clinical Equipoise · PhilMates</title>
   <meta name="description" content="Dr. Helen Jekyll, great-granddaughter of the original, runs a modern clinical trial the right way — teaching the apparatus of research and the principle of equipoise against her ancestor's reckless self-experiment.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/trial.js"></script>
 </head>
 <body>
@@ -209,7 +209,7 @@
   <!-- 10. Checkset: purposes of randomization/blinding -->
   <phil-slide>
     <h1>What These Tools Are Actually For</h1>
-    <phil-checkset review="randomization" prompt="Check every genuine purpose of randomization and blinding."
+    <phil-checkset data-qid="bioethics-equipoise:q2" review="randomization" prompt="Check every genuine purpose of randomization and blinding."
                    explain="Right — both tools exist to keep bias from contaminating the comparison. The two false ones are worth pausing on. Blinding never removes the duty to tell people a placebo is possible: consent covers that before the trial starts. And randomizing makes the groups probably similar, not certainly so — it lowers the odds of a lopsided confounder, it does not abolish them.">
       <phil-statement correct>Spreading confounders — other differences between patients that could explain the result — evenly across the arms</phil-statement>
       <phil-statement correct>Keeping patients' knowledge of their arm from changing how they feel</phil-statement>
@@ -222,7 +222,7 @@
   <!-- 11. Classify: which tool -->
   <phil-slide>
     <h1>Which Tool Fixes It?</h1>
-    <phil-classify review="second-arm" prompt="Each problem could make a trial give the wrong answer. Which tool deals with it?"
+    <phil-classify data-qid="bioethics-equipoise:q6" review="second-arm" prompt="Each problem could make a trial give the wrong answer. Which tool deals with it?"
                    explain="Right. A control group shows what would have happened anyway, such as natural recovery or regression to the mean. Randomization keeps the arms alike, so differences between patients don't clump on one side. Blinding stops knowledge of who got what from changing how patients feel and how doctors judge them.">
       <phil-col key="ctrl">A control group</phil-col>
       <phil-col key="rand">Randomization</phil-col>
@@ -267,7 +267,7 @@
   <!-- 14. Classify: clinical or research consent -->
   <phil-slide>
     <h1>"But This Is Supposed to Help Me"</h1>
-    <phil-classify review="two-kinds-of-yes" prompt="A patient who mistakes research consent for clinical consent has the therapeutic misconception. Which kind of consent does each line describe?"
+    <phil-classify data-qid="bioethics-equipoise:q7" review="two-kinds-of-yes" prompt="A patient who mistakes research consent for clinical consent has the therapeutic misconception. Which kind of consent does each line describe?"
                    explain="Right. Clinical consent is to a treatment chosen as your best option. Research consent is to a protocol that may give you the drug or the placebo, run to learn something general. Treating the second as if it were the first is the therapeutic misconception.">
       <phil-col key="clin">Clinical consent</phil-col>
       <phil-col key="res">Research consent</phil-col>
@@ -333,7 +333,7 @@
   <!-- 19. Cloze -->
   <phil-slide>
     <h1>Name the Standard</h1>
-    <phil-cloze review="equipoise-compare" explain="Clinical equipoise looks at the community of experts; theoretical equipoise looks inward at one physician's own uncertainty — which is why clinical equipoise is the workable standard.">
+    <phil-cloze data-qid="bioethics-equipoise:q5" review="equipoise-compare" explain="Clinical equipoise looks at the community of experts; theoretical equipoise looks inward at one physician's own uncertainty — which is why clinical equipoise is the workable standard.">
       <phil-blank options="clinical,theoretical,statistical,personal">Clinical</phil-blank> equipoise means genuine disagreement in the expert
       <phil-blank answer="community|profession|field|expert community|panel">community</phil-blank>, while
       <phil-blank options="theoretical,clinical,collective,legal">theoretical</phil-blank> equipoise is about one
@@ -409,7 +409,7 @@
   <!-- 25. Checkset: the DSMB -->
   <phil-slide>
     <h1>Why an Outside Board?</h1>
-    <phil-checkset review="dsmb" prompt="Check every true statement about the DSMB and its stopping rules."
+    <phil-checkset data-qid="bioethics-equipoise:q3" review="dsmb" prompt="Check every true statement about the DSMB and its stopping rules."
                    explain="Right. An independent board watches the unblinded data at planned points, against rules written in advance. If the results turn clearly one-sided, the board can recommend stopping, and the better treatment goes to everyone still enrolled. That judgment is not left to Helen.">
       <phil-statement correct>The stopping rules are set in advance</phil-statement>
       <phil-statement correct>The board is independent of Helen and her team</phil-statement>
@@ -424,7 +424,7 @@
   <!-- 25b. Checkpoint: what the middle band is -->
   <phil-slide>
     <h1>Checkpoint: The Middle Band</h1>
-    <phil-mcq review="clinical-equipoise" prompt="A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do?"
+    <phil-mcq data-qid="bioethics-equipoise:q1" review="clinical-equipoise" prompt="A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do?"
               explain="Nothing about the number settles it, which is the point of the middle band. Freedman's standard asks a question about people rather than about data: is there still honest disagreement among the experts? That is why trials fix their stopping rules in advance, before anyone knows which way the numbers will fall.">
       <phil-choice feedback="Waiting for certainty is not free. Every extra week puts more patients on the placebo arm who might have had the drug, and the trial can pass the point where that is defensible.">Keep going until the evidence is certain, because stopping early risks a false result.</phil-choice>
       <phil-choice correct>Ask whether the expert community still honestly disagrees, and check the rules set in advance.</phil-choice>
@@ -465,7 +465,7 @@
   <!-- 28. Checkset: when placebo is defensible -->
   <phil-slide>
     <h1>When Is a Placebo Arm Defensible?</h1>
-    <phil-checkset review="placebo-vs-active" prompt="Check every case where a placebo-controlled design is ethically defensible."
+    <phil-checkset data-qid="bioethics-equipoise:q4" review="placebo-vs-active" prompt="Check every case where a placebo-controlled design is ethically defensible."
                    explain="Right. A placebo arm is defensible when no proven effective treatment exists, or in the narrow case where a placebo is scientifically necessary and nobody who gets it risks serious or irreversible harm. Cost and disease severity alone don't settle the question.">
       <phil-statement correct>No proven effective treatment currently exists for the condition</phil-statement>
       <phil-statement correct>A placebo is scientifically necessary, and going without the proven treatment risks no serious or lasting harm</phil-statement>

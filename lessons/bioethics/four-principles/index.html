@@ -6,8 +6,8 @@
   <title>Rounds with Van Helsing: The Four Principles of Bioethics · PhilMates</title>
   <meta name="description" content="Train under Doctor Van Helsing in Transylvania and learn principlism — the four principles of bioethics — through the dilemmas of monstrous patients.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/balance.js"></script>
 </head>
 <body>
@@ -167,7 +167,7 @@
   <!-- 13. Checkset: the four principles -->
   <phil-slide>
     <h1>Name the Four</h1>
-    <phil-checkset review="four-principles" prompt="Check the four principles of bioethics (and only those)."
+    <phil-checkset data-qid="bioethics-four-principles:q2" review="four-principles" prompt="Check the four principles of bioethics (and only those)."
                    explain="Exactly — autonomy, nonmaleficence, beneficence and justice. The two false ones are the interesting part: confidentiality and informed consent are both real duties that matter enormously, and neither is one of the four. They are worked-out applications of them — mostly of respect for autonomy — which is what specification means.">
       <phil-statement correct>Respect for autonomy — honor competent, informed choices</phil-statement>
       <phil-statement correct>Nonmaleficence — do no harm</phil-statement>
@@ -181,7 +181,7 @@
   <!-- 14. Checkset: prima facie -->
   <phil-slide>
     <h1>What "Prima Facie" Means</h1>
-    <phil-checkset review="prima-facie" prompt="The four principles are prima facie. Check every claim that follows from that."
+    <phil-checkset data-qid="bioethics-four-principles:q3" review="prima-facie" prompt="The four principles are prima facie. Check every claim that follows from that."
                    explain="Right. Prima facie, Ross's term, means each principle binds you unless another outweighs it in the case at hand. There is no fixed ranking, so either of two principles can give way, depending on the case. That does not make them optional: a principle gives way only to another that outweighs it.">
       <phil-statement correct>Each principle binds you unless another outweighs it in the case at hand</phil-statement>
       <phil-statement correct>Respect for autonomy can give way to beneficence in a particular case</phil-statement>
@@ -236,7 +236,7 @@
   <!-- 18. Cloze: specification -->
   <phil-slide>
     <h1>Say It Back</h1>
-    <phil-cloze review="specification" explain="That's specification: it makes a general principle concrete enough to act on in a particular case.">
+    <phil-cloze data-qid="bioethics-four-principles:q5" review="specification" explain="That's specification: it makes a general principle concrete enough to act on in a particular case.">
       Turning "respect autonomy" into "get informed consent before giving wolfsbane" is called
       <phil-blank answer="specification|specifying|specification of principles">specification</phil-blank>.
       It takes an <phil-blank options="abstract,concrete">abstract</phil-blank> principle and makes it
@@ -345,7 +345,7 @@
   <!-- 23. Checkset: conditions -->
   <phil-slide>
     <h1>What Justifies an Override?</h1>
-    <phil-checkset review="override-conditions" prompt="Check each genuine condition for justifiably overriding a principle."
+    <phil-checkset data-qid="bioethics-four-principles:q4" review="override-conditions" prompt="Check each genuine condition for justifiably overriding a principle."
                    explain="Right. These come from Beauchamp and Childress: good reasons, necessity, least infringement, and impartiality, plus a realistic prospect of success and minimizing harm. Expecting thanks, or ranking the principles, is not what licenses an override.">
       <phil-statement correct>You have good reasons that the other principle is weightier here</phil-statement>
       <phil-statement correct>No morally preferable alternative is available</phil-statement>
@@ -403,7 +403,7 @@
   <!-- 26. MCQ: a case -->
   <phil-slide>
     <h1>Reason Through It</h1>
-    <phil-mcq review="fault-lines" prompt="The Creature, newly risen, cannot understand his treatment options. What's the soundest first step?"
+    <phil-mcq data-qid="bioethics-four-principles:q1" review="fault-lines" prompt="The Creature, newly risen, cannot understand his treatment options. What's the soundest first step?"
               explain="Right. When capacity is in doubt you neither rubber-stamp nor ignore what the patient says. You assess his decision-making capacity and turn to an appropriate surrogate. That's autonomy, specified for diminished capacity.">
       <phil-choice correct>Assess his capacity, then involve an appropriate surrogate.</phil-choice>
       <phil-choice feedback="Honoring a choice he can't actually understand isn't respect for autonomy. It is abandoning him.">Treat his refusal exactly as you would a fully competent patient's.</phil-choice>
@@ -444,7 +444,7 @@
   <!-- 29. Classify: justified or residue -->
   <phil-slide>
     <h1>What Residue Asks of You</h1>
-    <phil-classify review="residue" prompt="You broke the Count's confidence to warn Sanda, and every condition for the override was met. Which idea does each line express?"
+    <phil-classify data-qid="bioethics-four-principles:q7" review="residue" prompt="You broke the Count's confidence to warn Sanda, and every condition for the override was met. Which idea does each line express?"
                    explain="Right. The override was justified: the danger to Sanda outweighed the Count's confidence, and every condition was met. The overridden principle still makes a claim on you, and that is moral residue: honesty, follow-up, and the unease you feel afterwards.">
       <phil-col key="just">Justified infringement</phil-col>
       <phil-col key="res">Moral residue</phil-col>
@@ -462,7 +462,7 @@
     <img slot="art" src="./assets/van-helsing.png" alt="Van Helsing holding up four fingers">
     <h1>Name All Four</h1>
     <p>Van Helsing holds up four fingers one last time. "Before dawn. Which principle is each of these?"</p>
-    <phil-cloze review="four-principles" explain="Autonomy, nonmaleficence, beneficence and justice. Notice that two of them look alike and are not: nonmaleficence is the duty not to inflict harm, and beneficence is the duty to actively do good. One is a floor you must not go below. The other is a good you have to weigh.">
+    <phil-cloze data-qid="bioethics-four-principles:q6" review="four-principles" explain="Autonomy, nonmaleficence, beneficence and justice. Notice that two of them look alike and are not: nonmaleficence is the duty not to inflict harm, and beneficence is the duty to actively do good. One is a floor you must not go below. The other is a good you have to weigh.">
       Honoring the Count's informed refusal is respect for
       <phil-blank answer="autonomy|respect for autonomy">autonomy</phil-blank>.
       Refusing to prescribe silver to Ilinca, because it would poison her, is

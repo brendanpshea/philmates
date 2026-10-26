@@ -6,8 +6,8 @@
   <title>The Villa Diodati Clinic: Germline Gene Editing · PhilMates</title>
   <meta name="description" content="Somatic versus germline gene editing, the treatment/enhancement line, and the main arguments for and against editing the genes of future children, told through one couple's night at a lakeside clinic.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/germline.js"></script>
   <style>
     .duo { display: flex; gap: 16px; margin: 4px 0 10px; }
@@ -168,7 +168,7 @@
   <!-- 11. Checkset: which are heritable -->
   <phil-slide>
     <h1>Which Edits Could Be Passed On?</h1>
-    <phil-checkset review="two-kinds-of-cells" prompt="Check every edit that the patient's future children could inherit."
+    <phil-checkset data-qid="germline-editing:q2" review="two-kinds-of-cells" prompt="Check every edit that the patient's future children could inherit."
                    explain="Right. What matters is which cells change, not how young the patient is. A newborn's liver cells are body cells, so that edit ends with the baby. Eggs, sperm, the cells that make them, and a just-fertilized egg all carry DNA to the next generation.">
       <phil-statement correct>Editing a fertilized egg in the lab before it starts to divide</phil-statement>
       <phil-statement correct>Editing the cells in a man's body that make his sperm</phil-statement>
@@ -239,7 +239,7 @@
   <!-- 16. Classify: treatment, enhancement, or a hard case -->
   <phil-slide>
     <h1>Why the Line Is Hard to Draw</h1>
-    <phil-classify review="treatment-enhancement" prompt="Sort each case the way this lesson does: treatment, enhancement, or a hard case in the middle."
+    <phil-classify data-qid="germline-editing:q4" review="treatment-enhancement" prompt="Sort each case the way this lesson does: treatment, enhancement, or a hard case in the middle."
                    explain="Right. Fixing a disease is treatment, and improving a healthy person beyond normal health is enhancement. A vaccine prevents disease by giving a healthy body a power nobody is born with, and growth hormone for a healthy short child aims at normal height in someone who is not ill. Neither label fits those two cleanly, so they sit in the middle.">
       <phil-col key="treat">Treatment</phil-col>
       <phil-col key="enh">Enhancement</phil-col>
@@ -301,7 +301,7 @@
   <!-- 20. Classify: upbringing or edit -->
   <phil-slide>
     <h1>The Comparison, Examined</h1>
-    <phil-classify review="upbringing-vs-edit" prompt="Some argue that an edit is just more parenting. To answer them, a critic has to find a difference that matters. Which kind of shaping does each line describe, as the lesson compares them?"
+    <phil-classify data-qid="germline-editing:q5" review="upbringing-vs-edit" prompt="Some argue that an edit is just more parenting. To answer them, a critic has to find a difference that matters. Which kind of shaping does each line describe, as the lesson compares them?"
                    explain="Right. These are the differences critics point to: a child takes part in her upbringing and can leave it behind, while an edit is fixed before she exists and can be passed on. To defeat the parents-already-choose argument, a critic has to show that one of these differences matters morally.">
       <phil-col key="up">Shaping by upbringing</phil-col>
       <phil-col key="edit">Shaping by germline edit</phil-col>
@@ -403,7 +403,7 @@
   <phil-slide>
     <h1>Name That Argument</h1>
     <p>Pick the argument each speaker is using.</p>
-    <phil-cloze review="objection-safety" explain="Right. The first speaker worries about harm nobody can predict or reverse, which is safety. The second points to people who can't be asked, which is consent. The third describes a gap between families, which is fairness. The fourth compares editing with ordinary parenting, which is the parents-already-choose argument.">
+    <phil-cloze data-qid="germline-editing:q3" review="objection-safety" explain="Right. The first speaker worries about harm nobody can predict or reverse, which is safety. The second points to people who can't be asked, which is consent. The third describes a gap between families, which is fairness. The fourth compares editing with ordinary parenting, which is the parents-already-choose argument.">
       <span class="line">"We can't know what this edit does in forty years, and we could never call it back."
         <phil-blank answer="safety" options="consent,fairness,parents already choose,safety">safety</phil-blank></span>
       <span class="line">"Her great-grandchildren will carry this change, and nobody can check with them first."
@@ -418,7 +418,7 @@
   <!-- 29. MCQ: which objection survives [correct: B] -->
   <phil-slide>
     <h1>Change One Fact</h1>
-    <phil-mcq review="nobody-asked" prompt="Suppose germline editing became perfectly safe and free for every family. Which of the three objections would still stand?"
+    <phil-mcq data-qid="germline-editing:q1" review="nobody-asked" prompt="Suppose germline editing became perfectly safe and free for every family. Which of the three objections would still stand?"
               explain="Right. Safety and fairness are worries about how editing might go wrong, and better science and fair funding could answer them. The consent objection is about who gets to decide, so it remains. Feinberg's open future is one way to judge how strong it is.">
       <phil-choice feedback="If editing were perfectly safe, there would be no mistake to take back. Safety is the objection that says 'not yet.'">The safety objection, because a mistake still can't be taken back</phil-choice>
       <phil-choice correct>The consent objection, because future people still aren't asked</phil-choice>

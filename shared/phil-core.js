@@ -41,7 +41,14 @@ const shuffledOptions = (host, nodes) =>
 /* Seconds a missed question waits before the next try, when it has no
    `review` slide to send the student to. */
 const RETRY_COOLDOWN = 10;
-// Halves show exactly (12.5%); thirds and sixths round to whole percents (67%).
+/* Each wrong try multiplies what a question can still earn by this:
+   100%, 80%, 64%, 51% … */
+const RETRY_FACTOR = 0.8;
+const worthAfter = misses => RETRY_FACTOR ** misses;
+// A multi-part miss says how many parts are wrong, never which.
+const countHint = (wrong, n, noun) =>
+  `${wrong} of your ${n} ${noun}s ${wrong === 1 ? 'is' : 'are'} wrong. Find ${wrong === 1 ? 'it' : 'them'} and check again.`;
+// Exact halves show as they are (12.5%); everything else rounds (51%, 67%).
 const pctText = (c) => {
   const p = c * 100;
   return `${Number.isInteger(p * 2) ? p : Math.round(p)}%`;
@@ -431,30 +438,38 @@ class PhilLesson extends HTMLElement {
 
   /* ---- widget coordination ---- */
   registerWidget(w) {
-    if (!w.dataset.qid) w.dataset.qid = `${this.lessonId}:q${this.widgets.length + 1}`;
+    // Graded items carry a permanent data-qid in the markup (the validator
+    // requires it), so saved progress survives adding or removing questions.
+    // The fallback uses its own namespace so it can never take a stamped id.
+    if (!w.dataset.qid) w.dataset.qid = `${this.lessonId}:auto${this.widgets.length + 1}`;
     const qid = w.dataset.qid;
     // Progress saved before graded credit existed: a question already solved
     // keeps full credit, so nobody loses points to the upgrade.
     this.store.credit ||= {};
     if (this.store.correct.has(qid) && !(qid in this.store.credit)) this.store.credit[qid] = 1;
+    // A question solved under the older, steeper decay (halving) is lifted to
+    // what the same number of wrong tries earns now. Credit never goes down.
+    if (this.store.correct.has(qid))
+      this.store.credit[qid] = Math.max(this.store.credit[qid], worthAfter(this.misses(qid)));
     this.widgets.push(w);
     this._refresh();   // denominator just grew; keep the tally/bar honest
     return { qid, alreadyCorrect: this.store.correct.has(qid) };
   }
 
   /* ---- graded credit ----
-     Each wrong try halves what a question is worth: 100%, 50%, 25%, 12.5% …
-     The credit is locked in the first time the question is solved, and wrong
-     tries are saved, so reloading the page never resets them. */
+     Each wrong try lowers what a question can still earn: 100%, 80%, 64% …
+     (RETRY_FACTOR). Multi-part questions also bank partial credit on every
+     check; see raiseCredit. A question keeps the best credit it ever earned,
+     and wrong tries are saved, so reloading the page never resets them. */
   misses(qid) { return this.store.misses?.[qid] || 0; }
-  creditOf(qid) { return this.store.credit?.[qid] ?? 0.5 ** this.misses(qid); }
+  creditOf(qid) { return this.store.credit?.[qid] ?? worthAfter(this.misses(qid)); }
   hasCredit(qid) { return qid in (this.store.credit || {}); }
-  /* Multi-part questions (checkset, cloze) settle their credit on the first
-     check, part by part, instead of halving; see their _check(). */
-  isFirstCheck(qid) { return this.misses(qid) === 0 && !this.hasCredit(qid); }
-  lockCredit(qid, c) {
+  /* Multi-part questions (checkset, cloze, classify) score each check part by
+     part, scaled by the tries already spent, and keep the best. A miss says
+     how many parts are wrong but not which, so a second try is a real one. */
+  raiseCredit(qid, c) {
     const credit = (this.store.credit ||= {});
-    if (!(qid in credit)) credit[qid] = Math.max(0, Math.min(1, c));
+    credit[qid] = Math.max(credit[qid] ?? 0, Math.max(0, Math.min(1, c)));
     this.store.save();
     this._refresh();
   }
@@ -467,7 +482,7 @@ class PhilLesson extends HTMLElement {
   reportCorrect(qid) {
     this.store.correct.add(qid);
     const credit = (this.store.credit ||= {});
-    if (!(qid in credit)) credit[qid] = 0.5 ** this.misses(qid);
+    credit[qid] = Math.max(credit[qid] ?? 0, worthAfter(this.misses(qid)));
     this.store.save();
     this._refresh();
   }
@@ -574,9 +589,13 @@ class PhilWidget extends HTMLElement {
   miss(hint) {
     this.lesson?.reportMiss(this.qid);
     const L = this.lesson;
-    const head = L?.hasCredit(this.qid)
-      ? `✘ Not yet — your credit for this question is ${pctText(L.creditOf(this.qid))}`
-      : `✘ Not yet — this question is now worth ${pctText(L ? L.creditOf(this.qid) : 0.5)}`;
+    const next = worthAfter(L ? L.misses(this.qid) : 1);
+    const banked = L?.hasCredit(this.qid) ? L.creditOf(this.qid) : 0;
+    const head = !L?.hasCredit(this.qid)
+      ? `✘ Not yet — this question is now worth ${pctText(next)}`
+      : next > banked
+        ? `✘ Not yet — ${pctText(banked)} so far; getting it all right now earns ${pctText(next)}`
+        : `✘ Not yet — you keep the ${pctText(banked)} you have; fix the rest to finish`;
     this.showFeedback(false, hint || '', head);
     this._block();
   }
@@ -798,29 +817,24 @@ class PhilCheckset extends PhilWidget {
   _check() {
     if (this._blocked) return;
     const sig = this._rows.map(r => (r._input.checked ? 1 : 0)).join('');
-    let ok = true;
-    this._rows.forEach(r => {
-      r.classList.remove('correct', 'wrong');
-      const want = r._correct, got = r._input.checked;
-      if (want && got) r.classList.add('correct');
-      else if (want !== got) { r.classList.add('wrong'); ok = false; }
-    });
-    if (ok) { this.lock(); this.solved(); return; }
+    const n = this._rows.length;
+    const wrong = this._rows.filter(r => r._input.checked !== r._correct).length;
+    this._rows.forEach(r => r.classList.remove('correct', 'wrong'));
+    if (!wrong) {
+      this._rows.forEach(r => { if (r._correct) r.classList.add('correct'); });
+      this.lock(); this.solved(); return;
+    }
     // Checking the same answers twice isn't a new try, so it costs nothing.
     if (sig === this._lastSig) {
       this.showFeedback(false, 'Change at least one answer before checking again.', '✘ Same answers as before');
       return;
     }
     this._lastSig = sig;
-    // The first check sets the credit, statement by statement: each right one
-    // counts for it and each wrong one against it, so random ticking averages
-    // zero. Red rows then show what to fix; later checks only finish the question.
-    if (this.lesson?.isFirstCheck(this.qid)) {
-      const n = this._rows.length;
-      const right = this._rows.filter(r => r._input.checked === r._correct).length;
-      this.lesson.lockCredit(this.qid, (right - (n - right)) / n);
-    }
-    this.miss('Red rows are wrong. Fix them to finish.');
+    // Each check is scored statement by statement: each right one counts for
+    // it and each wrong one against it, so random ticking averages zero. The
+    // miss says how many are wrong, not which, so the next try is a real one.
+    if (this.lesson) this.lesson.raiseCredit(this.qid, ((n - wrong) - wrong) / n * worthAfter(this.lesson.misses(this.qid)));
+    this.miss(countHint(wrong, n, 'answer'));
   }
   onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() {
@@ -877,23 +891,22 @@ class PhilCloze extends PhilWidget {
   _check() {
     if (this._blocked) return;
     const sig = this._blanks.map(f => this._val(f)).join('|');
-    let ok = true;
-    this._blanks.forEach(f => {
-      const good = f._accepted.includes(this._val(f));
-      f.classList.toggle('correct', good);
-      f.classList.toggle('wrong', !good);
-      if (!good) ok = false;
-    });
-    if (ok) { this.lock(); this.solved(); return; }
+    const wrong = this._blanks.filter(f => !f._accepted.includes(this._val(f))).length;
+    this._blanks.forEach(f => f.classList.remove('correct', 'wrong'));
+    if (!wrong) {
+      this._blanks.forEach(f => f.classList.add('correct'));
+      this.lock(); this.solved(); return;
+    }
     if (sig === this._lastSig) {
       this.showFeedback(false, 'Change at least one blank before checking again.', '✘ Same answers as before');
       return;
     }
     this._lastSig = sig;
-    // The first check sets the credit, blank by blank. A wrong dropdown pick
-    // costs 1/(options − 1), so random picking averages zero; a wrong typed
-    // answer or an empty blank costs nothing, since nobody types it by luck.
-    if (this.lesson?.isFirstCheck(this.qid)) {
+    // Each check is scored blank by blank. A wrong dropdown pick costs
+    // 1/(options − 1), so random picking averages zero; a wrong typed answer
+    // or an empty blank costs nothing, since nobody types it by luck. The miss
+    // says how many blanks are wrong, not which.
+    if (this.lesson) {
       let score = 0;
       this._blanks.forEach(f => {
         const v = this._val(f);
@@ -901,9 +914,9 @@ class PhilCloze extends PhilWidget {
         if (f._accepted.includes(v)) score += 1;
         else if (f.tagName === 'SELECT') score -= 1 / Math.max(1, f.options.length - 2);
       });
-      this.lesson.lockCredit(this.qid, score / this._blanks.length);
+      this.lesson.raiseCredit(this.qid, score / this._blanks.length * worthAfter(this.lesson.misses(this.qid)));
     }
-    this.miss('Red blanks aren’t right. Fix them to finish.');
+    this.miss(countHint(wrong, this._blanks.length, 'blank'));
   }
   onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() { this._blanks.forEach(f => f.disabled = true); this._btn.disabled = true; }
@@ -926,9 +939,9 @@ class PhilCloze extends PhilWidget {
    </phil-classify>
    A grid: one row per item, one radio per column, plus "Not sure" unless the
    host has `no-unsure`. Rows shuffle on load; columns keep authored order.
-   The first check sets the credit row by row: right +1, wrong −1/(columns−1),
-   not sure or blank 0, so random picking averages zero. Every row must be
-   right to finish. Each item's `why` is shown, on request, once solved.
+   Every check is scored row by row: right +1, wrong −1/(columns−1), not sure
+   or blank 0, so random picking averages zero. A miss counts the wrong rows
+   without marking them. Every row must be right to finish. Each item's `why` is shown, on request, once solved.
 ------------------------------------------------------------------ */
 class PhilClassify extends PhilWidget {
   build() {
@@ -992,28 +1005,31 @@ class PhilClassify extends PhilWidget {
     if (this._blocked) return;
     const picks = this._rows.map(r => this._pick(r));
     const sig = picks.map(p => p ?? '-').join('|');
-    let ok = true;
+    const wrong = this._rows.filter((r, i) => picks[i] !== r.answer).length;
+    // Unanswered and "Not sure" rows are marked ?, which gives nothing away.
+    // Wrong answers are counted but not marked until the question is solved.
     this._rows.forEach((r, i) => {
-      const p = picks[i];
       r.tr.classList.remove('correct', 'wrong', 'missing');
-      if (p === r.answer) r.tr.classList.add('correct');
-      else { ok = false; r.tr.classList.add(p ? 'wrong' : 'missing'); }
+      if (!wrong) r.tr.classList.add('correct');
+      else if (!picks[i]) r.tr.classList.add('missing');
     });
-    if (ok) { this.lock(); this.solved(); return; }
+    if (!wrong) { this.lock(); this.solved(); return; }
     if (sig === this._lastSig) {
       this.showFeedback(false, 'Change at least one answer before checking again.', '✘ Same answers as before');
       return;
     }
     this._lastSig = sig;
-    if (this.lesson?.isFirstCheck(this.qid)) {
+    if (this.lesson) {
       const penalty = 1 / Math.max(1, this._cols.length - 1);
       const score = this._rows.reduce((s, r, i) => {
         const p = picks[i];
         return s + (!p ? 0 : p === r.answer ? 1 : -penalty);
       }, 0);
-      this.lesson.lockCredit(this.qid, score / this._rows.length);
+      this.lesson.raiseCredit(this.qid, score / this._rows.length * worthAfter(this.lesson.misses(this.qid)));
     }
-    this.miss('Rows marked ✘ are wrong, and rows marked ? still need an answer. Fix them to finish.');
+    const open = picks.filter(p => !p).length;
+    this.miss(countHint(wrong, this._rows.length, 'row') +
+      (open ? ' Rows marked ? (no answer, or Not sure) are among them.' : ''));
   }
   onBlockChange(blocked) { this._btn.disabled = blocked; }
   lock() {

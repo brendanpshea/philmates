@@ -6,8 +6,8 @@
   <title>The Switch and the Scalpel: Trolley Problems &amp; Medical Triage · PhilMates</title>
   <meta name="description" content="Explore what makes a moral dilemma through Philippa Foot and Judith Jarvis Thomson's classic trolley problems, Thomson's organ transplant puzzle, and real-world medical triage protocols.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/switchboard.js"></script>
 </head>
 <body>
@@ -204,7 +204,7 @@
   <!-- 14b. Classify: which lever -->
   <phil-slide>
     <h1>Which Lever?</h1>
-    <phil-classify review="three-levers" prompt="Three moral levers pull on the rail cases. Which one is each thought pulling?"
+    <phil-classify data-qid="trolley-triage:q4" review="three-levers" prompt="Three moral levers pull on the rail cases. Which one is each thought pulling?"
                    explain="Right. Consequences count the outcome: five lives against one. Deontic constraints protect each person from being used as a tool. Causal agency asks whether you redirect a threat that already exists or create a new one.">
       <phil-col key="cons">Consequences</phil-col>
       <phil-col key="deon">Deontic constraints</phil-col>
@@ -222,7 +222,7 @@
   <phil-slide>
     <h1>Testing the Principle</h1>
     <p>Complete the core distinction of the Doctrine of Double Effect:</p>
-    <phil-cloze review="dde" explain="The Doctrine of Double Effect permits causing harm as an unintended side-effect of a good action, but forbids using harm as the instrumental means to achieve that good.">
+    <phil-cloze data-qid="trolley-triage:q3" review="dde" explain="The Doctrine of Double Effect permits causing harm as an unintended side-effect of a good action, but forbids using harm as the instrumental means to achieve that good.">
       Under the Doctrine of Double Effect, it is impermissible to use someone's death as the <phil-blank options="means,side-effect,accident">means</phil-blank> to save others, but it may be permissible if their death is a foreseen <phil-blank options="side-effect,goal,reward">side-effect</phil-blank> of redirecting an existing threat.
     </phil-cloze>
   </phil-slide>
@@ -268,7 +268,7 @@
   <!-- 19. Checkset: Why Transplant is Forbidden -->
   <phil-slide>
     <h1>Analyzing the Transplant Case</h1>
-    <phil-checkset review="hospital-math" prompt="Why is the Transplant case ethically distinct from pulling the rail switch? Check ALL that apply."
+    <phil-checkset data-qid="trolley-triage:q2" review="hospital-math" prompt="Why is the Transplant case ethically distinct from pulling the rail switch? Check ALL that apply."
                    explain="In the transplant case, the doctor initiates a new lethal assault on an unthreatened person, violates the fiduciary duty of medicine, and treats the patient's body as a mere biological resource.">
       <phil-statement correct>The surgeon initiates a brand new lethal harm against someone who was not in danger</phil-statement>
       <phil-statement correct>The surgeon violates the fundamental clinical duty of non-maleficence owed to their patient</phil-statement>
@@ -343,7 +343,7 @@
   <!-- 23b. MCQ: What real protocols use -->
   <phil-slide>
     <h1>What the Protocols Actually Say</h1>
-    <phil-mcq review="life-years" prompt="Two patients need the last ventilator. Ana is 34, with her kidneys, liver and lungs all failing. Bram is 71, with one failing organ system and otherwise stable. Under most US crisis standards, who is allocated the ventilator?"
+    <phil-mcq data-qid="trolley-triage:q1" review="life-years" prompt="Two patients need the last ventilator. Ana is 34, with her kidneys, liver and lungs all failing. Bram is 71, with one failing organ system and otherwise stable. Under most US crisis standards, who is allocated the ventilator?"
               explain="Bram — and if that felt wrong, that is the point. The score asks one question: who is more likely to survive this hospitalization? It is built from present organ function, not from age or from how many years a patient might have afterwards. Where age or life expectancy enters at all, it is usually a tie-breaker, and federal civil-rights guidance pushed several states to drop even that.">
       <phil-choice feedback="Most protocols do not rank by expected years ahead. It sounds fair, but it quietly ranks people by age and disability, and civil-rights guidance pushed states away from it.">Ana, because a 34-year-old has far more years of life still ahead of her.</phil-choice>
       <phil-choice feedback="Arrival order is explicitly rejected. It rewards whoever had a car or lived nearer the hospital, which is not a medical fact about anyone.">Whichever of the two reached the hospital doors first that evening.</phil-choice>
@@ -355,7 +355,7 @@
   <!-- 24. Classify: triage or the transplant -->
   <phil-slide>
     <h1>Why Triage Is Not Murder</h1>
-    <phil-classify review="scarcity" prompt="Passing a patient over for the last ventilator is not the same as the surgeon's harvest. Which case does each line describe?"
+    <phil-classify data-qid="trolley-triage:q5" review="scarcity" prompt="Passing a patient over for the last ventilator is not the same as the surgeon's harvest. Which case does each line describe?"
                    explain="Right. In triage, everyone competing for the bed already faces a lethal illness, and the doctor shares out scarce aid that cannot reach everyone. In the transplant, the doctor creates a new lethal harm against someone who was in no danger, and uses his body as spare parts.">
       <phil-col key="tri">Triage</phil-col>
       <phil-col key="trans">The transplant</phil-col>

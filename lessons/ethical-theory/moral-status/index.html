@@ -6,8 +6,8 @@
   <title>The Ambassador's Manifest: Moral Status · PhilMates</title>
   <meta name="description" content="As the Moral Status Officer on a first-contact survey ship, you classify seven impossible aliens against Mary Anne Warren's checklist — and discover you have been ruling on animals, abortion, end-of-life care, AI, and extinction the whole time.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/moral-status.js"></script>
 </head>
 <body>
@@ -84,7 +84,7 @@
   <!-- 6. Classify: agent, patient, or neither -->
   <phil-slide>
     <h1>Bridge Quiz, 0400 Hours</h1>
-    <phil-classify review="agents-patients" prompt="Agent, patient only, or neither? File each one."
+    <phil-classify data-qid="moral-status:q6" review="agents-patients" prompt="Agent, patient only, or neither? File each one."
                    explain="Right. An agent can weigh reasons and be held responsible, and every agent is also a patient. A patient can be wronged but is never put on trial. A hurricane and a coffee machine are neither: nobody's fault, and nobody's victim.">
       <phil-col key="agent">Agent: can do wrong, and be wronged</phil-col>
       <phil-col key="patient">Patient only: can be wronged</phil-col>
@@ -190,7 +190,7 @@
 
   <phil-slide>
     <h1>Filing Vocabulary</h1>
-    <phil-cloze review="damaged-wronged" explain="The core vocabulary. Moral status is the property of counting in one's own right. A moral patient can be wronged, and an agent can also do wrong. Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood.">
+    <phil-cloze data-qid="moral-status:q5" review="damaged-wronged" explain="The core vocabulary. Moral status is the property of counting in one's own right. A moral patient can be wronged, and an agent can also do wrong. Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood.">
       A being has moral <phil-blank answer="status|standing|worth|considerability">status</phil-blank> when it can be wronged in its own right.
       Anything that can be wronged is a moral <phil-blank options="patient,agent,object">patient</phil-blank>;
       only a being that can be held responsible is also a moral
@@ -252,7 +252,7 @@
   <!-- 15. Classify: which criterion -->
   <phil-slide>
     <h1>Five Officers, Five Criteria</h1>
-    <phil-classify review="five-criteria" prompt="Five officers file on strange beings. Which criterion is each one using?"
+    <phil-classify data-qid="moral-status:q7" review="five-criteria" prompt="Five officers file on strange beings. Which criterion is each one using?"
                    explain="Right. Sentience asks whether it can feel. Rationality asks whether it can reason and set its own ends. Species membership asks whether it is one of us. Relationships ask whether we stand in real relations of care with it. Reciprocity asks whether it can join a scheme of mutual advantage.">
       <phil-col key="species">Species membership</phil-col>
       <phil-col key="sent">Sentience</phil-col>
@@ -303,7 +303,7 @@
   <!-- 18. Classify: Warren or Marquis -->
   <phil-slide>
     <h1>The Potentiality Argument</h1>
-    <phil-classify review="pod" prompt="On the Kessel spore, who would say this: Warren or Marquis?"
+    <phil-classify data-qid="moral-status:q8" review="pod" prompt="On the Kessel spore, who would say this: Warren or Marquis?"
                    explain="Right. Warren asks what a being is now, and the spore has none of her five marks of personhood. Marquis asks what killing it would take away, and the spore has a future like ours ahead of it.">
       <phil-col key="warren">Mary Anne Warren</phil-col>
       <phil-col key="marquis">Don Marquis</phil-col>
@@ -333,7 +333,7 @@
   <!-- 20. Checkset -->
   <phil-slide>
     <h1>What the Dossier Actually Shows</h1>
-    <phil-checkset review="ninth-sun" prompt="Check every TRUE statement about the Ninth Sun case."
+    <phil-checkset data-qid="moral-status:q2" review="ninth-sun" prompt="Check every TRUE statement about the Ninth Sun case."
                    explain="The worshippers don't deny that the Ninth Sun thinks or feels — it passes every test on the form. What they deny is its standing to speak for itself, which is a claim about standing, not capacity. That's why veneration and exploitation can restrict a being in the same way: both treat it as belonging to someone else.">
       <phil-statement correct>The worshippers' argument denies the Ninth Sun standing to decide, not the capacity to decide.</phil-statement>
       <phil-statement correct>The Ninth Sun satisfies every mark on Warren's checklist.</phil-statement>
@@ -422,7 +422,7 @@
   <!-- 29b. Checkpoint: the last two dossiers -->
   <phil-slide>
     <h1>Certification Question: The Last Two</h1>
-    <phil-checkset review="glim" prompt="Check every TRUE statement about the Glim and the Vorl."
+    <phil-checkset data-qid="moral-status:q3" review="glim" prompt="Check every TRUE statement about the Glim and the Vorl."
                    explain="Right. The Glim cannot suffer the loss, because nobody is home, so if its case works at all, the value has to sit somewhere other than in its own interests. That is Rolston's claim. And the biologist found nothing in any Vorl unit that could feel anything: if there is an inner life, it belongs to the swarm."
                    >
       <phil-statement correct>The Glim cannot suffer, because it has no mind to suffer with.</phil-statement>
@@ -538,7 +538,7 @@
   <!-- 31. Checkset: marginal cases -->
   <phil-slide>
     <h1>Following the Argument</h1>
-    <phil-checkset review="marginal-cases" prompt="Check every TRUE statement about the argument from marginal cases."
+    <phil-checkset data-qid="moral-status:q4" review="marginal-cases" prompt="Check every TRUE statement about the argument from marginal cases."
                    explain="Right. It is a consistency argument. A criterion strict enough to shut out every animal also shuts out some humans, so you must either accept that result or find a different criterion. It makes no claim about which animals are clever, and it is usually used to push toward sentience, not away from it.">
       <phil-statement correct>It targets a criterion, such as rationality, that would leave animals out</phil-statement>
       <phil-statement correct>It points out that some humans, such as infants, lack rationality</phil-statement>
@@ -622,7 +622,7 @@
   <!-- 36. MCQ 7 [correct: C] -->
   <phil-slide>
     <h1>Final Certification</h1>
-    <phil-mcq review="pod" prompt="A colleague files FULL status for the Thrum and NO status for the Kessel spore. Which pair of commitments makes that consistent?"
+    <phil-mcq data-qid="moral-status:q1" review="pod" prompt="A colleague files FULL status for the Thrum and NO status for the Kessel spore. Which pair of commitments makes that consistent?"
               explain="Correct. Sentience is present in the Thrum and absent in the spore, so a sentientist who also rejects potentiality as status-conferring lands exactly here.">
       <phil-choice feedback="Species membership runs the other way here: the spore is a Kessel and the Thrum isn't, so this pairing would flip both rulings.">Species membership confers status, and sentience is not required for it</phil-choice>
       <phil-choice feedback="Rationality would exclude the Thrum, which cannot reason at all, so this pairing gets the first of the two rulings wrong.">Rationality confers status, and relationships can extend it still further</phil-choice>

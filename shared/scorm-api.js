@@ -15,10 +15,10 @@
      cmi.core.lesson_status   <- "passed" once complete (completion already
                                   requires every question correct), else
                                   "incomplete".
-     cmi.core.score.raw       <- round(earned credit / total * 100). An MCQ's
-                                  credit halves with each wrong try (100, 50, 25 …);
-                                  a checkset or cloze is scored part by part on its
-                                  first check. Credit is locked in and never rises.
+     cmi.core.score.raw       <- round(earned credit / total * 100). Each wrong
+                                  try lowers what a question can still earn by
+                                  0.8 (100, 80, 64 …); multi-part items also bank
+                                  partial credit per check. Credit never falls.
                                   Reported even mid-lesson so the gradebook shows
                                   partial work.
      cmi.core.session_time    <- time in the lesson this session, on exit. The

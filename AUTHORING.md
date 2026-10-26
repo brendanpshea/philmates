@@ -74,27 +74,34 @@ clean slide 1. Handy for re-running a lesson live in class. In a SCORM build,
 Reset keeps the score: it clears slides and answers, but never the wrong-try
 counts or earned credit.
 
-## Scoring: credit halves with each wrong try
+## Scoring: each wrong try is worth 80% of the last
 
 Completion still needs every question right eventually, but the **score** (shown
 as `★ Score` in the top bar and sent to the LMS) rewards getting it right early.
 Students were clicking through whole lessons in five minutes and guessing until
 each answer turned green, which earned full marks and taught nothing.
 
-- **MCQs: each wrong try halves what the question is worth:** 100%, 50%, 25%,
-  12.5% … Credit is locked in when the question is first solved. Wrong tries
-  are saved, so reloading the page doesn't reset them.
-- **Checksets and cloze: the first check sets the credit, part by part.** Halving
-  doesn't fit them, because after a miss the red rows show exactly what to fix,
-  so a blank first check followed by flipping the red rows would earn 50%.
-  Instead:
+- **Each wrong try lowers what a question can still earn by a factor of 0.8**
+  (`RETRY_FACTOR` in `phil-core.js`): 100% on the first try, then 80%, 64%,
+  51% … A question keeps the best credit it ever earned. Wrong tries are
+  saved, so reloading the page doesn't reset them.
+- **Checksets, cloze, and classify also earn partial credit on every check.**
+  Each check is scored part by part, then scaled by the tries already spent,
+  and the best result is kept. A first check with 5 of 6 right banks 67%; a
+  correct second check raises it to 80%. The part-by-part scores:
   - *Checkset:* (statements right − statements wrong) ÷ total, never below 0.
     6 of 6 right is 100%, 5 of 6 is 67%, 4 of 6 is 33%, and random ticking or
     a blank check averages 0.
   - *Cloze:* each right blank counts 1; a wrong dropdown pick costs
     1 ÷ (options − 1), so random picking averages 0. A wrong typed answer or an
     empty blank costs nothing.
-  - Later checks only finish the question. They never change its credit.
+  - *Classify:* each right row counts 1; a wrong row costs 1 ÷ (columns − 1);
+    a blank or "Not sure" row costs nothing.
+- **A multi-part miss says how many parts are wrong, never which.** "2 of
+  your 6 rows are wrong" leaves the student to find them. If the red marks
+  showed which ones, a random first check followed by flipping the red rows
+  would earn 80% with no knowledge at all. Unanswered and "Not sure" rows are
+  marked ?, which gives nothing away. Everything is marked once it's solved.
 - **A wrong MCQ option is struck through** and can't be picked again. The
   options reshuffle before the next try.
 - **Re-checking a checkset or cloze without changing anything is free.** It
@@ -118,6 +125,21 @@ id="imitation-game">`). Auto ids like `s7` shift whenever a slide is added.
 Adding an `id` to a slide that already has saved progress makes students
 revisit that one slide before the lesson counts as complete. That's harmless,
 but do it before a term rather than during one.
+
+**Every graded item carries a permanent `data-qid`.** Saved progress, in the
+browser and in the LMS, is keyed by it, so it must never change.
+
+- `new-lesson.mjs` stamps the first one. Give each new item the next unused
+  number (`<lesson-id>:q9`).
+- Never renumber, and never reuse a retired number.
+- When a conversion replaces an item with one that tests the same idea, keep
+  the old id, so students who solved it keep their credit. A genuinely new item
+  gets a new number.
+- The validator rejects missing, duplicate, or misprefixed ids.
+
+In older lessons the ids look out of order. The engine used to number items by
+type (all MCQs first, then checksets, cloze, and classify), so the stamped values
+are the ones saved progress already uses.
 
 ## `reveal` is a reserved attribute name
 
@@ -222,8 +244,9 @@ make it matching.
   that describes rather than names `descriptive`
   (`<phil-col key="in" descriptive>The interrogator can see this</phil-col>`).
   Labels with a colon ("Disguise: hides …") define themselves and are exempt.
-- Scoring: the first check sets the credit, row by row (right +1, wrong
-  −1/(columns−1), not sure 0), so guessing averages zero.
+- Scoring: every check is scored row by row (right +1, wrong
+  −1/(columns−1), not sure 0), so guessing averages zero, then scaled by the
+  tries already spent. A miss says how many rows are wrong, not which.
 - Rows shuffle on every load; columns keep their order.
 
 ### Fill the blanks — `<phil-cloze>`

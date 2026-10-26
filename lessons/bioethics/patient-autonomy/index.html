@@ -6,8 +6,8 @@
   <title>House Calls in the Hedgerow: Patient Autonomy · PhilMates</title>
   <meta name="description" content="A country doctor in the world of Peter Rabbit learns what makes consent truly informed, and Emanuel's four models of the doctor–patient relationship.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/consent.js"></script>
   <script type="module" src="./assets/pick-model.js"></script>
 </head>
@@ -202,7 +202,7 @@
   <!-- 13. Checkset: elements -->
   <phil-slide>
     <h1>Name the Ingredients</h1>
-    <phil-checkset review="consent-pathway" prompt="Check every genuine element of valid informed consent."
+    <phil-checkset data-qid="bioethics-autonomy:q2" review="consent-pathway" prompt="Check every genuine element of valid informed consent."
                    explain="Right — capacity, disclosure, understanding, voluntariness, and authorization. A doctor's approval or a witness's signature might be on the form, but neither is what makes consent valid.">
       <phil-statement correct>Capacity to make this particular decision</phil-statement>
       <phil-statement correct>Disclosure of the material information</phil-statement>
@@ -217,7 +217,7 @@
   <!-- 14. Classify: diagnose the defect -->
   <phil-slide>
     <h1>Diagnose the Defect</h1>
-    <phil-classify review="consent-pathway" prompt="Each case has one defect. Which ingredient of consent is missing?"
+    <phil-classify data-qid="bioethics-autonomy:q4" review="consent-pathway" prompt="Each case has one defect. Which ingredient of consent is missing?"
                    explain="Right. Capacity is the ability to decide, including appreciating that the facts apply to you. Disclosure is what you tell. Understanding is whether it landed. Voluntariness rules out manipulation and threats. Authorization is the patient actually saying go ahead.">
       <phil-col key="cap">Capacity</phil-col>
       <phil-col key="dis">Disclosure</phil-col>
@@ -366,7 +366,7 @@
   <!-- 25. Classify: name the model -->
   <phil-slide>
     <h1>Which Model Is It?</h1>
-    <phil-classify review="clarify-vs-develop" prompt="Six doctors talk to Peter about the garden. Which of the Emanuels' four models is each one using?"
+    <phil-classify data-qid="bioethics-autonomy:q5" review="clarify-vs-develop" prompt="Six doctors talk to Peter about the garden. Which of the Emanuels' four models is each one using?"
                    explain="Right. The paternalistic doctor decides. The informative doctor gives the facts and leaves the values to Peter. The interpretive doctor helps him see the values he already has, adding none of her own. The deliberative doctor argues that some values are worth more, and leaves the decision with him.">
       <phil-col key="pat">Paternalistic</phil-col>
       <phil-col key="inf">Informative</phil-col>
@@ -384,7 +384,7 @@
   <!-- 26. Checkset: models -->
   <phil-slide>
     <h1>Sort the Models</h1>
-    <phil-checkset review="four-models" prompt="Check each statement that correctly describes one of the Emanuels' models."
+    <phil-checkset data-qid="bioethics-autonomy:q3" review="four-models" prompt="Check each statement that correctly describes one of the Emanuels' models."
                    explain="Nicely sorted. The checked items match each model's role; the two left unchecked swap the models' jobs around.">
       <phil-statement correct>Paternalistic: the doctor decides and the patient assents</phil-statement>
       <phil-statement correct>Informative: the doctor gives facts and the patient chooses</phil-statement>
@@ -423,7 +423,7 @@
 
   <phil-slide>
     <h1>Which Model Wins?</h1>
-    <phil-mcq review="emanuels-verdict" prompt="The Emanuels defend the deliberative model as the ideal. On their argument, what is wrong with the informative model?"
+    <phil-mcq data-qid="bioethics-autonomy:q1" review="emanuels-verdict" prompt="The Emanuels defend the deliberative model as the ideal. On their argument, what is wrong with the informative model?"
               explain="Right, and notice where the objection cannot be. The informative doctor secures consent flawlessly — she discloses, checks understanding, applies no pressure and takes authorization. If there is something wrong with her, it is not a failure of consent. The Emanuels say she has confused respecting a patient with leaving him alone."
       >
       <phil-choice feedback="That is their worry about the paternalistic doctor, who decides for the patient. The informative doctor has the opposite problem: she offers no view at all.">It gives the doctor too much influence over which values the patient ends up holding.</phil-choice>

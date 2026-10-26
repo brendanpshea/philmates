@@ -6,8 +6,8 @@
   <title>Dr. Frankenstein and the Problem of Alignment · PhilMates</title>
   <meta name="description" content="Six questions you have to answer before you build something powerful, worked through Mary Shelley's Frankenstein — specification, training data, capability before guidance, what a system copies from its maker, irreversibility, and oversight.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
   <script type="module" src="./assets/wishes.js"></script>
   <style>
     blockquote.source {
@@ -76,7 +76,7 @@
   <!-- 4. Checkset: the film myths -->
   <phil-slide>
     <h1>What the Films Changed</h1>
-    <phil-checkset prompt="Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is TRUE of Mary Shelley's novel."
+    <phil-checkset data-qid="frankenstein-alignment:q3" prompt="Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is TRUE of Mary Shelley's novel."
                    explain="In the novel the creature is never given a name, and Frankenstein is Victor, the man who made it. It teaches itself to read and it speaks better than most characters in the book. The lightning, the laboratory tower and the hunchbacked assistant were all invented for the 1931 film. That difference matters. A mindless brute would make this a story about a monster, and it is a story about a maker.">
       <phil-statement correct>The creature has no name. Frankenstein is the man who made it.</phil-statement>
       <phil-statement correct>The creature learns to speak, and argues with Victor in full sentences.</phil-statement>
@@ -139,7 +139,7 @@
   <!-- 9. MCQ 1 [correct: B] -->
   <phil-slide>
     <h1>Checkpoint: Saying What You Want</h1>
-    <phil-mcq prompt="Each instruction above was more careful than the one before it, and every one still left something out. What best explains that?"
+    <phil-mcq data-qid="frankenstein-alignment:q1" prompt="Each instruction above was more careful than the one before it, and every one still left something out. What best explains that?"
               explain="Right. You have to write the instruction before the thing exists, which means writing it about situations you have never seen. The gap you left is obvious afterwards and almost invisible beforehand. That difficulty is the specification problem, and care alone does not solve it.">
       <phil-choice feedback="Care helps, but it does not close the gap. Each instruction in the tester was written carefully, and each one still missed something that only became obvious later.">Each instruction was written carelessly, and a slower writer would have caught the gap.</phil-choice>
       <phil-choice correct>You have to say what you want in advance, about situations you have not seen yet.</phil-choice>
@@ -269,7 +269,7 @@
   <phil-slide>
     <h1>Fill In: What It Learned</h1>
     <p>Complete the summary of how the creature came to know anything at all:</p>
-    <phil-cloze explain="Nothing about the creature's education was chosen. It learned language and kindness from the one household it could see, and it learned fear and anger from everyone who met it. Both lessons came from the same thing: whatever happened to be nearby while Victor was somewhere else.">
+    <phil-cloze data-qid="frankenstein-alignment:q5" explain="Nothing about the creature's education was chosen. It learned language and kindness from the one household it could see, and it learned fear and anger from everyone who met it. Both lessons came from the same thing: whatever happened to be nearby while Victor was somewhere else.">
       The creature taught itself to speak by listening to one family through a
       <phil-blank options="wall,book,teacher">wall</phil-blank>.
       Whatever a system learns from is called its
@@ -423,7 +423,7 @@
   <!-- 30. MCQ 2 [correct: C] -->
   <phil-slide>
     <h1>Checkpoint: Taking It Back</h1>
-    <phil-mcq prompt="Victor stopped because he decided two creatures could never be undone. What is the strongest version of that worry?"
+    <phil-mcq data-qid="frankenstein-alignment:q2" prompt="Victor stopped because he decided two creatures could never be undone. What is the strongest version of that worry?"
               explain="Right. This is the one worry that survives even a perfectly honest creature. If a decision can be reversed, a mistake costs you the time it takes to reverse it. If it cannot, the mistake is permanent, so it has to be got right the first time — and Victor has already shown he does not get things right the first time.">
       <phil-choice feedback="The creature had actually kept its word up to this point. The worry Victor acts on is not about this creature's honesty at all.">The creature had already broken its promises, so its offer could not be believed.</phil-choice>
       <phil-choice feedback="Physical strength was not what stopped him. He was worried about something he could not undo later, not about something he could not fight.">A second creature would double the physical danger, and he could not fight both.</phil-choice>
@@ -477,7 +477,7 @@
   <phil-slide>
     <h1>Fill In: What Victor Got Wrong</h1>
     <p>Complete the account of what Victor got wrong:</p>
-    <phil-cloze explain="Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel.">
+    <phil-cloze data-qid="frankenstein-alignment:q6" explain="Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel.">
       Victor's instruction to himself was to make it
       <phil-blank options="alive,kind,useful">alive</phil-blank>,
       and he never said what sort of life it ought to have. He gave it a powerful body and no guidance, so its
@@ -532,7 +532,7 @@
   <!-- 38. Checkset: what went wrong -->
   <phil-slide>
     <h1>Checkpoint: What Went Wrong</h1>
-    <phil-checkset prompt="Check every TRUE statement about how the disaster in the novel came about."
+    <phil-checkset data-qid="frankenstein-alignment:q4" prompt="Check every TRUE statement about how the disaster in the novel came about."
                    explain="The three true statements are three separate failures, and none of them required Victor to be cruel. The two false ones are the readings the story is built to rule out: the creature was gentle for a long time before it was violent, and a weaker creature abandoned in the same way would still have been a wrong done to it."
                    >
       <phil-statement correct>Victor never wrote down what he wanted the creature to be like, only that it should live.</phil-statement>

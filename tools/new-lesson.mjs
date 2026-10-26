@@ -26,8 +26,8 @@ const html = `<!doctype html>
   <title>${title} · PhilMates</title>
   <meta name="description" content="TODO: one-line description for the catalog.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=9">
-  <script type="module" src="../../../shared/phil-core.js?v=9"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=10">
+  <script type="module" src="../../../shared/phil-core.js?v=10"></script>
 </head>
 <body>
 
@@ -40,7 +40,7 @@ const html = `<!doctype html>
 
   <phil-slide>
     <h1>A Question</h1>
-    <phil-mcq prompt="Sample question?" explain="Why the right answer is right.">
+    <phil-mcq data-qid="${slug}:q1" prompt="Sample question?" explain="Why the right answer is right.">
       <phil-choice correct>The right answer</phil-choice>
       <phil-choice feedback="Hint shown when chosen.">A distractor</phil-choice>
     </phil-mcq>

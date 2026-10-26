@@ -134,6 +134,23 @@ function checkClassify(html) {
   return { count: n, problems: out };
 }
 
+/* Saved progress is keyed by data-qid, so every graded item needs one, unique
+   in its lesson and prefixed with the lesson id. Without it the engine falls
+   back to a position-based id, and adding or removing a question would move a
+   student's credit onto a different question. */
+function checkQids(html) {
+  const lessonId = (html.match(/<phil-lesson\b[^>]*\bid="([^"]+)"/) || [])[1] || 'lesson';
+  const out = [], seen = new Set();
+  for (const m of html.matchAll(/<phil-(mcq|checkset|cloze|classify)\b([^>]*)>/gi)) {
+    const q = (m[2].match(/\bdata-qid="([^"]*)"/) || [])[1];
+    if (!q) out.push(`${m[1]} has no data-qid: give it "${lessonId}:q<next unused number>"`);
+    else if (seen.has(q)) out.push(`data-qid="${q}" is used twice`);
+    else if (!q.startsWith(lessonId + ':')) out.push(`data-qid="${q}" should start with "${lessonId}:"`);
+    if (q) seen.add(q);
+  }
+  return out;
+}
+
 /* A review= target must be a slide id that comes before the question. A typo
    would leave the student locked out with nowhere to go but the cooldown. */
 function checkReviewTargets(html) {
@@ -215,6 +232,7 @@ async function run() {
         p.issues.forEach(x => lines.push(`      - ${x}`));
       });
       checkReviewTargets(html).forEach(x => { problemCount++; lines.push(`  ✘ ${x}`); });
+      checkQids(html).forEach(x => { problemCount++; lines.push(`  ✘ ${x}`); });
       mcqs.forEach((q, i) => {
         const issues = checkLengths(q);
         if (issues.length) {
