@@ -45,7 +45,7 @@
     <ul reveal>
       <li>It is smotheringly paternalistic, locking green spectacles onto citizens for their own cheerful comfort.</li>
       <li>Yet it abandons public safety by leaving toxic poppy fields unfenced and ignoring market fraud.</li>
-      <li>The Scarecrow spots the defect: it protects citizens from themselves while abandoning them to each other.</li>
+      <li>In Mill's terms, the defect is plain: it protects citizens from themselves while abandoning them to each other.</li>
     </ul>
   </phil-slide>
 
@@ -64,11 +64,12 @@
   </phil-slide>
 
   <!-- 5. The Harm Principle stated -->
-  <phil-slide>
+  <phil-slide id="simple-principle">
     <h1>One Very Simple Principle</h1>
     <p class="lead">"The only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is <strong>to prevent harm to others</strong>."</p>
     <ul reveal>
       <li>A person's own physical or moral good is never a warrant for state coercion; you may plead or warn, but never compel.</li>
+      <li>Compelling people for their own good is called <strong>paternalism</strong>.</li>
       <li>Over himself, over his own body and mind, the mature individual is <strong>sovereign</strong>.</li>
       <li>The principle covers competent adults, excluding children and those unable to reason for themselves.</li>
     </ul>
@@ -85,35 +86,39 @@
     </ul>
   </phil-slide>
 
-  <!-- 7. MCQ: first clause struck [correct: B] -->
+  <!-- 7. Classify: which clauses may stand -->
   <phil-slide>
     <h1>The First Vote</h1>
-    <phil-mcq prompt="The council applies Mill's principle to the old constitution. Which clause falls first?"
-              explain="Right. The spectacles law compels everyone for their own supposed good — 'comfort and cheerfulness' — which is exactly what Mill rules out. The poppy-field and market gaps are failures to prevent harm to others, which the principle permits fixing.">
-      <phil-choice feedback="The unfenced poppy fields are a gap, not a clause — and filling that gap (fumes harm unwitting travelers) is something the Harm Principle would actually support.">The missing rules about the sleep-inducing poppy fields</phil-choice>
-      <phil-choice correct>The mandatory green spectacles, worn for citizens' own cheerfulness</phil-choice>
-      <phil-choice feedback="Fraud in the market harms buyers — other people. Regulating it is a legitimate use of power under the principle, not a violation of it.">The lack of any honesty rules at all for the market vendors of Emerald City</phil-choice>
-      <phil-choice feedback="Recording who enters is not conduct that concerns only the visitor, and Mill leaves ordinary administration alone. The spectacles compel people purely for their own good.">The rule making every visitor give their name at the city gate</phil-choice>
-    </phil-mcq>
+    <phil-classify review="simple-principle" prompt="The council applies Mill's principle to six draft clauses. Which may stand?"
+                   explain="Right. Mill allows power over a competent adult only to prevent harm to others. Cheating, striking, and running people down harm others. The spectacles, diet, and worship clauses compel people for their own physical or moral good, which Mill says is never enough.">
+      <phil-col key="ok">Permitted: prevents harm to others</phil-col>
+      <phil-col key="no">Forbidden: compels people for their own good</phil-col>
+      <phil-item answer="no" why="The Wizard's spectacles law compels everyone for their own comfort and cheerfulness.">All citizens shall wear green spectacles, for their own cheerfulness</phil-item>
+      <phil-item answer="ok" why="Cheating harms the customer, another person.">No vendor shall cheat a customer</phil-item>
+      <phil-item answer="no" why="A person's own physical good is never a warrant for coercion.">All citizens shall eat their greens, for their own health</phil-item>
+      <phil-item answer="ok" why="Striking someone harms another person.">No citizen shall strike another</phil-item>
+      <phil-item answer="no" why="A person's own moral good is never a warrant for coercion either.">All citizens shall attend the temple, for the good of their souls</phil-item>
+      <phil-item answer="ok" why="Running down a pedestrian harms another person.">No wagon driver shall run down a pedestrian</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 8. Cloze -->
   <phil-slide>
     <h1>The Council's Minutes</h1>
-    <phil-cloze explain="That's the principle in one sentence: power against a person's will only to prevent harm to others — their own good, physical or moral, is never sufficient warrant. Compelling someone for their own good is paternalism.">
+    <phil-cloze review="simple-principle" explain="That's the principle in one sentence: power against a person's will only to prevent harm to others — their own good, physical or moral, is never sufficient warrant. Compelling someone for their own good is paternalism.">
       Power may be used over a citizen against their will only to prevent
-      <phil-blank answer="harm|injury|harm to others">harm</phil-blank> to
+      <phil-blank answer="harm|harms|injury|damage|harm to others">harm</phil-blank> to
       <phil-blank options="others,themselves,the state,the majority">others</phil-blank>;
       their own good is <phil-blank options="not,always,sometimes">not</phil-blank> a sufficient warrant.
       Compelling people for their own good is called
-      <phil-blank answer="paternalism|paternalistic">paternalism</phil-blank>.
+      <phil-blank answer="paternalism|paternalistic|paternalist|hard paternalism">paternalism</phil-blank>.
     </phil-cloze>
   </phil-slide>
 
   <!-- ============ ACT 2 — DRAWING THE LINE ============ -->
 
   <!-- 9. Compare: self- vs other-regarding -->
-  <phil-slide>
+  <phil-slide id="the-line">
     <h1>The Line Everything Depends On</h1>
     <phil-compare>
       <phil-side label="Self-Regarding Conduct" tag="Sovereign territory">
@@ -132,7 +137,7 @@
     <h1>The Intervention Test</h1>
     <figure class="phil-figure">
       <img src="./assets/harm-decision-flow.svg" alt="Decision flowchart showing Mill's Harm Principle. Conduct is divided into self-regarding (where coercion is forbidden for competent adults, with soft paternalism permitted only to verify knowledge) and other-regarding (where mere offense cannot be coerced, but direct harm to others justifies legal sanctions).">
-      <figcaption>Mill's fourfold test: coercion is legitimate only to prevent direct harm to others.</figcaption>
+      <figcaption>A decision procedure built on Mill's principle: coercion is legitimate only to prevent direct harm to others.</figcaption>
     </figure>
   </phil-slide>
 
@@ -162,7 +167,7 @@
   </phil-slide>
 
   <!-- 13. Mill's bridge -->
-  <phil-slide>
+  <phil-slide id="mills-bridge">
     <img slot="art" src="./assets/bridge.png" alt="A rickety rope bridge over a gorge, one plank snapped, with a figure about to step onto it">
     <h1>Mill's Bridge</h1>
     <p>A traveler steps toward an unsafe bridge with no time to warn him. May you seize him?</p>
@@ -176,10 +181,10 @@
   <!-- 14. Checkset: which clauses pass -->
   <phil-slide>
     <h1>Marking Up the Draft</h1>
-    <phil-checkset prompt="Check every clause the Harm Principle PERMITS:"
+    <phil-checkset review="the-line" prompt="Check every clause the Harm Principle PERMITS:"
                    explain="Right — poison labeling informs choice rather than overriding it, and a drunk soldier on watch endangers others. But banning private drunkenness and mandating temperance compel competent adults purely for their own (physical or moral) good. Both examples are Mill's own.">
       <phil-statement correct>Poisons sold in the market must carry a clear warning label</phil-statement>
-      <phil-statement correct>A soldier found drunk while on guard duty shall be punished</phil-statement>
+      <phil-statement correct>A soldier found drunk on guard duty, putting the camp at risk, shall be punished</phil-statement>
       <phil-statement>Any citizen found drunk at home shall be fined for self-neglect</phil-statement>
       <phil-statement>All citizens shall practice temperance for their own moral character</phil-statement>
     </phil-checkset>
@@ -201,7 +206,7 @@
   <!-- ============ ACT 3 — SPEECH IN THE EMERALD SQUARE ============ -->
 
   <!-- 16. Liberty of thought and discussion -->
-  <phil-slide>
+  <phil-slide id="pamphleteer">
     <img slot="art" src="./assets/emerald-square.png" alt="A soapbox orator in the Emerald City square, handing out pamphlets to a small crowd">
     <h1>The Pamphleteer</h1>
     <p>A pamphleteer publishes an article claiming grain merchants starve the poor:</p>
@@ -226,11 +231,11 @@
   <!-- 18. MCQ: the mob case [correct: A] -->
   <phil-slide>
     <h1>The Night It Almost Went Wrong</h1>
-    <phil-mcq prompt="The speaker shouts his claim to an angry mob outside a baker's home. Under Mill, what makes this punishable when the pamphlet was not?"
+    <phil-mcq review="pamphleteer" prompt="The speaker shouts his claim to an angry mob outside a grain merchant's home. Under Mill, what makes this punishable when the pamphlet was not?"
               explain="Right. For Mill the opinion itself never loses protection — what changes is the act. In those circumstances the words function as instigation to immediate harm against an identifiable person, which is other-regarding conduct like any other.">
       <phil-choice correct>The circumstances turn words into instigation of immediate harm</phil-choice>
       <phil-choice feedback="Falsity alone is not the trigger; Mill protects false opinions in debate.">The claim has now been proven false, removing protection</phil-choice>
-      <phil-choice feedback="Mill explicitly rejects offense as the standard here.">The bakers' feelings are hurt badly enough to count as harm</phil-choice>
+      <phil-choice feedback="Mill explicitly rejects offense as the standard here.">The merchants' feelings are hurt badly enough to count as harm</phil-choice>
       <phil-choice feedback="The medium is not what matters; it is the mob that changes the act.">He spoke the words aloud instead of printing them</phil-choice>
     </phil-mcq>
   </phil-slide>
@@ -301,20 +306,8 @@
     </ul>
   </phil-slide>
 
-  <!-- 25. MCQ: refusal case [correct: C] -->
-  <phil-slide>
-    <h1>Strike or Keep?</h1>
-    <phil-mcq prompt="The forced-treatment clause comes to a vote. What does the Harm Principle say about the competent, informed elder who refuses surgery?"
-              explain="Right. An informed, competent refusal of one's own treatment is self-regarding conduct — the paradigm of it. The clause compels her purely for her own good, so it's struck. Persuasion remains fair game; restraint does not.">
-      <phil-choice feedback="That gets the direction of the bridge case backwards — once a choice is informed, Mill's warrant for intervening disappears rather than strengthens.">Keep it: the bridge case shows we may always stop people from harming themselves</phil-choice>
-      <phil-choice feedback="Grief is real, but Mill doesn't count others' distress at your self-regarding choices as the kind of harm that licenses compulsion — that door would swallow the principle whole.">Keep it: her family's grief at losing her sooner counts as harm to others</phil-choice>
-      <phil-choice correct>Strike it: an informed refusal of one's own treatment is self-regarding</phil-choice>
-      <phil-choice feedback="A professional duty cannot license compulsion the principle forbids. Mill asks whether the conduct harms others, and refusing your own surgery does not.">Keep it: a surgeon&#39;s duty to save life outweighs a refusal</phil-choice>
-    </phil-mcq>
-  </phil-slide>
-
   <!-- 26. Vaccine mandates -->
-  <phil-slide>
+  <phil-slide id="epidemics">
     <h1>Epidemics and Harm to Others</h1>
     <p>The council considers public health measures during an airborne epidemic:</p>
     <ul reveal>
@@ -355,12 +348,12 @@
   <!-- 29. Checkset: health clauses -->
   <phil-slide>
     <h1>Voting the Health Chapter</h1>
-    <phil-checkset prompt="Check every health clause the Harm Principle PERMITS."
-                   explain="Right — quarantine of the contagious and honest-labeling rules prevent harm to others, and research participation (with genuine informed consent, as in the equipoise lesson) is an informed self-regarding choice the state shouldn't ban. Forcing treatment on a competent refuser is the one the principle forbids.">
+    <phil-checkset review="epidemics" prompt="Check every health clause the Harm Principle PERMITS."
+                   explain="Right. Quarantining the contagious, honest labels on remedies, and reporting outbreaks all prevent harm to others. Forcing treatment on a competent refuser is the one the principle forbids.">
       <phil-statement correct>Citizens contagious with sleeping-sickness may be quarantined during an outbreak</phil-statement>
       <phil-statement correct>Sellers of tonics and remedies must state their contents and known risks truthfully</phil-statement>
       <phil-statement>A competent adult who refuses treatment shall receive it under restraint</phil-statement>
-      <phil-statement correct>Informed adults may volunteer for risky medical research that has honest consent</phil-statement>
+      <phil-statement correct>Doctors must report outbreaks of contagious disease to the council</phil-statement>
     </phil-checkset>
   </phil-slide>
 
@@ -422,30 +415,21 @@
     </ul>
   </phil-slide>
 
-  <!-- 35. MCQ: hard case [correct: B] -->
+  <!-- 35. Classify: which concept -->
   <phil-slide>
     <h1>The Hardest Vote</h1>
-    <phil-mcq prompt="The council bans deceptive poppy maze designs, but permits informed visits. Which concept justifies this?"
-              explain="Right. The ban targets conduct that undermines the voluntariness of visitors' choices. That is the bridge case's logic extended: it protects the choice rather than overriding it. It's soft paternalism (or an anti-fraud rule), not a judgment that visiting is immoral or that visitors must be saved from themselves.">
-      <phil-choice feedback="Legal moralism would ban visits because they're vicious or degrading — but the ruling deliberately leaves informed visits legal, so morality-enforcement isn't the ground.">Legal moralism: the fields corrupt character</phil-choice>
-      <phil-choice correct>Soft paternalism: manipulation defeats informed, voluntary choice</phil-choice>
-      <phil-choice feedback="Hard paternalism would override even fully informed visitors for their own good — the ruling does the opposite, protecting informed visitors' access.">Hard paternalism: visitors must be saved from themselves</phil-choice>
-      <phil-choice feedback="Nothing in the ruling turns on anyone being offended. It targets the manipulation of the visitors&#39; own choices.">Offense principle: the fields are a neighborhood nuisance</phil-choice>
-    </phil-mcq>
-  </phil-slide>
-
-  <!-- 36. Cloze: the vocabulary -->
-  <phil-slide>
-    <h1>The Drafting Glossary</h1>
-    <phil-cloze explain="The full toolkit. Hard paternalism overrides informed choices for the chooser's own good. Soft paternalism only ensures choices are informed and voluntary. Legal moralism outlaws harmless immorality. The offense principle (Feinberg) would restrict profound, unavoidable offense. Liberalism makes liberty the default.">
-      Overriding an <em>informed</em> adult's choice for their own good is
-      <phil-blank options="hard,soft,legal">hard</phil-blank> paternalism;
-      stepping in only to ensure a choice is voluntary is
-      <phil-blank options="soft,hard,strict">soft</phil-blank> paternalism.
-      Banning harmless acts deemed immoral is legal
-      <phil-blank answer="moralism">moralism</phil-blank>.
-      In liberalism, <phil-blank answer="liberty|freedom">liberty</phil-blank> is the default.
-    </phil-cloze>
+    <phil-classify review="mills-bridge" prompt="The council hears six proposals. Which concept is each one an example of?"
+                   explain="Right. Hard paternalism overrides an informed adult's choice for their own good. Soft paternalism steps in only to make sure a choice is informed and voluntary. Legal moralism punishes conduct because it is thought immoral, even when it harms no one.">
+      <phil-col key="hard">Hard paternalism</phil-col>
+      <phil-col key="soft">Soft paternalism</phil-col>
+      <phil-col key="moral">Legal moralism</phil-col>
+      <phil-item answer="hard" why="Overriding an informed adult's choice for their own good is hard paternalism.">Ban the poppy fields even for adults who know exactly what happens, for their own good</phil-item>
+      <phil-item answer="soft" why="Stopping him only until he is informed checks that the choice is really his. That is soft paternalism.">Hold back a traveler stepping onto the broken bridge until he knows the planks are rotten</phil-item>
+      <phil-item answer="moral" why="Punishing harmless immorality is legal moralism.">Ban a private practice that harms no one, because the community thinks it immoral</phil-item>
+      <phil-item answer="hard" why="Forcing treatment on a competent patient is the lesson's textbook case of hard paternalism.">Restrain a competent patient who refuses surgery, and operate anyway</phil-item>
+      <phil-item answer="soft" why="Pausing someone unaware of the danger is soft paternalism, which Mill permits.">Pause a wanderer who doesn't know the poppies put people to sleep, and tell him</phil-item>
+      <phil-item answer="moral" why="This is Devlin's case for legal moralism.">Punish private vice, because a society needs a shared moral code to survive</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 6 — RATIFICATION ============ -->

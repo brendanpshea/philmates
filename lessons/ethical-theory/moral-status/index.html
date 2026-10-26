@@ -51,7 +51,7 @@
   <!-- ============ ACT 1 — WHAT THE QUESTION IS ============ -->
 
   <!-- 4. Moral status defined -->
-  <phil-slide>
+  <phil-slide id="damaged-wronged">
     <h1>Damaged vs. Wronged</h1>
     <p class="lead">A thing has <strong>moral status</strong> when it can be <em>wronged</em>. That means it matters in its own right, and not just because of what it is worth to somebody else.</p>
     <ul reveal>
@@ -62,7 +62,7 @@
   </phil-slide>
 
   <!-- 5. Agents vs patients -->
-  <phil-slide>
+  <phil-slide id="agents-patients">
     <h1>Agents and Patients</h1>
     <p>Your predecessor's one useful note, taped inside the desk drawer:</p>
     <phil-compare>
@@ -81,22 +81,27 @@
     </ul>
   </phil-slide>
 
-  <!-- 6. MCQ 1 [correct: C] -->
+  <!-- 6. Classify: agent, patient, or neither -->
   <phil-slide>
     <h1>Bridge Quiz, 0400 Hours</h1>
-    <phil-mcq prompt="An alien creature attacks a crew member. It cannot understand rules, promises, or blame — but it can plainly suffer. What is it?"
-              explain="Exactly. It can be wronged (it suffers) but cannot do wrong (it can't weigh reasons or be held responsible), so it's a moral patient but not a moral agent. Restraining it is fine; putting it on trial is a category error.">
-      <phil-choice correct>A moral patient but not a moral agent: it can be wronged, not blamed</phil-choice>
-      <phil-choice feedback="Agency requires responding to reasons and being answerable for what you do — this creature can do neither, so blame makes no sense.">A moral agent, since it acted and caused real harm to a person</phil-choice>
-      <phil-choice feedback="Suffering is the clearest evidence that someone is home. A hurricane is neither agent nor patient; this creature is not a hurricane.">Neither an agent nor a patient, since it is simply a force of nature doing what it does</phil-choice>
-      <phil-choice feedback="Reduced responsibility assumes some capacity to answer for what you did. This creature has none at all, so there is nothing to reduce.">A moral agent whose responsibility is reduced but not removed</phil-choice>
-    </phil-mcq>
+    <phil-classify review="agents-patients" prompt="Agent, patient only, or neither? File each one."
+                   explain="Right. An agent can weigh reasons and be held responsible, and every agent is also a patient. A patient can be wronged but is never put on trial. A hurricane and a coffee machine are neither: nobody's fault, and nobody's victim.">
+      <phil-col key="agent">Agent: can do wrong, and be wronged</phil-col>
+      <phil-col key="patient">Patient only: can be wronged</phil-col>
+      <phil-col key="neither">Neither</phil-col>
+      <phil-item answer="agent" why="The captain can weigh reasons, choose, and be held responsible.">The captain</phil-item>
+      <phil-item answer="agent" why="You can weigh reasons and answer for what you do, and like every agent you can also be wronged.">You, the new officer</phil-item>
+      <phil-item answer="patient" why="An infant can be treated well or badly, but is never put on trial.">An infant</phil-item>
+      <phil-item answer="patient" why="It suffers, so it can be wronged. It cannot understand blame, so it cannot do wrong.">An alien that attacks a crew member: it cannot understand blame, but it plainly suffers</phil-item>
+      <phil-item answer="neither" why="Smashing it damages the crew's property. The machine itself has no complaint.">The ship's coffee machine</phil-item>
+      <phil-item answer="neither" why="It can flatten a colony and still be nobody's fault and nobody's victim.">A hurricane</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 7. Warren's space traveler + the form -->
   <phil-slide>
     <h1>The Form on the Desk</h1>
-    <p>Someone asked your question first. In 1973 Mary Anne Warren opened a paper on abortion by imagining a <strong>space explorer captured by beings who may or may not be persons</strong>. How would she tell?</p>
+    <p>Someone asked your question first. In 1973 Mary Anne Warren, writing on abortion, imagined a <strong>space explorer who meets alien beings and must decide whether they are persons</strong>. How would she tell?</p>
     <ul reveal>
       <li>Her answer is a checklist of five marks of <strong>personhood</strong>: consciousness, reasoning, self-motivated activity, communication, self-awareness.</li>
       <li>It's printed on every dossier on your desk. Five boxes. Tick what applies.</li>
@@ -106,7 +111,7 @@
   </phil-slide>
 
   <!-- 8. The criteria menu -->
-  <phil-slide>
+  <phil-slide id="five-criteria">
     <img slot="art" src="./assets/circle.png" alt="The moral circle drawn as concentric rings, the outermost still a broken dashed line, with creatures waiting outside it">
     <h1>Where Do You Draw the Circle?</h1>
     <p>Everyone agrees <em>some</em> things count; the fight is over the line. Five criteria, each reasonable alone:</p>
@@ -185,15 +190,15 @@
 
   <phil-slide>
     <h1>Filing Vocabulary</h1>
-    <phil-cloze explain="The core vocabulary. Moral status is the property of counting in one's own right. A moral patient can be wronged, and an agent can also do wrong. Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood.">
+    <phil-cloze review="damaged-wronged" explain="The core vocabulary. Moral status is the property of counting in one's own right. A moral patient can be wronged, and an agent can also do wrong. Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood.">
       A being has moral <phil-blank answer="status|standing|worth|considerability">status</phil-blank> when it can be wronged in its own right.
       Anything that can be wronged is a moral <phil-blank options="patient,agent,object">patient</phil-blank>;
       only a being that can be held responsible is also a moral
       <phil-blank options="agent,patient,end">agent</phil-blank>.
-      Bentham's proposed criterion is <phil-blank answer="sentience|suffering">sentience</phil-blank>,
-      Kant's is <phil-blank answer="rationality|reason">rationality</phil-blank>,
+      Bentham's proposed criterion is <phil-blank answer="sentience|suffering|capacity to suffer|the capacity to suffer|pain">sentience</phil-blank>,
+      Kant's is <phil-blank answer="rationality|reason|reasoning|rational agency|autonomy">rationality</phil-blank>,
       and Warren's five-mark checklist is a test for
-      <phil-blank answer="personhood|being a person">personhood</phil-blank>.
+      <phil-blank answer="personhood|being a person|persons|person">personhood</phil-blank>.
     </phil-cloze>
   </phil-slide>
 
@@ -244,16 +249,23 @@
     </ul>
   </phil-slide>
 
-  <!-- 15. MCQ 2 [correct: A] -->
+  <!-- 15. Classify: which criterion -->
   <phil-slide>
-    <h1>The Consortium's Argument</h1>
-    <phil-mcq prompt="Before the amendment, the consortium argued: 'It won't remember. Where's the harm?' How does a sentientist answer that?"
-              explain="Right. On a sentientist view the badness of pain lies in the having of it, not the recalling of it. Memory matters to which further harms are possible — dread, trauma, a ruined plan — but it doesn't make the pain itself stop counting.">
-      <phil-choice correct>The pain is bad while it is happening; forgetting it later does not unmake it</phil-choice>
-      <phil-choice feedback="That's closer to the Kantian line than the sentientist one. Bentham's whole point is that reasoning ability is beside the question.">The Thrum's reasoning is too weak for its interests to be counted at all</phil-choice>
-      <phil-choice feedback="A sentientist wouldn't rest the case on the medic's feelings — that's Kant's indirect-duty move, which grounds the duty in us rather than in the creature.">The real harm falls on the medic, who must witness the creature's distress</phil-choice>
-      <phil-choice feedback="That accepts the consortium&#39;s test and argues about the facts. A sentientist rejects the test: the pain counted while it was happening either way.">It probably does remember, and the consortium has not shown otherwise</phil-choice>
-    </phil-mcq>
+    <h1>Five Officers, Five Criteria</h1>
+    <phil-classify review="five-criteria" prompt="Five officers file on strange beings. Which criterion is each one using?"
+                   explain="Right. Sentience asks whether it can feel. Rationality asks whether it can reason and set its own ends. Species membership asks whether it is one of us. Relationships ask whether we stand in real relations of care with it. Reciprocity asks whether it can join a scheme of mutual advantage.">
+      <phil-col key="species">Species membership</phil-col>
+      <phil-col key="sent">Sentience</phil-col>
+      <phil-col key="rat">Rationality</phil-col>
+      <phil-col key="rel">Relationships</phil-col>
+      <phil-col key="recip">Reciprocity</phil-col>
+      <phil-item answer="sent" why="Being able to suffer is the sentience criterion.">"It can suffer, so its pain counts."</phil-item>
+      <phil-item answer="rat" why="Reasoning and setting its own ends is the rationality criterion, the Kantian's test.">"It sets its own ends, so it may never be used merely as a means."</phil-item>
+      <phil-item answer="species" why="Counting because it is one of us is species membership, the Traditionalist's test.">"It is one of us, and morality starts with kin."</phil-item>
+      <phil-item answer="rel" why="Real relations of care are the relationships criterion, Midgley's mixed community.">"We have cared for it for years. It is part of our community."</phil-item>
+      <phil-item answer="recip" why="Joining a scheme of mutual advantage is the reciprocity criterion.">"It cannot make or keep a bargain, so it has no seat at the table."</phil-item>
+      <phil-item answer="sent" why="Pain counts because it is felt, whatever is remembered later. That is the sentience criterion.">"Its pain counts while it lasts, even if it forgets it later."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 16. The Kessel spore -->
@@ -270,7 +282,7 @@
   </phil-slide>
 
   <!-- 17. Warren vs Marquis -->
-  <phil-slide>
+  <phil-slide id="pod">
     <h1>The Poet in the Pod</h1>
     <p>Each side has a philosopher behind it, and they are not even arguing about the same thing.</p>
     <phil-compare>
@@ -288,28 +300,32 @@
     </ul>
   </phil-slide>
 
-  <!-- 18. MCQ 3 [correct: B] -->
+  <!-- 18. Classify: Warren or Marquis -->
   <phil-slide>
     <h1>The Potentiality Argument</h1>
-    <phil-mcq prompt="The Kessel delegate argues from potential. What is the standard objection to reasoning that way?"
-              explain="Yes — the classic reply: having the potential to become an X doesn't yet give you the rights of an X. An acorn is a potential oak, but you can't sit in its shade; a cadet is a potential captain, but can't order the ship about. Defenders of potentiality must explain why this case differs.">
-      <phil-choice feedback="Nobody disputes the biology here — the spore's development is stipulated as reliable. The objection concerns what potential proves, not whether it exists.">Potential outcomes are never certain enough to be predicted reliably</phil-choice>
-      <phil-choice correct>Being a potential X does not confer the rights of an actual X — an acorn is not an oak</phil-choice>
-      <phil-choice feedback="That concedes the argument rather than objecting to it, and it quietly assumes status arrives gradually with size, which is itself disputed.">Potential status grows with the being, so the spore has partial status now and will earn the rest</phil-choice>
-      <phil-choice feedback="Nobody consents into being a moral patient. Status is not the sort of thing the holder agrees to receive.">The spore never consented to being given status, so none can be assigned</phil-choice>
-    </phil-mcq>
+    <phil-classify review="pod" prompt="On the Kessel spore, who would say this: Warren or Marquis?"
+                   explain="Right. Warren asks what a being is now, and the spore has none of her five marks of personhood. Marquis asks what killing it would take away, and the spore has a future like ours ahead of it.">
+      <phil-col key="warren">Mary Anne Warren</phil-col>
+      <phil-col key="marquis">Don Marquis</phil-col>
+      <phil-item answer="warren" why="Warren's test is her five marks of personhood, and the spore has none of them.">"The spore has none of the five marks of personhood, so it has no right to life."</phil-item>
+      <phil-item answer="marquis" why="Marquis grounds the wrong of killing in the loss of a future like ours.">"Killing it would take away a future like ours."</phil-item>
+      <phil-item answer="warren" why="Warren asks what a being is.">"What matters is what a being is now."</phil-item>
+      <phil-item answer="marquis" why="Marquis asks what a being would lose.">"What matters is what a being would lose."</phil-item>
+      <phil-item answer="warren" why="On Warren's view, whatever the spore will be, it isn't a person yet.">"Whatever it will become, it is not a person yet, so killing it wrongs no one."</phil-item>
+      <phil-item answer="marquis" why="Marquis says the wrong of killing isn't about present capacities.">"The wrong of killing is not about present capacities."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 19. The Ninth Sun -->
-  <phil-slide>
+  <phil-slide id="ninth-sun">
     <img slot="art" src="./assets/fading.png" alt="The Ninth Sun lying still in a warm-lit shrine alcove, a votive lamp burning above the bed and an open book of devotions beside it">
     <h1>Dossier 3 — The Ninth Sun</h1>
     <p>Ward four of the Kessel hospice, which is also a shrine.</p>
     <ul reveal>
       <li>The being on the bed is older than the records. Three million Kessel are named after it.</li>
-      <li>It is <strong>conscious and entirely lucid</strong>, and has asked repeatedly, in writing, to be allowed to die.</li>
+      <li>It is <strong>conscious and entirely lucid</strong>, and has asked repeatedly, in writing, to be allowed to die. On the form, it ticks all five boxes.</li>
       <li>Its physicians could comply tomorrow. Its people forbid it: "The Ninth Sun does not belong to itself."</li>
-      <li>Their argument isn't that it is mistaken, but that the request <strong>isn't its own to make</strong>.</li>
+      <li>Their argument isn't that it is mistaken, but that the request <strong>isn't its own to make</strong>: it lacks the standing to ask.</li>
       <li>Other files ask if something counts <em>enough</em>. This asks what happens when it counts too much.</li>
     </ul>
   </phil-slide>
@@ -317,12 +333,12 @@
   <!-- 20. Checkset -->
   <phil-slide>
     <h1>What the Dossier Actually Shows</h1>
-    <phil-checkset prompt="Check every TRUE statement about the Ninth Sun case."
-                   explain="The worshippers don't deny that the Ninth Sun thinks or feels — it passes every test on the form. What they deny is its standing to speak for itself, which is a claim about status, not capacity. That's why veneration and exploitation can restrict a being in the same way: both treat it as belonging to someone else.">
+    <phil-checkset review="ninth-sun" prompt="Check every TRUE statement about the Ninth Sun case."
+                   explain="The worshippers don't deny that the Ninth Sun thinks or feels — it passes every test on the form. What they deny is its standing to speak for itself, which is a claim about standing, not capacity. That's why veneration and exploitation can restrict a being in the same way: both treat it as belonging to someone else.">
       <phil-statement correct>The worshippers' argument denies the Ninth Sun standing to decide, not the capacity to decide.</phil-statement>
       <phil-statement correct>The Ninth Sun satisfies every mark on Warren's checklist.</phil-statement>
       <phil-statement>Because millions depend on it, the Ninth Sun cannot be a moral patient at all.</phil-statement>
-      <phil-statement correct>Treating a being as sacred can restrict its status as surely as treating it as a resource.</phil-statement>
+      <phil-statement correct>Treating a being as sacred can still deny it standing over its own life.</phil-statement>
       <phil-statement>Because the worshippers revere the Ninth Sun, they are treating it as a full moral agent.</phil-statement>
     </phil-checkset>
   </phil-slide>
@@ -339,18 +355,6 @@
       <li>Its filing: "I do not ask to be spared suffering. I ask not to be used merely as an instrument."</li>
       <li>It also <em>looks</em> like a machine. How much of your intuition is coming from that?</li>
     </ul>
-  </phil-slide>
-
-  <!-- 22. MCQ 4 [correct: C] -->
-  <phil-slide>
-    <h1>The Loom's Hearing</h1>
-    <phil-mcq prompt="The makers' certificate is the only evidence that the Loom has no inner life. What should the officer make of it?"
-              explain="Right. Its builders know the mechanism, but whether a mechanism has experience is exactly what knowing the mechanism doesn't settle — and they have an interest in the answer. That leaves genuine uncertainty, which is itself something to act on: this is Jonathan Birch's precautionary approach to sentience, and the reason the same industry testimony about fish and insects gets a hard look.">
-      <phil-choice feedback="They know how it was assembled. Whether an assembly has experience is precisely the question that inspecting the assembly leaves open — and the certificate's authors profit from one answer.">The certificate settles it, since nobody on the ship is better placed to know than the people who built it</phil-choice>
-      <phil-choice feedback="That assumes a being with an inner life could and would report it. Infants and animals can't, and we don't treat their silence as proof of an empty room.">Its silence is the answer: anything with an inner life would say so</phil-choice>
-      <phil-choice correct>It is interested testimony about something unobservable, so real uncertainty remains</phil-choice>
-      <phil-choice feedback="The records describe how it was assembled. Whether what was assembled has experience is the question that inspecting it leaves open.">It can be checked by inspecting the Loom&#39;s own construction records</phil-choice>
-    </phil-mcq>
   </phil-slide>
 
   <!-- 23. The Tessera -->
@@ -371,11 +375,11 @@
   <!-- 24. Contractualism -->
   <phil-slide>
     <h1>The Fifth Delegate Speaks</h1>
-    <p>The Contractualist has been quiet all session. The Tessera is his case.</p>
+    <p>The Contractualist has been quiet all session. His view is David Gauthier's: morality as mutual advantage. The Tessera is his case.</p>
     <phil-compare>
       <phil-side label="The Contractualist" tag="Mutual advantage">
         <p>Morality is the rules free and roughly equal parties could agree to and hold each other to. Duties are owed to those who can be <em>party</em> to it.</p>
-        <p class="cake">The Tessera can't promise, reciprocate, or be bound. No seat at the table.</p>
+        <p class="case">The Tessera can't promise, reciprocate, or be bound. No seat at the table.</p>
       </phil-side>
       <phil-side label="The objection" tag="Who else is out?">
         <p>The same test excludes infants, the severely disabled, future generations, and every wild animal anywhere.</p>
@@ -387,20 +391,8 @@
     </ul>
   </phil-slide>
 
-  <!-- 25. MCQ 5 [correct: A] -->
-  <phil-slide>
-    <h1>Certification Question: The Tessera</h1>
-    <phil-mcq prompt="Why is the Tessera a hard case for the view that moral status tracks human-like properties?"
-              explain="Exactly. The Tessera holds the two properties that view treats as central — intelligence and an inner life — while sharing none of the biology, sociality, or emotional life that usually travels with them. So the view has to say which of those things was really doing the work.">
-      <phil-choice correct>It has the properties that view calls central while sharing nothing else with us</phil-choice>
-      <phil-choice feedback="It plainly passes two of them — it is intelligent and it is sentient. The difficulty is that it passes those while failing everything else.">It fails every criterion anyone has put on the table, so no view of status can accommodate it at all</phil-choice>
-      <phil-choice feedback="That's reversed. The Tessera is a problem FOR contractualism: it cannot reciprocate, and yet excluding a sentient, intelligent being on that ground looks arbitrary.">Its inability to reciprocate shows reciprocity is the workable criterion</phil-choice>
-      <phil-choice feedback="Ranking it above us would be awkward rather than puzzling. The difficulty is that it meets the criterion while resembling us in no other way.">It is more intelligent than we are, so the view must rank it above us</phil-choice>
-    </phil-mcq>
-  </phil-slide>
-
   <!-- 26. The Glim -->
-  <phil-slide>
+  <phil-slide id="glim">
     <img slot="art" src="./assets/glim.png" alt="A Glim: a small drifting crystal-flower cupped in gloved hands, its light feeding a bed of moss below">
     <h1>Dossier 6 — The Glim</h1>
     <p>Cargo bay four. The quartermaster wants the power it's drawing.</p>
@@ -430,14 +422,14 @@
   <!-- 29b. Checkpoint: the last two dossiers -->
   <phil-slide>
     <h1>Certification Question: The Last Two</h1>
-    <phil-checkset prompt="Check every TRUE statement about the Glim and the Vorl."
-                   explain="The two false ones are the exact mistakes these cases are built to catch. The Glim cannot lose anything, because there is nobody home to suffer the loss — so if its case works at all, the value has to sit somewhere other than in the Glim's own interests, which is precisely Rolston's claim. And the Vorl is the reverse error: reasoning from what each unit lacks to what the swarm lacks. A single neuron cannot feel anything either."
+    <phil-checkset review="glim" prompt="Check every TRUE statement about the Glim and the Vorl."
+                   explain="Right. The Glim cannot suffer the loss, because nobody is home, so if its case works at all, the value has to sit somewhere other than in its own interests. That is Rolston's claim. And the biologist found nothing in any Vorl unit that could feel anything: if there is an inner life, it belongs to the swarm."
                    >
-      <phil-statement correct>The Glim has no interests of its own, because it has no mind to have them with.</phil-statement>
+      <phil-statement correct>The Glim cannot suffer, because it has no mind to suffer with.</phil-statement>
       <phil-statement correct>Rolston holds that losing a species ends something beyond the sum of the individual deaths.</phil-statement>
       <phil-statement correct>Each Vorl unit is insensate, and the swarm nevertheless reports an inner life.</phil-statement>
       <phil-statement>The Glim's claim rests on the suffering it would undergo if its species ended.</phil-statement>
-      <phil-statement>Since every Vorl unit is mindless, the swarm they compose cannot have a mind either.</phil-statement>
+      <phil-statement>The biologist found Vorl units that could feel pain.</phil-statement>
     </phil-checkset>
   </phil-slide>
 
@@ -509,20 +501,20 @@
   <!-- 29. Speciesism -->
   <phil-slide>
     <h1>"Because It's One of Us"</h1>
-    <p>The Traditionalist keeps invoking species membership. The Sentientist calls this <strong>speciesism</strong>, and means it as an insult.</p>
+    <p>The Traditionalist keeps invoking species membership. The psychologist Richard Ryder coined a word for this, <strong>speciesism</strong>, and Peter Singer made it famous. They mean it as an insult.</p>
     <ul reveal>
-      <li>Her charge: species membership is a <em>biological</em> fact, and biological facts do not by themselves confer moral weight. Compare the ancestries we have stopped counting.</li>
-      <li>"Show me what it <em>tracks</em>," she says, "and I'll grant that <em>that</em> matters. But then it's doing the work, not the membership."</li>
-      <li>The Traditionalist's reply isn't nothing: <strong>we are not impartial observers</strong>. Partiality toward one's own may be part of any livable morality, not a bias to be scrubbed out.</li>
+      <li>Singer's charge: species membership is a <em>biological</em> fact, and biological facts do not by themselves confer moral weight. Compare the ancestries we have stopped counting.</li>
+      <li>Show me what it <em>tracks</em>, the argument goes, and that will matter. But then that is doing the work, not the membership.</li>
+      <li>Bernard Williams replied that <strong>we are not impartial observers</strong>: partiality toward our own may be part of any livable morality.</li>
       <li>Note the stakes. If speciesism is a mistake, factory farming is a catastrophe. If it isn't, a great deal is permitted.</li>
     </ul>
   </phil-slide>
 
   <!-- 30. Marginal cases -->
-  <phil-slide>
+  <phil-slide id="marginal-cases">
     <img slot="art" src="./assets/singer.png" alt="Relic card: an expanding circle — Peter Singer's emblem">
     <h1>The Argument From Marginal Cases</h1>
-    <p>The Sentientist's sharpest move, and the one that makes the room uncomfortable:</p>
+    <p>The sharpest argument against the rationality test, pressed by Singer and Regan. Jan Narveson gave it its name in 1977.</p>
     <ul reveal>
       <li><strong>1.</strong> Suppose rationality is what confers full moral status.</li>
       <li><strong>2.</strong> Some humans do not have it: infants, and people with severe cognitive disabilities.</li>
@@ -543,16 +535,19 @@
     </ul>
   </phil-slide>
 
-  <!-- 31. MCQ 6 [correct: B] -->
+  <!-- 31. Checkset: marginal cases -->
   <phil-slide>
     <h1>Following the Argument</h1>
-    <phil-mcq prompt="What is the argument from marginal cases actually designed to show?"
-              explain="Right. It's a consistency argument: any criterion strict enough to exclude all animals also excludes some humans, and any criterion generous enough to include all humans lets some animals in. You must either bite a bullet or find a principled difference.">
-      <phil-choice feedback="It isn't an empirical claim about intelligence, and it doesn't rank any species above another. It's a claim about the structure of the criterion.">That certain animals are in fact more intelligent than some human beings</phil-choice>
-      <phil-choice correct>That a criterion excluding all animals will also exclude some human beings</phil-choice>
-      <phil-choice feedback="Backwards. The argument's target is the rationality criterion, and it is used to push toward sentience, not away from it.">That sentience is too permissive and reason should replace it as the test</phil-choice>
-      <phil-choice feedback="It is an argument about criteria rather than against having them. It says a criterion has to be applied consistently, not that we should drop them.">That status should be settled case by case instead of by any criterion</phil-choice>
-    </phil-mcq>
+    <phil-checkset review="marginal-cases" prompt="Check every TRUE statement about the argument from marginal cases."
+                   explain="Right. It is a consistency argument. A criterion strict enough to shut out every animal also shuts out some humans, so you must either accept that result or find a different criterion. It makes no claim about which animals are clever, and it is usually used to push toward sentience, not away from it.">
+      <phil-statement correct>It targets a criterion, such as rationality, that would leave animals out</phil-statement>
+      <phil-statement correct>It points out that some humans, such as infants, lack rationality</phil-statement>
+      <phil-statement correct>It leaves a choice: deny those humans full status, or give up rationality as the criterion</phil-statement>
+      <phil-statement correct>The same reasoning counts against the contractualist's test</phil-statement>
+      <phil-statement>It claims that animals are, on the whole, as intelligent as adult humans</phil-statement>
+      <phil-statement>It shows that status should be settled case by case, with no criterion at all</phil-statement>
+      <phil-statement>It argues that sentience is too permissive a test</phil-statement>
+    </phil-checkset>
   </phil-slide>
 
   <!-- 32. Threshold vs degrees -->
@@ -618,7 +613,7 @@
       <li><strong>The Tessera</strong> → <em>octopuses, crabs, insects.</em> Alien nervous systems, no face to read.</li>
       <li>The UK brought cephalopods and decapods under its sentience law in 2022, on exactly this evidence.</li>
       <li>It is also <em>wild animals and future generations</em>: everyone we can never strike a bargain with.</li>
-      <li><strong>The Glim</strong> → <em>extinction.</em> Real endlings: Martha the passenger pigeon, Lonesome George, Sudan the northern white rhino.</li>
+      <li><strong>The Glim</strong> → <em>extinction.</em> Real endlings: Martha the passenger pigeon and Lonesome George. Sudan, the last male northern white rhino, left only two females.</li>
       <li>And conservation triage: what a berth costs, and what else it would buy.</li>
       <li><strong>The Vorl</strong> → <em>collectives.</em> Nations, corporations, and, awkwardly, you: a colony of insensate cells reporting a rich inner life.</li>
     </ul>
@@ -627,12 +622,12 @@
   <!-- 36. MCQ 7 [correct: C] -->
   <phil-slide>
     <h1>Final Certification</h1>
-    <phil-mcq prompt="A colleague files FULL status for the Thrum and NO status for the Kessel spore. Which pair of commitments makes that consistent?"
-              explain="Correct. Sentience is present in the Thrum and absent in the spore, so a sentientist who also rejects potentiality as status-conferring lands exactly here — roughly Singer's own position on animals and early abortion.">
+    <phil-mcq review="pod" prompt="A colleague files FULL status for the Thrum and NO status for the Kessel spore. Which pair of commitments makes that consistent?"
+              explain="Correct. Sentience is present in the Thrum and absent in the spore, so a sentientist who also rejects potentiality as status-conferring lands exactly here.">
       <phil-choice feedback="Species membership runs the other way here: the spore is a Kessel and the Thrum isn't, so this pairing would flip both rulings.">Species membership confers status, and sentience is not required for it</phil-choice>
       <phil-choice feedback="Rationality would exclude the Thrum, which cannot reason at all, so this pairing gets the first of the two rulings wrong.">Rationality confers status, and relationships can extend it still further</phil-choice>
       <phil-choice correct>Sentience confers status, and potential future personhood does not</phil-choice>
-      <phil-choice feedback="The second half would strip the Thrum, which belongs to no species on the manifest. It also does no work the first half has not already done.">Sentience confers status, and species membership can withhold it</phil-choice>
+      <phil-choice feedback="That reverses both rulings. The spore has the potential and no sentience, and the Thrum has sentience and no such potential.">Potential future personhood confers status, and sentience does not</phil-choice>
     </phil-mcq>
   </phil-slide>
 

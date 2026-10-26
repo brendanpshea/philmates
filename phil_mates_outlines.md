@@ -1515,6 +1515,7 @@ Plus `prompts.md`.
 - **Approach:** Thought experiment stress-testing (Foot/Thomson) transitioning directly into real-world institutional triage and crisis standards of care.
 - **Narrative frame:** You are guided by **Dr. Philippa "Pip" Trackwell**, emergency physician and municipal railway safety consultant. She uses the dual mechanics of railway switches and hospital triage tags to demonstrate how moral dilemmas reveal competing ethical commitments (consequences vs. rights vs. agency).
 - **Thinkers covered:** Philippa Foot (1967), Judith Jarvis Thomson (1976, 1985), and modern clinical triage ethicists (crisis standards of care).
+- **Accuracy notes:** In Foot's 1967 case you drive the trolley; the bystander at the switch is Thomson's. Awad et al. (PNAS 2020, 42 countries, about 70,000 people) found about 81% divert on the Switch, 72% on the Loop, and 51% push on the Footbridge, so don't claim "85–90% approve" or "85% disapprove" or that the Loop splits ordinary people evenly. Crisis standards (Piscitello et al., JAMA Netw Open 2020) mostly score present organ function (SOFA); some states used age or life expectancy, usually as a tie-breaker.
 - **Art (16-bit pixel art in `/assets`):** `dilemma-scales`, `pip-trackwell`, `trolley-spur`, `footbridge`, `track-loop`, `organ-transplant`, `triage-tags`, `ventilator-crisis`.
 
 ### Learning goals
@@ -1532,8 +1533,8 @@ Plus `prompts.md`.
 3. **[P]** Belief probe — 5 statements on net lives, doing vs. allowing, triage life-years, bodily rights, and lotteries.
 
 **Act 1 — The Classic Tracks**
-4. **[T]** Case 1: The Spur / Switch (Foot 1967) — 5 vs. 1, 85-90% approve (`trolley-spur` art), `reveal`.
-5. **[T]** Case 2: The Footbridge (Thomson 1976) — pushing the stranger, 85% disapprove (`footbridge` art), `reveal`.
+4. **[T]** Case 1: The Spur / Switch (Foot 1967, Thomson 1976) — 5 vs. 1, most approve (`trolley-spur` art), `reveal`.
+5. **[T]** Case 2: The Footbridge (Thomson 1976) — pushing the stranger, far fewer approve (`footbridge` art), `reveal`.
 6. **[Q · MCQ B]** The Paradox of the Two Cases — instrumental tool vs. unintended side effect.
 7. **[T]** Case 3: The Loop (Thomson 1985) — the essential obstacle on the track (`track-loop` art), `reveal`.
 

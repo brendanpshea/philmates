@@ -426,6 +426,12 @@ saw, and it was found only by chance. The keys file now includes every
 `explain=` and MCQ `feedback=`, so the adversary checks what students read
 after they answer.
 
+Batch 3 (trolley and triage, moral status, Kantian deontology, the harm
+principle) cost about 400k, again about 100k a lesson. With explain text in
+the keys, the adversary caught overstated claims in explain lines and in poll
+feedback. Some came from misreading the lesson's own cited study, which is
+worth checking whenever a lesson quotes percentages.
+
 ## Quiz quality (auto-checked)
 
 **Format mix.** Aim for 4–6 graded items per lesson, mostly classify, cloze,

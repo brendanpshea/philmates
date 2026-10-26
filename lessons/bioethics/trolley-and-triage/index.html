@@ -54,7 +54,7 @@
   <!-- 4. Case 1: The Switch Setup -->
   <phil-slide>
     <img slot="art" src="./assets/trolley-spur.png" alt="A brass switch lever next to train tracks splitting toward five figures vs one on a spur">
-    <span class="phil-date">Philippa Foot · 1967</span>
+    <span class="phil-date">Foot · 1967 &middot; Thomson · 1976</span>
     <h1>Case 1: The Spur (The Switch)</h1>
     <p class="lead">A runaway trolley barrels down the track toward five track workers who cannot hear it coming. You stand beside a track switch lever.</p>
     <ul reveal>
@@ -63,6 +63,7 @@
       <li>There is no third option, no time to shout, and your own body cannot stop the train.</li>
       <li>The lever is cold in your hand. What is your choice?</li>
     </ul>
+    <p class="muted">In Foot's original, you drive the trolley. Thomson made you a bystander at the switch.</p>
   </phil-slide>
 
   <!-- 5. Decision 1: Switch Vote -->
@@ -96,7 +97,7 @@
     <h1>Decision Point: The Footbridge</h1>
     <p class="muted">Also <strong>not graded</strong>. Answer honestly, then compare with the room.</p>
     <phil-poll prompt="You stand behind the stranger on the footbridge. What do you do?"
-               explain="Here intuition flips. Most people refuse to push — though the size of that majority swings a lot with wording and with who is asked, from roughly 60% to 90% across studies. Yet the arithmetic is unchanged: 1 life sacrificed to save 5. Simple math cannot explain the flip.">
+               explain="Here intuition shifts. In the same 42-country study only about half would push, far fewer than would pull the switch, and in many smaller studies most people refuse. Yet the arithmetic is unchanged: 1 life sacrificed to save 5. Simple math cannot explain the shift.">
       <phil-choice note="The minority answer — and the one strict net-lives consequentialism recommends.">Push the stranger over the railing to stop the train and save the five</phil-choice>
       <phil-choice note="The common answer.">Do not push — refuse to shove an innocent bystander to his death</phil-choice>
     </phil-poll>
@@ -133,7 +134,7 @@
     <h1>Decision Point: The Loop</h1>
     <p class="muted">Not graded, and here even the professionals split.</p>
     <phil-poll prompt="You stand at the switch for the loop track. Do you divert the trolley onto the loop?"
-               explain="The Loop divides philosophers and students right down the middle, which is exactly why Thomson built it. It feels like pulling a mechanical lever (Case 1), but saving the five depends on the worker's body stopping the train (Case 2). Whichever way you answered, the interesting question is which of those two cases you think it really resembles.">
+               explain="The Loop divides philosophers, which is exactly why Thomson built it. Most ordinary people still divert: about 72% did in the 42-country study. It feels like pulling a mechanical lever (Case 1), but saving the five depends on the worker's body stopping the train (Case 2). Whichever way you answered, the interesting question is which of those two cases you think it really resembles.">
       <phil-choice note="You are weighting the mechanism — a lever, no contact, an existing threat redirected.">Pull the switch — divert onto the loop because 5 lives saved still outweighs 1</phil-choice>
       <phil-choice note="You are weighting the causal role — the worker is an essential obstacle, not an accidental side-effect.">Do not pull — refuse to divert the train when saving the five depends on hitting the person</phil-choice>
     </phil-poll>
@@ -142,7 +143,7 @@
   <!-- ============ ACT 2 — DISSECTING INTUITION: THE THREE LEVERS ============ -->
 
   <!-- 11. Three Levers of Intuition -->
-  <phil-slide>
+  <phil-slide id="three-levers">
     <h1>The Three Moral Levers</h1>
     <p class="lead">When human beings face moral dilemmas, our minds aren't running a single calculator. We weigh at least three distinct intuitive principles:</p>
     <ul reveal>
@@ -165,7 +166,7 @@
   </phil-slide>
 
   <!-- 13. The Doctrine of Double Effect -->
-  <phil-slide>
+  <phil-slide id="dde">
     <h1>The Doctrine of Double Effect (DDE)</h1>
     <p class="lead">Originating in medieval philosophy (Thomas Aquinas) and formalized in modern ethics, the Doctrine of Double Effect draws a bright line:</p>
     <ul reveal>
@@ -179,19 +180,19 @@
   <phil-slide>
     <h1>Deconstructing the Rail Dilemmas</h1>
     <phil-compare>
-      <phil-side label="The Switch (Spur)" tag="~90% Approve">
+      <phil-side label="The Switch (Spur)" tag="Most approve">
         <p><strong>Action:</strong> Turn switch</p>
         <p><strong>Role of 1:</strong> Foreseen side effect</p>
         <p><strong>Direct contact:</strong> No (lever)</p>
         <p class="case">Redirecting existing threat; harm is not the causal means.</p>
       </phil-side>
-      <phil-side label="The Footbridge" tag="~85% Disapprove">
+      <phil-side label="The Footbridge" tag="Far fewer approve">
         <p><strong>Action:</strong> Push stranger</p>
         <p><strong>Role of 1:</strong> Intended physical buffer</p>
         <p><strong>Direct contact:</strong> Yes (physical shove)</p>
         <p class="case">Initiates new violence; treats human body as mere tool.</p>
       </phil-side>
-      <phil-side label="The Loop" tag="Split Verdict">
+      <phil-side label="The Loop" tag="Philosophers split">
         <p><strong>Action:</strong> Turn switch onto loop</p>
         <p><strong>Role of 1:</strong> Essential obstacle</p>
         <p><strong>Direct contact:</strong> No (lever)</p>
@@ -200,11 +201,28 @@
     </phil-compare>
   </phil-slide>
 
+  <!-- 14b. Classify: which lever -->
+  <phil-slide>
+    <h1>Which Lever?</h1>
+    <phil-classify review="three-levers" prompt="Three moral levers pull on the rail cases. Which one is each thought pulling?"
+                   explain="Right. Consequences count the outcome: five lives against one. Deontic constraints protect each person from being used as a tool. Causal agency asks whether you redirect a threat that already exists or create a new one.">
+      <phil-col key="cons">Consequences</phil-col>
+      <phil-col key="deon">Deontic constraints</phil-col>
+      <phil-col key="cause">Causal agency</phil-col>
+      <phil-item answer="cons" why="This counts outcomes: how many lives are lost.">"Five deaths are worse than one."</phil-item>
+      <phil-item answer="deon" why="This appeals to his inviolability: he may not be used merely as a tool.">"He is a person, not a tool for stopping trains."</phil-item>
+      <phil-item answer="cause" why="Redirecting an existing threat versus creating a new one is the third lever.">"Turning a trolley that is already moving is different from starting a new deadly force."</phil-item>
+      <phil-item answer="cons" why="Saving the greatest number is the consequences lever.">"What matters most is saving the greatest number."</phil-item>
+      <phil-item answer="deon" why="Forbidding the use of someone without consent is a deontic constraint.">"You may not use someone without their consent, even to save five."</phil-item>
+      <phil-item answer="cause" why="Starting a new lethal force versus redirecting one is causal agency.">"Pushing him starts a new lethal force. The switch only redirects one."</phil-item>
+    </phil-classify>
+  </phil-slide>
+
   <!-- 15. Cloze: Double Effect -->
   <phil-slide>
     <h1>Testing the Principle</h1>
     <p>Complete the core distinction of the Doctrine of Double Effect:</p>
-    <phil-cloze explain="The Doctrine of Double Effect permits causing harm as an unintended side-effect of a good action, but forbids using harm as the instrumental means to achieve that good.">
+    <phil-cloze review="dde" explain="The Doctrine of Double Effect permits causing harm as an unintended side-effect of a good action, but forbids using harm as the instrumental means to achieve that good.">
       Under the Doctrine of Double Effect, it is impermissible to use someone's death as the <phil-blank options="means,side-effect,accident">means</phil-blank> to save others, but it may be permissible if their death is a foreseen <phil-blank options="side-effect,goal,reward">side-effect</phil-blank> of redirecting an existing threat.
     </phil-cloze>
   </phil-slide>
@@ -237,7 +255,7 @@
   </phil-slide>
 
   <!-- 18. Why the Hospital Breaks the Math -->
-  <phil-slide>
+  <phil-slide id="hospital-math">
     <h1>Why the Hospital Breaks the Math</h1>
     <p class="lead">Why can't clinical medicine operate on raw arithmetic?</p>
     <ul reveal>
@@ -250,19 +268,19 @@
   <!-- 19. Checkset: Why Transplant is Forbidden -->
   <phil-slide>
     <h1>Analyzing the Transplant Case</h1>
-    <phil-checkset prompt="Why is the Transplant case ethically distinct from pulling the rail switch? Check ALL that apply."
+    <phil-checkset review="hospital-math" prompt="Why is the Transplant case ethically distinct from pulling the rail switch? Check ALL that apply."
                    explain="In the transplant case, the doctor initiates a new lethal assault on an unthreatened person, violates the fiduciary duty of medicine, and treats the patient's body as a mere biological resource.">
       <phil-statement correct>The surgeon initiates a brand new lethal harm against someone who was not in danger</phil-statement>
       <phil-statement correct>The surgeon violates the fundamental clinical duty of non-maleficence owed to their patient</phil-statement>
       <phil-statement correct>The healthy patient is used merely as a biological means to save other patients</phil-statement>
-      <phil-statement>The healthy visitor would almost certainly refuse if the surgeon asked him first</phil-statement>
+      <phil-statement>The transplant saves more lives than the switch does</phil-statement>
     </phil-checkset>
   </phil-slide>
 
   <!-- ============ ACT 4 — REAL-WORLD MEDICAL TRIAGE ============ -->
 
   <!-- 20. Real Triage: Crisis Standards of Care -->
-  <phil-slide>
+  <phil-slide id="scarcity">
     <img slot="art" src="./assets/ventilator-crisis.png" alt="Two operating ventilators in a dimly lit ward with six patient clipboards">
     <h1>When Scarcity Forces the Choice</h1>
     <p class="lead">Unlike the fictitious transplant surgeon, real emergency physicians face genuine tragic dilemmas during mass casualties, pandemics, and war.</p>
@@ -299,13 +317,13 @@
   </phil-slide>
 
   <!-- 22b. Survival vs Life-Years -->
-  <phil-slide>
+  <phil-slide id="life-years">
     <h1>The Distinction That Does the Work</h1>
     <p class="lead">"Save the most lives" and "save the most life-years" sound identical. They are not, and real protocols are built on the gap between them.</p>
     <ul reveal>
       <li><strong>Short-term survival</strong> asks whether this patient will survive this illness, scored from how well the organs are working right now. US protocols use a scale called <strong>SOFA</strong>.</li>
       <li><strong>Life-years / QALYs</strong> asks: how much future does this patient have? That question builds age and disability directly into the score.</li>
-      <li>This is why most US crisis standards make short-term survival the <em>primary</em> criterion and refuse to rank patients by remaining lifespan.</li>
+      <li>This is why most US crisis standards make short-term survival the <em>primary</em> criterion, and most do not rank patients by remaining lifespan.</li>
       <li>Not only an ethical worry: federal civil-rights guidance in 2020 warned that allocating by age or disability can violate the ADA.</li>
     </ul>
   </phil-slide>
@@ -325,25 +343,29 @@
   <!-- 23b. MCQ: What real protocols use -->
   <phil-slide>
     <h1>What the Protocols Actually Say</h1>
-    <phil-mcq prompt="Two patients need the last ventilator. Ana is 34, with her kidneys, liver and lungs all failing. Bram is 71, with one failing organ system and otherwise stable. Under most US crisis standards, who is allocated the ventilator?"
-              explain="Bram — and if that felt wrong, that is the point. The score asks one question: who is more likely to survive this hospitalization? It is built from present organ function, not from age or from how many years a patient might have afterwards. Ranking by expected remaining lifespan is the thing these protocols were written to avoid, both because it builds age and disability into the ordering and because doing so runs into the ADA and the Age Discrimination Act.">
-      <phil-choice feedback="This is the reasoning protocols specifically exclude. Counting expected years ahead sounds fair and quietly ranks people by age and disability, which is why crisis standards were rewritten to keep it out.">Ana, because a 34-year-old has far more years of life still ahead of her.</phil-choice>
+    <phil-mcq review="life-years" prompt="Two patients need the last ventilator. Ana is 34, with her kidneys, liver and lungs all failing. Bram is 71, with one failing organ system and otherwise stable. Under most US crisis standards, who is allocated the ventilator?"
+              explain="Bram — and if that felt wrong, that is the point. The score asks one question: who is more likely to survive this hospitalization? It is built from present organ function, not from age or from how many years a patient might have afterwards. Where age or life expectancy enters at all, it is usually a tie-breaker, and federal civil-rights guidance pushed several states to drop even that.">
+      <phil-choice feedback="Most protocols do not rank by expected years ahead. It sounds fair, but it quietly ranks people by age and disability, and civil-rights guidance pushed states away from it.">Ana, because a 34-year-old has far more years of life still ahead of her.</phil-choice>
       <phil-choice feedback="Arrival order is explicitly rejected. It rewards whoever had a car or lived nearer the hospital, which is not a medical fact about anyone.">Whichever of the two reached the hospital doors first that evening.</phil-choice>
       <phil-choice correct>Bram, because the score asks who is likely to survive this admission.</phil-choice>
       <phil-choice feedback="A lottery is the tie-breaker some protocols use, and these two do not tie. Their organ-failure scores are clearly different.">Neither, because a tie between two patients is settled by lottery.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
-  <!-- 24. MCQ: Triage vs Murder -->
+  <!-- 24. Classify: triage or the transplant -->
   <phil-slide>
     <h1>Why Triage Is Not Murder</h1>
-    <phil-mcq prompt="Why is allocating a ventilator away from Patient B in a crisis ethically distinct from harvesting the healthy patient's organs in Case 4?"
-              explain="Right. In triage, every patient is already facing lethal illness, and doctors must allocate scarce positive aid. In the transplant case, the doctor actively creates a brand new lethal harm against an unthreatened person.">
-      <phil-choice feedback="Following a protocol does not by itself make an act permissible — a protocol for harvesting organs would not become acceptable by being written down. The protocol is justified by the distinction, not the other way round.">Because the triage doctor is following an agreed protocol rather than making a personal choice about who lives</phil-choice>
-      <phil-choice correct>Triage allocates scarce positive aid among the sick, whereas transplant kills an unthreatened person</phil-choice>
-      <phil-choice feedback="Consent is not what does the work here. Even a visitor who signed every form on the way in may not be cut up for parts, and Patient B may be passed over whether or not he agreed to the policy.">Because Patient B accepted the hospital&#39;s triage policy when he was admitted</phil-choice>
-      <phil-choice feedback="The numbers are the same in both cases, which is the point. If the count settled it, the transplant would be required rather than forbidden.">Because five lives outweigh one in triage but not in the transplant ward</phil-choice>
-    </phil-mcq>
+    <phil-classify review="scarcity" prompt="Passing a patient over for the last ventilator is not the same as the surgeon's harvest. Which case does each line describe?"
+                   explain="Right. In triage, everyone competing for the bed already faces a lethal illness, and the doctor shares out scarce aid that cannot reach everyone. In the transplant, the doctor creates a new lethal harm against someone who was in no danger, and uses his body as spare parts.">
+      <phil-col key="tri">Triage</phil-col>
+      <phil-col key="trans">The transplant</phil-col>
+      <phil-item answer="tri" why="Crisis triage allocates aid among patients who are all already in danger.">Everyone competing for the resource already faces a lethal illness</phil-item>
+      <phil-item answer="trans" why="The traveler came in for a routine physical. The surgeon creates the threat.">The person who dies was in no danger until the doctor acted</phil-item>
+      <phil-item answer="tri" why="Allocating scarce positive aid among the sick is what triage does.">The doctor shares out scarce aid among the sick</phil-item>
+      <phil-item answer="trans" why="Killing the traveler is a new harm, a breach of the negative duty not to kill.">The doctor creates a brand new lethal harm</phil-item>
+      <phil-item answer="trans" why="Bodily inviolability forbids commandeering anyone's body as a store of spare parts.">A healthy person's body is used as spare parts</phil-item>
+      <phil-item answer="tri" why="The positive duty to give aid can run out when supply is short. Nobody is killed to make the beds go further.">The duty in play is the duty to help, and it cannot reach everyone</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 5 — THE INTERACTIVE SWITCHBOARD ============ -->
@@ -365,18 +387,6 @@
       <li><strong>Automated Triage Algorithms:</strong> Hospital AI systems rank patients on organ transplant waiting lists and ICU admission queues using multi-variable clinical scorecards.</li>
       <li><strong>The Core Lesson:</strong> If we do not make our ethical commitments conscious, explicit, and accountable, machines will make them for us in the dark.</li>
     </ul>
-  </phil-slide>
-
-  <!-- 27. MCQ: Machine Dilemmas -->
-  <phil-slide>
-    <h1>Algorithmic Dilemmas</h1>
-    <phil-mcq prompt="Why do engineers and ethicists study trolley problems when designing autonomous vehicle crash algorithms?"
-              explain="Right! Rare emergency collision scenarios force engineers to make explicit value choices in code (e.g. prioritizing passengers vs pedestrians), proving that ethical assumptions cannot be avoided in automated systems.">
-      <phil-choice correct>Because unavoidable crash algorithms force software to encode explicit value trade-offs</phil-choice>
-      <phil-choice feedback="This is the most common objection to the whole comparison, and it is half right: these situations are vanishingly rare. The point is not frequency — it is that the choice has to be settled in advance, by someone, in writing.">Because cars will meet these exact situations often enough for the answer to matter in practice</phil-choice>
-      <phil-choice feedback="No legal system specifies this. Several have explicitly declined to — Germany&#39;s ethics commission ruled that no rule may distinguish between people by age or condition, which settles what a car may not do without settling what it must.">Because road law already specifies what a car must do in an unavoidable crash</phil-choice>
-      <phil-choice feedback="Liability follows the decision rather than settling it. Somebody still has to choose what the car should try to do before a court can ask whether that was reasonable.">Because the manufacturer is liable for whatever the algorithm decides</phil-choice>
-    </phil-mcq>
   </phil-slide>
 
   <!-- ============ ACT 6 — VERDICT & RECAP ============ -->
