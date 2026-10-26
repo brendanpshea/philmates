@@ -42,7 +42,7 @@
     <h1>The Dream</h1>
     <p class="lead dream">A foggy courtroom. A giant set of scales hangs overhead. Three robed figures step forward to judge a single question:</p>
     <h2>Did that cake actually make your life better?</h2>
-    <p class="muted">Each of the three is a real philosopher, and each belongs to a family of ideas called <strong>utilitarianism</strong>: what is good is <em>well-being</em>, and the right act is the one that produces the most of it.</p>
+    <p class="muted">Each of the three is a real philosopher, and together they trace the road to <strong>utilitarianism</strong>: what is good is <em>well-being</em>, and the right act is the one that produces the most of it.</p>
   </phil-slide>
 
   <!-- Belief probe (start) -->
@@ -70,18 +70,18 @@
   </phil-slide>
 
   <!-- 5. Teaching: kinds of desire -->
-  <phil-slide>
+  <phil-slide id="kinds-of-desire">
     <h1>Not All Desires Are Equal</h1>
     <p>"So why," Epicurus asks, "do I frown at your cake? Because I sort desires into three bins:"</p>
     <ul reveal>
       <li><strong>Natural and necessary</strong>: food when hungry, shelter, friendship, understanding. Easy to satisfy, and their absence really hurts.</li>
-      <li><strong>Natural but unnecessary</strong>: a <em>gold-leaf</em> cake instead of plain bread. Pleasant, but it scratches an itch you did not need to have.</li>
-      <li><strong>Vain and empty</strong>: craving luxury, status, "the most expensive thing on the menu." These can never be fully satisfied, so they breed anxiety.</li>
+      <li><strong>Natural but unnecessary</strong>: a <em>gold-leaf</em> cake instead of plain bread, or fine wine instead of water. Pleasant, but it scratches an itch you did not need to have.</li>
+      <li><strong>Vain and empty</strong>: craving fame, status, "the most expensive thing on the menu." These can never be fully satisfied, so they breed anxiety.</li>
     </ul>
   </phil-slide>
 
   <!-- 6. Teaching: ataraxia + friends -->
-  <phil-slide>
+  <phil-slide id="ataraxia">
     <img slot="art" src="./assets/epicurus.png" alt="Epicurus's emblem: bread and water">
     <h1>The Goal Is Tranquility</h1>
     <p>The aim of life, for Epicurus, is not <em>maximum</em> pleasure. It is <strong>ataraxia</strong>: a calm, stable contentment, free from fear and pain.</p>
@@ -92,23 +92,28 @@
     </ul>
   </phil-slide>
 
-  <!-- 7. MCQ: Epicurus -->
+  <!-- 7. Classify: Epicurus's three kinds of desire -->
   <phil-slide>
     <h1>The First Judge Questions You</h1>
-    <phil-mcq data-qid="util-history:q1" prompt="By Epicurus' reasoning, the deepest problem with the cake was that…"
-              explain="Right. For Epicurus the intense, vain pleasure brought more pain than it was worth — and by eating alone you skipped friendship, the greatest pleasure of all.">
-      <phil-choice feedback="Epicurus never says pleasure is bad — pleasure is the whole point. The problem is which pleasure you chose.">Spending money on a luxury is always morally wrong, whatever pleasure it brings.</phil-choice>
-      <phil-choice correct>It chased a vain thrill and skipped a deeper joy — friendship.</phil-choice>
-      <phil-choice feedback="This is what the word &quot;epicurean&quot; has come to mean, and it is close to the opposite of what he taught. He wants pleasure that lasts, which means wanting less, not more.">Nothing. Epicurus would say enjoy more, not less.</phil-choice>
-      <phil-choice feedback="Pace is not his measure. He asks which pleasures cost more pain than they are worth, and a slowly eaten vain thrill is still a vain thrill.">It was eaten too quickly, and Epicurus valued savoring a pleasure.</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="util-history:q1" review="kinds-of-desire" prompt="Epicurus sorts desires into three bins. Where does each one go?"
+                   explain="Right. Natural and necessary desires, like food when hungry and friendship, are easy to satisfy and hurt when unmet. Natural but unnecessary ones want a fancier version of something plain. Vain and empty desires, for fame and status, can never be fully satisfied, so they breed anxiety.">
+      <phil-col key="nec">Natural and necessary</phil-col>
+      <phil-col key="unn">Natural but unnecessary</phil-col>
+      <phil-col key="vain">Vain and empty</phil-col>
+      <phil-item answer="nec" why="Food when hungry is Epicurus's example of a natural and necessary desire.">Bread when you are hungry</phil-item>
+      <phil-item answer="unn" why="The gold-leaf cake instead of plain bread is the lesson's own example: pleasant, but not needed.">A gold-leaf cake instead of plain bread</phil-item>
+      <phil-item answer="vain" why="Wanting the most expensive thing because it is the most expensive is a vain, empty desire.">Ordering the most expensive thing on the menu, because it is the most expensive</phil-item>
+      <phil-item answer="nec" why="The lesson puts friendship among the natural and necessary desires, and Epicurus calls it the greatest thing wisdom provides for a happy life.">Friendship</phil-item>
+      <phil-item answer="vain" why="Status is the lesson's example of a vain desire that can never be fully satisfied.">Craving status and fame</phil-item>
+      <phil-item answer="unn" why="Like cake instead of bread, it is a fancier version of something you naturally need.">Fine wine instead of water</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 8. Cloze: Epicurus -->
   <phil-slide>
     <h1>Say It Back</h1>
     <p>Complete Epicurus' verdict.</p>
-    <phil-cloze data-qid="util-history:q5" explain="That's Epicurean hedonism: pleasure is the good, but the wise aim is steady tranquility, not intense indulgence.">
+    <phil-cloze data-qid="util-history:q5" review="ataraxia" explain="That's Epicurean hedonism: pleasure is the good, but the wise aim is steady tranquility, not intense indulgence.">
       Epicurus is a <phil-blank answer="hedonist|hedonism">hedonist</phil-blank>:
       he holds that <phil-blank answer="pleasure|pleasure and the absence of pain|enjoyment">pleasure</phil-blank> is the only thing good in itself.
       Yet the true goal of life is a calm tranquility he calls
@@ -145,9 +150,9 @@
   </phil-slide>
 
   <!-- 10. Teaching: hedonic calculus -->
-  <phil-slide>
+  <phil-slide id="calculus">
     <h1>The Hedonic Calculus</h1>
-    <p>Bentham claimed you could actually <em>weigh</em> a pleasure. His "hedonic calculus" scores it along several dimensions:</p>
+    <p>Bentham claimed you could actually <em>weigh</em> a pleasure. His "hedonic calculus" scores it along seven dimensions, and only these:</p>
     <ul reveal>
       <li><strong>Intensity</strong>: how strong? · <strong>Duration</strong>: how long?</li>
       <li><strong>Certainty</strong>: how likely? · <strong>Propinquity</strong>: how soon?</li>
@@ -157,10 +162,10 @@
   </phil-slide>
 
   <!-- 11. Teaching: extent + diminishing returns -->
-  <phil-slide>
+  <phil-slide id="extent">
     <img slot="art" src="./assets/scales.png" alt="Scales">
     <h1>Why Sharing Wins the Math</h1>
-    <p>Two of those dimensions convict you, says Bentham:</p>
+    <p>Two ideas convict you, says Bentham:</p>
     <ul reveal>
       <li><strong>Extent.</strong> One happy person scores far less total happiness than four happy people. Split four ways, the same cake produces <em>more</em> good in the world.</li>
       <li><strong>Diminishing returns.</strong> Your first bite was ecstasy; your tenth made you queasy. Pleasure per bite <em>falls</em> the more you eat.</li>
@@ -180,7 +185,7 @@
   <!-- 12. Checkset: hedonic calculus -->
   <phil-slide>
     <h1>The Second Judge Tests You</h1>
-    <phil-checkset data-qid="util-history:q3" prompt="Check every factor that belongs to Bentham's hedonic calculus."
+    <phil-checkset data-qid="util-history:q3" review="calculus" prompt="Check every factor that belongs to Bentham's hedonic calculus."
                    explain="Exactly. Bentham weighs measurable features of the pleasure itself, including how many people it reaches. The two false ones matter. Whose pleasure it is never enters the sum — that is what counting everyone equally means. And higher versus lower is Mill&#39;s amendment, not Bentham&#39;s: Bentham held that if two pleasures are equally intense and lasting, a childish game counts for as much as poetry.">
       <phil-statement correct>Intensity — how strong the pleasure is</phil-statement>
       <phil-statement correct>Duration — how long it lasts</phil-statement>
@@ -194,12 +199,12 @@
   <!-- 13. MCQ: greatest number -->
   <phil-slide>
     <h1>Do the Math</h1>
-    <phil-mcq data-qid="util-history:q2" prompt="On Bentham's principle, why would sharing the cake have been the better act?"
+    <phil-mcq data-qid="util-history:q2" review="extent" prompt="On Bentham's principle, why would sharing the cake have been the better act?"
               explain="Right. Because of extent and diminishing returns, the same cake spread across four people produces more total happiness than one stuffed person enjoying it alone.">
       <phil-choice correct>Spread across more people, the same cake yields more joy.</phil-choice>
       <phil-choice feedback="A tempting swap of one theory for another. Bentham is not asking what a generous person would do — he is asking which act produces the larger total, and generosity only matters here because of what it produces.">Because sharing shows better character than eating alone does.</phil-choice>
       <phil-choice feedback="Bentham counts everyone equally, including you — the point is the total, not self-denial.">Your own happiness simply doesn't count in the sum.</phil-choice>
-      <phil-choice feedback="Guilt is a real pain and it does count in the sum. It is a small part of the total, and what makes sharing win is extent.">Sharing spares you the guilt of having eaten it all alone.</phil-choice>
+      <phil-choice feedback="Bentham counts results, not duties. Sharing wins because it produces a larger total of pleasure.">Eating alone broke a duty to share, whatever the results.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -250,18 +255,18 @@
   <!-- ============ ACT 3 — SINGER ============ -->
 
   <!-- 15. Singer enters -->
-  <phil-slide>
+  <phil-slide id="singer">
     <img slot="art" src="./assets/singer.png" alt="Emblem card: concentric rings widening outward — Singer's expanding circle of equal consideration">
     <span class="phil-date">b. 1946</span>
     <h1>The Third Judge: Singer</h1>
     <p class="lead">A modern philosopher leans in, widening the circle. "Your friends aren't the only ones with a stake in that cake."</p>
-    <p><strong>Peter Singer</strong> is a <strong>preference utilitarian</strong>: what matters is satisfying the <em>preferences</em> of everyone affected. We must give <strong>equal consideration</strong> to every being capable of suffering, human or not.</p>
+    <p>For most of his career <strong>Peter Singer</strong> was a <strong>preference utilitarian</strong>: what matters is satisfying the <em>preferences</em> of everyone affected. (In 2014 he came round to hedonism.) Either way, we must give <strong>equal consideration</strong> to every being capable of suffering, human or not.</p>
   </phil-slide>
 
   <!-- Compare: hedonistic vs preference utilitarianism -->
   <phil-slide>
     <h1>Pleasure, or What's Wanted?</h1>
-    <p>Singer parts from Bentham on what "well-being" even <em>is</em>.</p>
+    <p>Preference utilitarians, as Singer long was, part from Bentham on what "well-being" even <em>is</em>.</p>
     <phil-compare>
       <phil-side label="Hedonistic Utilitarianism" tag="Pleasure">
         <p>What is good is <strong>pleasure</strong> and the absence of pain, and nothing else.</p>
@@ -286,7 +291,7 @@
   </phil-slide>
 
   <!-- 17. Teaching: how you spend -->
-  <phil-slide>
+  <phil-slide id="singer-spend">
     <img slot="art" src="./assets/singer.png" alt="Singer's emblem: the expanding circle">
     <h1>Lesson Two: That $40</h1>
     <p>"Now the price tag," says Singer, with his famous thought experiment:</p>
@@ -328,7 +333,7 @@
 
   <phil-slide>
     <h1>The Third Judge Tests You</h1>
-    <phil-checkset data-qid="util-history:q4" prompt="Check each claim Singer would endorse."
+    <phil-checkset data-qid="util-history:q4" review="singer-spend" prompt="Check each claim Singer would endorse."
                    explain="Well tracked. Singer extends equal consideration to animals, treats faraway suffering as morally serious, and asks us to spend where we can do the most good.">
       <phil-statement correct>An animal's suffering deserves equal consideration with ours</phil-statement>
       <phil-statement correct>We should try to prevent serious suffering even far away</phil-statement>
@@ -342,10 +347,10 @@
   <phil-slide>
     <h1>The Three Verdicts</h1>
     <p>One idea, three refinements. Fill in each judge's core lesson.</p>
-    <phil-cloze data-qid="util-history:q6" explain="That's the whole arc: from pleasure, to the public sum of pleasure, to the satisfied preferences of every being who can suffer.">
-      Epicurus says the good is <phil-blank answer="pleasure|pleasure and the absence of pain|enjoyment">pleasure</phil-blank>,
+    <phil-cloze data-qid="util-history:q6" review="singer" explain="That's the whole arc: from pleasure, to the public sum of pleasure, to the interests of every being who can suffer.">
+      Epicurus says the good is <phil-blank answer="pleasure|pleasure and the absence of pain|enjoyment|tranquility|tranquillity|ataraxia">pleasure</phil-blank>,
       so chase tranquility, not thrills. Bentham says maximize the greatest
-      <phil-blank answer="happiness|pleasure|utility">happiness</phil-blank>
+      <phil-blank answer="happiness|pleasure|utility|good">happiness</phil-blank>
       for the greatest <phil-blank options="number,good,virtue">number</phil-blank>, counting everyone equally.
       Singer widens the circle to include
       <phil-blank options="animals,only humans,the rich,no one">animals</phil-blank>.

@@ -78,7 +78,7 @@
   </phil-slide>
 
   <!-- 6. Compare: Rules vs Virtues -->
-  <phil-slide>
+  <phil-slide id="rules-virtues">
     <h1>Rules vs. Virtues in Digital Life</h1>
     <p>Navigating modern technologies requires both external guardrails and cultivated character traits.</p>
     <phil-compare>
@@ -93,22 +93,26 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 7. MCQ: Diagnosing the role of rules -->
+  <!-- 7. Classify: rules or virtues -->
   <phil-slide>
     <h1>The Developmental Role of Rules</h1>
-    <phil-mcq data-qid="ai-ethics-technomoral:q1" prompt="What is the primary role of rules and device boundaries in helping adolescents develop digital virtue?"
-              explain="Correct. Evolving developmental research indicates that consistent boundaries protect vital mental space like sleep and study, serving as scaffolding that helps adolescents build the capacity to self-regulate as adults.">
-      <phil-choice feedback="Rules are not futile; when implemented consistently and collaboratively, they provide essential protection for adolescent sleep and cognitive development.">Rules are completely futile because adolescents inevitably circumvent every technological restriction.</phil-choice>
-      <phil-choice correct>Rules serve as temporary scaffolding that protects cognitive space and sleep, helping adolescents gradually internalize self-regulation.</phil-choice>
-      <phil-choice feedback="External rules cannot permanently replace internal character; an adult who only complies under surveillance has not developed genuine moral virtue.">Rules should permanently substitute for internal character, ensuring lifelong compliance through continuous monitoring.</phil-choice>
-      <phil-choice feedback="Parental and institutional boundaries often require adult leadership and guidance, even when adolescents initially resist them.">Rules are only legitimate if educators and adolescents reach total unanimous consensus on their daily enforcement.</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="ai-ethics-technomoral:q1" review="rules-virtues" prompt="Rules or virtues? Sort each one."
+                   explain="Right. Rules are external scaffolding: clear limits that protect sleep and focus while habits are still forming. Virtues are the inner self-regulation the scaffolding is for, which keeps working when nobody is watching.">
+      <phil-col key="rules">Rules</phil-col>
+      <phil-col key="virt">Virtues</phil-col>
+      <phil-item answer="rules" why="A household agreement like this is an external boundary that protects sleep.">Phones sleep in the kitchen overnight</phil-item>
+      <phil-item answer="virt" why="Noticing manipulation and choosing to disengage is cultivated self-regulation.">A teenager notices a feed is making her anxious and logs off on her own</phil-item>
+      <phil-item answer="rules" why="A fixed household limit is a rule, set from outside.">No screens until homework is done</phil-item>
+      <phil-item answer="virt" why="Deciding for herself, with no one enforcing it, is an internal disposition.">Lisa decides for herself when to put the phone down</phil-item>
+      <phil-item answer="rules" why="The lesson calls rules temporary scaffolding that helps self-regulation take root.">Temporary scaffolding while self-control takes root</phil-item>
+      <phil-item answer="virt" why="Virtues govern choices when young people are on their own.">Self-regulation that keeps working when no adult is watching</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 2 — CLASSICAL ROOTS OF CHARACTER ============ -->
 
   <!-- 8. Virtue as an Acquired Disposition -->
-  <phil-slide>
+  <phil-slide id="acquired-disposition">
     <img slot="art" src="./assets/homer.png" alt="Homer Simpson looking with longing at a pink donut">
     <h1>Virtue as an Acquired Disposition</h1>
     <p class="lead">"I know what I ought to do," Homer groans, eyeing the donut. "Doing it is the hard part."</p>
@@ -160,11 +164,11 @@
   <!-- 12. Checkset: Core principles -->
   <phil-slide>
     <h1>Evaluating Virtue Concepts</h1>
-    <phil-checkset data-qid="ai-ethics-technomoral:q4" prompt="Check every TRUE statement about virtue ethics across classical traditions."
+    <phil-checkset data-qid="ai-ethics-technomoral:q4" review="acquired-disposition" prompt="Check every TRUE statement about virtue ethics across classical traditions."
                    explain="Correct. Across classical traditions, virtue is an acquired, stable disposition oriented toward human flourishing, requiring ongoing habituation and internal moral motivation.">
       <phil-statement correct>A virtue is a stable, acquired disposition developed through ongoing habituation and practice.</phil-statement>
-      <phil-statement correct>Classical virtue traditions across Greece, China, and India view human flourishing as the ultimate moral end.</phil-statement>
-      <phil-statement correct>Virtues involve internal moral motivation rather than mere external compliance with institutional rules.</phil-statement>
+      <phil-statement correct>Aristotelian, Confucian, and Buddhist traditions agree that flourishing takes deliberate practice and supportive surroundings.</phil-statement>
+      <phil-statement correct>Virtues are internal dispositions, not just compliance with external rules.</phil-statement>
       <phil-statement>You are born with fixed virtues and vices that can never be altered by education or environment.</phil-statement>
       <phil-statement>Virtue ethics consists of memorizing algorithmic checklists that dictate exact actions in every scenario.</phil-statement>
       <phil-statement>Being virtuous requires complete emotional detachment and total isolation from digital society.</phil-statement>
@@ -177,7 +181,7 @@
   <phil-slide>
     <img slot="art" src="./assets/lisa.png" alt="Lisa Simpson looking thoughtful with pearl necklace">
     <h1>New Tools, New Habits</h1>
-    <p class="lead">In 2016, philosopher Shannon Vallor asked an urgent question: can classical virtues guide a hyper-technological future?</p>
+    <p class="lead">In 2016 the philosopher Shannon Vallor asked whether classical virtues can guide a hyper-technological future. Her book's subtitle names the goal: <em>a future worth wanting</em>.</p>
     <ul reveal>
       <li>Emerging technologies alter the material conditions and cognitive environments in which human lives unfold.</li>
       <li>When technologies change the scale, speed, and opacity of human actions, traditional moral habits face unprecedented strain.</li>
@@ -187,7 +191,7 @@
   </phil-slide>
 
   <!-- 14. Technomoral Self-Control -->
-  <phil-slide>
+  <phil-slide id="self-control">
     <h1>Technomoral Self-Control</h1>
     <p class="lead">Ancient philosophers taught temperance regarding food, drink, and anger; today, the battleground is attention.</p>
     <ul reveal>
@@ -225,24 +229,29 @@
   <!-- 17. Cloze: Defining Technomoral Virtues -->
   <phil-slide>
     <h1>Defining the Technomoral Virtues</h1>
-    <phil-cloze data-qid="ai-ethics-technomoral:q5" explain="Shannon Vallor's framework adapts classical virtue ethics to contemporary technologies, recognizing attention as a primary moral battleground and emphasizing the human reality behind digital interfaces.">
+    <phil-cloze data-qid="ai-ethics-technomoral:q5" review="self-control" explain="Shannon Vallor's framework adapts classical virtue ethics to contemporary technologies, recognizing attention as a primary moral battleground and emphasizing the human reality behind digital interfaces.">
       A virtue is a stable <phil-blank options="disposition,feeling,rule">disposition</phil-blank> of character.
       Technomoral self-control protects our conscious <phil-blank answer="attention|focus">attention</phil-blank> from algorithmic hijacking.
-      Technomoral honesty requires an ongoing commitment to <phil-blank answer="truth|truthfulness">truth</phil-blank> in an era of synthetic media.
+      Technomoral honesty requires an ongoing commitment to <phil-blank answer="truth|truthfulness|truth-seeking|truth seeking">truth</phil-blank> in an era of synthetic media.
       Digital empathy means perceiving the <phil-blank options="human,algorithm,avatar">human</phil-blank> being behind the screen.
     </phil-cloze>
   </phil-slide>
 
-  <!-- 18. MCQ: Technomoral Empathy -->
+  <!-- 18. Classify: which technomoral virtue -->
   <phil-slide>
     <h1>Recognizing Digital Empathy</h1>
-    <phil-mcq data-qid="ai-ethics-technomoral:q2" prompt="Which online behavior best demonstrates the practice of technomoral empathy?"
-              explain="Correct. Technomoral empathy requires recognizing the vulnerable human being on the other end of a digital connection and choosing communication that resists the performative cruelty incentivized by social media algorithms.">
-      <phil-choice feedback="Algorithmic sentiment scoring is a mechanical metric, not a genuine cultivation of human empathy or moral perception.">Using automated sentiment-analysis browser extensions to verify that outgoing messages achieve high positivity scores.</phil-choice>
-      <phil-choice feedback="Public shaming treats human beings as disposable targets for communal retribution, undermining genuine empathy and repair.">Publicly denouncing a classmate's embarrassing online mistake to demonstrate unwavering personal moral standards.</phil-choice>
-      <phil-choice correct>Pausing before responding to a hostile comment to consider the person's real-world distress and choosing a constructive, de-escalating tone.</phil-choice>
-      <phil-choice feedback="Isolating oneself from divergent views can create comfortable echo chambers rather than cultivating mature interpersonal empathy.">Unfollowing every acquaintance whose political perspectives or social attitudes cause temporary emotional discomfort.</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="ai-ethics-technomoral:q2" review="self-control" prompt="Which of Vallor's technomoral virtues does each habit practice?"
+                   explain="Right. Self-control protects your attention, often by arranging your surroundings. Honesty is a commitment to truth, including about whose work is whose. Empathy keeps the real person behind the screen in view.">
+      <phil-col key="self">Self-control</phil-col>
+      <phil-col key="hon">Honesty</phil-col>
+      <phil-col key="emp">Empathy</phil-col>
+      <phil-item answer="self" why="Self-control directs your own attention instead of reacting to automated alerts.">Turning off autoplay and alerts, so you choose when to look at the screen</phil-item>
+      <phil-item answer="hon" why="Honesty means not outsourcing your thinking to a chatbot while pretending the work is your own.">Refusing to hand in a chatbot's essay as your own work</phil-item>
+      <phil-item answer="emp" why="Pausing to consider the person behind a hostile comment is the lesson's example of empathy.">Pausing before replying to a hostile comment, to think about the real person who wrote it</phil-item>
+      <phil-item answer="hon" why="Honesty includes refusing to amplify unverified viral rumors.">Not sharing a viral rumor you haven't checked</phil-item>
+      <phil-item answer="emp" why="Empathy keeps the vulnerable person behind the screen in view.">Remembering that the classmate in an embarrassing clip is a real person who will read the replies</phil-item>
+      <phil-item answer="self" why="Self-control involves structuring your spaces and habits to protect focus.">Keeping your phone in another room while you study</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 4 — PARENTING IN THE DIGITAL AGE ============ -->
@@ -306,7 +315,7 @@
   </phil-slide>
 
   <!-- 24. Technomoral Wisdom -->
-  <phil-slide>
+  <phil-slide id="wisdom">
     <h1>Technomoral Wisdom (Phronesis)</h1>
     <p class="lead">Shannon Vallor identifies <em>technomoral wisdom</em> as the master virtue that orchestrates all others.</p>
     <ul reveal>
@@ -320,7 +329,7 @@
   <!-- 25. MCQ: Understanding Technomoral Wisdom -->
   <phil-slide>
     <h1>Understanding Technomoral Wisdom</h1>
-    <phil-mcq data-qid="ai-ethics-technomoral:q3" prompt="According to Shannon Vallor, what is the defining role of technomoral wisdom among the virtues?"
+    <phil-mcq data-qid="ai-ethics-technomoral:q3" review="wisdom" prompt="According to Shannon Vallor, what is the defining role of technomoral wisdom among the virtues?"
               explain="Correct. Drawing directly on the classical concept of phronesis, Vallor frames technomoral wisdom as the integrative master virtue that harmonizes specific virtues—like honesty, self-control, and empathy—to guide real-time discernment in complex technological situations.">
       <phil-choice feedback="Technomoral wisdom is not a quantitative algorithm or computational decision procedure; it is a cultivated human capacity for qualitative moral discernment.">It acts as a mechanical algorithm that calculates the optimal quantitative outcome for any technology policy.</phil-choice>
       <phil-choice feedback="Vallor explicitly rejects reactionary technophobia; technomoral wisdom seeks to humanize and guide technological life rather than retreat from it.">It requires the total abandonment of emerging technologies to return to pre-industrial modes of living.</phil-choice>
@@ -335,9 +344,9 @@
   <phil-slide>
     <img slot="art" src="./assets/lisa.png" alt="Lisa Simpson looking determined with hands on hips">
     <h1>Technomoral Perspective</h1>
-    <p class="lead">"With every new device, we gain new powers," Lisa observes. "The question is whether we become better human beings."</p>
+    <p class="lead">Vallor asks of every new device not just what new powers it gives us, but whether it helps us become better human beings.</p>
     <ul reveal>
-      <li><em>Technomoral perspective</em> is the cultivated ability to distinguish technological novelty from genuine human flourishing.</li>
+      <li><em>Technomoral perspective</em>, in Vallor's account, is the habit of seeing each choice as part of a larger moral whole, not as an isolated problem.</li>
       <li>High-tech societies routinely confuse efficiency, speed, and optimization with lives rich in meaning and companionship.</li>
       <li>Perspective reminds clinicians, parents, and citizens that tools must serve moral ends rather than dictating them.</li>
       <li>This virtue helps families ask what kind of community they want to build before adopting every new technological convenience.</li>
@@ -347,9 +356,9 @@
   <!-- 27. Technomoral Care and Stewardship -->
   <phil-slide>
     <h1>Technomoral Care and Stewardship</h1>
-    <p class="lead">Human beings share a fragile planet bound together by global electronic and biological networks.</p>
+    <p class="lead">For Vallor, <em>technomoral care</em> is attentive, skilled concern for meeting other people's needs. Many writers extend the same concern to the planet.</p>
     <ul reveal>
-      <li><em>Technomoral care</em> involves sustained moral commitment to maintain, repair, and protect both digital systems and ecological commons.</li>
+      <li>On that wider view, care means maintaining, repairing, and protecting both digital systems and the ecological commons.</li>
       <li>Training massive neural networks consumes enormous quantities of freshwater and electricity, generating real environmental footprints.</li>
       <li>Care demands attention to the physical infrastructure, mineral extraction, and electronic waste that digital convenience conceals.</li>
       <li>Flourishing in the Anthropocene requires using technological power to regenerate the world rather than simply consuming it.</li>
@@ -357,9 +366,9 @@
   </phil-slide>
 
   <!-- 28. Compare: Technochauvinism vs Wisdom -->
-  <phil-slide>
+  <phil-slide id="technochauvinism">
     <h1>Technochauvinism vs. Technomoral Wisdom</h1>
-    <p>Distinguishing blind faith in technological fixes from wise discernment about human needs.</p>
+    <p>Distinguishing blind faith in technological fixes from wise discernment about human needs. <em>Technochauvinism</em> is the computer scientist Meredith Broussard's term.</p>
     <phil-compare>
       <phil-side label="Technochauvinism" tag="Solutionism">
         <p>The uncritical belief that every human and social problem has a technological solution, code fix, or automated app.</p>
@@ -375,11 +384,11 @@
   <!-- 29. Cloze: Synthesizing the Framework -->
   <phil-slide>
     <h1>Synthesizing the Framework</h1>
-    <phil-cloze data-qid="ai-ethics-technomoral:q6" explain="Shannon Vallor's framework culminates in technomoral wisdom, rejecting simplistic solutionism in favor of technologies that support deep human flourishing.">
-      Technomoral wisdom is the master virtue that Aristotle called <phil-blank answer="phronesis|wisdom">phronesis</phil-blank>.
-      Technochauvinism falsely assumes every social problem can be solved by an <phil-blank options="algorithm,virtue,institution">algorithm</phil-blank>.
-      Technomoral perspective distinguishes speed and efficiency from genuine human <phil-blank answer="flourishing|wellbeing|good">flourishing</phil-blank>.
-      The ultimate goal of technomoral virtues is a future worth <phil-blank answer="wanting|living">wanting</phil-blank>.
+    <phil-cloze data-qid="ai-ethics-technomoral:q6" review="technochauvinism" explain="Shannon Vallor's framework culminates in technomoral wisdom, rejecting simplistic solutionism in favor of technologies that support deep human flourishing.">
+      Technomoral wisdom is the master virtue that Aristotle called <phil-blank answer="phronesis|phronēsis|wisdom|practical wisdom|prudence">phronesis</phil-blank>.
+      Technochauvinism, Meredith Broussard's term, falsely assumes every social problem can be solved by an <phil-blank options="algorithm,virtue,institution">algorithm</phil-blank>.
+      Technomoral wisdom chooses technologies that genuinely serve human <phil-blank answer="flourishing|well-being|wellbeing|good">flourishing</phil-blank>.
+      The ultimate goal of technomoral virtues is a future worth <phil-blank answer="wanting">wanting</phil-blank>.
     </phil-cloze>
   </phil-slide>
 

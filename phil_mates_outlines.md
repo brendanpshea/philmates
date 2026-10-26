@@ -20,6 +20,8 @@ organizer. First used in the bioethics lesson.
 
 ## Utilitarianism — "The Midnight Tribunal"
 
+> **Accuracy notes (batch 4 review):** Epicurus is an egoistic hedonist, not a utilitarian; he is on the road to utilitarianism. His vain desires include fame (PD 29 scholium: crowns and statues); he never sorts friendship into a bin, though he calls it the greatest thing wisdom provides (PD 27). Bentham's calculus has exactly seven dimensions; diminishing marginal utility is not one of them. Singer was a preference utilitarian for decades and moved to hedonistic utilitarianism in *The Point of View of the Universe* (2014, with Lazari-Radek).
+
 - **Path:** `lessons/ethical-theory/utilitarianism/`
 - **Lesson id:** `util-history`
 - **Topic:** Ethical theory (intro / normative ethics)
@@ -588,6 +590,8 @@ generalization of the "all elements required" idea (sibling to `<phil-balance>`)
 ---
 
 ## Aristotelian Virtue Ethics — "The Labors of Arête"
+
+> **Accuracy notes (batch 4 review):** Aristotle counts friendships of usefulness and pleasure as real but lesser friendships. Some feelings and actions (spite, theft, adultery) have no mean (NE II.6). Wrath is the excess of good temper (NE IV.5), not of courage. "No one does wrong knowingly" is Socrates's view. The phronesis/cleverness distinction is NE VI.12.
 
 - **Path:** `lessons/ethical-theory/virtue-ethics/`
 - **Lesson id:** `aristotle-virtue` (proposed)
@@ -1405,6 +1409,8 @@ Plus `prompts.md`.
 
 ## Computing & AI Ethics: History — "The Breadcrumb Network"
 
+> **Accuracy notes (from the "Internet With No Middle" review):** ARPANET dates from 1969, but TCP/IP from 1983, so "the internet is twenty years older than the web" holds only for ARPANET. The end-to-end argument was written down by Saltzer, Reed and Clark (1981). ARPA's planners read Baran's reports, but ARPANET was not built for survivability. PLATO games and Maze War (1973) predate MUD (1978). Browser video calls (WebRTC) run on the web, so don't say every video call bypasses it.
+
 - **Path:** `lessons/ai-ethics/breadcrumb-network/`
 - **Lesson id:** `breadcrumb-network`
 - **Topic:** Computing & AI Ethics (History of Information Technology & Moral Values)
@@ -1807,6 +1813,8 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 ---
 
 ## AI Ethics: Technomoral Virtues — "Growing Up in Springfield"
+
+> **Accuracy notes (batch 4 review):** Vallor's book is *Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting* (2016). Her technomoral perspective is a disposition to see moral phenomena as parts of a moral whole, not "novelty vs. flourishing"; her care is skilled concern for meeting others' needs, not ecological stewardship (extensions should be marked as such). "Technochauvinism" is Meredith Broussard's term (*Artificial Unintelligence*, 2018).
 
 - **Path:** `lessons/ai-ethics/technomoral-virtues/`
 - **Lesson id:** `ai-ethics-technomoral`

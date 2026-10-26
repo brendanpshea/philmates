@@ -65,7 +65,7 @@
   </phil-slide>
 
   <!-- 5. Compare: Plato vs Aristotle -->
-  <phil-slide>
+  <phil-slide id="plato-aristotle">
     <h1>Two Ways to Find the Good</h1>
     <p>"He was brilliant," Athena concedes. "But he thought my father was too stuck in the sky."</p>
     <phil-compare>
@@ -80,22 +80,26 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 6. MCQ: Aristotle vs Plato -->
+  <!-- 6. Classify: Plato or Aristotle -->
   <phil-slide>
     <h1>Spot the Difference</h1>
-    <phil-mcq data-qid="aristotle-virtue:q1" prompt="What most distinguishes Aristotle's ethical approach from Plato's?"
-              explain="Right. Aristotle's ethics is grounded in observation of how people actually live and flourish — it's practical philosophy, not abstract metaphysics.">
-      <phil-choice correct>He grounds ethics in how people actually live.</phil-choice>
-      <phil-choice feedback="That is closer to Plato, who locates the good in an eternal Form outside the changing world. Aristotle starts from the lives people actually lead and works out what going well means for a creature like us.">He locates the good in an eternal realm beyond ordinary life.</phil-choice>
-      <phil-choice feedback="Aristotle denies this outright in Book I: it is the mark of an educated person not to demand more precision than the subject allows, and ethics is not a subject that allows much.">He holds that ethics can be made as exact as mathematics.</phil-choice>
-      <phil-choice feedback="That's closer to Plato's view — Socrates' 'no one does wrong knowingly.' Aristotle insisted you must practice, not just know.">He says knowledge alone is enough to make you virtuous.</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="aristotle-virtue:q1" review="plato-aristotle" prompt="Plato or Aristotle? Who would say this?"
+                   explain="Right. Plato looks up: the Good is an eternal Form, known by reason, and knowing it is the path. Aristotle looks around: the good is how people actually live, and the goal is to become good through practice.">
+      <phil-col key="plato">Plato</phil-col>
+      <phil-col key="ari">Aristotle</phil-col>
+      <phil-item answer="plato" why="For Plato the Good is a transcendent Form, known through reason alone.">"The Good is an eternal Form, known through reason alone."</phil-item>
+      <phil-item answer="ari" why="Aristotle looks around, at how people actually live, thrive, and fail.">"Ethics starts from how people actually live, thrive, and fail."</phil-item>
+      <phil-item answer="plato" why="For Plato, knowing the Form of the Good is the path to right action.">"Know the Form of the Good, and right action will follow."</phil-item>
+      <phil-item answer="ari" why="Aristotle: the goal isn't to know the good but to become good (NE II.2).">"The goal is not to know the good but to become good."</phil-item>
+      <phil-item answer="ari" why="For Aristotle the good is a practical matter of habit, character, and community.">"You become good through habit, character, and community."</phil-item>
+      <phil-item answer="plato" why="Plato looks up, beyond ordinary life, to the Forms.">"To find the good, look up, beyond ordinary life."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ ACT 2 — EUDAIMONIA ============ -->
 
   <!-- 7. Eudaimonia -->
-  <phil-slide>
+  <phil-slide id="eudaimonia">
     <img slot="art" src="./assets/athena.png" alt="Athena teaching">
     <h1>Eudaimonia</h1>
     <p>"Every mortal wants to be happy," Athena says. "But most of you have no idea what that actually means."</p>
@@ -108,7 +112,7 @@
   </phil-slide>
 
   <!-- 8. Compare: eudaimonia vs hedonism -->
-  <phil-slide>
+  <phil-slide id="eudaimonia-hedonism">
     <h1>Flourishing ≠ Pleasure</h1>
     <p>Athena glances toward the utilitarianism wing of the training camp. "Some people tried to reduce it all to pleasure. They were wrong."</p>
     <phil-compare>
@@ -123,24 +127,28 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 9. MCQ: eudaimonia -->
+  <!-- 9. Classify: eudaimonia or hedonism -->
   <phil-slide>
     <h1>What Is Eudaimonia?</h1>
-    <phil-mcq data-qid="aristotle-virtue:q2" prompt="Which best captures Aristotle's concept of eudaimonia?"
-              explain="Right. Eudaimonia is a life of virtuous activity and flourishing — not a momentary feeling, and not reducible to pleasure, wealth, or fame.">
-      <phil-choice feedback="That's closer to hedonism. Eudaimonia is about a whole life of virtuous activity, not a passing mood.">Feeling happy and contented from one moment to the next.</phil-choice>
-      <phil-choice correct>A life of virtuous activity and flourishing.</phil-choice>
-      <phil-choice feedback="Aristotle explicitly argues that wealth is a means to other goods, not the final good.">Having plenty of money and the security it buys.</phil-choice>
-      <phil-choice feedback="Fame (kleos) was what the Greek heroes chased — Aristotle argued it's too dependent on others' opinions to be the highest good.">Being famous and admired for heroic deeds.</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="aristotle-virtue:q2" review="eudaimonia-hedonism" prompt="Aristotle's eudaimonia, or hedonism? Sort each claim."
+                   explain="Right. For Aristotle the good is flourishing, a whole life of virtuous activity, which a hard life can still have. The hedonist counts pleasure as the only thing good in itself, and pain as the only thing bad.">
+      <phil-col key="eud">Eudaimonia</phil-col>
+      <phil-col key="hed">Hedonism</phil-col>
+      <phil-item answer="eud" why="Eudaimonia is flourishing across a whole life.">Flourishing across a whole life</phil-item>
+      <phil-item answer="hed" why="That is the hedonist's claim: pleasure is the only intrinsic good.">Pleasure is the only thing good in itself</phil-item>
+      <phil-item answer="eud" why="For Aristotle, a hard life lived with courage, wisdom, and friends can still be a good life.">A hard life lived with courage, wisdom, and friends can still be a good life</phil-item>
+      <phil-item answer="hed" why="For the hedonist, a pleasant life counts as good by definition, however shallow.">A pleasant life counts as good by definition, however shallow it is</phil-item>
+      <phil-item answer="hed" why="The hedonist holds that pain is the only intrinsic evil.">Pain is the only thing bad in itself</phil-item>
+      <phil-item answer="eud" why="Aristotle: pleasure, wealth, and fame can each be part of a good life, but none is the whole.">Pleasure, wealth, and fame can each be part of a good life, but none is the whole</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 10. Cloze: eudaimonia -->
   <phil-slide>
     <h1>In Aristotle's Words</h1>
-    <phil-cloze data-qid="aristotle-virtue:q7" explain="Eudaimonia is activity of the soul in accordance with virtue — a way of living, not just a feeling. Aristotle insists on this distinction throughout the Nicomachean Ethics.">
+    <phil-cloze data-qid="aristotle-virtue:q7" review="eudaimonia" explain="Eudaimonia is activity of the soul in accordance with virtue — a way of living, not just a feeling. Aristotle insists on this distinction throughout the Nicomachean Ethics.">
       Eudaimonia is "activity of the <phil-blank options="soul,body,mind">soul</phil-blank> in accordance with
-      <phil-blank answer="virtue|excellence|arete|arête">virtue</phil-blank>" (NE I.7).
+      <phil-blank answer="virtue|virtues|excellence|excellences|arete|arête">virtue</phil-blank>" (NE I.7).
       It is not just a <phil-blank options="feeling,rule,duty">feeling</phil-blank> but a way of
       <phil-blank options="living,thinking,praying">living</phil-blank>.
     </phil-cloze>
@@ -149,7 +157,7 @@
   <!-- ============ ACT 3 — THE DOCTRINE OF THE MEAN ============ -->
 
   <!-- 11. Virtue as disposition at the mean -->
-  <phil-slide>
+  <phil-slide id="golden-mean">
     <img slot="art" src="./assets/achilles.png" alt="Achilles, warrior with a cracked shield">
     <h1>The Golden Mean</h1>
     <p>"Now pay attention," Athena says. "This is where most of you go wrong."</p>
@@ -157,6 +165,7 @@
       <li>A virtue is a stable <strong>disposition</strong> (<em>hexis</em>), not a one-off act. The brave person doesn't just act bravely once; they <em>are</em> brave, reliably.</li>
       <li>Each virtue sits between two vices: <strong>excess</strong> and <strong>deficiency</strong>. Courage lies between rashness and cowardice; generosity between prodigality and stinginess.</li>
       <li>The mean is <strong>not</strong> an arithmetic midpoint. It shifts with the person and the situation.</li>
+      <li>Some feelings and actions have no mean at all. There is no right amount of spite or theft.</li>
       <li>What counts as courage for a trained warrior differs from what counts for a civilian. Seeing which response the moment calls for takes <strong>phronesis</strong>, or practical wisdom.</li>
     </ul>
   </phil-slide>
@@ -170,7 +179,7 @@
       <li>He was the Greeks' best fighter in their long war against Troy.</li>
       <li>His own commander humiliated him over a share of the spoils, so he sat in his tent while his allies were slaughtered.</li>
       <li>He returned only when the Trojans killed his closest friend, then killed their prince and dragged the body behind his chariot.</li>
-      <li>"My father's poets called it 'heroic,'" Athena snorts. "Aristotle called it a lack of self-government."</li>
+      <li>"My father's poets called it 'heroic,'" Athena snorts. "I call it a lack of self-government."</li>
     </ul>
   </phil-slide>
 
@@ -181,9 +190,9 @@
     <p>Aristotle uses courage as the classic virtue. But it's not just "not being afraid."</p>
     <ul reveal>
       <li><strong>Deficiency (Cowardice):</strong> Fleeing in fear, prioritizing safety over honor.</li>
-      <li><strong>Excess (Rashness/Wrath):</strong> Blind rage, rushing headlong into danger without reason, or desecrating a fallen foe. This is Achilles.</li>
+      <li><strong>Excess (Rashness):</strong> Rushing headlong into danger without reason. Achilles in battle.</li>
       <li><strong>The Mean (Courage):</strong> Facing the right things, for the right reason, in the right way, at the right time.</li>
-      <li>Achilles had spirit, but because he couldn't moderate it, his courage curdled into the vice of wrath.</li>
+      <li>His rage, sulking and then desecrating a fallen foe, is a second failing. Aristotle calls it irascibility: the excess of good temper, not of courage.</li>
     </ul>
   </phil-slide>
 
@@ -278,21 +287,21 @@
   <!-- 14. Checkset: doctrine of the mean -->
   <phil-slide>
     <h1>Test the Doctrine</h1>
-    <phil-checkset data-qid="aristotle-virtue:q5" prompt="Check every TRUE statement about Aristotle's doctrine of the mean."
-                   explain="Right. The mean is relative to the person and situation, perceived by practical wisdom. It's not a mathematical average, virtues aren't innate — they're developed through practice — and the mean differs for different people in different circumstances.">
+    <phil-checkset data-qid="aristotle-virtue:q5" review="golden-mean" prompt="Check every TRUE statement about Aristotle's doctrine of the mean."
+                   explain="Right. The mean is relative to the person and situation, perceived by practical wisdom. It's not a mathematical average, and virtues aren't innate: they're developed through practice. And some feelings and actions, like spite and theft, have no mean at all (NE II.6).">
       <phil-statement correct>A virtue is a stable disposition, not just a single good act.</phil-statement>
       <phil-statement correct>The mean is relative to the person and the situation.</phil-statement>
       <phil-statement correct>Each virtue lies between an excess and a deficiency.</phil-statement>
       <phil-statement>The mean always means choosing the exact mathematical average.</phil-statement>
       <phil-statement>Virtue is innate — you either have it or you don't.</phil-statement>
-      <phil-statement>Every action has a mean, so there is a right amount of spite or theft.</phil-statement>
+      <phil-statement>Every feeling and action has a mean, so there is a right amount of spite or theft.</phil-statement>
     </phil-checkset>
   </phil-slide>
 
   <!-- ============ ACT 4 — PRACTICING VIRTUE ============ -->
 
   <!-- 15a. Habituation: Ethics as a Craft -->
-  <phil-slide>
+  <phil-slide id="habituation">
     <img slot="art" src="./assets/olympus.png" alt="Olympian training ground">
     <h1>Practice Makes Virtuous</h1>
     <p class="lead">"How do you think my heroes got good at fighting?" Athena asks. "Practice. Ethics is no different."</p>
@@ -331,7 +340,7 @@
   <!-- 16. Compare: phronesis vs cleverness -->
   <phil-slide>
     <h1>Wisdom ≠ Cleverness</h1>
-    <p>"Don't confuse wisdom with being clever," Athena warns. "I've seen very clever people do terrible things."</p>
+    <p>Aristotle separates practical wisdom from mere cleverness (NE VI.12). "I've seen very clever people do terrible things," Athena adds.</p>
     <phil-compare>
       <phil-side label="Phronesis" tag="Practical wisdom">
         <p>Aims at the <strong>genuinely good</strong>; requires good character.</p>
@@ -384,10 +393,10 @@
 
   <phil-slide>
     <h1>Why Practice?</h1>
-    <phil-mcq data-qid="aristotle-virtue:q3" prompt="Why does Aristotle say virtue must be practiced, not just taught?"
+    <phil-mcq data-qid="aristotle-virtue:q3" review="habituation" prompt="Why does Aristotle say virtue must be practiced, not just taught?"
               explain="Right. For Aristotle, virtues are dispositions formed through repeated action — just as you learn a craft by practicing it, you learn courage by doing courageous things. Knowing what's right isn't enough; you have to make it a habit.">
       <phil-choice feedback="Aristotle valued education deeply — he founded a school! But he insisted that knowledge alone doesn't make you good.">He didn't believe in formal education at all.</phil-choice>
-      <phil-choice feedback="That's closer to Plato's view ('no one does wrong knowingly'). Aristotle argued against exactly this — Medea knew and still did wrong.">Knowledge of the good automatically makes you virtuous.</phil-choice>
+      <phil-choice feedback="That is Socrates's view ('no one does wrong knowingly'). Aristotle rejected it: in akrasia you know what is right and still fail to do it.">Knowledge of the good automatically makes you virtuous.</phil-choice>
       <phil-choice feedback="Aristotle explicitly says virtues are not natural but acquired through practice (NE II.1).">Virtues are genetic traits — you're born with them or not.</phil-choice>
       <phil-choice correct>Virtues are dispositions formed by habit, like craft skills.</phil-choice>
     </phil-mcq>
@@ -432,13 +441,14 @@
   </phil-slide>
 
   <!-- 20b. Philia: Virtue in Community (Application) -->
-  <phil-slide>
+  <phil-slide id="philia">
     <img slot="art" src="./assets/penelope.png" alt="Penelope at her loom, threads radiating outward">
     <h1>Philia: Virtue in Community</h1>
     <p>Penelope's story shows that virtue is relational. It requires <strong>philia</strong> (friendship/broad social loyalty).</p>
     <ul reveal>
       <li>Aristotle claims friendship is one of the greatest external goods for eudaimonia (NE VIII).</li>
       <li>The highest form is <strong>virtue-friendship</strong>, where friends love each other for their character, helping each other grow.</li>
+      <li>Friendships of usefulness and of pleasure are real friendships too, only lesser ones.</li>
       <li>Penelope's virtue wasn't a solo act of heroic pride like Achilles's; it was a communal anchor that kept the social fabric of Ithaca from tearing apart.</li>
     </ul>
   </phil-slide>
@@ -474,12 +484,12 @@
 
   <phil-slide>
     <h1>Would Aristotle Agree?</h1>
-    <phil-checkset data-qid="aristotle-virtue:q6" prompt="Check every claim Aristotle would endorse."
-                   explain="Right. Aristotle insists that humans flourish in community, that laws shape character, and that virtue-friendship is the highest form. He'd reject the ideas that hermits flourish fully, that the state shouldn't shape ethics, or that justice is irrelevant to personal virtue.">
+    <phil-checkset data-qid="aristotle-virtue:q6" review="philia" prompt="Check every claim Aristotle would endorse."
+                   explain="Right. Aristotle insists that humans flourish in community, that laws shape character, and that virtue-friendship is the highest form. He'd reject the ideas that a hermit can flourish fully and that the state should stay out of ethics. And he counts friendships of usefulness as real friendships, only lesser ones.">
       <phil-statement correct>Humans flourish in community, not in isolation.</phil-statement>
       <phil-statement correct>Laws and institutions shape moral character.</phil-statement>
       <phil-statement correct>Virtue-friendship — loving someone for their character — is the highest kind.</phil-statement>
-      <phil-statement>A hermit can be fully virtuous without any community at all.</phil-statement>
+      <phil-statement>A hermit can flourish fully without any community at all.</phil-statement>
       <phil-statement>The state should stay out of ethics entirely.</phil-statement>
       <phil-statement>Friendship based on usefulness is not really friendship at all.</phil-statement>
     </phil-checkset>
@@ -531,7 +541,7 @@
   </phil-slide>
 
   <!-- 25. Compare: MacIntyre vs Foot vs Hursthouse -->
-  <phil-slide>
+  <phil-slide id="three-branches">
     <h1>Same Root, Three Branches</h1>
     <phil-compare>
       <phil-side label="MacIntyre" tag="Practices &amp; traditions">
@@ -549,24 +559,29 @@
     </phil-compare>
   </phil-slide>
 
-  <!-- 26. MCQ: modern virtue ethics -->
+  <!-- 26. Classify: three modern Aristotelians -->
   <phil-slide>
     <h1>Match the Philosopher</h1>
-    <phil-mcq data-qid="aristotle-virtue:q4" prompt="Which modern philosopher argues that virtues are natural excellences of the human species — the way deep roots are natural excellences of an oak?"
-              explain="Right. Philippa Foot's 'Natural Goodness' (2001) argues that virtues are species-typical excellences — a human lacking justice is defective as a human, just as a bee that doesn't dance is defective as a bee.">
-      <phil-choice feedback="MacIntyre focuses on practices and traditions, not biological naturalism.">Alasdair MacIntyre</phil-choice>
-      <phil-choice feedback="Hursthouse focuses on action guidance — what a virtuous agent would do — not on natural species-norms.">Rosalind Hursthouse</phil-choice>
-      <phil-choice correct>Philippa Foot</phil-choice>
-      <phil-choice feedback="Anscombe restarted modern virtue ethics in 1958, so she belongs here — but her argument is that moral philosophy should drop the language of obligation, not that virtues are species-typical excellences.">Elizabeth Anscombe</phil-choice>
-    </phil-mcq>
+    <phil-classify data-qid="aristotle-virtue:q4" review="three-branches" prompt="Three modern Aristotelians. Who would say this?"
+                   explain="Right. MacIntyre grounds the virtues in shared practices and traditions. Foot treats them as natural excellences of the human species. Hursthouse turns them into a guide to action: do what a virtuous person would characteristically do.">
+      <phil-col key="mac">MacIntyre</phil-col>
+      <phil-col key="foot">Foot</phil-col>
+      <phil-col key="hurst">Hursthouse</phil-col>
+      <phil-item answer="mac" why="MacIntyre: virtues make sense within shared practices and living traditions.">"Virtues make sense only inside shared practices and living traditions."</phil-item>
+      <phil-item answer="foot" why="Foot judges human virtue the way we judge any living thing, like the lioness.">"A human who lacks justice is defective as a human, like a lioness who won't feed her cubs."</phil-item>
+      <phil-item answer="hurst" why="Hursthouse: an action is right if and only if a virtuous agent would characteristically do it.">"An action is right if it is what a virtuous person would characteristically do."</phil-item>
+      <phil-item answer="mac" why="MacIntyre's charge in After Virtue: modern individualism has fragmented our moral vocabulary.">"Modern individualism has broken up our moral vocabulary, and we need to recover it."</phil-item>
+      <phil-item answer="foot" why="Foot's neo-naturalism: virtues are natural excellences of a species.">"Virtues are natural excellences, judged the way we judge any living thing."</phil-item>
+      <phil-item answer="hurst" why="Asking what a virtuous person would do is Hursthouse's answer to the complaint that virtue ethics gives no guidance.">"Faced with a choice, ask what a courageous or just person would do here."</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- 27. Cloze: modern variants -->
   <phil-slide>
     <h1>Complete the Map</h1>
-    <phil-cloze data-qid="aristotle-virtue:q8" explain="MacIntyre grounds virtue in practices and traditions; Hursthouse gives action guidance via the virtuous agent; Foot identifies virtues as natural excellences. Three very different ways to update Aristotle for the modern world.">
-      MacIntyre argues virtues make sense within <phil-blank answer="practices|practice|communities">practices</phil-blank> and
-      <phil-blank answer="traditions|tradition|communities|histories">traditions</phil-blank>.
+    <phil-cloze data-qid="aristotle-virtue:q8" review="three-branches" explain="MacIntyre grounds virtue in practices and traditions; Hursthouse gives action guidance via the virtuous agent; Foot identifies virtues as natural excellences. Three very different ways to update Aristotle for the modern world.">
+      MacIntyre argues virtues make sense within <phil-blank answer="practices|practice|traditions|tradition|communities">practices</phil-blank> and
+      <phil-blank answer="traditions|tradition|practices|practice|communities|histories">traditions</phil-blank>.
       Hursthouse says an action is right if it's what a <phil-blank answer="virtuous|good|virtuous person">virtuous</phil-blank> agent would do.
       Foot calls virtues natural <phil-blank answer="excellences|excellence|goods|perfections">excellences</phil-blank> of the human species.
     </phil-cloze>

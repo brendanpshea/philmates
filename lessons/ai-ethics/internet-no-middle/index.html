@@ -42,7 +42,7 @@
     <img slot="art" src="./assets/imp-room.png" alt="A university computer room in 1969: a refrigerator-sized gray steel cabinet covered in small round indicator lamps and toggle switches, a teletype terminal on a metal desk beside it, and a thick orange cable running from the cabinet across the floor and out through a hole in the cinderblock wall">
     <h1>The Network With No Middle</h1>
     <p class="lead">Nobody runs the internet. There is no control room, no master switch, and no company that owns it.</p>
-    <p>That is not an accident. It is the result of a handful of decisions made by particular people, for particular reasons, mostly before 1975.</p>
+    <p>That is not an accident. It is the result of a handful of decisions made by particular people, for particular reasons, between the 1960s and the 1990s.</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
 
@@ -58,7 +58,7 @@
   </phil-slide>
 
   <!-- 3. Internet vs Web -->
-  <phil-slide>
+  <phil-slide id="not-the-web">
     <h1>The Internet Is Not the Web</h1>
     <p>These two words get used as if they mean the same thing. They do not, and almost nothing else makes sense until the difference is clear.</p>
     <figure class="phil-figure">
@@ -67,7 +67,7 @@
     </figure>
     <ul reveal>
       <li>The <strong>internet</strong> is the wiring. Its whole job is moving small chunks of data between machines.</li>
-      <li>The <strong>web</strong> is one thing people built on top of that wiring, in 1989, twenty years later.</li>
+      <li>The <strong>web</strong> is one thing people built on top of that wiring, in 1989, twenty years after ARPANET.</li>
       <li>The wiring does not know or care which of them it is carrying.</li>
     </ul>
   </phil-slide>
@@ -133,7 +133,7 @@
   </phil-slide>
 
   <!-- 8. Whose values -->
-  <phil-slide>
+  <phil-slide id="two-groups">
     <img slot="art" src="./assets/relic-baran.png" alt="Relic card: a torn cream document lying behind a green diamond-shaped mesh of linked nodes, with two orange fragments of the document separated out and sitting apart from the rest">
     <span class="phil-date">1964 / 1969</span>
     <h1>Two Groups Wanted This, for Different Reasons</h1>
@@ -143,6 +143,7 @@
       <li>Donald Davies, at a British physics lab, wanted computers to stop wasting expensive line time.</li>
       <li>Survivability and thrift are different values, and both pointed at the same shape.</li>
       <li>ARPANET, the first real network, was funded by the US defense department and built to share scarce computers.</li>
+      <li>Its planners drew on Baran's and Davies's work, but survival was not its purpose.</li>
     </ul>
   </phil-slide>
 
@@ -150,12 +151,12 @@
   <phil-slide>
     <h1>Checkpoint: The Nuclear War Story</h1>
     <p>People often say the internet was built so it could survive a nuclear attack. That story is half right, and the half that is wrong is the interesting half.</p>
-    <phil-mcq data-qid="internet-no-middle:q1" prompt="What is the most accurate account of the connection?"
+    <phil-mcq data-qid="internet-no-middle:q1" review="two-groups" prompt="What is the most accurate account of the connection?"
               explain="Right. Baran's survivable-communication work and the ARPANET project were separate, years apart, and had different funders and goals. What they shared was an engineering answer. The popular story welds them together and loses the useful point: two unrelated sets of values can push toward the same design.">
       <phil-choice feedback="The story is not simply false. Baran really was working on communication that could survive an attack, and that work really did help establish packet switching.">The story is invented. Nobody working on these systems ever thought about surviving an attack.</phil-choice>
       <phil-choice feedback="ARPANET was funded by a defense agency, but its stated purpose was letting researchers share scarce computers, not withstanding a strike.">The story is exact. ARPANET was commissioned and built specifically to keep working during a nuclear war.</phil-choice>
-      <phil-choice correct>Baran's survivability work and ARPANET were separate projects that arrived at the same technique.</phil-choice>
-      <phil-choice feedback="The order runs the other way. Baran published in the early 1960s, before ARPANET was built, and neither project took the other&#39;s plans.">ARPANET came first, and Baran&#39;s survivability work applied its ideas later.</phil-choice>
+      <phil-choice correct>Baran's survivability work and ARPANET were separate projects with different goals.</phil-choice>
+      <phil-choice feedback="The order runs the other way. Baran published in the early 1960s, before ARPANET was built. ARPA&#39;s planners later read his reports, but ARPANET was not built for survivability.">ARPANET came first, and Baran&#39;s survivability work applied its ideas later.</phil-choice>
     </phil-mcq>
   </phil-slide>
 
@@ -183,12 +184,12 @@
     <ul reveal>
       <li>The telephone companies had an answer. Put the intelligence in the network and sell services from it.</li>
       <li>On that model, a new kind of communication needs the network's owner to build it and agree to it.</li>
-      <li>The researchers building ARPANET chose the opposite, and wrote down why.</li>
+      <li>The internet's designers chose the opposite. In 1981 Jerome Saltzer, David Reed, and David Clark wrote down why.</li>
     </ul>
   </phil-slide>
 
   <!-- 12. End to end -->
-  <phil-slide>
+  <phil-slide id="end-to-end">
     <img slot="art" src="./assets/relic-endtoend.png" alt="Relic card: a long plain gray pipe running across the frame, completely dark and featureless along its whole length, with a bright intricate glowing lamp mechanism mounted at each open end">
     <span class="phil-date">1981</span>
     <h1>Smart Ends, Dumb Middle</h1>
@@ -249,7 +250,7 @@
       <li>It spread to almost every research machine of its type, because people who saw it wanted to play it.</li>
       <li>It helped make the case that computers were for interacting with, not just for submitting jobs to.</li>
       <li>In 1978 two students in Essex built a shared world players could all be inside at once, and called it a MUD.</li>
-      <li>Every online game with other people in it is descended from that experiment.</li>
+      <li>It became the ancestor of today's shared online worlds.</li>
     </ul>
   </phil-slide>
 
@@ -268,14 +269,14 @@
   <phil-slide>
     <h1>Fill In: The First Two Decisions</h1>
     <p>Complete the summary so far:</p>
-    <phil-cloze data-qid="internet-no-middle:q6" explain="These are the two decisions everything else rests on. Cutting messages into packets removed the center, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
+    <phil-cloze data-qid="internet-no-middle:q6" review="end-to-end" explain="These are the two decisions everything else rests on. Cutting messages into packets removed the center, which removed the off switch. Keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.">
       A message is cut into numbered pieces called
       <phil-blank options="packets,parcels,programs">packets</phil-blank>,
       and each piece finds its own way, so there is no
-      <phil-blank answer="center|center|middle">center</phil-blank>
+      <phil-blank answer="center|centre|middle|hub|switch|switchboard|router|node|path|route|line|link">center</phil-blank>
       whose loss would stop the message. The network was also built to know
       <phil-blank options="nothing,everything,a little">nothing</phil-blank>
-      about what it is carrying, which is why Tomlinson could add email without asking anyone's
+      about what its packets contain, which is why Tomlinson could add email without asking anyone's
       <phil-blank answer="permission|approval|consent">permission</phil-blank>.
     </phil-cloze>
   </phil-slide>
@@ -283,7 +284,7 @@
   <!-- ============ PART 4 — NOBODY OWNS THE RULES ============ -->
 
   <!-- 19. What a protocol is -->
-  <phil-slide>
+  <phil-slide id="protocols">
     <h1>Decision Three: Publish the Rules, Own Nothing</h1>
     <p class="lead">For two machines to exchange packets they must agree in advance on exactly what the bytes mean. A written agreement like that is a <strong>protocol</strong>.</p>
     <ul reveal>
@@ -305,16 +306,21 @@
     </ul>
   </phil-slide>
 
-  <!-- 21. MCQ 2 [correct: A] -->
+  <!-- 21. Classify: which decision -->
   <phil-slide>
-    <h1>Checkpoint: Open Rules</h1>
-    <phil-mcq data-qid="internet-no-middle:q2" prompt="Why does it matter that the internet's protocols are public documents nobody owns?"
-              explain="Right. Because the rules are public and free, anyone can build a machine or a program that joins in, without a license and without asking. That is the reason there are thousands of competing browsers, mail programs and servers rather than one approved product.">
-      <phil-choice correct>Anyone can build something that joins the network without needing a license or permission.</phil-choice>
-      <phil-choice feedback="Public rules are not automatically more secure. Several early protocols had serious weaknesses, and being readable is what let people find them.">Public rules are harder to attack, because an attacker cannot see how any of the system works.</phil-choice>
-      <phil-choice feedback="Openness did not make the rules easy to change. Anything used everywhere becomes very hard to alter, precisely because everyone depends on it.">Public rules can be rewritten quickly whenever a better idea comes along.</phil-choice>
-      <phil-choice feedback="Companies do charge for access, which is what an internet provider sells. What nobody can charge for is the right to speak the protocol.">It stops any single company from charging for access to the network.</phil-choice>
-    </phil-mcq>
+    <h1>Checkpoint: The First Three Decisions</h1>
+    <phil-classify data-qid="internet-no-middle:q2" review="protocols" prompt="Which of the first three design decisions explains each fact?"
+                   explain="Right. Packets with no center mean damage routes around itself and there is no switch to seize. A stupid network carries anything without knowing what it is, so new uses need nobody's permission. Published rules mean anyone can build software that joins in, with no license and no fee.">
+      <phil-col key="one">Decision one: no center</phil-col>
+      <phil-col key="two">Decision two: a stupid network</phil-col>
+      <phil-col key="three">Decision three: published rules</phil-col>
+      <phil-item answer="one" why="Packets find their own way, so damage routes around itself.">A cut cable doesn't stop a message, because its packets find another way</phil-item>
+      <phil-item answer="two" why="The end-to-end principle: the network moves packets and does not know what they are.">The network moves packets without knowing whether they are email, a film, or a game</phil-item>
+      <phil-item answer="three" why="Protocols are public documents. Anyone can read one and write software that obeys it.">Anyone can read the RFCs for free and write software that obeys them</phil-item>
+      <phil-item answer="one" why="With no center there is no switchboard to seize and no single machine whose loss stops everything.">There is no headquarters to raid and no master switch to throw</phil-item>
+      <phil-item answer="two" why="Permissionless innovation came from the dumb network: new uses needed no change to the wiring.">Email and games were added by people who never asked a network owner</phil-item>
+      <phil-item answer="three" why="No government set the standards, no company owned them, and no fee was charged.">No company owns the standards, and nobody pays a fee to use them</phil-item>
+    </phil-classify>
   </phil-slide>
 
   <!-- ============ PART 5 — NAMES ============ -->
@@ -346,7 +352,7 @@
   </phil-slide>
 
   <!-- 23. The chokepoint -->
-  <phil-slide>
+  <phil-slide id="chokepoint">
     <h1>The One Part With a Middle</h1>
     <p class="lead">Everything else about the internet was built to have no center. Names are the exception, and it is the exception that gets used.</p>
     <ul reveal>
@@ -414,11 +420,11 @@
   <!-- 28. Checkset: internet vs web -->
   <phil-slide>
     <h1>Checkpoint: Which Layer Is Which?</h1>
-    <phil-checkset data-qid="internet-no-middle:q4" prompt="Check every statement that is TRUE."
-                   explain="The internet is the packet-moving layer from 1969, and the web is one thing built on top of it in 1989. Email is older than the web and is not part of it. A game or a video call uses the internet without touching the web at all. Getting this order right is what makes the rest of the story make sense.">
-      <phil-statement correct>The internet existed for about twenty years before the web was invented.</phil-statement>
+    <phil-checkset data-qid="internet-no-middle:q4" review="not-the-web" prompt="Check every statement that is TRUE."
+                   explain="The internet is the packet-moving layer from 1969, and the web is one thing built on top of it in 1989. Email is older than the web and is not part of it. An online game can use the internet without touching the web at all. Getting this order right is what makes the rest of the story make sense.">
+      <phil-statement correct>ARPANET, the network the internet grew from, existed about twenty years before the web was invented.</phil-statement>
       <phil-statement correct>Email travels over the internet but is not part of the web.</phil-statement>
-      <phil-statement correct>A video call uses the internet without using the web.</phil-statement>
+      <phil-statement correct>An online game can use the internet without using the web.</phil-statement>
       <phil-statement>The web is the wiring, and the internet is the set of pages that runs on it.</phil-statement>
       <phil-statement>Turning off the web would stop packets from moving between machines.</phil-statement>
     </phil-checkset>
@@ -427,7 +433,7 @@
   <!-- ============ PART 7 — WHO PAYS ============ -->
 
   <!-- 29. The problem of memory -->
-  <phil-slide>
+  <phil-slide id="cookies">
     <h1>Decision Six: Give It a Memory</h1>
     <p class="lead">HTTP was designed to forget. You ask for a document, the machine sends it, and the conversation is over. It has no idea who you are next time.</p>
     <ul reveal>
@@ -455,7 +461,7 @@
   <!-- 31. Checkset: cookies -->
   <phil-slide>
     <h1>Checkpoint: What a Cookie Is</h1>
-    <phil-checkset data-qid="internet-no-middle:q5" prompt="Check every statement that is TRUE."
+    <phil-checkset data-qid="internet-no-middle:q5" review="cookies" prompt="Check every statement that is TRUE."
                    explain="A cookie is data, not a program. It cannot run, and it cannot read anything on your machine. It was built so a shop could remember your basket from one page to the next. Nothing new had to be invented to follow people between sites — a company whose code sits on thousands of sites simply uses the basket mechanism exactly as it was written.">
       <phil-statement correct>A cookie is a small piece of data a site asks your browser to keep and hand back later.</phil-statement>
       <phil-statement correct>Cookies were invented to solve a problem with shopping baskets.</phil-statement>
@@ -510,7 +516,7 @@
   </phil-slide>
 
   <!-- 34b. Why -->
-  <phil-slide>
+  <phil-slide id="piled-up">
     <h1>Why It Piled Up in a Few Places</h1>
     <p>Nobody ordered this either. Several ordinary pressures happened to push the same way at once.</p>
     <ul reveal>
@@ -546,30 +552,32 @@
     </phil-poll>
   </phil-slide>
 
-  <!-- 34e. Checkpoint -->
+  <!-- 34e. Checkset: what caused the concentration -->
   <phil-slide>
     <h1>Checkpoint: What Actually Changed</h1>
-    <phil-mcq data-qid="internet-no-middle:q3" prompt="The web ended up concentrated in a few companies. What changed to allow it?"
-              explain="Nothing in the protocol. A packet is routed today the way it was routed in 1969, and no rule was rewritten to send traffic through anybody's servers. The concentration was produced by money and convenience on top of a design that still has no center, which is why fixing it is so much harder than repealing a rule.">
-      <phil-choice feedback="No such rewrite ever happened. A packet today takes its own path through routers exactly as it did in 1969.">The protocol was rewritten to route traffic through central servers.</phil-choice>
-      <phil-choice correct>Nothing in the protocol. The concentration came from economics, not a rule.</phil-choice>
-      <phil-choice feedback="The root is not held by those companies. Blocking at the name layer is real, and it is a different problem from where the traffic goes.">The name system's root was handed to the largest companies to manage.</phil-choice>
-      <phil-choice feedback="That argument is about the wiring and it is a live one. The concentration happened anyway, on networks that were treating all traffic alike.">Networks were allowed to deliver the biggest sites faster than the rest.</phil-choice>
-    </phil-mcq>
+    <phil-checkset data-qid="internet-no-middle:q3" review="piled-up" prompt="The web ended up concentrated in a few companies. Check every cause the lesson gives."
+                   explain="Right. Nothing in the protocol changed: packets still route around damage, with no center. The concentration came from ordinary pressures: whatever leads tends to keep leading, advertising pays most for big audiences, and running a site safely costs more than a small one can carry.">
+      <phil-statement correct>A place is more useful the more people are already there</phil-statement>
+      <phil-statement correct>Advertising pays more for one large audience than for many small ones</phil-statement>
+      <phil-statement correct>Hosting, moderation, and surviving attacks cost more than a small site can carry</phil-statement>
+      <phil-statement>The protocol was rewritten to route traffic through central servers</phil-statement>
+      <phil-statement>The name system's root was handed to the largest companies</phil-statement>
+      <phil-statement>Packets stopped routing around damage and began passing through a center</phil-statement>
+    </phil-checkset>
   </phil-slide>
 
   <!-- 34. Cloze 2 -->
   <phil-slide>
     <h1>Fill In: The Last Four Decisions</h1>
     <p>Complete the second half of the account:</p>
-    <phil-cloze data-qid="internet-no-middle:q7" explain="Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. The web was a layer added on top of a network that was already twenty years old. And it costs nothing because somebody else is paying for your attention.">
+    <phil-cloze data-qid="internet-no-middle:q7" review="chokepoint" explain="Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. The web was a layer added on top of a network that was already twenty years old. And it costs nothing because somebody else is paying for your attention.">
       The internet&apos;s rules are published where anyone can read them, so building something that joins the
       network needs no <phil-blank options="license,degree,cable">license</phil-blank>.
-      Names are handled by a tree called the <phil-blank answer="DNS|domain name system">DNS</phil-blank>,
-      the one part with a top, and therefore the one part where a site can be
+      Names are handled by a tree called the <phil-blank answer="DNS|domain name system|name system|the dns">DNS</phil-blank>,
+      the one part with a top, and therefore the cheapest place to have a site
       <phil-blank options="blocked,copied,slowed">blocked</phil-blank>.
       And the web costs you nothing to use because it is paid for by
-      <phil-blank answer="advertising|adverts|ads|advertisements">advertising</phil-blank>.
+      <phil-blank answer="advertising|advertisers|advertiser|advertisement|advertisements|adverts|ads|attention">advertising</phil-blank>.
     </phil-cloze>
   </phil-slide>
 

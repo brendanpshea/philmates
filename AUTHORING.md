@@ -455,6 +455,12 @@ the keys, the adversary caught overstated claims in explain lines and in poll
 feedback. Some came from misreading the lesson's own cited study, which is
 worth checking whenever a lesson quotes percentages.
 
+Batch 4 (virtue ethics, technomoral virtues, the internet's design,
+utilitarianism) cost about 420k, about 105k a lesson. Typed blanks were the
+most common failure: two blanks whose answers can swap order, a missing
+British spelling, and the slide's own word left off the accept list. When a
+cloze has typed blanks, list every form a careful student could write.
+
 ## Quiz quality (auto-checked)
 
 **Format mix.** Aim for 4–6 graded items per lesson, mostly classify, cloze,

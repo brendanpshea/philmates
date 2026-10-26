@@ -36,7 +36,7 @@ const ENGINE = new Set(['phil-lesson', 'phil-slide', 'phil-mcq', 'phil-choice', 
   'phil-statement', 'phil-cloze', 'phil-blank', 'phil-classify', 'phil-col', 'phil-item', 'phil-branch',
   'phil-option', 'phil-compare', 'phil-side', 'phil-beliefs', 'phil-beliefs-review', 'phil-thinker', 'phil-narration']);
 
-const ENT = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ', '&mdash;': '—', '&ndash;': '–' };
+const ENT = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ', '&mdash;': '—', '&ndash;': '–', '&apos;': "'" };
 const unescape = s => s.replace(/&[a-z#0-9]+;/gi, m => ENT[m] ?? m);
 const text = s => unescape(s.replace(/<script\b[\s\S]*?<\/script>/gi, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
 const attr = (tag, name) => { const m = tag.match(new RegExp(`\\b${name}="([^"]*)"`)); return m ? unescape(m[1]) : ''; };
