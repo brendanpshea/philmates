@@ -1186,19 +1186,12 @@ class PhilCloze extends PhilWidget {
       return;
     }
     this._lastSig = sig;
-    // Each check is scored blank by blank. A wrong dropdown pick costs
-    // 1/(options − 1), so random picking averages zero; a wrong typed answer
-    // or an empty blank costs nothing, since nobody types it by luck. The miss
-    // says how many blanks are wrong, not which.
+    // Each check earns the share of blanks it gets right, with nothing taken
+    // off for a wrong one (see checkset). The miss says how many blanks are
+    // wrong, not which.
     if (this.lesson) {
-      let score = 0;
-      this._blanks.forEach(f => {
-        const v = this._val(f);
-        if (!v || v === '—') return;
-        if (f._accepted.includes(v)) score += 1;
-        else if (f.tagName === 'SELECT') score -= 1 / Math.max(1, f.options.length - 2);
-      });
-      this.lesson.raiseCredit(this.qid, score / this._blanks.length * worthAfter(this.lesson.misses(this.qid)));
+      const n = this._blanks.length;
+      this.lesson.raiseCredit(this.qid, (n - wrong) / n * worthAfter(this.lesson.misses(this.qid)));
     }
     this.miss(countHint(wrong, this._blanks.length, 'blank'));
   }
@@ -1223,9 +1216,10 @@ class PhilCloze extends PhilWidget {
    </phil-classify>
    A grid: one row per item, one radio per column, plus "Not sure" unless the
    host has `no-unsure`. Rows shuffle on load; columns keep authored order.
-   Every check is scored row by row: right +1, wrong −1/(columns−1), not sure
-   or blank 0, so random picking averages zero. A miss counts the wrong rows
-   without marking them. Every row must be right to finish. Each item's `why` is shown, on request, once solved.
+   Every check earns the share of rows it gets right; a wrong, blank or not
+   sure row earns nothing and costs nothing. A miss counts the wrong rows
+   without marking them. Every row must be right to finish. Each item's `why`
+   is shown, on request, once solved.
 ------------------------------------------------------------------ */
 class PhilClassify extends PhilWidget {
   build() {
@@ -1303,13 +1297,11 @@ class PhilClassify extends PhilWidget {
       return;
     }
     this._lastSig = sig;
+    // Each check earns the share of rows it gets right, with nothing taken off
+    // for a wrong one (see checkset).
     if (this.lesson) {
-      const penalty = 1 / Math.max(1, this._cols.length - 1);
-      const score = this._rows.reduce((s, r, i) => {
-        const p = picks[i];
-        return s + (!p ? 0 : p === r.answer ? 1 : -penalty);
-      }, 0);
-      this.lesson.raiseCredit(this.qid, score / this._rows.length * worthAfter(this.lesson.misses(this.qid)));
+      const n = this._rows.length;
+      this.lesson.raiseCredit(this.qid, (n - wrong) / n * worthAfter(this.lesson.misses(this.qid)));
     }
     const open = picks.filter(p => !p).length;
     this.miss(countHint(wrong, this._rows.length, 'row') +

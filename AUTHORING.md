@@ -98,16 +98,13 @@ each answer turned green, which earned full marks and taught nothing.
   Each check is scored part by part, then scaled by the tries already spent,
   and the best result is kept. A first checkset check with 5 of 6 right banks
   83%. A correct second check is worth 80%, so the question keeps the 83%.
-  The part-by-part scores:
-  - *Checkset:* statements right ÷ total. Nothing is taken off for a wrong
-    one, because these are formative, not punitive. The cost: ticking every
-    box earns the share of true statements without reading anything, so keep
-    true and false statements roughly balanced.
-  - *Cloze:* each right blank counts 1; a wrong dropdown pick costs
-    1 ÷ (options − 1), so random picking averages 0. A wrong typed answer or an
-    empty blank costs nothing.
-  - *Classify:* each right row counts 1; a wrong row costs 1 ÷ (columns − 1);
-    a blank or "Not sure" row costs nothing.
+- **A check scores the number right ÷ the number of parts** (statements,
+  blanks or rows). Nothing is taken off for a wrong part, because these are
+  formative, not punitive. The cost is that guessing earns something: ticking
+  every checkset box earns the share of true statements, and random picks in a
+  classify grid or cloze dropdowns earn about one in however many choices there
+  are. So keep a checkset's true and false statements roughly balanced, and
+  don't build a grid where one column is the answer for nearly every row.
 - **A multi-part miss says how many parts are wrong, never which.** "2 of
   your 6 rows are wrong" leaves the student to find them. If the red marks
   showed which ones, a random first check followed by flipping the red rows
@@ -115,7 +112,8 @@ each answer turned green, which earned full marks and taught nothing.
   marked ?, which gives nothing away. Everything is marked once it's solved.
 - **A wrong MCQ option is struck through** and can't be picked again. The
   options reshuffle before the next try.
-- **Re-checking a checkset or cloze without changing anything is free.** It
+- **Re-checking a checkset, cloze or classify without changing anything is
+  free.** It
   says "Same answers as before" instead of costing a try.
 - **After a miss, the question locks until the student reviews.** Give the
   question `review="slide-id"` and the feedback offers a button to that slide;
@@ -255,9 +253,9 @@ make it matching.
   that describes rather than names `descriptive`
   (`<phil-col key="in" descriptive>The interrogator can see this</phil-col>`).
   Labels with a colon ("Disguise: hides …") define themselves and are exempt.
-- Scoring: every check is scored row by row (right +1, wrong
-  −1/(columns−1), not sure 0), so guessing averages zero, then scaled by the
-  tries already spent. A miss says how many rows are wrong, not which.
+- Scoring: every check earns the share of rows right, scaled by the tries
+  already spent. A wrong, blank or "Not sure" row earns nothing and costs
+  nothing. A miss says how many rows are wrong, not which.
 - Rows shuffle on every load; columns keep their order.
 
 ### Fill the blanks — `<phil-cloze>`
