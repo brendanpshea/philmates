@@ -736,10 +736,12 @@ case, and face the choice in a poll.
   that pictures their central move without a face (Searle: a locked door with
   slips coming under it). Generate the idea scenes in the lesson's sheets like
   any other panel.
-- **Relic cards are retired for new lessons.** Older lessons still use the
-  80×108 SVG emblems in `assets/relic-*.svg`. Their emblems weren't explained on
-  the slides and carried no name, so students couldn't read them. A relic SVG
-  can serve as a thinker card's `img` until an idea scene replaces it.
+- **Relic cards are retired everywhere.** Their emblems weren't explained on
+  the slides and carried no name, so students couldn't read them. Every lesson
+  now uses thinker cards with idea scenes. When a thinker returns later in a
+  lesson, repeat the card with a claim that fits that slide.
+- **Thinker cards go compact on phones:** a small image beside the name, so the
+  card never crowds the slide's heading.
 - Portraits are still fine for **invented characters** (e.g. Van Helsing) — there's
   no real likeness to fail at, and you own the canon. Objects, creatures, tools,
   and scenes all pixel well; faces of real people don't.

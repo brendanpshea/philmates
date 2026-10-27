@@ -146,7 +146,7 @@ phil-slide p, phil-slide li { max-width: 62ch; font-size: clamp(18px, 2.1vw, 23p
    column. An explanatory picture — a route, a tree, a stack of layers — needs
    the full text width; the art column is about 46 characters wide and squeezes
    one into illegibility. Use <figure class="phil-figure"> for those, and keep
-   slot="art" for the scene and relic-card portraits.
+   slot="art" for scene art and thinker cards.
 
    Never let the picture carry meaning the prose does not: the alt text and the
    surrounding bullets have to say the same thing, because a diagram is the one
@@ -545,6 +545,17 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
   phil-slide.has-art { grid-template-columns: 1fr; }
   .phil-slide__art { order: -1; max-height: 32vh; }
   .phil-slide__art img, .phil-slide__art svg { max-height: 32vh; }
+  /* A thinker card is taller than a picture, so the 32vh cap would clip it.
+     On a phone it goes compact instead: a small image beside the name. */
+  .phil-slide__art:has(.phil-thinker) { max-height: none; }
+  .phil-thinker { max-width: none; padding: 10px; }
+  .phil-thinker__head {
+    display: grid; grid-template-columns: 84px 1fr; column-gap: 12px;
+    align-items: center; text-align: left;
+  }
+  .phil-slide__art .phil-thinker__img, .phil-thinker__img { grid-row: 1 / span 2; width: 84px; max-height: none; margin: 0; }
+  phil-slide .phil-thinker .phil-thinker__name { margin: 0; align-self: end; }
+  phil-slide .phil-thinker .phil-thinker__meta { align-self: start; }
 }
 
 /* =====================================================================

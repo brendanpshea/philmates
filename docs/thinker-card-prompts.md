@@ -204,8 +204,9 @@ Bottom-right: five paths fanning out from a small stone harbor toward five lit l
 | Bottom-left | `idea-winner.png` | Winner: do artifacts have politics? | villains-ledger |
 | Bottom-right | `idea-daniels.png` | Daniels: health protects your share of opportunity | right-to-health-care |
 
-## After generating
+## After generating (done)
 
-For each lesson, swap each relic `<img slot="art" …>` for a `<phil-thinker>`
-with name, verified dates, work, a one-line claim, and the new `img`. Write the
-`alt` from what the panel actually shows. Leave `dates` off until checked.
+Every relic and emblem image has been swapped for a `<phil-thinker>` with
+name, verified dates, work, a one-line claim, and the idea scene as its `img`;
+the old `relic-*` and emblem files are deleted. The cards were fact-checked
+against sources. Alt text describes what each panel actually shows.

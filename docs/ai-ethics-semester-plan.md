@@ -3,7 +3,7 @@
 One PhilMates lesson idea per week of the AI ethics course, matched to the
 syllabus. New lessons live under `lessons/ai-ethics/`. Three existing
 `ethical-theory` lessons slot in directly (weeks 3, 4, 15). Style notes:
-narrative frame + relic-card thinkers + one signature widget per lesson (see
+narrative frame + thinker cards + one signature widget per lesson (see
 `AUTHORING.md`); slide-level structure of built lessons goes in
 `phil_mates_outlines.md`.
 
