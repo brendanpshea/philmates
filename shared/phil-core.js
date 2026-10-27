@@ -56,6 +56,42 @@ const pctText = (c) => {
 // Checked at call time, not module load — users change this setting mid-session.
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
+/* ---- narration (the narrated player in <phil-lesson>) ---- */
+const squash = t => (t || '').replace(/\s+/g, ' ').trim();
+/* A clip is named by an FNV-1a hash of its line, so an edited line can never
+   play stale audio: it gets captions only until the clip is generated.
+   tools/generate-audio.py computes the same name. */
+const clipUrl = text => {
+  let h = 0x811c9dc5;
+  for (const b of new TextEncoder().encode(text)) h = Math.imul(h ^ b, 0x01000193) >>> 0;
+  return `./assets/audio/${h.toString(16).padStart(8, '0')}.mp3`;
+};
+// How long a line stays up when there is no clip to time it.
+const readMs = t => Math.max(1200, squash(t).split(' ').length * 330);
+// Captions go up a sentence at a time; a long sentence breaks at a comma.
+const captionLines = text => {
+  const out = [];
+  // A sentence ends at . ! or ? before a space, so "GPT-4.5" stays whole.
+  for (const s of text.split(/(?<=[.!?]["”’)]*)\s+/)) {
+    let rest = s.trim();
+    while (rest.length > 110) {
+      const cut = rest.slice(0, 110).search(/[,;:](?=[^,;:]*$)/);
+      if (cut < 30) break;
+      out.push(rest.slice(0, cut + 1));
+      rest = rest.slice(cut + 1).trim();
+    }
+    if (rest) out.push(rest);
+  }
+  return out;
+};
+// What the caption strip says while the player waits.
+const PLAYER_CUES = {
+  task: 'Your turn. The narration picks up again when you finish.',
+  ready: 'Press Continue when you are ready.',
+  explore: 'Your turn. Try it out, then press Continue.',
+  review: 'When you are ready, press Continue to go back to the question.',
+};
+
 /* =====================================================================
    PhilSfx — short synthesized feedback sounds (Web Audio, no files)
    Fires only on user-triggered events (answers, completion), so the
@@ -133,7 +169,7 @@ class PhilLesson extends HTMLElement {
     this.store = new (globalThis.PhilProgressStore || ProgressStore)(this.lessonId);
 
     this._audio = new Audio();                                  // narration player
-    this._audioOn = localStorage.getItem('philmates:audio') === 'on';   // default off
+    this._mode = 'off';                                         // player state; see _setMode
 
     // collect slides in document order
     this.slides = [...this.querySelectorAll(':scope > phil-slide')];
@@ -147,6 +183,8 @@ class PhilLesson extends HTMLElement {
 
     this._buildShell();
     this.slides.forEach(s => this._prepareSlide(s));
+    if (this._playBtn) this._addPlayCta();
+    this._addCredit();
 
     // restore furthest position, else first slide
     const start = this.linear.find(s => !this.store.visited.has(s.id)) || this.linear[0];
@@ -157,6 +195,9 @@ class PhilLesson extends HTMLElement {
   /* ---- chrome ---- */
   _buildShell() {
     this.classList.add('phil-app');
+    // Only a lesson with narration gets the player. Asked now, before the
+    // slides move into the stage, which isn't attached until the end.
+    const narrated = !!this.querySelector('phil-narration');
 
     const top = el('header', 'phil-top');
     const row = el('div', 'phil-top__row');
@@ -183,16 +224,7 @@ class PhilLesson extends HTMLElement {
       this._sfxBtn.setAttribute('aria-pressed', String(PhilSfx.on));
       PhilSfx.correct();   // sample chime confirms it's on (and unlocks audio)
     };
-    right.append(this._sfxBtn);
-    if (this.querySelector('phil-narration')) {        // only show audio UI if the lesson has narration
-      this._audioBtn = el('button', 'phil-btn phil-btn--ghost phil-audio', '🔇');
-      this._audioBtn.title = 'Narration on/off (plays the current slide)';
-      this._audioBtn.setAttribute('aria-label', 'Narration (plays the current slide)');
-      this._audioBtn.onclick = () => this._toggleAudio();
-      right.append(this._audioBtn);
-      this._setAudioBtn();
-    }
-    right.append(reset);
+    right.append(this._sfxBtn, reset);
     row.append(el('h1', 'phil-title', this.getAttribute('title') || 'PhilMates'), right);
     const bar = el('div', 'phil-progress');
     bar.setAttribute('role', 'progressbar');
@@ -226,10 +258,11 @@ class PhilLesson extends HTMLElement {
     this._reviewBtn.onclick = () => this._returnFromReview();
     bottom.append(
       this._wrap('phil-nav', [this._prevBtn]),
+      ...(narrated ? [this._buildPlayer()] : []),
       this._wrap('phil-nav', [this._reviewBtn, fs, this._nextBtn])
     );
 
-    this.append(top, this._live, this._stage, bottom);
+    this.append(top, this._live, this._stage, ...(narrated ? [this._caption] : []), bottom);
 
     // a window resize changes the stage height (the ResizeObserver in show() covers content growth)
     window.addEventListener('resize', () => this._fitSlide(this.current));
@@ -242,6 +275,12 @@ class PhilLesson extends HTMLElement {
       if (e.key === 'ArrowRight') this.next();
       else if (e.key === 'ArrowLeft') this.prev();
       else if (e.key.toLowerCase() === 'f' && !e.shiftKey) this.toggleFullscreen();
+      // Space is play/pause, except on a control, where it already means "press me".
+      else if (e.key === ' ' && this._playBtn
+               && !e.target.closest?.('button, a, input, select, textarea, summary, [role="button"], [role="radio"], [role="checkbox"]')) {
+        e.preventDefault();
+        if (!this._playBtn.disabled) this._playPress();
+      }
     });
   }
   _wrap(cls, kids) { const w = el('div', cls); w.append(...kids); return w; }
@@ -370,7 +409,7 @@ class PhilLesson extends HTMLElement {
       slide.focus({ preventScroll: true });
     }
     this._announceSlide(slide, heading);
-    this._playSlideAudio(slide);
+    this._narrateShown(slide);
     // Questions waiting on a review listen for this.
     this.dispatchEvent(new CustomEvent('phil:slide', { detail: { id: slide.id } }));
   }
@@ -399,15 +438,31 @@ class PhilLesson extends HTMLElement {
   next() {
     // reveal the next bullet/step before leaving the slide
     if (this._remainingSteps() > 0) {
-      const step = this.current._steps[this.current._shown++];
-      step.classList.add('phil-show');
-      step.scrollIntoView({ block: 'nearest', behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
-      if (this._remainingSteps() === 0) this._revealed.add(this.current.id);
-      this._refresh();
+      // While narrating, Next skips ahead to the next step's line.
+      if (this._mode === 'playing') return this._narrate(this.current, false);
+      if (this._mode === 'paused') this._stopRun();
+      this._revealStep();
       return;
     }
+    this._advance();
+  }
+  _revealStep() {
+    const step = this.current._steps[this.current._shown++];
+    step.classList.add('phil-show');
+    step.scrollIntoView({ block: 'nearest', behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    if (this._remainingSteps() === 0) this._revealed.add(this.current.id);
+    this._refresh();
+    return step;
+  }
+  _setNextLabel() {
+    // Playing, steps arrive with their lines, so Next is never "Reveal".
+    this._nextBtn.textContent = this._remainingSteps() > 0 && this._mode !== 'playing' ? 'Reveal ▶' : 'Next ▶';
+  }
+  _advance() {
     if (this.current.hasAttribute('optional')) return this.goLinear(this._returnIndex);
-    this.goLinear(this.linear.indexOf(this.current) + 1);
+    const i = this.linear.indexOf(this.current) + 1;
+    if (i < this.linear.length) this.goLinear(i);
+    else if (this._mode !== 'off') { this._stopRun(); this._setMode('off'); }   // the end
   }
   prev() {
     if (this.current.hasAttribute('optional')) return this.goLinear(this._returnIndex);
@@ -421,19 +476,245 @@ class PhilLesson extends HTMLElement {
     else this.requestFullscreen?.();
   }
 
-  /* ---- narration audio (optional; needs generated assets/audio/<slide.id>.mp3) ---- */
-  _setAudioBtn() { this._audioBtn.textContent = this._audioOn ? '🔊' : '🔇'; }
-  _toggleAudio() {
-    this._audioOn = !this._audioOn;                       // the click is the gesture browsers require
-    localStorage.setItem('philmates:audio', this._audioOn ? 'on' : 'off');
-    this._setAudioBtn();
-    this._playSlideAudio(this.current);
+  /* ---- narrated player ----
+     A lesson with <phil-narration> gets a Play button. Playing, each slide is
+     a run of beats: its intro <phil-narration>, then each reveal step shown as
+     its `say` line is spoken. A slide with nothing to do moves on by itself.
+     The player waits at anything the student has to do, then plays the
+     slide's <phil-narration when="after">, if any, and waits for Continue.
+     Next and Back always work. Paused, the lesson is the click-through one.
+     Audio comes from tools/generate-audio.py; see docs/audio-narration.md.
+
+     Modes: off · playing · paused · waiting (for: task, ready, explore, review). */
+  _buildPlayer() {
+    this._rate = Number(localStorage.getItem('philmates:rate')) || 1;
+    this._captionsOn = localStorage.getItem('philmates:captions') !== 'off';   // default on
+    const extra = (text, label, fn) => {
+      const b = el('button', 'phil-btn phil-btn--ghost phil-player__extra', text);
+      b.title = label;
+      b.setAttribute('aria-label', label);
+      b.onclick = fn;
+      return b;
+    };
+    this._playBtn = el('button', 'phil-btn phil-player__play');
+    this._playBtn.onclick = () => this._playPress();
+    this._rateBtn = extra('', '', () => this._cycleRate());
+    this._ccBtn = extra('CC', 'Captions', () => this._toggleCaptions());
+    this._ccBtn.setAttribute('aria-pressed', String(this._captionsOn));
+    this._extras = [extra('↻', 'Replay this slide', () => this._narrate(this.current, true)), this._rateBtn, this._ccBtn];
+    this._setRateBtn();
+    this._caption = el('div', 'phil-caption');
+    this._caption.hidden = true;
+    this._setMode('off');
+    return this._wrap('phil-nav phil-player', [this._playBtn, ...this._extras]);
   }
-  _playSlideAudio(slide) {
+  // Author and license on the opening slide of every lesson. A lesson can
+  // name a different author with author="…".
+  _addCredit() {
+    const body = this.linear[0]?.querySelector('.phil-slide__body');
+    if (!body) return;
+    const credit = el('p', 'phil-credit');
+    credit.append(this.getAttribute('author') || 'Brendan Shea, PhD', ' · ');
+    const license = el('a', null, 'CC BY-NC 4.0');
+    license.href = 'https://creativecommons.org/licenses/by-nc/4.0/';
+    license.rel = 'license noopener';
+    license.target = '_blank';
+    credit.append(license);
+    body.append(credit);
+  }
+  // The big Play on the opening slide. The footer button does the same thing.
+  _addPlayCta() {
+    const body = this.linear[0]?.querySelector('.phil-slide__body');
+    if (!body) return;
+    this._cta = el('div', 'phil-play-cta');
+    const b = el('button', 'phil-btn phil-btn--primary', '▶ Play with narration');
+    b.onclick = () => this._playPress();
+    this._cta.append(b, el('span', 'muted', 'Or press Next to go at your own pace.'));
+    body.append(this._cta);
+  }
+  _setMode(mode, why = null) {
+    this._mode = mode;
+    this._waitFor = why;
+    this._waitSlide = mode === 'waiting' ? this.current : null;
+    const turn = why === 'task';
+    const [text, label] = {
+      off: ['▶ Play', 'Play the narration'],
+      playing: ['❚❚ Pause', 'Pause the narration'],
+      paused: ['▶ Resume', 'Resume the narration'],
+      waiting: turn ? ['✎ Your turn', 'Your turn: the narration picks up again when you finish'] : ['▶ Continue', 'Continue'],
+    }[mode];
+    this._playBtn.textContent = text;
+    this._playBtn.setAttribute('aria-label', label);
+    this._playBtn.disabled = turn;
+    this._playBtn.classList.toggle('phil-btn--primary', mode === 'waiting' && !turn);
+    this._extras.forEach(b => { b.hidden = mode === 'off'; });
+    if (this._cta) this._cta.hidden = mode !== 'off';
+    if (mode === 'waiting') this._caption.textContent = this._live.textContent = PLAYER_CUES[why];
+    const hide = mode === 'off' || !this._captionsOn;
+    if (this._caption.hidden !== hide) {
+      this._caption.hidden = hide;
+      this._fitSlide(this.current);           // the stage just changed height
+    }
+    this._setNextLabel();
+  }
+  _playPress() {
+    const m = this._mode, why = this._waitFor;
+    if (m === 'off') return this._narrate(this.current, true);
+    if (m === 'playing') { this._audio.pause(); return this._setMode('paused'); }
+    if (m === 'paused') return this._resume();
+    if (why === 'review') return this._returnFromReview();
+    if (why !== 'task') this._advance();
+  }
+  _resume() {
+    // Navigated while paused: start this slide over, or carry on from the
+    // step the student had reached.
+    if (!this._run) return this._narrate(this.current, this.current._shown === 0);
+    this._setMode('playing');
+    if (this._audioLive) this._audio.play().catch(() => {});
+  }
+  _cycleRate() {
+    const rates = [1, 1.25, 1.5, 0.75];
+    this._rate = rates[(rates.indexOf(this._rate) + 1) % rates.length];
+    localStorage.setItem('philmates:rate', String(this._rate));
+    this._audio.defaultPlaybackRate = this._audio.playbackRate = this._rate;
+    this._setRateBtn();
+  }
+  _setRateBtn() {
+    const label = `Narration speed: ${this._rate}×`;
+    this._rateBtn.textContent = `${this._rate}×`;
+    this._rateBtn.title = label;
+    this._rateBtn.setAttribute('aria-label', label);
+  }
+  _toggleCaptions() {
+    this._captionsOn = !this._captionsOn;
+    localStorage.setItem('philmates:captions', this._captionsOn ? 'on' : 'off');
+    this._ccBtn.setAttribute('aria-pressed', String(this._captionsOn));
+    this._setMode(this._mode, this._waitFor);
+  }
+
+  /* Navigating while playing starts the new slide's beats. While paused it
+     only drops the old slide's place, so Resume starts here. */
+  _narrateShown(slide) {
+    if (this._mode === 'paused') this._stopRun();
+    else if (this._mode !== 'off') this._narrate(slide, true);
+  }
+  _startRun() {
+    this._stopRun();
+    return (this._run = {});      // a token: a beat whose run is no longer current stops
+  }
+  _stopRun() {
+    this._run = null;
+    this._audioLive = false;
     this._audio.pause();
-    if (!this._audioOn || !slide || !slide.querySelector('phil-narration')) return;
-    this._audio.src = `./assets/audio/${slide.id}.mp3`;
-    this._audio.play().catch(() => {});                   // ignore autoplay block / missing file
+    this._endBeat?.(false);
+  }
+  async _narrate(slide, fresh) {
+    const run = this._startRun();
+    this._setMode('playing');
+    if (fresh) {
+      if (slide._steps.length) {   // start over: the steps appear with their lines
+        slide._shown = 0;
+        slide._steps.forEach(s => s.classList.remove('phil-show'));
+        this._revealed.delete(slide.id);
+        this._refresh();
+      }
+      const intro = slide.querySelector('phil-narration:not([when])');
+      if (intro && !await this._speak(run, intro.textContent)) return;
+    }
+    let breathe = fresh;          // a short gap between lines, but not before a skipped-to step
+    while (slide._shown < slide._steps.length) {
+      if (breathe && !await this._hold(run, 250)) return;
+      breathe = true;
+      const step = this._revealStep();
+      if (!await this._speak(run, step.getAttribute('say'), step)) return;
+    }
+    const why = this._waitReason(slide);
+    // Answered while the narrator talked: the feedback still gets read.
+    if (why === 'ready') return this._activityDone();
+    if (why) return this._setMode('waiting', why);
+    if (await this._hold(run, 1000)) this._advance();
+  }
+  _waitReason(slide) {
+    if (this._reviewFrom && slide !== this._reviewFrom) return 'review';
+    const done = this._activities(slide);
+    if (done.includes(false)) return 'task';
+    if (done.length) return 'ready';
+    if (slide.hasAttribute('hold') || slide.querySelector('phil-branch')) return 'explore';
+    return null;
+  }
+  // Whether each graded question, poll and belief probe on a slide is done.
+  _activities(slide) {
+    return [
+      ...this.widgets.filter(w => slide.contains(w)).map(w => this.store.correct.has(w.dataset.qid)),
+      ...[...slide.querySelectorAll('*')].filter(n => n.taskId).map(n => this.tasksDone.has(n.taskId)),
+    ];
+  }
+  async _activityDone() {
+    const run = this._startRun();
+    this._setMode('playing');
+    const after = this.current.querySelector('phil-narration[when="after"]');
+    if (after && !await this._speak(run, after.textContent)) return;
+    this._setMode('waiting', 'ready');
+  }
+  // Silence that holds while paused. False if the run was cancelled meanwhile.
+  async _hold(run, ms) {
+    while (ms > 0) {
+      await new Promise(r => setTimeout(r, 50));
+      if (run !== this._run) return false;
+      if (this._mode !== 'paused') ms -= 50 * this._rate;
+    }
+    return true;
+  }
+  /* One beat: play the line's clip with captions. Resolves true when it ends,
+     false if the run was cancelled. A line with no clip yet keeps its
+     captions up at reading speed, so a script can be tried out before any
+     audio exists. A step with no line gets time to read the step. */
+  _speak(run, text, step) {
+    text = squash(text);
+    if (!text) return this._hold(run, step ? readMs(step.textContent) : 400);
+    const lines = captionLines(text);
+    const weights = lines.map(l => l.length), total = weights.reduce((a, b) => a + b, 0);
+    const a = this._audio, ac = new AbortController();
+    const on = (ev, fn) => a.addEventListener(ev, fn, { signal: ac.signal });
+    return new Promise(resolve => {
+      let done = false, fell = false;
+      const finish = ok => {
+        if (done) return;
+        done = true;
+        ac.abort();
+        if (this._endBeat === finish) { this._endBeat = null; this._audioLive = false; }
+        resolve(ok);
+      };
+      const fallback = async () => {
+        if (fell || done) return;
+        fell = true;
+        ac.abort();
+        if (this._endBeat === finish) this._audioLive = false;
+        for (const line of lines) {
+          this._caption.textContent = line;
+          if (!await this._hold(run, readMs(line))) return finish(false);
+        }
+        finish(true);
+      };
+      this._endBeat = finish;
+      // Captions follow the clip sentence by sentence, timed by length.
+      on('timeupdate', () => {
+        if (!a.duration) return;
+        let at = a.currentTime / a.duration * total, i = 0;
+        while (i < lines.length - 1 && at >= weights[i]) at -= weights[i++];
+        this._caption.textContent = lines[i];
+      });
+      on('ended', () => finish(true));
+      on('error', fallback);
+      this._caption.textContent = lines[0];
+      a.src = clipUrl(text);
+      a.defaultPlaybackRate = a.playbackRate = this._rate;   // a new src resets the rate
+      this._audioLive = true;
+      a.play().catch(err => {
+        if (err.name === 'NotAllowedError') { this._audio.pause(); this._setMode('paused'); }   // needs a click first
+        else if (err.name !== 'AbortError') fallback();
+      });
+    });
   }
 
   /* ---- widget coordination ---- */
@@ -523,7 +804,10 @@ class PhilLesson extends HTMLElement {
     this._prevBtn.disabled = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === 0;
     const last = !this.current.hasAttribute('optional') && this.linear.indexOf(this.current) === this.linear.length - 1;
     this._nextBtn.disabled = last && this._remainingSteps() === 0;
-    this._nextBtn.textContent = this._remainingSteps() > 0 ? 'Reveal ▶' : 'Next ▶';
+    this._setNextLabel();
+    // The player waits at an activity until it's done.
+    if (this._mode === 'waiting' && this._waitFor === 'task' && this._waitSlide === this.current
+        && !this._activities(this.current).includes(false)) this._activityDone();
 
     const complete = reqSeen === this.linear.length
       && this.store.correct.size === this.widgets.length
@@ -830,10 +1114,10 @@ class PhilCheckset extends PhilWidget {
       return;
     }
     this._lastSig = sig;
-    // Each check is scored statement by statement: each right one counts for
-    // it and each wrong one against it, so random ticking averages zero. The
-    // miss says how many are wrong, not which, so the next try is a real one.
-    if (this.lesson) this.lesson.raiseCredit(this.qid, ((n - wrong) - wrong) / n * worthAfter(this.lesson.misses(this.qid)));
+    // Each check earns the share of statements it gets right. Nothing is taken
+    // off for a wrong one: these are formative, not punitive. The miss says
+    // how many are wrong, not which, so the next try is a real one.
+    if (this.lesson) this.lesson.raiseCredit(this.qid, (n - wrong) / n * worthAfter(this.lesson.misses(this.qid)));
     this.miss(countHint(wrong, n, 'answer'));
   }
   onBlockChange(blocked) { this._btn.disabled = blocked; }
@@ -1336,3 +1620,6 @@ customElements.define('phil-compare', PhilCompare);
 customElements.define('phil-thinker', PhilThinker);
 customElements.define('phil-beliefs', PhilBeliefs);
 customElements.define('phil-beliefs-review', PhilBeliefsReview);
+// Script for the narrated player; the lesson reads it, and it never renders.
+// Registered so the dead-widget warning in phil-core.css leaves it alone.
+customElements.define('phil-narration', class extends HTMLElement {});

@@ -1,0 +1,615 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "108152bf": {
+      "slide": "s1",
+      "text": "Bristol, in the age of sail. The Hispaniola sails at dawn, and every hand must first sign the ship's articles: the rules the crew agrees to live by. One article is still blank. What does the crew owe a hand who falls sick or gets hurt? It's a small version of a big question. Is there a right to health care? Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Bristol, in the age of sail. The Hispaniola sails at dawn, and every hand must first sign the ship's articles: the rules the crew agrees to live by. One article is still blank. What does the crew owe a hand who falls sick or gets hurt? It's a small version of a big question. Is there a right to health care? Whenever it's your turn, I'll stop and wait for you."
+    },
+    "bbd54f60": {
+      "slide": "s2",
+      "text": "Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.",
+      "spoken": "Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done."
+    },
+    "3aa95ad9": {
+      "slide": "s2",
+      "text": "Saved. Now, let's see how real crews handled it.",
+      "spoken": "Saved. Now, let's see how real crews handled it."
+    },
+    "32eacab2": {
+      "slide": "s3",
+      "text": "Ship's articles were real. Crews wrote down their rules, and every hand signed.",
+      "spoken": "Ship's articles were real. Crews wrote down their rules, and every hand signed."
+    },
+    "5b107c3f": {
+      "slide": "s3",
+      "text": "The pirate Bartholomew Roberts's crew agreed that a man who lost a limb would get eight hundred dollars from the common stock.",
+      "spoken": "The pirate Bartholomew Roberts's crew agreed that a man who lost a limb would get eight hundred dollars from the common stock."
+    },
+    "ed4e2bed": {
+      "slide": "s3",
+      "text": "The Royal Navy's Chatham Chest, begun around 1590, took sixpence a month from every sailor's pay, for men hurt in service.",
+      "spoken": "The Royal Navy's Chatham Chest, begun around 1590, took sixpence a month from every sailor's pay, for men hurt in service."
+    },
+    "cbce1624": {
+      "slide": "s3",
+      "text": "Both were a kind of insurance. Everyone paid in while healthy, and the injured drew out.",
+      "spoken": "Both were a kind of insurance. Everyone paid in while healthy, and the injured drew out."
+    },
+    "9c92ae2d": {
+      "slide": "s3",
+      "text": "So the question is old. Do people who share risks owe each other care when the risks come due?",
+      "spoken": "So the question is old. Do people who share risks owe each other care when the risks come due?"
+    },
+    "2e221cbd": {
+      "slide": "s4",
+      "text": "Meet the crew. Their cases will test each argument.",
+      "spoken": "Meet the crew. Their cases will test each argument."
+    },
+    "9b98b895": {
+      "slide": "s4",
+      "text": "Doctor Livesey is the ship's doctor. Whatever the article says, he's the one who has to carry it out.",
+      "spoken": "Doctor Livesey is the ship's doctor. Whatever the article says, he's the one who has to carry it out."
+    },
+    "f13d79fd": {
+      "slide": "s4",
+      "text": "Captain Smollett keeps the chest. Every coin paid out for care comes from it.",
+      "spoken": "Captain Smollett keeps the chest. Every coin paid out for care comes from it."
+    },
+    "18703e1d": {
+      "slide": "s4",
+      "text": "Long John Silver, the cook, lost his left leg at sea. He paid his own way afterward, and he's proud of it.",
+      "spoken": "Long John Silver, the cook, lost his left leg at sea. He paid his own way afterward, and he's proud of it."
+    },
+    "90502ecd": {
+      "slide": "s4",
+      "text": "And you are the ship's clerk. Once you've weighed the arguments, you'll write the blank article.",
+      "spoken": "And you are the ship's clerk. Once you've weighed the arguments, you'll write the blank article."
+    },
+    "5557d3cc": {
+      "slide": "s5",
+      "text": "First, what kind of right are we talking about? A right is a claim that someone else owes you something. Marooned alone on an island, Ben Gunn has nobody to claim against. A negative right says others must not do something to you, and it costs them nothing but holding back: the right not to be thrown overboard. A positive right says others must do something for you, at a cost in time, effort, or money: the right to be pulled out of the water. A right to health care would be a positive right. That's why people argue about it.",
+      "spoken": "First, what kind of right are we talking about? A right is a claim that someone else owes you something. Marooned alone on an island, Ben Gunn has nobody to claim against. A negative right says others must not do something to you, and it costs them nothing but holding back: the right not to be thrown overboard. A positive right says others must do something for you, at a cost in time, effort, or money: the right to be pulled out of the water. A right to health care would be a positive right. That's why people argue about it."
+    },
+    "16296e07": {
+      "slide": "s6",
+      "text": "There's a second distinction to draw.",
+      "spoken": "There's a second distinction to draw."
+    },
+    "acdbd1bb": {
+      "slide": "s6",
+      "text": "Nobody can promise you health. Storms, germs, accidents, and old age arrive whatever anyone does.",
+      "spoken": "Nobody can promise you health. Storms, germs, accidents, and old age arrive whatever anyone does."
+    },
+    "a8894706": {
+      "slide": "s6",
+      "text": "So a right to health is a strange idea. Nobody could be the one who owes it to you.",
+      "spoken": "So a right to health is a strange idea. Nobody could be the one who owes it to you."
+    },
+    "3e67c5b2": {
+      "slide": "s6",
+      "text": "A right to health care is different. Others can owe you treatment, or a share of the chest that pays for it.",
+      "spoken": "A right to health care is different. Others can owe you treatment, or a share of the chest that pays for it."
+    },
+    "7a094358": {
+      "slide": "s6",
+      "text": "So in this lesson, a right to health care means a claim on others for care. It's never a promise of health.",
+      "spoken": "So in this lesson, a right to health care means a claim on others for care. It's never a promise of health."
+    },
+    "efb07a05": {
+      "slide": "the-law",
+      "text": "A legal right is one the law enforces. A moral right is one you have whether or not the law agrees. Here are some legal ones.",
+      "spoken": "A legal right is one the law enforces. A moral right is one you have whether or not the law agrees. Here are some legal ones."
+    },
+    "0c835e79": {
+      "slide": "the-law",
+      "text": "A US law from 1986, called EMTALA, says hospitals with emergency rooms that take Medicare must examine anyone who comes in. If it's an emergency, they must stabilize the patient, or transfer them safely.",
+      "spoken": "A U.S. law from 1986, called EMTALA, says hospitals with emergency rooms that take Medicare must examine anyone who comes in. If it's an emergency, they must stabilize the patient, or transfer them safely."
+    },
+    "a320c2b8": {
+      "slide": "the-law",
+      "text": "That holds whether or not the patient can pay. But it's a right to emergency care only. The hospital can still send a bill, and nothing more is owed once the patient is stable.",
+      "spoken": "That holds whether or not the patient can pay. But it's a right to emergency care only. The hospital can still send a bill, and nothing more is owed once the patient is stable."
+    },
+    "3fb6860e": {
+      "slide": "the-law",
+      "text": "The United Nations' Universal Declaration of Human Rights, from 1948, lists medical care as part of a decent standard of living.",
+      "spoken": "The United Nations' Universal Declaration of Human Rights, from 1948, lists medical care as part of a decent standard of living."
+    },
+    "f0b6e0f9": {
+      "slide": "the-law",
+      "text": "A 1966 UN treaty recognizes a right to the highest attainable standard of physical and mental health. The United States signed it in 1977, and has never ratified it. As the UN explains, this isn't a right to be healthy. It covers the care and conditions that protect health.",
+      "spoken": "A 1966 U.N. treaty recognizes a right to the highest attainable standard of physical and mental health. The United States signed it in 1977, and has never ratified it. As the U.N. explains, this isn't a right to be healthy. It covers the care and conditions that protect health."
+    },
+    "7ff6f533": {
+      "slide": "s8",
+      "text": "A patient having an emergency, who can't pay, comes into the emergency room of a US hospital that takes Medicare. What does EMTALA guarantee, and what doesn't it? Sort each item, then press Check answers.",
+      "spoken": "A patient having an emergency, who can't pay, comes into the emergency room of a U.S. hospital that takes Medicare. What does EMTALA guarantee, and what doesn't it? Sort each item, then press Check answers."
+    },
+    "05576471": {
+      "slide": "s9",
+      "text": "One argument for a right to health care comes from the philosopher Norman Daniels, who set it out in full in his 1985 book, Just Health Care.",
+      "spoken": "One argument for a right to health care comes from the philosopher Norman Daniels, who set it out in full in his 1985 book, Just Health Care."
+    },
+    "721d2637": {
+      "slide": "s9",
+      "text": "Nobody thinks you have a right to a fancy hat. You buy one if you want it and can afford it.",
+      "spoken": "Nobody thinks you have a right to a fancy hat. You buy one if you want it and can afford it."
+    },
+    "accd0806": {
+      "slide": "s9",
+      "text": "But most people think a sailor with a broken leg shouldn't be left on the dock because she's poor.",
+      "spoken": "But most people think a sailor with a broken leg shouldn't be left on the dock because she's poor."
+    },
+    "3c5f958f": {
+      "slide": "s9",
+      "text": "So Daniels asks what makes health care different from hats. His answer comes in three steps.",
+      "spoken": "So Daniels asks what makes health care different from hats. His answer comes in three steps."
+    },
+    "faf1980a": {
+      "slide": "normal-functioning",
+      "text": "Step one is about what health is.",
+      "spoken": "Step one is about what health is."
+    },
+    "9ba12912": {
+      "slide": "normal-functioning",
+      "text": "Daniels starts from a plain idea of health. Health is normal functioning: your body and mind working the way human bodies and minds typically work.",
+      "spoken": "Daniels starts from a plain idea of health. Health is normal functioning: your body and mind working the way human bodies and minds typically work."
+    },
+    "0ce89038": {
+      "slide": "normal-functioning",
+      "text": "Disease and injury are departures from normal functioning. A broken leg, scurvy, and failing eyes all count.",
+      "spoken": "Disease and injury are departures from normal functioning. A broken leg, scurvy, and failing eyes all count."
+    },
+    "30caf045": {
+      "slide": "normal-functioning",
+      "text": "He takes this idea from the philosopher Christopher Boorse. It depends on how the body works, not on what you want.",
+      "spoken": "He takes this idea from the philosopher Christopher Boorse. It depends on how the body works, not on what you want."
+    },
+    "32821f3f": {
+      "slide": "normal-functioning",
+      "text": "Being short like your parents isn't a departure. That case will come back.",
+      "spoken": "Being short like your parents isn't a departure. That case will come back."
+    },
+    "9edba377": {
+      "slide": "s11",
+      "text": "Step two is about opportunity.",
+      "spoken": "Step two is about opportunity."
+    },
+    "b7e9ea91": {
+      "slide": "s11",
+      "text": "Every society offers a range of lives a person could reasonably choose. Daniels calls it the normal opportunity range.",
+      "spoken": "Every society offers a range of lives a person could reasonably choose. Daniels calls it the normal opportunity range."
+    },
+    "e0439562": {
+      "slide": "s11",
+      "text": "On a ship, the range is the stations: lookout, topman, helmsman, gunner, cook, and more. A topman works the sails aloft.",
+      "spoken": "On a ship, the range is the stations: lookout, topman, helmsman, gunner, cook, and more. A topman works the sails aloft."
+    },
+    "12016f0b": {
+      "slide": "s11",
+      "text": "Disease shrinks your share of that range. Silver lost his leg, and the rigging closed to him.",
+      "spoken": "Disease shrinks your share of that range. Silver lost his leg, and the rigging closed to him."
+    },
+    "db096ebe": {
+      "slide": "s11",
+      "text": "Health care keeps your share of the range open, or opens it again.",
+      "spoken": "Health care keeps your share of the range open, or opens it again."
+    },
+    "c6b2980e": {
+      "slide": "s12",
+      "text": "Your turn. Each lantern is a station a healthy sailor could work. Pick a sailor to see which stations their condition closes. Then press Treat, and see which lanterns relight. Be sure to compare Tom with Jem, and don't skip Redruth. When you're ready, press Continue.",
+      "spoken": "Your turn. Each lantern is a station a healthy sailor could work. Pick a sailor to see which stations their condition closes. Then press Treat, and see which lanterns relight. Be sure to compare Tom with Jem, and don't skip Redruth. When you're ready, press Continue."
+    },
+    "a7edcc7d": {
+      "slide": "s13",
+      "text": "The third step comes from John Rawls's 1971 book, A Theory of Justice.",
+      "spoken": "The third step comes from John Rawls's 1971 book, A Theory of Justice."
+    },
+    "5b99db41": {
+      "slide": "s13",
+      "text": "Rawls argued that jobs and positions must be open to everyone, and not only on paper.",
+      "spoken": "Rawls argued that jobs and positions must be open to everyone, and not only on paper."
+    },
+    "eea32c8d": {
+      "slide": "s13",
+      "text": "People with the same talent and the same willingness to use it should have the same chances, wherever they started.",
+      "spoken": "People with the same talent and the same willingness to use it should have the same chances, wherever they started."
+    },
+    "763876a9": {
+      "slide": "s13",
+      "text": "He called this fair equality of opportunity. It's one reason schooling is public.",
+      "spoken": "He called this fair equality of opportunity. It's one reason schooling is public."
+    },
+    "750f9c92": {
+      "slide": "s13",
+      "text": "Daniels adds that illness takes opportunity away too. So justice requires health care, just as it requires schooling.",
+      "spoken": "Daniels adds that illness takes opportunity away too. So justice requires health care, just as it requires schooling."
+    },
+    "75648d10": {
+      "slide": "s14",
+      "text": "Now put Daniels's argument together. Fill in each step, then press Check.",
+      "spoken": "Now put Daniels's argument together. Fill in each step, then press Check."
+    },
+    "0c1e8692": {
+      "slide": "fair-share",
+      "text": "Notice what the argument doesn't say.",
+      "spoken": "Notice what the argument doesn't say."
+    },
+    "922710b7": {
+      "slide": "fair-share",
+      "text": "It doesn't say you're owed every treatment that might help. You're owed your fair share.",
+      "spoken": "It doesn't say you're owed every treatment that might help. You're owed your fair share."
+    },
+    "b2a1c7ca": {
+      "slide": "fair-share",
+      "text": "What's fair depends on what a society can afford. A ship's chest isn't a city's treasury.",
+      "spoken": "What's fair depends on what a society can afford. A ship's chest isn't a city's treasury."
+    },
+    "a090eef9": {
+      "slide": "fair-share",
+      "text": "The argument also reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too.",
+      "spoken": "The argument also reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too."
+    },
+    "987ec137": {
+      "slide": "fair-share",
+      "text": "In 1983, a US presidential commission agreed that everyone should be able to get an adequate level of care without excessive burdens. It chose not to call this a right.",
+      "spoken": "In 1983, a U.S. presidential commission agreed that everyone should be able to get an adequate level of care without excessive burdens. It chose not to call this a right."
+    },
+    "efe957cd": {
+      "slide": "s16",
+      "text": "Which of these claims are part of Daniels's view, as this lesson presents it? Check every one that is, then press Check answers.",
+      "spoken": "Which of these claims are part of Daniels's view, as this lesson presents it? Check every one that is, then press Check answers."
+    },
+    "14bb66fb": {
+      "slide": "s17",
+      "text": "A utilitarian doesn't start from rights. Utilitarians judge a choice by its total effect on everyone's well-being.",
+      "spoken": "A utilitarian doesn't start from rights. Utilitarians judge a choice by its total effect on everyone's well-being."
+    },
+    "462a7005": {
+      "slide": "s17",
+      "text": "Health is a large part of well-being. A sick crew suffers, and it can't sail.",
+      "spoken": "Health is a large part of well-being. A sick crew suffers, and it can't sail."
+    },
+    "d7b5c09b": {
+      "slide": "s17",
+      "text": "A coin buys more good as medicine for a poor sailor than as wine for a rich one. Each extra coin does less for you, the more you already have.",
+      "spoken": "A coin buys more good as medicine for a poor sailor than as wine for a rich one. Each extra coin does less for you, the more you already have."
+    },
+    "2ec28c2e": {
+      "slide": "s17",
+      "text": "John Stuart Mill said a right is something society should protect because of general utility.",
+      "spoken": "John Stuart Mill said a right is something society should protect because of general utility."
+    },
+    "f40de0ac": {
+      "slide": "s17",
+      "text": "So a utilitarian can back a right to care. It's a rule that does the most good, not a demand of fairness.",
+      "spoken": "So a utilitarian can back a right to care. It's a rule that does the most good, not a demand of fairness."
+    },
+    "3a272980": {
+      "slide": "s18",
+      "text": "Take scurvy.",
+      "spoken": "Take scurvy."
+    },
+    "6537c8ee": {
+      "slide": "s18",
+      "text": "Scurvy was one of the great killers at sea. It comes from too little vitamin C.",
+      "spoken": "Scurvy was one of the great killers at sea. It comes from too little vitamin C."
+    },
+    "05a6118f": {
+      "slide": "s18",
+      "text": "In 1747, the naval surgeon James Lind gave twelve sailors with scurvy six different remedies. The two given oranges and lemons recovered fastest.",
+      "spoken": "In 1747, the naval surgeon James Lind gave twelve sailors with scurvy six different remedies. The two given oranges and lemons recovered fastest."
+    },
+    "4e9daa58": {
+      "slide": "s18",
+      "text": "Citrus is cheap, and it protects everyone aboard. On a utilitarian ledger, almost nothing buys more health per coin.",
+      "spoken": "Citrus is cheap, and it protects everyone aboard. On a utilitarian ledger, almost nothing buys more health per coin."
+    },
+    "f5ffe852": {
+      "slide": "s18",
+      "text": "Daniels agrees, because prevention keeps everyone's opportunity range open. This is where the two arguments meet.",
+      "spoken": "Daniels agrees, because prevention keeps everyone's opportunity range open. This is where the two arguments meet."
+    },
+    "6c49b65e": {
+      "slide": "two-reasons",
+      "text": "Both views say a sick sailor who can't pay should still get care. But they give different reasons, and the reasons matter when the chest runs short. For Daniels, care is owed because illness takes away a fair share of opportunity. What matters is each person's loss, not just the total. Kit, a cabin girl, has a fever that may kill her. Her whole range is at stake, so her claim is strong. For the utilitarian, care is worth buying because it does the most good, added up across the crew. If the same coins could cure thirty toothaches, the total might favor the thirty.",
+      "spoken": "Both views say a sick sailor who can't pay should still get care. But they give different reasons, and the reasons matter when the chest runs short. For Daniels, care is owed because illness takes away a fair share of opportunity. What matters is each person's loss, not just the total. Kit, a cabin girl, has a fever that may kill her. Her whole range is at stake, so her claim is strong. For the utilitarian, care is worth buying because it does the most good, added up across the crew. If the same coins could cure thirty toothaches, the total might favor the thirty."
+    },
+    "16598c03": {
+      "slide": "s20",
+      "text": "Who would say each of these: Daniels, a utilitarian, or both? Sort them, then press Check answers.",
+      "spoken": "Who would say each of these: Daniels, a utilitarian, or both? Sort them, then press Check answers."
+    },
+    "9777cc05": {
+      "slide": "s21",
+      "text": "Silver lost his leg, saved his pay, and bought a tavern with no help from anyone. Was he owed help? The philosopher Tristram Engelhardt said no.",
+      "spoken": "Silver lost his leg, saved his pay, and bought a tavern with no help from anyone. Was he owed help? The philosopher Tristram Engelhardt said no."
+    },
+    "43eaac21": {
+      "slide": "s21",
+      "text": "Some losses come from nature: storms, germs, a falling spar. Engelhardt, borrowing a phrase from Rawls, called this the natural lottery.",
+      "spoken": "Some losses come from nature: storms, germs, a falling spar. Engelhardt, borrowing a phrase from Rawls, called this the natural lottery."
+    },
+    "9f92e67a": {
+      "slide": "s21",
+      "text": "A loss in the natural lottery is unfortunate. It's unfair only if someone wronged you.",
+      "spoken": "A loss in the natural lottery is unfortunate. It's unfair only if someone wronged you."
+    },
+    "57b9b42b": {
+      "slide": "s21",
+      "text": "If nobody wronged you, nobody owes you repair. Helping you is kind, but it's charity, not a right.",
+      "spoken": "If nobody wronged you, nobody owes you repair. Helping you is kind, but it's charity, not a right."
+    },
+    "3cb7fb7e": {
+      "slide": "s21",
+      "text": "People may still choose to pool their money for care. What they can't do is claim care from others as a right.",
+      "spoken": "People may still choose to pool their money for care. What they can't do is claim care from others as a right."
+    },
+    "00ee6586": {
+      "slide": "s22",
+      "text": "Defenders of a right to care have a reply.",
+      "spoken": "Defenders of a right to care have a reply."
+    },
+    "ff255ca1": {
+      "slide": "s22",
+      "text": "They can grant the first point. A storm wrongs nobody.",
+      "spoken": "They can grant the first point. A storm wrongs nobody."
+    },
+    "c7aaa554": {
+      "slide": "s22",
+      "text": "But Rawls wrote that the natural distribution of talents is neither just nor unjust. What's just or unjust is the way that institutions deal with these facts.",
+      "spoken": "But Rawls wrote that the natural distribution of talents is neither just nor unjust. What's just or unjust is the way that institutions deal with these facts."
+    },
+    "5c5a4cf5": {
+      "slide": "s22",
+      "text": "A crew that leaves its injured on the dock has made a choice. That choice can be unfair, even when the storm was not.",
+      "spoken": "A crew that leaves its injured on the dock has made a choice. That choice can be unfair, even when the storm was not."
+    },
+    "ad822db7": {
+      "slide": "s22",
+      "text": "And much illness isn't pure luck, either. Silver lost his leg in a sea battle, doing the crew's most dangerous work.",
+      "spoken": "And much illness isn't pure luck, either. Silver lost his leg in a sea battle, doing the crew's most dangerous work."
+    },
+    "f9aedd1a": {
+      "slide": "s23",
+      "text": "The crew votes that every hand pays sixpence a month into the chest. Silver says he can look after himself. Should he have to pay? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "The crew votes that every hand pays sixpence a month into the chest. Silver says he can look after himself. Should he have to pay? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "40b1559f": {
+      "slide": "s24",
+      "text": "Other critics say Daniels's argument covers too little. Consider two cabin boys.",
+      "spoken": "Other critics say Daniels's argument covers too little. Consider two cabin boys."
+    },
+    "e71f2ceb": {
+      "slide": "s24",
+      "text": "Tom is short because a long fever stunted his growth. Jem is just as short, because his parents are short.",
+      "spoken": "Tom is short because a long fever stunted his growth. Jem is just as short, because his parents are short."
+    },
+    "90dadff9": {
+      "slide": "s24",
+      "text": "The same tonic would make either boy taller. On Daniels's view, only Tom is owed it.",
+      "spoken": "The same tonic would make either boy taller. On Daniels's view, only Tom is owed it."
+    },
+    "f5ffd29c": {
+      "slide": "s24",
+      "text": "This pair is modeled on a real 1990 debate about growth hormone, which used two boys called Johnny and Billy.",
+      "spoken": "This pair is modeled on a real 1990 debate about growth hormone, which used two boys called Johnny and Billy."
+    },
+    "5b36618a": {
+      "slide": "s24",
+      "text": "Critics ask: if the two boys' lives will go the same way, why should the cause of their height decide who gets help?",
+      "spoken": "Critics ask: if the two boys' lives will go the same way, why should the cause of their height decide who gets help?"
+    },
+    "6292abaa": {
+      "slide": "s25",
+      "text": "Here's a harder case.",
+      "spoken": "Here's a harder case."
+    },
+    "b8e1f554": {
+      "slide": "s25",
+      "text": "Old Redruth is dying. No treatment will give her back a single station.",
+      "spoken": "Old Redruth is dying. No treatment will give her back a single station."
+    },
+    "bd345f9f": {
+      "slide": "s25",
+      "text": "Laudanum and nursing would ease her pain in her last weeks. But on the opportunity account, it's hard to say why that's owed.",
+      "spoken": "Laudanum and nursing would ease her pain in her last weeks. But on the opportunity account, it's hard to say why that's owed."
+    },
+    "cd8ebcf2": {
+      "slide": "s25",
+      "text": "A utilitarian has no such trouble. Suffering is bad, and easing it does good, whatever your opportunities are.",
+      "spoken": "A utilitarian has no such trouble. Suffering is bad, and easing it does good, whatever your opportunities are."
+    },
+    "b896b651": {
+      "slide": "s25",
+      "text": "Daniels agrees that the dying should get this care. He grants that it raises questions of compassion and beneficence, which go beyond justice.",
+      "spoken": "Daniels agrees that the dying should get this care. He grants that it raises questions of compassion and beneficence, which go beyond justice."
+    },
+    "d4a5752b": {
+      "slide": "s26",
+      "text": "Now the chest runs short.",
+      "spoken": "Now the chest runs short."
+    },
+    "dc8cc241": {
+      "slide": "s26",
+      "text": "Every bucket bailed helps, and the leak never stops.",
+      "spoken": "Every bucket bailed helps, and the leak never stops."
+    },
+    "a0cafa69": {
+      "slide": "s26",
+      "text": "Health care is like that. There's always another test, another treatment, or another month of life that more money could buy.",
+      "spoken": "Health care is like that. There's always another test, another treatment, or another month of life that more money could buy."
+    },
+    "381156c0": {
+      "slide": "s26",
+      "text": "So every real system rations. It limits care somehow: by price, by waiting lists, or by rules about what's covered.",
+      "spoken": "So every real system rations. It limits care somehow: by price, by waiting lists, or by rules about what's covered."
+    },
+    "949e9bd0": {
+      "slide": "s26",
+      "text": "Daniels agrees that a right to care can't be a right to everything. The hard part is deciding who gets what when the chest runs short.",
+      "spoken": "Daniels agrees that a right to care can't be a right to everything. The hard part is deciding who gets what when the chest runs short."
+    },
+    "740a8cd4": {
+      "slide": "s27",
+      "text": "Your turn to spend the chest. It holds a hundred coins, and the claims add up to a hundred and thirty. The ledger counts healthy sailor-years: the years of healthy life each claim buys, like the quality-adjusted life years that health economists use. Press Pay on the claims you'd fund, or try one of the ready-made choices, and read the notes. When you're ready, press Continue.",
+      "spoken": "Your turn to spend the chest. It holds a hundred coins, and the claims add up to a hundred and thirty. The ledger counts healthy sailor-years: the years of healthy life each claim buys, like the quality-adjusted life years that health economists use. Press Pay on the claims you'd fund, or try one of the ready-made choices, and read the notes. When you're ready, press Continue."
+    },
+    "57c40849": {
+      "slide": "s28",
+      "text": "This trade-off has happened in real life.",
+      "spoken": "This trade-off has happened in real life."
+    },
+    "589ed448": {
+      "slide": "s28",
+      "text": "In 1987, Oregon's Medicaid program stopped paying for heart, liver, pancreas, and bone-marrow transplants. The money went to basic care for more poor children and pregnant women.",
+      "spoken": "In 1987, Oregon's Medicaid program stopped paying for heart, liver, pancreas, and bone-marrow transplants. The money went to basic care for more poor children and pregnant women."
+    },
+    "b9147b36": {
+      "slide": "s28",
+      "text": "Coby Howard, age seven, needed a bone-marrow transplant for leukemia. His family raised over half of the hundred thousand dollars it would cost.",
+      "spoken": "Coby Howard, age seven, needed a bone-marrow transplant for leukemia. His family raised over half of the hundred thousand dollars it would cost."
+    },
+    "311036ec": {
+      "slide": "s28",
+      "text": "He died in December 1987, still short of the money, and without a donor match. Doctors disagreed about whether a transplant would have saved him.",
+      "spoken": "He died in December 1987, still short of the money, and without a donor match. Doctors disagreed about whether a transplant would have saved him."
+    },
+    "d81b53d6": {
+      "slide": "s28",
+      "text": "Oregon's leaders said the trade would save more lives, and those people were just as real. His death made the trade hard to accept. The pull to save one person we can see, whatever it costs, is called the rule of rescue.",
+      "spoken": "Oregon's leaders said the trade would save more lives, and those people were just as real. His death made the trade hard to accept. The pull to save one person we can see, whatever it costs, is called the rule of rescue."
+    },
+    "7ea01f3c": {
+      "slide": "s29",
+      "text": "In 1986, the bioethicist Albert Jonsen named the rule of rescue: the pull to rescue a person we can see in danger of death, whatever it costs. As he put it, we throw a rope to the drowning. Now, a sailor falls overboard in a storm. Turning back will cost two days and the stores the crew needs to reach port. What should the captain do? This one isn't graded. Pick the answer closest to your view.",
+      "spoken": "In 1986, the bioethicist Albert Jonsen named the rule of rescue: the pull to rescue a person we can see in danger of death, whatever it costs. As he put it, we throw a rope to the drowning. Now, a sailor falls overboard in a storm. Turning back will cost two days and the stores the crew needs to reach port. What should the captain do? This one isn't graded. Pick the answer closest to your view."
+    },
+    "9fe95559": {
+      "slide": "oregon-list",
+      "text": "Three years later, Oregon tried something new.",
+      "spoken": "Three years later, Oregon tried something new."
+    },
+    "32004fa2": {
+      "slide": "oregon-list",
+      "text": "In 1990, Oregon tried rationing in the open. It ranked about sixteen hundred treatments by cost and benefit, and planned to pay for those above a line.",
+      "spoken": "In 1990, Oregon tried rationing in the open. It ranked about sixteen hundred treatments by cost and benefit, and planned to pay for those above a line."
+    },
+    "8add1c69": {
+      "slide": "oregon-list",
+      "text": "The first list ranked capping a tooth above surgery for an ectopic pregnancy, which can kill the mother.",
+      "spoken": "The first list ranked capping a tooth above surgery for an ectopic pregnancy, which can kill the mother."
+    },
+    "94388f41": {
+      "slide": "oregon-list",
+      "text": "That's the aggregation problem. Add up enough small benefits, and they outrank saving a life.",
+      "spoken": "That's the aggregation problem. Add up enough small benefits, and they outrank saving a life."
+    },
+    "716c5946": {
+      "slide": "oregon-list",
+      "text": "Oregon rewrote the list. In 1992, the federal government still rejected it at first, saying its scores counted disabled people's lives as worth less.",
+      "spoken": "Oregon rewrote the list. In 1992, the federal government still rejected it at first, saying its scores counted disabled people's lives as worth less."
+    },
+    "bada5c01": {
+      "slide": "four-questions",
+      "text": "When the chest can't pay for everyone, four hard questions come up. Daniels says no formula settles the first three.",
+      "spoken": "When the chest can't pay for everyone, four hard questions come up. Daniels says no formula settles the first three."
+    },
+    "85143adf": {
+      "slide": "four-questions",
+      "text": "Aggregation. Can many small benefits, added up, outweigh one large one? Thirty toothaches against one fever.",
+      "spoken": "Aggregation. Can many small benefits, added up, outweigh one large one? Thirty toothaches against one fever."
+    },
+    "3451ded0": {
+      "slide": "four-questions",
+      "text": "Fair chances. Should each sailor in need get a chance, say by drawing lots, even if the chest would do more good elsewhere?",
+      "spoken": "Fair chances. Should each sailor in need get a chance, say by drawing lots, even if the chest would do more good elsewhere?"
+    },
+    "5052a430": {
+      "slide": "four-questions",
+      "text": "The sickest first. How much extra weight should the sickest sailor get, even if treating others would do more good?",
+      "spoken": "The sickest first. How much extra weight should the sickest sailor get, even if treating others would do more good?"
+    },
+    "2f43f933": {
+      "slide": "four-questions",
+      "text": "And the rule of rescue: the pull to save a person we can see in danger, whatever it costs.",
+      "spoken": "And the rule of rescue: the pull to save a person we can see in danger, whatever it costs."
+    },
+    "62a0d5c0": {
+      "slide": "s32",
+      "text": "Each sailor here raises one of the four hard questions. Which one? Sort them, then press Check answers.",
+      "spoken": "Each sailor here raises one of the four hard questions. Which one? Sort them, then press Check answers."
+    },
+    "34d44eb0": {
+      "slide": "s33",
+      "text": "Daniels admits no principle settles the first three questions. So he and the psychiatrist James Sabin asked a different question: what makes a limit fair to impose? Their answer is called accountability for reasonableness. It has four conditions.",
+      "spoken": "Daniels admits no principle settles the first three questions. So he and the psychiatrist James Sabin asked a different question: what makes a limit fair to impose? Their answer is called accountability for reasonableness. It has four conditions."
+    },
+    "06c58949": {
+      "slide": "s33",
+      "text": "Publicity. The rules for who gets what, and the reasons for them, are posted for everyone to see.",
+      "spoken": "Publicity. The rules for who gets what, and the reasons for them, are posted for everyone to see."
+    },
+    "321b054b": {
+      "slide": "s33",
+      "text": "Relevance. The reasons are ones fair-minded people can accept, like evidence about what works.",
+      "spoken": "Relevance. The reasons are ones fair-minded people can accept, like evidence about what works."
+    },
+    "d483b565": {
+      "slide": "s33",
+      "text": "Appeals. Anyone can challenge a decision, and the rules change when new evidence or arguments appear.",
+      "spoken": "Appeals. Anyone can challenge a decision, and the rules change when new evidence or arguments appear."
+    },
+    "50ec6bf9": {
+      "slide": "s33",
+      "text": "Enforcement. Someone makes sure the first three conditions are actually kept.",
+      "spoken": "Enforcement. Someone makes sure the first three conditions are actually kept."
+    },
+    "3609ac32": {
+      "slide": "s34",
+      "text": "Now it's your turn, clerk. Make one choice in each box to write Article the Ninth: what the chest owes, who fills it, and who decides when it runs short. Then see how each view judges what you wrote. When you're done, press Continue.",
+      "spoken": "Now it's your turn, clerk. Make one choice in each box to write Article the Ninth: what the chest owes, who fills it, and who decides when it runs short. Then see how each view judges what you wrote. When you're done, press Continue."
+    },
+    "272dff62": {
+      "slide": "s35",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it."
+    },
+    "b4b1b027": {
+      "slide": "s35",
+      "text": "Thank you. The tide is turning, and the ship is ready.",
+      "spoken": "Thank you. The tide is turning, and the ship is ready."
+    },
+    "dba879f3": {
+      "slide": "s36",
+      "text": "Here are the articles, summed up.",
+      "spoken": "Here are the articles, summed up."
+    },
+    "51f50ae3": {
+      "slide": "s36",
+      "text": "The question: a moral right to health care is a positive right to care, never to health. And US law gives only a narrow right to emergency care.",
+      "spoken": "The question: a moral right to health care is a positive right to care, never to health. And U.S. law gives only a narrow right to emergency care."
+    },
+    "cc5a8ffa": {
+      "slide": "s36",
+      "text": "Daniels: health protects your share of opportunity, and justice protects opportunity. So care is owed, up to a fair share.",
+      "spoken": "Daniels: health protects your share of opportunity, and justice protects opportunity. So care is owed, up to a fair share."
+    },
+    "360bfbcb": {
+      "slide": "s36",
+      "text": "The utilitarian: care, above all cheap prevention, does great good. And added-up benefits can outweigh one person's claim.",
+      "spoken": "The utilitarian: care, above all cheap prevention, does great good. And added-up benefits can outweigh one person's claim."
+    },
+    "4e751d32": {
+      "slide": "s36",
+      "text": "The objections: Engelhardt says bad luck isn't injustice. Critics say Daniels's line falls in odd places. And rationing raises problems that only a fair process can settle. The Hispaniola sails at dawn. Whatever you wrote, every hand will live by it.",
+      "spoken": "The objections: Engelhardt says bad luck isn't injustice. Critics say Daniels's line falls in odd places. And rationing raises problems that only a fair process can settle. The Hispaniola sails at dawn. Whatever you wrote, every hand will live by it."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

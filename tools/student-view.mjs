@@ -43,7 +43,9 @@ const attr = (tag, name) => { const m = tag.match(new RegExp(`\\b${name}="([^"]*
 const flag = (tag, name) => new RegExp(`\\b${name}\\b`).test(tag.replace(/"[^"]*"/g, ''));
 
 function render(html) {
-  html = html.replace(/<!--[\s\S]*?-->/g, '');
+  // Narration is heard only in the narrated player. A key must be answerable
+  // from the slides alone, so the view leaves it out.
+  html = html.replace(/<!--[\s\S]*?-->/g, '').replace(/<phil-narration\b[\s\S]*?<\/phil-narration>/g, '');
   const ids = [...html.matchAll(/<phil-slide\b([^>]*)>/g)].map((m, i) => attr(m[1], 'id') || `s${i + 1}`);
   const slideNo = id => ids.indexOf(id) + 1;
   const view = [], keys = [];

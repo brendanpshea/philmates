@@ -496,7 +496,7 @@ class PhilWhere extends HTMLElement {
     this._btns.forEach(({ o, b }) => b.setAttribute('aria-pressed', String(o.id === this.pick)));
     const o = this.data.options.find(x => x.id === this.pick);
     this._out.innerHTML = !o
-      ? '<p class="ms-note">Pick a place. Each one is a real reply to Searle.</p>'
+      ? '<p class="ms-note">Pick a place. Most of them are real replies to Searle.</p>'
       : `<p><strong>${o.reply}.</strong> ${o.claim}</p><p><strong>Searle:</strong> ${o.searle}</p>${o.ask ? `<p class="ms-note">${o.ask}</p>` : ''}`;
   }
 }

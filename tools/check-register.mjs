@@ -63,6 +63,9 @@ function harvest(html) {
   for (const m of body.matchAll(/<phil-statement\b[^>]*>([\s\S]*?)<\/phil-statement>/g)) add('checkset item', m[1]);
   for (const m of body.matchAll(/<phil-(choice|side|option|cond|req)\b[^>]*>([\s\S]*?)<\/phil-\1>/g)) add('widget body', m[2]);
   for (const m of body.matchAll(/\b(?:explain|note|prompt|fail|tag|feedback)="([^"]+)"/g)) add('quiz/poll text', m[1]);
+  // The narrated player's script, which the captions show.
+  for (const m of body.matchAll(/<phil-narration\b[^>]*>([\s\S]*?)<\/phil-narration>/g)) add('narration', m[1]);
+  for (const m of body.matchAll(/\bsay="([^"]+)"/g)) add('narration', m[1]);
   for (const m of body.matchAll(/\balt="([^"]+)"/g)) add('alt text', m[1]);
   return out;
 }

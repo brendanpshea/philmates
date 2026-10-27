@@ -1,0 +1,610 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "bc0deae6": {
+      "slide": "s1",
+      "text": "Welcome to the Masquerade of Silverport. Tonight every guest at the ball wears a mask, and one of them isn't a person. It's a clockwork machine. You can't see faces, and you can't hear voices. Can you still tell which guest it is? And if you can't, does the machine think? Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to the Masquerade of Silverport. Tonight every guest at the ball wears a mask, and one of them isn't a person. It's a clockwork machine. You can't see faces, and you can't hear voices. Can you still tell which guest it is? And if you can't, does the machine think? Whenever it's your turn, I'll stop and wait for you."
+    },
+    "2448212c": {
+      "slide": "s2",
+      "text": "Before the dancing starts, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.",
+      "spoken": "Before the dancing starts, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done."
+    },
+    "9d4d3d9c": {
+      "slide": "s2",
+      "text": "Saved. Now, to the ballroom.",
+      "spoken": "Saved. Now, to the ballroom."
+    },
+    "be56c4dd": {
+      "slide": "s3",
+      "text": "Countess Vane, the host, taps her glass, and the ballroom goes quiet.",
+      "spoken": "Countess Vane, the host, taps her glass, and the ballroom goes quiet."
+    },
+    "8a49acbc": {
+      "slide": "s3",
+      "text": "“One of my guests tonight is a machine,” she says. “A very good one.”",
+      "spoken": "“One of my guests tonight is a machine,” she says. “A very good one.”"
+    },
+    "86d3cc82": {
+      "slide": "s3",
+      "text": "“Masks stay on. Nobody speaks aloud. You may question any guest, but only by passing notes through the curtain.”",
+      "spoken": "“Masks stay on. Nobody speaks aloud. You may question any guest, but only by passing notes through the curtain.”"
+    },
+    "05382ce8": {
+      "slide": "s3",
+      "text": "“Whoever unmasks the machine wins the evening.”",
+      "spoken": "“Whoever unmasks the machine wins the evening.”"
+    },
+    "d919d193": {
+      "slide": "s3",
+      "text": "Notice what her rules do. Looks and voices are useless now. All you have to go on is what each guest writes.",
+      "spoken": "Notice what her rules do. Looks and voices are useless now. All you have to go on is what each guest writes."
+    },
+    "77219f98": {
+      "slide": "s4",
+      "text": "Machines have fooled people before.",
+      "spoken": "Machines have fooled people before."
+    },
+    "3a80b384": {
+      "slide": "s4",
+      "text": "In 1770, the inventor Wolfgang von Kempelen showed off a chess-playing machine, and it beat many of the people who played it.",
+      "spoken": "In 1770, the inventor Wolfgang von Kempelen showed off a chess-playing machine, and it beat many of the people who played it."
+    },
+    "e88d5722": {
+      "slide": "s4",
+      "text": "Crowds believed the machine was choosing its moves. In fact, a human chess player was hidden inside the cabinet.",
+      "spoken": "Crowds believed the machine was choosing its moves. In fact, a human chess player was hidden inside the cabinet."
+    },
+    "c3b4905b": {
+      "slide": "s4",
+      "text": "The lesson for tonight: the behavior you see can come from something very different from what you imagine.",
+      "spoken": "The lesson for tonight: the behavior you see can come from something very different from what you imagine."
+    },
+    "389b10e2": {
+      "slide": "s4",
+      "text": "And that cuts both ways. A machine might seem to think when it doesn't, and might think when nobody believes it does.",
+      "spoken": "And that cuts both ways. A machine might seem to think when it doesn't, and might think when nobody believes it does."
+    },
+    "e57d6803": {
+      "slide": "s5",
+      "text": "The host's game comes from the mathematician Alan Turing, who helped break German codes in the Second World War.",
+      "spoken": "The host's game comes from the mathematician Alan Turing, who helped break German codes in the Second World War."
+    },
+    "8f4d84a6": {
+      "slide": "s5",
+      "text": "In 1950, he asked, can machines think? Then he called that question too meaningless to deserve discussion.",
+      "spoken": "In 1950, he asked, can machines think? Then he called that question too meaningless to deserve discussion."
+    },
+    "733eb307": {
+      "slide": "s5",
+      "text": "Words like machine and think mean different things to different people, so arguing over definitions would go nowhere.",
+      "spoken": "Words like machine and think mean different things to different people, so arguing over definitions would go nowhere."
+    },
+    "3d32c35c": {
+      "slide": "s5",
+      "text": "So he replaced the question with a game that has a clear result. He called it the imitation game.",
+      "spoken": "So he replaced the question with a game that has a clear result. He called it the imitation game."
+    },
+    "6b936584": {
+      "slide": "imitation-game",
+      "text": "Here's how Turing's game works.",
+      "spoken": "Here's how Turing's game works."
+    },
+    "ce438c9c": {
+      "slide": "imitation-game",
+      "text": "Turing's first version has three players: a man, a woman, and an interrogator in another room, who asks them questions.",
+      "spoken": "Turing's first version has three players: a man, a woman, and an interrogator in another room, who asks them questions."
+    },
+    "80e501ba": {
+      "slide": "imitation-game",
+      "text": "The answers come back typed, so handwriting and voice give nothing away. The interrogator has to work out which player is the woman.",
+      "spoken": "The answers come back typed, so handwriting and voice give nothing away. The interrogator has to work out which player is the woman."
+    },
+    "bcfb90a4": {
+      "slide": "imitation-game",
+      "text": "Then Turing asks: what if a machine takes the man's place? Will the interrogator guess wrong as often as before?",
+      "spoken": "Then Turing asks: what if a machine takes the man's place? Will the interrogator guess wrong as often as before?"
+    },
+    "a7cecc38": {
+      "slide": "imitation-game",
+      "text": "The test counts only the written answers. Looks, voice, and what the player is made of all stay hidden, just like tonight.",
+      "spoken": "The test counts only the written answers. Looks, voice, and what the player is made of all stay hidden, just like tonight."
+    },
+    "19064834": {
+      "slide": "s7",
+      "text": "Turing's paper includes a sample exchange. He made it up, to show the kind of answers a player might give. Asked for a sonnet about the Forth Bridge, the player says: count me out on this one, I never could write poetry. Asked to add two five-digit numbers, it pauses for about thirty seconds, then gives an answer.",
+      "spoken": "Turing's paper includes a sample exchange. He made it up, to show the kind of answers a player might give. Asked for a sonnet about the Forth Bridge, the player says: count me out on this one, I never could write poetry. Asked to add two five-digit numbers, it pauses for about thirty seconds, then gives an answer."
+    },
+    "a155d5b0": {
+      "slide": "s7",
+      "text": "That sum is wrong, off by exactly one hundred.",
+      "spoken": "That sum is wrong, off by exactly one hundred."
+    },
+    "292ef974": {
+      "slide": "s7",
+      "text": "Elsewhere in the paper, Turing says a machine playing the game would make deliberate mistakes, so that its accuracy doesn't give it away.",
+      "spoken": "Elsewhere in the paper, Turing says a machine playing the game would make deliberate mistakes, so that its accuracy doesn't give it away."
+    },
+    "bd4da6a6": {
+      "slide": "s7",
+      "text": "So passing the test can mean pretending to be worse than you are.",
+      "spoken": "So passing the test can mean pretending to be worse than you are."
+    },
+    "c7242ce3": {
+      "slide": "s8",
+      "text": "In Turing's game, what can the interrogator actually see? Sort each item into what the interrogator can see and what stays hidden, then press Check answers.",
+      "spoken": "In Turing's game, what can the interrogator actually see? Sort each item into what the interrogator can see and what stays hidden, then press Check answers."
+    },
+    "b1f6a512": {
+      "slide": "s9",
+      "text": "Turing also made a prediction.",
+      "spoken": "Turing also made a prediction."
+    },
+    "8aa5249e": {
+      "slide": "s9",
+      "text": "He guessed that in about fifty years, an average interrogator would have no more than a seventy percent chance of picking out the machine, after five minutes of questions.",
+      "spoken": "He guessed that in about fifty years, an average interrogator would have no more than a seventy percent chance of picking out the machine, after five minutes of questions."
+    },
+    "f86f354a": {
+      "slide": "s9",
+      "text": "He also guessed that by then, people would talk about machines thinking without expecting anyone to object.",
+      "spoken": "He also guessed that by then, people would talk about machines thinking without expecting anyone to object."
+    },
+    "2f1e2e0d": {
+      "slide": "s9",
+      "text": "He meant this as a forecast, not a pass mark. The idea that fooling thirty percent of judges counts as passing came later.",
+      "spoken": "He meant this as a forecast, not a pass mark. The idea that fooling thirty percent of judges counts as passing came later."
+    },
+    "9126fa71": {
+      "slide": "s10",
+      "text": "Among the guests is a very old machine. In 1966, the computer scientist Joseph Weizenbaum, at MIT, published a program called ELIZA.",
+      "spoken": "Among the guests is a very old machine. In 1966, the computer scientist Joseph Weizenbaum, at MIT, published a program called ELIZA."
+    },
+    "b8649590": {
+      "slide": "s10",
+      "text": "Its best-known script, later called DOCTOR, plays a therapist who mostly turns your own words back into questions.",
+      "spoken": "Its best-known script, later called DOCTOR, plays a therapist who mostly turns your own words back into questions."
+    },
+    "15b860d7": {
+      "slide": "s10",
+      "text": "It knows nothing about the world. It looks for keywords and fills in stock replies.",
+      "spoken": "It knows nothing about the world. It looks for keywords and fills in stock replies."
+    },
+    "2ac78fe8": {
+      "slide": "s10",
+      "text": "On the next slide, you can talk to a working reconstruction of it, built from the rules Weizenbaum published.",
+      "spoken": "On the next slide, you can talk to a working reconstruction of it, built from the rules Weizenbaum published."
+    },
+    "58ef6d1c": {
+      "slide": "s11",
+      "text": "Your turn. Pass a note to ELIZA. Type something and press Send, or tap a starter line, and try to find a question that gives the machine away. Then turn on Peek behind the mask, to see the rule behind each reply. When you're ready, press Continue.",
+      "spoken": "Your turn. Pass a note to ELIZA. Type something and press Send, or tap a starter line, and try to find a question that gives the machine away. Then turn on Peek behind the mask, to see the rule behind each reply. When you're ready, press Continue."
+    },
+    "29237506": {
+      "slide": "s12",
+      "text": "So how does ELIZA do it?",
+      "spoken": "So how does ELIZA do it?"
+    },
+    "cbe91292": {
+      "slide": "s12",
+      "text": "It finds a keyword, like “mother” or “always,” and picks a stock reply for it.",
+      "spoken": "It finds a keyword, like “mother” or “always,” and picks a stock reply for it."
+    },
+    "fa600f56": {
+      "slide": "s12",
+      "text": "It swaps pronouns. Type “my problem,” and it comes back as “your problem.” Your own words do most of the work.",
+      "spoken": "It swaps pronouns. Type “my problem,” and it comes back as “your problem.” Your own words do most of the work."
+    },
+    "a662f6db": {
+      "slide": "s12",
+      "text": "People confided in it anyway. Weizenbaum's own secretary, who knew it was only a program, began talking to it, and soon asked him to leave the room.",
+      "spoken": "People confided in it anyway. Weizenbaum's own secretary, who knew it was only a program, began talking to it, and soon asked him to leave the room."
+    },
+    "273f87c2": {
+      "slide": "s12",
+      "text": "That pull is now called the ELIZA effect: reading understanding into a machine because its replies fit.",
+      "spoken": "That pull is now called the ELIZA effect: reading understanding into a machine because its replies fit."
+    },
+    "c0aabb29": {
+      "slide": "goostman",
+      "text": "Some machines wear a mask within a mask.",
+      "spoken": "Some machines wear a mask within a mask."
+    },
+    "44092911": {
+      "slide": "goostman",
+      "text": "In 2014, a chatbot called Eugene Goostman was entered in a Turing test event in London.",
+      "spoken": "In 2014, a chatbot called Eugene Goostman was entered in a Turing test event in London."
+    },
+    "6711ffee": {
+      "slide": "goostman",
+      "text": "It played a thirteen-year-old boy from Ukraine, whose first language wasn't English.",
+      "spoken": "It played a thirteen-year-old boy from Ukraine, whose first language wasn't English."
+    },
+    "8d9a1dc5": {
+      "slide": "goostman",
+      "text": "That made its odd answers and gaps in knowledge look like a child's mistakes. A third of the judges took it for a person.",
+      "spoken": "That made its odd answers and gaps in knowledge look like a child's mistakes. A third of the judges took it for a person."
+    },
+    "64ea1eb8": {
+      "slide": "goostman",
+      "text": "Critics said it gamed the test by dodging hard questions instead of answering them. A good disguise isn't the same as a good mind.",
+      "spoken": "Critics said it gamed the test by dodging hard questions instead of answering them. A good disguise isn't the same as a good mind."
+    },
+    "8d103ada": {
+      "slide": "s14",
+      "text": "Seventy-five years after Turing's paper, researchers ran his game with today's chatbots.",
+      "spoken": "Seventy-five years after Turing's paper, researchers ran his game with today's chatbots."
+    },
+    "78577699": {
+      "slide": "s14",
+      "text": "In 2025, Cameron Jones and Benjamin Bergen, at UC San Diego, ran Turing's three-player game: an interrogator, a person, and a chatbot, all chatting at once.",
+      "spoken": "In 2025, Cameron Jones and Benjamin Bergen, at UC San Diego, ran Turing's three-player game: an interrogator, a person, and a chatbot, all chatting at once."
+    },
+    "8b10ca4f": {
+      "slide": "s14",
+      "text": "GPT-4.5, told to play a shy young person who knows internet culture and uses slang, was picked as the human seventy-three percent of the time.",
+      "spoken": "GPT four point five, told to play a shy young person who knows internet culture and uses slang, was picked as the human seventy-three percent of the time."
+    },
+    "9dd8c710": {
+      "slide": "s14",
+      "text": "That's more often than the real people were picked. ELIZA, in the same study, was picked twenty-three percent of the time.",
+      "spoken": "That's more often than the real people were picked. ELIZA, in the same study, was picked twenty-three percent of the time."
+    },
+    "e2e87d3c": {
+      "slide": "s14",
+      "text": "So in Turing's own setup, the machine was picked as the human more often than the humans were. Whether it thinks is a separate question.",
+      "spoken": "So in Turing's own setup, the machine was picked as the human more often than the humans were. Whether it thinks is a separate question."
+    },
+    "7ad30bc4": {
+      "slide": "s15",
+      "text": "Each of these moves could help a machine pass the test. Is it a disguise, or a real skill? Sort them, then press Check answers.",
+      "spoken": "Each of these moves could help a machine pass the test. Is it a disguise, or a real skill? Sort them, then press Check answers."
+    },
+    "10c4ca77": {
+      "slide": "objections",
+      "text": "Turing answered a list of objections in the same paper. He called this one the argument from consciousness. It grants that a machine might act as if it feels, and denies that it feels anything.",
+      "spoken": "Turing answered a list of objections in the same paper. He called this one the argument from consciousness. It grants that a machine might act as if it feels, and denies that it feels anything."
+    },
+    "65e57628": {
+      "slide": "objections",
+      "text": "A brain surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt.",
+      "spoken": "A brain surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt."
+    },
+    "22a48b46": {
+      "slide": "objections",
+      "text": "Turing replied: how do you know that other people feel anything? You only see what they say and do.",
+      "spoken": "Turing replied: how do you know that other people feel anything? You only see what they say and do."
+    },
+    "4b5127b7": {
+      "slide": "objections",
+      "text": "If you demand more of machines than of people, you'd have to doubt everyone but yourself.",
+      "spoken": "If you demand more of machines than of people, you'd have to doubt everyone but yourself."
+    },
+    "642b8edf": {
+      "slide": "objections",
+      "text": "So, Turing wrote, it's usual to have the polite convention that everyone thinks.",
+      "spoken": "So, Turing wrote, it's usual to have the polite convention that everyone thinks."
+    },
+    "d6c8cd54": {
+      "slide": "s17",
+      "text": "Next comes an objection Turing named after Ada Lovelace.",
+      "spoken": "Next comes an objection Turing named after Ada Lovelace."
+    },
+    "f4867bc5": {
+      "slide": "s17",
+      "text": "Lovelace's notes on Charles Babbage's planned Analytical Engine, a mechanical computer, include what's often called the first published program.",
+      "spoken": "Lovelace's notes on Charles Babbage's planned Analytical Engine, a mechanical computer, include what's often called the first published program."
+    },
+    "3d4f2aa7": {
+      "slide": "s17",
+      "text": "She wrote that the Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform, and nothing it thinks up itself.",
+      "spoken": "She wrote that the Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform, and nothing it thinks up itself."
+    },
+    "4a3f0139": {
+      "slide": "s17",
+      "text": "Turing's reply: machines surprise him all the time. And a machine that learns could do things its makers never planned.",
+      "spoken": "Turing's reply: machines surprise him all the time. And a machine that learns could do things its makers never planned."
+    },
+    "d644a5a5": {
+      "slide": "s18",
+      "text": "Then there's a whole family of objections.",
+      "spoken": "Then there's a whole family of objections."
+    },
+    "847db7fe": {
+      "slide": "s18",
+      "text": "Turing collected things critics said a machine could never do: be kind, have a sense of humor, fall in love, enjoy strawberries and cream, make a mistake.",
+      "spoken": "Turing collected things critics said a machine could never do: be kind, have a sense of humor, fall in love, enjoy strawberries and cream, make a mistake."
+    },
+    "118ab9cd": {
+      "slide": "s18",
+      "text": "He called these the arguments from various disabilities. As stated, they're claims about what a machine can do, not what it feels.",
+      "spoken": "He called these the arguments from various disabilities. As stated, they're claims about what a machine can do, not what it feels."
+    },
+    "850f96d9": {
+      "slide": "s18",
+      "text": "His reply: those lists came from the clumsy machines people had seen. He also suspected many were the consciousness objection in disguise.",
+      "spoken": "His reply: those lists came from the clumsy machines people had seen. He also suspected many were the consciousness objection in disguise."
+    },
+    "1a38a366": {
+      "slide": "s18",
+      "text": "Some items have aged badly. Chatbots now tell jokes, and Turing says a machine playing his game would make mistakes on purpose.",
+      "spoken": "Some items have aged badly. Chatbots now tell jokes, and Turing says a machine playing his game would make mistakes on purpose."
+    },
+    "08c753ba": {
+      "slide": "s19",
+      "text": "Each line voices one of the objections Turing answered: Jefferson's objection from consciousness, Lovelace's objection, or various disabilities. Sort them by what each line actually claims, then press Check answers.",
+      "spoken": "Each line voices one of the objections Turing answered: Jefferson's objection from consciousness, Lovelace's objection, or various disabilities. Sort them by what each line actually claims, then press Check answers."
+    },
+    "c03b6020": {
+      "slide": "s20",
+      "text": "A second game, says the host. A steward leads you down to a locked room in the cellar.",
+      "spoken": "A second game, says the host. A steward leads you down to a locked room in the cellar."
+    },
+    "2dbe6af1": {
+      "slide": "s20",
+      "text": "This room is a thought experiment from the philosopher John Searle, published in 1980.",
+      "spoken": "This room is a thought experiment from the philosopher John Searle, published in 1980."
+    },
+    "f0609f16": {
+      "slide": "s20",
+      "text": "Slips of paper will come under the door, written in a script you can't read.",
+      "spoken": "Slips of paper will come under the door, written in a script you can't read."
+    },
+    "2885831f": {
+      "slide": "s20",
+      "text": "Inside is a rulebook. It tells you which shapes to send back for each slip. It never tells you what any shape means.",
+      "spoken": "Inside is a rulebook. It tells you which shapes to send back for each slip. It never tells you what any shape means."
+    },
+    "d8bc609f": {
+      "slide": "s20",
+      "text": "Searle used Chinese, because he couldn't read it. This room uses an invented script, so nobody in class can read it either.",
+      "spoken": "Searle used Chinese, because he couldn't read it. This room uses an invented script, so nobody in class can read it either."
+    },
+    "762a8ae7": {
+      "slide": "s21",
+      "text": "You're inside the room now, and a slip has come under the door. Find the rulebook row that starts with the same shapes. Use the shape buttons to copy the shapes after the arrow onto your answer slip, then press Push it under the door. After all four slips, press Translate the conversation to see what you said. When you're done, press Continue.",
+      "spoken": "You're inside the room now, and a slip has come under the door. Find the rulebook row that starts with the same shapes. Use the shape buttons to copy the shapes after the arrow onto your answer slip, then press Push it under the door. After all four slips, press Translate the conversation to see what you said. When you're done, press Continue."
+    },
+    "0c771f94": {
+      "slide": "s22",
+      "text": "Outside the door, someone was comforted about her lost cat. So who understood that conversation? This one isn't graded. Pick the answer closest to your view, and read the note that comes with it.",
+      "spoken": "Outside the door, someone was comforted about her lost cat. So who understood that conversation? This one isn't graded. Pick the answer closest to your view, and read the note that comes with it."
+    },
+    "a3de76c4": {
+      "slide": "searle-argument",
+      "text": "Here is Searle's argument, in four steps.",
+      "spoken": "Here is Searle's argument, in four steps."
+    },
+    "51c58dd2": {
+      "slide": "searle-argument",
+      "text": "A computer program works by rules about the shapes of symbols. Philosophers call this syntax.",
+      "spoken": "A computer program works by rules about the shapes of symbols. Philosophers call this syntax."
+    },
+    "b0d3331b": {
+      "slide": "searle-argument",
+      "text": "Understanding requires knowing what the symbols mean. That's semantics.",
+      "spoken": "Understanding requires knowing what the symbols mean. That's semantics."
+    },
+    "8f4c7ba0": {
+      "slide": "searle-argument",
+      "text": "In the room, you had all the syntax and none of the semantics. Following the rules never gave you the meaning.",
+      "spoken": "In the room, you had all the syntax and none of the semantics. Following the rules never gave you the meaning."
+    },
+    "40ef0d9e": {
+      "slide": "searle-argument",
+      "text": "So, Searle concludes, running a program can't be enough for understanding, whatever test it passes.",
+      "spoken": "So, Searle concludes, running a program can't be enough for understanding, whatever test it passes."
+    },
+    "cd24af78": {
+      "slide": "s24",
+      "text": "Searle is careful about what he denies. Weak AI says computers can model minds, the way they model weather. A simulated storm helps you study storms, but nothing gets wet. Searle has no quarrel with that. Strong AI says a computer running the right program would literally have a mind, and understand. That's the claim the Room attacks. And notice: Searle doesn't say machines can't think. We are precisely such machines, he wrote. What he denies is that running a program is enough.",
+      "spoken": "Searle is careful about what he denies. Weak AI says computers can model minds, the way they model weather. A simulated storm helps you study storms, but nothing gets wet. Searle has no quarrel with that. Strong AI says a computer running the right program would literally have a mind, and understand. That's the claim the Room attacks. And notice: Searle doesn't say machines can't think. We are precisely such machines, he wrote. What he denies is that running a program is enough."
+    },
+    "6bab1b3a": {
+      "slide": "s25",
+      "text": "So what is the Chinese Room meant to show? Pick the best answer.",
+      "spoken": "So what is the Chinese Room meant to show? Pick the best answer."
+    },
+    "7bfb5d83": {
+      "slide": "systems-reply",
+      "text": "In his paper, Searle answers objections he'd heard while presenting the argument. Here's a common one, called the systems reply.",
+      "spoken": "In his paper, Searle answers objections he'd heard while presenting the argument. Here's a common one, called the systems reply."
+    },
+    "851435bf": {
+      "slide": "systems-reply",
+      "text": "Of course the person in the room doesn't understand, it says. The person is only one part of the system.",
+      "spoken": "Of course the person in the room doesn't understand, it says. The person is only one part of the system."
+    },
+    "c2f5f3ab": {
+      "slide": "systems-reply",
+      "text": "The whole system understands: person, rulebook, paper, and all.",
+      "spoken": "The whole system understands: person, rulebook, paper, and all."
+    },
+    "c6cd38b4": {
+      "slide": "systems-reply",
+      "text": "Defenders often add a comparison. Your neurons don't understand English either. You do.",
+      "spoken": "Defenders often add a comparison. Your neurons don't understand English either. You do."
+    },
+    "86cbba50": {
+      "slide": "s27",
+      "text": "Searle has an answer.",
+      "spoken": "Searle has an answer."
+    },
+    "82723a6b": {
+      "slide": "s27",
+      "text": "Let the person memorize the whole rulebook, and do every step in their head.",
+      "spoken": "Let the person memorize the whole rulebook, and do every step in their head."
+    },
+    "fee8cdb9": {
+      "slide": "s27",
+      "text": "Now there's no system apart from the person. They are the whole room, and they can walk outside.",
+      "spoken": "Now there's no system apart from the person. They are the whole room, and they can walk outside."
+    },
+    "bf740e6d": {
+      "slide": "s27",
+      "text": "They still don't understand a word of what they answer. So, Searle says, neither did the system.",
+      "spoken": "They still don't understand a word of what they answer. So, Searle says, neither did the system."
+    },
+    "e0967b71": {
+      "slide": "s27",
+      "text": "Defenders of the systems reply answer that a mind could run inside a person without that person knowing it.",
+      "spoken": "Defenders of the systems reply answer that a mind could run inside a person without that person knowing it."
+    },
+    "a5123314": {
+      "slide": "robot-reply",
+      "text": "A second reply is called the robot reply.",
+      "spoken": "A second reply is called the robot reply."
+    },
+    "734f85da": {
+      "slide": "robot-reply",
+      "text": "The room is cut off from the world, it says. So put the program in a robot, with cameras and arms.",
+      "spoken": "The room is cut off from the world, it says. So put the program in a robot, with cameras and arms."
+    },
+    "bc5d637b": {
+      "slide": "robot-reply",
+      "text": "Now its symbols connect to things it sees and does. Maybe that gives them meaning.",
+      "spoken": "Now its symbols connect to things it sees and does. Maybe that gives them meaning."
+    },
+    "310693d9": {
+      "slide": "robot-reply",
+      "text": "Searle's answer: the camera's signals reach the person inside as more shapes, on more slips.",
+      "spoken": "Searle's answer: the camera's signals reach the person inside as more shapes, on more slips."
+    },
+    "006d67ff": {
+      "slide": "robot-reply",
+      "text": "The person follows the rules exactly as before. More input is still only more syntax.",
+      "spoken": "The person follows the rules exactly as before. More input is still only more syntax."
+    },
+    "2e085e60": {
+      "slide": "s29",
+      "text": "A third is the brain simulator reply.",
+      "spoken": "A third is the brain simulator reply."
+    },
+    "e8f422ca": {
+      "slide": "s29",
+      "text": "Make the program copy, step by step, what the neurons of a native speaker do.",
+      "spoken": "Make the program copy, step by step, what the neurons of a native speaker do."
+    },
+    "bc86c93f": {
+      "slide": "s29",
+      "text": "If a brain understands, surely an exact copy of its workings does too.",
+      "spoken": "If a brain understands, surely an exact copy of its workings does too."
+    },
+    "69ab09f9": {
+      "slide": "s29",
+      "text": "Searle's answer: run that copy with water pipes and valves, turned by a person following instructions.",
+      "spoken": "Searle's answer: run that copy with water pipes and valves, turned by a person following instructions."
+    },
+    "88e9cc84": {
+      "slide": "s29",
+      "text": "The pipes copy the brain's pattern, he says, but not its causal powers. Nothing in them understands.",
+      "spoken": "The pipes copy the brain's pattern, he says, but not its causal powers. Nothing in them understands."
+    },
+    "6f5addaa": {
+      "slide": "other-minds",
+      "text": "And one more, the other-minds reply.",
+      "spoken": "And one more, the other-minds reply."
+    },
+    "2c6daf31": {
+      "slide": "other-minds",
+      "text": "How do you know that other people understand Chinese? Only from what they say and do.",
+      "spoken": "How do you know that other people understand Chinese? Only from what they say and do."
+    },
+    "c7b046aa": {
+      "slide": "other-minds",
+      "text": "So if you credit people with understanding because of how they behave, you should credit the room too.",
+      "spoken": "So if you credit people with understanding because of how they behave, you should credit the room too."
+    },
+    "0dad3b71": {
+      "slide": "other-minds",
+      "text": "This is Turing's polite convention again, now aimed at Searle.",
+      "spoken": "This is Turing's polite convention again, now aimed at Searle."
+    },
+    "69b3b427": {
+      "slide": "other-minds",
+      "text": "Searle's answer: the question isn't how we know that someone understands. It's what we're saying is there when they do. And the room doesn't have it.",
+      "spoken": "Searle's answer: the question isn't how we know that someone understands. It's what we're saying is there when they do. And the room doesn't have it."
+    },
+    "6fcf5f2b": {
+      "slide": "s31",
+      "text": "Your turn. Pick a place where understanding might be: the person, the rulebook, the whole room, and so on. For each one, you'll see which reply to Searle, if any, puts it there, and Searle's answer. Try as many as you like, then press Continue.",
+      "spoken": "Your turn. Pick a place where understanding might be: the person, the rulebook, the whole room, and so on. For each one, you'll see which reply to Searle, if any, puts it there, and Searle's answer. Try as many as you like, then press Continue."
+    },
+    "b5b549a8": {
+      "slide": "s32",
+      "text": "Each critic here is answering Searle. Which reply is it: systems, robot, brain simulator, or other minds? Sort them, then press Check answers.",
+      "spoken": "Each critic here is answering Searle. Which reply is it: systems, robot, brain simulator, or other minds? Sort them, then press Check answers."
+    },
+    "5a878235": {
+      "slide": "s33",
+      "text": "Now, back to the present.",
+      "spoken": "Now, back to the present."
+    },
+    "8c8e3184": {
+      "slide": "s33",
+      "text": "Today's chatbots learn from vast amounts of text. Do they understand it, or just match its shapes?",
+      "spoken": "Today's chatbots learn from vast amounts of text. Do they understand it, or just match its shapes?"
+    },
+    "13e04690": {
+      "slide": "s33",
+      "text": "In 2020, the linguists Emily Bender and Alexander Koller offered a thought experiment in the spirit of Searle's room.",
+      "spoken": "In 2020, the linguists Emily Bender and Alexander Koller offered a thought experiment in the spirit of Searle's room."
+    },
+    "6c8e6adc": {
+      "slide": "s33",
+      "text": "An octopus taps a cable between two islanders. It learns to predict one islander's replies, then cuts the cable and pretends to be them. It never sees what the words refer to.",
+      "spoken": "An octopus taps a cable between two islanders. It learns to predict one islander's replies, then cuts the cable and pretends to be them. It never sees what the words refer to."
+    },
+    "7cb39138": {
+      "slide": "s33",
+      "text": "So when one islander needs real help with something new, the octopus has nothing behind its fluent replies.",
+      "spoken": "So when one islander needs real help with something new, the octopus has nothing behind its fluent replies."
+    },
+    "0dbb15d4": {
+      "slide": "s34",
+      "text": "Whatever machines understand, they now pass for people. Since 2019, California has banned bots that hide what they are in order to sell something or sway a vote. And since August 2026, the European Union has required chatbots to tell people they're talking to an AI. So, should a machine that talks with people always have to say that it's a machine? This one isn't graded. Pick the answer closest to your view.",
+      "spoken": "Whatever machines understand, they now pass for people. Since 2019, California has banned bots that hide what they are in order to sell something or sway a vote. And since August 2026, the European Union has required chatbots to tell people they're talking to an AI. So, should a machine that talks with people always have to say that it's a machine? This one isn't graded. Pick the answer closest to your view."
+    },
+    "e5cbb71a": {
+      "slide": "s35",
+      "text": "These are your ratings from the start of the night. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.",
+      "spoken": "These are your ratings from the start of the night. Rate each statement again, then press Submit. If something moved, ask yourself what moved it."
+    },
+    "1dcbea4b": {
+      "slide": "s35",
+      "text": "Thank you. The clock is about to strike midnight.",
+      "spoken": "Thank you. The clock is about to strike midnight."
+    },
+    "ffa17616": {
+      "slide": "s36",
+      "text": "The ball is over. Here's what the night showed.",
+      "spoken": "The ball is over. Here's what the night showed."
+    },
+    "497d375b": {
+      "slide": "s36",
+      "text": "Turing replaced the question, can machines think, with the imitation game. Judge a machine by its answers, as we judge people.",
+      "spoken": "Turing replaced the question, can machines think, with the imitation game. Judge a machine by its answers, as we judge people."
+    },
+    "f53d4791": {
+      "slide": "s36",
+      "text": "ELIZA and the machines after it showed that passing can be gamed, and that people read understanding into replies that fit.",
+      "spoken": "ELIZA and the machines after it showed that passing can be gamed, and that people read understanding into replies that fit."
+    },
+    "1f5e18da": {
+      "slide": "s36",
+      "text": "Searle argued that a program is only syntax, and understanding needs semantics, so passing the test isn't enough.",
+      "spoken": "Searle argued that a program is only syntax, and understanding needs semantics, so passing the test isn't enough."
+    },
+    "a0680dc6": {
+      "slide": "s36",
+      "text": "And his critics answered with the systems, robot, brain simulator, and other-minds replies. Searle answered each one. The masks come off at midnight. Did you find the machine, and did it matter?",
+      "spoken": "And his critics answered with the systems, robot, brain simulator, and other-minds replies. Searle answered each one. The masks come off at midnight. Did you find the machine, and did it matter?"
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

@@ -67,7 +67,6 @@ img[src$=".png"], img[data-pixel] { image-rendering: pixelated; }
 .phil-top__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-top__right { display: flex; align-items: center; gap: 12px; }
 .phil-reset { font-size: 9px; padding: 8px 10px; }
-.phil-audio { font-size: 13px; padding: 7px 9px; line-height: 1; }
 
 /* narration script is data for the TTS generator, not shown on screen */
 phil-narration { display: none; }
@@ -198,6 +197,31 @@ phil-slide ol > li::before { content: counter(phil-ol); position: absolute; left
 /* ---- bottom bar: navigation ---- */
 .phil-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-nav { display: flex; gap: 10px; }
+
+/* ---- narrated player (only in lessons with <phil-narration>) ---- */
+.phil-player { align-items: center; gap: 6px; }
+/* wide enough for its longest label, so the bar doesn't shift as it changes */
+.phil-player__play { min-width: 14em; text-align: center; }
+.phil-player__extra { padding: 12px 10px; }
+.phil-player__extra[aria-pressed="false"] { color: var(--muted); text-decoration: line-through; }
+/* captions sit between the stage and the controls, never over the slide */
+.phil-caption {
+  min-height: 3.2em; padding: 8px 14px;
+  background: var(--border); color: var(--ink);
+  border-left: 4px solid var(--accent-2);
+  font-size: clamp(16px, 1.6vw, 19px); line-height: 1.45;
+}
+/* the closing "For Further Reading" slide: a reference list, set smaller than slide prose */
+phil-slide .phil-reading li { max-width: none; font-size: clamp(15px, 1.35vw, 18px); line-height: 1.45; margin: .5em 0; }
+.phil-reading a { color: var(--accent-3); }
+phil-slide p.phil-ai-note { max-width: none; margin-top: 1.2em; font-size: clamp(14px, 1.2vw, 16px); line-height: 1.45; color: var(--muted); }
+/* author and license, on every lesson's opening slide */
+phil-slide p.phil-credit { margin-top: 1.4em; font-size: clamp(14px, 1.2vw, 16px); line-height: 1.4; color: var(--muted); }
+.phil-credit a { color: var(--accent-3); }
+.phil-play-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 1.2em; }
+.phil-play-cta[hidden] { display: none; }
+phil-slide .phil-play-cta .phil-btn { font-size: 13px; padding: 14px 18px; }
+.phil-play-cta .muted { font-size: clamp(15px, 1.4vw, 17px); }
 
 /* =====================================================================
    Focus
@@ -568,7 +592,8 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
   .phil-top { gap: 4px; }
   .phil-progress { height: 8px; }
   .phil-reset { padding: 7px 9px; }
-  .phil-sfx, .phil-audio { padding: 6px 8px; }
+  .phil-sfx { padding: 6px 8px; }
+  .phil-caption { min-height: 2.9em; padding: 6px 12px; }
   .phil-bottom .phil-btn { padding: 9px 13px; }
   phil-slide { padding: clamp(14px, 2vw, 22px); gap: 14px; }
   phil-slide h1 { font-size: clamp(16px, 3vw, 24px); margin-bottom: .45em; }
@@ -606,6 +631,12 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
   .phil-bottom { gap: 8px; }
   .phil-nav { flex: 1; }
   .phil-nav .phil-btn { flex: 1; text-align: center; }
+  /* the player takes its own row above Back and Next */
+  .phil-bottom:has(.phil-player) { flex-wrap: wrap; }
+  .phil-player { order: -1; flex-basis: 100%; }
+  .phil-nav .phil-player__extra { flex: 0 0 auto; }
+  .phil-player__play { min-width: 0; }
+  .phil-caption { font-size: 15px; }
 
   /* modal hugs the screen edges */
   .phil-modal__box { margin: 12px; }

@@ -59,6 +59,15 @@ hand.
   `<img slot="art" src="./assets/foo.svg" alt="describe it">` (alt text required).
 - Anything without `slot="art"` becomes the slide body. Drop in any HTML you like
   for one-off visualizations (canvas, inline SVG, a `<script>` for custom charts).
+- **Credit:** the engine adds "Brendan Shea, PhD · CC BY-NC 4.0" (linked to the
+  license) to the opening slide of every lesson. A lesson by someone else sets
+  `author="…"` on `<phil-lesson>`.
+- **The last slide is always "For Further Reading"** (`id="further-reading"`):
+  a `<ul class="phil-reading">` of 4 or 5 verified readings, each a citation plus
+  a short reason to read it, then the AI acknowledgment in
+  `<p class="phil-ai-note">`. Copy the wording from an existing lesson. A
+  narrated lesson's acknowledgment also names the synthetic voice.
+  `tools/new-lesson.mjs` starts every lesson with this slide.
 
 ## Completion rule
 
@@ -87,11 +96,13 @@ each answer turned green, which earned full marks and taught nothing.
   saved, so reloading the page doesn't reset them.
 - **Checksets, cloze, and classify also earn partial credit on every check.**
   Each check is scored part by part, then scaled by the tries already spent,
-  and the best result is kept. A first check with 5 of 6 right banks 67%; a
-  correct second check raises it to 80%. The part-by-part scores:
-  - *Checkset:* (statements right − statements wrong) ÷ total, never below 0.
-    6 of 6 right is 100%, 5 of 6 is 67%, 4 of 6 is 33%, and random ticking or
-    a blank check averages 0.
+  and the best result is kept. A first checkset check with 5 of 6 right banks
+  83%. A correct second check is worth 80%, so the question keeps the 83%.
+  The part-by-part scores:
+  - *Checkset:* statements right ÷ total. Nothing is taken off for a wrong
+    one, because these are formative, not punitive. The cost: ticking every
+    box earns the share of true statements without reading anything, so keep
+    true and false statements roughly balanced.
   - *Cloze:* each right blank counts 1; a wrong dropdown pick costs
     1 ÷ (options − 1), so random picking averages 0. A wrong typed answer or an
     empty blank costs nothing.
@@ -319,21 +330,11 @@ the saved ratings and let students re-rate and see what shifted.
 - `<phil-beliefs>` defaults to key `beliefs`; set `id="x"` and match it with
   `<phil-beliefs-review for="x">` if you want more than one probe per lesson.
 
-### Optional detour — `<phil-branch>`
-```html
-<phil-branch prompt="Want the deep dive?">
-  <phil-option goto="detail-slide">Yes</phil-option>
-  <phil-option goto="next">Skip</phil-option>
-</phil-branch>
-...
-<phil-slide id="detail-slide" optional>
-  <h1>Optional content</h1>
-</phil-slide>
-```
-Give the target `<phil-slide>` an `id` and the `optional` attribute. It's excluded
-from the linear sequence and the completion count, and automatically gets a
-"◀ Back to lesson" button. Keep most lessons linear; use branches only for
-genuinely optional side content.
+### Optional detours — retired
+Don't use `<phil-branch>` or `<phil-slide optional>`. Detours didn't work well
+in practice: students skipped content that later slides relied on. The two
+lessons that had them now run straight through. Every lesson is linear. The
+engine still understands both, but no lesson uses them.
 
 ### The mean spectrum — `<phil-mean>` (ungraded, opt-in)
 A Deficiency → Mean → Excess bar with a movable character marker, for any
@@ -755,10 +756,23 @@ case, and face the choice in a poll.
   which breaks the no-text rule.
 - Unicode icons/emoji are fine inline where they're enough (★ ✔ 🎉).
 
-## Narration (optional, currently shelved)
+## Narration: the narrated player (optional)
 
-Per-slide audio narration is supported but not used in any lesson right now. The
-audio toggle only appears if a lesson contains a `<phil-narration>`. To add it, see
+A lesson with `<phil-narration>` lines gets a **Play** button that runs it as a
+narrated slideshow with captions, stopping at each activity. Students who don't
+press Play get the ordinary lesson. Three lessons have it so far: *The Midnight
+Tribunal*, *The Masquerade of Silverport* and *The Ship's Chest*.
+
+- `<phil-narration>` on a slide is its spoken intro; `say="…"` on each reveal
+  `<li>` is spoken as that step appears; `<phil-narration when="after">` plays
+  once the slide's activity is done.
+- `hold` on a `<phil-slide>` makes the player wait for Continue there (for an
+  explore widget with no "done" signal).
+- Generate the audio with `python tools/generate-audio.py <lesson-dir>`.
+- The script never carries anything a question depends on: the click-through
+  lesson doesn't include it.
+
+Writing rules, the waiting logic and the generator are in
 [docs/audio-narration.md](docs/audio-narration.md).
 
 ## Topics

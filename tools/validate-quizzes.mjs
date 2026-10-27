@@ -165,6 +165,19 @@ function checkReviewTargets(html) {
   return out;
 }
 
+/* Every lesson ends with "For Further Reading": a few readings and the AI
+   acknowledgment. See AUTHORING.md, "Skeleton". */
+function checkFurtherReading(html) {
+  const slides = [...html.matchAll(/<phil-slide\b([^>]*)>([\s\S]*?)<\/phil-slide>/gi)];
+  const last = slides.at(-1);
+  if (!last || !/\bid="further-reading"/.test(last[1])) return ['the last slide should be id="further-reading"'];
+  const out = [];
+  const items = ((last[2].match(/<ul class="phil-reading">([\s\S]*?)<\/ul>/) || [])[1] || '').match(/<li\b/g) || [];
+  if (items.length < 3) out.push(`further reading lists ${items.length} item(s); give 4 or 5`);
+  if (!/class="phil-ai-note"/.test(last[2])) out.push('further reading slide has no AI acknowledgment (p.phil-ai-note)');
+  return out;
+}
+
 function checkLengths(mcq) {
   const issues = [];
   const lens = mcq.choices.map(c => c.len);
@@ -233,6 +246,7 @@ async function run() {
       });
       checkReviewTargets(html).forEach(x => { problemCount++; lines.push(`  ✘ ${x}`); });
       checkQids(html).forEach(x => { problemCount++; lines.push(`  ✘ ${x}`); });
+      checkFurtherReading(html).forEach(x => { problemCount++; lines.push(`  ✘ ${x}`); });
       mcqs.forEach((q, i) => {
         const issues = checkLengths(q);
         if (issues.length) {

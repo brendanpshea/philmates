@@ -6,8 +6,8 @@
   <title>The Ship's Chest: The Right to Health Care · PhilMates</title>
   <meta name="description" content="A ship's crew decides what its common chest owes a sailor who falls sick. Norman Daniels's opportunity argument for a right to health care, a utilitarian ledger, Engelhardt's natural lottery, Oregon's rationing list, and the rule of rescue.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=11">
-  <script type="module" src="../../../shared/phil-core.js?v=11"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=13">
+  <script type="module" src="../../../shared/phil-core.js?v=13"></script>
   <script type="module" src="./assets/ships-chest.js"></script>
   <style>
     .trio { display: flex; gap: 14px; margin: 4px 0 10px; flex-wrap: wrap; }
@@ -50,6 +50,7 @@
     <p class="lead">Bristol, in the age of sail. The <em>Hispaniola</em> sails at dawn, and every hand must first sign the ship's articles.</p>
     <p>The articles are the rules the crew agrees to live by. One article is still blank: what does the crew owe a hand who falls sick or gets hurt? It is a small version of a big question. Is there a right to health care?</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Bristol, in the age of sail. The Hispaniola sails at dawn, and every hand must first sign the ship's articles: the rules the crew agrees to live by. One article is still blank. What does the crew owe a hand who falls sick or gets hurt? It's a small version of a big question. Is there a right to health care? Whenever it's your turn, I'll stop and wait for you.</phil-narration>
   </phil-slide>
 
   <!-- 2. Belief probe (start) -->
@@ -63,6 +64,8 @@
       <phil-statement>We should spend whatever it takes to save a person whose life is in danger.</phil-statement>
       <phil-statement>It is fair to deny one person an expensive treatment if the money would help many more people.</phil-statement>
     </phil-beliefs>
+    <phil-narration>Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.</phil-narration>
+    <phil-narration when="after">Saved. Now, let's see how real crews handled it.</phil-narration>
   </phil-slide>
 
   <!-- 3. Pirates had sick pay -->
@@ -70,11 +73,12 @@
     <img slot="art" src="./assets/the-chest.png" alt="An open chest of gold coins on a ship's deck beside a barrel with a quill and inkpot; above it, a blank parchment with a red wax seal and two inky thumbprints is pinned to the mast">
     <h1>Pirates Had Sick Pay</h1>
     <p>Ship's articles were real. Crews wrote down their rules, and every hand signed.</p>
+    <phil-narration>Ship's articles were real. Crews wrote down their rules, and every hand signed.</phil-narration>
     <ul reveal>
-      <li>The pirate Bartholomew Roberts's crew agreed that a man who lost a limb would get "800 Dollars, out of the publick Stock."</li>
-      <li>The Royal Navy's Chatham Chest, begun around 1590, took sixpence a month from every sailor's pay for men hurt in service.</li>
-      <li>Both were a kind of insurance. Everyone paid in while healthy, and the injured drew out.</li>
-      <li>So the question is old. Do people who share risks owe each other care when the risks come due?</li>
+      <li say="The pirate Bartholomew Roberts's crew agreed that a man who lost a limb would get eight hundred dollars from the common stock.">The pirate Bartholomew Roberts's crew agreed that a man who lost a limb would get "800 Dollars, out of the publick Stock."</li>
+      <li say="The Royal Navy's Chatham Chest, begun around 1590, took sixpence a month from every sailor's pay, for men hurt in service.">The Royal Navy's Chatham Chest, begun around 1590, took sixpence a month from every sailor's pay for men hurt in service.</li>
+      <li say="Both were a kind of insurance. Everyone paid in while healthy, and the injured drew out.">Both were a kind of insurance. Everyone paid in while healthy, and the injured drew out.</li>
+      <li say="So the question is old. Do people who share risks owe each other care when the risks come due?">So the question is old. Do people who share risks owe each other care when the risks come due?</li>
     </ul>
   </phil-slide>
 
@@ -95,11 +99,12 @@
         <figcaption>Silver</figcaption>
       </figure>
     </div>
+    <phil-narration>Meet the crew. Their cases will test each argument.</phil-narration>
     <ul reveal>
-      <li><strong>Dr. Livesey</strong> is the ship's doctor. Whatever the article says, he is the one who has to carry it out.</li>
-      <li><strong>Captain Smollett</strong> keeps the chest. Every coin paid out for care comes from it.</li>
-      <li><strong>Long John Silver</strong>, the cook, lost his left leg at sea. He paid his own way afterward, and he is proud of it.</li>
-      <li>You are the ship's clerk. When the crew has argued it out, you will write the blank article.</li>
+      <li say="Doctor Livesey is the ship's doctor. Whatever the article says, he's the one who has to carry it out."><strong>Dr. Livesey</strong> is the ship's doctor. Whatever the article says, he is the one who has to carry it out.</li>
+      <li say="Captain Smollett keeps the chest. Every coin paid out for care comes from it."><strong>Captain Smollett</strong> keeps the chest. Every coin paid out for care comes from it.</li>
+      <li say="Long John Silver, the cook, lost his left leg at sea. He paid his own way afterward, and he's proud of it."><strong>Long John Silver</strong>, the cook, lost his left leg at sea. He paid his own way afterward, and he is proud of it.</li>
+      <li say="And you are the ship's clerk. Once you've weighed the arguments, you'll write the blank article.">You are the ship's clerk. Once you have weighed the arguments, you will write the blank article.</li>
     </ul>
   </phil-slide>
 
@@ -121,17 +126,19 @@
       </phil-side>
     </phil-compare>
     <p class="muted">A right to health care would be a positive right. That is why people argue about it.</p>
+    <phil-narration>First, what kind of right are we talking about? A right is a claim that someone else owes you something. Marooned alone on an island, Ben Gunn has nobody to claim against. A negative right says others must not do something to you, and it costs them nothing but holding back: the right not to be thrown overboard. A positive right says others must do something for you, at a cost in time, effort, or money: the right to be pulled out of the water. A right to health care would be a positive right. That's why people argue about it.</phil-narration>
   </phil-slide>
 
   <!-- 6. Health or health care -->
   <phil-slide>
     <img slot="art" src="./assets/squall.png" alt="A ship's deck at night in a rainstorm; under a lantern, an older Black woman sailor in a cap wraps a coat around a shivering young man in a blanket">
     <h1>Health or Health Care?</h1>
+    <phil-narration>There's a second distinction to draw.</phil-narration>
     <ul reveal>
-      <li>Nobody can promise you health. Storms, germs, accidents, and old age arrive whatever anyone does.</li>
-      <li>So a right to <em>health</em> is a strange idea. Nobody could be the one who owes it to you.</li>
-      <li>A right to <strong>health care</strong> is different. Others can owe you treatment, or a share of the chest that pays for it.</li>
-      <li>In this lesson, a right to health care means a claim on others for care. It is never a promise of health.</li>
+      <li say="Nobody can promise you health. Storms, germs, accidents, and old age arrive whatever anyone does.">Nobody can promise you health. Storms, germs, accidents, and old age arrive whatever anyone does.</li>
+      <li say="So a right to health is a strange idea. Nobody could be the one who owes it to you.">So a right to <em>health</em> is a strange idea. Nobody could be the one who owes it to you.</li>
+      <li say="A right to health care is different. Others can owe you treatment, or a share of the chest that pays for it.">A right to <strong>health care</strong> is different. Others can owe you treatment, or a share of the chest that pays for it.</li>
+      <li say="So in this lesson, a right to health care means a claim on others for care. It's never a promise of health.">In this lesson, a right to health care means a claim on others for care. It is never a promise of health.</li>
     </ul>
   </phil-slide>
 
@@ -139,11 +146,12 @@
   <phil-slide id="the-law">
     <h1>What the Law Says Today</h1>
     <p>A <strong>legal right</strong> is one the law enforces. A <strong>moral right</strong> is one you have whether or not the law agrees. Here are some legal ones.</p>
+    <phil-narration>A legal right is one the law enforces. A moral right is one you have whether or not the law agrees. Here are some legal ones.</phil-narration>
     <ul reveal>
-      <li>EMTALA (1986) says hospitals with emergency rooms that take Medicare must examine anyone who comes in and, if it is an emergency, stabilize or safely transfer them.</li>
-      <li>That holds whether or not the patient can pay. But it is a right to emergency care only: the hospital can still bill, and nothing is owed once the patient is stable.</li>
-      <li>The UN's Universal Declaration of Human Rights (1948) lists medical care as part of a decent standard of living.</li>
-      <li>A 1966 UN treaty recognizes a right to "the highest attainable standard of physical and mental health." The US signed it in 1977 and has never ratified it.</li>
+      <li say="A US law from 1986, called EMTALA, says hospitals with emergency rooms that take Medicare must examine anyone who comes in. If it's an emergency, they must stabilize the patient, or transfer them safely.">EMTALA (1986) says hospitals with emergency rooms that take Medicare must examine anyone who comes in and, if it is an emergency, stabilize or safely transfer them.</li>
+      <li say="That holds whether or not the patient can pay. But it's a right to emergency care only. The hospital can still send a bill, and nothing more is owed once the patient is stable.">That holds whether or not the patient can pay. But it is a right to emergency care only: the hospital can still bill, and nothing is owed once the patient is stable.</li>
+      <li say="The United Nations' Universal Declaration of Human Rights, from 1948, lists medical care as part of a decent standard of living.">The UN's Universal Declaration of Human Rights (1948) lists medical care as part of a decent standard of living.</li>
+      <li say="A 1966 UN treaty recognizes a right to the highest attainable standard of physical and mental health. The United States signed it in 1977, and has never ratified it. As the UN explains, this isn't a right to be healthy. It covers the care and conditions that protect health.">A 1966 UN treaty recognizes a right to "the highest attainable standard of physical and mental health." The US signed it in 1977 and has never ratified it.</li>
     </ul>
     <p class="muted">The UN explains that this right "is not to be understood as a right to be healthy." It covers the care and conditions that protect health.</p>
   </phil-slide>
@@ -151,6 +159,7 @@
   <!-- 8. Classify: what EMTALA guarantees -->
   <phil-slide>
     <h1>The Emergency Room</h1>
+    <phil-narration>A patient having an emergency, who can't pay, comes into the emergency room of a US hospital that takes Medicare. What does EMTALA guarantee, and what doesn't it? Sort each item, then press Check answers.</phil-narration>
     <phil-classify data-qid="right-to-health-care:q3" review="the-law" prompt="A patient having a medical emergency, who can't pay, comes into the emergency room of a US hospital that takes Medicare. What does EMTALA guarantee?"
                    explain="Right. EMTALA is a narrow legal right: an exam, then stabilizing treatment or a safe transfer. The hospital can still bill, and the duty ends once the patient is stable. Whether the patient is owed more is the moral question this lesson is about.">
       <phil-col key="yes" descriptive>Guaranteed</phil-col>
@@ -173,21 +182,23 @@
     </phil-thinker>
     <h1>Is Health Care Special?</h1>
     <p>One argument for a right to health care comes from the philosopher Norman Daniels, who set it out in full in <em>Just Health Care</em> (1985).</p>
+    <phil-narration>One argument for a right to health care comes from the philosopher Norman Daniels, who set it out in full in his 1985 book, Just Health Care.</phil-narration>
     <ul reveal>
-      <li>Nobody thinks you have a right to a fancy hat. You buy one if you want it and can afford it.</li>
-      <li>Most people think a sailor with a broken leg should not be left on the dock because she is poor.</li>
-      <li>Daniels asks what makes health care different from hats. His answer comes in three steps.</li>
+      <li say="Nobody thinks you have a right to a fancy hat. You buy one if you want it and can afford it.">Nobody thinks you have a right to a fancy hat. You buy one if you want it and can afford it.</li>
+      <li say="But most people think a sailor with a broken leg shouldn't be left on the dock because she's poor.">Most people think a sailor with a broken leg should not be left on the dock because she is poor.</li>
+      <li say="So Daniels asks what makes health care different from hats. His answer comes in three steps.">Daniels asks what makes health care different from hats. His answer comes in three steps.</li>
     </ul>
   </phil-slide>
 
   <!-- 10. Step 1: normal functioning -->
   <phil-slide id="normal-functioning">
     <h1>Step 1: Normal Functioning</h1>
+    <phil-narration>Step one is about what health is.</phil-narration>
     <ul reveal>
-      <li>Daniels starts from a plain idea of health. Health is <strong>normal functioning</strong>: your body and mind working the way human bodies and minds typically work.</li>
-      <li>Disease and injury are departures from normal functioning. A broken leg, scurvy, and failing eyes all count.</li>
-      <li>He takes this idea from the philosopher Christopher Boorse. It depends on how the body works, not on what you want.</li>
-      <li>Being short like your parents is not a departure. That case will come back.</li>
+      <li say="Daniels starts from a plain idea of health. Health is normal functioning: your body and mind working the way human bodies and minds typically work.">Daniels starts from a plain idea of health. Health is <strong>normal functioning</strong>: your body and mind working the way human bodies and minds typically work.</li>
+      <li say="Disease and injury are departures from normal functioning. A broken leg, scurvy, and failing eyes all count.">Disease and injury are departures from normal functioning. A broken leg, scurvy, and failing eyes all count.</li>
+      <li say="He takes this idea from the philosopher Christopher Boorse. It depends on how the body works, not on what you want.">He takes this idea from the philosopher Christopher Boorse. It depends on how the body works, not on what you want.</li>
+      <li say="Being short like your parents isn't a departure. That case will come back.">Being short like your parents is not a departure. That case will come back.</li>
     </ul>
   </phil-slide>
 
@@ -195,17 +206,19 @@
   <phil-slide>
     <img slot="art" src="./assets/the-rigging.png" alt="A sailing ship at night with sailors at every station: the crow's nest, the yards, the rigging, the wheel, and the cannons, while the cook in a white apron leans on a crutch on deck">
     <h1>Step 2: The Opportunity Range</h1>
+    <phil-narration>Step two is about opportunity.</phil-narration>
     <ul reveal>
-      <li>Every society offers a range of lives a person could reasonably choose. Daniels calls it the <strong>normal opportunity range</strong>.</li>
-      <li>On a ship, the range is the stations: lookout, topman (who works the sails aloft), helmsman, gunner, cook, and more.</li>
-      <li>Disease shrinks your share of that range. Silver lost his leg, and the rigging closed to him.</li>
-      <li>Health care keeps your share of the range open, or opens it again.</li>
+      <li say="Every society offers a range of lives a person could reasonably choose. Daniels calls it the normal opportunity range.">Every society offers a range of lives a person could reasonably choose. Daniels calls it the <strong>normal opportunity range</strong>.</li>
+      <li say="On a ship, the range is the stations: lookout, topman, helmsman, gunner, cook, and more. A topman works the sails aloft.">On a ship, the range is the stations: lookout, topman (who works the sails aloft), helmsman, gunner, cook, and more.</li>
+      <li say="Disease shrinks your share of that range. Silver lost his leg, and the rigging closed to him.">Disease shrinks your share of that range. Silver lost his leg, and the rigging closed to him.</li>
+      <li say="Health care keeps your share of the range open, or opens it again.">Health care keeps your share of the range open, or opens it again.</li>
     </ul>
   </phil-slide>
 
   <!-- 12. Lanterns viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Light the Lanterns</h1>
+    <phil-narration>Your turn. Each lantern is a station a healthy sailor could work. Pick a sailor to see which stations their condition closes. Then press Treat, and see which lanterns relight. Be sure to compare Tom with Jem, and don't skip Redruth. When you're ready, press Continue.</phil-narration>
     <phil-lanterns prompt="Each lantern is a station a healthy sailor could work. Pick a sailor to see which stations their condition closes. Then give the treatment and see which lanterns relight.">
       <script type="application/json">
       {
@@ -284,11 +297,12 @@
     </phil-thinker>
     <h1>Step 3: Fair Equality of Opportunity</h1>
     <p>The third step comes from John Rawls's <em>A Theory of Justice</em> (1971).</p>
+    <phil-narration>The third step comes from John Rawls's 1971 book, A Theory of Justice.</phil-narration>
     <ul reveal>
-      <li>Rawls argued that jobs and positions must be open to everyone, and not only on paper.</li>
-      <li>People with the same talent and the same willingness to use it should have the same chances, wherever they started.</li>
-      <li>He called this <strong>fair equality of opportunity</strong>. It is one reason schooling is public.</li>
-      <li>Daniels adds that illness takes opportunity away too. So justice requires health care, just as it requires schooling.</li>
+      <li say="Rawls argued that jobs and positions must be open to everyone, and not only on paper.">Rawls argued that jobs and positions must be open to everyone, and not only on paper.</li>
+      <li say="People with the same talent and the same willingness to use it should have the same chances, wherever they started.">People with the same talent and the same willingness to use it should have the same chances, wherever they started.</li>
+      <li say="He called this fair equality of opportunity. It's one reason schooling is public.">He called this <strong>fair equality of opportunity</strong>. It is one reason schooling is public.</li>
+      <li say="Daniels adds that illness takes opportunity away too. So justice requires health care, just as it requires schooling.">Daniels adds that illness takes opportunity away too. So justice requires health care, just as it requires schooling.</li>
     </ul>
   </phil-slide>
 
@@ -296,6 +310,7 @@
   <phil-slide>
     <h1>Put the Argument Together</h1>
     <p>Fill in each step of Daniels's argument.</p>
+    <phil-narration>Now put Daniels's argument together. Fill in each step, then press Check.</phil-narration>
     <phil-cloze data-qid="right-to-health-care:q2" review="normal-functioning" explain="Right. Health care protects normal functioning, normal functioning protects your share of opportunity, and justice requires fair equality of opportunity. So health care is owed as a matter of justice. The conclusion is health care, not health, because nobody can owe you health.">
       <span class="line">1. Health is normal
         <phil-blank answer="functioning" options="happiness,functioning,strength,wealth">functioning</phil-blank>.</span>
@@ -312,17 +327,19 @@
   <phil-slide id="fair-share">
     <img slot="art" src="./assets/the-chest.png" alt="An open chest of gold coins on a ship's deck beside a barrel with a quill and inkpot; above it, a blank parchment with a red wax seal and two inky thumbprints is pinned to the mast">
     <h1>A Fair Share, Not Everything</h1>
+    <phil-narration>Notice what the argument doesn't say.</phil-narration>
     <ul reveal>
-      <li>The argument does not say you are owed every treatment that might help. You are owed your fair share.</li>
-      <li>What is fair depends on what a society can afford. A ship's chest is not a city's treasury.</li>
-      <li>The argument also reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too.</li>
-      <li>In 1983 a US presidential commission agreed that everyone should be able to get "an adequate level of care without excessive burdens." It chose not to call this a right.</li>
+      <li say="It doesn't say you're owed every treatment that might help. You're owed your fair share.">The argument does not say you are owed every treatment that might help. You are owed your fair share.</li>
+      <li say="What's fair depends on what a society can afford. A ship's chest isn't a city's treasury.">What is fair depends on what a society can afford. A ship's chest is not a city's treasury.</li>
+      <li say="The argument also reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too.">The argument also reaches past doctors. Limes, clean water, decent food, and safe rigging protect normal functioning too.</li>
+      <li say="In 1983, a US presidential commission agreed that everyone should be able to get an adequate level of care without excessive burdens. It chose not to call this a right.">In 1983 a US presidential commission agreed that everyone should be able to get "an adequate level of care without excessive burdens." It chose not to call this a right.</li>
     </ul>
   </phil-slide>
 
   <!-- 16. Checkset: what follows -->
   <phil-slide>
     <h1>What Follows?</h1>
+    <phil-narration>Which of these claims are part of Daniels's view, as this lesson presents it? Check every one that is, then press Check answers.</phil-narration>
     <phil-checkset data-qid="right-to-health-care:q1" review="fair-share" prompt="Check every claim that is part of Daniels's view, as this lesson presents it."
                    explain="Right. The right is to a fair share, set by what a society can provide, and it covers anything that protects normal functioning. It is not a right to health, which nobody can owe. And the reason is fairness about opportunity, not the most happiness overall. That second kind of reason is the utilitarian's.">
       <phil-statement correct>Things like clean water and limes, not just doctors' care, fall under the argument too</phil-statement>
@@ -344,11 +361,12 @@
     </phil-thinker>
     <h1>The Utilitarian Case</h1>
     <p>A <strong>utilitarian</strong> doesn't start from rights. Utilitarians judge a choice by its total effect on everyone's well-being.</p>
+    <phil-narration>A utilitarian doesn't start from rights. Utilitarians judge a choice by its total effect on everyone's well-being.</phil-narration>
     <ul reveal>
-      <li>Health is a large part of well-being. A sick crew suffers, and it can't sail.</li>
-      <li>A coin buys more good as medicine for a poor sailor than as wine for a rich one. Each extra coin does less for you the more you already have.</li>
-      <li>John Stuart Mill said a right is something society should protect because of "general utility."</li>
-      <li>So a utilitarian can back a right to care. It is a rule that does the most good, not a demand of fairness.</li>
+      <li say="Health is a large part of well-being. A sick crew suffers, and it can't sail.">Health is a large part of well-being. A sick crew suffers, and it can't sail.</li>
+      <li say="A coin buys more good as medicine for a poor sailor than as wine for a rich one. Each extra coin does less for you, the more you already have.">A coin buys more good as medicine for a poor sailor than as wine for a rich one. Each extra coin does less for you the more you already have.</li>
+      <li say="John Stuart Mill said a right is something society should protect because of general utility.">John Stuart Mill said a right is something society should protect because of "general utility."</li>
+      <li say="So a utilitarian can back a right to care. It's a rule that does the most good, not a demand of fairness.">So a utilitarian can back a right to care. It is a rule that does the most good, not a demand of fairness.</li>
     </ul>
   </phil-slide>
 
@@ -356,11 +374,12 @@
   <phil-slide>
     <img slot="art" src="./assets/lime-barrel.png" alt="On a sunny deck, a gray-haired woman sailor in a headscarf hands out limes from a barrel to a smiling line of sailors with tin cups">
     <h1>Limes for Everyone</h1>
+    <phil-narration>Take scurvy.</phil-narration>
     <ul reveal>
-      <li><strong>Scurvy</strong> was one of the great killers at sea. It comes from too little vitamin C.</li>
-      <li>In 1747 the naval surgeon James Lind gave twelve sailors with scurvy six different remedies. The two given oranges and lemons recovered fastest.</li>
-      <li>Citrus is cheap and protects everyone aboard. On a utilitarian ledger, almost nothing buys more health per coin.</li>
-      <li>Daniels agrees, because prevention keeps everyone's opportunity range open. This is where the two arguments meet.</li>
+      <li say="Scurvy was one of the great killers at sea. It comes from too little vitamin C."><strong>Scurvy</strong> was one of the great killers at sea. It comes from too little vitamin C.</li>
+      <li say="In 1747, the naval surgeon James Lind gave twelve sailors with scurvy six different remedies. The two given oranges and lemons recovered fastest.">In 1747 the naval surgeon James Lind gave twelve sailors with scurvy six different remedies. The two given oranges and lemons recovered fastest.</li>
+      <li say="Citrus is cheap, and it protects everyone aboard. On a utilitarian ledger, almost nothing buys more health per coin.">Citrus is cheap and protects everyone aboard. On a utilitarian ledger, almost nothing buys more health per coin.</li>
+      <li say="Daniels agrees, because prevention keeps everyone's opportunity range open. This is where the two arguments meet.">Daniels agrees, because prevention keeps everyone's opportunity range open. This is where the two arguments meet.</li>
     </ul>
   </phil-slide>
 
@@ -368,6 +387,7 @@
   <phil-slide id="two-reasons">
     <h1>Two Reasons for Care</h1>
     <p>Both views back care for everyone: both say a sick sailor who can't pay should still get care. They give different reasons, and the reasons matter when the chest runs short.</p>
+    <phil-narration>Both views say a sick sailor who can't pay should still get care. But they give different reasons, and the reasons matter when the chest runs short. For Daniels, care is owed because illness takes away a fair share of opportunity. What matters is each person's loss, not just the total. Kit, a cabin girl, has a fever that may kill her. Her whole range is at stake, so her claim is strong. For the utilitarian, care is worth buying because it does the most good, added up across the crew. If the same coins could cure thirty toothaches, the total might favor the thirty.</phil-narration>
     <phil-compare>
       <phil-side label="Daniels" tag="Fairness">
         <p>Care is owed because illness takes away a fair share of opportunity. What matters is each person's loss, not just the total.</p>
@@ -383,6 +403,7 @@
   <!-- 20. Classify: Daniels, utilitarian, or both -->
   <phil-slide>
     <h1>Where They Split</h1>
+    <phil-narration>Who would say each of these: Daniels, a utilitarian, or both? Sort them, then press Check answers.</phil-narration>
     <phil-classify data-qid="right-to-health-care:q4" review="two-reasons" prompt="Who would say this: Daniels, a utilitarian, or both?"
                    explain="Right. Both views back care for everyone and cheap prevention. They split on the reason, and on whether the total is all that counts.">
       <phil-col key="dan">Daniels</phil-col>
@@ -407,11 +428,12 @@
     </phil-thinker>
     <h1>The Natural Lottery</h1>
     <p>Silver lost his leg, saved his pay, and bought a tavern with no help from anyone. Was he owed help? The philosopher H. Tristram Engelhardt (1986) said no.</p>
+    <phil-narration>Silver lost his leg, saved his pay, and bought a tavern with no help from anyone. Was he owed help? The philosopher Tristram Engelhardt said no.</phil-narration>
     <ul reveal>
-      <li>Some losses come from nature: storms, germs, a falling spar. Engelhardt, borrowing a phrase from Rawls, called this the <strong>natural lottery</strong>.</li>
-      <li>A loss in the natural lottery is <strong>unfortunate</strong>. It is <strong>unfair</strong> only if someone wronged you.</li>
-      <li>If nobody wronged you, nobody owes you repair. Helping you is kind, but it is charity, not a right.</li>
-      <li>People may still choose to pool their money for care. What they can't do is claim care from others as a right.</li>
+      <li say="Some losses come from nature: storms, germs, a falling spar. Engelhardt, borrowing a phrase from Rawls, called this the natural lottery.">Some losses come from nature: storms, germs, a falling spar. Engelhardt, borrowing a phrase from Rawls, called this the <strong>natural lottery</strong>.</li>
+      <li say="A loss in the natural lottery is unfortunate. It's unfair only if someone wronged you.">A loss in the natural lottery is <strong>unfortunate</strong>. It is <strong>unfair</strong> only if someone wronged you.</li>
+      <li say="If nobody wronged you, nobody owes you repair. Helping you is kind, but it's charity, not a right.">If nobody wronged you, nobody owes you repair. Helping you is kind, but it is charity, not a right.</li>
+      <li say="People may still choose to pool their money for care. What they can't do is claim care from others as a right.">People may still choose to pool their money for care. What they can't do is claim care from others as a right.</li>
     </ul>
   </phil-slide>
 
@@ -419,11 +441,12 @@
   <phil-slide>
     <img slot="art" src="./assets/two-storms.png" alt="Two scenes side by side: on the left, lightning from a storm cloud strikes a ship; on the right, one ship fires a cannon at another">
     <h1>A Reply</h1>
+    <phil-narration>Defenders of a right to care have a reply.</phil-narration>
     <ul reveal>
-      <li>Defenders of a right to care can grant the first point. A storm wrongs nobody.</li>
-      <li>But Rawls wrote that the natural distribution of talents is "neither just nor unjust." What is just or unjust is "the way that institutions deal with these facts."</li>
-      <li>A crew that leaves its injured on the dock has made a choice. That choice can be unfair even when the storm was not.</li>
-      <li>Much illness isn't pure luck, either. Silver lost his leg in a sea battle, doing the crew's most dangerous work.</li>
+      <li say="They can grant the first point. A storm wrongs nobody.">Defenders of a right to care can grant the first point. A storm wrongs nobody.</li>
+      <li say="But Rawls wrote that the natural distribution of talents is neither just nor unjust. What's just or unjust is the way that institutions deal with these facts.">But Rawls wrote that the natural distribution of talents is "neither just nor unjust." What is just or unjust is "the way that institutions deal with these facts."</li>
+      <li say="A crew that leaves its injured on the dock has made a choice. That choice can be unfair, even when the storm was not.">A crew that leaves its injured on the dock has made a choice. That choice can be unfair even when the storm was not.</li>
+      <li say="And much illness isn't pure luck, either. Silver lost his leg in a sea battle, doing the crew's most dangerous work.">Much illness isn't pure luck, either. Silver lost his leg in a sea battle, doing the crew's most dangerous work.</li>
     </ul>
   </phil-slide>
 
@@ -431,6 +454,7 @@
   <phil-slide>
     <img slot="art" src="./assets/silver.png" alt="Long John Silver: a broad cook in a white apron in a ship's galley, standing on one leg with a wooden crutch, a ladle in his hand and a green parrot on his shoulder">
     <h1>Decision Point: Silver's Sixpence</h1>
+    <phil-narration>The crew votes that every hand pays sixpence a month into the chest. Silver says he can look after himself. Should he have to pay? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="The crew votes that every hand pays sixpence a month into the chest. Silver says he can look after himself. Should he have to pay?"
                explain="The objection's strongest point is that bad luck is not injustice. The strongest reply is that a crew chooses how to respond to bad luck, and that choice can be unjust. Notice one more thing. Every hand signs the articles before sailing. Nobody signs up to be born in a country, which is why the objection bites harder against a government than against a crew.">
       <phil-choice note="This treats the chest as insurance against risks every hand faces, which is close to Daniels.">Yes. Every hand shares the risks, so every hand pays.</phil-choice>
@@ -445,11 +469,12 @@
     <img slot="art" src="./assets/two-boys.png" alt="Below decks by lantern light, two cabin boys of the same height stand on either side of a notched post: a thin, tired boy wrapped in a blanket and a sturdy, grinning Black boy">
     <h1>Too Little? The Two Cabin Boys</h1>
     <p>Other critics say Daniels's argument covers too little. Consider two cabin boys.</p>
+    <phil-narration>Other critics say Daniels's argument covers too little. Consider two cabin boys.</phil-narration>
     <ul reveal>
-      <li>Tom is short because a long fever stunted his growth. Jem is just as short because his parents are short.</li>
-      <li>The same tonic would make either boy taller. On Daniels's view, only Tom is owed it.</li>
-      <li>This pair is modeled on a real 1990 debate about growth hormone, which used two boys called Johnny and Billy.</li>
-      <li>Critics ask: if the two boys' lives will go the same way, why should the cause of their height decide who gets help?</li>
+      <li say="Tom is short because a long fever stunted his growth. Jem is just as short, because his parents are short.">Tom is short because a long fever stunted his growth. Jem is just as short because his parents are short.</li>
+      <li say="The same tonic would make either boy taller. On Daniels's view, only Tom is owed it.">The same tonic would make either boy taller. On Daniels's view, only Tom is owed it.</li>
+      <li say="This pair is modeled on a real 1990 debate about growth hormone, which used two boys called Johnny and Billy.">This pair is modeled on a real 1990 debate about growth hormone, which used two boys called Johnny and Billy.</li>
+      <li say="Critics ask: if the two boys' lives will go the same way, why should the cause of their height decide who gets help?">Critics ask: if the two boys' lives will go the same way, why should the cause of their height decide who gets help?</li>
     </ul>
   </phil-slide>
 
@@ -457,11 +482,12 @@
   <phil-slide>
     <img slot="art" src="./assets/last-watch.png" alt="A ship's sickbay by lantern light: an old white-haired woman sailor rests peacefully in a hammock while Dr. Livesey, in his white wig and blue coat, sits beside her holding her hand">
     <h1>Too Little? The Last Watch</h1>
+    <phil-narration>Here's a harder case.</phil-narration>
     <ul reveal>
-      <li>Old Redruth is dying. No treatment will give her back a single station.</li>
-      <li>Laudanum and nursing would ease her pain in her last weeks. On the opportunity account, it is hard to say why that is owed.</li>
-      <li>A utilitarian has no such trouble. Suffering is bad, and easing it does good, whatever your opportunities are.</li>
-      <li>Daniels agrees that care for the dying is owed. He grants that it raises issues of compassion and beneficence that go beyond justice.</li>
+      <li say="Old Redruth is dying. No treatment will give her back a single station.">Old Redruth is dying. No treatment will give her back a single station.</li>
+      <li say="Laudanum and nursing would ease her pain in her last weeks. But on the opportunity account, it's hard to say why that's owed.">Laudanum and nursing would ease her pain in her last weeks. On the opportunity account, it is hard to say why that is owed.</li>
+      <li say="A utilitarian has no such trouble. Suffering is bad, and easing it does good, whatever your opportunities are.">A utilitarian has no such trouble. Suffering is bad, and easing it does good, whatever your opportunities are.</li>
+      <li say="Daniels agrees that the dying should get this care. He grants that it raises questions of compassion and beneficence, which go beyond justice.">Daniels agrees that the dying should get this care. He grants that it raises questions of compassion and beneficence, which go beyond justice.</li>
     </ul>
   </phil-slide>
 
@@ -471,17 +497,19 @@
   <phil-slide>
     <img slot="art" src="./assets/bailing.png" alt="In a lantern-lit hold with water swirling around their legs, three sailors pass buckets up toward an open hatch: a young Black woman, a bearded white man, and an old East Asian man">
     <h1>The Bottomless Hull</h1>
+    <phil-narration>Now the chest runs short.</phil-narration>
     <ul reveal>
-      <li>Every bucket bailed helps, and the leak never stops.</li>
-      <li>Health care is like that. There is always another test, another treatment, or another month of life that more money could buy.</li>
-      <li>So every real system <strong>rations</strong>: it limits care somehow. It can ration by price, by waiting lists, or by rules about what is covered.</li>
-      <li>Daniels agrees that a right to care can't be a right to everything. The hard part is deciding who gets what when the chest runs short.</li>
+      <li say="Every bucket bailed helps, and the leak never stops.">Every bucket bailed helps, and the leak never stops.</li>
+      <li say="Health care is like that. There's always another test, another treatment, or another month of life that more money could buy.">Health care is like that. There is always another test, another treatment, or another month of life that more money could buy.</li>
+      <li say="So every real system rations. It limits care somehow: by price, by waiting lists, or by rules about what's covered.">So every real system <strong>rations</strong>: it limits care somehow. It can ration by price, by waiting lists, or by rules about what is covered.</li>
+      <li say="Daniels agrees that a right to care can't be a right to everything. The hard part is deciding who gets what when the chest runs short.">Daniels agrees that a right to care can't be a right to everything. The hard part is deciding who gets what when the chest runs short.</li>
     </ul>
   </phil-slide>
 
   <!-- 27. Chest viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Spend the Chest</h1>
+    <phil-narration>Your turn to spend the chest. It holds a hundred coins, and the claims add up to a hundred and thirty. The ledger counts healthy sailor-years: the years of healthy life each claim buys, like the quality-adjusted life years that health economists use. Press Pay on the claims you'd fund, or try one of the ready-made choices, and read the notes. When you're ready, press Continue.</phil-narration>
     <phil-chest budget="100" prompt="The chest holds 100 coins, and the claims add up to 130. A utilitarian ledger counts &lt;strong&gt;healthy sailor-years&lt;/strong&gt;: years of healthy life each claim buys, like the QALYs (quality-adjusted life years) health economists use. Pay for the claims you would fund.">
       <script type="application/json">
       {
@@ -514,11 +542,12 @@
   <phil-slide>
     <h1>Oregon, 1987</h1>
     <p class="lead">This trade-off has happened in real life.</p>
+    <phil-narration>This trade-off has happened in real life.</phil-narration>
     <ul reveal class="serious">
-      <li>In 1987 Oregon's Medicaid stopped paying for heart, liver, pancreas, and bone-marrow transplants. The money went to basic care for more poor children and pregnant women.</li>
-      <li>Coby Howard, age seven, needed a bone-marrow transplant for leukemia. His family raised over half the $100,000 it would cost.</li>
-      <li>He died in December 1987, still short of the money and without a donor match. Doctors disagreed on whether a transplant would have saved him.</li>
-      <li>Oregon's leaders said the trade would save more lives, and those people were just as real. His death made it hard to accept. That pull is the rule of rescue.</li>
+      <li say="In 1987, Oregon's Medicaid program stopped paying for heart, liver, pancreas, and bone-marrow transplants. The money went to basic care for more poor children and pregnant women.">In 1987 Oregon's Medicaid stopped paying for heart, liver, pancreas, and bone-marrow transplants. The money went to basic care for more poor children and pregnant women.</li>
+      <li say="Coby Howard, age seven, needed a bone-marrow transplant for leukemia. His family raised over half of the hundred thousand dollars it would cost.">Coby Howard, age seven, needed a bone-marrow transplant for leukemia. His family raised over half the $100,000 it would cost.</li>
+      <li say="He died in December 1987, still short of the money, and without a donor match. Doctors disagreed about whether a transplant would have saved him.">He died in December 1987, still short of the money and without a donor match. Doctors disagreed on whether a transplant would have saved him.</li>
+      <li say="Oregon's leaders said the trade would save more lives, and those people were just as real. His death made the trade hard to accept. The pull to save one person we can see, whatever it costs, is called the rule of rescue.">Oregon's leaders said the trade would save more lives, and those people were just as real. His death made the trade hard to accept. The pull to save the one person we can see is the rule of rescue.</li>
     </ul>
   </phil-slide>
 
@@ -526,7 +555,8 @@
   <phil-slide>
     <img slot="art" src="./assets/man-overboard.png" alt="Sailors of many ages crowd a ship's rail and throw a life ring to a young woman swimming in rough waves">
     <h1>Decision Point: Man Overboard</h1>
-    <p>In 1986 the bioethicist Albert Jonsen named the <strong>rule of rescue</strong>, the pull to save a person we can see from death, whatever it costs: "We throw a rope to the drowning."</p>
+    <phil-narration>In 1986, the bioethicist Albert Jonsen named the rule of rescue: the pull to rescue a person we can see in danger of death, whatever it costs. As he put it, we throw a rope to the drowning. Now, a sailor falls overboard in a storm. Turning back will cost two days and the stores the crew needs to reach port. What should the captain do? This one isn't graded. Pick the answer closest to your view.</phil-narration>
+    <p>In 1986 the bioethicist Albert Jonsen named the <strong>rule of rescue</strong>, the pull to rescue a person we can see in danger of death, whatever it costs: "We throw a rope to the drowning."</p>
     <phil-poll prompt="A sailor falls overboard in a storm. Turning back will cost two days and stores the crew needs to reach port. What should the captain do?"
                explain="The rule of rescue fits how most people feel. Many utilitarians call it a bias: a life we can see counts no more than one we can't. The children and mothers who got basic care in Oregon were statistical lives. Coby Howard was an identified life.">
       <phil-choice note="This is the rule of rescue. Most people feel it strongly.">Turn back. You don't leave a shipmate in the water.</phil-choice>
@@ -539,11 +569,12 @@
   <phil-slide id="oregon-list">
     <img slot="art" src="./assets/many-and-one.png" alt="A brass balance scale on a ship's deck: a glowing magenta heart in one pan is outweighed by a heap of small gold pebbles in the other">
     <h1>The Oregon List</h1>
+    <phil-narration>Three years later, Oregon tried something new.</phil-narration>
     <ul reveal>
-      <li>In 1990 Oregon tried rationing in the open. It ranked about 1,600 treatments by cost and benefit and planned to pay for those above a line.</li>
-      <li>The first list ranked capping a tooth above surgery for an ectopic pregnancy, which can kill the mother.</li>
-      <li>That is the <strong>aggregation problem</strong>. Add up enough small benefits, and they outrank saving a life.</li>
-      <li>Oregon rewrote the list. In 1992 the federal government still rejected it at first, saying its scores counted disabled people's lives as worth less.</li>
+      <li say="In 1990, Oregon tried rationing in the open. It ranked about sixteen hundred treatments by cost and benefit, and planned to pay for those above a line.">In 1990 Oregon tried rationing in the open. It ranked about 1,600 treatments by cost and benefit and planned to pay for those above a line.</li>
+      <li say="The first list ranked capping a tooth above surgery for an ectopic pregnancy, which can kill the mother.">The first list ranked capping a tooth above surgery for an ectopic pregnancy, which can kill the mother.</li>
+      <li say="That's the aggregation problem. Add up enough small benefits, and they outrank saving a life.">That is the <strong>aggregation problem</strong>. Add up enough small benefits, and they outrank saving a life.</li>
+      <li say="Oregon rewrote the list. In 1992, the federal government still rejected it at first, saying its scores counted disabled people's lives as worth less.">Oregon rewrote the list. In 1992 the federal government still rejected it at first, saying its scores counted disabled people's lives as worth less.</li>
     </ul>
   </phil-slide>
 
@@ -551,17 +582,19 @@
   <phil-slide id="four-questions">
     <h1>Four Hard Questions</h1>
     <p>When the chest can't pay for everyone, these questions come up. Daniels says no formula settles the first three.</p>
+    <phil-narration>When the chest can't pay for everyone, four hard questions come up. Daniels says no formula settles the first three.</phil-narration>
     <ul reveal>
-      <li><strong>Aggregation.</strong> Can many small benefits, added up, outweigh one large one? Thirty toothaches against one fever.</li>
-      <li><strong>Fair chances.</strong> Should each sailor in need get a chance, say by drawing lots, even if the chest would do more good elsewhere?</li>
-      <li><strong>The sickest first.</strong> How much extra weight should the sickest sailor get, even if treating others would do more good?</li>
-      <li><strong>The rule of rescue.</strong> The pull to save a person we can see in danger, whatever it costs.</li>
+      <li say="Aggregation. Can many small benefits, added up, outweigh one large one? Thirty toothaches against one fever."><strong>Aggregation.</strong> Can many small benefits, added up, outweigh one large one? Thirty toothaches against one fever.</li>
+      <li say="Fair chances. Should each sailor in need get a chance, say by drawing lots, even if the chest would do more good elsewhere?"><strong>Fair chances.</strong> Should each sailor in need get a chance, say by drawing lots, even if the chest would do more good elsewhere?</li>
+      <li say="The sickest first. How much extra weight should the sickest sailor get, even if treating others would do more good?"><strong>The sickest first.</strong> How much extra weight should the sickest sailor get, even if treating others would do more good?</li>
+      <li say="And the rule of rescue: the pull to save a person we can see in danger, whatever it costs."><strong>The rule of rescue.</strong> The pull to save a person we can see in danger, whatever it costs.</li>
     </ul>
   </phil-slide>
 
   <!-- 31. Classify: name the problem -->
   <phil-slide>
     <h1>Name the Problem</h1>
+    <phil-narration>Each sailor here raises one of the four hard questions. Which one? Sort them, then press Check answers.</phil-narration>
     <phil-classify data-qid="right-to-health-care:q5" review="four-questions" prompt="Each sailor raises one of the four hard questions. Which one?"
                    explain="Right. Aggregation adds small benefits up. Fair chances gives each person a shot. The sickest first puts the sickest ahead. The rule of rescue is the pull of a life you can see.">
       <phil-col key="agg">Aggregation</phil-col>
@@ -586,17 +619,19 @@
     <img slot="art" src="./assets/the-vote.png" alt="A mixed crew on deck at sunset with hands raised in a vote; in front stand the gray-haired captain in a tricorn hat, Dr. Livesey in his white wig, and the cook on his crutch">
     <h1>When Principles Run Out</h1>
     <p>Daniels admits no principle settles the first three questions. So he and the psychiatrist James Sabin asked what makes a limit fair to impose. Their answer is <strong>accountability for reasonableness</strong>.</p>
+    <phil-narration>Daniels admits no principle settles the first three questions. So he and the psychiatrist James Sabin asked a different question: what makes a limit fair to impose? Their answer is called accountability for reasonableness. It has four conditions.</phil-narration>
     <ul reveal>
-      <li><strong>Publicity.</strong> The rules for who gets what, and the reasons for them, are posted for everyone to see.</li>
-      <li><strong>Relevance.</strong> The reasons are ones fair-minded people can accept, like evidence about what works.</li>
-      <li><strong>Appeals.</strong> Anyone can challenge a decision, and the rules change when new evidence or arguments appear.</li>
-      <li><strong>Enforcement.</strong> Someone makes sure the first three conditions are actually kept.</li>
+      <li say="Publicity. The rules for who gets what, and the reasons for them, are posted for everyone to see."><strong>Publicity.</strong> The rules for who gets what, and the reasons for them, are posted for everyone to see.</li>
+      <li say="Relevance. The reasons are ones fair-minded people can accept, like evidence about what works."><strong>Relevance.</strong> The reasons are ones fair-minded people can accept, like evidence about what works.</li>
+      <li say="Appeals. Anyone can challenge a decision, and the rules change when new evidence or arguments appear."><strong>Appeals.</strong> Anyone can challenge a decision, and the rules change when new evidence or arguments appear.</li>
+      <li say="Enforcement. Someone makes sure the first three conditions are actually kept."><strong>Enforcement.</strong> Someone makes sure the first three conditions are actually kept.</li>
     </ul>
   </phil-slide>
 
   <!-- 33. Articles viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Write the Article</h1>
+    <phil-narration>Now it's your turn, clerk. Make one choice in each box to write Article the Ninth: what the chest owes, who fills it, and who decides when it runs short. Then see how each view judges what you wrote. When you're done, press Continue.</phil-narration>
     <phil-articles prompt="You are the clerk. Make one choice in each box to write Article the Ninth, then see how each view judges it."></phil-articles>
   </phil-slide>
 
@@ -605,19 +640,36 @@
     <h1>Where You Stand Now</h1>
     <p>These are your ratings from the start. Rate each statement again.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.</phil-narration>
+    <phil-narration when="after">Thank you. The tide is turning, and the ship is ready.</phil-narration>
   </phil-slide>
 
   <!-- 35. Recap -->
   <phil-slide>
     <img slot="art" src="./assets/hispaniola-dock.png" alt="A three-masted sailing ship moored in a harbor at sunset, with a wooden sea chest sitting on the stone quay in the foreground">
     <h1>The Articles, Summed Up</h1>
+    <phil-narration>Here are the articles, summed up.</phil-narration>
     <ul reveal>
-      <li><strong>The question</strong>: a moral right to health care is a positive right to care, never to health. US law gives a narrow right to emergency care.</li>
-      <li><strong>Daniels</strong>: health protects your share of opportunity, and justice protects opportunity. So care is owed, up to a fair share.</li>
-      <li><strong>The utilitarian</strong>: care, above all cheap prevention, does great good. Added-up benefits can outweigh one person's claim.</li>
-      <li><strong>The objections</strong>: Engelhardt says bad luck is not injustice. Critics say Daniels's line falls in odd places. Rationing raises problems that only a fair process can settle.</li>
+      <li say="The question: a moral right to health care is a positive right to care, never to health. And US law gives only a narrow right to emergency care."><strong>The question</strong>: a moral right to health care is a positive right to care, never to health. US law gives a narrow right to emergency care.</li>
+      <li say="Daniels: health protects your share of opportunity, and justice protects opportunity. So care is owed, up to a fair share."><strong>Daniels</strong>: health protects your share of opportunity, and justice protects opportunity. So care is owed, up to a fair share.</li>
+      <li say="The utilitarian: care, above all cheap prevention, does great good. And added-up benefits can outweigh one person's claim."><strong>The utilitarian</strong>: care, above all cheap prevention, does great good. Added-up benefits can outweigh one person's claim.</li>
+      <li say="The objections: Engelhardt says bad luck isn't injustice. Critics say Daniels's line falls in odd places. And rationing raises problems that only a fair process can settle. The Hispaniola sails at dawn. Whatever you wrote, every hand will live by it."><strong>The objections</strong>: Engelhardt says bad luck is not injustice. Critics say Daniels's line falls in odd places. Rationing raises problems that only a fair process can settle.</li>
     </ul>
     <p class="muted">The <em>Hispaniola</em> sails at dawn. Whatever you wrote, every hand will live by it.</p>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Norman Daniels, “<a href="https://plato.stanford.edu/entries/justice-healthcareaccess/">Justice and Access to Health Care</a>,” <em>Stanford Encyclopedia of Philosophy</em> (2008, rev. 2017). A free survey of the whole debate, by Daniels himself.</li>
+      <li>Norman Daniels, <em>Just Health Care</em> (Cambridge University Press, 1985), chapters 1–3. The opportunity argument in full.</li>
+      <li>H. Tristram Engelhardt Jr., <em>The Foundations of Bioethics</em> (Oxford University Press, 1986). The source of the natural lottery objection to a right to care.</li>
+      <li>Norman Daniels and James Sabin, “<a href="https://doi.org/10.1111/j.1088-4963.1997.tb00082.x">Limits to Health Care: Fair Procedures, Democratic Deliberation, and the Legitimacy Problem for Insurers</a>,” <em>Philosophy &amp; Public Affairs</em> 26, no. 4 (1997): 303–350. The paper behind accountability for reasonableness.</li>
+      <li>Jennifer Prah Ruger, <em>Health and Social Justice</em> (Oxford University Press, 2010). A different foundation for the right, built on human capabilities.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Microsoft text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

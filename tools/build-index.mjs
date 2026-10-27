@@ -37,7 +37,7 @@ async function collect() {
       try { html = await readFile(file, 'utf8'); } catch { continue; }
       const slides = count(html, /<phil-slide[\s>]/gi);
       const optional = count(html, /<phil-slide[^>]*\boptional\b/gi);
-      const questions = count(html, /<phil-(?:mcq|checkset|cloze)[\s>]/gi);
+      const questions = count(html, /<phil-(?:mcq|checkset|cloze|classify)[\s>]/gi);
       const scorm = `dist/scorm/${getScormFilename(topic, lesson)}`;
       const thumb = `shared/thumbs/${topic}--${lesson}.webp`;
       const art = grab(html, /<img[^>]*\bslot="art"[^>]*\bsrc="\.\/([^"]+)"/i);
@@ -52,6 +52,7 @@ async function collect() {
         subject: grab(html, /<phil-lesson[^>]*\bsubject="([^"]+)"/i),
         desc:  grab(html, /<meta\s+name="description"\s+content="([^"]+)"/i),
         slides, questions,
+        narrated: /<phil-narration\b/i.test(html),                    // has the narrated player
         required: slides - optional,                                  // what the progress bar counts
         minutes: Math.max(5, Math.round((slides * 0.6) / 5) * 5),  // ~0.6 min/slide, to nearest 5
       });
@@ -168,7 +169,8 @@ function renderCatalog(topics) {
             </div>
             <div class="meta">
               <span class="badge">~${l.minutes} min</span>
-              <span class="badge">${l.questions} question${l.questions === 1 ? '' : 's'}</span>
+              <span class="badge">${l.questions} question${l.questions === 1 ? '' : 's'}</span>${l.narrated ? `
+              <span class="badge badge--narrated">Narrated</span>` : ''}
               <span class="badge badge--progress" hidden></span>
             </div>
           </a>`).join('')}
@@ -213,6 +215,7 @@ function renderCatalog(topics) {
     .badge { font-family: var(--pixel); font-size: 8px; color: var(--muted); background: var(--panel);
              border: 2px solid var(--border); padding: 4px 6px; }
     .badge--progress { color: var(--accent); }
+    .badge--narrated { color: var(--accent-2); }
     .badge--progress.is-done { color: var(--bg); background: var(--accent); }
 
     .more { margin-top: 40px; color: var(--muted); }

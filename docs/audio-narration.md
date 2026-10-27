@@ -1,60 +1,123 @@
-# Audio narration (shelved — kept for later)
+# The narrated player
 
-We prototyped per-slide narration, then **shelved it**. No lessons currently use
-it. The tooling and engine support are intact, so re-enabling is just a matter of
-adding narration text back to slides. This doc is the how-to.
+A lesson with narration gets a **Play** button. Pressed, the lesson plays like a
+narrated slideshow: a voice introduces each slide, each bullet appears as its
+line is spoken, and slides with nothing to do move on by themselves. The player
+stops at every activity and picks up again once the student finishes. Captions
+are on by default.
 
-## Status
-- ✅ Generator script: `tools/generate-audio.py` (uses **edge-tts**, no API key).
-- ✅ Engine support: `<phil-lesson>` plays `assets/audio/<slide.id>.mp3` on slide
-  show, with a 🔇/🔊 toggle in the top bar. **The toggle only appears if the lesson
-  contains at least one `<phil-narration>`** — so silent lessons show no audio UI.
-- ⏸️ No `<phil-narration>` in any lesson right now (removed on purpose).
+The click-through lesson is still there: a student who never presses Play gets
+the ordinary lesson, and a paused player behaves exactly like it. Next and Back
+always work, so nothing is ever locked.
 
-## How to add narration to a lesson
-1. On each slide you want narrated, give the slide a **stable `id`** and add a
-   `<phil-narration>` with clean spoken text (it's hidden on screen):
-   ```html
-   <phil-slide id="the-dream">
-     <h1>The Dream</h1>
-     <p>…on-screen content…</p>
-     <phil-narration>Spoken script for this slide. Write for the ear,
-       not as a verbatim read of the bullets.</phil-narration>
-   </phil-slide>
-   ```
-   The `id` is the contract between the generator and the player: the engine looks
-   for `assets/audio/<id>.mp3`, and the generator writes that filename.
-2. Generate the MP3s:
-   ```bash
-   pip install edge-tts
-   python tools/generate-audio.py lessons/<topic>/<lesson>
-   # optional voice override, e.g.:
-   python tools/generate-audio.py lessons/<topic>/<lesson> --voice en-US-GuyNeural
-   ```
-   It writes `lessons/<topic>/<lesson>/assets/audio/<id>.mp3` plus a
-   `manifest.json` (content hashes) so unchanged slides are skipped on re-runs.
-3. Open the lesson and click the **🔇** button to enable audio (default is off).
+**In use:** *The Midnight Tribunal* (`ethical-theory/utilitarianism`, the
+pilot), *The Masquerade of Silverport* (`ai-ethics/masquerade-silverport`) and
+*The Ship's Chest* (`bioethics/right-to-health-care`). The catalog marks
+narrated lessons with a **Narrated** badge.
 
-## Notes & gotchas
-- **Autoplay:** browsers block audio until the first user gesture, so slide 1 stays
-  silent until you click 🔇→🔊 (or otherwise interact). That click is the gesture
-  that unlocks playback for the rest of the lesson. Default is **off** so nothing
-  surprises a classroom.
-- **MP3s are binary blobs in Git.** Fine for a few; if narration ever covers many
-  slides across many lessons, move audio to **Git LFS** (or generate at deploy
-  time) rather than committing it.
-- **Voices:** any edge-tts voice works — e.g. `en-US-AriaNeural` (default),
-  `en-US-GuyNeural`, `en-GB-SoniaNeural`. List them with `edge-tts --list-voices`.
+## What the student sees
 
-## Known rough edge to solve before real use: reveal slides
-One clip per slide doesn't pace well with **bullets revealed one at a time** — the
-audio reads everything while the bullets are still hidden. Two ways forward when we
-revisit this:
-- **Quick:** write **reveal-agnostic** narration (describe the throughline, don't
-  enumerate the bullets). No code changes.
-- **Better (recommended):** **per-step clips** — a slide-level `<phil-narration>`
-  for the intro plus a `say="…"` on each reveal `<li>`; the generator emits
-  `<id>-0.mp3`, `<id>-1.mp3`, … and each Reveal click both shows the bullet and
-  plays its line. The existing reveal handler is the natural trigger. Decide
-  whether a finished clip should auto-advance the next bullet or wait for a click
-  (default: wait, to keep presenter control).
+- **▶ Play** in the bottom bar on every slide, and a large **▶ Play with
+  narration** button on the title slide. Space also plays and pauses.
+- **❚❚ Pause / ▶ Resume.** While paused, Next reveals bullets one at a time as
+  usual, and Resume carries on from wherever the student got to.
+- **↻** replays the current slide. **1×** cycles 1, 1.25, 1.5 and 0.75 speed.
+  **CC** turns captions off and on. Speed and captions are remembered.
+- At an activity the button reads **✎ Your turn** until the student finishes.
+  Then it reads **▶ Continue**.
+- While playing, Next skips to the next bullet's line, or to the next slide.
+
+## When the player waits
+
+After a slide's last line, the player decides whether to move on:
+
+| The slide has… | The player… |
+|---|---|
+| a graded question not yet solved, or a poll or belief probe not yet done | waits (**✎ Your turn**), then plays the slide's after line, if any, and offers **Continue** |
+| an activity that's already done (or finished while the narrator talked) | plays the after line, if any, and offers **Continue**, so the feedback is never whisked away |
+| `hold` on the `<phil-slide>`, or a `<phil-branch>` | offers **Continue** (for widgets with no "done" signal, like the cake slider) |
+| a review detour after a miss | offers **Continue**, which goes back to the question |
+| nothing to do | moves on after a second |
+
+## Writing the script
+
+Three kinds of line, all plain text:
+
+```html
+<phil-slide id="kinds-of-desire">
+  <h1>Not All Desires Are Equal</h1>
+  <!-- the intro: spoken first -->
+  <phil-narration>So why does Epicurus frown at your cake? Because he sorts
+    desires into three bins.</phil-narration>
+  <ul reveal>
+    <!-- one line per reveal step, spoken as the step appears -->
+    <li say="First, desires that are natural and necessary…">…</li>
+    <li say="Second, desires that are natural but unnecessary…">…</li>
+  </ul>
+</phil-slide>
+
+<phil-slide>
+  <phil-beliefs>…</phil-beliefs>
+  <phil-narration>Rate each of these five statements, then press Submit.</phil-narration>
+  <!-- optional: spoken once the activity is done -->
+  <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
+</phil-slide>
+
+<!-- an explore widget with no "done" signal: wait for Continue -->
+<phil-slide hold>…</phil-slide>
+```
+
+- **Write for the ear.** Short sentences. Paraphrase the bullet, don't read it
+  out; the student can already see it. The same register rules apply as on the
+  slides (`node tools/check-register.mjs` reads the script too).
+- **Spell out what TTS stumbles on:** "forty-dollar" rather than "$40", no
+  decimals, no abbreviations with periods ("e.g.", "Dr."). Captions break at
+  sentence ends, so a period inside an abbreviation splits a caption.
+- **Tell the student what to press** on activity slides, using the UI's labels:
+  *Check answers* (classify, checkset), *Check* (cloze), *Submit* (belief
+  probes), *Continue* (the player).
+- **Every step on a narrated slide needs a `say`.** A step without one still
+  appears, after a pause long enough to read it, but in silence.
+- The script is not part of the click-through lesson, so it must never carry
+  anything a question depends on. `student-view.mjs` leaves it out of the
+  blind-solver view for that reason.
+
+## Generating the audio
+
+```bash
+pip install -U edge-tts           # keep it current; old versions get a 403 from the service
+python tools/generate-audio.py lessons/<topic>/<lesson> --dry-run   # list lines and word count
+python tools/generate-audio.py lessons/<topic>/<lesson>
+```
+
+- Uses **edge-tts**: free, no API key, needs network. Default voice
+  `en-US-AvaMultilingualNeural`. Change it with `--voice NAME` (list them with
+  `python -m edge_tts --list-voices`); the choice is remembered in the lesson's
+  `assets/audio/manifest.json`, so later runs keep it.
+- Each line becomes `assets/audio/<hash>.mp3`, named by a hash of its text that
+  the engine computes too. **Editing a line can never play stale audio.** Until
+  you re-run the script, that line shows its captions at reading speed instead.
+  The same fallback lets you try a whole script before generating anything.
+- Re-runs render only lines whose text, pronunciation or voice changed, and
+  delete clips nothing uses any more.
+- The free service throttles a long run now and then. Each line is retried with
+  backoff, a failed line never leaves a broken clip, and any line that still
+  fails is listed at the end. Run the script again to fill in just those.
+- **Pronunciation:** names the voice gets wrong are respelled for the voice only
+  in `tools/pronunciations.json` (`{"Cy": "Sigh"}`). Captions keep the real
+  spelling. Listen to new names before shipping.
+- **Size:** about 6 KB per second of speech. A lesson's narration runs 1,800 to
+  2,700 words (11 to 17 minutes), which comes to 4 to 6 MB. It ships in the
+  SCORM package. If many lessons get narrated, consider Git LFS for
+  `assets/audio/`.
+
+## Engine notes
+
+- The player lives in `<phil-lesson>` (`shared/phil-core.js`, "narrated
+  player"). It appears only when the lesson contains a `<phil-narration>`.
+- Browsers block audio until the user interacts with the page. Pressing Play is
+  that interaction, so the lesson never tries to start audio by itself. If a
+  browser still refuses, the player pauses and Resume starts it.
+- Captions sit in a strip between the stage and the controls, never over the
+  slide. They are not a live region, so a screen reader doesn't read them over
+  the voice. The your-turn cue is announced.

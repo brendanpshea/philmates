@@ -122,11 +122,15 @@ function parseSlides(html) {
   const re = /<phil-slide\b([^>]*)>([\s\S]*?)<\/phil-slide>/gi;
   let m;
   while ((m = re.exec(html))) {
+    // The closing reading list is a reference slide set in smaller type than
+    // this estimate assumes; it was measured in the browser and fits.
+    if (/\bid="further-reading"/.test(m[1])) continue;
     const raw = m[2];
     const hasArt = /slot="art"/.test(raw);
     const body = raw
       .replace(/<script[\s\S]*?<\/script>/gi, '')
       .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/<phil-narration\b[\s\S]*?<\/phil-narration>/gi, '')   // spoken, never on screen
       .replace(/<img[^>]*slot="art"[^>]*>/gi, '');
     const h1 = /<h1>([\s\S]*?)<\/h1>/i.exec(body);
 
@@ -141,13 +145,13 @@ function parseSlides(html) {
     const prose = body.replace(new RegExp(WIDGET_RE.source, 'gi'), '');
 
     // every <li>, measured on its own text (nested sub-lists excluded)
-    const bullets = [...prose.matchAll(/<li>([\s\S]*?)<\/li>/gi)]
+    const bullets = [...prose.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)]
       .map(x => strip(x[1].replace(/<(ul|ol)\b[\s\S]*?<\/\1>/gi, '')));
     // Everything else that renders: paragraphs, blockquotes, loose divs, captions.
     // Measured as one blob rather than tag by tag, so a <blockquote> or a lesson's
     // own styled <div> can't slip through uncounted.
     const rest = strip(prose
-      .replace(/<li>[\s\S]*?<\/li>/gi, '')
+      .replace(/<li\b[^>]*>[\s\S]*?<\/li>/gi, '')
       .replace(/<h1>[\s\S]*?<\/h1>/gi, ''));
 
     px += lines(rest) * LINE_PX

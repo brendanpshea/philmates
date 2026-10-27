@@ -46,10 +46,11 @@ Notes:
 - **Grade on the score, not the status.** `passed` means the student finished.
   The score is the earned credit. Each wrong try lowers what a question can
   still earn to 80% of the last (100%, 80%, 64% …). Checksets, cloze, and
-  classify items are scored part by part on every check, with wrong parts
-  counting against right ones, so guessing averages zero, and a miss says how
-  many parts are wrong but not which. A student who guessed through scores
-  well below one who read.
+  classify items are scored part by part on every check, and a miss says how
+  many parts are wrong but not which. Checksets earn the share of statements
+  right, with nothing taken off for wrong ones. In cloze and classify items a
+  wrong part counts against the right ones, so guessing averages zero. A
+  student who guessed through scores well below one who read.
   See "Scoring" in [AUTHORING.md](../AUTHORING.md).
 - **Total time** in the LMS's activity report shows who clicked through in a
   few minutes.

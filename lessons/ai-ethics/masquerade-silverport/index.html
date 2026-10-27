@@ -6,8 +6,8 @@
   <title>The Masquerade of Silverport: The Turing Test and the Chinese Room · PhilMates</title>
   <meta name="description" content="One guest at the masked ball is a machine. Can you tell which? Turing's imitation game, a working ELIZA, Searle's Chinese Room played from the inside, the replies to Searle, and whether chatbots should have to unmask.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=11">
-  <script type="module" src="../../../shared/phil-core.js?v=11"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=13">
+  <script type="module" src="../../../shared/phil-core.js?v=13"></script>
   <script type="module" src="./assets/masquerade.js"></script>
   <style>
     phil-cloze .line { display: block; margin: 0 0 .4em; line-height: 1.45; font-size: clamp(17px, 1.7vw, 20px); }
@@ -44,6 +44,7 @@
     <p class="lead">Tonight every guest at the ball wears a mask, and one of them is not a person.</p>
     <p>One guest is a clockwork machine. You can't see faces, and you can't hear voices. Can you still tell which guest it is? And if you can't, does the machine think?</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to the Masquerade of Silverport. Tonight every guest at the ball wears a mask, and one of them isn't a person. It's a clockwork machine. You can't see faces, and you can't hear voices. Can you still tell which guest it is? And if you can't, does the machine think? Whenever it's your turn, I'll stop and wait for you.</phil-narration>
   </phil-slide>
 
   <!-- 2. Belief probe (start) -->
@@ -57,6 +58,8 @@
       <phil-statement>Today's chatbots understand what they say.</phil-statement>
       <phil-statement>A machine that talks with people should have to say that it is a machine.</phil-statement>
     </phil-beliefs>
+    <phil-narration>Before the dancing starts, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.</phil-narration>
+    <phil-narration when="after">Saved. Now, to the ballroom.</phil-narration>
   </phil-slide>
 
   <!-- 3. The host's challenge -->
@@ -64,11 +67,12 @@
     <img slot="art" src="./assets/the-host.png" alt="Countess Vane, an older Black woman with silver hair in a midnight-blue gown, smiling as she holds a silver half-mask on a stick">
     <h1>The Host's Challenge</h1>
     <p>Countess Adaeze Vane taps her glass, and the ballroom goes quiet.</p>
+    <phil-narration>Countess Vane, the host, taps her glass, and the ballroom goes quiet.</phil-narration>
     <ul reveal>
-      <li>"One of my guests tonight is a machine. A very good one."</li>
-      <li>"Masks stay on. Nobody speaks aloud. You may question any guest, but only by passing notes through the curtain."</li>
-      <li>"Whoever unmasks the machine wins the evening."</li>
-      <li>Her rules make looks and voices useless. All you have to go on is what each guest writes.</li>
+      <li say="“One of my guests tonight is a machine,” she says. “A very good one.”">"One of my guests tonight is a machine. A very good one."</li>
+      <li say="“Masks stay on. Nobody speaks aloud. You may question any guest, but only by passing notes through the curtain.”">"Masks stay on. Nobody speaks aloud. You may question any guest, but only by passing notes through the curtain."</li>
+      <li say="“Whoever unmasks the machine wins the evening.”">"Whoever unmasks the machine wins the evening."</li>
+      <li say="Notice what her rules do. Looks and voices are useless now. All you have to go on is what each guest writes.">Her rules make looks and voices useless. All you have to go on is what each guest writes.</li>
     </ul>
   </phil-slide>
 
@@ -76,11 +80,12 @@
   <phil-slide>
     <img slot="art" src="./assets/mechanical-turk.png" alt="A chess cabinet with its doors open, showing a man crouched inside, while a hooded mechanical figure sits at the chessboard on top">
     <h1>A Machine That Fooled Europe</h1>
+    <phil-narration>Machines have fooled people before.</phil-narration>
     <ul reveal>
-      <li>In 1770 the inventor Wolfgang von Kempelen showed off a chess-playing machine. It beat many of the people who played it.</li>
-      <li>Crowds believed a machine was choosing the moves. In fact a human chess player sat hidden inside the cabinet.</li>
-      <li>The lesson for tonight: behavior you can see can come from something very different from what you imagine.</li>
-      <li>That cuts both ways. A machine might seem to think when it doesn't, and might think when nobody believes it.</li>
+      <li say="In 1770, the inventor Wolfgang von Kempelen showed off a chess-playing machine, and it beat many of the people who played it.">In 1770 the inventor Wolfgang von Kempelen showed off a chess-playing machine. It beat many of the people who played it.</li>
+      <li say="Crowds believed the machine was choosing its moves. In fact, a human chess player was hidden inside the cabinet.">Crowds believed a machine was choosing the moves. In fact a human chess player sat hidden inside the cabinet.</li>
+      <li say="The lesson for tonight: the behavior you see can come from something very different from what you imagine.">The lesson for tonight: behavior you can see can come from something very different from what you imagine.</li>
+      <li say="And that cuts both ways. A machine might seem to think when it doesn't, and might think when nobody believes it does.">That cuts both ways. A machine might seem to think when it doesn't, and might think when nobody believes it.</li>
     </ul>
   </phil-slide>
 
@@ -95,10 +100,11 @@
     </phil-thinker>
     <h1>Turing's Question</h1>
     <p>The host's game comes from the mathematician Alan Turing, who helped break German codes in the Second World War.</p>
+    <phil-narration>The host's game comes from the mathematician Alan Turing, who helped break German codes in the Second World War.</phil-narration>
     <ul reveal>
-      <li>In 1950 he asked, "Can machines think?" Then he called that question "too meaningless to deserve discussion."</li>
-      <li>Words like "machine" and "think" mean different things to different people. Arguing over definitions would go nowhere.</li>
-      <li>So he replaced the question with a game that has a clear result. He called it the <strong>imitation game</strong>.</li>
+      <li say="In 1950, he asked, can machines think? Then he called that question too meaningless to deserve discussion.">In 1950 he asked, "Can machines think?" Then he called that question "too meaningless to deserve discussion."</li>
+      <li say="Words like machine and think mean different things to different people, so arguing over definitions would go nowhere.">Words like "machine" and "think" mean different things to different people. Arguing over definitions would go nowhere.</li>
+      <li say="So he replaced the question with a game that has a clear result. He called it the imitation game.">So he replaced the question with a game that has a clear result. He called it the <strong>imitation game</strong>.</li>
     </ul>
   </phil-slide>
 
@@ -106,11 +112,12 @@
   <phil-slide id="imitation-game">
     <img slot="art" src="./assets/note-passing.png" alt="A hand passes a folded note through a gap in a red curtain to a masked guest seated by candlelight">
     <h1>The Imitation Game</h1>
+    <phil-narration>Here's how Turing's game works.</phil-narration>
     <ul reveal>
-      <li>Turing's first version has three players: a man, a woman, and an <strong>interrogator</strong> in another room who asks questions.</li>
-      <li>Answers come back typed, so handwriting and voice give nothing away. The interrogator must work out which player is the woman.</li>
-      <li>Then Turing asks what happens if a machine takes the man's place. Will the interrogator guess wrong as often as before?</li>
-      <li>The test counts only the written answers. Looks, voice, and what the player is made of are all hidden, just like tonight.</li>
+      <li say="Turing's first version has three players: a man, a woman, and an interrogator in another room, who asks them questions.">Turing's first version has three players: a man, a woman, and an <strong>interrogator</strong> in another room who asks questions.</li>
+      <li say="The answers come back typed, so handwriting and voice give nothing away. The interrogator has to work out which player is the woman.">Answers come back typed, so handwriting and voice give nothing away. The interrogator must work out which player is the woman.</li>
+      <li say="Then Turing asks: what if a machine takes the man's place? Will the interrogator guess wrong as often as before?">Then Turing asks what happens if a machine takes the man's place. Will the interrogator guess wrong as often as before?</li>
+      <li say="The test counts only the written answers. Looks, voice, and what the player is made of all stay hidden, just like tonight.">The test counts only the written answers. Looks, voice, and what the player is made of are all hidden, just like tonight.</li>
     </ul>
   </phil-slide>
 
@@ -125,16 +132,18 @@
       <p><strong>Q:</strong> Add 34957 to 70764.</p>
       <p><strong>A:</strong> (Pause about 30 seconds and then give as answer) 105621.</p>
     </div>
+    <phil-narration>Turing's paper includes a sample exchange. He made it up, to show the kind of answers a player might give. Asked for a sonnet about the Forth Bridge, the player says: count me out on this one, I never could write poetry. Asked to add two five-digit numbers, it pauses for about thirty seconds, then gives an answer.</phil-narration>
     <ul reveal>
-      <li>The sum is wrong. The right answer is 105721.</li>
-      <li>Elsewhere in the paper, Turing says a machine playing the game would make deliberate mistakes, so its accuracy doesn't give it away.</li>
-      <li>So passing the test can mean pretending to be worse than you are.</li>
+      <li say="That sum is wrong, off by exactly one hundred.">The sum is wrong. The right answer is 105721.</li>
+      <li say="Elsewhere in the paper, Turing says a machine playing the game would make deliberate mistakes, so that its accuracy doesn't give it away.">Elsewhere in the paper, Turing says a machine playing the game would make deliberate mistakes, so its accuracy doesn't give it away.</li>
+      <li say="So passing the test can mean pretending to be worse than you are.">So passing the test can mean pretending to be worse than you are.</li>
     </ul>
   </phil-slide>
 
   <!-- 8. Classify: what the test looks at -->
   <phil-slide>
     <h1>What Does the Test Measure?</h1>
+    <phil-narration>In Turing's game, what can the interrogator actually see? Sort each item into what the interrogator can see and what stays hidden, then press Check answers.</phil-narration>
     <phil-classify data-qid="masquerade-silverport:q2" review="imitation-game" prompt="In Turing's game, what can the interrogator see?"
                    explain="Right. The interrogator sees only the typed replies: what they say, whether they make sense, and any mistakes in them. Everything else about the player is hidden on purpose.">
       <phil-col key="in" descriptive>The interrogator can see this</phil-col>
@@ -152,10 +161,11 @@
   <!-- 9. Turing's prediction -->
   <phil-slide>
     <h1>Turing's Prediction</h1>
+    <phil-narration>Turing also made a prediction.</phil-narration>
     <ul reveal>
-      <li>Turing guessed that in about fifty years, an average interrogator would have no more than a 70% chance of picking out the machine after five minutes of questions.</li>
-      <li>He also guessed that by then, people would talk about machines thinking without expecting anyone to object.</li>
-      <li>He meant this as a forecast, not as a pass mark. The idea that fooling 30% of judges counts as passing came later.</li>
+      <li say="He guessed that in about fifty years, an average interrogator would have no more than a seventy percent chance of picking out the machine, after five minutes of questions.">Turing guessed that in about fifty years, an average interrogator would have no more than a 70% chance of picking out the machine after five minutes of questions.</li>
+      <li say="He also guessed that by then, people would talk about machines thinking without expecting anyone to object.">He also guessed that by then, people would talk about machines thinking without expecting anyone to object.</li>
+      <li say="He meant this as a forecast, not a pass mark. The idea that fooling thirty percent of judges counts as passing came later.">He meant this as a forecast, not as a pass mark. The idea that fooling 30% of judges counts as passing came later.</li>
     </ul>
   </phil-slide>
 
@@ -169,16 +179,18 @@
     </phil-thinker>
     <h1>Meet ELIZA</h1>
     <p>Among the guests is a very old machine. In 1966 the computer scientist Joseph Weizenbaum, at MIT, published a program called ELIZA.</p>
+    <phil-narration>Among the guests is a very old machine. In 1966, the computer scientist Joseph Weizenbaum, at MIT, published a program called ELIZA.</phil-narration>
     <ul reveal>
-      <li>Its best-known script, later called DOCTOR, plays a therapist who mostly turns your words back into questions.</li>
-      <li>It has no knowledge of the world. It looks for keywords and fills in stock replies.</li>
-      <li>On the next slide you can talk to a working reconstruction of it, built from the rules Weizenbaum published.</li>
+      <li say="Its best-known script, later called DOCTOR, plays a therapist who mostly turns your own words back into questions.">Its best-known script, later called DOCTOR, plays a therapist who mostly turns your words back into questions.</li>
+      <li say="It knows nothing about the world. It looks for keywords and fills in stock replies.">It has no knowledge of the world. It looks for keywords and fills in stock replies.</li>
+      <li say="On the next slide, you can talk to a working reconstruction of it, built from the rules Weizenbaum published.">On the next slide you can talk to a working reconstruction of it, built from the rules Weizenbaum published.</li>
     </ul>
   </phil-slide>
 
   <!-- 11. ELIZA viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Pass a Note to ELIZA</h1>
+    <phil-narration>Your turn. Pass a note to ELIZA. Type something and press Send, or tap a starter line, and try to find a question that gives the machine away. Then turn on Peek behind the mask, to see the rule behind each reply. When you're ready, press Continue.</phil-narration>
     <phil-eliza prompt="Talk to the masked guest. Try to find a question that gives the machine away. Then turn on &quot;Peek behind the mask&quot; to see the rule behind each reply."></phil-eliza>
   </phil-slide>
 
@@ -186,11 +198,12 @@
   <phil-slide>
     <img slot="art" src="./assets/eliza-teletype.png" alt="A young Black woman in a green cardigan types at a 1960s terminal that prints a long paper scroll">
     <h1>How ELIZA Works</h1>
+    <phil-narration>So how does ELIZA do it?</phil-narration>
     <ul reveal>
-      <li>ELIZA finds a keyword, like "mother" or "always," and picks a stock reply for it.</li>
-      <li>It swaps pronouns, so "my problem" comes back as "your problem." Your own words do most of the work.</li>
-      <li>People confided in it anyway. His own secretary, who knew it was only a program, began talking to it and soon "asked me to leave the room."</li>
-      <li>That pull is now called the <strong>ELIZA effect</strong>: reading understanding into a machine because its replies fit.</li>
+      <li say="It finds a keyword, like “mother” or “always,” and picks a stock reply for it.">ELIZA finds a keyword, like "mother" or "always," and picks a stock reply for it.</li>
+      <li say="It swaps pronouns. Type “my problem,” and it comes back as “your problem.” Your own words do most of the work.">It swaps pronouns, so "my problem" comes back as "your problem." Your own words do most of the work.</li>
+      <li say="People confided in it anyway. Weizenbaum's own secretary, who knew it was only a program, began talking to it, and soon asked him to leave the room.">People confided in it anyway. His own secretary, who knew it was only a program, began talking to it and soon "asked me to leave the room."</li>
+      <li say="That pull is now called the ELIZA effect: reading understanding into a machine because its replies fit.">That pull is now called the <strong>ELIZA effect</strong>: reading understanding into a machine because its replies fit.</li>
     </ul>
   </phil-slide>
 
@@ -198,28 +211,31 @@
   <phil-slide id="goostman">
     <img slot="art" src="./assets/boy-mask.png" alt="A brass clockwork hand holds a smiling boy's mask beside a face made of gears">
     <h1>A Mask Within a Mask</h1>
+    <phil-narration>Some machines wear a mask within a mask.</phil-narration>
     <ul reveal>
-      <li>In 2014 a chatbot called Eugene Goostman was entered in a Turing test event in London.</li>
-      <li>It played a 13-year-old boy from Ukraine whose first language wasn't English.</li>
-      <li>That made its odd answers and gaps in knowledge look like a child's mistakes. A third of the judges took it for a person.</li>
-      <li>Critics said it gamed the test by dodging hard questions instead of answering them. A good disguise is not the same as a good mind.</li>
+      <li say="In 2014, a chatbot called Eugene Goostman was entered in a Turing test event in London.">In 2014 a chatbot called Eugene Goostman was entered in a Turing test event in London.</li>
+      <li say="It played a thirteen-year-old boy from Ukraine, whose first language wasn't English.">It played a 13-year-old boy from Ukraine whose first language wasn't English.</li>
+      <li say="That made its odd answers and gaps in knowledge look like a child's mistakes. A third of the judges took it for a person.">That made its odd answers and gaps in knowledge look like a child's mistakes. A third of the judges took it for a person.</li>
+      <li say="Critics said it gamed the test by dodging hard questions instead of answering them. A good disguise isn't the same as a good mind.">Critics said it gamed the test by dodging hard questions instead of answering them. A good disguise is not the same as a good mind.</li>
     </ul>
   </phil-slide>
 
   <!-- 14. The 2025 study -->
   <phil-slide>
     <h1>Seventy-Five Years Later</h1>
+    <phil-narration>Seventy-five years after Turing's paper, researchers ran his game with today's chatbots.</phil-narration>
     <ul reveal>
-      <li>In 2025, Cameron Jones and Benjamin Bergen at UC San Diego ran Turing's three-player game: an interrogator, a person, and a chatbot, chatting at once.</li>
-      <li>GPT-4.5, told to play a shy young person who knows internet culture and uses slang, was picked as the human 73% of the time.</li>
-      <li>That is more often than the real people were picked. ELIZA, in the same study, was picked 23% of the time.</li>
-      <li>In Turing's own three-player setup, the machine was picked as the human more often than the humans were. Whether it thinks is a separate question.</li>
+      <li say="In 2025, Cameron Jones and Benjamin Bergen, at UC San Diego, ran Turing's three-player game: an interrogator, a person, and a chatbot, all chatting at once.">In 2025, Cameron Jones and Benjamin Bergen at UC San Diego ran Turing's three-player game: an interrogator, a person, and a chatbot, chatting at once.</li>
+      <li say="GPT-4.5, told to play a shy young person who knows internet culture and uses slang, was picked as the human seventy-three percent of the time.">GPT-4.5, told to play a shy young person who knows internet culture and uses slang, was picked as the human 73% of the time.</li>
+      <li say="That's more often than the real people were picked. ELIZA, in the same study, was picked twenty-three percent of the time.">That is more often than the real people were picked. ELIZA, in the same study, was picked 23% of the time.</li>
+      <li say="So in Turing's own setup, the machine was picked as the human more often than the humans were. Whether it thinks is a separate question.">In Turing's own three-player setup, the machine was picked as the human more often than the humans were. Whether it thinks is a separate question.</li>
     </ul>
   </phil-slide>
 
   <!-- 15. Classify: disguise or skill -->
   <phil-slide>
     <h1>Tricks of the Trade</h1>
+    <phil-narration>Each of these moves could help a machine pass the test. Is it a disguise, or a real skill? Sort them, then press Check answers.</phil-narration>
     <phil-classify data-qid="masquerade-silverport:q3" review="goostman" prompt="Each move could help a machine pass the test. Is it a disguise or a skill?"
                    explain="Right. A disguise hides what the machine is, by excusing its failures or by faking human ones, so passing with one tells you little. A skill means actually getting something right. Even skill doesn't settle whether the machine understands, which is Searle's question.">
       <phil-col key="dis">Disguise: hides what the machine is or what it can do</phil-col>
@@ -239,11 +255,12 @@
   <phil-slide id="objections">
     <h1>"But Does It Feel Anything?"</h1>
     <p>Turing answered a list of objections in the same paper. He called this one the argument from consciousness. It grants that a machine might act as if it feels, and denies that it feels anything.</p>
+    <phil-narration>Turing answered a list of objections in the same paper. He called this one the argument from consciousness. It grants that a machine might act as if it feels, and denies that it feels anything.</phil-narration>
     <ul reveal>
-      <li>A brain surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt.</li>
-      <li>Turing replied: how do you know other <em>people</em> feel anything? You only see what they say and do.</li>
-      <li>If you demand more of machines than of people, you would have to doubt everyone but yourself.</li>
-      <li>So, Turing wrote, it is usual to have "the polite convention that everyone thinks."</li>
+      <li say="A brain surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt.">A brain surgeon, Geoffrey Jefferson, said no machine equals a brain until it writes a sonnet because of thoughts and emotions it felt.</li>
+      <li say="Turing replied: how do you know that other people feel anything? You only see what they say and do.">Turing replied: how do you know other <em>people</em> feel anything? You only see what they say and do.</li>
+      <li say="If you demand more of machines than of people, you'd have to doubt everyone but yourself.">If you demand more of machines than of people, you would have to doubt everyone but yourself.</li>
+      <li say="So, Turing wrote, it's usual to have the polite convention that everyone thinks.">So, Turing wrote, it is usual to have "the polite convention that everyone thinks."</li>
     </ul>
   </phil-slide>
 
@@ -255,28 +272,31 @@
       <blockquote>“The Analytical Engine has no pretensions whatever to originate any thing.”</blockquote>
     </phil-thinker>
     <h1>Lady Lovelace's Objection</h1>
+    <phil-narration>Next comes an objection Turing named after Ada Lovelace.</phil-narration>
     <ul reveal>
-      <li>Ada Lovelace's notes on Charles Babbage's planned Analytical Engine, a mechanical computer, include what is often called the first published program.</li>
-      <li>She wrote that the Engine "has no pretensions whatever to originate any thing." It "can do whatever we know how to order it to perform," and nothing it thinks up itself.</li>
-      <li>Turing's reply: machines surprise him all the time. And a machine that learns could do things its makers never planned.</li>
+      <li say="Lovelace's notes on Charles Babbage's planned Analytical Engine, a mechanical computer, include what's often called the first published program.">Ada Lovelace's notes on Charles Babbage's planned Analytical Engine, a mechanical computer, include what is often called the first published program.</li>
+      <li say="She wrote that the Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform, and nothing it thinks up itself.">She wrote that the Engine "has no pretensions whatever to originate any thing." It "can do whatever we know how to order it to perform," and nothing it thinks up itself.</li>
+      <li say="Turing's reply: machines surprise him all the time. And a machine that learns could do things its makers never planned.">Turing's reply: machines surprise him all the time. And a machine that learns could do things its makers never planned.</li>
     </ul>
   </phil-slide>
 
   <!-- 18. Machines could never... -->
   <phil-slide>
     <h1>"A Machine Could Never…"</h1>
+    <phil-narration>Then there's a whole family of objections.</phil-narration>
     <ul reveal>
-      <li>Turing collected things critics said a machine could never do: be kind, have a sense of humor, fall in love, enjoy strawberries and cream, make a mistake.</li>
-      <li>He called these the arguments from various disabilities. As stated, they say a machine can't even <em>do</em> these things.</li>
-      <li>His reply: the lists came from the clumsy machines people had seen. He also suspected many were the consciousness objection in disguise.</li>
-      <li>Some items have aged badly. Chatbots now joke, and Turing says a machine playing his game would make mistakes on purpose.</li>
+      <li say="Turing collected things critics said a machine could never do: be kind, have a sense of humor, fall in love, enjoy strawberries and cream, make a mistake.">Turing collected things critics said a machine could never do: be kind, have a sense of humor, fall in love, enjoy strawberries and cream, make a mistake.</li>
+      <li say="He called these the arguments from various disabilities. As stated, they're claims about what a machine can do, not what it feels.">He called these the arguments from various disabilities. As stated, they say a machine can't even <em>do</em> these things.</li>
+      <li say="His reply: those lists came from the clumsy machines people had seen. He also suspected many were the consciousness objection in disguise.">His reply: the lists came from the clumsy machines people had seen. He also suspected many were the consciousness objection in disguise.</li>
+      <li say="Some items have aged badly. Chatbots now tell jokes, and Turing says a machine playing his game would make mistakes on purpose.">Some items have aged badly. Chatbots now joke, and Turing says a machine playing his game would make mistakes on purpose.</li>
     </ul>
   </phil-slide>
 
   <!-- 19. Classify: which objection -->
   <phil-slide>
     <h1>Match the Reply</h1>
-    <phil-classify data-qid="masquerade-silverport:q4" review="objections" prompt="Each guest raises one of the objections Turing answered. Sort them by what each guest actually claims."
+    <phil-narration>Each line voices one of the objections Turing answered: Jefferson's objection from consciousness, Lovelace's objection, or various disabilities. Sort them by what each line actually claims, then press Check answers.</phil-narration>
+    <phil-classify data-qid="masquerade-silverport:q4" review="objections" prompt="Each line voices one of the objections Turing answered. Sort them by what each line actually claims."
                    explain="Right. Granting the behavior but denying the feeling is the consciousness objection, which Turing answers with other minds. Only doing what it's told is Lovelace's objection, which he answers with learning machines. 'You'll never build one that can…' is the argument from disabilities, which he answers by asking where the lists came from.">
       <phil-col key="con">Consciousness</phil-col>
       <phil-col key="love">Lovelace's objection</phil-col>
@@ -297,17 +317,19 @@
     <img slot="art" src="./assets/cellar-door.png" alt="A locked wooden door in a stone cellar, lit by a lantern, with paper slips of wavy marks on the floor in front of it">
     <h1>Down to the Cellar</h1>
     <p>"A second game," says the host, and a steward leads you down to a locked room in the cellar.</p>
+    <phil-narration>A second game, says the host. A steward leads you down to a locked room in the cellar.</phil-narration>
     <ul reveal>
-      <li>This room is a thought experiment from the philosopher John Searle, published in 1980.</li>
-      <li>Slips of paper will come under the door, written in a script you can't read.</li>
-      <li>Inside is a rulebook. It tells you which shapes to send back for each slip. It never says what any shape means.</li>
-      <li>Searle used Chinese because he couldn't read it. This room uses an invented script, so nobody in class can read it either.</li>
+      <li say="This room is a thought experiment from the philosopher John Searle, published in 1980.">This room is a thought experiment from the philosopher John Searle, published in 1980.</li>
+      <li say="Slips of paper will come under the door, written in a script you can't read.">Slips of paper will come under the door, written in a script you can't read.</li>
+      <li say="Inside is a rulebook. It tells you which shapes to send back for each slip. It never tells you what any shape means.">Inside is a rulebook. It tells you which shapes to send back for each slip. It never says what any shape means.</li>
+      <li say="Searle used Chinese, because he couldn't read it. This room uses an invented script, so nobody in class can read it either.">Searle used Chinese because he couldn't read it. This room uses an invented script, so nobody in class can read it either.</li>
     </ul>
   </phil-slide>
 
   <!-- 21. Room viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Inside the Room</h1>
+    <phil-narration>You're inside the room now, and a slip has come under the door. Find the rulebook row that starts with the same shapes. Use the shape buttons to copy the shapes after the arrow onto your answer slip, then press Push it under the door. After all four slips, press Translate the conversation to see what you said. When you're done, press Continue.</phil-narration>
     <phil-room prompt="Find the rulebook row that starts with the shapes on the slip. Copy the shapes after the arrow onto your answer slip, then push it under the door."></phil-room>
   </phil-slide>
 
@@ -315,6 +337,7 @@
   <phil-slide>
     <img slot="art" src="./assets/the-reveal.png" alt="Outside the cellar door, an elderly woman in a shawl reads a small slip and smiles, a gray cat at her feet">
     <h1>Decision Point: Who Understood?</h1>
+    <phil-narration>Outside the door, someone was comforted about her lost cat. So who understood that conversation? This one isn't graded. Pick the answer closest to your view, and read the note that comes with it.</phil-narration>
     <phil-poll prompt="Someone outside was comforted about her lost cat. Who understood the conversation?"
                explain="Searle says nobody inside did. You matched shapes and never knew what they meant, and the rulebook is just paper. Yet from outside, the room answered perfectly. If running a program is all a computer does, Searle argues, then a computer understands no more than you did.">
       <phil-choice note="This is Searle's view. You followed rules about shapes; the meaning never reached you.">Nobody inside. I only matched shapes.</phil-choice>
@@ -332,11 +355,12 @@
       <blockquote>“Syntax by itself is neither constitutive of nor sufficient for semantics.” (<em>Scientific American</em>, 1990)</blockquote>
     </phil-thinker>
     <h1>Searle's Argument</h1>
+    <phil-narration>Here is Searle's argument, in four steps.</phil-narration>
     <ul reveal>
-      <li>A computer program works by rules about the shapes of symbols. Philosophers call this <strong>syntax</strong>.</li>
-      <li>Understanding requires knowing what the symbols mean. That is <strong>semantics</strong>.</li>
-      <li>In the room you had all the syntax and none of the semantics. Following the rules never gave you the meaning.</li>
-      <li>So, Searle concludes, running a program can't be enough for understanding, whatever test it passes.</li>
+      <li say="A computer program works by rules about the shapes of symbols. Philosophers call this syntax.">A computer program works by rules about the shapes of symbols. Philosophers call this <strong>syntax</strong>.</li>
+      <li say="Understanding requires knowing what the symbols mean. That's semantics.">Understanding requires knowing what the symbols mean. That is <strong>semantics</strong>.</li>
+      <li say="In the room, you had all the syntax and none of the semantics. Following the rules never gave you the meaning.">In the room you had all the syntax and none of the semantics. Following the rules never gave you the meaning.</li>
+      <li say="So, Searle concludes, running a program can't be enough for understanding, whatever test it passes.">So, Searle concludes, running a program can't be enough for understanding, whatever test it passes.</li>
     </ul>
   </phil-slide>
 
@@ -355,12 +379,14 @@
       </phil-side>
     </phil-compare>
     <p class="muted">Searle doesn't say machines can't think. "We are precisely such machines," he wrote. What he denies is that running a program is enough.</p>
+    <phil-narration>Searle is careful about what he denies. Weak AI says computers can model minds, the way they model weather. A simulated storm helps you study storms, but nothing gets wet. Searle has no quarrel with that. Strong AI says a computer running the right program would literally have a mind, and understand. That's the claim the Room attacks. And notice: Searle doesn't say machines can't think. We are precisely such machines, he wrote. What he denies is that running a program is enough.</phil-narration>
   </phil-slide>
 
   <!-- 25. MCQ: what the room shows [correct: B] -->
   <phil-slide>
     <img slot="art" src="./assets/inside-room.png" alt="Seen from behind, a young person with curly red hair holds a paper slip up beside a giant open book in a candlelit stone room">
     <h1>What the Room Shows</h1>
+    <phil-narration>So what is the Chinese Room meant to show? Pick the best answer.</phil-narration>
     <phil-mcq data-qid="masquerade-silverport:q1" review="searle-argument" prompt="What is the Chinese Room meant to show?"
               explain="Right. Searle's target is the claim that running the right program is enough for understanding. He thought brains are machines that do understand, so his point is about programs, not about machines in general.">
       <phil-choice feedback="Searle thought brains are a kind of machine, and they understand. His target is narrower: programs alone.">That no machine of any kind could ever think</phil-choice>
@@ -377,10 +403,11 @@
     <img slot="art" src="./assets/whole-room.png" alt="A cutaway of a small stone room: a person writing at a desk beside a giant book, baskets of paper slips, and a slot in the door">
     <h1>The Systems Reply</h1>
     <p>In the paper, Searle answers objections he had heard when presenting the argument. One common reply goes like this.</p>
+    <phil-narration>In his paper, Searle answers objections he'd heard while presenting the argument. Here's a common one, called the systems reply.</phil-narration>
     <ul reveal>
-      <li>Of course the person in the room doesn't understand. The person is only one part of the system.</li>
-      <li>The whole system understands: person, rulebook, paper, and all.</li>
-      <li>Defenders often add a comparison: your neurons don't understand English either. You do.</li>
+      <li say="Of course the person in the room doesn't understand, it says. The person is only one part of the system.">Of course the person in the room doesn't understand. The person is only one part of the system.</li>
+      <li say="The whole system understands: person, rulebook, paper, and all.">The whole system understands: person, rulebook, paper, and all.</li>
+      <li say="Defenders often add a comparison. Your neurons don't understand English either. You do.">Defenders often add a comparison: your neurons don't understand English either. You do.</li>
     </ul>
   </phil-slide>
 
@@ -388,11 +415,12 @@
   <phil-slide>
     <img slot="art" src="./assets/memorized.png" alt="Seen from behind, a young person with curly red hair on a sunny market street is handed a note of wavy marks by a vendor">
     <h1>Searle Answers: Swallow the Room</h1>
+    <phil-narration>Searle has an answer.</phil-narration>
     <ul reveal>
-      <li>Searle's reply: let the person memorize the whole rulebook and do every step in their head.</li>
-      <li>Now there is no system apart from the person. They <em>are</em> the whole room, and they can walk outside.</li>
-      <li>They still don't understand a word of what they answer. So, Searle says, neither did the system.</li>
-      <li>Defenders of the systems reply answer that a mind could run inside a person without that person knowing it.</li>
+      <li say="Let the person memorize the whole rulebook, and do every step in their head.">Searle's reply: let the person memorize the whole rulebook and do every step in their head.</li>
+      <li say="Now there's no system apart from the person. They are the whole room, and they can walk outside.">Now there is no system apart from the person. They <em>are</em> the whole room, and they can walk outside.</li>
+      <li say="They still don't understand a word of what they answer. So, Searle says, neither did the system.">They still don't understand a word of what they answer. So, Searle says, neither did the system.</li>
+      <li say="Defenders of the systems reply answer that a mind could run inside a person without that person knowing it.">Defenders of the systems reply answer that a mind could run inside a person without that person knowing it.</li>
     </ul>
   </phil-slide>
 
@@ -400,11 +428,12 @@
   <phil-slide id="robot-reply">
     <img slot="art" src="./assets/robot-room.png" alt="A giant copper robot whose chest window shows a person reading inside, reaching toward a small tree">
     <h1>The Robot Reply</h1>
+    <phil-narration>A second reply is called the robot reply.</phil-narration>
     <ul reveal>
-      <li>Another reply: the room is cut off from the world. Put the program in a robot with cameras and arms.</li>
-      <li>Now its symbols connect to things it sees and does. Maybe that gives them meaning.</li>
-      <li>Searle's answer: the camera's signals reach the person inside as more shapes on more slips.</li>
-      <li>The person follows the rules exactly as before. More input is still only more syntax.</li>
+      <li say="The room is cut off from the world, it says. So put the program in a robot, with cameras and arms.">Another reply: the room is cut off from the world. Put the program in a robot with cameras and arms.</li>
+      <li say="Now its symbols connect to things it sees and does. Maybe that gives them meaning.">Now its symbols connect to things it sees and does. Maybe that gives them meaning.</li>
+      <li say="Searle's answer: the camera's signals reach the person inside as more shapes, on more slips.">Searle's answer: the camera's signals reach the person inside as more shapes on more slips.</li>
+      <li say="The person follows the rules exactly as before. More input is still only more syntax.">The person follows the rules exactly as before. More input is still only more syntax.</li>
     </ul>
   </phil-slide>
 
@@ -412,29 +441,32 @@
   <phil-slide>
     <img slot="art" src="./assets/water-pipes.png" alt="A cellar full of copper pipes and valves, where a young woman turns one of the valves">
     <h1>The Brain Simulator Reply</h1>
+    <phil-narration>A third is the brain simulator reply.</phil-narration>
     <ul reveal>
-      <li>A third reply: make the program copy, step by step, what the neurons of a native speaker do.</li>
-      <li>If a brain understands, surely an exact copy of its workings does too.</li>
-      <li>Searle's answer: run that copy with water pipes and valves, turned by a person following instructions.</li>
-      <li>The pipes copy the brain's pattern but not its causal powers, he says. Nothing in them understands.</li>
+      <li say="Make the program copy, step by step, what the neurons of a native speaker do.">A third reply: make the program copy, step by step, what the neurons of a native speaker do.</li>
+      <li say="If a brain understands, surely an exact copy of its workings does too.">If a brain understands, surely an exact copy of its workings does too.</li>
+      <li say="Searle's answer: run that copy with water pipes and valves, turned by a person following instructions.">Searle's answer: run that copy with water pipes and valves, turned by a person following instructions.</li>
+      <li say="The pipes copy the brain's pattern, he says, but not its causal powers. Nothing in them understands.">The pipes copy the brain's pattern but not its causal powers, he says. Nothing in them understands.</li>
     </ul>
   </phil-slide>
 
   <!-- 29b. The other-minds reply -->
   <phil-slide id="other-minds">
     <h1>The Other-Minds Reply</h1>
+    <phil-narration>And one more, the other-minds reply.</phil-narration>
     <ul reveal>
-      <li>One more reply: how do you know that other <em>people</em> understand Chinese? Only from what they say and do.</li>
-      <li>So if you credit people with understanding because of their behavior, you should credit the room too.</li>
-      <li>This is Turing's polite convention again, now aimed at Searle.</li>
-      <li>Searle's answer: the question isn't how we know that someone understands. It's what we are saying is there when they do, and the room doesn't have it.</li>
+      <li say="How do you know that other people understand Chinese? Only from what they say and do.">One more reply: how do you know that other <em>people</em> understand Chinese? Only from what they say and do.</li>
+      <li say="So if you credit people with understanding because of how they behave, you should credit the room too.">So if you credit people with understanding because of their behavior, you should credit the room too.</li>
+      <li say="This is Turing's polite convention again, now aimed at Searle.">This is Turing's polite convention again, now aimed at Searle.</li>
+      <li say="Searle's answer: the question isn't how we know that someone understands. It's what we're saying is there when they do. And the room doesn't have it.">Searle's answer: the question isn't how we know that someone understands. It's what we are saying is there when they do, and the room doesn't have it.</li>
     </ul>
   </phil-slide>
 
   <!-- 30. Where is the understanding? viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Where Is the Understanding?</h1>
-    <phil-where prompt="Pick a place where understanding might be. See the reply that puts it there, and Searle's answer.">
+    <phil-narration>Your turn. Pick a place where understanding might be: the person, the rulebook, the whole room, and so on. For each one, you'll see which reply to Searle, if any, puts it there, and Searle's answer. Try as many as you like, then press Continue.</phil-narration>
+    <phil-where prompt="Pick a place where understanding might be. See which reply to Searle, if any, puts it there, and Searle's answer.">
       <script type="application/json">
       {
         "image": "./assets/rulebook.png",
@@ -473,6 +505,7 @@
   <!-- 31. Classify: which reply -->
   <phil-slide>
     <h1>Name That Reply</h1>
+    <phil-narration>Each critic here is answering Searle. Which reply is it: systems, robot, brain simulator, or other minds? Sort them, then press Check answers.</phil-narration>
     <phil-classify data-qid="masquerade-silverport:q5" review="systems-reply" prompt="Each critic is answering Searle. Which reply is it?"
                    explain="Right. The systems reply puts understanding in the whole room. The robot reply ties the symbols to a body in the world. The brain simulator reply copies a brain's workings. The other-minds reply says behavior is all we ever go on.">
       <phil-col key="sys">Systems reply</phil-col>
@@ -494,11 +527,12 @@
   <phil-slide>
     <img slot="art" src="./assets/octopus-cable.png" alt="A purple octopus on the sea floor wraps its arms around a thick cable lit with pulses of light">
     <h1>A Room Under the Sea</h1>
+    <phil-narration>Now, back to the present.</phil-narration>
     <ul reveal>
-      <li>Today's chatbots learn from vast amounts of text. Do they understand it, or match its shapes?</li>
-      <li>In 2020 the linguists Emily Bender and Alexander Koller offered a thought experiment in the spirit of the Room.</li>
-      <li>An octopus taps a cable between two islanders, learns to predict one's replies, then cuts the cable and pretends to be them. It never sees what the words refer to.</li>
-      <li>When one person needs real help with something new, the octopus has nothing behind its fluent replies.</li>
+      <li say="Today's chatbots learn from vast amounts of text. Do they understand it, or just match its shapes?">Today's chatbots learn from vast amounts of text. Do they understand it, or match its shapes?</li>
+      <li say="In 2020, the linguists Emily Bender and Alexander Koller offered a thought experiment in the spirit of Searle's room.">In 2020 the linguists Emily Bender and Alexander Koller offered a thought experiment in the spirit of the Room.</li>
+      <li say="An octopus taps a cable between two islanders. It learns to predict one islander's replies, then cuts the cable and pretends to be them. It never sees what the words refer to.">An octopus taps a cable between two islanders, learns to predict one's replies, then cuts the cable and pretends to be them. It never sees what the words refer to.</li>
+      <li say="So when one islander needs real help with something new, the octopus has nothing behind its fluent replies.">When one person needs real help with something new, the octopus has nothing behind its fluent replies.</li>
     </ul>
   </phil-slide>
 
@@ -506,11 +540,12 @@
   <phil-slide>
     <img slot="art" src="./assets/brass-guest.png" alt="A brass clockwork figure with gear joints, a feathered white mask, and a blue evening coat, bowing politely">
     <h1>Decision Point: Must It Unmask?</h1>
+    <phil-narration>Whatever machines understand, they now pass for people. Since 2019, California has banned bots that hide what they are in order to sell something or sway a vote. And since August 2026, the European Union has required chatbots to tell people they're talking to an AI. So, should a machine that talks with people always have to say that it's a machine? This one isn't graded. Pick the answer closest to your view.</phil-narration>
     <p>Whatever machines understand, they now pass for people. Since 2019 California has banned bots that hide what they are to sell something or sway a vote. Since August 2026 the EU has required chatbots to tell people they are talking to an AI.</p>
     <phil-poll prompt="Should a machine that talks with people always have to say that it is a machine?"
                explain="The case for yes is about deception, not about whether machines think. People share more, trust more, and buy more when they think they are talking to a person. The case against is that a label everywhere may be impractical, and that a useful tool needn't announce itself. Notice that you can answer this without settling Turing or Searle.">
       <phil-choice note="Then honesty with people matters more than whether the machine thinks.">Yes, always. People have a right to know.</phil-choice>
-      <phil-choice note="This is closer to how current laws work: disclosure where deception can do harm.">Only when it is selling something or swaying a vote.</phil-choice>
+      <phil-choice note="This is close to California's law: disclosure where deception can do harm.">Only when it is selling something or swaying a vote.</phil-choice>
       <phil-choice note="Then you think the ELIZA effect is mostly harmless.">No. If it helps, it needn't say what it is.</phil-choice>
     </phil-poll>
   </phil-slide>
@@ -520,19 +555,36 @@
     <h1>Where You Stand Now</h1>
     <p>These are your ratings from the start. Rate each statement again.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start of the night. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.</phil-narration>
+    <phil-narration when="after">Thank you. The clock is about to strike midnight.</phil-narration>
   </phil-slide>
 
   <!-- 35. Recap -->
   <phil-slide>
     <img slot="art" src="./assets/silverport-ball.png" alt="A candlelit ballroom under a chandelier, crowded with masked dancers of many ages and skin tones">
     <h1>The Ball Is Over</h1>
+    <phil-narration>The ball is over. Here's what the night showed.</phil-narration>
     <ul reveal>
-      <li><strong>Turing</strong>: replace "Can machines think?" with the imitation game. Judge a machine by its answers, as we judge people.</li>
-      <li><strong>ELIZA and after</strong>: passing can be gamed, and people read understanding into fitting replies.</li>
-      <li><strong>Searle</strong>: a program is syntax, understanding needs semantics, so passing the test isn't enough.</li>
-      <li><strong>The replies</strong>: the system, the robot, the brain simulator, and other minds, each with Searle's answer.</li>
+      <li say="Turing replaced the question, can machines think, with the imitation game. Judge a machine by its answers, as we judge people."><strong>Turing</strong>: replace "Can machines think?" with the imitation game. Judge a machine by its answers, as we judge people.</li>
+      <li say="ELIZA and the machines after it showed that passing can be gamed, and that people read understanding into replies that fit."><strong>ELIZA and after</strong>: passing can be gamed, and people read understanding into fitting replies.</li>
+      <li say="Searle argued that a program is only syntax, and understanding needs semantics, so passing the test isn't enough."><strong>Searle</strong>: a program is syntax, understanding needs semantics, so passing the test isn't enough.</li>
+      <li say="And his critics answered with the systems, robot, brain simulator, and other-minds replies. Searle answered each one. The masks come off at midnight. Did you find the machine, and did it matter?"><strong>The replies</strong>: the system, the robot, the brain simulator, and other minds, each with Searle's answer.</li>
     </ul>
     <p class="muted">The masks come off at midnight. Did you find the machine, and did it matter?</p>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Alan M. Turing, “Computing Machinery and Intelligence,” <em>Mind</em> 59, no. 236 (1950). <a href="https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-9">Read online</a>. The imitation game, the prediction, and Turing’s replies to his critics.</li>
+      <li>Ada Lovelace, translator’s notes to L. F. Menabrea, “Sketch of the Analytical Engine Invented by Charles Babbage” (1843). <a href="https://www.gutenberg.org/ebooks/75107">Read online</a>. Note G holds the line Turing called Lady Lovelace’s objection.</li>
+      <li>Emily M. Bender and Alexander Koller, “Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data,” <em>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics</em> (2020). <a href="https://aclanthology.org/2020.acl-main.463/">Read online</a>. The octopus test, and why form alone can’t give a machine meaning.</li>
+      <li>John R. Searle, “Minds, Brains, and Programs,” <em>Behavioral and Brain Sciences</em> 3, no. 3 (1980). <a href="https://doi.org/10.1017/S0140525X00005756">Publisher’s page</a>. The Chinese Room, with Searle’s answers to the systems and robot replies.</li>
+      <li>David Cole, “The Chinese Room Argument,” <em>Stanford Encyclopedia of Philosophy</em> (rev. 2024). <a href="https://plato.stanford.edu/entries/chinese-room/">Read online</a>. A guide to the argument, the main replies, and later debate.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Microsoft text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

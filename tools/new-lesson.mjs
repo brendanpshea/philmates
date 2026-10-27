@@ -26,8 +26,8 @@ const html = `<!doctype html>
   <title>${title} · PhilMates</title>
   <meta name="description" content="TODO: one-line description for the catalog.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
-  <link rel="stylesheet" href="../../../shared/phil-core.css?v=11">
-  <script type="module" src="../../../shared/phil-core.js?v=11"></script>
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=13">
+  <script type="module" src="../../../shared/phil-core.js?v=13"></script>
 </head>
 <body>
 
@@ -44,6 +44,15 @@ const html = `<!doctype html>
       <phil-choice correct>The right answer</phil-choice>
       <phil-choice feedback="Hint shown when chosen.">A distractor</phil-choice>
     </phil-mcq>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment: always the last slide -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <ul class="phil-reading">
+      <li>TODO: 4 or 5 verified readings, each a citation plus why to read it.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>
