@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Last Job: AI and the Right to Work · PhilMates</title>
+  <meta name="description" content="Robots do every job in the sky-town of Hammock Heights. Is there still a right to meaningful work? The goods of work, the case for and against, and basic income versus a job guarantee, tied to AI and work today.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
+  <script type="module" src="../../../shared/phil-core.js?v=14"></script>
+  <script type="module" src="./assets/week.js"></script>
+  <style>
+    phil-side .point { margin-top: auto; margin-bottom: 14px; background: var(--panel); border-left: 4px solid var(--accent-2); padding: 9px 11px; }
+    blockquote.src { margin: 8px 0 0; padding: 6px 12px; border-left: 4px solid var(--muted); color: var(--ink); font-style: italic; }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     Hammock Heights and its residents are invented: an original retro-future,
+     not borrowed from any show. The student plays UNIT-9, the town's Bureau of
+     Employment robot. The residents supply cases (Ines's lost craft, Priya's
+     open future, Dex's happy idleness, Felix's do-nothing job); every argument
+     is credited by name to a philosopher or economist.
+     Each part opens with a 2150 / our-world comparison. Every our-world fact is
+     real (sources in phil_mates_outlines.md). AI forecasts are presented as
+     contested estimates, never as predictions.
+     The lesson never grades a verdict on whether the right exists or which
+     policy is best. Those are polls. -->
+
+<phil-lesson id="meaningful-work" title="The Last Job" subject="AI and the Right to Work">
+
+  <!-- ============ OPENING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/town.png" alt="A cheerful floating town of bubble-domed buildings at sunrise, where teal robots sweep, cook, and carry boxes while people relax in hammocks strung between the buildings">
+    <h1>The Last Job</h1>
+    <p class="lead">Hammock Heights, 2150. Robots do every job, and do it better. You are UNIT-9, the town's Bureau of Employment robot, and you have no jobs left to hand out.</p>
+    <p>This morning a petition lands on your desk. The residents want a right to work. Your job, such as it is, is to work out what that could mean, and whether they have one.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Hammock Heights, in the year 2150. Robots do every job, and do it better. You are UNIT-9, the town's Bureau of Employment robot, and you have no jobs left to hand out. This morning, a petition lands on your desk. The residents want a right to work. Your job, such as it is, is to work out what that could mean, and whether they have one. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>Everyone who wants to work should be able to find a job.</phil-statement>
+      <phil-statement>Work is one of the most important parts of a good life.</phil-statement>
+      <phil-statement>If robots could do all the work, people would be better off not working.</phil-statement>
+      <phil-statement>People who choose not to work should still get enough money to live on.</phil-statement>
+      <phil-statement>A government should create jobs for people, even if a machine could do the job better.</phil-statement>
+    </phil-beliefs>
+    <phil-narration>Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.</phil-narration>
+    <phil-narration when="after">Saved. Now, meet the people who signed the petition.</phil-narration>
+  </phil-slide>
+
+  <!-- 3. Meet the residents -->
+  <phil-slide id="residents">
+    <img slot="art" src="./assets/unit-9.png" alt="UNIT-9, a boxy teal robot with a round screen for a face and a friendly smile, sits alone at a desk beside an empty in-tray">
+    <h1>Meet the Residents</h1>
+    <p>Everyone in Hammock Heights gets a share of what the robots produce. Nobody is poor. Four residents stop by your desk.</p>
+    <phil-narration>Everyone in Hammock Heights gets a share of what the robots produce. Nobody is poor. Four residents stop by your desk.</phil-narration>
+    <ul reveal>
+      <li say="Ines spent forty years welding bridges. The welding robots are faster and never miss a seam. She misses being good at something."><strong>Ines</strong> spent forty years welding bridges. The welding robots are faster and never miss a seam. She misses being good at something.</li>
+      <li say="Priya is sixteen and has never had a job. Everyone asks what she'll be when she grows up. She has no idea, and isn't sure she minds."><strong>Priya</strong> is sixteen and has never had a job. Everyone asks what she'll be when she grows up. She has no idea, and isn't sure she minds.</li>
+      <li say="Dex surfs the floating wave pool all day, and says he's never been happier."><strong>Dex</strong> surfs the floating wave pool all day and says he has never been happier.</li>
+      <li say="Felix is the last human employee in town: the Official Button Presser. The button isn't connected to anything."><strong>Felix</strong> is the last human employee in town: the Official Button Presser. The button isn't connected to anything.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Three rights -->
+  <phil-slide id="three-rights">
+    <img slot="art" src="./assets/petition.png" alt="Residents of different ages and skin tones carry a long blank scroll up the steps of a domed town hall, while two robots hold the doors open">
+    <h1>Three Rights in One Phrase</h1>
+    <p>The petition asks for "a right to work." That phrase can mean three different things.</p>
+    <phil-narration>The petition asks for a right to work. That phrase can mean three different things.</phil-narration>
+    <ul reveal>
+      <li say="First, a right to look for work. Nobody may stop you from seeking or taking a job. Others only have to stay out of the way. That's a negative right."><strong>A right to look for work.</strong> Nobody may stop you from seeking or taking a job. Others only have to stay out of the way. That is a negative right.</li>
+      <li say="Second, a right to a job. Someone must give you work if you can't find any. That's a positive right, so someone has to provide it."><strong>A right to a job.</strong> Someone must give you work if you can't find any. That is a positive right, so someone has to provide it.</li>
+      <li say="Third, a right to meaningful work. Not just any job, but work that's worth doing."><strong>A right to meaningful work.</strong> Not just any job, but work that is worth doing.</li>
+      <li say="The United Nations' Universal Declaration of Human Rights, from 1948, says everyone has the right to work and to free choice of employment. In the US, so-called right-to-work laws are something else entirely. They're about union dues.">The UN's 1948 Universal Declaration of Human Rights lists "the right to work, to free choice of employment." (US "right-to-work" laws are about union dues.)</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 5. Is it coming? -->
+  <phil-slide id="coming">
+    <img slot="art" src="./assets/port.png" alt="Dockworkers of different ages, genders, and skin tones in hard hats and safety vests stand on a quay below giant container cranes at sunset">
+    <h1>Is It Coming?</h1>
+    <p>Hammock Heights is a thought experiment. Here is where our world actually stands.</p>
+    <phil-narration>Hammock Heights is a thought experiment. Here's where our world actually stands.</phil-narration>
+    <ul reveal>
+      <li say="In 2024, the International Monetary Fund estimated that about forty percent of jobs worldwide are exposed to AI, meaning AI could do or change some of their tasks.">In 2024 the International Monetary Fund estimated that about 40% of jobs worldwide are exposed to AI: AI could do or change some of their tasks.</li>
+      <li say="Exposed doesn't mean replaced. In many jobs, AI may help workers rather than take over.">Exposed doesn't mean replaced. In many jobs, AI may help workers rather than take over.</li>
+      <li say="There are early signs, though. A Stanford study, updated in 2026, found that young workers in the jobs most exposed to AI have fallen behind their peers, mostly because fewer are being hired.">There are early signs. A Stanford study, updated in 2026, found young workers in the most AI-exposed jobs falling behind their peers, mostly because fewer are hired.</li>
+      <li say="So far, researchers find no economy-wide wave of job losses. Nobody knows how far this goes. Hammock Heights asks: what if it went all the way?">So far, researchers find no economy-wide wave of job losses. Hammock Heights asks: what if it went all the way?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Classify: which right -->
+  <phil-slide>
+    <h1>Which Right?</h1>
+    <phil-classify data-qid="meaningful-work:q1" review="three-rights" prompt="Which of the three rights does each claim describe?"
+                   explain="Right. A right to look for work only asks others not to stand in the way. A right to a job says someone must provide one. A right to meaningful work asks for more than a job: work worth doing.">
+      <phil-col key="look">A right to look for work</phil-col>
+      <phil-col key="job">A right to a job</phil-col>
+      <phil-col key="meaning">A right to meaningful work</phil-col>
+      <phil-item answer="look" why="It only forbids interference with a job she's offered: a negative right.">"No law may stop a woman from taking a welding job she's offered."</phil-item>
+      <phil-item answer="look" why="It forbids stopping someone from seeking work. Nobody has to provide anything.">"No law may stop someone from seeking work in the trade she chooses."</phil-item>
+      <phil-item answer="job" why="Someone must provide work: a positive right to a job.">"If a man can't find work, the town must give him a job."</phil-item>
+      <phil-item answer="job" why="The government must supply paid positions: a positive right to a job.">"When robots take every job, the government owes people paid positions."</phil-item>
+      <phil-item answer="meaning" why="Being given a job isn't enough. The work must be worth doing.">"Being handed a job isn't enough. A button that does nothing doesn't count."</phil-item>
+      <phil-item answer="meaning" why="It asks for more than any job: work worth doing.">"Everyone is owed work that's worth doing, not just any job."</phil-item>
+    </phil-classify>
+    <phil-narration>Which of the three rights does each claim describe? Sort them, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. The rest of this lesson is about the third one, because that's the one robots put in doubt.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 1 — WHAT WORK GIVES ============ -->
+
+  <!-- 7. Then and now: paid to do nothing -->
+  <phil-slide id="paid-nothing">
+    <img slot="art" src="./assets/village.png" alt="A 1930s factory village with cold chimneys and a padlocked factory gate, where men and women in coats and caps stand idle on the cobbled street">
+    <h1>Paid to Do Nothing</h1>
+    <phil-compare>
+      <phil-side label="2150" tag="Hammock Heights">
+        <p>Felix gets the same monthly share as everyone else, plus a small wage for pressing the button. "It gets me out of bed," he says.</p>
+      </phil-side>
+      <phil-side label="1933" tag="Our world">
+        <p>Researchers studied Marienthal, an Austrian village whose factory had closed. Most families didn't rebel. They grew resigned, and the structure of their days fell apart. Studies since then find that losing work harms well-being, not just income.</p>
+      </phil-side>
+    </phil-compare>
+    <p class="muted">Work gives people more than a paycheck. So what, exactly?</p>
+    <phil-narration>In Hammock Heights, Felix gets the same monthly share as everyone else, plus a small wage for pressing the button. It gets me out of bed, he says. In our world, in 1933, researchers studied Marienthal, an Austrian village whose factory had closed. Most families didn't rebel. They grew resigned, and the structure of their days fell apart. Studies since then find that losing work harms well-being, not just income. Work gives people more than a paycheck. So what, exactly?</phil-narration>
+  </phil-slide>
+
+  <!-- 8. The goods of work -->
+  <phil-slide id="goods">
+    <phil-thinker slot="art" name="Anca Gheaus and Lisa Herzog" work="“The Goods of Work (Other Than Money!)” (2016)"
+                  img="./assets/idea-gheaus-herzog.png" alt="Four glowing gems, red, blue, green, and gold, on a wooden workbench beside a pair of worn leather work gloves" accent="#46e07a">
+      <p>Work offers goods money can't buy, and justice requires fair chances at them.</p>
+    </phil-thinker>
+    <h1>The Goods of Work</h1>
+    <p>The philosophers Anca Gheaus and Lisa Herzog list four goods of work besides money. For most people today, a job is the main place to find them.</p>
+    <phil-narration>The philosophers Anca Gheaus and Lisa Herzog list four goods of work, besides money. For most people today, a job is the main place to find them.</phil-narration>
+    <ul reveal>
+      <li say="Excellence: developing your skills, and accomplishing something with them."><strong>Excellence:</strong> developing your skills and accomplishing something with them.</li>
+      <li say="Social contribution: doing something your society needs."><strong>Social contribution:</strong> doing something your society needs.</li>
+      <li say="Community: doing things together with others, as equals, in a shared project."><strong>Community:</strong> doing things together with others, as equals, in a shared project.</li>
+      <li say="Social recognition: being recognized and valued by others for what you do."><strong>Social recognition:</strong> being recognized and valued by others for what you do.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Explorer: a week with no jobs -->
+  <phil-slide hold>
+    <h1>Try It: A Week With No Jobs</h1>
+    <phil-week slots="4" prompt="UNIT-9 is helping a resident plan a week. There are no jobs left, only these activities. Pick four, and watch which goods of work the week provides.">
+      <script type="application/json">
+      {
+        "goods": [
+          { "id": "excellence",   "label": "Excellence" },
+          { "id": "contribution", "label": "Contribution" },
+          { "id": "community",    "label": "Community" },
+          { "id": "recognition",  "label": "Recognition" }
+        ],
+        "activities": [
+          { "id": "button", "icon": "🔘", "name": "Official Button Presser", "desc": "The town's last job. The button isn't connected to anything.",
+            "goods": { "excellence": 0, "contribution": 0, "community": 0, "recognition": 2 },
+            "note": "A real job title that people know. But nothing depends on the work." },
+          { "id": "bridge", "icon": "🔧", "name": "Restoring an old bridge by hand", "desc": "Robots keep the real bridges up.",
+            "goods": { "excellence": 3, "contribution": 1, "community": 0, "recognition": 1 },
+            "note": "Hard skill, real excellence. The town doesn't need the bridge, though." },
+          { "id": "orchestra", "icon": "🎻", "name": "Town orchestra", "desc": "Practice twice a week, a concert every month.",
+            "goods": { "excellence": 2, "contribution": 1, "community": 3, "recognition": 2 },
+            "note": "Skill, friends, and applause. A robot band could play it more perfectly." },
+          { "id": "league", "icon": "🎮", "name": "Sky-league gaming", "desc": "Your team is ranked third in the league.",
+            "goods": { "excellence": 3, "contribution": 0, "community": 2, "recognition": 2 },
+            "note": "Skill, a team, and fans who know your name. Nobody else's life depends on it." },
+          { "id": "care", "icon": "🫖", "name": "Caring for an aging parent", "desc": "Robots do the lifting. You do the company.",
+            "goods": { "excellence": 1, "contribution": 3, "community": 1, "recognition": 0 },
+            "note": "Someone truly needs you. Care often goes unseen and unthanked, though." },
+          { "id": "garden", "icon": "🌱", "name": "Community garden", "desc": "The robot farms grow better food.",
+            "goods": { "excellence": 1, "contribution": 1, "community": 2, "recognition": 1 },
+            "note": "Good company and a growing skill. The town doesn't need the tomatoes." },
+          { "id": "surf", "icon": "🏄", "name": "Wave-pool surfing", "desc": "Dex's favorite.",
+            "goods": { "excellence": 2, "contribution": 0, "community": 1, "recognition": 0 },
+            "note": "Fun, and a real skill. It's for you alone." },
+          { "id": "tutor", "icon": "📐", "name": "Tutoring kids in math", "desc": "The robot tutors are better, but some kids like a human.",
+            "goods": { "excellence": 1, "contribution": 2, "community": 1, "recognition": 1 },
+            "note": "Some kids need you, though less than they would without robot tutors." }
+        ],
+        "hint": "Notice which goods stay thin. When robots do every needed job, which goods are hardest to find?"
+      }
+      </script>
+    </phil-week>
+    <phil-narration>Your turn. You're helping a resident plan a week. There are no jobs left, only these activities. Pick four, and watch which goods of work the week provides. Try a few different weeks, and notice which goods are hardest to fill. When you're ready, press Continue.</phil-narration>
+  </phil-slide>
+
+  <!-- 10. Two warnings -->
+  <phil-slide id="warnings">
+    <phil-thinker slot="art" name="Hannah Arendt" dates="1906–1975" work="The Human Condition (1958)"
+                  img="./assets/idea-arendt.png" alt="A dark, empty workshop with tools hung on the wall and a large clock over the door, lit by a single sunbeam" accent="#ff6ad5">
+      <p>A society built around labor, freed from labor, may be left with nothing.</p>
+    </phil-thinker>
+    <h1>Two Warnings</h1>
+    <phil-narration>Two philosophers warned about a world without work.</phil-narration>
+    <ul reveal>
+      <li say="John Rawls called self-respect perhaps the most important primary good: one of the goods every person needs, whatever else they want.">John Rawls called self-respect "perhaps the most important primary good": one of the goods every person needs, whatever else they want.</li>
+      <li say="Later he warned that lacking security and the chance of meaningful work destroys people's self-respect, and their sense that they are members of society, not simply caught in it.">Later he warned that lacking security and the chance of meaningful work destroys self-respect, and people's sense that they are members of society, "not simply caught in it."</li>
+      <li say="Hannah Arendt, writing in 1958, worried about a society of laborers without labor. People whose lives centered on their jobs, with the jobs taken away.">Hannah Arendt (1958) worried about "a society of laborers without labor": people whose lives centered on their jobs, with the jobs taken away.</li>
+      <li say="Both suggest that money alone can't replace what work gives people.">Both suggest that money alone can't replace what work gives people.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Classify: which good -->
+  <phil-slide>
+    <h1>Which Good?</h1>
+    <phil-classify data-qid="meaningful-work:q2" review="goods" prompt="Which good of work does each example show most clearly?"
+                   explain="Right. Excellence is developing a skill and accomplishing something with it. Social contribution is doing what your society needs. Community is doing things together with others as equals. Social recognition is being valued by others for what you do.">
+      <phil-col key="exc">Excellence</phil-col>
+      <phil-col key="con">Social contribution</phil-col>
+      <phil-col key="com">Community</phil-col>
+      <phil-col key="rec">Social recognition</phil-col>
+      <phil-item answer="exc" why="Years of practice ending in a flawless seam is excellence: a developed skill, and an accomplishment.">After years of practice, a welder lays a seam with no flaws at all.</phil-item>
+      <phil-item answer="con" why="Thousands of people depend on the work every day: social contribution.">A bus driver knows thousands of people get to work because of her.</phil-item>
+      <phil-item answer="con" why="A whole neighborhood depends on the work being done: social contribution.">A garbage collector keeps a whole neighborhood clean and healthy.</phil-item>
+      <phil-item answer="com" why="Doing things together with others, as equals who look out for each other, is community.">A night-shift crew covers for each other and shares birthday cake.</phil-item>
+      <phil-item answer="rec" why="Others' respect for what you do is social recognition.">When she says she's an ICU nurse, people's faces light up with respect.</phil-item>
+    </phil-classify>
+    <phil-narration>Which good of work does each example show most clearly: excellence, social contribution, community, or social recognition? Sort them, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Now, does anyone have a right to these goods?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 2 — THE CASE FOR ============ -->
+
+  <!-- 12. Then and now: not a hobby -->
+  <phil-slide id="not-a-hobby">
+    <img slot="art" src="./assets/picket.png" alt="A picket line of writers on a city sidewalk, men and women of different ages and skin tones carrying laptops and blank signs">
+    <h1>Not a Hobby</h1>
+    <phil-compare>
+      <phil-side label="2150" tag="Hammock Heights">
+        <p>Ines asks UNIT-9 for real work. "A hobby is something nobody needs," she says. "I want to be needed."</p>
+      </phil-side>
+      <phil-side label="2023" tag="Our world">
+        <p>Hollywood screenwriters struck for 148 days. Their new contract said AI can't write or rewrite scripts, and studios can't make writers use it.</p>
+        <p class="point">Part of what they fought for was the work itself.</p>
+      </phil-side>
+    </phil-compare>
+    <phil-narration>In Hammock Heights, Ines asks UNIT-9 for real work. A hobby is something nobody needs, she says. I want to be needed. In our world, in 2023, Hollywood screenwriters struck for a hundred and forty-eight days. Their new contract said AI can't write or rewrite scripts, and studios can't make writers use it. Part of what they fought for was the work itself.</phil-narration>
+  </phil-slide>
+
+  <!-- 13. Autonomy -->
+  <phil-slide id="autonomy">
+    <phil-thinker slot="art" name="Adina Schwartz" work="“Meaningful Work” (1982)"
+                  img="./assets/idea-schwartz.png" alt="A hand steers the wheel of a small boat across dark water toward a lighthouse at night" accent="#4cc2ff">
+      <p>Work that leaves no room for judgment undermines people as autonomous agents.</p>
+    </phil-thinker>
+    <h1>The Case for: Autonomy</h1>
+    <phil-narration>The first case for a right to meaningful work starts from autonomy.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Adina Schwartz starts from autonomy: running your own life by your own plans and judgment.">The philosopher Adina Schwartz (1982) starts from <strong>autonomy</strong>: running your own life by your own plans and judgment.</li>
+      <li say="Routine jobs leave almost no room to set aims or choose means. Years of such work, she argues, make people less able to plan their own lives.">Routine jobs leave almost no room to set aims or choose means. Years of such work, she argues, make people less able to plan their own lives.</li>
+      <li say="So a society that respects everyone as an autonomous agent must not confine anyone to such mindless jobs.">So a society that respects everyone as an autonomous agent must not confine anyone to such mindless jobs.</li>
+      <li say="On this view, Felix's button isn't enough, whatever it pays.">On this view, a job like Felix's button is not enough, whatever it pays.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Flourishing -->
+  <phil-slide id="flourishing">
+    <phil-thinker slot="art" name="Andrea Veltman" work="Meaningful Work (2016)"
+                  img="./assets/idea-veltman.png" alt="A young sapling in a clay pot on a sunny windowsill, beside a small watering can" accent="#ffcf5a">
+      <p>Meaningful work is central to flourishing, though no one has a right to it.</p>
+    </phil-thinker>
+    <h1>The Case for: Flourishing</h1>
+    <phil-narration>The second case is about flourishing, and it comes with a twist.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Andrea Veltman draws on Aristotle. A good human life means developing your capacities, and using them.">The philosopher Andrea Veltman (2016) draws on Aristotle: a good human life means developing your capacities and using them.</li>
+      <li say="Meaningful work, she argues, is central to human flourishing. It exercises your abilities, serves a purpose, and connects to the rest of your life.">Meaningful work, she argues, is central to human flourishing. It exercises your abilities, serves a purpose, and connects to the rest of your life.</li>
+      <li say="But Veltman stops short of a right. The state can't create meaningful work and match each person to it, and some bad work can't be avoided.">But Veltman stops short of a right. The state can't create meaningful work and match each person to it, and some bad work can't be avoided.</li>
+      <li say="So the flourishing case shows why meaningful work matters, without settling who owes it to whom.">So the flourishing case shows why meaningful work matters, without settling who owes it to whom.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Checkset: the case for -->
+  <phil-slide>
+    <h1>The Case For, Checked</h1>
+    <phil-checkset data-qid="meaningful-work:q3" review="autonomy" prompt="Check every statement that is true, as this lesson presents it."
+                   explain="Right. Schwartz argues from autonomy that no one should be confined to mindless jobs. Veltman thinks meaningful work is central to flourishing, but denies there is a right to it. Rawls tied meaningful work to self-respect. And Arendt feared, rather than hoped for, a society of laborers without labor.">
+      <phil-statement correct>Schwartz argues that respecting autonomy means no one should be confined to mindless, routine jobs.</phil-statement>
+      <phil-statement correct>Veltman argues that meaningful work is central to a flourishing life.</phil-statement>
+      <phil-statement correct>Rawls warned that lacking security and the chance of meaningful work destroys self-respect.</phil-statement>
+      <phil-statement>Veltman argues that everyone has a right to meaningful work.</phil-statement>
+      <phil-statement>Schwartz argues that any paid job meets the standard of meaningful work.</phil-statement>
+      <phil-statement>Arendt hoped for a society of laborers freed from labor.</phil-statement>
+    </phil-checkset>
+    <phil-narration>Which of these statements are true, as this lesson presents them? Check every one that is, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Now for the other side.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 3 — THE CASE AGAINST ============ -->
+
+  <!-- 16. Then and now: happy doing nothing -->
+  <phil-slide id="happy">
+    <img slot="art" src="./assets/dex.png" alt="Dex, a tanned, shaggy-haired blond man in board shorts, surfs a glowing wave that curls through the sky above the floating town">
+    <h1>Happy Doing Nothing</h1>
+    <phil-compare>
+      <phil-side label="2150" tag="Hammock Heights">
+        <p>Dex surfs the floating wave all day. He has no job and doesn't want one. "I've never been happier," he says.</p>
+      </phil-side>
+      <phil-side label="1930" tag="Our world">
+        <p>The economist John Maynard Keynes guessed that his grandchildren's generation might work about fifteen hours a week. Their "permanent problem," he wrote, would be how to occupy their leisure "to live wisely and agreeably and well."</p>
+      </phil-side>
+    </phil-compare>
+    <p class="muted">Is a life without work a loss, or a prize?</p>
+    <phil-narration>In Hammock Heights, Dex surfs the floating wave all day. He has no job, and doesn't want one. I've never been happier, he says. In our world, in 1930, the economist John Maynard Keynes guessed that his grandchildren's generation might work about fifteen hours a week. Their permanent problem, he wrote, would be how to occupy their leisure, to live wisely and agreeably and well. So is a life without work a loss, or a prize?</phil-narration>
+  </phil-slide>
+
+  <!-- 17. Neutrality -->
+  <phil-slide id="neutrality">
+    <phil-thinker slot="art" name="Richard Arneson" work="“Meaningful Work and Market Socialism” (1987)"
+                  img="./assets/idea-arneson.png" alt="A dark hallway lined with open doors glowing purple, blue, orange, and green, with glowing footprints leading toward all of them" accent="#ff6ad5">
+      <p>Guaranteeing meaningful work unfairly favors one good over others.</p>
+    </phil-thinker>
+    <h1>The Case Against: Neutrality</h1>
+    <phil-narration>The first case against is about neutrality.</phil-narration>
+    <ul reveal>
+      <li say="Some people love their work. Others, like Dex, would rather spend their time on other things.">Some people love their work. Others, like Dex, would rather spend their time on other things.</li>
+      <li say="In 1987, the philosopher Richard Arneson argued that a right to meaningful work arbitrarily privileges one good, job satisfaction, over other goods, like more pay or more free time.">The philosopher Richard Arneson (1987) argued that a right to meaningful work "arbitrarily privileges" one good, job satisfaction, over others like more pay or more free time.</li>
+      <li say="So a fair state stays neutral. People can pursue meaningful work, more money, or more leisure, as they choose.">So a fair state stays <strong>neutral</strong>. People can pursue meaningful work, more money, or more leisure, as they choose.</li>
+      <li say="Arneson later changed course. By 2009 he thought justice could require meaningful work for everyone. His 1987 argument still has many defenders.">Arneson later changed course: by 2009 he thought justice could require meaningful work for everyone. His 1987 argument still has many defenders.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Post-work -->
+  <phil-slide id="post-work">
+    <phil-thinker slot="art" name="Bertrand Russell" dates="1872–1970" work="“In Praise of Idleness” (1932)"
+                  img="./assets/idea-russell.png" alt="A striped hammock strung between two potted trees, with an open book lying in it and a straw sun hat on a stool beside it" accent="#46e07a">
+      <p>Less work, wisely used, would make people happier.</p>
+    </phil-thinker>
+    <h1>The Case Against: Post-Work</h1>
+    <phil-narration>The second case against says we'd be better off without work.</phil-narration>
+    <ul reveal>
+      <li say="Bertrand Russell wrote in praise of idleness. The road to happiness and prosperity, he said, lies in an organized reduction of work. He wanted a four-hour working day for everyone.">Bertrand Russell (1932) praised idleness: "the road to happiness and prosperity lies in an organized diminution of work." He wanted a four-hour working day for everyone.</li>
+      <li say="Today the philosopher John Danaher goes further. He argues that work is bad for most people most of the time. Bosses dominate, jobs are insecure, and work takes over our time.">John Danaher (2019) goes further: "work is bad for most people most of the time." Bosses dominate, jobs are insecure, and work takes over our time.</li>
+      <li say="On Danaher's view, the goods of work can be found elsewhere, in games, play, and community.">On Danaher's view, the goods of work can be found elsewhere: in games, play, and community.</li>
+      <li say="So the task is to build good lives without jobs, not to keep jobs alive.">So, on his view, the task is to build good lives without jobs, not to keep jobs alive.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. It can't be provided -->
+  <phil-slide id="who-owes">
+    <img slot="art" src="./assets/button.png" alt="Felix, a dignified older Black man in a blue uniform and cap, stands with folded arms beside a big red button on a pedestal, its power cord unplugged on the floor">
+    <h1>The Case Against: It Can't Be Provided</h1>
+    <phil-narration>The third case against says the right can't be provided.</phil-narration>
+    <ul reveal>
+      <li say="A right to a job is a positive right, so someone must provide the jobs. Even the UN committee on economic rights says the right to work is not an absolute and unconditional right to obtain employment.">A right to a job is a positive right, so someone must provide the jobs. Even the UN committee on economic rights says the right to work is not "an absolute and unconditional right to obtain employment."</li>
+      <li say="And if robots do every task better, the only jobs anyone could provide are make-work: work that exists only to keep someone busy.">And if robots do every task better, the only jobs anyone could provide are <strong>make-work</strong>: work that exists only to keep someone busy.</li>
+      <li say="The anthropologist David Graeber called such work a bullshit job: paid work so pointless that even the employee can't justify it. Felix's button is one.">David Graeber called it a "bullshit job": paid work so pointless that even the employee can't justify it. Felix's button is one.</li>
+      <li say="And people can tell. The philosophers Cordasco and Véliz argue that holding back AI to save jobs can't protect workers' self-esteem, because workers would know their jobs survive only because a policy props them up.">People can tell. Cordasco and Véliz (2025) argue that holding back AI to save jobs can't protect workers' self-esteem: they'd know a policy props their jobs up.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Classify: which objection -->
+  <phil-slide>
+    <h1>Which Objection?</h1>
+    <phil-classify data-qid="meaningful-work:q4" review="neutrality" prompt="Which objection to a right to work does each speaker raise?"
+                   explain="Right. Neutrality says the state shouldn't favor job satisfaction or working lives over other goods. Post-work says we'd be better off without jobs, and can find work's goods elsewhere. It can't be provided says someone must supply the jobs, and when robots do everything better, the only jobs left to supply are make-work.">
+      <phil-col key="neutral">Neutrality</phil-col>
+      <phil-col key="post">Post-work</phil-col>
+      <phil-col key="owes">It can't be provided</phil-col>
+      <phil-item answer="neutral" why="Refusing to rank one way of life above another is the neutrality objection.">"The state shouldn't rank a working life above a life of surfing."</phil-item>
+      <phil-item answer="neutral" why="Arneson's point: job satisfaction is one good among others, like pay or free time, and the state shouldn't favor it.">"Some people would trade job satisfaction for more pay or free time. The state shouldn't favor one choice."</phil-item>
+      <phil-item answer="post" why="Saying most work was bad and we're better off without it is the post-work case.">"Most jobs were never that good. Let the robots have them."</phil-item>
+      <phil-item answer="post" why="Finding the goods of work outside jobs is the post-work case.">"We can find mastery and friendship in games and clubs, without any jobs."</phil-item>
+      <phil-item answer="owes" why="A right to a job needs someone with a duty to provide jobs.">"A right to a job means someone must provide the jobs. Who?"</phil-item>
+      <phil-item answer="owes" why="When robots do everything better, the only jobs anyone could provide are make-work.">"With robots doing everything better, the only jobs the town could hand out are make-work."</phil-item>
+    </phil-classify>
+    <phil-narration>Which objection does each speaker raise: neutrality, post-work, or it can't be provided? Sort them, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. So, does the right exist?</phil-narration>
+  </phil-slide>
+
+  <!-- 21. Poll: is there a right? -->
+  <phil-slide>
+    <img slot="art" src="./assets/priya.png" alt="Priya, a South Asian teenage girl with a long braid, a yellow hoodie, and headphones around her neck, sits on a railing looking out at floating booths all staffed by robots">
+    <h1>Decision Point: Is There a Right?</h1>
+    <phil-poll prompt="Priya asks UNIT-9 straight out: &quot;Do I have a right to meaningful work?&quot; What do you answer?"
+               explain="The case for rests on autonomy and self-respect. The case against says a fair state shouldn't pick a working life for everyone, that much work was never good, and that people can tell when a job is make-work. The next part asks what a town should actually do.">
+      <phil-choice note="This is the case for, from Schwartz and Rawls. It owes an answer to Arneson: why favor a working life over Dex's? And to Veltman, who agrees meaningful work matters but denies a right to it.">Yes. Without meaningful work, people lose autonomy and self-respect, so everyone is owed a chance at it.</phil-choice>
+      <phil-choice note="This keeps the negative right and drops the positive ones. In a town with no jobs left, it may protect very little.">Only a right to look for work, not to be given it.</phil-choice>
+      <phil-choice note="This is close to Van Parijs, whom you'll meet in the next part: give people the means and let them choose. It owes an answer to Rawls's worry about self-respect.">No. She's owed the means to live well, and can choose whether to work.</phil-choice>
+      <phil-choice note="This is the post-work view. It bets that games, crafts, and care can supply what jobs did.">No. Work was a burden, and a world without it is better.</phil-choice>
+    </phil-poll>
+    <phil-narration>Priya asks UNIT-9 straight out: do I have a right to meaningful work? What do you answer? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">The case for rests on autonomy and self-respect. The case against says a fair state shouldn't pick a working life for everyone. Next: what should a town actually do?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 4 — WHAT SHOULD THE TOWN DO? ============ -->
+
+  <!-- 22. Then and now: pay everyone, or hire everyone? -->
+  <phil-slide id="choices">
+    <img slot="art" src="./assets/council.png" alt="A town council of people of different ages and skin tones and three polite robots sits at a curved table under a glass dome, with a big green button and a big blue button in front of them">
+    <h1>Pay Everyone, or Hire Everyone?</h1>
+    <phil-compare>
+      <phil-side label="2150" tag="Hammock Heights">
+        <p>The town council has two buttons. The green one pays everyone a basic income, no questions asked. The blue one offers everyone a job.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Our world">
+        <p>Small versions of both have been tested. Finland paid 2,000 unemployed people a monthly basic income for two years. In one Austrian village, every long-term unemployed person was offered a job from 2020 to 2024.</p>
+      </phil-side>
+    </phil-compare>
+    <p class="muted">UNIT-9 has to recommend one.</p>
+    <phil-narration>In Hammock Heights, the town council has two buttons. The green one pays everyone a basic income, no questions asked. The blue one offers everyone a job. In our world, small versions of both have been tested. Finland paid two thousand unemployed people a monthly basic income for two years. And in one Austrian village, every long-term unemployed person was offered a job from 2020 to 2024. UNIT-9 has to recommend one.</phil-narration>
+  </phil-slide>
+
+  <!-- 23. Basic income -->
+  <phil-slide id="basic-income">
+    <phil-thinker slot="art" name="Philippe Van Parijs" work="“Why Surfers Should Be Fed” (1991)"
+                  img="./assets/idea-van-parijs.png" alt="A rainbow-striped surfboard leaning against stacks of gold coins on a beach at sunset" accent="#4cc2ff">
+      <p>Real freedom for all requires an unconditional basic income.</p>
+    </phil-thinker>
+    <h1>Pay Everyone: Basic Income</h1>
+    <phil-narration>The green button is a basic income.</phil-narration>
+    <ul reveal>
+      <li say="A universal basic income is a regular payment to everyone, with no work required.">A <strong>universal basic income</strong> is a regular payment to everyone, with no work required.</li>
+      <li say="The philosopher Philippe Van Parijs defends it. His 1991 paper is titled Why Surfers Should Be Fed.">The philosopher Philippe Van Parijs defends it. His 1991 paper is titled "Why Surfers Should Be Fed."</li>
+      <li say="His reason is real freedom. Everyone should have the means to live the life they choose, including a life without paid work.">His reason is <strong>real freedom</strong>: everyone should have the means to live the life they choose, including a life without paid work.</li>
+      <li say="In a US study, a thousand people got a thousand dollars a month for three years. On average, they worked one to two hours less a week, and leisure grew more than any other use of their time.">In a US study, 1,000 people got $1,000 a month for three years. On average they worked one to two hours less a week, and leisure grew more than any other use of their time.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Reciprocity -->
+  <phil-slide id="reciprocity">
+    <phil-thinker slot="art" name="Stuart White" work="The Civic Minimum (2003)"
+                  img="./assets/idea-white.png" alt="Two pairs of hands hold one loaf of bread between them over a wooden table" accent="#ffcf5a">
+      <p>Those who share in what a society produces should do their part.</p>
+    </phil-thinker>
+    <h1>The Surfer Objection</h1>
+    <phil-narration>Not everyone thinks surfers should be fed.</phil-narration>
+    <ul reveal>
+      <li say="John Rawls had already said no. Those who surf all day off Malibu, he wrote in 1988, must find a way to support themselves, and would not be entitled to public funds.">John Rawls had already said no (1988): "those who surf all day off Malibu must find a way to support themselves and would not be entitled to public funds."</li>
+      <li say="The philosopher Stuart White calls the idea fair reciprocity. If you share in what a society produces, you should contribute in return. In his words, everyone should do their bit.">The philosopher Stuart White calls the idea <strong>fair reciprocity</strong>: if you share in what a society produces, you should contribute in return. "Everyone should do their bit."</li>
+      <li say="But in Hammock Heights, robots produce almost everything. Whose work would Dex be living off?">But in Hammock Heights, robots produce almost everything. Whose work would Dex be living off?</li>
+      <li say="White's reply: contribution can mean more than a paid job. Care work and other service to the community count too.">White's reply: contribution can mean more than a paid job. Care work and other service to the community count too.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Middle paths -->
+  <phil-slide id="middle-paths">
+    <img slot="art" src="./assets/envelope.png" alt="At a kitchen table, a smiling Latino man and an older Black woman each read a letter from a plain opened envelope">
+    <h1>Hire Everyone, or Something Between</h1>
+    <phil-narration>The blue button, and something in between.</phil-narration>
+    <ul reveal>
+      <li say="A job guarantee: the government offers paid work to anyone who wants it. It answers Rawls. But someone has to make the jobs worth doing.">A <strong>job guarantee</strong>: the government offers paid work to anyone who wants it. It answers Rawls, but someone has to make the jobs worth doing.</li>
+      <li say="Marienthal, the village from the 1933 study, tried one from 2020 to 2024. An early evaluation found that long-term unemployment nearly vanished, and participants gained structure and purpose.">Marienthal, the village from the 1933 study, tried one from 2020 to 2024. An early evaluation found long-term unemployment nearly vanished, and participants gained structure and purpose.</li>
+      <li say="A participation income: the economist Tony Atkinson proposed paying people who contribute, counting care, volunteering, and study, not just paid jobs.">A <strong>participation income</strong>: the economist Tony Atkinson (1996) proposed paying people who contribute, counting care, volunteering, and study, not just paid jobs.</li>
+      <li say="It answers White's reciprocity worry, without requiring a job that robots could do better.">It answers White's reciprocity worry without requiring a job that robots could do better.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Classify: which policy -->
+  <phil-slide>
+    <h1>Which Policy?</h1>
+    <phil-classify data-qid="meaningful-work:q5" review="middle-paths" prompt="Which policy does each rule describe?"
+                   explain="Right. A basic income pays everyone with no conditions. A job guarantee offers paid work to anyone who wants it. A participation income pays people who contribute in a broad sense, such as care, volunteering, or study.">
+      <phil-col key="ubi">Basic income</phil-col>
+      <phil-col key="jg">Job guarantee</phil-col>
+      <phil-col key="pi">Participation income</phil-col>
+      <phil-item answer="ubi" why="A payment to everyone, with no conditions, is a basic income.">Every resident gets a monthly payment, with no conditions at all.</phil-item>
+      <phil-item answer="ubi" why="Paying the full-time surfer the same as everyone, no conditions, is a basic income.">A full-time surfer gets the same payment as everyone else, no questions asked.</phil-item>
+      <phil-item answer="jg" why="Offering paid work to anyone who asks is a job guarantee.">The town offers a paid job to anyone who asks for one.</phil-item>
+      <phil-item answer="jg" why="Being hired on request, with pay for the work, is a job guarantee.">Anyone out of work can go to town hall and be given a paid job.</phil-item>
+      <phil-item answer="pi" why="Paying people who contribute in a broad sense, not just through jobs, is a participation income.">You get the payment if you care for others, volunteer, study, or work.</phil-item>
+      <phil-item answer="pi" why="Care counts as contribution and surfing doesn't: a participation income.">A full-time caregiver qualifies for the payment, but a full-time surfer doesn't.</phil-item>
+    </phil-classify>
+    <phil-narration>Which policy does each rule describe: basic income, a job guarantee, or a participation income? Sort them, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Now it's time for UNIT-9's recommendation.</phil-narration>
+  </phil-slide>
+
+  <!-- 27. Poll: the recommendation -->
+  <phil-slide>
+    <img slot="art" src="./assets/council.png" alt="A town council of people of different ages and skin tones and three polite robots sits at a curved table under a glass dome, with a big green button and a big blue button in front of them">
+    <h1>Decision Point: UNIT-9 Recommends</h1>
+    <phil-poll prompt="The council asks UNIT-9 for a recommendation. Which button should it press?"
+               explain="Each answer is a bet about what people need besides money. A basic income bets they'll find the goods of work on their own. A job guarantee bets jobs supply them, if the jobs aren't make-work. A participation income bets that contribution matters, in more forms than a job.">
+      <phil-choice note="This is Van Parijs's answer. Dex keeps surfing. Ines and Priya get freedom, but no promise of being needed.">The green button: a basic income for everyone.</phil-choice>
+      <phil-choice note="This answers Rawls and White. The hard part is giving people jobs that aren't just Felix's button.">The blue button: a job for everyone who wants one.</phil-choice>
+      <phil-choice note="This is Atkinson's middle path. Care and volunteering count. Dex would have to find something to contribute.">Neither: a participation income.</phil-choice>
+      <phil-choice note="An income for all, plus a job offer for anyone who wants one. It is the most expensive answer, though in Hammock Heights the robots pay.">Both: a basic income, plus a job for anyone who wants one.</phil-choice>
+    </phil-poll>
+    <phil-narration>The council asks UNIT-9 for a recommendation. Which button should it press? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Each answer is a bet about what people need besides money. There's no button for that.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 28. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.</phil-narration>
+    <phil-narration when="after">Thank you.</phil-narration>
+  </phil-slide>
+
+  <!-- 29. Summed up -->
+  <phil-slide>
+    <img slot="art" src="./assets/town.png" alt="A cheerful floating town of bubble-domed buildings at sunrise, where teal robots sweep, cook, and carry boxes while people relax in hammocks strung between the buildings">
+    <h1>Summed Up</h1>
+    <phil-narration>Here's the lesson, summed up.</phil-narration>
+    <ul reveal>
+      <li say="A right to work can mean three things: to look for work, to be given a job, or to have meaningful work."><strong>Three rights:</strong> to look for work, to be given a job, or to have meaningful work.</li>
+      <li say="Work offers goods besides money: excellence, contribution, community, and recognition. Rawls and Arendt warned what losing them could cost."><strong>The goods of work:</strong> excellence, contribution, community, and recognition. Rawls and Arendt warned what losing them could cost.</li>
+      <li say="The case for rests on autonomy and flourishing. The case against rests on neutrality, the post-work hope, and the worry that the right can't be provided."><strong>For and against:</strong> autonomy and flourishing, against neutrality, the post-work hope, and the worry that it can't be provided.</li>
+      <li say="And the policy choice: pay everyone, hire everyone, or pay those who contribute. UNIT-9 files its report, and goes back to having nothing to do."><strong>The policy choice:</strong> pay everyone, hire everyone, or pay those who contribute.</li>
+    </ul>
+    <p class="muted">UNIT-9 files its report and goes back to having nothing to do.</p>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Michael Cholbi, “<a href="https://plato.stanford.edu/entries/work-labor/">Philosophical Approaches to Work and Labor</a>,” <em>Stanford Encyclopedia of Philosophy</em> (2022). A free survey of the goods of work, meaningful work, the right to work, and post-work debates.</li>
+      <li>Anca Gheaus and Lisa Herzog, “<a href="https://doi.org/10.1111/josp.12140">The Goods of Work (Other Than Money!)</a>,” <em>Journal of Social Philosophy</em> 47, no. 1 (2016): 70–89. The four goods, and why they matter for justice.</li>
+      <li>John Danaher, <em>Automation and Utopia: Human Flourishing in a World without Work</em> (Harvard University Press, 2019). The post-work case, made carefully.</li>
+      <li>Philippe Van Parijs, “Why Surfers Should Be Fed: The Liberal Case for an Unconditional Basic Income,” <em>Philosophy &amp; Public Affairs</em> 20, no. 2 (1991): 101–131. The surfer argument, in its own words.</li>
+      <li>Bertrand Russell, “In Praise of Idleness,” <em>Harper's Magazine</em> (October 1932). A short, funny essay against the work ethic.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Microsoft text-to-speech). The author reviewed everything and is responsible for any errors.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

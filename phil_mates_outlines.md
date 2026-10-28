@@ -3720,3 +3720,126 @@ citations; and present-day policy). The points a reviewer needs:
   can spread it from four days before to four days after the rash appears, and
   advises excluding non-immune students until 21 days after the last case's
   rash onset. *Not re-checked in the 2026 fact-check.*
+
+
+---
+
+## Computing & AI Ethics: AI and the Right to Work — "The Last Job"  *(built)*
+
+- **Path:** `lessons/ai-ethics/meaningful-work/`
+- **Lesson id:** `meaningful-work`
+- **Top-bar title:** `The Last Job` · **Subject:** `AI and the Right to Work`
+- **Topic:** Narrowed on purpose to one question: is there a right to
+  (meaningful) work when machines can do the work? Not covered: AI in hiring,
+  workplace surveillance, the gig economy, labor economics beyond a few
+  dated "our world" facts.
+- **Approach:** Separate three rights (to look for work, to a job, to
+  meaningful work). Gheaus and Herzog's four goods of work, with Rawls on
+  self-respect and Arendt's warning. The case for (Schwartz on autonomy;
+  Veltman on flourishing, who denies a right). The case against (Arneson 1987
+  on neutrality; Russell and Danaher on post-work; who owes it, with the UN
+  committee, Graeber, and Cordasco and Véliz). Then policy: Van Parijs's basic
+  income, the Rawls/White reciprocity objection, a job guarantee, and
+  Atkinson's participation income. Verdicts are polls.
+- **Frame:** Hammock Heights, 2150, an original retro-future (nothing borrowed
+  from any show). The student is UNIT-9, the Bureau of Employment robot with
+  no jobs to hand out. Each part opens with a 2150 / our-world comparison.
+- **Who says what:** The residents supply cases (Ines's lost craft, Priya's
+  open future, Dex's happy idleness, Felix's do-nothing job). Every argument
+  is credited to a philosopher or economist.
+- **Cast:** UNIT-9 (robot); Ines (Latina, 70s); Priya (South Asian, 16); Dex
+  (white, 40s); Felix (Black, 60s).
+- **Widget:** `assets/week.js`, `<phil-week>`. Plan a week from eight
+  activities (pick four); meters show the four goods of work at none / a
+  little / some / plenty. The scores are illustrative judgments, not data, and
+  the widget teaches nothing that is graded.
+
+### Accuracy note (checked 2026-10-28)
+Full notes with URLs: two fact-check reports from this date (philosophy and
+citations; present-day facts). The points a reviewer needs:
+
+- **UDHR Art. 23(1):** "Everyone has the right to work, to free choice of
+  employment, to just and favourable conditions of work and to protection
+  against unemployment." **CESCR General Comment 18, para. 6:** the right to
+  work is not "an absolute and unconditional right to obtain employment."
+  US right-to-work laws (26 states) concern union-security agreements.
+- **Gheaus and Herzog (2016), JSP 47(1): 70–89:** four goods: "attaining
+  various types of excellence; making a social contribution; experiencing
+  community; and gaining social recognition." Community is "doing things
+  together with people with whom they stand in relatively free and equal
+  relationships." Justice concerns fair *opportunities* for these goods
+  ("real, rather than merely formal, options"); "This does not mean that
+  individuals have a claim of justice to a specific job." They do not discuss
+  automation. A basic income would "significantly weaken" (not end) the case
+  for distributing these goods through jobs.
+- **Rawls:** *TJ* §67: "perhaps the most important primary good is that of
+  self-respect." *Political Liberalism* (1996 paperback intro, p. lix):
+  "Lacking a sense of long-term security and the opportunity for meaningful
+  work and occupation is not only destructive of citizens' self-respect but of
+  their sense that they are members of society and not simply caught in it."
+  Malibu: "those who surf all day off Malibu must find a way to support
+  themselves and would not be entitled to public funds" (*PPA* 17(4), 1988,
+  p. 257 n. 7).
+- **Arendt (1958), Prologue pp. 4–5:** "What we are confronted with is the
+  prospect of a society of laborers without labor, that is, without the only
+  activity left to them. Surely, nothing could be worse."
+- **Schwartz (1982), Ethics 92: 634–46:** a just society respects all members
+  as autonomous agents; routine jobs give "almost no opportunities for
+  formulating aims, for deciding on means"; "we must demand that no one be
+  employed at the sorts of jobs that have just been described."
+- **Veltman (2016):** "meaningful work is central in human flourishing"; four
+  dimensions (capacities, virtues, purpose, integration); she argues people
+  have no right to meaningful work (pp. 189–90, per Muirhead's NDPR review).
+- **Arneson:** 1987 (Ethics 97: 517–45): a right to meaningful work "arbitrarily
+  privileges that good" (intrinsic job satisfaction) over others. 1990 (APSR):
+  defends state-guaranteed jobs for the chronically unemployed poor (a right to
+  a job, which does not reverse 1987). 2009: rejects his 1987 verdict; justice
+  can mandate meaningful work for everyone. The slide cites only the 2009
+  change.
+- **Russell (Harper's, Oct 1932):** "the road to happiness and prosperity lies
+  in an organized diminution of work."
+- **Keynes (1930):** "Three-hour shifts or a fifteen-hour week may put off the
+  problem for a great while"; the "permanent problem" is "how to occupy the
+  leisure ... to live wisely and agreeably and well."
+- **Danaher (2019):** "work is bad for most people most of the time"; work's
+  structural problems include domination, precarity, and temporal
+  colonization.
+- **Graeber (2018):** "a form of paid employment that is so completely
+  pointless, unnecessary, or pernicious that even the employee cannot justify
+  its existence even though ... the employee feels obliged to pretend that this
+  is not the case."
+- **Cordasco and Véliz (2025),** *Journal of Business Ethics* 202: 21–33:
+  holding back AI to save jobs can't protect workers' self-esteem, because
+  workers would know their jobs survive only because a policy props them up.
+  The slide follows the abstract's direction (AI held back, jobs kept) and
+  its term (self-esteem, not "meaning").
+- **Van Parijs (1991), PPA 20(2): 101–31:** real freedom for all; an
+  unconditional basic income for the "Crazy" and the "Lazy" alike. No verbatim
+  quotation used.
+- **White (2003):** fair reciprocity (p. 18): "each citizen who willingly shares
+  in the social product has an obligation to make a relevantly proportional
+  productive contribution ... everyone should do their bit." Civic labour
+  includes care work.
+- **Atkinson (1996),** "The Case for a Participation Income," *Political
+  Quarterly* 67(1). *Not re-checked in the 2026 fact-check.*
+- **Marienthal (1933):** about 70% of families "resigned", 23% "unbroken",
+  7–8% "broken"; the "weary community"; loss of time structure. The village is
+  Gramatneusiedl.
+- **Marienthal job guarantee:** Oct 2020 to Mar 2024, 107 participants;
+  long-term unemployment nearly disappeared; gains in Jahoda's latent benefits
+  (time structure, purpose). Kasy and Lehner's evaluation (Feb 2026 version) is
+  not peer-reviewed; the slide says "an early evaluation".
+- **WGA 2023:** 148-day strike; the contract: AI can't write or rewrite literary
+  material; writers can't be required to use AI. (Replaced by a 2026 contract
+  that adds notice of AI-training licensing.)
+- **IMF (Jan 2024):** about 40% of global employment exposed to AI (60% in
+  advanced economies).
+- **Brynjolfsson, Chandar and Chen, "Canaries in the Coal Mine":** updated
+  August 2026: workers aged 22–25 in the most AI-exposed jobs show a 19%
+  relative employment gap, mainly through reduced hiring; "no evidence of
+  widespread, economy-wide job displacement." Descriptive, not causal.
+- **Finland (2017–18):** 2,000 unemployed people, €560/month; tiny employment
+  effects, better well-being.
+- **OpenResearch (NBER w32719, revised Aug 2026):** 1,000 recipients,
+  $1,000/month for three years; work hours down 1–2 hours a week; leisure was
+  "the greatest increase" among uses of time (not most of the freed time).

@@ -12,8 +12,8 @@ always work, so nothing is ever locked.
 
 **In use:** *The Midnight Tribunal* (`ethical-theory/utilitarianism`, the
 pilot), *The Masquerade of Silverport* (`ai-ethics/masquerade-silverport`),
-*The Ship's Chest* (`bioethics/right-to-health-care`) and *Move On*
-(`bioethics/public-health`). The catalog marks narrated lessons with a
+*The Ship's Chest* (`bioethics/right-to-health-care`), *Move On*
+(`bioethics/public-health`) and *The Last Job* (`ai-ethics/meaningful-work`). The catalog marks narrated lessons with a
 **Narrated** badge.
 
 ## What the student sees
