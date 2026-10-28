@@ -758,8 +758,8 @@ case, and face the choice in a poll.
 
 A lesson with `<phil-narration>` lines gets a **Play** button that runs it as a
 narrated slideshow with captions, stopping at each activity. Students who don't
-press Play get the ordinary lesson. Three lessons have it so far: *The Midnight
-Tribunal*, *The Masquerade of Silverport* and *The Ship's Chest*.
+press Play get the ordinary lesson. Four lessons have it so far: *The Midnight
+Tribunal*, *The Masquerade of Silverport*, *The Ship's Chest* and *Move On*.
 
 - `<phil-narration>` on a slide is its spoken intro; `say="…"` on each reveal
   `<li>` is spoken as that step appears; `<phil-narration when="after">` plays

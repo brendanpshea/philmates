@@ -3570,3 +3570,153 @@ Other changes:
 - Slide 24 adds Searle's "We are precisely such machines".
 - Deliberate mistakes are credited to Turing's text, not his sample dialogue.
 - The octopus slide matches Bender and Koller.
+
+
+---
+
+## Bioethics: Public Health Ethics and Vaccine Policy — "Move On"  *(built)*
+
+- **Path:** `lessons/bioethics/public-health/`
+- **Lesson id:** `public-health`
+- **Top-bar title:** `Move On` · **Subject:** `Public Health Ethics`
+- **Topic:** Public health ethics, with vaccine policy as the running example.
+  The lesson is about today. Dickens supplies the atmosphere and the opening
+  scene of each part, never the content of a question.
+- **Approach:** How public health differs from bedside medicine (Rose's
+  prevention paradox); herd immunity, explored in a toy outbreak model; three
+  arguments for a duty to vaccinate (harm, fairness, clean hands) and the case
+  against mandates; the Nuffield intervention ladder and Childress et al.'s
+  justificatory conditions, as four questions; exemptions (Leiter; Navin and
+  Largent); reciprocity and trust. Verdicts on mandates and exemptions are
+  polls, never graded.
+- **Frame:** Two settings. London in 1853, loosely after *Bleak House*: Jo the
+  crossing-sweeper, always told to "move on"; Esther and Charley, who bring him
+  home sick and catch his fever; Dr. Woodcourt. And the student's own job today:
+  a new hire at a county health department during a measles outbreak at
+  "Riverside Elementary" (invented). Each part opens with a Then/Now
+  `<phil-compare>`.
+- **Who says what:** Arguments are credited to Mill, Dawson, Giubilini,
+  Brennan, Bradley, Navin, Childress et al., the Nuffield Council, Leiter,
+  Navin and Largent, and Upshur. The 1853 characters only live through the cases.
+- **Cast:** Esther is recast as Black and Woodcourt as South Asian. Jo has light
+  brown skin. The constable is a tired older white man, not a villain. The
+  modern health officer is a Black woman in her fifties.
+- **Widget:** `assets/herd.js`, `<phil-herd>`. 400 children, 4 who can't be
+  vaccinated, a coverage slider, one animated outbreak or 20 at once. Each sick
+  child meets 16 others at random and infects 9 in 10 of the unprotected (R0
+  about 14). The vaccine always works in the model, and the widget says so. The
+  outbreak starts with one unvaccinated child back from a trip, so at 100% there
+  is none. Headless runs (4,000 per level): mean outbreak 75 children at 80%,
+  18 at 90%, 3 at 95%; a child who can't be vaccinated is reached in 96%, 63%,
+  and 27% of outbreaks. The last figure never reaches zero below 100% because
+  the first sick child can infect a neighbor directly; the herd-immunity slide
+  says so.
+- **Left out on purpose:** COVID beyond one ladder example; vaccine allocation
+  (`trolley-and-triage` covers scarce resources); quarantine law beyond one
+  bullet; vaccine-safety controversies (the science is not presented as open).
+- **Cross-references:** `harm-principle` (Mill; this lesson recaps it in one
+  slide), `four-principles` (justice), `right-to-health-care` (Daniels,
+  macro-allocation).
+
+### Accuracy note (checked 2026-10-28)
+Full notes with URLs: two fact-check reports from this date (Dickens, history,
+citations; and present-day policy). The points a reviewer needs:
+
+- **Bleak House:** monthly numbers March 1852 to September 1853. The fever is
+  never named; "usually read as smallpox." The text implies but never says Jo
+  catches it in Tom-all-Alone's (ch. 16 "fetching and carrying fever"; ch. 22
+  "fever-houses"). Esther and Charley find Jo at the brickmaker's cottage near
+  St Albans and bring him to Bleak House (ch. 31); Jarndyce lets him stay in the
+  loft and he vanishes in the night. Charley falls ill, Esther nurses her, then
+  catches it; blind (ch. 31), sight returns (ch. 35), scarred (ch. 36). Charley
+  recovers unmarked. Charley is "Over thirteen" (ch. 15). Jo dies in ch. 47,
+  "Jo's Will," with Woodcourt at the bedside. "Dead, your Majesty. Dead, my
+  lords and gentlemen." is verbatim. Ch. 19: "But where?" / "My instructions
+  don't go to that"; the narrator: "The one grand recipe remains for you... Move
+  on!" Ch. 46: "...shall work its retribution through every order of society."
+  Woodcourt is a poorly paid young surgeon who works among the poor (ch. 17).
+- **Vaccination Act 1853:** England and Wales; infants within three months of
+  birth; fine up to 20s. **1898 Act, s. 2(1):** excuse only for a parent who
+  satisfies magistrates that he "conscientiously believes that vaccination
+  would be prejudicial to the health of the child." "Conscientious objector" is
+  dated to 1896 (Etymonline) and came into common use in this controversy; the
+  Act says "conscientious objection."
+- **Rose:** prevention paradox, *BMJ* 1981 p. 1850: "a measure that brings
+  large benefits to the community offers little to each participating
+  individual." The slide paraphrases.
+- **Childress et al. (2002):** five justificatory conditions: effectiveness,
+  proportionality, necessity, least infringement, public justification. The
+  lesson asks necessity and least infringement as one question ("a gentler
+  way") and says so.
+- **Nuffield (2007), Box 3.2:** eliminate choice; restrict choice; guide choice
+  through disincentives; guide choices through incentives; guide choices through
+  changing the default policy; enable choice; provide information; do nothing or
+  simply monitor. The four "bands" are the lesson's own grouping and the ladder
+  slide says so.
+- **Brennan (2018):** abstract: refusers violate "the 'clean hands principle',
+  a (in this case, enforceable) moral principle that prohibits people from
+  participating in the collective imposition of unjust harm or risk of harm."
+  His overdetermination case is a squad of snipers all firing at a child, not a
+  firing squad.
+- **Dawson (2007):** herd protection is a public good; grounds an
+  anti-free-riding argument. **Giubilini (2019):** a collective duty with
+  burdens to be shared fairly; he says his argument "is not the same as" the
+  free-riding argument, though free riding is wrong on it too. The slide credits
+  the public-good point to Dawson and the fair share to Giubilini.
+- **Leiter (2013; published Oct 2012):** no principled reason to single out
+  religious conscience; he rejects burden-shifting exemptions for religious and
+  secular claimants alike and names vaccination exemptions (McConnell's review;
+  his Carnegie Council talk).
+- **Navin and Largent (2017):** keep non-medical exemptions for religious and
+  secular objectors, but make them burdensome ("Inconvenience"); Michigan is
+  their exemplar (education session at the county health department, from
+  2015). Largent is a historian. The "filters out the merely unsure" line states
+  the model's logic, not a quotation.
+- **Bradley (1999):** *JME* 25: 330–334; parental rights; compulsion "cannot,
+  with very few exceptions, be justified in the UK" given high immunity.
+  **Navin (2015):** the state should use as little coercion as needed for herd
+  immunity.
+- **Mill:** gave no evidence on vaccination (his 1871 testimony was on the
+  Contagious Diseases Acts); *On Liberty* never mentions vaccination. The
+  lesson applies the harm principle and attributes no vaccine view to Mill.
+- **Disneyland:** exposures Dec 17–20, 2014; CDC final count 147 US cases in 7
+  states (131 California); 1 case in Mexico and a linked outbreak of 159 in
+  Québec. SB 277 signed June 30, 2015.
+- **Herd immunity:** R0 12–18 gives a threshold of about 92–94%; the standard
+  target is at least 95% two-dose coverage. Two MMR doses are about 97%
+  effective. First dose at 12–15 months.
+- **Kindergarten 2025–26 (CDC SchoolVaxView, Aug 2026):** MMR 92.4%;
+  exemptions a record 4.2%.
+- **Measles cases:** 2025, 2,289; 2026, 4,588 as of Oct 22, the most since 1991.
+- **Medical-only states (2026):** NCSL (Sept 2026) and Immunize.org (May 2026)
+  list four: California, Connecticut, Maine, New York. West Virginia's statute
+  is medical-only, but trackers treat it as in flux while its religious-exemption
+  case is in court; Mississippi has accepted religious exemptions since July
+  2023 under a federal court order. The slides say "most" states allow
+  religious exemptions, name the four, and say courts have reopened the
+  question in Mississippi and West Virginia. Florida and Idaho changes discussed
+  in 2025–26 had not taken effect for school requirements as of 2026-10-28.
+- **Jacobson v. Massachusetts (1905):** 7–2, Harlan; $5 fine.
+- **Ohio Vax-a-Million (2021):** five $1 million drawings for vaccinated adults
+  (plus scholarships for 12–17-year-olds). Most studies found little or no
+  effect.
+- **Chapman et al. (2010):** opt-out appointments 45% vs opt-in 33%.
+- **VICP:** National Childhood Vaccine Injury Act of 1986; no-fault; claims from
+  1988.
+- **Upshur (2002):** "Principles for the justification of public health
+  intervention," *Canadian Journal of Public Health* 93: harm principle, least
+  restrictive means, reciprocity, transparency. *Not re-checked in the 2026
+  fact-check.*
+- **Tuskegee:** 1932–1972; 600 Black men, 399 with syphilis, untreated.
+- **CDC 2020 encampment guidance** (archived, stacks.cdc.gov/view/cdc/86213):
+  "Unless individual housing units are available, do not clear encampments
+  during community spread of COVID-19. Clearing encampments can cause people to
+  disperse throughout the community and break connections with service
+  providers."
+- **San Diego hepatitis A (2016–18):** 592 cases, 20 deaths, about half among
+  people experiencing homelessness; vaccination drives, 41 handwashing stations,
+  bleach street washing.
+- **Measles before the rash; 21-day exclusion:** CDC says people with measles
+  can spread it from four days before to four days after the rash appears, and
+  advises excluding non-immune students until 21 days after the last case's
+  rash onset. *Not re-checked in the 2026 fact-check.*

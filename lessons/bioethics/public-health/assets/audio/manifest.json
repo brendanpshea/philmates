@@ -1,0 +1,460 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "6de19c99": {
+      "slide": "s1",
+      "text": "London, in 1853, and your county, today. Two places, one question. When may a community make you protect other people? In Charles Dickens's novel Bleak House, a boy named Jo sweeps a muddy street crossing for coins, and the police keep telling him to move on. You don't need to have read it. Everything you need is on the slides. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "London, in 1853, and your county, today. Two places, one question. When may a community make you protect other people? In Charles Dickens's novel Bleak House, a boy named Jo sweeps a muddy street crossing for coins, and the police keep telling him to move on. You don't need to have read it. Everything you need is on the slides. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "bbd54f60": {
+      "slide": "s2",
+      "text": "Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.",
+      "spoken": "Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done."
+    },
+    "1bcac4f4": {
+      "slide": "s2",
+      "text": "Saved. Now, let's meet the people in this story.",
+      "spoken": "Saved. Now, let's meet the people in this story."
+    },
+    "5d68d988": {
+      "slide": "your-job",
+      "text": "Each part of this lesson starts with a scene from 1853, then turns to a real case from today. Here's who you'll meet.",
+      "spoken": "Each part of this lesson starts with a scene from 1853, then turns to a real case from today. Here's who you'll meet."
+    },
+    "b60b79b1": {
+      "slide": "your-job",
+      "text": "Jo has no home. He sweeps a street crossing for coins, and whenever he stops, a constable tells him to move on.",
+      "spoken": "Jo has no home. He sweeps a street crossing for coins, and whenever he stops, a constable tells him to move on."
+    },
+    "66f6dbe4": {
+      "slide": "your-job",
+      "text": "Esther, a young housekeeper, and Charley, her young maid, find Jo sick on the road and bring him home.",
+      "spoken": "Esther, a young housekeeper, and Charley, her young maid, find Jo sick on the road and bring him home."
+    },
+    "9789f45c": {
+      "slide": "your-job",
+      "text": "Doctor Woodcourt is a young doctor who works among the city's poor.",
+      "spoken": "Doctor Woodcourt is a young doctor who works among the city's poor."
+    },
+    "3ab933de": {
+      "slide": "your-job",
+      "text": "And you've just started at your county's health department. This morning, a child at Riverside Elementary was diagnosed with measles.",
+      "spoken": "And you've just started at your county's health department. This morning, a child at Riverside Elementary was diagnosed with measles."
+    },
+    "5e2920b1": {
+      "slide": "the-fever",
+      "text": "First, a scene from 1853. Jo sleeps in Tom-all-Alone's, a fever-ridden slum the city has left to rot. He falls sick, and Esther and Charley bring him home. Charley catches the fever from him, and Esther catches it nursing Charley. Dickens warns that the slum's disease shall work its retribution through every order of society. Now jump to December 2014. Visitors caught measles at Disneyland in California. By April 2015, it had reached a hundred and forty-seven people in seven states, with more cases in Mexico and Canada. Disease doesn't stay where it starts. So a choice about it is never only about the person who makes it.",
+      "spoken": "First, a scene from 1853. Jo sleeps in Tom-all-Alone's, a fever-ridden slum the city has left to rot. He falls sick, and Esther and Charley bring him home. Charley catches the fever from him, and Esther catches it nursing Charley. Dickens warns that the slum's disease shall work its retribution through every order of society. Now jump to December 2014. Visitors caught measles at Disneyland in California. By April 2015, it had reached a hundred and forty-seven people in seven states, with more cases in Mexico and Canada. Disease doesn't stay where it starts. So a choice about it is never only about the person who makes it."
+    },
+    "f5c3310b": {
+      "slide": "public-health",
+      "text": "When Doctor Woodcourt treats Jo, that's bedside medicine: one doctor, one patient. Public health works at a different scale.",
+      "spoken": "When Doctor Woodcourt treats Jo, that's bedside medicine: one doctor, one patient. Public health works at a different scale."
+    },
+    "e63193e9": {
+      "slide": "public-health",
+      "text": "Its patient is a whole population, like a city, a county, or a school.",
+      "spoken": "Its patient is a whole population, like a city, a county, or a school."
+    },
+    "6b2847d8": {
+      "slide": "public-health",
+      "text": "It works mostly by prevention: clean water, vaccines, and catching outbreaks early.",
+      "spoken": "It works mostly by prevention: clean water, vaccines, and catching outbreaks early."
+    },
+    "8ec43479": {
+      "slide": "public-health",
+      "text": "And the one acting is usually the government, which can make rules backed by law.",
+      "spoken": "And the one acting is usually the government, which can make rules backed by law."
+    },
+    "091714a2": {
+      "slide": "public-health",
+      "text": "The epidemiologist Geoffrey Rose noticed a puzzle. A measure that prevents a lot of disease in a population often does little for each person who takes part. He called it the prevention paradox.",
+      "spoken": "The epidemiologist Geoffrey Rose noticed a puzzle. A measure that prevents a lot of disease in a population often does little for each person who takes part. He called it the prevention paradox."
+    },
+    "29164ee3": {
+      "slide": "s6",
+      "text": "Your turn. Riverside Elementary has four hundred children. Four can't be vaccinated for medical reasons, such as cancer treatment. Use the slider to set how many of the others are vaccinated, then press Run one outbreak. Try eighty, ninety, and ninety-five percent, and run each one more than once. Run twenty outbreaks shows you the pattern. When you're ready, press Continue.",
+      "spoken": "Your turn. Riverside Elementary has four hundred children. Four can't be vaccinated for medical reasons, such as cancer treatment. Use the slider to set how many of the others are vaccinated, then press Run one outbreak. Try eighty, ninety, and ninety-five percent, and run each one more than once. Run twenty outbreaks shows you the pattern. When you're ready, press Continue."
+    },
+    "494e5d4b": {
+      "slide": "herd-immunity",
+      "text": "Here's what the explorer shows.",
+      "spoken": "Here's what the explorer shows."
+    },
+    "d97d27ee": {
+      "slide": "herd-immunity",
+      "text": "When enough people are immune, a disease can't find enough new people to infect, and outbreaks die out. That's herd immunity.",
+      "spoken": "When enough people are immune, a disease can't find enough new people to infect, and outbreaks die out. That's herd immunity."
+    },
+    "6f6e8fa4": {
+      "slide": "herd-immunity",
+      "text": "It protects people who can't be vaccinated, like babies too young for their first dose and children in cancer treatment. They depend on everyone else.",
+      "spoken": "It protects people who can't be vaccinated, like babies too young for their first dose and children in cancer treatment. They depend on everyone else."
+    },
+    "0cee5756": {
+      "slide": "herd-immunity",
+      "text": "Measles is one of the most contagious diseases there is. Health agencies aim for at least ninety-five in a hundred children to have both doses of the vaccine.",
+      "spoken": "Measles is one of the most contagious diseases there is. Health agencies aim for at least ninety-five in a hundred children to have both doses of the vaccine."
+    },
+    "467a2599": {
+      "slide": "herd-immunity",
+      "text": "In the 2025 to 2026 school year, about ninety-two percent of American kindergartners had both doses, and a record share had exemptions. And 2026 has seen more measles cases in the US than any year since 1991. One more thing the explorer showed. Herd immunity stops chains of infection, but it can't always stop the first sick child from infecting a neighbor.",
+      "spoken": "In the 2025 to 2026 school year, about ninety-two percent of American kindergartners had both doses, and a record share had exemptions. And 2026 has seen more measles cases in the U.S. than any year since 1991. One more thing the explorer showed. Herd immunity stops chains of infection, but it can't always stop the first sick child from infecting a neighbor."
+    },
+    "3b728316": {
+      "slide": "s8",
+      "text": "Fill in each gap, then press Check.",
+      "spoken": "Fill in each gap, then press Check."
+    },
+    "59d7edb7": {
+      "slide": "s8",
+      "text": "Good. Now for a harder question. Is there a duty to vaccinate?",
+      "spoken": "Good. Now for a harder question. Is there a duty to vaccinate?"
+    },
+    "e95ee021": {
+      "slide": "charley",
+      "text": "Back to 1853. Charley caught the fever from Jo after helping Esther bring him home. Nobody asked her whether she'd take that risk. Today, a six-year-old in cancer treatment can't have the measles vaccine. If she catches measles at school, she never chose that risk either. So here's the question. When your choice puts a risk on people who never agreed to it, do you have a duty to choose differently? Three arguments say yes.",
+      "spoken": "Back to 1853. Charley caught the fever from Jo after helping Esther bring him home. Nobody asked her whether she'd take that risk. Today, a six-year-old in cancer treatment can't have the measles vaccine. If she catches measles at school, she never chose that risk either. So here's the question. When your choice puts a risk on people who never agreed to it, do you have a duty to choose differently? Three arguments say yes."
+    },
+    "1a80b0ec": {
+      "slide": "harm",
+      "text": "The first argument comes from John Stuart Mill.",
+      "spoken": "The first argument comes from John Stuart Mill."
+    },
+    "43c0927b": {
+      "slide": "harm",
+      "text": "Mill's harm principle says society may limit your freedom only to stop you from harming others.",
+      "spoken": "Mill's harm principle says society may limit your freedom only to stop you from harming others."
+    },
+    "9724a15d": {
+      "slide": "harm",
+      "text": "Measles can cause pneumonia, brain swelling, and death. A child who catches it can pass it to someone who couldn't be protected.",
+      "spoken": "Measles can cause pneumonia, brain swelling, and death. A child who catches it can pass it to someone who couldn't be protected."
+    },
+    "22d77641": {
+      "slide": "harm",
+      "text": "So refusing a vaccine isn't only about yourself. And a vaccine rule is the kind of rule the harm principle allows.",
+      "spoken": "So refusing a vaccine isn't only about yourself. And a vaccine rule is the kind of rule the harm principle allows."
+    },
+    "1be36098": {
+      "slide": "harm",
+      "text": "Here's the worry, though. One unvaccinated child adds only a tiny risk. Does a tiny risk count as harm?",
+      "spoken": "Here's the worry, though. One unvaccinated child adds only a tiny risk. Does a tiny risk count as harm?"
+    },
+    "4d24b6fd": {
+      "slide": "fairness",
+      "text": "The second argument is about fairness.",
+      "spoken": "The second argument is about fairness."
+    },
+    "d2657fb0": {
+      "slide": "fairness",
+      "text": "The philosopher Angus Dawson points out that herd immunity is a public good. Everyone nearby gets the benefit, whether or not they helped make it.",
+      "spoken": "The philosopher Angus Dawson points out that herd immunity is a public good. Everyone nearby gets the benefit, whether or not they helped make it."
+    },
+    "99d6c5f5": {
+      "slide": "fairness",
+      "text": "A free rider takes the benefit and leaves the cost to others. Here, the cost is a sore arm and a very small risk of side effects.",
+      "spoken": "A free rider takes the benefit and leaves the cost to others. Here, the cost is a sore arm and a very small risk of side effects."
+    },
+    "a4ec3c17": {
+      "slide": "fairness",
+      "text": "Alberto Giubilini goes further. Protecting everyone is a shared job, and fairness says that each person who can should do their fair share of it.",
+      "spoken": "Alberto Jubilini goes further. Protecting everyone is a shared job, and fairness says that each person who can should do their fair share of it."
+    },
+    "cb7ed209": {
+      "slide": "fairness",
+      "text": "Notice that this argument works even if one person's choice changes nothing. Leaving your share to others is unfair whether or not anyone is harmed.",
+      "spoken": "Notice that this argument works even if one person's choice changes nothing. Leaving your share to others is unfair whether or not anyone is harmed."
+    },
+    "e964829d": {
+      "slide": "clean-hands",
+      "text": "The third argument answers an objection.",
+      "spoken": "The third argument answers an objection."
+    },
+    "3aaf561c": {
+      "slide": "clean-hands",
+      "text": "The objection goes: my one shot makes no difference. Measles spreads or it doesn't, whatever I do.",
+      "spoken": "The objection goes: my one shot makes no difference. Measles spreads or it doesn't, whatever I do."
+    },
+    "1152634d": {
+      "slide": "clean-hands",
+      "text": "Jason Brennan, a libertarian philosopher who usually argues against government power, replies with a grim case. A squad of snipers all fire at a child at once. No single shot makes a difference, yet every sniper does wrong.",
+      "spoken": "Jason Brennan, a libertarian philosopher who usually argues against government power, replies with a grim case. A squad of snipers all fire at a child at once. No single shot makes a difference, yet every sniper does wrong."
+    },
+    "2c1ce92d": {
+      "slide": "clean-hands",
+      "text": "His clean hands principle says you have a duty not to take part in collectively harmful activities, and that this duty can sometimes be enforced.",
+      "spoken": "His clean hands principle says you have a duty not to take part in collectively harmful activities, and that this duty can sometimes be enforced."
+    },
+    "4acfaf24": {
+      "slide": "clean-hands",
+      "text": "Staying unvaccinated is joining the group that, together, spreads measles to others. So, Brennan says, stay out of it, even though your part is tiny.",
+      "spoken": "Staying unvaccinated is joining the group that, together, spreads measles to others. So, Brennan says, stay out of it, even though your part is tiny."
+    },
+    "ca6e146e": {
+      "slide": "other-side",
+      "text": "Many people who agree that vaccines work still object to laws that require them. Here are their strongest reasons.",
+      "spoken": "Many people who agree that vaccines work still object to laws that require them. Here are their strongest reasons."
+    },
+    "c1d5922b": {
+      "slide": "other-side",
+      "text": "First, bodily integrity. What goes into your body is yours to decide, and a law requiring a medical procedure is a serious step.",
+      "spoken": "First, bodily integrity. What goes into your body is yours to decide, and a law requiring a medical procedure is a serious step."
+    },
+    "c095e19b": {
+      "slide": "other-side",
+      "text": "Second, parents' rights. Parents normally make medical decisions for their children. Writing in a medical ethics journal in 1999, Peter Bradley argued that this weighs against compulsion where most children are vaccinated anyway.",
+      "spoken": "Second, parents' rights. Parents normally make medical decisions for their children. Writing in a medical ethics journal in 1999, Peter Bradley argued that this weighs against compulsion where most children are vaccinated anyway."
+    },
+    "afbae168": {
+      "slide": "other-side",
+      "text": "Third, conscience. Some families object on religious or moral grounds, and forcing them to act against conscience is a real cost.",
+      "spoken": "Third, conscience. Some families object on religious or moral grounds, and forcing them to act against conscience is a real cost."
+    },
+    "faf55b0d": {
+      "slide": "other-side",
+      "text": "And fourth, as little force as possible. The philosopher Mark Navin argues that the state should use only as much coercion as it needs to keep herd immunity.",
+      "spoken": "And fourth, as little force as possible. The philosopher Mark Navin argues that the state should use only as much coercion as it needs to keep herd immunity."
+    },
+    "2de2efe9": {
+      "slide": "s14",
+      "text": "Each line gives a reason for vaccination. Which argument does it draw on: harm to others, fairness, or clean hands? Sort them, then press Check answers.",
+      "spoken": "Each line gives a reason for vaccination. Which argument does it draw on: harm to others, fairness, or clean hands? Sort them, then press Check answers."
+    },
+    "24e9e056": {
+      "slide": "s14",
+      "text": "Right. Three different reasons for the same conclusion.",
+      "spoken": "Right. Three different reasons for the same conclusion."
+    },
+    "b491bc4f": {
+      "slide": "s15",
+      "text": "A parent at Riverside Elementary says: my child's one shot won't make a difference, and it's my choice. Does the parent have a moral duty to vaccinate? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A parent at Riverside Elementary says: my child's one shot won't make a difference, and it's my choice. Does the parent have a moral duty to vaccinate? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "38472571": {
+      "slide": "s15",
+      "text": "Notice the third answer. It grants the duty, and still resists the law. That's where much of the real disagreement about mandates sits. So how far may a health department go?",
+      "spoken": "Notice the third answer. It grants the duty, and still resists the law. That's where much of the real disagreement about mandates sits. So how far may a health department go?"
+    },
+    "e4711224": {
+      "slide": "move-on",
+      "text": "Back to 1853 again. Whenever Jo stops, a constable tells him to move on. But where, Jo asks. My instructions don't go to that, the constable replies. Dickens calls move on the one grand recipe the authorities have for Jo. Today, you have a measles case at Riverside Elementary. You could send a letter home, offer free shots, fine families, or keep unvaccinated children home. Doing nothing, or pushing a problem out of sight, is a choice too. The question is how much to do, and how to decide.",
+      "spoken": "Back to 1853 again. Whenever Jo stops, a constable tells him to move on. But where, Jo asks. My instructions don't go to that, the constable replies. Dickens calls move on the one grand recipe the authorities have for Jo. Today, you have a measles case at Riverside Elementary. You could send a letter home, offer free shots, fine families, or keep unvaccinated children home. Doing nothing, or pushing a problem out of sight, is a choice too. The question is how much to do, and how to decide."
+    },
+    "7010f627": {
+      "slide": "ladder",
+      "text": "In 2007, the Nuffield Council on Bioethics, a British ethics body, ranked public health policies on a ladder. Higher rungs limit choice more, so they need stronger reasons. From the top. Eliminate choice: vaccinate people against their will. US rules today use fines or exclusion instead. Restrict choice: unvaccinated children stay home during an outbreak. Guide choice through disincentives: a fine, like the five-dollar fine the Supreme Court upheld in 1905. Guide choices through incentives: Ohio's 2021 lottery, with million-dollar prizes for vaccinated adults. Guide choices by changing the default: book flu-shot appointments that people can cancel. Enable choice: free vaccines at school or the pharmacy. Provide information: reminder letters and ad campaigns. And at the bottom, do nothing, or just count the cases. To keep it simple, this lesson groups the rungs above doing nothing into four bands: inform or enable, change the default, incentive or disincentive, and restrict or eliminate choice.",
+      "spoken": "In 2007, the Nuffield Council on Bioethics, a British ethics body, ranked public health policies on a ladder. Higher rungs limit choice more, so they need stronger reasons. From the top. Eliminate choice: vaccinate people against their will. U.S. rules today use fines or exclusion instead. Restrict choice: unvaccinated children stay home during an outbreak. Guide choice through disincentives: a fine, like the five-dollar fine the Supreme Court upheld in 1905. Guide choices through incentives: Ohio's 2021 lottery, with million-dollar prizes for vaccinated adults. Guide choices by changing the default: book flu-shot appointments that people can cancel. Enable choice: free vaccines at school or the pharmacy. Provide information: reminder letters and ad campaigns. And at the bottom, do nothing, or just count the cases. To keep it simple, this lesson groups the rungs above doing nothing into four bands: inform or enable, change the default, incentive or disincentive, and restrict or eliminate choice."
+    },
+    "99d07e78": {
+      "slide": "s18",
+      "text": "Where does each policy sit on the ladder? Sort each one into its band, then press Check answers.",
+      "spoken": "Where does each policy sit on the ladder? Sort each one into its band, then press Check answers."
+    },
+    "901f3cf5": {
+      "slide": "s18",
+      "text": "Right. The higher the band, the stronger the reasons a policy needs. So how high is too high?",
+      "spoken": "Right. The higher the band, the stronger the reasons a policy needs. So how high is too high?"
+    },
+    "121889b1": {
+      "slide": "four-questions",
+      "text": "How high is too high? In 2002, the ethicists James Childress, Ruth Faden, and colleagues set out tests for a public health policy that overrides values like liberty. They list five. Two of them both ask whether a gentler way would do, so here they are as four questions. Will it work? Are the benefits worth the burdens? Is there a gentler way that would also work? And has it been explained openly to the public?",
+      "spoken": "How high is too high? In 2002, the ethicists James Childress, Ruth Fayden, and colleagues set out tests for a public health policy that overrides values like liberty. They list five. Two of them both ask whether a gentler way would do, so here they are as four questions. Will it work? Are the benefits worth the burdens? Is there a gentler way that would also work? And has it been explained openly to the public?"
+    },
+    "f46c3a30": {
+      "slide": "s20",
+      "text": "Each objection to a proposed rule raises one of the four questions. Which one? Sort them, then press Check answers.",
+      "spoken": "Each objection to a proposed rule raises one of the four questions. Which one? Sort them, then press Check answers."
+    },
+    "4cccd844": {
+      "slide": "s20",
+      "text": "Right. Keep those four questions handy. You're about to use them.",
+      "spoken": "Right. Keep those four questions handy. You're about to use them."
+    },
+    "0dfee533": {
+      "slide": "s21",
+      "text": "Three more children at Riverside Elementary have measles. About one in ten of its children aren't vaccinated. What do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Three more children at Riverside Elementary have measles. About one in ten of its children aren't vaccinated. What do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "aa0639ff": {
+      "slide": "s21",
+      "text": "Now run each answer through the four questions. Most US health departments do something close to the second answer. They keep children who aren't immune away from the virus for a few weeks, and offer everyone a free shot.",
+      "spoken": "Now run each answer through the four questions. Most U.S. health departments do something close to the second answer. They keep children who aren't immune away from the virus for a few weeks, and offer everyone a free shot."
+    },
+    "bffcc06e": {
+      "slide": "excused",
+      "text": "Being excused from a vaccine law is an old idea too. In 1853, England and Wales made smallpox vaccination compulsory for babies. Protests grew for decades. In 1898, parents who convinced a magistrate that they truly believed vaccination would harm their child were excused. The phrase conscientious objector came into common use in this fight. Today, every US state requires some vaccines for school, and every state excuses children for medical reasons. Most also excuse families who object on religious grounds, and some excuse personal objections too. An exemption excuses someone from a rule. So who should get one?",
+      "spoken": "Being excused from a vaccine law is an old idea too. In 1853, England and Wales made smallpox vaccination compulsory for babies. Protests grew for decades. In 1898, parents who convinced a magistrate that they truly believed vaccination would harm their child were excused. The phrase conscientious objector came into common use in this fight. Today, every U.S. state requires some vaccines for school, and every state excuses children for medical reasons. Most also excuse families who object on religious grounds, and some excuse personal objections too. An exemption excuses someone from a rule. So who should get one?"
+    },
+    "f935adbc": {
+      "slide": "exemption-kinds",
+      "text": "There are three kinds of exemption.",
+      "spoken": "There are three kinds of exemption."
+    },
+    "abe38580": {
+      "slide": "exemption-kinds",
+      "text": "Medical. A doctor says the vaccine would be dangerous for this child, for instance because of cancer treatment or a severe allergy.",
+      "spoken": "Medical. A doctor says the vaccine would be dangerous for this child, for instance because of cancer treatment or a severe allergy."
+    },
+    "1b7aa472": {
+      "slide": "exemption-kinds",
+      "text": "Religious. The family says its faith forbids the vaccine.",
+      "spoken": "Religious. The family says its faith forbids the vaccine."
+    },
+    "fcecf215": {
+      "slide": "exemption-kinds",
+      "text": "Personal belief. The family objects for other reasons of conscience. Some states call this a philosophical exemption.",
+      "spoken": "Personal belief. The family objects for other reasons of conscience. Some states call this a philosophical exemption."
+    },
+    "15f425f8": {
+      "slide": "exemption-kinds",
+      "text": "Since 2015, California, New York, Maine, and Connecticut have ended non-medical exemptions. California went first, after the Disneyland outbreak. Courts have reopened the question in Mississippi and West Virginia.",
+      "spoken": "Since 2015, California, New York, Maine, and Connecticut have ended non-medical exemptions. California went first, after the Disneyland outbreak. Courts have reopened the question in Mississippi and West Virginia."
+    },
+    "12788b3d": {
+      "slide": "leiter",
+      "text": "Why should religion get special treatment?",
+      "spoken": "Why should religion get special treatment?"
+    },
+    "28786654": {
+      "slide": "leiter",
+      "text": "Many states excuse families who object on religious grounds, but not families with other sincere objections. The philosopher Brian Leiter asks why.",
+      "spoken": "Many states excuse families who object on religious grounds, but not families with other sincere objections. The philosopher Brian Lighter asks why."
+    },
+    "ec8b7aba": {
+      "slide": "leiter",
+      "text": "He argues there's no good reason to treat religious conscience as more deserving than any other deep conviction.",
+      "spoken": "He argues there's no good reason to treat religious conscience as more deserving than any other deep conviction."
+    },
+    "54bf81fc": {
+      "slide": "leiter",
+      "text": "But he doesn't conclude that everyone should be excused. No one, religious or not, should get an exemption that shifts burdens onto other people.",
+      "spoken": "But he doesn't conclude that everyone should be excused. No one, religious or not, should get an exemption that shifts burdens onto other people."
+    },
+    "135f64d8": {
+      "slide": "leiter",
+      "text": "He names vaccine exemptions as an example. They shift the risk of disease onto other children.",
+      "spoken": "He names vaccine exemptions as an example. They shift the risk of disease onto other children."
+    },
+    "f4f1ddee": {
+      "slide": "make-it-harder",
+      "text": "The philosopher Mark Navin and the historian Mark Largent propose a middle path.",
+      "spoken": "The philosopher Mark Navin and the historian Mark Largent propose a middle path."
+    },
+    "74cc2713": {
+      "slide": "make-it-harder",
+      "text": "Keep non-medical exemptions, for religious and secular objectors alike, so families with real convictions aren't forced to act against them.",
+      "spoken": "Keep non-medical exemptions, for religious and secular objectors alike, so families with real convictions aren't forced to act against them."
+    },
+    "6d661b43": {
+      "slide": "make-it-harder",
+      "text": "But make an exemption take effort, like an education session at the health department, plus paperwork. They call this model inconvenience.",
+      "spoken": "But make an exemption take effort, like an education session at the health department, plus paperwork. They call this model inconvenience."
+    },
+    "3c811f93": {
+      "slide": "make-it-harder",
+      "text": "The effort filters out parents who are merely unsure, while sincere objectors can still get an exemption.",
+      "spoken": "The effort filters out parents who are merely unsure, while sincere objectors can still get an exemption."
+    },
+    "ebf609c5": {
+      "slide": "make-it-harder",
+      "text": "Michigan began requiring an education session in 2015, and its exemption rate fell.",
+      "spoken": "Michigan began requiring an education session in 2015, and its exemption rate fell."
+    },
+    "b330d64a": {
+      "slide": "s26",
+      "text": "Which of these statements are true, as this lesson presents them? Check every one that is, then press Check answers.",
+      "spoken": "Which of these statements are true, as this lesson presents them? Check every one that is, then press Check answers."
+    },
+    "40f415ee": {
+      "slide": "s26",
+      "text": "Right. Now it's your turn to recommend a rule.",
+      "spoken": "Right. Now it's your turn to recommend a rule."
+    },
+    "c2b69ad4": {
+      "slide": "s27",
+      "text": "Your state legislature asks your health department to recommend a school exemption rule. What do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Your state legislature asks your health department to recommend a school exemption rule. What do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "ed1028f3": {
+      "slide": "s27",
+      "text": "Each answer trades conscience against the safety of children who can't be vaccinated. Notice that Leiter's challenge bites hardest on the second answer. Why excuse religious objectors, and no one else?",
+      "spoken": "Each answer trades conscience against the safety of children who can't be vaccinated. Notice that Lighter's challenge bites hardest on the second answer. Why excuse religious objectors, and no one else?"
+    },
+    "5dc7bf6a": {
+      "slide": "reciprocity",
+      "text": "One last scene from 1853. Esther recovers, but the fever leaves her face scarred. Jo dies. Dickens turns to his readers: Dead, your Majesty. Dead, my lords and gentlemen. Today, vaccines are very safe, but a very small number of people are seriously harmed. Under a 1986 law, a US program pays people harmed by routine vaccines without their having to prove anyone was at fault. The ethicist Ross Upshur's principle of reciprocity covers this. If a community asks you to carry a small risk for everyone's sake, it owes you help if that risk comes due.",
+      "spoken": "One last scene from 1853. Esther recovers, but the fever leaves her face scarred. Jo dies. Dickens turns to his readers: Dead, your Majesty. Dead, my lords and gentlemen. Today, vaccines are very safe, but a very small number of people are seriously harmed. Under a 1986 law, a U.S. program pays people harmed by routine vaccines without their having to prove anyone was at fault. The ethicist Ross Upshur's principle of reciprocity covers this. If a community asks you to carry a small risk for everyone's sake, it owes you help if that risk comes due."
+    },
+    "2b37fe66": {
+      "slide": "trust",
+      "text": "Public health also runs on trust.",
+      "spoken": "Public health also runs on trust."
+    },
+    "480955d5": {
+      "slide": "trust",
+      "text": "Public health asks people to act for each other's sake, so it depends on trust. It has to be honest about risks, and give its reasons.",
+      "spoken": "Public health asks people to act for each other's sake, so it depends on trust. It has to be honest about risks, and give its reasons."
+    },
+    "b0aa2cb1": {
+      "slide": "trust",
+      "text": "Distrust has real causes. From 1932 to 1972, the US Public Health Service left hundreds of Black men with syphilis untreated, to study the disease.",
+      "spoken": "Distrust has real causes. From 1932 to 1972, the U.S. Public Health Service left hundreds of Black men with syphilis untreated, to study the disease."
+    },
+    "0f482c5c": {
+      "slide": "trust",
+      "text": "And move on still happens. In 2020, the CDC advised cities not to clear homeless camps during COVID unless housing was available, because clearing them can break connections with service providers.",
+      "spoken": "And move on still happens. In 2020, the CDC advised cities not to clear homeless camps during COVID unless housing was available, because clearing them can break connections with service providers."
+    },
+    "bc4801d1": {
+      "slide": "trust",
+      "text": "When hepatitis A killed twenty people in San Diego in 2017, hitting people without homes hardest, the county took vaccines and handwashing stations to the streets.",
+      "spoken": "When hepatitis A killed twenty people in San Diego in 2017, hitting people without homes hardest, the county took vaccines and handwashing stations to the streets."
+    },
+    "ae3d89d2": {
+      "slide": "s30",
+      "text": "Right. That was the last question.",
+      "spoken": "Right. That was the last question."
+    },
+    "272dff62": {
+      "slide": "s31",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it."
+    },
+    "fa18b162": {
+      "slide": "s31",
+      "text": "Thank you.",
+      "spoken": "Thank you."
+    },
+    "5d72598c": {
+      "slide": "s32",
+      "text": "Here's the lesson, summed up.",
+      "spoken": "Here's the lesson, summed up."
+    },
+    "d0c58339": {
+      "slide": "s32",
+      "text": "Public health cares for whole populations, mostly by prevention. Herd immunity protects people who can't protect themselves.",
+      "spoken": "Public health cares for whole populations, mostly by prevention. Herd immunity protects people who can't protect themselves."
+    },
+    "c2b2e4b7": {
+      "slide": "s32",
+      "text": "A duty to vaccinate rests on three arguments: harm to others, from Mill. Fairness, from Dawson and Giubilini. And clean hands, from Brennan.",
+      "spoken": "A duty to vaccinate rests on three arguments: harm to others, from Mill. Fairness, from Dawson and Jubilini. And clean hands, from Brennan."
+    },
+    "b33403bb": {
+      "slide": "s32",
+      "text": "From duty to policy: climb the intervention ladder only as far as the four questions allow.",
+      "spoken": "From duty to policy: climb the intervention ladder only as far as the four questions allow."
+    },
+    "f48733f5": {
+      "slide": "s32",
+      "text": "Exemptions and trust: decide who may opt out, and give back to the people who carry the risk for everyone. In 1853, the city's answer to Jo was move on. Public health ethics asks what we owe each other instead.",
+      "spoken": "Exemptions and trust: decide who may opt out, and give back to the people who carry the risk for everyone. In 1853, the city's answer to Jo was move on. Public health ethics asks what we owe each other instead."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

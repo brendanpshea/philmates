@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Move On: Public Health Ethics · PhilMates</title>
+  <meta name="description" content="When may a community make you protect others? Measles, herd immunity, and the ethics of vaccine policy, with scenes from Dickens's London in 1853 and real cases from today.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
+  <script type="module" src="../../../shared/phil-core.js?v=14"></script>
+  <script type="module" src="./assets/herd.js"></script>
+  <style>
+    phil-side .point { margin-top: auto; margin-bottom: 14px; background: var(--panel); border-left: 4px solid var(--accent-2); padding: 9px 11px; }
+    .ladder { list-style: none; margin: 6px 0 8px; padding: 0; display: grid; gap: 4px; max-width: none; }
+    phil-slide .ladder li { max-width: none; margin: 0; padding: 4px 10px; background: var(--panel); border-left: 6px solid var(--rung); font-size: clamp(15px, 1.45vw, 18px); line-height: 1.35; }
+    phil-slide .ladder > li::before, phil-slide .four > li::before { content: none; }
+    .ladder b { color: var(--ink); }
+    phil-slide p.bands { font-size: clamp(15px, 1.45vw, 18px); color: var(--muted); max-width: none; }
+    p.bands strong { color: var(--ink); }
+    .ladder .eg { color: var(--muted); }
+    .four { list-style: none; margin: 6px 0; padding: 0; display: grid; gap: 6px; }
+    phil-slide .four li { margin: 0; padding: 6px 12px; background: var(--panel); border-left: 4px solid var(--accent-3); }
+    .four em { color: var(--muted); font-style: normal; }
+    blockquote.dickens { margin: 8px 0 0; padding: 6px 12px; border-left: 4px solid var(--muted); color: var(--ink); font-style: italic; }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     Jo, Charley, Esther, and Allan Woodcourt are borrowed loosely from
+     Dickens's Bleak House (1852-53). Esther is recast as Black and Woodcourt
+     as South Asian. The novel never names the fever Jo carries; it is usually
+     read as smallpox, and the lesson says only "a fever." The novel implies,
+     without saying outright, that Jo picks it up in Tom-all-Alone's. Students
+     do not need to have read the novel: every scene is told on its slide.
+     The modern frame is the student's: a new hire at a county health
+     department during a measles outbreak at "Riverside Elementary," which is
+     invented. Every "Now" fact is real (sources in phil_mates_outlines.md).
+     Arguments are credited to the philosophers by name, never to a character.
+     The lesson never grades a verdict on mandates or exemptions. "Should"
+     questions are ungraded polls. -->
+
+<phil-lesson id="public-health" title="Move On" subject="Public Health Ethics">
+
+  <!-- ============ OPENING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/crossing.png" alt="Jo, a thin, ragged boy with messy black hair and a broom, stands barefoot on a muddy, foggy London street by a gas lamp while a horse-drawn carriage passes behind him">
+    <h1>Move On</h1>
+    <p class="lead">London in 1853, and your county today. Two places, one question: when may a community make you protect other people?</p>
+    <p>In Charles Dickens's novel <em>Bleak House</em>, a boy named Jo sweeps a muddy street crossing for coins, and the police keep telling him to "move on." You don't need to have read it. Everything you need is on the slides.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>London, in 1853, and your county, today. Two places, one question. When may a community make you protect other people? In Charles Dickens's novel Bleak House, a boy named Jo sweeps a muddy street crossing for coins, and the police keep telling him to move on. You don't need to have read it. Everything you need is on the slides. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>Parents should decide whether their children are vaccinated, not the government.</phil-statement>
+      <phil-statement>If you can protect other people at very little cost to yourself, you have a duty to do it.</phil-statement>
+      <phil-statement>Schools should be allowed to turn away children who aren't vaccinated.</phil-statement>
+      <phil-statement>Religious objections to vaccines deserve more respect than other objections.</phil-statement>
+      <phil-statement>A vaccine law is only fair if the people who must follow it trust the people who made it.</phil-statement>
+    </phil-beliefs>
+    <phil-narration>Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.</phil-narration>
+    <phil-narration when="after">Saved. Now, let's meet the people in this story.</phil-narration>
+  </phil-slide>
+
+  <!-- 3. 1853 and now -->
+  <phil-slide id="your-job">
+    <img slot="art" src="./assets/health-office.png" alt="A county health officer, a Black woman with gray hair and glasses in a cardigan and lanyard, points to a pin on a wall map of the United States beside a desk with a laptop and a coffee mug">
+    <h1>1853 and Now</h1>
+    <p>Each part of this lesson starts with a scene from 1853, then turns to a real case from today.</p>
+    <phil-narration>Each part of this lesson starts with a scene from 1853, then turns to a real case from today. Here's who you'll meet.</phil-narration>
+    <ul reveal>
+      <li say="Jo has no home. He sweeps a street crossing for coins, and whenever he stops, a constable tells him to move on."><strong>Jo</strong> has no home. He sweeps a street crossing for coins, and whenever he stops, a constable tells him to move on.</li>
+      <li say="Esther, a young housekeeper, and Charley, her young maid, find Jo sick on the road and bring him home."><strong>Esther</strong>, a young housekeeper, and <strong>Charley</strong>, her young maid, find Jo sick on the road and bring him home.</li>
+      <li say="Doctor Woodcourt is a young doctor who works among the city's poor."><strong>Dr. Woodcourt</strong> is a young doctor who works among the city's poor.</li>
+      <li say="And you've just started at your county's health department. This morning, a child at Riverside Elementary was diagnosed with measles."><strong>You</strong> have just started at your county's health department. This morning, a child at Riverside Elementary was diagnosed with measles.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ PART 1 — DISEASE DOESN'T STAY PUT ============ -->
+
+  <!-- 4. Then and now: the fever travels -->
+  <phil-slide id="the-fever">
+    <img slot="art" src="./assets/tom-all-alones.png" alt="A crumbling slum alley in green fog, with laundry strung overhead, an open drain down the middle, and tired people of different ages sitting in the doorways">
+    <h1>The Fever Travels</h1>
+    <phil-compare>
+      <phil-side label="1853" tag="Then">
+        <p>Jo sleeps in Tom-all-Alone's, a fever-ridden slum the city has left to rot. He falls sick, and Esther and Charley bring him home. Charley catches the fever from him, and Esther catches it nursing Charley.</p>
+        <p class="point">Dickens warns that the slum's disease "shall work its retribution through every order of society."</p>
+      </phil-side>
+      <phil-side label="2014–15" tag="Now">
+        <p>In December 2014, visitors caught measles at Disneyland in California. By April 2015 it had reached 147 people in seven US states, with more cases in Mexico and Canada.</p>
+        <p class="point">Measles travels with people, wherever they go next.</p>
+      </phil-side>
+    </phil-compare>
+    <p class="muted">Disease doesn't stay where it starts. So a choice about it is never only about the person who makes it.</p>
+    <phil-narration>First, a scene from 1853. Jo sleeps in Tom-all-Alone's, a fever-ridden slum the city has left to rot. He falls sick, and Esther and Charley bring him home. Charley catches the fever from him, and Esther catches it nursing Charley. Dickens warns that the slum's disease shall work its retribution through every order of society. Now jump to December 2014. Visitors caught measles at Disneyland in California. By April 2015, it had reached a hundred and forty-seven people in seven states, with more cases in Mexico and Canada. Disease doesn't stay where it starts. So a choice about it is never only about the person who makes it.</phil-narration>
+  </phil-slide>
+
+  <!-- 5. Public health is different -->
+  <phil-slide id="public-health">
+    <img slot="art" src="./assets/woodcourt.png" alt="Dr. Woodcourt, a young South Asian doctor in a dark coat with a leather bag, kneels in a doorway to offer a cup of water to Jo, who is wrapped in a gray blanket">
+    <h1>Public Health Is Different</h1>
+    <p>When Dr. Woodcourt treats Jo, that is bedside medicine: one doctor, one patient. Public health works at a different scale.</p>
+    <phil-narration>When Doctor Woodcourt treats Jo, that's bedside medicine: one doctor, one patient. Public health works at a different scale.</phil-narration>
+    <ul reveal>
+      <li say="Its patient is a whole population, like a city, a county, or a school.">Its patient is a whole population, such as a city, a county, or a school.</li>
+      <li say="It works mostly by prevention: clean water, vaccines, and catching outbreaks early.">It works mostly by prevention: clean water, vaccines, and catching outbreaks early.</li>
+      <li say="And the one acting is usually the government, which can make rules backed by law.">The one acting is usually the government, which can make rules backed by law.</li>
+      <li say="The epidemiologist Geoffrey Rose noticed a puzzle. A measure that prevents a lot of disease in a population often does little for each person who takes part. He called it the prevention paradox.">The epidemiologist Geoffrey Rose noticed a puzzle. A measure that prevents a lot of disease in a population often does little for each person who takes part. He called it the <strong>prevention paradox</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Explorer: herd immunity -->
+  <phil-slide hold>
+    <h1>Try It: One Case of Measles</h1>
+    <phil-herd prompt="Riverside Elementary has 400 children. Four can't be vaccinated for medical reasons, such as cancer treatment. Set how many of the others are vaccinated, then run an outbreak. Try 80%, 90%, and 95%, and run each one more than once."></phil-herd>
+    <phil-narration>Your turn. Riverside Elementary has four hundred children. Four can't be vaccinated for medical reasons, such as cancer treatment. Use the slider to set how many of the others are vaccinated, then press Run one outbreak. Try eighty, ninety, and ninety-five percent, and run each one more than once. Run twenty outbreaks shows you the pattern. When you're ready, press Continue.</phil-narration>
+  </phil-slide>
+
+  <!-- 7. Herd immunity -->
+  <phil-slide id="herd-immunity">
+    <img slot="art" src="./assets/cant-vaccinate.png" alt="A small bald girl with brown skin sits in a hospital bed hugging a stuffed rabbit and looks out the window at an empty school playground">
+    <h1>Herd Immunity</h1>
+    <phil-narration>Here's what the explorer shows.</phil-narration>
+    <ul reveal>
+      <li say="When enough people are immune, a disease can't find enough new people to infect, and outbreaks die out. That's herd immunity.">When enough people are immune, a disease can't find new people to infect, so outbreaks die out. This is <strong>herd immunity</strong>.</li>
+      <li say="It protects people who can't be vaccinated, like babies too young for their first dose and children in cancer treatment. They depend on everyone else.">It protects people who can't be vaccinated, like babies too young for their first dose and children in cancer treatment. They depend on everyone else.</li>
+      <li say="Measles is one of the most contagious diseases there is. Health agencies aim for at least ninety-five in a hundred children to have both doses of the vaccine.">Measles is one of the most contagious diseases. Health agencies aim for at least 95 in 100 children to have both vaccine doses.</li>
+      <li say="In the 2025 to 2026 school year, about ninety-two percent of American kindergartners had both doses, and a record share had exemptions. And 2026 has seen more measles cases in the US than any year since 1991. One more thing the explorer showed. Herd immunity stops chains of infection, but it can't always stop the first sick child from infecting a neighbor.">In 2025–26, 92.4% of US kindergartners had both doses, and a record 4.2% had exemptions. 2026 has the most US measles cases since 1991.</li>
+    </ul>
+    <p class="muted">Herd immunity stops chains of infection, not every first exposure.</p>
+  </phil-slide>
+
+  <!-- 8. Cloze: herd immunity -->
+  <phil-slide>
+    <h1>Fill In the Gaps</h1>
+    <phil-cloze data-qid="public-health:q1" review="herd-immunity" explain="Right. Health agencies aim for at least 95 in 100 children to have both measles doses. When enough people are immune, outbreaks die out. Babies too young for the vaccine and children in cancer treatment can't protect themselves, so they depend on everyone else being immune. And US kindergarten vaccination, at 92.4%, is below the 95% goal.">
+      <span class="line">1. Against measles, health agencies aim for at least
+        <phil-blank answer="95" options="50,75,95,100">95</phil-blank> in 100 children to have both vaccine doses.</span>
+      <span class="line">2. Once enough people are immune, an outbreak
+        <phil-blank answer="dies out" options="speeds up,dies out,moves to adults,becomes milder">dies out</phil-blank>.</span>
+      <span class="line">3. A baby too young for the vaccine depends on
+        <phil-blank answer="everyone else" options="her doctor,everyone else,antibiotics,her diet">everyone else</phil-blank> being immune.</span>
+      <span class="line">4. US kindergarten vaccination against measles is now
+        <phil-blank answer="below" options="above,at,below">below</phil-blank> the level health agencies aim for.</span>
+    </phil-cloze>
+    <phil-narration>Fill in each gap, then press Check.</phil-narration>
+    <phil-narration when="after">Good. Now for a harder question. Is there a duty to vaccinate?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 2 — A DUTY TO VACCINATE? ============ -->
+
+  <!-- 9. Then and now: Charley never chose -->
+  <phil-slide id="charley">
+    <img slot="art" src="./assets/nursing.png" alt="By candlelight, Esther, a young Black woman in a gray dress with a ring of keys at her waist, offers a cup to Charley, a pale girl resting in bed under a patchwork quilt">
+    <h1>Charley Never Chose</h1>
+    <phil-compare>
+      <phil-side label="1853" tag="Then">
+        <p>Charley caught the fever from Jo after helping Esther bring him home. Nobody asked her whether she would take that risk.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>A six-year-old in cancer treatment can't have the measles vaccine. If she catches measles at school, she never chose that risk either.</p>
+      </phil-side>
+    </phil-compare>
+    <p>So here is the question. When your choice puts a risk on people who never agreed to it, do you have a duty to choose differently? Three arguments say yes.</p>
+    <phil-narration>Back to 1853. Charley caught the fever from Jo after helping Esther bring him home. Nobody asked her whether she'd take that risk. Today, a six-year-old in cancer treatment can't have the measles vaccine. If she catches measles at school, she never chose that risk either. So here's the question. When your choice puts a risk on people who never agreed to it, do you have a duty to choose differently? Three arguments say yes.</phil-narration>
+  </phil-slide>
+
+  <!-- 10. Argument 1: harm -->
+  <phil-slide id="harm">
+    <phil-thinker slot="art" name="John Stuart Mill" dates="1806–1873" work="On Liberty (1859)"
+                  img="./assets/idea-mill.png" alt="An open book on a desk in a dim study, a bright flame rising from its pages" accent="#ffcf5a">
+      <p>Society may limit your freedom only to prevent harm to others.</p>
+    </phil-thinker>
+    <h1>Argument 1: Harm to Others</h1>
+    <phil-narration>The first argument comes from John Stuart Mill.</phil-narration>
+    <ul reveal>
+      <li say="Mill's harm principle says society may limit your freedom only to stop you from harming others.">John Stuart Mill's <strong>harm principle</strong> says society may limit your freedom only to stop you from harming others.</li>
+      <li say="Measles can cause pneumonia, brain swelling, and death. A child who catches it can pass it to someone who couldn't be protected.">Measles can cause pneumonia, brain swelling, and death. A child who catches it can pass it to someone who couldn't be protected.</li>
+      <li say="So refusing a vaccine isn't only about yourself. And a vaccine rule is the kind of rule the harm principle allows.">So refusing a vaccine isn't only about yourself, and a vaccine rule is the kind of rule the harm principle allows.</li>
+      <li say="Here's the worry, though. One unvaccinated child adds only a tiny risk. Does a tiny risk count as harm?">The worry: one unvaccinated child adds only a tiny risk. Does a tiny risk count as harm?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Argument 2: fairness -->
+  <phil-slide id="fairness">
+    <phil-thinker slot="art" name="Alberto Giubilini" work="The Ethics of Vaccination (2019)"
+                  img="./assets/idea-giubilini.png" alt="Many hands of different skin tones reach up toward a big umbrella in the rain, while a figure in a dark coat stands dry beneath it with hands in pockets" accent="#46e07a">
+      <p>Protecting everyone is a shared job, and each of us owes a fair share of it.</p>
+    </phil-thinker>
+    <h1>Argument 2: Fairness</h1>
+    <phil-narration>The second argument is about fairness.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Angus Dawson points out that herd immunity is a public good. Everyone nearby gets the benefit, whether or not they helped make it.">The philosopher Angus Dawson points out that herd immunity is a <strong>public good</strong>: everyone nearby gets the benefit, whether or not they helped make it.</li>
+      <li say="A free rider takes the benefit and leaves the cost to others. Here, the cost is a sore arm and a very small risk of side effects.">A <strong>free rider</strong> takes the benefit and leaves the cost to others. Here the cost is a sore arm and a very small risk of side effects.</li>
+      <li say="Alberto Giubilini goes further. Protecting everyone is a shared job, and fairness says that each person who can should do their fair share of it.">Alberto Giubilini goes further. Protecting everyone is a shared job, and fairness says each person who can should do their fair share of it.</li>
+      <li say="Notice that this argument works even if one person's choice changes nothing. Leaving your share to others is unfair whether or not anyone is harmed.">This argument works even if one person's choice changes nothing. Leaving your share to others is unfair whether or not anyone is harmed.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Argument 3: clean hands -->
+  <phil-slide id="clean-hands">
+    <phil-thinker slot="art" name="Jason Brennan" work="“A Libertarian Case for Mandatory Vaccination” (2018)"
+                  img="./assets/idea-brennan.png" alt="A hand holds back a single stone above a heap of gray stones piled on a dirt road" accent="#4cc2ff">
+      <p>Don't take part in harm done by many, even if your part makes no difference.</p>
+    </phil-thinker>
+    <h1>Argument 3: Clean Hands</h1>
+    <phil-narration>The third argument answers an objection.</phil-narration>
+    <ul reveal>
+      <li say="The objection goes: my one shot makes no difference. Measles spreads or it doesn't, whatever I do.">An objection: "My one shot makes no difference. Measles spreads or doesn't, whatever I do."</li>
+      <li say="Jason Brennan, a libertarian philosopher who usually argues against government power, replies with a grim case. A squad of snipers all fire at a child at once. No single shot makes a difference, yet every sniper does wrong.">Jason Brennan, a libertarian philosopher who usually argues against government power, replies with a grim case. A squad of snipers all fire at a child at once. No single shot makes a difference, yet every sniper does wrong.</li>
+      <li say="His clean hands principle says you have a duty not to take part in collectively harmful activities, and that this duty can sometimes be enforced.">His <strong>clean hands principle</strong>: you have a duty not to take part in collectively harmful activities, and this duty can sometimes be enforced.</li>
+      <li say="Staying unvaccinated is joining the group that, together, spreads measles to others. So, Brennan says, stay out of it, even though your part is tiny.">Staying unvaccinated is joining the group that, together, spreads measles to others. So, Brennan says, stay out of it, even though your part is tiny.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. The case against mandates -->
+  <phil-slide id="other-side">
+    <h1>The Case Against Mandates</h1>
+    <p>Many people who agree that vaccines work still object to laws that require them. Here are their strongest reasons.</p>
+    <phil-narration>Many people who agree that vaccines work still object to laws that require them. Here are their strongest reasons.</phil-narration>
+    <ul reveal>
+      <li say="First, bodily integrity. What goes into your body is yours to decide, and a law requiring a medical procedure is a serious step."><strong>Bodily integrity.</strong> What goes into your body is yours to decide, so requiring a medical procedure is a serious step.</li>
+      <li say="Second, parents' rights. Parents normally make medical decisions for their children. Writing in a medical ethics journal in 1999, Peter Bradley argued that this weighs against compulsion where most children are vaccinated anyway."><strong>Parents' rights.</strong> Parents normally make their children's medical decisions. Peter Bradley (1999) argued this weighs against compulsion where most children are vaccinated anyway.</li>
+      <li say="Third, conscience. Some families object on religious or moral grounds, and forcing them to act against conscience is a real cost."><strong>Conscience.</strong> Some families object on religious or moral grounds. Forcing them to act against conscience is a real cost.</li>
+      <li say="And fourth, as little force as possible. The philosopher Mark Navin argues that the state should use only as much coercion as it needs to keep herd immunity."><strong>As little force as possible.</strong> The philosopher Mark Navin argues that the state should use only as much coercion as it needs to keep herd immunity.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Classify: which argument -->
+  <phil-slide>
+    <h1>Which Argument?</h1>
+    <phil-classify data-qid="public-health:q2" review="fairness" prompt="Each line gives a reason for vaccination. Which argument does it draw on?"
+                   explain="Right. The harm argument points to the risk your choice puts on others. The fairness argument says you shouldn't take the benefit of herd immunity while others carry its cost. The clean hands argument says don't join a group that does harm together, even if your own part makes no difference.">
+      <phil-col key="harm">Harm to others</phil-col>
+      <phil-col key="fair">Fairness</phil-col>
+      <phil-col key="clean">Clean hands</phil-col>
+      <phil-item answer="harm" why="The reason given is the risk your choice puts on someone else, which is the harm argument.">"Skip the shot and you could pass measles to a baby too young for it."</phil-item>
+      <phil-item answer="harm" why="Freedom may be limited to stop harm to others: Mill's harm principle.">"Your freedom stops where it starts to harm other people."</phil-item>
+      <phil-item answer="fair" why="Taking a shared benefit without paying its share of the cost is free riding.">"If you enjoy herd immunity, help pay its price."</phil-item>
+      <phil-item answer="fair" why="Letting others carry the cost while you stay protected is free riding, which the fairness argument calls unfair.">"It's unfair to stay protected by everyone else's shots."</phil-item>
+      <phil-item answer="clean" why="Staying out of a group that does harm together, even when your own part changes nothing, is the clean hands principle.">"Refusing the shot makes you part of a group that spreads measles. Stay out of it."</phil-item>
+      <phil-item answer="clean" why="Brennan's snipers: taking part in a group's harm isn't excused because the other shots would have done it anyway.">"A sniper can't excuse himself because the other shots would have killed anyway."</phil-item>
+    </phil-classify>
+    <phil-narration>Each line gives a reason for vaccination. Which argument does it draw on: harm to others, fairness, or clean hands? Sort them, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Three different reasons for the same conclusion.</phil-narration>
+  </phil-slide>
+
+  <!-- 15. Poll: is there a duty? -->
+  <phil-slide>
+    <img slot="art" src="./assets/school.png" alt="Morning drop-off at a brick elementary school with a yellow school bus and autumn trees, as parents and children of different ages and skin tones walk in">
+    <h1>Decision Point: Is There a Duty?</h1>
+    <phil-poll prompt="A parent at Riverside Elementary says: &quot;My child's one shot won't make a difference, and it's my choice.&quot; Does the parent have a moral duty to vaccinate the child?"
+               explain="Notice the third answer. It grants the duty and still resists the law, which is where much of the real disagreement about mandates sits. The next part asks the policy question directly: how far may a health department go?">
+      <phil-choice note="This leans on the harm argument. The parent's reply is that one child's risk is tiny, which is exactly what the clean hands argument was built to answer.">Yes. Skipping it puts other children at risk.</phil-choice>
+      <phil-choice note="This is the fairness argument. It doesn't need the parent's choice to make a difference; free riding is unfair anyway.">Yes. It's unfair to rely on everyone else's shots.</phil-choice>
+      <phil-choice note="Many people hold this. It separates the moral question from the political one: a duty may be real without being the state's to enforce.">Yes, but the government shouldn't force it.</phil-choice>
+      <phil-choice note="Then you need an answer to all three arguments, including the claim that free riding is unfair even when nobody is harmed.">No. It really is the parent's choice.</phil-choice>
+    </phil-poll>
+    <phil-narration>A parent at Riverside Elementary says: my child's one shot won't make a difference, and it's my choice. Does the parent have a moral duty to vaccinate? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Notice the third answer. It grants the duty, and still resists the law. That's where much of the real disagreement about mandates sits. So how far may a health department go?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 3 — FROM DUTY TO POLICY ============ -->
+
+  <!-- 16. Then and now: move on -->
+  <phil-slide id="move-on">
+    <img slot="art" src="./assets/move-on.png" alt="A stout, gray-whiskered constable in a top hat and dark coat points down a foggy street, and Jo, barefoot with his broom, walks away">
+    <h1>Move On</h1>
+    <phil-compare>
+      <phil-side label="1853" tag="Then">
+        <p>Whenever Jo stops, a constable tells him to move on. "But where?" Jo asks. "My instructions don't go to that," the constable replies.</p>
+        <p class="point">Dickens calls "Move on!" "the one grand recipe" the authorities have for Jo.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>You have a measles case at Riverside Elementary. You could send a letter home, offer free shots, fine families, or keep unvaccinated children home.</p>
+      </phil-side>
+    </phil-compare>
+    <p>Doing nothing, or pushing a problem out of sight, is a choice too. The question is how much to do, and how to decide.</p>
+    <phil-narration>Back to 1853 again. Whenever Jo stops, a constable tells him to move on. But where, Jo asks. My instructions don't go to that, the constable replies. Dickens calls move on the one grand recipe the authorities have for Jo. Today, you have a measles case at Riverside Elementary. You could send a letter home, offer free shots, fine families, or keep unvaccinated children home. Doing nothing, or pushing a problem out of sight, is a choice too. The question is how much to do, and how to decide.</phil-narration>
+  </phil-slide>
+
+  <!-- 17. The intervention ladder -->
+  <phil-slide id="ladder">
+    <h1>The Intervention Ladder</h1>
+    <p>In 2007 the Nuffield Council on Bioethics, a British ethics body, ranked public health policies on a ladder. Higher rungs limit choice more, so they need stronger reasons.</p>
+    <ol class="ladder">
+      <li style="--rung:#ff5d6c"><b>Eliminate choice.</b> <span class="eg">Vaccinate people against their will. US rules today use fines or exclusion instead.</span></li>
+      <li style="--rung:#ff8a5c"><b>Restrict choice.</b> <span class="eg">Unvaccinated children stay home during an outbreak.</span></li>
+      <li style="--rung:#ffb15a"><b>Guide choice through disincentives.</b> <span class="eg">A fine, like the $5 fine the Supreme Court upheld in 1905.</span></li>
+      <li style="--rung:#ffcf5a"><b>Guide choices through incentives.</b> <span class="eg">Ohio's 2021 lottery: $1 million prizes for vaccinated adults.</span></li>
+      <li style="--rung:#b5e06a"><b>Guide choices by changing the default.</b> <span class="eg">Book flu-shot appointments people can cancel.</span></li>
+      <li style="--rung:#46e07a"><b>Enable choice.</b> <span class="eg">Free vaccines at school or the pharmacy.</span></li>
+      <li style="--rung:#4cc2ff"><b>Provide information.</b> <span class="eg">Reminder letters and ad campaigns.</span></li>
+      <li style="--rung:#8a8fd6"><b>Do nothing, or just monitor.</b> <span class="eg">Count the cases.</span></li>
+    </ol>
+    <p class="bands">To keep it simple, this lesson groups the rungs above "do nothing" into four bands: <strong>inform or enable</strong>, <strong>change the default</strong>, <strong>incentive or disincentive</strong>, and <strong>restrict or eliminate choice</strong>.</p>
+    <phil-narration>In 2007, the Nuffield Council on Bioethics, a British ethics body, ranked public health policies on a ladder. Higher rungs limit choice more, so they need stronger reasons. From the top. Eliminate choice: vaccinate people against their will. US rules today use fines or exclusion instead. Restrict choice: unvaccinated children stay home during an outbreak. Guide choice through disincentives: a fine, like the five-dollar fine the Supreme Court upheld in 1905. Guide choices through incentives: Ohio's 2021 lottery, with million-dollar prizes for vaccinated adults. Guide choices by changing the default: book flu-shot appointments that people can cancel. Enable choice: free vaccines at school or the pharmacy. Provide information: reminder letters and ad campaigns. And at the bottom, do nothing, or just count the cases. To keep it simple, this lesson groups the rungs above doing nothing into four bands: inform or enable, change the default, incentive or disincentive, and restrict or eliminate choice.</phil-narration>
+  </phil-slide>
+
+  <!-- 18. Classify: where on the ladder -->
+  <phil-slide>
+    <h1>Climb the Ladder</h1>
+    <phil-classify data-qid="public-health:q3" review="ladder" prompt="Where does each policy sit on the intervention ladder?"
+                   explain="Right. Reminders and free clinics inform people or make the choice easier. A booked appointment you can cancel changes the default. Gift cards and fines change the payoff. Keeping children home, or vaccinating someone who refuses, takes the choice away.">
+      <phil-col key="inform">Inform or enable</phil-col>
+      <phil-col key="default">Change the default</phil-col>
+      <phil-col key="pay">Incentive or disincentive</phil-col>
+      <phil-col key="restrict">Restrict or eliminate choice</phil-col>
+      <phil-item answer="inform" why="A reminder gives information and leaves the choice exactly as it was.">A text reminding parents a second dose is due</phil-item>
+      <phil-item answer="inform" why="A free clinic makes the healthy choice easier without pushing anyone, which is enabling choice.">A free vaccine clinic in the school gym</phil-item>
+      <phil-item answer="default" why="Getting the shot becomes what happens unless you act, and you are free to cancel. That is changing the default.">A flu-shot appointment booked for every employee, who can cancel it</phil-item>
+      <phil-item answer="pay" why="A reward for choosing the vaccine is an incentive.">A $50 gift card for getting vaccinated this month</phil-item>
+      <phil-item answer="pay" why="A penalty for refusing adds a cost but takes no option away, which is a disincentive.">A $100 fine for parents who refuse</phil-item>
+      <phil-item answer="restrict" why="The option of attending school unvaccinated is taken away for now, which restricts choice.">Unvaccinated children stay home until the outbreak ends</phil-item>
+      <phil-item answer="restrict" why="Vaccinating someone against her will removes the choice entirely: the top rung.">Health officers vaccinate a woman who refused</phil-item>
+    </phil-classify>
+    <phil-narration>Where does each policy sit on the ladder? Sort each one into its band, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. The higher the band, the stronger the reasons a policy needs. So how high is too high?</phil-narration>
+  </phil-slide>
+
+  <!-- 19. Four questions -->
+  <phil-slide id="four-questions">
+    <phil-thinker slot="art" name="James Childress" work="“Public Health Ethics: Mapping the Terrain” (2002, with Ruth Faden and others)"
+                  img="./assets/idea-childress.png" alt="An old wooden gate held shut by four brass padlocks of different shapes: round, square, triangular, and heart-shaped" accent="#ff6ad5">
+      <p>A policy that overrides liberty must pass tests before it is justified.</p>
+    </phil-thinker>
+    <h1>Four Questions Before You Climb</h1>
+    <p>How high is too high? In 2002 the ethicists James Childress, Ruth Faden, and colleagues set out tests for a public health policy that overrides values like liberty. They list five. Two of them both ask whether a gentler way would do, so here they are as four questions.</p>
+    <ul class="four">
+      <li><strong>Will it work?</strong> <em>(effectiveness)</em></li>
+      <li><strong>Are the benefits worth the burdens?</strong> <em>(proportionality)</em></li>
+      <li><strong>Is there a gentler way that would also work?</strong> <em>(necessity and least infringement)</em></li>
+      <li><strong>Has it been explained openly to the public?</strong> <em>(public justification)</em></li>
+    </ul>
+    <phil-narration>How high is too high? In 2002, the ethicists James Childress, Ruth Faden, and colleagues set out tests for a public health policy that overrides values like liberty. They list five. Two of them both ask whether a gentler way would do, so here they are as four questions. Will it work? Are the benefits worth the burdens? Is there a gentler way that would also work? And has it been explained openly to the public?</phil-narration>
+  </phil-slide>
+
+  <!-- 20. Classify: which question -->
+  <phil-slide>
+    <h1>Which Question?</h1>
+    <phil-classify data-qid="public-health:q4" review="four-questions" prompt="Which of the four questions does each objection raise?"
+                   explain="Right. A rule that can't stop the disease fails the first question. A small benefit bought with a huge burden fails the second. A rule that a gentler measure could replace fails the third. And a rule kept from the public, or never explained, fails the fourth.">
+      <phil-col key="work">Will it work?</phil-col>
+      <phil-col key="worth">Worth the burdens?</phil-col>
+      <phil-col key="gentler">A gentler way?</phil-col>
+      <phil-col key="public">Explained openly?</phil-col>
+      <phil-item answer="work" why="Measles spreads before the rash appears, so a rash check misses children who are already spreading it. The rule can't do its job.">"Measles spreads before the rash, so rash checks won't stop it."</phil-item>
+      <phil-item answer="work" why="A spray that does nothing against measles can't protect anyone, so the rule fails the first question.">"Tests show the herbal spray the county plans to hand out does nothing against measles."</phil-item>
+      <phil-item answer="worth" why="The benefit is tiny and the burden is huge, so the benefits are not worth the burdens.">"The rule would prevent one measles case, but it keeps all 400 children home for a month."</phil-item>
+      <phil-item answer="gentler" why="If keeping only the unvaccinated home works as well, closing the whole school isn't needed.">"Keeping only unvaccinated children home would work as well as closing the school."</phil-item>
+      <phil-item answer="gentler" why="A milder measure would reach the same goal, so the stronger one isn't needed.">"Reminders and a free clinic would work as well as fines."</phil-item>
+      <phil-item answer="public" why="Deciding in secret and refusing to give reasons fails the public-justification test.">"The board passed the rule in secret and won't say why."</phil-item>
+    </phil-classify>
+    <phil-narration>Each objection to a proposed rule raises one of the four questions. Which one? Sort them, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Keep those four questions handy. You're about to use them.</phil-narration>
+  </phil-slide>
+
+  <!-- 21. Poll: the outbreak decision -->
+  <phil-slide>
+    <img slot="art" src="./assets/clinic.png" alt="A school gym set up as a free vaccine clinic: a smiling East Asian nurse in blue scrubs hands a sticker to a Black father holding his little daughter, with families waiting in line behind them">
+    <h1>Decision Point: Riverside Elementary</h1>
+    <phil-poll prompt="Three more children at Riverside Elementary have measles. About 1 in 10 of its children aren't vaccinated. What do you recommend?"
+               explain="Run each answer through the four questions. Measles moves fast, so the lowest rungs may fail the first question. Closing everything may fail the second. Most US health departments do something close to the second answer: they keep children who aren't immune away from the virus for a few weeks, and they offer everyone a free shot.">
+      <phil-choice note="This stays on the low rungs and passes the gentler-way test easily. The hard question is whether it works fast enough against measles.">Letters home and a free clinic at the school. Nothing more.</phil-choice>
+      <phil-choice note="This is close to standard US practice. Children who aren't immune stay home until 21 days after the last case's rash began. A shot within three days of exposure can let a child come back sooner.">A free clinic, and unvaccinated children stay home for three weeks.</phil-choice>
+      <phil-choice note="A fine is a disincentive. It may push some families to vaccinate, but it doesn't keep exposed children who aren't immune out of class while they might be spreading measles.">A free clinic, and a fine for families who still refuse.</phil-choice>
+      <phil-choice note="This keeps every child away from the virus at school, at a heavy cost to hundreds of vaccinated children. Ask whether the benefits are worth the burdens, and whether a gentler way would work.">Close the whole school until the outbreak ends.</phil-choice>
+    </phil-poll>
+    <phil-narration>Three more children at Riverside Elementary have measles. About one in ten of its children aren't vaccinated. What do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Now run each answer through the four questions. Most US health departments do something close to the second answer. They keep children who aren't immune away from the virus for a few weeks, and offer everyone a free shot.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 4 — EXEMPTIONS ============ -->
+
+  <!-- 22. Then and now: excused -->
+  <phil-slide id="excused">
+    <img slot="art" src="./assets/vaccinator.png" alt="A parish hall in the 1850s, where a line of mothers holding babies, women of different ages and skin tones, waits at a table of small glass vials and an open ledger, where a doctor in a dark coat sits writing">
+    <h1>Excused</h1>
+    <phil-compare>
+      <phil-side label="1853–1898" tag="Then">
+        <p>In 1853, England and Wales made smallpox vaccination compulsory for babies. Protests grew for decades. In 1898, parents who convinced a magistrate that they truly believed vaccination would harm their child were excused. The phrase <strong>conscientious objector</strong> came into common use in this fight.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>Every US state requires some vaccines for school, and every state excuses children for medical reasons. Most also excuse families who object on religious grounds, and some excuse personal objections too.</p>
+      </phil-side>
+    </phil-compare>
+    <p>An <strong>exemption</strong> excuses someone from a rule. Who should get one?</p>
+    <phil-narration>Being excused from a vaccine law is an old idea too. In 1853, England and Wales made smallpox vaccination compulsory for babies. Protests grew for decades. In 1898, parents who convinced a magistrate that they truly believed vaccination would harm their child were excused. The phrase conscientious objector came into common use in this fight. Today, every US state requires some vaccines for school, and every state excuses children for medical reasons. Most also excuse families who object on religious grounds, and some excuse personal objections too. An exemption excuses someone from a rule. So who should get one?</phil-narration>
+  </phil-slide>
+
+  <!-- 23. Three kinds of exemption -->
+  <phil-slide id="exemption-kinds">
+    <img slot="art" src="./assets/hearing.png" alt="A packed school board meeting in a gym: a bearded man speaks into a microphone to rows of parents of different ages and skin tones, some holding up blank signs">
+    <h1>Three Kinds of Exemption</h1>
+    <phil-narration>There are three kinds of exemption.</phil-narration>
+    <ul reveal>
+      <li say="Medical. A doctor says the vaccine would be dangerous for this child, for instance because of cancer treatment or a severe allergy."><strong>Medical.</strong> A doctor says the vaccine would be dangerous for this child, for instance because of cancer treatment or a severe allergy.</li>
+      <li say="Religious. The family says its faith forbids the vaccine."><strong>Religious.</strong> The family says its faith forbids the vaccine.</li>
+      <li say="Personal belief. The family objects for other reasons of conscience. Some states call this a philosophical exemption."><strong>Personal belief.</strong> The family objects for other reasons of conscience. Some states call this a philosophical exemption.</li>
+      <li say="Since 2015, California, New York, Maine, and Connecticut have ended non-medical exemptions. California went first, after the Disneyland outbreak. Courts have reopened the question in Mississippi and West Virginia.">Since 2015, California, New York, Maine, and Connecticut have ended non-medical exemptions. Courts have reopened the question in Mississippi and West Virginia.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Leiter -->
+  <phil-slide id="leiter">
+    <phil-thinker slot="art" name="Brian Leiter" work="Why Tolerate Religion? (2013)"
+                  img="./assets/idea-leiter.png" alt="A brass balance scale hanging level, with a lit church candle in one pan and a small oil lamp in the other" accent="#4cc2ff">
+      <p>Religious conscience gets no special claim, and no one gets burden-shifting exemptions.</p>
+    </phil-thinker>
+    <h1>Why Religion?</h1>
+    <phil-narration>Why should religion get special treatment?</phil-narration>
+    <ul reveal>
+      <li say="Many states excuse families who object on religious grounds, but not families with other sincere objections. The philosopher Brian Leiter asks why.">Many states excuse families who object on religious grounds but not families with other sincere objections. The philosopher Brian Leiter asks why.</li>
+      <li say="He argues there's no good reason to treat religious conscience as more deserving than any other deep conviction.">He argues there is no good reason to treat religious conscience as more deserving than any other deep conviction.</li>
+      <li say="But he doesn't conclude that everyone should be excused. No one, religious or not, should get an exemption that shifts burdens onto other people.">But he doesn't conclude that everyone should be excused. No one, religious or not, should get an exemption that shifts burdens onto other people.</li>
+      <li say="He names vaccine exemptions as an example. They shift the risk of disease onto other children.">He names vaccine exemptions as an example. They shift the risk of disease onto other children.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Navin and Largent -->
+  <phil-slide id="make-it-harder">
+    <h1>Keep It, but Make It Harder</h1>
+    <p>The philosopher Mark Navin and the historian Mark Largent propose a middle path (2017).</p>
+    <phil-narration>The philosopher Mark Navin and the historian Mark Largent propose a middle path.</phil-narration>
+    <ul reveal>
+      <li say="Keep non-medical exemptions, for religious and secular objectors alike, so families with real convictions aren't forced to act against them.">Keep non-medical exemptions, for religious and secular objectors alike, so families with real convictions aren't forced to act against them.</li>
+      <li say="But make an exemption take effort, like an education session at the health department, plus paperwork. They call this model inconvenience.">But make an exemption take effort, such as an education session at the health department plus paperwork. They call this model <strong>inconvenience</strong>.</li>
+      <li say="The effort filters out parents who are merely unsure, while sincere objectors can still get an exemption.">The effort filters out parents who are merely unsure, while sincere objectors can still get an exemption.</li>
+      <li say="Michigan began requiring an education session in 2015, and its exemption rate fell.">Michigan began requiring an education session in 2015, and its exemption rate fell.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Checkset: exemptions -->
+  <phil-slide>
+    <h1>Exemptions: What's True?</h1>
+    <phil-checkset data-qid="public-health:q5" review="leiter" prompt="Check every statement that is true, as this lesson presents it."
+                   explain="Right. Every state excuses children for medical reasons. Leiter asks why religious conscience should be excused when other sincere conscience is not, and he concludes that no one should get an exemption that shifts burdens onto others. Navin and Largent keep non-medical exemptions but make them take effort. California and New York now allow medical exemptions only.">
+      <phil-statement correct>Every US state excuses children from school vaccine rules for medical reasons.</phil-statement>
+      <phil-statement correct>Leiter asks why religious objections should be excused when other sincere objections are not.</phil-statement>
+      <phil-statement correct>Navin and Largent would keep non-medical exemptions but make them take effort.</phil-statement>
+      <phil-statement>Leiter concludes that every sincere objector, religious or not, should be excused.</phil-statement>
+      <phil-statement>Navin and Largent would end every exemption except medical ones.</phil-statement>
+      <phil-statement>California and New York now excuse children whose parents object on personal grounds.</phil-statement>
+    </phil-checkset>
+    <phil-narration>Which of these statements are true, as this lesson presents them? Check every one that is, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Now it's your turn to recommend a rule.</phil-narration>
+  </phil-slide>
+
+  <!-- 27. Poll: the state's rule -->
+  <phil-slide>
+    <img slot="art" src="./assets/hearing.png" alt="A packed school board meeting in a gym: a bearded man speaks into a microphone to rows of parents of different ages and skin tones, some holding up blank signs">
+    <h1>Decision Point: The Exemption Rule</h1>
+    <phil-poll prompt="Your state legislature asks your health department to recommend a school exemption rule. What do you recommend?"
+               explain="Each answer trades conscience against the safety of children who can't be vaccinated. Leiter's challenge bites hardest on the second answer: why excuse religious objectors and no one else? Navin and Largent's answer tries to keep both values, by respecting conviction while filtering out convenience.">
+      <phil-choice note="This is California's and New York's rule, and it is where Leiter's argument leads. It protects herd immunity best, and asks families with sincere objections to choose between their conscience and school.">Medical exemptions only.</phil-choice>
+      <phil-choice note="This is the most common US rule. It has to answer Leiter: what makes a religious conviction different from a secular one?">Medical and religious exemptions.</phil-choice>
+      <phil-choice note="This is Navin and Largent's middle path. It respects every sincere conscience and counts on the effort to keep the numbers small.">Any sincere objection, after an education session.</phil-choice>
+      <phil-choice note="This respects every parent's choice. Where exemptions are this easy, more parents take them, and coverage can slip below the level herd immunity needs.">Any parent who signs a form.</phil-choice>
+    </phil-poll>
+    <phil-narration>Your state legislature asks your health department to recommend a school exemption rule. What do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Each answer trades conscience against the safety of children who can't be vaccinated. Notice that Leiter's challenge bites hardest on the second answer. Why excuse religious objectors, and no one else?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 5 — RECIPROCITY AND TRUST ============ -->
+
+  <!-- 28. Then and now: what the community owes -->
+  <phil-slide id="reciprocity">
+    <img slot="art" src="./assets/mirror.png" alt="A hand mirror lies on a sunny windowsill beside a jar of wildflowers, near a plain gray dress with a white collar draped over a chair">
+    <h1>What the Community Owes Back</h1>
+    <phil-compare>
+      <phil-side label="1853" tag="Then">
+        <p>Esther recovers, but the fever leaves her face scarred. Jo dies. Dickens turns to his readers: "Dead, your Majesty. Dead, my lords and gentlemen."</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>Vaccines are very safe, but a very small number of people are seriously harmed. Under a 1986 law, a US program pays people harmed by routine vaccines without their having to prove anyone was at fault.</p>
+      </phil-side>
+    </phil-compare>
+    <p>The ethicist Ross Upshur's principle of <strong>reciprocity</strong> covers this. If a community asks you to carry a small risk for everyone's sake, it owes you help if that risk comes due.</p>
+    <phil-narration>One last scene from 1853. Esther recovers, but the fever leaves her face scarred. Jo dies. Dickens turns to his readers: Dead, your Majesty. Dead, my lords and gentlemen. Today, vaccines are very safe, but a very small number of people are seriously harmed. Under a 1986 law, a US program pays people harmed by routine vaccines without their having to prove anyone was at fault. The ethicist Ross Upshur's principle of reciprocity covers this. If a community asks you to carry a small risk for everyone's sake, it owes you help if that risk comes due.</phil-narration>
+  </phil-slide>
+
+  <!-- 29. Trust, and moving on today -->
+  <phil-slide id="trust">
+    <img slot="art" src="./assets/outreach.png" alt="A tent camp under a freeway overpass at dusk: an outreach nurse, a Black woman in a blue jacket carrying a cooler, talks with an older white man sitting in his tent, beside a portable handwashing sink">
+    <h1>Trust, and Moving On Today</h1>
+    <phil-narration>Public health also runs on trust.</phil-narration>
+    <ul reveal>
+      <li say="Public health asks people to act for each other's sake, so it depends on trust. It has to be honest about risks, and give its reasons.">Public health asks people to act for each other's sake, so it depends on trust. It has to be honest about risks and give its reasons.</li>
+      <li say="Distrust has real causes. From 1932 to 1972, the US Public Health Service left hundreds of Black men with syphilis untreated, to study the disease.">Distrust has real causes. From 1932 to 1972, the US Public Health Service left hundreds of Black men with syphilis untreated, to study the disease.</li>
+      <li say="And move on still happens. In 2020, the CDC advised cities not to clear homeless camps during COVID unless housing was available, because clearing them can break connections with service providers.">"Move on" still happens. In 2020 the CDC advised cities not to clear homeless camps during COVID unless housing was available, because clearing them can "break connections with service providers."</li>
+      <li say="When hepatitis A killed twenty people in San Diego in 2017, hitting people without homes hardest, the county took vaccines and handwashing stations to the streets.">When hepatitis A killed 20 people in San Diego in 2017, hitting people without homes hardest, the county took vaccines and handwashing stations to the streets.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. Checkset: reciprocity and trust -->
+  <phil-slide>
+    <h1>Reciprocity and Trust</h1>
+    <phil-checkset data-qid="public-health:q6" review="reciprocity" prompt="Check every statement that is true, as this lesson presents it."
+                   explain="Right. Upshur's reciprocity means the community owes help to people harmed by a small risk it asked them to carry, and the 1986 program pays without proof of fault. Distrust has real roots, such as the Tuskegee study. And the CDC warned in 2020 that, unless housing is available, clearing camps can cut people off from the services that reach them.">
+      <phil-statement correct>On Upshur's view, a community that asks people to carry a small risk for others owes them help if it comes due.</phil-statement>
+      <phil-statement correct>The 1986 program pays people seriously harmed by routine vaccines, with no need to prove fault.</phil-statement>
+      <phil-statement correct>The CDC warned that clearing homeless camps during COVID could break people's ties to service providers.</phil-statement>
+      <phil-statement>Distrust of public health agencies has no basis in their history.</phil-statement>
+      <phil-statement>Under the 1986 program, families must prove the vaccine maker was careless.</phil-statement>
+      <phil-statement>In 2020, the CDC advised cities to clear homeless camps quickly during COVID.</phil-statement>
+    </phil-checkset>
+    <phil-narration>Which of these statements are true, as this lesson presents them? Check every one that is, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. That was the last question.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 31. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit. If something moved, ask yourself what moved it.</phil-narration>
+    <phil-narration when="after">Thank you.</phil-narration>
+  </phil-slide>
+
+  <!-- 32. Summed up -->
+  <phil-slide>
+    <img slot="art" src="./assets/empty-crossing.png" alt="A worn broom leans against a gas lamp at an empty, foggy street crossing at dawn">
+    <h1>Summed Up</h1>
+    <phil-narration>Here's the lesson, summed up.</phil-narration>
+    <ul reveal>
+      <li say="Public health cares for whole populations, mostly by prevention. Herd immunity protects people who can't protect themselves."><strong>Public health</strong> cares for whole populations, mostly by prevention. Herd immunity protects people who can't protect themselves.</li>
+      <li say="A duty to vaccinate rests on three arguments: harm to others, from Mill. Fairness, from Dawson and Giubilini. And clean hands, from Brennan."><strong>A duty to vaccinate</strong> rests on three arguments: harm to others (Mill), fairness (Dawson and Giubilini), and clean hands (Brennan).</li>
+      <li say="From duty to policy: climb the intervention ladder only as far as the four questions allow."><strong>From duty to policy:</strong> climb the intervention ladder only as far as the four questions allow.</li>
+      <li say="Exemptions and trust: decide who may opt out, and give back to the people who carry the risk for everyone. In 1853, the city's answer to Jo was move on. Public health ethics asks what we owe each other instead."><strong>Exemptions and trust:</strong> decide who may opt out, and give back to people who carry the risk for everyone.</li>
+    </ul>
+    <p class="muted">In 1853 the city's answer to Jo was "move on." Public health ethics asks what we owe each other instead.</p>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>James F. Childress, Ruth R. Faden, et al., “<a href="https://doi.org/10.1111/j.1748-720X.2002.tb00384.x">Public Health Ethics: Mapping the Terrain</a>,” <em>Journal of Law, Medicine &amp; Ethics</em> 30, no. 2 (2002): 170–178. The source of the tests behind the four questions.</li>
+      <li>Nuffield Council on Bioethics, <em><a href="https://cdn.nuffieldbioethics.org/wp-content/uploads/Public-health-ethical-issues.pdf">Public Health: Ethical Issues</a></em> (2007). The intervention ladder, with case studies that include vaccination.</li>
+      <li>Alberto Giubilini, <em><a href="https://doi.org/10.1007/978-3-030-02068-2">The Ethics of Vaccination</a></em> (Palgrave Macmillan, 2019). A short book, free online, that makes the fair-share argument in full.</li>
+      <li>Jason Brennan, “<a href="https://doi.org/10.1136/medethics-2016-103486">A Libertarian Case for Mandatory Vaccination</a>,” <em>Journal of Medical Ethics</em> 44, no. 1 (2018): 37–43. The clean hands principle, from a critic of most government power.</li>
+      <li>Mark Navin and Mark Largent, “<a href="https://doi.org/10.1093/phe/phw047">Improving Nonmedical Vaccine Exemption Policies: Three Case Studies</a>,” <em>Public Health Ethics</em> 10, no. 3 (2017): 225–234. The case for keeping exemptions but making them inconvenient.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Microsoft text-to-speech). The author reviewed everything and is responsible for any errors.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

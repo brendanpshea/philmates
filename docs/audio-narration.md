@@ -11,9 +11,10 @@ the ordinary lesson, and a paused player behaves exactly like it. Next and Back
 always work, so nothing is ever locked.
 
 **In use:** *The Midnight Tribunal* (`ethical-theory/utilitarianism`, the
-pilot), *The Masquerade of Silverport* (`ai-ethics/masquerade-silverport`) and
-*The Ship's Chest* (`bioethics/right-to-health-care`). The catalog marks
-narrated lessons with a **Narrated** badge.
+pilot), *The Masquerade of Silverport* (`ai-ethics/masquerade-silverport`),
+*The Ship's Chest* (`bioethics/right-to-health-care`) and *Move On*
+(`bioethics/public-health`). The catalog marks narrated lessons with a
+**Narrated** badge.
 
 ## What the student sees
 
