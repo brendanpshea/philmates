@@ -1,0 +1,552 @@
+{
+  "engine": "gemini",
+  "voice": "en-us-podcaster-10",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "8ab377c8": {
+      "slide": "s1",
+      "text": "Welcome to The Third Twin. It's Brassica, Minnesota, today. Mustard Medical Center has a new diagnostician, and it can't tell you why. In the 1890s, twin doctors founded a clinic here on one rule: every patient gets a second look. Today the clinic is a famous medical center, and it wants a machine to give that second look. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Third Twin. It's Brassica, Minnesota, today. Mustard Medical Center has a new diagnostician, and it can't tell you why. In the 1890s, twin doctors founded a clinic here on one rule: every patient gets a second look. Today the clinic is a famous medical center, and it wants a machine to give that second look. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "eb00b0c4": {
+      "slide": "s2",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "bf75f16b": {
+      "slide": "founders",
+      "text": "Let's start with how this place began. First, a note: the Center, the town, and everyone in this story are invented.",
+      "spoken": "Let's start with how this place began. First, a note: the Center, the town, and everyone in this story are invented."
+    },
+    "30b3484e": {
+      "slide": "founders",
+      "text": "In the 1890s, twin doctors Ida and Otto Mustard opened a clinic in Brassica, a river town in southern Minnesota.",
+      "spoken": "In the 1890s, twin doctors Ida and Otto Mustard opened a clinic in Brassica, a river town in southern Minnesota."
+    },
+    "0c3306a3": {
+      "slide": "founders",
+      "text": "They had one rule: every patient gets a second look. One twin examined the patient, and the other checked the diagnosis.",
+      "spoken": "They had one rule: every patient gets a second look. One twin examined the patient, and the other checked the diagnosis."
+    },
+    "ca823827": {
+      "slide": "founders",
+      "text": "Their clinic grew into Mustard Medical Center, where patients now come from all over the world.",
+      "spoken": "Their clinic grew into Mustard Medical Center, where patients now come from all over the world."
+    },
+    "2cb0040d": {
+      "slide": "your-job",
+      "text": "Now, your job. The Center has bought an AI system that reads scans, heart tracings, and patient records, and suggests a diagnosis. The staff call it the Third Twin.",
+      "spoken": "Now, your job. The Center has bought an AI system that reads scans, heart tracings, and patient records, and suggests a diagnosis. The staff call it the Third Twin."
+    },
+    "8f9d283a": {
+      "slide": "your-job",
+      "text": "You're a new resident, a doctor in training, on the Center's AI review board. Doctor Sam Beaulieu chairs it.",
+      "spoken": "You're a new resident, a doctor in training, on the Center's AI review board. Doctor Sam Beaulieu chairs it."
+    },
+    "23390e98": {
+      "slide": "your-job",
+      "text": "The board will recommend one of three things: use the Third Twin, use it with conditions, or don't use it.",
+      "spoken": "The board will recommend one of three things: use the Third Twin, use it with conditions, or don't use it."
+    },
+    "c7a72ed4": {
+      "slide": "your-job",
+      "text": "First, you need to know what tools like it can do. Then come three questions. Can you trust what you can't follow? Accurate for whom? And who's really in charge?",
+      "spoken": "First, you need to know what tools like it can do. Then come three questions. Can you trust what you can't follow? Accurate for whom? And who's really in charge?"
+    },
+    "5b2b818a": {
+      "slide": "how-it-learns",
+      "text": "Let's see how a diagnostic AI learns.",
+      "spoken": "Let's see how a diagnostic AI learns."
+    },
+    "f85a8b8c": {
+      "slide": "how-it-learns",
+      "text": "Nobody writes rules into it. It's trained on examples: thousands of scans, each labeled by doctors with the right answer.",
+      "spoken": "Nobody writes rules into it. It's trained on examples: thousands of scans, each labeled by doctors with the right answer."
+    },
+    "f3843363": {
+      "slide": "how-it-learns",
+      "text": "It finds whatever patterns in the image go with each label. They may not be the patterns a doctor looks for.",
+      "spoken": "It finds whatever patterns in the image go with each label. They may not be the patterns a doctor looks for."
+    },
+    "5f5752cb": {
+      "slide": "how-it-learns",
+      "text": "Then it's tested on cases it has never seen. Its accuracy is the share it gets right.",
+      "spoken": "Then it's tested on cases it has never seen. Its accuracy is the share it gets right."
+    },
+    "57901153": {
+      "slide": "how-it-learns",
+      "text": "It can be wrong in two ways. A miss calls a sick patient healthy. A false alarm calls a healthy patient sick.",
+      "spoken": "It can be wrong in two ways. A miss calls a sick patient healthy. A false alarm calls a healthy patient sick."
+    },
+    "dc760b90": {
+      "slide": "works-today",
+      "text": "Now, where do tools like this work today?",
+      "spoken": "Now, where do tools like this work today?"
+    },
+    "a735b069": {
+      "slide": "works-today",
+      "text": "By mid-2026, the FDA had authorized about sixteen hundred AI medical devices. About three in four are radiology tools, mostly for medical images.",
+      "spoken": "By mid-2026, the FDA had authorized about sixteen hundred AI medical devices. About three in four are radiology tools, mostly for medical images."
+    },
+    "a64826c2": {
+      "slide": "works-today",
+      "text": "In 2018 it authorized the first AI that makes a screening decision with no doctor reading the images. It's an eye test for damage from diabetes.",
+      "spoken": "In 2018 it authorized the first AI that makes a screening decision with no doctor reading the images. It's an eye test for damage from diabetes."
+    },
+    "b0559aed": {
+      "slide": "works-today",
+      "text": "A Swedish trial of over one hundred thousand women found that AI-supported mammogram screening caught twenty-nine percent more cancers, with forty-four percent less reading work.",
+      "spoken": "A Swedish trial of over one hundred thousand women found that AI-supported mammogram screening caught twenty-nine percent more cancers, with forty-four percent less reading work."
+    },
+    "2924f045": {
+      "slide": "works-today",
+      "text": "Close to home: Mayo Clinic researchers built an AI that spots a weak heart pump on an ordinary ECG. In a 2021 trial, new diagnoses rose about thirty-one percent, from one point six percent to two point one percent of patients.",
+      "spoken": "Close to home: Mayo Clinic researchers built an AI that spots a weak heart pump on an ordinary ECG. In a 2021 trial, new diagnoses rose about thirty-one percent, from one point six percent to two point one percent of patients."
+    },
+    "0cfe720f": {
+      "slide": "chatbots",
+      "text": "Next, chatbots that diagnose.",
+      "spoken": "Next, chatbots that diagnose."
+    },
+    "12fa1f6a": {
+      "slide": "chatbots",
+      "text": "In a 2026 survey, about a third of US adults had used an AI chatbot for health information in the past year.",
+      "spoken": "In a 2026 survey, about a third of U.S. adults had used an AI chatbot for health information in the past year."
+    },
+    "1e1c1687": {
+      "slide": "chatbots",
+      "text": "In a 2024 trial on written cases, doctors given GPT-4 scored seventy-six percent on diagnostic reasoning, and doctors without it scored seventy-four percent. That gap is small enough to be chance. GPT-4 alone scored ninety-two percent.",
+      "spoken": "In a 2024 trial on written cases, doctors given GPT-4 scored seventy-six percent on diagnostic reasoning, and doctors without it scored seventy-four percent. That gap is small enough to be chance. GPT-4 alone scored ninety-two percent."
+    },
+    "f25542b6": {
+      "slide": "chatbots",
+      "text": "In a 2026 trial in sixteen Kenyan clinics, with nearly ten thousand patients, an AI assistant for clinicians made no significant difference to how often treatment failed.",
+      "spoken": "In a 2026 trial in sixteen Kenyan clinics, with nearly ten thousand patients, an AI assistant for clinicians made no significant difference to how often treatment failed."
+    },
+    "7f7a9900": {
+      "slide": "chatbots",
+      "text": "So a strong tool plus a doctor doesn't automatically make a stronger team.",
+      "spoken": "So a strong tool plus a doctor doesn't automatically make a stronger team."
+    },
+    "abd1c774": {
+      "slide": "failures",
+      "text": "These tools have failed, too.",
+      "spoken": "These tools have failed, too."
+    },
+    "a8546d82": {
+      "slide": "failures",
+      "text": "A widely used sepsis warning tool was tested at the University of Michigan. It missed two in three patients who had sepsis.",
+      "spoken": "A widely used sepsis warning tool was tested at the University of Michigan. It missed two in three patients who had sepsis."
+    },
+    "17b9e86e": {
+      "slide": "failures",
+      "text": "It also raised alerts on eighteen percent of all patients, most of them false alarms. A 2022 revision does better, but still raises many.",
+      "spoken": "It also raised alerts on eighteen percent of all patients, most of them false alarms. A 2022 revision does better, but still raises many."
+    },
+    "86eee16a": {
+      "slide": "failures",
+      "text": "A 2021 review of sixty-two studies of COVID-19 scan models found none of potential clinical use, because of flaws and biases.",
+      "spoken": "A 2021 review of sixty-two studies of COVID-19 scan models found none of potential clinical use, because of flaws and biases."
+    },
+    "4ab094aa": {
+      "slide": "failures",
+      "text": "A tool can score well where it was built and badly somewhere else. Testing it on patients from somewhere else, such as the hospital that will use it, is called external validation.",
+      "spoken": "A tool can score well where it was built and badly somewhere else. Testing it on patients from somewhere else, such as the hospital that will use it, is called external validation."
+    },
+    "1e8998b3": {
+      "slide": "s9",
+      "text": "Time to check what you've learned. Fill in each gap by choosing an option, then press Check.",
+      "spoken": "Time to check what you've learned. Fill in each gap by choosing an option, then press Check."
+    },
+    "e5dc0794": {
+      "slide": "s9",
+      "text": "Right. A diagnostic AI learns from examples that doctors have labeled. And a strong tool plus a doctor isn't automatically a better team.",
+      "spoken": "Right. A diagnostic AI learns from examples that doctors have labeled. And a strong tool plus a doctor isn't automatically a better team."
+    },
+    "0d138335": {
+      "slide": "black-box",
+      "text": "Back in the 1890s, Otto sometimes knew a diagnosis before he could say why. Ida made him write his reasons in the casebook, so the other twin could check them. Today, the Third Twin flags a small spot on June Pham's lung scan as probably cancer and recommends a biopsy. Asked why, it can only highlight the spot. A system whose reasoning nobody can follow is called a black box. Some are too complex: millions of numbers, and no rule a person could read. Others belong to companies that keep their methods secret.",
+      "spoken": "Back in the 1890s, Otto sometimes knew a diagnosis before he could say why. Ida made him write his reasons in the casebook, so the other twin could check them. Today, the Third Twin flags a small spot on June Pham's lung scan as probably cancer and recommends a biopsy. Asked why, it can only highlight the spot. A system whose reasoning nobody can follow is called a black box. Some are too complex: millions of numbers, and no rule a person could read. Others belong to companies that keep their methods secret."
+    },
+    "74c6a5c2": {
+      "slide": "london",
+      "text": "Here's one answer to the black box problem.",
+      "spoken": "Here's one answer to the black box problem."
+    },
+    "d75e347f": {
+      "slide": "london",
+      "text": "The philosopher Alex John London argues against a blanket demand that medical AI explain itself.",
+      "spoken": "The philosopher Alex John London argues against a blanket demand that medical AI explain itself."
+    },
+    "3e4fb5ea": {
+      "slide": "london",
+      "text": "Doctors prescribed aspirin for nearly a century without knowing how it works, he points out. Why lithium works is still uncertain.",
+      "spoken": "Doctors prescribed aspirin for nearly a century without knowing how it works, he points out. Why lithium works is still uncertain."
+    },
+    "630a5f10": {
+      "slide": "london",
+      "text": "What justifies a treatment is evidence from careful trials that it helps patients more than the alternatives do.",
+      "spoken": "What justifies a treatment is evidence from careful trials that it helps patients more than the alternatives do."
+    },
+    "04fb1d94": {
+      "slide": "london",
+      "text": "So test AI the same way, London says: against doctors, on many kinds of patients, and only for the tasks it passed.",
+      "spoken": "So test AI the same way, London says: against doctors, on many kinds of patients, and only for the tasks it passed."
+    },
+    "70e9fc00": {
+      "slide": "shortcut",
+      "text": "Next, a way a model can be right for the wrong reason.",
+      "spoken": "Next, a way a model can be right for the wrong reason."
+    },
+    "717e344d": {
+      "slide": "shortcut",
+      "text": "A model can score well by using a clue that has nothing to do with the disease. This is called a shortcut. When the clue stops matching the disease, the model goes wrong.",
+      "spoken": "A model can score well by using a clue that has nothing to do with the disease. This is called a shortcut. When the clue stops matching the disease, the model goes wrong."
+    },
+    "334ab263": {
+      "slide": "shortcut",
+      "text": "In 2018, pneumonia models were found to recognize which hospital and ward an X-ray came from. Pneumonia rates differed, so that could skew their verdicts.",
+      "spoken": "In 2018, pneumonia models were found to recognize which hospital and ward an X-ray came from. Pneumonia rates differed, so that could skew their verdicts."
+    },
+    "85956b52": {
+      "slide": "shortcut",
+      "text": "A skin-cancer model called harmless moles cancer far more often when a doctor had drawn ink marks around them. False alarms rose from sixteen percent to fifty-four percent. The researchers suspect ink often went with cancer in its training photos.",
+      "spoken": "A skin-cancer model called harmless moles cancer far more often when a doctor had drawn ink marks around them. False alarms rose from sixteen percent to fifty-four percent. The researchers suspect ink often went with cancer in its training photos."
+    },
+    "3f1b0a0b": {
+      "slide": "shortcut",
+      "text": "In 2021, COVID-19 X-ray models were caught relying on text markers and the patient's position instead of the lungs.",
+      "spoken": "In 2021, COVID-19 X-ray models were caught relying on text markers and the patient's position instead of the lungs."
+    },
+    "8d0a53d5": {
+      "slide": "s13",
+      "text": "Now try it yourself. You'll see twelve chest X-rays from the downtown hospital. First, cover the lungs and watch the Third Twin's verdicts. Then cover the small tag in the corner. Last, send it to the Prairie clinic. When you're ready, press Continue.",
+      "spoken": "Now try it yourself. You'll see twelve chest X-rays from the downtown hospital. First, cover the lungs and watch the Third Twin's verdicts. Then cover the small tag in the corner. Last, send it to the Prairie clinic. When you're ready, press Continue."
+    },
+    "fc71cf48": {
+      "slide": "test-showed",
+      "text": "Here's what the test showed.",
+      "spoken": "Here's what the test showed."
+    },
+    "3d7e1362": {
+      "slide": "test-showed",
+      "text": "Covering the lungs changed nothing. Covering the corner tag left the Third Twin unable to decide. It was reading the tag.",
+      "spoken": "Covering the lungs changed nothing. Covering the corner tag left the Third Twin unable to decide. It was reading the tag."
+    },
+    "760a1619": {
+      "slide": "test-showed",
+      "text": "The tag marks a portable scan. Downtown, those go to patients too sick to walk to the X-ray room, so the tag went with pneumonia. At the Prairie clinic, every scan is portable.",
+      "spoken": "The tag marks a portable scan. Downtown, those go to patients too sick to walk to the X-ray room, so the tag went with pneumonia. At the Prairie clinic, every scan is portable."
+    },
+    "a5bef76b": {
+      "slide": "test-showed",
+      "text": "London has a reply: this is why a tool must be tested on many kinds of patients, where it will be used. A test at the Prairie clinic shows the failure, even before anyone knows the cause.",
+      "spoken": "London has a reply: this is why a tool must be tested on many kinds of patients, where it will be used. A test at the Prairie clinic shows the failure, even before anyone knows the cause."
+    },
+    "37ea3bde": {
+      "slide": "test-showed",
+      "text": "But covering parts of a scan is a way of asking what a model looks at. The team that caught the COVID-19 shortcuts argues that such checks should come before any clinical use.",
+      "spoken": "But covering parts of a scan is a way of asking what a model looks at. The team that caught the COVID-19 shortcuts argues that such checks should come before any clinical use."
+    },
+    "98ff4c44": {
+      "slide": "patients-reasons",
+      "text": "Here's a challenge to that view, from two other philosophers.",
+      "spoken": "Here's a challenge to that view, from two other philosophers."
+    },
+    "9325fc07": {
+      "slide": "patients-reasons",
+      "text": "Good medicine today is patient-centered. Doctor and patient share what they know, think the options through together, and decide together.",
+      "spoken": "Good medicine today is patient-centered. Doctor and patient share what they know, think the options through together, and decide together."
+    },
+    "adc6ea3a": {
+      "slide": "patients-reasons",
+      "text": "The philosophers Jens Christian Bjerring and Jacob Busch start from a prediction. AI will become more accurate than doctors, so doctors will be obliged to follow it.",
+      "spoken": "The philosophers Jens Christian Bjerring and Jacob Busch start from a prediction. AI will become more accurate than doctors, so doctors will be obliged to follow it."
+    },
+    "e4ddfafb": {
+      "slide": "patients-reasons",
+      "text": "If it's a black box, a doctor who follows it can't explain her own advice. Then June can't weigh its reasons against her fears and goals.",
+      "spoken": "If it's a black box, a doctor who follows it can't explain her own advice. Then June can't weigh its reasons against her fears and goals."
+    },
+    "7097c784": {
+      "slide": "patients-reasons",
+      "text": "So their worry depends on the AI being more accurate. That's what obliges the doctor to follow it.",
+      "spoken": "So their worry depends on the AI being more accurate. That's what obliges the doctor to follow it."
+    },
+    "7c33f2ff": {
+      "slide": "s16",
+      "text": "Which concern? Each line is something said at the review board. Sort each one under the idea it expresses: London, shortcut, or Bjerring and Busch. When every line is placed, press Check answers.",
+      "spoken": "Which concern? Each line is something said at the review board. Sort each one under the idea it expresses: London, shortcut, or Bjerring and Busch. When every line is placed, press Check answers."
+    },
+    "849f9b12": {
+      "slide": "s16",
+      "text": "Right. London judges a tool by tested accuracy. A shortcut is a clue that has nothing to do with the disease. And Bjerring and Busch worry that patients need reasons.",
+      "spoken": "Right. London judges a tool by tested accuracy. A shortcut is a clue that has nothing to do with the disease. And Bjerring and Busch worry that patients need reasons."
+    },
+    "ea01a26b": {
+      "slide": "s17",
+      "text": "This is a decision point. Tested on the Center's own patients, the Third Twin is right more often than the radiologists. It flags June's scan and recommends a biopsy, but it can't say why, and the radiologist sees nothing clear. What should June's doctor do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "This is a decision point. Tested on the Center's own patients, the Third Twin is right more often than the radiologists. It flags June's scan and recommends a biopsy, but it can't say why, and the radiologist sees nothing clear. What should June's doctor do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "73381924": {
+      "slide": "s17",
+      "text": "The first answer is London's. The third runs into Bjerring and Busch's worry. Next, a different question: accurate for whom?",
+      "spoken": "The first answer is London's. The third runs into Bjerring and Busch's worry. Next, a different question: accurate for whom?"
+    },
+    "5dcb3721": {
+      "slide": "whom",
+      "text": "Part two: accurate for whom? In the 1890s, the twins drove their buggy out to farms all over the county. They knew the farm families as well as the town's. Today, the Third Twin learned from the downtown hospital's patients. Now the Center wants to use it at its rural Prairie clinic, and for skin checks of every patient. An accuracy score describes the patients a tool was tested on. It may not describe yours.",
+      "spoken": "Part two: accurate for whom? In the 1890s, the twins drove their buggy out to farms all over the county. They knew the farm families as well as the town's. Today, the Third Twin learned from the downtown hospital's patients. Now the Center wants to use it at its rural Prairie clinic, and for skin checks of every patient. An accuracy score describes the patients a tool was tested on. It may not describe yours."
+    },
+    "9e569387": {
+      "slide": "three-ways",
+      "text": "There are three ways a tool can fail a group of patients.",
+      "spoken": "There are three ways a tool can fail a group of patients."
+    },
+    "9768a106": {
+      "slide": "three-ways",
+      "text": "First, unrepresentative data. Some patients barely appear in the training examples. In a 2022 test, three skin-cancer models all did worse on dark skin than on light.",
+      "spoken": "First, unrepresentative data. Some patients barely appear in the training examples. In a 2022 test, three skin-cancer models all did worse on dark skin than on light."
+    },
+    "1ffad1ab": {
+      "slide": "three-ways",
+      "text": "Second, a stand-in label. The tool predicts something easier to measure than what you care about. A widely used program predicted patients' medical costs, not their health needs.",
+      "spoken": "Second, a stand-in label. The tool predicts something easier to measure than what you care about. A widely used program predicted patients' medical costs, not their health needs."
+    },
+    "6670d538": {
+      "slide": "three-ways",
+      "text": "Less is spent on Black patients with the same needs. So at the cutoff for extra care, Black patients had about twenty-six percent more chronic illnesses than white patients.",
+      "spoken": "Less is spent on Black patients with the same needs. So at the cutoff for extra care, Black patients had about twenty-six percent more chronic illnesses than white patients."
+    },
+    "08bdbe4f": {
+      "slide": "three-ways",
+      "text": "Third, a new setting. The patients may be the same, but the equipment, hospital, or way of working differs, like the Prairie clinic's portable scans.",
+      "spoken": "Third, a new setting. The patients may be the same, but the equipment, hospital, or way of working differs, like the Prairie clinic's portable scans."
+    },
+    "ccfcc764": {
+      "slide": "s20",
+      "text": "Which way? Each tool works worse for some patients. Sort each case under the way that explains it, then press Check answers.",
+      "spoken": "Which way? Each tool works worse for some patients. Sort each case under the way that explains it, then press Check answers."
+    },
+    "a76c3ca4": {
+      "slide": "s20",
+      "text": "Right. Barely appearing in the training data is unrepresentative data. Predicting something easier to measure is a stand-in label. And the same patients with different equipment or ways of working is a new setting.",
+      "spoken": "Right. Barely appearing in the training data is unrepresentative data. Predicting something easier to measure is a stand-in label. And the same patients with different equipment or ways of working is a new setting."
+    },
+    "8c1c6992": {
+      "slide": "dilemma",
+      "text": "Hodan Warsame, a pharmacist at the Center, asks the board about the Third Twin's skin-cancer check. Here are the shares of cancers caught, tested on the Center's patients. These are invented numbers. Doctors alone catch eighty-five percent in light skin and eighty-five percent in dark skin. The Third Twin catches ninety-five percent in light skin, but eighty percent in dark skin. The board has three options.",
+      "spoken": "Hodan Warsame, a pharmacist at the Center, asks the board about the Third Twin's skin-cancer check. Here are the shares of cancers caught, tested on the Center's patients. These are invented numbers. Doctors alone catch eighty-five percent in light skin and eighty-five percent in dark skin. The Third Twin catches ninety-five percent in light skin, but eighty percent in dark skin. The board has three options."
+    },
+    "dfcec669": {
+      "slide": "dilemma",
+      "text": "Option A, wait. Doctors alone for everyone until the Third Twin does as well on dark skin. It's equal, but light-skinned patients lose a better check.",
+      "spoken": "Option A, wait. Doctors alone for everyone until the Third Twin does as well on dark skin. It's equal, but light-skinned patients lose a better check."
+    },
+    "87169bbd": {
+      "slide": "dilemma",
+      "text": "Option B, select. The Third Twin for light skin, doctors for dark skin. Nobody does worse than now, but the gap grows.",
+      "spoken": "Option B, select. The Third Twin for light skin, doctors for dark skin. Nobody does worse than now, but the gap grows."
+    },
+    "92e916e6": {
+      "slide": "dilemma",
+      "text": "Option C, everyone. The Third Twin for all. Everyone gets the same tool, and light-skinned patients gain, but dark-skinned patients do worse than now.",
+      "spoken": "Option C, everyone. The Third Twin for all. Everyone gets the same tool, and light-skinned patients gain, but dark-skinned patients do worse than now."
+    },
+    "4eda85b7": {
+      "slide": "parfit",
+      "text": "To weigh these options, we need a philosopher's idea about equality.",
+      "spoken": "To weigh these options, we need a philosopher's idea about equality."
+    },
+    "1c334dd1": {
+      "slide": "parfit",
+      "text": "Some people hold that inequality is bad in itself. It's bad if some people are worse off than others.",
+      "spoken": "Some people hold that inequality is bad in itself. It's bad if some people are worse off than others."
+    },
+    "e526f48a": {
+      "slide": "parfit",
+      "text": "Derek Parfit's levelling down objection says this: then making the better-off as badly off as everyone else would be better in one way, though it helps no one.",
+      "spoken": "Derek Parfit's levelling down objection says this: then making the better-off as badly off as everyone else would be better in one way, though it helps no one."
+    },
+    "2af24336": {
+      "slide": "parfit",
+      "text": "Choosing A over B does exactly that. Light-skinned patients lose ten points, and no one gains.",
+      "spoken": "Choosing A over B does exactly that. Light-skinned patients lose ten points, and no one gains."
+    },
+    "bdb777fa": {
+      "slide": "parfit",
+      "text": "Parfit's priority view drops equality and gives extra weight to the worse off. That weight isn't unlimited. Big enough gains to the better-off can outweigh it.",
+      "spoken": "Parfit's priority view drops equality and gives extra weight to the worse off. That weight isn't unlimited. Big enough gains to the better-off can outweigh it."
+    },
+    "5c3cd613": {
+      "slide": "selective",
+      "text": "In 2024, the ethicists Vandersluis and Savulescu took up a real case: an AI melanoma checker expected to work well on light skin but not on dark skin. They apply Parfit's priority view.",
+      "spoken": "In 2024, the ethicists Vandersluis and Savulescu took up a real case: an AI melanoma checker expected to work well on light skin but not on dark skin. They apply Parfit's priority view."
+    },
+    "04825c00": {
+      "slide": "selective",
+      "text": "Not C. Using the tool for everyone, when it makes dark-skinned patients worse off, would sacrifice them for the sake of others.",
+      "spoken": "Not C. Using the tool for everyone, when it makes dark-skinned patients worse off, would sacrifice them for the sake of others."
+    },
+    "c4a002d0": {
+      "slide": "selective",
+      "text": "Not A. Waiting until it works for everyone is levelling down. Light-skinned patients would suffer, and no one would gain.",
+      "spoken": "Not A. Waiting until it works for everyone is levelling down. Light-skinned patients would suffer, and no one would gain."
+    },
+    "704af891": {
+      "slide": "selective",
+      "text": "B, with conditions. Patients left out keep their usual care, are told about the gap, and get extra help, while more data on dark skin are gathered fast.",
+      "spoken": "B, with conditions. Patients left out keep their usual care, are told about the gap, and get extra help, while more data on dark skin are gathered fast."
+    },
+    "c089f8ca": {
+      "slide": "s24",
+      "text": "Another decision point. The board must choose a policy for the Third Twin's skin-cancer check. Which do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Another decision point. The board must choose a policy for the Third Twin's skin-cancer check. Which do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "a2000c11": {
+      "slide": "s24",
+      "text": "On the priority view, B beats A, since A helps no one. Vandersluis and Savulescu defend B, with conditions. Many people still worry that sorting patients by skin color is its own kind of unequal treatment.",
+      "spoken": "On the priority view, B beats A, since A helps no one. Vandersluis and Savulescu defend B, with conditions. Many people still worry that sorting patients by skin color is its own kind of unequal treatment."
+    },
+    "08868e04": {
+      "slide": "s25",
+      "text": "Equality and priority: what's true? Check every statement that is true, as this lesson presents it. Then press Check answers.",
+      "spoken": "Equality and priority: what's true? Check every statement that is true, as this lesson presents it. Then press Check answers."
+    },
+    "c9787c11": {
+      "slide": "s25",
+      "text": "That's the end of part two. Next, part three: who's really in charge?",
+      "spoken": "That's the end of part two. Next, part three: who's really in charge?"
+    },
+    "e5a285b9": {
+      "slide": "in-charge",
+      "text": "Part three: who's really in charge? In the 1890s, when the twins gave a second look, each one studied the case alone before they compared notes. Today, Doctor Kari Lund, a radiologist, reads mammograms with the Third Twin's suggestions already on her screen. The usual safeguard for medical AI is to keep a doctor in the loop. It works only if the doctor still looks for herself.",
+      "spoken": "Part three: who's really in charge? In the 1890s, when the twins gave a second look, each one studied the case alone before they compared notes. Today, Doctor Kari Lund, a radiologist, reads mammograms with the Third Twin's suggestions already on her screen. The usual safeguard for medical AI is to keep a doctor in the loop. It works only if the doctor still looks for herself."
+    },
+    "de5c4bec": {
+      "slide": "machine-leads",
+      "text": "What happens when the machine leads?",
+      "spoken": "What happens when the machine leads?"
+    },
+    "c3f275d9": {
+      "slide": "machine-leads",
+      "text": "Automation bias is going along with a machine's suggestion over your own judgment.",
+      "spoken": "Automation bias is going along with a machine's suggestion over your own judgment."
+    },
+    "e7190ee1": {
+      "slide": "machine-leads",
+      "text": "In a 2023 study, inexperienced radiologists were right on eighty percent of mammograms when an AI suggestion was right, but only twenty percent when it was deliberately wrong.",
+      "spoken": "In a 2023 study, inexperienced radiologists were right on eighty percent of mammograms when an AI suggestion was right, but only twenty percent when it was deliberately wrong."
+    },
+    "c1b26446": {
+      "slide": "machine-leads",
+      "text": "Deskilling is losing a skill you no longer use. In one 2025 study, after AI arrived, doctors working without it found precancerous growths in twenty-two percent of colonoscopies, down from twenty-eight percent.",
+      "spoken": "Deskilling is losing a skill you no longer use. In one 2025 study, after AI arrived, doctors working without it found precancerous growths in twenty-two percent of colonoscopies, down from twenty-eight percent."
+    },
+    "a449bc38": {
+      "slide": "machine-leads",
+      "text": "That study can't prove AI caused the drop. But both problems weaken the safeguard: the doctor checks less, and may get worse at checking.",
+      "spoken": "That study can't prove AI caused the drop. But both problems weaken the safeguard: the doctor checks less, and may get worse at checking."
+    },
+    "fca020aa": {
+      "slide": "crumple-zone",
+      "text": "Here's a metaphor. A car's crumple zone absorbs the force of a crash.",
+      "spoken": "Here's a metaphor. A car's crumple zone absorbs the force of a crash."
+    },
+    "e6d9e6be": {
+      "slide": "crumple-zone",
+      "text": "The anthropologist Madeleine Clare Elish calls a person a moral crumple zone when they take the blame for an automated system's failure they had little control over.",
+      "spoken": "The anthropologist Madeleine Clare Elish calls a person a moral crumple zone when they take the blame for an automated system's failure they had little control over."
+    },
+    "33c67aa7": {
+      "slide": "crumple-zone",
+      "text": "One of her cases: in 2018, a self-driving Uber test car killed a pedestrian. Its emergency braking was switched off, yet attention fell on the safety driver.",
+      "spoken": "One of her cases: in 2018, a self-driving Uber test car killed a pedestrian. Its emergency braking was switched off, yet attention fell on the safety driver."
+    },
+    "9bd8afde": {
+      "slide": "crumple-zone",
+      "text": "In medicine, the doctor in the loop can become that zone.",
+      "spoken": "In medicine, the doctor in the loop can become that zone."
+    },
+    "3612154d": {
+      "slide": "crumple-zone",
+      "text": "The law scholars Price, Gerke, and Cohen add a squeeze. Once AI is standard care, a doctor may be liable for rejecting a correct AI suggestion.",
+      "spoken": "The law scholars Price, Gerke, and Cohen add a squeeze. Once AI is standard care, a doctor may be liable for rejecting a correct AI suggestion."
+    },
+    "e4c53b16": {
+      "slide": "s29",
+      "text": "Which problem? Each case shows a problem with keeping a doctor in the loop. Sort each one under automation bias, deskilling, or moral crumple zone, then press Check answers.",
+      "spoken": "Which problem? Each case shows a problem with keeping a doctor in the loop. Sort each one under automation bias, deskilling, or moral crumple zone, then press Check answers."
+    },
+    "91ab529b": {
+      "slide": "s29",
+      "text": "Right. Automation bias is going along with the machine against your own judgment. Deskilling is losing a skill the machine now does for you. And a moral crumple zone is taking the blame for a failure you had little power to control.",
+      "spoken": "Right. Automation bias is going along with the machine against your own judgment. Deskilling is losing a skill the machine now does for you. And a moral crumple zone is taking the blame for a failure you had little power to control."
+    },
+    "e06d9ee4": {
+      "slide": "s30",
+      "text": "Another decision point. The Third Twin marked a mammogram normal, and Doctor Lund signed off on it. A year later, the patient's cancer is found, now harder to treat. Who bears the most responsibility? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Another decision point. The Third Twin marked a mammogram normal, and Doctor Lund signed off on it. A year later, the patient's cancer is found, now harder to treat. Who bears the most responsibility? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "7c94cdc0": {
+      "slide": "s30",
+      "text": "Elish's warning is that the easiest answer, the doctor who signed, may not be the fairest.",
+      "spoken": "Elish's warning is that the easiest answer, the doctor who signed, may not be the fairest."
+    },
+    "2ba7747f": {
+      "slide": "s31",
+      "text": "Your report to the board. Doctor Beaulieu asks for your recommendation. What do you advise the board? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Your report to the board. Doctor Beaulieu asks for your recommendation. What do you advise the board? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "f0d21999": {
+      "slide": "s31",
+      "text": "Each answer leans on a part of this lesson. Next, you'll rate your beliefs again.",
+      "spoken": "Each answer leans on a part of this lesson. Next, you'll rate your beliefs again."
+    },
+    "db4f0028": {
+      "slide": "s32",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "d9a90532": {
+      "slide": "s32",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "5d72598c": {
+      "slide": "s33",
+      "text": "Here's the lesson, summed up.",
+      "spoken": "Here's the lesson, summed up."
+    },
+    "ae885e1b": {
+      "slide": "s33",
+      "text": "The state of the art. Diagnostic AI learns from labeled examples. It can be very good, and it can fail badly in a new hospital.",
+      "spoken": "The state of the art. Diagnostic AI learns from labeled examples. It can be very good, and it can fail badly in a new hospital."
+    },
+    "c0d61ae6": {
+      "slide": "s33",
+      "text": "Can you trust what you can't follow? London says test it carefully, where it will be used. Shortcuts show what untested accuracy can hide. Bjerring and Busch say patients need reasons.",
+      "spoken": "Can you trust what you can't follow? London says test it carefully, where it will be used. Shortcuts show what untested accuracy can hide. Bjerring and Busch say patients need reasons."
+    },
+    "24067897": {
+      "slide": "s33",
+      "text": "Accurate for whom? Tools fail groups through their data, their labels, or a new setting. Parfit's priority view gives extra weight to losses that fall on the worse off.",
+      "spoken": "Accurate for whom? Tools fail groups through their data, their labels, or a new setting. Parfit's priority view gives extra weight to losses that fall on the worse off."
+    },
+    "29285ddc": {
+      "slide": "s33",
+      "text": "Who's in charge? Automation bias and deskilling weaken the doctor in the loop, who can become a moral crumple zone. The Mustard twins' rule was a second look. A machine can give one, but someone still has to look.",
+      "spoken": "Who's in charge? Automation bias and deskilling weaken the doctor in the loop, who can become a moral crumple zone. The Mustard twins' rule was a second look. A machine can give one, but someone still has to look."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

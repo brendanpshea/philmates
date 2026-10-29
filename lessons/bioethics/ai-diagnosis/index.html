@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Third Twin: AI and Medical Diagnosis · PhilMates</title>
+  <meta name="description" content="Should doctors trust an AI diagnosis nobody can explain? Black boxes, bias, and blame, at a Minnesota medical center founded by twin doctors.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
+  <script type="module" src="../../../shared/phil-core.js?v=14"></script>
+  <script type="module" src="./assets/shortcut.js"></script>
+  <style>
+    phil-side .point { margin-top: auto; margin-bottom: 14px; background: var(--panel); border-left: 4px solid var(--accent-2); padding: 9px 11px; }
+    table.rates { border-collapse: collapse; margin: 6px 0 10px; font-size: clamp(16px, 1.6vw, 21px); }
+    table.rates th, table.rates td { border: 3px solid var(--border); padding: 6px 14px; text-align: center; }
+    table.rates th { background: var(--panel); color: var(--muted); font-weight: 600; }
+    table.rates td { background: var(--panel-2); }
+    table.rates th[scope="row"] { text-align: left; color: var(--ink); }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     Mustard Medical Center, the town of Brassica, the Mustard twins, the
+     "Third Twin," and every staff member and patient are invented. The
+     Center is a nod to a famous Minnesota clinic founded by brothers, but
+     nothing about the fictional Center describes a real hospital: the Third
+     Twin's failures happen only at Mustard. Every "real world" fact is real
+     and comes from elsewhere (sources in phil_mates_outlines.md); the one
+     real Minnesota example is a success (an AI-ECG trial).
+     Arguments are credited by name to the thinkers who made them, never to
+     a character. Elish is an anthropologist and Price, Gerke, and Cohen are
+     law scholars; the slides say so. The skin-check numbers are invented
+     and labeled as such. "Should" questions are ungraded polls. -->
+
+<phil-lesson id="ai-diagnosis" title="The Third Twin" subject="AI and Medical Diagnosis">
+
+  <!-- ============ OPENING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/center.png" alt="A tall limestone-and-glass hospital tower in a small snowy river town at dusk, with mustard-yellow banners, a glass skyway, and a little old brick clinic at its foot">
+    <h1>The Third Twin</h1>
+    <p class="lead">Brassica, Minnesota, today. Mustard Medical Center has a new diagnostician, and it can't tell you why.</p>
+    <p>In the 1890s, twin doctors founded a clinic here on one rule: every patient gets a second look. Today the clinic is a famous medical center, and it wants a machine to give that second look.</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to The Third Twin. It's Brassica, Minnesota, today. Mustard Medical Center has a new diagnostician, and it can't tell you why. In the 1890s, twin doctors founded a clinic here on one rule: every patient gets a second look. Today the clinic is a famous medical center, and it wants a machine to give that second look. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>If a computer diagnoses more accurately than doctors, hospitals should use it, even if nobody can explain how it works.</phil-statement>
+      <phil-statement>Patients have a right to know when a computer helped diagnose them.</phil-statement>
+      <phil-statement>A tool that helps most patients is worth using, even if it works worse for some groups.</phil-statement>
+      <phil-statement>When an AI-assisted diagnosis goes wrong, the doctor should take the blame.</phil-statement>
+      <phil-statement>I would trust a diagnosis more if a doctor made it than if a computer did.</phil-statement>
+    </phil-beliefs>
+    <phil-narration>Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
+  </phil-slide>
+
+  <!-- 3. The founders -->
+  <phil-slide id="founders">
+    <img slot="art" src="./assets/twins.png" alt="A sepia studio portrait of twin doctors: a woman with dark hair in a bun and a high-collared dress, and a man with a neat mustache in a three-piece suit">
+    <h1>The Mustard Twins</h1>
+    <phil-narration>Let's start with how this place began. First, a note: the Center, the town, and everyone in this story are invented.</phil-narration>
+    <ul reveal>
+      <li say="In the 1890s, twin doctors Ida and Otto Mustard opened a clinic in Brassica, a river town in southern Minnesota.">In the 1890s, the twin doctors Ida and Otto Mustard opened a clinic in Brassica, a river town in southern Minnesota.</li>
+      <li say="They had one rule: every patient gets a second look. One twin examined the patient, and the other checked the diagnosis.">They had one rule: <strong>every patient gets a second look</strong>. One twin examined the patient, and the other checked the diagnosis.</li>
+      <li say="Their clinic grew into Mustard Medical Center, where patients now come from all over the world.">Their clinic grew into Mustard Medical Center, where patients now come from all over the world.</li>
+    </ul>
+    <p class="muted">The Center, the town, and everyone in this story are invented.</p>
+  </phil-slide>
+
+  <!-- 4. Your job -->
+  <phil-slide id="your-job">
+    <img slot="art" src="./assets/third-twin.png" alt="A sleek white workstation with two wide screens showing a chest X-ray and a heart tracing, and a small round mustard-yellow light on top, in a quiet dim reading room">
+    <h1>Your Job</h1>
+    <p>The Center has bought an AI system that reads scans, heart tracings, and patient records and suggests a diagnosis. The staff call it <strong>the Third Twin</strong>.</p>
+    <phil-narration>Now, your job. The Center has bought an AI system that reads scans, heart tracings, and patient records, and suggests a diagnosis. The staff call it the Third Twin.</phil-narration>
+    <ul reveal>
+      <li say="You're a new resident, a doctor in training, on the Center's AI review board. Doctor Sam Beaulieu chairs it.">You're a new resident, a doctor in training, on the Center's AI review board. Dr. Sam Beaulieu chairs it.</li>
+      <li say="The board will recommend one of three things: use the Third Twin, use it with conditions, or don't use it.">The board will recommend one of three things: use the Third Twin, use it with conditions, or don't use it.</li>
+      <li say="First, you need to know what tools like it can do. Then come three questions. Can you trust what you can't follow? Accurate for whom? And who's really in charge?">First you need to know what tools like it can do. Then come three questions: Can you trust what you can't follow? Accurate for whom? Who's really in charge?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ THE STATE OF THE ART ============ -->
+
+  <!-- 5. How it learns -->
+  <phil-slide id="how-it-learns">
+    <img slot="art" src="./assets/xray-wall.png" alt="A long glowing light wall covered in hundreds of chest X-rays in neat rows, each with a small blank colored tab, stretching into the distance">
+    <h1>How a Diagnostic AI Learns</h1>
+    <phil-narration>Let's see how a diagnostic AI learns.</phil-narration>
+    <ul reveal>
+      <li say="Nobody writes rules into it. It's trained on examples: thousands of scans, each labeled by doctors with the right answer.">Nobody writes rules into it. It is <strong>trained</strong> on examples: thousands of scans, each labeled by doctors with the right answer.</li>
+      <li say="It finds whatever patterns in the image go with each label. They may not be the patterns a doctor looks for.">It finds whatever patterns in the image go with each label. They may not be the patterns a doctor looks for.</li>
+      <li say="Then it's tested on cases it has never seen. Its accuracy is the share it gets right.">Then it is tested on cases it has never seen. Its <strong>accuracy</strong> is the share it gets right.</li>
+      <li say="It can be wrong in two ways. A miss calls a sick patient healthy. A false alarm calls a healthy patient sick.">It can be wrong in two ways. A <strong>miss</strong> calls a sick patient healthy. A <strong>false alarm</strong> calls a healthy patient sick.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Where it works -->
+  <phil-slide id="works-today">
+    <img slot="art" src="./assets/heart-trace.png" alt="A clinic exam room where a heart tracing glows on a small monitor beside a big red pixel heart, with a paper-covered exam table behind it">
+    <h1>Where It Works Today</h1>
+    <phil-narration>Now, where do tools like this work today?</phil-narration>
+    <ul reveal>
+      <li say="By mid-2026, the FDA had authorized about sixteen hundred AI medical devices. About three in four are radiology tools, mostly for medical images.">By mid-2026 the FDA had authorized about 1,600 AI medical devices. About three in four are radiology tools, mostly for medical images.</li>
+      <li say="In 2018 it authorized the first AI that makes a screening decision with no doctor reading the images. It's an eye test for damage from diabetes.">In 2018 it authorized the first AI that makes a screening decision with no doctor reading the images: an eye test for damage from diabetes.</li>
+      <li say="A Swedish trial of over one hundred thousand women found that AI-supported mammogram screening caught twenty-nine percent more cancers, with forty-four percent less reading work.">A Swedish trial of over 100,000 women found that AI-supported mammogram screening caught 29% more cancers, with 44% less reading work.</li>
+      <li say="Close to home: Mayo Clinic researchers built an AI that spots a weak heart pump on an ordinary ECG. In a 2021 trial, new diagnoses rose about thirty-one percent, from one point six percent to two point one percent of patients."><strong>Close to home:</strong> Mayo Clinic researchers built an AI that spots a weak heart pump on an ordinary ECG. In a 2021 trial, new diagnoses rose about 31%, from 1.6% to 2.1% of patients.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. Chatbots -->
+  <phil-slide id="chatbots">
+    <img slot="art" src="./assets/chatbot.png" alt="A middle-aged Black man in a bathrobe at a kitchen table at night, frowning at his phone, whose screen shows blank chat bubbles, a mug of tea beside him">
+    <h1>Chatbots That Diagnose</h1>
+    <phil-narration>Next, chatbots that diagnose.</phil-narration>
+    <ul reveal>
+      <li say="In a 2026 survey, about a third of US adults had used an AI chatbot for health information in the past year.">In a 2026 survey, about a third of US adults had used an AI chatbot for health information in the past year.</li>
+      <li say="In a 2024 trial on written cases, doctors given GPT-4 scored seventy-six percent on diagnostic reasoning, and doctors without it scored seventy-four percent. That gap is small enough to be chance. GPT-4 alone scored ninety-two percent.">In a 2024 trial on written cases, doctors given GPT-4 scored 76% on diagnostic reasoning, and doctors without it 74%, a gap small enough to be chance. GPT-4 alone scored 92%.</li>
+      <li say="In a 2026 trial in sixteen Kenyan clinics, with nearly ten thousand patients, an AI assistant for clinicians made no significant difference to how often treatment failed.">In a 2026 trial in 16 Kenyan clinics, with nearly 10,000 patients, an AI assistant for clinicians made no significant difference to how often treatment failed.</li>
+      <li say="So a strong tool plus a doctor doesn't automatically make a stronger team.">So a strong tool plus a doctor doesn't automatically make a stronger team.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Where it has failed -->
+  <phil-slide id="failures">
+    <img slot="art" src="./assets/alarms.png" alt="A hospital nurses' station where a dozen monitors flash red alert lights at once, and a tired young Latina nurse in teal scrubs rubs her eyes">
+    <h1>Where It Has Failed</h1>
+    <phil-narration>These tools have failed, too.</phil-narration>
+    <ul reveal>
+      <li say="A widely used sepsis warning tool was tested at the University of Michigan. It missed two in three patients who had sepsis.">A widely used sepsis warning tool was tested at the University of Michigan. It missed two in three patients who had sepsis.</li>
+      <li say="It also raised alerts on eighteen percent of all patients, most of them false alarms. A 2022 revision does better, but still raises many.">It also raised alerts on 18% of all patients, most of them false alarms. A 2022 revision does better, but still raises many.</li>
+      <li say="A 2021 review of sixty-two studies of COVID-19 scan models found none of potential clinical use, because of flaws and biases.">A 2021 review of 62 studies of COVID-19 scan models found none of potential clinical use, because of flaws and biases.</li>
+      <li say="A tool can score well where it was built and badly somewhere else. Testing it on patients from somewhere else, such as the hospital that will use it, is called external validation.">A tool can score well where it was built and badly somewhere else. Testing it on patients from somewhere else, such as the hospital that will use it, is called <strong>external validation</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Cloze: the state of the art -->
+  <phil-slide>
+    <h1>Fill In the Gaps</h1>
+    <phil-cloze data-qid="ai-diagnosis:q1" review="how-it-learns" explain="Right. A diagnostic AI learns from examples that doctors have labeled. Calling a sick patient healthy is a miss. Doctors given GPT-4 did about as well as doctors without it, so a tool plus a doctor isn't automatically a better team. And testing a tool on patients from somewhere other than where it was built is external validation.">
+      <span class="line">1. A diagnostic AI learns from
+        <phil-blank answer="examples labeled by doctors" options="rules written by doctors,examples labeled by doctors,medical textbooks,its own experiments">examples labeled by doctors</phil-blank>.</span>
+      <span class="line">2. When it calls a sick patient healthy, that mistake is a
+        <phil-blank answer="miss" options="miss,false alarm">miss</phil-blank>.</span>
+      <span class="line">3. In the 2024 trial, doctors given GPT-4 diagnosed
+        <phil-blank answer="about as well as" options="much better than,about as well as,much worse than">about as well as</phil-blank> doctors without it.</span>
+      <span class="line">4. Testing a tool on patients from a hospital other than the one where it was built is called
+        <phil-blank answer="external validation" options="external validation,a shortcut,training,a false alarm">external validation</phil-blank>.</span>
+    </phil-cloze>
+    <phil-narration>Time to check what you've learned. Fill in each gap by choosing an option, then press Check.</phil-narration>
+    <phil-narration when="after">Right. A diagnostic AI learns from examples that doctors have labeled. And a strong tool plus a doctor isn't automatically a better team.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 1: CAN YOU TRUST WHAT YOU CAN'T FOLLOW? ============ -->
+
+  <!-- 10. Then and now: the black box -->
+  <phil-slide id="black-box">
+    <img slot="art" src="./assets/casebook.png" alt="A sepia 1890s doctor's office lit by an oil lamp: a woman doctor writes in a thick leather casebook while her twin listens to an old farmer's chest">
+    <h1>A Diagnosis Without Reasons</h1>
+    <phil-compare>
+      <phil-side label="1890s" tag="Then">
+        <p>Otto sometimes knew a diagnosis before he could say why. Ida made him write his reasons in the casebook, so the other twin could check them.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>The Third Twin flags a small spot on June Pham's lung scan as probably cancer and recommends a biopsy. Asked why, it can only highlight the spot.</p>
+      </phil-side>
+    </phil-compare>
+    <p>A system whose reasoning nobody can follow is called a <strong>black box</strong>. Some are too complex: millions of numbers, and no rule a person could read. Others belong to companies that keep their methods secret.</p>
+    <phil-narration>Back in the 1890s, Otto sometimes knew a diagnosis before he could say why. Ida made him write his reasons in the casebook, so the other twin could check them. Today, the Third Twin flags a small spot on June Pham's lung scan as probably cancer and recommends a biopsy. Asked why, it can only highlight the spot. A system whose reasoning nobody can follow is called a black box. Some are too complex: millions of numbers, and no rule a person could read. Others belong to companies that keep their methods secret.</phil-narration>
+  </phil-slide>
+
+  <!-- 11. London -->
+  <phil-slide id="london">
+    <phil-thinker slot="art" name="Alex John London" work="“Artificial Intelligence and Black-Box Medical Decisions” (2019)"
+                  img="./assets/idea-london.png" alt="An antique glass bottle of white pills and a closed black box side by side on a lab bench under a lamp, a paper chart of rising bars behind them" accent="#ffcf5a">
+      <p>Judge a medical AI by careful tests of its accuracy, not by whether it explains itself.</p>
+    </phil-thinker>
+    <h1>Accuracy First</h1>
+    <phil-narration>Here's one answer to the black box problem.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Alex John London argues against a blanket demand that medical AI explain itself.">The philosopher Alex John London argues against a blanket demand that medical AI explain itself.</li>
+      <li say="Doctors prescribed aspirin for nearly a century without knowing how it works, he points out. Why lithium works is still uncertain.">Doctors prescribed aspirin for nearly a century without knowing how it works, he points out. Why lithium works is still uncertain.</li>
+      <li say="What justifies a treatment is evidence from careful trials that it helps patients more than the alternatives do.">What justifies a treatment is evidence from careful trials that it helps patients more than the alternatives do.</li>
+      <li say="So test AI the same way, London says: against doctors, on many kinds of patients, and only for the tasks it passed.">So test AI the same way, London says: against doctors, on many kinds of patients, and only for the tasks it passed.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Shortcuts -->
+  <phil-slide id="shortcut">
+    <img slot="art" src="./assets/tag.png" alt="A chest X-ray on a glowing light box with a small yellow tag in its top corner, and a magnifying glass over the chest that shows a yellow tag instead of the lungs">
+    <h1>Right for the Wrong Reason</h1>
+    <phil-narration>Next, a way a model can be right for the wrong reason.</phil-narration>
+    <ul reveal>
+      <li say="A model can score well by using a clue that has nothing to do with the disease. This is called a shortcut. When the clue stops matching the disease, the model goes wrong.">A model can score well by using a clue that has nothing to do with the disease. This is called a <strong>shortcut</strong>. When the clue stops matching the disease, the model goes wrong.</li>
+      <li say="In 2018, pneumonia models were found to recognize which hospital and ward an X-ray came from. Pneumonia rates differed, so that could skew their verdicts.">In 2018, pneumonia models were found to recognize which hospital and ward an X-ray came from. Pneumonia rates differed, so that could skew their verdicts.</li>
+      <li say="A skin-cancer model called harmless moles cancer far more often when a doctor had drawn ink marks around them. False alarms rose from sixteen percent to fifty-four percent. The researchers suspect ink often went with cancer in its training photos.">A skin-cancer model called harmless moles cancer far more often when a doctor had drawn ink marks around them: false alarms rose from 16% to 54%. The researchers suspect ink often went with cancer in its training photos.</li>
+      <li say="In 2021, COVID-19 X-ray models were caught relying on text markers and the patient's position instead of the lungs.">In 2021, COVID-19 X-ray models were caught relying on text markers and the patient's position instead of the lungs.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Explorer: the shortcut -->
+  <phil-slide hold>
+    <h1>Try It: What Is the Third Twin Looking At?</h1>
+    <phil-narration>Now try it yourself. You'll see twelve chest X-rays from the downtown hospital. First, cover the lungs and watch the Third Twin's verdicts. Then cover the small tag in the corner. Last, send it to the Prairie clinic. When you're ready, press Continue.</phil-narration>
+    <phil-shortcut prompt="Twelve chest X-rays from the downtown hospital. Cover the lungs, then the small tag in the corner, and watch the Third Twin's verdicts. Then send it to the Prairie clinic."></phil-shortcut>
+  </phil-slide>
+
+  <!-- 14. What the test showed -->
+  <phil-slide id="test-showed">
+    <h1>What the Test Showed</h1>
+    <phil-narration>Here's what the test showed.</phil-narration>
+    <ul reveal>
+      <li say="Covering the lungs changed nothing. Covering the corner tag left the Third Twin unable to decide. It was reading the tag.">Covering the lungs changed nothing. Covering the corner tag left the Third Twin unable to decide. It was reading the tag.</li>
+      <li say="The tag marks a portable scan. Downtown, those go to patients too sick to walk to the X-ray room, so the tag went with pneumonia. At the Prairie clinic, every scan is portable.">The tag marks a portable scan. Downtown, those go to patients too sick to walk to the X-ray room, so the tag went with pneumonia. At the Prairie clinic, every scan is portable.</li>
+      <li say="London has a reply: this is why a tool must be tested on many kinds of patients, where it will be used. A test at the Prairie clinic shows the failure, even before anyone knows the cause.">London has a reply: this is why a tool must be tested on many kinds of patients, where it will be used. A test at the Prairie clinic shows the failure, even before anyone knows the cause.</li>
+      <li say="But covering parts of a scan is a way of asking what a model looks at. The team that caught the COVID-19 shortcuts argues that such checks should come before any clinical use.">But covering parts of a scan is a way of asking what a model looks at. The team that caught the COVID-19 shortcuts argues that such checks should come before any clinical use.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Bjerring and Busch -->
+  <phil-slide id="patients-reasons">
+    <phil-thinker slot="art" name="Jens Christian Bjerring and Jacob Busch" work="“Artificial Intelligence and Patient-Centered Decision-Making” (2021)"
+                  img="./assets/idea-bjerring-busch.png" alt="Two empty chairs, a patient's and a doctor's, facing a desk where a closed black box sits beside a notepad sketch of a path that forks in two" accent="#4cc2ff">
+      <p>If doctors must follow an AI they can't explain, patients can't share in the decision.</p>
+    </phil-thinker>
+    <h1>But Patients Need Reasons</h1>
+    <phil-narration>Here's a challenge to that view, from two other philosophers.</phil-narration>
+    <ul reveal>
+      <li say="Good medicine today is patient-centered. Doctor and patient share what they know, think the options through together, and decide together.">Good medicine today is <strong>patient-centered</strong>: doctor and patient share what they know, think the options through together, and decide together.</li>
+      <li say="The philosophers Jens Christian Bjerring and Jacob Busch start from a prediction. AI will become more accurate than doctors, so doctors will be obliged to follow it.">The philosophers Jens Christian Bjerring and Jacob Busch start from a prediction. AI will become more accurate than doctors, so doctors will be obliged to follow it.</li>
+      <li say="If it's a black box, a doctor who follows it can't explain her own advice. Then June can't weigh its reasons against her fears and goals.">If it is a black box, a doctor who follows it can't explain her own advice. Then June can't weigh its reasons against her fears and goals.</li>
+      <li say="So their worry depends on the AI being more accurate. That's what obliges the doctor to follow it.">So their worry depends on the AI being more accurate. That is what obliges the doctor to follow it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Classify: which concern -->
+  <phil-slide>
+    <h1>Which Concern?</h1>
+    <phil-classify data-qid="ai-diagnosis:q2" review="patients-reasons" prompt="Each line is something said at the review board. Which idea does it express?"
+                   explain="Right. London judges a tool by tested accuracy, the same way medicine judges aspirin. A shortcut is a clue that has nothing to do with the disease, like a scanner's tag or ink marks. Bjerring and Busch's worry is about the patient: she needs reasons to weigh a recommendation against her own values, and a doctor obliged to follow a black box can't give them.">
+      <phil-col key="london">London: judge it by careful tests</phil-col>
+      <phil-col key="shortcut">Shortcut: a clue unrelated to the disease</phil-col>
+      <phil-col key="patient">Bjerring and Busch: patients need reasons</phil-col>
+      <phil-item answer="london" why="We use aspirin because trials show it helps, not because we can explain it. That is London's point.">"We prescribed aspirin for decades without knowing how it worked."</phil-item>
+      <phil-item answer="london" why="London asks for careful tests of accuracy where the tool will be used, not explanations.">"Before we use it, test it on our own patients and compare it with our doctors."</phil-item>
+      <phil-item answer="shortcut" why="Its high score came from a clue unrelated to the disease, the scanner's tag. That is a shortcut.">"It scored well downtown, but it was reading the portable scanner's tag."</phil-item>
+      <phil-item answer="shortcut" why="The model reacted to ink marks, a clue that has nothing to do with cancer: a shortcut.">"The skin model flagged moles because of the ink marks doctors drew around them."</phil-item>
+      <phil-item answer="patient" why="The patient needs the reasons to weigh the recommendation against her own values: Bjerring and Busch's worry.">"A patient can't decide whether a biopsy is worth it if nobody can tell her why it's recommended."</phil-item>
+      <phil-item answer="patient" why="The doctor follows the more accurate machine, so she can't explain her own advice: Bjerring and Busch's argument.">"The machine is more accurate, so I follow it. But then I can't explain my own recommendation."</phil-item>
+    </phil-classify>
+    <phil-narration>Which concern? Each line is something said at the review board. Sort each one under the idea it expresses: London, shortcut, or Bjerring and Busch. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. London judges a tool by tested accuracy. A shortcut is a clue that has nothing to do with the disease. And Bjerring and Busch worry that patients need reasons.</phil-narration>
+  </phil-slide>
+
+  <!-- 17. Poll: June's biopsy -->
+  <phil-slide>
+    <img slot="art" src="./assets/june.png" alt="A Vietnamese American woman in her sixties with short gray hair, in a green cardigan, sits by a doctor's desk and looks worried at a screen showing a chest scan with one small spot ringed in yellow">
+    <h1>Decision Point: June's Scan</h1>
+    <phil-poll prompt="Tested on the Center's own patients, the Third Twin is right more often than the radiologists. It flags June's scan and recommends a biopsy, but it can't say why, and the radiologist sees nothing clear. What should June's doctor do?"
+               explain="The first answer is London's: tested accuracy is the reason, and June can be told the record. The third runs into Bjerring and Busch's worry: June gets the choice but not the reasons. The last puts reasons first. The second tries to have both, a human reason alongside the machine's record, but it misses the cancers that only the machine can see.">
+      <phil-choice note="This trusts tested accuracy, as London does. Telling June the machine's record gives her one reason, though not a medical explanation of her own scan.">Recommend the biopsy, and tell June the machine's track record.</phil-choice>
+      <phil-choice note="A second human look keeps a reason June can hear. But on the cases where only the machine sees the cancer, this choice misses it.">Recommend it only if a radiologist can find a reason too.</phil-choice>
+      <phil-choice note="This hands June the choice, but without reasons she may not be able to weigh it. That is Bjerring and Busch's worry.">Tell June it's the machine's call, and let her decide.</phil-choice>
+      <phil-choice note="This puts reasons first. If the machine really is more accurate, some patients will pay for that with a missed cancer.">Don't act on advice the machine can't explain.</phil-choice>
+    </phil-poll>
+    <phil-narration>This is a decision point. Tested on the Center's own patients, the Third Twin is right more often than the radiologists. It flags June's scan and recommends a biopsy, but it can't say why, and the radiologist sees nothing clear. What should June's doctor do? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">The first answer is London's. The third runs into Bjerring and Busch's worry. Next, a different question: accurate for whom?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 2: ACCURATE FOR WHOM? ============ -->
+
+  <!-- 18. Then and now: who it learned from -->
+  <phil-slide id="whom">
+    <img slot="art" src="./assets/buggy.png" alt="A sepia 1890s scene of twin doctors, a woman in a plum dress and a man with a neat mustache, driving a horse-drawn buggy down a snowy prairie road toward a lone farmhouse at dawn">
+    <h1>Accurate for Whom?</h1>
+    <phil-compare>
+      <phil-side label="1890s" tag="Then">
+        <p>The twins drove their buggy out to farms all over the county. They knew the farm families as well as the town's.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>The Third Twin learned from the downtown hospital's patients. Now the Center wants to use it at its rural Prairie clinic, and for skin checks of every patient.</p>
+      </phil-side>
+    </phil-compare>
+    <p>An accuracy score describes the patients a tool was tested on. It may not describe yours.</p>
+    <phil-narration>Part two: accurate for whom? In the 1890s, the twins drove their buggy out to farms all over the county. They knew the farm families as well as the town's. Today, the Third Twin learned from the downtown hospital's patients. Now the Center wants to use it at its rural Prairie clinic, and for skin checks of every patient. An accuracy score describes the patients a tool was tested on. It may not describe yours.</phil-narration>
+  </phil-slide>
+
+  <!-- 19. Three ways -->
+  <phil-slide id="three-ways">
+    <img slot="art" src="./assets/prairie-clinic.png" alt="A small rural clinic: a white farmer in his seventies in a seed cap and red flannel shirt sits on an exam table as a young woman nurse with long dark hair, in purple scrubs, wheels a portable X-ray machine toward him">
+    <h1>Three Ways a Tool Can Fail a Group</h1>
+    <phil-narration>There are three ways a tool can fail a group of patients.</phil-narration>
+    <ul reveal>
+      <li say="First, unrepresentative data. Some patients barely appear in the training examples. In a 2022 test, three skin-cancer models all did worse on dark skin than on light."><strong>Unrepresentative data:</strong> some patients barely appear in the training examples. In a 2022 test, three skin-cancer models all did worse on dark skin than on light.</li>
+      <li say="Second, a stand-in label. The tool predicts something easier to measure than what you care about. A widely used program predicted patients' medical costs, not their health needs."><strong>A stand-in label:</strong> the tool predicts something easier to measure than what you care about. A widely used program predicted patients' medical costs, not their health needs.</li>
+      <li say="Less is spent on Black patients with the same needs. So at the cutoff for extra care, Black patients had about twenty-six percent more chronic illnesses than white patients.">Less is spent on Black patients with the same needs. So at the cutoff for extra care, Black patients had about 26% more chronic illnesses than white patients.</li>
+      <li say="Third, a new setting. The patients may be the same, but the equipment, hospital, or way of working differs, like the Prairie clinic's portable scans."><strong>A new setting:</strong> the patients may be the same, but the equipment, hospital, or way of working differs, like the Prairie clinic's portable scans.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Classify: which way -->
+  <phil-slide>
+    <h1>Which Way?</h1>
+    <phil-classify data-qid="ai-diagnosis:q3" review="three-ways" prompt="Each tool works worse for some patients. Which of the three ways explains it?"
+                   explain="Right. When some patients barely appear in the training examples, that's unrepresentative data. When the tool predicts something easier to measure than the real target, like bills or booked appointments instead of need, that's a stand-in label. When the patients are the same but the equipment or way of working differs, that's a new setting.">
+      <phil-col key="data">Unrepresentative data</phil-col>
+      <phil-col key="label">A stand-in label</phil-col>
+      <phil-col key="setting">A new setting</phil-col>
+      <phil-item answer="data" why="Patients with dark skin barely appear in the training photos: unrepresentative data.">Only 1 in 20 of a skin tool's training photos show dark skin.</phil-item>
+      <phil-item answer="data" why="Non-native speakers barely appear in the training recordings: unrepresentative data.">At the hospital where it was built, a voice test for depression works poorly for non-native English speakers, who barely appear in its training recordings.</phil-item>
+      <phil-item answer="label" why="Future medical bills stand in for need, which is what the program was meant to find: a stand-in label.">A program picks patients for extra care by predicting their future medical bills.</phil-item>
+      <phil-item answer="label" why="Booking therapy is easier to measure than needing it, and many who need it never book: a stand-in label.">To find who needs mental health support, a tool predicts who will book therapy, though many people who need it never book.</phil-item>
+      <phil-item answer="setting" why="The patients are similar, but the scanner is different: a new setting.">A tool built on one brand of scanner is moved to a hospital with similar patients that uses another brand.</phil-item>
+      <phil-item answer="setting" why="The patients are similar, but the staff record vital signs differently: a new setting.">A sepsis tool trained at a big city hospital goes to a small one with similar patients, whose nurses record vital signs less often.</phil-item>
+    </phil-classify>
+    <phil-narration>Which way? Each tool works worse for some patients. Sort each case under the way that explains it, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Barely appearing in the training data is unrepresentative data. Predicting something easier to measure is a stand-in label. And the same patients with different equipment or ways of working is a new setting.</phil-narration>
+  </phil-slide>
+
+  <!-- 21. The dilemma -->
+  <phil-slide id="dilemma">
+    <img slot="art" src="./assets/hodan.png" alt="A Somali American woman in a patterned headscarf and white coat stands at a pharmacy counter, studying a tablet that shows a close-up photo of a dark spot on deep brown skin">
+    <h1>The Skin-Check Dilemma</h1>
+    <p>Hodan Warsame, a pharmacist at the Center, asks the board about the Third Twin's skin-cancer check. Tested on the Center's patients, these are the shares of cancers caught (invented numbers):</p>
+    <table class="rates">
+      <tr><th scope="col">Who checks</th><th scope="col">Light skin</th><th scope="col">Dark skin</th></tr>
+      <tr><th scope="row">Doctors alone</th><td>85%</td><td>85%</td></tr>
+      <tr><th scope="row">Third Twin</th><td>95%</td><td>80%</td></tr>
+    </table>
+    <phil-narration>Hodan Warsame, a pharmacist at the Center, asks the board about the Third Twin's skin-cancer check. Here are the shares of cancers caught, tested on the Center's patients. These are invented numbers. Doctors alone catch eighty-five percent in light skin and eighty-five percent in dark skin. The Third Twin catches ninety-five percent in light skin, but eighty percent in dark skin. The board has three options.</phil-narration>
+    <ul reveal>
+      <li say="Option A, wait. Doctors alone for everyone until the Third Twin does as well on dark skin. It's equal, but light-skinned patients lose a better check."><strong>A. Wait.</strong> Doctors alone for everyone until the Third Twin does as well on dark skin. Equal, but light-skinned patients lose a better check.</li>
+      <li say="Option B, select. The Third Twin for light skin, doctors for dark skin. Nobody does worse than now, but the gap grows."><strong>B. Select.</strong> The Third Twin for light skin, doctors for dark skin. Nobody does worse than now, but the gap grows.</li>
+      <li say="Option C, everyone. The Third Twin for all. Everyone gets the same tool, and light-skinned patients gain, but dark-skinned patients do worse than now."><strong>C. Everyone.</strong> The Third Twin for all. Everyone gets the same tool, and light-skinned patients gain, but dark-skinned patients do worse than now.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Parfit -->
+  <phil-slide id="parfit">
+    <phil-thinker slot="art" name="Derek Parfit" dates="1942–2017" work="“Equality and Priority” (1997)"
+                  img="./assets/idea-parfit.png" alt="Two stacks of wooden building blocks, one tall and one short, and a hand reaching in to knock the tall stack down to the short one's height" accent="#ff6ad5">
+      <p>Not equality for its own sake, but extra weight for the worse off.</p>
+      <blockquote>“Benefiting people matters more the worse off these people are.”</blockquote>
+    </phil-thinker>
+    <h1>Equality or Priority?</h1>
+    <phil-narration>To weigh these options, we need a philosopher's idea about equality.</phil-narration>
+    <ul reveal>
+      <li say="Some people hold that inequality is bad in itself. It's bad if some people are worse off than others.">Some people hold that inequality is bad in itself: it is bad if some people are worse off than others.</li>
+      <li say="Derek Parfit's levelling down objection says this: then making the better-off as badly off as everyone else would be better in one way, though it helps no one.">Derek Parfit's <strong>levelling down objection</strong>: then making the better-off as badly off as everyone else would be better in one way, though it helps no one.</li>
+      <li say="Choosing A over B does exactly that. Light-skinned patients lose ten points, and no one gains.">Choosing A over B does exactly that. Light-skinned patients lose 10 points, and no one gains.</li>
+      <li say="Parfit's priority view drops equality and gives extra weight to the worse off. That weight isn't unlimited. Big enough gains to the better-off can outweigh it.">Parfit's <strong>priority view</strong> drops equality and gives extra weight to the worse off. That weight isn't unlimited: big enough gains to the better-off can outweigh it.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 23. Vandersluis and Savulescu -->
+  <phil-slide id="selective">
+    <h1>A Real Version of the Dilemma</h1>
+    <p>In 2024 the ethicists Vandersluis and Savulescu took up a real case: an AI melanoma checker expected to work well on light skin but not on dark skin. They apply Parfit's priority view.</p>
+    <phil-narration>In 2024, the ethicists Vandersluis and Savulescu took up a real case: an AI melanoma checker expected to work well on light skin but not on dark skin. They apply Parfit's priority view.</phil-narration>
+    <ul reveal>
+      <li say="Not C. Using the tool for everyone, when it makes dark-skinned patients worse off, would sacrifice them for the sake of others."><strong>Not C.</strong> Using the tool for everyone, when it makes dark-skinned patients worse off, would sacrifice them for the sake of others.</li>
+      <li say="Not A. Waiting until it works for everyone is levelling down. Light-skinned patients would suffer, and no one would gain."><strong>Not A.</strong> Waiting until it works for everyone is levelling down. Light-skinned patients would suffer, and no one would gain.</li>
+      <li say="B, with conditions. Patients left out keep their usual care, are told about the gap, and get extra help, while more data on dark skin are gathered fast."><strong>B, with conditions.</strong> Patients left out keep their usual care, are told about the gap, and get extra help, while more data on dark skin are gathered fast.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 24. Poll: the skin check -->
+  <phil-slide>
+    <h1>Decision Point: The Skin Check</h1>
+    <phil-poll prompt="The board must choose a policy for the Third Twin's skin-cancer check. Which do you recommend?"
+               explain="On the priority view, B beats A, since A helps no one. C's loss falls on the patients at the lower level, so it counts for more. Vandersluis and Savulescu defend B, with conditions. Many people still worry about B: sorting patients by skin color to decide who gets a machine is its own kind of unequal treatment.">
+      <phil-choice note="Equality holds, but light-skinned patients lose a better check and nobody gains. That is levelling down, the case Parfit's objection is built on.">A. Wait: doctors alone for everyone until it works on dark skin.</phil-choice>
+      <phil-choice note="Nobody does worse than now, which the priority view favors over A. But the Center would be sorting patients by skin color.">B. Select: the Third Twin for light skin, doctors for dark skin.</phil-choice>
+      <phil-choice note="Everyone is treated alike. But dark-skinned patients do worse than with doctors alone, and B helps light-skinned patients just as much without that loss. On the priority view, that loss counts heavily, because it falls on the group at the lower level.">C. Everyone: the Third Twin for all patients.</phil-choice>
+    </phil-poll>
+    <phil-narration>Another decision point. The board must choose a policy for the Third Twin's skin-cancer check. Which do you recommend? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">On the priority view, B beats A, since A helps no one. Vandersluis and Savulescu defend B, with conditions. Many people still worry that sorting patients by skin color is its own kind of unequal treatment.</phil-narration>
+  </phil-slide>
+
+  <!-- 25. Checkset: equality and priority -->
+  <phil-slide>
+    <h1>Equality and Priority: What's True?</h1>
+    <phil-checkset data-qid="ai-diagnosis:q4" review="parfit" prompt="Check every statement that is true, as this lesson presents it."
+                   explain="Right. The levelling down objection is aimed at the view that inequality is bad in itself. The priority view gives extra weight to the worse off without requiring equality, and big enough gains to the better-off can outweigh that weight. A catches 85% of light-skinned patients' cancers against B's 95%, and the same 85% for dark-skinned patients. And Vandersluis and Savulescu reject using the tool for everyone when it makes dark-skinned patients worse off.">
+      <phil-statement correct>The levelling down objection is aimed at the view that inequality is bad in itself.</phil-statement>
+      <phil-statement correct>On the priority view, benefiting people matters more the worse off they are.</phil-statement>
+      <phil-statement correct>Compared with B, A would catch fewer cancers in light-skinned patients and no more in dark-skinned patients.</phil-statement>
+      <phil-statement>The priority view says everyone must end up equally well off.</phil-statement>
+      <phil-statement>On the priority view, gains to the better-off can never outweigh gains to the worse off.</phil-statement>
+      <phil-statement>Vandersluis and Savulescu defend using the tool for everyone, even when it makes dark-skinned patients worse off, since it works for most patients.</phil-statement>
+    </phil-checkset>
+    <phil-narration>Equality and priority: what's true? Check every statement that is true, as this lesson presents it. Then press Check answers.</phil-narration>
+    <phil-narration when="after">That's the end of part two. Next, part three: who's really in charge?</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 3: WHO'S REALLY IN CHARGE? ============ -->
+
+  <!-- 25. Then and now: two looks -->
+  <phil-slide id="in-charge">
+    <img slot="art" src="./assets/two-looks.png" alt="A sepia 1890s clinic where twin doctors, a woman in a plum dress and a man with a neat mustache, stand back to back, each reading their own open casebook">
+    <h1>Who's Really in Charge?</h1>
+    <phil-compare>
+      <phil-side label="1890s" tag="Then">
+        <p>When the twins gave a second look, each one studied the case alone before they compared notes.</p>
+      </phil-side>
+      <phil-side label="Today" tag="Now">
+        <p>Dr. Kari Lund, a radiologist, reads mammograms with the Third Twin's suggestions already on her screen.</p>
+      </phil-side>
+    </phil-compare>
+    <p>"Keep a doctor in the loop" is the usual safeguard for medical AI. It works only if the doctor still looks for herself.</p>
+    <phil-narration>Part three: who's really in charge? In the 1890s, when the twins gave a second look, each one studied the case alone before they compared notes. Today, Doctor Kari Lund, a radiologist, reads mammograms with the Third Twin's suggestions already on her screen. The usual safeguard for medical AI is to keep a doctor in the loop. It works only if the doctor still looks for herself.</phil-narration>
+  </phil-slide>
+
+  <!-- 26. When the machine leads -->
+  <phil-slide id="machine-leads">
+    <img slot="art" src="./assets/kari.png" alt="A white woman radiologist in her forties with short blond hair and reading glasses, in light blue scrubs, at a dark reading station of three screens of breast X-rays, one with a bright yellow box drawn on it">
+    <h1>When the Machine Leads</h1>
+    <phil-narration>What happens when the machine leads?</phil-narration>
+    <ul reveal>
+      <li say="Automation bias is going along with a machine's suggestion over your own judgment."><strong>Automation bias:</strong> going along with a machine's suggestion over your own judgment.</li>
+      <li say="In a 2023 study, inexperienced radiologists were right on eighty percent of mammograms when an AI suggestion was right, but only twenty percent when it was deliberately wrong.">In a 2023 study, inexperienced radiologists were right on 80% of mammograms when an AI suggestion was right, but only 20% when it was deliberately wrong.</li>
+      <li say="Deskilling is losing a skill you no longer use. In one 2025 study, after AI arrived, doctors working without it found precancerous growths in twenty-two percent of colonoscopies, down from twenty-eight percent."><strong>Deskilling:</strong> losing a skill you no longer use. In one 2025 study, after AI arrived, doctors working without it found precancerous growths in 22% of colonoscopies, down from 28%.</li>
+      <li say="That study can't prove AI caused the drop. But both problems weaken the safeguard: the doctor checks less, and may get worse at checking.">That study can't prove AI caused the drop. But both problems weaken the safeguard: the doctor checks less, and may get worse at checking.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 27. Elish -->
+  <phil-slide id="crumple-zone">
+    <phil-thinker slot="art" name="Madeleine Clare Elish" work="“Moral Crumple Zones” (2019)"
+                  img="./assets/idea-elish.png" alt="A yellow car crumpled against a concrete wall, with a white doctor's coat and stethoscope caught on its crushed hood" accent="#46e07a">
+      <p>When an automated system fails, the blame can land on the nearest human.</p>
+    </phil-thinker>
+    <h1>The Moral Crumple Zone</h1>
+    <p>A car's crumple zone absorbs the force of a crash.</p>
+    <phil-narration>Here's a metaphor. A car's crumple zone absorbs the force of a crash.</phil-narration>
+    <ul reveal>
+      <li say="The anthropologist Madeleine Clare Elish calls a person a moral crumple zone when they take the blame for an automated system's failure they had little control over.">The anthropologist Madeleine Clare Elish calls a person a <strong>moral crumple zone</strong> when they take the blame for an automated system's failure they had little control over.</li>
+      <li say="One of her cases: in 2018, a self-driving Uber test car killed a pedestrian. Its emergency braking was switched off, yet attention fell on the safety driver.">One of her cases: in 2018 a self-driving Uber test car killed a pedestrian. Its emergency braking was switched off, yet attention fell on the safety driver.</li>
+      <li say="In medicine, the doctor in the loop can become that zone.">In medicine, the doctor in the loop can become that zone.</li>
+      <li say="The law scholars Price, Gerke, and Cohen add a squeeze. Once AI is standard care, a doctor may be liable for rejecting a correct AI suggestion.">The law scholars Price, Gerke, and Cohen add a squeeze: once AI is standard care, a doctor may be liable for rejecting a correct AI suggestion.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. Classify: which problem -->
+  <phil-slide>
+    <h1>Which Problem?</h1>
+    <phil-classify data-qid="ai-diagnosis:q5" review="crumple-zone" prompt="Each case shows a problem with keeping a doctor in the loop. Which one?"
+                   explain="Right. Automation bias is going along with the machine against your own judgment. Deskilling is losing a skill because the machine does it for you. A moral crumple zone is a person who takes the blame for a system's failure that they had little power to control.">
+      <phil-col key="bias">Automation bias</phil-col>
+      <phil-col key="deskill">Deskilling</phil-col>
+      <phil-col key="crumple">Moral crumple zone</phil-col>
+      <phil-item answer="bias" why="She noticed something but went along with the machine's reading instead: automation bias.">A resident notices something odd on an ECG but signs off on the AI's "normal" reading anyway.</phil-item>
+      <phil-item answer="bias" why="Giving up your own correct judgment to match the machine is automation bias.">A doctor changes her correct diagnosis to match the AI's wrong one.</phil-item>
+      <phil-item answer="deskill" why="He used to spot fractures well, and the skill faded while the machine did the work: deskilling.">After two years with an AI reader, a radiologist misses more fractures than he used to on days the system is down.</phil-item>
+      <phil-item answer="deskill" why="A skill the dermatologist once had has faded from disuse: deskilling.">A dermatologist who has used an AI checker for years can no longer judge moles as well without it.</phil-item>
+      <phil-item answer="crumple" why="She had to follow the system and couldn't check it, yet she takes the blame: a moral crumple zone.">Hospital rules require a doctor to act on an AI's alerts, with no way to check them. A wrong alert harms a patient, and only the doctor is disciplined.</phil-item>
+      <phil-item answer="crumple" why="Blame lands on the one human, though others chose the tool and set the rules: a moral crumple zone.">After the AI misses a cancer, a lawsuit names only the doctor who signed off, though the hospital chose the tool and set the rules for using it.</phil-item>
+    </phil-classify>
+    <phil-narration>Which problem? Each case shows a problem with keeping a doctor in the loop. Sort each one under automation bias, deskilling, or moral crumple zone, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Automation bias is going along with the machine against your own judgment. Deskilling is losing a skill the machine now does for you. And a moral crumple zone is taking the blame for a failure you had little power to control.</phil-narration>
+  </phil-slide>
+
+  <!-- 29. Poll: who is responsible -->
+  <phil-slide>
+    <h1>Decision Point: Whose Fault?</h1>
+    <phil-poll prompt="The Third Twin marked a mammogram normal, and Dr. Lund signed off on it. A year later, the patient's cancer is found, now harder to treat. Who bears the most responsibility?"
+               explain="Elish's warning is that the easiest answer, the doctor who signed, may not be the fairest. Each other answer spreads the blame toward people who chose, built, or set the rules for the tool. A fair answer may depend on facts the story leaves out: was the tool tested here, and did Dr. Lund have time to look for herself?">
+      <phil-choice note="She signed the report, and the law usually looks to the doctor. Elish asks whether she had real power to catch the error.">Dr. Lund, who signed the report.</phil-choice>
+      <phil-choice note="The Center chose the tool and set how much time radiologists have per scan. Those choices shape what Dr. Lund could do.">The Center, which chose the tool and set the rules.</phil-choice>
+      <phil-choice note="The maker built the system that missed the cancer. But makers usually say their tool only assists the doctor.">The company that made the Third Twin.</phil-choice>
+      <phil-choice note="Shared responsibility avoids a crumple zone. The hard part is deciding who owes what to the patient.">All three share it.</phil-choice>
+    </phil-poll>
+    <phil-narration>Another decision point. The Third Twin marked a mammogram normal, and Doctor Lund signed off on it. A year later, the patient's cancer is found, now harder to treat. Who bears the most responsibility? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Elish's warning is that the easiest answer, the doctor who signed, may not be the fairest.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 30. Poll: your report -->
+  <phil-slide>
+    <img slot="art" src="./assets/board.png" alt="A hospital meeting room at night with snow at the window: an Ojibwe man with long gray hair and glasses at the head of the table, and doctors and nurses of different ages and skin tones looking at a big screen">
+    <h1>Your Report to the Board</h1>
+    <phil-poll prompt="Dr. Beaulieu asks for your recommendation. What do you advise the board?"
+               explain="Each answer leans on a part of this lesson. The first two take London's side on explanations, and the second adds the testing he asks for at each site and for each group. The third treats the doctor in the loop as a real check, not a formality. The last puts Bjerring and Busch's worry first.">
+      <phil-choice note="This takes London's side: tested accuracy, not explanation, justifies using it. But London also wants it tested at each site and for each group, as the next answer does.">Use it. Tested accuracy is what matters.</phil-choice>
+      <phil-choice note="This is London's full demand: testing on many kinds of patients, where the tool will be used. It answers the shortcut, but still has to settle what to do where the tool falls short, as in the skin check.">Use it, after testing it at every site and for every group of patients.</phil-choice>
+      <phil-choice note="This protects the safeguard against automation bias and deskilling. It may also give up some of the accuracy the tool offers.">Use it only after the doctor has made her own call first.</phil-choice>
+      <phil-choice note="This puts patients' reasons first, the worry Bjerring and Busch raise. If the tool really is more accurate, some patients will pay for that choice.">Don't use it. Patients need reasons it can't give.</phil-choice>
+    </phil-poll>
+    <phil-narration>Your report to the board. Doctor Beaulieu asks for your recommendation. What do you advise the board? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Each answer leans on a part of this lesson. Next, you'll rate your beliefs again.</phil-narration>
+  </phil-slide>
+
+  <!-- 31. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, a quick summary of the lesson.</phil-narration>
+  </phil-slide>
+
+  <!-- 32. Summed up -->
+  <phil-slide>
+    <img slot="art" src="./assets/center.png" alt="A tall limestone-and-glass hospital tower in a small snowy river town at dusk, with mustard-yellow banners, a glass skyway, and a little old brick clinic at its foot">
+    <h1>Summed Up</h1>
+    <phil-narration>Here's the lesson, summed up.</phil-narration>
+    <ul reveal>
+      <li say="The state of the art. Diagnostic AI learns from labeled examples. It can be very good, and it can fail badly in a new hospital."><strong>The state of the art:</strong> diagnostic AI learns from labeled examples. It can be very good, and it can fail badly in a new hospital.</li>
+      <li say="Can you trust what you can't follow? London says test it carefully, where it will be used. Shortcuts show what untested accuracy can hide. Bjerring and Busch say patients need reasons."><strong>Can you trust what you can't follow?</strong> London says test it carefully, where it will be used. Shortcuts show what untested accuracy can hide. Bjerring and Busch say patients need reasons.</li>
+      <li say="Accurate for whom? Tools fail groups through their data, their labels, or a new setting. Parfit's priority view gives extra weight to losses that fall on the worse off."><strong>Accurate for whom?</strong> Tools fail groups through their data, their labels, or a new setting. Parfit's priority view gives extra weight to losses that fall on the worse off.</li>
+      <li say="Who's in charge? Automation bias and deskilling weaken the doctor in the loop, who can become a moral crumple zone. The Mustard twins' rule was a second look. A machine can give one, but someone still has to look."><strong>Who's in charge?</strong> Automation bias and deskilling weaken the doctor in the loop, who can become a moral crumple zone.</li>
+    </ul>
+    <p class="muted">The Mustard twins' rule was a second look. A machine can give one, but someone still has to look.</p>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Alex John London, “<a href="https://doi.org/10.1002/hast.973">Artificial Intelligence and Black-Box Medical Decisions: Accuracy versus Explainability</a>,” <em>Hastings Center Report</em> 49, no. 1 (2019): 15–21. The case for judging medical AI by tested accuracy, with a list of what that testing should include.</li>
+      <li>Jens Christian Bjerring and Jacob Busch, “<a href="https://doi.org/10.1007/s13347-019-00391-6">Artificial Intelligence and Patient-Centered Decision-Making</a>,” <em>Philosophy &amp; Technology</em> 34, no. 2 (2021): 349–371. Why a black box that doctors are obliged to follow conflicts with shared decisions.</li>
+      <li>Robert Vandersluis and Julian Savulescu, “<a href="https://doi.org/10.1111/bioe.13281">The Selective Deployment of AI in Healthcare: An Ethical Algorithm for Algorithms</a>,” <em>Bioethics</em> 38, no. 5 (2024): 391–400. Parfit's priority view applied to a skin-cancer AI that works better on light skin. Free online.</li>
+      <li>Madeleine Clare Elish, “<a href="https://doi.org/10.17351/ests2019.260">Moral Crumple Zones: Cautionary Tales in Human-Robot Interaction</a>,” <em>Engaging Science, Technology, and Society</em> 5 (2019): 40–60. Who gets blamed when automation fails, from Three Mile Island to a self-driving car. Free online.</li>
+      <li>Ziad Obermeyer, Brian Powers, Christine Vogeli, and Sendhil Mullainathan, “<a href="https://doi.org/10.1126/science.aax2342">Dissecting Racial Bias in an Algorithm Used to Manage the Health of Populations</a>,” <em>Science</em> 366, no. 6464 (2019): 447–453. How predicting costs instead of illness built racial bias into a widely used program.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

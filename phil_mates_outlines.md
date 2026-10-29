@@ -4302,3 +4302,160 @@ Sources (main):
 - https://dpul.princeton.edu/company-of-good-books/feature/milton-his-readers
 - https://iep.utm.edu/ethics-of-artificial-intelligence/
 - https://sf-encyclopedia.com/entry/shelley_mary_wollstonecraft
+
+
+---
+
+## Bioethics: AI and Medical Diagnosis — "The Third Twin"  *(built)*
+
+- **Path:** `lessons/bioethics/ai-diagnosis/`
+- **Lesson id:** `ai-diagnosis`
+- **Top-bar title:** `The Third Twin` · **Subject:** `AI and Medical Diagnosis`
+- **Topic:** Ethical issues in AI for diagnosis, narrowed to three questions,
+  after a short state-of-the-art section. Not covered: privacy and data use,
+  AI in treatment or triage, chatbot therapy, insurance and cost.
+- **Approach:** How diagnostic AI learns; where it works (FDA list, MASAI,
+  autonomous eye screening, Mayo's AI-ECG) and where it has failed (Epic's
+  sepsis model, Roberts et al.). Part 1: London's accuracy-first argument,
+  shortcuts (Zech, Winkler, DeGrave) explored in a widget, London's reply
+  (test where it will be used) and DeGrave's team's counter (explanation
+  checks before clinical use), and Bjerring and Busch on patient-centered
+  decisions. Part 2: three ways a tool fails a group
+  (unrepresentative data, a stand-in label, a new setting), an invented
+  skin-check dilemma, Parfit's levelling down objection and priority view, and
+  Vandersluis and Savulescu's selective deployment. Part 3: automation bias
+  (Dratsch), deskilling (Budzyń), Elish's moral crumple zone, and Price, Gerke,
+  and Cohen on liability. Verdicts are polls.
+- **Frame:** Mustard Medical Center in Brassica, an invented Minnesota river
+  town, founded in the 1890s by the twin doctors Ida and Otto Mustard on one
+  rule: every patient gets a second look. A nod to a famous Minnesota clinic
+  (the author teaches in Rochester), but nothing about the fictional Center
+  describes a real hospital. Today the Center weighs an AI system the staff
+  call "the Third Twin." The student is a new resident on its AI review board.
+  Each part opens with a Then/Now `<phil-compare>` (the twins in the 1890s,
+  the Center today).
+- **Who says what:** Arguments are credited to London, Bjerring and Busch,
+  Parfit, Vandersluis and Savulescu, Elish (an anthropologist), and Price,
+  Gerke, and Cohen (law scholars). The characters supply cases only. The one
+  real Minnesota example (Mayo's AI-ECG) is a success; every real failure
+  comes from elsewhere.
+- **Cast:** Ida and Otto Mustard (white, 1890s); Dr. Sam Beaulieu (Ojibwe, 50s,
+  chairs the board); Dr. Kari Lund (white woman radiologist, 40s); June Pham
+  (Vietnamese American woman, 60s); Hodan Warsame (Somali American woman
+  pharmacist, 30s); a farmer at the Prairie clinic (white, 70s).
+- **Widget:** `assets/shortcut.js`, `<phil-shortcut>`. Twelve chest X-rays from
+  the downtown hospital: covering the lungs changes none of the Third Twin's
+  verdicts; covering the corner tag (a portable-scanner marker) leaves it
+  unable to decide. Downtown it agrees with the radiologists on 10 of 12; at
+  the Prairie clinic, where every scan is portable, it calls all 12 pneumonia
+  (3 right, 9 false alarms). A toy: it reads the tag only, and the widget says
+  so. Nothing graded depends on it; the slide after it states the result.
+- **Skin-check numbers** (85/85 for doctors, 95/80 for the Third Twin) are
+  invented and labeled as such.
+- **Left out on purpose:** MAI-DxO and AMIE (fast-moving, much company-run
+  evidence); Matthias's responsibility gap; Topol and Sparrow and Hatherley on
+  the "gift of time"; Durán and Jongsma's computational reliabilism.
+
+### Accuracy note (checked 2026-10-29)
+Full notes with URLs: two fact-check reports from this date (present-day
+facts; philosophy and citations). The points a reviewer needs:
+
+- **FDA AI-enabled device list:** page current as of 4 Sept 2026, 1,614 devices
+  through 29 June 2026, 1,230 with Radiology as the lead panel (76%). The
+  slide says "about 1,600" and "about three in four are radiology tools,
+  mostly for medical images."
+- **IDx-DR (now LumineticsCore):** De Novo DEN180001, 11 April 2018; FDA: "the
+  first device authorized for marketing that provides a screening decision
+  without the need for a clinician to also interpret the image or results."
+- **MASAI:** 105,934 women randomized. Hernström et al., *Lancet Digit Health*
+  2025: 6.4 vs 5.0 cancers per 1,000 (ratio 1.29), 44.2% less screen reading,
+  no significant rise in false positives. (The 2023 interim's 20% was not
+  significant; the 2026 *Lancet* interval-cancer result was non-inferior, not
+  significantly better.)
+- **EAGLE (Yao et al., *Nat Med* 2021):** 358 clinicians, 22,641 adults; new
+  low-EF (≤50%) diagnoses 1.6% vs 2.1%, OR 1.32 (about 31% relative). Don't
+  pair with Attia 2019's AUC 0.93 (EF ≤35%).
+- **Goh et al., *JAMA Netw Open* 2024:** 76% with GPT-4, 74% without
+  (difference 2 points, 95% CI −4 to 8, P = .60), GPT-4 alone 92% (secondary
+  analysis); written vignettes; a diagnostic-reasoning rubric, not percent
+  correct. The slide says "a gap small enough to be chance"; the cloze keys
+  "about as well as."
+- **Agweyu et al., *Nat Med* 2026:** 16 Penda Health clinics in Kenya, 9,691
+  patients; treatment failure 2.2% vs 2.0%, adjusted OR 0.77 (0.55–1.08), not
+  significant.
+- **KFF (Mar 2026):** 32% of US adults used AI for health information in the
+  past year.
+- **Epic sepsis model (Wong et al., *JAMA IM* 2021, Michigan):** AUC 0.63;
+  missed 1,709 of 2,552 sepsis patients (67%); alerts on 6,971 of 38,455
+  hospitalizations (18%); PPV about 12%. Revised in 2022; a 2026 four-system
+  study found better discrimination but low PPV and a high alert burden.
+- **Roberts et al., *Nat Mach Intell* 2021:** 62 studies; "none of the models
+  identified are of potential clinical use due to methodological flaws and/or
+  underlying biases."
+- **Zech et al., *PLoS Med* 2018:** models detected hospital system (99.95%
+  NIH, 99.98% Mount Sinai) and separated portable inpatient films from the ED
+  with 100% accuracy; pneumonia prevalence differed by site and ward, so this
+  "may confound" predictions. The slide says "could skew."
+- **Winkler et al., *JAMA Dermatol* 2019:** specificity 84.1% unmarked vs 45.8%
+  with surgical markings, so false positives on benign lesions rose from about
+  16% to about 54%.
+- **DeGrave et al., *Nat Mach Intell* 2021:** shortcuts "such as text markers or
+  patient positioning" (UW press release wording). Their abstract: "evaluation
+  of a model on external data is insufficient" and "explainable AI should be
+  seen as a prerequisite to clinical deployment." The slide after the widget
+  credits this view to "the team that caught the COVID-19 shortcuts."
+- **Obermeyer et al., *Science* 2019:** the algorithm predicts costs, not
+  illness; at the 97th-percentile cutoff Black patients had 26.3% more chronic
+  illnesses (4.8 vs 3.8). (17.7% → 46.5% is a simulation of the Black share of
+  auto-enrolled patients; not used on the slide.)
+- **Daneshjou et al., *Sci Adv* 2022:** DDI set, 656 images; all three models
+  did worse on FST V–VI than I–II (ROC-AUC 0.64 vs 0.55, 0.61 vs 0.50, 0.72 vs
+  0.57; overlapping CIs). The slide says "all did worse on dark skin than on
+  light," not "much worse."
+- **Dratsch et al., *Radiology* 2023:** with incorrect AI BI-RADS suggestions,
+  inexperienced readers were right on 79.7% of cases with correct suggestions
+  and 19.8% with incorrect ones (very experienced 82.3% vs 45.5%). Reader study
+  with simulated AI; a comparison of conditions, not a before/after.
+- **Budzyń et al., *Lancet Gastroenterol Hepatol* 2025:** ADR in non-AI
+  colonoscopies 28.4% before vs 22.4% after AI exposure; observational, 19
+  experienced endoscopists, 4 Polish centres. The slide says "one 2025 study"
+  and "can't prove AI caused the drop."
+- **London (2019), *Hastings Center Report* 49(1): 15–21:** against a "blanket"
+  explainability requirement; p. 17: "modern clinicians prescribed aspirin as
+  an analgesic for nearly a century without understanding the mechanism through
+  which it works. Lithium has been used as a mood stabilizer for half a century,
+  yet why it works remains uncertain." In place of explanation (p. 20):
+  task-limited validation, testing on multiple data sets, prospective trials
+  against the standard of care, human-machine comparisons, audits.
+- **Bjerring and Busch (2021), *Philosophy & Technology* 34(2): 349–371:** AI
+  will likely outperform doctors, giving them "a prima facie epistemic and
+  professional obligation to align their medical verdicts with those of
+  advanced AI systems"; black-box medicine "is not conducive for supporting
+  informed decision-making based on shared information, shared deliberation,
+  and shared mind." *Body text seen only through a secondary source.*
+- **Parfit (1997), *Ratio* 10(3): 202–221:** Principle of Equality: "It is in
+  itself bad if some people are worse off than others" (p. 204). Levelling down
+  objection, pp. 210–211; aimed at Telic Egalitarianism; "great force, but is
+  not, I think, decisive" (p. 220). Priority View: "Benefiting people matters
+  more the worse off these people are" (p. 213, quoted on the card); not
+  absolute.
+- **Vandersluis and Savulescu (2024), *Bioethics* 38(5): 391–400:** delayed,
+  expedited, and selective deployment; DermAssist (melanoma, light vs dark
+  skin); apply Parfit's priority view; expedited deployment that harms
+  dark-skinned patients is unethical; delay for all is "levelling down";
+  selective deployment justified if excluded patients keep usual care, are
+  told about the gap, get extra non-algorithmic services, and more data are
+  gathered urgently. The lesson's A/B/C follow their three options.
+- **Elish (2019), *Engaging Science, Technology, and Society* 5: 40–60:**
+  anthropologist; "responsibility for an action may be misattributed to a human
+  actor who had limited control over the behavior of an automated or autonomous
+  system" (p. 40). Cases: Three Mile Island, Air France 447, the 2018 Uber crash
+  (the Volvo's own emergency braking disabled in autonomous mode; coverage
+  focused on the safety driver); Therac-25 as a counterexample.
+- **Price, Gerke, and Cohen (2019), *JAMA* 322(18): 1765–1766:** liability turns
+  on the standard of care; if AI becomes part of it, "physicians may incur
+  liability for rejecting correct but nonstandard AI recommendations."
+- **Aspirin and lithium:** aspirin marketed from 1899; Vane (1971) showed
+  prostaglandin inhibition; lithium for mania since Cade (1949), mechanism still
+  not fully understood. The slide uses London's own wording ("nearly a
+  century").
