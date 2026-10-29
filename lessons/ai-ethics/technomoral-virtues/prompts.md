@@ -1,5 +1,41 @@
 # Image Documentation — AI Ethics: Technomoral Virtues ("Growing Up in Springfield")
 
+## Status (2026-10-28): flagged, replace all seven PNGs
+
+The seven PNGs below are official *The Simpsons* character art, not generated
+panels. `flanders.png` and `burns.png` carry Matt Groening's signature baked
+into the image. They break the house art rules (original designs only, no
+likeness to any show, no baked-in text, 16-bit pixel art), and the lesson's
+"About this lesson" note wrongly says its illustrations came from AI image
+generators. The fair-use paragraph below is not a basis to keep them. The
+lesson text also borrows the show's cast and places (see the standards
+report). After the 2026-10-28 review, `flanders.png` and `burns.png` are no
+longer referenced; theory slides now use text-only thinker cards for Aristotle
+and Vallor.
+
+**Proposed replacement (author to decide names).** An original family in an
+original town, with the parents' 1989 childhood as the "before." Re-roll each
+panel on its own: paste the style line, then the panel's sentence, then "One
+single square image, not a grid."
+
+```
+16-bit SNES pixel art. Hard pixel edges, limited palette, warm suburban colors, soft lamplight. No text, letters, or numbers anywhere. Original designs only, no likeness to any cartoon or show.
+```
+
+| Replaces | New file | Re-roll sentence |
+|---|---|---|
+| `homer.png` | `dad.png` | A stocky Filipino American man in his forties with a round face, short black hair, and a rumpled blue work polo slumps on a worn living-room couch, holding a half-eaten donut and squinting at a glowing phone. |
+| `marge.png` | `mom.png` | A tall white woman in her forties with curly red hair in a loose bun and a green cardigan stands in a cozy kitchen, holding a wicker basket full of phones. |
+| `bart.png` | `son.png` | A boy of ten with light brown skin, messy black hair, a red T-shirt, and scuffed sneakers grins with his hands in his pockets, one foot on a skateboard. |
+| `lisa.png` | `daughter.png` | A girl of twelve with light brown skin, curly dark hair in a ponytail, and an orange hoodie sits on her bed at night, lit by a phone screen, a saxophone case beside her. |
+| `maggie.png` | `baby.png` | A baby of about one with light brown skin and a tuft of curly black hair, in a blue onesie, sits on a rug stacking wooden blocks. |
+| (new) | `idea-aristotle.png` | No faces anywhere: a well-worn lyre on a stone bench beside a neat stack of hand-laid bricks, lit by morning sun. |
+| (new) | `idea-vallor.png` | No faces anywhere: a brass compass lying on a dark, glowing tablet, its needle steady while blank app tiles flicker around it. |
+
+`flanders.png` and `burns.png` need no replacement unless the author restores
+a neighbor or an executive to those slides. If so, keep it gentle: no
+cartoon villain.
+
 Every asset below ships as a 512×512 PNG in `/assets/`, and the `src` in `index.html` points at it. 
 
 These images represent educational fair-use depictions of characters from *The Simpsons* (created by Matt Groening, Gracie Films / 20th Television), retrieved from public educational media repositories under **17 U.S.C. § 107 (Fair Use)** for non-profit philosophical critique, pedagogical instruction, and ethical analysis. Each character is framed as a centered figure on the PhilMates `#11131f` void canvas.

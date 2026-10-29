@@ -10,11 +10,17 @@ The click-through lesson is still there: a student who never presses Play gets
 the ordinary lesson, and a paused player behaves exactly like it. Next and Back
 always work, so nothing is ever locked.
 
-**In use:** *The Midnight Tribunal* (`ethical-theory/utilitarianism`, the
-pilot), *The Masquerade of Silverport* (`ai-ethics/masquerade-silverport`),
-*The Ship's Chest* (`bioethics/right-to-health-care`), *Move On*
-(`bioethics/public-health`) and *The Last Job* (`ai-ethics/meaningful-work`). The catalog marks narrated lessons with a
+**In use:** ten lessons, starting with the pilot, *The Midnight Tribunal*
+(`ethical-theory/utilitarianism`). Every AI-ethics lesson except *Growing Up in
+Springfield* is narrated. The catalog marks narrated lessons with a
 **Narrated** badge.
+
+Scripts for five of them were drafted by a smaller model (Sonnet) from a written
+brief, then spot-checked against the slides for changed facts. That works well:
+the structure is mechanical, and a walkthrough check catches missing lines and
+waits. Two rules from that run: the script never respells words (it doubles as
+the captions; respellings go in `tools/pronunciations.json`), and it never adds
+a fact the slide doesn't have.
 
 ## What the student sees
 

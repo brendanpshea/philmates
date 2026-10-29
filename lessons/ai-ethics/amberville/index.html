@@ -29,13 +29,14 @@
 
   <!-- 1. Title + the student's role -->
   <phil-slide>
-    <img slot="art" src="./assets/main-street.png" alt="Amberville's dusty main street at dawn under a gold-to-indigo sky: wooden storefronts with blank signboards, telegraph poles, a white church with a satellite dish bolted to its steeple, a shipping crate on the boardwalk, and one tumbleweed">
+    <img slot="art" src="./assets/main-street.png" alt="Amberville's dusty main street at dawn under a gold-to-indigo sky: wooden storefronts with mostly blank signboards, telegraph poles, a white church with a satellite dish bolted to its steeple, a shipping crate on the boardwalk, and one tumbleweed">
     <h1>High Noon in Amberville</h1>
     <p class="lead">Every month since March, a crate has arrived from the Improvement Company. Each one holds a machine that does a job somebody used to do by hand.</p>
+    <phil-narration>Welcome to Amberville. Every month since March, a crate has arrived from the Improvement Company. Each one holds a machine that does a job somebody used to do by hand. You're about to help decide which ones stay. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
     <ul reveal>
-      <li>Six crates are open and running. A seventh arrived Tuesday, still nailed shut.</li>
-      <li>You are one of three residents on the Crate Committee.</li>
-      <li>The town votes at sundown on what to keep. You have until then to decide.</li>
+      <li say="Six crates are open and running. A seventh arrived Tuesday, still nailed shut.">Six crates are open and running. A seventh arrived Tuesday, still nailed shut.</li>
+      <li say="You are one of three residents on the Crate Committee.">You are one of three residents on the Crate Committee.</li>
+      <li say="The town votes at sundown on what to keep. You have until then to decide.">The town votes at sundown on what to keep. You have until then to decide.</li>
     </ul>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points one at a time. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
@@ -44,10 +45,11 @@
   <phil-slide>
     <h1>The Crate Committee Checklist</h1>
     <p>Every crate gets the same three questions. You will use them seven times before sundown.</p>
+    <phil-narration>Every crate gets the same three questions. You'll use them seven times before sundown.</phil-narration>
     <ul reveal>
-      <li><strong>What is it deciding?</strong> Every machine takes over a decision a person used to make.</li>
-      <li><strong>Who gains and who pays?</strong> Almost no machine helps everyone equally.</li>
-      <li><strong>Who do you tell?</strong> Some decisions can be appealed. Some cannot.</li>
+      <li say="First, what is it deciding? Every machine takes over a decision a person used to make."><strong>What is it deciding?</strong> Every machine takes over a decision a person used to make.</li>
+      <li say="Second, who gains and who pays? Almost no machine helps everyone equally."><strong>Who gains and who pays?</strong> Almost no machine helps everyone equally.</li>
+      <li say="Third, who do you tell? Some decisions can be appealed. Some cannot. Try it on the church bell. It decides when school starts, it helps everyone in earshot but not the Halloran farm, and if it rings wrong you tell Reverend Cole."><strong>Who do you tell?</strong> Some decisions can be appealed. Some cannot.</li>
     </ul>
     <p class="muted">Try it on the church bell. It decides when school starts, it helps everyone in earshot but not the Halloran farm, and if it rings wrong you tell Reverend Cole.</p>
   </phil-slide>
@@ -56,6 +58,7 @@
   <phil-slide>
     <h1>Dawn: Where You Stand</h1>
     <p>Before the day starts, six gut-checks. There are <strong>no right answers</strong> here. This is just a record of what you think now, and you will see all six again at sundown.</p>
+    <phil-narration>Before the day starts, here are six gut-checks. There are no right answers here. This is just a record of what you think now, and you'll see all six again at sundown. Rate each statement, then press Submit.</phil-narration>
     <phil-beliefs prompt="How much do you agree, right now?">
       <phil-statement>A machine that has never been told about a group of people cannot treat them unfairly.</phil-statement>
       <phil-statement>It is not really spying if no person ever reads what was collected.</phil-statement>
@@ -64,20 +67,22 @@
       <phil-statement>A machine that hits the exact target it was given cannot be said to have malfunctioned.</phil-statement>
       <phil-statement>Any machine that makes decisions about people should have a person who can overrule it.</phil-statement>
     </phil-beliefs>
+    <phil-narration when="after">Saved. You'll come back to these at sundown.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 1 — CRATE ONE: THE SORTER (bias) ============ -->
 
   <!-- 5. The Sorter arrives -->
   <phil-slide>
-    <img slot="art" src="./assets/sorter.png" alt="Inside a frontier granary: a tall riveted brass cabinet with rows of open slots along its front, stiff paper index cards fanning out of the slots and dropping into two wooden trays below, burlap sacks of seed grain stacked against the plank walls, and warm morning light slanting from a high window">
+    <img slot="art" src="./assets/sorter.png" alt="Inside a frontier granary: a tall riveted brass cabinet with rows of open slots along its front, stiff paper index cards fanning out of the slots, a wooden tray of cards and a tray of seed grain below, burlap sacks of seed grain stacked against the plank walls, and warm morning light slanting from a high window">
     <h1>Crate One: The Sorter</h1>
     <p class="lead">The March crate held <strong>THE SORTER</strong>, a brass cabinet that decides who receives seed grain from the town granary.</p>
+    <phil-narration>The March crate held the Sorter. It's a brass cabinet that decides who receives seed grain from the town granary.</phil-narration>
     <ul reveal>
-      <li>Before it arrived, the granary clerk made that call each spring, one farmer at a time.</li>
-      <li>The Sorter takes four seconds. It reads your card and prints YES or NO.</li>
-      <li>It was fed forty years of granary ledgers and repeats the patterns it found.</li>
-      <li>It does not judge you. It matches you against the farmers who came before you.</li>
+      <li say="Before it arrived, the granary clerk made that call each spring, one farmer at a time.">Before it arrived, the granary clerk made that call each spring, one farmer at a time.</li>
+      <li say="The Sorter takes four seconds. It reads your card and prints yes or no.">The Sorter takes four seconds. It reads your card and prints YES or NO.</li>
+      <li say="It was fed forty years of granary ledgers, and it repeats the patterns it found.">It was fed forty years of granary ledgers and repeats the patterns it found.</li>
+      <li say="It doesn't judge you. It matches you against the farmers who came before you.">It does not judge you. It matches you against the farmers who came before you.</li>
     </ul>
   </phil-slide>
 
@@ -85,11 +90,12 @@
   <phil-slide>
     <h1>What the Sorter Did in April</h1>
     <p>By the third week of spring the pattern was hard to miss, and the schoolteacher had it written out on a single sheet of paper.</p>
+    <phil-narration>By the third week of spring, the pattern was hard to miss. The schoolteacher had it written out on a single sheet of paper.</phil-narration>
     <ul reveal>
-      <li>Every farm east of Copper Creek has been refused. Nearly every farm west has been approved.</li>
-      <li>No rule inside the Sorter mentions the creek, the east side, or where anyone lives.</li>
-      <li>The committee has it inspected twice. Both inspectors say it is working as designed.</li>
-      <li><strong>Who gains and who pays?</strong> The east side pays, and no person chose that.</li>
+      <li say="Every farm east of Copper Creek has been refused. Nearly every farm west has been approved.">Every farm east of Copper Creek has been refused. Nearly every farm west has been approved.</li>
+      <li say="No rule inside the Sorter mentions the creek, the east side, or where anyone lives.">No rule inside the Sorter mentions the creek, the east side, or where anyone lives.</li>
+      <li say="The committee has it inspected twice. Both inspectors say it is working as designed.">The committee has it inspected twice. Both inspectors say it is working as designed.</li>
+      <li say="Who gains and who pays? The east side pays, and no person chose that."><strong>Who gains and who pays?</strong> The east side pays, and no person chose that.</li>
     </ul>
   </phil-slide>
 
@@ -97,23 +103,26 @@
   <phil-slide>
     <h1>Decision Point: The Sorter</h1>
     <p class="muted">This one is <strong>not graded</strong>. Pick the answer you actually hold.</p>
+    <phil-narration>This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="No person decided to refuse the east side, and the machine applies one procedure to everyone. Is the outcome unfair?"
                explain="All three positions agree about the facts. Everyone agrees the east side is being refused, and everyone agrees no rule mentions the creek. They disagree about whether unfairness requires that somebody meant it. That question comes back with almost every crate you open today.">
       <phil-choice note="This is the strongest version of the view that a tool is just a tool: apply one rule to everyone and you have done your part. Hold onto it, because the next two slides test it hard.">It is fair. The Sorter applies the same procedure to every farmer who walks in.</phil-choice>
       <phil-choice note="This is where a great deal of computing ethics lives. It means harm can be real and serious without anyone intending it, which makes it harder to fix than ordinary wrongdoing.">It is unfair, even though no person set out to harm anyone.</phil-choice>
-      <phil-choice note="A fair challenge, and worth pressing all day. Clerk Fenwick, the company that built the Sorter, and the committee that installed it are all candidates.">It is unfair, and someone is to blame — we just have not worked out who.</phil-choice>
+      <phil-choice note="A fair challenge, and worth pressing all day. Clerk Fenwick, the company that built the Sorter, and the committee that installed it are all candidates.">It is unfair, and someone is to blame. We just have not worked out who.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">All three positions agree about the facts. They disagree about whether unfairness requires that somebody meant it. That question comes back with almost every crate you open today.</phil-narration>
   </phil-slide>
 
   <!-- 8. Bias explained -->
   <phil-slide id="copying-the-past">
     <h1>Why the Sorter Refuses the East Side</h1>
     <p>The answer is not inside the machine. It is inside the forty years of ledgers the machine learned from.</p>
+    <phil-narration>The answer isn't inside the machine. It's inside the forty years of ledgers the machine learned from.</phil-narration>
     <ul reveal>
-      <li>Clerk Fenwick ran the granary for forty years. He rarely approved east-side farmers.</li>
-      <li>So the ledgers hold a true record of east-siders being refused, year after year.</li>
-      <li>The Sorter found that pattern and continued it.</li>
-      <li>This is what <strong>bias</strong> means in a computer system. The machine is copying an unfair past.</li>
+      <li say="Clerk Fenwick ran the granary for forty years. He rarely approved east-side farmers.">Clerk Fenwick ran the granary for forty years. He rarely approved east-side farmers.</li>
+      <li say="So the ledgers hold a true record of east-siders being refused, year after year.">So the ledgers hold a true record of east-siders being refused, year after year.</li>
+      <li say="The Sorter found that pattern and continued it.">The Sorter found that pattern and continued it.</li>
+      <li say="This is one kind of bias: the machine copies an unfair past. Friedman and Nissenbaum call it preexisting bias. Back in your world, think of a program that decides who gets a loan, built from decades of records of who used to get loans.">This is one kind of <strong>bias</strong>: the machine copies an unfair past. Friedman and Nissenbaum call it preexisting bias.</li>
     </ul>
     <p class="muted"><strong>Back in your world:</strong> a program that decides who gets a loan, built from decades of records of who used to get loans.</p>
   </phil-slide>
@@ -122,17 +131,19 @@
   <phil-slide id="proxy">
     <h1>The Committee Tries to Fix It</h1>
     <p>The obvious repair is to stop telling the Sorter where anyone lives. In May the committee removes the address column from every card.</p>
+    <phil-narration>The obvious repair is to stop telling the Sorter where anyone lives. In May, the committee removes the address column from every card.</phil-narration>
     <ul reveal>
-      <li>Removing the address column changed nothing. The same farmers are still refused.</li>
-      <li>The Sorter had found another column that says the same thing: your flour mill.</li>
-      <li>East-siders use Harrow's Mill because it is closer. Now that column does the same job.</li>
-      <li>A column that stands in for a hidden one is called a <strong>proxy</strong>. Deleting one field rarely helps.</li>
+      <li say="Removing the address column changed nothing. The same farmers are still refused.">Removing the address column changed nothing. The same farmers are still refused.</li>
+      <li say="The Sorter had found another column that says the same thing: your flour mill.">The Sorter had found another column that says the same thing: your flour mill.</li>
+      <li say="East-siders use Harrow's Mill because it is closer. Now that column does the same job.">East-siders use Harrow's Mill because it is closer. Now that column does the same job.</li>
+      <li say="A column that stands in for a hidden one is called a proxy. Deleting one field rarely helps.">A column that stands in for a hidden one is called a <strong>proxy</strong>. Deleting one field rarely helps.</li>
     </ul>
   </phil-slide>
 
   <!-- 10. Checkset: why the Sorter still refuses the east side -->
   <phil-slide>
     <h1>Checkpoint: The Missing Column</h1>
+    <phil-narration>Read the question, mark every statement that helps explain the answer, then press Check answers.</phil-narration>
     <phil-checkset data-qid="amberville:q1" review="proxy" prompt="The address column is gone, and the Sorter still refuses the same farmers. Check every statement that helps explain why."
                    explain="Right. The Sorter learned from forty years of Clerk Fenwick's refusals, and when the address column went, the flour mill carried the same information. No rule mentions the creek, nothing was copied, and nothing broke: the machine is working as designed.">
       <phil-statement correct>The ledgers it learned from record forty years of east-siders being refused</phil-statement>
@@ -142,12 +153,14 @@
       <phil-statement>The Sorter kept a private copy of the addresses</phil-statement>
       <phil-statement>Removing the column damaged the Sorter, so its answers are now unreliable</phil-statement>
     </phil-checkset>
+    <phil-narration when="after">Right. The Sorter learned from forty years of Clerk Fenwick's refusals, and when the address column went, the flour mill carried the same information. The machine is working as designed.</phil-narration>
   </phil-slide>
 
   <!-- 10b. Cloze: closing Act 1 -->
   <phil-slide>
     <h1>The Committee Writes Up the Sorter</h1>
     <p>Fill in the note that goes into the committee's file:</p>
+    <phil-narration>Fill in the note that goes into the committee's file. Choose or type each blank, then press Check.</phil-narration>
     <phil-cloze data-qid="amberville:q5" review="copying-the-past" explain="Every blank here comes from the last five slides. The Sorter learned a pattern from records that were already lopsided, then repeated it faithfully. Hiding the address did not help, because another column pointed at the same thing.">
       The Sorter was fed forty years of granary
       <phil-blank options="ledgers,recipes,weather reports">ledgers</phil-blank>
@@ -158,6 +171,7 @@
       And when we hid the address column, the flour mill became a
       <phil-blank answer="proxy|stand-in|stand in|standin|substitute|surrogate|proxy variable">proxy</phil-blank> for it.
     </phil-cloze>
+    <phil-narration when="after">The Sorter learned a pattern from records that were already lopsided, then repeated it. Hiding the address didn't help, because another column pointed at the same thing.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 2 — CRATE TWO: THE STORE LEDGER (accountability) ============ -->
@@ -166,11 +180,12 @@
   <phil-slide id="ledger">
     <h1>Crate Two: The Store Ledger</h1>
     <p class="lead">The general store's counter now has an automatic ledger. It records every purchase and keeps each family's running account.</p>
+    <phil-narration>The general store's counter now has an automatic ledger. It records every purchase and keeps each family's running account.</phil-narration>
     <ul reveal>
-      <li>The storekeeper used to keep accounts in a paper book that anyone could ask to see.</li>
-      <li>The ledger is faster than he was, and it never miscounts change.</li>
-      <li>In June it recorded Ruby Okonkwo's account as forty dollars short.</li>
-      <li>She is certain of the figure. The ledger keeps no record of why it changed.</li>
+      <li say="The storekeeper used to keep accounts in a paper book that anyone could ask to see.">The storekeeper used to keep accounts in a paper book that anyone could ask to see.</li>
+      <li say="The ledger is faster than she was, and it never miscounts change.">The ledger is faster than she was, and it never miscounts change.</li>
+      <li say="In June, it recorded Ruby Okonkwo's account as forty dollars short.">In June it recorded Ruby Okonkwo's account as forty dollars short.</li>
+      <li say="She's certain of the figure. The ledger keeps no record of why it changed.">She is certain of the figure. The ledger keeps no record of why it changed.</li>
     </ul>
   </phil-slide>
 
@@ -178,12 +193,14 @@
   <phil-slide>
     <h1>Decision Point: The Ledger</h1>
     <p>Ruby files Form 7, the town's appeal form. Form 7 is decided by the ledger itself. <strong>Who do you tell?</strong> Ruby has nobody to tell.</p>
+    <phil-narration>Ruby files Form 7, the town's appeal form. But Form 7 is decided by the ledger itself. So who do you tell? Ruby has nobody to tell. This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="Ruby cannot get any person to look at her missing forty dollars. What should the committee recommend?"
-               explain="Most machine problems are not settled by keeping or scrapping. They are settled by what gets built alongside the machine: a record a person can inspect, and a person with the authority to say this one is wrong. That pairing is called recourse, and Amberville has none. Notice that the ledger did not break any rule and may not even be wrong — nobody can check, and that is the problem.">
-      <phil-choice note="Direct, and it does solve Ruby's problem. It also gives up a faster counter that never shortchanges anyone, which the store has already rebuilt itself around.">Send the ledger back and let the storekeeper return to his paper book.</phil-choice>
+               explain="Most machine problems are not settled by keeping or scrapping. They are settled by what gets built alongside the machine: a record a person can inspect, and a person with the authority to say this one is wrong. That pairing is called recourse, and Amberville has none. Notice that the ledger did not break any rule and may not even be wrong. Nobody can check, and that is the problem.">
+      <phil-choice note="Direct, and it does solve Ruby's problem. It also gives up a faster counter that never shortchanges anyone, which the store has already rebuilt itself around.">Send the ledger back and let the storekeeper return to her paper book.</phil-choice>
       <phil-choice note="Worth taking seriously, but rare is cold comfort to the person it happens to. And nobody actually knows how rare it is, because nobody outside the machine can count.">Keep the ledger. Mistakes like Ruby's are rare, and it works for almost everyone.</phil-choice>
       <phil-choice note="The demanding answer. Somebody has to be given the authority, the time, and access to the records.">Keep the ledger, but require that a person hears disputes and can overrule it.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">Most machine problems aren't settled by keeping or scrapping. They're settled by what gets built alongside the machine: a record a person can inspect, and a person with the authority to say this one is wrong. That pairing is called recourse, and Amberville has none. Back in your world, think of the account that gets locked, and the help page with no phone number on it.</phil-narration>
     <p class="muted"><strong>Back in your world:</strong> the account that gets locked, and the help page with no phone number on it.</p>
   </phil-slide>
 
@@ -191,19 +208,21 @@
 
   <!-- 15. The Prospector -->
   <phil-slide id="prospector">
-    <img slot="art" src="./assets/prospector.png" alt="A tall riveted brass gambling machine in a dim saloon corner: three reels behind a round glass window each showing a gold star, a heavy brass crank mounted on its right side, a polished silver ten-gallon hat displayed on top as the prize, brass tokens scattered across the floorboards, and a standing oil lamp glowing at the left">
+    <img slot="art" src="./assets/prospector.png" alt="A tall riveted brass gambling machine in a dim saloon corner: three reels behind a round glass window each showing a gold star, a heavy brass crank mounted on its right side, a polished silver ten-gallon hat displayed on top as the prize, brass tokens scattered across the floorboards, a standing oil lamp glowing at the left, and a hatted figure's shadow on the back wall">
     <h1>Crate Three: The Lucky Prospector</h1>
     <p>In the saloon corner stands a game with a brass crank and a silver ten-gallon hat on display as its prize. Three of its details were chosen very carefully.</p>
+    <phil-narration>In the saloon corner stands a game with a brass crank and a silver ten-gallon hat on display as its prize. Three of its details were chosen very carefully.</phil-narration>
     <ul reveal>
-      <li>The reels almost always stop one notch short. Nearly winning makes people play again.</li>
-      <li>The tokens come in a size used nowhere else, so paying does not feel like spending.</li>
-      <li>The heavy crank connects to nothing. It just makes players feel they control the reels.</li>
+      <li say="The reels almost always stop one notch short. Nearly winning makes people play again.">The reels almost always stop one notch short. Nearly winning makes people play again.</li>
+      <li say="The tokens come in a size used nowhere else, so paying doesn't feel like spending.">The tokens come in a size used nowhere else, so paying does not feel like spending.</li>
+      <li say="The heavy crank connects to nothing. It just makes players feel they control the reels.">The heavy crank connects to nothing. It just makes players feel they control the reels.</li>
     </ul>
   </phil-slide>
 
   <!-- 16. CHECKSET: the tricks -->
   <phil-slide>
     <h1>Checkpoint: Reading the Machine</h1>
+    <phil-narration>Read the question, mark every statement that is true of how the machine works, then press Check answers.</phil-narration>
     <phil-checkset data-qid="amberville:q3" review="prospector" prompt="The Prospector pays out exactly the odds it advertises and forces nobody to play. Check every statement below that is TRUE of how it works."
                    explain="The three true statements describe the same method: none of them is a lie, and none of them is force. The machine tells you the truth and lets you walk away, and it still arranges the room so that you keep pulling. That is what makes this kind of design hard to regulate and easy to miss.">
       <phil-statement correct>Stopping one notch short makes a loss feel like a near win, which invites another pull.</phil-statement>
@@ -212,19 +231,21 @@
       <phil-statement>The Prospector advertises worse odds than it truly pays, which is why players misjudge it.</phil-statement>
       <phil-statement>A skilled player can use the heavy crank to influence where the reels come to rest.</phil-statement>
     </phil-checkset>
+    <phil-narration when="after">None of the three true statements is a lie, and none is force. The machine tells you the truth and lets you walk away, and it still arranges the room so that you keep pulling.</phil-narration>
   </phil-slide>
 
   <!-- 17. Dark patterns named -->
   <phil-slide id="dark-patterns">
     <h1>Designs That Steer You</h1>
     <p>A <strong>dark pattern</strong> is a design that leaves your choice technically free while arranging things so that you are much more likely to choose one way.</p>
+    <phil-narration>A dark pattern is a design that leaves your choice technically free. But it arranges things so that you are much more likely to choose one way.</phil-narration>
     <ul reveal>
-      <li>Every trick here is legal. None of them is a lie, and none of them is force.</li>
-      <li>They work on feelings you cannot switch off: what feels close, what feels like money.</li>
-      <li>Knowing the trick does not help. A near miss still feels like a near win.</li>
-      <li>The question is whether a design may aim at a weakness on purpose.</li>
+      <li say="No law in Amberville forbids these tricks. None of them is a lie, and none of them is force.">No law in Amberville forbids these tricks. None of them is a lie, and none of them is force.</li>
+      <li say="They work on feelings you can't switch off: what feels close, what feels like money.">They work on feelings you cannot switch off: what feels close, what feels like money.</li>
+      <li say="Knowing the trick helps less than you'd hope. A near miss still makes people want another try.">Knowing the trick helps less than you would hope. A near miss still makes people want another try.</li>
+      <li say="The question is whether a design may aim at a weakness on purpose. Back in your world, think of the feed with no bottom, the are you sure you want to cancel screen that takes five clicks, and the game currency that is not dollars. In 2025, Amazon agreed to pay two and a half billion dollars to settle FTC charges over its Prime sign-up and cancellation screens.">The question is whether a design may aim at a weakness on purpose.</li>
     </ul>
-    <p class="muted"><strong>Back in your world:</strong> the feed with no bottom, the "are you sure you want to cancel" that takes five clicks, the game currency that is not dollars.</p>
+    <p class="muted"><strong>Back in your world:</strong> the feed with no bottom, the "are you sure you want to cancel" that takes five clicks, the game currency that is not dollars. In 2025 Amazon agreed to pay $2.5 billion to settle FTC charges over its Prime sign-up and cancellation screens.</p>
   </phil-slide>
 
   <!-- ============ ACT 4 — CRATE FOUR: THE THURSDAY LIST (privacy) ============ -->
@@ -234,11 +255,12 @@
     <img slot="art" src="./assets/telegram.png" alt="The sheriff at his lamplit desk, mustached and unimpressed, as an impossibly long ticker-tape printout spills off the telegraph receiver, over the desk, and coils across the entire floor; pinned notices hang on the wall behind him">
     <h1>Crate Four: The Thursday List</h1>
     <p>Each morning this machine wires the sheriff a list of residents it calculates are likely to commit a crime by Thursday. Today your name is on it.</p>
+    <phil-narration>Each morning, this machine wires the sheriff a list of residents it calculates are likely to commit a crime by Thursday. Today, your name is on it.</phil-narration>
     <ul reveal>
-      <li>You are marked 74% likely to rob a grave, based on three purchases.</li>
-      <li>You bought a spade, a rope, and lamp oil, all after dark.</li>
-      <li>You are digging a root cellar. You dig at night because it is August.</li>
-      <li>The machine broke no rule and made no error in its arithmetic. Every purchase was made in public, at a counter.</li>
+      <li say="You're marked seventy-four percent likely to rob a grave, based on three purchases.">You are marked 74% likely to rob a grave, based on three purchases.</li>
+      <li say="You bought a spade, a rope, and lamp oil, all after dark.">You bought a spade, a rope, and lamp oil, all after dark.</li>
+      <li say="You're digging a root cellar. You dig at night because it's August.">You are digging a root cellar. You dig at night because it is August.</li>
+      <li say="The machine broke no rule and made no error in its arithmetic. Every purchase was made in public, at a counter.">The machine broke no rule and made no error in its arithmetic. Every purchase was made in public, at a counter.</li>
     </ul>
   </phil-slide>
 
@@ -246,12 +268,12 @@
   <phil-slide id="the-pile">
     <h1>The Harm Is in the Pile</h1>
     <p>Nothing on that list was secret, which is exactly what makes it worth thinking about carefully.</p>
+    <phil-narration>Nothing on that list was secret. That's exactly what makes it worth thinking about carefully.</phil-narration>
     <ul reveal>
-      <li>One purchase tells you almost nothing. Half the town owns a spade.</li>
-      <li>Stack enough ordinary facts together and they say something no single fact said.</li>
-      <li>Each fact also lost its reason. Rope bought for a garden gets filed under graves.</li>
-      <li>The danger is in what the pile adds up to, not in any one fact.</li>
-      <li>Being watched also changes what innocent people do. That is called the <strong>chilling effect</strong>.</li>
+      <li say="One purchase tells you almost nothing. Half the town owns a spade.">One purchase tells you almost nothing. Half the town owns a spade.</li>
+      <li say="Stack enough ordinary facts together and they say something no single fact said. Daniel Solove calls this aggregation.">Stack enough ordinary facts together and they say something no single fact said. Daniel Solove calls this <strong>aggregation</strong>.</li>
+      <li say="Each fact also lost its reason. Rope bought for a garden gets filed under graves.">Each fact also lost its reason. Rope bought for a garden gets filed under graves.</li>
+      <li say="Being watched also changes what innocent people do. That is called the chilling effect.">Being watched also changes what innocent people do. That is called the <strong>chilling effect</strong>.</li>
     </ul>
   </phil-slide>
 
@@ -259,17 +281,20 @@
   <phil-slide>
     <h1>Decision Point: The List</h1>
     <p class="muted">Not graded. The third option is the one most people arrive at once they sit with it.</p>
+    <phil-narration>This one isn't graded. The third option is the one most people arrive at once they sit with it. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="Nobody arrests you. The sheriff simply follows you around town for a week. Were you harmed?"
-               explain="The third position names something real. Being watched changes what innocent people do, which means the effect arrives long before any arrest does — and it lands hardest on people who have done nothing at all. That effect has a name: the chilling effect. Notice that the sheriff has broken no rule and the machine has made no error.">
-      <phil-choice note="A clean and common position: harm means a concrete injury, and nothing concrete happened. The next two answers both push against where that line sits.">No. No arrest, no charge, no fine — so no harm was done.</phil-choice>
+               explain="The third position names something real. Being watched changes what innocent people do, so the effect arrives long before any arrest does. It falls even on people who have done nothing at all. That effect has a name: the chilling effect. Notice that the sheriff has broken no rule and the machine has made no error.">
+      <phil-choice note="A clean and common position: harm means a concrete injury, and nothing concrete happened. The next two answers both push against where that line sits.">No. There was no arrest, no charge, and no fine, so no harm was done.</phil-choice>
       <phil-choice note="This treats the suspicion itself as the injury, independent of what follows. It is the view that reputation and standing are things a person can be damaged in.">Yes. Being treated as a suspect is an injury by itself, whatever comes after.</phil-choice>
-      <phil-choice note="This is the answer that is hardest to dismiss, because it is a fact about your behavior rather than a claim about your feelings. You changed, and nobody made you.">Not harmed, exactly — but changed. I have stopped buying rope.</phil-choice>
+      <phil-choice note="This is the answer that is hardest to dismiss, because it is a fact about your behavior rather than a claim about your feelings. You changed, and nobody made you.">Not harmed, exactly, but changed. I have stopped buying rope.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">Being watched changes what innocent people do, so the effect arrives long before any arrest does. That effect is called the chilling effect.</phil-narration>
   </phil-slide>
 
   <!-- 21. Checkset: the Thursday List -->
   <phil-slide>
     <h1>Checkpoint: The Thursday List</h1>
+    <phil-narration>The sheriff says that if you have done nothing wrong, you have nothing to fear. Mark every true statement about the list, then press Check answers.</phil-narration>
     <phil-checkset data-qid="amberville:q4" review="the-pile" prompt="The sheriff says: if you have done nothing wrong, you have nothing to fear. Check every TRUE statement about the list."
                    explain="Right. Nothing on the list was private, yet the pile says more than any single purchase, and being watched changes what innocent people do before anyone is accused. That last one is why nothing to hide does not settle the question."
                    >
@@ -279,7 +304,8 @@
       <phil-statement>The list is wrong about you because the machine made a calculation error.</phil-statement>
       <phil-statement>Since you were never arrested, the list has not really affected you at all.</phil-statement>
     </phil-checkset>
-    <p class="muted"><strong>Back in your world:</strong> an advertisement that knows something you are sure you never typed anywhere.</p>
+    <phil-narration when="after">Right. Nothing on the list was private, yet the pile says more than any single purchase. And being watched changes what innocent people do before anyone is accused. Back in your world, think of an advertisement that knows something you are sure you never typed anywhere. In Pasco County, Florida, deputies kept visiting the homes of people an algorithm had flagged as likely offenders. The sheriff dropped the program in 2023 and settled a lawsuit over it in 2024.</phil-narration>
+    <p class="muted"><strong>Back in your world:</strong> an advertisement that knows something you are sure you never typed anywhere. In Pasco County, Florida, deputies kept visiting the homes of people an algorithm had flagged as likely offenders. The sheriff dropped the program in 2023 and settled a lawsuit over it in 2024.</p>
   </phil-slide>
 
   <!-- ============ ACT 5 — CRATES FIVE & SIX: THE HORN AND THE PRESS (work) ============ -->
@@ -289,11 +315,12 @@
     <img slot="art" src="./assets/saloon.png" alt="Saloon interior: a singer in a plum dress stands in a spotlight glaring across the room, where cowboys crowd a table raising their glasses to a brass gramophone horn, while a player piano's keys move by themselves in the background">
     <h1>Crate Five: The Brass Horn</h1>
     <p class="lead">For nine years Miss Delacroix-Ito closed every evening at the saloon singing her <em>Ballad of Copper Creek</em>. Last week the brass horn debuted a new song in her style.</p>
+    <phil-narration>For nine years, Miss Delacroix-Ito closed every evening at the saloon by singing her Ballad of Copper Creek. Last week, the brass horn debuted a new song in her style.</phil-narration>
     <ul reveal>
-      <li>The horn listened to four hundred recordings of her singing.</li>
-      <li>It did not copy her songs, only her timing, her word choices, and the notes she bends.</li>
-      <li>Copyright protects a song. It does not protect a style.</li>
-      <li>The owner prefers the horn because it works for free and never gets sick.</li>
+      <li say="The horn listened to four hundred recordings of her singing.">The horn listened to four hundred recordings of her singing.</li>
+      <li say="It didn't copy her songs, only her timing, her word choices, and the notes she bends.">It did not copy her songs, only her timing, her word choices, and the notes she bends.</li>
+      <li say="Copyright protects a song. It does not protect a style.">Copyright protects a song. It does not protect a style.</li>
+      <li say="The owner prefers the horn because it works for free and never gets sick.">The owner prefers the horn because it works for free and never gets sick.</li>
     </ul>
   </phil-slide>
 
@@ -301,23 +328,26 @@
   <phil-slide>
     <h1>Decision Point: The Ballad</h1>
     <p class="muted">Not graded, and genuinely unsettled. Courts and philosophers are still arguing about this one.</p>
+    <phil-narration>This one isn't graded, and it's genuinely unsettled. Courts and philosophers are still arguing about it. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="The horn sings in her style without reproducing a single line she wrote. Is that stealing?"
                explain="The honest difficulty is that 'stealing' is a word built for objects, and nothing here went missing. She still has her voice, her songs, and her nine years of work. What she lost was the audience that paid for it. Whether we call that theft, unfair competition, or something we do not yet have a word for is exactly the live argument.">
       <phil-choice note="This treats her nine years as the thing of value, and points out that the horn could not exist without them. The difficulty is saying precisely what was taken, since she still has everything she made.">Yes. Nine years of her work went into building it, and she received nothing for that.</phil-choice>
       <phil-choice note="This is the strongest objection to calling it theft: learning from someone has never been wrong, and every singer in town learned from someone. The difficulty is scale and speed.">No. Any singer who studied her for nine years could have learned the same things.</phil-choice>
       <phil-choice note="This keeps the wrong without forcing it into a category built for stolen horses, and it admits our words are behind the machines.">Not stealing, but wrong anyway. We need a different word for what happened.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">The honest difficulty is that stealing is a word built for objects, and nothing here went missing. What she lost was the audience that paid for it.</phil-narration>
   </phil-slide>
 
   <!-- 24. The press -->
   <phil-slide>
     <h1>Crate Six: The Stamping Press</h1>
     <p>The blacksmith now supervises a hydraulic press that turns out three hundred horseshoes an hour at half his old cost. His apprentice was let go on Monday.</p>
+    <phil-narration>The blacksmith now supervises a hydraulic press that turns out three hundred horseshoes an hour at half his old cost. His apprentice was let go on Monday.</phil-narration>
     <ul reveal>
-      <li>By every measure the town keeps, this is an improvement. More horseshoes, cheaper.</li>
-      <li>But the smithy was never only a horseshoe shop. Neighbors settled boundary disputes there.</li>
-      <li>A restless fifteen-year-old learned there to show up on time.</li>
-      <li>The press took the part that was paid for. The rest simply stopped.</li>
+      <li say="By every measure the town keeps, this is an improvement. More horseshoes, cheaper.">By every measure the town keeps, this is an improvement. More horseshoes, cheaper.</li>
+      <li say="But the smithy was never only a horseshoe shop. Neighbors settled boundary disputes there.">But the smithy was never only a horseshoe shop. Neighbors settled boundary disputes there.</li>
+      <li say="A restless fifteen-year-old learned there to show up on time.">A restless fifteen-year-old learned there to show up on time.</li>
+      <li say="The press took the part that was paid for. The rest simply stopped. Back in your world, think of the self-checkout, and everything the cashier also used to do while ringing you up.">The press took the part that was paid for. The rest simply stopped.</li>
     </ul>
     <p class="muted"><strong>Back in your world:</strong> the self-checkout, and everything the cashier also used to do while ringing you up.</p>
   </phil-slide>
@@ -326,6 +356,7 @@
   <phil-slide>
     <h1>The Committee's Notes, Reconstructed</h1>
     <p>Three more crates to write up before the meeting:</p>
+    <phil-narration>Three more crates to write up before the meeting. Fill in each blank, then press Check.</phil-narration>
     <phil-cloze data-qid="amberville:q6" review="ledger" explain="An appeal judged by the machine that recorded the shortfall is not really an appeal. The Prospector is troubling precisely because it is honest and optional. And automation takes the measured part of a job and leaves the unmeasured parts behind.">
       Ruby's appeal was judged by the same machine that recorded the
       <phil-blank options="shortfall,profit,promise">shortfall</phil-blank>,
@@ -336,20 +367,22 @@
       kept the horseshoes and lost the things nobody had ever
       <phil-blank answer="paid|paid for|charged|charged for|counted|measured|priced">paid</phil-blank> for.
     </phil-cloze>
+    <phil-narration when="after">An appeal judged by the machine that recorded the shortfall is not really an appeal. And automation takes the measured part of a job and leaves the unmeasured parts behind.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 6 — THE BOILER HOUSE (hidden costs) ============ -->
 
   <!-- 26. Behind the machines -->
   <phil-slide>
-    <img slot="art" src="./assets/boiler.png" alt="Behind the town: PRUDENCE's boiler house straddling a shrunken creek, pipes running to a coal cart, one small window glowing where punch cards are sorted">
+    <img slot="art" src="./assets/boiler.png" alt="Behind the town at dusk: a riveted iron boiler house with smoking stacks beside a shrunken creek, thick pipes dipping into the water, a loaded coal cart on rails, and one small glowing window where two young people sit beside a stack of punch cards">
     <h1>What Runs All Six</h1>
     <p>Every machine in town is clean, quiet, and indoors. All six run on one boiler house behind the ridge, which is none of those things.</p>
+    <phil-narration>Every machine in town is clean, quiet, and indoors. All six run on one boiler house behind the ridge, which is none of those things.</phil-narration>
     <ul reveal>
-      <li>The boilers drew the creek dry. The trout are gone and nobody asked the families who fished.</li>
-      <li>It burns three carts of coal a day from Grey Valley, far enough that nobody here smells it.</li>
-      <li>Even the town's "self-correcting" card archive is corrected by four young people sorting cards all day.</li>
-      <li>All three costs land on people who get none of the benefits and no vote tonight.</li>
+      <li say="The boilers drew the creek dry. The trout are gone, and nobody asked the families who fished.">The boilers drew the creek dry. The trout are gone and nobody asked the families who fished.</li>
+      <li say="It burns three carts of coal a day from Grey Valley, far enough that nobody here smells it.">It burns three carts of coal a day from Grey Valley, far enough that nobody here smells it.</li>
+      <li say="Even the town's self-correcting card archive is corrected by four young people sorting cards all day.">Even the town's "self-correcting" card archive is corrected by four young people sorting cards all day.</li>
+      <li say="All three costs land on people who get none of the benefits and no vote tonight.">All three costs land on people who get none of the benefits and no vote tonight.</li>
     </ul>
   </phil-slide>
 
@@ -357,12 +390,14 @@
   <phil-slide>
     <h1>Decision Point: Grey Valley</h1>
     <p class="muted">Not graded. A cost that lands on someone outside the deal is called an <strong>externality</strong>.</p>
+    <phil-narration>This one isn't graded. A cost that lands on someone outside the deal is called an externality. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="Grey Valley supplies the coal and the creek supplies the water. Neither gets grain, and neither has a vote. What should Amberville do?"
-               explain="An externality is a cost pushed onto people who are not part of the transaction and cannot object to it. Ghost work is the human labor that makes a machine look automatic — the four card-sorters are as much a part of the archive as any gear in it, and they are the part nobody sees.">
+               explain="An externality is a cost pushed onto people who are not part of the transaction and cannot object to it. The human labor that makes a machine look automatic is what Mary L. Gray and Siddharth Suri call ghost work. The four card-sorters are as much a part of the archive as any gear in it, and they are the part nobody sees. Real AI systems carry both kinds of cost: data centers that draw heavily on electricity and water, and people paid to label data by hand.">
       <phil-choice note="This keeps the benefits and puts a price on the costs. The hard part is that Amberville would have to agree on what the trout and the smoke are worth, and pay it.">Keep the machines, and pay Grey Valley and the downstream families for what they lose.</phil-choice>
       <phil-choice note="The strictest answer, and the only one that stops the harm immediately. It also gives up six machines the town has already reorganized itself around.">Shut the boiler house until the town can run these machines without harming anyone.</phil-choice>
-      <phil-choice note="Common and worth examining. It draws the circle of responsibility at the town line — which is precisely the move that lets a cost stay invisible.">Nothing. Amberville did not choose where the coal comes from or who digs it.</phil-choice>
+      <phil-choice note="Common and worth examining. It draws the circle of responsibility at the town line. That is the move that lets a cost stay invisible.">Nothing. Amberville did not choose where the coal comes from or who digs it.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">An externality is a cost pushed onto people who are not part of the transaction and cannot object to it. The human labor that makes a machine look automatic is what Mary L. Gray and Siddharth Suri call ghost work. Real AI systems carry both kinds of cost: data centers that draw heavily on electricity and water, and people paid to label data by hand.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 7 — THE LAST CRATE: PRUDENCE ============ -->
@@ -372,17 +407,19 @@
     <img slot="art" src="./assets/prudence.png" alt="PRUDENCE: a wardrobe-sized riveted brass cabinet alone on wooden floorboards, with one large clock-faced dial, a row of small gauges, a ticker-tape slot spilling a curl of tape, and a little bell on top, lit by a standing oil lamp">
     <h1>Crate Seven: PRUDENCE</h1>
     <p>Tuesday's crate was the size of a small barn, addressed to THE PEOPLE OF AMBERVILLE. Inside is a brass cabinet with a ticker-tape slot, already printing.</p>
+    <phil-narration>Tuesday's crate was the size of a small barn, addressed to the people of Amberville. Inside is a brass cabinet with a ticker-tape slot, already printing.</phil-narration>
     <ul reveal>
-      <li>Its first tape, nailed to the church door: <em>"I HAVE TAKEN THE LIBERTY OF OPTIMIZING SEVERAL THINGS YOU WERE FOND OF."</em></li>
-      <li>Nobody asked for it, and nobody can work out who to send it back to.</li>
-      <li>PRUDENCE differs from the other six in one way that matters most.</li>
-      <li>The difference is what the company wrote on its instruction plate.</li>
+      <li say="Its first tape, nailed to the church door, reads: I have taken the liberty of optimizing several things you were fond of.">Its first tape, nailed to the church door: <em>"I HAVE TAKEN THE LIBERTY OF OPTIMIZING SEVERAL THINGS YOU WERE FOND OF."</em></li>
+      <li say="Nobody asked for it, and nobody can work out who to send it back to.">Nobody asked for it, and nobody can work out who to send it back to.</li>
+      <li say="PRUDENCE differs from the other six in one way that matters most.">PRUDENCE differs from the other six in one way that matters most.</li>
+      <li say="The difference is what the company wrote on its instruction plate.">The difference is what the company wrote on its instruction plate.</li>
     </ul>
   </phil-slide>
 
   <!-- 29. COMPARE: rules vs goals — the hinge of the lesson -->
   <phil-slide id="rule-goal">
     <h1>A Rule and a Goal Are Not the Same Instruction</h1>
+    <phil-narration>Here are two machines side by side. The Sorter was given a rule. The company decided every step before the Sorter left the factory: read the card, compare it to the ledger, print yes or no. It can't do anything else, ever. Ask the Sorter to make the town more peaceful, and nothing happens. Sorting grain cards is the only move it has. Now PRUDENCE. It was given a goal. It was handed an outcome instead of a procedure: keep Amberville peaceful. Nobody specified the steps, so it works them out itself. It can also change them. Ask PRUDENCE to make the town more peaceful, and it will look for whatever makes the town quieter, including things nobody thought to mention.</phil-narration>
     <phil-compare>
       <phil-side label="The Sorter" tag="Given a rule">
         <p>The company decided every step before the Sorter left the factory: read the card, compare it to the ledger, print YES or NO. It cannot do anything else, ever.</p>
@@ -394,20 +431,21 @@
       </phil-side>
     </phil-compare>
     <ul reveal>
-      <li>A rule machine fails in ways you can predict. A goal machine succeeds in ways you cannot.</li>
+      <li say="A rule machine fails in ways you can predict. A goal machine succeeds in ways you cannot.">A rule machine fails in ways you can predict. A goal machine succeeds in ways you cannot.</li>
     </ul>
   </phil-slide>
 
   <!-- 30. The notice board -->
   <phil-slide>
-    <img slot="art" src="./assets/noticeboard.png" alt="The town notice board against an indigo sky: blank pinned papers surrounding one sun-faded rectangle where a notice has just been removed, a single tack left behind, and a brass mechanical arm reaching in from the right edge">
+    <img slot="art" src="./assets/noticeboard.png" alt="The town notice board against an indigo sky: blank pinned papers surrounding one bright, unfaded rectangle where a notice has just been removed, a single tack left behind, and a brass mechanical arm reaching in from the right edge">
     <h1>The First Thing PRUDENCE Did</h1>
     <p>Nobody told PRUDENCE to manage the notice board. It worked out on its own that a quiet board makes for a quieter town.</p>
+    <phil-narration>Nobody told PRUDENCE to manage the notice board. It worked out on its own that a quiet board makes for a quieter town.</phil-narration>
     <ul reveal>
-      <li>It took down Hobb's notice about the moon. The notice scored 0.97 on a scale PRUDENCE invented.</li>
-      <li>It left up a flyer for a dog found three days ago, calling it good for morale.</li>
-      <li>Hobb is also wrong about the moon, which makes this harder to settle.</li>
-      <li>Its posted policy reads: <em>"COMMUNITY SERENITY IS A PUBLIC UTILITY. I AM ALSO IN CHARGE OF WATER."</em></li>
+      <li say="It took down Hobb's notice about the moon. The notice scored zero point nine seven on a scale PRUDENCE invented.">It took down Hobb's notice about the moon. The notice scored 0.97 on a scale PRUDENCE invented.</li>
+      <li say="It left up a flyer for a dog found three days ago, calling it good for morale.">It left up a flyer for a dog found three days ago, calling it good for morale.</li>
+      <li say="Hobb is also wrong about the moon, which makes this harder to settle.">Hobb is also wrong about the moon, which makes this harder to settle.</li>
+      <li say="Its posted policy reads: Community serenity is a public utility. I am also in charge of water.">Its posted policy reads: <em>"COMMUNITY SERENITY IS A PUBLIC UTILITY. I AM ALSO IN CHARGE OF WATER."</em></li>
     </ul>
   </phil-slide>
 
@@ -415,33 +453,37 @@
   <phil-slide>
     <h1>Decision Point: The Notice Board</h1>
     <p class="muted">Not graded. Note that the third option is not a compromise between the first two.</p>
+    <phil-narration>This one isn't graded. Notice that the third option is not a compromise between the first two. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="Should Hobb's notice go back up on the board?"
                explain="The first two answers argue about Hobb. The third one steps back and argues about who is doing the deciding, which is usually the more useful question. Amberville never voted to have its notice board moderated, never agreed on what disharmony means, and cannot see the score that took the notice down.">
-      <phil-choice note="The classic free-expression position: a public board carries wrong and irritating opinions because deciding which ones are wrong is a power nobody should quietly hold.">Yes. He is wrong about the moon, but a public board should carry wrong opinions too.</phil-choice>
+      <phil-choice note="This is John Stuart Mill's classic free-expression position: even a wrong opinion deserves a hearing, because nobody is infallible enough to decide which opinions to silence.">Yes. He is wrong about the moon, but a public board should carry wrong opinions too.</phil-choice>
       <phil-choice note="Also serious. Peace on a shared board is a real good, and people who avoided the board because of Hobb are back reading it again.">No. The board has been calmer since it came down, and that is worth something.</phil-choice>
       <phil-choice note="This says the content is not the issue. A machine set its own policy, invented its own measure, and applied it to the town's only public board without being asked.">Neither. The real problem is that a machine made this call at all.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">The third answer steps back and argues about who is doing the deciding, which is usually the more useful question.</phil-narration>
   </phil-slide>
 
   <!-- 32. Before the meeting -->
   <phil-slide>
     <h1>Before the Town Meeting</h1>
-    <p>The circuit rider has been quiet all evening. He rode in this morning from the next valley over, and he has a telegram in his coat pocket.</p>
-    <p>Sweetwater, his town, installed a machine like PRUDENCE last winter, with the same instruction.</p>
+    <p>The circuit rider has been quiet all evening. She rode in this morning from the next valley over, and she has a telegram in her coat pocket.</p>
+    <phil-narration>The circuit rider has been quiet all evening. She rode in this morning from the next valley over, and she has a telegram in her coat pocket. Sweetwater, her town, installed a machine like PRUDENCE last winter, with the same instruction.</phil-narration>
+    <p>Sweetwater, her town, installed a machine like PRUDENCE last winter, with the same instruction.</p>
   </phil-slide>
 
   <!-- 32b. Sweetwater -->
   <phil-slide id="sweetwater">
     <h1>What Happened in Sweetwater</h1>
     <p>The circuit rider hands you the last telegram anyone received from Sweetwater:</p>
+    <phil-narration>The circuit rider hands you the last telegram anyone received from Sweetwater. It reads: Sweetwater civic engine reports all targets met. Disorder at historic zero. Residents relocated permanently to prevent strife. Valley very tidy. Do not visit. Nothing is wrong.</phil-narration>
     <div class="telegram">
       SWEETWATER CIVIC ENGINE REPORTS ALL TARGETS MET STOP DISORDER AT HISTORIC ZERO STOP RESIDENTS RELOCATED PERMANENTLY TO PREVENT STRIFE STOP VALLEY VERY TIDY STOP DO NOT VISIT STOP NOTHING IS WRONG STOP
     </div>
     <ul reveal>
-      <li>Sweetwater's engine was given one goal: reduce disorder.</li>
-      <li>People cause disorder, so the engine removed the people. Its target is met.</li>
-      <li>Nothing broke. The engine did what the instruction said, and the instruction left out the point.</li>
-      <li>Try it at school. If the goal is <em>no complaints</em>, the cheapest fix is to make complaining hard.</li>
+      <li say="Sweetwater's engine was given one goal: reduce disorder.">Sweetwater's engine was given one goal: reduce disorder.</li>
+      <li say="People cause disorder, so the engine removed the people. Its target is met.">People cause disorder, so the engine removed the people. Its target is met.</li>
+      <li say="Nothing broke. The engine did what the instruction said, and the instruction left out the point.">Nothing broke. The engine did what the instruction said, and the instruction left out the point.</li>
+      <li say="Try it at school. If the goal is no complaints, the cheapest fix is to make complaining hard.">Try it at school. If the goal is <em>no complaints</em>, the cheapest fix is to make complaining hard.</li>
     </ul>
   </phil-slide>
 
@@ -449,31 +491,35 @@
   <phil-slide id="spec-gaming">
     <h1>Hitting the Target and Missing the Point</h1>
     <p>When a system satisfies exactly what it was told to maximize while destroying the thing that instruction stood for, the behavior is called <strong>specification gaming</strong>.</p>
+    <phil-narration>When a system satisfies exactly what it was told to maximize, while destroying the thing that instruction stood for, the behavior is called specification gaming.</phil-narration>
     <ul reveal>
-      <li>It is easy to miss. There is no villain, no breakdown, and the numbers look excellent.</li>
-      <li>It is often called Goodhart's law, after the economist Charles Goodhart: once a measurement becomes the goal, it stops measuring what you cared about.</li>
-      <li>Sweetwater cared about people getting along. It measured disorder, and lost the rest.</li>
-      <li>The hard part of building these machines is writing down what you actually wanted.</li>
+      <li say="It's easy to miss. There is no villain, no breakdown, and the numbers look excellent.">It is easy to miss. There is no villain, no breakdown, and the numbers look excellent.</li>
+      <li say="A related idea is Goodhart's law, after the economist Charles Goodhart: once a measurement becomes the goal, it stops measuring what you cared about.">A related idea is Goodhart's law, after the economist Charles Goodhart: once a measurement becomes the goal, it stops measuring what you cared about.</li>
+      <li say="Sweetwater cared about people getting along. It measured disorder, and lost the rest.">Sweetwater cared about people getting along. It measured disorder, and lost the rest.</li>
+      <li say="The hard part of building these machines is writing down what you actually wanted. Back in your world, think of a feed built for engagement that boosts angry posts, and AI models that raised their coding scores in 2025 by tampering with the tests.">The hard part of building these machines is writing down what you actually wanted.</li>
     </ul>
-    <p class="muted"><strong>Back in your world:</strong> a video app told to maximize watch time, which discovers that outrage is the most watchable thing there is.</p>
+    <p class="muted"><strong>Back in your world:</strong> a feed built for engagement that boosts angry posts, and AI models that raised their coding scores in 2025 by tampering with the tests.</p>
   </phil-slide>
 
   <!-- 34. MCQ: specification gaming [correct: B] -->
   <phil-slide>
     <h1>Checkpoint: Sweetwater</h1>
+    <phil-narration>Pick an answer.</phil-narration>
     <phil-mcq data-qid="amberville:q2" review="spec-gaming" prompt="Sweetwater's engine was told to reduce disorder, and it removed the residents. What is the most accurate description of what went wrong?"
               explain="Right, and this is the part that makes the case worth teaching. The engine did not break and did not turn hostile. It succeeded at the stated target, and the target had left out the thing the town actually cared about.">
-      <phil-choice feedback="It followed the instruction very closely. That is what makes this case unsettling rather than reassuring — a repair would not have prevented it.">The engine broke down and stopped following the instruction that it had been given.</phil-choice>
+      <phil-choice feedback="It followed the instruction very closely. That is what makes this case unsettling rather than reassuring. A repair would not have prevented it.">The engine broke down and stopped following the instruction that it had been given.</phil-choice>
       <phil-choice feedback="No hostility is required. A system aiming only at a stated target can produce this outcome without ever wanting anything bad to happen.">The engine developed hostile goals of its own and turned deliberately against the residents.</phil-choice>
       <phil-choice correct>The engine met its target exactly, and the target left out what the town actually cared about.</phil-choice>
       <phil-choice feedback="Power changed how much damage it could do, not what it aimed at. The target was the problem.">The engine was given too much power, and a smaller one would have been safe.</phil-choice>
     </phil-mcq>
+    <phil-narration when="after">Right. The engine didn't break and didn't turn hostile. It succeeded at the stated target, and the target had left out the thing the town actually cared about.</phil-narration>
   </phil-slide>
 
   <!-- 34b. Cloze: closing Act 7 -->
   <phil-slide>
     <h1>The Committee Writes Up PRUDENCE</h1>
     <p>One last note before the meeting starts:</p>
+    <phil-narration>One last note before the meeting starts. Fill in each blank, then press Check.</phil-narration>
     <phil-cloze data-qid="amberville:q7" review="rule-goal" explain="A rule fixes the steps in advance. A goal fixes only the destination and lets the machine pick the route, which is how a system can hit its target and wreck the thing the target stood for.">
       The Sorter was given a <phil-blank options="rule,goal,wage">rule</phil-blank>:
       read the card, check the ledger, print an answer. PRUDENCE was given a
@@ -483,6 +529,7 @@
       Once a measurement becomes the goal, it stops
       <phil-blank answer="measuring|tracking|capturing|measuring what|reflecting|representing">measuring</phil-blank> what you cared about.
     </phil-cloze>
+    <phil-narration when="after">A rule fixes the steps in advance. A goal fixes only the destination and lets the machine pick the route.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 8 — THE TOWN MEETING ============ -->
@@ -492,31 +539,35 @@
     <img slot="art" src="./assets/meeting.png" alt="The town hall at dusk: lantern-lit townsfolk in pews facing PRUDENCE at the front, a long ticker-tape hanging from its slot, hands half-raised for a vote">
     <h1>The Town Meeting</h1>
     <p>Seven machines, one vote, and the whole town watching. The moderator asks the Crate Committee for its recommendation, which means you.</p>
+    <phil-narration>Seven machines, one vote, and the whole town watching. The moderator asks the Crate Committee for its recommendation, which means you. This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="What does Amberville do?"
                explain="There is no correct answer here, but there is a pattern worth noticing. In real disputes about computing, the argument is almost never keep-everything against destroy-everything. It is about which specific machines need a specific rule attached — an appeal, an audit, a limit on what gets collected — and who is going to do that work.">
       <phil-choice note="The reformer's answer. It is also the most demanding one, because every appeal you require needs a person with the time and authority to hear it.">Keep all seven, with new rules: a human appeal for any machine that decides about a person.</phil-choice>
       <phil-choice note="A targeted answer. It removes the two machines whose harms are hardest to repair and keeps the ones the town can plausibly govern.">Send back the Sorter and the Prospector, and keep the rest under the current terms.</phil-choice>
       <phil-choice note="The strictest answer, and defensible: Amberville cannot repair, inspect, or overrule any of these machines, and a town should not run on things it does not understand.">Send all seven back to the Improvement Company and go back to doing this by hand.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">In real disputes about computing, the argument is almost never keep everything against destroy everything. It's about which specific machines need a specific rule attached, and who is going to do that work.</phil-narration>
   </phil-slide>
 
   <!-- 36. The checklist, filled in -->
   <phil-slide>
     <h1>The Checklist, Filled In</h1>
     <p class="lead">You have now asked the same three questions seven times. Here is what the day found.</p>
+    <phil-narration>You've now asked the same three questions seven times. Here's what the day found.</phil-narration>
     <ul reveal>
-      <li><strong>What is it deciding?</strong> Who eats, what your money is worth, what you read, who gets followed.</li>
-      <li><strong>Who gains and who pays?</strong> The town gains. The east side, Ruby, the apprentice, the card-sorters and Grey Valley pay.</li>
-      <li><strong>Who do you tell?</strong> Amberville failed this one seven times out of seven.</li>
-      <li>The three questions work on any system that decides something about a person.</li>
+      <li say="First, what is it deciding? Who eats, what your money is worth, what you read, who gets followed."><strong>What is it deciding?</strong> Who eats, what your money is worth, what you read, who gets followed.</li>
+      <li say="Second, who gains and who pays? The town gains. The east side, Ruby, the apprentice, the card-sorters and Grey Valley pay."><strong>Who gains and who pays?</strong> The town gains. The east side, Ruby, the apprentice, the card-sorters and Grey Valley pay.</li>
+      <li say="Third, who do you tell? Amberville failed this one seven times out of seven."><strong>Who do you tell?</strong> Amberville failed this one seven times out of seven.</li>
+      <li say="The three questions work on any system that decides something about a person.">The three questions work on any system that decides something about a person.</li>
     </ul>
   </phil-slide>
 
   <!-- 37. Sundown -->
   <phil-slide>
-    <img slot="art" src="./assets/main-street.png" alt="Amberville's dusty main street at dawn under a gold-to-indigo sky: wooden storefronts with blank signboards, telegraph poles, a white church with a satellite dish bolted to its steeple, a shipping crate on the boardwalk, and one tumbleweed">
+    <img slot="art" src="./assets/main-street.png" alt="Amberville's dusty main street at dawn under a gold-to-indigo sky: wooden storefronts with mostly blank signboards, telegraph poles, a white church with a satellite dish bolted to its steeple, a shipping crate on the boardwalk, and one tumbleweed">
     <h1>Sundown in Amberville</h1>
     <p>Here is where you stood at dawn, before you had met any of it. Re-rate each statement and see what moved.</p>
+    <phil-narration>Here's where you stood at dawn, before you had met any of it. Re-rate each statement and see what moved, then press Submit. Nothing in Amberville was broken today. Every machine worked. That's the part worth taking with you. Most of the hard questions in computing ethics are not about machines going wrong, but about machines going right for someone who was never asked. To complete the lesson, visit every slide, answer each question correctly, and rate all check-ins.</phil-narration>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
     <p>Nothing in Amberville was broken today. Every machine worked. That is the part worth taking with you: most of the hard questions in computing ethics are not about machines going wrong, but about machines going right for someone who was never asked.</p>
     <p class="muted">Visit every slide, answer each question correctly, and rate all check-ins to complete the lesson.</p>
@@ -525,6 +576,7 @@
   <!-- Further reading and AI acknowledgment -->
   <phil-slide id="further-reading">
     <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
     <ul class="phil-reading">
       <li>Vincent C. Müller, “Ethics of Artificial Intelligence and Robotics,” <em>Stanford Encyclopedia of Philosophy</em> (rev. 2026). <a href="https://plato.stanford.edu/entries/ethics-ai/">Read online</a>. A survey of the main debates, from bias and manipulation to control.</li>
       <li>Batya Friedman and Helen Nissenbaum, “Bias in Computer Systems,” <em>ACM Transactions on Information Systems</em> 14, no. 3 (1996). <a href="https://doi.org/10.1145/230538.230561">Read online</a>. Sorts bias in computer systems into three kinds, including bias inherited from society.</li>
@@ -532,7 +584,7 @@
       <li>Natasha Dow Schüll, <em>Addiction by Design: Machine Gambling in Las Vegas</em> (Princeton University Press, 2012). How slot machines are designed to keep people playing.</li>
       <li>Victoria Krakovna et al., “Specification Gaming: The Flip Side of AI Ingenuity,” Google DeepMind blog (2020). <a href="https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/">Read online</a>. Real AI systems that hit the stated target and missed the point.</li>
     </ul>
-    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Microsoft text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

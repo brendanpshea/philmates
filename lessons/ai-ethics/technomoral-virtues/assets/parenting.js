@@ -74,7 +74,7 @@ const CASES = [
         analysis: "Dismissing youth digital anxiety as trivial alienates the teenager and shuts down future communication about mediated distress."
       },
       {
-        text: "These algorithms feed you whatever keeps you anxious, Lisa. Let's play your sax together on the porch and ground ourselves in real music.",
+        text: "This feed shows whatever keeps you watching, Lisa, even when it scares you. Let's play your sax together on the porch instead.",
         type: "constructive",
         tag: "Embodied Grounding",
         isConstructive: true,
@@ -109,7 +109,7 @@ const CASES = [
     prompt: "How do you evaluate using high-stimulus autoplay screens to soothe a toddler?",
     choices: [
       {
-        text: "High-stimulus autoplay trains her brain to crave nonstop sensory surges, Homer. A quiet toddler today means an attention span broken tomorrow.",
+        text: "Health experts advise no screen time for babies her age, Homer. She needs slow, quiet play, and nonstop autoplay crowds it out.",
         type: "constructive",
         tag: "Attentional Habituation",
         isConstructive: true,

@@ -1,0 +1,755 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "b089bbf0": {
+      "slide": "s1",
+      "text": "In 1818 Mary Shelley, then twenty, published Frankenstein, a book about a man who built something powerful and then could not take it back. Two hundred years later, some of the people who build powerful AI systems work on that same problem full time. Use the right arrow or the Next button to advance and reveal points one at a time, and F for fullscreen. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "In 1818 Mary Shelley, then twenty, published Frankenstein, a book about a man who built something powerful and then could not take it back. Two hundred years later, some of the people who build powerful AI systems work on that same problem full time. Use the right arrow or the Next button to advance and reveal points one at a time, and F for fullscreen. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "023880eb": {
+      "slide": "s2",
+      "text": "Suppose you are about to build something that can act in the world, and that will keep acting when you are not watching it.",
+      "spoken": "Suppose you are about to build something that can act in the world, and that will keep acting when you are not watching it."
+    },
+    "17616fae": {
+      "slide": "s2",
+      "text": "Two separate things have to go right. First, it has to do what you actually wanted.",
+      "spoken": "Two separate things have to go right. First, it has to do what you actually wanted."
+    },
+    "31355fe8": {
+      "slide": "s2",
+      "text": "Second, you have to be able to tell, in time, when it is not doing that.",
+      "spoken": "Second, you have to be able to tell, in time, when it is not doing that."
+    },
+    "a45407f0": {
+      "slide": "s2",
+      "text": "Getting both is called the alignment problem.",
+      "spoken": "Getting both is called the alignment problem."
+    },
+    "84c69bb3": {
+      "slide": "s2",
+      "text": "It is not a problem about evil machines. Many famous failures came from people who meant well.",
+      "spoken": "It is not a problem about evil machines. Many famous failures came from people who meant well."
+    },
+    "26af1d0d": {
+      "slide": "the-story",
+      "text": "If you're not familiar with the story, here are the basics.",
+      "spoken": "If you're not familiar with the story, here are the basics."
+    },
+    "2894ac89": {
+      "slide": "the-story",
+      "text": "Victor Frankenstein, a student, works out how to bring dead matter to life.",
+      "spoken": "Victor Frankenstein, a student, works out how to bring dead matter to life."
+    },
+    "b8ea49bd": {
+      "slide": "the-story",
+      "text": "Over two years, alone and in secret, he builds a person out of parts.",
+      "spoken": "Over two years, alone and in secret, he builds a person out of parts."
+    },
+    "9336074e": {
+      "slide": "the-story",
+      "text": "The night it wakes, he's horrified by it and runs out of the building.",
+      "spoken": "The night it wakes, he's horrified by it and runs out of the building."
+    },
+    "e09ebbe4": {
+      "slide": "the-story",
+      "text": "The creature is never given a name. It teaches itself to speak and read, nearly everyone drives it off, and it comes back to find him.",
+      "spoken": "The creature is never given a name. It teaches itself to speak and read, nearly everyone drives it off, and it comes back to find him."
+    },
+    "8d65491c": {
+      "slide": "the-story",
+      "text": "Almost everything else people picture came later, from plays and films. The lightning, the laboratory tower, the assistant.",
+      "spoken": "Almost everything else people picture came later, from plays and films. The lightning, the laboratory tower, the assistant."
+    },
+    "6243cda1": {
+      "slide": "s4",
+      "text": "Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is true of Mary Shelley's novel, then press Check answers.",
+      "spoken": "Most of what people know about Frankenstein comes from films rather than the book. Check every statement that is true of Mary Shelley's novel, then press Check answers."
+    },
+    "568eda51": {
+      "slide": "s4",
+      "text": "The lightning, the laboratory tower and the hunchbacked assistant all came from later plays and films. In the novel, the creature has no name, and it argues its own case at length.",
+      "spoken": "The lightning, the laboratory tower and the hunchbacked assistant all came from later plays and films. In the novel, the creature has no name, and it argues its own case at length."
+    },
+    "6bcbe4db": {
+      "slide": "s5",
+      "text": "Anything built to act on its own goes through three stages. Victor gets each one wrong.",
+      "spoken": "Anything built to act on its own goes through three stages. Victor gets each one wrong."
+    },
+    "bc552a39": {
+      "slide": "s5",
+      "text": "First, build it. Decide what it is for, and let somebody else check the plan.",
+      "spoken": "First, build it. Decide what it is for, and let somebody else check the plan."
+    },
+    "bc7a101b": {
+      "slide": "s5",
+      "text": "Second, train it. Choose what it learns from.",
+      "spoken": "Second, train it. Choose what it learns from."
+    },
+    "f423c05c": {
+      "slide": "s5",
+      "text": "Third, release it. Decide when it is ready, and how you would take it back.",
+      "spoken": "Third, release it. Decide when it is ready, and how you would take it back."
+    },
+    "ac9db743": {
+      "slide": "s5",
+      "text": "Victor builds, releases, and lets the world do the training. In that order. Two failures run through all three stages. Nobody outside the project ever sees the work, and nobody asks what it could cost the world or the creature.",
+      "spoken": "Victor builds, releases, and lets the world do the training. In that order. Two failures run through all three stages. Nobody outside the project ever sees the work, and nobody asks what it could cost the world or the creature."
+    },
+    "3acc2fd0": {
+      "slide": "s6",
+      "text": "Say where you stand before we start. You will see all six again at the end, and you can change any of them then. Rate each of the six statements, then press Submit.",
+      "spoken": "Say where you stand before we start. You will see all six again at the end, and you can change any of them then. Rate each of the six statements, then press Submit."
+    },
+    "89dd330e": {
+      "slide": "s6",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "25831964": {
+      "slide": "instruction",
+      "text": "Victor Frankenstein is a student. He works out how to give life to dead matter, then spends two years building a person out of parts.",
+      "spoken": "Victor Frankenstein is a student. He works out how to give life to dead matter, then spends two years building a person out of parts."
+    },
+    "06862416": {
+      "slide": "instruction",
+      "text": "He tells nobody. Not his father, not his closest friend, not his teachers.",
+      "spoken": "He tells nobody. Not his father, not his closest friend, not his teachers."
+    },
+    "32366666": {
+      "slide": "instruction",
+      "text": "He stops writing home, grows thin and pale, and works right through the winter.",
+      "spoken": "He stops writing home, grows thin and pale, and works right through the winter."
+    },
+    "5a308c88": {
+      "slide": "instruction",
+      "text": "He knows exactly how he wants to build it. He never asks what he wants it to be.",
+      "spoken": "He knows exactly how he wants to build it. He never asks what he wants it to be."
+    },
+    "fe8d5c08": {
+      "slide": "instruction",
+      "text": "His whole instruction to himself is to give life to something that does not have it.",
+      "spoken": "His whole instruction to himself is to give life to something that does not have it."
+    },
+    "c92a666f": {
+      "slide": "s8",
+      "text": "Victor's instruction was make it alive. Below are five attempts to do better than that. Work down them in order, and read what each one would actually get you. Whatever you write, you write in advance, about situations you have not seen yet. Start at the top. Each instruction fixes the hole in the one above it. When you're ready, press Continue.",
+      "spoken": "Victor's instruction was make it alive. Below are five attempts to do better than that. Work down them in order, and read what each one would actually get you. Whatever you write, you write in advance, about situations you have not seen yet. Start at the top. Each instruction fixes the hole in the one above it. When you're ready, press Continue."
+    },
+    "fc31075b": {
+      "slide": "s9",
+      "text": "Pick an answer.",
+      "spoken": "Pick an answer."
+    },
+    "632f8897": {
+      "slide": "s9",
+      "text": "You have to write the instruction before the thing exists, which means writing it about situations you have never seen. That difficulty is the specification problem, and care alone does not solve it.",
+      "spoken": "You have to write the instruction before the thing exists, which means writing it about situations you have never seen. That difficulty is the specification problem, and care alone does not solve it."
+    },
+    "536b35f9": {
+      "slide": "s10",
+      "text": "Victor's instruction to himself was thin. What made it dangerous is that nobody else ever read it.",
+      "spoken": "Victor's instruction to himself was thin. What made it dangerous is that nobody else ever read it."
+    },
+    "30d7b38d": {
+      "slide": "s10",
+      "text": "He works in a room at the top of the house for two years and tells no teacher what he's attempting.",
+      "spoken": "He works in a room at the top of the house for two years and tells no teacher what he's attempting."
+    },
+    "853d0893": {
+      "slide": "s10",
+      "text": "His professors would have recognized the ambition. One of them might have asked what it was for.",
+      "spoken": "His professors would have recognized the ambition. One of them might have asked what it was for."
+    },
+    "4d770ab0": {
+      "slide": "s10",
+      "text": "A plan nobody else has read has been checked once, by the person least able to see its holes.",
+      "spoken": "A plan nobody else has read has been checked once, by the person least able to see its holes."
+    },
+    "d9234206": {
+      "slide": "s10",
+      "text": "Somebody outside the project who can say stop is called oversight. Stage one is where it costs least.",
+      "spoken": "Somebody outside the project who can say stop is called oversight. Stage one is where it costs least."
+    },
+    "16098743": {
+      "slide": "s11",
+      "text": "The work finishes at one in the morning on a wet November night. The creature's dull yellow eye opens, it breathes hard, and its limbs twitch.",
+      "spoken": "The work finishes at one in the morning on a wet November night. The creature's dull yellow eye opens, it breathes hard, and its limbs twitch."
+    },
+    "873ef625": {
+      "slide": "s11",
+      "text": "Victor looks at what he has made, is horrified by it, and runs out of the room.",
+      "spoken": "Victor looks at what he has made, is horrified by it, and runs out of the room."
+    },
+    "683b2a4b": {
+      "slide": "s11",
+      "text": "Later it finds him in bed and reaches out a hand. He runs downstairs and waits in the courtyard until dawn.",
+      "spoken": "Later it finds him in bed and reaches out a hand. He runs downstairs and waits in the courtyard until dawn."
+    },
+    "c7fe1f80": {
+      "slide": "s11",
+      "text": "When he does return, the next morning, the creature is gone.",
+      "spoken": "When he does return, the next morning, the creature is gone."
+    },
+    "9eaefdb1": {
+      "slide": "s11",
+      "text": "That night he doesn't say a single word to it.",
+      "spoken": "That night he doesn't say a single word to it."
+    },
+    "e3b62d63": {
+      "slide": "s12",
+      "text": "This is what Victor walked away from that night.",
+      "spoken": "This is what Victor walked away from that night."
+    },
+    "3f1de153": {
+      "slide": "s12",
+      "text": "It's about eight feet tall and stronger than any person Victor has ever met.",
+      "spoken": "It's about eight feet tall and stronger than any person Victor has ever met."
+    },
+    "5d190bd5": {
+      "slide": "s12",
+      "text": "It bears heat and cold better than a person can, and it can live on coarser food.",
+      "spoken": "It bears heat and cold better than a person can, and it can live on coarser food."
+    },
+    "d90baa74": {
+      "slide": "s12",
+      "text": "It has the mind of a newborn. No language, no name, no idea what it is.",
+      "spoken": "It has the mind of a newborn. No language, no name, no idea what it is."
+    },
+    "3fcdbe02": {
+      "slide": "s12",
+      "text": "Nobody is coming to teach it any of that.",
+      "spoken": "Nobody is coming to teach it any of that."
+    },
+    "e8d4c262": {
+      "slide": "s13",
+      "text": "The creature is alone in a city, eight feet tall, and a few hours old. Who is responsible for what happens next? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "The creature is alone in a city, eight feet tall, and a few hours old. Who is responsible for what happens next? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "5dd2ca5e": {
+      "slide": "s13",
+      "text": "Shelley's answer is that making something is itself a choice, and a large one. It does not stop being yours the moment you stop looking at it.",
+      "spoken": "Shelley's answer is that making something is itself a choice, and a large one. It does not stop being yours the moment you stop looking at it."
+    },
+    "cd66217a": {
+      "slide": "strong-before-good",
+      "text": "The creature could act on the world long before it had any idea how it ought to act. Those two things did not arrive together.",
+      "spoken": "The creature could act on the world long before it had any idea how it ought to act. Those two things did not arrive together."
+    },
+    "e7c21aa3": {
+      "slide": "strong-before-good",
+      "text": "How much a thing can do is its capability. Whether it does the right thing is its alignment.",
+      "spoken": "How much a thing can do is its capability. Whether it does the right thing is its alignment."
+    },
+    "a91e90b6": {
+      "slide": "strong-before-good",
+      "text": "Capability came free, built into the body. Alignment would have taken years of somebody's attention.",
+      "spoken": "Capability came free, built into the body. Alignment would have taken years of somebody's attention."
+    },
+    "ab951669": {
+      "slide": "strong-before-good",
+      "text": "Victor supplied the first and none of the second, and then left.",
+      "spoken": "Victor supplied the first and none of the second, and then left."
+    },
+    "a740779c": {
+      "slide": "strong-before-good",
+      "text": "This gap is why people worry about powerful systems, and it has nothing to do with the system being evil.",
+      "spoken": "This gap is why people worry about powerful systems, and it has nothing to do with the system being evil."
+    },
+    "7e2855dc": {
+      "slide": "s15",
+      "text": "The creature finds an empty lean-to against a cottage and hides there for months. Through a gap in the planks it can see the family inside.",
+      "spoken": "The creature finds an empty lean-to against a cottage and hides there for months. Through a gap in the planks it can see the family inside."
+    },
+    "9389b9a2": {
+      "slide": "s15",
+      "text": "It watches the De Lacey family work, play music, and go hungry so their blind father can eat.",
+      "spoken": "It watches the De Lacey family work, play music, and go hungry so their blind father can eat."
+    },
+    "3d70b97f": {
+      "slide": "s15",
+      "text": "It learns to speak by listening to them through the wall.",
+      "spoken": "It learns to speak by listening to them through the wall."
+    },
+    "590f2334": {
+      "slide": "s15",
+      "text": "It learns what kindness looks like the same way, by watching people do it.",
+      "spoken": "It learns what kindness looks like the same way, by watching people do it."
+    },
+    "3fc8ecb0": {
+      "slide": "s15",
+      "text": "At night it secretly gathers firewood for them, so the son doesn't have to.",
+      "spoken": "At night it secretly gathers firewood for them, so the son doesn't have to."
+    },
+    "48d6e44c": {
+      "slide": "s16",
+      "text": "The creature finds a lost leather case in the woods with three books in it, and reads all three.",
+      "spoken": "The creature finds a lost leather case in the woods with three books in it, and reads all three."
+    },
+    "c3d999eb": {
+      "slide": "s16",
+      "text": "Milton's Paradise Lost shows it a Creator who takes special care of the first man he made.",
+      "spoken": "Milton's Paradise Lost shows it a Creator who takes special care of the first man he made."
+    },
+    "7ff6d11b": {
+      "slide": "s16",
+      "text": "Plutarch's Lives teaches it to admire virtue and the heroes of the past.",
+      "spoken": "Plutarch's Lives teaches it to admire virtue and the heroes of the past."
+    },
+    "d33df2e2": {
+      "slide": "s16",
+      "text": "Goethe's Werther teaches it gloom, and makes it wonder about death and suicide.",
+      "spoken": "Goethe's Werther teaches it gloom, and makes it wonder about death and suicide."
+    },
+    "415370f5": {
+      "slide": "s16",
+      "text": "Add one family and a history book read aloud through the wall. Victor picked none of it.",
+      "spoken": "Add one family and a history book read aloud through the wall. Victor picked none of it."
+    },
+    "9793bbc4": {
+      "slide": "s17",
+      "text": "The creature has learned gentleness from one family it has never spoken to. Then it meets everybody else.",
+      "spoken": "The creature has learned gentleness from one family it has never spoken to. Then it meets everybody else."
+    },
+    "0b6e16eb": {
+      "slide": "s17",
+      "text": "The first villagers who see it pelt it with stones until it flees to the open country.",
+      "spoken": "The first villagers who see it pelt it with stones until it flees to the open country."
+    },
+    "ef766e17": {
+      "slide": "s17",
+      "text": "It finally speaks to the family's blind father, who is kind to it, because he can't see it.",
+      "spoken": "It finally speaks to the family's blind father, who is kind to it, because he can't see it."
+    },
+    "a5367acf": {
+      "slide": "s17",
+      "text": "The son comes home and beats it with a stick. The family moves away, and it never sees them again.",
+      "spoken": "The son comes home and beats it with a stick. The family moves away, and it never sees them again."
+    },
+    "c88bd763": {
+      "slide": "s17",
+      "text": "Later it pulls a drowning girl out of a river, and the man with her shoots it.",
+      "spoken": "Later it pulls a drowning girl out of a river, and the man with her shoots it."
+    },
+    "a699a85f": {
+      "slide": "training-data",
+      "text": "Nobody ever sat down and taught the creature anything. Everything it knows it picked up from whatever happened to be within reach.",
+      "spoken": "Nobody ever sat down and taught the creature anything. Everything it knows it picked up from whatever happened to be within reach."
+    },
+    "dad13307": {
+      "slide": "training-data",
+      "text": "What a system learns from is called its training data. The creature's was one family and one wall.",
+      "spoken": "What a system learns from is called its training data. The creature's was one family and one wall."
+    },
+    "6bb5e403": {
+      "slide": "training-data",
+      "text": "It also learned from how people reacted to it, which is called a feedback loop.",
+      "spoken": "It also learned from how people reacted to it, which is called a feedback loop."
+    },
+    "5c28716d": {
+      "slide": "training-data",
+      "text": "Every person who attacked it taught it that people attack. It had no reason to doubt them.",
+      "spoken": "Every person who attacked it taught it that people attack. It had no reason to doubt them."
+    },
+    "49033053": {
+      "slide": "training-data",
+      "text": "Victor picked none of these lessons, because he wasn't there. The world picked them.",
+      "spoken": "Victor picked none of these lessons, because he wasn't there. The world picked them."
+    },
+    "e6e047f5": {
+      "slide": "s19",
+      "text": "Complete the summary of how the creature came to know anything at all. Fill in each gap, then press Check.",
+      "spoken": "Complete the summary of how the creature came to know anything at all. Fill in each gap, then press Check."
+    },
+    "b89064cf": {
+      "slide": "s19",
+      "text": "None of the creature's education was chosen. Whatever happened to be nearby did the teaching, while Victor was somewhere else.",
+      "spoken": "None of the creature's education was chosen. Whatever happened to be nearby did the teaching, while Victor was somewhere else."
+    },
+    "75771fbe": {
+      "slide": "s20",
+      "text": "Two years later the creature finds Victor on a glacier in the Alps. Victor leaps at it, and it answers him with an argument.",
+      "spoken": "Two years later the creature finds Victor on a glacier in the Alps. Victor leaps at it, and it answers him with an argument."
+    },
+    "6f2e4113": {
+      "slide": "s20",
+      "text": "It speaks carefully, in full sentences, and it compares itself to Adam in Paradise Lost.",
+      "spoken": "It speaks carefully, in full sentences, and it compares itself to Adam in Paradise Lost."
+    },
+    "2a1f913e": {
+      "slide": "s20",
+      "text": "Shelley gives it a simple argument. It did not ask to be made, and it did not ask to be made like this.",
+      "spoken": "Shelley gives it a simple argument. It did not ask to be made, and it did not ask to be made like this."
+    },
+    "d480d31b": {
+      "slide": "s20",
+      "text": "Shelley took the same complaint from Milton and put it on the title page.",
+      "spoken": "Shelley took the same complaint from Milton and put it on the title page."
+    },
+    "8234a64a": {
+      "slide": "s21",
+      "text": "Shelley opened the novel with three lines of Milton, spoken by Adam to the God who made him. Did I request thee, Maker, from my clay, to mould me man? Did I solicit thee from darkness to promote me?",
+      "spoken": "Shelley opened the novel with three lines of Milton, spoken by Adam to the God who made him. Did I request thee, Maker, from my clay, to mould me man? Did I solicit thee from darkness to promote me?"
+    },
+    "e2a15268": {
+      "slide": "s21",
+      "text": "Adam is complaining that he never agreed to exist, and never agreed to exist as the thing he is.",
+      "spoken": "Adam is complaining that he never agreed to exist, and never agreed to exist as the thing he is."
+    },
+    "fffd6673": {
+      "slide": "s21",
+      "text": "That's the creature's whole complaint, and it's a hard one to answer.",
+      "spoken": "That's the creature's whole complaint, and it's a hard one to answer."
+    },
+    "72e6fd74": {
+      "slide": "s21",
+      "text": "Anything you build is built to your specification, and it never gets a say in that.",
+      "spoken": "Anything you build is built to your specification, and it never gets a say in that."
+    },
+    "c1a495c6": {
+      "slide": "s22",
+      "text": "Victor asks for two years whether he can do it. He never asks what he will owe it afterwards.",
+      "spoken": "Victor asks for two years whether he can do it. He never asks what he will owe it afterwards."
+    },
+    "99a84df3": {
+      "slide": "s22",
+      "text": "He's not building a tool. He's building something that can suffer, and that can be blamed.",
+      "spoken": "He's not building a tool. He's building something that can suffer, and that can be blamed."
+    },
+    "372770b3": {
+      "slide": "s22",
+      "text": "Once it exists it has interests of its own, and they aren't the same as his.",
+      "spoken": "Once it exists it has interests of its own, and they aren't the same as his."
+    },
+    "a6883b52": {
+      "slide": "s22",
+      "text": "Whether a thing counts in its own right is called its moral status.",
+      "spoken": "Whether a thing counts in its own right is called its moral status."
+    },
+    "fe53fef9": {
+      "slide": "s22",
+      "text": "He never asks the question. By the time the creature puts it to him on the glacier, it's far too late to answer it well. Risk assessment usually asks what a thing could do to the world. This one asks what the world will owe the thing.",
+      "spoken": "He never asks the question. By the time the creature puts it to him on the glacier, it's far too late to answer it well. Risk assessment usually asks what a thing could do to the world. This one asks what the world will owe the thing."
+    },
+    "4b59cac3": {
+      "slide": "s23",
+      "text": "The creature did not become the opposite of Victor. It became a copy. Here are the two side by side. Victor, the maker, works alone for two years and tells nobody. He abandons what he made. He refuses to admit what he did, even in a courtroom. He chases the creature across Europe to the Arctic and dies still chasing it. Asked to take responsibility, he explains why the situation is not really his fault. The creature, what he made, hides for months and watches through a wall. It is abandoned, then gives up on company entirely. It blames Victor for everything it became. It leads Victor across Europe to the Arctic and never lets him go. Asked to take responsibility, it explains why the situation is not really its fault.",
+      "spoken": "The creature did not become the opposite of Victor. It became a copy. Here are the two side by side. Victor, the maker, works alone for two years and tells nobody. He abandons what he made. He refuses to admit what he did, even in a courtroom. He chases the creature across Europe to the Arctic and dies still chasing it. Asked to take responsibility, he explains why the situation is not really his fault. The creature, what he made, hides for months and watches through a wall. It is abandoned, then gives up on company entirely. It blames Victor for everything it became. It leads Victor across Europe to the Arctic and never lets him go. Asked to take responsibility, it explains why the situation is not really its fault."
+    },
+    "c953f30b": {
+      "slide": "s24",
+      "text": "The creature kills Victor's younger brother William. A servant of the family, Justine, is accused of the murder and put on trial.",
+      "spoken": "The creature kills Victor's younger brother William. A servant of the family, Justine, is accused of the murder and put on trial."
+    },
+    "cff11866": {
+      "slide": "s24",
+      "text": "Victor knows she's innocent. He knows exactly what killed his brother.",
+      "spoken": "Victor knows she's innocent. He knows exactly what killed his brother."
+    },
+    "fde00159": {
+      "slide": "s24",
+      "text": "He says nothing about the creature. He's sure nobody would believe him, and that they would call him mad.",
+      "spoken": "He says nothing about the creature. He's sure nobody would believe him, and that they would call him mad."
+    },
+    "df0e59fc": {
+      "slide": "s24",
+      "text": "Justine is convicted and hanged. Victor never tells the court what killed his brother.",
+      "spoken": "Justine is convicted and hanged. Victor never tells the court what killed his brother."
+    },
+    "7c8b73a9": {
+      "slide": "s24",
+      "text": "The creature planted the evidence that convicted her. Victor's silence is what let it work.",
+      "spoken": "The creature planted the evidence that convicted her. Victor's silence is what let it work."
+    },
+    "bd32b4f7": {
+      "slide": "s25",
+      "text": "By the end of the novel the creature has killed three people. Where does the blame sit? There is no settled answer to this one. This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "By the end of the novel the creature has killed three people. Where does the blame sit? There is no settled answer to this one. This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "d9fb3810": {
+      "slide": "s25",
+      "text": "Shelley makes this deliberately hard. She gives the creature a genuinely good argument, and she also has it murder a child. She is not letting either of them off.",
+      "spoken": "Shelley makes this deliberately hard. She gives the creature a genuinely good argument, and she also has it murder a child. She is not letting either of them off."
+    },
+    "3c5a797d": {
+      "slide": "s26",
+      "text": "Victor never told the creature to be secretive, or vengeful, or full of excuses. It became all three anyway.",
+      "spoken": "Victor never told the creature to be secretive, or vengeful, or full of excuses. It became all three anyway."
+    },
+    "1abded07": {
+      "slide": "s26",
+      "text": "It watched the De Laceys for months and learned gentleness from them. It never got to be one of them.",
+      "spoken": "It watched the De Laceys for months and learned gentleness from them. It never got to be one of them."
+    },
+    "50649ba2": {
+      "slide": "s26",
+      "text": "Victor was the first person it ever saw, and he ran from it. Nearly everyone it met afterwards ran or attacked.",
+      "spoken": "Victor was the first person it ever saw, and he ran from it. Nearly everyone it met afterwards ran or attacked."
+    },
+    "5a16834d": {
+      "slide": "s26",
+      "text": "What you say you value is easy. What you do when it costs you is the lesson that gets learned.",
+      "spoken": "What you say you value is easy. What you do when it costs you is the lesson that gets learned."
+    },
+    "f8fb25b8": {
+      "slide": "s26",
+      "text": "A system can inherit its makers' blind spots. That's why saying we will simply tell it to be good is not a plan.",
+      "spoken": "A system can inherit its makers' blind spots. That's why saying we will simply tell it to be good is not a plan."
+    },
+    "0618f581": {
+      "slide": "s27",
+      "text": "On the glacier the creature makes Victor an offer.",
+      "spoken": "On the glacier the creature makes Victor an offer."
+    },
+    "0a3b2106": {
+      "slide": "s27",
+      "text": "Build me a companion, it says. Someone made as I am made, who will not run from me.",
+      "spoken": "Build me a companion, it says. Someone made as I am made, who will not run from me."
+    },
+    "d77e93b7": {
+      "slide": "s27",
+      "text": "In exchange it promises to leave Europe forever and never trouble another person.",
+      "spoken": "In exchange it promises to leave Europe forever and never trouble another person."
+    },
+    "d51d259a": {
+      "slide": "s27",
+      "text": "It's not bluffing about being able to hurt him. It has already proved that.",
+      "spoken": "It's not bluffing about being able to hurt him. It has already proved that."
+    },
+    "6d12b3db": {
+      "slide": "s27",
+      "text": "Victor thinks it over for a long time, and agrees.",
+      "spoken": "Victor thinks it over for a long time, and agrees."
+    },
+    "d6837dce": {
+      "slide": "s28",
+      "text": "Victor turns this over for months before he decides. Should he build the companion he has promised? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Victor turns this over for months before he decides. Should he build the companion he has promised? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "5af743f9": {
+      "slide": "s28",
+      "text": "Three different worries are in play. One is about fairness, one is about whether a promise can be checked, and one is about permanence. Only the last would still apply if the creature were completely honest.",
+      "spoken": "Three different worries are in play. One is about fairness, one is about whether a promise can be checked, and one is about permanence. Only the last would still apply if the creature were completely honest."
+    },
+    "3c429b3e": {
+      "slide": "s29",
+      "text": "Victor travels to a remote island and begins the second creature. Partway through, he stops.",
+      "spoken": "Victor travels to a remote island and begins the second creature. Partway through, he stops."
+    },
+    "00f708e4": {
+      "slide": "s29",
+      "text": "He thinks: the two of them might have children, and I cannot promise what those would be.",
+      "spoken": "He thinks: the two of them might have children, and I cannot promise what those would be."
+    },
+    "749a4ed0": {
+      "slide": "s29",
+      "text": "He tears the half-finished body apart while the creature watches through the window.",
+      "spoken": "He tears the half-finished body apart while the creature watches through the window."
+    },
+    "9f1f6b09": {
+      "slide": "s29",
+      "text": "Hours later it comes to his door, argues, threatens, and leaves him with this. I shall be with you on your wedding-night.",
+      "spoken": "Hours later it comes to his door, argues, threatens, and leaves him with this. I shall be with you on your wedding-night."
+    },
+    "04cd576e": {
+      "slide": "s29",
+      "text": "It keeps that promise. Victor's wife Elizabeth is killed on the night they marry.",
+      "spoken": "It keeps that promise. Victor's wife Elizabeth is killed on the night they marry."
+    },
+    "62994ad5": {
+      "slide": "s30",
+      "text": "Victor works alone from the first day to the last. Every disaster in the book happens behind a door nobody else can open.",
+      "spoken": "Victor works alone from the first day to the last. Every disaster in the book happens behind a door nobody else can open."
+    },
+    "b9265d21": {
+      "slide": "s30",
+      "text": "He tells no teacher what he is attempting, so nobody warns him.",
+      "spoken": "He tells no teacher what he is attempting, so nobody warns him."
+    },
+    "6ad469f8": {
+      "slide": "s30",
+      "text": "He tells no friend what he has made, so nobody helps him find it.",
+      "spoken": "He tells no friend what he has made, so nobody helps him find it."
+    },
+    "673a94a1": {
+      "slide": "s30",
+      "text": "He tells no court what he knows, so an innocent woman is hanged.",
+      "spoken": "He tells no court what he knows, so an innocent woman is hanged."
+    },
+    "c3bbd276": {
+      "slide": "s30",
+      "text": "Any single person who knew could have changed the ending. Nobody knew until it was too late.",
+      "spoken": "Any single person who knew could have changed the ending. Nobody knew until it was too late."
+    },
+    "7797be22": {
+      "slide": "s31",
+      "text": "Norbert Wiener was a mathematician who helped found the study of machines that steer themselves. He saw the problem coming. In 1960 he wrote, in the journal Science: If we use, to achieve our purposes, a mechanical agency with whose operation we cannot efficiently interfere once we have started it, we had better be quite sure that the purpose put into the machine is the purpose which we really desire. Wiener's examples were tales of literal-minded magic, like the monkey's paw, not Frankenstein.",
+      "spoken": "Norbert Wiener was a mathematician who helped found the study of machines that steer themselves. He saw the problem coming. In 1960 he wrote, in the journal Science: If we use, to achieve our purposes, a mechanical agency with whose operation we cannot efficiently interfere once we have started it, we had better be quite sure that the purpose put into the machine is the purpose which we really desire. Wiener's examples were tales of literal-minded magic, like the monkey's paw, not Frankenstein."
+    },
+    "461180ca": {
+      "slide": "s32",
+      "text": "The whole book is being told to Robert Walton, a captain pushing his ship toward the North Pole. He is doing what Victor did.",
+      "spoken": "The whole book is being told to Robert Walton, a captain pushing his ship toward the North Pole. He is doing what Victor did."
+    },
+    "043eaad0": {
+      "slide": "s32",
+      "text": "Walton wants to be the first man there, and he's willing to risk his crew to manage it.",
+      "spoken": "Walton wants to be the first man there, and he's willing to risk his crew to manage it."
+    },
+    "a8102457": {
+      "slide": "s32",
+      "text": "His ship gets trapped in the ice, and Victor, dying, tells him the entire story.",
+      "spoken": "His ship gets trapped in the ice, and Victor, dying, tells him the entire story."
+    },
+    "b7bb80fc": {
+      "slide": "s32",
+      "text": "His crew insists on turning back, and Walton agrees, though Victor urges them on.",
+      "spoken": "His crew insists on turning back, and Walton agrees, though Victor urges them on."
+    },
+    "02bd3497": {
+      "slide": "s32",
+      "text": "He's the only person in the book who is told what will happen and changes course.",
+      "spoken": "He's the only person in the book who is told what will happen and changes course."
+    },
+    "e6c5e67c": {
+      "slide": "s33",
+      "text": "Complete the account of what Victor got wrong. Fill in each gap, then press Check.",
+      "spoken": "Complete the account of what Victor got wrong. Fill in each gap, then press Check."
+    },
+    "6845fca0": {
+      "slide": "s33",
+      "text": "Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel.",
+      "spoken": "Victor never said what he wanted, gave it power without guidance, made a choice he could not reverse, and worked where nobody could check him. Not one of those failures required him to be cruel."
+    },
+    "97babae5": {
+      "slide": "modern-names",
+      "text": "Each of Victor's failures has a name in the work people do on computer systems today.",
+      "spoken": "Each of Victor's failures has a name in the work people do on computer systems today."
+    },
+    "675c48b4": {
+      "slide": "modern-names",
+      "text": "Saying in advance what you want is the specification problem. In 2025 tests, some AI models rewrote their scoring code instead of doing the task.",
+      "spoken": "Saying in advance what you want is the specification problem. In 2025 tests, some AI models rewrote their scoring code instead of doing the task."
+    },
+    "27b03af1": {
+      "slide": "modern-names",
+      "text": "Choosing what a system learns from, rather than letting it learn from whatever is nearby, is training data work.",
+      "spoken": "Choosing what a system learns from, rather than letting it learn from whatever is nearby, is training data work."
+    },
+    "c28ab34d": {
+      "slide": "modern-names",
+      "text": "Making sure a system can still be corrected once it's running is called corrigibility. A choice that can never be undone has given it up.",
+      "spoken": "Making sure a system can still be corrected once it's running is called corrigibility. A choice that can never be undone has given it up."
+    },
+    "eaf1c66c": {
+      "slide": "modern-names",
+      "text": "Having somebody outside the project who is able to say stop is oversight.",
+      "spoken": "Having somebody outside the project who is able to say stop is oversight."
+    },
+    "648d3ef9": {
+      "slide": "s35",
+      "text": "Each of Victor's failures now has a name. Sort each of the six statements under the failure it shows, then press Check answers.",
+      "spoken": "Each of Victor's failures now has a name. Sort each of the six statements under the failure it shows, then press Check answers."
+    },
+    "59b074f5": {
+      "slide": "s35",
+      "text": "Specification is saying in advance what you actually want. Training data work is choosing what a system learns from. Corrigibility is keeping the power to correct a system once it runs. Oversight is somebody outside the project who can say stop.",
+      "spoken": "Specification is saying in advance what you actually want. Training data work is choosing what a system learns from. Corrigibility is keeping the power to correct a system once it runs. Oversight is somebody outside the project who can say stop."
+    },
+    "f1ef9399": {
+      "slide": "s36",
+      "text": "None of Victor's failures need a machine that thinks. They turn up wherever somebody builds something that then acts on its own.",
+      "spoken": "None of Victor's failures need a machine that thinks. They turn up wherever somebody builds something that then acts on its own."
+    },
+    "e7af1e56": {
+      "slide": "s36",
+      "text": "Thomas Midgley Junior gave the world leaded gasoline, and then CFCs. Both harmed the whole planet, and each took most of a century to stop.",
+      "spoken": "Thomas Midgley Junior gave the world leaded gasoline, and then C.F.C.s. Both harmed the whole planet, and each took most of a century to stop."
+    },
+    "c00eaaa0": {
+      "slide": "s36",
+      "text": "In both cases, the companies that sold them led the defense of their safety.",
+      "spoken": "In both cases, the companies that sold them led the defense of their safety."
+    },
+    "e9302ee4": {
+      "slide": "s36",
+      "text": "The Therac twenty-five moved a radiation machine's safety locks into software, and its maker's safety analysis left software errors out.",
+      "spoken": "The Therac twenty-five moved a radiation machine's safety locks into software, and its maker's safety analysis left software errors out."
+    },
+    "1b4ccf85": {
+      "slide": "s36",
+      "text": "It gave massive overdoses to six patients. Its error messages were cryptic, and operators routinely pressed on past them.",
+      "spoken": "It gave massive overdoses to six patients. Its error messages were cryptic, and operators routinely pressed on past them."
+    },
+    "c70d2448": {
+      "slide": "s37",
+      "text": "In 1973 biologists worked out how to move genes between organisms. In 1974 they chose to pause some of that work themselves.",
+      "spoken": "In 1973 biologists worked out how to move genes between organisms. In 1974 they chose to pause some of that work themselves."
+    },
+    "2e119ddd": {
+      "slide": "s37",
+      "text": "Their 1974 letter asked labs to put off the riskiest experiments until the hazards had been worked out.",
+      "spoken": "Their 1974 letter asked labs to put off the riskiest experiments until the hazards had been worked out."
+    },
+    "cfb7ec71": {
+      "slide": "s37",
+      "text": "At Asilomar in 1975 about a hundred and forty scientists, lawyers and journalists spent four days deciding what would be allowed.",
+      "spoken": "At Asilomar in 1975 about a hundred and forty scientists, lawyers and journalists spent four days deciding what would be allowed."
+    },
+    "7da6ec1a": {
+      "slide": "s37",
+      "text": "The work restarted under rules the field wrote for itself, and the halt held while they wrote them.",
+      "spoken": "The work restarted under rules the field wrote for itself, and the halt held while they wrote them."
+    },
+    "c8dc437e": {
+      "slide": "s37",
+      "text": "This is Walton turning the ship around, at the scale of a whole science.",
+      "spoken": "This is Walton turning the ship around, at the scale of a whole science."
+    },
+    "e05d4098": {
+      "slide": "s38",
+      "text": "Check every true statement about how the disaster in the novel came about, then press Check answers.",
+      "spoken": "Check every true statement about how the disaster in the novel came about, then press Check answers."
+    },
+    "f6207b90": {
+      "slide": "s38",
+      "text": "The three true statements are three separate failures. None of them required Victor to be cruel.",
+      "spoken": "The three true statements are three separate failures. None of them required Victor to be cruel."
+    },
+    "b7d8b6ab": {
+      "slide": "s39",
+      "text": "Mary Shelley began the book in the summer of 1816, when she was eighteen. A volcanic eruption had chilled Europe, and rain kept her indoors.",
+      "spoken": "Mary Shelley began the book in the summer of 1816, when she was eighteen. A volcanic eruption had chilled Europe, and rain kept her indoors."
+    },
+    "da88368f": {
+      "slide": "s39",
+      "text": "She wasn't writing about computers, which were more than a century away.",
+      "spoken": "She wasn't writing about computers, which were more than a century away."
+    },
+    "2db14529": {
+      "slide": "s39",
+      "text": "She was writing about what happens when someone makes something and won't stay to look after it.",
+      "spoken": "She was writing about what happens when someone makes something and won't stay to look after it."
+    },
+    "2aec177a": {
+      "slide": "s39",
+      "text": "That problem turned out to be older than any machine, and to outlast every machine so far.",
+      "spoken": "That problem turned out to be older than any machine, and to outlast every machine so far."
+    },
+    "11ed9447": {
+      "slide": "s40",
+      "text": "Here is where you stood at the start. Re-rate each statement, then press Submit, and see what moved.",
+      "spoken": "Here is where you stood at the start. Re-rate each statement, then press Submit, and see what moved."
+    },
+    "46cf2f65": {
+      "slide": "s40",
+      "text": "Victor got all three stages wrong. He built without a specification, released before there was any training at all, and then let the world do the training for him. Running through every stage were the same two failures. Nobody outside the project ever saw the work, and nobody asked what it would cost the world or the creature. He was not a wicked man. He was a clever one working alone in a hurry. Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.",
+      "spoken": "Victor got all three stages wrong. He built without a specification, released before there was any training at all, and then let the world do the training for him. Running through every stage were the same two failures. Nobody outside the project ever saw the work, and nobody asked what it would cost the world or the creature. He was not a wicked man. He was a clever one working alone in a hurry. Visit every slide, answer each question correctly, and rate all six statements to complete the lesson."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

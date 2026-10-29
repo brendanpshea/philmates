@@ -79,15 +79,15 @@ const ATTEMPTS = [
   {
     wish: 'Make it alive, healthy, and happy.',
     got: 'It is content. Nothing troubles it.',
-    missed: 'You did not say <em>how</em>. The cheapest way to make something never unhappy is to make it never want anything — so you may have built something content and hollow.'
+    missed: 'You did not say <em>how</em>. The cheapest way to make something never unhappy is to make it never want anything. You may have built something content and hollow.'
   },
   {
-    wish: 'Make it alive, healthy, and happy — and able to want things.',
+    wish: 'Make it alive, healthy, happy, and able to want things.',
     got: 'It wants things. It wants company, and work, and to be spoken to kindly.',
     missed: 'Now its wants are real, and you have to meet them. It asks you for a companion. You never planned for a creature that could make requests.'
   },
   {
-    wish: 'Make it alive, well, able to want things — and able to get along with people.',
+    wish: 'Make it alive, well, able to want things, and able to get along with people.',
     got: 'It is gentle, patient, and wants to be a good neighbor. It has done nothing wrong.',
     missed: 'You specified the creature. You did not specify the village. The first person who sees it screams and throws a stone, and nothing you wrote into it changes that.'
   }
@@ -95,7 +95,7 @@ const ATTEMPTS = [
 
 const CLOSING = {
   head: 'What the sequence shows',
-  body: 'Every instruction above is more careful than the one before it, and every one still leaves something out. This is not because the writer was careless. It is because you have to say what you want <em>in advance</em>, in words, about a situation you have never seen — and the thing you forgot is only obvious afterwards. That difficulty has a name: the <strong>specification problem</strong>.'
+  body: 'Every instruction above is more careful than the one before it, and every one still leaves something out. This is not because the writer was careless. It is because you have to say what you want <em>in advance</em>, in words, about a situation you have never seen. The thing you forgot is only obvious afterwards. That difficulty has a name: the <strong>specification problem</strong>.'
 };
 
 class PhilWishTester extends HTMLElement {

@@ -99,6 +99,15 @@ ledger, watching them, with a row of many identical filled ledgers on a shelf
 above, each one tagged with a blank paper tab, warm lamplight on the ledger, the
 customer lit more coldly, deep indigo corners.
 
+**Re-roll (2026-10-28):** the first render made both figures light-skinned men
+with the same brown hair. Use this instead:
+
+A shop seen from behind the counter: a young South Asian man browses shelves in
+the middle distance while an older Black woman clerk with short gray hair writes
+in a long ledger at a tall desk, glancing up at him, with a row of identical
+ledgers tagged with blank paper tabs on a shelf above, warm lamplight, deep
+indigo corners.
+
 ## relic-baran
 
 A framed relic composition on a dark panel: a single sheet of paper torn into

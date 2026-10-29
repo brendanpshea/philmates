@@ -39,8 +39,9 @@ Shared style suffix for every prompt:
 
 Victor, the creature, and Walton are **invented characters**, so portraits are
 fine (same rule that allows Van Helsing in the bioethics set). Mary Shelley and
-Norbert Wiener are **real people** and must not be drawn — they get idea-emblem
-relic cards instead, per `AUTHORING.md`.
+Norbert Wiener are **real people** and must not be drawn. They get thinker cards
+with idea scenes (`idea-shelley`, `idea-wiener`) instead, per `AUTHORING.md`;
+the `relic-*` prompts below are retired.
 
 Keep the creature's face mostly shadowed or turned in every panel. Shelley never
 describes it in full daylight, students should be picturing a person rather than
@@ -132,3 +133,29 @@ A single tall mirror in a plain wooden frame standing on bare floorboards,
 reflecting a tall ragged silhouette back at a smaller man in a travelling coat
 who stands before it, both faces turned away from the viewer, cold empty room,
 one candle on the floor between them.
+
+---
+
+## Re-rolls needed (standards review, 2026-10-28)
+
+Use the shared style suffix above with each.
+
+- **creature-wakes** (required): the creature's face is lit, frontal and
+  skull-like, which makes it a movie monster on the slide that follows "not a
+  mindless brute." Re-roll: *An attic laboratory at night: a very tall gaunt
+  figure sits upright on a workbench with its whole face turned away from the
+  viewer into deep shadow, while in the foreground a young white man with brown
+  hair, in shirtsleeves, stumbles backward past a toppling stool and a falling
+  candle.*
+- **village-rejection** (required): every villager is a pale young or
+  middle-aged man. Re-roll: *Dusk at the edge of a snowy stone village: a mixed
+  crowd of villagers, men and women, young and old, with a range of skin tones,
+  raise sticks and two burning torches as they drive a tall hooded figure, arms
+  over its shadowed face, back toward dark pine trees.*
+- **idea-wiener** (optional): the control lever is still attached and sparking,
+  so "can't be stopped" doesn't read. Re-roll: *A brass clockwork machine
+  running at full speed, its control lever snapped clean off and lying on the
+  floor below an empty switch socket, a wooden bucket overflowing beside it.*
+- **victor-workshop** (optional): a small paper on the back wall shows a skull
+  over lines of scribble that read as text. Re-roll with the same prompt plus
+  *bare plaster wall, no papers or posters.*

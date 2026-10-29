@@ -474,7 +474,9 @@ class PhilWhere extends HTMLElement {
     this.append(el('p', 'ms-prompt', this.getAttribute('prompt') || 'Where is the understanding?'));
     const main = el('div', 'wh-main');
     if (this.data.image) {
-      const img = el('img'); img.src = this.data.image; img.alt = this.data.alt || '';
+      const img = el('img');
+      img.src = this.data.image;
+      img.alt = this.data.alt || '';
       main.append(img);
     }
     const right = el('div');

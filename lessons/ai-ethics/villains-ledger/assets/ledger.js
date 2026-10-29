@@ -288,7 +288,7 @@ class PhilCoinlab extends HTMLElement {
     }
 
     const power = s.list === 'all'
-      ? '<strong class="is-no">Very high.</strong> Strangers agree on the list through a costly lottery.'
+      ? '<strong class="is-no">Very high with proof of work.</strong> Strangers agree on the list through a costly lottery. Coins that use another method need far less.'
       : '<strong class="is-yes">Low.</strong> One keeper just updates its own list.';
     const price = s.back === 'gov' ? '<strong class="is-yes">Fairly steady.</strong> A government works to keep it that way.'
       : s.back === 'firm' ? '<strong class="is-mid">Steady, if the company really holds the dollars.</strong>'

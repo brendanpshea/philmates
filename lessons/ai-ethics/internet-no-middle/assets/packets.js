@@ -327,7 +327,7 @@ class PhilPacketRouter extends HTMLElement {
             `${this.down.size > 1 ? 's' : ''} and the packets went around. ` +
             'There is no machine in the middle whose loss stops the message, because there is no middle.';
     } else {
-      msg = '<strong>Message still arrived.</strong> The packets found another way round the cut. ' +
+      msg = '<strong>Message still arrived.</strong> The packets found another way around the cut.' +
             'Try shutting down whole machines instead.';
     }
     this.say(msg, 'win');

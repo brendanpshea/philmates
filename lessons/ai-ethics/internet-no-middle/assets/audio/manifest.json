@@ -1,0 +1,725 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "f379fe69": {
+      "slide": "s1",
+      "text": "Nobody runs the internet. There's no control room, no master switch, and no company that owns it. That's not an accident. It's the result of a handful of decisions, made by particular people for particular reasons, between the 1960s and the 1990s. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Nobody runs the internet. There's no control room, no master switch, and no company that owns it. That's not an accident. It's the result of a handful of decisions, made by particular people for particular reasons, between the 1960s and the 1990s. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "a36d6eb1": {
+      "slide": "s2",
+      "text": "Every piece of the internet was designed by someone who wanted something. And every piece, once built, changed what everybody else could want.",
+      "spoken": "Every piece of the internet was designed by someone who wanted something. And every piece, once built, changed what everybody else could want."
+    },
+    "70f33881": {
+      "slide": "s2",
+      "text": "Soldiers, scientists, and people who just wanted to play games all pushed the design in different directions.",
+      "spoken": "Soldiers, scientists, and people who just wanted to play games all pushed the design in different directions."
+    },
+    "2dfc2fa6": {
+      "slide": "s2",
+      "text": "What they built then decided which things would be easy to do later, and which would be nearly impossible.",
+      "spoken": "What they built then decided which things would be easy to do later, and which would be nearly impossible."
+    },
+    "309d2a10": {
+      "slide": "s2",
+      "text": "Nobody voted on any of it. The choices were technical, and the consequences were not.",
+      "spoken": "Nobody voted on any of it. The choices were technical, and the consequences were not."
+    },
+    "1aff88d2": {
+      "slide": "not-the-web",
+      "text": "These two words get used as if they mean the same thing. They don't, and almost nothing else makes sense until the difference is clear. Look at the picture. The web is one of the things sitting on the internet, not the internet itself.",
+      "spoken": "These two words get used as if they mean the same thing. They don't, and almost nothing else makes sense until the difference is clear. Look at the picture. The web is one of the things sitting on the internet, not the internet itself."
+    },
+    "8aa599a4": {
+      "slide": "not-the-web",
+      "text": "The internet is the wiring. Its whole job is moving small chunks of data between machines.",
+      "spoken": "The internet is the wiring. Its whole job is moving small chunks of data between machines."
+    },
+    "2c9c3cd7": {
+      "slide": "not-the-web",
+      "text": "The web is one thing people built on top of that wiring, in 1989, twenty years after ARPANET.",
+      "spoken": "The web is one thing people built on top of that wiring, in 1989, twenty years after ARPANET."
+    },
+    "a015025d": {
+      "slide": "not-the-web",
+      "text": "The wiring doesn't know or care which of them it's carrying.",
+      "spoken": "The wiring doesn't know or care which of them it's carrying."
+    },
+    "23eefbfe": {
+      "slide": "s4",
+      "text": "Say where you stand now. You'll see all six statements again at the end. Rate each one, then press Submit.",
+      "spoken": "Say where you stand now. You'll see all six statements again at the end. Rate each one, then press Submit."
+    },
+    "89dd330e": {
+      "slide": "s4",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "6ad7bac2": {
+      "slide": "s5",
+      "text": "In the early 1960s, sending a message meant opening a line and holding it. A telephone call reserved a physical path from end to end for as long as you talked.",
+      "spoken": "In the early 1960s, sending a message meant opening a line and holding it. A telephone call reserved a physical path from end to end for as long as you talked."
+    },
+    "e2f296d6": {
+      "slide": "s5",
+      "text": "That worked for voices, but it was hopeless for computers, which send in short bursts and then go quiet.",
+      "spoken": "That worked for voices, but it was hopeless for computers, which send in short bursts and then go quiet."
+    },
+    "086c2e78": {
+      "slide": "s5",
+      "text": "It also meant every call passed through a switching center. Break the center, and everything stops.",
+      "spoken": "It also meant every call passed through a switching center. Break the center, and everything stops."
+    },
+    "ebf1e1f6": {
+      "slide": "s5",
+      "text": "Computers were rare and expensive. A university might have one, and researchers elsewhere couldn't touch it.",
+      "spoken": "Computers were rare and expensive. A university might have one, and researchers elsewhere couldn't touch it."
+    },
+    "4d8bc610": {
+      "slide": "s6",
+      "text": "Instead of reserving a line, chop the message into small numbered pieces called packets, and let each one find its own way. Your turn. Send one, then start breaking things. The left circle is sending. The right circle is receiving. Everything between them is just machines that pass packets along. When you're ready, press Continue.",
+      "spoken": "Instead of reserving a line, chop the message into small numbered pieces called packets, and let each one find its own way. Your turn. Send one, then start breaking things. The left circle is sending. The right circle is receiving. Everything between them is just machines that pass packets along. When you're ready, press Continue."
+    },
+    "3f5e2d9d": {
+      "slide": "s7",
+      "text": "Each packet carries the address it's going to, the address it came from, and its number in the sequence.",
+      "spoken": "Each packet carries the address it's going to, the address it came from, and its number in the sequence."
+    },
+    "937e4d76": {
+      "slide": "s7",
+      "text": "A machine that passes packets along is called a router. It looks at the address and picks a direction.",
+      "spoken": "A machine that passes packets along is called a router. It looks at the address and picks a direction."
+    },
+    "5ee9bca9": {
+      "slide": "s7",
+      "text": "No router knows the whole route. It only knows which neighbor is a step closer.",
+      "spoken": "No router knows the whole route. It only knows which neighbor is a step closer."
+    },
+    "f7aec0b3": {
+      "slide": "s7",
+      "text": "Packets from one message can travel completely different paths, and arrive out of order.",
+      "spoken": "Packets from one message can travel completely different paths, and arrive out of order."
+    },
+    "680098e3": {
+      "slide": "s7",
+      "text": "The receiving machine puts them back in order using the numbers, and asks again for any that never came.",
+      "spoken": "The receiving machine puts them back in order using the numbers, and asks again for any that never came."
+    },
+    "01438306": {
+      "slide": "s8",
+      "text": "Here's a whole trip in one picture: names, numbers, and routing. You want a dozen donuts from dragon-donuts.example. First, your machine asks the name system for that name, and is told which number to use. Then a packet addressed to that number goes through the routers. Every address in the picture is reserved for teaching, and reaches nothing real.",
+      "spoken": "Here's a whole trip in one picture: names, numbers, and routing. You want a dozen donuts from dragon-donuts.example. First, your machine asks the name system for that name, and is told which number to use. Then a packet addressed to that number goes through the routers. Every address in the picture is reserved for teaching, and reaches nothing real."
+    },
+    "ee07d868": {
+      "slide": "s8",
+      "text": "The name is for you. The number is what the machines actually use.",
+      "spoken": "The name is for you. The number is what the machines actually use."
+    },
+    "7dee1539": {
+      "slide": "s8",
+      "text": "When the router called R3 fails, nothing changes that you can see, because R2 simply picks a different neighbor.",
+      "spoken": "When the router called R3 fails, nothing changes that you can see, because R2 simply picks a different neighbor."
+    },
+    "868ce632": {
+      "slide": "two-groups",
+      "text": "Packet switching was worked out twice, independently, by people with almost nothing in common.",
+      "spoken": "Packet switching was worked out twice, independently, by people with almost nothing in common."
+    },
+    "78588d1f": {
+      "slide": "two-groups",
+      "text": "Paul Baran, at a defense research company, wanted communication that survived losing parts of itself.",
+      "spoken": "Paul Baran, at a defense research company, wanted communication that survived losing parts of itself."
+    },
+    "66690bd7": {
+      "slide": "two-groups",
+      "text": "Donald Davies, at a British physics lab, wanted computers to stop wasting expensive line time.",
+      "spoken": "Donald Davies, at a British physics lab, wanted computers to stop wasting expensive line time."
+    },
+    "891b864d": {
+      "slide": "two-groups",
+      "text": "Survivability and thrift are different values, and both pointed at the same shape.",
+      "spoken": "Survivability and thrift are different values, and both pointed at the same shape."
+    },
+    "e5a4fbde": {
+      "slide": "two-groups",
+      "text": "ARPANET was a US defense-funded network for sharing scarce computers. It drew on both men's work, but survival was not its purpose.",
+      "spoken": "ARPANET was a U.S. defense-funded network for sharing scarce computers. It drew on both men's work, but survival was not its purpose."
+    },
+    "ce0f5f31": {
+      "slide": "s10",
+      "text": "People often say the internet was built so it could survive a nuclear attack. That story is half right, and the half that's wrong is the interesting half. Pick an answer.",
+      "spoken": "People often say the internet was built so it could survive a nuclear attack. That story is half right, and the half that's wrong is the interesting half. Pick an answer."
+    },
+    "e15958f2": {
+      "slide": "s10",
+      "text": "Baran's survivability work and ARPANET were separate projects. What they shared was an engineering answer, and two unrelated sets of values can push toward the same design.",
+      "spoken": "Baran's survivability work and ARPANET were separate projects. What they shared was an engineering answer, and two unrelated sets of values can push toward the same design."
+    },
+    "6bec7457": {
+      "slide": "s11",
+      "text": "Here's what having no center did, on the one hand and on the other. What it made easy: there's no switchboard to seize, no headquarters to raid, and no single machine whose failure stops the network. Damage routes around itself, whether the damage is a broken cable or a government. A country can block its own connections to the outside, and has to keep doing it, machine by machine, forever. What it made hard: there's also nobody in charge. No one can be required to check that traffic is safe, remove something harmful, or take responsibility when the network carries an attack. Nobody can switch off a flood of malicious traffic centrally, because there's no center at which to switch it off.",
+      "spoken": "Here's what having no center did, on the one hand and on the other. What it made easy: there's no switchboard to seize, no headquarters to raid, and no single machine whose failure stops the network. Damage routes around itself, whether the damage is a broken cable or a government. A country can block its own connections to the outside, and has to keep doing it, machine by machine, forever. What it made hard: there's also nobody in charge. No one can be required to check that traffic is safe, remove something harmful, or take responsibility when the network carries an attack. Nobody can switch off a flood of malicious traffic centrally, because there's no center at which to switch it off."
+    },
+    "ff9c58a9": {
+      "slide": "s12",
+      "text": "Once packets worked, a harder question arrived. How clever should the network itself be?",
+      "spoken": "Once packets worked, a harder question arrived. How clever should the network itself be?"
+    },
+    "a4333f16": {
+      "slide": "s12",
+      "text": "The telephone companies had an answer. Put the intelligence in the network, and sell services from it.",
+      "spoken": "The telephone companies had an answer. Put the intelligence in the network, and sell services from it."
+    },
+    "0eb98388": {
+      "slide": "s12",
+      "text": "On that model, a new kind of communication needs the network's owner to build it and agree to it.",
+      "spoken": "On that model, a new kind of communication needs the network's owner to build it and agree to it."
+    },
+    "c21564b7": {
+      "slide": "s12",
+      "text": "The internet's designers chose the opposite. In 1981, Jerome Saltzer, David Reed, and David Clark wrote down why.",
+      "spoken": "The internet's designers chose the opposite. In 1981, Jerome Saltzer, David Reed, and David Clark wrote down why."
+    },
+    "d37ac672": {
+      "slide": "end-to-end",
+      "text": "The rule is called the end-to-end principle. The network moves packets and does nothing else. Everything clever happens on the machines at the two ends.",
+      "spoken": "The rule is called the end-to-end principle. The network moves packets and does nothing else. Everything clever happens on the machines at the two ends."
+    },
+    "c74d629b": {
+      "slide": "end-to-end",
+      "text": "The network doesn't know whether a packet is part of an email, a film, or a game.",
+      "spoken": "The network doesn't know whether a packet is part of an email, a film, or a game."
+    },
+    "6f62991c": {
+      "slide": "end-to-end",
+      "text": "It wasn't built to know, and the design says it shouldn't need to.",
+      "spoken": "It wasn't built to know, and the design says it shouldn't need to."
+    },
+    "0a705061": {
+      "slide": "end-to-end",
+      "text": "So inventing a new kind of thing to do online needs nobody's permission, and no change to the wiring.",
+      "spoken": "So inventing a new kind of thing to do online needs nobody's permission, and no change to the wiring."
+    },
+    "5fb544e7": {
+      "slide": "s14",
+      "text": "Almost everything you use exists because of this one decision.",
+      "spoken": "Almost everything you use exists because of this one decision."
+    },
+    "293d75d8": {
+      "slide": "s14",
+      "text": "The web, streaming video, online games, and messaging were all added by people who never asked a network owner.",
+      "spoken": "The web, streaming video, online games, and messaging were all added by people who never asked a network owner."
+    },
+    "6b80bf61": {
+      "slide": "s14",
+      "text": "That's called permissionless innovation, and it's rare. Most industries don't work this way.",
+      "spoken": "That's called permissionless innovation, and it's rare. Most industries don't work this way."
+    },
+    "c64f9065": {
+      "slide": "s14",
+      "text": "The cost is that the basic design treats urgent and trivial traffic alike, because it wasn't built to tell them apart.",
+      "spoken": "The cost is that the basic design treats urgent and trivial traffic alike, because it wasn't built to tell them apart."
+    },
+    "aa519e69": {
+      "slide": "s14",
+      "text": "By that design, a surgeon's video link and a film get the same indifferent treatment.",
+      "spoken": "By that design, a surgeon's video link and a film get the same indifferent treatment."
+    },
+    "4f204859": {
+      "slide": "s15",
+      "text": "This one isn't graded. Pick the answer closest to your view, and read its note. It's a live argument, usually had under the name net neutrality. A US court struck down the national rules in 2025, and some states keep their own. Suppose the company that owns the wiring also owns troll-bridge-tolls.example, and would like your donuts to arrive slowly. Should network owners be allowed to deliver some traffic faster than other traffic?",
+      "spoken": "This one isn't graded. Pick the answer closest to your view, and read its note. It's a live argument, usually had under the name net neutrality. A U.S. court struck down the national rules in 2025, and some states keep their own. Suppose the company that owns the wiring also owns troll-bridge-tolls.example, and would like your donuts to arrive slowly. Should network owners be allowed to deliver some traffic faster than other traffic?"
+    },
+    "7bad527e": {
+      "slide": "s15",
+      "text": "The awkward part is that the same property produces both results. A network that can't tell an emergency from a cat video also can't quietly slow down a competitor, or charge a new service for the right to work properly.",
+      "spoken": "The awkward part is that the same property produces both results. A network that can't tell an emergency from a cat video also can't quietly slow down a competitor, or charge a new service for the right to work properly."
+    },
+    "64717078": {
+      "slide": "s16",
+      "text": "ARPANET was funded so researchers could run programs on distant computers. Within a few years, that's not mainly what it was doing.",
+      "spoken": "ARPANET was funded so researchers could run programs on distant computers. Within a few years, that's not mainly what it was doing."
+    },
+    "6845106b": {
+      "slide": "s16",
+      "text": "In 1971, Ray Tomlinson wrote a small program to leave messages for people on other machines.",
+      "spoken": "In 1971, Ray Tomlinson wrote a small program to leave messages for people on other machines."
+    },
+    "14ffb7dc": {
+      "slide": "s16",
+      "text": "It was a side project. Nobody had asked for it, and it was in nobody's plan.",
+      "spoken": "It was a side project. Nobody had asked for it, and it was in nobody's plan."
+    },
+    "ef6f9325": {
+      "slide": "s16",
+      "text": "He needed a character to separate the person from the machine, and picked the at sign, because it was unused.",
+      "spoken": "He needed a character to separate the person from the machine, and picked the at sign, because it was unused."
+    },
+    "bba17a39": {
+      "slide": "s16",
+      "text": "Within a few years, messages between people were most of the traffic on the network.",
+      "spoken": "Within a few years, messages between people were most of the traffic on the network."
+    },
+    "ff01c5c3": {
+      "slide": "s17",
+      "text": "In 1962, when computers were expensive machines for serious calculation, a group of young programmers at MIT used one to build Spacewar.",
+      "spoken": "In 1962, when computers were expensive machines for serious calculation, a group of young programmers at MIT used one to build Spacewar."
+    },
+    "e2cf824d": {
+      "slide": "s17",
+      "text": "It spread to other labs with the same kind of computer, because people who saw it wanted to play it.",
+      "spoken": "It spread to other labs with the same kind of computer, because people who saw it wanted to play it."
+    },
+    "cc2ac383": {
+      "slide": "s17",
+      "text": "It helped make the case that computers were for interacting with, not just for submitting jobs to.",
+      "spoken": "It helped make the case that computers were for interacting with, not just for submitting jobs to."
+    },
+    "990eafc8": {
+      "slide": "s17",
+      "text": "In 1978, two students in Essex built a shared world that players could all be inside at once, and called it a MUD.",
+      "spoken": "In 1978, two students in Essex built a shared world that players could all be inside at once, and called it a MUD."
+    },
+    "2667a414": {
+      "slide": "s17",
+      "text": "It became the ancestor of today's shared online worlds.",
+      "spoken": "It became the ancestor of today's shared online worlds."
+    },
+    "f6b23bf0": {
+      "slide": "s18",
+      "text": "A network built for sharing expensive machines turned into a network for talking and playing, and the people who funded it didn't decide that.",
+      "spoken": "A network built for sharing expensive machines turned into a network for talking and playing, and the people who funded it didn't decide that."
+    },
+    "6c3c540b": {
+      "slide": "s18",
+      "text": "This only happened because of decision two. Nobody had to approve email or games.",
+      "spoken": "This only happened because of decision two. Nobody had to approve email or games."
+    },
+    "0731c960": {
+      "slide": "s18",
+      "text": "The founders' values shaped the architecture, and then the users' values reshaped its purpose.",
+      "spoken": "The founders' values shaped the architecture, and then the users' values reshaped its purpose."
+    },
+    "e26e8942": {
+      "slide": "s18",
+      "text": "Both directions were running the whole time, and neither group was in charge of the other.",
+      "spoken": "Both directions were running the whole time, and neither group was in charge of the other."
+    },
+    "b8d5e429": {
+      "slide": "s19",
+      "text": "Complete the summary so far. Fill in each blank, then press Check.",
+      "spoken": "Complete the summary so far. Fill in each blank, then press Check."
+    },
+    "5b4b7bac": {
+      "slide": "s19",
+      "text": "These are the two decisions everything else rests on. Cutting messages into packets removed the center, and keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web.",
+      "spoken": "These are the two decisions everything else rests on. Cutting messages into packets removed the center, and keeping the network ignorant of what it carries meant nobody had to approve email, or games, or the web."
+    },
+    "91a00eab": {
+      "slide": "protocols",
+      "text": "For two machines to exchange packets, they must agree in advance on exactly what the bytes mean. A written agreement like that is called a protocol.",
+      "spoken": "For two machines to exchange packets, they must agree in advance on exactly what the bytes mean. A written agreement like that is called a protocol."
+    },
+    "e0eb4d18": {
+      "slide": "protocols",
+      "text": "A protocol isn't a program. It's a document saying what a correct machine must do.",
+      "spoken": "A protocol isn't a program. It's a document saying what a correct machine must do."
+    },
+    "a7bbe5e0": {
+      "slide": "protocols",
+      "text": "Anyone can read one, and anyone can write software that obeys it.",
+      "spoken": "Anyone can read one, and anyone can write software that obeys it."
+    },
+    "8a4de013": {
+      "slide": "protocols",
+      "text": "The documents are called RFCs, short for Request for Comments, which is how they were meant to sound.",
+      "spoken": "The documents are called RFCs, short for Request for Comments, which is how they were meant to sound."
+    },
+    "927abb4e": {
+      "slide": "protocols",
+      "text": "The first was written in 1969 by a graduate student who worried he was overstepping.",
+      "spoken": "The first was written in 1969 by a graduate student who worried he was overstepping."
+    },
+    "b3e3b114": {
+      "slide": "s21",
+      "text": "The people writing these rules were academics, and they did what academics do. They published, argued in public, and let anyone use the result.",
+      "spoken": "The people writing these rules were academics, and they did what academics do. They published, argued in public, and let anyone use the result."
+    },
+    "d4364b7f": {
+      "slide": "s21",
+      "text": "David Clark later summed up their way of working as rough consensus and running code, in 1992. Show something that works, then argue.",
+      "spoken": "David Clark later summed up their way of working as rough consensus and running code, in 1992. Show something that works, then argue."
+    },
+    "2cffb332": {
+      "slide": "s21",
+      "text": "No government set the standards, no company owned them, and no fee was charged.",
+      "spoken": "No government set the standards, no company owned them, and no fee was charged."
+    },
+    "71bf37e9": {
+      "slide": "s21",
+      "text": "A rival set of standards, designed properly by international committee, lost. It was slower, and it needed permission.",
+      "spoken": "A rival set of standards, designed properly by international committee, lost. It was slower, and it needed permission."
+    },
+    "23732a71": {
+      "slide": "s22",
+      "text": "Sort each fact under the first three design decisions. Then press Check answers.",
+      "spoken": "Sort each fact under the first three design decisions. Then press Check answers."
+    },
+    "b8f198d4": {
+      "slide": "s22",
+      "text": "Packets with no center mean damage routes around itself. A stupid network carries anything without knowing what it is. And published rules mean anyone can build software that joins in.",
+      "spoken": "Packets with no center mean damage routes around itself. A stupid network carries anything without knowing what it is. And published rules mean anyone can build software that joins in."
+    },
+    "8cbaa898": {
+      "slide": "s23",
+      "text": "Machines find each other by number. People can't remember numbers, so names had to be attached to them.",
+      "spoken": "Machines find each other by number. People can't remember numbers, so names had to be attached to them."
+    },
+    "6537f730": {
+      "slide": "s23",
+      "text": "At first, one office, Elizabeth Feinler's team at SRI, kept a single file listing every machine, and posted updates.",
+      "spoken": "At first, one office, Elizabeth Feinler's team at SRI, kept a single file listing every machine, and posted updates."
+    },
+    "f7572f0f": {
+      "slide": "s23",
+      "text": "That stopped working, so the job was split into a tree of name servers, called the DNS.",
+      "spoken": "That stopped working, so the job was split into a tree of name servers, called the DNS."
+    },
+    "dfe24c28": {
+      "slide": "s23",
+      "text": "Type a name, and your machine asks the tree what number goes with it, then connects to that number.",
+      "spoken": "Type a name, and your machine asks the tree what number goes with it, then connects to that number."
+    },
+    "989a8ca7": {
+      "slide": "s23",
+      "text": "The tree has a top. Someone has to decide what's in it.",
+      "spoken": "The tree has a top. Someone has to decide what's in it."
+    },
+    "291802f0": {
+      "slide": "s24",
+      "text": "Every name is a branch hanging off a shorter name, and every chain ends at the same root. Look at the picture. Cut the branch to gnome-gazette.example, and the newspaper's machine keeps running, keeps serving, and becomes unreachable to anyone who doesn't already know its number.",
+      "spoken": "Every name is a branch hanging off a shorter name, and every chain ends at the same root. Look at the picture. Cut the branch to gnome-gazette.example, and the newspaper's machine keeps running, keeps serving, and becomes unreachable to anyone who doesn't already know its number."
+    },
+    "badea052": {
+      "slide": "s24",
+      "text": "Nothing was deleted, and nothing was blocked. A name simply stopped being answered.",
+      "spoken": "Nothing was deleted, and nothing was blocked. A name simply stopped being answered."
+    },
+    "e67468ef": {
+      "slide": "chokepoint",
+      "text": "Everything else about the internet was built to have no center. Names are the exception, and it's the exception that gets used.",
+      "spoken": "Everything else about the internet was built to have no center. Names are the exception, and it's the exception that gets used."
+    },
+    "f59e2aea": {
+      "slide": "chokepoint",
+      "text": "A name can be taken away. The machine stays exactly where it was, and nobody can find it.",
+      "spoken": "A name can be taken away. The machine stays exactly where it was, and nobody can find it."
+    },
+    "34ef0343": {
+      "slide": "chokepoint",
+      "text": "Governments block sites by ordering name servers to stop answering, which is far easier than blocking packets.",
+      "spoken": "Governments block sites by ordering name servers to stop answering, which is far easier than blocking packets."
+    },
+    "29f7432c": {
+      "slide": "chokepoint",
+      "text": "That's what happened to the gazette on the last slide. Taking a name is the cheapest way to remove something.",
+      "spoken": "That's what happened to the gazette on the last slide. Taking a name is the cheapest way to remove something."
+    },
+    "f1fcf59d": {
+      "slide": "chokepoint",
+      "text": "The organization that oversees the top of the tree is one of the few places the internet can be leaned on.",
+      "spoken": "The organization that oversees the top of the tree is one of the few places the internet can be leaned on."
+    },
+    "d26e6f0a": {
+      "slide": "s26",
+      "text": "This one isn't graded. Pick the answer closest to your view, and read its note. It's argued about at the United Nations, seriously and often. The name system needs somebody in charge of it. Who should that be?",
+      "spoken": "This one isn't graded. Pick the answer closest to your view, and read its note. It's argued about at the United Nations, seriously and often. The name system needs somebody in charge of it. Who should that be?"
+    },
+    "ccd41ffe": {
+      "slide": "s26",
+      "text": "Notice what makes this hard. Every answer puts the keys in somebody's hands, because the name system genuinely needs a top.",
+      "spoken": "Notice what makes this hard. Every answer puts the keys in somebody's hands, because the name system genuinely needs a top."
+    },
+    "0ac04f96": {
+      "slide": "s27",
+      "text": "Twenty years after ARPANET, a physics laboratory in Switzerland had a filing problem. Thousands of scientists, all with documents on incompatible machines.",
+      "spoken": "Twenty years after ARPANET, a physics laboratory in Switzerland had a filing problem. Thousands of scientists, all with documents on incompatible machines."
+    },
+    "1b5bd3f6": {
+      "slide": "s27",
+      "text": "Tim Berners-Lee proposed a system where any document could point directly at any other document.",
+      "spoken": "Tim Berners-Lee proposed a system where any document could point directly at any other document."
+    },
+    "a48c2e38": {
+      "slide": "s27",
+      "text": "His manager's written response was that it was vague, but exciting.",
+      "spoken": "His manager's written response was that it was vague, but exciting."
+    },
+    "c5186636": {
+      "slide": "s27",
+      "text": "It was built for physicists sharing papers. Nothing about shops, videos, or arguing with strangers.",
+      "spoken": "It was built for physicists sharing papers. Nothing about shops, videos, or arguing with strangers."
+    },
+    "f883e85b": {
+      "slide": "s28",
+      "text": "The web isn't complicated. It's three ideas that fit together.",
+      "spoken": "The web isn't complicated. It's three ideas that fit together."
+    },
+    "0023f4d3": {
+      "slide": "s28",
+      "text": "A URL is an address that names one document anywhere in the world.",
+      "spoken": "A URL is an address that names one document anywhere in the world."
+    },
+    "dea50da2": {
+      "slide": "s28",
+      "text": "HTTP is the protocol for asking a machine to send you the document at that address.",
+      "spoken": "HTTP is the protocol for asking a machine to send you the document at that address."
+    },
+    "b009ff84": {
+      "slide": "s28",
+      "text": "HTML is the format the document arrives in, including its links to other addresses.",
+      "spoken": "HTML is the format the document arrives in, including its links to other addresses."
+    },
+    "8ddfa07b": {
+      "slide": "s28",
+      "text": "A link only needs the sender's permission, never the receiver's. That asymmetry is what let it grow.",
+      "spoken": "A link only needs the sender's permission, never the receiver's. That asymmetry is what let it grow."
+    },
+    "826d5b24": {
+      "slide": "s29",
+      "text": "This one isn't graded. Pick the answer closest to your view, and read its note. In April 1993, CERN signed a document putting the web's technology into the public domain. Anyone could use it, build on it, and sell things with it, forever, for nothing. CERN could have patented the web and charged for it. Should they have?",
+      "spoken": "This one isn't graded. Pick the answer closest to your view, and read its note. In April 1993, CERN signed a document putting the web's technology into the public domain. Anyone could use it, build on it, and sell things with it, forever, for nothing. CERN could have patented the web and charged for it. Should they have?"
+    },
+    "3b027b20": {
+      "slide": "s29",
+      "text": "Gopher, a popular rival of the period, announced license fees for commercial use in 1993. Notice that the value didn't vanish. It went to companies built on top.",
+      "spoken": "Gopher, a popular rival of the period, announced license fees for commercial use in 1993. Notice that the value didn't vanish. It went to companies built on top."
+    },
+    "a03c5821": {
+      "slide": "s30",
+      "text": "Check every statement that is true, then press Check answers.",
+      "spoken": "Check every statement that is true, then press Check answers."
+    },
+    "342a1769": {
+      "slide": "s30",
+      "text": "The internet is the packet-moving layer from 1969, and the web is one thing built on top of it in 1989. Getting that order right is what makes the rest of the story make sense.",
+      "spoken": "The internet is the packet-moving layer from 1969, and the web is one thing built on top of it in 1989. Getting that order right is what makes the rest of the story make sense."
+    },
+    "601d6e53": {
+      "slide": "cookies",
+      "text": "HTTP was designed to forget. You ask for a document, the machine sends it, and the conversation is over. It has no idea who you are next time.",
+      "spoken": "HTTP was designed to forget. You ask for a document, the machine sends it, and the conversation is over. It has no idea who you are next time."
+    },
+    "c97dab4c": {
+      "slide": "cookies",
+      "text": "That's called being stateless, and it's why the web could handle so many people so cheaply.",
+      "spoken": "That's called being stateless, and it's why the web could handle so many people so cheaply."
+    },
+    "2b4302cd": {
+      "slide": "cookies",
+      "text": "It also made shopping impossible. A basket needs the shop to remember you between pages.",
+      "spoken": "It also made shopping impossible. A basket needs the shop to remember you between pages."
+    },
+    "3c318829": {
+      "slide": "cookies",
+      "text": "In 1994, an engineer at Netscape solved it with a small file the site asks your browser to keep and hand back.",
+      "spoken": "In 1994, an engineer at Netscape solved it with a small file the site asks your browser to keep and hand back."
+    },
+    "b6741c8d": {
+      "slide": "cookies",
+      "text": "He called it a cookie. It was a fix for shopping baskets.",
+      "spoken": "He called it a cookie. It was a fix for shopping baskets."
+    },
+    "70258cad": {
+      "slide": "s32",
+      "text": "A cookie lets a site recognize you when you come back. Nothing in the design says the site has to be the one you're visiting.",
+      "spoken": "A cookie lets a site recognize you when you come back. Nothing in the design says the site has to be the one you're visiting."
+    },
+    "b2941814": {
+      "slide": "s32",
+      "text": "Pages load images and scripts from other companies, which can set cookies too. Safari and Firefox block this by default. Chrome, in 2026, still allows it.",
+      "spoken": "Pages load images and scripts from other companies, which can set cookies too. Safari and Firefox block this by default. Chrome, in 2026, still allows it."
+    },
+    "dbea6890": {
+      "slide": "s32",
+      "text": "The same ad company sits on thousands of sites, so it sees you across all of them, from the donut shop to the gazette.",
+      "spoken": "The same ad company sits on thousands of sites, so it sees you across all of them, from the donut shop to the gazette."
+    },
+    "5b33c84c": {
+      "slide": "s32",
+      "text": "None of that required a new invention. It's the shopping basket fix, used as written.",
+      "spoken": "None of that required a new invention. It's the shopping basket fix, used as written."
+    },
+    "a7301180": {
+      "slide": "s32",
+      "text": "Watching people is what makes advertising valuable, and advertising is why the web is free.",
+      "spoken": "Watching people is what makes advertising valuable, and advertising is why the web is free."
+    },
+    "22c36f44": {
+      "slide": "s33",
+      "text": "A cookie is data, not a program. Nothing new had to be invented to follow people between sites. A company whose code sits on thousands of sites simply uses the basket mechanism exactly as it was written.",
+      "spoken": "A cookie is data, not a program. Nothing new had to be invented to follow people between sites. A company whose code sits on thousands of sites simply uses the basket mechanism exactly as it was written."
+    },
+    "e48714e0": {
+      "slide": "s34",
+      "text": "There was never a vote on paying for the web with attention instead of money. It was settled by a few companies finding out what worked.",
+      "spoken": "There was never a vote on paying for the web with attention instead of money. It was settled by a few companies finding out what worked."
+    },
+    "725748f9": {
+      "slide": "s34",
+      "text": "Charging money for pages was tried repeatedly in the 1990s, and mostly failed.",
+      "spoken": "Charging money for pages was tried repeatedly in the 1990s, and mostly failed."
+    },
+    "f8be7a3b": {
+      "slide": "s34",
+      "text": "Advertising didn't fail, so it became the default, and then it became the assumption.",
+      "spoken": "Advertising didn't fail, so it became the default, and then it became the assumption."
+    },
+    "db442377": {
+      "slide": "s34",
+      "text": "The result is that most things online are free, and that being measured is the ordinary condition of using them.",
+      "spoken": "The result is that most things online are free, and that being measured is the ordinary condition of using them."
+    },
+    "ec63fa66": {
+      "slide": "s35",
+      "text": "The legal scholar Lawrence Lessig gave this whole pattern a name. Software, he argued, regulates what people can do in the same way that law does. Here's how he put it in 1999. In real space, we recognize how laws regulate, through constitutions, statutes, and other legal codes. In cyberspace, we must understand how code regulates, how the software and hardware that make cyberspace what it is regulate cyberspace as it is.",
+      "spoken": "The legal scholar Lawrence Lessig gave this whole pattern a name. Software, he argued, regulates what people can do in the same way that law does. Here's how he put it in 1999. In real space, we recognize how laws regulate, through constitutions, statutes, and other legal codes. In cyberspace, we must understand how code regulates, how the software and hardware that make cyberspace what it is regulate cyberspace as it is."
+    },
+    "8acdbeb5": {
+      "slide": "s35",
+      "text": "A rule enforced by software needs no police, no court, and no vote. It simply isn't possible to break.",
+      "spoken": "A rule enforced by software needs no police, no court, and no vote. It simply isn't possible to break."
+    },
+    "9ff21ab8": {
+      "slide": "s36",
+      "text": "The first six were decided by people who wrote down what they were doing. Nobody decided this one. Look at the two pictures. Nothing in the protocol changed between them.",
+      "spoken": "The first six were decided by people who wrote down what they were doing. Nobody decided this one. Look at the two pictures. Nothing in the protocol changed between them."
+    },
+    "86579c71": {
+      "slide": "s36",
+      "text": "Packets still route around damage, and no router has ever been given a center.",
+      "spoken": "Packets still route around damage, and no router has ever been given a center."
+    },
+    "fa389b01": {
+      "slide": "s36",
+      "text": "Almost everything you do online now starts or ends at one of a few companies.",
+      "spoken": "Almost everything you do online now starts or ends at one of a few companies."
+    },
+    "c14cded0": {
+      "slide": "piled-up",
+      "text": "Nobody ordered this either. Several ordinary pressures happened to push the same way at once.",
+      "spoken": "Nobody ordered this either. Several ordinary pressures happened to push the same way at once."
+    },
+    "ce5165d2": {
+      "slide": "piled-up",
+      "text": "A place is more useful the more people are already there, so whatever leads tends to keep leading.",
+      "spoken": "A place is more useful the more people are already there, so whatever leads tends to keep leading."
+    },
+    "51df3a79": {
+      "slide": "piled-up",
+      "text": "Advertising pays far more for one large audience than for many small ones.",
+      "spoken": "Advertising pays far more for one large audience than for many small ones."
+    },
+    "d501a187": {
+      "slide": "piled-up",
+      "text": "Hosting, moderation, and surviving attacks all cost more than a small site can carry alone.",
+      "spoken": "Hosting, moderation, and surviving attacks all cost more than a small site can carry alone."
+    },
+    "0a5fe468": {
+      "slide": "piled-up",
+      "text": "gnome-gazette.example now gets most of its readers from somebody else's feed, rather than from people typing its name.",
+      "spoken": "gnome-gazette.example now gets most of its readers from somebody else's feed, rather than from people typing its name."
+    },
+    "50650539": {
+      "slide": "s38",
+      "text": "A language model is one more thing built on top, the way the web was built on top of the wiring. It changes what the layer underneath is for.",
+      "spoken": "A language model is one more thing built on top, the way the web was built on top of the wiring. It changes what the layer underneath is for."
+    },
+    "b4ee73af": {
+      "slide": "s38",
+      "text": "The web ran on links. You were sent somewhere, and the somewhere was paid for by your arriving.",
+      "spoken": "The web ran on links. You were sent somewhere, and the somewhere was paid for by your arriving."
+    },
+    "25210147": {
+      "slide": "s38",
+      "text": "A model answers you where you stand. In a 2025 Pew study, Google users shown an AI summary clicked through to a result about half as often.",
+      "spoken": "A model answers you where you stand. In a 2025 Pew study, Google users shown an AI summary clicked through to a result about half as often."
+    },
+    "3a117f04": {
+      "slide": "s38",
+      "text": "It learned to answer by reading pages whose authors were never asked.",
+      "spoken": "It learned to answer by reading pages whose authors were never asked."
+    },
+    "f8c4b7e9": {
+      "slide": "s38",
+      "text": "That's the asymmetry from 1989 again. A link needs the sender's permission, and never the receiver's.",
+      "spoken": "That's the asymmetry from 1989 again. A link needs the sender's permission, and never the receiver's."
+    },
+    "8f17205e": {
+      "slide": "s39",
+      "text": "This one isn't graded. Pick the answer closest to your view, and read its note. It's being argued in courts right now, and it isn't settled. An assistant reads gnome-gazette.example, then answers your question without sending you there. What is that?",
+      "spoken": "This one isn't graded. Pick the answer closest to your view, and read its note. It's being argued in courts right now, and it isn't settled. An assistant reads gnome-gazette.example, then answers your question without sending you there. What is that?"
+    },
+    "03bd42e8": {
+      "slide": "s39",
+      "text": "All three answers accept exactly the same facts. What separates them is which part they think is wrong: the copying, the money, or the position.",
+      "spoken": "All three answers accept exactly the same facts. What separates them is which part they think is wrong: the copying, the money, or the position."
+    },
+    "c1a673de": {
+      "slide": "s40",
+      "text": "The web ended up concentrated in a few companies. Check every cause the lesson gives, then press Check answers.",
+      "spoken": "The web ended up concentrated in a few companies. Check every cause the lesson gives, then press Check answers."
+    },
+    "ca5e12bd": {
+      "slide": "s40",
+      "text": "Nothing in the protocol changed. The concentration came from ordinary pressures, not from a new center.",
+      "spoken": "Nothing in the protocol changed. The concentration came from ordinary pressures, not from a new center."
+    },
+    "f5fc7f12": {
+      "slide": "s41",
+      "text": "Complete the second half of the account. Fill in each blank, then press Check.",
+      "spoken": "Complete the second half of the account. Fill in each blank, then press Check."
+    },
+    "404d5114": {
+      "slide": "s41",
+      "text": "Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. And the web costs nothing because somebody else is paying for your attention.",
+      "spoken": "Open rules meant anyone could join in without permission. Names needed a top, and a top is a place that can be leaned on. And the web costs nothing because somebody else is paying for your attention."
+    },
+    "b3fdf335": {
+      "slide": "s42",
+      "text": "Six decisions made on purpose, a seventh that nobody made at all, and every one of them now a rule the rest of us live inside.",
+      "spoken": "Six decisions made on purpose, a seventh that nobody made at all, and every one of them now a rule the rest of us live inside."
+    },
+    "d6b77316": {
+      "slide": "s42",
+      "text": "Values into design. Survivability, thrift, academic openness, physics filing, and shop baskets each left a permanent mark on the shape of the thing.",
+      "spoken": "Values into design. Survivability, thrift, academic openness, physics filing, and shop baskets each left a permanent mark on the shape of the thing."
+    },
+    "9ae5ebe1": {
+      "slide": "s42",
+      "text": "Design into values. No center made censorship hard, a dumb network made permission unnecessary, names made a chokepoint, and a basket fix made surveillance ordinary.",
+      "spoken": "Design into values. No center made censorship hard, a dumb network made permission unnecessary, names made a chokepoint, and a basket fix made surveillance ordinary."
+    },
+    "98aadfb2": {
+      "slide": "s42",
+      "text": "And a shape nobody chose. The wiring still has no center. What people actually use has three or four.",
+      "spoken": "And a shape nobody chose. The wiring still has no center. What people actually use has three or four."
+    },
+    "ab744400": {
+      "slide": "s42",
+      "text": "None of these was a decision about how anyone should live, and all of them turned into one.",
+      "spoken": "None of these was a decision about how anyone should live, and all of them turned into one."
+    },
+    "3a0f3b9f": {
+      "slide": "s43",
+      "text": "Here's where you started. Re-rate each statement, press Submit, and see what moved. The internet isn't a natural feature of the world, and it didn't have to look like this. It looks like this because particular people solved particular problems in particular years, and the rest of us inherited the answers. Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.",
+      "spoken": "Here's where you started. Re-rate each statement, press Submit, and see what moved. The internet isn't a natural feature of the world, and it didn't have to look like this. It looks like this because particular people solved particular problems in particular years, and the rest of us inherited the answers. Visit every slide, answer each question correctly, and rate all six statements to complete the lesson."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

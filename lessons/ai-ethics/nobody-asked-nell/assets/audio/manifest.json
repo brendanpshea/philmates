@@ -1,0 +1,610 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "963c4451": {
+      "slide": "s1",
+      "text": "Nell has never taken a DNA test, joined a social network, or bought a smart gadget. Other people's gadgets know a great deal about her anyway. You'll find out how, and decide whether anyone violated her privacy. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Nell has never taken a DNA test, joined a social network, or bought a smart gadget. Other people's gadgets know a great deal about her anyway. You'll find out how, and decide whether anyone violated her privacy. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "bbd54f60": {
+      "slide": "s2",
+      "text": "Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.",
+      "spoken": "Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done."
+    },
+    "0bf8f23c": {
+      "slide": "s2",
+      "text": "Saved. Now, meet Nell.",
+      "spoken": "Saved. Now, meet Nell."
+    },
+    "073d26fc": {
+      "slide": "s3",
+      "text": "Nell is careful with information about herself.",
+      "spoken": "Nell is careful with information about herself."
+    },
+    "da736426": {
+      "slide": "s3",
+      "text": "She reads the terms before she signs up for anything. Usually she clicks No.",
+      "spoken": "She reads the terms before she signs up for anything. Usually she clicks No."
+    },
+    "3b796828": {
+      "slide": "s3",
+      "text": "She has no social media accounts, no fitness tracker, and no smart speaker.",
+      "spoken": "She has no social media accounts, no fitness tracker, and no smart speaker."
+    },
+    "86529f3e": {
+      "slide": "s3",
+      "text": "She pays in cash when she can, and she keeps a paper calendar.",
+      "spoken": "She pays in cash when she can, and she keeps a paper calendar."
+    },
+    "25e2932c": {
+      "slide": "s3",
+      "text": "She believes that if she shares nothing, nobody can learn anything about her.",
+      "spoken": "She believes that if she shares nothing, nobody can learn anything about her."
+    },
+    "12b53bd3": {
+      "slide": "control-view",
+      "text": "Nell's belief rests on a common idea of what privacy is. Call it the control view.",
+      "spoken": "Nell's belief rests on a common idea of what privacy is. Call it the control view."
+    },
+    "50c8626e": {
+      "slide": "control-view",
+      "text": "In 1967 the scholar Alan Westin defined privacy as people's claim to decide when, how, and how much about them reaches others.",
+      "spoken": "In 1967 the scholar Alan Westin defined privacy as people's claim to decide when, how, and how much about them reaches others."
+    },
+    "bf046b8b": {
+      "slide": "control-view",
+      "text": "On this view, your privacy is violated when information about you is taken or passed on without your say.",
+      "spoken": "On this view, your privacy is violated when information about you is taken or passed on without your say."
+    },
+    "1d49082c": {
+      "slide": "control-view",
+      "text": "The tool that protects it is consent. Nobody may collect or share your information unless you agree.",
+      "spoken": "The tool that protects it is consent. Nobody may collect or share your information unless you agree."
+    },
+    "26bafece": {
+      "slide": "control-view",
+      "text": "Most privacy rules work this way. Every I agree button is asking for your consent.",
+      "spoken": "Most privacy rules work this way. Every I agree button is asking for your consent."
+    },
+    "fc31075b": {
+      "slide": "s5",
+      "text": "Pick an answer.",
+      "spoken": "Pick an answer."
+    },
+    "40f1bb66": {
+      "slide": "s5",
+      "text": "The control view asks one question: did you agree? Next, meet the first gadget.",
+      "spoken": "The control view asks one question: did you agree? Next, meet the first gadget."
+    },
+    "b758b378": {
+      "slide": "s6",
+      "text": "Meet Tube, a DNA test kit. Tube belongs to Nell's cousin Cora.",
+      "spoken": "Meet Tube, a DNA test kit. Tube belongs to Nell's cousin Cora."
+    },
+    "7835fdc4": {
+      "slide": "s6",
+      "text": "Cora wants to learn about her ancestors. She spits in the tube and mails it to a testing company.",
+      "spoken": "Cora wants to learn about her ancestors. She spits in the tube and mails it to a testing company."
+    },
+    "c79be556": {
+      "slide": "s6",
+      "text": "Cora reads the terms and agrees to them. She also ticks the box to be matched with relatives.",
+      "spoken": "Cora reads the terms and agrees to them. She also ticks the box to be matched with relatives."
+    },
+    "3352e101": {
+      "slide": "s6",
+      "text": "Nobody asks Nell, because it is Cora's spit.",
+      "spoken": "Nobody asks Nell, because it is Cora's spit."
+    },
+    "79d100b4": {
+      "slide": "s6",
+      "text": "Then Tube says something Nell did not expect. I know a bit about you now, too.",
+      "spoken": "Then Tube says something Nell did not expect. I know a bit about you now, too."
+    },
+    "351e7e3f": {
+      "slide": "dna-shared",
+      "text": "Here's why Tube can say that.",
+      "spoken": "Here's why Tube can say that."
+    },
+    "67aed0fa": {
+      "slide": "dna-shared",
+      "text": "DNA is the set of instructions in your cells, inherited from your parents. Relatives carry copies of the same stretches.",
+      "spoken": "DNA is the set of instructions in your cells, inherited from your parents. Relatives carry copies of the same stretches."
+    },
+    "b0734a8d": {
+      "slide": "dna-shared",
+      "text": "You share about half your DNA with a parent, child, brother, or sister, and about one-eighth with a first cousin.",
+      "spoken": "You share about half your DNA with a parent, child, brother, or sister, and about one-eighth with a first cousin."
+    },
+    "077a996b": {
+      "slide": "dna-shared",
+      "text": "So Cora's result is partly a result about Nell. It can show who Nell is related to, and some health risks that run in the family.",
+      "spoken": "So Cora's result is partly a result about Nell. It can show who Nell is related to, and some health risks that run in the family."
+    },
+    "f421fd64": {
+      "slide": "dna-shared",
+      "text": "Cora had every right to share her own DNA. But it is shared data. She could not share hers without sharing some of Nell's.",
+      "spoken": "Cora had every right to share her own DNA. But it is shared data. She could not share hers without sharing some of Nell's."
+    },
+    "a9c304f4": {
+      "slide": "s8",
+      "text": "This is how police solved one of the best-known unsolved cases in the United States.",
+      "spoken": "This is how police solved one of the best-known unsolved cases in the United States."
+    },
+    "fd601d98": {
+      "slide": "s8",
+      "text": "The Golden State Killer committed murders and rapes in California in the 1970s and 1980s. For decades nobody knew who he was.",
+      "spoken": "The Golden State Killer committed murders and rapes in California in the 1970s and 1980s. For decades nobody knew who he was."
+    },
+    "60f643f3": {
+      "slide": "s8",
+      "text": "In 2018 investigators uploaded DNA from a crime scene to a family-history website where people search for relatives.",
+      "spoken": "In 2018 investigators uploaded DNA from a crime scene to a family-history website where people search for relatives."
+    },
+    "521a53ca": {
+      "slide": "s8",
+      "text": "It matched several of his distant cousins. Investigators built family trees for four months until one name was left.",
+      "spoken": "It matched several of his distant cousins. Investigators built family trees for four months until one name was left."
+    },
+    "ec7381a8": {
+      "slide": "s8",
+      "text": "He had never taken a DNA test. His cousins had, and that was enough.",
+      "spoken": "He had never taken a DNA test. His cousins had, and that was enough."
+    },
+    "76532b9e": {
+      "slide": "s9",
+      "text": "Cora is not unusual. Here's how far a few tests can reach.",
+      "spoken": "Cora is not unusual. Here's how far a few tests can reach."
+    },
+    "a5b28985": {
+      "slide": "s9",
+      "text": "A 2018 study looked at one database holding the DNA of one million, two hundred eighty thousand people.",
+      "spoken": "A 2018 study looked at one database holding the DNA of one million, two hundred eighty thousand people."
+    },
+    "14028b7f": {
+      "slide": "s9",
+      "text": "It estimated that about sixty percent of Americans of European descent already had a third cousin or closer in it.",
+      "spoken": "It estimated that about sixty percent of Americans of European descent already had a third cousin or closer in it."
+    },
+    "4e91d0d5": {
+      "slide": "s9",
+      "text": "A match is a lead, not an answer. Finding the person still takes detective work, as it did that year.",
+      "spoken": "A match is a lead, not an answer. Finding the person still takes detective work, as it did that year."
+    },
+    "0e7288f4": {
+      "slide": "s9",
+      "text": "The scholars Solon Barocas and Helen Nissenbaum call this the tyranny of the minority. A few people who say yes decide for everyone.",
+      "spoken": "The scholars Solon Barocas and Helen Nissenbaum call this the tyranny of the minority. A few people who say yes decide for everyone."
+    },
+    "d8f97b07": {
+      "slide": "s10",
+      "text": "Cora took the test and agreed to be matched with relatives. Did she do anything wrong to Nell? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Cora took the test and agreed to be matched with relatives. Did she do anything wrong to Nell? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "53ebcb33": {
+      "slide": "s10",
+      "text": "The control view has a clear answer. But Nell can now be traced through Cora. Next, a gadget that works by guessing.",
+      "spoken": "The control view has a clear answer. But Nell can now be traced through Cora. Next, a gadget that works by guessing."
+    },
+    "04f218ad": {
+      "slide": "s11",
+      "text": "Meet Tally. Tally has never seen any information about Nell. Tally works by guessing.",
+      "spoken": "Meet Tally. Tally has never seen any information about Nell. Tally works by guessing."
+    },
+    "80e609c0": {
+      "slide": "s11",
+      "text": "Tally studies millions of people who do share their information, and looks for patterns.",
+      "spoken": "Tally studies millions of people who do share their information, and looks for patterns."
+    },
+    "adc698b5": {
+      "slide": "s11",
+      "text": "People who buy certain things, live in certain places, or know certain people tend to be alike in other ways too.",
+      "spoken": "People who buy certain things, live in certain places, or know certain people tend to be alike in other ways too."
+    },
+    "6ec25dc4": {
+      "slide": "s11",
+      "text": "Working out something you were not told from things you do know is called inference.",
+      "spoken": "Working out something you were not told from things you do know is called inference."
+    },
+    "21a025d3": {
+      "slide": "s11",
+      "text": "Give Tally a few facts about Nell, and Tally will infer the rest from people like her.",
+      "spoken": "Give Tally a few facts about Nell, and Tally will infer the rest from people like her."
+    },
+    "c9ff9c09": {
+      "slide": "s12",
+      "text": "Does this really work? Here's a study.",
+      "spoken": "Does this really work? Here's a study."
+    },
+    "aed524ce": {
+      "slide": "s12",
+      "text": "In 2013 researchers studied about fifty-eight thousand volunteers who shared their Facebook likes and answered questions about themselves.",
+      "spoken": "In 2013 researchers studied about fifty-eight thousand volunteers who shared their Facebook likes and answered questions about themselves."
+    },
+    "3a47a8a8": {
+      "slide": "s12",
+      "text": "A computer learned which likes went with which traits. Then it predicted people's traits from their likes alone.",
+      "spoken": "A computer learned which likes went with which traits. Then it predicted people's traits from their likes alone."
+    },
+    "7b0f1b41": {
+      "slide": "s12",
+      "text": "Shown one gay man and one straight man, it picked which was which eighty-eight percent of the time. It did about as well on political party.",
+      "spoken": "Shown one gay man and one straight man, it picked which was which eighty-eight percent of the time. It did about as well on political party."
+    },
+    "865fbc17": {
+      "slide": "s12",
+      "text": "Most of the likes had nothing obvious to do with sexuality or politics. The patterns came from other people who had shared both.",
+      "spoken": "Most of the likes had nothing obvious to do with sexuality or politics. The patterns came from other people who had shared both."
+    },
+    "f0040589": {
+      "slide": "s13",
+      "text": "Meet Buzz, a phone. Buzz belongs to one of Nell's friends, and Buzz has Nell's number.",
+      "spoken": "Meet Buzz, a phone. Buzz belongs to one of Nell's friends, and Buzz has Nell's number."
+    },
+    "c123b50b": {
+      "slide": "s13",
+      "text": "Many apps ask to upload your contact list. When Nell's friends tap Allow, the app learns her name, her number, and who knows her.",
+      "spoken": "Many apps ask to upload your contact list. When Nell's friends tap Allow, the app learns her name, her number, and who knows her."
+    },
+    "e67768fc": {
+      "slide": "s13",
+      "text": "In 2014 about two hundred seventy thousand people took a personality quiz on Facebook. The quiz app also collected data on their friends.",
+      "spoken": "In 2014 about two hundred seventy thousand people took a personality quiz on Facebook. The quiz app also collected data on their friends."
+    },
+    "addc845e": {
+      "slide": "s13",
+      "text": "By Facebook's own estimate, that gave the political firm Cambridge Analytica data on up to eighty-seven million people.",
+      "spoken": "By Facebook's own estimate, that gave the political firm Cambridge Analytica data on up to eighty-seven million people."
+    },
+    "001d63a4": {
+      "slide": "s13",
+      "text": "The friends had agreed to nothing. Their information arrived through someone else's Allow.",
+      "spoken": "The friends had agreed to nothing. Their information arrived through someone else's Allow."
+    },
+    "7a0fa44f": {
+      "slide": "s14",
+      "text": "Your turn to explore. Nell shared nothing. Switch on what other people did, and watch her profile fill in. When you're ready, press Continue.",
+      "spoken": "Your turn to explore. Nell shared nothing. Switch on what other people did, and watch her profile fill in. When you're ready, press Continue."
+    },
+    "d4161bcc": {
+      "slide": "s15",
+      "text": "Defenders of the control view have a strong reply. It starts from an example by the computer scientists Cynthia Dwork and Aaron Roth.",
+      "spoken": "Defenders of the control view have a strong reply. It starts from an example by the computer scientists Cynthia Dwork and Aaron Roth."
+    },
+    "cb22c158": {
+      "slide": "s15",
+      "text": "Suppose researchers study thousands of volunteers and show that smoking causes cancer.",
+      "spoken": "Suppose researchers study thousands of volunteers and show that smoking causes cancer."
+    },
+    "07ba7ba0": {
+      "slide": "s15",
+      "text": "By inference, an insurer now believes something new about every smoker, even those never in the study.",
+      "spoken": "By inference, an insurer now believes something new about every smoker, even those never in the study."
+    },
+    "1750358a": {
+      "slide": "s15",
+      "text": "Most people would not say the study invaded those smokers' privacy. Nothing of theirs was taken.",
+      "spoken": "Most people would not say the study invaded those smokers' privacy. Nothing of theirs was taken."
+    },
+    "24eaaff6": {
+      "slide": "s15",
+      "text": "So learning about someone from other people's data is not always a violation. The hard part is saying when it is.",
+      "spoken": "So learning about someone from other people's data is not always a violation. The hard part is saying when it is."
+    },
+    "fb5c3c75": {
+      "slide": "taking-vs-guessing",
+      "text": "Nell keeps a diary. Compare two ways a stranger could come to know what is in it. First, taking, which is a breach. Someone reads the diary without asking. Nell's own information has left her control. The control view calls this a violation, and almost everyone agrees. Second, guessing, which is an inference. Tally never opens the diary. It predicts what Nell wrote from people like her, and is usually right. The control view finds no violation. Critics reply that the stranger knows the secret either way.",
+      "spoken": "Nell keeps a diary. Compare two ways a stranger could come to know what is in it. First, taking, which is a breach. Someone reads the diary without asking. Nell's own information has left her control. The control view calls this a violation, and almost everyone agrees. Second, guessing, which is an inference. Tally never opens the diary. It predicts what Nell wrote from people like her, and is usually right. The control view finds no violation. Critics reply that the stranger knows the secret either way."
+    },
+    "d888996c": {
+      "slide": "s17",
+      "text": "Someone ends up knowing a secret of Nell's. Did they take it, or guess it? Sort each example into a column, then press Check answers.",
+      "spoken": "Someone ends up knowing a secret of Nell's. Did they take it, or guess it? Sort each example into a column, then press Check answers."
+    },
+    "873d85be": {
+      "slide": "s17",
+      "text": "Guessing works from other people's data, so nothing of Nell's was taken. That's why guessing is the hard case for the control view.",
+      "spoken": "Guessing works from other people's data, so nothing of Nell's was taken. That's why guessing is the hard case for the control view."
+    },
+    "1ae159d6": {
+      "slide": "s18",
+      "text": "Meet Peep, a doorbell camera. Peep belongs to the family across the street.",
+      "spoken": "Meet Peep, a doorbell camera. Peep belongs to the family across the street."
+    },
+    "cca38a1d": {
+      "slide": "s18",
+      "text": "Peep records everyone who passes, and saves the video with the company that made it.",
+      "spoken": "Peep records everyone who passes, and saves the video with the company that made it."
+    },
+    "d0eb5f51": {
+      "slide": "s18",
+      "text": "The neighbors agreed to this when they installed Peep. It is their door and their camera.",
+      "spoken": "The neighbors agreed to this when they installed Peep. It is their door and their camera."
+    },
+    "4fb7c182": {
+      "slide": "s18",
+      "text": "Four houses on Nell's street have a camera like Peep. Together they see her leave and come home every day.",
+      "spoken": "Four houses on Nell's street have a camera like Peep. Together they see her leave and come home every day."
+    },
+    "bc1400e6": {
+      "slide": "s18",
+      "text": "Nell owns no camera and was never asked. Call this someone else's device: a gadget that records Nell herself, on its owner's consent.",
+      "spoken": "Nell owns no camera and was never asked. Call this someone else's device: a gadget that records Nell herself, on its owner's consent."
+    },
+    "d906607d": {
+      "slide": "s19",
+      "text": "Cameras can also learn your face from photos you never took.",
+      "spoken": "Cameras can also learn your face from photos you never took."
+    },
+    "b224dd46": {
+      "slide": "s19",
+      "text": "Face recognition software matches a photo of a face against a collection of photos whose names are known.",
+      "spoken": "Face recognition software matches a photo of a face against a collection of photos whose names are known."
+    },
+    "876129b9": {
+      "slide": "s19",
+      "text": "One American company, Clearview AI, built its collection by copying billions of photos from public websites and social media.",
+      "spoken": "One American company, Clearview AI, built its collection by copying billions of photos from public websites and social media."
+    },
+    "058304b8": {
+      "slide": "s19",
+      "text": "You may be in that collection if anyone posted a public photo with you in it, such as a friend's party pictures.",
+      "spoken": "You may be in that collection if anyone posted a public photo with you in it, such as a friend's party pictures."
+    },
+    "22c936c4": {
+      "slide": "s19",
+      "text": "Regulators in Europe have fined it over ninety million euros. In the United States, police and federal agencies such as ICE are its main customers.",
+      "spoken": "Regulators in Europe have fined it over ninety million euros. In the United States, police and federal agencies such as I.C.E. are its main customers."
+    },
+    "e615c5fa": {
+      "slide": "s20",
+      "text": "Sometimes the secret isn't one person's at all.",
+      "spoken": "Sometimes the secret isn't one person's at all."
+    },
+    "b0c65cfc": {
+      "slide": "s20",
+      "text": "Strava is an app that records where people run and cycle. In late 2017 it published a world map of all its users' routes combined.",
+      "spoken": "Strava is an app that records where people run and cycle. In late 2017 it published a world map of all its users' routes combined."
+    },
+    "30253ecb": {
+      "slide": "s20",
+      "text": "No names were shown. Each route was blended in with millions of others.",
+      "spoken": "No names were shown. Each route was blended in with millions of others."
+    },
+    "cba39e91": {
+      "slide": "s20",
+      "text": "In January 2018 a student spotted bright loops in empty deserts, in the shape of military bases. Soldiers had jogged around them.",
+      "spoken": "In January 2018 a student spotted bright loops in empty deserts, in the shape of military bases. Soldiers had jogged around them."
+    },
+    "d94b57ac": {
+      "slide": "s20",
+      "text": "No single runner was exposed. The group was, and its secret showed only when everyone's data was put together.",
+      "spoken": "No single runner was exposed. The group was, and its secret showed only when everyone's data was put together."
+    },
+    "cc7dc476": {
+      "slide": "s21",
+      "text": "Pick the way each one happens. For each line, choose an answer from the menu, then press Check.",
+      "spoken": "Pick the way each one happens. For each line, choose an answer from the menu, then press Check."
+    },
+    "1aee5eab": {
+      "slide": "s21",
+      "text": "Cora's DNA is shared data. Tally and the insurer both use inference. The cameras are someone else's device. Next, what could be done about all this?",
+      "spoken": "Cora's DNA is shared data. Tally and the insurer both use inference. The cameras are someone else's device. Next, what could be done about all this?"
+    },
+    "27e5cc45": {
+      "slide": "s22",
+      "text": "In all three cases, consent failed Nell. She was never asked, and she had nothing to refuse.",
+      "spoken": "In all three cases, consent failed Nell. She was never asked, and she had nothing to refuse."
+    },
+    "e46e2eff": {
+      "slide": "s22",
+      "text": "Some scholars conclude that the control view names the wrong owner. Some information is about a group, not one person.",
+      "spoken": "Some scholars conclude that the control view names the wrong owner. Some information is about a group, not one person."
+    },
+    "dee1adbd": {
+      "slide": "s22",
+      "text": "Call this the group view. Some privacy interests are shared, so no single person's consent can protect them.",
+      "spoken": "Call this the group view. Some privacy interests are shared, so no single person's consent can protect them."
+    },
+    "9e14b593": {
+      "slide": "s22",
+      "text": "A family shares its DNA. A neighborhood shares its streets. People with similar habits share the patterns in their data.",
+      "spoken": "A family shares its DNA. A neighborhood shares its streets. People with similar habits share the patterns in their data."
+    },
+    "e8bb6653": {
+      "slide": "s22",
+      "text": "The group view comes in a weak form and a strong form, and they ask for different things.",
+      "spoken": "The group view comes in a weak form and a strong form, and they ask for different things."
+    },
+    "a3549eca": {
+      "slide": "s23",
+      "text": "First, the weak reading.",
+      "spoken": "First, the weak reading."
+    },
+    "d3209c55": {
+      "slide": "s23",
+      "text": "On the weak reading, privacy still belongs to each person. It just cannot be protected one person at a time.",
+      "spoken": "On the weak reading, privacy still belongs to each person. It just cannot be protected one person at a time."
+    },
+    "c93e9d40": {
+      "slide": "s23",
+      "text": "Clean air works the same way. Your lungs are yours, but you cannot keep the air clean by yourself.",
+      "spoken": "Clean air works the same way. Your lungs are yours, but you cannot keep the air clean by yourself."
+    },
+    "ddeee423": {
+      "slide": "s23",
+      "text": "So the weak reading asks for rules that cover everyone, in place of millions of separate I agree buttons.",
+      "spoken": "So the weak reading asks for rules that cover everyone, in place of millions of separate I agree buttons."
+    },
+    "d4d64fc9": {
+      "slide": "s23",
+      "text": "One example: a 2008 United States law bars health insurers and most employers from using genetic results against anyone, tested or not.",
+      "spoken": "One example: a 2008 United States law bars health insurers and most employers from using genetic results against anyone, tested or not."
+    },
+    "4e8685d1": {
+      "slide": "s24",
+      "text": "Now, the strong reading.",
+      "spoken": "Now, the strong reading."
+    },
+    "2a25afb9": {
+      "slide": "s24",
+      "text": "On the strong reading, which Luciano Floridi defends, the group itself has a right to privacy beyond its members' rights.",
+      "spoken": "On the strong reading, which Luciano Floridi defends, the group itself has a right to privacy beyond its members' rights."
+    },
+    "ae612fdb": {
+      "slide": "s24",
+      "text": "We already accept some group rights. A nation can have a right to govern itself that no single citizen has.",
+      "spoken": "We already accept some group rights. A nation can have a right to govern itself that no single citizen has."
+    },
+    "3ab41101": {
+      "slide": "s24",
+      "text": "The fitness map fits this reading. The secret was the base's, and no one runner could have kept it or given it away.",
+      "spoken": "The fitness map fits this reading. The secret was the base's, and no one runner could have kept it or given it away."
+    },
+    "70d7a806": {
+      "slide": "s24",
+      "text": "Some groups exist only in a database, such as people who shop like Nell. Their members do not know they belong.",
+      "spoken": "Some groups exist only in a database, such as people who shop like Nell. Their members do not know they belong."
+    },
+    "ed43f8f1": {
+      "slide": "s25",
+      "text": "This next case is serious. It involves real people, and it has no characters on it.",
+      "spoken": "This next case is serious. It involves real people, and it has no characters on it."
+    },
+    "f6016b3f": {
+      "slide": "s25",
+      "text": "The Havasupai are a Native American tribe who live in the Grand Canyon. Many members have diabetes.",
+      "spoken": "The Havasupai are a Native American tribe who live in the Grand Canyon. Many members have diabetes."
+    },
+    "443363da": {
+      "slide": "s25",
+      "text": "Starting in 1990, members gave blood to university researchers for a study of diabetes.",
+      "spoken": "Starting in 1990, members gave blood to university researchers for a study of diabetes."
+    },
+    "9ed98344": {
+      "slide": "s25",
+      "text": "Researchers later used the samples to study mental illness, inbreeding, and where the tribe's ancestors came from.",
+      "spoken": "Researchers later used the samples to study mental illness, inbreeding, and where the tribe's ancestors came from."
+    },
+    "c3bfbd78": {
+      "slide": "s25",
+      "text": "The tribe sued. In 2010 the university paid seven hundred thousand dollars, apologized, and returned the samples. The findings were about the whole tribe, whoever had given blood. That is why the case is used to support the strong reading.",
+      "spoken": "The tribe sued. In 2010 the university paid seven hundred thousand dollars, apologized, and returned the samples. The findings were about the whole tribe, whoever had given blood. That is why the case is used to support the strong reading."
+    },
+    "1d04059f": {
+      "slide": "weak-vs-strong",
+      "text": "Both readings say consent from one person at a time is not enough. They disagree about who holds the right. The weak reading is about shared protection. Each person holds the right. Rules protect everyone together, because nobody can do it alone. For example, a law limiting what companies may do with anyone's DNA. The strong reading is about shared ownership. The group holds the right. Its members cannot give it away one at a time. For example, a tribe must agree before its samples are studied, whatever each donor signed.",
+      "spoken": "Both readings say consent from one person at a time is not enough. They disagree about who holds the right. The weak reading is about shared protection. Each person holds the right. Rules protect everyone together, because nobody can do it alone. For example, a law limiting what companies may do with anyone's DNA. The strong reading is about shared ownership. The group holds the right. Its members cannot give it away one at a time. For example, a tribe must agree before its samples are studied, whatever each donor signed."
+    },
+    "9434565b": {
+      "slide": "s27",
+      "text": "A group right faces four problems.",
+      "spoken": "A group right faces four problems."
+    },
+    "1c2aa769": {
+      "slide": "s27",
+      "text": "Who is the group? A tribe has a council. People who shop like Nell have no meetings and no list of members.",
+      "spoken": "Who is the group? A tribe has a council. People who shop like Nell have no meetings and no list of members."
+    },
+    "1e0a369d": {
+      "slide": "s27",
+      "text": "Who speaks for it? Families disagree. If Nell says no and her brother says yes, somebody loses.",
+      "spoken": "Who speaks for it? Families disagree. If Nell says no and her brother says yes, somebody loses."
+    },
+    "90a0d3c0": {
+      "slide": "s27",
+      "text": "What about Cora? A group right would let Nell stop Cora from learning about her own body.",
+      "spoken": "What about Cora? A group right would let Nell stop Cora from learning about her own body."
+    },
+    "71e6cb7b": {
+      "slide": "s27",
+      "text": "What is lost? A killer was caught through his cousins' DNA. Medical research depends on pooled data.",
+      "spoken": "What is lost? A killer was caught through his cousins' DNA. Medical research depends on pooled data."
+    },
+    "eb7d8e4a": {
+      "slide": "s28",
+      "text": "When someone learns about Nell from other people's data, ask three separate questions.",
+      "spoken": "When someone learns about Nell from other people's data, ask three separate questions."
+    },
+    "f1d57cd7": {
+      "slide": "s28",
+      "text": "Was something learned? Often yes. Tube, Tally, Buzz, and Peep all know more than Nell told anyone.",
+      "spoken": "Was something learned? Often yes. Tube, Tally, Buzz, and Peep all know more than Nell told anyone."
+    },
+    "6f64fc89": {
+      "slide": "s28",
+      "text": "Was it wrong? That may depend on the use. Catching a killer and raising an insurance price are different things.",
+      "spoken": "Was it wrong? That may depend on the use. Catching a killer and raising an insurance price are different things."
+    },
+    "f2b758dc": {
+      "slide": "s28",
+      "text": "Was it a privacy wrong? If Nell is charged more because of a guess, the wrong may be unfair treatment, not lost privacy.",
+      "spoken": "Was it a privacy wrong? If Nell is charged more because of a guess, the wrong may be unfair treatment, not lost privacy."
+    },
+    "e4fa42d4": {
+      "slide": "s28",
+      "text": "A group right to privacy is one answer. Rules against unfair uses of data are another, and they need no new kind of right.",
+      "spoken": "A group right to privacy is one answer. Rules against unfair uses of data are another, and they need no new kind of right."
+    },
+    "3f287ecd": {
+      "slide": "s29",
+      "text": "Which view is each speaker taking? Sort each quote into a column, then press Check answers.",
+      "spoken": "Which view is each speaker taking? Sort each quote into a column, then press Check answers."
+    },
+    "8e45cba7": {
+      "slide": "s29",
+      "text": "The control view protects each person through their own consent. The weak reading protects it with rules for everyone. The strong reading gives the right to the group itself.",
+      "spoken": "The control view protects each person through their own consent. The weak reading protects it with rules for everyone. The strong reading gives the right to the group itself."
+    },
+    "f65d95af": {
+      "slide": "s30",
+      "text": "Should Cora need her close relatives' agreement before she takes a DNA test? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Should Cora need her close relatives' agreement before she takes a DNA test? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "e031d93f": {
+      "slide": "s30",
+      "text": "Each answer gives something up. Now, let's see whether your views have changed.",
+      "spoken": "Each answer gives something up. Now, let's see whether your views have changed."
+    },
+    "db4f0028": {
+      "slide": "s31",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "f32e1ef1": {
+      "slide": "s31",
+      "text": "Saved. Here's a quick recap.",
+      "spoken": "Saved. Here's a quick recap."
+    },
+    "717591f2": {
+      "slide": "s32",
+      "text": "Here's what the gadgets knew, and what it means.",
+      "spoken": "Here's what the gadgets knew, and what it means."
+    },
+    "71923a15": {
+      "slide": "s32",
+      "text": "The control view says privacy is your say over information about you, protected by consent.",
+      "spoken": "The control view says privacy is your say over information about you, protected by consent."
+    },
+    "f3e48d6e": {
+      "slide": "s32",
+      "text": "Others can reveal you in three ways: shared data, inference from people like you, and devices they own.",
+      "spoken": "Others can reveal you in three ways: shared data, inference from people like you, and devices they own."
+    },
+    "d54b38a0": {
+      "slide": "s32",
+      "text": "The group view says consent cannot fix this. Its weak reading wants rules for everyone. Its strong reading gives the group the right.",
+      "spoken": "The group view says consent cannot fix this. Its weak reading wants rules for everyone. Its strong reading gives the group the right."
+    },
+    "acf995da": {
+      "slide": "s32",
+      "text": "Critics reply that a good guess is not a violation, and that a group right would overrule its own members. Nell still has no gadgets. Cora sent her a birthday card this year, with a family tree inside.",
+      "spoken": "Critics reply that a good guess is not a violation, and that a group right would overrule its own members. Nell still has no gadgets. Cora sent her a birthday card this year, with a family tree inside."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

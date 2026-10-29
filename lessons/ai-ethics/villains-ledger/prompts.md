@@ -72,6 +72,25 @@ Alt text in `index.html` describes the panels as they are.
 The sheet PNGs were deleted after splitting (2026-10-05) to keep the SCORM zip
 small. Regenerate a sheet from its prompt if a panel needs redoing.
 
+## Re-rolls needed (review of 2026-10-28)
+
+Two panels show a uniform cast. Re-roll each as a single panel with the house
+style above, then update its `alt` in `index.html`.
+
+- **`wheelbarrow.png`** (sheet C, bottom-left). Everyone is a light-skinned
+  man, in a medieval European street, on a slide about Zimbabwe in 2008.
+  > A market street in daylight in a modern southern African town, where a
+  > middle-aged Black woman in a headscarf pushes a wheelbarrow piled high with
+  > bundles of plain green banknotes up to a bakery stall and an older
+  > gray-haired Black man behind the stall holds out one small loaf of bread,
+  > with loose banknotes blowing along the ground like fallen leaves.
+- **`coaster.png`** (sheet D, bottom-left). All three riders are young and
+  light-skinned.
+  > A roller coaster at night whose track is shaped like a jagged line chart,
+  > with one cart at the very top carrying three riders with their arms in the
+  > air (a young Black woman, a middle-aged South Asian man, and an older white
+  > woman with gray hair) and gold coins flying out of their pockets.
+
 ## House style (already included in each sheet prompt)
 
 > **16-bit SNES/JRPG pixel art** in a playful Saturday-morning-cartoon world.

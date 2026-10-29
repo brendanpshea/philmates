@@ -38,6 +38,7 @@
     <h1>Nobody Asked Nell</h1>
     <p class="lead">Nell has never taken a DNA test, joined a social network, or bought a smart gadget.</p>
     <p>Other people's gadgets know a great deal about her anyway. You will find out how, and decide whether anyone violated her privacy.</p>
+    <phil-narration>Nell has never taken a DNA test, joined a social network, or bought a smart gadget. Other people's gadgets know a great deal about her anyway. You'll find out how, and decide whether anyone violated her privacy. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
 
@@ -45,6 +46,7 @@
   <phil-slide>
     <h1>Where You Stand Now</h1>
     <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-narration>Before we start, tell me where you stand. Rate each of these five statements. There are no right answers, and you'll rate them again at the end. Press Submit when you're done.</phil-narration>
     <phil-beliefs prompt="How much do you agree, right now?">
       <phil-statement>If I never share my data, my privacy is safe.</phil-statement>
       <phil-statement>My DNA results are mine to share with whoever I choose.</phil-statement>
@@ -52,6 +54,7 @@
       <phil-statement>It is worth everyone giving up some privacy if it catches violent criminals.</phil-statement>
       <phil-statement>A group, such as a family or a tribe, can have a right to privacy that no single member has.</phil-statement>
     </phil-beliefs>
+    <phil-narration when="after">Saved. Now, meet Nell.</phil-narration>
   </phil-slide>
 
   <!-- 3. Meet Nell -->
@@ -59,11 +62,12 @@
     <img slot="art" src="./assets/nell.png" alt="Nell: a woman with a long dark braid, round wire-rimmed glasses, and a mustard-yellow sweater, holding a mug of tea in a lamplit room with a bookshelf and a paper calendar">
     <h1>Meet Nell</h1>
     <p>Nell is careful with information about herself.</p>
+    <phil-narration>Nell is careful with information about herself.</phil-narration>
     <ul reveal>
-      <li>She reads the terms before she signs up for anything. Usually she clicks "No."</li>
-      <li>She has no social media accounts, no fitness tracker, and no smart speaker.</li>
-      <li>She pays in cash when she can, and she keeps a paper calendar.</li>
-      <li>She believes that if she shares nothing, nobody can learn anything about her.</li>
+      <li say="She reads the terms before she signs up for anything. Usually she clicks No.">She reads the terms before she signs up for anything. Usually she clicks "No."</li>
+      <li say="She has no social media accounts, no fitness tracker, and no smart speaker.">She has no social media accounts, no fitness tracker, and no smart speaker.</li>
+      <li say="She pays in cash when she can, and she keeps a paper calendar.">She pays in cash when she can, and she keeps a paper calendar.</li>
+      <li say="She believes that if she shares nothing, nobody can learn anything about her.">She believes that if she shares nothing, nobody can learn anything about her.</li>
     </ul>
   </phil-slide>
 
@@ -75,17 +79,19 @@
     </phil-thinker>
     <h1>The Control View</h1>
     <p>Nell's belief rests on a common idea of what privacy is. Call it the <strong>control view</strong>.</p>
+    <phil-narration>Nell's belief rests on a common idea of what privacy is. Call it the control view.</phil-narration>
     <ul reveal>
-      <li>In 1967 the scholar Alan Westin defined privacy as people's claim to decide when, how, and how much about them reaches others.</li>
-      <li>On this view, your privacy is violated when information about you is taken or passed on without your say.</li>
-      <li>The tool that protects it is <strong>consent</strong>. Nobody may collect or share your information unless you agree.</li>
-      <li>Most privacy rules work this way. Every "I agree" button is asking for your consent.</li>
+      <li say="In 1967 the scholar Alan Westin defined privacy as people's claim to decide when, how, and how much about them reaches others.">In 1967 the scholar Alan Westin defined privacy as people's claim to decide when, how, and how much about them reaches others.</li>
+      <li say="On this view, your privacy is violated when information about you is taken or passed on without your say.">On this view, your privacy is violated when information about you is taken or passed on without your say.</li>
+      <li say="The tool that protects it is consent. Nobody may collect or share your information unless you agree.">The tool that protects it is <strong>consent</strong>. Nobody may collect or share your information unless you agree.</li>
+      <li say="Most privacy rules work this way. Every I agree button is asking for your consent.">Most privacy rules work this way. Every "I agree" button is asking for your consent.</li>
     </ul>
   </phil-slide>
 
   <!-- 5. MCQ: the control view [correct: C] -->
   <phil-slide>
     <h1>What Counts as a Violation?</h1>
+    <phil-narration>Pick an answer.</phil-narration>
     <phil-mcq data-qid="nobody-asked-nell:q1" review="control-view" prompt="On the control view, what makes something a violation of your privacy?"
               explain="Right. The control view asks one question: did you agree? If your information was collected or passed on without your consent, your privacy was violated. If you agreed, it was not.">
       <phil-choice feedback="Embarrassment is not the test. If you chose to tell them, the control view says your privacy is intact.">Someone learns a fact about you that you find embarrassing</phil-choice>
@@ -93,6 +99,7 @@
       <phil-choice correct>Your information is taken or shared without your agreement</phil-choice>
       <phil-choice feedback="Where it is kept is not the test. On this view, what matters is whether you agreed.">Information about you is stored somewhere outside your home</phil-choice>
     </phil-mcq>
+    <phil-narration when="after">The control view asks one question: did you agree? Next, meet the first gadget.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 1 — TUBE: SHARED DATA ============ -->
@@ -102,11 +109,12 @@
     <img slot="art" src="./assets/tube.png" alt="Tube: a small clear test tube with a green cap, dot eyes, and a smile, standing on a kitchen table beside an open mailing box">
     <h1>Cousin Cora's Kit</h1>
     <p>Meet Tube, a DNA test kit. Tube belongs to Nell's cousin Cora.</p>
+    <phil-narration>Meet Tube, a DNA test kit. Tube belongs to Nell's cousin Cora.</phil-narration>
     <ul reveal>
-      <li>Cora wants to learn about her ancestors. She spits in the tube and mails it to a testing company.</li>
-      <li>Cora reads the terms and agrees to them. She also ticks the box to be matched with relatives.</li>
-      <li>Nobody asks Nell, because it is Cora's spit.</li>
-      <li>Then Tube says something Nell did not expect. "I know a bit about you now, too."</li>
+      <li say="Cora wants to learn about her ancestors. She spits in the tube and mails it to a testing company.">Cora wants to learn about her ancestors. She spits in the tube and mails it to a testing company.</li>
+      <li say="Cora reads the terms and agrees to them. She also ticks the box to be matched with relatives.">Cora reads the terms and agrees to them. She also ticks the box to be matched with relatives.</li>
+      <li say="Nobody asks Nell, because it is Cora's spit.">Nobody asks Nell, because it is Cora's spit.</li>
+      <li say="Then Tube says something Nell did not expect. I know a bit about you now, too.">Then Tube says something Nell did not expect. "I know a bit about you now, too."</li>
     </ul>
   </phil-slide>
 
@@ -114,11 +122,12 @@
   <phil-slide id="dna-shared">
     <img slot="art" src="./assets/linked-hands.png" alt="A row of four simple figures holding hands; the first holds a test tube and glows bright green, the second is green too, the third is pale green, and the fourth is white">
     <h1>Your DNA Is Not Only Yours</h1>
+    <phil-narration>Here's why Tube can say that.</phil-narration>
     <ul reveal>
-      <li><strong>DNA</strong> is the set of instructions in your cells, inherited from your parents. Relatives carry copies of the same stretches.</li>
-      <li>You share about half your DNA with a parent, child, brother, or sister, and about one-eighth with a first cousin.</li>
-      <li>So Cora's result is partly a result about Nell. It can show who Nell is related to, and some health risks that run in the family.</li>
-      <li>Cora had every right to share her own DNA. But it is <strong>shared data</strong>: she could not share hers without sharing some of Nell's.</li>
+      <li say="DNA is the set of instructions in your cells, inherited from your parents. Relatives carry copies of the same stretches."><strong>DNA</strong> is the set of instructions in your cells, inherited from your parents. Relatives carry copies of the same stretches.</li>
+      <li say="You share about half your DNA with a parent, child, brother, or sister, and about one-eighth with a first cousin.">You share about half your DNA with a parent, child, brother, or sister, and about one-eighth with a first cousin.</li>
+      <li say="So Cora's result is partly a result about Nell. It can show who Nell is related to, and some health risks that run in the family.">So Cora's result is partly a result about Nell. It can show who Nell is related to, and some health risks that run in the family.</li>
+      <li say="Cora had every right to share her own DNA. But it is shared data. She could not share hers without sharing some of Nell's.">Cora had every right to share her own DNA. But it is <strong>shared data</strong>: she could not share hers without sharing some of Nell's.</li>
     </ul>
   </phil-slide>
 
@@ -127,29 +136,32 @@
     <img slot="art" src="./assets/cousin-strings.png" alt="A cork board with three small photos of smiley faces pinned at the top; red strings run down from them through two small notes and meet at one blank gray silhouette, with a magnifying glass beside it">
     <h1>Found Through His Cousins</h1>
     <p>This is how police solved one of the best-known unsolved cases in the United States.</p>
+    <phil-narration>This is how police solved one of the best-known unsolved cases in the United States.</phil-narration>
     <ul reveal>
-      <li>The Golden State Killer committed murders and rapes in California in the 1970s and 1980s. For decades nobody knew who he was.</li>
-      <li>In 2018 investigators uploaded DNA from a crime scene to a family-history website where people search for relatives.</li>
-      <li>It matched several of his distant cousins. Investigators built family trees for four months until one name was left.</li>
-      <li>He had never taken a DNA test. His cousins had, and that was enough.</li>
+      <li say="The Golden State Killer committed murders and rapes in California in the 1970s and 1980s. For decades nobody knew who he was.">The Golden State Killer committed murders and rapes in California in the 1970s and 1980s. For decades nobody knew who he was.</li>
+      <li say="In 2018 investigators uploaded DNA from a crime scene to a family-history website where people search for relatives.">In 2018 investigators uploaded DNA from a crime scene to a family-history website where people search for relatives.</li>
+      <li say="It matched several of his distant cousins. Investigators built family trees for four months until one name was left.">It matched several of his distant cousins. Investigators built family trees for four months until one name was left.</li>
+      <li say="He had never taken a DNA test. His cousins had, and that was enough.">He had never taken a DNA test. His cousins had, and that was enough.</li>
     </ul>
   </phil-slide>
 
   <!-- 9. The few decide for the many -->
   <phil-slide>
-    <img slot="art" src="./assets/two-say-yes.png" alt="A town square full of small gray figures; two near the front hold up test tubes and are colored green, and a green light spreads from them across the whole crowd">
+    <img slot="art" src="./assets/two-say-yes.png" alt="A town square at night full of small gray figures; two in the middle hold up test tubes and are colored green, and a pool of green light spreads around them">
     <h1>The Few Decide for the Many</h1>
+    <phil-narration>Cora is not unusual. Here's how far a few tests can reach.</phil-narration>
     <ul reveal>
-      <li>A 2018 study looked at one database holding the DNA of 1.28 million people.</li>
-      <li>It estimated that about 60% of Americans of European descent already had a third cousin or closer in it.</li>
-      <li>A match is a lead, not an answer. Finding the person still takes detective work, as it did that year.</li>
-      <li>The scholars Solon Barocas and Helen Nissenbaum call this the tyranny of the minority. A few people who say yes decide for everyone.</li>
+      <li say="A 2018 study looked at one database holding the DNA of one million, two hundred eighty thousand people.">A 2018 study looked at one database holding the DNA of 1.28 million people.</li>
+      <li say="It estimated that about sixty percent of Americans of European descent already had a third cousin or closer in it.">It estimated that about 60% of Americans of European descent already had a third cousin or closer in it.</li>
+      <li say="A match is a lead, not an answer. Finding the person still takes detective work, as it did that year.">A match is a lead, not an answer. Finding the person still takes detective work, as it did that year.</li>
+      <li say="The scholars Solon Barocas and Helen Nissenbaum call this the tyranny of the minority. A few people who say yes decide for everyone.">The scholars Solon Barocas and Helen Nissenbaum call this the tyranny of the minority. A few people who say yes decide for everyone.</li>
     </ul>
   </phil-slide>
 
   <!-- 10. Poll: did Cora wrong Nell -->
   <phil-slide>
     <h1>Decision Point: Cora's Choice</h1>
+    <phil-narration>Cora took the test and agreed to be matched with relatives. Did she do anything wrong to Nell? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="Cora took the test and agreed to be matched with relatives. Did she do anything wrong to Nell?"
                explain="The control view has a clear answer. Cora shared her own information, and nothing of Nell's was taken. Yet Nell can now be traced through Cora. Either that is not a privacy problem, or the control view is missing something.">
       <phil-choice note="This is what the control view says. Notice that Nell ends up exposed anyway.">No. It was Cora's own DNA, and she may share it.</phil-choice>
@@ -157,6 +169,7 @@
       <phil-choice note="Then you think some information belongs to more than one person. That idea returns later as the group view.">Yes. She should have asked her family first.</phil-choice>
       <phil-choice note="Catching a killer and setting an insurance price are different uses. Decide whether Nell's privacy changes between them.">It depends on what the data is used for.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">The control view has a clear answer. But Nell can now be traced through Cora. Next, a gadget that works by guessing.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 2 — TALLY AND BUZZ: INFERENCE ============ -->
@@ -166,11 +179,12 @@
     <img slot="art" src="./assets/tally.png" alt="Tally: a squat amber box-shaped computer with dot eyes and a row of small lights, tapping its chin while a long strip of paper covered in colored squares curls out of its front">
     <h1>The Guessing Machine</h1>
     <p>Meet Tally. Tally has never seen any information about Nell. Tally works by guessing.</p>
+    <phil-narration>Meet Tally. Tally has never seen any information about Nell. Tally works by guessing.</phil-narration>
     <ul reveal>
-      <li>Tally studies millions of people who do share their information, and looks for patterns.</li>
-      <li>People who buy certain things, live in certain places, or know certain people tend to be alike in other ways too.</li>
-      <li>Working out something you were not told from things you do know is called <strong>inference</strong>.</li>
-      <li>Give Tally a few facts about Nell, and Tally will infer the rest from people like her.</li>
+      <li say="Tally studies millions of people who do share their information, and looks for patterns.">Tally studies millions of people who do share their information, and looks for patterns.</li>
+      <li say="People who buy certain things, live in certain places, or know certain people tend to be alike in other ways too.">People who buy certain things, live in certain places, or know certain people tend to be alike in other ways too.</li>
+      <li say="Working out something you were not told from things you do know is called inference.">Working out something you were not told from things you do know is called <strong>inference</strong>.</li>
+      <li say="Give Tally a few facts about Nell, and Tally will infer the rest from people like her.">Give Tally a few facts about Nell, and Tally will infer the rest from people like her.</li>
     </ul>
   </phil-slide>
 
@@ -178,11 +192,12 @@
   <phil-slide>
     <img slot="art" src="./assets/lookalikes.png" alt="A row of five simple figures; four are covered in patterns of colored squares and the fifth is plain gray, which a small box-shaped computer is painting with the same pattern">
     <h1>People Like You</h1>
+    <phil-narration>Does this really work? Here's a study.</phil-narration>
     <ul reveal>
-      <li>In 2013 researchers studied about 58,000 volunteers who shared their Facebook "likes" and answered questions about themselves.</li>
-      <li>A computer learned which likes went with which traits. Then it predicted people's traits from their likes alone.</li>
-      <li>Shown one gay man and one straight man, it picked which was which 88% of the time. It did about as well on political party.</li>
-      <li>Most of the likes had nothing obvious to do with sexuality or politics. The patterns came from other people who had shared both.</li>
+      <li say="In 2013 researchers studied about fifty-eight thousand volunteers who shared their Facebook likes and answered questions about themselves.">In 2013 researchers studied about 58,000 volunteers who shared their Facebook "likes" and answered questions about themselves.</li>
+      <li say="A computer learned which likes went with which traits. Then it predicted people's traits from their likes alone.">A computer learned which likes went with which traits. Then it predicted people's traits from their likes alone.</li>
+      <li say="Shown one gay man and one straight man, it picked which was which eighty-eight percent of the time. It did about as well on political party.">Shown one gay man and one straight man, it picked which was which 88% of the time. It did about as well on political party.</li>
+      <li say="Most of the likes had nothing obvious to do with sexuality or politics. The patterns came from other people who had shared both.">Most of the likes had nothing obvious to do with sexuality or politics. The patterns came from other people who had shared both.</li>
     </ul>
   </phil-slide>
 
@@ -191,17 +206,19 @@
     <img slot="art" src="./assets/shadow-profile.png" alt="An empty wooden chair at a kitchen table under a lamp; on the wall behind it is the sharp shadow of a seated person with a long braid and glasses">
     <h1>A Profile of Someone Who Never Signed Up</h1>
     <p>Meet Buzz, a phone. Buzz belongs to one of Nell's friends, and Buzz has Nell's number.</p>
+    <phil-narration>Meet Buzz, a phone. Buzz belongs to one of Nell's friends, and Buzz has Nell's number.</phil-narration>
     <ul reveal>
-      <li>Many apps ask to upload your contact list. When Nell's friends tap "Allow," the app learns her name, her number, and who knows her.</li>
-      <li>In 2014 about 270,000 people took a personality quiz on Facebook. The quiz app also collected data on their friends.</li>
-      <li>By Facebook's own estimate, that gave the political firm Cambridge Analytica data on up to 87 million people.</li>
-      <li>The friends had agreed to nothing. Their information arrived through someone else's "Allow."</li>
+      <li say="Many apps ask to upload your contact list. When Nell's friends tap Allow, the app learns her name, her number, and who knows her.">Many apps ask to upload your contact list. When Nell's friends tap "Allow," the app learns her name, her number, and who knows her.</li>
+      <li say="In 2014 about two hundred seventy thousand people took a personality quiz on Facebook. The quiz app also collected data on their friends.">In 2014 about 270,000 people took a personality quiz on Facebook. The quiz app also collected data on their friends.</li>
+      <li say="By Facebook's own estimate, that gave the political firm Cambridge Analytica data on up to eighty-seven million people.">By Facebook's own estimate, that gave the political firm Cambridge Analytica data on up to 87 million people.</li>
+      <li say="The friends had agreed to nothing. Their information arrived through someone else's Allow.">The friends had agreed to nothing. Their information arrived through someone else's "Allow."</li>
     </ul>
   </phil-slide>
 
   <!-- 14. Shadow viz -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>What They Know About Nell</h1>
+    <phil-narration>Your turn to explore. Nell shared nothing. Switch on what other people did, and watch her profile fill in. When you're ready, press Continue.</phil-narration>
     <phil-shadow prompt="Nell shared nothing. Switch on what other people did, and watch her profile."></phil-shadow>
   </phil-slide>
 
@@ -209,12 +226,13 @@
   <phil-slide>
     <img slot="art" src="./assets/smoke-study.png" alt="Left: a small robot in a lab coat points at a wall chart of colored bars. Right: outside on a bench, a figure reads a newspaper while a curl of smoke rises beside them">
     <h1>Objection: A Good Guess Is Not a Violation</h1>
-    <p>Defenders of the control view have a strong reply. It starts with a study about smoking.</p>
+    <p>Defenders of the control view have a strong reply. It starts from an example by the computer scientists Cynthia Dwork and Aaron Roth.</p>
+    <phil-narration>Defenders of the control view have a strong reply. It starts from an example by the computer scientists Cynthia Dwork and Aaron Roth.</phil-narration>
     <ul reveal>
-      <li>Suppose researchers study thousands of volunteers and show that smoking causes cancer.</li>
-      <li>By <strong>inference</strong>, an insurer now believes something new about every smoker, even those never in the study.</li>
-      <li>Most people would not say the study invaded those smokers' privacy. Nothing of theirs was taken.</li>
-      <li>So learning about someone from other people's data is not always a violation. The hard part is saying when it is.</li>
+      <li say="Suppose researchers study thousands of volunteers and show that smoking causes cancer.">Suppose researchers study thousands of volunteers and show that smoking causes cancer.</li>
+      <li say="By inference, an insurer now believes something new about every smoker, even those never in the study.">By <strong>inference</strong>, an insurer now believes something new about every smoker, even those never in the study.</li>
+      <li say="Most people would not say the study invaded those smokers' privacy. Nothing of theirs was taken.">Most people would not say the study invaded those smokers' privacy. Nothing of theirs was taken.</li>
+      <li say="So learning about someone from other people's data is not always a violation. The hard part is saying when it is.">So learning about someone from other people's data is not always a violation. The hard part is saying when it is.</li>
     </ul>
   </phil-slide>
 
@@ -222,6 +240,7 @@
   <phil-slide id="taking-vs-guessing">
     <h1>Taking a Secret vs. Guessing It</h1>
     <p>Nell keeps a diary. Compare two ways a stranger could come to know what is in it.</p>
+    <phil-narration>Nell keeps a diary. Compare two ways a stranger could come to know what is in it. First, taking, which is a breach. Someone reads the diary without asking. Nell's own information has left her control. The control view calls this a violation, and almost everyone agrees. Second, guessing, which is an inference. Tally never opens the diary. It predicts what Nell wrote from people like her, and is usually right. The control view finds no violation. Critics reply that the stranger knows the secret either way.</phil-narration>
     <phil-compare>
       <phil-side label="Taking" tag="A breach">
         <p>Someone reads the diary without asking. Nell's own information has left her control.</p>
@@ -238,6 +257,7 @@
   <phil-slide>
     <img slot="art" src="./assets/take-vs-guess.png" alt="Left: a gloved hand pries open a small locked diary with a crowbar. Right: the same diary sits closed and locked beside a box-shaped computer with a thought bubble holding a heart and a star">
     <h1>The Locked Diary</h1>
+    <phil-narration>Someone ends up knowing a secret of Nell's. Did they take it, or guess it? Sort each example into a column, then press Check answers.</phil-narration>
     <phil-classify data-qid="nobody-asked-nell:q3" review="taking-vs-guessing" prompt="Someone ends up knowing a secret of Nell's. Did they take it, or guess it?"
                    explain="Right. Taking moves Nell's own information without her say, and the control view calls that a violation. Guessing works from other people's data, so nothing of Nell's was taken. That is why guessing is the hard case for the control view.">
       <phil-col key="take">Taking (a breach)</phil-col>
@@ -249,6 +269,7 @@
       <phil-item answer="guess" why="The study was of other people, as in the smoking example. Nothing was taken from Nell.">An insurer predicts Nell's health risks from a study of thousands of other people</phil-item>
       <phil-item answer="guess" why="Nell never told the shop. It reasoned from other shoppers who did share.">A shop guesses that Nell is pregnant because other shoppers who bought the same things were</phil-item>
     </phil-classify>
+    <phil-narration when="after">Guessing works from other people's data, so nothing of Nell's was taken. That's why guessing is the hard case for the control view.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 3 — PEEP: OTHER PEOPLE'S DEVICES ============ -->
@@ -258,11 +279,12 @@
     <img slot="art" src="./assets/doorbell-street.png" alt="An evening street of five small houses; four have a blue doorbell camera casting a cone of light across the pavement, and a woman in a yellow sweater walks through the overlapping cones past the one house with no camera">
     <h1>The Neighbors' Doorbells</h1>
     <p>Meet Peep, a doorbell camera. Peep belongs to the family across the street.</p>
+    <phil-narration>Meet Peep, a doorbell camera. Peep belongs to the family across the street.</phil-narration>
     <ul reveal>
-      <li>Peep records everyone who passes, and saves the video with the company that made it.</li>
-      <li>The neighbors agreed to this when they installed Peep. It is their door and their camera.</li>
-      <li>Four houses on Nell's street have a camera like Peep. Together they see her leave and come home every day.</li>
-      <li>Nell owns no camera and was never asked. Call this <strong>someone else's device</strong>: a gadget that records Nell herself, on its owner's consent.</li>
+      <li say="Peep records everyone who passes, and saves the video with the company that made it.">Peep records everyone who passes, and saves the video with the company that made it.</li>
+      <li say="The neighbors agreed to this when they installed Peep. It is their door and their camera.">The neighbors agreed to this when they installed Peep. It is their door and their camera.</li>
+      <li say="Four houses on Nell's street have a camera like Peep. Together they see her leave and come home every day.">Four houses on Nell's street have a camera like Peep. Together they see her leave and come home every day.</li>
+      <li say="Nell owns no camera and was never asked. Call this someone else's device: a gadget that records Nell herself, on its owner's consent.">Nell owns no camera and was never asked. Call this <strong>someone else's device</strong>: a gadget that records Nell herself, on its owner's consent.</li>
     </ul>
   </phil-slide>
 
@@ -270,11 +292,12 @@
   <phil-slide>
     <img slot="art" src="./assets/photo-scrape.png" alt="Buzz, a magenta phone with dot eyes and a grin, holds a vacuum hose that is sucking small photos of smiley faces off a washing line in a garden">
     <h1>Your Face, From Someone Else's Photos</h1>
+    <phil-narration>Cameras can also learn your face from photos you never took.</phil-narration>
     <ul reveal>
-      <li><strong>Face recognition</strong> software matches a photo of a face against a collection of photos whose names are known.</li>
-      <li>One US company, Clearview AI, built its collection by copying billions of photos from public websites and social media.</li>
-      <li>You are in that collection if anyone ever posted a photo with you in it, such as a friend's party pictures.</li>
-      <li>Privacy regulators in Europe have fined the company tens of millions of euros. In the US, police departments are its main customers.</li>
+      <li say="Face recognition software matches a photo of a face against a collection of photos whose names are known."><strong>Face recognition</strong> software matches a photo of a face against a collection of photos whose names are known.</li>
+      <li say="One American company, Clearview AI, built its collection by copying billions of photos from public websites and social media.">One US company, Clearview AI, built its collection by copying billions of photos from public websites and social media.</li>
+      <li say="You may be in that collection if anyone posted a public photo with you in it, such as a friend's party pictures.">You may be in that collection if anyone posted a public photo with you in it, such as a friend's party pictures.</li>
+      <li say="Regulators in Europe have fined it over ninety million euros. In the United States, police and federal agencies such as ICE are its main customers.">Regulators in Europe have fined it over €90 million. In the US, police and federal agencies such as ICE are its main customers.</li>
     </ul>
   </phil-slide>
 
@@ -282,11 +305,12 @@
   <phil-slide>
     <img slot="art" src="./assets/heatmap.png" alt="A dark desert seen from high above at night, crossed by thin glowing amber lines; in an empty stretch, many bright lines loop around one sharp-cornered rectangle">
     <h1>A Secret That Belonged to a Group</h1>
+    <phil-narration>Sometimes the secret isn't one person's at all.</phil-narration>
     <ul reveal>
-      <li>Strava is an app that records where people run and cycle. In 2018 it published a world map of all its users' routes combined.</li>
-      <li>No names were shown. Each route was blended in with millions of others.</li>
-      <li>In empty deserts, the map showed bright loops in the shape of military bases. Soldiers had been jogging around them.</li>
-      <li>No single runner was exposed. The group was, and its secret showed only when everyone's data was put together.</li>
+      <li say="Strava is an app that records where people run and cycle. In late 2017 it published a world map of all its users' routes combined.">Strava is an app that records where people run and cycle. In late 2017 it published a world map of all its users' routes combined.</li>
+      <li say="No names were shown. Each route was blended in with millions of others.">No names were shown. Each route was blended in with millions of others.</li>
+      <li say="In January 2018 a student spotted bright loops in empty deserts, in the shape of military bases. Soldiers had jogged around them.">In January 2018 a student spotted bright loops in empty deserts, in the shape of military bases. Soldiers had jogged around them.</li>
+      <li say="No single runner was exposed. The group was, and its secret showed only when everyone's data was put together.">No single runner was exposed. The group was, and its secret showed only when everyone's data was put together.</li>
     </ul>
   </phil-slide>
 
@@ -294,6 +318,7 @@
   <phil-slide>
     <h1>Three Ways to Learn About Nell</h1>
     <p>Pick the way each one happens.</p>
+    <phil-narration>Pick the way each one happens. For each line, choose an answer from the menu, then press Check.</phil-narration>
     <phil-cloze data-qid="nobody-asked-nell:q2" review="dna-shared" explain="Right. Cora's DNA is partly Nell's, so sharing it is shared data. Tally and the insurer both reason from other people to someone who was never in the data, which is inference. The cameras belong to the neighbors, who agreed on Nell's behalf without meaning to.">
       <span class="line">Cora's DNA test shows who Nell's relatives are.
         <phil-blank answer="shared data" options="inference,shared data,someone else's device">shared data</phil-blank></span>
@@ -304,6 +329,7 @@
       <span class="line">An insurer raises a smoker's price after a study of other smokers.
         <phil-blank answer="inference" options="inference,shared data,someone else's device">inference</phil-blank></span>
     </phil-cloze>
+    <phil-narration when="after">Cora's DNA is shared data. Tally and the insurer both use inference. The cameras are someone else's device. Next, what could be done about all this?</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 4 — A GROUP RIGHT? ============ -->
@@ -311,16 +337,17 @@
   <!-- 22. The group view -->
   <phil-slide>
     <phil-thinker slot="art" name="Group privacy" work="Taylor, Floridi, and van der Sloot, eds., Group Privacy (2017)"
-                  img="./assets/idea-group.png" alt="A grid of dim dots in which a cluster of glowing green dots forms the shape of a keyhole" accent="#46e07a">
+                  img="./assets/idea-group.png" alt="A grid of dim dots; in the middle, a square of glowing green dots surrounds a dark keyhole shape" accent="#46e07a">
       <p>Some privacy belongs to groups, so no one member's consent can protect it.</p>
     </phil-thinker>
     <h1>The Group View</h1>
     <p>In all three cases, consent failed Nell. She was never asked, and she had nothing to refuse.</p>
+    <phil-narration>In all three cases, consent failed Nell. She was never asked, and she had nothing to refuse.</phil-narration>
     <ul reveal>
-      <li>Some scholars conclude that the control view names the wrong owner. Some information is about a group, not one person.</li>
-      <li>Call this the <strong>group view</strong>: some privacy interests are shared, so no single person's consent can protect them.</li>
-      <li>A family shares its DNA. A neighborhood shares its streets. People with similar habits share the patterns in their data.</li>
-      <li>The group view comes in a weak form and a strong form, and they ask for different things.</li>
+      <li say="Some scholars conclude that the control view names the wrong owner. Some information is about a group, not one person.">Some scholars conclude that the control view names the wrong owner. Some information is about a group, not one person.</li>
+      <li say="Call this the group view. Some privacy interests are shared, so no single person's consent can protect them.">Call this the <strong>group view</strong>: some privacy interests are shared, so no single person's consent can protect them.</li>
+      <li say="A family shares its DNA. A neighborhood shares its streets. People with similar habits share the patterns in their data.">A family shares its DNA. A neighborhood shares its streets. People with similar habits share the patterns in their data.</li>
+      <li say="The group view comes in a weak form and a strong form, and they ask for different things.">The group view comes in a weak form and a strong form, and they ask for different things.</li>
     </ul>
   </phil-slide>
 
@@ -328,23 +355,25 @@
   <phil-slide>
     <img slot="art" src="./assets/one-canopy.png" alt="Left: five small figures on a rainy street each hold their own umbrella. Right: six figures stand dry under one large glass canopy that covers the whole pavement">
     <h1>The Weak Reading</h1>
+    <phil-narration>First, the weak reading.</phil-narration>
     <ul reveal>
-      <li>On the <strong>weak reading</strong>, privacy still belongs to each person. It just cannot be protected one person at a time.</li>
-      <li>Clean air works the same way. Your lungs are yours, but you cannot keep the air clean by yourself.</li>
-      <li>So the weak reading asks for rules that cover everyone, in place of millions of separate "I agree" buttons.</li>
-      <li>One example: a 2008 US law bars health insurers and most employers from using genetic results against anyone, tested or not.</li>
+      <li say="On the weak reading, privacy still belongs to each person. It just cannot be protected one person at a time.">On the <strong>weak reading</strong>, privacy still belongs to each person. It just cannot be protected one person at a time.</li>
+      <li say="Clean air works the same way. Your lungs are yours, but you cannot keep the air clean by yourself.">Clean air works the same way. Your lungs are yours, but you cannot keep the air clean by yourself.</li>
+      <li say="So the weak reading asks for rules that cover everyone, in place of millions of separate I agree buttons.">So the weak reading asks for rules that cover everyone, in place of millions of separate "I agree" buttons.</li>
+      <li say="One example: a 2008 United States law bars health insurers and most employers from using genetic results against anyone, tested or not.">One example: a 2008 US law bars health insurers and most employers from using genetic results against anyone, tested or not.</li>
     </ul>
   </phil-slide>
 
   <!-- 24. The strong reading -->
   <phil-slide>
-    <img slot="art" src="./assets/fish-school.png" alt="In deep blue water, many small green fish swim so tightly together that the school forms the shape of one large fish, turning away from a fishing net">
+    <img slot="art" src="./assets/fish-school.png" alt="In deep blue water, many small green fish swim so tightly together that the school forms the shape of one large fish, near a fishing net">
     <h1>The Strong Reading</h1>
+    <phil-narration>Now, the strong reading.</phil-narration>
     <ul reveal>
-      <li>On the <strong>strong reading</strong>, the group itself has a right to privacy, over and above its members' rights.</li>
-      <li>We already accept some group rights. A nation can have a right to govern itself that no single citizen has.</li>
-      <li>The fitness map fits this reading. The secret was the base's, and no one runner could have kept it or given it away.</li>
-      <li>Some groups exist only in a database, such as "people who shop like Nell." Their members do not know they belong.</li>
+      <li say="On the strong reading, which Luciano Floridi defends, the group itself has a right to privacy beyond its members' rights.">On the <strong>strong reading</strong>, which Luciano Floridi defends, the group itself has a right to privacy beyond its members' rights.</li>
+      <li say="We already accept some group rights. A nation can have a right to govern itself that no single citizen has.">We already accept some group rights. A nation can have a right to govern itself that no single citizen has.</li>
+      <li say="The fitness map fits this reading. The secret was the base's, and no one runner could have kept it or given it away.">The fitness map fits this reading. The secret was the base's, and no one runner could have kept it or given it away.</li>
+      <li say="Some groups exist only in a database, such as people who shop like Nell. Their members do not know they belong.">Some groups exist only in a database, such as "people who shop like Nell." Their members do not know they belong.</li>
     </ul>
   </phil-slide>
 
@@ -352,11 +381,12 @@
   <phil-slide>
     <img slot="art" src="./assets/sample-vials.png" alt="An open laboratory freezer drawer holding neat rows of small capped sample vials in cold blue light and mist">
     <h1>The Havasupai Case</h1>
+    <phil-narration>This next case is serious. It involves real people, and it has no characters on it.</phil-narration>
     <ul reveal>
-      <li>The Havasupai are a Native American tribe who live in the Grand Canyon. Many members have diabetes.</li>
-      <li>Starting in 1990, members gave blood to university researchers for a study of diabetes.</li>
-      <li>Other researchers later used the samples to study mental illness, inbreeding, and where the tribe's ancestors came from.</li>
-      <li>The tribe sued. In 2010 the university paid $700,000, apologized, and returned the samples.</li>
+      <li say="The Havasupai are a Native American tribe who live in the Grand Canyon. Many members have diabetes.">The Havasupai are a Native American tribe who live in the Grand Canyon. Many members have diabetes.</li>
+      <li say="Starting in 1990, members gave blood to university researchers for a study of diabetes.">Starting in 1990, members gave blood to university researchers for a study of diabetes.</li>
+      <li say="Researchers later used the samples to study mental illness, inbreeding, and where the tribe's ancestors came from.">Researchers later used the samples to study mental illness, inbreeding, and where the tribe's ancestors came from.</li>
+      <li say="The tribe sued. In 2010 the university paid seven hundred thousand dollars, apologized, and returned the samples. The findings were about the whole tribe, whoever had given blood. That is why the case is used to support the strong reading.">The tribe sued. In 2010 the university paid $700,000, apologized, and returned the samples.</li>
     </ul>
     <p>The findings were about the whole tribe, whoever had given blood. That is why the case is used to support the strong reading.</p>
   </phil-slide>
@@ -365,6 +395,7 @@
   <phil-slide id="weak-vs-strong">
     <h1>Weak Reading vs. Strong Reading</h1>
     <p>Both readings say consent from one person at a time is not enough. They disagree about who holds the right.</p>
+    <phil-narration>Both readings say consent from one person at a time is not enough. They disagree about who holds the right. The weak reading is about shared protection. Each person holds the right. Rules protect everyone together, because nobody can do it alone. For example, a law limiting what companies may do with anyone's DNA. The strong reading is about shared ownership. The group holds the right. Its members cannot give it away one at a time. For example, a tribe must agree before its samples are studied, whatever each donor signed.</phil-narration>
     <phil-compare>
       <phil-side label="Weak Reading" tag="Shared protection">
         <p>Each person holds the right. Rules protect everyone together, because nobody can do it alone.</p>
@@ -379,13 +410,14 @@
 
   <!-- 27. Objections -->
   <phil-slide>
-    <img slot="art" src="./assets/family-table.png" alt="A round dinner table seen from above with a single green-capped test tube in the center; of the four pairs of hands around it, some are raised flat to say stop and some rest beside their plates">
+    <img slot="art" src="./assets/family-table.png" alt="A round dinner table seen from above with a single green-capped test tube in the center; of the four pairs of hands around it, two are raised flat to say stop and two rest on their plates">
     <h1>Four Problems for a Group Right</h1>
+    <phil-narration>A group right faces four problems.</phil-narration>
     <ul reveal>
-      <li><strong>Who is the group?</strong> A tribe has a council. "People who shop like Nell" have no meetings and no list of members.</li>
-      <li><strong>Who speaks for it?</strong> Families disagree. If Nell says no and her brother says yes, somebody loses.</li>
-      <li><strong>What about Cora?</strong> A group right would let Nell stop Cora from learning about her own body.</li>
-      <li><strong>What is lost?</strong> A killer was caught through his cousins' DNA. Medical research depends on pooled data.</li>
+      <li say="Who is the group? A tribe has a council. People who shop like Nell have no meetings and no list of members."><strong>Who is the group?</strong> A tribe has a council. "People who shop like Nell" have no meetings and no list of members.</li>
+      <li say="Who speaks for it? Families disagree. If Nell says no and her brother says yes, somebody loses."><strong>Who speaks for it?</strong> Families disagree. If Nell says no and her brother says yes, somebody loses.</li>
+      <li say="What about Cora? A group right would let Nell stop Cora from learning about her own body."><strong>What about Cora?</strong> A group right would let Nell stop Cora from learning about her own body.</li>
+      <li say="What is lost? A killer was caught through his cousins' DNA. Medical research depends on pooled data."><strong>What is lost?</strong> A killer was caught through his cousins' DNA. Medical research depends on pooled data.</li>
     </ul>
   </phil-slide>
 
@@ -394,17 +426,19 @@
     <img slot="art" src="./assets/scale.png" alt="A brass balance scale hanging almost level, with a small locked diary on one pan and a stack of coins with a magnifying glass on the other">
     <h1>Three Questions to Keep Apart</h1>
     <p>When someone learns about Nell from other people's data, ask three separate questions.</p>
+    <phil-narration>When someone learns about Nell from other people's data, ask three separate questions.</phil-narration>
     <ul reveal>
-      <li><strong>Was something learned?</strong> Often yes. Tube, Tally, Buzz, and Peep all know more than Nell told anyone.</li>
-      <li><strong>Was it wrong?</strong> That may depend on the use. Catching a killer and raising an insurance price are different things.</li>
-      <li><strong>Was it a privacy wrong?</strong> If Nell is charged more because of a guess, the wrong may be unfair treatment, not lost privacy.</li>
-      <li>A group right to privacy is one answer. Rules against unfair uses of data are another, and they need no new kind of right.</li>
+      <li say="Was something learned? Often yes. Tube, Tally, Buzz, and Peep all know more than Nell told anyone."><strong>Was something learned?</strong> Often yes. Tube, Tally, Buzz, and Peep all know more than Nell told anyone.</li>
+      <li say="Was it wrong? That may depend on the use. Catching a killer and raising an insurance price are different things."><strong>Was it wrong?</strong> That may depend on the use. Catching a killer and raising an insurance price are different things.</li>
+      <li say="Was it a privacy wrong? If Nell is charged more because of a guess, the wrong may be unfair treatment, not lost privacy."><strong>Was it a privacy wrong?</strong> If Nell is charged more because of a guess, the wrong may be unfair treatment, not lost privacy.</li>
+      <li say="A group right to privacy is one answer. Rules against unfair uses of data are another, and they need no new kind of right.">A group right to privacy is one answer. Rules against unfair uses of data are another, and they need no new kind of right.</li>
     </ul>
   </phil-slide>
 
   <!-- 29. Classify: which view -->
   <phil-slide>
     <h1>Name That View</h1>
+    <phil-narration>Which view is each speaker taking? Sort each quote into a column, then press Check answers.</phil-narration>
     <phil-classify data-qid="nobody-asked-nell:q4" review="weak-vs-strong" prompt="Which view is each speaker taking?"
                    explain="Right. The control view protects each person through their own consent. The weak reading keeps the right with each person but protects it with rules for everyone. The strong reading gives the right to the group itself.">
       <phil-col key="control">The control view</phil-col>
@@ -417,11 +451,13 @@
       <phil-item answer="strong" why="The right belongs to the tribe as a group, so no single donor's signature can give it away.">"Each donor signed, but that isn't enough. The tribe as a whole must agree before its samples are studied."</phil-item>
       <phil-item answer="strong" why="The secret is the group's. No single member could keep it or give it away.">"The base's location was the unit's secret. No single runner could have kept it or given it away."</phil-item>
     </phil-classify>
+    <phil-narration when="after">The control view protects each person through their own consent. The weak reading protects it with rules for everyone. The strong reading gives the right to the group itself.</phil-narration>
   </phil-slide>
 
   <!-- 30. Poll: should Cora need agreement -->
   <phil-slide>
     <h1>Your Call</h1>
+    <phil-narration>Should Cora need her close relatives' agreement before she takes a DNA test? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
     <phil-poll prompt="Should Cora need her close relatives' agreement before she takes a DNA test?"
                explain="Each answer gives something up. Leave it to Cora, and Nell has no protection. Give the family a say, and Cora loses control of information about her own body. Limit the uses, and someone has to decide which uses are fair.">
       <phil-choice note="The control view agrees. Then say what, if anything, protects Nell.">No. It is her body and her information.</phil-choice>
@@ -429,24 +465,28 @@
       <phil-choice note="This is close to the strong reading. Decide how many relatives count, and what happens when they disagree.">Yes. Her DNA is partly theirs.</phil-choice>
       <phil-choice note="Telling is not asking. Nell would know, and would still have no say.">She should tell them, but the choice is hers.</phil-choice>
     </phil-poll>
+    <phil-narration when="after">Each answer gives something up. Now, let's see whether your views have changed.</phil-narration>
   </phil-slide>
 
   <!-- 31. Belief probe (revisit) -->
   <phil-slide>
     <h1>Where You Stand Now</h1>
     <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit.</phil-narration>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration when="after">Saved. Here's a quick recap.</phil-narration>
   </phil-slide>
 
   <!-- 32. Recap -->
   <phil-slide>
     <img slot="art" src="./assets/nell-house.png" alt="A cozy cottage at dusk with warm light in its windows; over the garden hedge peek four small cartoon gadgets: a test tube, a phone, a doorbell camera, and a box-shaped computer">
     <h1>What the Gadgets Knew</h1>
+    <phil-narration>Here's what the gadgets knew, and what it means.</phil-narration>
     <ul reveal>
-      <li>The <strong>control view</strong> says privacy is your say over information about you, protected by <strong>consent</strong>.</li>
-      <li>Others can reveal you in three ways: <strong>shared data</strong>, <strong>inference</strong> from people like you, and devices they own.</li>
-      <li>The <strong>group view</strong> says consent cannot fix this. Its weak reading wants rules for everyone. Its strong reading gives the group the right.</li>
-      <li>Critics reply that a good guess is not a violation, and that a group right would overrule its own members.</li>
+      <li say="The control view says privacy is your say over information about you, protected by consent.">The <strong>control view</strong> says privacy is your say over information about you, protected by <strong>consent</strong>.</li>
+      <li say="Others can reveal you in three ways: shared data, inference from people like you, and devices they own.">Others can reveal you in three ways: <strong>shared data</strong>, <strong>inference</strong> from people like you, and devices they own.</li>
+      <li say="The group view says consent cannot fix this. Its weak reading wants rules for everyone. Its strong reading gives the group the right.">The <strong>group view</strong> says consent cannot fix this. Its weak reading wants rules for everyone. Its strong reading gives the group the right.</li>
+      <li say="Critics reply that a good guess is not a violation, and that a group right would overrule its own members. Nell still has no gadgets. Cora sent her a birthday card this year, with a family tree inside.">Critics reply that a good guess is not a violation, and that a group right would overrule its own members.</li>
     </ul>
     <p class="muted">Nell still has no gadgets. Cora sent her a birthday card this year, with a family tree inside.</p>
   </phil-slide>
@@ -454,6 +494,7 @@
   <!-- Further reading and AI acknowledgment -->
   <phil-slide id="further-reading">
     <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
     <ul class="phil-reading">
       <li>Alan F. Westin, <em>Privacy and Freedom</em> (Atheneum, 1967). The book behind the control view of privacy.</li>
       <li>Solon Barocas and Helen Nissenbaum, “Big Data’s End Run around Anonymity and Consent,” in <em>Privacy, Big Data, and the Public Good</em>, ed. Julia Lane et al. (Cambridge University Press, 2014). <a href="https://nissenbaum.tech.cornell.edu/papers/Big%20Datas%20End%20Run%20Around%20Consent%20and%20Anonymity.pdf">Read online</a>. Why consent fails, and where the tyranny of the minority comes from.</li>
@@ -461,7 +502,7 @@
       <li>Michelle M. Mello and Leslie E. Wolf, “The Havasupai Indian Tribe Case: Lessons for Research Involving Stored Biologic Samples,” <em>New England Journal of Medicine</em> 363, no. 3 (2010). <a href="https://doi.org/10.1056/NEJMp1005203">Publisher’s page</a>. A short account of the Havasupai case and its lessons for research.</li>
       <li>Beate Roessler and Judith DeCew, “Privacy,” <em>Stanford Encyclopedia of Philosophy</em> (rev. 2023). <a href="https://plato.stanford.edu/entries/privacy/">Read online</a>. An overview of the main theories of privacy, including group privacy.</li>
     </ul>
-    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Microsoft text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

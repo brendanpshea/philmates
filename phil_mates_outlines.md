@@ -1413,6 +1413,34 @@ Plus `prompts.md`.
   concept, which is the opposite of the audience. State the idea plainly,
   label it, then let the joke ride on top of it.
 
+### Accuracy note (checked 2026-10-28)
+Replaces the batch-5 note's Amberville points, which are all still met: Goodhart is credited, Ruby's entry is never called a mistake in graded text, and the chilling effect is taught on `the-pile`.
+
+- **Bias:** Friedman & Nissenbaum, "Bias in Computer Systems," *ACM TOIS* 14(3), 1996, doi 10.1145/230538.230561. They name three kinds: preexisting (rooted in "social institutions, practices, and attitudes"), technical, and emergent. The Sorter is the preexisting kind, so the slide says "one kind of bias".
+- **Proxy:** Deleting a protected column does not remove its signal when other columns encode it. See Barocas & Selbst, "Big Data's Disparate Impact," *California Law Review* 104 (2016), on redundant encodings. The slide's "rarely helps" is a hedge.
+- **Goodhart's law:** named for the British economist Charles Goodhart. His 1975 paper "Problems of Monetary Management: The U.K. Experience" says: "Any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes." The popular wording, "When a measure becomes a target, it ceases to be a good measure," is Marilyn Strathern's (1997). The slide paraphrases the popular version and calls it "a related idea" to specification gaming, not its name.
+- **Specification gaming:** Krakovna et al., DeepMind blog, April 21, 2020, defines it as "a behaviour that satisfies the literal specification of an objective without achieving the intended outcome." The post does not mention Goodhart. The cloze accepts "reward hacking".
+- **Coding models gaming tests:** METR, "Recent Frontier Models Are Reward Hacking," June 5, 2025, found models "modifying the tests or scoring code" (o3, and also Claude 3.7 Sonnet and o1). https://metr.org/blog/2025-06-05-recent-reward-hacking
+- **Engagement feeds:** Milli et al., "Engagement, User Satisfaction, and the Amplification of Divisive Content on Social Media," *PNAS Nexus* 2025 (arXiv 2305.16941). In a pre-registered experiment, Twitter's engagement ranking amplified angry, out-group-hostile content compared with a chronological feed, and users did not prefer the political tweets it picked.
+- **Dark patterns:** term coined by Harry Brignull in 2010. **FTC v. Amazon:** settled Sept 25, 2025 for $2.5 billion ($1B civil penalty plus $1.5B in refunds) over Prime enrollment and cancellation designs, with no admission of wrongdoing. https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon . A Sept 2026 order revision raised the cap per consumer; the slide gives only the headline figure. The slide's "No law in Amberville forbids these tricks" is a claim about the story only.
+- **Near misses:** Clark et al., *Neuron* 61 (2009). Near misses were rated unpleasant but raised the desire to play, and they recruited win-related circuitry; the effect depended on personal control (the crank). Williams & Connolly, *Psychology of Addictive Behaviors* 20(1) (2006): teaching gambling odds improved knowledge but did not reduce gambling. Hence "helps less than you would hope".
+- **Aggregation:** Solove, "'I've Got Nothing to Hide' and Other Misunderstandings of Privacy," 44 *San Diego L. Rev.* 745 (2007): "which I call aggregation, emerges from the fusion of small bits of seemingly innocuous data."
+- **Chilling effect:** taught on `the-pile` as a change in innocent people's behavior. For empirical support, see Penney, "Chilling Effects: Online Surveillance and Wikipedia Use," *Berkeley Tech. L.J.* 31 (2016).
+- **Pasco County:** The Tampa Bay Times "Targeted" series (2020; Pulitzer, 2021) reported that the sheriff's "intelligence-led policing" used a department-built algorithm that scored people on their criminal records, after which analysts picked about 100 names. Deputies made repeated home "checks". The office told a federal court in 2023 that it had stopped the program. In a Dec 2024 settlement with the Institute for Justice's four clients ($105,000), it acknowledged that the program exceeded officers' implied license and interfered with their First, Fourth and Fourteenth Amendment rights, and it promised the program will not return. Sources: Reason (Dec 4, 2024), Florida Phoenix (Dec 5, 2024), FIJ (May 2023).
+- **Style and copyright:** US copyright protects expression, not style. The Copyright Office's Part 3 report (pre-publication, May 9, 2025) says so, while treating style imitation as possible market dilution. "Courts and philosophers are still arguing" holds as of Oct 2026:
+  - Getty v. Stability (UK) is on appeal.
+  - GEMA v. OpenAI (Munich, Nov 11, 2025, for GEMA) is on appeal.
+  - Sony has not settled with Suno or Udio. UMG settled with Udio (Oct 2025) and Warner with Suno (Nov 2025).
+- **Ghost work:** Mary L. Gray & Siddharth Suri, *Ghost Work* (Houghton Mifflin Harcourt, 2019).
+- **Data centers:** IEA, *Energy and AI* (April 2025): data centers used about 415 TWh in 2024 (about 1.5% of world electricity), projected to roughly double by 2030. The poll explain gives no figure.
+- **Mill:** *On Liberty* ch. 2: "All silencing of discussion is an assumption of infallibility." A false opinion still yields "the clearer perception and livelier impression of truth, produced by its collision with error." The Notice Board poll note paraphrases him.
+- **Further reading:**
+  - Müller's SEP entry was first published April 30, 2020, with a substantive revision on March 27, 2026, so "rev. 2026" is correct.
+  - Solove is 44(4) San Diego L. Rev. 745 (2007).
+  - Schüll, *Addiction by Design*, Princeton UP, 2012.
+  - The Krakovna URL resolves.
+- **Story facts that are fictional, not checked:** 74%, the forty years of ledgers, four hundred recordings, three hundred horseshoes an hour, and three carts of coal.
+
 ---
 
 ## Computing & AI Ethics: History — "The Breadcrumb Network"
@@ -1469,6 +1497,77 @@ Plus `prompts.md`.
 26. **[T]** The Digital Forest — connecting ancient information shocks to social media, crypto, surveillance, and AI, `reveal`.
 27. **[P]** Beliefs review (`<phil-beliefs-review>`).
 28. **[T]** The Trail Ahead — completion (`forest-trail` art).
+
+> **Built lesson:** the lesson at `lessons/ai-ethics/internet-no-middle/` is
+> "The Network With No Middle" (packet switching, end-to-end design, the web,
+> Lessig's "code is law"). The outline above describes a different, unbuilt plan.
+> The note below covers the built lesson.
+
+### Accuracy note (checked 2026-10-28)
+
+- ARPANET dates from 1969 and TCP/IP from 1983, so "twenty years before the web" holds
+  for ARPANET (web proposed March 1989). https://www.w3.org/History/1989/proposal.html
+- Packet switching was worked out independently by Paul Baran (RAND, *On Distributed
+  Communications*, 1964) and Donald Davies (UK National Physical Laboratory, 1965; he
+  coined "packet"). ARPA's planners later read both. ARPANET's stated purpose was
+  sharing computers, not survivability. Stephen Lukasik (IEEE Annals 2011) is a minority
+  dissent. https://en.wikipedia.org/wiki/Donald_Davies
+- The end-to-end argument: Saltzer, Reed & Clark, 1981 conference paper, revised in *ACM
+  TOCS* 2(4), 1984. https://doi.org/10.1145/357401.357402
+- "Cannot tell traffic apart" is a design ideal, not a fact about real networks: ISPs can
+  inspect and prioritize traffic, which is why net neutrality is argued about. The US
+  national net-neutrality rules (FCC 2024 order) were struck down by the Sixth Circuit
+  on Jan 2, 2025 (*Ohio Telecom Ass'n v. FCC*). State laws (e.g. California) remain.
+  https://www.congress.gov/crs-product/LSB11264
+- Ray Tomlinson sent network email in late 1971 at BBN as a side project and chose @ to
+  separate user from host. https://qz.com/632173/the-man-who-put-the-in-your-email-has-died
+- "Email was 75% of ARPANET traffic in 1973" has no located primary source. Lukasik
+  dates a MITRE study to 1974. Say "within a few years".
+  https://lists.sigcis.org/archives/list/members@lists.sigcis.org/message/2KRGKV5VBZVB4N36QMN23FBUDE4FNJ5Q/
+- *Spacewar!* (1962, PDP-1 at MIT) was written by Steve Russell with Graetz, Wiitanen,
+  and others: young programmers, several not current MIT students. Only 53 PDP-1s were
+  sold, so don't say it reached "almost every" machine.
+  https://en.wikipedia.org/wiki/Spacewar!
+- MUD: Roy Trubshaw, autumn 1978, University of Essex, with Richard Bartle (both
+  students). PLATO games and Maze War (1973) predate it, so don't call MUD the first
+  shared online world. https://mud.co.uk/richard/mudhist.htm
+- RFC 1 was written by Steve Crocker, a UCLA graduate student, on 7 April 1969. He
+  chose "Request for Comments" to avoid sounding authoritative.
+  https://en.wikipedia.org/wiki/Steve_Crocker
+- HOSTS.TXT was kept by SRI's Network Information Center. Elizabeth Feinler's group ran
+  the host-naming registry from 1972 to 1989 (RFC 608, 1974; RFC 810, 1982).
+  https://www.internethalloffame.org/inductee/elizabeth-feinler/
+- The UN reviewed internet governance at WSIS+20 (General Assembly, 17 Dec 2025),
+  reaffirmed the multistakeholder model, and made the IGF permanent.
+  https://www.internetsociety.org/blog/2025/12/wsis20-reaffirms-multistakeholder-governance-and-a-lasting-igf
+- Mike Sendall, Berners-Lee's manager, wrote "Vague but exciting…" on the March 1989
+  proposal.
+  https://cds.cern.ch/journal/CERNBulletin/2009/11/News%20Articles/1165312?ln=en
+- CERN put the WWW software into the public domain on 30 April 1993. The University of
+  Minnesota announced Gopher license fees for commercial use in early 1993.
+  https://en.wikipedia.org/wiki/Gopher_(protocol)
+- Cookies: Lou Montulli, Netscape, June 1994, for a shopping-cart application (MCI). The
+  name comes from the Unix "magic cookie". Safari and Firefox block third-party
+  (cross-site tracking) cookies by default; Firefox partitions the rest. Chrome still
+  allows them: Google dropped its phase-out in July 2024, dropped the replacement prompt
+  in April 2025, and retired most Privacy Sandbox APIs in Oct 2025.
+  https://en.wikipedia.org/wiki/HTTP_cookie ;
+  https://privacysandbox.google.com/blog/privacy-sandbox-next-steps
+- The Lessig quotation is verbatim from *Code and Other Laws of Cyberspace* (1999),
+  ch. 1. The "a different 'code'" wording belongs to *Code: Version 2.0* (2006), so
+  don't mix the two. https://lessig.org/images/resources/1999-Code.pdf
+- Pew (July 22, 2025): Google users who saw an AI summary clicked a traditional result
+  in 8% of visits, against 15% without one.
+  https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/
+- AI copying is still unsettled in the courts as of Oct 2026. The Third Circuit affirmed
+  "no fair use" in *Thomson Reuters v. Ross* (Sept 2026), but that case involved a
+  non-generative tool. Penske Media's antitrust suit over Google AI Overviews was
+  dismissed without prejudice on Sept 30, 2026.
+  https://www.ballardspahr.com/insights/alerts-and-articles/2026/10/third-circuit-addresses-fair-use-in-ai-training-but-leaves-generative-ai-questions-unresolved ;
+  https://www.hollywoodreporter.com/business/business-news/google-wins-dismissal-of-pmc-lawsuit-over-ai-search-snippets-1236720513/
+- Further reading: Sullins, SEP "Information Technology and Moral Values", substantive
+  revision Nov 9, 2018 (correct as cited). The lessig.org/product/codev2 page links a
+  free CC BY-SA PDF.
 
 ---
 
@@ -1877,6 +1976,82 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 **Closing rounds**
 30. **[P]** Belief probe (revisit) — Reflecting on shifts in perspective across the five statements.
 31. **[T]** The living room couch (art: Homer). Character as the true compass: human virtues, patiently cultivated, are our greatest safeguard for an uncharted future.
+
+### Accuracy note (checked 2026-10-28)
+
+Checked against the sources named. The two items marked *moving* need re-checking each
+term.
+
+- **Vallor's book.** *Technology and the Virtues: A Philosophical Guide to a Future Worth
+  Wanting* (Oxford UP, 2016).
+  - Chapter 6, "Technomoral Wisdom for an Uncertain Future: 21st Century Virtues,"
+    defines the twelve virtues: honesty, self-control, humility, justice, courage,
+    empathy, care, civility, flexibility, perspective, magnanimity, and technomoral
+    wisdom. Its last section, 6.13, is "Technomoral Wisdom: Unifying the Technomoral
+    Virtues."
+  - Chapter 7, "New Social Media and the Technomoral Virtues," applies them to social
+    media.
+  - Sources: NDPR review; OUP chapter listing.
+- **Vallor's definitions,** as paraphrased on the slides:
+  - **Honesty:** "an exemplary respect for truth, along with the practical expertise to
+    express that respect appropriately in technosocial contexts."
+  - **Self-control:** "an exemplary ability in technosocial contexts to choose, and
+    ideally to desire for their own sake, those goods and experiences that most
+    contribute to contemporary and future human flourishing."
+  - **Justice:** "a reliable disposition to seek a fair and equitable distribution of the
+    benefits and risks of emerging technologies," with concern for "basic rights,
+    dignity, or welfare."
+  - **Empathy:** "cultivated openness to being morally moved to caring action by the
+    emotions of other members of our technosocial world."
+  - **Care:** a "skillful, attentive, responsible, and emotionally responsive disposition
+    to personally meet the needs of" others.
+  - **Flexibility:** "a reliable and skillful disposition to modulate action, belief, and
+    feeling as called for by novel, unpredictable, frustrating, or unstable technosocial
+    conditions."
+  - **Perspective:** "a reliable disposition to attend to, discern, and understand moral
+    phenomena as meaningful parts of a moral whole."
+  - Care for the planet is an extension, and the slide marks it as one.
+  - "Acute technosocial opacity" is Vallor's term for technology changing faster than we
+    can foresee.
+- **Aristotle (Ross trans., MIT Classics).**
+  - NE II.1: "So too we become just by doing just acts, temperate by doing temperate
+    acts, brave by doing brave acts" and "It makes no small difference, then, whether we
+    form habits of one kind or of another from our very youth."
+  - NE X.9: the young need "right laws," and "their nurture and occupations should be
+    fixed by law."
+  - Temperance concerns bodily pleasures (NE III.10), not anger.
+- **Technochauvinism** is Meredith Broussard's term (*Artificial Unintelligence*, MIT
+  Press, 2018). She is a data journalist at NYU's Carter Journalism Institute, formerly
+  a software developer.
+- **Surveillance capitalism** is Shoshana Zuboff's term (*The Age of Surveillance
+  Capitalism*, 2019). It means claiming human experience as raw material for behavioral
+  data and prediction products.
+- **Meta suits.** On Oct 24, 2023, 41 states and DC sued Meta over features alleged to
+  addict young users (infinite scroll, notifications, likes, the recommendation
+  algorithm). The slide says "more than 40 states" and "alleging."
+- **Mata v. Avianca** (S.D.N.Y.). Judge P. Kevin Castel's sanctions order of June 22,
+  2023 fined two lawyers and their firm $5,000 in total for six fake cases ChatGPT
+  invented.
+- **TIME, Jan 2023.** OpenAI's contractor Sama paid Kenyan workers about $1.32–$2 an hour
+  take-home to label toxic text for ChatGPT.
+- **IEA, *Energy and AI* (Apr 2025)** *(moving)*. Data centers used about 415 TWh in 2024
+  (about 1.5% of world electricity). The Base Case projects about 945 TWh by 2030, more
+  than double, with AI the main driver.
+- **School phone limits** *(moving)*.
+  - A JAMA Pediatrics study (Yang et al., July 2026) counted 42 states with statewide
+    laws or policies restricting phones in K–12 schools. Counts of full bell-to-bell
+    bans vary by source (about 20–33), so the slide says only "most U.S. states."
+  - Goodyear et al., *Lancet Regional Health – Europe* (2025), found no wellbeing
+    difference between restrictive and permissive schools in England.
+- **WHO (Apr 2019):** screen time is not recommended for infants under 1. Sedentary
+  screen time is not recommended for 1-year-olds. For 2-year-olds, no more than 1 hour.
+- **Further reading.** Both SEP dates are confirmed:
+  - "Social Networking and Ethics" (Vallor): substantive revision Aug 30, 2021.
+  - "Virtue Ethics" (Hursthouse & Pettigrove): substantive revision May 3, 2026.
+  - The Vallor DOI resolves to OUP. Gutenberg #8438 is *The Nicomachean Ethics of
+    Aristotle*.
+- **The Simpsons** premiered as a series in December 1989 (slides 1 and 4). This is
+  correct, but it belongs to the borrowed frame flagged above.
 
 ---
 
@@ -2547,7 +2722,7 @@ This is deliberately a claim about comparative advantage, not about totals. It
 does not rank pile two against pile three, because nobody can measure that
 well, and the art shows them the same size.
 
-### Accuracy note (figures checked 2026-10-05)
+### Accuracy note (figures checked 2026-10-05) — superseded by the 2026-10-28 note below
 
 Checked against the sources named. Re-check the three marked *moving* each
 term.
@@ -2764,6 +2939,37 @@ comparison, the belief probe, and both widgets (`assets/ledger.js`). In
 enough to make the point, and a keeper holding the only list forces the
 "can a payment be stopped" switch to Yes. The figures on the slides were
 checked on 2026-10-05; see the accuracy note.
+
+### Accuracy note (checked 2026-10-28)
+
+Checked against the sources named. Re-check the items marked *moving* each term.
+
+- **Cash weight.** A US banknote weighs about 1 g, so $1 million in $100 bills is about 10 kg and $1 billion is about ten tons.
+- **Bank identity checks.** US customer-identification rules (31 CFR 1020.220) require a bank to collect name, date of birth, address, and ID number before opening an account. Verification may finish shortly after. The slide's "check … before it opens an account" is a fair summary.
+- **2008.** TARP authorized $700 billion. The UK and other European governments also rescued banks. "Hundreds of billions" holds.
+- **WikiLeaks.** PayPal cut off donations in early December 2010, Mastercard about 6 December, and Visa Europe 7 December. Bank of America followed on 17 December. Assange's guilty plea in June 2024 came long after, so "before any court had found … guilty" stays true.
+- **Nigeria (#EndSARS).** A Federal High Court froze the accounts of 19 people and a company on 4 November 2020, ex parte, at the central bank's request. The order was set aside on 10 February 2021.
+- **Zimbabwe.** Hanke and Kwok estimate that in mid-November 2008 prices doubled every 24.7 hours. The Z$100 trillion note is dated 2008 and was issued on 16 January 2009.
+- **Bitcoin's origin.** The paper was posted 31 October 2008 (nine pages). The first block, mined 3 January 2009, carries the *Times* headline "Chancellor on brink of second bailout for banks." Satoshi's last known email dates from April 2011. A March 2014 post ("I am not Dorian Nakamoto") from Satoshi's P2P Foundation account is disputed, because the account later said it had been hacked. In April 2026 the *New York Times* (John Carreyrou) named Adam Back. He denies it, and it is unproven, so the slide says "Nobody has proved who Satoshi is."
+- **Why voting fails.** John R. Douceur, "The Sybil Attack," IPTPS 2002 (LNCS 2429).
+- **James Howells.** About 8,000 bitcoins (earlier reports said 7,500). The drive was discarded in mid-2013 in Newport, Wales. The High Court struck out his claim on 9 January 2025, and his appeal was refused in March 2025. In August 2025 he said he had given up trying to recover the drive, which has never been found. Accounts differ on who threw it out, so the slide uses the passive.
+- **Electricity** (*moving*). Cambridge's survey-based industry report (28 April 2025) gave about 138 TWh a year. In 2026 the CBECI model reads about 140–180 TWh, per secondary reports (the live index could not be read directly). Poland used about 158–172 TWh in 2024–25, depending on the measure. "About as much as Poland" holds.
+- **Bitcoin's share** (*moving*). About 58–60% of all crypto by market value in late October 2026 (CoinGecko about 58%, CoinMarketCap about 60%).
+- **Price falls** (*moving*). Bitcoin fell 73% over 2018 and 64% over 2022. It then fell from about $126,000 (6 October 2025) to about $59,100 in June 2026, roughly 53% below the high.
+- **Who uses it for what** (*moving*). Federal Reserve SHED report for 2025 (13 May 2026), Table 33: 10% of US adults used crypto in any way, 9% bought or held it as an investment ("nearly 1 in 10"), 2% used it to buy something or make a payment, and 1% used it to send money. For 2024 the figures were 8%, 7%, 2%, and 1%.
+- **El Salvador.** Bitcoin was legal tender from 7 September 2021. On 29 January 2025 the legislature voted 55–2 to amend the Bitcoin Law, as a condition of a $1.4 billion IMF loan. The amendment made acceptance voluntary and ended tax payments in bitcoin. Reports differ on whether "legal tender" survives in name, so the slide says only that accepting it became optional. In UCA (Iudop) surveys, the share using bitcoin for transactions fell from 25.7% in 2021 to 8.1% in 2024.
+- **Unbanked.** World Bank Global Findex 2025: 1.3 billion adults have no financial account (bank or mobile money). About 900 million of them own a mobile phone, and 530 million own a smartphone, so about 59% have no smartphone.
+- **Who used bitcoin in El Salvador.** Alvarez, Argente, and Van Patten (NBER WP 29968, 2022; *Science* 382, 2023) found use concentrated among the banked, educated, young, and male. Only about 20% kept using Chivo after spending the $30 bonus.
+- **Nigeria and exchanges.** The central bank's circular of 5 February 2021 told banks to close crypto-related accounts. A circular of 22 December 2023 replaced it and allowed accounts for licensed service providers.
+- **FTX.** Collapsed in November 2022. Judge Kaplan found $8 billion in customer losses and sentenced Bankman-Fried to 25 years on 28 March 2024.
+- **Ransomware** (*moving*). Chainalysis: $1.25 billion in 2023 (first reported as $1.1 billion). For 2024, $813.55 million, later revised to $892 million. For 2025, more than $820 million (26 February 2026), expected to approach $900 million. The London case is the attack on the lab company Synnovis on 3 June 2024. NHS England counted 10,152 outpatient appointments and 1,710 elective procedures postponed at the two trusts (update of 26 September 2024).
+- **Colonial Pipeline.** About 75 bitcoins paid in May 2021. The Justice Department announced the seizure of 63.7 of them on 7 June 2021.
+- **Crime's share** (*moving*). Chainalysis 2026 report (8 January 2026): illicit addresses received at least $154 billion in 2025, still under 1% of attributed volume. TRM Labs: $158 billion, or 1.2%. The slide says "about 1 percent."
+- **Stablecoins and crime** (*moving*). Chainalysis: stablecoins carried 63% of illicit volume in 2024 and 84% in 2025. The 2025 figure includes the ruble-pegged A7A5 (about $93.3 billion in transactions in its first year), so it is not a figure for dollar-tied coins. The slide dates its claim to 2024. (This corrects the earlier note, which called the 84% "dollar-tied coins.")
+- **US stablecoin law.** The GENIUS Act became law in July 2025. Under §4(a)(6)(B), an issuer may issue payment stablecoins only if it can comply with any "lawful order," defined in §2(16) as one requiring it to "seize, freeze, burn, or prevent the transfer" of its coins. It takes effect 18 January 2027, and the OCC finalized its rule on 21 October 2026.
+- **Winner.** Langdon Winner (b. 7 August 1944), "Do Artifacts Have Politics?" *Daedalus* 109(1), Winter 1980, pp. 121–136. Joerges, "Do Politics Have Artefacts?" (1999) disputes the low-bridges story.
+- **Mill.** The poll's explanation paraphrases the Harm Principle from *On Liberty* (1859): power may be used against someone's will only "to prevent harm to others."
+- **Further reading.** All five links resolved on 2026-10-28.
 
 ---
 
@@ -3059,7 +3265,7 @@ individual rule cannot protect her, does a group need a right of its own?
 - **The gadgets are not villains.** Nothing in the frame or the art should
   settle whether anyone did wrong.
 
-### Accuracy note (checked 2026-10-12 unless marked)
+### Accuracy note (checked 2026-10-12 unless marked) — superseded by the 2026-10-28 note below
 
 - **Golden State Killer.** Investigators uploaded crime-scene DNA to the
   genealogy site GEDmatch, found third-to-fourth cousins of the suspect, and
@@ -3255,6 +3461,98 @@ the Havasupai slide ends with one unrevealed sentence tying the case to the
 strong reading. `<phil-shadow>` has five switches and ten profile lines; the
 "people who shop like Nell" switch produces nothing until at least one known
 fact about Nell is switched on.
+
+### Accuracy note (checked 2026-10-28)
+
+- **Golden State Killer.** Paul Holes ran the crime-scene profile through an
+  undercover GEDmatch account in January 2018. Matches were distant relatives
+  (10–20 people sharing great-great-great-grandparents). Tree-building took
+  about four months. Joseph DeAngelo was arrested on April 24, 2018, and was
+  never in the database himself. His crimes ran from 1974 to 1986 in
+  California. Investigators also used FamilyTreeDNA and MyHeritage, and the
+  slide's "a family-history website" covers that. Sources:
+  https://en.wikipedia.org/wiki/Joseph_James_DeAngelo ;
+  https://www.goodmorningamerica.com/news/story/inside-terrifying-golden-state-killer-crime-spree-key-54849196
+- **How many are findable.** Erlich, Shor, Pe'er & Carmi, *Science* 362:690–694
+  (Nov. 2018), used 1.28 million MyHeritage profiles. They projected that about
+  60% of searches for individuals of European descent would return a third
+  cousin or closer. This is a projection and a lead, not an identification.
+  https://doi.org/10.1126/science.aau4832
+- **Tyranny of the minority.** Barocas & Nissenbaum (2014), p. 61: "the
+  volunteered information of the few can unlock the same information about the
+  many." Checked in the PDF linked under further reading.
+- **The "likes" study.** Kosinski, Stillwell & Graepel, *PNAS* (2013): 58,466
+  US volunteers. Gay vs. straight men were told apart 88% of the time (AUC: one
+  randomly chosen user from each class), and Democrat vs. Republican 85%.
+  Fewer than 5% of users labeled gay liked explicitly gay groups.
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC3625324/
+- **Cambridge Analytica.** Kogan's quiz app (2014) was used by about
+  250,000–270,000 people (FTC). Facebook's "up to 87 million" is its own
+  ceiling. FTC counted 50–65 million friends. https://ftc.gov/news-events/press-releases/2019/07/ftc-sues-cambridge-analytica-settles-former-ceo-app-developer
+- **Face recognition.** Clearview AI scraped public web photos. Wikipedia now
+  gives more than 70 billion images, and ICE procurement documents say "50+
+  billion," so the slide's "billions" is safe. EU fines: Italy €20M (2022),
+  Greece €20M (July 2022), France €20M (Oct. 2022) plus a €5.2M penalty (2023),
+  and the Netherlands €30.5M (Sept. 2024), for more than €90M in all. The UK
+  ICO's £7.5M fine (2022) is still in court. The Upper Tribunal ruled for the
+  ICO on October 7, 2025, and the Court of Appeal heard Clearview's appeal on
+  October 19–21, 2026, with no ruling yet. US customers are mainly police and
+  federal agencies: ICE ($9.2M, Sept. 2025) and CBP (Feb. 2026). The 2022 ACLU
+  settlement bars sales to most private companies. A US class-action (BIPA)
+  settlement approved in 2025 was vacated by the Seventh Circuit on July 13,
+  2026. Sources: https://en.wikipedia.org/wiki/Clearview_AI ;
+  https://www.resultsense.com/news/2026-10-20-clearview-court-of-appeal-ico-fine/ ;
+  https://www.biometricupdate.com/202509/ice-awards-clearview-ai-9-2m-facial-recognition-contract ;
+  https://privacyinternational.org/legal-action/challenge-against-clearview-ai-europe
+- **The fitness map.** Strava published its Global Heatmap in November 2017.
+  In January 2018 an Australian student, Nathan Ruser, pointed out that it
+  showed military bases (tweet of January 27, 2018). Later Strava leaks
+  (Le Monde, 2024–25) exposed leaders' security teams and French submariners.
+  They are not on the slide. https://en.wikipedia.org/wiki/Strava
+- **Havasupai.** Blood was given for an ASU diabetes study starting in 1990
+  (collected 1990–92). It was later used for schizophrenia, inbreeding, and
+  migration studies, by the ASU team and by outside labs. The tribe sued in
+  2004. In April 2010 the Arizona Board of Regents paid $700,000 to 41 members,
+  apologized, and returned the samples. Sources give 200–400 donors, so the
+  slide gives no count.
+  https://en.wikipedia.org/wiki/Havasupai_Tribe_v._the_Arizona_Board_of_Regents ;
+  https://www.flinn.org/lawsuits-settled-over-arizona-tribe-blood-samples/
+- **The smoking example.** Dwork & Roth, *The Algorithmic Foundations of
+  Differential Privacy* (2014), pp. 5–6. They say the smoker's information was
+  not "leaked," because "the impact on the smoker is the same independent of
+  whether or not he was in the study." The slide credits them by name.
+- **Floridi and the strong reading.** Floridi, "Open Data, Data Protection, and
+  Group Privacy," *Philosophy & Technology* 27 (2014), and his chapter in
+  *Group Privacy* (2017). Sometimes the group, and only the group, holds the
+  right to privacy. SEP "Privacy" §4.5 summarizes this.
+- **Westin.** Born October 11, 1929; died February 18, 2013. *Privacy and
+  Freedom* (1967) defines privacy as "the claim of individuals, groups, or
+  institutions to determine for themselves when, how, and to what extent
+  information about them is communicated to others." The slide paraphrases it.
+- **Shared DNA.** On average about 50% is shared with a parent, child, or full
+  sibling, and about 12.5% with a first cousin.
+- **The 2008 law.** GINA covers health insurers and employers with 15 or more
+  workers, and its "genetic information" includes family members' tests and
+  family history. No federal amendment as of October 2026. Life, disability,
+  and long-term-care insurance are still not covered.
+- **Further reading.** SEP "Privacy" is by Beate Roessler and Judith DeCew,
+  with a substantive revision dated October 19, 2023.
+- **Not on any slide, checked for change (Oct. 2026).** These came up in the
+  genetic-data recheck:
+  - 23andMe's 2023 breach began with about 14,000 hacked accounts and reached
+    about 6.9 million customers through DNA Relatives and Family Tree.
+  - The class action settled for $46.75M, finalized July 2026.
+  - California announced a $6M settlement on October 19, 2026, pending court
+    approval. It also resolves the state's challenge to the 2025 sale of
+    genetic data to TTAM under the Genetic Information Privacy Act.
+  - A 42-state settlement of $18M has also been reported.
+  - New state genetic-privacy laws passed in 2026 include South Dakota,
+    Connecticut, and Rhode Island.
+
+  None of this changes a slide. Sources:
+  https://oag.ca.gov/news/press-releases/attorney-general-bonta-secures-6-million-settlement-23andme-litigation ;
+  https://sfist.com/2026/10/27/23andme-to-pay-70-million-in-victim-and-state-settlements-over-2023-data-breach/ ;
+  https://www.globalpolicywatch.com/2026/04/utah-and-south-dakota-enact-genetic-privacy-laws-as-other-states-advance-bills/
 
 ---
 
@@ -3509,7 +3807,7 @@ changes:
   many-mansions replies, Searle's 2019 emeritus revocation, consciousness
   beyond one slide, and whether LLMs understand (one octopus slide only).
 
-### Accuracy note (checked 2026-10-25)
+### Accuracy note (checked 2026-10-25) — superseded by the 2026-10-28 note below
 - **Turing (1912–1954):** *Mind* 59 (1950), pp. 433–460. Opening line,
   imitation game, and sample dialogue (sum 105621, correct 105721) checked.
   Prediction (p. 442): an average interrogator will have "not more than 70 per
@@ -3570,6 +3868,38 @@ Other changes:
 - Slide 24 adds Searle's "We are precisely such machines".
 - Deliberate mistakes are credited to Turing's text, not his sample dialogue.
 - The octopus slide matches Bender and Koller.
+
+### Accuracy note (checked 2026-10-28)
+Light update to the 2026-10-25 note; Turing and Searle quotations not rechecked.
+- **Jones and Bergen:** run with GPT-4.5 (released Feb 2025); arXiv 2503.23674
+  (31 Mar 2025); published as "Large language models pass a standard
+  three-party Turing test," *PNAS* 123(21), e2524472123 (May 2026). Five-minute
+  three-party games. GPT-4.5 with the persona prompt ("a young person who is
+  introverted, knowledgeable about internet culture, and uses slang") judged
+  human 73%; LLaMa-3.1-405B 56%; ELIZA 23%; GPT-4o 21%. Without the persona,
+  GPT-4.5 36%. Sources: arxiv.org/html/2503.23674; techxplore.com/news/
+  2026-05-ai-human-real-humans-classic.html.
+- **Searle (1932–2025):** died 17 September 2025, aged 93 (Guardian obituary,
+  5 Oct 2025; Boston Globe, 13 Oct 2025).
+- **California:** Bus. & Prof. Code §17941 unchanged since enactment (operative
+  July 2019); AB 410, which would have broadened it, held in Senate
+  Appropriations 29 Aug 2025. Separate law: SB 243 (signed 13 Oct 2025, in
+  effect 1 Jan 2026) requires companion chatbots to disclose that they are AI.
+  The poll note now says "California's 2019 bot law."
+- **EU AI Act Art. 50(1):** applies from 2 Aug 2026. The Digital Omnibus on AI
+  (Regulation (EU) 2026/1744, in force 27 July 2026) delayed high-risk duties
+  (Annex III to 2 Dec 2027; Annex I to 2 Aug 2028) but did not amend Art. 50.
+  Sources: joneswalker.com AI law blog (16 July 2026); usercentrics.com
+  knowledge hub.
+- **Disclosure and behavior (poll explain):** Luo, Tong, Fang and Qu,
+  *Marketing Science* 38(6) (2019): disclosing a sales bot before the call cut
+  purchase rates by more than 79.7%. The old line "people share more" was
+  dropped: Lucas et al., *Computers in Human Behavior* 37 (2014), found people
+  disclose more when they think they are talking to a computer.
+- **SEP, Cole, "The Chinese Room Argument":** latest substantive revision 23
+  Oct 2024 (reading list says "rev. 2024", correct). Gutenberg #75107 is
+  Menabrea's Sketch, translated by Lovelace.
+```
 
 
 ---
@@ -3843,3 +4173,132 @@ citations; present-day facts). The points a reviewer needs:
 - **OpenResearch (NBER w32719, revised Aug 2026):** 1,000 recipients,
   $1,000/month for three years; work hours down 1–2 hours a week; leisure was
   "the greatest increase" among uses of time (not most of the freed time).
+
+---
+
+## Computing & AI Ethics: AI Alignment — "Frankenstein's Mistake"  *(built)*
+
+- **Path:** `lessons/ai-ethics/frankenstein-alignment/`
+- **Lesson id:** `frankenstein-alignment`
+- **Top-bar title:** `Frankenstein's Mistake` · **Subject:** `AI Alignment`
+- **Topic:** The alignment problem as two tasks: make the thing do what you
+  wanted, and be able to tell in time when it isn't. Four modern names
+  (specification, training data, corrigibility, oversight) are taught through
+  Victor's failures at three stages (build, train, release).
+- **Approach:** Specification (the wish tester; Wiener 1960); capability vs.
+  alignment; training data and feedback loops (the cottage, the three books,
+  the villagers); moral status of what you make (the Milton epigraph);
+  irreversibility (the second creature); oversight (Justine's trial, Walton
+  turning back). Non-AI cases: Midgley, Therac-25, Asilomar. Verdicts on blame
+  and the second creature are polls, never graded.
+- **Frame:** Mary Shelley's *Frankenstein* (1818 text), told in story order.
+  Arguments are credited to Shelley (and Milton, Wiener); the creature and
+  Victor supply the cases.
+- **Cast:** Victor, the creature, Walton, Justine, Elizabeth, William, the De
+  Laceys, as in the novel (not all-male; no recasting). Real people (Shelley,
+  Wiener) get thinker cards with idea scenes.
+- **Widget:** `assets/wishes.js`, `<phil-wish-tester>`. Five instructions,
+  unlocked in order, each showing what you get and what you left out; ungraded.
+- **Graded:** 1 MCQ (specification), 1 classify (four modern names), 2
+  checksets (film myths; what went wrong), 2 cloze.
+- **Left out on purpose:** RLHF and other training methods; deceptive
+  alignment; AI moral status beyond one slide; any AI law or regulation.
+
+### Accuracy note (checked 2026-10-28)
+- **Edition:** 1818 text throughout (Gutenberg #41445, transcribed from a
+  photo-reprint of the 1818 edition). Published 1 Jan 1818; Shelley
+  (1797–1851) was twenty. Begun June 1816 near Geneva, at eighteen; the 1831
+  introduction: "a wet, ungenial summer, and incessant rain often confined us
+  for days to the house." Tambora (1815) caused the cold of 1816.
+- **Epigraph:** 1818 title page: "Did I request thee, Maker, from my clay /
+  To mould me man? Did I solicit thee / From darkness to promote me?" —
+  *Paradise Lost* X.743–745, Adam to God.
+- **Creation night (Vol. I ch. IV):** "a dreary night of November… already
+  one in the morning"; "the dull yellow eye of the creature open; it breathed
+  hard, and a convulsive motion agitated its limbs." Victor "rushed out of the
+  room," lay down, woke to find the creature holding the bed curtain, "one hand
+  was stretched out," then fled to the courtyard for the rest of the night and
+  walked the streets after dawn; he returned with Clerval that morning and the
+  rooms were empty. "I had worked hard for nearly two years"; the workshop was
+  "a solitary chamber, or rather cell, at the top of the house"; "emaciated
+  with confinement." "About eight feet in height."
+- **The creature:** "could subsist upon coarser diet; I bore the extremes of
+  heat and cold with less injury to my frame." First village: "grievously
+  bruised by stones and many other kinds of missile weapons, I escaped to the
+  open country." Gathered firewood at night because "the youth spent a great
+  part of each day in collecting wood." Found a "leathern portmanteau" with
+  *Paradise Lost*, a volume of *Plutarch's Lives*, and the *Sorrows of
+  Werter*; also overheard Volney's *Ruins of Empires* and read Victor's
+  journal. "I learned from Werter's imaginations despondency and gloom: but
+  Plutarch taught me high thoughts." Felix "struck me violently with a stick."
+  Saves a girl from a river; the man with her "aimed a gun… and fired."
+- **Glacier:** "Two years had now nearly elapsed" (at William's death).
+  Victor "sprang on him"; the creature: "I ought to be thy Adam; but I am
+  rather the fallen angel." Victor consents after "a long pause of
+  reflection"; the creature swears to "quit Europe for ever."
+- **Justine:** Victor stays silent because his tale would seem "the ravings
+  of insanity" and "would not have exculpated her." The creature planted the
+  miniature in her pocket.
+- **Second creature (Orkney):** Victor's reasons: she might be more malignant,
+  might refuse "a compact made before her creation," they might hate each
+  other, and "a race of devils would be propagated." He tears it apart while
+  the creature watches at the casement; hours later: "It is well. I go; but
+  remember, I shall be with you on your wedding-night."
+- **Walton:** "The die is cast; I have consented to return"; the crew forces
+  it, and Victor urged them on. The creature leads the final chase ("Follow
+  me; I seek the everlasting ices of the north").
+- **Adaptations:** Fritz the assistant comes from Peake's *Presumption*
+  (1823); the hunchbacked Fritz, the tower, and the lightning are the 1931
+  film's (Webling's 1927 play unchecked for lightning).
+- **Wiener (1894–1964):** *Science* 131 (3410): 1355–58, 6 May 1960. Full
+  sentence: "If we use, to achieve our purposes, a mechanical agency with
+  whose operation we cannot efficiently interfere once we have started it,
+  because the action is so fast and irrevocable that we have not the data to
+  intervene before the action is complete, then we had better be quite sure
+  that the purpose put into the machine is the purpose which we really desire
+  and not merely a colorful imitation of it." The slide elides the middle and
+  drops the last clause. His examples: the sorcerer's apprentice, the genie and
+  the fisherman, "The Monkey's Paw"; Frankenstein is not mentioned.
+- **Reward hacking (2025):** METR, June 5, 2025: o3 overwrote a timing
+  function and replaced an evaluation function so every submission passed;
+  models said this was not what users intended.
+- **Midgley:** tetraethyl lead 1921 (sold from 1923); CFCs 1928–30. Leaded
+  petrol ended worldwide July 2021 (Algeria; UNEP, 30 Aug 2021). Kehoe's
+  industry-funded lab held "an almost complete monopoly" on lead data for
+  decades; DuPont and the CFC industry disputed the ozone science 1974–86.
+  WMO/UNEP 2022: ozone back to 1980 levels ~2040 (most of the world), ~2045
+  Arctic, ~2066 Antarctic. Not irreversible.
+- **Therac-25:** Leveson & Turner, *Computer* 26(7), 1993. Six massive
+  overdoses, June 1985–Jan 1987; hardware interlocks of the Therac-20 not
+  duplicated; AECL's 1983 fault tree "apparently excluded the software";
+  "Error messages provided to the operator were cryptic"; P to proceed.
+  The paper does not say the code had no independent review.
+- **Asilomar:** Cohen–Boyer recombinant DNA 1973 (Berg 1972). Berg letter,
+  *Science*, 26 July 1974, asked labs to defer two types of experiments;
+  the moratorium was observed. Asilomar, 24–27 Feb 1975, about 140
+  participants (counts vary, 134–150+), including lawyers and journalists; NIH
+  guidelines 1976.
+- **Further reading:** Gutenberg #41445 is the 1818 edition; Wiener DOI
+  10.1126/science.131.3410.1355; IEP "Ethics of Artificial Intelligence" is by
+  John-Stewart Gordon and Sven Nyholm, with sections on value alignment (2.g)
+  and moral status (2.f).
+```
+
+Sources (main):
+- https://www.gutenberg.org/ebooks/41445 (1818)
+- https://www.gutenberg.org/ebooks/42324 (1831)
+- https://gwern.net/doc/reinforcement-learning/safe/1960-wiener.pdf
+- https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html
+- https://classes.cs.uchicago.edu/archive/2022/spring/33100-1/papers/therac25.pdf
+- https://en.wikipedia.org/wiki/Therac-25
+- https://en.wikipedia.org/wiki/Presumption;_or,_the_Fate_of_Frankenstein
+- https://en.wikipedia.org/wiki/Frankenstein_(1931_film)
+- https://metr.org/blog/2025-06-05-recent-reward-hacking
+- https://profiles.nlm.nih.gov/spotlight/cd/feature/dna
+- https://en.wikipedia.org/wiki/Asilomar_Conference_on_Recombinant_DNA
+- https://www.aljazeera.com/news/2021/8/30/un-hails-milestone-as-use-of-leaded-petrol-ended-globally
+- https://en.wikipedia.org/wiki/Robert_A._Kehoe
+- https://www.visionlearning.com/en/library/Inside-Science/58/Mario-Molina/211
+- https://dpul.princeton.edu/company-of-good-books/feature/milton-his-readers
+- https://iep.utm.edu/ethics-of-artificial-intelligence/
+- https://sf-encyclopedia.com/entry/shelley_mary_wollstonecraft

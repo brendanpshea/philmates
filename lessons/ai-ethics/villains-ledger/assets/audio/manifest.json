@@ -1,0 +1,665 @@
+{
+  "voice": "en-US-AvaMultilingualNeural",
+  "clips": {
+    "0cc23cfc": {
+      "slide": "s1",
+      "text": "Doctor Calamity has stolen the Great Harbor Duck. She wants one billion dollars to give it back. You're the new intern in her Accounts office. Stealing the duck was the easy part. Your job is to work out how she can get paid. Use the right arrow, or the Next button, to advance. Press F for fullscreen. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Doctor Calamity has stolen the Great Harbor Duck. She wants one billion dollars to give it back. You're the new intern in her Accounts office. Stealing the duck was the easy part. Your job is to work out how she can get paid. Use the right arrow, or the Next button, to advance. Press F for fullscreen. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "2da590fe": {
+      "slide": "s2",
+      "text": "Rate each of these five statements, from how much you agree right now. There are no right answers, and you'll rate them again at the end. When you're done, press Submit.",
+      "spoken": "Rate each of these five statements, from how much you agree right now. There are no right answers, and you'll rate them again at the end. When you're done, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "da4eb3c9": {
+      "slide": "s3",
+      "text": "Your boss in Accounts is Penny. She starts with the oldest plan there is, a suitcase full of cash.",
+      "spoken": "Your boss in Accounts is Penny. She starts with the oldest plan there is, a suitcase full of cash."
+    },
+    "d4bd2486": {
+      "slide": "s3",
+      "text": "A hundred-dollar bill weighs about one gram. One million dollars in hundred-dollar bills weighs about ten kilograms, or twenty-two pounds.",
+      "spoken": "A hundred-dollar bill weighs about one gram. One million dollars in hundred-dollar bills weighs about ten kilograms, or twenty-two pounds."
+    },
+    "3768b30b": {
+      "slide": "s3",
+      "text": "One billion dollars weighs about ten tons. That needs a forklift, not a suitcase.",
+      "spoken": "One billion dollars weighs about ten tons. That needs a forklift, not a suitcase."
+    },
+    "c3e49982": {
+      "slide": "s3",
+      "text": "Somebody has to hand the cash over, and somebody has to collect it. The police wait at the pickup.",
+      "spoken": "Somebody has to hand the cash over, and somebody has to collect it. The police wait at the pickup."
+    },
+    "1643105b": {
+      "slide": "s3",
+      "text": "Cash does have one advantage for a villain. Nobody has to give a name to use it.",
+      "spoken": "Cash does have one advantage for a villain. Nobody has to give a name to use it."
+    },
+    "f22439a5": {
+      "slide": "the-bank",
+      "text": "Doctor Calamity puts on a wig and a false mustache and goes to a bank. She asks to receive one billion dollars by transfer.",
+      "spoken": "Doctor Calamity puts on a wig and a false mustache and goes to a bank. She asks to receive one billion dollars by transfer."
+    },
+    "ebc54043": {
+      "slide": "the-bank",
+      "text": "The bank asks who she is. By law, a bank must check a customer's identity before it opens an account.",
+      "spoken": "The bank asks who she is. By law, a bank must check a customer's identity before it opens an account."
+    },
+    "afa920e9": {
+      "slide": "the-bank",
+      "text": "The bank can refuse a payment that looks like crime, and it has to report it.",
+      "spoken": "The bank can refuse a payment that looks like crime, and it has to report it."
+    },
+    "2201783a": {
+      "slide": "the-bank",
+      "text": "The bank can freeze an account, so that the money in it cannot be moved.",
+      "spoken": "The bank can freeze an account, so that the money in it cannot be moved."
+    },
+    "9bf62f9e": {
+      "slide": "the-bank",
+      "text": "The bank can undo a payment that turns out to be fraud.",
+      "spoken": "The bank can undo a payment that turns out to be fraud."
+    },
+    "e9fae51c": {
+      "slide": "s5",
+      "text": "Each of these problems stands in Doctor Calamity's way. For each one, decide whether it comes from paying in cash, or from using the bank. Sort them, then press Check answers.",
+      "spoken": "Each of these problems stands in Doctor Calamity's way. For each one, decide whether it comes from paying in cash, or from using the bank. Sort them, then press Check answers."
+    },
+    "a4633c27": {
+      "slide": "s5",
+      "text": "Cash is heavy and has to be handed over in person. The bank keeps the record of the payment, so it can ask who she is, refuse the payment, freeze the account, or undo the payment later.",
+      "spoken": "Cash is heavy and has to be handed over in person. The bank keeps the record of the payment, so it can ask who she is, refuse the payment, freeze the account, or undo the payment later."
+    },
+    "5d7ce403": {
+      "slide": "s6",
+      "text": "Penny puts down her abacus. Before you go on, she says, you need to know what money is.",
+      "spoken": "Penny puts down her abacus. Before you go on, she says, you need to know what money is."
+    },
+    "d6a8891f": {
+      "slide": "s6",
+      "text": "Some money is paper and coins. Most of it is numbers in a bank's records.",
+      "spoken": "Some money is paper and coins. Most of it is numbers in a bank's records."
+    },
+    "d7803896": {
+      "slide": "s6",
+      "text": "A list of who owns how much is called a ledger. Your bank balance is one line in your bank's ledger.",
+      "spoken": "A list of who owns how much is called a ledger. Your bank balance is one line in your bank's ledger."
+    },
+    "ae76606c": {
+      "slide": "s6",
+      "text": "When you pay with a card, no cash moves. The bank lowers your line and raises the shop's line.",
+      "spoken": "When you pay with a card, no cash moves. The bank lowers your line and raises the shop's line."
+    },
+    "1fac9e48": {
+      "slide": "s6",
+      "text": "So whoever keeps the ledger decides which payments happen.",
+      "spoken": "So whoever keeps the ledger decides which payments happen."
+    },
+    "166cc8f8": {
+      "slide": "four-jobs",
+      "text": "Call whoever keeps the ledger the keeper. For most money, the keeper is a bank with a government behind it. The keeper has four jobs.",
+      "spoken": "Call whoever keeps the ledger the keeper. For most money, the keeper is a bank with a government behind it. The keeper has four jobs."
+    },
+    "18cdcafc": {
+      "slide": "four-jobs",
+      "text": "First, keep the list. There is one official ledger, and the keeper holds it.",
+      "spoken": "First, keep the list. There is one official ledger, and the keeper holds it."
+    },
+    "08fe24ed": {
+      "slide": "four-jobs",
+      "text": "Second, check who you are. The keeper knows the name behind every account.",
+      "spoken": "Second, check who you are. The keeper knows the name behind every account."
+    },
+    "c6b69607": {
+      "slide": "four-jobs",
+      "text": "Third, say no, or undo. The keeper can refuse, freeze, or reverse a payment.",
+      "spoken": "Third, say no, or undo. The keeper can refuse, freeze, or reverse a payment."
+    },
+    "79d7a5a2": {
+      "slide": "four-jobs",
+      "text": "Fourth, stand behind the money. The government insures deposits and works to keep prices steady. Each job protects ordinary customers. Each job is also a power the keeper holds over them.",
+      "spoken": "Fourth, stand behind the money. The government insures deposits and works to keep prices steady. Each job protects ordinary customers. Each job is also a power the keeper holds over them."
+    },
+    "c80727d2": {
+      "slide": "s8",
+      "text": "Some people have serious reasons to distrust the keeper. Here are three, and all of them really happened.",
+      "spoken": "Some people have serious reasons to distrust the keeper. Here are three, and all of them really happened."
+    },
+    "00b4b9c4": {
+      "slide": "s8",
+      "text": "In 2008, large banks in the US and Europe lost huge sums on risky bets tied to home loans.",
+      "spoken": "In 2008, large banks in the U.S. and Europe lost huge sums on risky bets tied to home loans."
+    },
+    "0729a9a3": {
+      "slide": "s8",
+      "text": "Governments spent hundreds of billions of dollars of public money to keep those banks from collapsing.",
+      "spoken": "Governments spent hundreds of billions of dollars of public money to keep those banks from collapsing."
+    },
+    "6f49f4ef": {
+      "slide": "s8",
+      "text": "In the crisis that followed, millions of ordinary people lost their jobs or their homes.",
+      "spoken": "In the crisis that followed, millions of ordinary people lost their jobs or their homes."
+    },
+    "0cfc2671": {
+      "slide": "s8",
+      "text": "Many people concluded that the keepers had been careless with other people's money and were rescued anyway.",
+      "spoken": "Many people concluded that the keepers had been careless with other people's money and were rescued anyway."
+    },
+    "21b5300a": {
+      "slide": "s9",
+      "text": "Amara is a reporter. After she wrote about corruption in her government, her bank card stopped working. Amara is invented, but cases like hers are real.",
+      "spoken": "Amara is a reporter. After she wrote about corruption in her government, her bank card stopped working. Amara is invented, but cases like hers are real."
+    },
+    "4b7aee33": {
+      "slide": "s9",
+      "text": "In 2010 the website WikiLeaks published secret US government files. Visa, Mastercard, and PayPal stopped handling donations to it.",
+      "spoken": "In 2010 the website WikiLeaks published secret U.S. government files. Visa, Mastercard, and PayPal stopped handling donations to it."
+    },
+    "4e081d4d": {
+      "slide": "s9",
+      "text": "In 2020, Nigerians protested against police violence. Bank accounts of people who organized the protests were frozen.",
+      "spoken": "In 2020, Nigerians protested against police violence. Bank accounts of people who organized the protests were frozen."
+    },
+    "c1e6c483": {
+      "slide": "s9",
+      "text": "In both cases the money was cut off before any court had found the account holders guilty of a crime.",
+      "spoken": "In both cases the money was cut off before any court had found the account holders guilty of a crime."
+    },
+    "877cecbb": {
+      "slide": "s9",
+      "text": "The power that turned Doctor Calamity away is the same power that stopped Amara.",
+      "spoken": "The power that turned Doctor Calamity away is the same power that stopped Amara."
+    },
+    "11447686": {
+      "slide": "s10",
+      "text": "The keeper can also create money. Here is what can go wrong.",
+      "spoken": "The keeper can also create money. Here is what can go wrong."
+    },
+    "09c9daa0": {
+      "slide": "s10",
+      "text": "Inflation means prices rise, so each dollar or peso buys less than it did.",
+      "spoken": "Inflation means prices rise, so each dollar or peso buys less than it did."
+    },
+    "4e0b990c": {
+      "slide": "s10",
+      "text": "A government that controls the money can create more of it. If it creates far too much, prices explode.",
+      "spoken": "A government that controls the money can create more of it. If it creates far too much, prices explode."
+    },
+    "64f31475": {
+      "slide": "s10",
+      "text": "In Zimbabwe in 2008, prices doubled about once a day. The government printed a hundred trillion dollar bill.",
+      "spoken": "In Zimbabwe in 2008, prices doubled about once a day. The government printed a hundred trillion dollar bill."
+    },
+    "0ab6445f": {
+      "slide": "s10",
+      "text": "People who had saved for years found that their savings would not buy a loaf of bread.",
+      "spoken": "People who had saved for years found that their savings would not buy a loaf of bread."
+    },
+    "fbbc7f5c": {
+      "slide": "s11",
+      "text": "In October 2008, in the middle of the bank crisis, someone using the name Satoshi Nakamoto posted a nine-page paper online.",
+      "spoken": "In October 2008, in the middle of the bank crisis, someone using the name Satoshi Nakamoto posted a nine-page paper online."
+    },
+    "8529fb87": {
+      "slide": "s11",
+      "text": "It described Bitcoin, the first cryptocurrency: digital money with no bank and no government in the middle.",
+      "spoken": "It described Bitcoin, the first cryptocurrency: digital money with no bank and no government in the middle."
+    },
+    "e38e2856": {
+      "slide": "s11",
+      "text": "Bitcoin's first records, from January 2009, include a newspaper headline about a second bailout for banks.",
+      "spoken": "Bitcoin's first records, from January 2009, include a newspaper headline about a second bailout for banks."
+    },
+    "d6741718": {
+      "slide": "s11",
+      "text": "Nobody has proved who Satoshi is. Satoshi stopped writing in 2011 and has not been heard from since.",
+      "spoken": "Nobody has proved who Satoshi is. Satoshi stopped writing in 2011 and has not been heard from since."
+    },
+    "bd8ef5af": {
+      "slide": "s11",
+      "text": "The plan was to remove all four of the keeper's jobs at once. To see what that costs, you need to know how it works.",
+      "spoken": "The plan was to remove all four of the keeper's jobs at once. To see what that costs, you need to know how it works."
+    },
+    "fa2813a2": {
+      "slide": "s12",
+      "text": "Digital money has a problem that paper money does not have.",
+      "spoken": "Digital money has a problem that paper money does not have."
+    },
+    "eacbd2c0": {
+      "slide": "s12",
+      "text": "A digital thing is easy to copy. You can send a photo to a friend and still have the photo.",
+      "spoken": "A digital thing is easy to copy. You can send a photo to a friend and still have the photo."
+    },
+    "33f825c9": {
+      "slide": "s12",
+      "text": "If a coin were just a file, you could pay two people with the same coin. This is called double spending.",
+      "spoken": "If a coin were just a file, you could pay two people with the same coin. This is called double spending."
+    },
+    "41cf977a": {
+      "slide": "s12",
+      "text": "A keeper solves this easily. There is one ledger, and the keeper checks your line before every payment.",
+      "spoken": "A keeper solves this easily. There is one ledger, and the keeper checks your line before every payment."
+    },
+    "dbd897c5": {
+      "slide": "s12",
+      "text": "Without a keeper, something else has to stop double spending. Bitcoin's answer has three parts.",
+      "spoken": "Without a keeper, something else has to stop double spending. Bitcoin's answer has three parts."
+    },
+    "5f7f369a": {
+      "slide": "s13",
+      "text": "Here is the first part of Bitcoin's answer.",
+      "spoken": "Here is the first part of Bitcoin's answer."
+    },
+    "8ae3484d": {
+      "slide": "s13",
+      "text": "Bitcoin still has a ledger. It is called the blockchain, and it lists every payment ever made.",
+      "spoken": "Bitcoin still has a ledger. It is called the blockchain, and it lists every payment ever made."
+    },
+    "887480ed": {
+      "slide": "s13",
+      "text": "There is no single keeper. Thousands of computers around the world each hold a full copy.",
+      "spoken": "There is no single keeper. Thousands of computers around the world each hold a full copy."
+    },
+    "6fecfa29": {
+      "slide": "s13",
+      "text": "Anyone may join, and anyone may read the ledger. The whole list is public.",
+      "spoken": "Anyone may join, and anyone may read the ledger. The whole list is public."
+    },
+    "67a3cf42": {
+      "slide": "s13",
+      "text": "That leaves two questions. Can someone change an old page? And who gets to write the next one?",
+      "spoken": "That leaves two questions. Can someone change an old page? And who gets to write the next one?"
+    },
+    "b1cc7439": {
+      "slide": "s14",
+      "text": "The first question is whether someone could quietly change an old payment.",
+      "spoken": "The first question is whether someone could quietly change an old payment."
+    },
+    "0f6c9c50": {
+      "slide": "s14",
+      "text": "New payments are gathered into a page called a block. Bitcoin adds one block about every ten minutes.",
+      "spoken": "New payments are gathered into a page called a block. Bitcoin adds one block about every ten minutes."
+    },
+    "39950269": {
+      "slide": "s14",
+      "text": "Every block gets a hash, a short code worked out from everything written in the block. Think of it as a fingerprint.",
+      "spoken": "Every block gets a hash, a short code worked out from everything written in the block. Think of it as a fingerprint."
+    },
+    "742d596a": {
+      "slide": "s14",
+      "text": "Change one digit in a block and its fingerprint comes out completely different.",
+      "spoken": "Change one digit in a block and its fingerprint comes out completely different."
+    },
+    "fc04d6ad": {
+      "slide": "s14",
+      "text": "Each block also records the fingerprint of the block before it. That is what links the blocks into a chain.",
+      "spoken": "Each block also records the fingerprint of the block before it. That is what links the blocks into a chain."
+    },
+    "d390a8af": {
+      "slide": "s15",
+      "text": "Here are four blocks from a small blockchain. Pick an old block and change a payment in it. See what happens. When you're ready, press Continue.",
+      "spoken": "Here are four blocks from a small blockchain. Pick an old block and change a payment in it. See what happens. When you're ready, press Continue."
+    },
+    "2a4da936": {
+      "slide": "voting-fails",
+      "text": "Suppose the computers simply voted on the next block, with one vote each.",
+      "spoken": "Suppose the computers simply voted on the next block, with one vote each."
+    },
+    "2d8fc6cb": {
+      "slide": "voting-fails",
+      "text": "Doctor Calamity, still wearing her bank mustache, likes this plan.",
+      "spoken": "Doctor Calamity, still wearing her bank mustache, likes this plan."
+    },
+    "ee6498b5": {
+      "slide": "voting-fails",
+      "text": "Anyone may join, and nobody checks names. So one person can pretend to be a million computers.",
+      "spoken": "Anyone may join, and nobody checks names. So one person can pretend to be a million computers."
+    },
+    "a1280235": {
+      "slide": "voting-fails",
+      "text": "Her cardboard henchmen would outvote everyone. She could approve a block that pays her twice.",
+      "spoken": "Her cardboard henchmen would outvote everyone. She could approve a block that pays her twice."
+    },
+    "89bd7716": {
+      "slide": "voting-fails",
+      "text": "The computer scientist John Douceur described this attack in 2002. A vote only works if a voter is costly to fake.",
+      "spoken": "The computer scientist John Doo-sur described this attack in 2002. A vote only works if a voter is costly to fake."
+    },
+    "d495174f": {
+      "slide": "s17",
+      "text": "So who does get to write the next block? A lottery decides.",
+      "spoken": "So who does get to write the next block? A lottery decides."
+    },
+    "a67bd13d": {
+      "slide": "s17",
+      "text": "To write the next block, a computer has to win a guessing game. Each guess is like one lottery ticket.",
+      "spoken": "To write the next block, a computer has to win a guessing game. Each guess is like one lottery ticket."
+    },
+    "2a1a3ffc": {
+      "slide": "s17",
+      "text": "Guessing takes electricity. The more machines you run, the more tickets you hold.",
+      "spoken": "Guessing takes electricity. The more machines you run, the more tickets you hold."
+    },
+    "0fe2536b": {
+      "slide": "s17",
+      "text": "This is called proof of work. The computers that play are called miners.",
+      "spoken": "This is called proof of work. The computers that play are called miners."
+    },
+    "a52bea33": {
+      "slide": "s17",
+      "text": "The winner writes the block and is paid in newly created coins. That payment is why miners play.",
+      "spoken": "The winner writes the block and is paid in newly created coins. That payment is why miners play."
+    },
+    "f33f169e": {
+      "slide": "s18",
+      "text": "Next, how coins are owned, and what happens when something goes wrong.",
+      "spoken": "Next, how coins are owned, and what happens when something goes wrong."
+    },
+    "f91786c4": {
+      "slide": "s18",
+      "text": "The blockchain holds no names. Coins belong to an address, which is a long string of letters and numbers.",
+      "spoken": "The blockchain holds no names. Coins belong to an address, which is a long string of letters and numbers."
+    },
+    "a65e4e3e": {
+      "slide": "s18",
+      "text": "Each address has a secret key, like a password. Whoever has the key can spend the coins.",
+      "spoken": "Each address has a secret key, like a password. Whoever has the key can spend the coins."
+    },
+    "3eafc262": {
+      "slide": "s18",
+      "text": "With no keeper, there is no help desk. A lost key cannot be reset, and a payment cannot be reversed.",
+      "spoken": "With no keeper, there is no help desk. A lost key cannot be reset, and a payment cannot be reversed."
+    },
+    "d6685c60": {
+      "slide": "s18",
+      "text": "In 2013 a hard drive holding the keys to about eight thousand bitcoins was thrown out by mistake in Wales. It is still in a landfill.",
+      "spoken": "In 2013 a hard drive holding the keys to about eight thousand bitcoins was thrown out by mistake in Wales. It is still in a landfill."
+    },
+    "42232a7f": {
+      "slide": "s19",
+      "text": "Proof of work makes every guess cost electricity. Why does Bitcoin need guessing to be costly? Pick an answer.",
+      "spoken": "Proof of work makes every guess cost electricity. Why does Bitcoin need guessing to be costly? Pick an answer."
+    },
+    "2acd7794": {
+      "slide": "s19",
+      "text": "Fake voters are free, so Bitcoin counts work in place of votes. A cheat would have to out-guess all the honest miners together, and that costs more electricity than the cheat could gain.",
+      "spoken": "Fake voters are free, so Bitcoin counts work in place of votes. A cheat would have to out-guess all the honest miners together, and that costs more electricity than the cheat could gain."
+    },
+    "1778218b": {
+      "slide": "s20",
+      "text": "Penny reports to Doctor Calamity. A ransom paid in bitcoin gives her everything the bank would not.",
+      "spoken": "Penny reports to Doctor Calamity. A ransom paid in bitcoin gives her everything the bank would not."
+    },
+    "b708660a": {
+      "slide": "s20",
+      "text": "No pickup. The coins cross the world in minutes, to an address with no name on it.",
+      "spoken": "No pickup. The coins cross the world in minutes, to an address with no name on it."
+    },
+    "7d388a57": {
+      "slide": "s20",
+      "text": "No questions. Nobody checks who she is before she can receive them.",
+      "spoken": "No questions. Nobody checks who she is before she can receive them."
+    },
+    "9a066dac": {
+      "slide": "s20",
+      "text": "No refusal and no undo. Nobody is able to block the payment or take it back.",
+      "spoken": "No refusal and no undo. Nobody is able to block the payment or take it back."
+    },
+    "786f78f7": {
+      "slide": "s20",
+      "text": "Amara wanted exactly these things too. Then Penny reads out what they cost.",
+      "spoken": "Amara wanted exactly these things too. Then Penny reads out what they cost."
+    },
+    "d53e968a": {
+      "slide": "s21",
+      "text": "The first cost is electricity.",
+      "spoken": "The first cost is electricity."
+    },
+    "501268e8": {
+      "slide": "s21",
+      "text": "The electricity is what makes cheating expensive. Miners use as much of it as the prize will pay for.",
+      "spoken": "The electricity is what makes cheating expensive. Miners use as much of it as the prize will pay for."
+    },
+    "70a3abe8": {
+      "slide": "s21",
+      "text": "Bitcoin mining uses about as much electricity each year as a mid-sized country such as Poland.",
+      "spoken": "Bitcoin mining uses about as much electricity each year as a mid-sized country such as Poland."
+    },
+    "c4a1dcbf": {
+      "slide": "s21",
+      "text": "Faster machines do not lower the total. The game gets harder, so that a block still takes ten minutes.",
+      "spoken": "Faster machines do not lower the total. The game gets harder, so that a block still takes ten minutes."
+    },
+    "39592768": {
+      "slide": "s21",
+      "text": "Some newer coins use another method and far less power. Bitcoin is over half of all crypto by value, and nobody is in charge to order a change.",
+      "spoken": "Some newer coins use another method and far less power. Bitcoin is over half of all crypto by value, and nobody is in charge to order a change."
+    },
+    "627614f1": {
+      "slide": "s22",
+      "text": "The second cost is the price.",
+      "spoken": "The second cost is the price."
+    },
+    "d177cefa": {
+      "slide": "s22",
+      "text": "A government stands behind the dollar. It works to keep prices steady, and it collects taxes in dollars.",
+      "spoken": "A government stands behind the dollar. It works to keep prices steady, and it collects taxes in dollars."
+    },
+    "9fbec77e": {
+      "slide": "s22",
+      "text": "Nothing stands behind a bitcoin. It earns no profit and pays no interest. It is worth what the next buyer will pay.",
+      "spoken": "Nothing stands behind a bitcoin. It earns no profit and pays no interest. It is worth what the next buyer will pay."
+    },
+    "bb285571": {
+      "slide": "s22",
+      "text": "So the price swings. Bitcoin lost more than half its value in 2018 and in 2022, and again from October 2025 to June 2026.",
+      "spoken": "So the price swings. Bitcoin lost more than half its value in 2018 and in 2022, and again from October 2025 to June 2026."
+    },
+    "70f7b196": {
+      "slide": "s22",
+      "text": "Money that may lose half its value is hard to shop with or save in. It works better as a bet.",
+      "spoken": "Money that may lose half its value is hard to shop with or save in. It works better as a bet."
+    },
+    "57721451": {
+      "slide": "s23",
+      "text": "Ask one question. What can you do with crypto that you can't do with a bank card?",
+      "spoken": "Ask one question. What can you do with crypto that you can't do with a bank card?"
+    },
+    "078562ba": {
+      "slide": "s23",
+      "text": "You can bet on the price. This is the main use. In a 2025 US survey, nearly one adult in ten held crypto to invest. About one in fifty paid with it.",
+      "spoken": "You can bet on the price. This is the main use. In a 2025 U.S. survey, nearly one adult in ten held crypto to invest. About one in fifty paid with it."
+    },
+    "cf5ab818": {
+      "slide": "s23",
+      "text": "You can make a payment nobody can stop. That matters only to someone a keeper would stop.",
+      "spoken": "You can make a payment nobody can stop. That matters only to someone a keeper would stop."
+    },
+    "012982ad": {
+      "slide": "s23",
+      "text": "Some of those people are criminals. Others are people like Amara. Whether it serves them well is a separate question.",
+      "spoken": "Some of those people are criminals. Others are people like Amara. Whether it serves them well is a separate question."
+    },
+    "d0434d37": {
+      "slide": "s23",
+      "text": "Everyday shopping is rare. El Salvador made bitcoin official money in 2021. Few people used it, and in 2025 accepting it became optional.",
+      "spoken": "Everyday shopping is rare. El Salvador made bitcoin official money in 2021. Few people used it, and in 2025 accepting it became optional."
+    },
+    "ccef4758": {
+      "slide": "s24",
+      "text": "Supporters often say crypto will rescue people the banks have failed. So far it has not done much for them.",
+      "spoken": "Supporters often say crypto will rescue people the banks have failed. So far it has not done much for them."
+    },
+    "9d8cdf9d": {
+      "slide": "s24",
+      "text": "About one point three billion adults have no financial account. Six in ten of them have no smartphone, and most crypto wallets need one.",
+      "spoken": "About one point three billion adults have no financial account. Six in ten of them have no smartphone, and most crypto wallets need one."
+    },
+    "4f762a66": {
+      "slide": "s24",
+      "text": "The price swings. A family living week to week cannot keep savings in something that may lose half its value.",
+      "spoken": "The price swings. A family living week to week cannot keep savings in something that may lose half its value."
+    },
+    "5a9eb430": {
+      "slide": "s24",
+      "text": "In El Salvador, the people most likely to use bitcoin were young, educated, and already had bank accounts.",
+      "spoken": "In El Salvador, the people most likely to use bitcoin were young, educated, and already had bank accounts."
+    },
+    "9bbc25a4": {
+      "slide": "s24",
+      "text": "To buy food, Amara must trade coins for local money at an exchange. From 2021 to 2023 Nigeria barred its banks from serving them. Crypto's own keepers fail too. The exchange FTX collapsed in 2022 with about eight billion dollars of customers' money missing.",
+      "spoken": "To buy food, Amara must trade coins for local money at an exchange. From 2021 to 2023 Nigeria barred its banks from serving them. Crypto's own keepers fail too. The exchange FTX collapsed in 2022 with about eight billion dollars of customers' money missing."
+    },
+    "17f0ab37": {
+      "slide": "s25",
+      "text": "Doctor Calamity is made up. Ransoms paid in crypto are real.",
+      "spoken": "Doctor Calamity is made up. Ransoms paid in crypto are real."
+    },
+    "e9c7f0ea": {
+      "slide": "s25",
+      "text": "Ransomware is software that locks a victim's files. The attacker demands a payment to unlock them.",
+      "spoken": "Ransomware is software that locks a victim's files. The attacker demands a payment to unlock them."
+    },
+    "cd75ac09": {
+      "slide": "s25",
+      "text": "Hospitals, schools, and cities have been hit. A 2024 attack on a London lab postponed over ten thousand hospital appointments.",
+      "spoken": "Hospitals, schools, and cities have been hit. A 2024 attack on a London lab postponed over ten thousand hospital appointments."
+    },
+    "1f561acc": {
+      "slide": "s25",
+      "text": "Ransomware gangs collected more than one billion dollars in crypto in 2023, and over eight hundred million in each of 2024 and 2025.",
+      "spoken": "Ransomware gangs collected more than one billion dollars in crypto in 2023, and over eight hundred million in each of 2024 and 2025."
+    },
+    "7347d3fa": {
+      "slide": "s25",
+      "text": "Before crypto, a ransom of this kind had the pickup problem. Crypto removed it.",
+      "spoken": "Before crypto, a ransom of this kind had the pickup problem. Crypto removed it."
+    },
+    "21706e37": {
+      "slide": "s26",
+      "text": "There is one more fact about the ledger, and it cuts against the villain.",
+      "spoken": "There is one more fact about the ledger, and it cuts against the villain."
+    },
+    "b8f942b8": {
+      "slide": "s26",
+      "text": "Every bitcoin payment stays on the public ledger forever. Addresses carry no names, but the trail between them can be followed.",
+      "spoken": "Every bitcoin payment stays on the public ledger forever. Addresses carry no names, but the trail between them can be followed."
+    },
+    "d2c2301f": {
+      "slide": "s26",
+      "text": "In 2021 criminals locked the computers of Colonial Pipeline, a major US fuel pipeline. The company paid 75 bitcoins.",
+      "spoken": "In 2021 criminals locked the computers of Colonial Pipeline, a major U.S. fuel pipeline. The company paid 75 bitcoins."
+    },
+    "f4118be1": {
+      "slide": "s26",
+      "text": "The FBI followed the coins and took back about 64 of them within a month.",
+      "spoken": "The FBI followed the coins and took back about 64 of them within a month."
+    },
+    "0ab567d1": {
+      "slide": "s26",
+      "text": "So the claim that most crypto is crime is false. Firms that track it put crime at about one percent of the crypto activity they can trace.",
+      "spoken": "So the claim that most crypto is crime is false. Firms that track it put crime at about one percent of the crypto activity they can trace."
+    },
+    "425367fe": {
+      "slide": "s27",
+      "text": "Design a kind of money by setting three switches. Each switch is one thing a keeper does. Try different settings. When you're ready, press Continue.",
+      "spoken": "Design a kind of money by setting three switches. Each switch is one thing a keeper does. Try different settings. When you're ready, press Continue."
+    },
+    "63807318": {
+      "slide": "s28",
+      "text": "Some of crypto's problems could be fixed with better apps or clearer laws. Check every problem that comes from having no keeper, then press Check answers.",
+      "spoken": "Some of crypto's problems could be fixed with better apps or clearer laws. Check every problem that comes from having no keeper, then press Check answers."
+    },
+    "379f478a": {
+      "slide": "s28",
+      "text": "Confusing apps, unclear tax rules, and dishonest ads can all be fixed without changing what crypto is. The other four come from removing the keeper.",
+      "spoken": "Confusing apps, unclear tax rules, and dishonest ads can all be fixed without changing what crypto is. The other four come from removing the keeper."
+    },
+    "3476dba7": {
+      "slide": "s29",
+      "text": "Think of the keeper as a doorman. Each fix for crypto's problems puts some kind of doorman back. On the left is the door with no doorman, which is Bitcoin. Nobody can block a payment. Doctor Calamity gets her ransom. Amara's coins arrive too, but she still has to turn them into money she can spend. Nobody can undo a mistake, check a name, or steady the price. On the right is the door with a doorman, which means banks, and most fixes. Somebody can block a payment. A ransom is stopped only if the doorman catches it, and the same somebody decides about Amara. Coins tied to the dollar work this way. The company behind them can freeze any account, and a 2025 US law makes that power a condition of issuing them. Yet in 2024 most crypto crime moved in these coins.",
+      "spoken": "Think of the keeper as a doorman. Each fix for crypto's problems puts some kind of doorman back. On the left is the door with no doorman, which is Bitcoin. Nobody can block a payment. Doctor Calamity gets her ransom. Amara's coins arrive too, but she still has to turn them into money she can spend. Nobody can undo a mistake, check a name, or steady the price. On the right is the door with a doorman, which means banks, and most fixes. Somebody can block a payment. A ransom is stopped only if the doorman catches it, and the same somebody decides about Amara. Coins tied to the dollar work this way. The company behind them can freeze any account, and a 2025 U.S. law makes that power a condition of issuing them. Yet in 2024 most crypto crime moved in these coins."
+    },
+    "58579131": {
+      "slide": "s30",
+      "text": "In 1980 the scholar Langdon Winner asked whether a design can have politics built into it.",
+      "spoken": "In 1980 the scholar Langdon Winner asked whether a design can have politics built into it."
+    },
+    "37e176c0": {
+      "slide": "s30",
+      "text": "A common view says tools are neutral. Only the people who use them are good or bad.",
+      "spoken": "A common view says tools are neutral. Only the people who use them are good or bad."
+    },
+    "24ea5d92": {
+      "slide": "s30",
+      "text": "Winner disagreed. He argued that some designs settle in advance who gets through and who is kept out.",
+      "spoken": "Winner disagreed. He argued that some designs settle in advance who gets through and who is kept out."
+    },
+    "539040f5": {
+      "slide": "s30",
+      "text": "His best-known example was a set of low bridges said to be built to block buses. Historians dispute that story.",
+      "spoken": "His best-known example was a set of low bridges said to be built to block buses. Historians dispute that story."
+    },
+    "b22e832c": {
+      "slide": "s30",
+      "text": "Bitcoin fits his idea better. Its design settles that nobody can be stopped, and that was chosen on purpose.",
+      "spoken": "Bitcoin fits his idea better. Its design settles that nobody can be stopped, and that was chosen on purpose."
+    },
+    "957f9aff": {
+      "slide": "s31",
+      "text": "Should there be a kind of money that no bank, company, or government is able to stop? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Should there be a kind of money that no bank, company, or government is able to stop? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "c92181d7": {
+      "slide": "s31",
+      "text": "Every answer here accepts a cost. A doorman who can block a ransom can also block a reporter. A system with no doorman carries both.",
+      "spoken": "Every answer here accepts a cost. A doorman who can block a ransom can also block a reporter. A system with no doorman carries both."
+    },
+    "db4f0028": {
+      "slide": "s32",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "ad787f13": {
+      "slide": "s32",
+      "text": "Saved. Now for a short recap.",
+      "spoken": "Saved. Now for a short recap."
+    },
+    "553052f1": {
+      "slide": "s33",
+      "text": "Here is what to take away.",
+      "spoken": "Here is what to take away."
+    },
+    "a34ede2f": {
+      "slide": "s33",
+      "text": "A keeper holds the ledger, checks names, can refuse or undo a payment, and has a government behind it.",
+      "spoken": "A keeper holds the ledger, checks names, can refuse or undo a payment, and has a government behind it."
+    },
+    "3cbaa951": {
+      "slide": "s33",
+      "text": "Bitcoin replaces the keeper with public copies, linked fingerprints, and a costly lottery called proof of work.",
+      "spoken": "Bitcoin replaces the keeper with public copies, linked fingerprints, and a costly lottery called proof of work."
+    },
+    "10878f38": {
+      "slide": "s33",
+      "text": "Its costs come from that design: heavy electricity use, a price that acts like a bet, no undo, and payments nobody can stop.",
+      "spoken": "Its costs come from that design: heavy electricity use, a price that acts like a bet, no undo, and payments nobody can stop."
+    },
+    "c7eea731": {
+      "slide": "s33",
+      "text": "Most crypto use is betting. As money it has worked well for ransoms, and poorly for most people the banks shut out. The city paid in bitcoin. Doctor Calamity posted a photo of her screen to brag, with her secret key in plain view. A stranger emptied the address within the hour, and the photo led the police to the island. Penny had sent her a memo about keys.",
+      "spoken": "Most crypto use is betting. As money it has worked well for ransoms, and poorly for most people the banks shut out. The city paid in bitcoin. Doctor Calamity posted a photo of her screen to brag, with her secret key in plain view. A stranger emptied the address within the hour, and the photo led the police to the island. Penny had sent her a memo about keys."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}
