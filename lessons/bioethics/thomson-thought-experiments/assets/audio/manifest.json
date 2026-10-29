@@ -1,0 +1,492 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-tutor-13",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "6649468a": {
+      "slide": "s1",
+      "text": "Welcome to Six Impossible Things Before Breakfast. In Through the Looking-Glass, the White Queen says that sometimes she's believed as many as six impossible things before breakfast. Judith Jarvis Thomson was a philosopher at MIT. She lived from 1929 to 2020, and she made moral arguments out of impossible stories. You're about to meet six of them. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to Six Impossible Things Before Breakfast. In Through the Looking-Glass, the White Queen says that sometimes she's believed as many as six impossible things before breakfast. Judith Jarvis Thomson was a philosopher at MIT. She lived from 1929 to 2020, and she made moral arguments out of impossible stories. You're about to meet six of them. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "eb00b0c4": {
+      "slide": "s2",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "b6aef667": {
+      "slide": "s3",
+      "text": "First, what is a thought experiment? It's an imagined situation used to test a claim. You don't run it. You work out what would happen in it, or what would be right.",
+      "spoken": "First, what is a thought experiment? It's an imagined situation used to test a claim. You don't run it. You work out what would happen in it, or what would be right."
+    },
+    "c6e8c939": {
+      "slide": "s3",
+      "text": "Aristotle taught that heavier objects fall faster. Galileo asked you to imagine tying a heavy stone to a light one.",
+      "spoken": "Aristotle taught that heavier objects fall faster. Galileo asked you to imagine tying a heavy stone to a light one."
+    },
+    "a7b4eb70": {
+      "slide": "s3",
+      "text": "The light stone should slow the heavy one down, so the pair falls slower. But the pair weighs more, so it should fall faster.",
+      "spoken": "The light stone should slow the heavy one down, so the pair falls slower. But the pair weighs more, so it should fall faster."
+    },
+    "0795f8f8": {
+      "slide": "s3",
+      "text": "The theory predicts both at once, so it must be false. Galileo refuted it without dropping anything.",
+      "spoken": "The theory predicts both at once, so it must be false. Galileo refuted it without dropping anything."
+    },
+    "e7f66a34": {
+      "slide": "s4",
+      "text": "In 1971, two years before Roe versus Wade, Thomson published A Defense of Abortion. It opens with a common argument against abortion. One: every person has a right to life. Two: the fetus is a person from the moment of conception. Three: a woman has a right to decide what happens in and to her body. Four: a person's right to life is stronger than that right. So abortion is wrong.",
+      "spoken": "In 1971, two years before Roe versus Wade, Thomson published A Defense of Abortion. It opens with a common argument against abortion. One: every person has a right to life. Two: the fetus is a person from the moment of conception. Three: a woman has a right to decide what happens in and to her body. Four: a person's right to life is stronger than that right. So abortion is wrong."
+    },
+    "9351d896": {
+      "slide": "s4",
+      "text": "Most debate is over premise two. Thomson thought it false: a fertilized egg is no more a person than an acorn is an oak tree.",
+      "spoken": "Most debate is over premise two. Thomson thought it false: a fertilized egg is no more a person than an acorn is an oak tree."
+    },
+    "5cac72cf": {
+      "slide": "s4",
+      "text": "She grants premise two anyway, for the sake of argument, and attacks premise four with a story.",
+      "spoken": "She grants premise two anyway, for the sake of argument, and attacks premise four with a story."
+    },
+    "cf1f33d0": {
+      "slide": "s5",
+      "text": "Here's the first story: the violinist. Thomson writes: you wake up in the morning and find yourself back to back in bed with an unconscious violinist. A famous unconscious violinist.",
+      "spoken": "Here's the first story: the violinist. Thomson writes: you wake up in the morning and find yourself back to back in bed with an unconscious violinist. A famous unconscious violinist."
+    },
+    "7bcdd94a": {
+      "slide": "s5",
+      "text": "He has a fatal kidney disease. The Society of Music Lovers searched the medical records and found that only you have the right blood type.",
+      "spoken": "He has a fatal kidney disease. The Society of Music Lovers searched the medical records and found that only you have the right blood type."
+    },
+    "09a9e408": {
+      "slide": "s5",
+      "text": "Last night they kidnapped you. They plugged his circulatory system into yours, so your kidneys now clean his blood as well as your own.",
+      "spoken": "Last night they kidnapped you. They plugged his circulatory system into yours, so your kidneys now clean his blood as well as your own."
+    },
+    "ff62f50a": {
+      "slide": "s6",
+      "text": "Now the hospital director explains. He says they're sorry the Society of Music Lovers did this to you, and they'd never have permitted it if they had known. But still, they did it, and the violinist is now plugged into you. To unplug you would be to kill him. But never mind, he says, it's only for nine months. By then the violinist will have recovered, and can safely be unplugged. Thomson asks: are you morally required to stay? It would be very kind of you. But do you have to?",
+      "spoken": "Now the hospital director explains. He says they're sorry the Society of Music Lovers did this to you, and they'd never have permitted it if they had known. But still, they did it, and the violinist is now plugged into you. To unplug you would be to kill him. But never mind, he says, it's only for nine months. By then the violinist will have recovered, and can safely be unplugged. Thomson asks: are you morally required to stay? It would be very kind of you. But do you have to?"
+    },
+    "be72090c": {
+      "slide": "s7",
+      "text": "What if it were nine years? Suppose the director says it's nine years, or the rest of your life. You protest. He replies: tough luck. All persons have a right to life, and violinists are persons. Granted, you have a right to decide what happens in and to your body, but a person's right to life outweighs it. So you cannot ever be unplugged from him.",
+      "spoken": "What if it were nine years? Suppose the director says it's nine years, or the rest of your life. You protest. He replies: tough luck. All persons have a right to life, and violinists are persons. Granted, you have a right to decide what happens in and to your body, but a person's right to life outweighs it. So you cannot ever be unplugged from him."
+    },
+    "8d66406e": {
+      "slide": "s7",
+      "text": "Thomson expects you to find this outrageous. But the director's reasoning is the argument against abortion, word for word.",
+      "spoken": "Thomson expects you to find this outrageous. But the director's reasoning is the argument against abortion, word for word."
+    },
+    "70c0bc24": {
+      "slide": "s7",
+      "text": "If his reasoning fails here, then premise four is false as stated. A right to life doesn't automatically win.",
+      "spoken": "If his reasoning fails here, then premise four is false as stated. A right to life doesn't automatically win."
+    },
+    "9f732ea0": {
+      "slide": "s8",
+      "text": "Decision point: stay plugged in? You wake up connected to the violinist. Unplugging will kill him. Must you stay connected for nine months? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: stay plugged in? You wake up connected to the violinist. Unplugging will kill him. Must you stay connected for nine months? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "357b6af9": {
+      "slide": "s8",
+      "text": "Thomson's answer is that you may unplug. Staying would be a great kindness, but the violinist has no right to it.",
+      "spoken": "Thomson's answer is that you may unplug. Staying would be a great kindness, but the violinist has no right to it."
+    },
+    "acd28b59": {
+      "slide": "s9",
+      "text": "If you may unplug, what does the violinist's right to life actually give him? Thomson's claim is that a right to life is not a right to use another person's body. She separates two things it might mean.",
+      "spoken": "If you may unplug, what does the violinist's right to life actually give him? Thomson's claim is that a right to life is not a right to use another person's body. She separates two things it might mean."
+    },
+    "f07e2e27": {
+      "slide": "s9",
+      "text": "One: a right to be given whatever you need to live. If he had this, he'd have a right to your kidneys. Thomson says no one has this right.",
+      "spoken": "One: a right to be given whatever you need to live. If he had this, he'd have a right to your kidneys. Thomson says no one has this right."
+    },
+    "fdaff406": {
+      "slide": "s9",
+      "text": "Two: a right not to be killed unjustly. This is the right to life everyone really has.",
+      "spoken": "Two: a right not to be killed unjustly. This is the right to life everyone really has."
+    },
+    "f6859704": {
+      "slide": "s9",
+      "text": "Unplugging does kill the violinist. But it doesn't kill him unjustly, because he never had a right to use your body.",
+      "spoken": "Unplugging does kill the violinist. But it doesn't kill him unjustly, because he never had a right to use your body."
+    },
+    "8bdb4cff": {
+      "slide": "s10",
+      "text": "Thomson's second case shows the same point with no kidnapping at all. Henry Fonda was a famous film star. She writes: if I am sick unto death, and the only thing that will save my life is the touch of Henry Fonda's cool hand on my fevered brow, then all the same, I have no right to be given that touch. It would be frightfully nice of him to fly in from the West Coast. But you can't demand it.",
+      "spoken": "Thomson's second case shows the same point with no kidnapping at all. Henry Fonda was a famous film star. She writes: if I am sick unto death, and the only thing that will save my life is the touch of Henry Fonda's cool hand on my fevered brow, then all the same, I have no right to be given that touch. It would be frightfully nice of him to fly in from the West Coast. But you can't demand it."
+    },
+    "db89260c": {
+      "slide": "s11",
+      "text": "Now shrink the burden. The violinist needs your kidneys for only one hour. Thomson says you ought to stay. Does he now have a right to that hour? Compare two kinds of Samaritan. The Good Samaritan helps a stranger at great cost to themselves. We admire this, but no one may demand it. Think of staying plugged in for nine months, or flying across the country to touch a stranger's brow. The Minimally Decent Samaritan helps when it costs little. Refusing is indecent, but it's still not a violation of anyone's rights. Think of staying the one hour, or Henry Fonda crossing the room, if he were already there.",
+      "spoken": "Now shrink the burden. The violinist needs your kidneys for only one hour. Thomson says you ought to stay. Does he now have a right to that hour? Compare two kinds of Samaritan. The Good Samaritan helps a stranger at great cost to themselves. We admire this, but no one may demand it. Think of staying plugged in for nine months, or flying across the country to touch a stranger's brow. The Minimally Decent Samaritan helps when it costs little. Refusing is indecent, but it's still not a violation of anyone's rights. Think of staying the one hour, or Henry Fonda crossing the room, if he were already there."
+    },
+    "5ba10f4f": {
+      "slide": "s12",
+      "text": "Next, how to test a thought experiment. The philosopher Daniel Dennett called cases like the violinist intuition pumps: stories built to produce a particular judgment in you. His idea is that a thought experiment is built to pump out an intuition, so you turn its knobs to test it.",
+      "spoken": "Next, how to test a thought experiment. The philosopher Daniel Dennett called cases like the violinist intuition pumps: stories built to produce a particular judgment in you. His idea is that a thought experiment is built to pump out an intuition, so you turn its knobs to test it."
+    },
+    "dbe50938": {
+      "slide": "s12",
+      "text": "Dennett credits Douglas Hofstadter with a test: treat the story like a machine with knobs, and turn one knob at a time.",
+      "spoken": "Dennett credits Douglas Hofstadter with a test: treat the story like a machine with knobs, and turn one knob at a time."
+    },
+    "862bc8a4": {
+      "slide": "s12",
+      "text": "Thomson did this herself. She turned nine months into one hour, and your duty changed from none to decency.",
+      "spoken": "Thomson did this herself. She turned nine months into one hour, and your duty changed from none to decency."
+    },
+    "5664e16f": {
+      "slide": "s12",
+      "text": "If turning a knob that shouldn't matter changes your judgment, the story was steering you with that detail.",
+      "spoken": "If turning a knob that shouldn't matter changes your judgment, the story was steering you with that detail."
+    },
+    "eaee69ba": {
+      "slide": "s13",
+      "text": "Good pump or misleading pump? Dennett's name for a thinking tool that misleads you is a boom crutch. Studies find that even professional philosophers change their verdicts depending on the order they hear cases in. A good pump tracks its target. Your judgment changes when the feature being tested changes, and stays put when anything else changes. Make the violinist your own child and many people's answer shifts. Make him a cellist and nothing shifts. A boom crutch rides a hidden detail. Your judgment depends on wording, vividness, or a detail nobody meant to test. Doctors choose surgery more often when told that ninety percent survive than when told that ten percent die. The facts are identical.",
+      "spoken": "Good pump or misleading pump? Dennett's name for a thinking tool that misleads you is a boom crutch. Studies find that even professional philosophers change their verdicts depending on the order they hear cases in. A good pump tracks its target. Your judgment changes when the feature being tested changes, and stays put when anything else changes. Make the violinist your own child and many people's answer shifts. Make him a cellist and nothing shifts. A boom crutch rides a hidden detail. Your judgment depends on wording, vividness, or a detail nobody meant to test. Doctors choose surgery more often when told that ninety percent survive than when told that ten percent die. The facts are identical."
+    },
+    "5268f482": {
+      "slide": "s14",
+      "text": "Testing the test. Someone offers a case to show that consent is what makes a burden permissible. What is the best knob test of that claim? Pick an answer.",
+      "spoken": "Testing the test. Someone offers a case to show that consent is what makes a burden permissible. What is the best knob test of that claim? Pick an answer."
+    },
+    "61d02fd9": {
+      "slide": "s14",
+      "text": "Right. A twin case that differs only in consent isolates that one feature. Next, a very different story: the tiny house.",
+      "spoken": "Right. A twin case that differs only in consent isolates that one feature. Next, a very different story: the tiny house."
+    },
+    "673051d2": {
+      "slide": "s15",
+      "text": "Now, the tiny house. Some opponents held the extreme view: abortion is wrong even when the pregnancy will kill the woman, because directly killing an innocent person is always wrong. Thomson writes: suppose you find yourself trapped in a tiny house with a growing child. A very tiny house, and a rapidly growing child. You're already up against the wall of the house, and in a few minutes you'll be crushed to death.",
+      "spoken": "Now, the tiny house. Some opponents held the extreme view: abortion is wrong even when the pregnancy will kill the woman, because directly killing an innocent person is always wrong. Thomson writes: suppose you find yourself trapped in a tiny house with a growing child. A very tiny house, and a rapidly growing child. You're already up against the wall of the house, and in a few minutes you'll be crushed to death."
+    },
+    "13cf362f": {
+      "slide": "s15",
+      "text": "The child won't be crushed. If nothing stops him, he'll burst out of the house and walk away.",
+      "spoken": "The child won't be crushed. If nothing stops him, he'll burst out of the house and walk away."
+    },
+    "0252708c": {
+      "slide": "s15",
+      "text": "Thomson says you may act to save yourself, even though the child is innocent and it will kill him.",
+      "spoken": "Thomson says you may act to save yourself, even though the child is innocent and it will kill him."
+    },
+    "4f84bf99": {
+      "slide": "s16",
+      "text": "Whose house is it? An outsider might say, I can't choose between your life and the child's. Thomson says that isn't neutral, and she explains why with a coat.",
+      "spoken": "Whose house is it? An outsider might say, I can't choose between your life and the child's. Thomson says that isn't neutral, and she explains why with a coat."
+    },
+    "5673cc50": {
+      "slide": "s16",
+      "text": "Smith and Jones will both freeze without a certain coat. Jones has grabbed it. But the coat belongs to Smith.",
+      "spoken": "Smith and Jones will both freeze without a certain coat. Jones has grabbed it. But the coat belongs to Smith."
+    },
+    "7e53efdd": {
+      "slide": "s16",
+      "text": "A bystander who says I can't choose between you is siding with Jones, who has taken what isn't his.",
+      "spoken": "A bystander who says I can't choose between you is siding with Jones, who has taken what isn't his."
+    },
+    "78f5363a": {
+      "slide": "s16",
+      "text": "In the tiny house, the house is yours. It is the woman's body that the fetus occupies.",
+      "spoken": "In the tiny house, the house is yours. It is the woman's body that the fetus occupies."
+    },
+    "ce39bf43": {
+      "slide": "s16",
+      "text": "So the extreme view fails: a woman may save her own life, and others may help her do it.",
+      "spoken": "So the extreme view fails: a woman may save her own life, and others may help her do it."
+    },
+    "f05c7b50": {
+      "slide": "s17",
+      "text": "Now, the obvious objection. The violinist was kidnapped. That makes it like pregnancy from rape. But most pregnancies follow sex the woman chose to have.",
+      "spoken": "Now, the obvious objection. The violinist was kidnapped. That makes it like pregnancy from rape. But most pregnancies follow sex the woman chose to have."
+    },
+    "6943a4d1": {
+      "slide": "s17",
+      "text": "This is the responsibility objection: if you knowingly risked creating a dependent person, you are responsible for them.",
+      "spoken": "This is the responsibility objection: if you knowingly risked creating a dependent person, you are responsible for them."
+    },
+    "ddb392b8": {
+      "slide": "s17",
+      "text": "On this view, the fetus gains a right to your body because of what you chose to do.",
+      "spoken": "On this view, the fetus gains a right to your body because of what you chose to do."
+    },
+    "a8653663": {
+      "slide": "s17",
+      "text": "Mary Anne Warren, who defended abortion rights herself, thought the violinist argument clearly worked only for rape.",
+      "spoken": "Mary Anne Warren, who defended abortion rights herself, thought the violinist argument clearly worked only for rape."
+    },
+    "6b673c65": {
+      "slide": "s17",
+      "text": "Thomson replies with two more cases, both about a risk you knew of and tried to avoid.",
+      "spoken": "Thomson replies with two more cases, both about a risk you knew of and tried to avoid."
+    },
+    "df7be70e": {
+      "slide": "s18",
+      "text": "Here are the people-seeds. Imagine that people-seeds drift about in the air like pollen. If one lands in your carpet, it takes root and grows into a person.",
+      "spoken": "Here are the people-seeds. Imagine that people-seeds drift about in the air like pollen. If one lands in your carpet, it takes root and grows into a person."
+    },
+    "c645f994": {
+      "slide": "s18",
+      "text": "You don't want children, so you put the best mesh screens you can buy on your windows. One is defective, and a seed takes root.",
+      "spoken": "You don't want children, so you put the best mesh screens you can buy on your windows. One is defective, and a seed takes root."
+    },
+    "48ae4f16": {
+      "slide": "s18",
+      "text": "Does it now have a right to the use of your house? Thomson says surely not, though you chose to open your windows.",
+      "spoken": "Does it now have a right to the use of your house? Thomson says surely not, though you chose to open your windows."
+    },
+    "314c977e": {
+      "slide": "s18",
+      "text": "Her simpler case: you open a window for air and a burglar climbs in. Knowing burglars exist gives him no right to stay.",
+      "spoken": "Her simpler case: you open a window for air and a burglar climbs in. Knowing burglars exist gives him no right to stay."
+    },
+    "27c58344": {
+      "slide": "s19",
+      "text": "Where does Thomson's argument stop? She did not argue that every abortion is permissible. She drew these limits herself.",
+      "spoken": "Where does Thomson's argument stop? She did not argue that every abortion is permissible. She drew these limits herself."
+    },
+    "e63e5efc": {
+      "slide": "s19",
+      "text": "If you choose to take on a person's care, as parents do when they take a newborn home, you owe them far more.",
+      "spoken": "If you choose to take on a person's care, as parents do when they take a newborn home, you owe them far more."
+    },
+    "225dc023": {
+      "slide": "s19",
+      "text": "Some abortions would be indecent. Her example: ending a pregnancy in the seventh month to avoid postponing a trip abroad.",
+      "spoken": "Some abortions would be indecent. Her example: ending a pregnancy in the seventh month to avoid postponing a trip abroad."
+    },
+    "1a78c06d": {
+      "slide": "s19",
+      "text": "You may unplug. But if the violinist survives by a miracle, you have no right to kill him afterward.",
+      "spoken": "You may unplug. But if the violinist survives by a miracle, you have no right to kill him afterward."
+    },
+    "564929e2": {
+      "slide": "s19",
+      "text": "So a right to end a pregnancy is not a right to ensure the death of a fetus that could live on its own.",
+      "spoken": "So a right to end a pregnancy is not a right to ensure the death of a fetus that could live on its own."
+    },
+    "1414c90a": {
+      "slide": "s20",
+      "text": "Thomson's critics have replied in several ways. Here are four.",
+      "spoken": "Thomson's critics have replied in several ways. Here are four."
+    },
+    "cc899a8b": {
+      "slide": "s20",
+      "text": "Killing versus letting die. Unplugging stops help. John Finnis argued that most abortion methods act directly on the fetus instead.",
+      "spoken": "Killing versus letting die. Unplugging stops help. John Finnis argued that most abortion methods act directly on the fetus instead."
+    },
+    "c0be7c17": {
+      "slide": "s20",
+      "text": "Stranger versus child. The violinist is a stranger. Many argue parents owe their children help whether they chose it or not.",
+      "spoken": "Stranger versus child. The violinist is a stranger. Many argue parents owe their children help whether they chose it or not."
+    },
+    "123f3fdd": {
+      "slide": "s20",
+      "text": "Unusual versus ordinary. Being plugged into a stranger is bizarre. Pregnancy is a normal part of human life.",
+      "spoken": "Unusual versus ordinary. Being plugged into a stranger is bizarre. Pregnancy is a normal part of human life."
+    },
+    "e68da677": {
+      "slide": "s20",
+      "text": "Rights versus character. Rosalind Hursthouse asked what a wise, good person would do, not only what rights allow.",
+      "spoken": "Rights versus character. Rosalind Hursthouse asked what a wise, good person would do, not only what rights allow."
+    },
+    "c4b8998c": {
+      "slide": "s21",
+      "text": "Now try the knob board yourself. Set the details of the case. The board finds Thomson's closest case, what she says about it, and the strongest objection. Try a few settings. When you're ready, press Continue.",
+      "spoken": "Now try the knob board yourself. Set the details of the case. The board finds Thomson's closest case, what she says about it, and the strongest objection. Try a few settings. When you're ready, press Continue."
+    },
+    "95a5426f": {
+      "slide": "s22",
+      "text": "What did Thomson actually claim? Check every claim she herself makes in A Defense of Abortion. Then press Check answers.",
+      "spoken": "What did Thomson actually claim? Check every claim she herself makes in A Defense of Abortion. Then press Check answers."
+    },
+    "a7c39e9e": {
+      "slide": "s22",
+      "text": "Right. She grants personhood for the sake of argument, and denies that a right to life guarantees the use of another's body. She never says consent is irrelevant.",
+      "spoken": "Right. She grants personhood for the sake of argument, and denies that a right to life guarantees the use of another's body. She never says consent is irrelevant."
+    },
+    "bec4b8e3": {
+      "slide": "s23",
+      "text": "Thomson's principle, that no one has a right to the use of your body, also shows up in medical law.",
+      "spoken": "Thomson's principle, that no one has a right to the use of your body, also shows up in medical law."
+    },
+    "398b9616": {
+      "slide": "s23",
+      "text": "In McFall versus Shimp, a Pennsylvania case from 1978, a dying man needed bone marrow from his cousin. The judge called the refusal wrong but would not force it.",
+      "spoken": "In McFall versus Shimp, a Pennsylvania case from 1978, a dying man needed bone marrow from his cousin. The judge called the refusal wrong but would not force it."
+    },
+    "8a8f284d": {
+      "slide": "s23",
+      "text": "US law takes no organs, even from the dead, without authorization from the person or their family.",
+      "spoken": "U.S. law takes no organs, even from the dead, without authorization from the person or their family."
+    },
+    "b1279d25": {
+      "slide": "s23",
+      "text": "In the case In re A.C., from the District of Columbia in 1990, a court ordered a cesarean. The appeals court held the patient's choice should control.",
+      "spoken": "In the case In re A.C., from the District of Columbia in 1990, a court ordered a cesarean. The appeals court held the patient's choice should control."
+    },
+    "cdd28521": {
+      "slide": "s24",
+      "text": "Now, the trolley. The trolley problem began in a 1967 paper on abortion by the Oxford philosopher Philippa Foot.",
+      "spoken": "Now, the trolley. The trolley problem began in a 1967 paper on abortion by the Oxford philosopher Philippa Foot."
+    },
+    "acd8ab40": {
+      "slide": "s24",
+      "text": "A tram's brakes fail. Ahead, five workers are on the track. The driver can steer onto a side track where one worker stands.",
+      "spoken": "A tram's brakes fail. Ahead, five workers are on the track. The driver can steer onto a side track where one worker stands."
+    },
+    "5a748384": {
+      "slide": "s24",
+      "text": "Foot said the driver should steer. Either way he kills someone, so he should kill one rather than five.",
+      "spoken": "Foot said the driver should steer. Either way he kills someone, so he should kill one rather than five."
+    },
+    "95d06894": {
+      "slide": "s24",
+      "text": "Compare a judge who could stop a deadly riot by framing an innocent man. Foot said he may not, though it also saves more lives.",
+      "spoken": "Compare a judge who could stop a deadly riot by framing an innocent man. Foot said he may not, though it also saves more lives."
+    },
+    "f88d3411": {
+      "slide": "s25",
+      "text": "Thomson named this the trolley problem in 1976 and added two cases. Foot's idea behind them is that our duty not to harm people is stronger than our duty to help them.",
+      "spoken": "Thomson named this the trolley problem in 1976 and added two cases. Foot's idea behind them is that our duty not to harm people is stronger than our duty to help them."
+    },
+    "87b0d941": {
+      "slide": "s25",
+      "text": "The transplant surgeon. Five patients will die without new organs. A healthy visitor's organs match. May the surgeon cut him up to save them? Clearly not.",
+      "spoken": "The transplant surgeon. Five patients will die without new organs. A healthy visitor's organs match. May the surgeon cut him up to save them? Clearly not."
+    },
+    "813d840a": {
+      "slide": "s25",
+      "text": "The bystander, in 1985. You aren't the driver. You're standing beside the track, next to a switch that would send the trolley onto the one.",
+      "spoken": "The bystander, in 1985. You aren't the driver. You're standing beside the track, next to a switch that would send the trolley onto the one."
+    },
+    "6f42c24c": {
+      "slide": "s25",
+      "text": "The driver kills either way. The bystander who does nothing only lets five die. If he turns the trolley, he kills one.",
+      "spoken": "The driver kills either way. The bystander who does nothing only lets five die. If he turns the trolley, he kills one."
+    },
+    "e41bb6e2": {
+      "slide": "s26",
+      "text": "Decision point: the bystander. A runaway trolley will kill five workers. You are standing by a switch that would turn it onto a side track, where it will kill one. Do you turn it? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the bystander. A runaway trolley will kill five workers. You are standing by a switch that would turn it onto a side track, where it will kill one. Do you turn it? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "325e1685": {
+      "slide": "s26",
+      "text": "In 1985 Thomson said the bystander may turn the trolley, and most people who are asked agree with her. In 2008 she changed her mind, for the reason on the next slide.",
+      "spoken": "In 1985 Thomson said the bystander may turn the trolley, and most people who are asked agree with her. In 2008 she changed her mind, for the reason on the next slide."
+    },
+    "ccbc4150": {
+      "slide": "s27",
+      "text": "A third track. The diagram shows a single track splitting into three branches. In 2008 Thomson changed one detail. The switch now has three positions. The third sends the trolley onto a track where you are standing. You can turn the trolley onto the one, onto yourself, or do nothing. This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A third track. The diagram shows a single track splitting into three branches. In 2008 Thomson changed one detail. The switch now has three positions. The third sends the trolley onto a track where you are standing. You can turn the trolley onto the one, onto yourself, or do nothing. This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "6acb71f6": {
+      "slide": "s27",
+      "text": "Thomson says you're not required to turn it onto yourself. But if you wouldn't, she asks, how can you turn it onto the one?",
+      "spoken": "Thomson says you're not required to turn it onto yourself. But if you wouldn't, she asks, how can you turn it onto the one?"
+    },
+    "9347d0dc": {
+      "slide": "s28",
+      "text": "Thomson changes her mind. In Turning the Trolley, from 2008, she used the three-track case to reverse her 1985 answer.",
+      "spoken": "Thomson changes her mind. In Turning the Trolley, from 2008, she used the three-track case to reverse her 1985 answer."
+    },
+    "e42116ed": {
+      "slide": "s28",
+      "text": "Saving the five would cost a life. You may refuse to pay that cost with your own life.",
+      "spoken": "Saving the five would cost a life. You may refuse to pay that cost with your own life."
+    },
+    "74cfaf44": {
+      "slide": "s28",
+      "text": "But then you may not make the one pay it instead. That is making someone else give what you won't give yourself.",
+      "spoken": "But then you may not make the one pay it instead. That is making someone else give what you won't give yourself."
+    },
+    "52fb2b14": {
+      "slide": "s28",
+      "text": "So in the ordinary two-track case, the bystander may not turn the trolley either. The driver still may, because he kills either way.",
+      "spoken": "So in the ordinary two-track case, the bystander may not turn the trolley either. The driver still may, because he kills either way."
+    },
+    "ed22957d": {
+      "slide": "s28",
+      "text": "The philosopher Frances Kamm and many others disagreed. Most people asked still say the bystander should turn it.",
+      "spoken": "The philosopher Frances Kamm and many others disagreed. Most people asked still say the bystander should turn it."
+    },
+    "848919fd": {
+      "slide": "s29",
+      "text": "Is it the same person? Thomson also wrote about identity over time. She argued that you exist whole at each moment of your life, not as a series of slices. Medicine faces the question too.",
+      "spoken": "Is it the same person? Thomson also wrote about identity over time. She argued that you exist whole at each moment of your life, not as a series of slices. Medicine faces the question too."
+    },
+    "4f12ba1d": {
+      "slide": "s29",
+      "text": "In 1991 a medical student, Andrew Firlik, described Margo, a patient with Alzheimer's disease. He called her one of the happiest people he knew.",
+      "spoken": "In 1991 a medical student, Andrew Firlik, described Margo, a patient with Alzheimer's disease. He called her one of the happiest people he knew."
+    },
+    "d40d6648": {
+      "slide": "s29",
+      "text": "The philosopher Ronald Dworkin imagined that, years earlier, Margo had signed an advance directive: no treatment if she became demented.",
+      "spoken": "The philosopher Ronald Dworkin imagined that, years earlier, Margo had signed an advance directive: no treatment if she became demented."
+    },
+    "7adf22b7": {
+      "slide": "s29",
+      "text": "Now she gets pneumonia, which antibiotics could easily cure.",
+      "spoken": "Now she gets pneumonia, which antibiotics could easily cure."
+    },
+    "70cf22b2": {
+      "slide": "s30",
+      "text": "Decision point: Margo's directive. Margo, content in her dementia, has pneumonia. Her earlier directive refuses treatment. What should her doctors do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: Margo's directive. Margo, content in her dementia, has pneumonia. Her earlier directive refuses treatment. What should her doctors do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "a6ca6b4e": {
+      "slide": "s30",
+      "text": "Dworkin argued the directive should govern. Rebecca Dresser argued the present patient's interests should govern. Each answer depends on how the earlier and later Margo are related.",
+      "spoken": "Dworkin argued the directive should govern. Rebecca Dresser argued the present patient's interests should govern. Each answer depends on how the earlier and later Margo are related."
+    },
+    "db4f0028": {
+      "slide": "s31",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "d9a90532": {
+      "slide": "s31",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "5d72598c": {
+      "slide": "s32",
+      "text": "Here's the lesson, summed up.",
+      "spoken": "Here's the lesson, summed up."
+    },
+    "a7254684": {
+      "slide": "s32",
+      "text": "The violinist and Henry Fonda's hand: a right to life is not a right to the use of someone else's body.",
+      "spoken": "The violinist and Henry Fonda's hand: a right to life is not a right to the use of someone else's body."
+    },
+    "4486f60e": {
+      "slide": "s32",
+      "text": "The tiny house: you may defend your life even against an innocent threat, and others may help you.",
+      "spoken": "The tiny house: you may defend your life even against an innocent threat, and others may help you."
+    },
+    "e8b7cb2c": {
+      "slide": "s32",
+      "text": "The burglar and the people-seeds: knowing about a risk you tried to prevent is not consenting to it.",
+      "spoken": "The burglar and the people-seeds: knowing about a risk you tried to prevent is not consenting to it."
+    },
+    "a72e90d0": {
+      "slide": "s32",
+      "text": "The third track: Thomson changed one detail of her own trolley case, and it reversed her verdict.",
+      "spoken": "The third track: Thomson changed one detail of her own trolley case, and it reversed her verdict."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

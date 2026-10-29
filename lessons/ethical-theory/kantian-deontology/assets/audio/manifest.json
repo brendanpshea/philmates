@@ -1,0 +1,402 @@
+{
+  "engine": "gemini",
+  "voice": "en-ca-storyteller-1",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "40089c20": {
+      "slide": "s1",
+      "text": "Welcome to The Cat at the Door. There's a knock. You are a mouse. On the other side is a very large, very polite cat. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Cat at the Door. There's a knock. You are a mouse. On the other side is a very large, very polite cat. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "3c53887c": {
+      "slide": "s2",
+      "text": "The cat smiles and says it's famished. It asks where the other mice are hiding.",
+      "spoken": "The cat smiles and says it's famished. It asks where the other mice are hiding."
+    },
+    "3fec79c6": {
+      "slide": "s2",
+      "text": "Your friends are crammed behind the wall, holding their breath.",
+      "spoken": "Your friends are crammed behind the wall, holding their breath."
+    },
+    "05038251": {
+      "slide": "s2",
+      "text": "Tell the truth, and they're dinner.",
+      "spoken": "Tell the truth, and they're dinner."
+    },
+    "c31a5e68": {
+      "slide": "s2",
+      "text": "So, do you lie to the cat?",
+      "spoken": "So, do you lie to the cat?"
+    },
+    "dd0092af": {
+      "slide": "s2",
+      "text": "A utilitarian mouse would just run the numbers. Tonight you meet a philosopher who says the numbers are beside the point.",
+      "spoken": "A utilitarian mouse would just run the numbers. Tonight you meet a philosopher who says the numbers are beside the point."
+    },
+    "74432f86": {
+      "slide": "s3",
+      "text": "Before the trial, here are five quick gut-checks, with no right answers. Just say where you stand. We'll come back to them once the dream is over. When you've rated all five, press Submit.",
+      "spoken": "Before the trial, here are five quick gut-checks, with no right answers. Just say where you stand. We'll come back to them once the dream is over. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "01895bfd": {
+      "slide": "s4",
+      "text": "Immanuel Kant, 1724 to 1804. Kant's view contrasts sharply with utilitarianism. For him, the only thing good without qualification is a good will. That's a will that acts because something is right, not because of how it turns out. Morality, then, is about acting from duty. Consequences do not decide what is right, not even saving your friends. The principle behind your act does.",
+      "spoken": "Immanuel Kant, 1724 to 1804. Kant's view contrasts sharply with utilitarianism. For him, the only thing good without qualification is a good will. That's a will that acts because something is right, not because of how it turns out. Morality, then, is about acting from duty. Consequences do not decide what is right, not even saving your friends. The principle behind your act does."
+    },
+    "f5f37bf3": {
+      "slide": "s5",
+      "text": "Why you do it matters. Kant draws a sharp line between two motives that can produce the very same action. First, acting from duty, because it's right. You protect your friends because you recognize protecting them as the right thing to do. This has genuine moral worth for Kant. It would hold even if you did not feel like it. Second, acting from inclination, because you feel like it. You protect them only because you love them and it feels good. That's kind and lovely, but Kant says it carries no distinctively moral worth on its own.",
+      "spoken": "Why you do it matters. Kant draws a sharp line between two motives that can produce the very same action. First, acting from duty, because it's right. You protect your friends because you recognize protecting them as the right thing to do. This has genuine moral worth for Kant. It would hold even if you did not feel like it. Second, acting from inclination, because you feel like it. You protect them only because you love them and it feels good. That's kind and lovely, but Kant says it carries no distinctively moral worth on its own."
+    },
+    "4da4b67a": {
+      "slide": "s6",
+      "text": "To judge an action, Kant says, look at its maxim. That's the personal principle you would be acting on.",
+      "spoken": "To judge an action, Kant says, look at its maxim. That's the personal principle you would be acting on."
+    },
+    "9592359f": {
+      "slide": "s6",
+      "text": "Not, I'm scared, but the rule: I will lie whenever a lie spares someone harm.",
+      "spoken": "Not, I'm scared, but the rule: I will lie whenever a lie spares someone harm."
+    },
+    "e3c4b364": {
+      "slide": "s6",
+      "text": "The maxim is what gets tested, and the test is the same for every rational being.",
+      "spoken": "The maxim is what gets tested, and the test is the same for every rational being."
+    },
+    "6538d5e0": {
+      "slide": "s6",
+      "text": "So the real question isn't, what happens if I lie? It's, what am I willing to make a law for everyone?",
+      "spoken": "So the real question isn't, what happens if I lie? It's, what am I willing to make a law for everyone?"
+    },
+    "38090da2": {
+      "slide": "two-oughts",
+      "text": "Two kinds of ought. Commands come in two flavors, and only one is the home of morality. A hypothetical imperative commands a means to an end you happen to want. If you want to stay safe, keep quiet. Drop the want, and the command vanishes. A categorical imperative commands unconditionally. It binds any rational being, wants or no wants. Do not lie, with no if. This, Kant says, is the form of a genuine moral law.",
+      "spoken": "Two kinds of ought. Commands come in two flavors, and only one is the home of morality. A hypothetical imperative commands a means to an end you happen to want. If you want to stay safe, keep quiet. Drop the want, and the command vanishes. A categorical imperative commands unconditionally. It binds any rational being, wants or no wants. Do not lie, with no if. This, Kant says, is the form of a genuine moral law."
+    },
+    "d5983777": {
+      "slide": "s8",
+      "text": "Hypothetical or categorical? Sort each command into one of the two columns, then press Check answers.",
+      "spoken": "Hypothetical or categorical? Sort each command into one of the two columns, then press Check answers."
+    },
+    "2bb07612": {
+      "slide": "s8",
+      "text": "Right. A hypothetical imperative commands a means to an end you happen to want. A categorical imperative commands unconditionally, whatever you want.",
+      "spoken": "Right. A hypothetical imperative commands a means to an end you happen to want. A categorical imperative commands unconditionally, whatever you want."
+    },
+    "c19947af": {
+      "slide": "universal-law",
+      "text": "Formulation one: universal law. The categorical imperative has one core, stated several ways. The first goes like this. Act only according to that maxim whereby you can at the same time will that it should become a universal law. In short, could you will that everyone act on your maxim? If universalizing it breaks something, it fails. This is not the Golden Rule. Kant himself said the Golden Rule could not serve as the moral law. It turns on what you would want done to you. His test holds whatever you want.",
+      "spoken": "Formulation one: universal law. The categorical imperative has one core, stated several ways. The first goes like this. Act only according to that maxim whereby you can at the same time will that it should become a universal law. In short, could you will that everyone act on your maxim? If universalizing it breaks something, it fails. This is not the Golden Rule. Kant himself said the Golden Rule could not serve as the moral law. It turns on what you would want done to you. His test holds whatever you want."
+    },
+    "c33aef56": {
+      "slide": "s10",
+      "text": "Run the machine. Feed a maxim into the Universalizer. It imagines a world where everyone acts on it, then reports what happens. Try the maxims and read what it reports. When you're ready, press Continue.",
+      "spoken": "Run the machine. Feed a maxim into the Universalizer. It imagines a world where everyone acts on it, then reports what happens. Try the maxims and read what it reports. When you're ready, press Continue."
+    },
+    "3ae60f68": {
+      "slide": "s11",
+      "text": "So what about the cat? Now run your own maxim through the same test: I will lie whenever a lie spares someone harm.",
+      "spoken": "So what about the cat? Now run your own maxim through the same test: I will lie whenever a lie spares someone harm."
+    },
+    "f0a4a045": {
+      "slide": "s11",
+      "text": "Imagine everyone lies whenever they judge it helpful.",
+      "spoken": "Imagine everyone lies whenever they judge it helpful."
+    },
+    "8f0a1841": {
+      "slide": "s11",
+      "text": "Then a spoken assertion carries no weight, because nobody believes anyone.",
+      "spoken": "Then a spoken assertion carries no weight, because nobody believes anyone."
+    },
+    "affd6fe4": {
+      "slide": "s11",
+      "text": "But your lie only works because the cat expects the truth. Universalized, it undercuts itself.",
+      "spoken": "But your lie only works because the cat expects the truth. Universalized, it undercuts itself."
+    },
+    "fc1150ec": {
+      "slide": "s11",
+      "text": "On the Formula of Universal Law, then, the lie cannot pass. Hold that thought, because the modern Kantians will push back.",
+      "spoken": "On the Formula of Universal Law, then, the lie cannot pass. Hold that thought, because the modern Kantians will push back."
+    },
+    "1b1953d2": {
+      "slide": "s12",
+      "text": "Two ways a maxim can fail. The machine flagged two different failures, and the difference between them defines two kinds of duty. First, a contradiction in conception. You can't even imagine it. Universalizing the maxim makes it self-destruct, as with lying and false promises. This yields a perfect duty: strict, with no exceptions. Do not lie. Second, a contradiction in the will. You can't rationally want it. You can picture the world, but couldn't rationally will it, as when no one ever helps. This yields an imperfect duty: real, but you choose how and when. Help others sometimes.",
+      "spoken": "Two ways a maxim can fail. The machine flagged two different failures, and the difference between them defines two kinds of duty. First, a contradiction in conception. You can't even imagine it. Universalizing the maxim makes it self-destruct, as with lying and false promises. This yields a perfect duty: strict, with no exceptions. Do not lie. Second, a contradiction in the will. You can't rationally want it. You can picture the world, but couldn't rationally will it, as when no one ever helps. This yields an imperfect duty: real, but you choose how and when. Help others sometimes."
+    },
+    "8617505d": {
+      "slide": "s13",
+      "text": "Say it back. Complete the first formulation and the duty it yields. Fill in each gap by choosing an option, then press Check.",
+      "spoken": "Say it back. Complete the first formulation and the duty it yields. Fill in each gap by choosing an option, then press Check."
+    },
+    "0895a895": {
+      "slide": "s13",
+      "text": "That's the Formula of Universal Law. A maxim that can't even be conceived as universal violates a perfect duty.",
+      "spoken": "That's the Formula of Universal Law. A maxim that can't even be conceived as universal violates a perfect duty."
+    },
+    "e9ee82c9": {
+      "slide": "humanity",
+      "text": "Formulation two: humanity. Kant says the same law can be put a second way, in terms of respect for persons. Act so that you treat humanity, whether in your own person or in that of another, never merely as a means, but always at the same time as an end.",
+      "spoken": "Formulation two: humanity. Kant says the same law can be put a second way, in terms of respect for persons. Act so that you treat humanity, whether in your own person or in that of another, never merely as a means, but always at the same time as an end."
+    },
+    "827d0e3d": {
+      "slide": "humanity",
+      "text": "Using someone as a means is fine. You use the cat for directions all the time.",
+      "spoken": "Using someone as a means is fine. You use the cat for directions all the time."
+    },
+    "8919d4b4": {
+      "slide": "humanity",
+      "text": "The wrong is using them as a mere means, going around their rational agency instead of through it.",
+      "spoken": "The wrong is using them as a mere means, going around their rational agency instead of through it."
+    },
+    "e16d4ff3": {
+      "slide": "humanity",
+      "text": "Deception does exactly that. A lie manipulates the cat with information he can't rationally evaluate.",
+      "spoken": "Deception does exactly that. A lie manipulates the cat with information he can't rationally evaluate."
+    },
+    "7a5a6150": {
+      "slide": "s15",
+      "text": "Why lying offends the second formula. On the Formula of Humanity, does each act use someone merely as a means? Sort each act into a column, then press Check answers.",
+      "spoken": "Why lying offends the second formula. On the Formula of Humanity, does each act use someone merely as a means? Sort each act into a column, then press Check answers."
+    },
+    "dc93de07": {
+      "slide": "s15",
+      "text": "Right. Using people as a means is part of ordinary life. Deception goes around a person's reason instead of through it, and that is using someone merely as a means.",
+      "spoken": "Right. Using people as a means is part of ordinary life. Deception goes around a person's reason instead of through it, and that is using someone merely as a means."
+    },
+    "61065fbe": {
+      "slide": "kingdom-of-ends",
+      "text": "Formulation three: the Kingdom of Ends. The third formulation pictures the moral community the first two imply.",
+      "spoken": "Formulation three: the Kingdom of Ends. The third formulation pictures the moral community the first two imply."
+    },
+    "a854840f": {
+      "slide": "kingdom-of-ends",
+      "text": "Act as if you were a co-legislator of universal laws in a community of rational beings.",
+      "spoken": "Act as if you were a co-legislator of universal laws in a community of rational beings."
+    },
+    "3d0a906c": {
+      "slide": "kingdom-of-ends",
+      "text": "Each member is both author of the laws and bound by them, and each is an end in themselves.",
+      "spoken": "Each member is both author of the laws and bound by them, and each is an end in themselves."
+    },
+    "102e4f56": {
+      "slide": "kingdom-of-ends",
+      "text": "Ask: could every rational being, the cat included, live under the law you're proposing to act on?",
+      "spoken": "Ask: could every rational being, the cat included, live under the law you're proposing to act on?"
+    },
+    "27212d8c": {
+      "slide": "s17",
+      "text": "Sort the formulations. Check each statement that correctly describes one of Kant's formulations of the categorical imperative. Then press Check answers.",
+      "spoken": "Sort the formulations. Check each statement that correctly describes one of Kant's formulations of the categorical imperative. Then press Check answers."
+    },
+    "c1f1e7d9": {
+      "slide": "s17",
+      "text": "Exactly. Universal Law, Humanity, and the Kingdom of Ends are three angles on one principle. The Golden Rule asks what you would want. Kant asks what could hold as a law for everyone.",
+      "spoken": "Exactly. Universal Law, Humanity, and the Kingdom of Ends are three angles on one principle. The Golden Rule asks what you would want. Kant asks what could hold as a law for everyone."
+    },
+    "82a97d66": {
+      "slide": "s18",
+      "text": "Who gets to be an end? Kant's respect is owed to a specific class. He calls them persons: rational beings capable of setting their own ends and acting on reasons.",
+      "spoken": "Who gets to be an end? Kant's respect is owed to a specific class. He calls them persons: rational beings capable of setting their own ends and acting on reasons."
+    },
+    "69b66c93": {
+      "slide": "s18",
+      "text": "Such beings have dignity rather than a price. They cannot be traded off or used up.",
+      "spoken": "Such beings have dignity rather than a price. They cannot be traded off or used up."
+    },
+    "c7688161": {
+      "slide": "s18",
+      "text": "That's exactly why deception and coercion are so serious. They override a rational will.",
+      "spoken": "That's exactly why deception and coercion are so serious. They override a rational will."
+    },
+    "869023e8": {
+      "slide": "s18",
+      "text": "In our cartoon, the mouse and the cat both talk and reason, so both qualify as persons.",
+      "spoken": "In our cartoon, the mouse and the cat both talk and reason, so both qualify as persons."
+    },
+    "a2cea45e": {
+      "slide": "animals",
+      "text": "The twist: real animals. Here's where Kant's own view bites. He held that animals are not ends in themselves, because they aren't rational agents.",
+      "spoken": "The twist: real animals. Here's where Kant's own view bites. He held that animals are not ends in themselves, because they aren't rational agents."
+    },
+    "a02dbe3b": {
+      "slide": "animals",
+      "text": "So we have no direct duties to them, only indirect ones. He says this in his Lectures on Ethics.",
+      "spoken": "So we have no direct duties to them, only indirect ones. He says this in his Lectures on Ethics."
+    },
+    "2e7c2aea": {
+      "slide": "animals",
+      "text": "Cruelty to animals is wrong, he argued, because it hardens us and corrodes how we treat fellow humans.",
+      "spoken": "Cruelty to animals is wrong, he argued, because it hardens us and corrodes how we treat fellow humans."
+    },
+    "2d87ae01": {
+      "slide": "animals",
+      "text": "The sting: by Kant's real standard, a literal mouse wouldn't count at all. Only our reasoning, talking cartoon mouse does.",
+      "spoken": "The sting: by Kant's real standard, a literal mouse wouldn't count at all. Only our reasoning, talking cartoon mouse does."
+    },
+    "e263a6dd": {
+      "slide": "s20",
+      "text": "Kant on a real animal. On Kant's own view, why is it wrong to torment a real, non-talking animal? Pick an answer.",
+      "spoken": "Kant on a real animal. On Kant's own view, why is it wrong to torment a real, non-talking animal? Pick an answer."
+    },
+    "86a33dc7": {
+      "slide": "s20",
+      "text": "Right. For Kant this is an indirect duty. The animal isn't an end in itself. The wrong is what cruelty does to our own moral character.",
+      "spoken": "Right. For Kant this is an indirect duty. The animal isn't an end in itself. The wrong is what cruelty does to our own moral character."
+    },
+    "51344b95": {
+      "slide": "s21",
+      "text": "Kant bites the bullet. This case is really Kant's. In 1797, in On a Supposed Right to Lie, he answered the writer Benjamin Constant. Constant objected: surely you may lie to a murderer who asks where your friend is hiding.",
+      "spoken": "Kant bites the bullet. This case is really Kant's. In 1797, in On a Supposed Right to Lie, he answered the writer Benjamin Constant. Constant objected: surely you may lie to a murderer who asks where your friend is hiding."
+    },
+    "5f7ebf6c": {
+      "slide": "s21",
+      "text": "Kant's reply: no. Truthfulness is an unconditional duty. You may not lie even here.",
+      "spoken": "Kant's reply: no. Truthfulness is an unconditional duty. You may not lie even here."
+    },
+    "f6731b7d": {
+      "slide": "s21",
+      "text": "His reasoning: you answer for your own lie, but not for what the murderer freely chooses to do with the truth.",
+      "spoken": "His reasoning: you answer for your own lie, but not for what the murderer freely chooses to do with the truth."
+    },
+    "149cf79f": {
+      "slide": "s21",
+      "text": "Tell the truth and harm follows? That's on the murderer. Lie and anything goes wrong? That's on you.",
+      "spoken": "Tell the truth and harm follows? That's on the murderer. Lie and anything goes wrong? That's on you."
+    },
+    "6a81727e": {
+      "slide": "s21",
+      "text": "Many readers find this conclusion deeply troubling. It is the door the modern Kantians walk through.",
+      "spoken": "Many readers find this conclusion deeply troubling. It is the door the modern Kantians walk through."
+    },
+    "f1a013bf": {
+      "slide": "later-kantians",
+      "text": "Decision point: the cat is still at the door. This is the question the whole lesson opens with, now that you know what Kant answers. Kant says you may not lie, even here, even now. The cat is waiting. What do you actually do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the cat is still at the door. This is the question the whole lesson opens with, now that you know what Kant answers. Kant says you may not lie, even here, even now. The cat is waiting. What do you actually do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "0733a7b9": {
+      "slide": "later-kantians",
+      "text": "The third option is the one most people never think of. Kant forbids lying, not silence. Whether that is a real escape or a technicality is one of the oldest arguments about this passage.",
+      "spoken": "The third option is the one most people never think of. Kant forbids lying, not silence. Whether that is a real escape or a technicality is one of the oldest arguments about this passage."
+    },
+    "84e663e9": {
+      "slide": "s23",
+      "text": "Keep the framework, lose the verdict? Later Kantians admire the apparatus of universal law, dignity, and ends in themselves. They think Kant misapplied it at the door. Two of the most important are these.",
+      "spoken": "Keep the framework, lose the verdict? Later Kantians admire the apparatus of universal law, dignity, and ends in themselves. They think Kant misapplied it at the door. Two of the most important are these."
+    },
+    "0e52bf4c": {
+      "slide": "s23",
+      "text": "Christine Korsgaard, on lying to evildoers, and on who counts.",
+      "spoken": "Christine Korsgaard, on lying to evildoers, and on who counts."
+    },
+    "6715bc31": {
+      "slide": "s23",
+      "text": "Onora O'Neill, on deception and coercion as the core wrongs.",
+      "spoken": "Onora O'Neill, on deception and coercion as the core wrongs."
+    },
+    "e5f4ce45": {
+      "slide": "korsgaard-evil",
+      "text": "Korsgaard: dealing with evil. In The Right to Lie: Kant on Dealing with Evil, from 1986, Korsgaard argues that Kant's own test, applied honestly to the situation, gives a different answer. First, orthodox Kant: never lie. Truthfulness is unconditional. Even to the cat, you may not lie, as in the 1797 essay. You answer for your lie. What the cat does with the truth is his affair. Now Korsgaard, on dealing with evil. Ideal rules assume everyone complies. The cat does not comply. He is using coercion to do murder. A maxim like, deceive a deceiver to thwart violence, can be universalized. You needn't cooperate with his evil. The Universal Law formula can permit the lie.",
+      "spoken": "Korsgaard: dealing with evil. In The Right to Lie: Kant on Dealing with Evil, from 1986, Korsgaard argues that Kant's own test, applied honestly to the situation, gives a different answer. First, orthodox Kant: never lie. Truthfulness is unconditional. Even to the cat, you may not lie, as in the 1797 essay. You answer for your lie. What the cat does with the truth is his affair. Now Korsgaard, on dealing with evil. Ideal rules assume everyone complies. The cat does not comply. He is using coercion to do murder. A maxim like, deceive a deceiver to thwart violence, can be universalized. You needn't cooperate with his evil. The Universal Law formula can permit the lie."
+    },
+    "46236d16": {
+      "slide": "s25",
+      "text": "Kant or Korsgaard? The cat is at the door. Who would say each of these lines, Kant or Korsgaard? Sort each one, then press Check answers.",
+      "spoken": "Kant or Korsgaard? The cat is at the door. Who would say each of these lines, Kant or Korsgaard? Sort each one, then press Check answers."
+    },
+    "47e284f6": {
+      "slide": "s25",
+      "text": "Right. Kant holds truthfulness to be unconditional. Korsgaard argues that the cat is a coercer, so a maxim of deceiving him to thwart violence can pass the universal-law test.",
+      "spoken": "Right. Kant holds truthfulness to be unconditional. Korsgaard argues that the cat is a coercer, so a maxim of deceiving him to thwart violence can pass the universal-law test."
+    },
+    "6be84745": {
+      "slide": "s26",
+      "text": "O'Neill: deception and coercion. Onora O'Neill builds her Kantian ethics around the Formula of Humanity, read through one practical test. Could those affected actually consent to what you're doing?",
+      "spoken": "O'Neill: deception and coercion. Onora O'Neill builds her Kantian ethics around the Formula of Humanity, read through one practical test. Could those affected actually consent to what you're doing?"
+    },
+    "e068ea4f": {
+      "slide": "s26",
+      "text": "The two clearest ways to treat someone as a mere means are deception and coercion. Both make genuine consent impossible.",
+      "spoken": "The two clearest ways to treat someone as a mere means are deception and coercion. Both make genuine consent impossible."
+    },
+    "2bb5671e": {
+      "slide": "s26",
+      "text": "Real moral principles are ones everyone could adopt and act on together.",
+      "spoken": "Real moral principles are ones everyone could adopt and act on together."
+    },
+    "bb837831": {
+      "slide": "s26",
+      "text": "Apply it at the door. The cat is trying to coerce and exploit you. The hidden mice can't consent to being handed over. Whose agency are you really required to respect? O'Neill gives you the test. She leaves you to weigh the case honestly with it.",
+      "spoken": "Apply it at the door. The cat is trying to coerce and exploit you. The hidden mice can't consent to being handed over. Whose agency are you really required to respect? O'Neill gives you the test. She leaves you to weigh the case honestly with it."
+    },
+    "72695e50": {
+      "slide": "s27",
+      "text": "And the real mouse? Korsgaard also reopens who counts. In Fellow Creatures, from 2018, she argues Kant got animals wrong. First, Kant: indirect duties only. Animals aren't rational, so they're not ends in themselves. We owe them only indirect duties. A real mouse at your door? On Kant's view, no standing of its own. Now Korsgaard, on fellow creatures. Creatures for whom things can be good or bad are ends in themselves too, so we owe them direct duties. The real mouse counts in its own right. So, for that matter, would the cat.",
+      "spoken": "And the real mouse? Korsgaard also reopens who counts. In Fellow Creatures, from 2018, she argues Kant got animals wrong. First, Kant: indirect duties only. Animals aren't rational, so they're not ends in themselves. We owe them only indirect duties. A real mouse at your door? On Kant's view, no standing of its own. Now Korsgaard, on fellow creatures. Creatures for whom things can be good or bad are ends in themselves too, so we owe them direct duties. The real mouse counts in its own right. So, for that matter, would the cat."
+    },
+    "23d49d3b": {
+      "slide": "s28",
+      "text": "Decision point: is that still Kant? It's a question about how philosophy works as much as about animals. Korsgaard keeps Kant's framework and reverses his verdict on animals. Is the result still Kantian? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: is that still Kant? It's a question about how philosophy works as much as about animals. Korsgaard keeps Kant's framework and reverses his verdict on animals. Is the result still Kantian? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "568cc216": {
+      "slide": "s28",
+      "text": "This is worth separating from the animal question itself. A framework can be more consistent than the person who built it. Whether that is repair or replacement is a judgment about which part of a theory is load-bearing.",
+      "spoken": "This is worth separating from the animal question itself. A framework can be more consistent than the person who built it. Whether that is repair or replacement is a judgment about which part of a theory is load-bearing."
+    },
+    "37eeeb30": {
+      "slide": "s29",
+      "text": "Stay Kantian. Check each response to the cat that rests on Kantian grounds. Then press Check answers.",
+      "spoken": "Stay Kantian. Check each response to the cat that rests on Kantian grounds. Then press Check answers."
+    },
+    "e636affc": {
+      "slide": "s29",
+      "text": "Nicely sorted. The Golden Rule grounds the duty in what you happen to want, and Kant wants a ground that holds whatever you want. And a feeling that lying is wrong is an inclination, which carries no moral worth for Kant even when the act is right.",
+      "spoken": "Nicely sorted. The Golden Rule grounds the duty in what you happen to want, and Kant wants a ground that holds whatever you want. And a feeling that lying is wrong is an inclination, which carries no moral worth for Kant even when the act is right."
+    },
+    "69000699": {
+      "slide": "s30",
+      "text": "Revisit your instincts. Here is where you started, before the trial. Re-rate each one and see whether anything has shifted. Staying put is fine. The question is whether you can now say why. When you're done, press Submit.",
+      "spoken": "Revisit your instincts. Here is where you started, before the trial. Re-rate each one and see whether anything has shifted. Staying put is fine. The question is whether you can now say why. When you're done, press Submit."
+    },
+    "7c9b505d": {
+      "slide": "s30",
+      "text": "Saved. Now, back to the cat.",
+      "spoken": "Saved. Now, back to the cat."
+    },
+    "eb436ff6": {
+      "slide": "s31",
+      "text": "The mouse decides. The cat is still waiting. Now you have more than a gut feeling. You have a framework.",
+      "spoken": "The mouse decides. The cat is still waiting. Now you have more than a gut feeling. You have a framework."
+    },
+    "b47ffe97": {
+      "slide": "s31",
+      "text": "Kant: act only on maxims you could universalize, and treat every rational being as an end, never a mere means.",
+      "spoken": "Kant: act only on maxims you could universalize, and treat every rational being as an end, never a mere means."
+    },
+    "d9eb52da": {
+      "slide": "s31",
+      "text": "Kant's hard line: truthfulness is unconditional. Even here, do not lie.",
+      "spoken": "Kant's hard line: truthfulness is unconditional. Even here, do not lie."
+    },
+    "d0f7b481": {
+      "slide": "s31",
+      "text": "Korsgaard: dealing with evil is different, and you need not cooperate with a coercer. Real animals count too.",
+      "spoken": "Korsgaard: dealing with evil is different, and you need not cooperate with a coercer. Real animals count too."
+    },
+    "3d4b1087": {
+      "slide": "s31",
+      "text": "O'Neill: the deep wrongs are deception and coercion, so ask who could really consent. Visit every slide, answer every question correctly, and submit both belief probes to fill the bar and finally answer the cat.",
+      "spoken": "O'Neill: the deep wrongs are deception and coercion, so ask who could really consent. Visit every slide, answer every question correctly, and submit both belief probes to fill the bar and finally answer the cat."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

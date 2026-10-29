@@ -1,0 +1,497 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-training-6",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "0b0961e2": {
+      "slide": "s1",
+      "text": "Welcome to House Calls in the Hedgerow. You're the new doctor in a village of talking animals. Your patients are clever, stubborn, and absolutely intend to make their own decisions. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to House Calls in the Hedgerow. You're the new doctor in a village of talking animals. Your patients are clever, stubborn, and absolutely intend to make their own decisions. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "640f34be": {
+      "slide": "s2",
+      "text": "Your first lesson comes before you've even seen a patient. The old doctor warns you that curing them is the easy part. Respecting them is the trick.",
+      "spoken": "Your first lesson comes before you've even seen a patient. The old doctor warns you that curing them is the easy part. Respecting them is the trick."
+    },
+    "0d4b2d82": {
+      "slide": "s2",
+      "text": "One question runs through the whole round. How much may you influence what a patient decides?",
+      "spoken": "One question runs through the whole round. How much may you influence what a patient decides?"
+    },
+    "997b2a3d": {
+      "slide": "s2",
+      "text": "Push too hard, and their choice stops being theirs. Say nothing, and you've abandoned them to it.",
+      "spoken": "Push too hard, and their choice stops being theirs. Say nothing, and you've abandoned them to it."
+    },
+    "10110e84": {
+      "slide": "s2",
+      "text": "You'll learn what makes consent real. Then you'll meet four doctors who answer that question four different ways.",
+      "spoken": "You'll learn what makes consent real. Then you'll meet four doctors who answer that question four different ways."
+    },
+    "476c98de": {
+      "slide": "s3",
+      "text": "Before your first patient, tell me where you stand. Rate each of these five statements. There are no right answers, and we'll come back to them at the end. When you've rated all five, press Submit.",
+      "spoken": "Before your first patient, tell me where you stand. Rate each of these five statements. There are no right answers, and we'll come back to them at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "22bebb6b": {
+      "slide": "s4",
+      "text": "Treatment without consent is something done to a patient, however well meant. Consent is what makes it something done with them.",
+      "spoken": "Treatment without consent is something done to a patient, however well meant. Consent is what makes it something done with them."
+    },
+    "fc5ce89f": {
+      "slide": "s4",
+      "text": "It's the practical face of respect for autonomy. Their body, their call.",
+      "spoken": "It's the practical face of respect for autonomy. Their body, their call."
+    },
+    "7dc567f3": {
+      "slide": "s4",
+      "text": "And consent isn't one thing. Valid, informed consent has five ingredients.",
+      "spoken": "And consent isn't one thing. Valid, informed consent has five ingredients."
+    },
+    "b63b79c0": {
+      "slide": "s4",
+      "text": "Miss any one, and the consent is hollow.",
+      "spoken": "Miss any one, and the consent is hollow."
+    },
+    "f83562ef": {
+      "slide": "s5",
+      "text": "The first ingredient is capacity. Can this patient make this decision, right now? Capacity isn't intelligence, and it isn't whether they agree with you. It's four specific abilities.",
+      "spoken": "The first ingredient is capacity. Can this patient make this decision, right now? Capacity isn't intelligence, and it isn't whether they agree with you. It's four specific abilities."
+    },
+    "d977958b": {
+      "slide": "s5",
+      "text": "Understand the facts.",
+      "spoken": "Understand the facts."
+    },
+    "59584b19": {
+      "slide": "s5",
+      "text": "Appreciate that the facts apply to them.",
+      "spoken": "Appreciate that the facts apply to them."
+    },
+    "dbcd0074": {
+      "slide": "s5",
+      "text": "Reason through the trade-offs.",
+      "spoken": "Reason through the trade-offs."
+    },
+    "43638452": {
+      "slide": "s5",
+      "text": "Communicate a choice.",
+      "spoken": "Communicate a choice."
+    },
+    "734f55ed": {
+      "slide": "s6",
+      "text": "Let's work through capacity with a case. Nutkin arrives with an infected bite from taunting Old Brown the owl.",
+      "spoken": "Let's work through capacity with a case. Nutkin arrives with an infected bite from taunting Old Brown the owl."
+    },
+    "0823e632": {
+      "slide": "s6",
+      "text": "Untreated, the infection could kill him, and he repeats this back accurately.",
+      "spoken": "Untreated, the infection could kill him, and he repeats this back accurately."
+    },
+    "80f5547a": {
+      "slide": "s6",
+      "text": "Yet he treats it as a joke. Old Brown only just nicked me, he says.",
+      "spoken": "Yet he treats it as a joke. Old Brown only just nicked me, he says."
+    },
+    "fb60844d": {
+      "slide": "s6",
+      "text": "He can't take seriously that he might die, or weigh that against resting.",
+      "spoken": "He can't take seriously that he might die, or weigh that against resting."
+    },
+    "766bdf50": {
+      "slide": "s6",
+      "text": "He understands the words, but he can't appreciate that they apply to him.",
+      "spoken": "He understands the words, but he can't appreciate that they apply to him."
+    },
+    "653bd704": {
+      "slide": "s7",
+      "text": "The second ingredient is disclosure. Peter is carried in with a hind leg broken in one of McGregor's snares, in the same garden that killed his father. Before he can choose well, he needs the whole picture.",
+      "spoken": "The second ingredient is disclosure. Peter is carried in with a hind leg broken in one of McGregor's snares, in the same garden that killed his father. Before he can choose well, he needs the whole picture."
+    },
+    "073144f2": {
+      "slide": "s7",
+      "text": "The diagnosis, a bad break, and the proposed treatment, setting and splinting the leg.",
+      "spoken": "The diagnosis, a bad break, and the proposed treatment, setting and splinting the leg."
+    },
+    "b864aeea": {
+      "slide": "s7",
+      "text": "Its risks: weeks penned up, unable to run, and it may still heal stiff. And its benefits: a real chance at a leg that works.",
+      "spoken": "Its risks: weeks penned up, unable to run, and it may still heal stiff. And its benefits: a real chance at a leg that works."
+    },
+    "ad016305": {
+      "slide": "s7",
+      "text": "The alternatives, which are rest alone or a riskier operation. Also what happens if he does nothing: likely lasting lameness, and a slow rabbit does not last long.",
+      "spoken": "The alternatives, which are rest alone or a riskier operation. Also what happens if he does nothing: likely lasting lameness, and a slow rabbit does not last long."
+    },
+    "34ad8626": {
+      "slide": "s7",
+      "text": "Quietly drop one option, and you've made the choice for him.",
+      "spoken": "Quietly drop one option, and you've made the choice for him."
+    },
+    "48622a82": {
+      "slide": "s8",
+      "text": "How much must you tell? Two standards answer what counts as enough disclosure. The reasonable-physician standard says to disclose what a typical doctor would in your shoes. The risk is that it lets the profession decide what patients get to know. The reasonable-patient standard says to disclose what a typical patient would want to know to decide. It's the modern standard, from the 1972 case Canterbury versus Spence. It centers the patient.",
+      "spoken": "How much must you tell? Two standards answer what counts as enough disclosure. The reasonable-physician standard says to disclose what a typical doctor would in your shoes. The risk is that it lets the profession decide what patients get to know. The reasonable-patient standard says to disclose what a typical patient would want to know to decide. It's the modern standard, from the 1972 case Canterbury versus Spence. It centers the patient."
+    },
+    "1f59b701": {
+      "slide": "s9",
+      "text": "The third ingredient is understanding. Telling is not the same as getting through. Politeness makes patients nod along.",
+      "spoken": "The third ingredient is understanding. Telling is not the same as getting through. Politeness makes patients nod along."
+    },
+    "40af72f0": {
+      "slide": "s9",
+      "text": "Peter says yes, set it, but he secretly plans to raid the garden tomorrow.",
+      "spoken": "Peter says yes, set it, but he secretly plans to raid the garden tomorrow."
+    },
+    "b098d839": {
+      "slide": "s9",
+      "text": "So you check with teach-back. You ask, what will the next weeks look like for you?",
+      "spoken": "So you check with teach-back. You ask, what will the next weeks look like for you?"
+    },
+    "889f601c": {
+      "slide": "s9",
+      "text": "Only when he says it back does it land: weeks splinted, unable to run.",
+      "spoken": "Only when he says it back does it land: weeks splinted, unable to run."
+    },
+    "548feaa9": {
+      "slide": "s9",
+      "text": "That genuine dialogue is what consent rests on, not a polite nod.",
+      "spoken": "That genuine dialogue is what consent rests on, not a polite nod."
+    },
+    "4edf4fb9": {
+      "slide": "s10",
+      "text": "The fourth ingredient is voluntariness. A choice must be the patient's own, free of coercion and manipulation.",
+      "spoken": "The fourth ingredient is voluntariness. A choice must be the patient's own, free of coercion and manipulation."
+    },
+    "32229ea8": {
+      "slide": "s10",
+      "text": "Jemima Puddle-Duck accepts the charming fox's offer of a quiet nesting shed.",
+      "spoken": "Jemima Puddle-Duck accepts the charming fox's offer of a quiet nesting shed."
+    },
+    "4f3eba0a": {
+      "slide": "s10",
+      "text": "Yet the fox conceals that dinner is her. Her yes was engineered by deception.",
+      "spoken": "Yet the fox conceals that dinner is her. Her yes was engineered by deception."
+    },
+    "c2c3dbac": {
+      "slide": "s10",
+      "text": "In the clinic, half-truths that steer or coax a choice make consent hollow.",
+      "spoken": "In the clinic, half-truths that steer or coax a choice make consent hollow."
+    },
+    "fa791263": {
+      "slide": "s10",
+      "text": "However sincere the patient's word, manipulated consent is not valid.",
+      "spoken": "However sincere the patient's word, manipulated consent is not valid."
+    },
+    "e9cef562": {
+      "slide": "s11",
+      "text": "Not all influence is wrong, and doctors should try to persuade. The line is how. Persuasion is fair. It appeals to the patient's own reason with true, relevant arguments. For example, here's why bed rest really will get you back to mischief sooner. That's legitimate. Manipulation or coercion is foul. It bypasses reason with lies, pressure, or threats. Think of the fox's flattery and half-truths. That's consent extracted, not given.",
+      "spoken": "Not all influence is wrong, and doctors should try to persuade. The line is how. Persuasion is fair. It appeals to the patient's own reason with true, relevant arguments. For example, here's why bed rest really will get you back to mischief sooner. That's legitimate. Manipulation or coercion is foul. It bypasses reason with lies, pressure, or threats. Think of the fox's flattery and half-truths. That's consent extracted, not given."
+    },
+    "384f3bf2": {
+      "slide": "s12",
+      "text": "The fifth ingredient is authorization. Consent is an explicit act. The patient actually authorizes the plan, here and now.",
+      "spoken": "The fifth ingredient is authorization. Consent is an explicit act. The patient actually authorizes the plan, here and now."
+    },
+    "b255f3e3": {
+      "slide": "s12",
+      "text": "Approving in his head is not enough. Peter must say, go ahead, set the leg.",
+      "spoken": "Approving in his head is not enough. Peter must say, go ahead, set the leg."
+    },
+    "ef3278c9": {
+      "slide": "s12",
+      "text": "It's permission handed to you, not permission you assume you already have.",
+      "spoken": "It's permission handed to you, not permission you assume you already have."
+    },
+    "1fddd014": {
+      "slide": "s12",
+      "text": "And it can be withdrawn. If Peter changes his mind, that choice counts too.",
+      "spoken": "And it can be withdrawn. If Peter changes his mind, that choice counts too."
+    },
+    "923d3de8": {
+      "slide": "s12",
+      "text": "Consent is an active, ongoing authorization, rather than a one-time signature.",
+      "spoken": "Consent is an active, ongoing authorization, rather than a one-time signature."
+    },
+    "7f723664": {
+      "slide": "consent-pathway",
+      "text": "Here's how clinical consent works in practice. Five safeguards protect patient autonomy, in order. First, assess capacity. Then give adequate disclosure. Then verify understanding with teach-back. Then make sure the choice is voluntary, without coercion. That leads to the patient's authorization, or a respected refusal. If capacity is absent, turn to a surrogate. If it's present, a competent refusal must be honored.",
+      "spoken": "Here's how clinical consent works in practice. Five safeguards protect patient autonomy, in order. First, assess capacity. Then give adequate disclosure. Then verify understanding with teach-back. Then make sure the choice is voluntary, without coercion. That leads to the patient's authorization, or a respected refusal. If capacity is absent, turn to a surrogate. If it's present, a competent refusal must be honored."
+    },
+    "aa537487": {
+      "slide": "s14",
+      "text": "Now test it with the consent-o-meter. Peter is alert and in pain, with a hind leg broken in McGregor's snare. You propose setting and splinting it. That means weeks of rest, a good chance of a working leg, and no guarantee. Toggle each element his case actually has. All five, or the consent is not valid. When you're ready, press Continue.",
+      "spoken": "Now test it with the consent-o-meter. Peter is alert and in pain, with a hind leg broken in McGregor's snare. You propose setting and splinting it. That means weeks of rest, a good chance of a working leg, and no guarantee. Toggle each element his case actually has. All five, or the consent is not valid. When you're ready, press Continue."
+    },
+    "cd20cf6f": {
+      "slide": "s15",
+      "text": "Name the ingredients. Check every genuine element of valid informed consent, then press Check answers.",
+      "spoken": "Name the ingredients. Check every genuine element of valid informed consent, then press Check answers."
+    },
+    "2838a984": {
+      "slide": "s15",
+      "text": "Right. Capacity, disclosure, understanding, voluntariness, and authorization. A doctor's approval or a witness's signature might be on the form, but neither is what makes consent valid.",
+      "spoken": "Right. Capacity, disclosure, understanding, voluntariness, and authorization. A doctor's approval or a witness's signature might be on the form, but neither is what makes consent valid."
+    },
+    "1a6e795c": {
+      "slide": "s16",
+      "text": "Diagnose the defect. Each case has one defect. Sort each case under the ingredient of consent that is missing. When every case is placed, press Check answers.",
+      "spoken": "Diagnose the defect. Each case has one defect. Sort each case under the ingredient of consent that is missing. When every case is placed, press Check answers."
+    },
+    "05215a1f": {
+      "slide": "s16",
+      "text": "Right. Capacity is the ability to decide. Disclosure is what you tell. Understanding is whether it landed. Voluntariness rules out manipulation and threats. Authorization is the patient actually saying go ahead.",
+      "spoken": "Right. Capacity is the ability to decide. Disclosure is what you tell. Understanding is whether it landed. Voluntariness rules out manipulation and threats. Authorization is the patient actually saying go ahead."
+    },
+    "d3174d65": {
+      "slide": "s17",
+      "text": "A few situations modify consent, but they don't abolish it.",
+      "spoken": "A few situations modify consent, but they don't abolish it."
+    },
+    "0ef70c5c": {
+      "slide": "s17",
+      "text": "Emergencies. If a patient is unconscious and the need is urgent, consent is presumed.",
+      "spoken": "Emergencies. If a patient is unconscious and the need is urgent, consent is presumed."
+    },
+    "58c85142": {
+      "slide": "s17",
+      "text": "Waiver. A competent patient may choose not to be informed, within limits.",
+      "spoken": "Waiver. A competent patient may choose not to be informed, within limits."
+    },
+    "d5a7f7e1": {
+      "slide": "s17",
+      "text": "Incapacity. When a patient genuinely can't decide, you turn to a surrogate, guided by the patient's wishes and interests.",
+      "spoken": "Incapacity. When a patient genuinely can't decide, you turn to a surrogate, guided by the patient's wishes and interests."
+    },
+    "d8a96aa9": {
+      "slide": "s18",
+      "text": "Now, four ways to be a doctor. Peter's leg has healed. He tells you he's going straight back to McGregor's garden, the one that snared him and killed his father.",
+      "spoken": "Now, four ways to be a doctor. Peter's leg has healed. He tells you he's going straight back to McGregor's garden, the one that snared him and killed his father."
+    },
+    "b386e8c9": {
+      "slide": "s18",
+      "text": "Run the five ingredients. He has capacity. You disclosed the risk. He understood it. Nobody pressured him. And he authorized his own discharge.",
+      "spoken": "Run the five ingredients. He has capacity. You disclosed the risk. He understood it. Nobody pressured him. And he authorized his own discharge."
+    },
+    "fc07fadb": {
+      "slide": "s18",
+      "text": "The consent is perfect. Every box is ticked. And he is going to be killed in that garden.",
+      "spoken": "The consent is perfect. Every box is ticked. And he is going to be killed in that garden."
+    },
+    "3382effa": {
+      "slide": "s18",
+      "text": "So consent was never the whole job. In 1992, Ezekiel and Linda Emanuel mapped four answers to what is left of it.",
+      "spoken": "So consent was never the whole job. In 1992, Ezekiel and Linda Emanuel mapped four answers to what is left of it."
+    },
+    "78e1d9f6": {
+      "slide": "s19",
+      "text": "Model one is the paternalistic doctor, the doctor as guardian. You determine what is best, and the patient assents.",
+      "spoken": "Model one is the paternalistic doctor, the doctor as guardian. You determine what is best, and the patient assents."
+    },
+    "c19a9e2c": {
+      "slide": "s19",
+      "text": "With Peter, you refuse to discharge him, or you tell his mother. The garden is not up for discussion.",
+      "spoken": "With Peter, you refuse to discharge him, or you tell his mother. The garden is not up for discussion."
+    },
+    "3953de48": {
+      "slide": "s19",
+      "text": "Autonomy here shrinks to assenting to what the expert has already decided.",
+      "spoken": "Autonomy here shrinks to assenting to what the expert has already decided."
+    },
+    "ade7f9f7": {
+      "slide": "s19",
+      "text": "Fine in a true emergency. Presumptuous almost everywhere else, and it makes his valid consent count for nothing.",
+      "spoken": "Fine in a true emergency. Presumptuous almost everywhere else, and it makes his valid consent count for nothing."
+    },
+    "7245e9d5": {
+      "slide": "s20",
+      "text": "Model two is the informative doctor, the doctor as technician. You supply the facts. The patient supplies the values and chooses.",
+      "spoken": "Model two is the informative doctor, the doctor as technician. You supply the facts. The patient supplies the values and chooses."
+    },
+    "c9b5a533": {
+      "slide": "s20",
+      "text": "With Peter, nothing. You told him the risk, he understood it, and he chose. Your job finished when the consent did.",
+      "spoken": "With Peter, nothing. You told him the risk, he understood it, and he chose. Your job finished when the consent did."
+    },
+    "0f2d339d": {
+      "slide": "s20",
+      "text": "Autonomy here means control. The patient picks, and you execute. Mrs. Tiggy-Winkle wants precisely this.",
+      "spoken": "Autonomy here means control. The patient picks, and you execute. Mrs. Tiggy-Winkle wants precisely this."
+    },
+    "4e895759": {
+      "slide": "s20",
+      "text": "The risk is a doctor reduced to a vending machine, watching a patient walk into a garden that killed his father.",
+      "spoken": "The risk is a doctor reduced to a vending machine, watching a patient walk into a garden that killed his father."
+    },
+    "5720a9e4": {
+      "slide": "s21",
+      "text": "Here are the two extremes. In the paternalistic model, the doctor chooses and the patient assents. The doctor says, I know what is best for you, Peter. Carrots, no garden. In the informative model, the doctor informs and the patient chooses unaided. The doctor says, here are the facts and the options. Your call entirely.",
+      "spoken": "Here are the two extremes. In the paternalistic model, the doctor chooses and the patient assents. The doctor says, I know what is best for you, Peter. Carrots, no garden. In the informative model, the doctor informs and the patient chooses unaided. The doctor says, here are the facts and the options. Your call entirely."
+    },
+    "80e2ba11": {
+      "slide": "s22",
+      "text": "Model three is the interpretive doctor, the doctor as counselor. You help the patient figure out what they already value, then choose to fit it.",
+      "spoken": "Model three is the interpretive doctor, the doctor as counselor. You help the patient figure out what they already value, then choose to fit it."
+    },
+    "ac669925": {
+      "slide": "s22",
+      "text": "With Peter, you ask what the garden is really for. Is it the carrots, or is it proving something to himself about his father?",
+      "spoken": "With Peter, you ask what the garden is really for. Is it the carrots, or is it proving something to himself about his father?"
+    },
+    "f6081d8a": {
+      "slide": "s22",
+      "text": "You help him put that into words, without adding any view of your own about what he ought to want.",
+      "spoken": "You help him put that into words, without adding any view of your own about what he ought to want."
+    },
+    "eff37eb7": {
+      "slide": "s22",
+      "text": "Autonomy here means self-understanding: choosing in line with who he actually is, once he can see it.",
+      "spoken": "Autonomy here means self-understanding: choosing in line with who he actually is, once he can see it."
+    },
+    "54fe4d04": {
+      "slide": "s23",
+      "text": "Model four is the deliberative doctor, the doctor as teacher and friend. You engage the patient about which health-related values are worth pursuing. You try to persuade, without ever coercing.",
+      "spoken": "Model four is the deliberative doctor, the doctor as teacher and friend. You engage the patient about which health-related values are worth pursuing. You try to persuade, without ever coercing."
+    },
+    "9feadd35": {
+      "slide": "s23",
+      "text": "With Peter, you tell him you think he is wrong, and you say why. Then you leave the decision with him.",
+      "spoken": "With Peter, you tell him you think he is wrong, and you say why. Then you leave the decision with him."
+    },
+    "848ea31b": {
+      "slide": "s23",
+      "text": "A braver life needn't be a reckless one. That is an argument, openly made, and he may reject it.",
+      "spoken": "A braver life needn't be a reckless one. That is an argument, openly made, and he may reject it."
+    },
+    "63c7c2d5": {
+      "slide": "s23",
+      "text": "Autonomy here means moral self-development: growing through honest deliberation, not merely being left alone.",
+      "spoken": "Autonomy here means moral self-development: growing through honest deliberation, not merely being left alone."
+    },
+    "f25dd604": {
+      "slide": "clarify-vs-develop",
+      "text": "Clarify versus develop. The interpretive doctor helps the patient uncover and apply the values they already have. Something like, let's name what matters most to you, and choose to match it. The deliberative doctor engages the patient on which values are worth adopting. That means persuasion, not pressure. Something like, may I make the case that a longer life with your sisters is worth more than the thrill?",
+      "spoken": "Clarify versus develop. The interpretive doctor helps the patient uncover and apply the values they already have. Something like, let's name what matters most to you, and choose to match it. The deliberative doctor engages the patient on which values are worth adopting. That means persuasion, not pressure. Something like, may I make the case that a longer life with your sisters is worth more than the thrill?"
+    },
+    "05263a85": {
+      "slide": "four-models",
+      "text": "Here are the four models, mapped. How a physician should engage depends on clinical urgency and the state of the patient's values. Emergencies call for the paternalistic model. Settled values call for the informative technician. Conflicted values call for the interpretive counselor. Growing values call for the deliberative teacher and friend. These are four answers to how far a doctor may go once consent is secured. The Emanuels defend the deliberative one as the caring ideal.",
+      "spoken": "Here are the four models, mapped. How a physician should engage depends on clinical urgency and the state of the patient's values. Emergencies call for the paternalistic model. Settled values call for the informative technician. Conflicted values call for the interpretive counselor. Growing values call for the deliberative teacher and friend. These are four answers to how far a doctor may go once consent is secured. The Emanuels defend the deliberative one as the caring ideal."
+    },
+    "8dcc48fe": {
+      "slide": "s26",
+      "text": "Name that model. Peter's leg will heal, and he is already itching to go back to the garden that killed his father. Read what each doctor says, and identify the model that doctor is using. When you're ready, press Continue.",
+      "spoken": "Name that model. Peter's leg will heal, and he is already itching to go back to the garden that killed his father. Read what each doctor says, and identify the model that doctor is using. When you're ready, press Continue."
+    },
+    "47dd1528": {
+      "slide": "s27",
+      "text": "Which model is it? Six doctors talk to Peter about the garden. Sort each line under the model that doctor is using. When every line is placed, press Check answers.",
+      "spoken": "Which model is it? Six doctors talk to Peter about the garden. Sort each line under the model that doctor is using. When every line is placed, press Check answers."
+    },
+    "62b332e9": {
+      "slide": "s27",
+      "text": "Right. The paternalistic doctor decides. The informative doctor gives the facts and leaves the values to Peter. The interpretive doctor helps him see the values he already has. The deliberative doctor argues that some values are worth more, and leaves the decision with him.",
+      "spoken": "Right. The paternalistic doctor decides. The informative doctor gives the facts and leaves the values to Peter. The interpretive doctor helps him see the values he already has. The deliberative doctor argues that some values are worth more, and leaves the decision with him."
+    },
+    "cce88280": {
+      "slide": "s28",
+      "text": "Sort the models. Check each statement that correctly describes one of the Emanuels' models, then press Check answers.",
+      "spoken": "Sort the models. Check each statement that correctly describes one of the Emanuels' models, then press Check answers."
+    },
+    "ab2d23ef": {
+      "slide": "s28",
+      "text": "Nicely sorted. The checked items match each model's role. The two left unchecked swap the models' jobs around.",
+      "spoken": "Nicely sorted. The checked items match each model's role. The two left unchecked swap the models' jobs around."
+    },
+    "cd6e4788": {
+      "slide": "emanuels-verdict",
+      "text": "The Emanuels don't leave all four as equals. They argue for one as the ideal.",
+      "spoken": "The Emanuels don't leave all four as equals. They argue for one as the ideal."
+    },
+    "62bf4ea1": {
+      "slide": "emanuels-verdict",
+      "text": "The deliberative model, physician as teacher and friend, best fits a caring relationship.",
+      "spoken": "The deliberative model, physician as teacher and friend, best fits a caring relationship."
+    },
+    "4b99cfdb": {
+      "slide": "emanuels-verdict",
+      "text": "The paternalistic model is justified mainly in emergencies.",
+      "spoken": "The paternalistic model is justified mainly in emergencies."
+    },
+    "f09069ca": {
+      "slide": "emanuels-verdict",
+      "text": "The informative model, they argue, is too thin. It abandons the patient to choose alone.",
+      "spoken": "The informative model, they argue, is too thin. It abandons the patient to choose alone."
+    },
+    "41693844": {
+      "slide": "emanuels-verdict",
+      "text": "The aim isn't to impose values, but to care enough to deliberate about them.",
+      "spoken": "The aim isn't to impose values, but to care enough to deliberate about them."
+    },
+    "981dc9be": {
+      "slide": "s30",
+      "text": "Decision point: which would you want? This one isn't graded. You rated something close to this before the clinic opened. You are the patient, and the decision is a hard one. Which doctor do you want in the room? Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: which would you want? This one isn't graded. You rated something close to this before the clinic opened. You are the patient, and the decision is a hard one. Which doctor do you want in the room? Pick the answer closest to your view, and read its note."
+    },
+    "2eee9041": {
+      "slide": "s30",
+      "text": "The Emanuels argue for the deliberative model. Notice what your answer costs. The informative doctor respects you and leaves you alone with it. The deliberative doctor engages with your values, which means a doctor with opinions about your values.",
+      "spoken": "The Emanuels argue for the deliberative model. Notice what your answer costs. The informative doctor respects you and leaves you alone with it. The deliberative doctor engages with your values, which means a doctor with opinions about your values."
+    },
+    "2cd58c12": {
+      "slide": "s31",
+      "text": "Which model wins? The Emanuels defend the deliberative model as the ideal. On their argument, what is wrong with the informative model? Pick an answer.",
+      "spoken": "Which model wins? The Emanuels defend the deliberative model as the ideal. On their argument, what is wrong with the informative model? Pick an answer."
+    },
+    "e46246a1": {
+      "slide": "s31",
+      "text": "Right. The informative doctor secures consent flawlessly, so whatever is wrong with her, it isn't a failure of consent. The Emanuels say she has confused respecting a patient with leaving him alone.",
+      "spoken": "Right. The informative doctor secures consent flawlessly, so whatever is wrong with her, it isn't a failure of consent. The Emanuels say she has confused respecting a patient with leaving him alone."
+    },
+    "7c7d757a": {
+      "slide": "s32",
+      "text": "Here's where you started this morning. Re-rate each statement and see whether the day shifted anything. Staying put is fine. The question is whether you can now say why. When you've rated them all, press Submit.",
+      "spoken": "Here's where you started this morning. Re-rate each statement and see whether the day shifted anything. Staying put is fine. The question is whether you can now say why. When you've rated them all, press Submit."
+    },
+    "460677d5": {
+      "slide": "s32",
+      "text": "Saved. Now, a quick wrap-up of your rounds.",
+      "spoken": "Saved. Now, a quick wrap-up of your rounds."
+    },
+    "5095360e": {
+      "slide": "s33",
+      "text": "You close the bag. The hedgerow is quiet, and your patients are still in charge of their own lives.",
+      "spoken": "You close the bag. The hedgerow is quiet, and your patients are still in charge of their own lives."
+    },
+    "d3438f9d": {
+      "slide": "s33",
+      "text": "Peter's consent was valid on all five counts, and the hard question survived it intact.",
+      "spoken": "Peter's consent was valid on all five counts, and the hard question survived it intact."
+    },
+    "bd8e8105": {
+      "slide": "s33",
+      "text": "That is what the four models are for: four answers to how far you may go once the form is signed.",
+      "spoken": "That is what the four models are for: four answers to how far you may go once the form is signed."
+    },
+    "85ab1c53": {
+      "slide": "s33",
+      "text": "Push past persuasion, and you destroy the voluntariness that made the consent real.",
+      "spoken": "Push past persuasion, and you destroy the voluntariness that made the consent real."
+    },
+    "3298d15e": {
+      "slide": "s33",
+      "text": "So autonomy is more than leaving people alone. Help them decide well, then let them decide. Visit every slide, answer every question, and submit both belief probes to complete your rounds.",
+      "spoken": "So autonomy is more than leaving people alone. Help them decide well, then let them decide. Visit every slide, answer every question, and submit both belief probes to complete your rounds."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

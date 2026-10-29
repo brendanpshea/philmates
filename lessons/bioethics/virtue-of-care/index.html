@@ -22,6 +22,7 @@
     <h1>The March Practice</h1>
     <p class="lead">Orchard Falls has one family practice, one community hospital, and a January winter that will not end. Dr. Jo March has six patients to see today and one essential idea to share.</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to The March Practice. Orchard Falls has one family practice, one community hospital, and a January winter that will not end. Doctor Jo March has six patients to see today and one essential idea to share. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
   </phil-slide>
 
   <!-- 2. Meet Dr. March -->
@@ -29,11 +30,12 @@
     <img slot="art" src="./assets/jo-march.png" alt="Dr. Jo March: a family physician in her forties with rolled sleeves, a pen behind her ear, and attentive eyes">
     <h1>"I Am Not a Warm Person"</h1>
     <p class="lead">"Ask anyone in town," Dr. March says, setting down her bag. "I don't do cheerful bedside small talk."</p>
+    <phil-narration>Doctor March sets down her bag. She says to ask anyone in town: she doesn't do cheerful bedside small talk. She also says she is not a warm person.</phil-narration>
     <ul reveal>
-      <li>She is blunt, direct, and visibly impatient with administrative pretense.</li>
-      <li>Yet when a neighbor receives a terrifying diagnosis, Jo is the first clinician they call.</li>
-      <li>How can someone who lacks an easy bedside manner still excel at patient care?</li>
-      <li>Because <strong>care is an acquired clinical virtue</strong>, not an outgoing temperament.</li>
+      <li say="She's blunt and direct, and visibly impatient with administrative pretense.">She is blunt, direct, and visibly impatient with administrative pretense.</li>
+      <li say="Yet when a neighbor gets a terrifying diagnosis, Jo is the first clinician they call.">Yet when a neighbor receives a terrifying diagnosis, Jo is the first clinician they call.</li>
+      <li say="So how can someone without an easy bedside manner still excel at patient care?">How can someone who lacks an easy bedside manner still excel at patient care?</li>
+      <li say="Because care is an acquired clinical virtue, not an outgoing temperament.">Because <strong>care is an acquired clinical virtue</strong>, not an outgoing temperament.</li>
     </ul>
   </phil-slide>
 
@@ -48,6 +50,8 @@
       <phil-statement>Care is mostly about feelings. Competence is a separate matter.</phil-statement>
       <phil-statement>Whether clinicians can care for patients well depends more on how their workplace is run than on their own character.</phil-statement>
     </phil-beliefs>
+    <phil-narration>Before rounds, here are five questions about what you value. There are no right or wrong answers. State where you stand now, and you'll revisit them at the end of the day. Rate each statement, then press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end of the day.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 1 — NOBODY BROKE A RULE ============ -->
@@ -57,11 +61,12 @@
     <img slot="art" src="./assets/mr-laurence.png" alt="Mr. Laurence: an elderly man in a cardigan clutching a crumpled discharge packet">
     <h1>"I Was Processed"</h1>
     <p class="lead">Every clinical box was checked. Nobody looked him in the eye.</p>
+    <phil-narration>Now, Act one. Every clinical box was checked, and nobody looked him in the eye.</phil-narration>
     <ul reveal>
-      <li>Mr. Laurence, 82, was discharged after three days of inpatient care for heart failure.</li>
-      <li>Medications were reconciled, instructions printed, follow-up booked, and forms signed in eleven minutes.</li>
-      <li>By every hospital quality metric and chart audit, the discharge was completely flawless.</li>
-      <li>Yet he left clutching a five-page packet he could not read, telling his family: "I was processed."</li>
+      <li say="Mr. Laurence, eighty-two, was discharged after three days of inpatient care for heart failure.">Mr. Laurence, 82, was discharged after three days of inpatient care for heart failure.</li>
+      <li say="His medications were reconciled, instructions printed, follow-up booked, and forms signed, all in eleven minutes.">Medications were reconciled, instructions printed, follow-up booked, and forms signed in eleven minutes.</li>
+      <li say="By every hospital quality metric and chart audit, the discharge was completely flawless.">By every hospital quality metric and chart audit, the discharge was completely flawless.</li>
+      <li say="Yet he left clutching a five-page packet he couldn't read. He told his family, ‘I was processed.’">Yet he left clutching a five-page packet he could not read, telling his family: "I was processed."</li>
     </ul>
   </phil-slide>
 
@@ -69,11 +74,12 @@
   <phil-slide>
     <h1>Why Rule-Following Falls Short</h1>
     <p class="lead">Checklists ensure procedural compliance. They cannot guarantee ethical care.</p>
+    <phil-narration>Why isn't following the rules enough? Checklists ensure procedural compliance. They can't guarantee ethical care.</phil-narration>
     <ul reveal>
-      <li><strong>Autonomy</strong> became paperwork: getting a signature on a form rather than ensuring genuine understanding.</li>
-      <li><strong>Beneficence</strong> became medication titration without asking what he feared about going home alone.</li>
-      <li>Principles tell clinicians what duties are owed, but rules cannot tell you how to listen, perceive, or respond.</li>
-      <li><strong>The virtue of care is not an optional extra added to principles. Cultivating care is what makes it possible to reliably fulfill them.</strong></li>
+      <li say="Autonomy became paperwork: a signature on a form, rather than real understanding."><strong>Autonomy</strong> became paperwork: getting a signature on a form rather than ensuring genuine understanding.</li>
+      <li say="Beneficence became medication titration, without asking what he feared about going home alone."><strong>Beneficence</strong> became medication titration without asking what he feared about going home alone.</li>
+      <li say="Principles tell clinicians what duties are owed. But rules can't tell you how to listen, perceive, or respond.">Principles tell clinicians what duties are owed, but rules cannot tell you how to listen, perceive, or respond.</li>
+      <li say="The virtue of care isn't an optional extra added to principles. Cultivating care is what makes it possible to reliably fulfill them."><strong>The virtue of care is not an optional extra added to principles. Cultivating care is what makes it possible to reliably fulfill them.</strong></li>
     </ul>
   </phil-slide>
 
@@ -91,6 +97,7 @@
         <p class="case">Clinical ethics holds that principles and virtues are partners rather than rivals.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Ethics asks two complementary questions. Principles address action. Virtues address character. Principles ask, what should I do? They're public, verifiable action-guides. Clinicians specify them, weigh them in dilemmas, and justify them systematically. Mr. Laurence's discharge satisfied every formal principle requirement on paper. Virtues ask, who should I be? They're stable traits of character. They govern how a clinician perceives human needs, and they determine the manner in which care is delivered. Clinical ethics holds that principles and virtues are partners rather than rivals.</phil-narration>
   </phil-slide>
 
   <!-- 7. Classify: principles or virtues -->
@@ -107,6 +114,8 @@
       <phil-item answer="virt" why="Virtues govern how a clinician perceives needs and the manner in which care is delivered.">They shape how a clinician perceives what a patient needs</phil-item>
       <phil-item answer="prin" why="His discharge satisfied every formal principle requirement on paper.">Mr. Laurence's discharge met every one of them on paper</phil-item>
     </phil-classify>
+    <phil-narration>Diagnosing the gap. Sort each description under principles or virtues. When every item is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Principles answer what to do, and Mr. Laurence's discharge met every one on paper. Virtues answer who to be, and his discharge was missing those.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 2 — CULTIVATING VIRTUE ============ -->
@@ -116,11 +125,12 @@
     <img slot="art" src="./assets/jo-march.png" alt="Dr. Jo March, sleeves rolled, looking straight at you">
     <h1>Virtue as a Disposition</h1>
     <p>"I do not feel warm," Jo says. "I do care. Those are different things, and the distinction matters."</p>
+    <phil-narration>Now, virtue as a disposition. Doctor March says she doesn't feel warm, but she does care. She says those are different things, and the distinction matters.</phil-narration>
     <ul reveal>
-      <li>A <strong>virtue</strong> is a stable, acquired disposition of character.</li>
-      <li>It involves <strong>internal motivation</strong>: you act because you value the good, not just from compliance.</li>
-      <li>Aristotle called it a settled state (<em>hexis</em>), not a passing mood. You can care well even on a hard day.</li>
-      <li>It is not a fleeting feeling, not an innate personality type, and not a rulebook.</li>
+      <li say="A virtue is a stable, acquired disposition of character.">A <strong>virtue</strong> is a stable, acquired disposition of character.</li>
+      <li say="It involves internal motivation. You act because you value the good, not just from compliance.">It involves <strong>internal motivation</strong>: you act because you value the good, not just from compliance.</li>
+      <li say="Aristotle called it a settled state, hexis, not a passing mood. You can care well even on a hard day.">Aristotle called it a settled state (<em>hexis</em>), not a passing mood. You can care well even on a hard day.</li>
+      <li say="It's not a fleeting feeling, not an innate personality type, and not a rulebook.">It is not a fleeting feeling, not an innate personality type, and not a rulebook.</li>
     </ul>
   </phil-slide>
 
@@ -129,11 +139,12 @@
     <img slot="art" src="./assets/marmee.png" alt="Marmee: a retired nurse holding a warm mug in capable hands">
     <h1>How Virtue Is Cultivated</h1>
     <p class="lead">"Nobody is born with clinical character," Jo says. "You learn it in stages."</p>
+    <phil-narration>How is virtue cultivated? Nobody is born with clinical character, Jo says. You learn it in stages.</phil-narration>
     <ul reveal>
-      <li><strong>First, from parents:</strong> Watching Marmee care for sick neighbors taught her attentiveness early.</li>
-      <li><strong>Next, from mentors:</strong> Senior clinicians taught her to look past the chart to see the patient.</li>
-      <li><strong>Finally, through habit:</strong> Deliberately sitting at every bedside until it became second nature.</li>
-      <li>Virtue is not an innate gift; it is built through guided repetition. Aristotle said the same: we become just by doing just acts.</li>
+      <li say="First, from parents. Watching Marmee care for sick neighbors taught her attentiveness early."><strong>First, from parents:</strong> Watching Marmee care for sick neighbors taught her attentiveness early.</li>
+      <li say="Next, from mentors. Senior clinicians taught her to look past the chart to see the patient."><strong>Next, from mentors:</strong> Senior clinicians taught her to look past the chart to see the patient.</li>
+      <li say="Finally, through habit. She deliberately sat at every bedside until it became second nature."><strong>Finally, through habit:</strong> Deliberately sitting at every bedside until it became second nature.</li>
+      <li say="Virtue isn't an innate gift. It's built through guided repetition. Aristotle said the same: we become just by doing just acts.">Virtue is not an innate gift; it is built through guided repetition. Aristotle said the same: we become just by doing just acts.</li>
     </ul>
   </phil-slide>
 
@@ -141,18 +152,20 @@
   <phil-slide>
     <h1>Cultivating Clinical Character</h1>
     <p>Virtues are not mastered by memorizing codes of ethics. They are developed through guided practice and mentorship.</p>
+    <phil-narration>Virtues aren't mastered by memorizing codes of ethics. They're developed through guided practice and mentorship.</phil-narration>
     <ul reveal>
-      <li>Medical training teaches clinical procedures, diagnostic pathways, and electronic charting systems.</li>
-      <li>Learning how to perceive unspoken distress requires observing mentors and receiving constructive feedback.</li>
-      <li>Dr. March's role with resident Amy is helping a capable, protocol-driven clinician look beyond the screen.</li>
-      <li>Mentoring feedback must itself model care: attentive, constructive, and supportive rather than punitive.</li>
+      <li say="Medical training teaches clinical procedures, diagnostic pathways, and electronic charting systems.">Medical training teaches clinical procedures, diagnostic pathways, and electronic charting systems.</li>
+      <li say="Learning to perceive unspoken distress requires observing mentors and receiving constructive feedback.">Learning how to perceive unspoken distress requires observing mentors and receiving constructive feedback.</li>
+      <li say="Doctor March's role with resident Amy is helping a capable, protocol-driven clinician look beyond the screen.">Dr. March's role with resident Amy is helping a capable, protocol-driven clinician look beyond the screen.</li>
+      <li say="Mentoring feedback must itself model care: attentive, constructive, and supportive rather than punitive.">Mentoring feedback must itself model care: attentive, constructive, and supportive rather than punitive.</li>
     </ul>
   </phil-slide>
 
   <!-- 11. Interactive widget: Rounds with Amy -->
-  <phil-slide>
+  <phil-slide hold>
     <h1 style="margin-bottom: 0.2em;">Rounds with Amy</h1>
     <p class="muted" style="margin: 0 0 8px;">Debrief resident Amy across three cases. Choose feedback that guides her while modeling care.</p>
+    <phil-narration>Rounds with Amy. Debrief resident Amy across three cases. Choose feedback that guides her while modeling care. When you're ready, press Continue.</phil-narration>
     <phil-mentor></phil-mentor>
   </phil-slide>
 
@@ -161,11 +174,12 @@
     <img slot="art" src="./assets/john-brooke.png" alt="A hospice nurse in navy scrubs with a folded blanket">
     <h1>Care and Flourishing</h1>
     <p class="lead">Why cultivate a virtue at all? The ancient answer concerns the clinician as much as the patient.</p>
+    <phil-narration>Why cultivate a virtue at all? The ancient answer concerns the clinician as much as the patient.</phil-narration>
     <ul reveal>
-      <li>Aristotle's term <strong>eudaimonia</strong> means human flourishing: living well over a whole life.</li>
-      <li>Virtues are not an exhausting tax on life; they are part of what makes a life good.</li>
-      <li>Practicing genuine care brings purpose to the caregiver, not just benefit to the patient.</li>
-      <li>When care becomes so ungrounded that it destroys the carer, something has gone wrong.</li>
+      <li say="Aristotle's term eudaimonia means human flourishing: living well over a whole life.">Aristotle's term <strong>eudaimonia</strong> means human flourishing: living well over a whole life.</li>
+      <li say="Virtues aren't an exhausting tax on life. They're part of what makes a life good.">Virtues are not an exhausting tax on life; they are part of what makes a life good.</li>
+      <li say="Practicing genuine care brings purpose to the caregiver, not just benefit to the patient.">Practicing genuine care brings purpose to the caregiver, not just benefit to the patient.</li>
+      <li say="When care becomes so ungrounded that it destroys the carer, something has gone wrong.">When care becomes so ungrounded that it destroys the carer, something has gone wrong.</li>
     </ul>
   </phil-slide>
 
@@ -181,6 +195,8 @@
       <phil-statement>You are either born with a caring virtue or you can never acquire it.</phil-statement>
       <phil-statement>A virtue is a rigid algorithmic checklist that specifies exact actions in advance.</phil-statement>
     </phil-checkset>
+    <phil-narration>Evaluating the concept. Check every true statement about a moral virtue, then press Check answers.</phil-narration>
+    <phil-narration when="after">Correct. A virtue is an acquired disposition developed through ongoing practice, motivated by a commitment to good patient care.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 3 — CARE, DEFINED ============ -->
@@ -190,11 +206,12 @@
     <img slot="art" src="./assets/hannah.png" alt="Hannah: home health aide on a client's doorstep at dusk">
     <h1>Care as Skilled Labor</h1>
     <p class="lead">Hannah is a home health aide arriving at her fourth client's home at dusk in the snow.</p>
+    <phil-narration>Now, care as skilled labor. Hannah is a home health aide, arriving at her fourth client's home at dusk in the snow.</phil-narration>
     <ul reveal>
-      <li>Hospital posters treat "care" as a slogan. In clinical ethics, it is demanding, skilled work.</li>
-      <li>Beauchamp and Childress define care as <strong>emotional commitment</strong> to a person, combined with the <strong>active willingness to act</strong> on their behalf.</li>
-      <li>Berenice Fisher and Joan Tronto put it more broadly: care is everything we do to maintain, continue, and repair our world.</li>
-      <li>Notice what this demands: not performative cheerfulness, but dependable presence and skilled effort.</li>
+      <li say="Hospital posters treat care as a slogan. In clinical ethics, it's demanding, skilled work.">Hospital posters treat "care" as a slogan. In clinical ethics, it is demanding, skilled work.</li>
+      <li say="Beauchamp and Childress define care as emotional commitment to a person, combined with an active willingness to act on their behalf.">Beauchamp and Childress define care as <strong>emotional commitment</strong> to a person, combined with the <strong>active willingness to act</strong> on their behalf.</li>
+      <li say="Berenice Fisher and Joan Tronto put it more broadly: care is everything we do to maintain, continue, and repair our world.">Berenice Fisher and Joan Tronto put it more broadly: care is everything we do to maintain, continue, and repair our world.</li>
+      <li say="Notice what this demands. Not performative cheerfulness, but dependable presence and skilled effort.">Notice what this demands: not performative cheerfulness, but dependable presence and skilled effort.</li>
     </ul>
   </phil-slide>
 
@@ -203,11 +220,12 @@
     <img slot="art" src="./assets/beth.png" alt="Beth: a young woman in a hospital bed with an oxygen cannula and portable keyboard">
     <h1>The Four Phases of Care</h1>
     <p class="lead">The political theorist Joan Tronto names four parts of good care. Beth, 24, has lived with chronic illness for years. Caring for her takes all four.</p>
+    <phil-narration>The political theorist Joan Tronto names four parts of good care. Beth, twenty-four, has lived with chronic illness for years. Caring for her takes all four.</phil-narration>
     <ul reveal>
-      <li><strong>1. Attentiveness:</strong> Noticing the need. Beth has grown quiet and stopped asking about medications.</li>
-      <li><strong>2. Responsibility:</strong> Stepping in to address her withdrawal rather than passing it to night shift.</li>
-      <li><strong>3. Competence:</strong> Executing care skillfully. Kind words with incorrect medication is sentimentality, not care.</li>
-      <li><strong>4. Responsiveness:</strong> Checking how the care landed with Beth—because only the recipient knows.</li>
+      <li say="One, attentiveness: noticing the need. Beth has grown quiet and stopped asking about medications."><strong>1. Attentiveness:</strong> Noticing the need. Beth has grown quiet and stopped asking about medications.</li>
+      <li say="Two, responsibility: stepping in to address her withdrawal, rather than passing it to night shift."><strong>2. Responsibility:</strong> Stepping in to address her withdrawal rather than passing it to night shift.</li>
+      <li say="Three, competence: carrying out care skillfully. Kind words with incorrect medication is sentimentality, not care."><strong>3. Competence:</strong> Executing care skillfully. Kind words with incorrect medication is sentimentality, not care.</li>
+      <li say="Four, responsiveness: checking how the care landed with Beth, because only the recipient knows."><strong>4. Responsiveness:</strong> Checking how the care landed with Beth—because only the recipient knows.</li>
     </ul>
   </phil-slide>
 
@@ -216,11 +234,12 @@
     <img slot="art" src="./assets/laurie.png" alt="A nurse in scrubs and hoodie with coffee in hand">
     <h1>The Instruments of Care</h1>
     <p class="lead">Beauchamp and Childress name five focal virtues that serve as practical instruments of care.</p>
+    <phil-narration>Beauchamp and Childress name five focal virtues that serve as practical instruments of care.</phil-narration>
     <ul reveal>
-      <li><strong>Compassion</strong> provides awareness of suffering. <strong>Discernment</strong> judges what this patient needs right now.</li>
-      <li><strong>Trustworthiness</strong> ensures reliability. <strong>Integrity</strong> holds your values and actions together.</li>
-      <li><strong>Conscientiousness</strong> is the follow-through: orders placed, labs verified, families updated.</li>
-      <li>The nursing code of ethics opens with compassion and respect for the dignity of every patient.</li>
+      <li say="Compassion provides awareness of suffering. Discernment judges what this patient needs right now."><strong>Compassion</strong> provides awareness of suffering. <strong>Discernment</strong> judges what this patient needs right now.</li>
+      <li say="Trustworthiness ensures reliability. Integrity holds your values and actions together."><strong>Trustworthiness</strong> ensures reliability. <strong>Integrity</strong> holds your values and actions together.</li>
+      <li say="Conscientiousness is the follow-through: orders placed, labs verified, families updated."><strong>Conscientiousness</strong> is the follow-through: orders placed, labs verified, families updated.</li>
+      <li say="The nursing code of ethics opens with compassion and respect for the dignity of every patient.">The nursing code of ethics opens with compassion and respect for the dignity of every patient.</li>
     </ul>
   </phil-slide>
 
@@ -238,6 +257,7 @@
         <p class="case">A tired, direct clinician pulling up a chair at the end of a long day to explain a difficult diagnosis.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Care versus warmth. Warmth is an innate personality temperament. Care is a cultivated clinical virtue. Warmth is a natural personality trait that varies by individual. It can be easily simulated for a short time, and its absence doesn't make a clinician incompetent. A cheerful clinician who neglects a promised lab check was pleasant, not caring. Care is a learned, disciplined orientation, evident when patients are frustrated and clinic hours are stretched thin. It's inseparable from technical competence. Picture a tired, direct clinician pulling up a chair at the end of a long day to explain a difficult diagnosis.</phil-narration>
   </phil-slide>
 
   <!-- 18. Cloze: care defined -->
@@ -249,6 +269,8 @@
       and a willingness to <phil-blank answer="act|help|intervene">act</phil-blank> on their behalf.
       Care without <phil-blank options="competence,warmth,consent">competence</phil-blank> is sentimentality.
     </phil-cloze>
+    <phil-narration>Defining the elements. Fill in each blank, then press Check.</phil-narration>
+    <phil-narration when="after">A virtue is an acquired disposition. And care without competence is sentimentality.</phil-narration>
   </phil-slide>
 
   <!-- 19. Classify: the four parts of care -->
@@ -267,6 +289,8 @@
       <phil-item answer="comp" why="Kind words with the wrong medication is sentimentality, not care. Getting it right is competence.">Kind words aren't enough, so the nurse gets Beth's medication exactly right</phil-item>
       <phil-item answer="rsv" why="Checking how the care landed with the person receiving it is responsiveness.">The next day, the nurse asks Beth how the change has worked for her</phil-item>
     </phil-classify>
+    <phil-narration>Recognizing complete care. Beth has grown unusually quiet in the clinic. Sort each action under the part of care it shows, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Attentiveness notices the need. Responsibility takes it on. Competence carries it out skillfully. And responsiveness checks how it landed.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 4 — BOUNDARIES & SUSTAINABLE CARE ============ -->
@@ -285,6 +309,7 @@
         <p class="case">Laurie working consecutive extra shifts while sick and answering family messages at midnight.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Detachment and over-involvement. Clinical care can fail in two opposite directions. Both harm the patient, and one also depletes the caregiver. Detachment is a deficiency. The patient is treated primarily as a case or a dataset. Protocols are completed, but personal presence is entirely absent. Think of Amy's hurried eleven-minute discharge, where the patient felt processed. Over-involvement is an excess. It's a lack of boundaries, where the caregiver takes on every burden personally, leading to exhaustion, loss of objectivity, and burnout. Think of Laurie working consecutive extra shifts while sick, and answering family messages at midnight.</phil-narration>
   </phil-slide>
 
   <!-- 21. Paternalism as excess -->
@@ -292,11 +317,12 @@
     <img slot="art" src="./assets/meg.png" alt="Meg: a woman in her forties at a kitchen table at night, a child's lunchbox beside a weekly pill organizer, chin on hand">
     <h1>Paternalism as Misdirected Care</h1>
     <p class="lead">Meg is the eldest sister, teaching part-time, raising two children, and serving as Aunt March's primary unpaid caregiver.</p>
+    <phil-narration>Meg is the eldest sister, teaching part-time, raising two children, and serving as Aunt March's primary unpaid caregiver.</phil-narration>
     <ul reveal>
-      <li>Convinced that Aunt March could no longer live safely on her own, Meg quietly scheduled an assisted-living tour without consulting her.</li>
-      <li>Meg acted out of deep love and anxiety, yet her intervention crossed into <strong>unjustified paternalism</strong>.</li>
-      <li>Care that ceases to listen to the patient ceases to respect their agency. It begins doing things to a person rather than with them.</li>
-      <li>In clinical ethics, this is the intersection where beneficence and respect for autonomy must be balanced with discernment.</li>
+      <li say="Convinced that Aunt March could no longer live safely on her own, Meg quietly scheduled an assisted-living tour without consulting her.">Convinced that Aunt March could no longer live safely on her own, Meg quietly scheduled an assisted-living tour without consulting her.</li>
+      <li say="Meg acted out of deep love and anxiety. Yet her intervention crossed into unjustified paternalism.">Meg acted out of deep love and anxiety, yet her intervention crossed into <strong>unjustified paternalism</strong>.</li>
+      <li say="Care that stops listening to the patient stops respecting their agency. It begins doing things to a person rather than with them.">Care that ceases to listen to the patient ceases to respect their agency. It begins doing things to a person rather than with them.</li>
+      <li say="In clinical ethics, this is where beneficence and respect for autonomy must be balanced with discernment.">In clinical ethics, this is the intersection where beneficence and respect for autonomy must be balanced with discernment.</li>
     </ul>
   </phil-slide>
 
@@ -305,11 +331,12 @@
     <img slot="art" src="./assets/mr-laurence.png" alt="Mr. Laurence at his porch rail in the snow, looking toward the house next door">
     <h1>The Dilemma of the Soup</h1>
     <p class="lead">Jo lives next door to Mr. Laurence. On a freezing Sunday, she has a pot of soup and knows he is home alone.</p>
+    <phil-narration>Jo lives next door to Mr. Laurence. On a freezing Sunday, she has a pot of soup and knows he's home alone.</phil-narration>
     <ul reveal>
-      <li>Medical ethics codes strictly warn against <strong>dual relationships</strong>: becoming a neighbor or friend can cloud clinical judgment.</li>
-      <li>If she brings the soup, does she compromise her objective medical authority as his physician?</li>
-      <li>Yet in a small town where patients are also neighbors, refusing a simple gesture of kindness feels inhuman.</li>
-      <li>The soup is steaming on the stove. Two genuine ethical intuitions pull in opposite directions.</li>
+      <li say="Medical ethics codes strictly warn against dual relationships. Becoming a neighbor or friend can cloud clinical judgment.">Medical ethics codes strictly warn against <strong>dual relationships</strong>: becoming a neighbor or friend can cloud clinical judgment.</li>
+      <li say="If she brings the soup, does she compromise her objective medical authority as his physician?">If she brings the soup, does she compromise her objective medical authority as his physician?</li>
+      <li say="Yet in a small town where patients are also neighbors, refusing a simple gesture of kindness feels inhuman.">Yet in a small town where patients are also neighbors, refusing a simple gesture of kindness feels inhuman.</li>
+      <li say="The soup is steaming on the stove. Two genuine ethical intuitions pull in opposite directions.">The soup is steaming on the stove. Two genuine ethical intuitions pull in opposite directions.</li>
     </ul>
   </phil-slide>
 
@@ -323,6 +350,8 @@
       <phil-choice note="This follows strict risk management, though in a small town it risks unnecessary relational coldness.">Do not bring it. Dual relationships inevitably threaten objective medical judgment.</phil-choice>
       <phil-choice note="This exercises practical discernment, navigating overlapping roles through explicit honesty and clear personal boundaries.">Bring it as a neighbor, and state clearly that she is visiting as a friend.</phil-choice>
     </phil-poll>
+    <phil-narration>Decision point: Sunday afternoon. Experienced clinicians often evaluate this dilemma differently. The soup is ready on the stove. What should Doctor March do? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Professional guidelines caution against dual relationships. But an unbending rule against bringing soup would undermine the human fabric of community medicine. Practical discernment balances the two.</phil-narration>
   </phil-slide>
 
   <!-- 24. Sustainable care and the institution -->
@@ -330,11 +359,12 @@
     <img slot="art" src="./assets/laurie.png" alt="Laurie in the break room, flushed, a wall of shift notes behind him">
     <h1>When Care Becomes Martyrdom</h1>
     <p class="lead">Laurie has covered ten extra ICU shifts this month. Today he arrived with a fever.</p>
+    <phil-narration>Laurie has covered ten extra ICU shifts this month. Today he arrived with a fever.</phil-narration>
     <ul reveal>
-      <li>He is beloved by patients and always volunteers when the hospital is understaffed.</li>
-      <li>He believes that sacrificing personal sleep and health is the ultimate proof of clinical dedication.</li>
-      <li>Yet an exhausted, feverish nurse cannot maintain vigilance or protect patients from error.</li>
-      <li>Does genuine clinical care have limits, or is endless self-sacrifice its highest ideal?</li>
+      <li say="He's beloved by patients and always volunteers when the hospital is understaffed.">He is beloved by patients and always volunteers when the hospital is understaffed.</li>
+      <li say="He believes that sacrificing personal sleep and health is the ultimate proof of clinical dedication.">He believes that sacrificing personal sleep and health is the ultimate proof of clinical dedication.</li>
+      <li say="Yet an exhausted, feverish nurse can't maintain vigilance or protect patients from error.">Yet an exhausted, feverish nurse cannot maintain vigilance or protect patients from error.</li>
+      <li say="Does genuine clinical care have limits, or is endless self-sacrifice its highest ideal?">Does genuine clinical care have limits, or is endless self-sacrifice its highest ideal?</li>
     </ul>
   </phil-slide>
 
@@ -353,6 +383,8 @@
       <phil-item answer="det" why="Treating the patient as a case or a dataset is detachment.">A doctor deals with a patient as nothing more than a set of lab results</phil-item>
       <phil-item answer="pat" why="Care that stops listening and does things to a person, not with them, is paternalism.">Sure that her father shouldn't drive, a daughter sells his car without asking him</phil-item>
     </phil-classify>
+    <phil-narration>Evaluating over-involvement. Each item is a way care can go wrong. Sort each one under detachment, over-involvement, or paternalism, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Detachment is too little presence. Over-involvement is too much. And paternalism is care that stops listening and decides for the person.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 5 — CARE AND THE PRINCIPLES ============ -->
@@ -362,11 +394,12 @@
     <img slot="art" src="./assets/aunt-march.png" alt="Aunt March: an elderly woman in a wingback chair with a snipped hospital wristband">
     <h1>Autonomy and Non-Abandonment</h1>
     <p class="lead">Aunt March is 88, has capacity, and has snipped off her hospital wristband. She refuses admission.</p>
+    <phil-narration>Aunt March is eighty-eight, has capacity, and has snipped off her hospital wristband. She refuses admission.</phil-narration>
     <ul reveal>
-      <li>The principle of autonomy is clear: a competent adult has the right to refuse treatment.</li>
-      <li>Care adds what the principle leaves out: honoring a refusal is not the same as walking away.</li>
-      <li>Jo respects the choice while staying involved: planning home symptom control and checking back Thursday.</li>
-      <li>Her choice sits inside a web: Meg, Hannah, Jo. Care attends to the relationships sustaining her.</li>
+      <li say="The principle of autonomy is clear: a competent adult has the right to refuse treatment.">The principle of autonomy is clear: a competent adult has the right to refuse treatment.</li>
+      <li say="Care adds what the principle leaves out. Honoring a refusal isn't the same as walking away.">Care adds what the principle leaves out: honoring a refusal is not the same as walking away.</li>
+      <li say="Jo respects the choice while staying involved: planning home symptom control and checking back Thursday.">Jo respects the choice while staying involved: planning home symptom control and checking back Thursday.</li>
+      <li say="Her choice sits inside a web: Meg, Hannah, Jo. Care attends to the relationships sustaining her.">Her choice sits inside a web: Meg, Hannah, Jo. Care attends to the relationships sustaining her.</li>
     </ul>
   </phil-slide>
 
@@ -375,11 +408,12 @@
     <img slot="art" src="./assets/beth.png" alt="Beth in her hospital bed, pulling her blanket in">
     <h1>Specifying Benefit and Harm</h1>
     <p class="lead">Beth apologizes whenever staff enter. Principles tell us to benefit and not harm; care defines what those mean for Beth.</p>
+    <phil-narration>Beth apologizes whenever staff enter. Principles tell us to benefit and not harm. Care defines what those mean for Beth.</phil-narration>
     <ul reveal>
-      <li><strong>Beneficence</strong> needs context: Beth values attending her niece's recital over two extra days of observation.</li>
-      <li>Attentive care discovers that priority through dialogue, earning the trust required for her to speak.</li>
-      <li><strong>Nonmaleficence</strong> has blind spots: no checklist names the harm of a patient afraid of being a burden.</li>
-      <li>Attentiveness catches subtle distress, ensuring principles serve the person rather than the chart.</li>
+      <li say="Beneficence needs context. Beth values attending her niece's recital over two extra days of observation."><strong>Beneficence</strong> needs context: Beth values attending her niece's recital over two extra days of observation.</li>
+      <li say="Attentive care discovers that priority through dialogue, earning the trust required for her to speak.">Attentive care discovers that priority through dialogue, earning the trust required for her to speak.</li>
+      <li say="Nonmaleficence has blind spots. No checklist names the harm of a patient afraid of being a burden."><strong>Nonmaleficence</strong> has blind spots: no checklist names the harm of a patient afraid of being a burden.</li>
+      <li say="Attentiveness catches subtle distress, so principles serve the person rather than the chart.">Attentiveness catches subtle distress, ensuring principles serve the person rather than the chart.</li>
     </ul>
   </phil-slide>
 
@@ -388,11 +422,12 @@
     <img slot="art" src="./assets/hummel-family.png" alt="The Hummels: a young farmworker couple in a modest kitchen holding a feverish baby">
     <h1>Justice and the Care Economy</h1>
     <p class="lead">The Hummels are a farmworker family with a sick infant and no insurance. Hannah, their aide, is paid hourly by an agency.</p>
+    <phil-narration>The Hummels are a farmworker family with a sick infant and no insurance. Hannah, their aide, is paid hourly by an agency.</phil-narration>
     <ul reveal>
-      <li>Meg's unpaid hours, Hannah's modest wages, and the Hummels' pharmacy receipt expose real inequalities.</li>
-      <li>Care work is historically underpaid. A virtue of care at the bedside without structural justice is incomplete.</li>
-      <li>Care ethics also addresses <strong>partiality</strong>: clinicians naturally feel dedicated to their assigned patients.</li>
-      <li>Public justice governs the fair distribution of resources, while care governs personal attention at the bedside.</li>
+      <li say="Meg's unpaid hours, Hannah's modest wages, and the Hummels' pharmacy receipt expose real inequalities.">Meg's unpaid hours, Hannah's modest wages, and the Hummels' pharmacy receipt expose real inequalities.</li>
+      <li say="Care work is historically underpaid. A virtue of care at the bedside, without structural justice, is incomplete.">Care work is historically underpaid. A virtue of care at the bedside without structural justice is incomplete.</li>
+      <li say="Care ethics also addresses partiality. Clinicians naturally feel dedicated to their assigned patients.">Care ethics also addresses <strong>partiality</strong>: clinicians naturally feel dedicated to their assigned patients.</li>
+      <li say="Public justice governs the fair distribution of resources, while care governs personal attention at the bedside.">Public justice governs the fair distribution of resources, while care governs personal attention at the bedside.</li>
     </ul>
   </phil-slide>
 
@@ -400,11 +435,12 @@
   <phil-slide>
     <h1>Origins and Traditions of Care</h1>
     <p>Care ethics emerged from feminist philosophy and connects to diverse global traditions.</p>
+    <phil-narration>Care ethics emerged from feminist philosophy, and it connects to diverse global traditions.</phil-narration>
     <ul reveal>
-      <li>Carol Gilligan (1982) and Nel Noddings (1984) named care ethics, validating relational moral reasoning.</li>
-      <li>Feminist theory challenged the view that moral maturity consists solely of abstract, detached rules.</li>
-      <li>Care appears across cultures: Confucian <em>ren</em>, Buddhist <em>karuṇā</em>, <em>ubuntu</em>, and nursing traditions.</li>
-      <li>Virginia Held views care as a distinct relational ethic; this lesson treats care as an essential clinical virtue.</li>
+      <li say="Carol Gilligan in 1982 and Nel Noddings in 1984 named care ethics, validating relational moral reasoning.">Carol Gilligan (1982) and Nel Noddings (1984) named care ethics, validating relational moral reasoning.</li>
+      <li say="Feminist theory challenged the view that moral maturity consists solely of abstract, detached rules.">Feminist theory challenged the view that moral maturity consists solely of abstract, detached rules.</li>
+      <li say="Care appears across cultures: Confucian ren, Buddhist karuṇā, ubuntu, and nursing traditions.">Care appears across cultures: Confucian <em>ren</em>, Buddhist <em>karuṇā</em>, <em>ubuntu</em>, and nursing traditions.</li>
+      <li say="Virginia Held views care as a distinct relational ethic. This lesson treats care as an essential clinical virtue.">Virginia Held views care as a distinct relational ethic; this lesson treats care as an essential clinical virtue.</li>
     </ul>
   </phil-slide>
 
@@ -422,6 +458,7 @@
         <p class="case">Principles reminded Meg that her affectionate intentions could not override Aunt March's clear choices.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Complementary frameworks. Care ethics identifies two longstanding weaknesses in principle-based theory, while principles provide essential safeguards for care. First, what care corrects. This is a critique of principles. Principles can encourage excessive detachment and formal impartiality, underestimating the legitimate role of emotion and relationship in clinical life. Care re-centers the patient's individual experience within the medical system. Second, what principles protect. These are safeguards for care. Principles provide public accountability, preventing personal bias, favoritism, and well-intentioned paternalistic overreach. Principles reminded Meg that her affectionate intentions could not override Aunt March's clear choices.</phil-narration>
   </phil-slide>
 
   <!-- 31. MCQ: what care adds to a refusal -->
@@ -434,6 +471,8 @@
       <phil-choice feedback="Repeated badgering undermines autonomous decision-making. Care responds to the patient's goals rather than pressuring them into submission.">Continuing to pressure her with persuasive arguments until she changes her mind.</phil-choice>
       <phil-choice correct>Continued clinical presence, home-based symptom support, and collaborative planning.</phil-choice>
     </phil-mcq>
+    <phil-narration>Non-abandonment in practice. Aunt March has decision-making capacity and refuses hospital admission. What does the virtue of care add to respecting her refusal? Pick an answer.</phil-narration>
+    <phil-narration when="after">Respect for autonomy is satisfied once the refusal is documented. Care adds non-abandonment: staying connected, making a home-based plan, and supporting the family caregivers.</phil-narration>
   </phil-slide>
 
   <!-- 32. Cloze: partners -->
@@ -446,6 +485,8 @@
       Partiality toward your own <phil-blank options="patient,colleague,hospital">patient</phil-blank> is legitimate;
       <phil-blank answer="justice|public justice|fairness">justice</phil-blank> governs how care is distributed.
     </phil-cloze>
+    <phil-narration>Synthesizing the framework. Fill in each blank, then press Check.</phil-narration>
+    <phil-narration when="after">Clinical ethics treats principles and virtues as complementary. Justice governs how care is distributed, and care governs personal clinical relationships.</phil-narration>
   </phil-slide>
 
   <!-- ============ CLOSING ROUNDS ============ -->
@@ -455,6 +496,8 @@
     <h1>Revisiting Your Perspectives</h1>
     <p>Review the statements from the beginning of rounds. Re-rate each one. Retaining your original perspective is entirely valid; the goal is to evaluate whether your reasoning has deepened.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>Revisiting your perspectives. Review the statements from the beginning of rounds, and re-rate each one. Keeping your original view is entirely valid. The goal is to see whether your reasoning has deepened. When you're done, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, a quick summary of the lesson.</phil-narration>
   </phil-slide>
 
   <!-- 34. Jo's parting -->
@@ -462,11 +505,12 @@
     <img slot="art" src="./assets/jo-march.png" alt="Dr. Jo March putting her winter coat back on">
     <h1>"This Is a Practice"</h1>
     <p class="lead">"A practice is not an accident of language," Jo says. "It is a skill built by repetition."</p>
+    <phil-narration>Jo says a practice is not an accident of language. It's a skill built by repetition.</phil-narration>
     <ul reveal>
-      <li>A virtue is a disposition built through practice, orienting clinical work.</li>
-      <li>Care combines four phases with focal virtues like discernment and integrity.</li>
-      <li>Care needs boundaries to stay sustainable, guarding against detachment and exhaustion.</li>
-      <li>Virtues complete biomedical principles, bringing empathy and perception to clinical rules.</li>
+      <li say="A virtue is a disposition built through practice, orienting clinical work.">A virtue is a disposition built through practice, orienting clinical work.</li>
+      <li say="Care combines four phases with focal virtues like discernment and integrity.">Care combines four phases with focal virtues like discernment and integrity.</li>
+      <li say="Care needs boundaries to stay sustainable, guarding against detachment and exhaustion.">Care needs boundaries to stay sustainable, guarding against detachment and exhaustion.</li>
+      <li say="Virtues complete biomedical principles, bringing empathy and perception to clinical rules. To finish, complete all exercises and both belief probes.">Virtues complete biomedical principles, bringing empathy and perception to clinical rules.</li>
     </ul>
     <p class="muted">Complete all exercises and both belief probes to finish.</p>
   </phil-slide>
@@ -474,6 +518,7 @@
   <!-- Further reading and AI acknowledgment -->
   <phil-slide id="further-reading">
     <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
     <ul class="phil-reading">
       <li>Maureen Sander-Staudt, “<a href="https://iep.utm.edu/care-ethics/">Care Ethics</a>,” <em>Internet Encyclopedia of Philosophy</em>. A free overview of Gilligan, Noddings, Held, and Tronto.</li>
       <li>Aristotle, <a href="https://www.gutenberg.org/ebooks/8438"><em>Nicomachean Ethics</em></a>, Book II. Virtue as a settled state, built by practice.</li>
@@ -481,7 +526,7 @@
       <li>Joan C. Tronto, <em>Moral Boundaries: A Political Argument for an Ethic of Care</em> (Routledge, 1993), chapters 4–5. Attentiveness, responsibility, competence, and responsiveness, in Tronto’s own words.</li>
       <li>Carol Gilligan, <em>In a Different Voice: Psychological Theory and Women’s Development</em> (Harvard University Press, 1982). The book that opened the care ethics debate.</li>
     </ul>
-    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

@@ -22,6 +22,7 @@
     <h1>The Cat at the Door</h1>
     <p class="lead">There's a knock. You are a mouse. On the other side is a very large, very polite cat.</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to The Cat at the Door. There's a knock. You are a mouse. On the other side is a very large, very polite cat. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
   </phil-slide>
 
   <!-- 2. The setup -->
@@ -29,11 +30,12 @@
     <img slot="art" src="./assets/mouse.png" alt="A nervous cartoon mouse">
     <h1>The Question</h1>
     <p class="lead">The cat smiles. "Good evening. I am simply <em>famished.</em> Could you tell me: <strong>where are the other mice hiding?</strong>"</p>
+    <phil-narration>The cat smiles and says it's famished. It asks where the other mice are hiding.</phil-narration>
     <ul reveal>
-      <li>Your friends are crammed behind the wall, holding their breath.</li>
-      <li>Tell the truth, and they're dinner.</li>
-      <li>So, do you <strong>lie</strong> to the cat?</li>
-      <li>A utilitarian mouse would just run the numbers. Tonight you meet a philosopher who says the numbers are beside the point.</li>
+      <li say="Your friends are crammed behind the wall, holding their breath.">Your friends are crammed behind the wall, holding their breath.</li>
+      <li say="Tell the truth, and they're dinner.">Tell the truth, and they're dinner.</li>
+      <li say="So, do you lie to the cat?">So, do you <strong>lie</strong> to the cat?</li>
+      <li say="A utilitarian mouse would just run the numbers. Tonight you meet a philosopher who says the numbers are beside the point.">A utilitarian mouse would just run the numbers. Tonight you meet a philosopher who says the numbers are beside the point.</li>
     </ul>
   </phil-slide>
 
@@ -48,6 +50,8 @@
       <phil-statement>A moral rule only counts if you would want everyone in the world to follow it.</phil-statement>
       <phil-statement>Only beings that can reason deserve full moral respect.</phil-statement>
     </phil-beliefs>
+    <phil-narration>Before the trial, here are five quick gut-checks, with no right answers. Just say where you stand. We'll come back to them once the dream is over. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 1 — FOUNDATIONS ============ -->
@@ -62,6 +66,7 @@
     <h1>It's Not About Results</h1>
     <p>Kant's view contrasts sharply with utilitarianism. For him the only thing good <em>without qualification</em> is a <strong>good will</strong>: a will that acts because something is <strong>right</strong>, not because of how it turns out.</p>
     <p>Morality, then, is about acting from <strong>duty</strong>. Consequences do not decide what is right, not even saving your friends. The principle behind your act does.</p>
+    <phil-narration>Immanuel Kant, 1724 to 1804. Kant's view contrasts sharply with utilitarianism. For him, the only thing good without qualification is a good will. That's a will that acts because something is right, not because of how it turns out. Morality, then, is about acting from duty. Consequences do not decide what is right, not even saving your friends. The principle behind your act does.</phil-narration>
   </phil-slide>
 
   <!-- 4. Compare: from duty vs from inclination -->
@@ -78,16 +83,18 @@
         <p class="cake">Kind and lovely, but Kant says it carries no distinctively <em>moral</em> worth on its own.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Why you do it matters. Kant draws a sharp line between two motives that can produce the very same action. First, acting from duty, because it's right. You protect your friends because you recognize protecting them as the right thing to do. This has genuine moral worth for Kant. It would hold even if you did not feel like it. Second, acting from inclination, because you feel like it. You protect them only because you love them and it feels good. That's kind and lovely, but Kant says it carries no distinctively moral worth on its own.</phil-narration>
   </phil-slide>
 
   <!-- 5. Maxims -->
   <phil-slide>
     <h1>Every Act Has a Maxim</h1>
     <p>To judge an action, Kant says, look at its <strong>maxim</strong>: the personal principle you would be acting on.</p>
+    <phil-narration>To judge an action, Kant says, look at its maxim. That's the personal principle you would be acting on.</phil-narration>
     <ul reveal>
-      <li>Not "I'm scared," but the <em>rule</em>: <em>"I will lie whenever a lie spares someone harm."</em></li>
-      <li>The maxim is what gets tested, and the test is the same for every rational being.</li>
-      <li>So the real question isn't "what happens if I lie?" but <strong>"what am I willing to make a law for everyone?"</strong></li>
+      <li say="Not, I'm scared, but the rule: I will lie whenever a lie spares someone harm.">Not "I'm scared," but the <em>rule</em>: <em>"I will lie whenever a lie spares someone harm."</em></li>
+      <li say="The maxim is what gets tested, and the test is the same for every rational being.">The maxim is what gets tested, and the test is the same for every rational being.</li>
+      <li say="So the real question isn't, what happens if I lie? It's, what am I willing to make a law for everyone?">So the real question isn't "what happens if I lie?" but <strong>"what am I willing to make a law for everyone?"</strong></li>
     </ul>
   </phil-slide>
 
@@ -105,6 +112,7 @@
         <p class="cake">"Do not lie." No "if." This, Kant says, is the form of a genuine moral law.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Two kinds of ought. Commands come in two flavors, and only one is the home of morality. A hypothetical imperative commands a means to an end you happen to want. If you want to stay safe, keep quiet. Drop the want, and the command vanishes. A categorical imperative commands unconditionally. It binds any rational being, wants or no wants. Do not lie, with no if. This, Kant says, is the form of a genuine moral law.</phil-narration>
   </phil-slide>
 
   <!-- 7. Classify: hypothetical or categorical -->
@@ -121,6 +129,8 @@
       <phil-item answer="hyp" why="It commands a means to an end you want, getting home before dark, even without the word 'if'.">"To get home before dark, take the short path."</phil-item>
       <phil-item answer="cat" why="It binds even when stealing would serve your wants, so it holds unconditionally.">"Do not steal, even when you could get away with it."</phil-item>
     </phil-classify>
+    <phil-narration>Hypothetical or categorical? Sort each command into one of the two columns, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. A hypothetical imperative commands a means to an end you happen to want. A categorical imperative commands unconditionally, whatever you want.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 2 — THE THREE FORMULATIONS ============ -->
@@ -133,12 +143,14 @@
     <p class="lead">"Act only according to that maxim whereby you can at the same time will that it should become a universal law."</p>
     <p class="muted">In short: could you will that <em>everyone</em> act on your maxim? If universalizing it breaks something, it fails.</p>
     <p class="muted">This is not the Golden Rule. Kant himself said the Golden Rule could not serve as the moral law. It turns on what you would want done to you; his test holds whatever you want.</p>
+    <phil-narration>Formulation one: universal law. The categorical imperative has one core, stated several ways. The first goes like this. Act only according to that maxim whereby you can at the same time will that it should become a universal law. In short, could you will that everyone act on your maxim? If universalizing it breaks something, it fails. This is not the Golden Rule. Kant himself said the Golden Rule could not serve as the moral law. It turns on what you would want done to you. His test holds whatever you want.</phil-narration>
   </phil-slide>
 
   <!-- 9. Viz: the Universalizer -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Run the Machine</h1>
     <p>Feed a maxim into the Universalizer. It imagines a world where <strong>everyone</strong> acts on it, then reports what happens.</p>
+    <phil-narration>Run the machine. Feed a maxim into the Universalizer. It imagines a world where everyone acts on it, then reports what happens. Try the maxims and read what it reports. When you're ready, press Continue.</phil-narration>
     <phil-maxim-tester>
       <phil-maxim result="conception"
         universal="Everyone makes promises they don't intend to keep whenever it's useful."
@@ -172,11 +184,12 @@
   <phil-slide>
     <h1>So What About the Cat?</h1>
     <p>Now run your own maxim through the same test: <em>"I will lie whenever a lie spares someone harm."</em></p>
+    <phil-narration>So what about the cat? Now run your own maxim through the same test: I will lie whenever a lie spares someone harm.</phil-narration>
     <ul reveal>
-      <li>Imagine <strong>everyone</strong> lies whenever they judge it helpful.</li>
-      <li>Then a spoken assertion carries no weight, because nobody believes anyone.</li>
-      <li>But your lie only works <em>because</em> the cat expects the truth. Universalized, it undercuts itself.</li>
-      <li>On the Formula of Universal Law, then, the lie cannot pass. Hold that thought, because the modern Kantians will push back.</li>
+      <li say="Imagine everyone lies whenever they judge it helpful.">Imagine <strong>everyone</strong> lies whenever they judge it helpful.</li>
+      <li say="Then a spoken assertion carries no weight, because nobody believes anyone.">Then a spoken assertion carries no weight, because nobody believes anyone.</li>
+      <li say="But your lie only works because the cat expects the truth. Universalized, it undercuts itself.">But your lie only works <em>because</em> the cat expects the truth. Universalized, it undercuts itself.</li>
+      <li say="On the Formula of Universal Law, then, the lie cannot pass. Hold that thought, because the modern Kantians will push back.">On the Formula of Universal Law, then, the lie cannot pass. Hold that thought, because the modern Kantians will push back.</li>
     </ul>
   </phil-slide>
 
@@ -194,6 +207,7 @@
         <p class="cake">Yields an <strong>imperfect duty</strong>: real, but you choose how and when. Help others sometimes.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Two ways a maxim can fail. The machine flagged two different failures, and the difference between them defines two kinds of duty. First, a contradiction in conception. You can't even imagine it. Universalizing the maxim makes it self-destruct, as with lying and false promises. This yields a perfect duty: strict, with no exceptions. Do not lie. Second, a contradiction in the will. You can't rationally want it. You can picture the world, but couldn't rationally will it, as when no one ever helps. This yields an imperfect duty: real, but you choose how and when. Help others sometimes.</phil-narration>
   </phil-slide>
 
   <!-- 12. Cloze: FUL -->
@@ -208,6 +222,8 @@
       A maxim that can't even be conceived as universal violates a
       <phil-blank options="perfect,imperfect">perfect</phil-blank> duty.
     </phil-cloze>
+    <phil-narration>Say it back. Complete the first formulation and the duty it yields. Fill in each gap by choosing an option, then press Check.</phil-narration>
+    <phil-narration when="after">That's the Formula of Universal Law. A maxim that can't even be conceived as universal violates a perfect duty.</phil-narration>
   </phil-slide>
 
   <!-- 13. F2: Humanity -->
@@ -219,10 +235,11 @@
     <h1>Formulation 2: Humanity</h1>
     <p>Kant says the same law can be put a second way, in terms of <strong>respect for persons</strong>:</p>
     <p class="lead">"Act so that you treat humanity, whether in your own person or in that of another, never merely as a means, but always at the same time as an end."</p>
+    <phil-narration>Formulation two: humanity. Kant says the same law can be put a second way, in terms of respect for persons. Act so that you treat humanity, whether in your own person or in that of another, never merely as a means, but always at the same time as an end.</phil-narration>
     <ul reveal>
-      <li>Using someone <em>as a means</em> is fine. You use the cat for directions all the time.</li>
-      <li>The wrong is using them as a <strong>mere</strong> means, going around their rational agency instead of through it.</li>
-      <li>Deception does exactly that: a lie manipulates the cat with information he can't rationally evaluate.</li>
+      <li say="Using someone as a means is fine. You use the cat for directions all the time.">Using someone <em>as a means</em> is fine. You use the cat for directions all the time.</li>
+      <li say="The wrong is using them as a mere means, going around their rational agency instead of through it.">The wrong is using them as a <strong>mere</strong> means, going around their rational agency instead of through it.</li>
+      <li say="Deception does exactly that. A lie manipulates the cat with information he can't rationally evaluate.">Deception does exactly that: a lie manipulates the cat with information he can't rationally evaluate.</li>
     </ul>
   </phil-slide>
 
@@ -240,6 +257,8 @@
       <phil-item answer="mere" why="A false promise is deception. The lender agrees to a deal that isn't the real one.">You promise to repay a loan you never mean to repay</phil-item>
       <phil-item answer="fine" why="She sees the deal and accepts it freely.">You hire a carpenter at a price she freely accepts</phil-item>
     </phil-classify>
+    <phil-narration>Why lying offends the second formula. On the Formula of Humanity, does each act use someone merely as a means? Sort each act into a column, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Using people as a means is part of ordinary life. Deception goes around a person's reason instead of through it, and that is using someone merely as a means.</phil-narration>
   </phil-slide>
 
   <!-- 15. F3: Kingdom of Ends -->
@@ -247,10 +266,11 @@
     <img slot="art" src="./assets/crown.png" alt="A golden crown representing the Kingdom of Ends">
     <h1>Formulation 3: The Kingdom of Ends</h1>
     <p>The third formulation pictures the moral community the first two imply:</p>
+    <phil-narration>Formulation three: the Kingdom of Ends. The third formulation pictures the moral community the first two imply.</phil-narration>
     <ul reveal>
-      <li>Act as if you were a <strong>co-legislator</strong> of universal laws in a community of rational beings.</li>
-      <li>Each member is both author of the laws and bound by them, and each is an <strong>end in themselves</strong>.</li>
-      <li>Ask: could every rational being, the cat included, live under the law you're proposing to act on?</li>
+      <li say="Act as if you were a co-legislator of universal laws in a community of rational beings.">Act as if you were a <strong>co-legislator</strong> of universal laws in a community of rational beings.</li>
+      <li say="Each member is both author of the laws and bound by them, and each is an end in themselves.">Each member is both author of the laws and bound by them, and each is an <strong>end in themselves</strong>.</li>
+      <li say="Ask: could every rational being, the cat included, live under the law you're proposing to act on?">Ask: could every rational being, the cat included, live under the law you're proposing to act on?</li>
     </ul>
   </phil-slide>
 
@@ -265,6 +285,8 @@
       <phil-statement>The Golden Rule: treat others the way you would want to be treated</phil-statement>
       <phil-statement>Non-Use: never rely on another person for your own purposes in any way</phil-statement>
     </phil-checkset>
+    <phil-narration>Sort the formulations. Check each statement that correctly describes one of Kant's formulations of the categorical imperative. Then press Check answers.</phil-narration>
+    <phil-narration when="after">Exactly. Universal Law, Humanity, and the Kingdom of Ends are three angles on one principle. The Golden Rule asks what you would want. Kant asks what could hold as a law for everyone.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 3 — WHO COUNTS? ============ -->
@@ -274,10 +296,11 @@
     <img slot="art" src="./assets/crown.png" alt="Crown">
     <h1>Who Gets to Be an "End"?</h1>
     <p>Kant's respect is owed to a specific class. He calls them <strong>persons</strong>: rational beings capable of setting their own ends and acting on reasons.</p>
+    <phil-narration>Who gets to be an end? Kant's respect is owed to a specific class. He calls them persons: rational beings capable of setting their own ends and acting on reasons.</phil-narration>
     <ul reveal>
-      <li>Such beings have <strong>dignity</strong> rather than a price. They cannot be traded off or used up.</li>
-      <li>That's exactly why deception and coercion are so serious: they override a rational will.</li>
-      <li>In our cartoon the mouse and the cat both talk and reason, so both qualify as persons.</li>
+      <li say="Such beings have dignity rather than a price. They cannot be traded off or used up.">Such beings have <strong>dignity</strong> rather than a price. They cannot be traded off or used up.</li>
+      <li say="That's exactly why deception and coercion are so serious. They override a rational will.">That's exactly why deception and coercion are so serious: they override a rational will.</li>
+      <li say="In our cartoon, the mouse and the cat both talk and reason, so both qualify as persons.">In our cartoon the mouse and the cat both talk and reason, so both qualify as persons.</li>
     </ul>
   </phil-slide>
 
@@ -286,10 +309,11 @@
     <img slot="art" src="./assets/mouse.png" alt="Mouse">
     <h1>The Twist: Real Animals</h1>
     <p>Here's where Kant's own view bites. He held that <strong>animals are not ends in themselves</strong>, because they aren't rational agents.</p>
+    <phil-narration>The twist: real animals. Here's where Kant's own view bites. He held that animals are not ends in themselves, because they aren't rational agents.</phil-narration>
     <ul reveal>
-      <li>So we have no <em>direct</em> duties to them, only <strong>indirect</strong> ones. He says this in his <em>Lectures on Ethics</em>.</li>
-      <li>Cruelty to animals is wrong, he argued, because it <strong>hardens us</strong> and corrodes how we treat fellow humans.</li>
-      <li>The sting: by Kant's real standard, a <em>literal</em> mouse wouldn't count at all. Only our reasoning, talking cartoon mouse does.</li>
+      <li say="So we have no direct duties to them, only indirect ones. He says this in his Lectures on Ethics.">So we have no <em>direct</em> duties to them, only <strong>indirect</strong> ones. He says this in his <em>Lectures on Ethics</em>.</li>
+      <li say="Cruelty to animals is wrong, he argued, because it hardens us and corrodes how we treat fellow humans.">Cruelty to animals is wrong, he argued, because it <strong>hardens us</strong> and corrodes how we treat fellow humans.</li>
+      <li say="The sting: by Kant's real standard, a literal mouse wouldn't count at all. Only our reasoning, talking cartoon mouse does.">The sting: by Kant's real standard, a <em>literal</em> mouse wouldn't count at all. Only our reasoning, talking cartoon mouse does.</li>
     </ul>
   </phil-slide>
 
@@ -303,6 +327,8 @@
       <phil-choice feedback="Consent is a Kantian idea, but Kant only extends it to beings he counts as rational. On his own view a mouse can neither give it nor withhold it, so this cannot be his reason.">Because the animal never consented to being treated that way.</phil-choice>
       <phil-choice feedback="That is the sentientist answer, and Kant does not take it. On his own view the animal&#39;s pain is not what grounds the duty.">Because the animal&#39;s suffering is a harm that counts in itself.</phil-choice>
     </phil-mcq>
+    <phil-narration>Kant on a real animal. On Kant's own view, why is it wrong to torment a real, non-talking animal? Pick an answer.</phil-narration>
+    <phil-narration when="after">Right. For Kant this is an indirect duty. The animal isn't an end in itself. The wrong is what cruelty does to our own moral character.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 4 — KANT'S HARD LINE ============ -->
@@ -316,11 +342,12 @@
     <span class="phil-date">"On a Supposed Right to Lie" · 1797</span>
     <h1>Kant Bites the Bullet</h1>
     <p>This case is really Kant's. The writer <strong>Benjamin Constant</strong> objected: surely you may lie to a murderer who asks where your friend is hiding.</p>
+    <phil-narration>Kant bites the bullet. This case is really Kant's. In 1797, in On a Supposed Right to Lie, he answered the writer Benjamin Constant. Constant objected: surely you may lie to a murderer who asks where your friend is hiding.</phil-narration>
     <ul reveal>
-      <li>Kant's reply: <strong>no.</strong> Truthfulness is an unconditional duty; you may not lie even here.</li>
-      <li>His reasoning: you answer for your own <em>lie</em>, but not for what the murderer freely chooses to do with the truth.</li>
-      <li>Tell the truth and harm follows? That's on the murderer. Lie and anything goes wrong? That's on you.</li>
-      <li>Many readers find this conclusion deeply troubling. It is the door the modern Kantians walk through.</li>
+      <li say="Kant's reply: no. Truthfulness is an unconditional duty. You may not lie even here.">Kant's reply: <strong>no.</strong> Truthfulness is an unconditional duty; you may not lie even here.</li>
+      <li say="His reasoning: you answer for your own lie, but not for what the murderer freely chooses to do with the truth.">His reasoning: you answer for your own <em>lie</em>, but not for what the murderer freely chooses to do with the truth.</li>
+      <li say="Tell the truth and harm follows? That's on the murderer. Lie and anything goes wrong? That's on you.">Tell the truth and harm follows? That's on the murderer. Lie and anything goes wrong? That's on you.</li>
+      <li say="Many readers find this conclusion deeply troubling. It is the door the modern Kantians walk through.">Many readers find this conclusion deeply troubling. It is the door the modern Kantians walk through.</li>
     </ul>
   </phil-slide>
 
@@ -330,6 +357,8 @@
   <phil-slide id="later-kantians">
     <h1>Decision Point: The Cat Is Still at the Door</h1>
     <p class="muted">Not graded. The question the whole lesson opens with, now that you know what Kant answers.</p>
+    <phil-narration>Decision point: the cat is still at the door. This is the question the whole lesson opens with, now that you know what Kant answers. Kant says you may not lie, even here, even now. The cat is waiting. What do you actually do? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">The third option is the one most people never think of. Kant forbids lying, not silence. Whether that is a real escape or a technicality is one of the oldest arguments about this passage.</phil-narration>
     <phil-poll prompt="Kant says you may not lie, even here, even now. The cat is waiting. What do you actually do?"
                explain="The third option is the one most people never think of, and Kant has room for it: he forbids lying, not silence. Refusing to speak does not assert anything false, so it does not use the cat&#39;s reason against him — and it may well cost you. Whether that is a real escape or a technicality is one of the oldest arguments about this passage."
       >
@@ -342,9 +371,10 @@
   <phil-slide>
     <h1>Keep the Framework, Lose the Verdict?</h1>
     <p>Later Kantians admire the apparatus of universal law, dignity and ends in themselves. They think Kant misapplied it at the door. Two of the most important:</p>
+    <phil-narration>Keep the framework, lose the verdict? Later Kantians admire the apparatus of universal law, dignity, and ends in themselves. They think Kant misapplied it at the door. Two of the most important are these.</phil-narration>
     <ul reveal>
-      <li><strong>Christine Korsgaard</strong>: on lying to evildoers, and on who counts.</li>
-      <li><strong>Onora O'Neill</strong>: on deception and coercion as the core wrongs.</li>
+      <li say="Christine Korsgaard, on lying to evildoers, and on who counts."><strong>Christine Korsgaard</strong>: on lying to evildoers, and on who counts.</li>
+      <li say="Onora O'Neill, on deception and coercion as the core wrongs."><strong>Onora O'Neill</strong>: on deception and coercion as the core wrongs.</li>
     </ul>
   </phil-slide>
 
@@ -366,6 +396,7 @@
         <p class="cake">A maxim like "deceive a deceiver to thwart violence" can be universalized; you needn't cooperate with his evil. The Universal Law formula can permit the lie.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>Korsgaard: dealing with evil. In The Right to Lie: Kant on Dealing with Evil, from 1986, Korsgaard argues that Kant's own test, applied honestly to the situation, gives a different answer. First, orthodox Kant: never lie. Truthfulness is unconditional. Even to the cat, you may not lie, as in the 1797 essay. You answer for your lie. What the cat does with the truth is his affair. Now Korsgaard, on dealing with evil. Ideal rules assume everyone complies. The cat does not comply. He is using coercion to do murder. A maxim like, deceive a deceiver to thwart violence, can be universalized. You needn't cooperate with his evil. The Universal Law formula can permit the lie.</phil-narration>
   </phil-slide>
 
   <!-- 23b. Classify: Kant or Korsgaard -->
@@ -382,6 +413,8 @@
       <phil-item answer="kant" why="Kant treats truthfulness as a duty with no exceptions.">"Truthfulness is an unconditional duty."</phil-item>
       <phil-item answer="kors" why="Korsgaard: the cat is using coercion to do murder, and you needn't cooperate with his evil.">"You need not cooperate with a coercer's evil, so you may lie to him."</phil-item>
     </phil-classify>
+    <phil-narration>Kant or Korsgaard? The cat is at the door. Who would say each of these lines, Kant or Korsgaard? Sort each one, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Kant holds truthfulness to be unconditional. Korsgaard argues that the cat is a coercer, so a maxim of deceiving him to thwart violence can pass the universal-law test.</phil-narration>
   </phil-slide>
 
   <!-- 24. O'Neill -->
@@ -392,10 +425,11 @@
     </phil-thinker>
     <h1>O'Neill: Deception &amp; Coercion</h1>
     <p>Onora O'Neill builds her Kantian ethics around the Formula of Humanity, read through one practical test: <strong>could those affected actually consent to what you're doing?</strong></p>
+    <phil-narration>O'Neill: deception and coercion. Onora O'Neill builds her Kantian ethics around the Formula of Humanity, read through one practical test. Could those affected actually consent to what you're doing?</phil-narration>
     <ul reveal>
-      <li>The two clearest ways to treat someone as a <em>mere means</em> are <strong>deception</strong> and <strong>coercion</strong>. Both make genuine consent impossible.</li>
-      <li>Real moral principles are ones <strong>everyone could adopt</strong> and act on together.</li>
-      <li>Apply it at the door: the <strong>cat</strong> is trying to coerce and exploit you; the hidden <strong>mice</strong> can't consent to being handed over. Whose agency are you really required to respect?</li>
+      <li say="The two clearest ways to treat someone as a mere means are deception and coercion. Both make genuine consent impossible.">The two clearest ways to treat someone as a <em>mere means</em> are <strong>deception</strong> and <strong>coercion</strong>. Both make genuine consent impossible.</li>
+      <li say="Real moral principles are ones everyone could adopt and act on together.">Real moral principles are ones <strong>everyone could adopt</strong> and act on together.</li>
+      <li say="Apply it at the door. The cat is trying to coerce and exploit you. The hidden mice can't consent to being handed over. Whose agency are you really required to respect? O'Neill gives you the test. She leaves you to weigh the case honestly with it.">Apply it at the door: the <strong>cat</strong> is trying to coerce and exploit you; the hidden <strong>mice</strong> can't consent to being handed over. Whose agency are you really required to respect?</li>
     </ul>
     <p class="muted">O'Neill gives you the test; she leaves you to weigh the case honestly with it.</p>
   </phil-slide>
@@ -418,12 +452,15 @@
         <p class="cake">The real mouse counts in its own right. So, for that matter, would the cat.</p>
       </phil-side>
     </phil-compare>
+    <phil-narration>And the real mouse? Korsgaard also reopens who counts. In Fellow Creatures, from 2018, she argues Kant got animals wrong. First, Kant: indirect duties only. Animals aren't rational, so they're not ends in themselves. We owe them only indirect duties. A real mouse at your door? On Kant's view, no standing of its own. Now Korsgaard, on fellow creatures. Creatures for whom things can be good or bad are ends in themselves too, so we owe them direct duties. The real mouse counts in its own right. So, for that matter, would the cat.</phil-narration>
   </phil-slide>
 
   <!-- 26. Checkset: Kantian vs utilitarian -->
   <phil-slide>
     <h1>Decision Point: Is That Still Kant?</h1>
     <p class="muted">Not graded, and it is a question about how philosophy works as much as about animals.</p>
+    <phil-narration>Decision point: is that still Kant? It's a question about how philosophy works as much as about animals. Korsgaard keeps Kant's framework and reverses his verdict on animals. Is the result still Kantian? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">This is worth separating from the animal question itself. A framework can be more consistent than the person who built it. Whether that is repair or replacement is a judgment about which part of a theory is load-bearing.</phil-narration>
     <phil-poll prompt="Korsgaard keeps Kant&#39;s framework and reverses his verdict on animals. Is the result still Kantian?"
                explain="This is worth separating from the animal question itself. A framework can be more consistent than the person who built it — Kant grounded status in rationality, and Korsgaard argues that what really does the work in his own argument is having a good of your own. Whether that is repair or replacement is a judgment about which part of a theory is load-bearing."
       >
@@ -443,6 +480,8 @@
       <phil-statement>Refuse because you would not want to be betrayed yourself</phil-statement>
       <phil-statement>Refuse on the ground that lying has always felt wrong to you</phil-statement>
     </phil-checkset>
+    <phil-narration>Stay Kantian. Check each response to the cat that rests on Kantian grounds. Then press Check answers.</phil-narration>
+    <phil-narration when="after">Nicely sorted. The Golden Rule grounds the duty in what you happen to want, and Kant wants a ground that holds whatever you want. And a feeling that lying is wrong is an inclination, which carries no moral worth for Kant even when the act is right.</phil-narration>
   </phil-slide>
 
   <!-- ============ DECIDE ============ -->
@@ -452,6 +491,8 @@
     <h1>Revisit Your Instincts</h1>
     <p>Here is where you started, before the trial. Re-rate each one and see whether anything has shifted. Staying put is fine; the question is whether you can now say <em>why</em>.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>Revisit your instincts. Here is where you started, before the trial. Re-rate each one and see whether anything has shifted. Staying put is fine. The question is whether you can now say why. When you're done, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, back to the cat.</phil-narration>
   </phil-slide>
 
   <!-- 27. The mouse decides -->
@@ -459,11 +500,12 @@
     <img slot="art" src="./assets/mouse.png" alt="The mouse, resolved">
     <h1>The Mouse Decides</h1>
     <p class="lead">The cat is still waiting. Now you have more than a gut feeling. You have a framework.</p>
+    <phil-narration>The mouse decides. The cat is still waiting. Now you have more than a gut feeling. You have a framework.</phil-narration>
     <ul reveal>
-      <li><strong>Kant</strong>: act only on maxims you could universalize, and treat every rational being as an end, never a mere means.</li>
-      <li><strong>Kant's hard line</strong>: truthfulness is unconditional. Even here, do not lie.</li>
-      <li><strong>Korsgaard</strong>: dealing with evil is different, and you need not cooperate with a coercer. Real animals count too.</li>
-      <li><strong>O'Neill</strong>: the deep wrongs are deception and coercion, so ask who could really consent.</li>
+      <li say="Kant: act only on maxims you could universalize, and treat every rational being as an end, never a mere means."><strong>Kant</strong>: act only on maxims you could universalize, and treat every rational being as an end, never a mere means.</li>
+      <li say="Kant's hard line: truthfulness is unconditional. Even here, do not lie."><strong>Kant's hard line</strong>: truthfulness is unconditional. Even here, do not lie.</li>
+      <li say="Korsgaard: dealing with evil is different, and you need not cooperate with a coercer. Real animals count too."><strong>Korsgaard</strong>: dealing with evil is different, and you need not cooperate with a coercer. Real animals count too.</li>
+      <li say="O'Neill: the deep wrongs are deception and coercion, so ask who could really consent. Visit every slide, answer every question correctly, and submit both belief probes to fill the bar and finally answer the cat."><strong>O'Neill</strong>: the deep wrongs are deception and coercion, so ask who could really consent.</li>
     </ul>
     <p class="muted">Visit every slide, answer every question correctly, and submit both belief probes to fill the bar and finally answer the cat.</p>
   </phil-slide>
@@ -471,6 +513,7 @@
   <!-- Further reading and AI acknowledgment -->
   <phil-slide id="further-reading">
     <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
     <ul class="phil-reading">
       <li>Immanuel Kant, <em>Groundwork of the Metaphysics of Morals</em> (1785), sections 1 and 2. <a href="https://www.gutenberg.org/ebooks/5682">Read online</a> (as <em>Fundamental Principles of the Metaphysic of Morals</em>). The good will, duty, and the formulas of the categorical imperative.</li>
       <li>Immanuel Kant, “On a Supposed Right to Lie from Philanthropy” (1797), in <em>Practical Philosophy</em>, trans. Mary J. Gregor (Cambridge University Press, 1996). Kant's short, hard-line reply to Constant about the murderer at the door.</li>
@@ -478,7 +521,7 @@
       <li>Onora O'Neill, “Between Consenting Adults,” <em>Philosophy &amp; Public Affairs</em> 14, no. 3 (1985): 252–277. Deception and coercion as the central wrongs, tested by possible consent.</li>
       <li>Robert Johnson and Adam Cureton, “Kant's Moral Philosophy,” <em>Stanford Encyclopedia of Philosophy</em> (2004, rev. 2025). <a href="https://plato.stanford.edu/entries/kant-moral/">Read online</a>. A guide to the formulations and the duties they yield.</li>
     </ul>
-    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

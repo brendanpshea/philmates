@@ -23,6 +23,7 @@
     <h1>House Calls in the Hedgerow</h1>
     <p class="lead">You're the new doctor in a village of talking animals. Your patients are clever, stubborn, and absolutely intend to make their own decisions.</p>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and to reveal points one at a time. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to House Calls in the Hedgerow. You're the new doctor in a village of talking animals. Your patients are clever, stubborn, and absolutely intend to make their own decisions. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
   </phil-slide>
 
   <!-- 2. Setup -->
@@ -30,10 +31,11 @@
     <img slot="art" src="./assets/peter-rabbit.png" alt="Peter Rabbit looking guilty">
     <h1>Your Job, Really</h1>
     <p class="lead">"Curing them is the easy part," the old doctor warns before retiring. "Respecting them is the trick."</p>
+    <phil-narration>Your first lesson comes before you've even seen a patient. The old doctor warns you that curing them is the easy part. Respecting them is the trick.</phil-narration>
     <ul reveal>
-      <li>One question runs through the whole round: <strong>how much may you influence what a patient decides?</strong></li>
-      <li>Push too hard and their choice stops being theirs. Say nothing and you have abandoned them to it.</li>
-      <li>You will learn what makes consent real, and then meet four doctors who answer that question four different ways.</li>
+      <li say="One question runs through the whole round. How much may you influence what a patient decides?">One question runs through the whole round: <strong>how much may you influence what a patient decides?</strong></li>
+      <li say="Push too hard, and their choice stops being theirs. Say nothing, and you've abandoned them to it.">Push too hard and their choice stops being theirs. Say nothing and you have abandoned them to it.</li>
+      <li say="You'll learn what makes consent real. Then you'll meet four doctors who answer that question four different ways.">You will learn what makes consent real, and then meet four doctors who answer that question four different ways.</li>
     </ul>
   </phil-slide>
 
@@ -48,6 +50,8 @@
       <phil-statement>Pressuring a patient "for their own good" is sometimes acceptable.</phil-statement>
       <phil-statement>Part of a doctor's job is helping patients work out what they truly value.</phil-statement>
     </phil-beliefs>
+    <phil-narration>Before your first patient, tell me where you stand. Rate each of these five statements. There are no right answers, and we'll come back to them at the end. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 1 — INFORMED CONSENT ============ -->
@@ -56,10 +60,11 @@
   <phil-slide>
     <h1>Why Consent Matters</h1>
     <p>Treatment without consent is something done <em>to</em> a patient, however well-meant it is. Consent is what makes it something done <strong>with</strong> them.</p>
+    <phil-narration>Treatment without consent is something done to a patient, however well meant. Consent is what makes it something done with them.</phil-narration>
     <ul reveal>
-      <li>It's the practical face of <strong>respect for autonomy</strong>: their body, their call.</li>
-      <li>It is not one thing either. Valid <em>informed</em> consent has <strong>five ingredients</strong>.</li>
-      <li>Miss any one, and the "consent" is hollow.</li>
+      <li say="It's the practical face of respect for autonomy. Their body, their call.">It's the practical face of <strong>respect for autonomy</strong>: their body, their call.</li>
+      <li say="And consent isn't one thing. Valid, informed consent has five ingredients.">It is not one thing either. Valid <em>informed</em> consent has <strong>five ingredients</strong>.</li>
+      <li say="Miss any one, and the consent is hollow.">Miss any one, and the "consent" is hollow.</li>
     </ul>
   </phil-slide>
 
@@ -68,11 +73,12 @@
     <img slot="art" src="./assets/doctor-bag.png" alt="Country doctor's medical bag">
     <h1>1 · Capacity</h1>
     <p>Can this patient make <em>this</em> decision, right now? Capacity isn't intelligence, and it isn't whether they agree with you. It is four specific abilities:</p>
+    <phil-narration>The first ingredient is capacity. Can this patient make this decision, right now? Capacity isn't intelligence, and it isn't whether they agree with you. It's four specific abilities.</phil-narration>
     <ul reveal>
-      <li><strong>Understand</strong> the facts.</li>
-      <li><strong>Appreciate</strong> that they apply to <em>you</em>.</li>
-      <li><strong>Reason</strong> through the trade-offs.</li>
-      <li><strong>Communicate</strong> a choice.</li>
+      <li say="Understand the facts."><strong>Understand</strong> the facts.</li>
+      <li say="Appreciate that the facts apply to them."><strong>Appreciate</strong> that they apply to <em>you</em>.</li>
+      <li say="Reason through the trade-offs."><strong>Reason</strong> through the trade-offs.</li>
+      <li say="Communicate a choice."><strong>Communicate</strong> a choice.</li>
     </ul>
   </phil-slide>
 
@@ -81,11 +87,12 @@
     <img slot="art" src="./assets/squirrel.png" alt="Squirrel Nutkin, impulsive and cheeky">
     <h1>Capacity: Squirrel Nutkin</h1>
     <p class="lead">Nutkin arrives with an infected bite from taunting Old Brown the owl.</p>
+    <phil-narration>Let's work through capacity with a case. Nutkin arrives with an infected bite from taunting Old Brown the owl.</phil-narration>
     <ul reveal>
-      <li>Untreated, the infection could kill him; he repeats this back accurately.</li>
-      <li>Yet he treats it as a joke: "Old Brown only just nicked me!"</li>
-      <li>He cannot take seriously that he might die, or weigh that against resting.</li>
-      <li>He understands the words but cannot appreciate that they apply to him.</li>
+      <li say="Untreated, the infection could kill him, and he repeats this back accurately.">Untreated, the infection could kill him; he repeats this back accurately.</li>
+      <li say="Yet he treats it as a joke. Old Brown only just nicked me, he says.">Yet he treats it as a joke: "Old Brown only just nicked me!"</li>
+      <li say="He can't take seriously that he might die, or weigh that against resting.">He cannot take seriously that he might die, or weigh that against resting.</li>
+      <li say="He understands the words, but he can't appreciate that they apply to him.">He understands the words but cannot appreciate that they apply to him.</li>
     </ul>
   </phil-slide>
 
@@ -94,11 +101,12 @@
     <img slot="art" src="./assets/peter-rabbit.png" alt="Peter Rabbit">
     <h1>2 · Disclosure</h1>
     <p>Peter is carried in with a hind leg broken in one of McGregor's snares, in the same garden that killed his father. Before he can choose well, he needs the whole picture:</p>
+    <phil-narration>The second ingredient is disclosure. Peter is carried in with a hind leg broken in one of McGregor's snares, in the same garden that killed his father. Before he can choose well, he needs the whole picture.</phil-narration>
     <ul reveal>
-      <li>The <strong>diagnosis</strong> (a bad break) and the <strong>proposed treatment</strong> (setting and splinting the leg).</li>
-      <li>Its <strong>risks</strong> (weeks penned up unable to run; it may still heal stiff) and <strong>benefits</strong> (a real chance at a leg that works).</li>
-      <li>The <strong>alternatives</strong>, which are rest alone or a riskier operation. Also what happens if he does <strong>nothing</strong>: likely lasting lameness, and a slow rabbit does not last long.</li>
-      <li>Quietly drop one option and you've made the choice for him.</li>
+      <li say="The diagnosis, a bad break, and the proposed treatment, setting and splinting the leg.">The <strong>diagnosis</strong> (a bad break) and the <strong>proposed treatment</strong> (setting and splinting the leg).</li>
+      <li say="Its risks: weeks penned up, unable to run, and it may still heal stiff. And its benefits: a real chance at a leg that works.">Its <strong>risks</strong> (weeks penned up unable to run; it may still heal stiff) and <strong>benefits</strong> (a real chance at a leg that works).</li>
+      <li say="The alternatives, which are rest alone or a riskier operation. Also what happens if he does nothing: likely lasting lameness, and a slow rabbit does not last long.">The <strong>alternatives</strong>, which are rest alone or a riskier operation. Also what happens if he does <strong>nothing</strong>: likely lasting lameness, and a slow rabbit does not last long.</li>
+      <li say="Quietly drop one option, and you've made the choice for him.">Quietly drop one option and you've made the choice for him.</li>
     </ul>
   </phil-slide>
 
@@ -106,6 +114,7 @@
   <phil-slide>
     <h1>How Much Must You Tell?</h1>
     <p>Two standards answer "what counts as enough disclosure?"</p>
+    <phil-narration>How much must you tell? Two standards answer what counts as enough disclosure. The reasonable-physician standard says to disclose what a typical doctor would in your shoes. The risk is that it lets the profession decide what patients get to know. The reasonable-patient standard says to disclose what a typical patient would want to know to decide. It's the modern standard, from the 1972 case Canterbury versus Spence. It centers the patient.</phil-narration>
     <phil-compare>
       <phil-side label="Reasonable-Physician" tag="What doctors tell">
         <p>Disclose what a <strong>typical doctor</strong> would in your shoes.</p>
@@ -123,11 +132,12 @@
     <img slot="art" src="./assets/peter-rabbit.png" alt="Peter Rabbit nodding along">
     <h1>3 · Understanding</h1>
     <p class="lead">Telling is not the same as getting through. Politeness makes patients nod along.</p>
+    <phil-narration>The third ingredient is understanding. Telling is not the same as getting through. Politeness makes patients nod along.</phil-narration>
     <ul reveal>
-      <li>Peter says "yes, set it," but secretly plans to raid the garden tomorrow.</li>
-      <li>So you check with teach-back: "What will the next weeks look like for you?"</li>
-      <li>Only when he says it back does it land: weeks splinted, unable to run.</li>
-      <li>That genuine dialogue is what consent rests on, not a polite nod.</li>
+      <li say="Peter says yes, set it, but he secretly plans to raid the garden tomorrow.">Peter says "yes, set it," but secretly plans to raid the garden tomorrow.</li>
+      <li say="So you check with teach-back. You ask, what will the next weeks look like for you?">So you check with teach-back: "What will the next weeks look like for you?"</li>
+      <li say="Only when he says it back does it land: weeks splinted, unable to run.">Only when he says it back does it land: weeks splinted, unable to run.</li>
+      <li say="That genuine dialogue is what consent rests on, not a polite nod.">That genuine dialogue is what consent rests on, not a polite nod.</li>
     </ul>
   </phil-slide>
 
@@ -136,11 +146,12 @@
     <img slot="art" src="./assets/jemima-duck.png" alt="Jemima Puddle-Duck in her bonnet and shawl">
     <h1>4 · Voluntariness</h1>
     <p class="lead">A choice must be the patient's own, free of coercion and manipulation.</p>
+    <phil-narration>The fourth ingredient is voluntariness. A choice must be the patient's own, free of coercion and manipulation.</phil-narration>
     <ul reveal>
-      <li>Jemima Puddle-Duck accepts the charming fox's offer of a quiet nesting shed.</li>
-      <li>Yet the fox conceals that dinner is her; her "yes" was engineered by deception.</li>
-      <li>In the clinic, half-truths that steer or coax a choice make consent hollow.</li>
-      <li>However sincere the patient's word, manipulated consent is not valid.</li>
+      <li say="Jemima Puddle-Duck accepts the charming fox's offer of a quiet nesting shed.">Jemima Puddle-Duck accepts the charming fox's offer of a quiet nesting shed.</li>
+      <li say="Yet the fox conceals that dinner is her. Her yes was engineered by deception.">Yet the fox conceals that dinner is her; her "yes" was engineered by deception.</li>
+      <li say="In the clinic, half-truths that steer or coax a choice make consent hollow.">In the clinic, half-truths that steer or coax a choice make consent hollow.</li>
+      <li say="However sincere the patient's word, manipulated consent is not valid.">However sincere the patient's word, manipulated consent is not valid.</li>
     </ul>
   </phil-slide>
 
@@ -148,6 +159,7 @@
   <phil-slide>
     <h1>Influence: Fair vs Foul</h1>
     <p>Not all influence is wrong, and doctors should try to persuade. The line is <em>how</em>.</p>
+    <phil-narration>Not all influence is wrong, and doctors should try to persuade. The line is how. Persuasion is fair. It appeals to the patient's own reason with true, relevant arguments. For example, here's why bed rest really will get you back to mischief sooner. That's legitimate. Manipulation or coercion is foul. It bypasses reason with lies, pressure, or threats. Think of the fox's flattery and half-truths. That's consent extracted, not given.</phil-narration>
     <phil-compare>
       <phil-side label="Persuasion" tag="Fair">
         <p>Appeal to the patient's <strong>own reason</strong> with true, relevant arguments.</p>
@@ -165,11 +177,12 @@
     <img slot="art" src="./assets/peter-rabbit.png" alt="Peter Rabbit authorizing care">
     <h1>5 · Authorization</h1>
     <p class="lead">Consent is an explicit act: the patient actually authorizes the plan, here and now.</p>
+    <phil-narration>The fifth ingredient is authorization. Consent is an explicit act. The patient actually authorizes the plan, here and now.</phil-narration>
     <ul reveal>
-      <li>Approving in his head is not enough; Peter must say "go ahead, set the leg."</li>
-      <li>It is permission handed to you, not permission you assume you already have.</li>
-      <li>And it can be withdrawn: if Peter changes his mind, that choice counts too.</li>
-      <li>Consent is an active, ongoing authorization rather than a one-time signature.</li>
+      <li say="Approving in his head is not enough. Peter must say, go ahead, set the leg.">Approving in his head is not enough; Peter must say "go ahead, set the leg."</li>
+      <li say="It's permission handed to you, not permission you assume you already have.">It is permission handed to you, not permission you assume you already have.</li>
+      <li say="And it can be withdrawn. If Peter changes his mind, that choice counts too.">And it can be withdrawn: if Peter changes his mind, that choice counts too.</li>
+      <li say="Consent is an active, ongoing authorization, rather than a one-time signature.">Consent is an active, ongoing authorization rather than a one-time signature.</li>
     </ul>
   </phil-slide>
 
@@ -177,6 +190,7 @@
   <phil-slide id="consent-pathway">
     <h1>The Consent Pathway</h1>
     <p class="lead">How clinical consent functions in practice: five sequential safeguards protect patient autonomy.</p>
+    <phil-narration>Here's how clinical consent works in practice. Five safeguards protect patient autonomy, in order. First, assess capacity. Then give adequate disclosure. Then verify understanding with teach-back. Then make sure the choice is voluntary, without coercion. That leads to the patient's authorization, or a respected refusal. If capacity is absent, turn to a surrogate. If it's present, a competent refusal must be honored.</phil-narration>
     <figure class="phil-figure">
       <img src="./assets/consent-flow.svg" alt="Flowchart showing informed consent sequence: assess 4-ability capacity, provide adequate disclosure, verify understanding via teach-back, ensure voluntariness without coercion, leading to patient authorization or respected refusal.">
       <figcaption>The five ingredients in clinical sequence. If capacity is absent, turn to surrogacy; if present, competent refusal must be honored.</figcaption>
@@ -184,8 +198,9 @@
   </phil-slide>
 
   <!-- 12. Viz: consent-o-meter -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Test It: The Consent-o-Meter</h1>
+    <phil-narration>Now test it with the consent-o-meter. Peter is alert and in pain, with a hind leg broken in McGregor's snare. You propose setting and splinting it. That means weeks of rest, a good chance of a working leg, and no guarantee. Toggle each element his case actually has. All five, or the consent is not valid. When you're ready, press Continue.</phil-narration>
     <p><strong>Toggle each element Peter's case actually has.</strong> All five, or the consent is not valid.</p>
     <phil-consent
         case="Peter is alert and in pain, a hind leg broken in McGregor's snare. You propose setting and splinting it: weeks of rest, a good chance of a working leg, no guarantee."
@@ -212,6 +227,8 @@
       <phil-statement>The doctor approves of the patient's choice</phil-statement>
       <phil-statement>A witness signs the consent form</phil-statement>
     </phil-checkset>
+    <phil-narration>Name the ingredients. Check every genuine element of valid informed consent, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Capacity, disclosure, understanding, voluntariness, and authorization. A doctor's approval or a witness's signature might be on the form, but neither is what makes consent valid.</phil-narration>
   </phil-slide>
 
   <!-- 14. Classify: diagnose the defect -->
@@ -231,16 +248,19 @@
       <phil-item answer="auth" why="Consent is an explicit act. Approving in his head is not authorizing the plan.">Peter approves the plan in his head, but never says go ahead</phil-item>
       <phil-item answer="vol" why="That is a threat, which is coercion. A coerced yes is not voluntary.">A doctor threatens to tell Peter's mother unless he agrees</phil-item>
     </phil-classify>
+    <phil-narration>Diagnose the defect. Each case has one defect. Sort each case under the ingredient of consent that is missing. When every case is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Capacity is the ability to decide. Disclosure is what you tell. Understanding is whether it landed. Voluntariness rules out manipulation and threats. Authorization is the patient actually saying go ahead.</phil-narration>
   </phil-slide>
 
   <!-- 16. Exceptions -->
   <phil-slide>
     <h1>When the Rules Bend</h1>
     <p>A few situations modify (but don't abolish) consent:</p>
+    <phil-narration>A few situations modify consent, but they don't abolish it.</phil-narration>
     <ul reveal>
-      <li><strong>Emergencies</strong>: if a patient is unconscious and the need is urgent, consent is presumed.</li>
-      <li><strong>Waiver</strong>: a competent patient may choose not to be informed, within limits.</li>
-      <li><strong>Incapacity</strong>: when a patient genuinely cannot decide, you turn to a <strong>surrogate</strong>, guided by the patient's wishes and interests.</li>
+      <li say="Emergencies. If a patient is unconscious and the need is urgent, consent is presumed."><strong>Emergencies</strong>: if a patient is unconscious and the need is urgent, consent is presumed.</li>
+      <li say="Waiver. A competent patient may choose not to be informed, within limits."><strong>Waiver</strong>: a competent patient may choose not to be informed, within limits.</li>
+      <li say="Incapacity. When a patient genuinely can't decide, you turn to a surrogate, guided by the patient's wishes and interests."><strong>Incapacity</strong>: when a patient genuinely cannot decide, you turn to a <strong>surrogate</strong>, guided by the patient's wishes and interests.</li>
     </ul>
   </phil-slide>
 
@@ -251,10 +271,11 @@
     <img slot="art" src="./assets/doctor-bag.png" alt="Doctor's bag">
     <h1>Four Ways to Be a Doctor</h1>
     <p>Peter's leg has healed, and he tells you he is going straight back to McGregor's garden, the one that snared him and killed his father.</p>
+    <phil-narration>Now, four ways to be a doctor. Peter's leg has healed. He tells you he's going straight back to McGregor's garden, the one that snared him and killed his father.</phil-narration>
     <ul reveal>
-      <li>Run the five ingredients. He has <strong>capacity</strong>, you <strong>disclosed</strong> the risk, he <strong>understood</strong> it, nobody pressured him, and he <strong>authorized</strong> his own discharge.</li>
-      <li>The consent is perfect. Every box is ticked. And he is going to be killed in that garden.</li>
-      <li>So consent was never the whole job. Ezekiel and Linda Emanuel (1992) mapped <strong>four answers</strong> to what is left of it.</li>
+      <li say="Run the five ingredients. He has capacity. You disclosed the risk. He understood it. Nobody pressured him. And he authorized his own discharge.">Run the five ingredients. He has <strong>capacity</strong>, you <strong>disclosed</strong> the risk, he <strong>understood</strong> it, nobody pressured him, and he <strong>authorized</strong> his own discharge.</li>
+      <li say="The consent is perfect. Every box is ticked. And he is going to be killed in that garden.">The consent is perfect. Every box is ticked. And he is going to be killed in that garden.</li>
+      <li say="So consent was never the whole job. In 1992, Ezekiel and Linda Emanuel mapped four answers to what is left of it.">So consent was never the whole job. Ezekiel and Linda Emanuel (1992) mapped <strong>four answers</strong> to what is left of it.</li>
     </ul>
   </phil-slide>
 
@@ -262,10 +283,11 @@
   <phil-slide>
     <h1>Model 1 · Paternalistic</h1>
     <p>The doctor as <strong>guardian</strong>: you determine what is best and the patient assents.</p>
+    <phil-narration>Model one is the paternalistic doctor, the doctor as guardian. You determine what is best, and the patient assents.</phil-narration>
     <ul reveal>
-      <li><em>With Peter:</em> you refuse to discharge him, or you tell his mother. The garden is not up for discussion.</li>
-      <li>Autonomy here shrinks to <strong>assenting</strong> to what the expert has already decided.</li>
-      <li>Fine in a true emergency. Presumptuous almost everywhere else, and it makes his valid consent count for nothing.</li>
+      <li say="With Peter, you refuse to discharge him, or you tell his mother. The garden is not up for discussion."><em>With Peter:</em> you refuse to discharge him, or you tell his mother. The garden is not up for discussion.</li>
+      <li say="Autonomy here shrinks to assenting to what the expert has already decided.">Autonomy here shrinks to <strong>assenting</strong> to what the expert has already decided.</li>
+      <li say="Fine in a true emergency. Presumptuous almost everywhere else, and it makes his valid consent count for nothing.">Fine in a true emergency. Presumptuous almost everywhere else, and it makes his valid consent count for nothing.</li>
     </ul>
   </phil-slide>
 
@@ -274,16 +296,18 @@
     <img slot="art" src="./assets/hedgehog.png" alt="Mrs Tiggy-Winkle, sensible">
     <h1>Model 2 · Informative</h1>
     <p>The doctor as <strong>technician</strong>: you supply the facts; the patient supplies the values and chooses.</p>
+    <phil-narration>Model two is the informative doctor, the doctor as technician. You supply the facts. The patient supplies the values and chooses.</phil-narration>
     <ul reveal>
-      <li><em>With Peter:</em> nothing. You told him the risk, he understood it, he chose. Your job finished when the consent did.</li>
-      <li>Autonomy = <strong>control</strong>: the patient picks, you execute. Mrs. Tiggy-Winkle wants precisely this.</li>
-      <li>The risk: a doctor reduced to a vending machine, watching a patient walk into a garden that killed his father.</li>
+      <li say="With Peter, nothing. You told him the risk, he understood it, and he chose. Your job finished when the consent did."><em>With Peter:</em> nothing. You told him the risk, he understood it, he chose. Your job finished when the consent did.</li>
+      <li say="Autonomy here means control. The patient picks, and you execute. Mrs. Tiggy-Winkle wants precisely this.">Autonomy = <strong>control</strong>: the patient picks, you execute. Mrs. Tiggy-Winkle wants precisely this.</li>
+      <li say="The risk is a doctor reduced to a vending machine, watching a patient walk into a garden that killed his father.">The risk: a doctor reduced to a vending machine, watching a patient walk into a garden that killed his father.</li>
     </ul>
   </phil-slide>
 
   <!-- 20. Compare: paternalistic vs informative -->
   <phil-slide>
     <h1>The Two Extremes</h1>
+    <phil-narration>Here are the two extremes. In the paternalistic model, the doctor chooses and the patient assents. The doctor says, I know what is best for you, Peter. Carrots, no garden. In the informative model, the doctor informs and the patient chooses unaided. The doctor says, here are the facts and the options. Your call entirely.</phil-narration>
     <phil-compare>
       <phil-side label="Paternalistic" tag="Doctor decides">
         <p>The doctor chooses; the patient <strong>assents</strong>.</p>
@@ -300,10 +324,11 @@
   <phil-slide>
     <h1>Model 3 · Interpretive</h1>
     <p>The doctor as <strong>counselor</strong>: you help the patient figure out what <em>they</em> already value, then choose to fit it.</p>
+    <phil-narration>Model three is the interpretive doctor, the doctor as counselor. You help the patient figure out what they already value, then choose to fit it.</phil-narration>
     <ul reveal>
-      <li><em>With Peter:</em> you ask what the garden is really for. Is it the carrots, or is it proving something to himself about his father?</li>
-      <li>You help him put that into words, without adding any view of your own about what he ought to want.</li>
-      <li>Autonomy = <strong>self-understanding</strong>: choosing in line with who he actually is, once he can see it.</li>
+      <li say="With Peter, you ask what the garden is really for. Is it the carrots, or is it proving something to himself about his father?"><em>With Peter:</em> you ask what the garden is really for. Is it the carrots, or is it proving something to himself about his father?</li>
+      <li say="You help him put that into words, without adding any view of your own about what he ought to want.">You help him put that into words, without adding any view of your own about what he ought to want.</li>
+      <li say="Autonomy here means self-understanding: choosing in line with who he actually is, once he can see it.">Autonomy = <strong>self-understanding</strong>: choosing in line with who he actually is, once he can see it.</li>
     </ul>
   </phil-slide>
 
@@ -311,16 +336,18 @@
   <phil-slide>
     <h1>Model 4 · Deliberative</h1>
     <p>The doctor as <strong>teacher and friend</strong>: you engage the patient about which <em>health-related values</em> are worth pursuing, and you try to <strong>persuade</strong> without ever coercing.</p>
+    <phil-narration>Model four is the deliberative doctor, the doctor as teacher and friend. You engage the patient about which health-related values are worth pursuing. You try to persuade, without ever coercing.</phil-narration>
     <ul reveal>
-      <li><em>With Peter:</em> you tell him you think he is wrong, and you say why. Then you leave the decision with him.</li>
-      <li>"A braver life needn't be a reckless one." That is an argument, openly made, and he may reject it.</li>
-      <li>Autonomy = <strong>moral self-development</strong>: growing through honest deliberation, not merely being left alone.</li>
+      <li say="With Peter, you tell him you think he is wrong, and you say why. Then you leave the decision with him."><em>With Peter:</em> you tell him you think he is wrong, and you say why. Then you leave the decision with him.</li>
+      <li say="A braver life needn't be a reckless one. That is an argument, openly made, and he may reject it.">"A braver life needn't be a reckless one." That is an argument, openly made, and he may reject it.</li>
+      <li say="Autonomy here means moral self-development: growing through honest deliberation, not merely being left alone.">Autonomy = <strong>moral self-development</strong>: growing through honest deliberation, not merely being left alone.</li>
     </ul>
   </phil-slide>
 
   <!-- 23. Compare: interpretive vs deliberative -->
   <phil-slide id="clarify-vs-develop">
     <h1>Clarify vs Develop</h1>
+    <phil-narration>Clarify versus develop. The interpretive doctor helps the patient uncover and apply the values they already have. Something like, let's name what matters most to you, and choose to match it. The deliberative doctor engages the patient on which values are worth adopting. That means persuasion, not pressure. Something like, may I make the case that a longer life with your sisters is worth more than the thrill?</phil-narration>
     <phil-compare>
       <phil-side label="Interpretive" tag="Values you have">
         <p>Help the patient <strong>uncover and apply</strong> their existing values.</p>
@@ -337,6 +364,7 @@
   <phil-slide id="four-models">
     <h1>Mapping the Four Models</h1>
     <p class="lead">How a physician should engage depends on clinical urgency and the state of the patient's values.</p>
+    <phil-narration>Here are the four models, mapped. How a physician should engage depends on clinical urgency and the state of the patient's values. Emergencies call for the paternalistic model. Settled values call for the informative technician. Conflicted values call for the interpretive counselor. Growing values call for the deliberative teacher and friend. These are four answers to how far a doctor may go once consent is secured. The Emanuels defend the deliberative one as the caring ideal.</phil-narration>
     <figure class="phil-figure">
       <img src="./assets/models-flow.svg" alt="Decision flowchart for Emanuel and Emanuel's four models: emergencies call for Paternalism; settled values call for the Informative technician; conflicted values call for the Interpretive counselor; growing values call for the Deliberative teacher and friend.">
       <figcaption>Four answers to how far a doctor may go once consent is secured. The Emanuels defend Deliberative as the caring ideal.</figcaption>
@@ -344,9 +372,10 @@
   </phil-slide>
 
   <!-- 25. Viz: pick the model -->
-  <phil-slide>
+  <phil-slide hold>
     <h1>Name That Model</h1>
     <p>Peter's leg will heal, and he is already itching to go back to the garden that killed his father. <strong>Identify the model each doctor is using.</strong></p>
+    <phil-narration>Name that model. Peter's leg will heal, and he is already itching to go back to the garden that killed his father. Read what each doctor says, and identify the model that doctor is using. When you're ready, press Continue.</phil-narration>
     <phil-pick prompt="">
       <phil-scenario model="paternalistic" why="The doctor decides and expects Peter to fall in line.">
         “I've cancelled your garden privileges and put you on a carrot regimen. Doctor knows best.”
@@ -379,6 +408,8 @@
       <phil-item answer="del" why="An open argument about what is worth wanting, with the decision left to him, is the deliberative model.">"I think going back is a mistake, and here's why. But the choice is yours."</phil-item>
       <phil-item answer="del" why="Persuading him about which values are worth having, without pressure, is the deliberative model.">"I want to persuade you that courage and recklessness are different things. Hear me out, then decide."</phil-item>
     </phil-classify>
+    <phil-narration>Which model is it? Six doctors talk to Peter about the garden. Sort each line under the model that doctor is using. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. The paternalistic doctor decides. The informative doctor gives the facts and leaves the values to Peter. The interpretive doctor helps him see the values he already has. The deliberative doctor argues that some values are worth more, and leaves the decision with him.</phil-narration>
   </phil-slide>
 
   <!-- 26. Checkset: models -->
@@ -393,6 +424,8 @@
       <phil-statement>Informative: the doctor decides and the patient obeys</phil-statement>
       <phil-statement>Deliberative: the doctor stays silent about values</phil-statement>
     </phil-checkset>
+    <phil-narration>Sort the models. Check each statement that correctly describes one of the Emanuels' models, then press Check answers.</phil-narration>
+    <phil-narration when="after">Nicely sorted. The checked items match each model's role. The two left unchecked swap the models' jobs around.</phil-narration>
   </phil-slide>
 
   <!-- 27. Emanuels' verdict -->
@@ -400,11 +433,12 @@
     <img slot="art" src="./assets/peter-rabbit.png" alt="Peter Rabbit, considering">
     <h1>The Emanuels' Verdict</h1>
     <p>The Emanuels don't leave all four as equals. They argue for one as the ideal:</p>
+    <phil-narration>The Emanuels don't leave all four as equals. They argue for one as the ideal.</phil-narration>
     <ul reveal>
-      <li>The <strong>deliberative</strong> model, physician as teacher and friend, best fits a caring relationship.</li>
-      <li>The <strong>paternalistic</strong> model is justified mainly in <em>emergencies</em>.</li>
-      <li>The <strong>informative</strong> model, they argue, is too thin. It abandons the patient to choose alone.</li>
-      <li>The aim isn't to impose values, but to <em>care</em> enough to deliberate about them.</li>
+      <li say="The deliberative model, physician as teacher and friend, best fits a caring relationship.">The <strong>deliberative</strong> model, physician as teacher and friend, best fits a caring relationship.</li>
+      <li say="The paternalistic model is justified mainly in emergencies.">The <strong>paternalistic</strong> model is justified mainly in <em>emergencies</em>.</li>
+      <li say="The informative model, they argue, is too thin. It abandons the patient to choose alone.">The <strong>informative</strong> model, they argue, is too thin. It abandons the patient to choose alone.</li>
+      <li say="The aim isn't to impose values, but to care enough to deliberate about them.">The aim isn't to impose values, but to <em>care</em> enough to deliberate about them.</li>
     </ul>
   </phil-slide>
 
@@ -419,6 +453,8 @@
       <phil-choice note="The interpretive model. It asks the doctor to clarify your values without adding to them, which is harder than it sounds.">Help me work out what I actually want, then respect what I land on.</phil-choice>
       <phil-choice note="The deliberative model, and the Emanuels' choice. It gets you a doctor who is engaged, and a doctor who is engaged is a doctor with a view.">Tell me honestly what you think I should do, and why.</phil-choice>
     </phil-poll>
+    <phil-narration>Decision point: which would you want? This one isn't graded. You rated something close to this before the clinic opened. You are the patient, and the decision is a hard one. Which doctor do you want in the room? Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">The Emanuels argue for the deliberative model. Notice what your answer costs. The informative doctor respects you and leaves you alone with it. The deliberative doctor engages with your values, which means a doctor with opinions about your values.</phil-narration>
   </phil-slide>
 
   <phil-slide>
@@ -431,6 +467,8 @@
       <phil-choice correct>It leaves the patient to choose alone, which is not the same as respecting him.</phil-choice>
       <phil-choice feedback="Their objection is not about volume. She could disclose perfectly and still, on their view, be leaving him alone with the decision.">It gives the patient more information than he is able to use.</phil-choice>
     </phil-mcq>
+    <phil-narration>Which model wins? The Emanuels defend the deliberative model as the ideal. On their argument, what is wrong with the informative model? Pick an answer.</phil-narration>
+    <phil-narration when="after">Right. The informative doctor secures consent flawlessly, so whatever is wrong with her, it isn't a failure of consent. The Emanuels say she has confused respecting a patient with leaving him alone.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 3 — ROUNDS END ============ -->
@@ -440,6 +478,8 @@
     <h1>Revisit Your Instincts</h1>
     <p>Here is where you started this morning. Re-rate each one and see whether the day shifted anything. Staying put is fine; the question is whether you can now say <em>why</em>.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>Here's where you started this morning. Re-rate each statement and see whether the day shifted anything. Staying put is fine. The question is whether you can now say why. When you've rated them all, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, a quick wrap-up of your rounds.</phil-narration>
   </phil-slide>
 
   <!-- 30. Recap -->
@@ -447,11 +487,12 @@
     <img slot="art" src="./assets/doctor-bag.png" alt="The doctor's bag, packed up">
     <h1>End of Rounds</h1>
     <p class="lead">You close the bag. The hedgerow is quiet, and your patients are still in charge of their own lives.</p>
+    <phil-narration>You close the bag. The hedgerow is quiet, and your patients are still in charge of their own lives.</phil-narration>
     <ul reveal>
-      <li>Peter's consent was valid on all five counts, and the hard question survived it intact.</li>
-      <li>That is what the four models are for: four answers to how far you may go once the form is signed.</li>
-      <li>Push past persuasion and you destroy the voluntariness that made the consent real.</li>
-      <li>So autonomy is more than leaving people alone. Help them decide well, then let them decide.</li>
+      <li say="Peter's consent was valid on all five counts, and the hard question survived it intact.">Peter's consent was valid on all five counts, and the hard question survived it intact.</li>
+      <li say="That is what the four models are for: four answers to how far you may go once the form is signed.">That is what the four models are for: four answers to how far you may go once the form is signed.</li>
+      <li say="Push past persuasion, and you destroy the voluntariness that made the consent real.">Push past persuasion and you destroy the voluntariness that made the consent real.</li>
+      <li say="So autonomy is more than leaving people alone. Help them decide well, then let them decide. Visit every slide, answer every question, and submit both belief probes to complete your rounds.">So autonomy is more than leaving people alone. Help them decide well, then let them decide.</li>
     </ul>
     <p class="muted">Visit every slide, answer every question, and submit both belief probes to complete your rounds.</p>
   </phil-slide>
@@ -459,6 +500,7 @@
   <!-- Further reading and AI acknowledgment -->
   <phil-slide id="further-reading">
     <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
     <ul class="phil-reading">
       <li>Nir Eyal, “<a href="https://plato.stanford.edu/entries/informed-consent/">Informed Consent</a>,” <em>Stanford Encyclopedia of Philosophy</em> (2011, rev. 2025). A free overview of why consent matters and what makes it valid.</li>
       <li>Ruth R. Faden and Tom L. Beauchamp, <em>A History and Theory of Informed Consent</em> (Oxford University Press, 1986), chapters 8–10. Competence, understanding, and persuasion versus manipulation, in depth.</li>
@@ -466,7 +508,7 @@
       <li><em>Canterbury v. Spence</em>, 464 F.2d 772 (D.C. Cir. 1972). The court case behind the reasonable-patient standard of disclosure.</li>
       <li>Ezekiel J. Emanuel and Linda L. Emanuel, “<a href="https://doi.org/10.1001/jama.1992.03480160079038">Four Models of the Physician-Patient Relationship</a>,” <em>JAMA</em> 267, no. 16 (1992): 2221–2226. The four models, and the case for the deliberative one.</li>
     </ul>
-    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

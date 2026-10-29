@@ -1,0 +1,607 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-tutor-9",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "3232d7c7": {
+      "slide": "s1",
+      "text": "Welcome to The Case of the Merciful Dose. It's London, 1895. Close to midnight, Doctor Watson climbs the stairs at Baker Street with a question he can't answer alone. He has a dying patient in terrible pain. The medicine that would stop the pain might also shorten the man's life. Sherlock Holmes will help him test the rule doctors use for cases like this. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Case of the Merciful Dose. It's London, 1895. Close to midnight, Doctor Watson climbs the stairs at Baker Street with a question he can't answer alone. He has a dying patient in terrible pain. The medicine that would stop the pain might also shorten the man's life. Sherlock Holmes will help him test the rule doctors use for cases like this. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "eb00b0c4": {
+      "slide": "s2",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "71ede6cd": {
+      "slide": "s3",
+      "text": "Let's meet our two investigators.",
+      "spoken": "Let's meet our two investigators."
+    },
+    "61b68ec4": {
+      "slide": "s3",
+      "text": "Doctor John Watson is a physician. Tonight he must decide how to treat a dying man.",
+      "spoken": "Doctor John Watson is a physician. Tonight he must decide how to treat a dying man."
+    },
+    "6f05d52b": {
+      "slide": "s3",
+      "text": "Sherlock Holmes is a detective. His skill is working out what people meant to do from what they did.",
+      "spoken": "Sherlock Holmes is a detective. His skill is working out what people meant to do from what they did."
+    },
+    "c23f7b5d": {
+      "slide": "s3",
+      "text": "That skill matters here. The rule Watson was taught says the rightness of his act depends on what he intends.",
+      "spoken": "That skill matters here. The rule Watson was taught says the rightness of his act depends on what he intends."
+    },
+    "c849765b": {
+      "slide": "s3",
+      "text": "The two of them belong to the 1890s. The rule they are testing is used in hospitals and courts today.",
+      "spoken": "The two of them belong to the 1890s. The rule they are testing is used in hospitals and courts today."
+    },
+    "0349a0ea": {
+      "slide": "s4",
+      "text": "Watson's patient is Mister Thorne, a retired lighthouse keeper.",
+      "spoken": "Watson's patient is Mister Thorne, a retired lighthouse keeper."
+    },
+    "b5705087": {
+      "slide": "s4",
+      "text": "He has cancer of the throat. It can't be cured, and he has a few weeks to live.",
+      "spoken": "He has cancer of the throat. It can't be cured, and he has a few weeks to live."
+    },
+    "e3bc91be": {
+      "slide": "s4",
+      "text": "The pain is severe and getting worse. The doses that used to control it no longer work.",
+      "spoken": "The pain is severe and getting worse. The doses that used to control it no longer work."
+    },
+    "9b036054": {
+      "slide": "s4",
+      "text": "His mind is clear. He has asked Watson for enough medicine to stop the pain.",
+      "spoken": "His mind is clear. He has asked Watson for enough medicine to stop the pain."
+    },
+    "30562309": {
+      "slide": "s4",
+      "text": "Watson has told him the risk, and Mister Thorne accepts it.",
+      "spoken": "Watson has told him the risk, and Mister Thorne accepts it."
+    },
+    "920a7ea3": {
+      "slide": "s5",
+      "text": "The medicine is morphine, a strong painkiller that doctors still use.",
+      "spoken": "The medicine is morphine, a strong painkiller that doctors still use."
+    },
+    "dc0bf194": {
+      "slide": "s5",
+      "text": "Morphine relieves severe pain. It also slows a person's breathing.",
+      "spoken": "Morphine relieves severe pain. It also slows a person's breathing."
+    },
+    "23f4d9d0": {
+      "slide": "s5",
+      "text": "The dose Mister Thorne now needs is large. In a man this weak, it might shorten his life.",
+      "spoken": "The dose Mister Thorne now needs is large. In a man this weak, it might shorten his life."
+    },
+    "e7620c94": {
+      "slide": "s5",
+      "text": "Watson asks: If I give it and he dies tonight, Holmes, have I killed him?",
+      "spoken": "Watson asks: If I give it and he dies tonight, Holmes, have I killed him?"
+    },
+    "38ca7bbc": {
+      "slide": "s5",
+      "text": "Doctors have long had a rule for this question. It's called the doctrine of double effect.",
+      "spoken": "Doctors have long had a rule for this question. It's called the doctrine of double effect."
+    },
+    "eaf6f4b4": {
+      "slide": "s6",
+      "text": "An effect is something an act causes. One act can have several.",
+      "spoken": "An effect is something an act causes. One act can have several."
+    },
+    "08392f77": {
+      "slide": "s6",
+      "text": "A dentist drills a tooth. One effect is a repaired tooth. Another is pain.",
+      "spoken": "A dentist drills a tooth. One effect is a repaired tooth. Another is pain."
+    },
+    "c94127ba": {
+      "slide": "s6",
+      "text": "The dentist intends the repair. It's what she's trying to bring about.",
+      "spoken": "The dentist intends the repair. It's what she's trying to bring about."
+    },
+    "cd1ff94c": {
+      "slide": "s6",
+      "text": "She only foresees the pain. She knows it will come, but it's not her aim, and she would avoid it if she could.",
+      "spoken": "She only foresees the pain. She knows it will come, but it's not her aim, and she would avoid it if she could."
+    },
+    "8e72dfc8": {
+      "slide": "s6",
+      "text": "Double effect is about acts like this one, with a good effect you intend and a bad effect you only foresee.",
+      "spoken": "Double effect is about acts like this one, with a good effect you intend and a bad effect you only foresee."
+    },
+    "d82d1bb9": {
+      "slide": "s7",
+      "text": "The idea goes back to Thomas Aquinas in the 1200s. He asked how it could be right to kill an attacker to save your own life.",
+      "spoken": "The idea goes back to Thomas Aquinas in the 1200s. He asked how it could be right to kill an attacker to save your own life."
+    },
+    "153a5157": {
+      "slide": "s7",
+      "text": "His answer: you aim at saving your life. The attacker's death is a second effect that you did not aim at.",
+      "spoken": "His answer: you aim at saving your life. The attacker's death is a second effect that you did not aim at."
+    },
+    "f8ee6641": {
+      "slide": "s7",
+      "text": "Later thinkers turned his answer into four conditions.",
+      "spoken": "Later thinkers turned his answer into four conditions."
+    },
+    "629b138f": {
+      "slide": "s7",
+      "text": "The doctrine of double effect says an act with a bad effect is permitted only if it passes all four.",
+      "spoken": "The doctrine of double effect says an act with a bad effect is permitted only if it passes all four."
+    },
+    "4832750d": {
+      "slide": "conditions",
+      "text": "Holmes writes the conditions on the back of an envelope and tests Watson's dose against each. Here are the first two.",
+      "spoken": "Holmes writes the conditions on the back of an envelope and tests Watson's dose against each. Here are the first two."
+    },
+    "82df047e": {
+      "slide": "conditions",
+      "text": "Condition one: the act itself is not wrong. Giving a patient medicine is ordinary care, so the dose passes.",
+      "spoken": "Condition one: the act itself is not wrong. Giving a patient medicine is ordinary care, so the dose passes."
+    },
+    "d5179143": {
+      "slide": "conditions",
+      "text": "Condition two: you intend only the good effect. Watson aims at relief. The risk to life is foreseen and not aimed at.",
+      "spoken": "Condition two: you intend only the good effect. Watson aims at relief. The risk to life is foreseen and not aimed at."
+    },
+    "bdb9febb": {
+      "slide": "conditions",
+      "text": "There's a simple test for condition two. Suppose the pain stopped and Mister Thorne lived on. Would Watson be content?",
+      "spoken": "There's a simple test for condition two. Suppose the pain stopped and Mister Thorne lived on. Would Watson be content?"
+    },
+    "c17ae82f": {
+      "slide": "conditions",
+      "text": "He would. So Mister Thorne's death is no part of what Watson is trying to do.",
+      "spoken": "He would. So Mister Thorne's death is no part of what Watson is trying to do."
+    },
+    "8d2fae73": {
+      "slide": "s9",
+      "text": "Now the next two conditions.",
+      "spoken": "Now the next two conditions."
+    },
+    "e0a834db": {
+      "slide": "s9",
+      "text": "Condition three: the bad effect is not the means. A means is the way you get a result.",
+      "spoken": "Condition three: the bad effect is not the means. A means is the way you get a result."
+    },
+    "c81420b2": {
+      "slide": "s9",
+      "text": "The morphine stops the pain directly. It doesn't work by ending his life, so his death is not the means.",
+      "spoken": "The morphine stops the pain directly. It doesn't work by ending his life, so his death is not the means."
+    },
+    "3aa87822": {
+      "slide": "s9",
+      "text": "Condition four: the good is in proportion to the bad. The reason must be serious enough to justify the risk.",
+      "spoken": "Condition four: the good is in proportion to the bad. The reason must be serious enough to justify the risk."
+    },
+    "88853472": {
+      "slide": "s9",
+      "text": "Severe pain in a dying man is a serious reason. Watson's dose passes all four conditions.",
+      "spoken": "Severe pain in a dying man is a serious reason. Watson's dose passes all four conditions."
+    },
+    "ea6002ce": {
+      "slide": "s10",
+      "text": "Holmes imagines a second doctor at the same bedside, giving the same drug in the same amount. Watson's dose aims at relief. He gives the amount needed to stop the pain, and accepts that it may shorten life. If Mister Thorne wakes tomorrow free of pain, Watson's plan has worked. The other doctor's dose aims at death. He gives the same amount in order to end the patient's life, because death will end the pain. If Mister Thorne wakes tomorrow free of pain, this doctor's plan has failed. The doctrine permits the first dose and forbids the second.",
+      "spoken": "Holmes imagines a second doctor at the same bedside, giving the same drug in the same amount. Watson's dose aims at relief. He gives the amount needed to stop the pain, and accepts that it may shorten life. If Mister Thorne wakes tomorrow free of pain, Watson's plan has worked. The other doctor's dose aims at death. He gives the same amount in order to end the patient's life, because death will end the pain. If Mister Thorne wakes tomorrow free of pain, this doctor's plan has failed. The doctrine permits the first dose and forbids the second."
+    },
+    "ae200352": {
+      "slide": "s11",
+      "text": "Now try the four conditions yourself. Pick a case and answer each condition. Then see what the doctrine says. When you're ready, press Continue.",
+      "spoken": "Now try the four conditions yourself. Pick a case and answer each condition. Then see what the doctrine says. When you're ready, press Continue."
+    },
+    "eb72eb87": {
+      "slide": "s12",
+      "text": "What the doctrine says. Check every claim the doctrine of double effect makes. Then press Check answers.",
+      "spoken": "What the doctrine says. Check every claim the doctrine of double effect makes. Then press Check answers."
+    },
+    "d9e5de30": {
+      "slide": "s12",
+      "text": "Right. The doctrine is strict. A good aim is required, and it isn't enough. The act, the means, and the proportion must pass too.",
+      "spoken": "Right. The doctrine is strict. A good aim is required, and it isn't enough. The act, the means, and the proportion must pass too."
+    },
+    "a6cba0d3": {
+      "slide": "s13",
+      "text": "Double effect is one of two distinctions doctors rely on at the end of life. This is the second.",
+      "spoken": "Double effect is one of two distinctions doctors rely on at the end of life. This is the second."
+    },
+    "f6e6d074": {
+      "slide": "s13",
+      "text": "Killing is causing a death by what you do. Letting die is not preventing a death that something else causes.",
+      "spoken": "Killing is causing a death by what you do. Letting die is not preventing a death that something else causes."
+    },
+    "6c661d37": {
+      "slide": "s13",
+      "text": "A patient may refuse a treatment. If the doctors then stop it, the disease causes the death.",
+      "spoken": "A patient may refuse a treatment. If the doctors then stop it, the disease causes the death."
+    },
+    "370a6cfc": {
+      "slide": "s13",
+      "text": "On the traditional view that's letting die, and it can be right even where killing would be wrong.",
+      "spoken": "On the traditional view that's letting die, and it can be right even where killing would be wrong."
+    },
+    "f7cedb84": {
+      "slide": "s13",
+      "text": "Both candles go out. The traditional view says it matters how.",
+      "spoken": "Both candles go out. The traditional view says it matters how."
+    },
+    "9d7ba1f6": {
+      "slide": "s14",
+      "text": "Inspector Lestrade likes her rules written down. Here are two real ones, from long after her time.",
+      "spoken": "Inspector Lestrade likes her rules written down. Here are two real ones, from long after her time."
+    },
+    "8c92b3cd": {
+      "slide": "s14",
+      "text": "In 1973 the American Medical Association said doctors must not intentionally end a patient's life.",
+      "spoken": "In 1973 the American Medical Association said doctors must not intentionally end a patient's life."
+    },
+    "6d080dfa": {
+      "slide": "s14",
+      "text": "The same statement allowed stopping treatment that only prolongs dying, if the patient or family decides.",
+      "spoken": "The same statement allowed stopping treatment that only prolongs dying, if the patient or family decides."
+    },
+    "5c95518f": {
+      "slide": "s14",
+      "text": "In 1997 the US Supreme Court ruled, in Vacco versus Quill, that states may ban doctors from helping patients end their lives.",
+      "spoken": "In 1997 the U.S. Supreme Court ruled, in Vacco versus Quill, that states may ban doctors from helping patients end their lives."
+    },
+    "55ec3d09": {
+      "slide": "s14",
+      "text": "The Court said refusing treatment is different. So is pain relief that may hasten death, when the aim is to ease pain.",
+      "spoken": "The Court said refusing treatment is different. So is pain relief that may hasten death, when the aim is to ease pain."
+    },
+    "c4d53326": {
+      "slide": "two-pillars",
+      "text": "The traditional view of care for the dying stands on both distinctions. The first is intending versus foreseeing. What matters is what the doctor aims at. A foreseen death can be permitted. An intended death cannot. So it permits Watson's dose, and forbids the same dose given in order to end a life. The second is killing versus letting die. What matters is whether the doctor causes the death or allows the disease to cause it. So it permits stopping a treatment the patient refuses, and forbids giving a drug to cause death.",
+      "spoken": "The traditional view of care for the dying stands on both distinctions. The first is intending versus foreseeing. What matters is what the doctor aims at. A foreseen death can be permitted. An intended death cannot. So it permits Watson's dose, and forbids the same dose given in order to end a life. The second is killing versus letting die. What matters is whether the doctor causes the death or allows the disease to cause it. So it permits stopping a treatment the patient refuses, and forbids giving a drug to cause death."
+    },
+    "ede72010": {
+      "slide": "s16",
+      "text": "Which pillar? Six doctors explain a patient's death. Sort each one under the distinction that doctor is relying on, then press Check answers.",
+      "spoken": "Which pillar? Six doctors explain a patient's death. Sort each one under the distinction that doctor is relying on, then press Check answers."
+    },
+    "79c7fb75": {
+      "slide": "s16",
+      "text": "Right. A doctor who says the disease caused the death is relying on killing versus letting die. A doctor who talks about what they aimed at, and what they only foresaw, is relying on intending versus foreseeing.",
+      "spoken": "Right. A doctor who says the disease caused the death is relying on killing versus letting die. A doctor who talks about what they aimed at, and what they only foresaw, is relying on intending versus foreseeing."
+    },
+    "81c38d7c": {
+      "slide": "s17",
+      "text": "Holmes has a case to test the second pillar. It comes from the philosopher James Rachels, who published it in 1975.",
+      "spoken": "Holmes has a case to test the second pillar. It comes from the philosopher James Rachels, who published it in 1975."
+    },
+    "3c63161a": {
+      "slide": "s17",
+      "text": "Rachels used a twin case: two stories that are the same in every way but one.",
+      "spoken": "Rachels used a twin case: two stories that are the same in every way but one."
+    },
+    "8d66ee21": {
+      "slide": "s17",
+      "text": "If you judge the two stories the same, then the one difference did not matter.",
+      "spoken": "If you judge the two stories the same, then the one difference did not matter."
+    },
+    "6857a351": {
+      "slide": "s17",
+      "text": "Two men, Smith and Jones, will each inherit a fortune if their six-year-old cousin dies.",
+      "spoken": "Two men, Smith and Jones, will each inherit a fortune if their six-year-old cousin dies."
+    },
+    "34d24ec5": {
+      "slide": "s17",
+      "text": "Both want the money. Both plan to drown the child in his bath.",
+      "spoken": "Both want the money. Both plan to drown the child in his bath."
+    },
+    "ad08de2a": {
+      "slide": "s18",
+      "text": "First, Smith.",
+      "spoken": "First, Smith."
+    },
+    "f4a08133": {
+      "slide": "s18",
+      "text": "One evening Smith slips into the bathroom while the child is in the bath.",
+      "spoken": "One evening Smith slips into the bathroom while the child is in the bath."
+    },
+    "99cc88a5": {
+      "slide": "s18",
+      "text": "He drowns the boy, and then arranges things to look like an accident.",
+      "spoken": "He drowns the boy, and then arranges things to look like an accident."
+    },
+    "d00d0744": {
+      "slide": "s18",
+      "text": "Smith killed his cousin.",
+      "spoken": "Smith killed his cousin."
+    },
+    "51e94200": {
+      "slide": "s19",
+      "text": "Now, Jones.",
+      "spoken": "Now, Jones."
+    },
+    "059beac1": {
+      "slide": "s19",
+      "text": "Jones slips in with the same plan. As he enters, the child slips, hits his head, and falls face down in the water.",
+      "spoken": "Jones slips in with the same plan. As he enters, the child slips, hits his head, and falls face down in the water."
+    },
+    "96e3f1fa": {
+      "slide": "s19",
+      "text": "Jones is delighted. He stands by, ready to push the boy's head back under if he has to.",
+      "spoken": "Jones is delighted. He stands by, ready to push the boy's head back under if he has to."
+    },
+    "4bb615e2": {
+      "slide": "s19",
+      "text": "He doesn't have to. The child drowns while Jones watches.",
+      "spoken": "He doesn't have to. The child drowns while Jones watches."
+    },
+    "5e72a93a": {
+      "slide": "s19",
+      "text": "Jones let his cousin die.",
+      "spoken": "Jones let his cousin die."
+    },
+    "8f6eb96b": {
+      "slide": "s20",
+      "text": "A decision point. Smith drowned the child. Jones watched the child drown and did nothing. Did Jones behave any better than Smith? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A decision point. Smith drowned the child. Jones watched the child drown and did nothing. Did Jones behave any better than Smith? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "1a889026": {
+      "slide": "s20",
+      "text": "Most people answer that the two men are equally bad. Rachels is counting on that answer.",
+      "spoken": "Most people answer that the two men are equally bad. Rachels is counting on that answer."
+    },
+    "7944d0d2": {
+      "slide": "s21",
+      "text": "So what does Rachels conclude?",
+      "spoken": "So what does Rachels conclude?"
+    },
+    "4a2ab109": {
+      "slide": "s21",
+      "text": "Smith killed and Jones let die. That's the only difference between them, and it made no moral difference.",
+      "spoken": "Smith killed and Jones let die. That's the only difference between them, and it made no moral difference."
+    },
+    "126fdde4": {
+      "slide": "s21",
+      "text": "So Rachels argues that killing is not worse in itself than letting die. What matters is the motive and the result.",
+      "spoken": "So Rachels argues that killing is not worse in itself than letting die. What matters is the motive and the result."
+    },
+    "2d021eaf": {
+      "slide": "s21",
+      "text": "His second point is about patients like Mister Thorne. Being allowed to die can mean days of suffering.",
+      "spoken": "His second point is about patients like Mister Thorne. Being allowed to die can mean days of suffering."
+    },
+    "9f70eade": {
+      "slide": "s21",
+      "text": "If death is coming either way, he asks why the slower and more painful way should be the one allowed.",
+      "spoken": "If death is coming either way, he asks why the slower and more painful way should be the one allowed."
+    },
+    "ac18bc35": {
+      "slide": "replies-to-rachels",
+      "text": "Watson is not convinced, and neither were many philosophers. Here are three replies.",
+      "spoken": "Watson is not convinced, and neither were many philosophers. Here are three replies."
+    },
+    "d3ff0a19": {
+      "slide": "replies-to-rachels",
+      "text": "First, Jones was ready to kill. Winston Nesbitt replied that this is why he seems as bad as Smith. A Jones who would never have touched the boy seems less bad.",
+      "spoken": "First, Jones was ready to kill. Winston Nesbitt replied that this is why he seems as bad as Smith. A Jones who would never have touched the boy seems less bad."
+    },
+    "b538b7df": {
+      "slide": "replies-to-rachels",
+      "text": "Second, one pair is not every pair. Showing that the difference did not matter here does not show that it never matters.",
+      "spoken": "Second, one pair is not every pair. Showing that the difference did not matter here does not show that it never matters."
+    },
+    "fd0f1a49": {
+      "slide": "replies-to-rachels",
+      "text": "Third, the line was always intention. Thomas Sullivan replied that the traditional view forbids aiming at death, by acting or by standing back.",
+      "spoken": "Third, the line was always intention. Thomas Sullivan replied that the traditional view forbids aiming at death, by acting or by standing back."
+    },
+    "70d569e3": {
+      "slide": "replies-to-rachels",
+      "text": "If Sullivan is right, everything rests on the first pillar: intending versus foreseeing.",
+      "spoken": "If Sullivan is right, everything rests on the first pillar: intending versus foreseeing."
+    },
+    "a744e1f4": {
+      "slide": "s23",
+      "text": "What does the twin case show? Suppose you agree that Smith and Jones are equally bad. What is the most that follows from that? Pick an answer.",
+      "spoken": "What does the twin case show? Suppose you agree that Smith and Jones are equally bad. What is the most that follows from that? Pick an answer."
+    },
+    "a6226cd1": {
+      "slide": "s23",
+      "text": "Right. A twin case shows what its one difference did in that pair. Rachels goes on to a general claim, and his critics accept the pair while refusing that further step.",
+      "spoken": "Right. A twin case shows what its one difference did in that pair. Rachels goes on to a general claim, and his critics accept the pair while refusing that further step."
+    },
+    "a0b0b6e6": {
+      "slide": "s24",
+      "text": "Now the first pillar. Rachels has a twin case for intention too.",
+      "spoken": "Now the first pillar. Rachels has a twin case for intention too."
+    },
+    "9aad7511": {
+      "slide": "s24",
+      "text": "Jack visits his sick, lonely grandmother and spends the afternoon cheering her up. He loves her.",
+      "spoken": "Jack visits his sick, lonely grandmother and spends the afternoon cheering her up. He loves her."
+    },
+    "826b1df1": {
+      "slide": "s24",
+      "text": "Jill visits her grandmother and does the same things. She's hoping to be remembered in the will.",
+      "spoken": "Jill visits her grandmother and does the same things. She's hoping to be remembered in the will."
+    },
+    "8437835b": {
+      "slide": "s24",
+      "text": "Their acts are alike in every way you could see. Only their intentions differ.",
+      "spoken": "Their acts are alike in every way you could see. Only their intentions differ."
+    },
+    "462a3602": {
+      "slide": "s24",
+      "text": "Rachels asks: did Jack do the right thing and Jill the wrong thing?",
+      "spoken": "Rachels asks: did Jack do the right thing and Jill the wrong thing?"
+    },
+    "7cfeb43f": {
+      "slide": "criticisms",
+      "text": "Here's the first criticism of the doctrine.",
+      "spoken": "Here's the first criticism of the doctrine."
+    },
+    "de5784db": {
+      "slide": "criticisms",
+      "text": "Rachels' answer: they did the same thing, and it was a good thing to do. Jill's grandmother was comforted too.",
+      "spoken": "Rachels' answer: they did the same thing, and it was a good thing to do. Jill's grandmother was comforted too."
+    },
+    "040fe240": {
+      "slide": "criticisms",
+      "text": "Jill's intention tells you about Jill. She's calculating. It doesn't change what she did.",
+      "spoken": "Jill's intention tells you about Jill. She's calculating. It doesn't change what she did."
+    },
+    "f7b203ec": {
+      "slide": "criticisms",
+      "text": "Now apply that to the two doses. If the dose is right when Watson gives it, how can the same dose be wrong when the other doctor gives it?",
+      "spoken": "Now apply that to the two doses. If the dose is right when Watson gives it, how can the same dose be wrong when the other doctor gives it?"
+    },
+    "b705ee29": {
+      "slide": "criticisms",
+      "text": "On this view, intention is for judging people. It can't turn a right act into a wrong one.",
+      "spoken": "On this view, intention is for judging people. It can't turn a right act into a wrong one."
+    },
+    "04aa68be": {
+      "slide": "s26",
+      "text": "Two more criticisms. Both are about how hard it is to read a mind.",
+      "spoken": "Two more criticisms. Both are about how hard it is to read a mind."
+    },
+    "72e60744": {
+      "slide": "s26",
+      "text": "Redescription. Almost any doctor can say, ‘I only meant to stop the pain.’ The doctrine can't tell an honest report from a convenient one.",
+      "spoken": "Redescription. Almost any doctor can say, ‘I only meant to stop the pain.’ The doctrine can't tell an honest report from a convenient one."
+    },
+    "844f09e8": {
+      "slide": "s26",
+      "text": "Mixed motives. Timothy Quill, a doctor who cares for dying patients, wrote that real intentions come tangled together.",
+      "spoken": "Mixed motives. Timothy Quill, a doctor who cares for dying patients, wrote that real intentions come tangled together."
+    },
+    "97fc91f2": {
+      "slide": "s26",
+      "text": "A doctor may want the pain to stop, hope the dying is short, and fear being blamed, all in the same moment.",
+      "spoken": "A doctor may want the pain to stop, hope the dying is short, and fear being blamed, all in the same moment."
+    },
+    "f6f894c8": {
+      "slide": "s26",
+      "text": "Quill argued that the patient's wishes and suffering are better guides than a search of the doctor's mind.",
+      "spoken": "Quill argued that the patient's wishes and suffering are better guides than a search of the doctor's mind."
+    },
+    "6871709d": {
+      "slide": "s27",
+      "text": "Modern research adds something the philosophers often leave out.",
+      "spoken": "Modern research adds something the philosophers often leave out."
+    },
+    "543f0311": {
+      "slide": "s27",
+      "text": "Studies of dying patients find that morphine, raised step by step to match the pain, rarely shortens life.",
+      "spoken": "Studies of dying patients find that morphine, raised step by step to match the pain, rarely shortens life."
+    },
+    "a1a0fdea": {
+      "slide": "s27",
+      "text": "The body gets used to the drug's effect on breathing. Carefully managed doses are safer than most people assume.",
+      "spoken": "The body gets used to the drug's effect on breathing. Carefully managed doses are safer than most people assume."
+    },
+    "994843cf": {
+      "slide": "s27",
+      "text": "So the case where relief truly risks death is less common than the textbooks suggest.",
+      "spoken": "So the case where relief truly risks death is less common than the textbooks suggest."
+    },
+    "cae1de29": {
+      "slide": "s27",
+      "text": "The doctrine still matters for the cases that remain. It also matters because a doctor who fears the risk may give too little.",
+      "spoken": "The doctrine still matters for the cases that remain. It also matters because a doctor who fears the risk may give too little."
+    },
+    "47acaea0": {
+      "slide": "s28",
+      "text": "Watson defends the rule he was taught.",
+      "spoken": "Watson defends the rule he was taught."
+    },
+    "9c2f7205": {
+      "slide": "s28",
+      "text": "Another Holmes, the judge Oliver Wendell Holmes Junior, wrote that even a dog distinguishes between being stumbled over and being kicked.",
+      "spoken": "Another Holmes, the judge Oliver Wendell Holmes Junior, wrote that even a dog distinguishes between being stumbled over and being kicked."
+    },
+    "91924eed": {
+      "slide": "s28",
+      "text": "The law agrees. A murder and an accident can have the same result, and intent is what separates them.",
+      "spoken": "The law agrees. A murder and an accident can have the same result, and intent is what separates them."
+    },
+    "d45bcd0f": {
+      "slide": "s28",
+      "text": "Intentions can be hard to read, but courts work them out from evidence every day.",
+      "spoken": "Intentions can be hard to read, but courts work them out from evidence every day."
+    },
+    "25f6f721": {
+      "slide": "s28",
+      "text": "Without the doctrine, a doctor who fears being called a killer may leave patients like Mister Thorne in pain.",
+      "spoken": "Without the doctrine, a doctor who fears being called a killer may leave patients like Mister Thorne in pain."
+    },
+    "ad93bb45": {
+      "slide": "s29",
+      "text": "Four doctors, one outcome. Each doctor has a dying patient in severe pain who has asked for this. In every box the patient dies tonight. Mark each one. When you're ready, press Continue.",
+      "spoken": "Four doctors, one outcome. Each doctor has a dying patient in severe pain who has asked for this. In every box the patient dies tonight. Mark each one. When you're ready, press Continue."
+    },
+    "38a92999": {
+      "slide": "s30",
+      "text": "Name that argument. Pick the argument each speaker is using, then press Check.",
+      "spoken": "Name that argument. Pick the argument each speaker is using, then press Check."
+    },
+    "270e7f47": {
+      "slide": "s30",
+      "text": "Right. The first speaker separates what Jill is like from what she did. The second doubts that a report of intention can be trusted. The third finds several aims in one mind. The fourth points out that courts already judge by intent.",
+      "spoken": "Right. The first speaker separates what Jill is like from what she did. The second doubts that a report of intention can be trusted. The third finds several aims in one mind. The fourth points out that courts already judge by intent."
+    },
+    "14036ebc": {
+      "slide": "s31",
+      "text": "The last decision point. It is nearly dawn. What should Watson do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "The last decision point. It is nearly dawn. What should Watson do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "9c6a0499": {
+      "slide": "s31",
+      "text": "The first answer accepts double effect. The second reaches the same act by the route Rachels and Quill prefer. Next, you'll rate your beliefs again.",
+      "spoken": "The first answer accepts double effect. The second reaches the same act by the route Rachels and Quill prefer. Next, you'll rate your beliefs again."
+    },
+    "db4f0028": {
+      "slide": "s32",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "5b44f922": {
+      "slide": "s32",
+      "text": "Saved. Now, a quick summary of the case.",
+      "spoken": "Saved. Now, a quick summary of the case."
+    },
+    "6504acac": {
+      "slide": "s33",
+      "text": "Here's the case, summed up.",
+      "spoken": "Here's the case, summed up."
+    },
+    "a7f2681d": {
+      "slide": "s33",
+      "text": "Double effect. A foreseen bad effect can be permitted if the act, the aim, the means, and the proportion all pass.",
+      "spoken": "Double effect. A foreseen bad effect can be permitted if the act, the aim, the means, and the proportion all pass."
+    },
+    "27876c48": {
+      "slide": "s33",
+      "text": "The two pillars. Intending versus foreseeing, and killing versus letting die.",
+      "spoken": "The two pillars. Intending versus foreseeing, and killing versus letting die."
+    },
+    "916ec81f": {
+      "slide": "s33",
+      "text": "Smith and Jones test the second pillar. Jack and Jill test the first.",
+      "spoken": "Smith and Jones test the second pillar. Jack and Jill test the first."
+    },
+    "8c12edc9": {
+      "slide": "s33",
+      "text": "The replies. One pair does not settle every case, and the law already treats intent as mattering. Watson goes back to his patient. The decision is his, and yours.",
+      "spoken": "The replies. One pair does not settle every case, and the law already treats intent as mattering. Watson goes back to his patient. The decision is his, and yours."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "engine": "gemini",
+  "voice": "en-ie-storyteller-6",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "5e10ea1d": {
+      "slide": "s1",
+      "text": "Welcome to The Labors of Arête. You have been summoned to Mount Olympus, and not to fight. Athena, goddess of wisdom, is tired of watching mortals bungle something harder. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Labors of Arête. You have been summoned to Mount Olympus, and not to fight. Athena, goddess of wisdom, is tired of watching mortals bungle something harder. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "78d71474": {
+      "slide": "s2",
+      "text": "Athena has a different kind of labor for you. She says today's labor is harder than slaying any beast. Today you learn to live well.",
+      "spoken": "Athena has a different kind of labor for you. She says today's labor is harder than slaying any beast. Today you learn to live well."
+    },
+    "9532ef2f": {
+      "slide": "s2",
+      "text": "She will use the heroes you know, but not the way you expect.",
+      "spoken": "She will use the heroes you know, but not the way you expect."
+    },
+    "01423cc2": {
+      "slide": "s2",
+      "text": "No swords. No quests. Just one question: what kind of person should you be?",
+      "spoken": "No swords. No quests. Just one question: what kind of person should you be?"
+    },
+    "c777c3fa": {
+      "slide": "s2",
+      "text": "The philosopher behind it all is a man named Aristotle, and Athena has opinions about him.",
+      "spoken": "The philosopher behind it all is a man named Aristotle, and Athena has opinions about him."
+    },
+    "ae968afc": {
+      "slide": "s3",
+      "text": "Before training begins, here are five gut-checks, with no right answers. Just say where you stand, by rating how much you agree with each one. We'll come back to them when training ends. When you've rated all five, press Submit.",
+      "spoken": "Before training begins, here are five gut-checks, with no right answers. Just say where you stand, by rating how much you agree with each one. We'll come back to them when training ends. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "e33f2203": {
+      "slide": "s4",
+      "text": "Athena tells you about Aristotle. She says he was her father's student's student. Plato taught him, but he thought Plato was too abstract.",
+      "spoken": "Athena tells you about Aristotle. She says he was her father's student's student. Plato taught him, but he thought Plato was too abstract."
+    },
+    "c0d107c5": {
+      "slide": "s4",
+      "text": "Aristotle lived from 384 to 322 BCE. He studied at Plato's Academy for twenty years, then broke away.",
+      "spoken": "Aristotle lived from 384 to 322 BCE. He studied at Plato's Academy for twenty years, then broke away."
+    },
+    "a79f5276": {
+      "slide": "s4",
+      "text": "He tutored Alexander the Great and founded the Lyceum. He studied everything: biology, politics, logic, poetry.",
+      "spoken": "He tutored Alexander the Great and founded the Lyceum. He studied everything: biology, politics, logic, poetry."
+    },
+    "11cf6a19": {
+      "slide": "s4",
+      "text": "Where Plato looked up to ideal Forms, Aristotle looked around, at how people live, thrive, and fail.",
+      "spoken": "Where Plato looked up to ideal Forms, Aristotle looked around, at how people live, thrive, and fail."
+    },
+    "9a1d1af0": {
+      "slide": "s4",
+      "text": "His ethics starts from a simple question: what does a flourishing human life actually look like?",
+      "spoken": "His ethics starts from a simple question: what does a flourishing human life actually look like?"
+    },
+    "a69d9052": {
+      "slide": "plato-aristotle",
+      "text": "Two ways to find the good. Athena concedes that Aristotle was brilliant. But he thought her father was too stuck in the sky. For Plato, the advice is to look up. The Good is a transcendent Form: eternal, perfect, known through reason alone. Know the Form of the Good, and right action follows. Philosophy is the path. For Aristotle, the advice is to look around. The good is how you actually live, a practical matter of habit, character, and community. The goal isn't to know the good but to become good. Practice is the path.",
+      "spoken": "Two ways to find the good. Athena concedes that Aristotle was brilliant. But he thought her father was too stuck in the sky. For Plato, the advice is to look up. The Good is a transcendent Form: eternal, perfect, known through reason alone. Know the Form of the Good, and right action follows. Philosophy is the path. For Aristotle, the advice is to look around. The good is how you actually live, a practical matter of habit, character, and community. The goal isn't to know the good but to become good. Practice is the path."
+    },
+    "89b75236": {
+      "slide": "s6",
+      "text": "Spot the difference. Plato or Aristotle? Sort each quote under the thinker who would say it. When every line is placed, press Check answers.",
+      "spoken": "Spot the difference. Plato or Aristotle? Sort each quote under the thinker who would say it. When every line is placed, press Check answers."
+    },
+    "6f776b19": {
+      "slide": "s6",
+      "text": "Right. Plato looks up: the Good is an eternal Form, known by reason. Aristotle looks around: the goal is to become good through practice.",
+      "spoken": "Right. Plato looks up: the Good is an eternal Form, known by reason. Aristotle looks around: the goal is to become good through practice."
+    },
+    "23bcd943": {
+      "slide": "eudaimonia",
+      "text": "Now, eudaimonia. Athena says every mortal wants to be happy, but most of you have no idea what that actually means.",
+      "spoken": "Now, eudaimonia. Athena says every mortal wants to be happy, but most of you have no idea what that actually means."
+    },
+    "b9acda5d": {
+      "slide": "eudaimonia",
+      "text": "Everything we do aims at some good. So what is the final good, the one wanted for its own sake?",
+      "spoken": "Everything we do aims at some good. So what is the final good, the one wanted for its own sake?"
+    },
+    "f3ebf428": {
+      "slide": "eudaimonia",
+      "text": "Aristotle calls it eudaimonia. It doesn't mean happiness. It means flourishing: living well across a whole life.",
+      "spoken": "Aristotle calls it eudaimonia. It doesn't mean happiness. It means flourishing: living well across a whole life."
+    },
+    "a423dd6f": {
+      "slide": "eudaimonia",
+      "text": "It's an activity of the soul in accordance with virtue. It's a way of living, not a feeling.",
+      "spoken": "It's an activity of the soul in accordance with virtue. It's a way of living, not a feeling."
+    },
+    "d9f1c346": {
+      "slide": "eudaimonia",
+      "text": "It's not pleasure alone, not wealth, as Midas could tell you, and not fame. Each can be part of a good life, but none is the whole.",
+      "spoken": "It's not pleasure alone, not wealth, as Midas could tell you, and not fame. Each can be part of a good life, but none is the whole."
+    },
+    "b6d11a6e": {
+      "slide": "eudaimonia-hedonism",
+      "text": "Flourishing is not the same as pleasure. Athena glances toward the utilitarianism wing of the training camp. She says some people tried to reduce it all to pleasure, and they were wrong. On one side is eudaimonia, Aristotle's view. It's flourishing across a whole life: virtuous activity, good relationships, meaningful work. A hard life lived with courage, wisdom, and friends can still be a good life. On the other side is hedonism, the view of Epicurus and Bentham. Pleasure is the only intrinsic good, and pain the only intrinsic evil. A pleasant life counts as good by definition, however shallow it is.",
+      "spoken": "Flourishing is not the same as pleasure. Athena glances toward the utilitarianism wing of the training camp. She says some people tried to reduce it all to pleasure, and they were wrong. On one side is eudaimonia, Aristotle's view. It's flourishing across a whole life: virtuous activity, good relationships, meaningful work. A hard life lived with courage, wisdom, and friends can still be a good life. On the other side is hedonism, the view of Epicurus and Bentham. Pleasure is the only intrinsic good, and pain the only intrinsic evil. A pleasant life counts as good by definition, however shallow it is."
+    },
+    "dd074177": {
+      "slide": "s9",
+      "text": "What is eudaimonia? Sort each claim under Aristotle's eudaimonia or hedonism, then press Check answers.",
+      "spoken": "What is eudaimonia? Sort each claim under Aristotle's eudaimonia or hedonism, then press Check answers."
+    },
+    "8b273ebb": {
+      "slide": "s9",
+      "text": "Right. For Aristotle the good is flourishing, a whole life of virtuous activity. The hedonist counts pleasure as the only thing good in itself, and pain as the only thing bad.",
+      "spoken": "Right. For Aristotle the good is flourishing, a whole life of virtuous activity. The hedonist counts pleasure as the only thing good in itself, and pain as the only thing bad."
+    },
+    "707cc183": {
+      "slide": "s10",
+      "text": "In Aristotle's words. Fill in each gap, then press Check.",
+      "spoken": "In Aristotle's words. Fill in each gap, then press Check."
+    },
+    "e662001f": {
+      "slide": "s10",
+      "text": "Eudaimonia is activity of the soul in accordance with virtue. It's a way of living, not just a feeling.",
+      "spoken": "Eudaimonia is activity of the soul in accordance with virtue. It's a way of living, not just a feeling."
+    },
+    "01b4af41": {
+      "slide": "golden-mean",
+      "text": "The golden mean. Athena says to pay attention, because this is where most of you go wrong.",
+      "spoken": "The golden mean. Athena says to pay attention, because this is where most of you go wrong."
+    },
+    "5c733218": {
+      "slide": "golden-mean",
+      "text": "A virtue is a stable disposition, called hexis, not a one-off act. The brave person doesn't just act bravely once. They are brave, reliably.",
+      "spoken": "A virtue is a stable disposition, called hexis, not a one-off act. The brave person doesn't just act bravely once. They are brave, reliably."
+    },
+    "f10752eb": {
+      "slide": "golden-mean",
+      "text": "Each virtue sits between two vices: excess and deficiency. Courage lies between rashness and cowardice. Generosity lies between prodigality and stinginess.",
+      "spoken": "Each virtue sits between two vices: excess and deficiency. Courage lies between rashness and cowardice. Generosity lies between prodigality and stinginess."
+    },
+    "6db5b715": {
+      "slide": "golden-mean",
+      "text": "The mean is not an arithmetic midpoint. It shifts with the person and the situation.",
+      "spoken": "The mean is not an arithmetic midpoint. It shifts with the person and the situation."
+    },
+    "82bc9133": {
+      "slide": "golden-mean",
+      "text": "Some feelings and actions have no mean at all. There is no right amount of spite or theft.",
+      "spoken": "Some feelings and actions have no mean at all. There is no right amount of spite or theft."
+    },
+    "61fabe6a": {
+      "slide": "golden-mean",
+      "text": "What counts as courage for a trained warrior differs from what counts for a civilian. Seeing which response the moment calls for takes phronesis, or practical wisdom.",
+      "spoken": "What counts as courage for a trained warrior differs from what counts for a civilian. Seeing which response the moment calls for takes phronesis, or practical wisdom."
+    },
+    "e126df1d": {
+      "slide": "s12",
+      "text": "The rage of Achilles. Look at Achilles, Athena says. Unmatched physical courage, and a total disaster of a human.",
+      "spoken": "The rage of Achilles. Look at Achilles, Athena says. Unmatched physical courage, and a total disaster of a human."
+    },
+    "0c2ea533": {
+      "slide": "s12",
+      "text": "He was the Greeks' best fighter in their long war against Troy.",
+      "spoken": "He was the Greeks' best fighter in their long war against Troy."
+    },
+    "0873a294": {
+      "slide": "s12",
+      "text": "His own commander humiliated him over a share of the spoils, so he sat in his tent while his allies were slaughtered.",
+      "spoken": "His own commander humiliated him over a share of the spoils, so he sat in his tent while his allies were slaughtered."
+    },
+    "81340027": {
+      "slide": "s12",
+      "text": "He returned only when the Trojans killed his closest friend. Then he killed their prince and dragged the body behind his chariot.",
+      "spoken": "He returned only when the Trojans killed his closest friend. Then he killed their prince and dragged the body behind his chariot."
+    },
+    "e518b18a": {
+      "slide": "s12",
+      "text": "Athena snorts. Her father's poets called it heroic. She calls it a lack of self-government.",
+      "spoken": "Athena snorts. Her father's poets called it heroic. She calls it a lack of self-government."
+    },
+    "dc0191d1": {
+      "slide": "s13",
+      "text": "Courage: finding the mean. Aristotle uses courage as the classic virtue. But it's not just not being afraid.",
+      "spoken": "Courage: finding the mean. Aristotle uses courage as the classic virtue. But it's not just not being afraid."
+    },
+    "a953b0bb": {
+      "slide": "s13",
+      "text": "The deficiency is cowardice: fleeing in fear, prioritizing safety over honor.",
+      "spoken": "The deficiency is cowardice: fleeing in fear, prioritizing safety over honor."
+    },
+    "ac9a371a": {
+      "slide": "s13",
+      "text": "The excess is rashness: rushing headlong into danger without reason. That's Achilles in battle.",
+      "spoken": "The excess is rashness: rushing headlong into danger without reason. That's Achilles in battle."
+    },
+    "ead6a931": {
+      "slide": "s13",
+      "text": "The mean is courage: facing the right things, for the right reason, in the right way, at the right time.",
+      "spoken": "The mean is courage: facing the right things, for the right reason, in the right way, at the right time."
+    },
+    "5c662c48": {
+      "slide": "s13",
+      "text": "His rage, sulking and then desecrating a fallen foe, is a second failing. Aristotle calls it irascibility: the excess of good temper, not of courage.",
+      "spoken": "His rage, sulking and then desecrating a fallen foe, is a second failing. Aristotle calls it irascibility: the excess of good temper, not of courage."
+    },
+    "5e25c733": {
+      "slide": "s14",
+      "text": "The flight of Icarus. Athena sweeps her hand, and the scene changes to a boy soaring over the Aegean. Next, she says, a boy who thought he was a bird.",
+      "spoken": "The flight of Icarus. Athena sweeps her hand, and the scene changes to a boy soaring over the Aegean. Next, she says, a boy who thought he was a bird."
+    },
+    "816314b9": {
+      "slide": "s14",
+      "text": "Trapped in the Labyrinth, the master inventor Daedalus built two sets of wings made of feathers and wax, for himself and his son, Icarus.",
+      "spoken": "Trapped in the Labyrinth, the master inventor Daedalus built two sets of wings made of feathers and wax, for himself and his son, Icarus."
+    },
+    "90bdac33": {
+      "slide": "s14",
+      "text": "Before they flew, Daedalus gave a strict warning. Do not fly too high, or the sun will melt the wax. Do not fly too low, or the damp sea will weigh down the feathers.",
+      "spoken": "Before they flew, Daedalus gave a strict warning. Do not fly too high, or the sun will melt the wax. Do not fly too low, or the damp sea will weigh down the feathers."
+    },
+    "d386b678": {
+      "slide": "s14",
+      "text": "But once in the air, the thrill of flight overcame Icarus. He flew higher and higher, the wax melted, and he plunged into the sea.",
+      "spoken": "But once in the air, the thrill of flight overcame Icarus. He flew higher and higher, the wax melted, and he plunged into the sea."
+    },
+    "a3a0a3a3": {
+      "slide": "s15",
+      "text": "The literal middle path. Athena notes that Daedalus wasn't just giving flight instructions. He was explaining the Mean.",
+      "spoken": "The literal middle path. Athena notes that Daedalus wasn't just giving flight instructions. He was explaining the Mean."
+    },
+    "f0ffea0e": {
+      "slide": "s15",
+      "text": "Icarus's tragedy is the Doctrine of the Mean made literal.",
+      "spoken": "Icarus's tragedy is the Doctrine of the Mean made literal."
+    },
+    "f45cf488": {
+      "slide": "s15",
+      "text": "The deficiency is the damp sea, or timidity: flying too low, being too fearful to rise and escape.",
+      "spoken": "The deficiency is the damp sea, or timidity: flying too low, being too fearful to rise and escape."
+    },
+    "d823fb91": {
+      "slide": "s15",
+      "text": "The excess is the blazing sun, or rashness: flying too high, intoxicated by pride and thrill.",
+      "spoken": "The excess is the blazing sun, or rashness: flying too high, intoxicated by pride and thrill."
+    },
+    "f84b50a6": {
+      "slide": "s15",
+      "text": "The mean is the middle way: temperance and moderation, escaping safely by recognizing your limits.",
+      "spoken": "The mean is the middle way: temperance and moderation, escaping safely by recognizing your limits."
+    },
+    "d72587c2": {
+      "slide": "s16",
+      "text": "Explore the mean. Pick a character and a virtue domain. The marker shows where their myth places them on the spectrum. Green means near the mean. Amber or magenta means trouble. When you're ready, press Continue.",
+      "spoken": "Explore the mean. Pick a character and a virtue domain. The marker shows where their myth places them on the spectrum. Green means near the mean. Amber or magenta means trouble. When you're ready, press Continue."
+    },
+    "88e606fc": {
+      "slide": "s17",
+      "text": "Test the doctrine. Check every true statement about Aristotle's doctrine of the mean, then press Check answers.",
+      "spoken": "Test the doctrine. Check every true statement about Aristotle's doctrine of the mean, then press Check answers."
+    },
+    "89ff494f": {
+      "slide": "s17",
+      "text": "Right. The mean is relative to the person and situation, and practical wisdom perceives it. It's not a mathematical average. And some feelings and actions, like spite and theft, have no mean at all.",
+      "spoken": "Right. The mean is relative to the person and situation, and practical wisdom perceives it. It's not a mathematical average. And some feelings and actions, like spite and theft, have no mean at all."
+    },
+    "3a484ffd": {
+      "slide": "habituation",
+      "text": "Practice makes virtuous. How do you think my heroes got good at fighting? Athena asks. Practice. Ethics is no different.",
+      "spoken": "Practice makes virtuous. How do you think my heroes got good at fighting? Athena asks. Practice. Ethics is no different."
+    },
+    "6f66b94b": {
+      "slide": "habituation",
+      "text": "Aristotle calls this habituation, or ethismos. We become just by doing just acts, temperate by doing temperate acts.",
+      "spoken": "Aristotle calls this habituation, or ethismos. We become just by doing just acts, temperate by doing temperate acts."
+    },
+    "b7f92a4c": {
+      "slide": "habituation",
+      "text": "Virtue is not a set of rules you memorize. It's a stable disposition, a hexis, built over time.",
+      "spoken": "Virtue is not a set of rules you memorize. It's a stable disposition, a hexis, built over time."
+    },
+    "c95c6ad2": {
+      "slide": "habituation",
+      "text": "Just as you learn to play the lyre by playing the lyre, you learn to be patient by practicing patience.",
+      "spoken": "Just as you learn to play the lyre by playing the lyre, you learn to be patient by practicing patience."
+    },
+    "c7c2c305": {
+      "slide": "habituation",
+      "text": "But practice alone isn't enough. You need to know what to do in each unique situation.",
+      "spoken": "But practice alone isn't enough. You need to know what to do in each unique situation."
+    },
+    "6d1af535": {
+      "slide": "s19",
+      "text": "The cunning of Odysseus. Athena points to her favorite mortal. Odysseus isn't the strongest, she says. He's the one who gets home.",
+      "spoken": "The cunning of Odysseus. Athena points to her favorite mortal. Odysseus isn't the strongest, she says. He's the one who gets home."
+    },
+    "2808c8e6": {
+      "slide": "s19",
+      "text": "Trapped by the Cyclops, he did not charge in blind fury, which would have meant death. He got the giant drunk, said his name was Nobody, and blinded him.",
+      "spoken": "Trapped by the Cyclops, he did not charge in blind fury, which would have meant death. He got the giant drunk, said his name was Nobody, and blinded him."
+    },
+    "32a784e5": {
+      "slide": "s19",
+      "text": "To hear the Sirens without wrecking, he had his crew plug their ears with wax and lash him to the mast.",
+      "spoken": "To hear the Sirens without wrecking, he had his crew plug their ears with wax and lash him to the mast."
+    },
+    "639fa6a6": {
+      "slide": "s19",
+      "text": "Back in Ithaca he passed as a beggar for days, enduring insults to survey the household before striking.",
+      "spoken": "Back in Ithaca he passed as a beggar for days, enduring insults to survey the household before striking."
+    },
+    "68f30731": {
+      "slide": "s20",
+      "text": "Phronesis: wisdom in action. Odysseus shows phronesis, or practical wisdom. It is the master virtue that coordinates all the others.",
+      "spoken": "Phronesis: wisdom in action. Odysseus shows phronesis, or practical wisdom. It is the master virtue that coordinates all the others."
+    },
+    "9d48d5aa": {
+      "slide": "s20",
+      "text": "Phronesis is the ability to perceive what a situation requires and find the right mean.",
+      "spoken": "Phronesis is the ability to perceive what a situation requires and find the right mean."
+    },
+    "0e872480": {
+      "slide": "s20",
+      "text": "In the cave, raw courage without phronesis would have been suicide, which is rashness. Odysseus's restraint was the true mean.",
+      "spoken": "In the cave, raw courage without phronesis would have been suicide, which is rashness. Odysseus's restraint was the true mean."
+    },
+    "ae45496a": {
+      "slide": "s20",
+      "text": "Phronesis is situational intelligence, Athena explains. It connects intellectual smarts with a good character. Without it, cleverness is just a weapon.",
+      "spoken": "Phronesis is situational intelligence, Athena explains. It connects intellectual smarts with a good character. Without it, cleverness is just a weapon."
+    },
+    "4b45a7b9": {
+      "slide": "s21",
+      "text": "Wisdom is not cleverness. Aristotle separates practical wisdom from mere cleverness. Athena adds that she's seen very clever people do terrible things. Phronesis, or practical wisdom, aims at the genuinely good and requires good character. Odysseus gets everyone home safely by reading each situation and choosing well. Mere cleverness is skill without virtue. It can serve any end, including wicked ones. A con artist reads people brilliantly, but toward selfish ends. That is cleverness without character.",
+      "spoken": "Wisdom is not cleverness. Aristotle separates practical wisdom from mere cleverness. Athena adds that she's seen very clever people do terrible things. Phronesis, or practical wisdom, aims at the genuinely good and requires good character. Odysseus gets everyone home safely by reading each situation and choosing well. Mere cleverness is skill without virtue. It can serve any end, including wicked ones. A con artist reads people brilliantly, but toward selfish ends. That is cleverness without character."
+    },
+    "6e4e4633": {
+      "slide": "s22",
+      "text": "The tragedy of Medea. Athena's voice drops. And then we have Medea, she says. Brilliant, powerful, and utterly consumed.",
+      "spoken": "The tragedy of Medea. Athena's voice drops. And then we have Medea, she says. Brilliant, powerful, and utterly consumed."
+    },
+    "d9cac338": {
+      "slide": "s22",
+      "text": "Medea used her magic to help Jason steal the Golden Fleece, betraying her own family for him. But years later, Jason abandoned her to marry the princess of Corinth.",
+      "spoken": "Medea used her magic to help Jason steal the Golden Fleece, betraying her own family for him. But years later, Jason abandoned her to marry the princess of Corinth."
+    },
+    "750fe7fb": {
+      "slide": "s22",
+      "text": "Blinded by jealousy and betrayal, Medea plotted a horrific revenge. She sent a poisoned robe to Jason's new bride, who died in agony.",
+      "spoken": "Blinded by jealousy and betrayal, Medea plotted a horrific revenge. She sent a poisoned robe to Jason's new bride, who died in agony."
+    },
+    "dec92412": {
+      "slide": "s22",
+      "text": "To inflict the maximum possible pain on Jason, she chose to murder their own children. She escaped in a chariot sent by the sun god Helios as Jason wept.",
+      "spoken": "To inflict the maximum possible pain on Jason, she chose to murder their own children. She escaped in a chariot sent by the sun god Helios as Jason wept."
+    },
+    "e109dbcb": {
+      "slide": "s23",
+      "text": "The nightmare of akrasia. She wasn't stupid, Athena says. She knew exactly what she was doing. That's what makes it terrifying.",
+      "spoken": "The nightmare of akrasia. She wasn't stupid, Athena says. She knew exactly what she was doing. That's what makes it terrifying."
+    },
+    "8839c26a": {
+      "slide": "s23",
+      "text": "Euripides gives Medea a famous line: I know what evil I am about to do, but my passion is stronger than my reason.",
+      "spoken": "Euripides gives Medea a famous line: I know what evil I am about to do, but my passion is stronger than my reason."
+    },
+    "fd337fd0": {
+      "slide": "s23",
+      "text": "The line is Euripides's, not Aristotle's. But it describes exactly what Aristotle calls akrasia: acting against your own better judgment.",
+      "spoken": "The line is Euripides's, not Aristotle's. But it describes exactly what Aristotle calls akrasia: acting against your own better judgment."
+    },
+    "a3c90684": {
+      "slide": "s23",
+      "text": "Unlike a truly vicious person who thinks doing bad is good, the akratic person knows what is right but is overcome by desire or anger.",
+      "spoken": "Unlike a truly vicious person who thinks doing bad is good, the akratic person knows what is right but is overcome by desire or anger."
+    },
+    "aac54fd9": {
+      "slide": "s23",
+      "text": "Without self-mastery and phronesis, Medea's brilliant cleverness became a tool of pure destruction.",
+      "spoken": "Without self-mastery and phronesis, Medea's brilliant cleverness became a tool of pure destruction."
+    },
+    "3763af1c": {
+      "slide": "s24",
+      "text": "Decision point: knowing and not doing. You know perfectly well what you ought to do, and you do the other thing anyway. What has gone wrong? This one isn't graded. Two of the answers belong to two philosophers who disagreed about it for a lifetime. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: knowing and not doing. You know perfectly well what you ought to do, and you do the other thing anyway. What has gone wrong? This one isn't graded. Two of the answers belong to two philosophers who disagreed about it for a lifetime. Pick the answer closest to your view, and read its note."
+    },
+    "49821698": {
+      "slide": "s24",
+      "text": "Socrates held the first answer: nobody knowingly goes wrong. Aristotle rejected that. For him, akrasia is knowledge that is present but not gripping.",
+      "spoken": "Socrates held the first answer: nobody knowingly goes wrong. Aristotle rejected that. For him, akrasia is knowledge that is present but not gripping."
+    },
+    "a37d80fb": {
+      "slide": "s25",
+      "text": "Why practice? Pick an answer.",
+      "spoken": "Why practice? Pick an answer."
+    },
+    "dfa39f24": {
+      "slide": "s25",
+      "text": "Right. Virtues are dispositions formed through repeated action, like craft skills. Knowing what's right isn't enough. You have to make it a habit.",
+      "spoken": "Right. Virtues are dispositions formed through repeated action, like craft skills. Knowing what's right isn't enough. You have to make it a habit."
+    },
+    "137b1cdc": {
+      "slide": "s26",
+      "text": "The theft of fire. You can't flourish alone, Athena says. Even the Titan who made you learned that the hard way.",
+      "spoken": "The theft of fire. You can't flourish alone, Athena says. Even the Titan who made you learned that the hard way."
+    },
+    "bf6b70b1": {
+      "slide": "s26",
+      "text": "Prometheus pitied humanity, cold and helpless in the dark. Defying Zeus, he stole fire in a hollow fennel stalk and gave it to mortals.",
+      "spoken": "Prometheus pitied humanity, cold and helpless in the dark. Defying Zeus, he stole fire in a hollow fennel stalk and gave it to mortals."
+    },
+    "5065b353": {
+      "slide": "s26",
+      "text": "With fire came civilization, science, and the arts. Zeus chained him to a rock in the Caucasus, where an eagle ate his liver daily.",
+      "spoken": "With fire came civilization, science, and the arts. Zeus chained him to a rock in the Caucasus, where an eagle ate his liver daily."
+    },
+    "6bd41a97": {
+      "slide": "s26",
+      "text": "A noble act, Athena muses. But a life of eternal torture on a rock is not what we call a happy ending.",
+      "spoken": "A noble act, Athena muses. But a life of eternal torture on a rock is not what we call a happy ending."
+    },
+    "9d89a7e0": {
+      "slide": "s27",
+      "text": "The political animal. Aristotle famously wrote that man is by nature a political animal. That's from the Politics, book one.",
+      "spoken": "The political animal. Aristotle famously wrote that man is by nature a political animal. That's from the Politics, book one."
+    },
+    "4553e9a9": {
+      "slide": "s27",
+      "text": "For Aristotle, humans cannot fully flourish in isolation. We need a polis, a community or city-state, to practice virtue and live well.",
+      "spoken": "For Aristotle, humans cannot fully flourish in isolation. We need a polis, a community or city-state, to practice virtue and live well."
+    },
+    "589dccc2": {
+      "slide": "s27",
+      "text": "Prometheus gave humanity the tools to build a community, but he was cast out of it. An individual on a rock, even a noble one, cannot achieve eudaimonia.",
+      "spoken": "Prometheus gave humanity the tools to build a community, but he was cast out of it. An individual on a rock, even a noble one, cannot achieve eudaimonia."
+    },
+    "4ad734d4": {
+      "slide": "s27",
+      "text": "Flourishing requires shared laws, education, and social institutions. Virtue is co-authored with the community you inhabit.",
+      "spoken": "Flourishing requires shared laws, education, and social institutions. Virtue is co-authored with the community you inhabit."
+    },
+    "a17a61ac": {
+      "slide": "s28",
+      "text": "The loom of Penelope. If you want to see virtue that sustains an entire kingdom, Athena says, look at Penelope.",
+      "spoken": "The loom of Penelope. If you want to see virtue that sustains an entire kingdom, Athena says, look at Penelope."
+    },
+    "89f05efb": {
+      "slide": "s28",
+      "text": "With Odysseus missing twenty years, a hundred and eight suitors overran Ithaca, demanding her hand and eating the palace bare.",
+      "spoken": "With Odysseus missing twenty years, a hundred and eight suitors overran Ithaca, demanding her hand and eating the palace bare."
+    },
+    "c5f97aa9": {
+      "slide": "s28",
+      "text": "Her trick: she would marry once a burial shroud was finished. She wove it by day and unraveled it by torchlight at night.",
+      "spoken": "Her trick: she would marry once a burial shroud was finished. She wove it by day and unraveled it by torchlight at night."
+    },
+    "660bbd74": {
+      "slide": "s28",
+      "text": "Three years of that, protecting her son, her household, and the throne by patient intelligence.",
+      "spoken": "Three years of that, protecting her son, her household, and the throne by patient intelligence."
+    },
+    "5a276cea": {
+      "slide": "philia",
+      "text": "Philia: virtue in community. Penelope's story shows that virtue is relational. It requires philia, which means friendship or broad social loyalty.",
+      "spoken": "Philia: virtue in community. Penelope's story shows that virtue is relational. It requires philia, which means friendship or broad social loyalty."
+    },
+    "c6ed4580": {
+      "slide": "philia",
+      "text": "Aristotle claims friendship is one of the greatest external goods for eudaimonia.",
+      "spoken": "Aristotle claims friendship is one of the greatest external goods for eudaimonia."
+    },
+    "4bbd05fa": {
+      "slide": "philia",
+      "text": "The highest form is virtue-friendship, where friends love each other for their character, helping each other grow.",
+      "spoken": "The highest form is virtue-friendship, where friends love each other for their character, helping each other grow."
+    },
+    "7b00b723": {
+      "slide": "philia",
+      "text": "Friendships of usefulness and of pleasure are real friendships too, only lesser ones.",
+      "spoken": "Friendships of usefulness and of pleasure are real friendships too, only lesser ones."
+    },
+    "6561bd52": {
+      "slide": "philia",
+      "text": "Penelope's virtue wasn't a solo act of heroic pride like Achilles's. It was a communal anchor that kept the social fabric of Ithaca from tearing apart.",
+      "spoken": "Penelope's virtue wasn't a solo act of heroic pride like Achilles's. It was a communal anchor that kept the social fabric of Ithaca from tearing apart."
+    },
+    "78892e93": {
+      "slide": "s30",
+      "text": "Me versus we. Modern ethics often asks, what should I do? Aristotle asks something bigger. On one side is individual virtue, the modern focus. What should I do in this situation? Ethics as personal decision-making. A lonely hero choosing right is admirable, but Aristotle would say incomplete. On the other side is communal virtue, Aristotle's focus. What kind of polis produces virtuous people? Character and community are inseparable. Penelope's virtue is woven into Ithaca itself. It needs good laws, good neighbors, and good friends.",
+      "spoken": "Me versus we. Modern ethics often asks, what should I do? Aristotle asks something bigger. On one side is individual virtue, the modern focus. What should I do in this situation? Ethics as personal decision-making. A lonely hero choosing right is admirable, but Aristotle would say incomplete. On the other side is communal virtue, Aristotle's focus. What kind of polis produces virtuous people? Character and community are inseparable. Penelope's virtue is woven into Ithaca itself. It needs good laws, good neighbors, and good friends."
+    },
+    "a8e7c000": {
+      "slide": "s31",
+      "text": "Decision point: can you be good on your own? Could a person be fully virtuous in a place with bad laws, bad neighbors, and no friends? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: can you be good on your own? Could a person be fully virtuous in a place with bad laws, bad neighbors, and no friends? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "0903bbdf": {
+      "slide": "s31",
+      "text": "Aristotle would say some virtues have nowhere to exist without other people. But he also distinguishes having a good character from living a flourishing life.",
+      "spoken": "Aristotle would say some virtues have nowhere to exist without other people. But he also distinguishes having a good character from living a flourishing life."
+    },
+    "cb66163e": {
+      "slide": "s32",
+      "text": "Would Aristotle agree? Check every claim he would endorse, then press Check answers.",
+      "spoken": "Would Aristotle agree? Check every claim he would endorse, then press Check answers."
+    },
+    "a0830cac": {
+      "slide": "s32",
+      "text": "Right. Aristotle insists that humans flourish in community, that laws shape character, and that virtue-friendship is the highest form. And he counts friendships of usefulness as real friendships, only lesser ones.",
+      "spoken": "Right. Aristotle insists that humans flourish in community, that laws shape character, and that virtue-friendship is the highest form. And he counts friendships of usefulness as real friendships, only lesser ones."
+    },
+    "5fe2abb0": {
+      "slide": "s33",
+      "text": "The tradition lives. Mortals spent centuries arguing about rules and calculations, Athena says. Then some of them remembered to ask the question that matters.",
+      "spoken": "The tradition lives. Mortals spent centuries arguing about rules and calculations, Athena says. Then some of them remembered to ask the question that matters."
+    },
+    "4c397b21": {
+      "slide": "s33",
+      "text": "After centuries dominated by utilitarianism, maximize happiness, and deontology, follow the rules, virtue ethics came roaring back in the twentieth century.",
+      "spoken": "After centuries dominated by utilitarianism, maximize happiness, and deontology, follow the rules, virtue ethics came roaring back in the twentieth century."
+    },
+    "9ca57cbb": {
+      "slide": "s33",
+      "text": "Why? Because rules and calculations feel incomplete without asking: what kind of person should I be?",
+      "spoken": "Why? Because rules and calculations feel incomplete without asking: what kind of person should I be?"
+    },
+    "dd8f30c7": {
+      "slide": "s33",
+      "text": "Three modern philosophers picked up Aristotle's project and ran with it, each in a different direction.",
+      "spoken": "Three modern philosophers picked up Aristotle's project and ran with it, each in a different direction."
+    },
+    "abc3298a": {
+      "slide": "s34",
+      "text": "Three modern paths. Each updates Aristotle for the modern world: same root, different branches.",
+      "spoken": "Three modern paths. Each updates Aristotle for the modern world: same root, different branches."
+    },
+    "be6d1150": {
+      "slide": "s34",
+      "text": "MacIntyre, in After Virtue, 1981: virtues live inside practices and traditions.",
+      "spoken": "MacIntyre, in After Virtue, 1981: virtues live inside practices and traditions."
+    },
+    "0f3225c6": {
+      "slide": "s34",
+      "text": "That means shared activities with internal goods, and ongoing communal narratives.",
+      "spoken": "That means shared activities with internal goods, and ongoing communal narratives."
+    },
+    "92c70cfd": {
+      "slide": "s34",
+      "text": "His charge: modern individualism has fragmented our moral vocabulary, and we need to recover it.",
+      "spoken": "His charge: modern individualism has fragmented our moral vocabulary, and we need to recover it."
+    },
+    "2b116e5b": {
+      "slide": "s35",
+      "text": "The second path is Foot.",
+      "spoken": "The second path is Foot."
+    },
+    "7720f9ac": {
+      "slide": "s35",
+      "text": "Foot, in Natural Goodness, 2001, called this neo-naturalism: virtues are natural excellences of a species.",
+      "spoken": "Foot, in Natural Goodness, 2001, called this neo-naturalism: virtues are natural excellences of a species."
+    },
+    "8798d94f": {
+      "slide": "s35",
+      "text": "We already judge living things this way. Deep roots are an excellence in an oak. A lioness who will not feed her cubs has gone wrong as a lioness.",
+      "spoken": "We already judge living things this way. Deep roots are an excellence in an oak. A lioness who will not feed her cubs has gone wrong as a lioness."
+    },
+    "7b653af4": {
+      "slide": "s35",
+      "text": "Justice is ours. A human being who lacks it is defective as a human, in the same plain sense.",
+      "spoken": "Justice is ours. A human being who lacks it is defective as a human, in the same plain sense."
+    },
+    "89703e4e": {
+      "slide": "s36",
+      "text": "The third path is Hursthouse.",
+      "spoken": "The third path is Hursthouse."
+    },
+    "4bdac47f": {
+      "slide": "s36",
+      "text": "Hursthouse, in On Virtue Ethics, 1999: an action is right if and only if it is what a virtuous agent would characteristically do.",
+      "spoken": "Hursthouse, in On Virtue Ethics, 1999: an action is right if and only if it is what a virtuous agent would characteristically do."
+    },
+    "fbce7a1b": {
+      "slide": "s36",
+      "text": "The standard complaint about virtue ethics is that it tells you what to be and not what to do.",
+      "spoken": "The standard complaint about virtue ethics is that it tells you what to be and not what to do."
+    },
+    "7d02f5f3": {
+      "slide": "s36",
+      "text": "This answers it. Faced with a decision, ask what a courageous or generous or just person would do here. That is a question you can actually work on.",
+      "spoken": "This answers it. Faced with a decision, ask what a courageous or generous or just person would do here. That is a question you can actually work on."
+    },
+    "fc59c0c6": {
+      "slide": "three-branches",
+      "text": "Same root, three branches. MacIntyre: practices and traditions. Virtues make sense within shared practices and living traditions. A chess player's honesty, a community's inherited sense of justice: virtues need a social home. Foot: natural excellences. Virtues are natural human excellences, judged the way we judge any living thing. A human without justice is defective as a human, like a lioness who won't nurse her cubs. Hursthouse: the virtuous agent. An action is right if it's what a virtuous person would characteristically do. What would a courageous or generous or just person do here? That is virtue ethics as a practical guide.",
+      "spoken": "Same root, three branches. MacIntyre: practices and traditions. Virtues make sense within shared practices and living traditions. A chess player's honesty, a community's inherited sense of justice: virtues need a social home. Foot: natural excellences. Virtues are natural human excellences, judged the way we judge any living thing. A human without justice is defective as a human, like a lioness who won't nurse her cubs. Hursthouse: the virtuous agent. An action is right if it's what a virtuous person would characteristically do. What would a courageous or generous or just person do here? That is virtue ethics as a practical guide."
+    },
+    "c059b870": {
+      "slide": "s38",
+      "text": "Match the philosopher. Here are three modern Aristotelians: MacIntyre, Foot, and Hursthouse. Sort each quote under the one who would say it, then press Check answers.",
+      "spoken": "Match the philosopher. Here are three modern Aristotelians: MacIntyre, Foot, and Hursthouse. Sort each quote under the one who would say it, then press Check answers."
+    },
+    "6bb6df98": {
+      "slide": "s38",
+      "text": "Right. MacIntyre grounds the virtues in shared practices and traditions. Foot treats them as natural excellences of the human species. Hursthouse turns them into a guide to action.",
+      "spoken": "Right. MacIntyre grounds the virtues in shared practices and traditions. Foot treats them as natural excellences of the human species. Hursthouse turns them into a guide to action."
+    },
+    "82fec202": {
+      "slide": "s39",
+      "text": "Complete the map. Fill in each gap, then press Check.",
+      "spoken": "Complete the map. Fill in each gap, then press Check."
+    },
+    "c01103b7": {
+      "slide": "s39",
+      "text": "MacIntyre grounds virtue in practices and traditions. Hursthouse gives action guidance through the virtuous agent. Foot identifies virtues as natural excellences.",
+      "spoken": "MacIntyre grounds virtue in practices and traditions. Hursthouse gives action guidance through the virtuous agent. Foot identifies virtues as natural excellences."
+    },
+    "66abf731": {
+      "slide": "s40",
+      "text": "Revisit your instincts. Here is where you stood before training began. Re-rate each one and see whether Athena shifted anything. Staying put is fine. The question is whether you can now say why. When you've rated all five, press Submit.",
+      "spoken": "Revisit your instincts. Here is where you stood before training began. Re-rate each one and see whether Athena shifted anything. Staying put is fine. The question is whether you can now say why. When you've rated all five, press Submit."
+    },
+    "d9a90532": {
+      "slide": "s40",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "824aec91": {
+      "slide": "s41",
+      "text": "Go practice. Knowing the mean isn't enough, Athena says, already turning away. You have to live it.",
+      "spoken": "Go practice. Knowing the mean isn't enough, Athena says, already turning away. You have to live it."
+    },
+    "91a5f1db": {
+      "slide": "s41",
+      "text": "Eudaimonia: flourishing, the activity of the soul in accordance with virtue.",
+      "spoken": "Eudaimonia: flourishing, the activity of the soul in accordance with virtue."
+    },
+    "5fec7e5f": {
+      "slide": "s41",
+      "text": "The mean: a disposition between excess and deficiency, found by practical wisdom.",
+      "spoken": "The mean: a disposition between excess and deficiency, found by practical wisdom."
+    },
+    "53d156d3": {
+      "slide": "s41",
+      "text": "Habituation and phronesis: virtue is practiced, not just taught, and wisdom unifies it.",
+      "spoken": "Habituation and phronesis: virtue is practiced, not just taught, and wisdom unifies it."
+    },
+    "87f9453b": {
+      "slide": "s41",
+      "text": "The polis and friendship: you cannot flourish alone.",
+      "spoken": "The polis and friendship: you cannot flourish alone."
+    },
+    "2bc6db3c": {
+      "slide": "s41",
+      "text": "The tradition continues: MacIntyre, Foot, Hursthouse. Visit every slide, answer every question, and submit both belief probes.",
+      "spoken": "The tradition continues: MacIntyre, Foot, Hursthouse. Visit every slide, answer every question, and submit both belief probes."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

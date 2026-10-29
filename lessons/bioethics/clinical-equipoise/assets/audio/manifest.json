@@ -1,0 +1,532 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-tutor-5",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "a7d8a2da": {
+      "slide": "s1",
+      "text": "Welcome to The Jekyll Protocol. You're shadowing Doctor Helen Jekyll for a day while she runs a drug trial. Her great-grandfather was that Jekyll, the one with the serum. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Jekyll Protocol. You're shadowing Doctor Helen Jekyll for a day while she runs a drug trial. Her great-grandfather was that Jekyll, the one with the serum. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "4c259026": {
+      "slide": "s2",
+      "text": "Let's meet the family business. Helen says everyone assumes she went into medicine to make up for him. She nods at the locket photo on her desk. She says they're right.",
+      "spoken": "Let's meet the family business. Helen says everyone assumes she went into medicine to make up for him. She nods at the locket photo on her desk. She says they're right."
+    },
+    "39a8f581": {
+      "slide": "s2",
+      "text": "Her trial tests a new drug for people who cannot control their impulses. Henry worked on the same problem.",
+      "spoken": "Her trial tests a new drug for people who cannot control their impulses. Henry worked on the same problem."
+    },
+    "e04d8089": {
+      "slide": "s2",
+      "text": "Henry had an idea and a syringe, and he tested it on himself. Nobody else knew he was doing it.",
+      "spoken": "Henry had an idea and a syringe, and he tested it on himself. Nobody else knew he was doing it."
+    },
+    "be85b032": {
+      "slide": "s2",
+      "text": "The serum released a second self, Mister Hyde, who did what Henry would not. There was nobody there to stop him.",
+      "spoken": "The serum released a second self, Mister Hyde, who did what Henry would not. There was nobody there to stop him."
+    },
+    "d4396226": {
+      "slide": "s2",
+      "text": "Helen has colleagues, a committee, and people watching.",
+      "spoken": "Helen has colleagues, a committee, and people watching."
+    },
+    "42e258b3": {
+      "slide": "s2",
+      "text": "She also has an answer, from philosophers you will meet, to why it is fair to test a drug on somebody else.",
+      "spoken": "She also has an answer, from philosophers you will meet, to why it is fair to test a drug on somebody else."
+    },
+    "e5dc30b9": {
+      "slide": "s3",
+      "text": "Before rounds. Here are five quick statements, with no right answers. Just say how much you agree with each, right now. You'll see them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Before rounds. Here are five quick statements, with no right answers. Just say how much you agree with each, right now. You'll see them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "64fa7508": {
+      "slide": "s4",
+      "text": "This is a decision point, asked before you know anything about trials. Helen is fairly confident her new drug works. She is about to let a computer decide at random which of her patients receive it and which receive nothing. Is that allowed? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "This is a decision point, asked before you know anything about trials. Helen is fairly confident her new drug works. She is about to let a computer decide at random which of her patients receive it and which receive nothing. Is that allowed? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "54cbaf7a": {
+      "slide": "s4",
+      "text": "Hold on to your answer. You'll meet this question again once you know what a trial is.",
+      "spoken": "Hold on to your answer. You'll meet this question again once you know what a trial is."
+    },
+    "0f6f5245": {
+      "slide": "s5",
+      "text": "A trial is how you find out whether a new treatment really works.",
+      "spoken": "A trial is how you find out whether a new treatment really works."
+    },
+    "b8733f75": {
+      "slide": "s5",
+      "text": "You give it to some people, give something else to others, and then compare.",
+      "spoken": "You give it to some people, give something else to others, and then compare."
+    },
+    "014266f8": {
+      "slide": "s5",
+      "text": "You need that comparison because you want the treatment to work, and wanting it changes what you notice.",
+      "spoken": "You need that comparison because you want the treatment to work, and wanting it changes what you notice."
+    },
+    "dfe37c11": {
+      "slide": "s5",
+      "text": "Henry drank his serum himself and wrote down how he felt. He was the only subject, and he was the one hoping.",
+      "spoken": "Henry drank his serum himself and wrote down how he felt. He was the only subject, and he was the one hoping."
+    },
+    "c98c68d2": {
+      "slide": "s6",
+      "text": "One person cannot tell you whether a drug works, however carefully you watch them.",
+      "spoken": "One person cannot tell you whether a drug works, however carefully you watch them."
+    },
+    "59565010": {
+      "slide": "s6",
+      "text": "People differ. Some recover on their own, and some would have worsened whatever you gave them.",
+      "spoken": "People differ. Some recover on their own, and some would have worsened whatever you gave them."
+    },
+    "ee87747c": {
+      "slide": "s6",
+      "text": "With one patient you cannot tell which of those you are watching. With four hundred, the differences mostly even out, and what is left is the drug plus a little luck.",
+      "spoken": "With one patient you cannot tell which of those you are watching. With four hundred, the differences mostly even out, and what is left is the drug plus a little luck."
+    },
+    "3b1f2989": {
+      "slide": "s6",
+      "text": "So a trial needs a crowd. That is where the ethics get hard, because each of those people takes a risk that mostly helps somebody else.",
+      "spoken": "So a trial needs a crowd. That is where the ethics get hard, because each of those people takes a risk that mostly helps somebody else."
+    },
+    "d8a89ab1": {
+      "slide": "s6",
+      "text": "Henry had one subject: himself. Whatever happened that night, he could not have learned anything from it.",
+      "spoken": "Henry had one subject: himself. Whatever happened that night, he could not have learned anything from it."
+    },
+    "ed97bf8d": {
+      "slide": "s7",
+      "text": "Now try it yourself. Here's a patient with the illness HJ-9 is meant to treat. Give her the drug, then keep pressing to see other patients. When you're ready, press Continue.",
+      "spoken": "Now try it yourself. Here's a patient with the illness HJ-9 is meant to treat. Give her the drug, then keep pressing to see other patients. When you're ready, press Continue."
+    },
+    "ddcf9974": {
+      "slide": "s8",
+      "text": "One patient was not enough. Try twelve, and treat every one of them. Run it more than once. When you're ready, press Continue.",
+      "spoken": "One patient was not enough. Try twelve, and treat every one of them. Run it more than once. When you're ready, press Continue."
+    },
+    "ee663a51": {
+      "slide": "s9",
+      "text": "A trial needs a second group to measure against. Each group is called an arm.",
+      "spoken": "A trial needs a second group to measure against. Each group is called an arm."
+    },
+    "06309272": {
+      "slide": "s9",
+      "text": "The second arm gets a placebo, or the best treatment already available. Doctors call that the standard of care.",
+      "spoken": "The second arm gets a placebo, or the best treatment already available. Doctors call that the standard of care."
+    },
+    "b630cda9": {
+      "slide": "s9",
+      "text": "Henry's serum seemed to work. But compared to what? He had no second arm at all.",
+      "spoken": "Henry's serum seemed to work. But compared to what? He had no second arm at all."
+    },
+    "141d8d2c": {
+      "slide": "s10",
+      "text": "Every trial in this lesson has the same five steps. Volunteers who consented go into one pool. Chance splits them into an HJ-9 arm and a placebo arm. Each arm produces a count of how many got better. The last step compares the two counts. Chance does the splitting, and the answer lives in the comparison at the end.",
+      "spoken": "Every trial in this lesson has the same five steps. Volunteers who consented go into one pool. Chance splits them into an HJ-9 arm and a placebo arm. Each arm produces a count of how many got better. The last step compares the two counts. Chance does the splitting, and the answer lives in the comparison at the end."
+    },
+    "8c680b5f": {
+      "slide": "second-arm",
+      "text": "Without a second arm, three other things can look exactly like a drug working.",
+      "spoken": "Without a second arm, three other things can look exactly like a drug working."
+    },
+    "958371df": {
+      "slide": "second-arm",
+      "text": "The illness may simply be running its course, and would have eased on its own.",
+      "spoken": "The illness may simply be running its course, and would have eased on its own."
+    },
+    "6e9f4e3e": {
+      "slide": "second-arm",
+      "text": "The placebo effect: people often feel better just from being treated at all.",
+      "spoken": "The placebo effect: people often feel better just from being treated at all."
+    },
+    "d94c4108": {
+      "slide": "second-arm",
+      "text": "Regression to the mean: people enroll when they feel worst, and feeling worst is usually followed by feeling better anyway.",
+      "spoken": "Regression to the mean: people enroll when they feel worst, and feeling worst is usually followed by feeling better anyway."
+    },
+    "9ed30e76": {
+      "slide": "second-arm",
+      "text": "Henry could not tell any of these apart from his serum, so he could not tell whether it was helping him or hurting him. He kept taking it.",
+      "spoken": "Henry could not tell any of these apart from his serum, so he could not tell whether it was helping him or hurting him. He kept taking it."
+    },
+    "f8659d4b": {
+      "slide": "randomization",
+      "text": "Letting chance decide who goes in which arm spreads the differences between people evenly. That includes the differences nobody thought of.",
+      "spoken": "Letting chance decide who goes in which arm spreads the differences between people evenly. That includes the differences nobody thought of."
+    },
+    "718aa059": {
+      "slide": "randomization",
+      "text": "Sicker patients, healthier ones, hopeful ones and doubtful ones all end up spread across both arms instead of clumping on one side.",
+      "spoken": "Sicker patients, healthier ones, hopeful ones and doubtful ones all end up spread across both arms instead of clumping on one side."
+    },
+    "1daebe86": {
+      "slide": "randomization",
+      "text": "Henry's trial had one arm with one person in it. He was the researcher, the patient, and the judge of the result.",
+      "spoken": "Henry's trial had one arm with one person in it. He was the researcher, the patient, and the judge of the result."
+    },
+    "a8ae4a87": {
+      "slide": "randomization",
+      "text": "There was nothing to spread out, and nobody to compare himself with.",
+      "spoken": "There was nothing to spread out, and nobody to compare himself with."
+    },
+    "e95148d7": {
+      "slide": "s13",
+      "text": "Randomizing feels careless. Surely the sickest patients should get the new drug? Here are the same twelve patients, split two ways. Assigned by need, all six of the sickest go to the drug arm and all six healthier ones to the placebo arm, so the arms are not comparable. Assigned at random, each arm gets about three of each, so the arms start level. Put the sickest patients on the drug and you have measured HJ-9 against an easier group. The kindest assignment is the one that destroys the answer.",
+      "spoken": "Randomizing feels careless. Surely the sickest patients should get the new drug? Here are the same twelve patients, split two ways. Assigned by need, all six of the sickest go to the drug arm and all six healthier ones to the placebo arm, so the arms are not comparable. Assigned at random, each arm gets about three of each, so the arms start level. Put the sickest patients on the drug and you have measured HJ-9 against an easier group. The kindest assignment is the one that destroys the answer."
+    },
+    "bfb3c25b": {
+      "slide": "s14",
+      "text": "Now try it both ways. Here are twenty-four patients, half of them much sicker. HJ-9 genuinely works in both runs. Press the two buttons back and forth and watch what changes. When you're ready, press Continue.",
+      "spoken": "Now try it both ways. Here are twenty-four patients, half of them much sicker. HJ-9 genuinely works in both runs. Press the two buttons back and forth and watch what changes. When you're ready, press Continue."
+    },
+    "a40ed332": {
+      "slide": "s15",
+      "text": "Two ways to compare. On one side, a randomized comparison, as in a modern trial. Chance decides who gets the drug and who gets the control, so the differences between people scatter evenly across both arms. In Helen's trial, patients are randomized to drug or placebo by computer, not by hunch. On the other side, Henry's method, self-selected and historical. One subject picks himself and compares himself only to his own past. There is no second arm at all. In his diary, Henry wrote that he took the draught, and felt at once a change. Compared to nothing.",
+      "spoken": "Two ways to compare. On one side, a randomized comparison, as in a modern trial. Chance decides who gets the drug and who gets the control, so the differences between people scatter evenly across both arms. In Helen's trial, patients are randomized to drug or placebo by computer, not by hunch. On the other side, Henry's method, self-selected and historical. One subject picks himself and compares himself only to his own past. There is no second arm at all. In his diary, Henry wrote that he took the draught, and felt at once a change. Compared to nothing."
+    },
+    "e4cb2ce0": {
+      "slide": "s16",
+      "text": "Knowing which arm you are in changes how you feel, and it changes how your doctor rates you. So trials hide it.",
+      "spoken": "Knowing which arm you are in changes how you feel, and it changes how your doctor rates you. So trials hide it."
+    },
+    "8b907e8e": {
+      "slide": "s16",
+      "text": "Single-blind means the patient does not know which arm they are in.",
+      "spoken": "Single-blind means the patient does not know which arm they are in."
+    },
+    "afb6f5f1": {
+      "slide": "s16",
+      "text": "Double-blind means the doctor does not know either, so nobody's expectations can color how the symptoms get judged.",
+      "spoken": "Double-blind means the doctor does not know either, so nobody's expectations can color how the symptoms get judged."
+    },
+    "fa7a6a48": {
+      "slide": "s16",
+      "text": "Henry knew what he had taken and what he expected to feel, and he was the only one judging the result. He would have believed it worked whatever it did to him.",
+      "spoken": "Henry knew what he had taken and what he expected to feel, and he was the only one judging the result. He would have believed it worked whatever it did to him."
+    },
+    "2fdf680f": {
+      "slide": "s17",
+      "text": "What are these tools actually for? Check every genuine purpose of randomization and blinding, then press Check answers.",
+      "spoken": "What are these tools actually for? Check every genuine purpose of randomization and blinding, then press Check answers."
+    },
+    "49eb1ddc": {
+      "slide": "s17",
+      "text": "Right. Both tools exist to keep bias from contaminating the comparison. Blinding never removes the duty to tell people a placebo is possible. And randomizing makes the groups probably similar, not certainly so.",
+      "spoken": "Right. Both tools exist to keep bias from contaminating the comparison. Blinding never removes the duty to tell people a placebo is possible. And randomizing makes the groups probably similar, not certainly so."
+    },
+    "acffa0cd": {
+      "slide": "s18",
+      "text": "Which tool fixes it? Each problem could make a trial give the wrong answer. Sort each one under the tool that deals with it: a control group, randomization, or blinding. When every line is placed, press Check answers.",
+      "spoken": "Which tool fixes it? Each problem could make a trial give the wrong answer. Sort each one under the tool that deals with it: a control group, randomization, or blinding. When every line is placed, press Check answers."
+    },
+    "ca498f10": {
+      "slide": "s18",
+      "text": "Right. A control group shows what would have happened anyway. Randomization keeps the arms alike. Blinding stops knowledge of who got what from changing how patients feel and how doctors judge them.",
+      "spoken": "Right. A control group shows what would have happened anyway. Randomization keeps the arms alike. Blinding stops knowledge of who got what from changing how patients feel and how doctors judge them."
+    },
+    "f23ebd3c": {
+      "slide": "s19",
+      "text": "Helen's patients sign something Henry never offered anyone: research consent.",
+      "spoken": "Helen's patients sign something Henry never offered anyone: research consent."
+    },
+    "b8209e17": {
+      "slide": "s19",
+      "text": "It says plainly that the point of the trial is to learn something general. You might get the placebo, and the trial is not built around helping you.",
+      "spoken": "It says plainly that the point of the trial is to learn something general. You might get the placebo, and the trial is not built around helping you."
+    },
+    "54abfc28": {
+      "slide": "s19",
+      "text": "It guarantees an unconditional right to withdraw, at any point, without penalty.",
+      "spoken": "It guarantees an unconditional right to withdraw, at any point, without penalty."
+    },
+    "de0417cf": {
+      "slide": "s19",
+      "text": "Skip this and patients fall into the therapeutic misconception: believing the trial exists to treat them.",
+      "spoken": "Skip this and patients fall into the therapeutic misconception: believing the trial exists to treat them."
+    },
+    "1b66b233": {
+      "slide": "two-kinds-of-yes",
+      "text": "Two kinds of yes. First, clinical consent: this treatment, for you. It's chosen because it's believed to be your best option, tailored to your case. The doctor says, I recommend this because it's what's best for you. Second, research consent: this protocol, for knowledge. You may get the drug, the control, or the placebo. The point is what everyone learns, not a benefit promised to you. Here the researcher says, you may get the study drug, you may get placebo, and we won't know which until it's over.",
+      "spoken": "Two kinds of yes. First, clinical consent: this treatment, for you. It's chosen because it's believed to be your best option, tailored to your case. The doctor says, I recommend this because it's what's best for you. Second, research consent: this protocol, for knowledge. You may get the drug, the control, or the placebo. The point is what everyone learns, not a benefit promised to you. Here the researcher says, you may get the study drug, you may get placebo, and we won't know which until it's over."
+    },
+    "127df740": {
+      "slide": "s21",
+      "text": "But this is supposed to help me. A patient who mistakes research consent for clinical consent has the therapeutic misconception. For each line, decide which kind of consent it describes, clinical or research. Then press Check answers.",
+      "spoken": "But this is supposed to help me. A patient who mistakes research consent for clinical consent has the therapeutic misconception. For each line, decide which kind of consent it describes, clinical or research. Then press Check answers."
+    },
+    "0d564de2": {
+      "slide": "s21",
+      "text": "Right. Clinical consent is to a treatment chosen as your best option. Research consent is to a protocol run to learn something general. Treating the second as if it were the first is the therapeutic misconception.",
+      "spoken": "Right. Clinical consent is to a treatment chosen as your best option. Research consent is to a protocol run to learn something general. Treating the second as if it were the first is the therapeutic misconception."
+    },
+    "71b38818": {
+      "slide": "s22",
+      "text": "Back to the coin. This is the question you were asked before you knew what any of the machinery was for. If Helen already believes HJ-9 works, isn't it wrong to randomly deny it to half her patients?",
+      "spoken": "Back to the coin. This is the question you were asked before you knew what any of the machinery was for. If Helen already believes HJ-9 works, isn't it wrong to randomly deny it to half her patients?"
+    },
+    "317b2424": {
+      "slide": "s22",
+      "text": "You now know what she would be denying them, and what she could not find out without denying it.",
+      "spoken": "You now know what she would be denying them, and what she could not find out without denying it."
+    },
+    "61e217ba": {
+      "slide": "s22",
+      "text": "That does not make the question go away. It is the central ethical puzzle of every controlled trial.",
+      "spoken": "That does not make the question go away. It is the central ethical puzzle of every controlled trial."
+    },
+    "3cd05d6e": {
+      "slide": "s22",
+      "text": "Two philosophers gave two different answers, and the difference between them decides which trials may run at all.",
+      "spoken": "Two philosophers gave two different answers, and the difference between them decides which trials may run at all."
+    },
+    "4f3c5e20": {
+      "slide": "s23",
+      "text": "Charles Fried's standard asks about the individual physician's own confidence. It must be exactly balanced, a true fifty-fifty.",
+      "spoken": "Charles Fried's standard asks about the individual physician's own confidence. It must be exactly balanced, a true fifty-fifty."
+    },
+    "f25069a4": {
+      "slide": "s23",
+      "text": "The trouble: this is almost impossibly fragile. One hunch, one half-remembered case, one gut feeling, and the fifty-fifty is broken.",
+      "spoken": "The trouble: this is almost impossibly fragile. One hunch, one half-remembered case, one gut feeling, and the fifty-fifty is broken."
+    },
+    "872a9891": {
+      "slide": "s23",
+      "text": "It is the physician's own private inner Hyde, whispering a lean. By this standard, a single whisper should end the trial.",
+      "spoken": "It is the physician's own private inner Hyde, whispering a lean. By this standard, a single whisper should end the trial."
+    },
+    "7a85d987": {
+      "slide": "clinical-equipoise",
+      "text": "Benjamin Freedman's revision: forget any one doctor's internal balance. What matters is genuine, honest disagreement within the expert clinical community about which treatment is better.",
+      "spoken": "Benjamin Freedman's revision: forget any one doctor's internal balance. What matters is genuine, honest disagreement within the expert clinical community about which treatment is better."
+    },
+    "735d32d9": {
+      "slide": "clinical-equipoise",
+      "text": "Individual physicians can have hunches. The trial is justified as long as the field, collectively, is genuinely split.",
+      "spoken": "Individual physicians can have hunches. The trial is justified as long as the field, collectively, is genuinely split."
+    },
+    "6cafe7d8": {
+      "slide": "clinical-equipoise",
+      "text": "This is the standard actually used to launch and run real trials.",
+      "spoken": "This is the standard actually used to launch and run real trials."
+    },
+    "f768d6d5": {
+      "slide": "equipoise-compare",
+      "text": "Individual balance versus community disagreement. Theoretical equipoise is Fried's, and it's about the individual. Each physician's own subjective probability must sit at exactly fifty-fifty. It's fragile: any personal hunch, however small, breaks it. Clinical equipoise is Freedman's, and it's about the community. The expert clinical community, as a whole, must genuinely disagree. It's robust: individual hunches are fine as long as honest disagreement persists in the field.",
+      "spoken": "Individual balance versus community disagreement. Theoretical equipoise is Fried's, and it's about the individual. Each physician's own subjective probability must sit at exactly fifty-fifty. It's fragile: any personal hunch, however small, breaks it. Clinical equipoise is Freedman's, and it's about the community. The expert clinical community, as a whole, must genuinely disagree. It's robust: individual hunches are fine as long as honest disagreement persists in the field."
+    },
+    "c639c139": {
+      "slide": "s26",
+      "text": "Name the standard. Fill in each gap, then press Check.",
+      "spoken": "Name the standard. Fill in each gap, then press Check."
+    },
+    "7710b436": {
+      "slide": "s26",
+      "text": "Right. Clinical equipoise looks at the community of experts. Theoretical equipoise looks inward at one physician's own uncertainty. That's why clinical equipoise is the workable standard.",
+      "spoken": "Right. Clinical equipoise looks at the community of experts. Theoretical equipoise looks inward at one physician's own uncertainty. That's why clinical equipoise is the workable standard."
+    },
+    "df96b8e7": {
+      "slide": "s27",
+      "text": "How strong is strong enough? As a trial runs, the gap between the arms gets harder to explain away as luck. There is no line in nature that says when it stops being luck. The chart is a bar in three bands. On the left is a gap luck would produce more than one time in ten: keep randomizing, nobody is being denied. On the right is a gap rarer than one in a hundred: hard to keep going, because the placebo arm is losing out. Between them is a middle band marked judgment lives here, where the number stops deciding. The two outer bands are easy. Everything interesting happens in the middle one.",
+      "spoken": "How strong is strong enough? As a trial runs, the gap between the arms gets harder to explain away as luck. There is no line in nature that says when it stops being luck. The chart is a bar in three bands. On the left is a gap luck would produce more than one time in ten: keep randomizing, nobody is being denied. On the right is a gap rarer than one in a hundred: hard to keep going, because the placebo arm is losing out. Between them is a middle band marked judgment lives here, where the number stops deciding. The two outer bands are easy. Everything interesting happens in the middle one."
+    },
+    "3db55bfc": {
+      "slide": "s28",
+      "text": "Now run the whole trial. Helen's trial of HJ-9 opens. More patients enroll between each look, and you decide at every one whether to keep randomizing. When you're ready, press Continue.",
+      "spoken": "Now run the whole trial. Helen's trial of HJ-9 opens. More patients enroll between each look, and you decide at every one whether to keep randomizing. When you're ready, press Continue."
+    },
+    "d1177f27": {
+      "slide": "s29",
+      "text": "Does the disagreement still count? The gap is one luck would produce about one time in fifty. Most of the expert community now favors HJ-9, and one respected skeptic still disagrees in good faith. Does clinical equipoise still hold? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Does the disagreement still count? The gap is one luck would produce about one time in fifty. Most of the expert community now favors HJ-9, and one respected skeptic still disagrees in good faith. Does clinical equipoise still hold? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "ad16cb60": {
+      "slide": "s29",
+      "text": "Freedman's standard asks whether honest disagreement remains in the expert community. But he never said where the line falls. That's why real trials write their stopping rules down in advance.",
+      "spoken": "Freedman's standard asks whether honest disagreement remains in the expert community. But he never said where the line falls. That's why real trials write their stopping rules down in advance."
+    },
+    "e3f60051": {
+      "slide": "dsmb",
+      "text": "Someone has to be watching. Trials don't run blind to their own data forever.",
+      "spoken": "Someone has to be watching. Trials don't run blind to their own data forever."
+    },
+    "ce879a3d": {
+      "slide": "dsmb",
+      "text": "Interim analyses check the accumulating data at pre-planned points.",
+      "spoken": "Interim analyses check the accumulating data at pre-planned points."
+    },
+    "088c732f": {
+      "slide": "dsmb",
+      "text": "Pre-set stopping rules say, in advance, what result would end the trial early.",
+      "spoken": "Pre-set stopping rules say, in advance, what result would end the trial early."
+    },
+    "a2e22254": {
+      "slide": "dsmb",
+      "text": "An independent Data and Safety Monitoring Board, or DSMB, reviews the unblinded data and recommends whether to stop. Not Helen, and not her team.",
+      "spoken": "An independent Data and Safety Monitoring Board, or DSMB, reviews the unblinded data and recommends whether to stop. Not Helen, and not her team."
+    },
+    "5c29b2f6": {
+      "slide": "s31",
+      "text": "If the results turn clearly one-sided, or a sign of harm appears, clinical equipoise has collapsed.",
+      "spoken": "If the results turn clearly one-sided, or a sign of harm appears, clinical equipoise has collapsed."
+    },
+    "a3fc26f4": {
+      "slide": "s31",
+      "text": "The ethical duty flips: stop the trial early, unblind it, and offer the better treatment to everyone still enrolled.",
+      "spoken": "The ethical duty flips: stop the trial early, unblind it, and offer the better treatment to everyone still enrolled."
+    },
+    "9446cfb3": {
+      "slide": "s31",
+      "text": "Once genuine disagreement is gone, carrying on randomizing patients is not rigor. It is withholding a known benefit.",
+      "spoken": "Once genuine disagreement is gone, carrying on randomizing patients is not rigor. It is withholding a known benefit."
+    },
+    "66d15d9a": {
+      "slide": "s32",
+      "text": "Henry Jekyll had no DSMB, no interim look, no pre-set line that would have ended things.",
+      "spoken": "Henry Jekyll had no DSMB, no interim look, no pre-set line that would have ended things."
+    },
+    "36762545": {
+      "slide": "s32",
+      "text": "Nothing was tracking the moment his private experiment turned from promising to catastrophic.",
+      "spoken": "Nothing was tracking the moment his private experiment turned from promising to catastrophic."
+    },
+    "46ac8faa": {
+      "slide": "s32",
+      "text": "The only person who could have called a stop was Henry, and by his own account he did not, until it was very nearly too late.",
+      "spoken": "The only person who could have called a stop was Henry, and by his own account he did not, until it was very nearly too late."
+    },
+    "ab139e51": {
+      "slide": "s33",
+      "text": "Why an outside board? Check every true statement about the DSMB and its stopping rules, then press Check answers.",
+      "spoken": "Why an outside board? Check every true statement about the DSMB and its stopping rules, then press Check answers."
+    },
+    "3d2d6367": {
+      "slide": "s33",
+      "text": "Right. An independent board watches the unblinded data at planned points, against rules written in advance. That judgment is not left to Helen.",
+      "spoken": "Right. An independent board watches the unblinded data at planned points, against rules written in advance. That judgment is not left to Helen."
+    },
+    "9615f9f0": {
+      "slide": "s34",
+      "text": "Checkpoint: the middle band. A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do? Pick an answer.",
+      "spoken": "Checkpoint: the middle band. A trial's evidence sits in the middle band: too strong to dismiss, too weak to settle it. What does clinical equipoise say to do? Pick an answer."
+    },
+    "b324c1cc": {
+      "slide": "s34",
+      "text": "Nothing about the number settles it, which is the point of the middle band. Freedman's standard asks whether there is still honest disagreement among the experts. That's why trials fix their stopping rules in advance.",
+      "spoken": "Nothing about the number settles it, which is the point of the middle band. Freedman's standard asks whether there is still honest disagreement among the experts. That's why trials fix their stopping rules in advance."
+    },
+    "496bfb7d": {
+      "slide": "s35",
+      "text": "Is a placebo always fair game? Not always. When an effective standard treatment already exists, many argue new drugs must be compared to that, not to nothing.",
+      "spoken": "Is a placebo always fair game? Not always. When an effective standard treatment already exists, many argue new drugs must be compared to that, not to nothing."
+    },
+    "d1c6a7b3": {
+      "slide": "s35",
+      "text": "Denying patients a treatment already known to work, just to get a cleaner comparison, can itself violate equipoise.",
+      "spoken": "Denying patients a treatment already known to work, just to get a cleaner comparison, can itself violate equipoise."
+    },
+    "174f7a9f": {
+      "slide": "s35",
+      "text": "The Declaration of Helsinki restricts placebo use for exactly this reason.",
+      "spoken": "The Declaration of Helsinki restricts placebo use for exactly this reason."
+    },
+    "3df35955": {
+      "slide": "s35",
+      "text": "It allows one narrow exception: a placebo is scientifically necessary, and those who get it face no risk of serious or irreversible harm.",
+      "spoken": "It allows one narrow exception: a placebo is scientifically necessary, and those who get it face no risk of serious or irreversible harm."
+    },
+    "0716de17": {
+      "slide": "placebo-vs-active",
+      "text": "Placebo-controlled versus active-controlled. In a placebo-controlled trial, the control arm receives an inert placebo. That is the cleanest test of whether the drug does anything at all. It's defensible when no proven effective treatment yet exists for the condition. In an active-controlled trial, the control arm receives the current best-known treatment instead. That's usually required when an effective treatment already exists. Nobody should be denied it just for a cleaner comparison.",
+      "spoken": "Placebo-controlled versus active-controlled. In a placebo-controlled trial, the control arm receives an inert placebo. That is the cleanest test of whether the drug does anything at all. It's defensible when no proven effective treatment yet exists for the condition. In an active-controlled trial, the control arm receives the current best-known treatment instead. That's usually required when an effective treatment already exists. Nobody should be denied it just for a cleaner comparison."
+    },
+    "42851119": {
+      "slide": "s37",
+      "text": "When is a placebo arm defensible? Check every case where a placebo-controlled design is ethically defensible, then press Check answers.",
+      "spoken": "When is a placebo arm defensible? Check every case where a placebo-controlled design is ethically defensible, then press Check answers."
+    },
+    "aead7c90": {
+      "slide": "s37",
+      "text": "Right. A placebo arm is defensible when no proven effective treatment exists, or in the narrow case where a placebo is scientifically necessary and nobody who gets it risks serious or irreversible harm.",
+      "spoken": "Right. A placebo arm is defensible when no proven effective treatment exists, or in the narrow case where a placebo is scientifically necessary and nobody who gets it risks serious or irreversible harm."
+    },
+    "f0b6b53f": {
+      "slide": "s38",
+      "text": "Helen versus Henry. Run the checklist. Every safeguard Helen insists on is one her great-grandfather skipped entirely.",
+      "spoken": "Helen versus Henry. Run the checklist. Every safeguard Helen insists on is one her great-grandfather skipped entirely."
+    },
+    "c4f8981a": {
+      "slide": "s38",
+      "text": "A real control group. Randomization. Blinding. Research consent, not a signature he never sought.",
+      "spoken": "A real control group. Randomization. Blinding. Research consent, not a signature he never sought."
+    },
+    "7527e778": {
+      "slide": "s38",
+      "text": "Clinical equipoise, established across a genuine panel of experts, rather than one man's private certainty.",
+      "spoken": "Clinical equipoise, established across a genuine panel of experts, rather than one man's private certainty."
+    },
+    "7668650d": {
+      "slide": "s38",
+      "text": "A DSMB watching for the exact moment to stop, where Henry had nobody watching at all.",
+      "spoken": "A DSMB watching for the exact moment to stop, where Henry had nobody watching at all."
+    },
+    "0cac5ae2": {
+      "slide": "s38",
+      "text": "The machinery exists precisely because one Jekyll skipped every step of it.",
+      "spoken": "The machinery exists precisely because one Jekyll skipped every step of it."
+    },
+    "80e6f1eb": {
+      "slide": "s39",
+      "text": "Revisit your instincts. Here's where you started before rounds. Re-rate each one and see whether shadowing Helen shifted anything. Staying put is fine, so long as you can now say why. When you're done, press Submit.",
+      "spoken": "Revisit your instincts. Here's where you started before rounds. Re-rate each one and see whether shadowing Helen shifted anything. Staying put is fine, so long as you can now say why. When you're done, press Submit."
+    },
+    "d9a90532": {
+      "slide": "s39",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "f0f91c75": {
+      "slide": "s40",
+      "text": "That's the end of rounds. Helen locks the lab. In a drawer sits Henry's journal, his only record. Here's the lesson, summed up.",
+      "spoken": "That's the end of rounds. Helen locks the lab. In a drawer sits Henry's journal, his only record. Here's the lesson, summed up."
+    },
+    "0242e5b2": {
+      "slide": "s40",
+      "text": "Apparatus: controls, randomization, blinding, and enough patients to learn from.",
+      "spoken": "Apparatus: controls, randomization, blinding, and enough patients to learn from."
+    },
+    "d8b4349e": {
+      "slide": "s40",
+      "text": "Research consent: the goal disclosed, the right to withdraw, the therapeutic misconception.",
+      "spoken": "Research consent: the goal disclosed, the right to withdraw, the therapeutic misconception."
+    },
+    "1fedb539": {
+      "slide": "s40",
+      "text": "Equipoise: theoretical, from Fried, against clinical, from Freedman, which means community disagreement.",
+      "spoken": "Equipoise: theoretical, from Fried, against clinical, from Freedman, which means community disagreement."
+    },
+    "c31ed109": {
+      "slide": "s40",
+      "text": "Monitoring: DSMBs and stopping rules fire the moment equipoise collapses.",
+      "spoken": "Monitoring: DSMBs and stopping rules fire the moment equipoise collapses."
+    },
+    "049b4a36": {
+      "slide": "s40",
+      "text": "Placebo ethics: fair when nothing proven exists, and only in narrow cases once something does. One last thing: visit every slide, answer every question, and submit both belief probes.",
+      "spoken": "Placebo ethics: fair when nothing proven exists, and only in narrow cases once something does. One last thing: visit every slide, answer every question, and submit both belief probes."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "engine": "gemini",
+  "voice": "en-us-storyteller-11",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "4c53bef7": {
+      "slide": "s1",
+      "text": "Welcome to The March Practice. Orchard Falls has one family practice, one community hospital, and a January winter that will not end. Doctor Jo March has six patients to see today and one essential idea to share. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The March Practice. Orchard Falls has one family practice, one community hospital, and a January winter that will not end. Doctor Jo March has six patients to see today and one essential idea to share. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "68d5bd79": {
+      "slide": "s2",
+      "text": "Doctor March sets down her bag. She says to ask anyone in town: she doesn't do cheerful bedside small talk. She also says she is not a warm person.",
+      "spoken": "Doctor March sets down her bag. She says to ask anyone in town: she doesn't do cheerful bedside small talk. She also says she is not a warm person."
+    },
+    "1d9fddba": {
+      "slide": "s2",
+      "text": "She's blunt and direct, and visibly impatient with administrative pretense.",
+      "spoken": "She's blunt and direct, and visibly impatient with administrative pretense."
+    },
+    "c60c9870": {
+      "slide": "s2",
+      "text": "Yet when a neighbor gets a terrifying diagnosis, Jo is the first clinician they call.",
+      "spoken": "Yet when a neighbor gets a terrifying diagnosis, Jo is the first clinician they call."
+    },
+    "53253d36": {
+      "slide": "s2",
+      "text": "So how can someone without an easy bedside manner still excel at patient care?",
+      "spoken": "So how can someone without an easy bedside manner still excel at patient care?"
+    },
+    "43eedc53": {
+      "slide": "s2",
+      "text": "Because care is an acquired clinical virtue, not an outgoing temperament.",
+      "spoken": "Because care is an acquired clinical virtue, not an outgoing temperament."
+    },
+    "8268d682": {
+      "slide": "s3",
+      "text": "Before rounds, here are five questions about what you value. There are no right or wrong answers. State where you stand now, and you'll revisit them at the end of the day. Rate each statement, then press Submit.",
+      "spoken": "Before rounds, here are five questions about what you value. There are no right or wrong answers. State where you stand now, and you'll revisit them at the end of the day. Rate each statement, then press Submit."
+    },
+    "4471cece": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end of the day.",
+      "spoken": "Saved. You'll come back to these at the end of the day."
+    },
+    "b2123f3f": {
+      "slide": "s4",
+      "text": "Now, Act one. Every clinical box was checked, and nobody looked him in the eye.",
+      "spoken": "Now, Act one. Every clinical box was checked, and nobody looked him in the eye."
+    },
+    "c2f9d7d1": {
+      "slide": "s4",
+      "text": "Mr. Laurence, eighty-two, was discharged after three days of inpatient care for heart failure.",
+      "spoken": "Mr. Laurence, eighty-two, was discharged after three days of inpatient care for heart failure."
+    },
+    "04e31bde": {
+      "slide": "s4",
+      "text": "His medications were reconciled, instructions printed, follow-up booked, and forms signed, all in eleven minutes.",
+      "spoken": "His medications were reconciled, instructions printed, follow-up booked, and forms signed, all in eleven minutes."
+    },
+    "889dad9d": {
+      "slide": "s4",
+      "text": "By every hospital quality metric and chart audit, the discharge was completely flawless.",
+      "spoken": "By every hospital quality metric and chart audit, the discharge was completely flawless."
+    },
+    "456a5625": {
+      "slide": "s4",
+      "text": "Yet he left clutching a five-page packet he couldn't read. He told his family, ‘I was processed.’",
+      "spoken": "Yet he left clutching a five-page packet he couldn't read. He told his family, ‘I was processed.’"
+    },
+    "5334285d": {
+      "slide": "s5",
+      "text": "Why isn't following the rules enough? Checklists ensure procedural compliance. They can't guarantee ethical care.",
+      "spoken": "Why isn't following the rules enough? Checklists ensure procedural compliance. They can't guarantee ethical care."
+    },
+    "af5343b1": {
+      "slide": "s5",
+      "text": "Autonomy became paperwork: a signature on a form, rather than real understanding.",
+      "spoken": "Autonomy became paperwork: a signature on a form, rather than real understanding."
+    },
+    "e4229d92": {
+      "slide": "s5",
+      "text": "Beneficence became medication titration, without asking what he feared about going home alone.",
+      "spoken": "Beneficence became medication titration, without asking what he feared about going home alone."
+    },
+    "3457079f": {
+      "slide": "s5",
+      "text": "Principles tell clinicians what duties are owed. But rules can't tell you how to listen, perceive, or respond.",
+      "spoken": "Principles tell clinicians what duties are owed. But rules can't tell you how to listen, perceive, or respond."
+    },
+    "b2c38b66": {
+      "slide": "s5",
+      "text": "The virtue of care isn't an optional extra added to principles. Cultivating care is what makes it possible to reliably fulfill them.",
+      "spoken": "The virtue of care isn't an optional extra added to principles. Cultivating care is what makes it possible to reliably fulfill them."
+    },
+    "7639a15b": {
+      "slide": "principles-virtues",
+      "text": "Ethics asks two complementary questions. Principles address action. Virtues address character. Principles ask, what should I do? They're public, verifiable action-guides. Clinicians specify them, weigh them in dilemmas, and justify them systematically. Mr. Laurence's discharge satisfied every formal principle requirement on paper. Virtues ask, who should I be? They're stable traits of character. They govern how a clinician perceives human needs, and they determine the manner in which care is delivered. Clinical ethics holds that principles and virtues are partners rather than rivals.",
+      "spoken": "Ethics asks two complementary questions. Principles address action. Virtues address character. Principles ask, what should I do? They're public, verifiable action-guides. Clinicians specify them, weigh them in dilemmas, and justify them systematically. Mr. Laurence's discharge satisfied every formal principle requirement on paper. Virtues ask, who should I be? They're stable traits of character. They govern how a clinician perceives human needs, and they determine the manner in which care is delivered. Clinical ethics holds that principles and virtues are partners rather than rivals."
+    },
+    "bde59bff": {
+      "slide": "s7",
+      "text": "Diagnosing the gap. Sort each description under principles or virtues. When every item is placed, press Check answers.",
+      "spoken": "Diagnosing the gap. Sort each description under principles or virtues. When every item is placed, press Check answers."
+    },
+    "27e0edd4": {
+      "slide": "s7",
+      "text": "Right. Principles answer what to do, and Mr. Laurence's discharge met every one on paper. Virtues answer who to be, and his discharge was missing those.",
+      "spoken": "Right. Principles answer what to do, and Mr. Laurence's discharge met every one on paper. Virtues answer who to be, and his discharge was missing those."
+    },
+    "cae5c4ab": {
+      "slide": "disposition",
+      "text": "Now, virtue as a disposition. Doctor March says she doesn't feel warm, but she does care. She says those are different things, and the distinction matters.",
+      "spoken": "Now, virtue as a disposition. Doctor March says she doesn't feel warm, but she does care. She says those are different things, and the distinction matters."
+    },
+    "addecac0": {
+      "slide": "disposition",
+      "text": "A virtue is a stable, acquired disposition of character.",
+      "spoken": "A virtue is a stable, acquired disposition of character."
+    },
+    "89ed7b94": {
+      "slide": "disposition",
+      "text": "It involves internal motivation. You act because you value the good, not just from compliance.",
+      "spoken": "It involves internal motivation. You act because you value the good, not just from compliance."
+    },
+    "3ae58191": {
+      "slide": "disposition",
+      "text": "Aristotle called it a settled state, hexis, not a passing mood. You can care well even on a hard day.",
+      "spoken": "Aristotle called it a settled state, hexis, not a passing mood. You can care well even on a hard day."
+    },
+    "10c4724d": {
+      "slide": "disposition",
+      "text": "It's not a fleeting feeling, not an innate personality type, and not a rulebook.",
+      "spoken": "It's not a fleeting feeling, not an innate personality type, and not a rulebook."
+    },
+    "6321b311": {
+      "slide": "s9",
+      "text": "How is virtue cultivated? Nobody is born with clinical character, Jo says. You learn it in stages.",
+      "spoken": "How is virtue cultivated? Nobody is born with clinical character, Jo says. You learn it in stages."
+    },
+    "090308e3": {
+      "slide": "s9",
+      "text": "First, from parents. Watching Marmee care for sick neighbors taught her attentiveness early.",
+      "spoken": "First, from parents. Watching Marmee care for sick neighbors taught her attentiveness early."
+    },
+    "e8434754": {
+      "slide": "s9",
+      "text": "Next, from mentors. Senior clinicians taught her to look past the chart to see the patient.",
+      "spoken": "Next, from mentors. Senior clinicians taught her to look past the chart to see the patient."
+    },
+    "a9b8bd32": {
+      "slide": "s9",
+      "text": "Finally, through habit. She deliberately sat at every bedside until it became second nature.",
+      "spoken": "Finally, through habit. She deliberately sat at every bedside until it became second nature."
+    },
+    "79da3daf": {
+      "slide": "s9",
+      "text": "Virtue isn't an innate gift. It's built through guided repetition. Aristotle said the same: we become just by doing just acts.",
+      "spoken": "Virtue isn't an innate gift. It's built through guided repetition. Aristotle said the same: we become just by doing just acts."
+    },
+    "d086ae5a": {
+      "slide": "s10",
+      "text": "Virtues aren't mastered by memorizing codes of ethics. They're developed through guided practice and mentorship.",
+      "spoken": "Virtues aren't mastered by memorizing codes of ethics. They're developed through guided practice and mentorship."
+    },
+    "83c29425": {
+      "slide": "s10",
+      "text": "Medical training teaches clinical procedures, diagnostic pathways, and electronic charting systems.",
+      "spoken": "Medical training teaches clinical procedures, diagnostic pathways, and electronic charting systems."
+    },
+    "18ebeafb": {
+      "slide": "s10",
+      "text": "Learning to perceive unspoken distress requires observing mentors and receiving constructive feedback.",
+      "spoken": "Learning to perceive unspoken distress requires observing mentors and receiving constructive feedback."
+    },
+    "db40379c": {
+      "slide": "s10",
+      "text": "Doctor March's role with resident Amy is helping a capable, protocol-driven clinician look beyond the screen.",
+      "spoken": "Doctor March's role with resident Amy is helping a capable, protocol-driven clinician look beyond the screen."
+    },
+    "cdcd087f": {
+      "slide": "s10",
+      "text": "Mentoring feedback must itself model care: attentive, constructive, and supportive rather than punitive.",
+      "spoken": "Mentoring feedback must itself model care: attentive, constructive, and supportive rather than punitive."
+    },
+    "f618e985": {
+      "slide": "s11",
+      "text": "Rounds with Amy. Debrief resident Amy across three cases. Choose feedback that guides her while modeling care. When you're ready, press Continue.",
+      "spoken": "Rounds with Amy. Debrief resident Amy across three cases. Choose feedback that guides her while modeling care. When you're ready, press Continue."
+    },
+    "23859975": {
+      "slide": "s12",
+      "text": "Why cultivate a virtue at all? The ancient answer concerns the clinician as much as the patient.",
+      "spoken": "Why cultivate a virtue at all? The ancient answer concerns the clinician as much as the patient."
+    },
+    "0c4b37dc": {
+      "slide": "s12",
+      "text": "Aristotle's term eudaimonia means human flourishing: living well over a whole life.",
+      "spoken": "Aristotle's term eudaimonia means human flourishing: living well over a whole life."
+    },
+    "0db874b6": {
+      "slide": "s12",
+      "text": "Virtues aren't an exhausting tax on life. They're part of what makes a life good.",
+      "spoken": "Virtues aren't an exhausting tax on life. They're part of what makes a life good."
+    },
+    "ef6c67af": {
+      "slide": "s12",
+      "text": "Practicing genuine care brings purpose to the caregiver, not just benefit to the patient.",
+      "spoken": "Practicing genuine care brings purpose to the caregiver, not just benefit to the patient."
+    },
+    "0a800a3e": {
+      "slide": "s12",
+      "text": "When care becomes so ungrounded that it destroys the carer, something has gone wrong.",
+      "spoken": "When care becomes so ungrounded that it destroys the carer, something has gone wrong."
+    },
+    "e50029ed": {
+      "slide": "s13",
+      "text": "Evaluating the concept. Check every true statement about a moral virtue, then press Check answers.",
+      "spoken": "Evaluating the concept. Check every true statement about a moral virtue, then press Check answers."
+    },
+    "212803fe": {
+      "slide": "s13",
+      "text": "Correct. A virtue is an acquired disposition developed through ongoing practice, motivated by a commitment to good patient care.",
+      "spoken": "Correct. A virtue is an acquired disposition developed through ongoing practice, motivated by a commitment to good patient care."
+    },
+    "f12fc588": {
+      "slide": "skilled-labor",
+      "text": "Now, care as skilled labor. Hannah is a home health aide, arriving at her fourth client's home at dusk in the snow.",
+      "spoken": "Now, care as skilled labor. Hannah is a home health aide, arriving at her fourth client's home at dusk in the snow."
+    },
+    "c8689242": {
+      "slide": "skilled-labor",
+      "text": "Hospital posters treat care as a slogan. In clinical ethics, it's demanding, skilled work.",
+      "spoken": "Hospital posters treat care as a slogan. In clinical ethics, it's demanding, skilled work."
+    },
+    "8390a018": {
+      "slide": "skilled-labor",
+      "text": "Beauchamp and Childress define care as emotional commitment to a person, combined with an active willingness to act on their behalf.",
+      "spoken": "Beauchamp and Childress define care as emotional commitment to a person, combined with an active willingness to act on their behalf."
+    },
+    "f5f6e3c0": {
+      "slide": "skilled-labor",
+      "text": "Berenice Fisher and Joan Tronto put it more broadly: care is everything we do to maintain, continue, and repair our world.",
+      "spoken": "Berenice Fisher and Joan Tronto put it more broadly: care is everything we do to maintain, continue, and repair our world."
+    },
+    "6dc1cd88": {
+      "slide": "skilled-labor",
+      "text": "Notice what this demands. Not performative cheerfulness, but dependable presence and skilled effort.",
+      "spoken": "Notice what this demands. Not performative cheerfulness, but dependable presence and skilled effort."
+    },
+    "a90b15dd": {
+      "slide": "four-phases",
+      "text": "The political theorist Joan Tronto names four parts of good care. Beth, twenty-four, has lived with chronic illness for years. Caring for her takes all four.",
+      "spoken": "The political theorist Joan Tronto names four parts of good care. Beth, twenty-four, has lived with chronic illness for years. Caring for her takes all four."
+    },
+    "f0489dd6": {
+      "slide": "four-phases",
+      "text": "One, attentiveness: noticing the need. Beth has grown quiet and stopped asking about medications.",
+      "spoken": "One, attentiveness: noticing the need. Beth has grown quiet and stopped asking about medications."
+    },
+    "7f77ce5f": {
+      "slide": "four-phases",
+      "text": "Two, responsibility: stepping in to address her withdrawal, rather than passing it to night shift.",
+      "spoken": "Two, responsibility: stepping in to address her withdrawal, rather than passing it to night shift."
+    },
+    "ce2ca266": {
+      "slide": "four-phases",
+      "text": "Three, competence: carrying out care skillfully. Kind words with incorrect medication is sentimentality, not care.",
+      "spoken": "Three, competence: carrying out care skillfully. Kind words with incorrect medication is sentimentality, not care."
+    },
+    "ac115883": {
+      "slide": "four-phases",
+      "text": "Four, responsiveness: checking how the care landed with Beth, because only the recipient knows.",
+      "spoken": "Four, responsiveness: checking how the care landed with Beth, because only the recipient knows."
+    },
+    "852e359c": {
+      "slide": "s16",
+      "text": "Beauchamp and Childress name five focal virtues that serve as practical instruments of care.",
+      "spoken": "Beauchamp and Childress name five focal virtues that serve as practical instruments of care."
+    },
+    "4b6b4d26": {
+      "slide": "s16",
+      "text": "Compassion provides awareness of suffering. Discernment judges what this patient needs right now.",
+      "spoken": "Compassion provides awareness of suffering. Discernment judges what this patient needs right now."
+    },
+    "26c569cc": {
+      "slide": "s16",
+      "text": "Trustworthiness ensures reliability. Integrity holds your values and actions together.",
+      "spoken": "Trustworthiness ensures reliability. Integrity holds your values and actions together."
+    },
+    "6de0ab51": {
+      "slide": "s16",
+      "text": "Conscientiousness is the follow-through: orders placed, labs verified, families updated.",
+      "spoken": "Conscientiousness is the follow-through: orders placed, labs verified, families updated."
+    },
+    "03f16d11": {
+      "slide": "s16",
+      "text": "The nursing code of ethics opens with compassion and respect for the dignity of every patient.",
+      "spoken": "The nursing code of ethics opens with compassion and respect for the dignity of every patient."
+    },
+    "36d83ef4": {
+      "slide": "s17",
+      "text": "Care versus warmth. Warmth is an innate personality temperament. Care is a cultivated clinical virtue. Warmth is a natural personality trait that varies by individual. It can be easily simulated for a short time, and its absence doesn't make a clinician incompetent. A cheerful clinician who neglects a promised lab check was pleasant, not caring. Care is a learned, disciplined orientation, evident when patients are frustrated and clinic hours are stretched thin. It's inseparable from technical competence. Picture a tired, direct clinician pulling up a chair at the end of a long day to explain a difficult diagnosis.",
+      "spoken": "Care versus warmth. Warmth is an innate personality temperament. Care is a cultivated clinical virtue. Warmth is a natural personality trait that varies by individual. It can be easily simulated for a short time, and its absence doesn't make a clinician incompetent. A cheerful clinician who neglects a promised lab check was pleasant, not caring. Care is a learned, disciplined orientation, evident when patients are frustrated and clinic hours are stretched thin. It's inseparable from technical competence. Picture a tired, direct clinician pulling up a chair at the end of a long day to explain a difficult diagnosis."
+    },
+    "538d2ae8": {
+      "slide": "s18",
+      "text": "Defining the elements. Fill in each blank, then press Check.",
+      "spoken": "Defining the elements. Fill in each blank, then press Check."
+    },
+    "a9f3c3e0": {
+      "slide": "s18",
+      "text": "A virtue is an acquired disposition. And care without competence is sentimentality.",
+      "spoken": "A virtue is an acquired disposition. And care without competence is sentimentality."
+    },
+    "3291680b": {
+      "slide": "s19",
+      "text": "Recognizing complete care. Beth has grown unusually quiet in the clinic. Sort each action under the part of care it shows, then press Check answers.",
+      "spoken": "Recognizing complete care. Beth has grown unusually quiet in the clinic. Sort each action under the part of care it shows, then press Check answers."
+    },
+    "1ea2fdc6": {
+      "slide": "s19",
+      "text": "Right. Attentiveness notices the need. Responsibility takes it on. Competence carries it out skillfully. And responsiveness checks how it landed.",
+      "spoken": "Right. Attentiveness notices the need. Responsibility takes it on. Competence carries it out skillfully. And responsiveness checks how it landed."
+    },
+    "b4aa7e69": {
+      "slide": "two-failures",
+      "text": "Detachment and over-involvement. Clinical care can fail in two opposite directions. Both harm the patient, and one also depletes the caregiver. Detachment is a deficiency. The patient is treated primarily as a case or a dataset. Protocols are completed, but personal presence is entirely absent. Think of Amy's hurried eleven-minute discharge, where the patient felt processed. Over-involvement is an excess. It's a lack of boundaries, where the caregiver takes on every burden personally, leading to exhaustion, loss of objectivity, and burnout. Think of Laurie working consecutive extra shifts while sick, and answering family messages at midnight.",
+      "spoken": "Detachment and over-involvement. Clinical care can fail in two opposite directions. Both harm the patient, and one also depletes the caregiver. Detachment is a deficiency. The patient is treated primarily as a case or a dataset. Protocols are completed, but personal presence is entirely absent. Think of Amy's hurried eleven-minute discharge, where the patient felt processed. Over-involvement is an excess. It's a lack of boundaries, where the caregiver takes on every burden personally, leading to exhaustion, loss of objectivity, and burnout. Think of Laurie working consecutive extra shifts while sick, and answering family messages at midnight."
+    },
+    "0192a52b": {
+      "slide": "s21",
+      "text": "Meg is the eldest sister, teaching part-time, raising two children, and serving as Aunt March's primary unpaid caregiver.",
+      "spoken": "Meg is the eldest sister, teaching part-time, raising two children, and serving as Aunt March's primary unpaid caregiver."
+    },
+    "997a0070": {
+      "slide": "s21",
+      "text": "Convinced that Aunt March could no longer live safely on her own, Meg quietly scheduled an assisted-living tour without consulting her.",
+      "spoken": "Convinced that Aunt March could no longer live safely on her own, Meg quietly scheduled an assisted-living tour without consulting her."
+    },
+    "198fc664": {
+      "slide": "s21",
+      "text": "Meg acted out of deep love and anxiety. Yet her intervention crossed into unjustified paternalism.",
+      "spoken": "Meg acted out of deep love and anxiety. Yet her intervention crossed into unjustified paternalism."
+    },
+    "787360c1": {
+      "slide": "s21",
+      "text": "Care that stops listening to the patient stops respecting their agency. It begins doing things to a person rather than with them.",
+      "spoken": "Care that stops listening to the patient stops respecting their agency. It begins doing things to a person rather than with them."
+    },
+    "56e5c46f": {
+      "slide": "s21",
+      "text": "In clinical ethics, this is where beneficence and respect for autonomy must be balanced with discernment.",
+      "spoken": "In clinical ethics, this is where beneficence and respect for autonomy must be balanced with discernment."
+    },
+    "1fc87c71": {
+      "slide": "s22",
+      "text": "Jo lives next door to Mr. Laurence. On a freezing Sunday, she has a pot of soup and knows he's home alone.",
+      "spoken": "Jo lives next door to Mr. Laurence. On a freezing Sunday, she has a pot of soup and knows he's home alone."
+    },
+    "47ae99b6": {
+      "slide": "s22",
+      "text": "Medical ethics codes strictly warn against dual relationships. Becoming a neighbor or friend can cloud clinical judgment.",
+      "spoken": "Medical ethics codes strictly warn against dual relationships. Becoming a neighbor or friend can cloud clinical judgment."
+    },
+    "b8e4a897": {
+      "slide": "s22",
+      "text": "If she brings the soup, does she compromise her objective medical authority as his physician?",
+      "spoken": "If she brings the soup, does she compromise her objective medical authority as his physician?"
+    },
+    "d9f4460b": {
+      "slide": "s22",
+      "text": "Yet in a small town where patients are also neighbors, refusing a simple gesture of kindness feels inhuman.",
+      "spoken": "Yet in a small town where patients are also neighbors, refusing a simple gesture of kindness feels inhuman."
+    },
+    "d35a35a4": {
+      "slide": "s22",
+      "text": "The soup is steaming on the stove. Two genuine ethical intuitions pull in opposite directions.",
+      "spoken": "The soup is steaming on the stove. Two genuine ethical intuitions pull in opposite directions."
+    },
+    "8556077c": {
+      "slide": "s23",
+      "text": "Decision point: Sunday afternoon. Experienced clinicians often evaluate this dilemma differently. The soup is ready on the stove. What should Doctor March do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: Sunday afternoon. Experienced clinicians often evaluate this dilemma differently. The soup is ready on the stove. What should Doctor March do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "2376bea4": {
+      "slide": "s23",
+      "text": "Professional guidelines caution against dual relationships. But an unbending rule against bringing soup would undermine the human fabric of community medicine. Practical discernment balances the two.",
+      "spoken": "Professional guidelines caution against dual relationships. But an unbending rule against bringing soup would undermine the human fabric of community medicine. Practical discernment balances the two."
+    },
+    "548028b0": {
+      "slide": "s24",
+      "text": "Laurie has covered ten extra ICU shifts this month. Today he arrived with a fever.",
+      "spoken": "Laurie has covered ten extra ICU shifts this month. Today he arrived with a fever."
+    },
+    "27400d5d": {
+      "slide": "s24",
+      "text": "He's beloved by patients and always volunteers when the hospital is understaffed.",
+      "spoken": "He's beloved by patients and always volunteers when the hospital is understaffed."
+    },
+    "ff1ccb18": {
+      "slide": "s24",
+      "text": "He believes that sacrificing personal sleep and health is the ultimate proof of clinical dedication.",
+      "spoken": "He believes that sacrificing personal sleep and health is the ultimate proof of clinical dedication."
+    },
+    "3edad1ee": {
+      "slide": "s24",
+      "text": "Yet an exhausted, feverish nurse can't maintain vigilance or protect patients from error.",
+      "spoken": "Yet an exhausted, feverish nurse can't maintain vigilance or protect patients from error."
+    },
+    "f973ebf2": {
+      "slide": "s24",
+      "text": "Does genuine clinical care have limits, or is endless self-sacrifice its highest ideal?",
+      "spoken": "Does genuine clinical care have limits, or is endless self-sacrifice its highest ideal?"
+    },
+    "2d81d35d": {
+      "slide": "s25",
+      "text": "Evaluating over-involvement. Each item is a way care can go wrong. Sort each one under detachment, over-involvement, or paternalism, then press Check answers.",
+      "spoken": "Evaluating over-involvement. Each item is a way care can go wrong. Sort each one under detachment, over-involvement, or paternalism, then press Check answers."
+    },
+    "afefddc6": {
+      "slide": "s25",
+      "text": "Right. Detachment is too little presence. Over-involvement is too much. And paternalism is care that stops listening and decides for the person.",
+      "spoken": "Right. Detachment is too little presence. Over-involvement is too much. And paternalism is care that stops listening and decides for the person."
+    },
+    "d3042d34": {
+      "slide": "non-abandonment",
+      "text": "Aunt March is eighty-eight, has capacity, and has snipped off her hospital wristband. She refuses admission.",
+      "spoken": "Aunt March is eighty-eight, has capacity, and has snipped off her hospital wristband. She refuses admission."
+    },
+    "d05e3328": {
+      "slide": "non-abandonment",
+      "text": "The principle of autonomy is clear: a competent adult has the right to refuse treatment.",
+      "spoken": "The principle of autonomy is clear: a competent adult has the right to refuse treatment."
+    },
+    "ce22c24d": {
+      "slide": "non-abandonment",
+      "text": "Care adds what the principle leaves out. Honoring a refusal isn't the same as walking away.",
+      "spoken": "Care adds what the principle leaves out. Honoring a refusal isn't the same as walking away."
+    },
+    "a01ce004": {
+      "slide": "non-abandonment",
+      "text": "Jo respects the choice while staying involved: planning home symptom control and checking back Thursday.",
+      "spoken": "Jo respects the choice while staying involved: planning home symptom control and checking back Thursday."
+    },
+    "ca1cf7d8": {
+      "slide": "non-abandonment",
+      "text": "Her choice sits inside a web: Meg, Hannah, Jo. Care attends to the relationships sustaining her.",
+      "spoken": "Her choice sits inside a web: Meg, Hannah, Jo. Care attends to the relationships sustaining her."
+    },
+    "8b050e96": {
+      "slide": "s27",
+      "text": "Beth apologizes whenever staff enter. Principles tell us to benefit and not harm. Care defines what those mean for Beth.",
+      "spoken": "Beth apologizes whenever staff enter. Principles tell us to benefit and not harm. Care defines what those mean for Beth."
+    },
+    "ecf782e2": {
+      "slide": "s27",
+      "text": "Beneficence needs context. Beth values attending her niece's recital over two extra days of observation.",
+      "spoken": "Beneficence needs context. Beth values attending her niece's recital over two extra days of observation."
+    },
+    "25f5f745": {
+      "slide": "s27",
+      "text": "Attentive care discovers that priority through dialogue, earning the trust required for her to speak.",
+      "spoken": "Attentive care discovers that priority through dialogue, earning the trust required for her to speak."
+    },
+    "b6e8f611": {
+      "slide": "s27",
+      "text": "Nonmaleficence has blind spots. No checklist names the harm of a patient afraid of being a burden.",
+      "spoken": "Nonmaleficence has blind spots. No checklist names the harm of a patient afraid of being a burden."
+    },
+    "e5cd4867": {
+      "slide": "s27",
+      "text": "Attentiveness catches subtle distress, so principles serve the person rather than the chart.",
+      "spoken": "Attentiveness catches subtle distress, so principles serve the person rather than the chart."
+    },
+    "0813edf8": {
+      "slide": "s28",
+      "text": "The Hummels are a farmworker family with a sick infant and no insurance. Hannah, their aide, is paid hourly by an agency.",
+      "spoken": "The Hummels are a farmworker family with a sick infant and no insurance. Hannah, their aide, is paid hourly by an agency."
+    },
+    "11830d35": {
+      "slide": "s28",
+      "text": "Meg's unpaid hours, Hannah's modest wages, and the Hummels' pharmacy receipt expose real inequalities.",
+      "spoken": "Meg's unpaid hours, Hannah's modest wages, and the Hummels' pharmacy receipt expose real inequalities."
+    },
+    "1c06df8c": {
+      "slide": "s28",
+      "text": "Care work is historically underpaid. A virtue of care at the bedside, without structural justice, is incomplete.",
+      "spoken": "Care work is historically underpaid. A virtue of care at the bedside, without structural justice, is incomplete."
+    },
+    "22ca92b3": {
+      "slide": "s28",
+      "text": "Care ethics also addresses partiality. Clinicians naturally feel dedicated to their assigned patients.",
+      "spoken": "Care ethics also addresses partiality. Clinicians naturally feel dedicated to their assigned patients."
+    },
+    "8beca57e": {
+      "slide": "s28",
+      "text": "Public justice governs the fair distribution of resources, while care governs personal attention at the bedside.",
+      "spoken": "Public justice governs the fair distribution of resources, while care governs personal attention at the bedside."
+    },
+    "206470c7": {
+      "slide": "s29",
+      "text": "Care ethics emerged from feminist philosophy, and it connects to diverse global traditions.",
+      "spoken": "Care ethics emerged from feminist philosophy, and it connects to diverse global traditions."
+    },
+    "e3ae235c": {
+      "slide": "s29",
+      "text": "Carol Gilligan in 1982 and Nel Noddings in 1984 named care ethics, validating relational moral reasoning.",
+      "spoken": "Carol Gilligan in 1982 and Nel Noddings in 1984 named care ethics, validating relational moral reasoning."
+    },
+    "4c9fd47b": {
+      "slide": "s29",
+      "text": "Feminist theory challenged the view that moral maturity consists solely of abstract, detached rules.",
+      "spoken": "Feminist theory challenged the view that moral maturity consists solely of abstract, detached rules."
+    },
+    "ed4e1514": {
+      "slide": "s29",
+      "text": "Care appears across cultures: Confucian ren, Buddhist karuṇā, ubuntu, and nursing traditions.",
+      "spoken": "Care appears across cultures: Confucian ren, Buddhist karuṇā, ubuntu, and nursing traditions."
+    },
+    "90878640": {
+      "slide": "s29",
+      "text": "Virginia Held views care as a distinct relational ethic. This lesson treats care as an essential clinical virtue.",
+      "spoken": "Virginia Held views care as a distinct relational ethic. This lesson treats care as an essential clinical virtue."
+    },
+    "5a89e258": {
+      "slide": "complementary",
+      "text": "Complementary frameworks. Care ethics identifies two longstanding weaknesses in principle-based theory, while principles provide essential safeguards for care. First, what care corrects. This is a critique of principles. Principles can encourage excessive detachment and formal impartiality, underestimating the legitimate role of emotion and relationship in clinical life. Care re-centers the patient's individual experience within the medical system. Second, what principles protect. These are safeguards for care. Principles provide public accountability, preventing personal bias, favoritism, and well-intentioned paternalistic overreach. Principles reminded Meg that her affectionate intentions could not override Aunt March's clear choices.",
+      "spoken": "Complementary frameworks. Care ethics identifies two longstanding weaknesses in principle-based theory, while principles provide essential safeguards for care. First, what care corrects. This is a critique of principles. Principles can encourage excessive detachment and formal impartiality, underestimating the legitimate role of emotion and relationship in clinical life. Care re-centers the patient's individual experience within the medical system. Second, what principles protect. These are safeguards for care. Principles provide public accountability, preventing personal bias, favoritism, and well-intentioned paternalistic overreach. Principles reminded Meg that her affectionate intentions could not override Aunt March's clear choices."
+    },
+    "d92b8bb7": {
+      "slide": "s31",
+      "text": "Non-abandonment in practice. Aunt March has decision-making capacity and refuses hospital admission. What does the virtue of care add to respecting her refusal? Pick an answer.",
+      "spoken": "Non-abandonment in practice. Aunt March has decision-making capacity and refuses hospital admission. What does the virtue of care add to respecting her refusal? Pick an answer."
+    },
+    "8381dcf8": {
+      "slide": "s31",
+      "text": "Respect for autonomy is satisfied once the refusal is documented. Care adds non-abandonment: staying connected, making a home-based plan, and supporting the family caregivers.",
+      "spoken": "Respect for autonomy is satisfied once the refusal is documented. Care adds non-abandonment: staying connected, making a home-based plan, and supporting the family caregivers."
+    },
+    "2364c7d6": {
+      "slide": "s32",
+      "text": "Synthesizing the framework. Fill in each blank, then press Check.",
+      "spoken": "Synthesizing the framework. Fill in each blank, then press Check."
+    },
+    "eb0c62b6": {
+      "slide": "s32",
+      "text": "Clinical ethics treats principles and virtues as complementary. Justice governs how care is distributed, and care governs personal clinical relationships.",
+      "spoken": "Clinical ethics treats principles and virtues as complementary. Justice governs how care is distributed, and care governs personal clinical relationships."
+    },
+    "920131a2": {
+      "slide": "s33",
+      "text": "Revisiting your perspectives. Review the statements from the beginning of rounds, and re-rate each one. Keeping your original view is entirely valid. The goal is to see whether your reasoning has deepened. When you're done, press Submit.",
+      "spoken": "Revisiting your perspectives. Review the statements from the beginning of rounds, and re-rate each one. Keeping your original view is entirely valid. The goal is to see whether your reasoning has deepened. When you're done, press Submit."
+    },
+    "d9a90532": {
+      "slide": "s33",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "07bd0fb1": {
+      "slide": "s34",
+      "text": "Jo says a practice is not an accident of language. It's a skill built by repetition.",
+      "spoken": "Jo says a practice is not an accident of language. It's a skill built by repetition."
+    },
+    "67884e2e": {
+      "slide": "s34",
+      "text": "A virtue is a disposition built through practice, orienting clinical work.",
+      "spoken": "A virtue is a disposition built through practice, orienting clinical work."
+    },
+    "21e9f988": {
+      "slide": "s34",
+      "text": "Care combines four phases with focal virtues like discernment and integrity.",
+      "spoken": "Care combines four phases with focal virtues like discernment and integrity."
+    },
+    "feaec4aa": {
+      "slide": "s34",
+      "text": "Care needs boundaries to stay sustainable, guarding against detachment and exhaustion.",
+      "spoken": "Care needs boundaries to stay sustainable, guarding against detachment and exhaustion."
+    },
+    "73b1f5a2": {
+      "slide": "s34",
+      "text": "Virtues complete biomedical principles, bringing empathy and perception to clinical rules. To finish, complete all exercises and both belief probes.",
+      "spoken": "Virtues complete biomedical principles, bringing empathy and perception to clinical rules. To finish, complete all exercises and both belief probes."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

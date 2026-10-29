@@ -1,0 +1,507 @@
+{
+  "engine": "gemini",
+  "voice": "en-ie-storyteller-3",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "139cb9e2": {
+      "slide": "s1",
+      "text": "Welcome to Rounds with Van Helsing. Welcome to Transylvania, doctor. Tonight you begin your training, and the patients are unusual. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to Rounds with Van Helsing. Welcome to Transylvania, doctor. Tonight you begin your training, and the patients are unusual. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "6da49bab": {
+      "slide": "s2",
+      "text": "Medicine for monsters, Van Helsing says, is still medicine. The hard part was never the fangs. It is the decisions.",
+      "spoken": "Medicine for monsters, Van Helsing says, is still medicine. The hard part was never the fangs. It is the decisions."
+    },
+    "1ce71060": {
+      "slide": "s2",
+      "text": "His clinic treats vampires, werewolves, the newly risen, and stranger folk still.",
+      "spoken": "His clinic treats vampires, werewolves, the newly risen, and stranger folk still."
+    },
+    "f34a707d": {
+      "slide": "s2",
+      "text": "Each case will pull you in several directions at once.",
+      "spoken": "Each case will pull you in several directions at once."
+    },
+    "3652e0af": {
+      "slide": "s2",
+      "text": "Tonight he teaches you not a rulebook, but a way of reasoning: the four principles of bioethics.",
+      "spoken": "Tonight he teaches you not a rulebook, but a way of reasoning: the four principles of bioethics."
+    },
+    "86a2e819": {
+      "slide": "s3",
+      "text": "Before we begin, here are five quick gut-checks, with no right answers. Just say where you stand. We'll come back to them at the end to see whether the night changed your mind. Rate each of the five statements, then press Submit.",
+      "spoken": "Before we begin, here are five quick gut-checks, with no right answers. Just say where you stand. We'll come back to them at the end to see whether the night changed your mind. Rate each of the five statements, then press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "b6d97f68": {
+      "slide": "s4",
+      "text": "Before the special rules of medicine, say the bioethicists Tom Beauchamp and James Childress, there is the common morality: the rules every morally serious person already accepts.",
+      "spoken": "Before the special rules of medicine, say the bioethicists Tom Beauchamp and James Childress, there is the common morality: the rules every morally serious person already accepts."
+    },
+    "d6509e89": {
+      "slide": "s4",
+      "text": "Don't kill. Don't cause needless suffering. Don't steal or deceive.",
+      "spoken": "Don't kill. Don't cause needless suffering. Don't steal or deceive."
+    },
+    "0ae4fc6f": {
+      "slide": "s4",
+      "text": "Keep your promises. Treat people fairly.",
+      "spoken": "Keep your promises. Treat people fairly."
+    },
+    "5494bca1": {
+      "slide": "s4",
+      "text": "These are not the invention of any one culture. They are shared across all of them.",
+      "spoken": "These are not the invention of any one culture. They are shared across all of them."
+    },
+    "526aba2e": {
+      "slide": "s5",
+      "text": "The common morality is true but thin. The clinic adds pressures it never anticipated.",
+      "spoken": "The common morality is true but thin. The clinic adds pressures it never anticipated."
+    },
+    "c0032ee7": {
+      "slide": "s5",
+      "text": "Vulnerability. Patients are frightened, in pain, sometimes barely themselves.",
+      "spoken": "Vulnerability. Patients are frightened, in pain, sometimes barely themselves."
+    },
+    "a59ae2fa": {
+      "slide": "s5",
+      "text": "Power. You hold knowledge, instruments, and authority that they lack.",
+      "spoken": "Power. You hold knowledge, instruments, and authority that they lack."
+    },
+    "4a268d85": {
+      "slide": "s5",
+      "text": "Special roles. A healer takes on duties an ordinary villager does not.",
+      "spoken": "Special roles. A healer takes on duties an ordinary villager does not."
+    },
+    "3e00eb62": {
+      "slide": "s5",
+      "text": "So bioethics specifies and extends the common morality for medicine.",
+      "spoken": "So bioethics specifies and extends the common morality for medicine."
+    },
+    "281183b3": {
+      "slide": "s5",
+      "text": "That approach has a name: principlism. Start from morality everyone shares, then work it out for the clinic.",
+      "spoken": "That approach has a name: principlism. Start from morality everyone shares, then work it out for the clinic."
+    },
+    "9dcdbea0": {
+      "slide": "s6",
+      "text": "On one side, the common morality, for everyone. These are the universal norms all morally serious people share. Do not cause needless harm is true everywhere, and it does not tell you how to dose wolfsbane. On the other side, the bioethical principles, for the clinic. That same morality is specified for medicine's roles and powers. Weigh the benefits and harms of this treatment for this patient is built for the bedside.",
+      "spoken": "On one side, the common morality, for everyone. These are the universal norms all morally serious people share. Do not cause needless harm is true everywhere, and it does not tell you how to dose wolfsbane. On the other side, the bioethical principles, for the clinic. That same morality is specified for medicine's roles and powers. Weigh the benefits and harms of this treatment for this patient is built for the bedside."
+    },
+    "1e1daf64": {
+      "slide": "four-principles",
+      "text": "In 1979 Beauchamp and Childress set out four principles for medicine. Learn them as equals: none of them outranks another.",
+      "spoken": "In 1979 Beauchamp and Childress set out four principles for medicine. Learn them as equals: none of them outranks another."
+    },
+    "d13b0ebc": {
+      "slide": "four-principles",
+      "text": "Respect for autonomy: honor a patient's own informed choices.",
+      "spoken": "Respect for autonomy: honor a patient's own informed choices."
+    },
+    "e3d6d504": {
+      "slide": "four-principles",
+      "text": "Nonmaleficence: do no harm.",
+      "spoken": "Nonmaleficence: do no harm."
+    },
+    "822baa52": {
+      "slide": "four-principles",
+      "text": "Beneficence: act for the patient's good.",
+      "spoken": "Beneficence: act for the patient's good."
+    },
+    "4ede9820": {
+      "slide": "four-principles",
+      "text": "Justice: share benefits and burdens fairly.",
+      "spoken": "Justice: share benefits and burdens fairly."
+    },
+    "fa9a976b": {
+      "slide": "s8",
+      "text": "Principle one, respect for autonomy. A competent patient gets to make their own informed decisions, including ones you would advise against.",
+      "spoken": "Principle one, respect for autonomy. A competent patient gets to make their own informed decisions, including ones you would advise against."
+    },
+    "71b7fd13": {
+      "slide": "s8",
+      "text": "The Count, fully lucid, refuses your daytime-shielding regimen. He understands the risks.",
+      "spoken": "The Count, fully lucid, refuses your daytime-shielding regimen. He understands the risks."
+    },
+    "942ee5e5": {
+      "slide": "s8",
+      "text": "Respecting autonomy means informed consent: disclosure, understanding, and a voluntary choice.",
+      "spoken": "Respecting autonomy means informed consent: disclosure, understanding, and a voluntary choice."
+    },
+    "5ab5633b": {
+      "slide": "s8",
+      "text": "It is his life and his body. It is not yours to commandeer.",
+      "spoken": "It is his life and his body. It is not yours to commandeer."
+    },
+    "28203fe5": {
+      "slide": "s9",
+      "text": "Principle two, nonmaleficence. Primum non nocere: first, do no harm. Never let a treatment wound worse than the disease does.",
+      "spoken": "Principle two, nonmaleficence. Primum non nocere: first, do no harm. Never let a treatment wound worse than the disease does."
+    },
+    "a4407274": {
+      "slide": "s9",
+      "text": "However tidy it would be, you do not prescribe silver to Ilinca, your werewolf patient. It would poison her.",
+      "spoken": "However tidy it would be, you do not prescribe silver to Ilinca, your werewolf patient. It would poison her."
+    },
+    "4f898c22": {
+      "slide": "s9",
+      "text": "Nonmaleficence forbids inflicting harm and reckless risk.",
+      "spoken": "Nonmaleficence forbids inflicting harm and reckless risk."
+    },
+    "92d5206c": {
+      "slide": "s9",
+      "text": "It's the floor beneath everything else you do.",
+      "spoken": "It's the floor beneath everything else you do."
+    },
+    "8a7f1252": {
+      "slide": "s10",
+      "text": "Principle three, beneficence. Nonmaleficence says do not harm. Beneficence says actively do good, and weigh that good against what it costs.",
+      "spoken": "Principle three, beneficence. Nonmaleficence says do not harm. Beneficence says actively do good, and weigh that good against what it costs."
+    },
+    "8f23c1a0": {
+      "slide": "s10",
+      "text": "Offering the Count synthetic blood spares him suffering and keeps others safe too.",
+      "spoken": "Offering the Count synthetic blood spares him suffering and keeps others safe too."
+    },
+    "ef1d6dc6": {
+      "slide": "s10",
+      "text": "Beneficence always carries a balance: benefits versus risks, burdens, and cost.",
+      "spoken": "Beneficence always carries a balance: benefits versus risks, burdens, and cost."
+    },
+    "c9e7bb03": {
+      "slide": "s10",
+      "text": "Meaning well is not enough. To help well, you have to weigh.",
+      "spoken": "Meaning well is not enough. To help well, you have to weigh."
+    },
+    "a8770c20": {
+      "slide": "s11",
+      "text": "Principle four, justice. Justice asks: are benefits and burdens shared fairly?",
+      "spoken": "Principle four, justice. Justice asks: are benefits and burdens shared fairly?"
+    },
+    "b2ab6526": {
+      "slide": "s11",
+      "text": "This week's synthetic blood is scarce. The Count needs it, and so does Sanda, the village midwife, bleeding after a fall.",
+      "spoken": "This week's synthetic blood is scarce. The Count needs it, and so does Sanda, the village midwife, bleeding after a fall."
+    },
+    "dc8334f8": {
+      "slide": "s11",
+      "text": "Justice governs who gets the scarce good, and on what fair basis.",
+      "spoken": "Justice governs who gets the scarce good, and on what fair basis."
+    },
+    "e53841eb": {
+      "slide": "s11",
+      "text": "No patient counts for more simply because they're powerful, or frightening.",
+      "spoken": "No patient counts for more simply because they're powerful, or frightening."
+    },
+    "c5c79348": {
+      "slide": "prima-facie",
+      "text": "Here is the part students forget, Van Helsing warns. The principles are prima facie, a term borrowed from the philosopher W D Ross.",
+      "spoken": "Here is the part students forget, Van Helsing warns. The principles are prima facie, a term borrowed from the philosopher W D Ross."
+    },
+    "8751eba4": {
+      "slide": "prima-facie",
+      "text": "Each one binds you unless it collides with another that, here and now, outweighs it.",
+      "spoken": "Each one binds you unless it collides with another that, here and now, outweighs it."
+    },
+    "a6290cf3": {
+      "slide": "prima-facie",
+      "text": "There is no fixed ranking. Autonomy does not automatically beat beneficence, and beneficence does not automatically beat autonomy.",
+      "spoken": "There is no fixed ranking. Autonomy does not automatically beat beneficence, and beneficence does not automatically beat autonomy."
+    },
+    "86a559ab": {
+      "slide": "prima-facie",
+      "text": "Which one yields depends on the case, argued out. It does not depend on a standing hierarchy.",
+      "spoken": "Which one yields depends on the case, argued out. It does not depend on a standing hierarchy."
+    },
+    "6989944d": {
+      "slide": "s13",
+      "text": "Name the four. Check the four principles of bioethics, and only those. Then press Check answers.",
+      "spoken": "Name the four. Check the four principles of bioethics, and only those. Then press Check answers."
+    },
+    "dc649c7b": {
+      "slide": "s13",
+      "text": "Right. Autonomy, nonmaleficence, beneficence, and justice. Confidentiality and informed consent are real duties, but they're worked-out applications of the four, mostly of respect for autonomy.",
+      "spoken": "Right. Autonomy, nonmaleficence, beneficence, and justice. Confidentiality and informed consent are real duties, but they're worked-out applications of the four, mostly of respect for autonomy."
+    },
+    "41996956": {
+      "slide": "s14",
+      "text": "What does prima facie mean? The four principles are prima facie. Check every claim that follows from that, then press Check answers.",
+      "spoken": "What does prima facie mean? The four principles are prima facie. Check every claim that follows from that, then press Check answers."
+    },
+    "9a3a5cc3": {
+      "slide": "s14",
+      "text": "Right. Prima facie means each principle binds you unless another outweighs it in the case at hand. There's no fixed ranking, so either of two principles can give way, depending on the case.",
+      "spoken": "Right. Prima facie means each principle binds you unless another outweighs it in the case at hand. There's no fixed ranking, so either of two principles can give way, depending on the case."
+    },
+    "5f3e2e2a": {
+      "slide": "s15",
+      "text": "Respect autonomy, Van Helsing says dryly, is a fine motto. It is useless at two in the morning with a thrashing patient.",
+      "spoken": "Respect autonomy, Van Helsing says dryly, is a fine motto. It is useless at two in the morning with a thrashing patient."
+    },
+    "543f145c": {
+      "slide": "s15",
+      "text": "The principles are general. Real cases are specific.",
+      "spoken": "The principles are general. Real cases are specific."
+    },
+    "4c53b048": {
+      "slide": "s15",
+      "text": "A bare principle rarely tells you what to do with this patient, tonight.",
+      "spoken": "A bare principle rarely tells you what to do with this patient, tonight."
+    },
+    "4e747b92": {
+      "slide": "s15",
+      "text": "So before you can apply a principle, you often have to sharpen it.",
+      "spoken": "So before you can apply a principle, you often have to sharpen it."
+    },
+    "b488b631": {
+      "slide": "specification",
+      "text": "The philosopher Henry Richardson called this move specification: narrowing an abstract principle to fit a context.",
+      "spoken": "The philosopher Henry Richardson called this move specification: narrowing an abstract principle to fit a context."
+    },
+    "f4c1d3a5": {
+      "slide": "specification",
+      "text": "Abstract: respect the patient's autonomy.",
+      "spoken": "Abstract: respect the patient's autonomy."
+    },
+    "1346cba8": {
+      "slide": "specification",
+      "text": "Specified: obtain Ilinca's informed consent before giving wolfsbane, disclosing that it blocks transformation for three nights.",
+      "spoken": "Specified: obtain Ilinca's informed consent before giving wolfsbane, disclosing that it blocks transformation for three nights."
+    },
+    "5c542e5d": {
+      "slide": "specification",
+      "text": "A good specification guides action, and it often heads off conflicts before they start.",
+      "spoken": "A good specification guides action, and it often heads off conflicts before they start."
+    },
+    "da0ee1e5": {
+      "slide": "s17",
+      "text": "Don't confuse the two things you'll do with principles. First, specification: make it concrete. Take one abstract principle and spell out what it requires here. Respect autonomy becomes get Ilinca's informed consent before wolfsbane. Second, balancing: weigh the clash. When two specified principles still conflict, weigh their relative strength. Her refusal, which is autonomy, against her repeated injuries, which is beneficence: which wins, here?",
+      "spoken": "Don't confuse the two things you'll do with principles. First, specification: make it concrete. Take one abstract principle and spell out what it requires here. Respect autonomy becomes get Ilinca's informed consent before wolfsbane. Second, balancing: weigh the clash. When two specified principles still conflict, weigh their relative strength. Her refusal, which is autonomy, against her repeated injuries, which is beneficence: which wins, here?"
+    },
+    "9a9520ef": {
+      "slide": "s18",
+      "text": "Say it back. Fill in each gap, then press Check.",
+      "spoken": "Say it back. Fill in each gap, then press Check."
+    },
+    "8aece58a": {
+      "slide": "s18",
+      "text": "That's specification: it makes a general principle concrete enough to act on in a particular case.",
+      "spoken": "That's specification: it makes a general principle concrete enough to act on in a particular case."
+    },
+    "626e3050": {
+      "slide": "s19",
+      "text": "Specify all you like. Sometimes two principles still pull against each other in the same case, and then you must weigh and balance.",
+      "spoken": "Specify all you like. Sometimes two principles still pull against each other in the same case, and then you must weigh and balance."
+    },
+    "7b719408": {
+      "slide": "s19",
+      "text": "Balancing is judgment, not arithmetic. No formula spits out the answer.",
+      "spoken": "Balancing is judgment, not arithmetic. No formula spits out the answer."
+    },
+    "f1a34cb3": {
+      "slide": "s19",
+      "text": "But it isn't a free-for-all either. Overriding a principle has to be earned.",
+      "spoken": "But it isn't a free-for-all either. Overriding a principle has to be earned."
+    },
+    "d611aa2d": {
+      "slide": "s19",
+      "text": "Beauchamp and Childress give conditions any justified override must meet.",
+      "spoken": "Beauchamp and Childress give conditions any justified override must meet."
+    },
+    "f2bc3c4d": {
+      "slide": "override-conditions",
+      "text": "To justifiably infringe one prima facie principle for another, you should be able to show six things.",
+      "spoken": "To justifiably infringe one prima facie principle for another, you should be able to show six things."
+    },
+    "365feabc": {
+      "slide": "override-conditions",
+      "text": "Good reasons: the overriding principle really is weightier here.",
+      "spoken": "Good reasons: the overriding principle really is weightier here."
+    },
+    "d8d56c93": {
+      "slide": "override-conditions",
+      "text": "Realistic prospect: the override will actually achieve its aim.",
+      "spoken": "Realistic prospect: the override will actually achieve its aim."
+    },
+    "7c48f48f": {
+      "slide": "override-conditions",
+      "text": "Necessity: no morally preferable alternative is available.",
+      "spoken": "Necessity: no morally preferable alternative is available."
+    },
+    "1d78d1ce": {
+      "slide": "override-conditions",
+      "text": "Least infringement: you intrude as little as the goal allows.",
+      "spoken": "Least infringement: you intrude as little as the goal allows."
+    },
+    "d558a871": {
+      "slide": "override-conditions",
+      "text": "Minimize harm: reduce the bad effects of the override.",
+      "spoken": "Minimize harm: reduce the bad effects of the override."
+    },
+    "0cc6d033": {
+      "slide": "override-conditions",
+      "text": "Impartiality: act as you would for any patient, and treat everyone affected fairly.",
+      "spoken": "Impartiality: act as you would for any patient, and treat everyone affected fairly."
+    },
+    "d2e8f1b1": {
+      "slide": "s21",
+      "text": "A hard case: paternalism. Ilinca is hooked on moon-nectar, the very drug that drives the transformations injuring her. She is lucid, she refuses to give it up, and she harms nobody else. On one side, respect for autonomy: it's her call. She is competent and informed. What she puts in her own body is her choice. Restricting her moon-nectar overrides a lucid refusal. On the other side, beneficence and nonmaleficence: her own good. The drug leaves her gravely and repeatedly injured. The addiction also clouds the very choice she is making. Limiting it for her own good, against her wishes, is paternalism.",
+      "spoken": "A hard case: paternalism. Ilinca is hooked on moon-nectar, the very drug that drives the transformations injuring her. She is lucid, she refuses to give it up, and she harms nobody else. On one side, respect for autonomy: it's her call. She is competent and informed. What she puts in her own body is her choice. Restricting her moon-nectar overrides a lucid refusal. On the other side, beneficence and nonmaleficence: her own good. The drug leaves her gravely and repeatedly injured. The addiction also clouds the very choice she is making. Limiting it for her own good, against her wishes, is paternalism."
+    },
+    "b408b1cb": {
+      "slide": "s22",
+      "text": "Tune the case. Here are five versions of Ilinca. Switch on only what that case supports, then check your reading. Two of the switches are not conditions at all. When you're ready, press Continue.",
+      "spoken": "Tune the case. Here are five versions of Ilinca. Switch on only what that case supports, then check your reading. Two of the switches are not conditions at all. When you're ready, press Continue."
+    },
+    "41526b60": {
+      "slide": "s23",
+      "text": "What justifies an override? Check each genuine condition for justifiably overriding a principle, then press Check answers.",
+      "spoken": "What justifies an override? Check each genuine condition for justifiably overriding a principle, then press Check answers."
+    },
+    "462eb891": {
+      "slide": "s23",
+      "text": "Right. These come from Beauchamp and Childress. Expecting thanks, or ranking the principles, is not what licenses an override.",
+      "spoken": "Right. These come from Beauchamp and Childress. Expecting thanks, or ranking the principles, is not what licenses an override."
+    },
+    "ad7cd17b": {
+      "slide": "s24",
+      "text": "Another fault line: duty to warn. In confidence, the Count tells you he intends to feed on Sanda the midwife tonight. Now the danger is to someone else. On one side, confidentiality, which is about trust. What a patient tells you in confidence is, by default, protected. Break it lightly and no patient will ever confide the truth again. On the other side, the duty to warn, which is about protecting others. When a third party faces serious, specific danger, you may have to warn. The real-world landmark is Tarasoff, from 1976. A therapist's patient said he would kill a young woman, unnamed but easy to identify, and then did. The court held that the duty of confidentiality had ended where the danger to her began. That is harm to others, not paternalism.",
+      "spoken": "Another fault line: duty to warn. In confidence, the Count tells you he intends to feed on Sanda the midwife tonight. Now the danger is to someone else. On one side, confidentiality, which is about trust. What a patient tells you in confidence is, by default, protected. Break it lightly and no patient will ever confide the truth again. On the other side, the duty to warn, which is about protecting others. When a third party faces serious, specific danger, you may have to warn. The real-world landmark is Tarasoff, from 1976. A therapist's patient said he would kill a young woman, unnamed but easy to identify, and then did. The court held that the duty of confidentiality had ended where the danger to her began. That is harm to others, not paternalism."
+    },
+    "31a2f8b0": {
+      "slide": "s25",
+      "text": "Decision point: the final death. This one isn't graded. There is no skipping the weighing, so here is the weighing. The Countess Dolingen, weary at four hundred, asks you to help her reach her final death. She is lucid, settled, and has asked more than once. What weighs most? Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the final death. This one isn't graded. There is no skipping the weighing, so here is the weighing. The Countess Dolingen, weary at four hundred, asks you to help her reach her final death. She is lucid, settled, and has asked more than once. What weighs most? Pick the answer closest to your view, and read its note."
+    },
+    "abdbcb0f": {
+      "slide": "s25",
+      "text": "Every answer here is a principle the lesson has already given you, and they point in different directions. Beauchamp and Childress deny there is a fixed ranking. What you can be held to is the override conditions.",
+      "spoken": "Every answer here is a principle the lesson has already given you, and they point in different directions. Beauchamp and Childress deny there is a fixed ranking. What you can be held to is the override conditions."
+    },
+    "cbd2aa81": {
+      "slide": "fault-lines",
+      "text": "Most great debates in bioethics live where two principles meet.",
+      "spoken": "Most great debates in bioethics live where two principles meet."
+    },
+    "c672eaca": {
+      "slide": "fault-lines",
+      "text": "Capacity and consent. The newly risen Creature cannot grasp his options. Judge whether he can decide. If not, find a suitable surrogate.",
+      "spoken": "Capacity and consent. The newly risen Creature cannot grasp his options. Judge whether he can decide. If not, find a suitable surrogate."
+    },
+    "453f5863": {
+      "slide": "fault-lines",
+      "text": "Justice and triage. When the synthetic blood runs short, does the Count get it or does Sanda, and on what fair rule?",
+      "spoken": "Justice and triage. When the synthetic blood runs short, does the Count get it or does Sanda, and on what fair rule?"
+    },
+    "2e934e13": {
+      "slide": "fault-lines",
+      "text": "End-of-life autonomy. The Countess asks you to help her reach her ‘final death.’",
+      "spoken": "End-of-life autonomy. The Countess asks you to help her reach her ‘final death.’"
+    },
+    "5d5ea58e": {
+      "slide": "fault-lines",
+      "text": "Each of these pits real principles against each other. There is no skipping the weighing.",
+      "spoken": "Each of these pits real principles against each other. There is no skipping the weighing."
+    },
+    "de948ac1": {
+      "slide": "s27",
+      "text": "Reason through it. The Creature, newly risen, cannot understand his treatment options. What's the soundest first step? Pick an answer.",
+      "spoken": "Reason through it. The Creature, newly risen, cannot understand his treatment options. What's the soundest first step? Pick an answer."
+    },
+    "d7637cb8": {
+      "slide": "s27",
+      "text": "Right. When capacity is in doubt, you assess his decision-making capacity and turn to an appropriate surrogate. That's autonomy, specified for diminished capacity.",
+      "spoken": "Right. When capacity is in doubt, you assess his decision-making capacity and turn to an appropriate surrogate. That's autonomy, specified for diminished capacity."
+    },
+    "a19bd5e9": {
+      "slide": "s28",
+      "text": "Say you were right to override a principle. The philosopher Bernard Williams argued that being justified does not wipe the slate clean.",
+      "spoken": "Say you were right to override a principle. The philosopher Bernard Williams argued that being justified does not wipe the slate clean."
+    },
+    "cccec8d6": {
+      "slide": "s28",
+      "text": "The principle you overrode did not vanish. What it leaves behind is called moral residue.",
+      "spoken": "The principle you overrode did not vanish. What it leaves behind is called moral residue."
+    },
+    "43a61cc9": {
+      "slide": "s28",
+      "text": "You may owe residual duties: disclose what you did, apologize, follow up, make amends.",
+      "spoken": "You may owe residual duties: disclose what you did, apologize, follow up, make amends."
+    },
+    "4cf30357": {
+      "slide": "s28",
+      "text": "The regret you feel afterwards is a signal rather than a malfunction. It tells you something is still owed.",
+      "spoken": "The regret you feel afterwards is a signal rather than a malfunction. It tells you something is still owed."
+    },
+    "d6c2f14f": {
+      "slide": "residue",
+      "text": "Both things are true. First, justified infringement: you acted rightly. Every condition was met, so overriding the principle was defensible. Restricting her moon-nectar to stop grievous self-injury was the right call. Second, moral residue: something is still owed. The overridden principle still makes a claim on you. You owe her honesty, support through withdrawal, and a plan she has agreed to. And you should feel it.",
+      "spoken": "Both things are true. First, justified infringement: you acted rightly. Every condition was met, so overriding the principle was defensible. Restricting her moon-nectar to stop grievous self-injury was the right call. Second, moral residue: something is still owed. The overridden principle still makes a claim on you. You owe her honesty, support through withdrawal, and a plan she has agreed to. And you should feel it."
+    },
+    "0fb56ac9": {
+      "slide": "s30",
+      "text": "What residue asks of you. You broke the Count's confidence to warn Sanda, and every condition for the override was met. Sort each line under the idea it expresses, justified infringement or moral residue. Then press Check answers.",
+      "spoken": "What residue asks of you. You broke the Count's confidence to warn Sanda, and every condition for the override was met. Sort each line under the idea it expresses, justified infringement or moral residue. Then press Check answers."
+    },
+    "c6d3baa7": {
+      "slide": "s30",
+      "text": "Right. The override was justified, and the overridden principle still makes a claim on you. That's moral residue: honesty, follow-up, and the unease you feel afterwards.",
+      "spoken": "Right. The override was justified, and the overridden principle still makes a claim on you. That's moral residue: honesty, follow-up, and the unease you feel afterwards."
+    },
+    "238de0c7": {
+      "slide": "s31",
+      "text": "Name all four. Van Helsing holds up four fingers one last time. Before dawn, which principle is each of these? Fill in each gap, then press Check.",
+      "spoken": "Name all four. Van Helsing holds up four fingers one last time. Before dawn, which principle is each of these? Fill in each gap, then press Check."
+    },
+    "db356e69": {
+      "slide": "s31",
+      "text": "Autonomy, nonmaleficence, beneficence, and justice. Two of them look alike and are not. Nonmaleficence is the duty not to inflict harm, and beneficence is the duty to actively do good. One is a floor you must not go below. The other is a good you have to weigh.",
+      "spoken": "Autonomy, nonmaleficence, beneficence, and justice. Two of them look alike and are not. Nonmaleficence is the duty not to inflict harm, and beneficence is the duty to actively do good. One is a floor you must not go below. The other is a good you have to weigh."
+    },
+    "71dcd961": {
+      "slide": "s32",
+      "text": "Here is where you started. Re-rate each one and see whether anything has shifted. Staying put is fine. The question is whether you can now say why. When you're done, press Submit.",
+      "spoken": "Here is where you started. Re-rate each one and see whether anything has shifted. Staying put is fine. The question is whether you can now say why. When you're done, press Submit."
+    },
+    "1ea9248c": {
+      "slide": "s32",
+      "text": "Saved. Now, a quick summary of the night.",
+      "spoken": "Saved. Now, a quick summary of the night."
+    },
+    "f7d4d088": {
+      "slide": "s33",
+      "text": "Dawn over the mountains. Van Helsing nods. You have the method now. Use it well.",
+      "spoken": "Dawn over the mountains. Van Helsing nods. You have the method now. Use it well."
+    },
+    "e3251a57": {
+      "slide": "s33",
+      "text": "Common morality: shared norms, specified and extended for the clinic.",
+      "spoken": "Common morality: shared norms, specified and extended for the clinic."
+    },
+    "cd058472": {
+      "slide": "s33",
+      "text": "Four principles: autonomy, nonmaleficence, beneficence, and justice, equal and prima facie.",
+      "spoken": "Four principles: autonomy, nonmaleficence, beneficence, and justice, equal and prima facie."
+    },
+    "3c164fb0": {
+      "slide": "s33",
+      "text": "Specify, then weigh, and override only when every condition holds.",
+      "spoken": "Specify, then weigh, and override only when every condition holds."
+    },
+    "6eae1674": {
+      "slide": "s33",
+      "text": "Moral residue: even when you are right, honor what is still owed. Visit every slide and answer every question correctly to fill the bar and complete your training.",
+      "spoken": "Moral residue: even when you are right, honor what is still owed. Visit every slide and answer every question correctly to fill the bar and complete your training."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-storyteller-5",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "ba0482e0": {
+      "slide": "s1",
+      "text": "Welcome to The Villa Diodati Clinic. It's a few years from now. On a stormy night, Mary and Percy arrive at a clinic on the shore of Lake Geneva. They want a child. A doctor here says she can edit that child's genes before the pregnancy begins. You will help them decide what would be acceptable. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Villa Diodati Clinic. It's a few years from now. On a stormy night, Mary and Percy arrive at a clinic on the shore of Lake Geneva. They want a child. A doctor here says she can edit that child's genes before the pregnancy begins. You will help them decide what would be acceptable. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "eb00b0c4": {
+      "slide": "s2",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "9f3fd92c": {
+      "slide": "s3",
+      "text": "Meet Mary and Percy. They met in a hospital waiting room. Both were born with cystic fibrosis, or CF.",
+      "spoken": "Meet Mary and Percy. They met in a hospital waiting room. Both were born with cystic fibrosis, or CF."
+    },
+    "d835c61a": {
+      "slide": "s3",
+      "text": "CF is a genetic disease. It comes from a person's genes, not from a germ, so nobody can catch it.",
+      "spoken": "CF is a genetic disease. It comes from a person's genes, not from a germ, so nobody can catch it."
+    },
+    "ca1ae5e4": {
+      "slide": "s3",
+      "text": "It makes the mucus in the lungs thick and sticky. Breathing gets harder, and lung infections are common.",
+      "spoken": "It makes the mucus in the lungs thick and sticky. Breathing gets harder, and lung infections are common."
+    },
+    "afe4ae14": {
+      "slide": "s3",
+      "text": "New medicines help most people with CF live much longer. They still need treatment every day for life.",
+      "spoken": "New medicines help most people with CF live much longer. They still need treatment every day for life."
+    },
+    "3a1fca03": {
+      "slide": "s4",
+      "text": "Why not just pick a healthy embryo? Genes come in pairs, one copy from each parent. A person has CF only if both copies of one gene are faulty.",
+      "spoken": "Why not just pick a healthy embryo? Genes come in pairs, one copy from each parent. A person has CF only if both copies of one gene are faulty."
+    },
+    "ba8d3d3b": {
+      "slide": "s4",
+      "text": "An embryo is the tiny ball of cells a fertilized egg grows into. Most at-risk couples can have several made in a lab and tested.",
+      "spoken": "An embryo is the tiny ball of cells a fertilized egg grows into. Most at-risk couples can have several made in a lab and tested."
+    },
+    "ad361c24": {
+      "slide": "s4",
+      "text": "Doctors then use an embryo without the disease. This is called embryo screening.",
+      "spoken": "Doctors then use an embryo without the disease. This is called embryo screening."
+    },
+    "ba496b77": {
+      "slide": "s4",
+      "text": "Mary has two faulty copies, and so does Percy. Every embryo of theirs gets a faulty copy from each parent.",
+      "spoken": "Mary has two faulty copies, and so does Percy. Every embryo of theirs gets a faulty copy from each parent."
+    },
+    "729a6682": {
+      "slide": "s4",
+      "text": "Screening can only choose, and here there is no embryo without CF to choose. The gene would have to be changed.",
+      "spoken": "Screening can only choose, and here there is no embryo without CF to choose. The gene would have to be changed."
+    },
+    "94bf1a04": {
+      "slide": "s5",
+      "text": "Now, DNA. Almost every cell in your body holds a copy of your DNA: the instructions for building and running you.",
+      "spoken": "Now, DNA. Almost every cell in your body holds a copy of your DNA: the instructions for building and running you."
+    },
+    "99bfd508": {
+      "slide": "s5",
+      "text": "Think of DNA as a recipe book. A gene is one recipe, and it tells the cell how to make one part.",
+      "spoken": "Think of DNA as a recipe book. A gene is one recipe, and it tells the cell how to make one part."
+    },
+    "059298fe": {
+      "slide": "s5",
+      "text": "The CF gene is the recipe for a part that moves salt and water out of cells. A mistake in that recipe makes the mucus thick.",
+      "spoken": "The CF gene is the recipe for a part that moves salt and water out of cells. A mistake in that recipe makes the mucus thick."
+    },
+    "8f7fb363": {
+      "slide": "s5",
+      "text": "Gene editing means changing a recipe on purpose. A tool called CRISPR, first described in 2012, can find one spot in the DNA and cut it.",
+      "spoken": "Gene editing means changing a recipe on purpose. A tool called CRISPR, first described in 2012, can find one spot in the DNA and cut it."
+    },
+    "ccf275cc": {
+      "slide": "s5",
+      "text": "The book is about three billion letters long. Editing aims to fix one typo and leave the rest alone.",
+      "spoken": "The book is about three billion letters long. Editing aims to fix one typo and leave the rest alone."
+    },
+    "9b96b846": {
+      "slide": "two-kinds-of-cells",
+      "text": "Two kinds of cells. What an edit does depends on which cells it changes.",
+      "spoken": "Two kinds of cells. What an edit does depends on which cells it changes."
+    },
+    "4681f9b6": {
+      "slide": "two-kinds-of-cells",
+      "text": "Somatic cells are the cells of your body: lungs, skin, blood, brain. An edit there stays in that one person.",
+      "spoken": "Somatic cells are the cells of your body: lungs, skin, blood, brain. An edit there stays in that one person."
+    },
+    "d892db22": {
+      "slide": "two-kinds-of-cells",
+      "text": "Germline cells are eggs and sperm, and the cells that make them. They carry DNA to the next generation.",
+      "spoken": "Germline cells are eggs and sperm, and the cells that make them. They carry DNA to the next generation."
+    },
+    "3f2378f1": {
+      "slide": "two-kinds-of-cells",
+      "text": "A fertilized egg, and the embryo it grows into, count as germline too. An edit there reaches every cell, eggs or sperm included.",
+      "spoken": "A fertilized egg, and the embryo it grows into, count as germline too. An edit there reaches every cell, eggs or sperm included."
+    },
+    "210e34b5": {
+      "slide": "two-kinds-of-cells",
+      "text": "So a germline edit is heritable: it can be passed down to children.",
+      "spoken": "So a germline edit is heritable: it can be passed down to children."
+    },
+    "629bb90d": {
+      "slide": "s7",
+      "text": "Somatic editing is already here. In 2023 the US and UK approved Casgevy, the first medicine that uses CRISPR. It treats sickle cell disease, a painful genetic blood disease.",
+      "spoken": "Somatic editing is already here. In 2023 the U.S. and UK approved Casgevy, the first medicine that uses CRISPR. It treats sickle cell disease, a painful genetic blood disease."
+    },
+    "936399c2": {
+      "slide": "s7",
+      "text": "Doctors take out some of the patient's blood-making cells, edit them in a lab, and put them back.",
+      "spoken": "Doctors take out some of the patient's blood-making cells, edit them in a lab, and put them back."
+    },
+    "4bf32d72": {
+      "slide": "s7",
+      "text": "The edited cells make healthy blood. The patient's eggs or sperm are not changed, so nothing is passed on.",
+      "spoken": "The edited cells make healthy blood. The patient's eggs or sperm are not changed, so nothing is passed on."
+    },
+    "281587a8": {
+      "slide": "s7",
+      "text": "The patient can be told the risks and can agree or refuse.",
+      "spoken": "The patient can be told the risks and can agree or refuse."
+    },
+    "6afa57be": {
+      "slide": "s7",
+      "text": "Few people object to somatic editing itself. The arguments about it are over cost and safety.",
+      "spoken": "Few people object to somatic editing itself. The arguments about it are over cost and safety."
+    },
+    "4db0e7af": {
+      "slide": "s8",
+      "text": "Mary and Percy would need a germline edit: fixing the CF gene in a brand-new embryo.",
+      "spoken": "Mary and Percy would need a germline edit: fixing the CF gene in a brand-new embryo."
+    },
+    "fb03bdbd": {
+      "slide": "s8",
+      "text": "Their child would grow up without CF. That child's children could inherit the fixed gene too.",
+      "spoken": "Their child would grow up without CF. That child's children could inherit the fixed gene too."
+    },
+    "3e46f4fb": {
+      "slide": "s8",
+      "text": "This is the promise of germline editing. One edit could remove a disease from a whole family line.",
+      "spoken": "This is the promise of germline editing. One edit could remove a disease from a whole family line."
+    },
+    "677890fb": {
+      "slide": "s8",
+      "text": "It is also the worry. Everyone below the top lantern receives the change without being asked.",
+      "spoken": "It is also the worry. Everyone below the top lantern receives the change without being asked."
+    },
+    "f160a5e0": {
+      "slide": "s9",
+      "text": "Watch the edit travel. Each circle is one person in a family, over four generations. Choose which kind of edit the person at the top receives. When you're ready, press Continue.",
+      "spoken": "Watch the edit travel. Each circle is one person in a family, over four generations. Choose which kind of edit the person at the top receives. When you're ready, press Continue."
+    },
+    "1ba4889a": {
+      "slide": "s10",
+      "text": "Somatic versus germline. Both use the same editing tool. They differ in which cells are changed, and so in who is affected. Somatic editing is for one patient. It changes body cells in a person who is already here, and the change ends with that person. Casgevy edits a patient's blood-making cells to treat sickle cell disease. Germline editing is for the family line. It changes an egg, a sperm, or a brand-new embryo. The change is in every cell and can be passed on. That's Mary and Percy's request: fix the CF gene in an embryo before pregnancy begins.",
+      "spoken": "Somatic versus germline. Both use the same editing tool. They differ in which cells are changed, and so in who is affected. Somatic editing is for one patient. It changes body cells in a person who is already here, and the change ends with that person. Casgevy edits a patient's blood-making cells to treat sickle cell disease. Germline editing is for the family line. It changes an egg, a sperm, or a brand-new embryo. The change is in every cell and can be passed on. That's Mary and Percy's request: fix the CF gene in an embryo before pregnancy begins."
+    },
+    "a272e4a8": {
+      "slide": "s11",
+      "text": "Which edits could be passed on? Check every edit that the patient's future children could inherit, then press Check answers.",
+      "spoken": "Which edits could be passed on? Check every edit that the patient's future children could inherit, then press Check answers."
+    },
+    "4d95a38b": {
+      "slide": "s11",
+      "text": "Right. What matters is which cells change. Eggs, sperm, the cells that make them, and a just-fertilized egg all carry DNA to the next generation.",
+      "spoken": "Right. What matters is which cells change. Eggs, sperm, the cells that make them, and a just-fertilized egg all carry DNA to the next generation."
+    },
+    "4735f978": {
+      "slide": "s12",
+      "text": "Doctor Byron runs the clinic. She offers more than Mary and Percy came to ask for.",
+      "spoken": "Doctor Byron runs the clinic. She offers more than Mary and Percy came to ask for."
+    },
+    "85ab19fb": {
+      "slide": "s12",
+      "text": "First, the real world. Today dozens of countries ban germline editing for making babies, and none clearly allows it.",
+      "spoken": "First, the real world. Today dozens of countries ban germline editing for making babies, and none clearly allows it."
+    },
+    "bffade23": {
+      "slide": "s12",
+      "text": "In this story the law has changed, and the clinic is legal.",
+      "spoken": "In this story the law has changed, and the clinic is legal."
+    },
+    "7aebcae6": {
+      "slide": "s12",
+      "text": "Doctor Byron says she can fix the CF gene. Then she slides a menu across her desk.",
+      "spoken": "Doctor Byron says she can fix the CF gene. Then she slides a menu across her desk."
+    },
+    "3bff3b80": {
+      "slide": "s12",
+      "text": "‘While we are editing,’ she says, ‘we could do more than fix things.’",
+      "spoken": "‘While we are editing,’ she says, ‘we could do more than fix things.’"
+    },
+    "ea90b458": {
+      "slide": "s13",
+      "text": "Here are the three things on the menu.",
+      "spoken": "Here are the three things on the menu."
+    },
+    "49216ef3": {
+      "slide": "s13",
+      "text": "One, fix a disease. Correct the CF gene, so the child does not have cystic fibrosis.",
+      "spoken": "One, fix a disease. Correct the CF gene, so the child does not have cystic fibrosis."
+    },
+    "0b8fc953": {
+      "slide": "s13",
+      "text": "Two, lower a risk. Add a rare gene version that keeps cholesterol low and protects against heart disease in old age.",
+      "spoken": "Two, lower a risk. Add a rare gene version that keeps cholesterol low and protects against heart disease in old age."
+    },
+    "cca1a1bb": {
+      "slide": "s13",
+      "text": "Three, add an advantage. Edits meant to make the child taller, or better at remembering.",
+      "spoken": "Three, add an advantage. Edits meant to make the child taller, or better at remembering."
+    },
+    "de015773": {
+      "slide": "s13",
+      "text": "A reality check: height and memory depend on thousands of genes and on how you live. Nobody can do item three today.",
+      "spoken": "A reality check: height and memory depend on thousands of genes and on how you live. Nobody can do item three today."
+    },
+    "4706a6fc": {
+      "slide": "treatment-enhancement",
+      "text": "Treatment or enhancement? Philosophers sort Doctor Byron's menu with two words.",
+      "spoken": "Treatment or enhancement? Philosophers sort Doctor Byron's menu with two words."
+    },
+    "bec6b8b3": {
+      "slide": "treatment-enhancement",
+      "text": "Treatment: fixing or preventing a disease, to bring a person to normal health.",
+      "spoken": "Treatment: fixing or preventing a disease, to bring a person to normal health."
+    },
+    "127cc38b": {
+      "slide": "treatment-enhancement",
+      "text": "Enhancement: improving a healthy person beyond normal health.",
+      "spoken": "Enhancement: improving a healthy person beyond normal health."
+    },
+    "7a5a6bc1": {
+      "slide": "treatment-enhancement",
+      "text": "Many people say treatment is acceptable and enhancement is not. The cases in the middle are hard to sort.",
+      "spoken": "Many people say treatment is acceptable and enhancement is not. The cases in the middle are hard to sort."
+    },
+    "13e18b92": {
+      "slide": "treatment-enhancement",
+      "text": "Two middle cases: a vaccine gives a healthy child protection nobody is born with, and doctors sometimes give growth hormone to healthy children who are very short.",
+      "spoken": "Two middle cases: a vaccine gives a healthy child protection nobody is born with, and doctors sometimes give growth hormone to healthy children who are very short."
+    },
+    "57ce2cff": {
+      "slide": "s15",
+      "text": "Draw your line. Slide each edit to where you think it belongs, from treats a disease on the left to adds an advantage on the right. Then set your line: you would allow every edit to the left of it. When you're ready, press Continue.",
+      "spoken": "Draw your line. Slide each edit to where you think it belongs, from treats a disease on the left to adds an advantage on the right. Then set your line: you would allow every edit to the left of it. When you're ready, press Continue."
+    },
+    "e00f27a5": {
+      "slide": "s16",
+      "text": "Why is the line hard to draw? Sort each case the way this lesson does: treatment, enhancement, or a hard case in the middle. When every case is placed, press Check answers.",
+      "spoken": "Why is the line hard to draw? Sort each case the way this lesson does: treatment, enhancement, or a hard case in the middle. When every case is placed, press Check answers."
+    },
+    "aa4934ec": {
+      "slide": "s16",
+      "text": "Right. Fixing a disease is treatment, and improving a healthy person beyond normal health is enhancement. A vaccine and growth hormone for a healthy short child fit neither label cleanly, so they sit in the middle.",
+      "spoken": "Right. Fixing a disease is treatment, and improving a healthy person beyond normal health is enhancement. A vaccine and growth hormone for a healthy short child fit neither label cleanly, so they sit in the middle."
+    },
+    "58466f70": {
+      "slide": "s17",
+      "text": "The case for: prevent suffering. Mary and Percy each spend an hour or two of every day on CF treatments. The first argument speaks to cases like theirs.",
+      "spoken": "The case for: prevent suffering. Mary and Percy each spend an hour or two of every day on CF treatments. The first argument speaks to cases like theirs."
+    },
+    "6a418416": {
+      "slide": "s17",
+      "text": "Defenders of editing, such as the philosopher John Harris, argue: a serious disease causes real suffering. If we can safely prevent it, we have a strong reason to.",
+      "spoken": "Defenders of editing, such as the philosopher John Harris, argue: a serious disease causes real suffering. If we can safely prevent it, we have a strong reason to."
+    },
+    "d770aab5": {
+      "slide": "s17",
+      "text": "We already reason this way. It is why we vaccinate children and treat sick babies.",
+      "spoken": "We already reason this way. It is why we vaccinate children and treat sick babies."
+    },
+    "dbccdae8": {
+      "slide": "s17",
+      "text": "A germline fix could also spare the child's own children. No other treatment does that.",
+      "spoken": "A germline fix could also spare the child's own children. No other treatment does that."
+    },
+    "085a2889": {
+      "slide": "s17",
+      "text": "Notice the word safely. The argument depends on it, and the first objection will ask about it.",
+      "spoken": "Notice the word safely. The argument depends on it, and the first objection will ask about it."
+    },
+    "e3d8421d": {
+      "slide": "s18",
+      "text": "The case for: parents already choose. The second argument defends item three, the advantages. Harris makes it, and so does the philosopher Nicholas Agar.",
+      "spoken": "The case for: parents already choose. The second argument defends item three, the advantages. Harris makes it, and so does the philosopher Nicholas Agar."
+    },
+    "a6a9238a": {
+      "slide": "s18",
+      "text": "Parents shape their children all the time. They pick the school, the food, the music lessons, the braces.",
+      "spoken": "Parents shape their children all the time. They pick the school, the food, the music lessons, the braces."
+    },
+    "1338d208": {
+      "slide": "s18",
+      "text": "Nobody asks a baby whether it wants vitamins or a tutor. We think good parents provide them.",
+      "spoken": "Nobody asks a baby whether it wants vitamins or a tutor. We think good parents provide them."
+    },
+    "296d8277": {
+      "slide": "s18",
+      "text": "So they ask: if helping a child through upbringing is fine, why is helping through genes wrong?",
+      "spoken": "So they ask: if helping a child through upbringing is fine, why is helping through genes wrong?"
+    },
+    "0e883171": {
+      "slide": "s18",
+      "text": "To answer them, you have to find a difference between the two that matters morally.",
+      "spoken": "To answer them, you have to find a difference between the two that matters morally."
+    },
+    "0ce1e703": {
+      "slide": "upbringing-vs-edit",
+      "text": "Is editing just more parenting? The philosopher Jürgen Habermas argued that a child can push back against an upbringing, but not against a genetic design. A second difference, not his: an edit can be inherited. First, shaping by upbringing: lessons, food, school. The child takes part. They can push back, quit, or choose differently as an adult. A girl made to play violin at seven can stop at fifteen. Her own children start fresh. Now, shaping by germline edit, chosen before birth. It is fixed before the child exists. They cannot push back or undo it, and they may pass it on. A girl edited for height stays that height. Her children may inherit the edit. Defenders reply that some upbringing can't be undone either, like the first language you learn.",
+      "spoken": "Is editing just more parenting? The philosopher Jürgen Habermas argued that a child can push back against an upbringing, but not against a genetic design. A second difference, not his: an edit can be inherited. First, shaping by upbringing: lessons, food, school. The child takes part. They can push back, quit, or choose differently as an adult. A girl made to play violin at seven can stop at fifteen. Her own children start fresh. Now, shaping by germline edit, chosen before birth. It is fixed before the child exists. They cannot push back or undo it, and they may pass it on. A girl edited for height stays that height. Her children may inherit the edit. Defenders reply that some upbringing can't be undone either, like the first language you learn."
+    },
+    "48d57ffd": {
+      "slide": "s20",
+      "text": "The comparison, examined. Some argue that an edit is just more parenting. To answer them, a critic has to find a difference that matters. Sort each line under the kind of shaping it describes, then press Check answers.",
+      "spoken": "The comparison, examined. Some argue that an edit is just more parenting. To answer them, a critic has to find a difference that matters. Sort each line under the kind of shaping it describes, then press Check answers."
+    },
+    "78d5a0d1": {
+      "slide": "s20",
+      "text": "Right. A child takes part in her upbringing and can leave it behind, while an edit is fixed before she exists and can be passed on. A critic has to show that one of these differences matters morally.",
+      "spoken": "Right. A child takes part in her upbringing and can leave it behind, while an edit is fixed before she exists and can be passed on. A critic has to show that one of these differences matters morally."
+    },
+    "882a6a8e": {
+      "slide": "s21",
+      "text": "This is a decision point: the first item. You have heard only the case in favor. Should Mary and Percy be allowed to fix the CF gene in their embryo? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "This is a decision point: the first item. You have heard only the case in favor. Should Mary and Percy be allowed to fix the CF gene in their embryo? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "d6d2448a": {
+      "slide": "s21",
+      "text": "Remember your answer. Three objections follow, and the first is about the word safely.",
+      "spoken": "Remember your answer. Three objections follow, and the first is about the word safely."
+    },
+    "bc295a11": {
+      "slide": "objection-safety",
+      "text": "Objection one: is it safe? The first objection is about safety. Editing embryos to make babies has been tried only once. The first gene-edited babies were born before anyone could show the edit was safe.",
+      "spoken": "Objection one: is it safe? The first objection is about safety. Editing embryos to make babies has been tried only once. The first gene-edited babies were born before anyone could show the edit was safe."
+    },
+    "0e4aa381": {
+      "slide": "objection-safety",
+      "text": "In 2018 a scientist in China, He Jiankui, announced the birth of twin girls whose genes he had edited as embryos.",
+      "spoken": "In 2018 a scientist in China, He Jiankui, announced the birth of twin girls whose genes he had edited as embryos."
+    },
+    "132f2513": {
+      "slide": "objection-safety",
+      "text": "He was trying to make them resist HIV. Safer, proven ways to protect them already existed.",
+      "spoken": "He was trying to make them resist HIV. Safer, proven ways to protect them already existed."
+    },
+    "2945cc8b": {
+      "slide": "objection-safety",
+      "text": "His data suggested the edits did not come out as planned, and that only some of the girls' cells were edited.",
+      "spoken": "His data suggested the edits did not come out as planned, and that only some of the girls' cells were edited."
+    },
+    "609cb1bb": {
+      "slide": "objection-safety",
+      "text": "Scientists around the world condemned the experiment. A Chinese court sent him to prison for three years.",
+      "spoken": "Scientists around the world condemned the experiment. A Chinese court sent him to prison for three years."
+    },
+    "872c9aa8": {
+      "slide": "s23",
+      "text": "It can't be taken back. A mistake in an embryo is worse than an ordinary medical mistake. Here is why.",
+      "spoken": "It can't be taken back. A mistake in an embryo is worse than an ordinary medical mistake. Here is why."
+    },
+    "a4518858": {
+      "slide": "s23",
+      "text": "Editing tools sometimes cut in the wrong place. This is an off-target edit, and it can damage a healthy gene.",
+      "spoken": "Editing tools sometimes cut in the wrong place. This is an off-target edit, and it can damage a healthy gene."
+    },
+    "84fb5353": {
+      "slide": "s23",
+      "text": "In a somatic treatment, a mistake harms one patient, who agreed to the risk.",
+      "spoken": "In a somatic treatment, a mistake harms one patient, who agreed to the risk."
+    },
+    "01cda4a2": {
+      "slide": "s23",
+      "text": "In an embryo, a mistake is copied into every cell. Like ink dropped in a spring, it flows on to everyone downstream.",
+      "spoken": "In an embryo, a mistake is copied into every cell. Like ink dropped in a spring, it flows on to everyone downstream."
+    },
+    "53ba5342": {
+      "slide": "s23",
+      "text": "Some harms might not show for decades. By then the mistake could already be in grandchildren.",
+      "spoken": "Some harms might not show for decades. By then the mistake could already be in grandchildren."
+    },
+    "3e030192": {
+      "slide": "s24",
+      "text": "Watch a mistake travel. This is the same family. This time the edit has an off-target mistake. Choose where it happens. When you're ready, press Continue.",
+      "spoken": "Watch a mistake travel. This is the same family. This time the edit has an off-target mistake. Choose where it happens. When you're ready, press Continue."
+    },
+    "83125229": {
+      "slide": "nobody-asked",
+      "text": "Objection two: nobody asked the child. The safety objection says not yet. If editing became safe, it would be answered. The second objection would remain.",
+      "spoken": "Objection two: nobody asked the child. The safety objection says not yet. If editing became safe, it would be answered. The second objection would remain."
+    },
+    "f1a93196": {
+      "slide": "nobody-asked",
+      "text": "In medicine, consent means a patient agrees to a treatment after hearing the risks.",
+      "spoken": "In medicine, consent means a patient agrees to a treatment after hearing the risks."
+    },
+    "c61093e4": {
+      "slide": "nobody-asked",
+      "text": "An embryo cannot consent. Neither can the grandchildren who inherit the edit.",
+      "spoken": "An embryo cannot consent. Neither can the grandchildren who inherit the edit."
+    },
+    "e802540f": {
+      "slide": "nobody-asked",
+      "text": "Defenders reply that no baby consents to anything. Parents decide for young children every day.",
+      "spoken": "Defenders reply that no baby consents to anything. Parents decide for young children every day."
+    },
+    "c5e31a50": {
+      "slide": "nobody-asked",
+      "text": "That is true. So the question becomes which decisions parents may make, and which belong to the child.",
+      "spoken": "That is true. So the question becomes which decisions parents may make, and which belong to the child."
+    },
+    "94dae5e1": {
+      "slide": "s26",
+      "text": "The right to an open future. The philosopher Joel Feinberg gave an answer in 1980. He said children have a right to an open future. Parents hold a child's future choices in trust, and must keep them open.",
+      "spoken": "The right to an open future. The philosopher Joel Feinberg gave an answer in 1980. He said children have a right to an open future. Parents hold a child's future choices in trust, and must keep them open."
+    },
+    "27d20a9b": {
+      "slide": "s26",
+      "text": "Some choices are the child's to make later: what work to do, what to believe, what kind of life to lead.",
+      "spoken": "Some choices are the child's to make later: what work to do, what to believe, what kind of life to lead."
+    },
+    "d570a136": {
+      "slide": "s26",
+      "text": "Parents hold those choices in trust. Their job is to keep the doors open until the child can choose.",
+      "spoken": "Parents hold those choices in trust. Their job is to keep the doors open until the child can choose."
+    },
+    "97657d7f": {
+      "slide": "s26",
+      "text": "On this view, fixing CF is acceptable. A healthy child has more doors open, not fewer.",
+      "spoken": "On this view, fixing CF is acceptable. A healthy child has more doors open, not fewer."
+    },
+    "8dd723a2": {
+      "slide": "s26",
+      "text": "Editing for a trait the parents want is different. It steers the child toward a life the parents picked.",
+      "spoken": "Editing for a trait the parents want is different. It steers the child toward a life the parents picked."
+    },
+    "c0f7d9d5": {
+      "slide": "s27",
+      "text": "Objection three: is it fair? The third objection is about everyone else's children.",
+      "spoken": "Objection three: is it fair? The third objection is about everyone else's children."
+    },
+    "36d5d9d5": {
+      "slide": "s27",
+      "text": "Gene medicine is expensive. Casgevy costs about two point two million dollars per patient in the US.",
+      "spoken": "Gene medicine is expensive. Casgevy costs about two point two million dollars per patient in the U.S.."
+    },
+    "a33741a3": {
+      "slide": "s27",
+      "text": "If only rich families can buy edits, their children start ahead. Germline edits are inherited, so the gap could grow each generation.",
+      "spoken": "If only rich families can buy edits, their children start ahead. Germline edits are inherited, so the gap could grow each generation."
+    },
+    "d122c148": {
+      "slide": "s27",
+      "text": "History adds a warning. In the 1900s, US states sterilized more than sixty thousand people they judged ‘unfit’ to have children.",
+      "spoken": "History adds a warning. In the 1900s, U.S. states sterilized more than sixty thousand people they judged ‘unfit’ to have children."
+    },
+    "9a62b9fc": {
+      "slide": "s27",
+      "text": "Defenders reply that new medicine often starts expensive. The answer may be to pay for everyone, as with vaccines.",
+      "spoken": "Defenders reply that new medicine often starts expensive. The answer may be to pay for everyone, as with vaccines."
+    },
+    "c1296bbc": {
+      "slide": "s28",
+      "text": "Name that argument. Pick the argument each speaker is using. For each line, choose an option, then press Check.",
+      "spoken": "Name that argument. Pick the argument each speaker is using. For each line, choose an option, then press Check."
+    },
+    "9c8854d8": {
+      "slide": "s28",
+      "text": "Right. Worry about harm nobody can predict or reverse is safety. People who can't be asked is consent. A gap between families is fairness. And comparing editing with ordinary parenting is the parents-already-choose argument.",
+      "spoken": "Right. Worry about harm nobody can predict or reverse is safety. People who can't be asked is consent. A gap between families is fairness. And comparing editing with ordinary parenting is the parents-already-choose argument."
+    },
+    "0045088d": {
+      "slide": "s29",
+      "text": "Change one fact. Suppose germline editing became perfectly safe and free for every family. Which of the three objections would still stand? Pick an answer.",
+      "spoken": "Change one fact. Suppose germline editing became perfectly safe and free for every family. Which of the three objections would still stand? Pick an answer."
+    },
+    "de42cb94": {
+      "slide": "s29",
+      "text": "Right. Safety and fairness are worries about how editing might go wrong, and better science and fair funding could answer them. The consent objection is about who gets to decide, so it remains.",
+      "spoken": "Right. Safety and fairness are worries about how editing might go wrong, and better science and fair funding could answer them. The consent objection is about who gets to decide, so it remains."
+    },
+    "b7af4368": {
+      "slide": "s30",
+      "text": "Three envelopes. It is nearly morning. Doctor Byron leaves three envelopes on the table, one for each item on her menu.",
+      "spoken": "Three envelopes. It is nearly morning. Doctor Byron leaves three envelopes on the table, one for each item on her menu."
+    },
+    "45e89c32": {
+      "slide": "s30",
+      "text": "For: preventing suffering, and the comparison with ordinary parenting.",
+      "spoken": "For: preventing suffering, and the comparison with ordinary parenting."
+    },
+    "e7ba2265": {
+      "slide": "s30",
+      "text": "Against: safety, consent and the open future, and fairness.",
+      "spoken": "Against: safety, consent and the open future, and fairness."
+    },
+    "5f0dba67": {
+      "slide": "s30",
+      "text": "The arguments do not apply equally to every envelope. The case for fixing CF is not the case for extra height.",
+      "spoken": "The arguments do not apply equally to every envelope. The case for fixing CF is not the case for extra height."
+    },
+    "de465b0f": {
+      "slide": "s31",
+      "text": "Your decision. Answer each envelope for Mary and Percy: fix the CF gene, lower heart disease risk, and add height or memory. Then pick the arguments that mattered most to you. When you're ready, press Continue.",
+      "spoken": "Your decision. Answer each envelope for Mary and Percy: fix the CF gene, lower heart disease risk, and add height or memory. Then pick the arguments that mattered most to you. When you're ready, press Continue."
+    },
+    "db4f0028": {
+      "slide": "s32",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "d9a90532": {
+      "slide": "s32",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "51231be8": {
+      "slide": "s33",
+      "text": "Morning at the villa. Here's the lesson, summed up.",
+      "spoken": "Morning at the villa. Here's the lesson, summed up."
+    },
+    "ca3f8d10": {
+      "slide": "s33",
+      "text": "Somatic edits change one person's body cells. Germline edits are in every cell and can be inherited.",
+      "spoken": "Somatic edits change one person's body cells. Germline edits are in every cell and can be inherited."
+    },
+    "8bbba5f6": {
+      "slide": "s33",
+      "text": "Treatment fixes or prevents disease. Enhancement goes beyond health. The middle cases are hard to sort.",
+      "spoken": "Treatment fixes or prevents disease. Enhancement goes beyond health. The middle cases are hard to sort."
+    },
+    "6f085fa4": {
+      "slide": "s33",
+      "text": "For: preventing serious suffering, and the comparison with ordinary parenting.",
+      "spoken": "For: preventing serious suffering, and the comparison with ordinary parenting."
+    },
+    "6ff76ad9": {
+      "slide": "s33",
+      "text": "Against: safety says not yet, consent asks who decides, and fairness asks who is left behind. One last note: the idea for Frankenstein came to Mary Shelley at the real Villa Diodati in 1816. Her scientist makes a living being and then abandons it.",
+      "spoken": "Against: safety says not yet, consent asks who decides, and fairness asks who is left behind. One last note: the idea for Frankenstein came to Mary Shelley at the real Villa Diodati in 1816. Her scientist makes a living being and then abandons it."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

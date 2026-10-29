@@ -10,19 +10,20 @@ The click-through lesson is still there: a student who never presses Play gets
 the ordinary lesson, and a paused player behaves exactly like it. Next and Back
 always work, so nothing is ever locked.
 
-**In use:** ten lessons, starting with the pilot, *The Midnight Tribunal*
-(`ethical-theory/utilitarianism`). Every AI-ethics lesson except *Growing Up in
-Springfield* is narrated. The catalog marks narrated lessons with a
-**Narrated** badge. Four of them use a Gemini voice chosen for the lesson (see
-*Gemini voices* below): *The Masquerade of Silverport*, *The Last Job*, *Move
-On* and *The Ship's Chest*. The rest use edge-tts.
+**In use:** every lesson except *Growing Up in Springfield*, which waits on a
+recast. The pilot was *The Midnight Tribunal* (`ethical-theory/utilitarianism`).
+The catalog marks narrated lessons with a **Narrated** badge. Each lesson uses
+a Gemini voice chosen for it (see *Gemini voices* below); edge-tts is still
+supported but no lesson uses it now.
 
-Scripts for five of them were drafted by a smaller model (Sonnet) from a written
-brief, then spot-checked against the slides for changed facts. That works well:
-the structure is mechanical, and a walkthrough check catches missing lines and
-waits. Two rules from that run: the script never respells words (it doubles as
-the captions; respellings go in `tools/pronunciations.json`), and it never adds
-a fact the slide doesn't have.
+Most scripts were drafted by a smaller model (Sonnet) from a written brief, one
+agent per lesson, then checked against the slides for changed facts. That works
+well: the structure is mechanical, and a walkthrough check catches missing
+lines and waits. Three rules from those runs: the script never respells words
+(it doubles as the captions; respellings go in `tools/pronunciations.json`), it
+never adds a fact the slide doesn't have, and agents working in parallel must
+never run a git command that changes files. One stray `git stash` swept up every
+agent's uncommitted work at once; it was recovered file by file from the stash.
 
 ## What the student sees
 
@@ -129,11 +130,13 @@ python tools/generate-audio.py lessons/<topic>/<lesson>
     without one. That's no loss: a trial style ("warm, unhurried storyteller
     with a hint of mischief") sounded overdone, and the lessons in use run
     without one.
-  - **Choosing a voice:** match it to the lesson's frame. The four in use:
-    `en-gb-storyteller-2` (Masquerade: a witty British woman at a candlelit
-    ball), `en-gb-storyteller-4` (Ship's Chest: a Bristol man for a Bristol
-    harbor), `en-us-sami` (Move On: a calm American woman, since the lesson is
-    about today), `en-za-podcaster-4` (The Last Job: a wry game-show host).
+  - **Choosing a voice:** match it to the lesson's frame, and vary gender and
+    accent across lessons. Each lesson's manifest records its voice. Some
+    examples: `en-gb-storyteller-4` (Ship's Chest: a Bristol man for a Bristol
+    harbor), `en-gb-tutor-12` (Frankenstein: a velvety English woman, a nod to
+    Mary Shelley), `en-us-zali` (the Villain's Ledger: a comedian for a
+    cartoon supervillain), `en-us-podcaster-10` (The Third Twin: a Midwest
+    voice for a Minnesota hospital).
   - **Cost:** about 25 audio tokens a second. A 2,500-word lesson is about
     30,000 tokens: roughly $0.09 by batch or $0.18 line by line on
     flash-lite, at the rates of October 2026. Google says those rates double

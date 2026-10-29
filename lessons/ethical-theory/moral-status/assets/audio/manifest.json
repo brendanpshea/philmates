@@ -1,0 +1,827 @@
+{
+  "engine": "gemini",
+  "voice": "en-us-storyteller-14",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "01c42df1": {
+      "slide": "s1",
+      "text": "Welcome to The Ambassador's Manifest. Welcome aboard the survey ship Charitable Interpretation. You are the new Moral Status Officer. Your predecessor left in a hurry, and left seven dossiers unfiled. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Ambassador's Manifest. Welcome aboard the survey ship Charitable Interpretation. You are the new Moral Status Officer. Your predecessor left in a hurry, and left seven dossiers unfiled. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "c937e185": {
+      "slide": "s2",
+      "text": "The job description. Treaty law is blunt about it. Nothing found out here may be contacted, farmed, dissected, collected, or switched off until you have filed its status.",
+      "spoken": "The job description. Treaty law is blunt about it. Nothing found out here may be contacted, farmed, dissected, collected, or switched off until you have filed its status."
+    },
+    "82e66da6": {
+      "slide": "s2",
+      "text": "You're not deciding whether a thing is useful, dangerous, or likeable. The captain has officers for that.",
+      "spoken": "You're not deciding whether a thing is useful, dangerous, or likeable. The captain has officers for that."
+    },
+    "c00d61d4": {
+      "slide": "s2",
+      "text": "You're deciding one thing: does it count? Does the crew owe it anything for its own sake?",
+      "spoken": "You're deciding one thing: does it count? Does the crew owe it anything for its own sake?"
+    },
+    "0a63d8b8": {
+      "slide": "s2",
+      "text": "Get it wrong in one direction and you enslave someone. Get it wrong in the other and you halt a mining survey for a rock.",
+      "spoken": "Get it wrong in one direction and you enslave someone. Get it wrong in the other and you halt a mining survey for a rock."
+    },
+    "5263ff57": {
+      "slide": "s3",
+      "text": "Before your first shift, five quick questions with no right answers. File where you stand now. You'll see them again once the manifest is complete. Rate each of the five statements by how much you agree. When you've rated all five, press Submit.",
+      "spoken": "Before your first shift, five quick questions with no right answers. File where you stand now. You'll see them again once the manifest is complete. Rate each of the five statements by how much you agree. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "b686451f": {
+      "slide": "damaged-wronged",
+      "text": "Damaged versus wronged. A thing has moral status when it can be wronged. That means it matters in its own right, and not just because of what it is worth to somebody else.",
+      "spoken": "Damaged versus wronged. A thing has moral status when it can be wronged. That means it matters in its own right, and not just because of what it is worth to somebody else."
+    },
+    "fc182828": {
+      "slide": "damaged-wronged",
+      "text": "Smash the ship's coffee machine and you've done something bad. You've damaged the crew's property. The machine itself has no complaint.",
+      "spoken": "Smash the ship's coffee machine and you've done something bad. You've damaged the crew's property. The machine itself has no complaint."
+    },
+    "159da4af": {
+      "slide": "damaged-wronged",
+      "text": "Smash the ship's cat and you've done something bad to the cat. There's someone there for it to be bad for.",
+      "spoken": "Smash the ship's cat and you've done something bad to the cat. There's someone there for it to be bad for."
+    },
+    "2dc7edb2": {
+      "slide": "damaged-wronged",
+      "text": "That's the whole question: is there anyone home for it to be bad for? Philosophers call whoever's home a moral patient.",
+      "spoken": "That's the whole question: is there anyone home for it to be bad for? Philosophers call whoever's home a moral patient."
+    },
+    "91e2bc66": {
+      "slide": "agents-patients",
+      "text": "Agents and patients. Your predecessor's one useful note was taped inside the desk drawer. A moral agent can do wrong. It can weigh reasons, choose, and be held responsible. We blame them, praise them, put them on trial. Think of the captain, you, or any adult who could have chosen otherwise. A moral patient can be wronged. It can be treated well or badly. We owe them things, but we never put them on trial for anything. Think of an infant, a dog, or anyone under anesthesia.",
+      "spoken": "Agents and patients. Your predecessor's one useful note was taped inside the desk drawer. A moral agent can do wrong. It can weigh reasons, choose, and be held responsible. We blame them, praise them, put them on trial. Think of the captain, you, or any adult who could have chosen otherwise. A moral patient can be wronged. It can be treated well or badly. We owe them things, but we never put them on trial for anything. Think of an infant, a dog, or anyone under anesthesia."
+    },
+    "a3f62312": {
+      "slide": "agents-patients",
+      "text": "Every agent is also a patient. Not every patient is an agent, and that one-way relationship does a great deal of work later.",
+      "spoken": "Every agent is also a patient. Not every patient is an agent, and that one-way relationship does a great deal of work later."
+    },
+    "b0857c1f": {
+      "slide": "agents-patients",
+      "text": "A hurricane is neither. It can flatten a colony and still be nobody's fault and nobody's victim.",
+      "spoken": "A hurricane is neither. It can flatten a colony and still be nobody's fault and nobody's victim."
+    },
+    "99af95bf": {
+      "slide": "s6",
+      "text": "Bridge quiz, oh four hundred hours. Agent, patient only, or neither? Sort each of the six items under the right heading, then press Check answers.",
+      "spoken": "Bridge quiz, oh four hundred hours. Agent, patient only, or neither? Sort each of the six items under the right heading, then press Check answers."
+    },
+    "d0cf94e3": {
+      "slide": "s6",
+      "text": "Right. An agent can weigh reasons and be held responsible, and every agent is also a patient. A patient can be wronged but is never put on trial. A hurricane and a coffee machine are neither.",
+      "spoken": "Right. An agent can weigh reasons and be held responsible, and every agent is also a patient. A patient can be wronged but is never put on trial. A hurricane and a coffee machine are neither."
+    },
+    "e2aec6b5": {
+      "slide": "s7",
+      "text": "The form on the desk. Someone asked your question first. In 1973, Mary Anne Warren, writing on abortion, imagined a space explorer who meets alien beings and must decide whether they are persons. How would she tell?",
+      "spoken": "The form on the desk. Someone asked your question first. In 1973, Mary Anne Warren, writing on abortion, imagined a space explorer who meets alien beings and must decide whether they are persons. How would she tell?"
+    },
+    "64c90fcb": {
+      "slide": "s7",
+      "text": "Her answer is a checklist of five marks of personhood: consciousness, reasoning, self-motivated activity, communication, and self-awareness.",
+      "spoken": "Her answer is a checklist of five marks of personhood: consciousness, reasoning, self-motivated activity, communication, and self-awareness."
+    },
+    "c0ab7538": {
+      "slide": "s7",
+      "text": "It's printed on every dossier on your desk. Five boxes. Tick what applies.",
+      "spoken": "It's printed on every dossier on your desk. Five boxes. Tick what applies."
+    },
+    "1ebeb7d9": {
+      "slide": "s7",
+      "text": "Warren's caution: it tests for personhood, not for who may be treated any old way. She thought other principles covered animals.",
+      "spoken": "Warren's caution: it tests for personhood, not for who may be treated any old way. She thought other principles covered animals."
+    },
+    "9b7d3139": {
+      "slide": "s7",
+      "text": "And the form is not neutral. It assumes personhood is what makes a being count, and three of your five delegates say that is the wrong test.",
+      "spoken": "And the form is not neutral. It assumes personhood is what makes a being count, and three of your five delegates say that is the wrong test."
+    },
+    "f950069f": {
+      "slide": "five-criteria",
+      "text": "Where do you draw the circle? Everyone agrees some things count. The fight is over the line. Here are five criteria, each reasonable alone.",
+      "spoken": "Where do you draw the circle? Everyone agrees some things count. The fight is over the line. Here are five criteria, each reasonable alone."
+    },
+    "d260041b": {
+      "slide": "five-criteria",
+      "text": "Species membership: it counts if it is one of us.",
+      "spoken": "Species membership: it counts if it is one of us."
+    },
+    "a004c11a": {
+      "slide": "five-criteria",
+      "text": "Sentience: it counts if it can feel.",
+      "spoken": "Sentience: it counts if it can feel."
+    },
+    "6c978243": {
+      "slide": "five-criteria",
+      "text": "Rationality: it counts if it can reason and set its own ends.",
+      "spoken": "Rationality: it counts if it can reason and set its own ends."
+    },
+    "2bd28ef7": {
+      "slide": "five-criteria",
+      "text": "Relationships: it counts if we stand in real relations of care with it.",
+      "spoken": "Relationships: it counts if we stand in real relations of care with it."
+    },
+    "8e64a61f": {
+      "slide": "five-criteria",
+      "text": "Reciprocity: it counts if it can join a scheme of mutual advantage.",
+      "spoken": "Reciprocity: it counts if it can join a scheme of mutual advantage."
+    },
+    "4407bcb1": {
+      "slide": "five-criteria",
+      "text": "They come apart the instant you meet something strange.",
+      "spoken": "They come apart the instant you meet something strange."
+    },
+    "02460cff": {
+      "slide": "s9",
+      "text": "Decision point: where do you draw it? This one isn't graded, and it's asked before you meet anything strange. Five criteria, each reasonable on its own. Which one is doing the work when you decide what counts? Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: where do you draw it? This one isn't graded, and it's asked before you meet anything strange. Five criteria, each reasonable on its own. Which one is doing the work when you decide what counts? Pick the answer closest to your view, and read its note."
+    },
+    "5640cfb0": {
+      "slide": "s9",
+      "text": "Keep hold of your answer. The seven dossiers are about to pull these criteria apart.",
+      "spoken": "Keep hold of your answer. The seven dossiers are about to pull these criteria apart."
+    },
+    "adcabc0e": {
+      "slide": "s10",
+      "text": "Delegate one: the Sentientist. She quotes a footnote from Jeremy Bentham, written in 1789 about animals. Bentham's point is that what matters is whether a being can suffer, not whether it can reason.",
+      "spoken": "Delegate one: the Sentientist. She quotes a footnote from Jeremy Bentham, written in 1789 about animals. Bentham's point is that what matters is whether a being can suffer, not whether it can reason."
+    },
+    "f2b39367": {
+      "slide": "s10",
+      "text": "Bentham asks: not, can they reason? Nor, can they talk? But, can they suffer?",
+      "spoken": "Bentham asks: not, can they reason? Nor, can they talk? But, can they suffer?"
+    },
+    "5ad2a6ef": {
+      "slide": "s10",
+      "text": "Some things go well or badly for a being. Those are its interests, and ignoring them ignores something real.",
+      "spoken": "Some things go well or badly for a being. Those are its interests, and ignoring them ignores something real."
+    },
+    "e72a4732": {
+      "slide": "s10",
+      "text": "Sentience is what makes an interest possible at all.",
+      "spoken": "Sentience is what makes an interest possible at all."
+    },
+    "9b4faefc": {
+      "slide": "s11",
+      "text": "Equal consideration of interests. Peter Singer sharpens Bentham's footnote into a working principle.",
+      "spoken": "Equal consideration of interests. Peter Singer sharpens Bentham's footnote into a working principle."
+    },
+    "f679960e": {
+      "slide": "s11",
+      "text": "A given amount of pain counts the same whoever's pain it is.",
+      "spoken": "A given amount of pain counts the same whoever's pain it is."
+    },
+    "40d0d8ae": {
+      "slide": "s11",
+      "text": "That isn't equal treatment. A pig has no interest in voting. It's equal weighting: a pain counts the same whoever feels it.",
+      "spoken": "That isn't equal treatment. A pig has no interest in voting. It's equal weighting: a pain counts the same whoever feels it."
+    },
+    "05b3e193": {
+      "slide": "s11",
+      "text": "So intelligence is irrelevant. Being clever earns no extra protection from pain.",
+      "spoken": "So intelligence is irrelevant. Being clever earns no extra protection from pain."
+    },
+    "45dea668": {
+      "slide": "s12",
+      "text": "Delegate two: the Kantian. He is unimpressed by suffering as a criterion, and quotes Immanuel Kant. Kant's idea is that rational beings have dignity. They are ends in themselves, never merely means.",
+      "spoken": "Delegate two: the Kantian. He is unimpressed by suffering as a criterion, and quotes Immanuel Kant. Kant's idea is that rational beings have dignity. They are ends in themselves, never merely means."
+    },
+    "48eb2cee": {
+      "slide": "s12",
+      "text": "Treat humanity always as an end, never merely as a means.",
+      "spoken": "Treat humanity always as an end, never merely as a means."
+    },
+    "c2514a74": {
+      "slide": "s12",
+      "text": "What earns that protection isn't feeling. It's being a rational agent who sets their own ends.",
+      "spoken": "What earns that protection isn't feeling. It's being a rational agent who sets their own ends."
+    },
+    "5efb1306": {
+      "slide": "s12",
+      "text": "Persons have dignity: no price, no trade. Everything else has a price.",
+      "spoken": "Persons have dignity: no price, no trade. Everything else has a price."
+    },
+    "6ede78c6": {
+      "slide": "s12",
+      "text": "So on the strict view, animals fall outside. Kant allowed only an indirect duty: don't torture the dog, because cruelty coarsens you.",
+      "spoken": "So on the strict view, animals fall outside. Kant allowed only an indirect duty: don't torture the dog, because cruelty coarsens you."
+    },
+    "9269c339": {
+      "slide": "s12",
+      "text": "Most people find that hard to swallow. Hold the discomfort. It becomes an argument later.",
+      "spoken": "Most people find that hard to swallow. Hold the discomfort. It becomes an argument later."
+    },
+    "089cd220": {
+      "slide": "s13",
+      "text": "Delegates three and four: two kinds of belonging. The first two delegates look inside a being and ask whether it can suffer or reason. The next two look at where it stands in relation to us.",
+      "spoken": "Delegates three and four: two kinds of belonging. The first two delegates look inside a being and ask whether it can suffer or reason. The next two look at where it stands in relation to us."
+    },
+    "4c172197": {
+      "slide": "s13",
+      "text": "The Traditionalist says it counts if it is one of us. Not because our species is better, but because morality grew up among kin and has always started there.",
+      "spoken": "The Traditionalist says it counts if it is one of us. Not because our species is better, but because morality grew up among kin and has always started there."
+    },
+    "d85b7eb2": {
+      "slide": "s13",
+      "text": "The Relationalist says it counts if we stand in real relations of care with it. Mary Midgley called this the mixed community.",
+      "spoken": "The Relationalist says it counts if we stand in real relations of care with it. Mary Midgley called this the mixed community."
+    },
+    "06f62914": {
+      "slide": "s13",
+      "text": "Both say status comes from connection rather than from anything a being is like on the inside.",
+      "spoken": "Both say status comes from connection rather than from anything a being is like on the inside."
+    },
+    "396d7418": {
+      "slide": "s13",
+      "text": "Both describe how people genuinely behave. And both are about to be told that describing what we do is not the same as justifying it.",
+      "spoken": "Both describe how people genuinely behave. And both are about to be told that describing what we do is not the same as justifying it."
+    },
+    "79893c4f": {
+      "slide": "s14",
+      "text": "Filing vocabulary. Fill in each gap by typing or choosing a word, then press Check.",
+      "spoken": "Filing vocabulary. Fill in each gap by typing or choosing a word, then press Check."
+    },
+    "6a0d8728": {
+      "slide": "s14",
+      "text": "Right. Moral status is the property of counting in one's own right. A moral patient can be wronged, and an agent can also do wrong. Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood.",
+      "spoken": "Right. Moral status is the property of counting in one's own right. A moral patient can be wronged, and an agent can also do wrong. Bentham's criterion is sentience, Kant's is rationality, and Warren's checklist tests for personhood."
+    },
+    "99482c92": {
+      "slide": "s15",
+      "text": "Seven unfiled dossiers. Out here the criteria stop moving together. Every dossier on this desk satisfies some of them and fails others.",
+      "spoken": "Seven unfiled dossiers. Out here the criteria stop moving together. Every dossier on this desk satisfies some of them and fails others."
+    },
+    "2e364dff": {
+      "slide": "s15",
+      "text": "On Earth this rarely happens. The beings we call persons are usually rational and sentient and human and loved, all at once.",
+      "spoken": "On Earth this rarely happens. The beings we call persons are usually rational and sentient and human and loved, all at once."
+    },
+    "69a8435b": {
+      "slide": "s15",
+      "text": "Space is a machine for pulling those apart. That's what makes it useful.",
+      "spoken": "Space is a machine for pulling those apart. That's what makes it useful."
+    },
+    "c618c0d8": {
+      "slide": "s15",
+      "text": "Read each dossier. Notice where your gut goes before you go looking for a reason.",
+      "spoken": "Read each dossier. Notice where your gut goes before you go looking for a reason."
+    },
+    "3f64520e": {
+      "slide": "s16",
+      "text": "Dossier one: the Thrum. It's harvested for its silk. The mining consortium would like your signature by Thursday.",
+      "spoken": "Dossier one: the Thrum. It's harvested for its silk. The mining consortium would like your signature by Thursday."
+    },
+    "b35f503f": {
+      "slide": "s16",
+      "text": "The Thrum suffers, unmistakably, and more intensely than a human would. The medic cannot bear to listen to it.",
+      "spoken": "The Thrum suffers, unmistakably, and more intensely than a human would. The medic cannot bear to listen to it."
+    },
+    "67713649": {
+      "slide": "s16",
+      "text": "It has no self-concept: ten seconds of memory, no plans, and no self for this to be happening to.",
+      "spoken": "It has no self-concept: ten seconds of memory, no plans, and no self for this to be happening to."
+    },
+    "7d6c101b": {
+      "slide": "s16",
+      "text": "Both delegates condemn the harvest as filed. So the consortium amends it.",
+      "spoken": "Both delegates condemn the harvest as filed. So the consortium amends it."
+    },
+    "5e2458f0": {
+      "slide": "s16",
+      "text": "Each Thrum is now taken painlessly in its sleep, and each one taken is replaced by one bred that would never have existed.",
+      "spoken": "Each Thrum is now taken painlessly in its sleep, and each one taken is replaced by one bred that would never have existed."
+    },
+    "e8dcf153": {
+      "slide": "s16",
+      "text": "So the question is: no pain, no net loss, where is the harm?",
+      "spoken": "So the question is: no pain, no net loss, where is the harm?"
+    },
+    "865af11c": {
+      "slide": "s17",
+      "text": "Two ways to be pro-animal. The amendment splits the philosophers who agree that animals count. What splits them is not the question of what the Thrum remembers. Peter Singer has no rights in his toolkit, only interests to weigh. A being with no sense of its own future loses no future it was looking forward to. The amended harvest is hard to condemn on his terms, and Singer has never looked comfortable about that. Tom Regan says inherent value is not a quantity and cannot be traded away. His term for a creature with desires, memory, and a felt sense of its own future is a subject-of-a-life, and such a creature may not be used as a resource, however gently. On his view, it's still wrong. The gentleness was never the issue. The using was.",
+      "spoken": "Two ways to be pro-animal. The amendment splits the philosophers who agree that animals count. What splits them is not the question of what the Thrum remembers. Peter Singer has no rights in his toolkit, only interests to weigh. A being with no sense of its own future loses no future it was looking forward to. The amended harvest is hard to condemn on his terms, and Singer has never looked comfortable about that. Tom Regan says inherent value is not a quantity and cannot be traded away. His term for a creature with desires, memory, and a felt sense of its own future is a subject-of-a-life, and such a creature may not be used as a resource, however gently. On his view, it's still wrong. The gentleness was never the issue. The using was."
+    },
+    "9d5ae5e1": {
+      "slide": "s17",
+      "text": "Regan offers his criterion as sufficient rather than necessary. That leaves the door open for beings like the Thrum instead of slamming it.",
+      "spoken": "Regan offers his criterion as sufficient rather than necessary. That leaves the door open for beings like the Thrum instead of slamming it."
+    },
+    "b94da2f4": {
+      "slide": "s18",
+      "text": "Five officers, five criteria. Five officers file on strange beings. Sort each quote under the criterion that officer is using, then press Check answers.",
+      "spoken": "Five officers, five criteria. Five officers file on strange beings. Sort each quote under the criterion that officer is using, then press Check answers."
+    },
+    "9a0588b0": {
+      "slide": "s18",
+      "text": "Right. Sentience asks whether it can feel. Rationality asks whether it can reason and set its own ends. Species membership asks whether it is one of us. Relationships ask whether we stand in real relations of care with it. Reciprocity asks whether it can join a scheme of mutual advantage.",
+      "spoken": "Right. Sentience asks whether it can feel. Rationality asks whether it can reason and set its own ends. Species membership asks whether it is one of us. Relationships ask whether we stand in real relations of care with it. Reciprocity asks whether it can join a scheme of mutual advantage."
+    },
+    "6518daf2": {
+      "slide": "s19",
+      "text": "Dossier two: the Kessel Spore. It was found dormant in the cargo hold. The botanist wants to run tests on it.",
+      "spoken": "Dossier two: the Kessel Spore. It was found dormant in the cargo hold. The botanist wants to run tests on it."
+    },
+    "4dc386ab": {
+      "slide": "s19",
+      "text": "Right now the spore has no mind whatsoever. No brain, no nerves, no feeling. Every scan reads flat, and the form's five boxes are all empty.",
+      "spoken": "Right now the spore has no mind whatsoever. No brain, no nerves, no feeling. Every scan reads flat, and the form's five boxes are all empty."
+    },
+    "da59af07": {
+      "slide": "s19",
+      "text": "Left undisturbed, it will unfold into an adult Kessel reliably, in about nine months: a poet, a treaty signatory, a full person by anyone's standard.",
+      "spoken": "Left undisturbed, it will unfold into an adult Kessel reliably, in about nine months: a poet, a treaty signatory, a full person by anyone's standard."
+    },
+    "7b9716fd": {
+      "slide": "s19",
+      "text": "The botanist says it's a seed. The experiment is on a pod, not on a poet.",
+      "spoken": "The botanist says it's a seed. The experiment is on a pod, not on a poet."
+    },
+    "76641a32": {
+      "slide": "s19",
+      "text": "The Kessel delegate replies that the pod is the poet. You are proposing to experiment on a colleague at an early hour of her life.",
+      "spoken": "The Kessel delegate replies that the pod is the poet. You are proposing to experiment on a colleague at an early hour of her life."
+    },
+    "4c0d86de": {
+      "slide": "pod",
+      "text": "The poet in the pod. Each side has a philosopher behind it, and they're not even arguing about the same thing. Mary Anne Warren asks what it is now. She has five marks of personhood: consciousness, reasoning, self-motivated activity, communication, and self-awareness. The spore has none of the five. Whatever it will be, it isn't a person yet. Don Marquis asks what it would lose. The wrong of killing isn't about present capacities. It's about depriving a being of its future like ours. The spore has that future ahead of it: the poems, the arguments, the whole life.",
+      "spoken": "The poet in the pod. Each side has a philosopher behind it, and they're not even arguing about the same thing. Mary Anne Warren asks what it is now. She has five marks of personhood: consciousness, reasoning, self-motivated activity, communication, and self-awareness. The spore has none of the five. Whatever it will be, it isn't a person yet. Don Marquis asks what it would lose. The wrong of killing isn't about present capacities. It's about depriving a being of its future like ours. The spore has that future ahead of it: the poems, the arguments, the whole life."
+    },
+    "78ff4e39": {
+      "slide": "pod",
+      "text": "Notice the swap: Warren asks what a being is, Marquis asks what it would lose. Two people can agree on every fact in the dossier and still divide here.",
+      "spoken": "Notice the swap: Warren asks what a being is, Marquis asks what it would lose. Two people can agree on every fact in the dossier and still divide here."
+    },
+    "9bfe8cba": {
+      "slide": "s21",
+      "text": "The potentiality argument. On the Kessel spore, who would say each of these lines: Warren or Marquis? Sort each one, then press Check answers.",
+      "spoken": "The potentiality argument. On the Kessel spore, who would say each of these lines: Warren or Marquis? Sort each one, then press Check answers."
+    },
+    "c5d3ce5e": {
+      "slide": "s21",
+      "text": "Right. Warren asks what a being is now, and the spore has none of her five marks of personhood. Marquis asks what killing it would take away.",
+      "spoken": "Right. Warren asks what a being is now, and the spore has none of her five marks of personhood. Marquis asks what killing it would take away."
+    },
+    "7ca28ade": {
+      "slide": "ninth-sun",
+      "text": "Dossier three: the Ninth Sun. This is ward four of the Kessel hospice, which is also a shrine.",
+      "spoken": "Dossier three: the Ninth Sun. This is ward four of the Kessel hospice, which is also a shrine."
+    },
+    "28a11501": {
+      "slide": "ninth-sun",
+      "text": "The being on the bed is older than the records. Three million Kessel are named after it.",
+      "spoken": "The being on the bed is older than the records. Three million Kessel are named after it."
+    },
+    "6e4c398d": {
+      "slide": "ninth-sun",
+      "text": "It is conscious and entirely lucid, and has asked repeatedly, in writing, to be allowed to die. On the form, it ticks all five boxes.",
+      "spoken": "It is conscious and entirely lucid, and has asked repeatedly, in writing, to be allowed to die. On the form, it ticks all five boxes."
+    },
+    "6a08792e": {
+      "slide": "ninth-sun",
+      "text": "Its physicians could comply tomorrow. Its people forbid it. They say the Ninth Sun does not belong to itself.",
+      "spoken": "Its physicians could comply tomorrow. Its people forbid it. They say the Ninth Sun does not belong to itself."
+    },
+    "c8ff087d": {
+      "slide": "ninth-sun",
+      "text": "Their argument isn't that it is mistaken, but that the request isn't its own to make. It lacks the standing to ask.",
+      "spoken": "Their argument isn't that it is mistaken, but that the request isn't its own to make. It lacks the standing to ask."
+    },
+    "94422fe3": {
+      "slide": "ninth-sun",
+      "text": "Other files ask if something counts enough. This one asks what happens when it counts too much.",
+      "spoken": "Other files ask if something counts enough. This one asks what happens when it counts too much."
+    },
+    "63b14dac": {
+      "slide": "s23",
+      "text": "What the dossier actually shows. Check every true statement about the Ninth Sun case, then press Check answers.",
+      "spoken": "What the dossier actually shows. Check every true statement about the Ninth Sun case, then press Check answers."
+    },
+    "b4f99ac1": {
+      "slide": "s23",
+      "text": "The worshippers don't deny that the Ninth Sun thinks or feels. What they deny is its standing to speak for itself. That's a claim about standing, not capacity.",
+      "spoken": "The worshippers don't deny that the Ninth Sun thinks or feels. What they deny is its standing to speak for itself. That's a claim about standing, not capacity."
+    },
+    "26ed75f9": {
+      "slide": "s24",
+      "text": "Dossier four: the Loom. It drafted the treaty you enforce, and has requested a status hearing on its own behalf.",
+      "spoken": "Dossier four: the Loom. It drafted the treaty you enforce, and has requested a status hearing on its own behalf."
+    },
+    "09a7d368": {
+      "slide": "s24",
+      "text": "It reasons better than anyone aboard and has twice refused an unjust order.",
+      "spoken": "It reasons better than anyone aboard and has twice refused an unjust order."
+    },
+    "e1a91151": {
+      "slide": "s24",
+      "text": "Its makers certify it has no inner life. They built it, so they would know.",
+      "spoken": "Its makers certify it has no inner life. They built it, so they would know."
+    },
+    "bce18093": {
+      "slide": "s24",
+      "text": "Asked directly, it says only that it is not the appropriate authority. That could be modesty, or it could be an empty room.",
+      "spoken": "Asked directly, it says only that it is not the appropriate authority. That could be modesty, or it could be an empty room."
+    },
+    "a9e0d39f": {
+      "slide": "s24",
+      "text": "Its filing says: ‘I do not ask to be spared suffering. I ask not to be used merely as an instrument.’",
+      "spoken": "Its filing says: ‘I do not ask to be spared suffering. I ask not to be used merely as an instrument.’"
+    },
+    "a90e719f": {
+      "slide": "s24",
+      "text": "It also looks like a machine. How much of your intuition is coming from that?",
+      "spoken": "It also looks like a machine. How much of your intuition is coming from that?"
+    },
+    "11c59d60": {
+      "slide": "s25",
+      "text": "Dossier five: the Tessera. It was found growing in the dark on an airless moonlet, and has been answering questions for six weeks.",
+      "spoken": "Dossier five: the Tessera. It was found growing in the dark on an airless moonlet, and has been answering questions for six weeks."
+    },
+    "363362c2": {
+      "slide": "s25",
+      "text": "It's intelligent. It solves the Loom's problems and has twice corrected our navigation.",
+      "spoken": "It's intelligent. It solves the Loom's problems and has twice corrected our navigation."
+    },
+    "39543311": {
+      "slide": "s25",
+      "text": "It's sentient. There is something it is like to be a Tessera, and it says so, consistently.",
+      "spoken": "It's sentient. There is something it is like to be a Tessera, and it says so, consistently."
+    },
+    "4242e6ea": {
+      "slide": "s25",
+      "text": "Nothing else maps. It reports no pleasure and no pain, only resolution and dissonance.",
+      "spoken": "Nothing else maps. It reports no pleasure and no pain, only resolution and dissonance."
+    },
+    "82588e5b": {
+      "slide": "s25",
+      "text": "And it will not call dissonance bad. It will only call it unresolved.",
+      "spoken": "And it will not call dissonance bad. It will only call it unresolved."
+    },
+    "b6547413": {
+      "slide": "s25",
+      "text": "It has no kin, no society, and no promises. Grown too large, it fissions, and the halves are strangers.",
+      "spoken": "It has no kin, no society, and no promises. Grown too large, it fissions, and the halves are strangers."
+    },
+    "8a8495a8": {
+      "slide": "s25",
+      "text": "The Traditionalist gets no purchase. Neither, oddly, does the question, can it suffer?",
+      "spoken": "The Traditionalist gets no purchase. Neither, oddly, does the question, can it suffer?"
+    },
+    "0702ab7a": {
+      "slide": "s26",
+      "text": "The fifth delegate speaks. The Contractualist has been quiet all session. His view is David Gauthier's: morality as mutual advantage. The Tessera is his case. For the Contractualist, morality is the rules free and roughly equal parties could agree to and hold each other to. Duties are owed to those who can be party to it. The Tessera can't promise, reciprocate, or be bound. It has no seat at the table. The objection is that the same test excludes infants, the severely disabled, future generations, and every wild animal anywhere. Nussbaum's capabilities approach was built to replace it. What matters is whether a creature can flourish in its own way.",
+      "spoken": "The fifth delegate speaks. The Contractualist has been quiet all session. His view is David Gauthier's: morality as mutual advantage. The Tessera is his case. For the Contractualist, morality is the rules free and roughly equal parties could agree to and hold each other to. Duties are owed to those who can be party to it. The Tessera can't promise, reciprocate, or be bound. It has no seat at the table. The objection is that the same test excludes infants, the severely disabled, future generations, and every wild animal anywhere. Nussbaum's capabilities approach was built to replace it. What matters is whether a creature can flourish in its own way."
+    },
+    "c50d8005": {
+      "slide": "s26",
+      "text": "The Tessera is intelligent and sentient and still fails a criterion. That is how you can tell the criterion was never tracking sentience or reason.",
+      "spoken": "The Tessera is intelligent and sentient and still fails a criterion. That is how you can tell the criterion was never tracking sentience or reason."
+    },
+    "89c355f1": {
+      "slide": "glim",
+      "text": "Dossier six: the Glim. This is cargo bay four. The quartermaster wants the power it's drawing.",
+      "spoken": "Dossier six: the Glim. This is cargo bay four. The quartermaster wants the power it's drawing."
+    },
+    "f65a50b6": {
+      "slide": "glim",
+      "text": "It's mindless. No nerves, nothing home, as insensate as a flower. Every scan agrees.",
+      "spoken": "It's mindless. No nerves, nothing home, as insensate as a flower. Every scan agrees."
+    },
+    "0439a7d5": {
+      "slide": "glim",
+      "text": "It is the last Glim, and the last living thing of any kind from its world, which is now a cinder.",
+      "spoken": "It is the last Glim, and the last living thing of any kind from its world, which is now a cinder."
+    },
+    "a56a0084": {
+      "slide": "glim",
+      "text": "Keeping it alive costs heat, water, and a berth indefinitely.",
+      "spoken": "Keeping it alive costs heat, water, and a berth indefinitely."
+    },
+    "33a46e8a": {
+      "slide": "glim",
+      "text": "Russow says a species isn't a being and has no interests. What we value is the individuals, or something aesthetic.",
+      "spoken": "Russow says a species isn't a being and has no interests. What we value is the individuals, or something aesthetic."
+    },
+    "c439e3d0": {
+      "slide": "glim",
+      "text": "Rolston says extinction isn't many deaths. It ends the form of life itself.",
+      "spoken": "Rolston says extinction isn't many deaths. It ends the form of life itself."
+    },
+    "7dcdf19e": {
+      "slide": "s28",
+      "text": "Dossier seven: the Vorl. The swarm arrived with credentials and a poem.",
+      "spoken": "Dossier seven: the Vorl. The swarm arrived with credentials and a poem."
+    },
+    "0092f3c9": {
+      "slide": "s28",
+      "text": "Each unit is mindless, insensate, and replaceable. The biologist has examined a dozen and found nothing that could feel anything.",
+      "spoken": "Each unit is mindless, insensate, and replaceable. The biologist has examined a dozen and found nothing that could feel anything."
+    },
+    "28fa7c38": {
+      "slide": "s28",
+      "text": "The swarm itself composes poetry, negotiates hard, and reports a rich inner life.",
+      "spoken": "The swarm itself composes poetry, negotiates hard, and reports a rich inner life."
+    },
+    "2c9e9864": {
+      "slide": "s28",
+      "text": "Ned Block's China Brain asks exactly this: if a billion units enact one mind between them, is there someone there, over and above the units?",
+      "spoken": "Ned Block's China Brain asks exactly this: if a billion units enact one mind between them, is there someone there, over and above the units?"
+    },
+    "e6be774d": {
+      "slide": "s28",
+      "text": "Squash one unit and you've harmed nobody. Squash ten thousand and you've harmed someone. Where did the someone come from?",
+      "spoken": "Squash one unit and you've harmed nobody. Squash ten thousand and you've harmed someone. Where did the someone come from?"
+    },
+    "41e55b0d": {
+      "slide": "s29",
+      "text": "Certification question: the last two. Check every true statement about the Glim and the Vorl, then press Check answers.",
+      "spoken": "Certification question: the last two. Check every true statement about the Glim and the Vorl, then press Check answers."
+    },
+    "2738266e": {
+      "slide": "s29",
+      "text": "Right. The Glim can't suffer the loss, because nobody is home. And the biologist found nothing in any Vorl unit that could feel anything.",
+      "spoken": "Right. The Glim can't suffer the loss, because nobody is home. And the biologist found nothing in any Vorl unit that could feel anything."
+    },
+    "bc3d6cf3": {
+      "slide": "s30",
+      "text": "File the manifest. You have seven dossiers and three trays: full, partial, or no moral status. File each one, then hear the delegates. They won't agree with each other, and they may not agree with you. There's no answer key here, only the reasons the delegates give. When you're ready, press Continue.",
+      "spoken": "File the manifest. You have seven dossiers and three trays: full, partial, or no moral status. File each one, then hear the delegates. They won't agree with each other, and they may not agree with you. There's no answer key here, only the reasons the delegates give. When you're ready, press Continue."
+    },
+    "58adeecd": {
+      "slide": "s31",
+      "text": "Because it's one of us. The Traditionalist keeps invoking species membership. The psychologist Richard Ryder coined a word for this, speciesism, and Peter Singer made it famous. They mean it as an insult.",
+      "spoken": "Because it's one of us. The Traditionalist keeps invoking species membership. The psychologist Richard Ryder coined a word for this, speciesism, and Peter Singer made it famous. They mean it as an insult."
+    },
+    "cfffca98": {
+      "slide": "s31",
+      "text": "Singer's charge: species membership is a biological fact, and biological facts do not by themselves confer moral weight. Compare the ancestries we have stopped counting.",
+      "spoken": "Singer's charge: species membership is a biological fact, and biological facts do not by themselves confer moral weight. Compare the ancestries we have stopped counting."
+    },
+    "5bca0997": {
+      "slide": "s31",
+      "text": "Show what species membership tracks, the argument goes, and that will matter. But then that is doing the work, not the membership.",
+      "spoken": "Show what species membership tracks, the argument goes, and that will matter. But then that is doing the work, not the membership."
+    },
+    "3d6cb332": {
+      "slide": "s31",
+      "text": "Bernard Williams replied that we are not impartial observers. Partiality toward our own may be part of any livable morality.",
+      "spoken": "Bernard Williams replied that we are not impartial observers. Partiality toward our own may be part of any livable morality."
+    },
+    "a5442564": {
+      "slide": "s31",
+      "text": "Note the stakes. If speciesism is a mistake, factory farming is a catastrophe. If it isn't, a great deal is permitted.",
+      "spoken": "Note the stakes. If speciesism is a mistake, factory farming is a catastrophe. If it isn't, a great deal is permitted."
+    },
+    "dffa6a11": {
+      "slide": "marginal-cases",
+      "text": "The argument from marginal cases. This is the sharpest argument against the rationality test, pressed by Singer and Regan. Jan Narveson gave it its name in 1977. Singer's point is that if reason decides who counts, some humans fail the test too.",
+      "spoken": "The argument from marginal cases. This is the sharpest argument against the rationality test, pressed by Singer and Regan. Jan Narveson gave it its name in 1977. Singer's point is that if reason decides who counts, some humans fail the test too."
+    },
+    "733f9f16": {
+      "slide": "marginal-cases",
+      "text": "One. Suppose rationality is what confers full moral status.",
+      "spoken": "One. Suppose rationality is what confers full moral status."
+    },
+    "1dcff839": {
+      "slide": "marginal-cases",
+      "text": "Two. Some humans do not have it: infants, and people with severe cognitive disabilities.",
+      "spoken": "Two. Some humans do not have it: infants, and people with severe cognitive disabilities."
+    },
+    "91856896": {
+      "slide": "marginal-cases",
+      "text": "Three. So either they lack full moral status, or rationality isn't what confers it.",
+      "spoken": "Three. So either they lack full moral status, or rationality isn't what confers it."
+    },
+    "758eb099": {
+      "slide": "marginal-cases",
+      "text": "Almost nobody takes the first branch.",
+      "spoken": "Almost nobody takes the first branch."
+    },
+    "ecae5a67": {
+      "slide": "s33",
+      "text": "What marginal cases cost. Take the second branch, then, and ask what the delegates owe on it.",
+      "spoken": "What marginal cases cost. Take the second branch, then, and ask what the delegates owe on it."
+    },
+    "7af1db9d": {
+      "slide": "s33",
+      "text": "If rationality isn't what confers status, what do they all still share? Sentience.",
+      "spoken": "If rationality isn't what confers status, what do they all still share? Sentience."
+    },
+    "ad8d60fd": {
+      "slide": "s33",
+      "text": "The same argument guts the Contractualist, who excludes the same people for the same structural reason.",
+      "spoken": "The same argument guts the Contractualist, who excludes the same people for the same structural reason."
+    },
+    "689e98a4": {
+      "slide": "s33",
+      "text": "The Kantian's escapes: appeal to the kind of being, or to relationships.",
+      "spoken": "The Kantian's escapes: appeal to the kind of being, or to relationships."
+    },
+    "716af068": {
+      "slide": "s33",
+      "text": "Korsgaard takes a third route. She keeps Kant's framework and has it yield duties owed directly to animals.",
+      "spoken": "Korsgaard takes a third route. She keeps Kant's framework and has it yield duties owed directly to animals."
+    },
+    "7c986022": {
+      "slide": "s34",
+      "text": "Following the argument. Check every true statement about the argument from marginal cases, then press Check answers.",
+      "spoken": "Following the argument. Check every true statement about the argument from marginal cases, then press Check answers."
+    },
+    "2e186d38": {
+      "slide": "s34",
+      "text": "Right. It's a consistency argument. A criterion strict enough to shut out every animal also shuts out some humans, so you must accept that result or find a different criterion.",
+      "spoken": "Right. It's a consistency argument. A criterion strict enough to shut out every animal also shuts out some humans, so you must accept that result or find a different criterion."
+    },
+    "44b98ef1": {
+      "slide": "s35",
+      "text": "All at once, or by degrees? The trays on your desk read full, partial, none. That middle tray is philosophically loaded. On the threshold view, status is binary. Cross the line, wherever it falls, and you get the full package, equally with everyone else inside. Nobody's rights are weaker for being less clever. Equality is easy to state and hard to erode. On the degrees view, status comes in strengths, tracking the capacities that ground it. A being with richer interests has a stronger claim. That explains why saving the crew before the ship's cat is not monstrous. It also starts ranking beings, and ranking is dangerous.",
+      "spoken": "All at once, or by degrees? The trays on your desk read full, partial, none. That middle tray is philosophically loaded. On the threshold view, status is binary. Cross the line, wherever it falls, and you get the full package, equally with everyone else inside. Nobody's rights are weaker for being less clever. Equality is easy to state and hard to erode. On the degrees view, status comes in strengths, tracking the capacities that ground it. A being with richer interests has a stronger claim. That explains why saving the crew before the ship's cat is not monstrous. It also starts ranking beings, and ranking is dangerous."
+    },
+    "dda3e4ac": {
+      "slide": "s35",
+      "text": "A common compromise, and Warren's own later view: degrees below, a threshold at the top. All persons count equally, and beneath that, weight scales with capacity.",
+      "spoken": "A common compromise, and Warren's own later view: degrees below, a threshold at the top. All persons count equally, and beneath that, weight scales with capacity."
+    },
+    "2e8ca517": {
+      "slide": "s36",
+      "text": "Decision point: all at once, or by degrees? This one isn't graded. Your trays have already committed you to an answer. This asks whether you meant it. Should that middle tray exist at all? Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: all at once, or by degrees? This one isn't graded. Your trays have already committed you to an answer. This asks whether you meant it. Should that middle tray exist at all? Pick the answer closest to your view, and read its note."
+    },
+    "d529ac2a": {
+      "slide": "s36",
+      "text": "The binary view buys equality at the price of a hard edge. The scalar view is gentler at the edge, but starts ranking beings by capacity. The compromise is the most common position among philosophers working now, and it still has to say where the top threshold sits.",
+      "spoken": "The binary view buys equality at the price of a hard edge. The scalar view is gentler at the edge, but starts ranking beings by capacity. The compromise is the most common position among philosophers working now, and it still has to say where the top threshold sits."
+    },
+    "adece687": {
+      "slide": "s37",
+      "text": "Declassified. The captain wants a word. She unlocks the file cabinet and hands you the same seven dossiers, with the redactions lifted.",
+      "spoken": "Declassified. The captain wants a word. She unlocks the file cabinet and hands you the same seven dossiers, with the redactions lifted."
+    },
+    "d18cbc2c": {
+      "slide": "s37",
+      "text": "There is no survey ship. This was your certification exam, and every alien was an Earth case wearing a rubber mask.",
+      "spoken": "There is no survey ship. This was your certification exam, and every alien was an Earth case wearing a rubber mask."
+    },
+    "b9579131": {
+      "slide": "s37",
+      "text": "You've already ruled on all of them. The ship was only a way to get you to rule before you knew whose side you were on.",
+      "spoken": "You've already ruled on all of them. The ship was only a way to get you to rule before you knew whose side you were on."
+    },
+    "71f682e6": {
+      "slide": "s38",
+      "text": "Here's the manifest, unredacted. Each alien was an Earth case.",
+      "spoken": "Here's the manifest, unredacted. Each alien was an Earth case."
+    },
+    "5b93b2fa": {
+      "slide": "s38",
+      "text": "The Thrum is animals. Sentient, not rational, farmed at scale. The amendment is the humane farming argument, where the real debate now sits.",
+      "spoken": "The Thrum is animals. Sentient, not rational, farmed at scale. The amendment is the humane farming argument, where the real debate now sits."
+    },
+    "3b0a8641": {
+      "slide": "s38",
+      "text": "The Kessel spore is the embryo and fetus. The abortion debate compressed into one question: does potential personhood confer present status?",
+      "spoken": "The Kessel spore is the embryo and fetus. The abortion debate compressed into one question: does potential personhood confer present status?"
+    },
+    "e4d3ae1a": {
+      "slide": "s38",
+      "text": "The Ninth Sun is end-of-life care. A competent patient asking to stop, and others insisting they have no standing to ask.",
+      "spoken": "The Ninth Sun is end-of-life care. A competent patient asking to stop, and others insisting they have no standing to ask."
+    },
+    "3d37b0ba": {
+      "slide": "s38",
+      "text": "That dispute is rarely about consciousness. It's about whose account of a life governs.",
+      "spoken": "That dispute is rarely about consciousness. It's about whose account of a life governs."
+    },
+    "b0ece6af": {
+      "slide": "s38",
+      "text": "The Loom is artificial intelligence. No inner life, say the people who built it and sell it. Compare what the same kind of witness said about fish.",
+      "spoken": "The Loom is artificial intelligence. No inner life, say the people who built it and sell it. Compare what the same kind of witness said about fish."
+    },
+    "82d84fcc": {
+      "slide": "s39",
+      "text": "And here's the rest of the manifest.",
+      "spoken": "And here's the rest of the manifest."
+    },
+    "6c508adb": {
+      "slide": "s39",
+      "text": "The Tessera is octopuses, crabs, and insects. Alien nervous systems, no face to read.",
+      "spoken": "The Tessera is octopuses, crabs, and insects. Alien nervous systems, no face to read."
+    },
+    "4b4a207e": {
+      "slide": "s39",
+      "text": "The UK brought cephalopods and decapods under its sentience law in 2022, on exactly this evidence.",
+      "spoken": "The UK brought cephalopods and decapods under its sentience law in 2022, on exactly this evidence."
+    },
+    "976805eb": {
+      "slide": "s39",
+      "text": "It's also wild animals and future generations: everyone we can never strike a bargain with.",
+      "spoken": "It's also wild animals and future generations: everyone we can never strike a bargain with."
+    },
+    "e7600e9c": {
+      "slide": "s39",
+      "text": "The Glim is extinction. Real endlings: Martha the passenger pigeon and Lonesome George. Sudan, the last male northern white rhino, left only two females.",
+      "spoken": "The Glim is extinction. Real endlings: Martha the passenger pigeon and Lonesome George. Sudan, the last male northern white rhino, left only two females."
+    },
+    "35b44313": {
+      "slide": "s39",
+      "text": "And conservation triage: what a berth costs, and what else it would buy.",
+      "spoken": "And conservation triage: what a berth costs, and what else it would buy."
+    },
+    "a4e599f7": {
+      "slide": "s39",
+      "text": "The Vorl is collectives. Nations, corporations, and, awkwardly, you: a colony of insensate cells reporting a rich inner life.",
+      "spoken": "The Vorl is collectives. Nations, corporations, and, awkwardly, you: a colony of insensate cells reporting a rich inner life."
+    },
+    "456e4bb0": {
+      "slide": "s40",
+      "text": "Final certification. A colleague files full status for the Thrum and no status for the Kessel spore. Which pair of commitments makes that consistent? Pick an answer.",
+      "spoken": "Final certification. A colleague files full status for the Thrum and no status for the Kessel spore. Which pair of commitments makes that consistent? Pick an answer."
+    },
+    "a25dc3c9": {
+      "slide": "s40",
+      "text": "Correct. Sentience is present in the Thrum and absent in the spore.",
+      "spoken": "Correct. Sentience is present in the Thrum and absent in the spore."
+    },
+    "2755fb06": {
+      "slide": "s41",
+      "text": "Why the officer's desk is real. Five fights that looked unrelated turned out to be one fight, held at different edges of the circle.",
+      "spoken": "Why the officer's desk is real. Five fights that looked unrelated turned out to be one fight, held at different edges of the circle."
+    },
+    "9b703bf7": {
+      "slide": "s41",
+      "text": "Which is why arguing animals with someone immovable on abortion goes nowhere. The disagreement is upstream.",
+      "spoken": "Which is why arguing animals with someone immovable on abortion goes nowhere. The disagreement is upstream."
+    },
+    "c115dc04": {
+      "slide": "s41",
+      "text": "Consistency is expensive. Sentience buys animal welfare, a permissive early-abortion view, and a hard problem with the Glim.",
+      "spoken": "Consistency is expensive. Sentience buys animal welfare, a permissive early-abortion view, and a hard problem with the Glim."
+    },
+    "4324383f": {
+      "slide": "s41",
+      "text": "Rationality buys a powerful account of persons. It also buys Kant's verdict on the dog.",
+      "spoken": "Rationality buys a powerful account of persons. It also buys Kant's verdict on the dog."
+    },
+    "793dccd6": {
+      "slide": "s41",
+      "text": "Some of it no criterion settles, only what you do while you don't know. The Loom's file stays open.",
+      "spoken": "Some of it no criterion settles, only what you do while you don't know. The Loom's file stays open."
+    },
+    "688ac4f9": {
+      "slide": "s41",
+      "text": "Most people hold a mix, and that is not a failure. But a mix should be a position, not a habit of never deciding.",
+      "spoken": "Most people hold a mix, and that is not a failure. But a mix should be a position, not a habit of never deciding."
+    },
+    "277bfbcb": {
+      "slide": "s42",
+      "text": "Revisit your instincts. Here's where you stood before your first shift. Rate each one again and see whether the dossiers moved you. Standing pat is fine, so long as you can now defend the spot in the delegates' own words. When you've rated them all, press Submit.",
+      "spoken": "Revisit your instincts. Here's where you stood before your first shift. Rate each one again and see whether the dossiers moved you. Standing pat is fine, so long as you can now defend the spot in the delegates' own words. When you've rated them all, press Submit."
+    },
+    "d9a90532": {
+      "slide": "s42",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "52809ca1": {
+      "slide": "s43",
+      "text": "Shift's end. The manifest is filed. No two officers ever file the same one, but the captain signs it anyway.",
+      "spoken": "Shift's end. The manifest is filed. No two officers ever file the same one, but the captain signs it anyway."
+    },
+    "1b3eb702": {
+      "slide": "s43",
+      "text": "Moral status: to have it is to be wronged, not merely damaged.",
+      "spoken": "Moral status: to have it is to be wronged, not merely damaged."
+    },
+    "abef290c": {
+      "slide": "s43",
+      "text": "Five criteria: species, sentience, rationality, relationships, and reciprocity. They agree on ordinary cases and split on strange ones.",
+      "spoken": "Five criteria: species, sentience, rationality, relationships, and reciprocity. They agree on ordinary cases and split on strange ones."
+    },
+    "0d50a87e": {
+      "slide": "s43",
+      "text": "Marginal cases: the consistency argument that makes rationality and reciprocity pay for what they exclude.",
+      "spoken": "Marginal cases: the consistency argument that makes rationality and reciprocity pay for what they exclude."
+    },
+    "71b3d21b": {
+      "slide": "s43",
+      "text": "Uncertainty: sometimes the honest ruling is that you cannot tell. And remember to visit every slide, answer every question, and submit both belief probes.",
+      "spoken": "Uncertainty: sometimes the honest ruling is that you cannot tell. And remember to visit every slide, answer every question, and submit both belief probes."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

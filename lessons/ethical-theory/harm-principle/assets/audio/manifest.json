@@ -1,0 +1,572 @@
+{
+  "engine": "gemini",
+  "voice": "en-us-assistant-1",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "b50ecd72": {
+      "slide": "s1",
+      "text": "Welcome to The Emerald Constitution. The Wizard is gone, carried off in his balloon. Princess Ozma has found his old constitution, and she calls it a document with problems. She's convening a council to rewrite it, and you're on the council. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Emerald Constitution. The Wizard is gone, carried off in his balloon. Princess Ozma has found his old constitution, and she calls it a document with problems. She's convening a council to rewrite it, and you're on the council. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "6c798966": {
+      "slide": "s2",
+      "text": "Before the first session, here are five gut-checks. There are no right answers. Say how much you agree with each of these five statements. The council will return to them once the new constitution is ratified. When you've rated all five, press Submit.",
+      "spoken": "Before the first session, here are five gut-checks. There are no right answers. Say how much you agree with each of these five statements. The council will return to them once the new constitution is ratified. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "70ebd2b0": {
+      "slide": "s3",
+      "text": "Ozma reviews the legal code, which fails in two opposite directions.",
+      "spoken": "Ozma reviews the legal code, which fails in two opposite directions."
+    },
+    "157cfde3": {
+      "slide": "s3",
+      "text": "It's smotheringly paternalistic. It locks green spectacles onto citizens for their own cheerful comfort.",
+      "spoken": "It's smotheringly paternalistic. It locks green spectacles onto citizens for their own cheerful comfort."
+    },
+    "8532067c": {
+      "slide": "s3",
+      "text": "Yet it abandons public safety. Toxic poppy fields go unfenced, and market fraud is ignored.",
+      "spoken": "Yet it abandons public safety. Toxic poppy fields go unfenced, and market fraud is ignored."
+    },
+    "1bbb0917": {
+      "slide": "s3",
+      "text": "In Mill's terms, the defect is plain. It protects citizens from themselves while abandoning them to each other.",
+      "spoken": "In Mill's terms, the defect is plain. It protects citizens from themselves while abandoning them to each other."
+    },
+    "0cdfefe0": {
+      "slide": "s4",
+      "text": "The council consults a book. Glinda produces John Stuart Mill's 1859 classic, On Liberty. Mill's core claim is that society may coerce a person only to prevent harm to others.",
+      "spoken": "The council consults a book. Glinda produces John Stuart Mill's 1859 classic, On Liberty. Mill's core claim is that society may coerce a person only to prevent harm to others."
+    },
+    "9cbaac78": {
+      "slide": "s4",
+      "text": "Mill feared the tyranny of the majority, where society coerces dissenters into conformity.",
+      "spoken": "Mill feared the tyranny of the majority, where society coerces dissenters into conformity."
+    },
+    "883af31f": {
+      "slide": "s4",
+      "text": "His central question matches the council's: when may society rightfully compel an individual?",
+      "spoken": "His central question matches the council's: when may society rightfully compel an individual?"
+    },
+    "6c6e0345": {
+      "slide": "s4",
+      "text": "His answer is what he called one very simple principle, to govern all state coercion.",
+      "spoken": "His answer is what he called one very simple principle, to govern all state coercion."
+    },
+    "63f9c0c7": {
+      "slide": "simple-principle",
+      "text": "Here's the principle in Mill's own words. The only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others.",
+      "spoken": "Here's the principle in Mill's own words. The only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others."
+    },
+    "42d1b153": {
+      "slide": "simple-principle",
+      "text": "A person's own physical or moral good is never a warrant for state coercion. You may plead or warn, but never compel.",
+      "spoken": "A person's own physical or moral good is never a warrant for state coercion. You may plead or warn, but never compel."
+    },
+    "5c7aa8af": {
+      "slide": "simple-principle",
+      "text": "Compelling people for their own good is called paternalism.",
+      "spoken": "Compelling people for their own good is called paternalism."
+    },
+    "05c51510": {
+      "slide": "simple-principle",
+      "text": "Over himself, over his own body and mind, the mature individual is sovereign.",
+      "spoken": "Over himself, over his own body and mind, the mature individual is sovereign."
+    },
+    "bd4e12a2": {
+      "slide": "simple-principle",
+      "text": "The principle covers competent adults. It excludes children and those unable to reason for themselves.",
+      "spoken": "The principle covers competent adults. It excludes children and those unable to reason for themselves."
+    },
+    "9dd1ce82": {
+      "slide": "s6",
+      "text": "Why value liberty? As a utilitarian, Mill argues liberty must earn its keep by advancing human flourishing.",
+      "spoken": "Why value liberty? As a utilitarian, Mill argues liberty must earn its keep by advancing human flourishing."
+    },
+    "747e9050": {
+      "slide": "s6",
+      "text": "Authorities are fallible. Overriding individuals bets that the state can never be mistaken.",
+      "spoken": "Authorities are fallible. Overriding individuals bets that the state can never be mistaken."
+    },
+    "e4ca8096": {
+      "slide": "s6",
+      "text": "Society learns which ways of life succeed only by permitting open experiments in living.",
+      "spoken": "Society learns which ways of life succeed only by permitting open experiments in living."
+    },
+    "a6ab2a41": {
+      "slide": "s6",
+      "text": "Choosing for oneself is essential to flourishing. That anchors liberalism's neutrality on how to live.",
+      "spoken": "Choosing for oneself is essential to flourishing. That anchors liberalism's neutrality on how to live."
+    },
+    "cb9c5792": {
+      "slide": "s7",
+      "text": "The first vote. The council applies Mill's principle to six draft clauses. Which may stand? Sort each clause under permitted or forbidden, then press Check answers.",
+      "spoken": "The first vote. The council applies Mill's principle to six draft clauses. Which may stand? Sort each clause under permitted or forbidden, then press Check answers."
+    },
+    "4dc9ffaa": {
+      "slide": "s7",
+      "text": "Right. Mill allows power over a competent adult only to prevent harm to others. Compelling people for their own good is never enough.",
+      "spoken": "Right. Mill allows power over a competent adult only to prevent harm to others. Compelling people for their own good is never enough."
+    },
+    "355c8dd5": {
+      "slide": "s8",
+      "text": "The council's minutes. Fill in each blank by choosing an option or typing a word, then press Check.",
+      "spoken": "The council's minutes. Fill in each blank by choosing an option or typing a word, then press Check."
+    },
+    "906b9eea": {
+      "slide": "s8",
+      "text": "That's the principle in one sentence. Power against a person's will is allowed only to prevent harm to others. Their own good is never sufficient warrant.",
+      "spoken": "That's the principle in one sentence. Power against a person's will is allowed only to prevent harm to others. Their own good is never sufficient warrant."
+    },
+    "9007b667": {
+      "slide": "the-line",
+      "text": "The line everything depends on. On one side is self-regarding conduct, which is sovereign territory. It affects primarily you: your body, personal risks, diet, and plans. Society may advise and warn, but cannot compel. Think of an adult who eats poorly, gambles personal savings, or climbs dangerous peaks alone. On the other side is other-regarding conduct, the public sphere. It directly risks harm to others: their bodies, property, or legal rights. Here state coercion is legitimate. Think of a manufacturer who dumps toxic waste into a drinking river, or sells tainted food.",
+      "spoken": "The line everything depends on. On one side is self-regarding conduct, which is sovereign territory. It affects primarily you: your body, personal risks, diet, and plans. Society may advise and warn, but cannot compel. Think of an adult who eats poorly, gambles personal savings, or climbs dangerous peaks alone. On the other side is other-regarding conduct, the public sphere. It directly risks harm to others: their bodies, property, or legal rights. Here state coercion is legitimate. Think of a manufacturer who dumps toxic waste into a drinking river, or sells tainted food."
+    },
+    "d2ddb9e4": {
+      "slide": "s10",
+      "text": "The intervention test. This flowchart is a decision procedure built on Mill's principle. Coercion is legitimate only to prevent direct harm to others. If conduct is self-regarding, coercion is forbidden for competent adults. Soft paternalism is permitted only to verify knowledge. If conduct is other-regarding, mere offense can't be coerced, but direct harm to others justifies legal sanctions.",
+      "spoken": "The intervention test. This flowchart is a decision procedure built on Mill's principle. Coercion is legitimate only to prevent direct harm to others. If conduct is self-regarding, coercion is forbidden for competent adults. Soft paternalism is permitted only to verify knowledge. If conduct is other-regarding, mere offense can't be coerced, but direct harm to others justifies legal sanctions."
+    },
+    "13f51db6": {
+      "slide": "s11",
+      "text": "The poppy question. The toxic poppy fields model hazardous recreation and drug policy.",
+      "spoken": "The poppy question. The toxic poppy fields model hazardous recreation and drug policy."
+    },
+    "d077ef0a": {
+      "slide": "s11",
+      "text": "Banning entry to protect adults from foolishness is hard paternalism. It overrides voluntary choice.",
+      "spoken": "Banning entry to protect adults from foolishness is hard paternalism. It overrides voluntary choice."
+    },
+    "6004e659": {
+      "slide": "s11",
+      "text": "Uninformed wanderers are different. Pausing someone who is unaware of the danger is permitted soft paternalism.",
+      "spoken": "Uninformed wanderers are different. Pausing someone who is unaware of the danger is permitted soft paternalism."
+    },
+    "ae66bc73": {
+      "slide": "s11",
+      "text": "Mill backs hazard signposts, poison labels, and child bans. They inform agency without prohibiting it.",
+      "spoken": "Mill backs hazard signposts, poison labels, and child bans. They inform agency without prohibiting it."
+    },
+    "0b3eb0fd": {
+      "slide": "s12",
+      "text": "Decision point: the poppy fields. The council is split three ways, and so is the room. Adults keep walking into the poppy fields knowing exactly what happens. What should the draft say? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the poppy fields. The council is split three ways, and so is the room. Adults keep walking into the poppy fields knowing exactly what happens. What should the draft say? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "898d6354": {
+      "slide": "s12",
+      "text": "The middle answer is Mill's own. He allows anything that informs a choice and nothing that replaces it.",
+      "spoken": "The middle answer is Mill's own. He allows anything that informs a choice and nothing that replaces it."
+    },
+    "a32cc8f8": {
+      "slide": "mills-bridge",
+      "text": "Mill's bridge. A traveler steps toward an unsafe bridge with no time to warn him. May you seize him?",
+      "spoken": "Mill's bridge. A traveler steps toward an unsafe bridge with no time to warn him. May you seize him?"
+    },
+    "e57d26fd": {
+      "slide": "mills-bridge",
+      "text": "Mill says yes. Briefly stopping him honors his presumed desire not to fall into the chasm.",
+      "spoken": "Mill says yes. Briefly stopping him honors his presumed desire not to fall into the chasm."
+    },
+    "3e2ff8f2": {
+      "slide": "mills-bridge",
+      "text": "Once he's informed of the broken planks, an adult who still insists on crossing must be let through.",
+      "spoken": "Once he's informed of the broken planks, an adult who still insists on crossing must be let through."
+    },
+    "cb6322ba": {
+      "slide": "mills-bridge",
+      "text": "This distinguishes soft paternalism, which verifies a choice, from hard paternalism, which overrides it.",
+      "spoken": "This distinguishes soft paternalism, which verifies a choice, from hard paternalism, which overrides it."
+    },
+    "98726c09": {
+      "slide": "s14",
+      "text": "Marking up the draft. Check every clause the Harm Principle permits, then press Check answers.",
+      "spoken": "Marking up the draft. Check every clause the Harm Principle permits, then press Check answers."
+    },
+    "76636611": {
+      "slide": "s14",
+      "text": "Right. Poison labeling informs choice rather than overriding it, and a drunk soldier on watch endangers others. The other two compel competent adults purely for their own good.",
+      "spoken": "Right. Poison labeling informs choice rather than overriding it, and a drunk soldier on watch endangers others. The other two compel competent adults purely for their own good."
+    },
+    "b7b15512": {
+      "slide": "s15",
+      "text": "The council's docket. You'll see six clauses from the Wizard's old constitution, one at a time. Classify each one: does it prevent harm to others, prevent harm to self, or enforce morality? After each pick, you'll see the council's ruling. When you're ready, press Continue.",
+      "spoken": "The council's docket. You'll see six clauses from the Wizard's old constitution, one at a time. Classify each one: does it prevent harm to others, prevent harm to self, or enforce morality? After each pick, you'll see the council's ruling. When you're ready, press Continue."
+    },
+    "8ef68ad7": {
+      "slide": "pamphleteer",
+      "text": "The pamphleteer. A pamphleteer publishes an article claiming grain merchants starve the poor.",
+      "spoken": "The pamphleteer. A pamphleteer publishes an article claiming grain merchants starve the poor."
+    },
+    "1bf274d7": {
+      "slide": "pamphleteer",
+      "text": "Mill argued that opinions like this, that corn dealers starve the poor, must circulate freely in print.",
+      "spoken": "Mill argued that opinions like this, that corn dealers starve the poor, must circulate freely in print."
+    },
+    "2f83cce0": {
+      "slide": "pamphleteer",
+      "text": "However, shouting those same words to an angry, torch-bearing mob outside a dealer's home may be punished.",
+      "spoken": "However, shouting those same words to an angry, torch-bearing mob outside a dealer's home may be punished."
+    },
+    "43a0030d": {
+      "slide": "pamphleteer",
+      "text": "Print invites deliberation, whereas inciting an agitated crowd creates an immediate hazard of harm.",
+      "spoken": "Print invites deliberation, whereas inciting an agitated crowd creates an immediate hazard of harm."
+    },
+    "8f01e87f": {
+      "slide": "s17",
+      "text": "What if the pamphlet is false? The merchants argue the claims are false. Why protect falsehood? Mill gives three reasons.",
+      "spoken": "What if the pamphlet is false? The merchants argue the claims are false. Why protect falsehood? Mill gives three reasons."
+    },
+    "8548196f": {
+      "slide": "s17",
+      "text": "If a silenced view turns out to be true, society loses truth, because censors are never infallible.",
+      "spoken": "If a silenced view turns out to be true, society loses truth, because censors are never infallible."
+    },
+    "a7ac2630": {
+      "slide": "s17",
+      "text": "If it contains partial truth, debate provides the missing piece to correct prevailing ideas.",
+      "spoken": "If it contains partial truth, debate provides the missing piece to correct prevailing ideas."
+    },
+    "46bc2fb9": {
+      "slide": "s17",
+      "text": "Even completely false views prevent received truths from decaying into unexamined dogma.",
+      "spoken": "Even completely false views prevent received truths from decaying into unexamined dogma."
+    },
+    "f66b06b2": {
+      "slide": "s18",
+      "text": "The night it almost went wrong. The speaker shouts his claim to an angry mob outside a grain merchant's home. Under Mill, what makes this punishable when the pamphlet was not? Pick an answer.",
+      "spoken": "The night it almost went wrong. The speaker shouts his claim to an angry mob outside a grain merchant's home. Under Mill, what makes this punishable when the pamphlet was not? Pick an answer."
+    },
+    "0dba4575": {
+      "slide": "s18",
+      "text": "Right. For Mill, the opinion itself never loses protection. What changes is the act.",
+      "spoken": "Right. For Mill, the opinion itself never loses protection. What changes is the act."
+    },
+    "15ef683e": {
+      "slide": "s19",
+      "text": "The problem of deep offense. What about conduct that causes no physical injury or financial loss, but generates intense moral outrage? Consider a radical group picketing private family funerals with offensive slogans, like the real-world Snyder versus Phelps dispute.",
+      "spoken": "The problem of deep offense. What about conduct that causes no physical injury or financial loss, but generates intense moral outrage? Consider a radical group picketing private family funerals with offensive slogans, like the real-world Snyder versus Phelps dispute."
+    },
+    "fe8a3f14": {
+      "slide": "offense-detour",
+      "text": "A century after Mill, the philosopher Joel Feinberg argued the Harm Principle needs a carefully restricted supplement.",
+      "spoken": "A century after Mill, the philosopher Joel Feinberg argued the Harm Principle needs a carefully restricted supplement."
+    },
+    "8512df84": {
+      "slide": "offense-detour",
+      "text": "Subjective offense, outrage, and disgust differ from harm, because they don't damage a person's vital interests or rights.",
+      "spoken": "Subjective offense, outrage, and disgust differ from harm, because they don't damage a person's vital interests or rights."
+    },
+    "2f47e0f6": {
+      "slide": "offense-detour",
+      "text": "However, profound and unavoidable public offense, such as picketing a private funeral, may warrant narrow legal limits.",
+      "spoken": "However, profound and unavoidable public offense, such as picketing a private funeral, may warrant narrow legal limits."
+    },
+    "fc90ef21": {
+      "slide": "offense-detour",
+      "text": "Feinberg's balancing test weighs how intense the offense is, whether it was avoidable, and its social value.",
+      "spoken": "Feinberg's balancing test weighs how intense the offense is, whether it was avoidable, and its social value."
+    },
+    "f5adb45c": {
+      "slide": "s21",
+      "text": "Hedging the offense principle. Liberal systems adopt narrow compromises when regulating public offense.",
+      "spoken": "Hedging the offense principle. Liberal systems adopt narrow compromises when regulating public offense."
+    },
+    "4714cac5": {
+      "slide": "s21",
+      "text": "Regulations impose reasonable time, place, and manner buffer zones around funerals, rather than banning viewpoints.",
+      "spoken": "Regulations impose reasonable time, place, and manner buffer zones around funerals, rather than banning viewpoints."
+    },
+    "4d7a6a5d": {
+      "slide": "s21",
+      "text": "The danger is that offense is elastic. Majorities can label controversial opinions offensive.",
+      "spoken": "The danger is that offense is elastic. Majorities can label controversial opinions offensive."
+    },
+    "fc4b8c28": {
+      "slide": "s21",
+      "text": "If hurt feelings count as harm, the Harm Principle collapses, and paternalism returns under a new name.",
+      "spoken": "If hurt feelings count as harm, the Harm Principle collapses, and paternalism returns under a new name."
+    },
+    "fd2ea931": {
+      "slide": "s22",
+      "text": "Mapping state authority. This diagram shows three tiers of conduct and state authority. Tier one is self-regarding conduct. Only labels and persuasion are permitted, and coercive bans are forbidden. Tier two is public offense. Time, place, and manner buffer rules are permitted, and viewpoint censorship is forbidden. Tier three is harm to others. Criminal sanctions and quarantine are permitted.",
+      "spoken": "Mapping state authority. This diagram shows three tiers of conduct and state authority. Tier one is self-regarding conduct. Only labels and persuasion are permitted, and coercive bans are forbidden. Tier two is public offense. Time, place, and manner buffer rules are permitted, and viewpoint censorship is forbidden. Tier three is harm to others. Criminal sanctions and quarantine are permitted."
+    },
+    "acbbac34": {
+      "slide": "s23",
+      "text": "The health chapter. The council examines medical law, where old contradictions were most glaring.",
+      "spoken": "The health chapter. The council examines medical law, where old contradictions were most glaring."
+    },
+    "6350a96f": {
+      "slide": "s23",
+      "text": "The old code forced patients who refused a doctor's remedy into restraint. That's hard paternalism.",
+      "spoken": "The old code forced patients who refused a doctor's remedy into restraint. That's hard paternalism."
+    },
+    "5144c1bb": {
+      "slide": "s23",
+      "text": "Yet during infectious epidemics, it provided no quarantine rules or reporting to protect the public.",
+      "spoken": "Yet during infectious epidemics, it provided no quarantine rules or reporting to protect the public."
+    },
+    "0067fab4": {
+      "slide": "s23",
+      "text": "The old law repeated its twin errors: coercing competent individuals while abandoning public health.",
+      "spoken": "The old law repeated its twin errors: coercing competent individuals while abandoning public health."
+    },
+    "ebd1a9b6": {
+      "slide": "s24",
+      "text": "The right to refuse treatment. Consider a competent adult patient who declines surgery, preferring comfort care at home.",
+      "spoken": "The right to refuse treatment. Consider a competent adult patient who declines surgery, preferring comfort care at home."
+    },
+    "0e0869d5": {
+      "slide": "s24",
+      "text": "Forcing medical treatment on a competent patient under restraint is textbook hard paternalism.",
+      "spoken": "Forcing medical treatment on a competent patient under restraint is textbook hard paternalism."
+    },
+    "efa5d159": {
+      "slide": "s24",
+      "text": "Mill insists that over one's own body, the individual is sovereign. Doctors may plead, but never compel.",
+      "spoken": "Mill insists that over one's own body, the individual is sovereign. Doctors may plead, but never compel."
+    },
+    "04bd0fc9": {
+      "slide": "s24",
+      "text": "Modern bioethics enshrines this principle as patient autonomy and the right to informed refusal.",
+      "spoken": "Modern bioethics enshrines this principle as patient autonomy and the right to informed refusal."
+    },
+    "67f027ad": {
+      "slide": "epidemics",
+      "text": "Epidemics and harm to others. The council considers public health measures during an airborne epidemic.",
+      "spoken": "Epidemics and harm to others. The council considers public health measures during an airborne epidemic."
+    },
+    "e07f3458": {
+      "slide": "epidemics",
+      "text": "Refusing vaccine or quarantine during an outbreak differs fundamentally from refusing personal surgery.",
+      "spoken": "Refusing vaccine or quarantine during an outbreak differs fundamentally from refusing personal surgery."
+    },
+    "8187a1c0": {
+      "slide": "epidemics",
+      "text": "An infected person transmits pathogens to vulnerable infants and immunocompromised neighbors.",
+      "spoken": "An infected person transmits pathogens to vulnerable infants and immunocompromised neighbors."
+    },
+    "feb52f83": {
+      "slide": "epidemics",
+      "text": "Because transmission is other-regarding, preventing harm to others justifies public health mandates.",
+      "spoken": "Because transmission is other-regarding, preventing harm to others justifies public health mandates."
+    },
+    "4576a018": {
+      "slide": "s26",
+      "text": "The safety harness debate. Mandatory wagon harnesses mirror modern controversies over seatbelt and helmet laws. Here are the two sides. The anti-paternalism side calls this a self-regarding choice. An unharnessed driver risks primarily his own life, and compelling safety equipment coerces competent adults for their own good. Its slogan is, post crash fatality statistics, but let adults choose. The diffuse harm side makes the public-burden argument. Drivers rarely crash alone. Emergency crews face hazards, public funds pay trauma care, and dependents lose support. Its slogan is, injuries impose heavy financial burdens on the community.",
+      "spoken": "The safety harness debate. Mandatory wagon harnesses mirror modern controversies over seatbelt and helmet laws. Here are the two sides. The anti-paternalism side calls this a self-regarding choice. An unharnessed driver risks primarily his own life, and compelling safety equipment coerces competent adults for their own good. Its slogan is, post crash fatality statistics, but let adults choose. The diffuse harm side makes the public-burden argument. Drivers rarely crash alone. Emergency crews face hazards, public funds pay trauma care, and dependents lose support. Its slogan is, injuries impose heavy financial burdens on the community."
+    },
+    "7a1b8e2b": {
+      "slide": "s27",
+      "text": "Decision point: the safety harness. Should the law require safety harnesses in fast wagons? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the safety harness. Should the law require safety harnesses in fast wagons? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "25f739c5": {
+      "slide": "s27",
+      "text": "Every answer here costs something. The third answer is roughly where modern law sits, and it is the least tidy of the three.",
+      "spoken": "Every answer here costs something. The third answer is roughly where modern law sits, and it is the least tidy of the three."
+    },
+    "358787d8": {
+      "slide": "s28",
+      "text": "Voting the health chapter. Check every health clause the Harm Principle permits, then press Check answers.",
+      "spoken": "Voting the health chapter. Check every health clause the Harm Principle permits, then press Check answers."
+    },
+    "4aa083c4": {
+      "slide": "s28",
+      "text": "Right. Quarantining the contagious, honest labels on remedies, and reporting outbreaks all prevent harm to others. Forcing treatment on a competent refuser is the one the principle forbids.",
+      "spoken": "Right. Quarantining the contagious, honest labels on remedies, and reporting outbreaks all prevent harm to others. Forcing treatment on a competent refuser is the one the principle forbids."
+    },
+    "2abb5362": {
+      "slide": "s29",
+      "text": "Voluntary choice. Operators engineer commercial poppy fields with maze-like paths and hidden exits.",
+      "spoken": "Voluntary choice. Operators engineer commercial poppy fields with maze-like paths and hidden exits."
+    },
+    "3ea3bdaa": {
+      "slide": "s29",
+      "text": "The principle protects voluntary choice, but manipulative design actively subverts decision capacity.",
+      "spoken": "The principle protects voluntary choice, but manipulative design actively subverts decision capacity."
+    },
+    "d1450343": {
+      "slide": "s29",
+      "text": "Real-world analogs include casino architecture, loot boxes, and infinite scroll designed to defeat self-control.",
+      "spoken": "Real-world analogs include casino architecture, loot boxes, and infinite scroll designed to defeat self-control."
+    },
+    "af5f5b53": {
+      "slide": "s29",
+      "text": "Restricting exploitative design targets commercial deception rather than penalizing personal choice.",
+      "spoken": "Restricting exploitative design targets commercial deception rather than penalizing personal choice."
+    },
+    "6ed14367": {
+      "slide": "s30",
+      "text": "Harms with no single victim. A core challenge that nineteenth-century liberalism struggled to address at scale is aggregate or diffuse environmental harm.",
+      "spoken": "Harms with no single victim. A core challenge that nineteenth-century liberalism struggled to address at scale is aggregate or diffuse environmental harm."
+    },
+    "9a6edb72": {
+      "slide": "s30",
+      "text": "A single factory chimney or car exhaust pipe causes no measurable injury on its own.",
+      "spoken": "A single factory chimney or car exhaust pipe causes no measurable injury on its own."
+    },
+    "e354b72d": {
+      "slide": "s30",
+      "text": "However, thousands of emissions combine to produce toxic smog that damages an entire population's lungs.",
+      "spoken": "However, thousands of emissions combine to produce toxic smog that damages an entire population's lungs."
+    },
+    "ac50e281": {
+      "slide": "s30",
+      "text": "The Harm Principle easily justifies environmental regulation, once the law accounts for cumulative contributions to collective harm.",
+      "spoken": "The Harm Principle easily justifies environmental regulation, once the law accounts for cumulative contributions to collective harm."
+    },
+    "d428e6a8": {
+      "slide": "s31",
+      "text": "When falsehood causes rapid harm. Another major contemporary challenge is viral medical misinformation, such as false claims that a vaccine is lethal.",
+      "spoken": "When falsehood causes rapid harm. Another major contemporary challenge is viral medical misinformation, such as false claims that a vaccine is lethal."
+    },
+    "2b2a6928": {
+      "slide": "s31",
+      "text": "Mill assumed public deliberation provides ample time for truth to refute and overtake dangerous falsehoods.",
+      "spoken": "Mill assumed public deliberation provides ample time for truth to refute and overtake dangerous falsehoods."
+    },
+    "cd41f045": {
+      "slide": "s31",
+      "text": "When panic spreads instantly during a lethal outbreak, third parties suffer preventable death before rebuttal can take effect.",
+      "spoken": "When panic spreads instantly during a lethal outbreak, third parties suffer preventable death before rebuttal can take effect."
+    },
+    "53d32dc9": {
+      "slide": "s31",
+      "text": "These modern problems illustrate where the Harm Principle transitions from a neat formula into a complex constitutional balancing test.",
+      "spoken": "These modern problems illustrate where the Harm Principle transitions from a neat formula into a complex constitutional balancing test."
+    },
+    "c2cf4590": {
+      "slide": "s32",
+      "text": "Critics of liberal neutrality. The council hears formal dissents from traditions that argue the state should promote goodness, not merely prevent harm.",
+      "spoken": "Critics of liberal neutrality. The council hears formal dissents from traditions that argue the state should promote goodness, not merely prevent harm."
+    },
+    "33a42fe4": {
+      "slide": "s32",
+      "text": "Perfectionism, originating with Aristotle, holds that political institutions should actively cultivate moral excellence and virtue.",
+      "spoken": "Perfectionism, originating with Aristotle, holds that political institutions should actively cultivate moral excellence and virtue."
+    },
+    "9a386771": {
+      "slide": "s32",
+      "text": "Legal moralism asserts that a society requires a shared moral code to survive. That gives the law authority to punish harmless immorality.",
+      "spoken": "Legal moralism asserts that a society requires a shared moral code to survive. That gives the law authority to punish harmless immorality."
+    },
+    "4d25785f": {
+      "slide": "s32",
+      "text": "Lord Devlin famously defended this view against H L A Hart in 1960s Britain. He argued that private vice undermines social order.",
+      "spoken": "Lord Devlin famously defended this view against H L A Hart in 1960s Britain. He argued that private vice undermines social order."
+    },
+    "e34a55ae": {
+      "slide": "s33",
+      "text": "The communitarian challenge. A deeper critique questions whether unencumbered, sovereign individuals exist.",
+      "spoken": "The communitarian challenge. A deeper critique questions whether unencumbered, sovereign individuals exist."
+    },
+    "5daa8d5c": {
+      "slide": "s33",
+      "text": "Communitarians argue human identities and duties are deeply rooted in community ties.",
+      "spoken": "Communitarians argue human identities and duties are deeply rooted in community ties."
+    },
+    "882b86ac": {
+      "slide": "s33",
+      "text": "Because our lives are interdependent, almost no significant action is purely self-regarding.",
+      "spoken": "Because our lives are interdependent, almost no significant action is purely self-regarding."
+    },
+    "63f7e9aa": {
+      "slide": "s33",
+      "text": "Liberals reply that using interdependence to justify coercion invites authoritarianism.",
+      "spoken": "Liberals reply that using interdependence to justify coercion invites authoritarianism."
+    },
+    "425b165c": {
+      "slide": "s34",
+      "text": "The hardest vote. The council hears six proposals. Sort each one under the concept it's an example of: hard paternalism, soft paternalism, or legal moralism. Then press Check answers.",
+      "spoken": "The hardest vote. The council hears six proposals. Sort each one under the concept it's an example of: hard paternalism, soft paternalism, or legal moralism. Then press Check answers."
+    },
+    "5443f21c": {
+      "slide": "s34",
+      "text": "Right. Hard paternalism overrides an informed adult's choice for their own good. Soft paternalism steps in only to make sure a choice is informed and voluntary. Legal moralism punishes conduct because it is thought immoral, even when it harms no one.",
+      "spoken": "Right. Hard paternalism overrides an informed adult's choice for their own good. Soft paternalism steps in only to make sure a choice is informed and voluntary. Legal moralism punishes conduct because it is thought immoral, even when it harms no one."
+    },
+    "aa6f36f2": {
+      "slide": "s35",
+      "text": "Ratification day. The new constitution reads: Citizens are sovereign over themselves. The law reaches only harm to others.",
+      "spoken": "Ratification day. The new constitution reads: Citizens are sovereign over themselves. The law reaches only harm to others."
+    },
+    "d8f9926d": {
+      "slide": "s35",
+      "text": "Struck: forced medical care, lifestyle mandates, and private morality bans.",
+      "spoken": "Struck: forced medical care, lifestyle mandates, and private morality bans."
+    },
+    "cf4b88e3": {
+      "slide": "s35",
+      "text": "Added: river pollution controls, consumer fraud rules, and epidemic quarantine.",
+      "spoken": "Added: river pollution controls, consumer fraud rules, and epidemic quarantine."
+    },
+    "b717c336": {
+      "slide": "s35",
+      "text": "Still open: seatbelt-style harness rules remain active debates over diffuse harm.",
+      "spoken": "Still open: seatbelt-style harness rules remain active debates over diffuse harm."
+    },
+    "e4004709": {
+      "slide": "s36",
+      "text": "Here is where you stood before the first session. Re-rate each one and see whether the council's work moved you. Staying put is fine, so long as you can now defend the spot in Mill's own terms. When you're done, press Submit.",
+      "spoken": "Here is where you stood before the first session. Re-rate each one and see whether the council's work moved you. Staying put is fine, so long as you can now defend the spot in Mill's own terms. When you're done, press Submit."
+    },
+    "d9a90532": {
+      "slide": "s36",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "fcf931f7": {
+      "slide": "s37",
+      "text": "The council adjourns. The old constitution is archived, replaced by Mill's liberal charter.",
+      "spoken": "The council adjourns. The old constitution is archived, replaced by Mill's liberal charter."
+    },
+    "c13a770b": {
+      "slide": "s37",
+      "text": "Power is legitimate solely to prevent non-consensual harm to others.",
+      "spoken": "Power is legitimate solely to prevent non-consensual harm to others."
+    },
+    "70ac7d8d": {
+      "slide": "s37",
+      "text": "Liberty rests on fallibility, experiments in living, and individuality.",
+      "spoken": "Liberty rests on fallibility, experiments in living, and individuality."
+    },
+    "d4471ed2": {
+      "slide": "s37",
+      "text": "The framework distinguishes self-regarding choice from other-regarding harm.",
+      "spoken": "The framework distinguishes self-regarding choice from other-regarding harm."
+    },
+    "6f5a8f35": {
+      "slide": "s38",
+      "text": "Here are the principles for modern governance.",
+      "spoken": "Here are the principles for modern governance."
+    },
+    "d4a66f45": {
+      "slide": "s38",
+      "text": "Freedom of speech protects even false or unpopular opinions. Speech is penalized only when circumstances create direct incitement to harm.",
+      "spoken": "Freedom of speech protects even false or unpopular opinions. Speech is penalized only when circumstances create direct incitement to harm."
+    },
+    "5ebf832a": {
+      "slide": "s38",
+      "text": "Medical ethics respects competent treatment refusal as self-regarding, while justifying quarantine and vaccine rules to halt contagion.",
+      "spoken": "Medical ethics respects competent treatment refusal as self-regarding, while justifying quarantine and vaccine rules to halt contagion."
+    },
+    "03c58397": {
+      "slide": "s38",
+      "text": "Ongoing legal debates center on diffuse collective harms, behavioral manipulation, and competing communitarian or perfectionist ideals. And a reminder: visit every slide, complete each interactive check, and submit both belief surveys.",
+      "spoken": "Ongoing legal debates center on diffuse collective harms, behavioral manipulation, and competing communitarian or perfectionist ideals. And a reminder: visit every slide, complete each interactive check, and submit both belief surveys."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

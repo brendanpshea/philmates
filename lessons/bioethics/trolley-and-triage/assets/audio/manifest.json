@@ -1,0 +1,522 @@
+{
+  "engine": "gemini",
+  "voice": "en-us-storyteller-13",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "3ae6ec08": {
+      "slide": "s1",
+      "text": "Welcome to The Switch and the Scalpel. This is Week 0. Before we study moral theories in depth, we start with the machinery of moral intuition. What is a moral dilemma, and why does human moral reasoning resist simple addition? Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Switch and the Scalpel. This is Week 0. Before we study moral theories in depth, we start with the machinery of moral intuition. What is a moral dilemma, and why does human moral reasoning resist simple addition? Whenever it's your turn, I'll stop and wait for you."
+    },
+    "15c7efba": {
+      "slide": "s2",
+      "text": "Meet Doctor Trackwell. She's Philippa Trackwell, called Pip, an emergency physician and railway safety consultant. Most people think ethics is about being a good person, she says. In crisis management, ethics is about what to do when every available option breaks your heart.",
+      "spoken": "Meet Doctor Trackwell. She's Philippa Trackwell, called Pip, an emergency physician and railway safety consultant. Most people think ethics is about being a good person, she says. In crisis management, ethics is about what to do when every available option breaks your heart."
+    },
+    "05cf46fb": {
+      "slide": "s2",
+      "text": "A moral dilemma isn't just a tough choice between what is easy and what is right.",
+      "spoken": "A moral dilemma isn't just a tough choice between what is easy and what is right."
+    },
+    "3cf9ca96": {
+      "slide": "s2",
+      "text": "It's a conflict where fundamental moral principles collide, and choosing one means violating another.",
+      "spoken": "It's a conflict where fundamental moral principles collide, and choosing one means violating another."
+    },
+    "2e4f02e5": {
+      "slide": "s2",
+      "text": "To find the hidden rules our moral minds run on, philosophers build thought experiments. Each one changes a single detail and holds everything else still.",
+      "spoken": "To find the hidden rules our moral minds run on, philosophers build thought experiments. Each one changes a single detail and holds everything else still."
+    },
+    "56f45af0": {
+      "slide": "s3",
+      "text": "Before the signals turn. Here are five gut-checks, with no right answers. Say where you stand right now, by rating how much you agree with each statement. We'll come back to them at the end to see what shifted. When you've rated all five, press Submit.",
+      "spoken": "Before the signals turn. Here are five gut-checks, with no right answers. Say where you stand right now, by rating how much you agree with each statement. We'll come back to them at the end to see what shifted. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s3",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "2229a0eb": {
+      "slide": "s4",
+      "text": "Case 1, the Spur, also called the Switch. A runaway trolley barrels down the track toward five track workers who can't hear it coming. You stand beside a track switch lever.",
+      "spoken": "Case 1, the Spur, also called the Switch. A runaway trolley barrels down the track toward five track workers who can't hear it coming. You stand beside a track switch lever."
+    },
+    "900b31a1": {
+      "slide": "s4",
+      "text": "If you do nothing, the trolley continues straight and kills the five workers.",
+      "spoken": "If you do nothing, the trolley continues straight and kills the five workers."
+    },
+    "13e82b8a": {
+      "slide": "s4",
+      "text": "If you pull the switch, the trolley turns onto a side track, called the spur, where it will kill one worker.",
+      "spoken": "If you pull the switch, the trolley turns onto a side track, called the spur, where it will kill one worker."
+    },
+    "e9a5142c": {
+      "slide": "s4",
+      "text": "There's no third option, no time to shout, and your own body can't stop the train.",
+      "spoken": "There's no third option, no time to shout, and your own body can't stop the train."
+    },
+    "51c723b5": {
+      "slide": "s4",
+      "text": "The lever is cold in your hand. What is your choice? One note on history: in Foot's original, you drive the trolley. Thomson made you a bystander at the switch.",
+      "spoken": "The lever is cold in your hand. What is your choice? One note on history: in Foot's original, you drive the trolley. Thomson made you a bystander at the switch."
+    },
+    "4fce5053": {
+      "slide": "s5",
+      "text": "Decision point: the switch. You stand beside the switch lever. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the switch. You stand beside the switch lever. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "287563fe": {
+      "slide": "s5",
+      "text": "In the largest cross-national study of this case, a large majority diverted the trolley. Next, a second case.",
+      "spoken": "In the largest cross-national study of this case, a large majority diverted the trolley. Next, a second case."
+    },
+    "ba1cc8d3": {
+      "slide": "s6",
+      "text": "Case 2, the Footbridge. Same trolley, same five workers. There's no side spur this time. You're standing on a footbridge above the rails.",
+      "spoken": "Case 2, the Footbridge. Same trolley, same five workers. There's no side spur this time. You're standing on a footbridge above the rails."
+    },
+    "0f736732": {
+      "slide": "s6",
+      "text": "Next to you leans a heavy stranger gazing over the railing.",
+      "spoken": "Next to you leans a heavy stranger gazing over the railing."
+    },
+    "2fc901f1": {
+      "slide": "s6",
+      "text": "If you push him over, his heavy body will jam the trolley's wheels and stop the train before it hits the five.",
+      "spoken": "If you push him over, his heavy body will jam the trolley's wheels and stop the train before it hits the five."
+    },
+    "089af65c": {
+      "slide": "s6",
+      "text": "He dies instantly, and the five survive. Your own body is too light to stop the train.",
+      "spoken": "He dies instantly, and the five survive. Your own body is too light to stop the train."
+    },
+    "a08edcd4": {
+      "slide": "s6",
+      "text": "Your hands are inches from his back. What is your choice? One note on names: Thomson called this case Fat Man. The name Footbridge comes from Greene and colleagues, in 2001.",
+      "spoken": "Your hands are inches from his back. What is your choice? One note on names: Thomson called this case Fat Man. The name Footbridge comes from Greene and colleagues, in 2001."
+    },
+    "6f9af543": {
+      "slide": "s7",
+      "text": "Decision point: the footbridge. You stand behind the stranger on the footbridge. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the footbridge. You stand behind the stranger on the footbridge. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "8c5f7ac7": {
+      "slide": "s7",
+      "text": "Here intuition shifts, even though the arithmetic is unchanged: one life sacrificed to save five.",
+      "spoken": "Here intuition shifts, even though the arithmetic is unchanged: one life sacrificed to save five."
+    },
+    "774b51a5": {
+      "slide": "s8",
+      "text": "The paradox of the two cases. Why do most people judge pulling the switch acceptable, but pushing the stranger unacceptable, when both save five at the cost of one? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "The paradox of the two cases. Why do most people judge pulling the switch acceptable, but pushing the stranger unacceptable, when both save five at the cost of one? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "f91d2688": {
+      "slide": "s8",
+      "text": "Hold on to your answer. The next case, the Loop, was built to test which of these explanations is doing the work.",
+      "spoken": "Hold on to your answer. The next case, the Loop, was built to test which of these explanations is doing the work."
+    },
+    "bf7c048f": {
+      "slide": "s9",
+      "text": "Case 3, the Loop. Judith Jarvis Thomson invented the Loop to test whether physical pushing, as against pulling a lever, was the real difference.",
+      "spoken": "Case 3, the Loop. Judith Jarvis Thomson invented the Loop to test whether physical pushing, as against pulling a lever, was the real difference."
+    },
+    "8c19ca53": {
+      "slide": "s9",
+      "text": "The side track isn't a dead end. It loops all the way back around and hits the five workers from behind.",
+      "spoken": "The side track isn't a dead end. It loops all the way back around and hits the five workers from behind."
+    },
+    "ded1cd3b": {
+      "slide": "s9",
+      "text": "However, there's a heavy worker on the loop track. If you divert the train, it hits him, stops, and the five survive.",
+      "spoken": "However, there's a heavy worker on the loop track. If you divert the train, it hits him, stops, and the five survive."
+    },
+    "a167f0b2": {
+      "slide": "s9",
+      "text": "If that track were empty, flipping the switch would do nothing. The trolley would loop around and kill the five anyway.",
+      "spoken": "If that track were empty, flipping the switch would do nothing. The trolley would loop around and kill the five anyway."
+    },
+    "92969991": {
+      "slide": "s9",
+      "text": "Here you flip a lever, with no physical contact, but you depend on the body to halt the train.",
+      "spoken": "Here you flip a lever, with no physical contact, but you depend on the body to halt the train."
+    },
+    "b9be2c85": {
+      "slide": "s10",
+      "text": "Decision point: the loop. You stand at the switch for the loop track. Do you divert the trolley onto the loop? This one isn't graded, and here even the professionals split. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the loop. You stand at the switch for the loop track. Do you divert the trolley onto the loop? This one isn't graded, and here even the professionals split. Pick the answer closest to your view, and read its note."
+    },
+    "58934698": {
+      "slide": "s10",
+      "text": "The Loop divides philosophers, which is exactly why Thomson built it. The interesting question is which of the first two cases you think it really resembles.",
+      "spoken": "The Loop divides philosophers, which is exactly why Thomson built it. The interesting question is which of the first two cases you think it really resembles."
+    },
+    "ee1129a8": {
+      "slide": "three-levers",
+      "text": "When human beings face moral dilemmas, our minds aren't running a single calculator. We weigh at least three distinct intuitive principles.",
+      "spoken": "When human beings face moral dilemmas, our minds aren't running a single calculator. We weigh at least three distinct intuitive principles."
+    },
+    "1ce2c357": {
+      "slide": "three-levers",
+      "text": "First, consequences, or outcomes. Maximize net well-being and save the greatest number of lives, five versus one.",
+      "spoken": "First, consequences, or outcomes. Maximize net well-being and save the greatest number of lives, five versus one."
+    },
+    "e052da0b": {
+      "slide": "three-levers",
+      "text": "Second, deontic constraints, meaning rights and respect. Respect each individual's inviolability, and forbid using someone merely as a tool without consent.",
+      "spoken": "Second, deontic constraints, meaning rights and respect. Respect each individual's inviolability, and forbid using someone merely as a tool without consent."
+    },
+    "ac774a0b": {
+      "slide": "three-levers",
+      "text": "Third, causal agency and momentum. There's a moral difference between redirecting an existing threat and creating a brand new lethal force.",
+      "spoken": "Third, causal agency and momentum. There's a moral difference between redirecting an existing threat and creating a brand new lethal force."
+    },
+    "bb2f2eb4": {
+      "slide": "s12",
+      "text": "A cornerstone of moral philosophy is the distinction between what we do and what we allow to happen.",
+      "spoken": "A cornerstone of moral philosophy is the distinction between what we do and what we allow to happen."
+    },
+    "c9eea7ea": {
+      "slide": "s12",
+      "text": "Negative duties, or do no harm. A strict moral duty not to inflict injury or kill innocent people.",
+      "spoken": "Negative duties, or do no harm. A strict moral duty not to inflict injury or kill innocent people."
+    },
+    "e540c8af": {
+      "slide": "s12",
+      "text": "Positive duties, or render aid. A moral duty to rescue, protect, or help those in peril when possible.",
+      "spoken": "Positive duties, or render aid. A moral duty to rescue, protect, or help those in peril when possible."
+    },
+    "2dd20fef": {
+      "slide": "s12",
+      "text": "In ordinary ethics, negative duties almost always trump positive duties. You can't shoot an innocent person just to collect reward money to donate to charity.",
+      "spoken": "In ordinary ethics, negative duties almost always trump positive duties. You can't shoot an innocent person just to collect reward money to donate to charity."
+    },
+    "ea0cd43f": {
+      "slide": "s12",
+      "text": "Pulling the switch feels like a rescue. Pushing the stranger feels like a violation of the negative duty not to kill.",
+      "spoken": "Pulling the switch feels like a rescue. Pushing the stranger feels like a violation of the negative duty not to kill."
+    },
+    "ef1fd6db": {
+      "slide": "dde",
+      "text": "The Doctrine of Double Effect originates in medieval philosophy, with Thomas Aquinas, and was formalized in modern ethics. It draws a bright line.",
+      "spoken": "The Doctrine of Double Effect originates in medieval philosophy, with Thomas Aquinas, and was formalized in modern ethics. It draws a bright line."
+    },
+    "828c84bc": {
+      "slide": "dde",
+      "text": "A foreseen side effect. A good goal, saving five, that carries an unintended bad byproduct, the death on the spur, may be permissible.",
+      "spoken": "A foreseen side effect. A good goal, saving five, that carries an unintended bad byproduct, the death on the spur, may be permissible."
+    },
+    "c452faca": {
+      "slide": "dde",
+      "text": "An intended means. Using harm to an innocent person as the causal stepping stone to your good goal is impermissible.",
+      "spoken": "An intended means. Using harm to an innocent person as the causal stepping stone to your good goal is impermissible."
+    },
+    "1cce4ab1": {
+      "slide": "dde",
+      "text": "Here's the test. If the one person vanished, would you be glad or thwarted? On the spur, thrilled. On the footbridge or loop, your plan collapses.",
+      "spoken": "Here's the test. If the one person vanished, would you be glad or thwarted? On the spur, thrilled. On the footbridge or loop, your plan collapses."
+    },
+    "c2310a6c": {
+      "slide": "s14",
+      "text": "Here are the three rail cases side by side. First, the Switch, also called the Spur. Most people approve. The action is turning the switch. The one person is a foreseen side effect. There's no direct contact, only a lever. You're redirecting an existing threat, and the harm is not the causal means. Second, the Footbridge. Far fewer approve. The action is pushing the stranger. The one person is an intended physical buffer. There's direct contact, a physical shove. It initiates new violence and treats a human body as a mere tool. Third, the Loop. Philosophers split. The action is turning the switch onto the loop. The one person is an essential obstacle. There's no direct contact, only a lever. It's a mechanical lever, but it causally relies on a collision to save the five.",
+      "spoken": "Here are the three rail cases side by side. First, the Switch, also called the Spur. Most people approve. The action is turning the switch. The one person is a foreseen side effect. There's no direct contact, only a lever. You're redirecting an existing threat, and the harm is not the causal means. Second, the Footbridge. Far fewer approve. The action is pushing the stranger. The one person is an intended physical buffer. There's direct contact, a physical shove. It initiates new violence and treats a human body as a mere tool. Third, the Loop. Philosophers split. The action is turning the switch onto the loop. The one person is an essential obstacle. There's no direct contact, only a lever. It's a mechanical lever, but it causally relies on a collision to save the five."
+    },
+    "7ce69ac7": {
+      "slide": "s15",
+      "text": "Which lever? Three moral levers pull on the rail cases: consequences, deontic constraints, and causal agency. Sort each thought under the lever it pulls, then press Check answers.",
+      "spoken": "Which lever? Three moral levers pull on the rail cases: consequences, deontic constraints, and causal agency. Sort each thought under the lever it pulls, then press Check answers."
+    },
+    "529bd41e": {
+      "slide": "s15",
+      "text": "Right. Consequences count the outcome. Deontic constraints protect each person from being used as a tool. And causal agency asks whether you redirect a threat that already exists or create a new one.",
+      "spoken": "Right. Consequences count the outcome. Deontic constraints protect each person from being used as a tool. And causal agency asks whether you redirect a threat that already exists or create a new one."
+    },
+    "da5c7e6e": {
+      "slide": "s16",
+      "text": "Testing the principle. Complete the core distinction of the Doctrine of Double Effect. Fill in each gap by choosing an option, then press Check.",
+      "spoken": "Testing the principle. Complete the core distinction of the Doctrine of Double Effect. Fill in each gap by choosing an option, then press Check."
+    },
+    "02460716": {
+      "slide": "s16",
+      "text": "The Doctrine of Double Effect permits harm as an unintended side effect of a good action, but forbids using harm as the means to achieve that good.",
+      "spoken": "The Doctrine of Double Effect permits harm as an unintended side effect of a good action, but forbids using harm as the means to achieve that good."
+    },
+    "b889bc7f": {
+      "slide": "s17",
+      "text": "Case 4, the organ transplant. Doctor Pip Trackwell moves from the railway switch to the hospital ward. Five patients are dying of organ failure: heart, lungs, liver, and two kidneys.",
+      "spoken": "Case 4, the organ transplant. Doctor Pip Trackwell moves from the railway switch to the hospital ward. Five patients are dying of organ failure: heart, lungs, liver, and two kidneys."
+    },
+    "82996af0": {
+      "slide": "s17",
+      "text": "A healthy young traveler walks into the clinic for a routine passport physical.",
+      "spoken": "A healthy young traveler walks into the clinic for a routine passport physical."
+    },
+    "01cf794a": {
+      "slide": "s17",
+      "text": "His tissue happens to be an exact genetic match for all five dying patients.",
+      "spoken": "His tissue happens to be an exact genetic match for all five dying patients."
+    },
+    "52e71fa0": {
+      "slide": "s17",
+      "text": "If the surgeon administers a lethal overdose during the exam and harvests his organs, five patients walk out fully restored.",
+      "spoken": "If the surgeon administers a lethal overdose during the exam and harvests his organs, five patients walk out fully restored."
+    },
+    "d47a3929": {
+      "slide": "s17",
+      "text": "The math: one life taken to save five is a net gain of four lives. Exactly like the track switch.",
+      "spoken": "The math: one life taken to save five is a net gain of four lives. Exactly like the track switch."
+    },
+    "5bbfb24a": {
+      "slide": "s18",
+      "text": "Decision point: the transplant surgeon. You are the transplant surgeon. Do you harvest the healthy patient's organs to save the five dying patients? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the transplant surgeon. You are the transplant surgeon. Do you harvest the healthy patient's organs to save the five dying patients? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "4411d2e0": {
+      "slide": "s18",
+      "text": "Almost nobody harvests. The arithmetic is identical to the Switch, so that near-unanimity is itself the finding worth explaining.",
+      "spoken": "Almost nobody harvests. The arithmetic is identical to the Switch, so that near-unanimity is itself the finding worth explaining."
+    },
+    "4a0d25fb": {
+      "slide": "hospital-math",
+      "text": "Why can't clinical medicine operate on raw arithmetic?",
+      "spoken": "Why can't clinical medicine operate on raw arithmetic?"
+    },
+    "04257657": {
+      "slide": "hospital-math",
+      "text": "Fiduciary duty and trust. A physician owes a specific duty of care, and non-maleficence, meaning first, do no harm, to every patient who walks through the door.",
+      "spoken": "Fiduciary duty and trust. A physician owes a specific duty of care, and non-maleficence, meaning first, do no harm, to every patient who walks through the door."
+    },
+    "40434902": {
+      "slide": "hospital-math",
+      "text": "Bodily inviolability. Every human being holds an absolute moral right against being commandeered as a biological spare-parts reservoir.",
+      "spoken": "Bodily inviolability. Every human being holds an absolute moral right against being commandeered as a biological spare-parts reservoir."
+    },
+    "734e6b93": {
+      "slide": "hospital-math",
+      "text": "Rule-utilitarian collapse. A system that sacrificed healthy patients would cost more lives in avoided care than organ failure ever could.",
+      "spoken": "Rule-utilitarian collapse. A system that sacrificed healthy patients would cost more lives in avoided care than organ failure ever could."
+    },
+    "d1efd67e": {
+      "slide": "s20",
+      "text": "Analyzing the transplant case. Why is the transplant case ethically distinct from pulling the rail switch? Check all the statements that apply, then press Check answers.",
+      "spoken": "Analyzing the transplant case. Why is the transplant case ethically distinct from pulling the rail switch? Check all the statements that apply, then press Check answers."
+    },
+    "17ff3cf0": {
+      "slide": "s20",
+      "text": "In the transplant case, the doctor starts a new lethal harm, breaks medicine's duty of care, and treats the patient's body as a mere resource.",
+      "spoken": "In the transplant case, the doctor starts a new lethal harm, breaks medicine's duty of care, and treats the patient's body as a mere resource."
+    },
+    "c0c84093": {
+      "slide": "scarcity",
+      "text": "Unlike the fictitious transplant surgeon, real emergency physicians face genuine tragic dilemmas during mass casualties, pandemics, and war.",
+      "spoken": "Unlike the fictitious transplant surgeon, real emergency physicians face genuine tragic dilemmas during mass casualties, pandemics, and war."
+    },
+    "1caa8f96": {
+      "slide": "scarcity",
+      "text": "Under Crisis Standards of Care, the demand for life-saving resources, such as ventilators, ICU beds, and dialysis, vastly exceeds supply.",
+      "spoken": "Under Crisis Standards of Care, the demand for life-saving resources, such as ventilators, ICU beds, and dialysis, vastly exceeds supply."
+    },
+    "e4721b3b": {
+      "slide": "scarcity",
+      "text": "Doctors aren't choosing between murder and duty. They're allocating scarce positive aid to patients who all face lethal illness.",
+      "spoken": "Doctors aren't choosing between murder and duty. They're allocating scarce positive aid to patients who all face lethal illness."
+    },
+    "b1b0939c": {
+      "slide": "scarcity",
+      "text": "When you can't save everyone, how do you decide who receives treatment?",
+      "spoken": "When you can't save everyone, how do you decide who receives treatment?"
+    },
+    "917c013d": {
+      "slide": "s22",
+      "text": "Here are the four triage tags from the START protocol. In disaster medicine, responders assign standardized color-coded triage tags in seconds.",
+      "spoken": "Here are the four triage tags from the START protocol. In disaster medicine, responders assign standardized color-coded triage tags in seconds."
+    },
+    "bca836ca": {
+      "slide": "s22",
+      "text": "Red means Immediate. Life-threatening injuries that need immediate intervention to survive.",
+      "spoken": "Red means Immediate. Life-threatening injuries that need immediate intervention to survive."
+    },
+    "b40ff5a9": {
+      "slide": "s22",
+      "text": "Yellow means Delayed. Serious injuries that need care, but the patient is stable enough to wait hours.",
+      "spoken": "Yellow means Delayed. Serious injuries that need care, but the patient is stable enough to wait hours."
+    },
+    "cdf6e700": {
+      "slide": "s22",
+      "text": "Green means Minor. These are the walking wounded, with minor injuries. They can wait until urgent cases are stabilized.",
+      "spoken": "Green means Minor. These are the walking wounded, with minor injuries. They can wait until urgent cases are stabilized."
+    },
+    "c6122b52": {
+      "slide": "s22",
+      "text": "Black means Expectant. Survival is unlikely even with maximal care. Comfort and pain relief come first, so scarce equipment can save others.",
+      "spoken": "Black means Expectant. Survival is unlikely even with maximal care. Comfort and pain relief come first, so scarce equipment can save others."
+    },
+    "b97d0c5f": {
+      "slide": "s23",
+      "text": "When two patients in the Red category arrive for the last ICU bed, which moral rule should decide?",
+      "spoken": "When two patients in the Red category arrive for the last ICU bed, which moral rule should decide?"
+    },
+    "483ed9d7": {
+      "slide": "s23",
+      "text": "One, short-term survival. Give the bed to whoever is most likely to walk out of this hospitalization alive, scored from current organ function.",
+      "spoken": "One, short-term survival. Give the bed to whoever is most likely to walk out of this hospitalization alive, scored from current organ function."
+    },
+    "ff6dcb71": {
+      "slide": "s23",
+      "text": "Two, an egalitarian lottery. Give every competing candidate an equal, random chance.",
+      "spoken": "Two, an egalitarian lottery. Give every competing candidate an equal, random chance."
+    },
+    "0c7c8907": {
+      "slide": "s23",
+      "text": "Three, first come, first served. Allocate to whoever arrived first. That quietly rewards whoever owned a car.",
+      "spoken": "Three, first come, first served. Allocate to whoever arrived first. That quietly rewards whoever owned a car."
+    },
+    "5844625b": {
+      "slide": "s23",
+      "text": "A fourth rule, maximizing life-years, sounds like the same thing as number one, but it isn't. Hold that thought.",
+      "spoken": "A fourth rule, maximizing life-years, sounds like the same thing as number one, but it isn't. Hold that thought."
+    },
+    "a17f5dbd": {
+      "slide": "life-years",
+      "text": "Save the most lives, and save the most life-years, sound identical. They're not, and real protocols are built on the gap between them.",
+      "spoken": "Save the most lives, and save the most life-years, sound identical. They're not, and real protocols are built on the gap between them."
+    },
+    "3c7bc177": {
+      "slide": "life-years",
+      "text": "Short-term survival asks whether this patient will survive this illness, scored from how well the organs are working right now. US protocols use a scale called SOFA.",
+      "spoken": "Short-term survival asks whether this patient will survive this illness, scored from how well the organs are working right now. U.S. protocols use a scale called SOFA."
+    },
+    "ae1287f4": {
+      "slide": "life-years",
+      "text": "Life-years, also called QALYs, asks how much future this patient has. That question builds age and disability directly into the score.",
+      "spoken": "Life-years, also called QALYs, asks how much future this patient has. That question builds age and disability directly into the score."
+    },
+    "024e90b9": {
+      "slide": "life-years",
+      "text": "This is why most US crisis standards make short-term survival the primary criterion, and most don't rank patients by remaining lifespan.",
+      "spoken": "This is why most U.S. crisis standards make short-term survival the primary criterion, and most don't rank patients by remaining lifespan."
+    },
+    "1b8bd488": {
+      "slide": "life-years",
+      "text": "It's not only an ethical worry. Federal civil-rights guidance in 2020 warned that allocating by age or disability can violate the ADA.",
+      "spoken": "It's not only an ethical worry. Federal civil-rights guidance in 2020 warned that allocating by age or disability can violate the ADA."
+    },
+    "a94cdabe": {
+      "slide": "s25",
+      "text": "Decision point: the last ventilator. An ICU has one ventilator left. Patient A, twenty-four, with acute trauma, and Patient B, seventy-eight, with multi-organ failure, arrive together. A is far more likely to survive this admission. Which rule should decide? This one isn't graded, and it's a live dispute among working ethics committees. Pick the answer closest to your view, and read its note.",
+      "spoken": "Decision point: the last ventilator. An ICU has one ventilator left. Patient A, twenty-four, with acute trauma, and Patient B, seventy-eight, with multi-organ failure, arrive together. A is far more likely to survive this admission. Which rule should decide? This one isn't graded, and it's a live dispute among working ethics committees. Pick the answer closest to your view, and read its note."
+    },
+    "6bca1cc1": {
+      "slide": "s25",
+      "text": "Every option here is defended by serious people. That's why hospitals settle it in advance, in writing, rather than at the bedside.",
+      "spoken": "Every option here is defended by serious people. That's why hospitals settle it in advance, in writing, rather than at the bedside."
+    },
+    "d9a77d34": {
+      "slide": "s26",
+      "text": "What the protocols actually say. Two patients need the last ventilator. Ana is thirty-four, with her kidneys, liver, and lungs all failing. Bram is seventy-one, with one failing organ system and otherwise stable. Under most US crisis standards, who is allocated the ventilator? Pick an answer.",
+      "spoken": "What the protocols actually say. Two patients need the last ventilator. Ana is thirty-four, with her kidneys, liver, and lungs all failing. Bram is seventy-one, with one failing organ system and otherwise stable. Under most U.S. crisis standards, who is allocated the ventilator? Pick an answer."
+    },
+    "84001fce": {
+      "slide": "s26",
+      "text": "The score asks one question: who is more likely to survive this hospitalization? It's built from present organ function, not from age.",
+      "spoken": "The score asks one question: who is more likely to survive this hospitalization? It's built from present organ function, not from age."
+    },
+    "64c17b60": {
+      "slide": "s27",
+      "text": "Why triage is not murder. Passing a patient over for the last ventilator is not the same as the surgeon's harvest. Sort each line under the case it describes, triage or the transplant, then press Check answers.",
+      "spoken": "Why triage is not murder. Passing a patient over for the last ventilator is not the same as the surgeon's harvest. Sort each line under the case it describes, triage or the transplant, then press Check answers."
+    },
+    "c48902e7": {
+      "slide": "s27",
+      "text": "Right. In triage, everyone competing for the bed already faces a lethal illness. In the transplant, the doctor creates a new lethal harm against someone who was in no danger.",
+      "spoken": "Right. In triage, everyone competing for the bed already faces a lethal illness. In the transplant, the doctor creates a new lethal harm against someone who was in no danger."
+    },
+    "3c07db4b": {
+      "slide": "s28",
+      "text": "The Dilemma Switchboard. Step through five classic dilemmas, from the rail yard to the ICU. Notice how the interplay of consequences, deontic rights, and double effect governs each scenario. When you're ready, press Continue.",
+      "spoken": "The Dilemma Switchboard. Step through five classic dilemmas, from the rail yard to the ICU. Notice how the interplay of consequences, deontic rights, and double effect governs each scenario. When you're ready, press Continue."
+    },
+    "c849391f": {
+      "slide": "s29",
+      "text": "Trolley problems and triage protocols are no longer only textbook exercises. They are being written into machines.",
+      "spoken": "Trolley problems and triage protocols are no longer only textbook exercises. They are being written into machines."
+    },
+    "4accf903": {
+      "slide": "s29",
+      "text": "Autonomous vehicles. A car's brakes fail. Should it swerve into a wall, killing its passenger, to avoid five pedestrians?",
+      "spoken": "Autonomous vehicles. A car's brakes fail. Should it swerve into a wall, killing its passenger, to avoid five pedestrians?"
+    },
+    "8604538b": {
+      "slide": "s29",
+      "text": "Automated triage algorithms. Hospital AI systems rank patients on organ transplant waiting lists and ICU admission queues, using multi-variable clinical scorecards.",
+      "spoken": "Automated triage algorithms. Hospital AI systems rank patients on organ transplant waiting lists and ICU admission queues, using multi-variable clinical scorecards."
+    },
+    "6aa2c779": {
+      "slide": "s29",
+      "text": "The core lesson: if we don't make our ethical commitments conscious, explicit, and accountable, machines will make them for us in the dark.",
+      "spoken": "The core lesson: if we don't make our ethical commitments conscious, explicit, and accountable, machines will make them for us in the dark."
+    },
+    "11369788": {
+      "slide": "s30",
+      "text": "A trolley problem isn't about trains, Doctor Trackwell smiles. And a triage protocol isn't about arithmetic.",
+      "spoken": "A trolley problem isn't about trains, Doctor Trackwell smiles. And a triage protocol isn't about arithmetic."
+    },
+    "4dc9ae34": {
+      "slide": "s30",
+      "text": "Thought experiments are diagnostic stress-tests for human moral intuitions.",
+      "spoken": "Thought experiments are diagnostic stress-tests for human moral intuitions."
+    },
+    "b88cf6e9": {
+      "slide": "s30",
+      "text": "They demonstrate that we care deeply about both the consequences of our choices and the moral constraints that protect individual rights.",
+      "spoken": "They demonstrate that we care deeply about both the consequences of our choices and the moral constraints that protect individual rights."
+    },
+    "21901f92": {
+      "slide": "s30",
+      "text": "Doing philosophy means learning to state your reasons clearly when these two valid moral demands pull in opposite directions.",
+      "spoken": "Doing philosophy means learning to state your reasons clearly when these two valid moral demands pull in opposite directions."
+    },
+    "2ea2dbdd": {
+      "slide": "s31",
+      "text": "Revisit your intuitions. Here are the five gut-checks you rated at the start. Re-rate each one now, and see whether working through the cases changed where you draw the line. When you're done, press Submit.",
+      "spoken": "Revisit your intuitions. Here are the five gut-checks you rated at the start. Re-rate each one now, and see whether working through the cases changed where you draw the line. When you're done, press Submit."
+    },
+    "d9a90532": {
+      "slide": "s31",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "2e0b1b01": {
+      "slide": "s32",
+      "text": "Doctor Trackwell hangs up her signal lantern. You have been using four ideas all afternoon without their names, she says. Here they are. You already know what they do.",
+      "spoken": "Doctor Trackwell hangs up her signal lantern. You have been using four ideas all afternoon without their names, she says. Here they are. You already know what they do."
+    },
+    "f8495663": {
+      "slide": "s32",
+      "text": "Consequentialism. Pay attention to outcomes and net lives saved, five versus one.",
+      "spoken": "Consequentialism. Pay attention to outcomes and net lives saved, five versus one."
+    },
+    "744ac4bf": {
+      "slide": "s32",
+      "text": "Deontology. Respect inviolable rights, and never treat people merely as tools or bodily buffers.",
+      "spoken": "Deontology. Respect inviolable rights, and never treat people merely as tools or bodily buffers."
+    },
+    "fca88fb2": {
+      "slide": "s32",
+      "text": "The Doctrine of Double Effect. Distinguish between intended means and foreseen, unavoidable side effects.",
+      "spoken": "The Doctrine of Double Effect. Distinguish between intended means and foreseen, unavoidable side effects."
+    },
+    "8a9c0071": {
+      "slide": "s32",
+      "text": "Crisis triage. In tragic scarcity, transparent and fair allocation protocols prevent arbitrary harm.",
+      "spoken": "Crisis triage. In tragic scarcity, transparent and fair allocation protocols prevent arbitrary harm."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "engine": "gemini",
+  "voice": "en-au-storyteller-1",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "b83a69bd": {
+      "slide": "s1",
+      "text": "Forty people step out of a landing craft onto a world nobody has ever farmed, mined, or mapped. It could comfortably hold a billion. The question they're about to face is much older than spaceflight, and nobody has settled it yet. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Forty people step out of a landing craft onto a world nobody has ever farmed, mined, or mapped. It could comfortably hold a billion. The question they're about to face is much older than spaceflight, and nobody has settled it yet. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "83c89a51": {
+      "slide": "s2",
+      "text": "Here's where things stand on the new world.",
+      "spoken": "Here's where things stand on the new world."
+    },
+    "600f767c": {
+      "slide": "s2",
+      "text": "The forty are the first humans here. Nobody else has any claim to the place.",
+      "spoken": "The forty are the first humans here. Nobody else has any claim to the place."
+    },
+    "6e4658de": {
+      "slide": "s2",
+      "text": "They clear a field, build shelter, and fence what they have worked.",
+      "spoken": "They clear a field, build shelter, and fence what they have worked."
+    },
+    "a550726f": {
+      "slide": "s2",
+      "text": "A second ship is already on its way, carrying ten thousand more.",
+      "spoken": "A second ship is already on its way, carrying ten thousand more."
+    },
+    "b3fc74f0": {
+      "slide": "s2",
+      "text": "Behind that one, in time, come as many people as the planet will hold.",
+      "spoken": "Behind that one, in time, come as many people as the planet will hold."
+    },
+    "fb6caf76": {
+      "slide": "s3",
+      "text": "This one isn't graded, and it comes before any of the arguments. Pick the answer closest to your view, and read its note.",
+      "spoken": "This one isn't graded, and it comes before any of the arguments. Pick the answer closest to your view, and read its note."
+    },
+    "f6bb785c": {
+      "slide": "s3",
+      "text": "Hold on to whichever you picked. You'll be asked again at the end.",
+      "spoken": "Hold on to whichever you picked. You'll be asked again at the end."
+    },
+    "a6f2823f": {
+      "slide": "s4",
+      "text": "Say where you stand now. Rate each of these six statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all six, press Submit.",
+      "spoken": "Say where you stand now. Rate each of these six statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all six, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s4",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "32c53758": {
+      "slide": "s5",
+      "text": "John Locke set out to answer a puzzle that sounds simple and is not. If the world was given to everyone in common, how does any part of it become one person's? His answer, in the Second Treatise of Government, from 1689, is that mixing your labour with something unowned makes it your property.",
+      "spoken": "John Locke set out to answer a puzzle that sounds simple and is not. If the world was given to everyone in common, how does any part of it become one person's? His answer, in the Second Treatise of Government, from 1689, is that mixing your labour with something unowned makes it your property."
+    },
+    "4be5395b": {
+      "slide": "s5",
+      "text": "Everyone around him agreed that owning things was normal. Almost nobody could say what made it legitimate.",
+      "spoken": "Everyone around him agreed that owning things was normal. Almost nobody could say what made it legitimate."
+    },
+    "bd2f0ae6": {
+      "slide": "s5",
+      "text": "His answer is about a page long, and every argument that follows either comes from it or attacks it.",
+      "spoken": "His answer is about a page long, and every argument that follows either comes from it or attacks it."
+    },
+    "545dbc36": {
+      "slide": "the-chain",
+      "text": "Locke's argument runs in three steps. Each one has to hold for the next to work.",
+      "spoken": "Locke's argument runs in three steps. Each one has to hold for the next to work."
+    },
+    "6ca47a84": {
+      "slide": "the-chain",
+      "text": "First, you own yourself. Your body is yours, so the work your body does is yours too.",
+      "spoken": "First, you own yourself. Your body is yours, so the work your body does is yours too."
+    },
+    "78eda5c4": {
+      "slide": "the-chain",
+      "text": "Second, when you mix that work with something unowned, you mix in something already yours.",
+      "spoken": "Second, when you mix that work with something unowned, you mix in something already yours."
+    },
+    "3507e779": {
+      "slide": "the-chain",
+      "text": "Third, doing that makes the thing yours. An acorn you pick up stops being common and becomes yours.",
+      "spoken": "Third, doing that makes the thing yours. An acorn you pick up stops being common and becomes yours."
+    },
+    "f0345360": {
+      "slide": "the-chain",
+      "text": "This is called the labour theory of property, and it is still how most people justify owning things.",
+      "spoken": "This is called the labour theory of property, and it is still how most people justify owning things."
+    },
+    "f3bb746c": {
+      "slide": "s7",
+      "text": "This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "827f24d6": {
+      "slide": "s7",
+      "text": "Locke's answer is the first one. Gathering is work, and that is enough.",
+      "spoken": "Locke's answer is the first one. Gathering is work, and that is enough."
+    },
+    "bb60b398": {
+      "slide": "s8",
+      "text": "Locke's chain has three steps. Sort each line into the step it belongs to, then press Check answers.",
+      "spoken": "Locke's chain has three steps. Sort each line into the step it belongs to, then press Check answers."
+    },
+    "089a16af": {
+      "slide": "s8",
+      "text": "Everything rests on step one, self-ownership. Next, the condition Locke attaches to all of this.",
+      "spoken": "Everything rests on step one, self-ownership. Next, the condition Locke attaches to all of this."
+    },
+    "65adfcff": {
+      "slide": "proviso",
+      "text": "Locke could see that the argument as stated would let one person take a continent. So he attached a condition to it.",
+      "spoken": "Locke could see that the argument as stated would let one person take a continent. So he attached a condition to it."
+    },
+    "f9c05e46": {
+      "slide": "proviso",
+      "text": "You may take from what is unowned only where there is enough, and as good, left in common for others.",
+      "spoken": "You may take from what is unowned only where there is enough, and as good, left in common for others."
+    },
+    "96dfbf94": {
+      "slide": "proviso",
+      "text": "Those nine words are the Lockean proviso, and people have argued about them ever since.",
+      "spoken": "Those nine words are the Lockean proviso, and people have argued about them ever since."
+    },
+    "6b41c578": {
+      "slide": "proviso",
+      "text": "Take one acorn from a forest full of oaks and nobody is worse off. Take the forest and they are.",
+      "spoken": "Take one acorn from a forest full of oaks and nobody is worse off. Take the forest and they are."
+    },
+    "2b5700ae": {
+      "slide": "s10",
+      "text": "Locke adds another condition straight afterwards. It's the one people forget.",
+      "spoken": "Locke adds another condition straight afterwards. It's the one people forget."
+    },
+    "c02742fb": {
+      "slide": "s10",
+      "text": "You may take only as much as you can use before it spoils.",
+      "spoken": "You may take only as much as you can use before it spoils."
+    },
+    "70078308": {
+      "slide": "s10",
+      "text": "Gather more apples than you can eat and the surplus was never yours. You wasted what belonged to others.",
+      "spoken": "Gather more apples than you can eat and the surplus was never yours. You wasted what belonged to others."
+    },
+    "41a41d84": {
+      "slide": "s10",
+      "text": "Between them, the two limits keep holdings small. Nobody can pile up much that rots.",
+      "spoken": "Between them, the two limits keep holdings small. Nobody can pile up much that rots."
+    },
+    "17156b02": {
+      "slide": "s10",
+      "text": "Anything past that, Locke says, is more than his share, and belongs to others.",
+      "spoken": "Anything past that, Locke says, is more than his share, and belongs to others."
+    },
+    "d7af02bd": {
+      "slide": "s11",
+      "text": "Move the slider, then change how many people eventually arrive. Three ways of reading enough, and as good, give three different answers. When you're ready, press Continue.",
+      "spoken": "Move the slider, then change how many people eventually arrive. Three ways of reading enough, and as good, give three different answers. When you're ready, press Continue."
+    },
+    "5f4deb25": {
+      "slide": "s12",
+      "text": "Check every statement that is true of Locke's argument, then press Check answers.",
+      "spoken": "Check every statement that is true of Locke's argument, then press Check answers."
+    },
+    "9fe400a0": {
+      "slide": "s12",
+      "text": "Two of those were readings Locke is often saddled with. He never says arriving first is enough. And he holds that property exists before any government does.",
+      "spoken": "Two of those were readings Locke is often saddled with. He never says arriving first is enough. And he holds that property exists before any government does."
+    },
+    "c05f6efd": {
+      "slide": "money",
+      "text": "Both of Locke's limits work only because things rot. Halfway through his own chapter, he removes one of them.",
+      "spoken": "Both of Locke's limits work only because things rot. Halfway through his own chapter, he removes one of them."
+    },
+    "a72104a3": {
+      "slide": "money",
+      "text": "Gold and silver do not spoil. You can hold them for a lifetime and waste nothing.",
+      "spoken": "Gold and silver do not spoil. You can hold them for a lifetime and waste nothing."
+    },
+    "62ca2c8e": {
+      "slide": "money",
+      "text": "So you may sell your surplus apples for coin, and keep the coin honestly, however much piles up.",
+      "spoken": "So you may sell your surplus apples for coin, and keep the coin honestly, however much piles up."
+    },
+    "063df060": {
+      "slide": "money",
+      "text": "The spoilage limit is now toothless. It forbids hoarding food and permits hoarding wealth.",
+      "spoken": "The spoilage limit is now toothless. It forbids hoarding food and permits hoarding wealth."
+    },
+    "a7caaeb1": {
+      "slide": "money",
+      "text": "Locke says that by agreeing to use money, people tacitly consented to unequal holdings.",
+      "spoken": "Locke says that by agreeing to use money, people tacitly consented to unequal holdings."
+    },
+    "abced444": {
+      "slide": "s14",
+      "text": "Locke needs this agreement to be real, because it's what licenses inequality. Critics from Rousseau onward have said an agreement nobody can decline isn't an agreement.",
+      "spoken": "Locke needs this agreement to be real, because it's what licenses inequality. Critics from Rousseau onward have said an agreement nobody can decline isn't an agreement."
+    },
+    "468c1c0a": {
+      "slide": "s15",
+      "text": "This is the hinge of the whole chapter, and it's easy to read straight past.",
+      "spoken": "This is the hinge of the whole chapter, and it's easy to read straight past."
+    },
+    "26745aaa": {
+      "slide": "s15",
+      "text": "Locke opens with limits so tight that nobody could own very much at all.",
+      "spoken": "Locke opens with limits so tight that nobody could own very much at all."
+    },
+    "8c3c0302": {
+      "slide": "s15",
+      "text": "He closes with a defense of large unequal estates, having never withdrawn a word.",
+      "spoken": "He closes with a defense of large unequal estates, having never withdrawn a word."
+    },
+    "4a9f3f6e": {
+      "slide": "s15",
+      "text": "Only the spoilage limit dissolves. Enough, and as good, is left standing.",
+      "spoken": "Only the spoilage limit dissolves. Enough, and as good, is left standing."
+    },
+    "ec77be61": {
+      "slide": "s15",
+      "text": "That is why the proviso is the part still argued over. It is the limit that survived.",
+      "spoken": "That is why the proviso is the part still argued over. It is the limit that survived."
+    },
+    "9c2040d6": {
+      "slide": "s16",
+      "text": "Robert Nozick was broadly on Locke's side, and he still asked why mixing your work into something should be a way of gaining rather than a way of losing. His example, from 1974: if I own a can of tomato juice and spill it in the sea, so that it mingles evenly throughout, do I thereby come to own the sea, or have I foolishly dissipated my tomato juice?",
+      "spoken": "Robert Nozick was broadly on Locke's side, and he still asked why mixing your work into something should be a way of gaining rather than a way of losing. His example, from 1974: if I own a can of tomato juice and spill it in the sea, so that it mingles evenly throughout, do I thereby come to own the sea, or have I foolishly dissipated my tomato juice?"
+    },
+    "f411e60e": {
+      "slide": "s17",
+      "text": "Almost nobody picks the first answer, which is the problem. So mixing alone can't be what does the work.",
+      "spoken": "Almost nobody picks the first answer, which is the problem. So mixing alone can't be what does the work."
+    },
+    "9dc92457": {
+      "slide": "s18",
+      "text": "Even if mixing works, Locke never says how much of the world one piece of work buys you.",
+      "spoken": "Even if mixing works, Locke never says how much of the world one piece of work buys you."
+    },
+    "d229688a": {
+      "slide": "s18",
+      "text": "You clear one field in a valley. Do you own the field, the valley, or the continent?",
+      "spoken": "You clear one field in a valley. Do you own the field, the valley, or the continent?"
+    },
+    "be881619": {
+      "slide": "s18",
+      "text": "The forty plough a hundred acres and draw their boundary around a hemisphere.",
+      "spoken": "The forty plough a hundred acres and draw their boundary around a hemisphere."
+    },
+    "21f00f01": {
+      "slide": "s18",
+      "text": "Locke's answer is that you own what you have worked, and working is a matter of degree.",
+      "spoken": "Locke's answer is that you own what you have worked, and working is a matter of degree."
+    },
+    "c41d92b0": {
+      "slide": "s18",
+      "text": "Every land claim in history has had to answer this, and most have answered generously.",
+      "spoken": "Every land claim in history has had to answer this, and most have answered generously."
+    },
+    "a8bd6653": {
+      "slide": "s19",
+      "text": "Complete the summary so far. Choose an option for each gap, or type a word for the last one, then press Check.",
+      "spoken": "Complete the summary so far. Choose an option for each gap, or type a word for the last one, then press Check."
+    },
+    "d3d27d03": {
+      "slide": "s19",
+      "text": "Locke's chain runs from self-ownership through labour to property, bounded by two conditions. The spoilage limit dissolves once there's money. The proviso doesn't, which is why it's still the contested part.",
+      "spoken": "Locke's chain runs from self-ownership through labour to property, bounded by two conditions. The spoilage limit dissolves once there's money. The proviso doesn't, which is why it's still the contested part."
+    },
+    "87b7e1a5": {
+      "slide": "s20",
+      "text": "Locke was not a detached scholar writing about imaginary islands. He had a direct interest in colonial land.",
+      "spoken": "Locke was not a detached scholar writing about imaginary islands. He had a direct interest in colonial land."
+    },
+    "778b9ca0": {
+      "slide": "s20",
+      "text": "He was secretary to the Lords Proprietors of Carolina and helped draft its constitutions.",
+      "spoken": "He was secretary to the Lords Proprietors of Carolina and helped draft its constitutions."
+    },
+    "5453ab84": {
+      "slide": "s20",
+      "text": "Those constitutions granted every freeman absolute power and authority over his slaves.",
+      "spoken": "Those constitutions granted every freeman absolute power and authority over his slaves."
+    },
+    "602984c8": {
+      "slide": "s20",
+      "text": "He held shares in the Royal African Company, which traded in enslaved people.",
+      "spoken": "He held shares in the Royal African Company, which traded in enslaved people."
+    },
+    "e352616b": {
+      "slide": "s20",
+      "text": "The same book also contains a fierce condemnation of slavery. Scholars have argued about that ever since.",
+      "spoken": "The same book also contains a fierce condemnation of slavery. Scholars have argued about that ever since."
+    },
+    "8df9a7a2": {
+      "slide": "vacant-land",
+      "text": "Chapter Five talks about the vacant places of America, and about people who leave land unenclosed.",
+      "spoken": "Chapter Five talks about the vacant places of America, and about people who leave land unenclosed."
+    },
+    "b2487adc": {
+      "slide": "vacant-land",
+      "text": "The reasoning runs: unworked land is unowned, and land that is not enclosed and farmed counts as unworked.",
+      "spoken": "The reasoning runs: unworked land is unowned, and land that is not enclosed and farmed counts as unworked."
+    },
+    "19f6f934": {
+      "slide": "vacant-land",
+      "text": "Anyone already living there is then not an owner but an occupant, and the ground is free to take.",
+      "spoken": "Anyone already living there is then not an owner but an occupant, and the ground is free to take."
+    },
+    "eeac3174": {
+      "slide": "vacant-land",
+      "text": "Because the land counted as empty, enough and as good was left by definition. A limit met automatically is not a limit.",
+      "spoken": "Because the land counted as empty, enough and as good was left by definition. A limit met automatically is not a limit."
+    },
+    "68df15ae": {
+      "slide": "vacant-land",
+      "text": "Lawyers later hardened this into a doctrine with a name: terra nullius, nobody's land.",
+      "spoken": "Lawyers later hardened this into a doctrine with a name: terra nullius, nobody's land."
+    },
+    "fc31075b": {
+      "slide": "s22",
+      "text": "Pick an answer.",
+      "spoken": "Pick an answer."
+    },
+    "9e251051": {
+      "slide": "s22",
+      "text": "The proviso was never repealed or argued against. It was left in place, and the facts were described so that it could not possibly be breached.",
+      "spoken": "The proviso was never repealed or argued against. It was left in place, and the facts were described so that it could not possibly be breached."
+    },
+    "6d3f58c6": {
+      "slide": "two-politics",
+      "text": "Two traditions start from Locke's self-ownership and finish in opposite places. The proviso is where they part. On the right-libertarian side, with Nozick, the world began unowned. You may take from it, and the only test is whether anyone ends up worse off than they would have been had nobody taken anything at all. Since an economy with property makes almost everyone richer than a wild planet would, nearly every holding passes the test. On the left-libertarian side, with Paine, George, and Otsuka, the world began owned by everyone in common. You may still take, because land left idle feeds nobody, but you've taken something that was not only yours. So you keep what you built, and pay the rest of humanity for the ground you built it on.",
+      "spoken": "Two traditions start from Locke's self-ownership and finish in opposite places. The proviso is where they part. On the right-libertarian side, with Nozick, the world began unowned. You may take from it, and the only test is whether anyone ends up worse off than they would have been had nobody taken anything at all. Since an economy with property makes almost everyone richer than a wild planet would, nearly every holding passes the test. On the left-libertarian side, with Paine, George, and Otsuka, the world began owned by everyone in common. You may still take, because land left idle feeds nobody, but you've taken something that was not only yours. So you keep what you built, and pay the rest of humanity for the ground you built it on."
+    },
+    "0018a825": {
+      "slide": "two-politics",
+      "text": "Both hold that you own yourself. They differ on one question: what the world was before anyone touched it.",
+      "spoken": "Both hold that you own yourself. They differ on one question: what the world was before anyone touched it."
+    },
+    "d40334c3": {
+      "slide": "s24",
+      "text": "Thomas Paine made the left-libertarian case a century after Locke, and attached an actual scheme to it. In Agrarian Justice, in 1797, he wrote that the earth, in its natural uncultivated state, was, and ever would have continued to be, the common property of the human race. Owners of cultivated land, he argued, owe everyone a ground-rent for the earth they did not make.",
+      "spoken": "Thomas Paine made the left-libertarian case a century after Locke, and attached an actual scheme to it. In Agrarian Justice, in 1797, he wrote that the earth, in its natural uncultivated state, was, and ever would have continued to be, the common property of the human race. Owners of cultivated land, he argued, owe everyone a ground-rent for the earth they did not make."
+    },
+    "3873195d": {
+      "slide": "s24",
+      "text": "Improvers keep what they add. What they may not keep is the value of ground they did not make.",
+      "spoken": "Improvers keep what they add. What they may not keep is the value of ground they did not make."
+    },
+    "c2333578": {
+      "slide": "s25",
+      "text": "This one isn't graded. Almost every argument about tax, land, and inheritance runs back to this question. Pick the answer closest to your view, and read its note.",
+      "spoken": "This one isn't graded. Almost every argument about tax, land, and inheritance runs back to this question. Pick the answer closest to your view, and read its note."
+    },
+    "7f4cfd0e": {
+      "slide": "s25",
+      "text": "This isn't a question about facts. The disagreement is about what an untouched world amounts to morally. That's why the two libertarianisms can share a premise and still end up at opposite policies.",
+      "spoken": "This isn't a question about facts. The disagreement is about what an untouched world amounts to morally. That's why the two libertarianisms can share a premise and still end up at opposite policies."
+    },
+    "8238d55c": {
+      "slide": "s26",
+      "text": "Everything so far has been about land, which has a hard edge and runs out. Ideas do neither.",
+      "spoken": "Everything so far has been about land, which has a hard edge and runs out. Ideas do neither."
+    },
+    "837be7a6": {
+      "slide": "s26",
+      "text": "If I use your field, you cannot. If I use your idea, you still have all of it.",
+      "spoken": "If I use your field, you cannot. If I use your idea, you still have all of it."
+    },
+    "46235ab5": {
+      "slide": "s26",
+      "text": "Something that cannot be used up this way is called non-rivalrous.",
+      "spoken": "Something that cannot be used up this way is called non-rivalrous."
+    },
+    "cde078bb": {
+      "slide": "s26",
+      "text": "So the proviso looks automatically satisfied. Learning a song leaves the song exactly as it was.",
+      "spoken": "So the proviso looks automatically satisfied. Learning a song leaves the song exactly as it was."
+    },
+    "0871c91e": {
+      "slide": "s26",
+      "text": "That is the strongest Lockean case there is for owning what you think of.",
+      "spoken": "That is the strongest Lockean case there is for owning what you think of."
+    },
+    "d0d5f342": {
+      "slide": "reversal",
+      "text": "The same feature runs the other way the moment owning means the right to stop other people.",
+      "spoken": "The same feature runs the other way the moment owning means the right to stop other people."
+    },
+    "e5a73cd6": {
+      "slide": "reversal",
+      "text": "A patent takes nothing from an infinite pool. It removes from common use something everyone could use before.",
+      "spoken": "A patent takes nothing from an infinite pool. It removes from common use something everyone could use before."
+    },
+    "394084a3": {
+      "slide": "reversal",
+      "text": "Yesterday anyone could use that method. Today one person may. That is less left for others, not more.",
+      "spoken": "Yesterday anyone could use that method. Today one person may. That is less left for others, not more."
+    },
+    "1566253a": {
+      "slide": "reversal",
+      "text": "And every idea is built out of earlier ones, so Locke's claim that labour supplies almost all the value runs backwards here.",
+      "spoken": "And every idea is built out of earlier ones, so Locke's claim that labour supplies almost all the value runs backwards here."
+    },
+    "b182a831": {
+      "slide": "reversal",
+      "text": "The question becomes how much of a shared inheritance one person may fence, and for how long. Patents and copyrights both run out after a term set by law.",
+      "spoken": "The question becomes how much of a shared inheritance one person may fence, and for how long. Patents and copyrights both run out after a term set by law."
+    },
+    "bc04b284": {
+      "slide": "s28",
+      "text": "This one isn't graded, and the law disagrees with itself about all three. Pick the answer closest to your view, and read its note.",
+      "spoken": "This one isn't graded, and the law disagrees with itself about all three. Pick the answer closest to your view, and read its note."
+    },
+    "909866a8": {
+      "slide": "s28",
+      "text": "The Lockean question underneath is the same each time: how much of this did you actually make?",
+      "spoken": "The Lockean question underneath is the same each time: how much of this did you actually make?"
+    },
+    "a03c5821": {
+      "slide": "s29",
+      "text": "Check every statement that is true, then press Check answers.",
+      "spoken": "Check every statement that is true, then press Check answers."
+    },
+    "2c0766b0": {
+      "slide": "s29",
+      "text": "Many people can hold the same idea at once, but owning an idea means the right to exclude, and excluding does take something from the commons.",
+      "spoken": "Many people can hold the same idea at once, but owning an idea means the right to exclude, and excluding does take something from the commons."
+    },
+    "9deb2835": {
+      "slide": "s30",
+      "text": "There is a completely different answer to the original question, and it doesn't use rights at all. Jeremy Bentham wrote that property and law are born together and die together. Before laws were made there was no property, and take away laws, and property ceases.",
+      "spoken": "There is a completely different answer to the original question, and it doesn't use rights at all. Jeremy Bentham wrote that property and law are born together and die together. Before laws were made there was no property, and take away laws, and property ceases."
+    },
+    "18f48c85": {
+      "slide": "s30",
+      "text": "On this view property is not discovered but invented, and it is judged by what it produces.",
+      "spoken": "On this view property is not discovered but invented, and it is judged by what it produces."
+    },
+    "aacb2c1c": {
+      "slide": "s31",
+      "text": "Here are two ways to justify the same fence. The first is a natural right, something found. Property exists before any government, because working on a thing makes it yours. A state that seizes it does something wrong rather than merely changing a rule. The proviso is a boundary you may not cross, even when crossing it would make everyone better off. The second is a useful convention, something made. Property exists because secure holdings produce more food, more building, and less fighting than the alternatives. There's no natural right there to breach. The proviso is worth keeping exactly as long as keeping it makes the system work better.",
+      "spoken": "Here are two ways to justify the same fence. The first is a natural right, something found. Property exists before any government, because working on a thing makes it yours. A state that seizes it does something wrong rather than merely changing a rule. The proviso is a boundary you may not cross, even when crossing it would make everyone better off. The second is a useful convention, something made. Property exists because secure holdings produce more food, more building, and less fighting than the alternatives. There's no natural right there to breach. The proviso is worth keeping exactly as long as keeping it makes the system work better."
+    },
+    "e1f94c5a": {
+      "slide": "s31",
+      "text": "Locke keeps sliding into the second. He argues that enclosure raises the common stock so far that a landless English labourer eats better than a king in America.",
+      "spoken": "Locke keeps sliding into the second. He argues that enclosure raises the common stock so far that a landless English labourer eats better than a king in America."
+    },
+    "0ddbf418": {
+      "slide": "s32",
+      "text": "Complete the account of where the argument ended up. Choose an option for two gaps, and type a word for the other two, then press Check.",
+      "spoken": "Complete the account of where the argument ended up. Choose an option for two gaps, and type a word for the other two, then press Check."
+    },
+    "f639dad4": {
+      "slide": "s32",
+      "text": "The two libertarianisms share a premise and split on one question about the original world. Bentham refuses the question, because on his account property is something law creates.",
+      "spoken": "The two libertarianisms share a premise and split on one question about the original world. Bentham refuses the question, because on his account property is something law creates."
+    },
+    "eff48b06": {
+      "slide": "s33",
+      "text": "The argument is not settled, and states are currently having it about actual worlds.",
+      "spoken": "The argument is not settled, and states are currently having it about actual worlds."
+    },
+    "af8388fe": {
+      "slide": "s33",
+      "text": "The Outer Space Treaty of 1967 says space and the celestial bodies are not subject to national appropriation.",
+      "spoken": "The Outer Space Treaty of 1967 says space and the celestial bodies are not subject to national appropriation."
+    },
+    "f2ebcd2f": {
+      "slide": "s33",
+      "text": "Not by claim of sovereignty, not by use, not by occupation. That is a flat rejection of first-taking.",
+      "spoken": "Not by claim of sovereignty, not by use, not by occupation. That is a flat rejection of first-taking."
+    },
+    "60bf1476": {
+      "slide": "s33",
+      "text": "A United States statute of 2015 grants its citizens ownership of resources they extract out there.",
+      "spoken": "A United States statute of 2015 grants its citizens ownership of resources they extract out there."
+    },
+    "c1754aa4": {
+      "slide": "s33",
+      "text": "The treaty forbids owning the ground. The statute permits owning what you dig out of it.",
+      "spoken": "The treaty forbids owning the ground. The statute permits owning what you dig out of it."
+    },
+    "098c6cfc": {
+      "slide": "s34",
+      "text": "The ten thousand have landed. The forty have a fenced field, a mill, and a claim drawn around a hemisphere. This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "The ten thousand have landed. The forty have a fenced field, a mill, and a claim drawn around a hemisphere. This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "596ee6fd": {
+      "slide": "s34",
+      "text": "Compare this with what you picked at the start. Whichever way you've moved, the useful thing is being able to say which argument moved you.",
+      "spoken": "Compare this with what you picked at the start. Whichever way you've moved, the useful thing is being able to say which argument moved you."
+    },
+    "5d29e18a": {
+      "slide": "s35",
+      "text": "Here's where you stood before any of the arguments. Re-rate each statement and see what moved, then press Submit. Visit every slide, answer each question correctly, and rate all six statements to complete the lesson.",
+      "spoken": "Here's where you stood before any of the arguments. Re-rate each statement and see what moved, then press Submit. Visit every slide, answer each question correctly, and rate all six statements to complete the lesson."
+    },
+    "104cef2d": {
+      "slide": "s35",
+      "text": "Nine words have been carrying the weight the whole way: enough, and as good, left in common for others. Almost everyone agrees to them. Almost nobody agrees about what they mean, and the difference decides who gets a world.",
+      "spoken": "Nine words have been carrying the weight the whole way: enough, and as good, left in common for others. Almost everyone agrees to them. Almost nobody agrees about what they mean, and the difference decides who gets a world."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}
