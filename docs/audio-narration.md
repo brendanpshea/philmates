@@ -13,7 +13,9 @@ always work, so nothing is ever locked.
 **In use:** ten lessons, starting with the pilot, *The Midnight Tribunal*
 (`ethical-theory/utilitarianism`). Every AI-ethics lesson except *Growing Up in
 Springfield* is narrated. The catalog marks narrated lessons with a
-**Narrated** badge.
+**Narrated** badge. Four of them use a Gemini voice chosen for the lesson (see
+*Gemini voices* below): *The Masquerade of Silverport*, *The Last Job*, *Move
+On* and *The Ship's Chest*. The rest use edge-tts.
 
 Scripts for five of them were drafted by a smaller model (Sonnet) from a written
 brief, then spot-checked against the slides for changed facts. That works well:
@@ -113,6 +115,32 @@ python tools/generate-audio.py lessons/<topic>/<lesson>
 - **Pronunciation:** names the voice gets wrong are respelled for the voice only
   in `tools/pronunciations.json` (`{"Cy": "Sigh"}`). Captions keep the real
   spelling. Listen to new names before shipping.
+- **Gemini voices (since October 2026):** `--engine gemini` renders with
+  Gemini TTS instead (default model `gemini-3.8-flash-lite-tts`). It needs a
+  key (`GEMINI_API_KEY`, or a `goog-api-key:` line in `.env.local`) and
+  `pip install lameenc`. Each lesson can have its own `--voice`, chosen from
+  Google's voice library of about a thousand voices (`GET /v1beta/voices`
+  lists each voice's accent, age and manner), plus an optional `--style`,
+  one short delivery note. All of these are remembered in the manifest.
+  - **Use `--batch`.** Line by line, Tier 1 allows only 100 requests a day
+    per model, and each line is one request: one lesson a day at best. A
+    batch job has no daily cap, costs half, and came back in minutes in
+    testing. Batch requests can't carry a style, so a batch voice runs
+    without one. That's no loss: a trial style ("warm, unhurried storyteller
+    with a hint of mischief") sounded overdone, and the lessons in use run
+    without one.
+  - **Choosing a voice:** match it to the lesson's frame. The four in use:
+    `en-gb-storyteller-2` (Masquerade: a witty British woman at a candlelit
+    ball), `en-gb-storyteller-4` (Ship's Chest: a Bristol man for a Bristol
+    harbor), `en-us-sami` (Move On: a calm American woman, since the lesson is
+    about today), `en-za-podcaster-4` (The Last Job: a wry game-show host).
+  - **Cost:** about 25 audio tokens a second. A 2,500-word lesson is about
+    30,000 tokens: roughly $0.09 by batch or $0.18 line by line on
+    flash-lite, at the rates of October 2026. Google says those rates double
+    on 1 January 2027.
+  - **Pacing:** Gemini voices read about 2.3 words a second, against 2.6 for
+    edge-tts, so a lesson runs about a tenth longer. A style asking for an
+    "unhurried" delivery slowed one lesson by a further fifth.
 - **Size:** about 6 KB per second of speech. A lesson's narration runs 1,800 to
   2,700 words (11 to 17 minutes), which comes to 4 to 6 MB. It ships in the
   SCORM package. If many lessons get narrated, consider Git LFS for

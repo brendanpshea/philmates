@@ -1,5 +1,7 @@
 {
-  "voice": "en-US-AvaMultilingualNeural",
+  "engine": "gemini",
+  "voice": "en-us-sami",
+  "model": "gemini-3.8-flash-lite-tts",
   "clips": {
     "6de19c99": {
       "slide": "s1",
