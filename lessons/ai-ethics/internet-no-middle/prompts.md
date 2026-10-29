@@ -99,14 +99,16 @@ ledger, watching them, with a row of many identical filled ledgers on a shelf
 above, each one tagged with a blank paper tab, warm lamplight on the ledger, the
 customer lit more coldly, deep indigo corners.
 
-**Re-roll (2026-10-28):** the first render made both figures light-skinned men
-with the same brown hair. Use this instead:
+**Re-rolled 2026-10-29** (the first render made both figures light-skinned men
+with the same brown hair), with this single-image prompt:
 
-A shop seen from behind the counter: a young South Asian man browses shelves in
-the middle distance while an older Black woman clerk with short gray hair writes
-in a long ledger at a tall desk, glancing up at him, with a row of identical
-ledgers tagged with blank paper tabs on a shelf above, warm lamplight, deep
-indigo corners.
+```
+16-bit SNES pixel art. Hard pixel edges, limited palette of phosphor green and warm beige against deep indigo shadows, one burnt-orange accent. No text, letters, numbers, or labels anywhere.
+
+A shop seen from behind the counter: a young South Asian man browses shelves in the middle distance while an older Black woman clerk with short gray hair writes in a long ledger at a tall desk, glancing up at him, a row of identical ledgers with blank paper tabs on a shelf above, warm lamplight.
+
+One single square image, not a grid.
+```
 
 ## relic-baran
 

@@ -83,38 +83,45 @@ Asking for one single simple shape per reel avoids that. The trade-off is that
 three matching stars read as a jackpot rather than the near miss the slide
 describes; a reroll aiming for the third reel caught mid-scroll would be better.
 
-## Re-rolls needed (review 2026-10-28)
+## Re-rolls done (2026-10-29)
 
-Each line is one panel, written to paste on its own with the shared style
-suffix above. Update the panel's `alt` in `index.html` when you swap it in.
+These replaced the panels flagged in the 2026-10-28 review and supersede
+those panels' prompts above.
 
-- **prospector** (shows a jackpot, but the slide teaches the near miss): A tall
-  brass gambling machine in a dim saloon corner, its round window showing two
-  plain gold stars on the center line and the third reel stopped with its star
-  just below the line, a heavy brass crank on its right side, a silver
-  ten-gallon hat on top as the prize, brass tokens on the floorboards, a
-  standing oil lamp at left, no people or shadows.
-- **saloon** (the crowd is all young men; faint glyphs on the wall plaque): A
-  western saloon interior, at left a dark-haired woman singer in her forties in
-  a plum saloon dress glaring across the room, at right a brass gramophone horn
-  on the bar toasted by a small mixed crowd of men and women, young and old,
-  with a range of skin tones, a player piano with keys moving by themselves,
-  bare plank walls with no signs.
-- **meeting** (the crowd is nearly all men in cowboy hats): A wooden town-hall
-  interior at dusk seen from behind the pews, a mixed crowd of townsfolk (men
-  and women, young and old, a range of skin tones, some bareheaded or in
-  bonnets) facing a brass cabinet machine at the front with a long blank paper
-  tape hanging from its slot, several hands half-raised for a vote, warm
-  lantern light.
-- **telegram** (letter-like headings and lines on the pinned notices): A
-  gray-haired Black woman sheriff with a star badge at a wooden desk at night,
-  reading an impossibly long blank ticker-tape printout that spills over the
-  desk and coils across the floor, the wall behind her holding only pinned
-  curls of blank tape, oil lamp glow.
-- **main-street** (optional; letter-like glyphs on the middle storefront's
-  sign): reuse the prompt above, adding "every signboard is plain unpainted
-  wood".
-- **boiler** (optional; the window shows two similar young people, the slide
-  says four): reuse the prompt above, replacing the window clause with "one
-  small warmly lit window where four young card-sorters, two women and two
-  men with a range of skin tones, sort stacks of punch cards".
+### Sheet 1 (required)
+
+```
+16-bit SNES pixel art, a steampunk frontier-western town. Hard pixel edges, limited palette, warm gold lamplight, dark indigo shadows. No text, letters, or numbers anywhere; every sign, tape, and paper is blank.
+
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: a tall brass gambling machine in a dim saloon corner, its window showing two gold stars on the center line and the third star stopped just below it, a brass crank at its side, a silver cowboy hat on top as the prize, no people.
+Top-right: a saloon where a dark-haired woman singer in her forties, in a plum dress, glares at a brass gramophone horn on the bar while a mixed crowd, men and women, young and old, of varied skin tones, raise glasses to it.
+Bottom-left: a gray-haired Black woman sheriff with a star badge at a desk at night, reading an endless ticker tape that spills off the desk and coils across the floor, oil-lamp glow.
+Bottom-right: a lantern-lit town hall seen from behind the pews, a mixed crowd of men and women, young and old, of varied skin tones, facing a wardrobe-sized brass machine with one round dial, a few hands half-raised for a vote.
+```
+
+| Quadrant | File |
+|---|---|
+| Top-left | `amberville/assets/prospector.png` |
+| Top-right | `amberville/assets/saloon.png` |
+| Bottom-left | `amberville/assets/telegram.png` |
+| Bottom-right | `amberville/assets/meeting.png` |
+
+### Sheet 2 (optional; the second takes went unused)
+
+```
+16-bit SNES pixel art, a steampunk frontier-western town. Hard pixel edges, limited palette, warm gold lamplight, dark indigo shadows. No text, letters, or numbers anywhere; every sign, tape, and paper is blank.
+
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: a dusty frontier main street at dawn, wooden storefronts whose signboards are plain unpainted wood, a small white church with a satellite dish on its steeple, telegraph poles, a shipping crate on the platform, one tumbleweed.
+Top-right: a big iron-and-brass boiler house beside a shrunken creek at dusk, thick pipes dipping into the water, a coal cart on rails, and one lit window where four young people, two women and two men of varied skin tones, sort punch cards.
+Bottom-left: a close view of a brass gambling machine's round window, two gold stars on the center line and the third reel still spinning, its star sliding just past the line.
+Bottom-right: a sheriff's office at night, a gray-haired Black woman sheriff standing on her chair as blank ticker tape floods the floor around her desk like snow.
+```
+
+| Quadrant | File |
+|---|---|
+| Top-left | `amberville/assets/main-street.png` |
+| Top-right | `amberville/assets/boiler.png` |
+| Bottom-left | second take of `amberville/assets/prospector.png` |
+| Bottom-right | second take of `amberville/assets/telegram.png` |

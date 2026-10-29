@@ -136,26 +136,24 @@ one candle on the floor between them.
 
 ---
 
-## Re-rolls needed (standards review, 2026-10-28)
+## Re-rolls done (2026-10-29)
 
-Use the shared style suffix above with each.
+These replaced the panels flagged in the 2026-10-28 review and supersede
+those panels' prompts above.
 
-- **creature-wakes** (required): the creature's face is lit, frontal and
-  skull-like, which makes it a movie monster on the slide that follows "not a
-  mindless brute." Re-roll: *An attic laboratory at night: a very tall gaunt
-  figure sits upright on a workbench with its whole face turned away from the
-  viewer into deep shadow, while in the foreground a young white man with brown
-  hair, in shirtsleeves, stumbles backward past a toppling stool and a falling
-  candle.*
-- **village-rejection** (required): every villager is a pale young or
-  middle-aged man. Re-roll: *Dusk at the edge of a snowy stone village: a mixed
-  crowd of villagers, men and women, young and old, with a range of skin tones,
-  raise sticks and two burning torches as they drive a tall hooded figure, arms
-  over its shadowed face, back toward dark pine trees.*
-- **idea-wiener** (optional): the control lever is still attached and sparking,
-  so "can't be stopped" doesn't read. Re-roll: *A brass clockwork machine
-  running at full speed, its control lever snapped clean off and lying on the
-  floor below an empty switch socket, a wooden bucket overflowing beside it.*
-- **victor-workshop** (optional): a small paper on the back wall shows a skull
-  over lines of scribble that read as text. Re-roll with the same prompt plus
-  *bare plaster wall, no papers or posters.*
+```
+16-bit SNES pixel art, Gothic 1790s Europe. Hard pixel edges, limited cold palette of bone white, slate gray, and deep indigo, with one warm candle-gold accent. No text, letters, or numbers anywhere.
+
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: an attic laboratory at night, where a very tall gaunt figure sits up on a workbench with its whole face turned away into deep shadow, while a young white man with brown hair, in shirtsleeves, stumbles backward past a falling candle.
+Top-right: dusk at the edge of a snowy stone village, a mixed crowd of men and women, young and old, of varied skin tones, waving sticks and two torches to drive a tall hooded figure, arms over its shadowed face, back toward dark pines.
+Bottom-left: an empty attic laboratory at night with bare plaster walls, a long workbench of glass jars, copper wire, and brass instruments, a large form under a sheet at the far end, one guttering candle, rain on a tall arched window.
+Bottom-right: a brass clockwork machine running at full speed, its control lever snapped off and lying on the floor below an empty socket, a wooden bucket overflowing beside it, no people.
+```
+
+| Quadrant | File |
+|---|---|
+| Top-left | `creature-wakes.png` |
+| Top-right | `village-rejection.png` |
+| Bottom-left | `victor-workshop.png` (optional) |
+| Bottom-right | `idea-wiener.png` (optional) |

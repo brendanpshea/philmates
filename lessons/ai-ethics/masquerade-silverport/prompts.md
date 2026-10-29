@@ -35,17 +35,17 @@ host announces that one guest is a clockwork automaton. Seven rules:
 All five sheets (A through E) generated and split into twenty 512×512 PNGs in
 `assets/`. Full sheets archived in `temp/masquerade-silverport-sheets/`.
 
-## Re-roll queue (review 2026-10-28)
+## Re-roll done (2026-10-29)
 
-Optional. The cast across the panels is varied and nothing needs re-rolling for
-casting. One panel has marks that read as handwriting:
+`memorized.png` was re-rolled on its own (its note had cursive-looking marks):
 
-- `memorized.png`: the vendor's note shows cursive-looking scribbles, not
-  abstract shapes. Re-roll with the style line, then: "A young person with short
-  curly red hair in a gray shirt, seen from behind, walks down a sunny market
-  street, puzzled by a note of three thick abstract wavy lines, with no writing
-  on it, that a middle-aged Black woman vendor hands them." Then "One single
-  square image, not a grid."
+```
+16-bit SNES pixel art, a candlelit 18th-century port town and its grand ballroom. Hard pixel edges, limited palette, dark navy background, warm candlelight. No text, letters, or numbers anywhere.
+
+A young person with short curly red hair in a gray shirt, seen from behind, walks down a sunny market street, puzzled by a note of three thick abstract wavy lines, with no writing on it, that a middle-aged Black woman vendor hands them.
+
+One single square image, not a grid.
+```
 
 ## Style line (first line of every sheet)
 

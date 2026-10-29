@@ -72,24 +72,29 @@ Alt text in `index.html` describes the panels as they are.
 The sheet PNGs were deleted after splitting (2026-10-05) to keep the SCORM zip
 small. Regenerate a sheet from its prompt if a panel needs redoing.
 
-## Re-rolls needed (review of 2026-10-28)
+## Re-rolls done (2026-10-29)
 
-Two panels show a uniform cast. Re-roll each as a single panel with the house
-style above, then update its `alt` in `index.html`.
+These replaced the panels flagged in the 2026-10-28 review and supersede
+those panels' prompts above.
 
-- **`wheelbarrow.png`** (sheet C, bottom-left). Everyone is a light-skinned
-  man, in a medieval European street, on a slide about Zimbabwe in 2008.
-  > A market street in daylight in a modern southern African town, where a
-  > middle-aged Black woman in a headscarf pushes a wheelbarrow piled high with
-  > bundles of plain green banknotes up to a bakery stall and an older
-  > gray-haired Black man behind the stall holds out one small loaf of bread,
-  > with loose banknotes blowing along the ground like fallen leaves.
-- **`coaster.png`** (sheet D, bottom-left). All three riders are young and
-  light-skinned.
-  > A roller coaster at night whose track is shaped like a jagged line chart,
-  > with one cart at the very top carrying three riders with their arms in the
-  > air (a young Black woman, a middle-aged South Asian man, and an older white
-  > woman with gray hair) and gold coins flying out of their pockets.
+Shared with *Nobody Asked Nell* (same house style).
+
+```
+16-bit SNES pixel art, a playful Saturday-morning-cartoon world. Hard pixel edges, dithered shading, chunky shapes, dark navy background, accents of green, magenta, sky blue, and amber. Coins are plain gold discs, banknotes plain green rectangles. No text, letters, numbers, or logos anywhere.
+
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: a modern southern African market street in daylight, where a middle-aged Black woman in a headscarf pushes a wheelbarrow heaped with banknotes to a bakery stall and an older gray-haired Black man hands her one small loaf of bread.
+Top-right: a roller coaster at night whose track is a jagged line chart, one cart at the top with three riders, arms up: a young Black woman, a middle-aged South Asian man, and an older white woman with gray hair, gold coins flying from their pockets.
+Bottom-left: a round family dinner table seen from directly above, four place settings and a small green-capped test tube in the center, four pairs of hands in clearly different skin tones, deep brown to pale: two raised flat in a stop gesture, one reaching for the tube, one folded, no faces.
+Bottom-right: a close view of a green-capped test tube on a wooden table, surrounded by four hands in clearly different skin tones, deep brown, medium brown, light tan, and pale, two raised in a stop gesture, one reaching, one resting, no faces.
+```
+
+| Quadrant | File |
+|---|---|
+| Top-left | `villains-ledger/assets/wheelbarrow.png` |
+| Top-right | `villains-ledger/assets/coaster.png` |
+| Bottom-left | `nobody-asked-nell/assets/family-table.png` |
+| Bottom-right | second take of `nobody-asked-nell/assets/family-table.png` |
 
 ## House style (already included in each sheet prompt)
 

@@ -53,17 +53,17 @@ Where the panels differ from the prompts (alt text follows the panels):
   the silhouette.
 - `fish-school.png` faces toward the net, not away from it.
 
-## Re-rolls needed (2026-10-28)
+## Re-rolls done (2026-10-29)
 
-- `family-table.png` (Sheet B, bottom-right): all four pairs of hands are the
-  same pale tone, so the family reads as one skin color. Re-roll that panel
-  alone with this prompt:
+These replaced the panels flagged in the 2026-10-28 review and supersede
+those panels' prompts above.
 
-  > A round wooden family dinner table seen from above with four place
-  > settings and one small test tube with a green cap in the centre. Four
-  > pairs of hands in clearly different skin tones, from deep brown to light
-  > tan to pale, rest around it: two pairs held up flat in a stop gesture, one
-  > pair reaching toward the tube, one pair folded. No faces.
+`family-table.png` came from a sheet shared with *The Villain's Ledger*; the
+full sheet is in that lesson's `prompts.md`. Its panel:
+
+```
+a round family dinner table seen from directly above, four place settings and a small green-capped test tube in the center, four pairs of hands in clearly different skin tones, deep brown to pale: two raised flat in a stop gesture, one reaching for the tube, one folded, no faces.
+```
 
 ## House style (already included in each sheet prompt)
 
