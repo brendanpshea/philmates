@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wolf at the Door: Animal Ethics · PhilMates</title>
+  <meta name="description" content="May we use pigs to save lives? Singer, Regan, and Cohen on pig organs, pork, and fruit flies, as the Big Bad Wolf asks three pigs for a kidney.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
+  <script type="module" src="../../../shared/phil-core.js?v=14"></script>
+  <script type="module" src="./assets/dials.js"></script>
+  <script type="module" src="./assets/threers.js"></script>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     The frame is the folk tale of the three little pigs (public domain),
+     years later. Nothing comes from Disney's 1933 cartoon. The pigs' names,
+     the Wolf's illness, the county hospital, and every staff member are
+     invented; every "real world" fact is real and dated (sources in
+     phil_mates_outlines.md). The story's animals talk and sit on
+     committees; farm and lab animals don't. That difference is Cohen's
+     criterion, and the lesson asks whether it matters.
+     Arguments are credited by name to Singer, Regan, Cohen, Russell and
+     Burch, and Birch, never to a character, and each view gets its best
+     case and a named critic. Whether the trial should go ahead, and whether
+     eating pork is wrong, are ungraded polls. The ethical-theory lesson on
+     moral status teaches equal consideration and marginal cases in depth;
+     this lesson recaps them briefly. -->
+
+<phil-lesson id="bioethics-animals" title="The Wolf at the Door" subject="Animal Ethics">
+
+  <!-- ============ OPENING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/title.png" alt="An old gray wolf in round spectacles and a brown cardigan, leaning on a cane, knocks politely at the door of a brick cottage at dusk, while three upright pigs, one spotted, one black, and one ginger, peek out of the window">
+    <h1>The Wolf at the Door</h1>
+    <p class="lead">The Big Bad Wolf is back at the brick house. This time he isn't huffing or puffing. He's asking for help.</p>
+    <p>He's old, his kidneys are failing, and a new trial could give him a kidney from a pig. May we use pigs to save lives?</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to The Wolf at the Door. The Big Bad Wolf is back at the brick house. This time he isn't huffing or puffing. He's asking for help. He's old, his kidneys are failing, and a new trial could give him a kidney from a pig. May we use pigs to save lives? Whenever it's your turn, I'll stop and wait for you.</phil-narration>
+  </phil-slide>
+
+  <!-- 2. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>It's acceptable to use pig organs to save human lives.</phil-statement>
+      <phil-statement>Eating pork is morally acceptable.</phil-statement>
+      <phil-statement>Some animals have rights, as people do.</phil-statement>
+      <phil-statement>Medical research on animals is worth the suffering it causes.</phil-statement>
+      <phil-statement>A fly's life matters morally.</phil-statement>
+    </phil-beliefs>
+    <phil-narration>Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
+  </phil-slide>
+
+  <!-- 3. The Wolf's request -->
+  <phil-slide id="request">
+    <img slot="art" src="./assets/dialysis.png" alt="An old gray wolf in round spectacles and a brown cardigan sits in a dialysis chair in a bright clinic, tubes running to a machine beside him, while a nurse in teal scrubs checks the machine">
+    <h1>The Wolf's Request</h1>
+    <phil-narration>Here's the Wolf's request. First, a note: the pigs, the Wolf, and the hospital are invented. The medicine is real.</phil-narration>
+    <ul reveal>
+      <li say="Years after the huffing and puffing, the Big Bad Wolf is old, and his kidneys are failing. He spends three mornings a week on dialysis.">Years after the huffing and puffing, the Big Bad Wolf is old, and his kidneys are failing. He spends three mornings a week on dialysis.</li>
+      <li say="The county hospital is running a trial of kidneys from gene-edited pigs. Doctor Amara Osei, the transplant surgeon, thinks he qualifies.">The county hospital is running a trial of kidneys from gene-edited pigs. Dr. Amara Osei, the transplant surgeon, thinks he qualifies.</li>
+      <li say="The hospital's ethics committee must approve the trial. Its chair is Hettie, the pig from the brick house, and her brother Barnaby and sister Clover sit on it too.">The hospital's ethics committee must approve the trial. Its chair is Hettie, the pig from the brick house, and her brother Barnaby and sister Clover sit on it too.</li>
+      <li say="So the Wolf comes to the brick house, and knocks.">So the Wolf comes to the brick house, and knocks.</li>
+    </ul>
+    <p class="muted">The pigs, the Wolf, and the hospital are invented. The medicine is real.</p>
+  </phil-slide>
+
+  <!-- 4. Poll: approve? (start) -->
+  <phil-slide>
+    <img slot="art" src="./assets/committee.png" alt="In a brick-walled meeting room, a spotted sow in reading glasses, a black boar in green veterinary scrubs, and a young ginger sow in overalls and a straw hat sit at a long table with papers, listening to a Black woman surgeon in navy scrubs at a blank chart">
+    <h1>Decision Point: The Committee Votes</h1>
+    <phil-poll prompt="Should the committee approve the pig-kidney trial?"
+               explain="You'll vote again at the end, after meeting three philosophers who answer this question very differently.">
+      <phil-choice note="This puts the human life first. Later you'll see what each view says the pigs are owed along the way.">Yes. A life is at stake.</phil-choice>
+      <phil-choice note="This accepts using pigs but limits how. That is close to how the trials are actually regulated.">Yes, with strict rules on how the pigs are raised.</phil-choice>
+      <phil-choice note="This rejects using pigs as organ sources at all. One of the three views takes this line.">No. Pigs shouldn't be used this way.</phil-choice>
+      <phil-choice note="This waits for evidence. The early results are mixed, as you're about to see.">Not until we know whether it works.</phil-choice>
+    </phil-poll>
+    <phil-narration>A first decision point. Should the committee approve the pig-kidney trial? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">You'll vote again at the end, after meeting three philosophers who answer this very differently.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 1: THE STATE OF THE ART ============ -->
+
+  <!-- 5. The waitlist -->
+  <phil-slide id="waitlist">
+    <img slot="art" src="./assets/waitlist.png" alt="A hospital waiting area at dawn where patients of different ages and skin tones sit waiting, an old man holding a pager and a young woman with a small packed suitcase at her feet">
+    <h1>The Waitlist</h1>
+    <phil-narration>Why pigs? Start with the people waiting for organs.</phil-narration>
+    <ul reveal>
+      <li say="About a hundred and ten thousand people in the US are waiting for an organ. About eighty-six percent of them need a kidney.">About 110,000 people in the US are waiting for an organ. About 86% of them need a kidney.</li>
+      <li say="About twelve to thirteen people die each day while waiting.">About 12 to 13 people die each day while waiting.</li>
+      <li say="Dialysis can keep kidney patients alive, but a transplant usually gives a longer and better life.">Dialysis can keep kidney patients alive, but a transplant usually gives a longer and better life.</li>
+      <li say="Pigs are bred in large numbers, and their organs are close to human size. So researchers have spent decades trying to make pig organs work in people.">Pigs are bred in large numbers, and their organs are close to human size. So researchers have spent decades trying to make pig organs work in people.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. Pig organs so far -->
+  <phil-slide id="so-far">
+    <img slot="art" src="./assets/surgery.png" alt="A bright operating room where a Black woman surgeon and an East Asian man surgeon, both masked, lift a pink kidney from a steel cooler">
+    <h1>Pig Organs So Far</h1>
+    <phil-narration>Here's what pig organs have done in living patients so far.</phil-narration>
+    <ul reveal>
+      <li say="Two men received pig hearts in Maryland, in 2022 and 2023. Both died within about two months.">Two men received pig hearts in Maryland, in 2022 and 2023. Both died within about two months.</li>
+      <li say="Since 2024, at least eight living Americans have received pig kidneys. Some died, several kidneys were removed, and two recipients later got human kidneys.">Since 2024, at least eight living Americans have received pig kidneys. Some died, several kidneys were removed, and two recipients later got human kidneys.</li>
+      <li say="The longest published case: Tim Andrews lived two hundred seventy-one days, about nine months, off dialysis with a pig kidney, then received a human kidney in January 2026.">The longest published case: Tim Andrews lived 271 days, about nine months, off dialysis with a pig kidney, then received a human kidney in January 2026.</li>
+      <li say="In 2025 the FDA cleared the first formal pig-kidney trials. One began that November. Another is expected to start in 2027.">In 2025 the FDA cleared the first formal pig-kidney trials. One began that November. Another is expected to start in 2027.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. Making a donor pig -->
+  <phil-slide id="donor-pig">
+    <img slot="art" src="./assets/donor-barn.png" alt="A spotless white barn behind a glass wall, where ordinary pink pigs root in clean straw while staff in full white gowns and masks watch over them">
+    <h1>Making a Donor Pig</h1>
+    <phil-narration>So how do you make a pig whose kidney a person can keep?</phil-narration>
+    <ul reveal>
+      <li say="Donor pigs carry up to sixty-nine gene edits. Some remove pig genes whose products the human immune system attacks. Others add human genes, or disable viruses hidden in pig D N A.">Donor pigs carry up to 69 gene edits. Some remove pig genes whose products the human immune system attacks; others add human genes or disable viruses hidden in pig DNA.</li>
+      <li say="They are born by caesarean section into sealed, pathogen-free barns, and screened for viruses.">They are born by caesarean section into sealed, pathogen-free barns, and screened for viruses.</li>
+      <li say="The infection worry: a pig virus could cross into a patient on immune-suppressing drugs, then spread. A hidden pig virus was found in the first pig heart.">The infection worry: a pig virus could cross into a patient on immune-suppressing drugs, then spread. A hidden pig virus was found in the first pig heart.</li>
+      <li say="Some ethicists warn that pathogen-free life means separation from their mothers at birth and isolated, barren housing for social animals. Others argue strict welfare standards can be met.">Some ethicists warn that pathogen-free life means separation from their mothers at birth and isolated, barren housing for social animals. Others argue strict welfare standards can be met.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Do pigs count? -->
+  <phil-slide id="do-pigs-count">
+    <img slot="art" src="./assets/mirror-pig.png" alt="An ordinary pink pig in a clean pen looks into a mirror on the wall to find a food bowl hidden behind a partition">
+    <h1>Do Pigs Count?</h1>
+    <phil-narration>Before asking whether we may use pigs, ask whether pigs count at all.</phil-narration>
+    <ul reveal>
+      <li say="In 1789, Jeremy Bentham wrote that the question is not, Can they reason? nor, Can they talk? but, Can they suffer?">In 1789 Jeremy Bentham wrote that “the question is not, Can they reason? nor, Can they talk? but, Can they suffer?”</li>
+      <li say="Pigs can. They feel pain and fear, and a 2015 review calls the research findings suggestive of complex psychology.">Pigs can. They feel pain and fear, and a 2015 review calls the research findings “suggestive of complex psychology.”</li>
+      <li say="They remember, solve mazes, and learn from other pigs. In one study, pigs used a mirror to find hidden food, though a later study failed to repeat that result.">They remember, solve mazes, and learn from other pigs. In one study, pigs used a mirror to find hidden food, though a later study failed to repeat that result.</li>
+      <li say="So the question isn't whether pigs count. It's how much, and what that rules out.">So the question isn't whether pigs count. It's how much, and what that rules out.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Cloze: the state of the art -->
+  <phil-slide>
+    <h1>Fill In the Gaps</h1>
+    <phil-cloze data-qid="bioethics-animals:q1" review="so-far" explain="Right. Most people on the US waitlist need a kidney. Donor pigs are gene-edited so the human immune system is less likely to attack the organ. As of October 2026, pig kidneys have worked for weeks or months, not yet for years. And Bentham's question was whether animals can suffer.">
+      <span class="line">1. Most people on the US organ waitlist need a
+        <phil-blank answer="kidney" options="heart,kidney,liver,lung">kidney</phil-blank>.</span>
+      <span class="line">2. Donor pigs are
+        <phil-blank answer="gene-edited" options="gene-edited,cloned from humans,vaccinated,fed human food">gene-edited</phil-blank> so the human body is less likely to reject their organs.</span>
+      <span class="line">3. As of October 2026, pig kidneys in living patients have worked for
+        <phil-blank answer="weeks or months" options="weeks or months,many years,a lifetime,no time at all">weeks or months</phil-blank>.</span>
+      <span class="line">4. Bentham asked not whether animals can reason or talk, but whether they can
+        <phil-blank answer="suffer" options="suffer,remember,choose,cooperate">suffer</phil-blank>.</span>
+    </phil-cloze>
+    <phil-narration>Time to check what you've learned. Fill in each gap by choosing an option, then press Check.</phil-narration>
+    <phil-narration when="after">Right. Pig kidneys have worked for weeks or months so far, and Bentham's question was whether animals can suffer.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 2: THREE ANSWERS ============ -->
+
+  <!-- 10. Singer -->
+  <phil-slide id="singer">
+    <phil-thinker slot="art" name="Peter Singer" work="Animal Liberation (1975)"
+                  img="./assets/idea-singer.png" alt="A brass balance scale with an identical small red heart on each pan, perfectly level, the shadows of a pig and a person on the wall behind it" accent="#ffcf5a">
+      <p>Equal suffering counts equally, whoever feels it.</p>
+    </phil-thinker>
+    <h1>Answer One: Weigh the Interests</h1>
+    <phil-narration>The first answer: weigh the interests.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Peter Singer holds that equal suffering counts equally, whoever feels it. He calls this equal consideration of interests.">The philosopher Peter Singer holds that equal suffering counts equally, whoever feels it. He calls this <strong>equal consideration of interests</strong>.</li>
+      <li say="So using animals is justified only if the benefits outweigh all the suffering it causes, the animals' suffering counted equally.">So using animals is justified only if the benefits outweigh all the suffering it causes, the animals' suffering counted equally.</li>
+      <li say="Favoring our own species just because it's ours, he calls speciesism.">Favoring our own species just because it's ours, he calls <strong>speciesism</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. Singer's test -->
+  <phil-slide id="singer-test">
+    <h1>Singer's Test</h1>
+    <phil-narration>Singer offers a test for any experiment on animals.</phil-narration>
+    <ul reveal>
+      <li say="In a 1974 essay, he asks: Would the experimenter be prepared to perform his experiment on an orphaned human infant, if that were the only way to save many lives?">In a 1974 essay, he asks: “Would the experimenter be prepared to perform his experiment on an orphaned human infant, if that were the only way to save many lives?”</li>
+      <li say="If not, he argues, the readiness to use animals instead is simple discrimination: speciesism.">If not, he argues, the readiness to use animals instead is “simple discrimination”: speciesism.</li>
+      <li say="He allows that an experiment could reduce suffering so much that it would be permissible. But he opposes animal research as it is usually practiced.">He allows that an experiment could reduce suffering so much that it would be permissible. But he opposes animal research as it is usually practiced.</li>
+      <li say="Tom Regan replies that adding up harms this way can justify sacrificing an individual for the greater good.">Tom Regan replies that adding up harms this way can justify sacrificing an individual for the greater good.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. Regan -->
+  <phil-slide id="regan">
+    <phil-thinker slot="art" name="Tom Regan" dates="1938–2017" work="The Case for Animal Rights (1983)"
+                  img="./assets/idea-regan.png" alt="An empty birdcage with its door swung wide open, standing in a sunlit meadow of wildflowers" accent="#46e07a">
+      <p>Some animals have rights, and may never be used as mere resources.</p>
+    </phil-thinker>
+    <h1>Answer Two: Rights</h1>
+    <phil-narration>The second answer: rights.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Tom Regan holds that any subject-of-a-life has inherent value: a being with beliefs, desires, memory, and a sense of its own future.">The philosopher Tom Regan holds that any <strong>subject-of-a-life</strong> has inherent value: a being with beliefs, desires, memory, and a sense of its own future.</li>
+      <li say="Being a subject-of-a-life is enough for rights, he says. He doesn't say it's required.">Being a subject-of-a-life is enough for rights, he says. He doesn't say it's required.</li>
+      <li say="A being with rights may never be treated merely as a resource, however great the benefit to others.">A being with rights may never be treated merely as a resource, however great the benefit to others.</li>
+      <li say="So he calls for an end to harmful research on such animals. Justice demands not larger, cleaner cages, he writes in a later pamphlet, but empty cages.">So he calls for an end to harmful research on such animals. Justice demands not “larger, cleaner cages,” he writes in a later pamphlet, but “empty cages.”</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Questions for Regan -->
+  <phil-slide id="regan-objections">
+    <h1>Questions for the Rights View</h1>
+    <phil-narration>Here are two questions for the rights view.</phil-narration>
+    <ul reveal>
+      <li say="The cost. Carl Cohen argues that treating animals' rights as trumps would block much valuable research, or shift its risks onto human subjects."><strong>The cost.</strong> Carl Cohen argues that treating animals' rights as trumps would block much valuable research, or shift its risks onto human subjects.</li>
+      <li say="The lifeboat. Four people and a dog are in a lifeboat that holds four. Regan says it would not be wrong to throw the dog overboard, since death harms each human more, and not wrong even for a million dogs."><strong>The lifeboat.</strong> Four people and a dog are in a lifeboat that holds four. Regan says it would not be wrong to throw the dog overboard, since death harms each human more, and not wrong even for “a million dogs.”</li>
+      <li say="Singer replies that Regan then cannot consistently deny that we should experiment on a diseased dog to save diseased humans.">Singer replies that Regan then “cannot consistently deny that we should experiment on a diseased dog to save diseased humans.”</li>
+      <li say="Regan's answer: lab animals are coercively placed at risk of harm, risks they would not otherwise run, so that others might benefit. The dog was already in danger.">Regan's answer: lab animals “are coercively placed at risk of harm, risks they would not otherwise run, so that others might benefit.” The dog was already in danger.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Cohen -->
+  <phil-slide id="cohen">
+    <phil-thinker slot="art" name="Carl Cohen" dates="1931–2023" work="“The Case for the Use of Animals in Biomedical Research” (1986)"
+                  img="./assets/idea-cohen.png" alt="A round wooden council table with empty chairs, a gavel, and a neat stack of signed papers, lit by a hanging green lamp" accent="#4cc2ff">
+      <p>Rights belong to beings who can make moral claims on each other.</p>
+    </phil-thinker>
+    <h1>Answer Three: The Moral Community</h1>
+    <phil-narration>The third answer: the moral community.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Carl Cohen holds that rights arise only among beings who can make moral claims on each other, and recognize claims made on them.">The philosopher Carl Cohen holds that rights arise only among beings who can make moral claims on each other, and recognize claims made on them.</li>
+      <li say="Animals lack this capacity for free moral judgment, so they have no rights. But we still have obligations to them: we are at least obliged to act humanely.">Animals lack this capacity for free moral judgment, so they have no rights. But we still have obligations to them: “we are at least obliged to act humanely.”</li>
+      <li say="He accepts the label: I am a speciesist. The differences between species, he argues, are morally relevant, and ignoring them leads people astray.">He accepts the label: “I am a speciesist.” The differences between species, he argues, are morally relevant, and ignoring them leads people astray.</li>
+      <li say="He favors alternatives where they give the same result. But he argues for more animal research, not less, to avoid using humans as experimental subjects.">He favors alternatives where they give the same result. But he argues for more animal research, not less, to avoid using humans as experimental subjects.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. The talking pigs -->
+  <phil-slide id="talking-pigs">
+    <img slot="art" src="./assets/committee.png" alt="In a brick-walled meeting room, a spotted sow in reading glasses, a black boar in green veterinary scrubs, and a young ginger sow in overalls and a straw hat sit at a long table with papers, listening to a Black woman surgeon in navy scrubs at a blank chart">
+    <h1>The Talking Pigs</h1>
+    <phil-narration>Now look at the story again.</phil-narration>
+    <ul reveal>
+      <li say="Hettie can make moral claims on others and honor theirs: she keeps promises and owns up to her duties. The pigs in the hospital's barn can't.">Hettie can make moral claims on others and honor theirs: she keeps promises and owns up to her duties. The pigs in the hospital's barn can't.</li>
+      <li say="For Cohen, what matters isn't talking or reasoning but the capacity for moral claims. Rights belong to beings with it, and to every member of a kind that normally has it.">For Cohen, what matters isn't talking or reasoning but the capacity for moral claims. Rights belong to beings with it, and to every member of a kind that normally has it.</li>
+      <li say="Hettie qualifies. The barn pigs, like ordinary pigs generally, are owed humane treatment but have no rights.">Hettie qualifies. The barn pigs, like ordinary pigs generally, are owed humane treatment but have no rights.</li>
+      <li say="Singer would look at what the barn pigs can feel, and Regan at whether each is a subject-of-a-life. For both, Hettie's capacity for moral claims isn't what gives her standing.">Singer would look at what the barn pigs can feel, and Regan at whether each is a subject-of-a-life. For both, Hettie's capacity for moral claims isn't what gives her standing.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 16. Questions for Cohen -->
+  <phil-slide id="cohen-objections">
+    <h1>Questions for the Moral Community View</h1>
+    <phil-narration>Here's the main question for Cohen's view.</phil-narration>
+    <ul reveal>
+      <li say="Marginal cases. Infants, and people with severe cognitive disabilities, can't make moral claims either."><strong>Marginal cases.</strong> Infants, and people with severe cognitive disabilities, can't make moral claims either.</li>
+      <li say="Regan argues that if they have rights, so do animals like them. Singer argues that we may not do to animals what we'd refuse to do to humans with similar capacities.">Regan argues that if they have rights, so do animals like them. Singer argues that we may not do to animals what we'd refuse to do to humans with similar capacities.</li>
+      <li say="Cohen's reply: The issue is one of kind. Every human has rights, since what humans retain when disabled, animals have never had.">Cohen's reply: “The issue is one of kind.” Every human has rights, since “what humans retain when disabled, animals have never had.”</li>
+      <li say="The philosophers James Rachels and Jeff McMahan reply that an individual should be treated by its own capacities, not by what's normal for its kind.">The philosophers James Rachels and Jeff McMahan reply that an individual should be treated by its own capacities, not by what's normal for its kind.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Classify: which view -->
+  <phil-slide>
+    <h1>Which View?</h1>
+    <phil-classify data-qid="bioethics-animals:q2" review="cohen" prompt="Each line is said at the committee. Which view does it express?"
+                   explain="Right. Singer counts equal suffering equally, whoever feels it, and his test asks whether we'd run the experiment on an orphaned human infant. Regan holds that a subject-of-a-life may never be used as a resource, so he wants empty cages, not bigger ones. Cohen holds that rights belong to beings who can make moral claims, and to every member of a kind that normally can, while we still owe animals humane treatment.">
+      <phil-col key="singer">Singer: weigh the interests</phil-col>
+      <phil-col key="regan">Regan: rights</phil-col>
+      <phil-col key="cohen">Cohen: the moral community</phil-col>
+      <phil-item answer="singer" why="Counting the pig's suffering equally and approving only if the benefits outweigh it is Singer's equal consideration.">"Count the pig's suffering as much as anyone's, and approve the trial only if the good it does outweighs it."</phil-item>
+      <phil-item answer="singer" why="Refusing the experiment on an orphaned infant but running it on a pig is what Singer's test calls speciesism.">"We wouldn't run this on an orphaned infant to save lives. Running it on the pig instead is speciesism."</phil-item>
+      <phil-item answer="regan" why="A being with inherent value may never be used as a resource, whatever the benefit: Regan's rights view.">"The pig has inherent value. It may not be used as a resource, however much good it would do."</phil-item>
+      <phil-item answer="regan" why="Ending the use, not improving the conditions, is Regan's call for empty cages.">"Kinder barns aren't enough. The goal is to stop using the pigs at all."</phil-item>
+      <phil-item answer="cohen" why="Rights for Hettie, who can make moral claims, but only humane treatment for the barn pigs: Cohen's moral community view.">"Treat the barn pigs humanely, but they don't have rights the way Hettie does."</phil-item>
+      <phil-item answer="cohen" why="Rights belonging to a kind, so that every human has them, is Cohen's reply to marginal cases.">"A newborn can't make moral claims yet, but she belongs to a kind that can, so she has rights."</phil-item>
+    </phil-classify>
+    <phil-narration>Which view? Each line is said at the committee. Sort each one under Singer, Regan, or Cohen. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Singer weighs the interests, Regan defends rights, and Cohen limits rights to the moral community.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 3: TWO DIALS ============ -->
+
+  <!-- 18. Dial one: what's gained -->
+  <phil-slide id="kidney-bacon">
+    <img slot="art" src="./assets/hog-barn.png" alt="A long modern hog barn with rows of pens of ordinary pink pigs under fluorescent lights, a white farmer in his sixties in a feed cap and coveralls looking down the aisle">
+    <h1>Dial One: What's Gained?</h1>
+    <phil-narration>Every use of a pig can be set on two dials. Dial one: what's gained?</phil-narration>
+    <ul reveal>
+      <li say="The US slaughtered about a hundred and twenty-eight million pigs for food in 2025, and about one and a half billion a year worldwide. Dale Hargrove's farm sends pigs to market every week.">The US slaughtered about 128 million pigs for food in 2025, and about 1.5 billion a year worldwide. Dale Hargrove's farm sends pigs to market every week.</li>
+      <li say="Cohen: One cannot coherently object to the killing of animals in biomedical investigations while continuing to eat them.">Cohen: “One cannot coherently object to the killing of animals in biomedical investigations while continuing to eat them.”</li>
+      <li say="On Singer's view, the two uses can come apart. A life saved may outweigh a pig's suffering. A meal, set against a factory-farmed pig's suffering, doesn't.">On Singer's view, the two uses can come apart. A life saved may outweigh a pig's suffering. A meal, set against a factory-farmed pig's suffering, doesn't.</li>
+      <li say="On Regan's view, both are wrong: either way, the pig is used as a resource. On Cohen's, neither violates a right, though both owe the pig humane treatment.">On Regan's view, both are wrong: either way, the pig is used as a resource. On Cohen's, neither violates a right, though both owe the pig humane treatment.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Poll: kidney or pork chop -->
+  <phil-slide>
+    <h1>Decision Point: Kidney or Pork Chop?</h1>
+    <phil-poll prompt="Which is easier to justify: using a pig for a kidney, or for a pork chop?"
+               explain="Many people find the kidney easier to justify, because far more is gained. Singer's view explains that intuition: in a 1992 speech he said that anyone who objects to using animals' body parts for transplants, “but all right to use them for breakfast,” thinks nothing like him. Regan's view says the intuition misses the point: the pig is used either way. And as Cohen argues, someone who eats pork but opposes pig-kidney trials owes an account of the difference.">
+      <phil-choice note="Far more is gained, and on Singer's view that can make the difference.">The kidney. A life is worth more than a meal.</phil-choice>
+      <phil-choice note="A real reason: pathogen-free barns are barren and isolated. It has to be weighed against the kidney's much larger benefit.">The pork chop. Donor pigs live more deprived lives than pigs on good farms.</phil-choice>
+      <phil-choice note="This is close to Cohen's view: no rights are violated either way, as long as the pig is treated humanely.">Both are fine, if the pigs are treated well.</phil-choice>
+      <phil-choice note="This is Regan's view: either way, the pig is used as a resource.">Neither. The pig is used either way.</phil-choice>
+    </phil-poll>
+    <phil-narration>Another decision point. Which is easier to justify: using a pig for a kidney, or for a pork chop? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Many people find the kidney easier to justify, because far more is gained. Singer's view explains that. Regan's says the pig is used either way.</phil-narration>
+  </phil-slide>
+
+  <!-- 20. Dial two: who pays -->
+  <phil-slide id="flies">
+    <img slot="art" src="./assets/straw-kitchen.png" alt="A sunny kitchen inside a cottage made of straw, with a bowl of ripe fruit and vegetables on the table, tiny fruit flies buzzing over it, and a fly swatter hanging on a hook">
+    <h1>Dial Two: Who Pays?</h1>
+    <phil-narration>Dial two: who pays? Clover's straw house is full of fruit flies. Do they count too?</phil-narration>
+    <ul reveal>
+      <li say="Flies clearly detect and avoid harm. Whether they feel pain is uncertain.">Flies clearly detect and avoid harm. Whether they feel pain is uncertain.</li>
+      <li say="A 2022 review found that adult flies meet most criteria for pain, which it counts as strong evidence. Skeptics say we can't yet detect the felt part.">A 2022 review found that adult flies meet most criteria for pain, which it counts as “strong evidence.” Skeptics say we can't yet detect the felt part.</li>
+      <li say="Even if flies feel something, most views give them a much weaker claim than a pig: far simpler lives, with far fewer interests at stake.">Even if flies feel something, most views give them a much weaker claim than a pig: far simpler lives, with far fewer interests at stake.</li>
+      <li say="Singer once drew his line somewhere between a shrimp and an oyster, and has gone back and forth on it. A 2022 UK law covers octopuses and crabs, but not insects.">Singer once drew his line “somewhere between a shrimp and an oyster,” and has gone back and forth on it. UK law (2022) covers octopuses and crabs, but not insects.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Flies in the lab -->
+  <phil-slide id="fly-lab">
+    <img slot="art" src="./assets/fly-lab.png" alt="An Indian American man in his thirties with glasses and a white lab coat looks through a microscope beside a rack of small glass vials holding tiny fruit flies">
+    <h1>Flies in the Lab</h1>
+    <phil-narration>Flies matter in the lab, too.</phil-narration>
+    <ul reveal>
+      <li say="Doctor Ravi Menon runs the hospital's fruit-fly lab. Flies have been studied in genetics since about 1910, and fly research has earned at least five Nobel Prizes.">Dr. Ravi Menon runs the hospital's fruit-fly lab. Flies have been studied in genetics since about 1910, and fly research has earned at least five Nobel Prizes.</li>
+      <li say="In a 2001 study, about three-quarters of the human disease genes searched had a fly counterpart.">In a 2001 study, about three-quarters of the human disease genes searched had a fly counterpart.</li>
+      <li say="Britain's center for research alternatives counts swapping mice for flies as partial replacement: on current scientific thinking, flies are not considered capable of experiencing suffering.">Britain's center for research alternatives counts swapping mice for flies as <strong>partial replacement</strong>: on current scientific thinking, flies are “not considered capable of experiencing suffering.”</li>
+      <li say="The philosopher Jonathan Birch is less sure. Adult insects are realistic candidates for sentience, he argues, so fly labs must at least ask what precautions are proportionate.">The philosopher Jonathan Birch is less sure. Adult insects are realistic candidates for sentience, he argues, so fly labs must at least ask what precautions are proportionate.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Explorer: two dials -->
+  <phil-slide hold>
+    <h1>Try It: Two Dials</h1>
+    <phil-narration>Now try it yourself. Here are four cases, each set on the two dials: what's gained, and who pays. Pick each case and compare how the three views rule on it. When you've seen all four, press Continue.</phil-narration>
+    <phil-dials prompt="Four cases, each set on two dials: what's gained, and who pays. Pick each case and compare how the three views rule."></phil-dials>
+  </phil-slide>
+
+  <!-- 23. Checkset: reading the dials -->
+  <phil-slide>
+    <h1>Reading the Dials</h1>
+    <phil-checkset data-qid="bioethics-animals:q3" review="kidney-bacon" prompt="Check every statement that is true, as this lesson presents it."
+                   explain="Right. Singer reads both dials, so his verdicts on the kidney and the pork chop can come apart. Regan reads only who pays: either use of the pig treats it as a resource. Cohen denies animals rights but holds that we owe them humane treatment. Regan wants empty cages, not gentler ones, so kinder treatment wouldn't make the trial acceptable. And Singer weighs benefits against suffering; no benefit to humans wins automatically.">
+      <phil-statement correct>On Singer's view, a pig-kidney trial could be justified even if eating factory-farmed pork is not.</phil-statement>
+      <phil-statement correct>On Regan's view, using a pig for a kidney and for a pork chop are both wrong.</phil-statement>
+      <phil-statement correct>Cohen holds that animals have no rights, but that we owe them humane treatment.</phil-statement>
+      <phil-statement>On Regan's view, gentler treatment of the donor pigs would make the trial acceptable.</phil-statement>
+      <phil-statement>On Singer's view, any benefit to humans outweighs an animal's suffering.</phil-statement>
+      <phil-statement>Cohen holds that we owe animals nothing at all.</phil-statement>
+    </phil-checkset>
+    <phil-narration>Reading the dials. Check every statement that is true, as this lesson presents it. Then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Singer reads both dials, Regan reads who pays, and Cohen's rights read neither, though humane treatment still counts.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ PART 4: INSIDE THE LAB ============ -->
+
+  <!-- 24. Who oversees the lab -->
+  <phil-slide id="oversight">
+    <img slot="art" src="./assets/mouse-lab.png" alt="A clean animal lab with rows of clear mouse cages full of nesting material, a Latina technician in safety glasses and blue gloves gently checking one cage">
+    <h1>Who Oversees the Lab?</h1>
+    <phil-narration>Whatever the philosophers say, here's how US labs are actually overseen.</phil-narration>
+    <ul reveal>
+      <li say="The Animal Welfare Act covers pigs, dogs, and monkeys. It leaves out mice and rats bred for research, and all insects.">The Animal Welfare Act covers pigs, dogs, and monkeys. It leaves out mice and rats bred for research, and all insects.</li>
+      <li say="But federally funded labs must also follow a policy that covers every live vertebrate, mice included.">But federally funded labs must also follow a policy that covers every live vertebrate, mice included.</li>
+      <li say="Studies under either rule need approval from an animal care committee, called an I A C U C. Research on people goes to a different committee, an I R B.">Studies under either rule need approval from an animal care committee, an <strong>IACUC</strong>. Research on people goes to a different committee, an <strong>IRB</strong>.</li>
+      <li say="One estimate puts mice and rats at over ninety-nine percent of US lab mammals, about a hundred and eleven million a year.">One estimate puts mice and rats at over 99% of US lab mammals, about 111 million a year.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. The 3Rs -->
+  <phil-slide id="three-rs">
+    <phil-thinker slot="art" name="W. M. S. Russell and R. L. Burch" work="The Principles of Humane Experimental Technique (1959)"
+                  img="./assets/idea-russell-burch.png" alt="An old cloth-bound book lying open on a lab bench beside a brass microscope, a small white mouse curled asleep on a soft nest next to it" accent="#ff8fab">
+      <p>Replace, reduce, and refine the use of animals in science.</p>
+    </phil-thinker>
+    <h1>The 3Rs</h1>
+    <phil-narration>The rules labs work by come from a 1959 book by the zoologist William Russell and the microbiologist Rex Burch.</phil-narration>
+    <ul reveal>
+      <li say="Replace: use methods without animals, such as cells or computer models, or, as partial replacement, animals that current guidance doesn't consider able to suffer, such as fruit flies.">Replace: use methods without animals, such as cells or computer models, or, as partial replacement, animals that current guidance doesn't consider able to suffer, such as fruit flies.</li>
+      <li say="Reduce: get the same answer from fewer animals.">Reduce: get the same answer from fewer animals.</li>
+      <li say="Refine: make what's done to the animals that are used less painful and distressing.">Refine: make what's done to the animals that are used less painful and distressing.</li>
+      <li say="A change counts only if the science stays sound. Dropping a control group, for example, saves animals but leaves results nobody can trust.">A change counts only if the science stays sound. Dropping a control group, for example, saves animals but leaves results nobody can trust.</li>
+    </ul>
+    <p class="muted">The 3Rs don't say whether a study should happen at all. That's the question the three views answer.</p>
+  </phil-slide>
+
+  <!-- 26. Explorer: the 3Rs workshop -->
+  <phil-slide hold>
+    <h1>Try It: The 3Rs Workshop</h1>
+    <phil-narration>Now try it yourself. Here's an invented study: testing a new anti-rejection drug for pig-kidney transplants on sixty mice. Seven changes are proposed, one at a time. For each, decide which R it is, or whether it's not a 3R at all. When you've seen the new study, press Continue.</phil-narration>
+    <phil-threers prompt="An invented study tests a new anti-rejection drug for pig-kidney transplants on 60 mice. Seven changes are proposed, one at a time. Which R is each one, if any?"></phil-threers>
+  </phil-slide>
+
+  <!-- 27. Classify: which R -->
+  <phil-slide>
+    <h1>Which R?</h1>
+    <phil-classify data-qid="bioethics-animals:q4" review="three-rs" prompt="Each change is proposed for a study. Which of the 3Rs is it, if any?"
+                   explain="Right. Simulators and cells grown in a dish replace animals. Following the same mice over time, and measuring every animal before and after, reduce how many are needed. Training pigs to cooperate and ending a study at the first signs of severe illness refine what the animals go through. And cutting a control group isn't a 3R, because the results could no longer be trusted.">
+      <phil-col key="replace">Replace</phil-col>
+      <phil-col key="reduce">Reduce</phil-col>
+      <phil-col key="refine">Refine</phil-col>
+      <phil-col key="none">Not a 3R</phil-col>
+      <phil-item answer="replace" why="A simulator stands in for the live pigs entirely: replacement.">Training surgeons on a lifelike simulator instead of on live pigs</phil-item>
+      <phil-item answer="replace" why="Cells grown in a dish do the job the rats did: replacement.">Testing a drug's toxicity on liver cells grown in a dish instead of in rats</phil-item>
+      <phil-item answer="reduce" why="Scanning the same mice over time gets the answer from fewer animals: reduction.">Scanning the same mice over time instead of using a new group for each time point</phil-item>
+      <phil-item answer="reduce" why="Repeated measures on each animal cut the variation, so the same answer needs fewer animals: reduction.">Measuring every animal, treated and control, before and after treatment, so fewer animals are needed in total</phil-item>
+      <phil-item answer="refine" why="The same pigs are used, with less distress: refinement.">Training pigs with food rewards to stand still for blood draws, instead of restraining them</phil-item>
+      <phil-item answer="refine" why="Stopping before an animal suffers severely makes the procedure less painful: refinement.">Ending the study for any animal that shows signs of severe illness</phil-item>
+      <phil-item answer="none" why="Without a control group the results can't be trusted, and a change counts only if the science stays sound.">Dropping the control group to use fewer animals</phil-item>
+    </phil-classify>
+    <phil-narration>Which R? Each change is proposed for a study. Sort each one under replace, reduce, refine, or not a 3R. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Replace swaps animals out, reduce uses fewer, refine makes it less painful, and nothing counts if the science stops being sound.</phil-narration>
+  </phil-slide>
+
+  <!-- 28. Moving away from animals -->
+  <phil-slide id="alternatives">
+    <img slot="art" src="./assets/organoids.png" alt="Glowing petri dishes and a small clear organ-on-a-chip device with colored channels on a tidy lab bench, a microscope behind them">
+    <h1>Moving Away From Animals</h1>
+    <phil-narration>Labs are slowly moving away from animals. Here's where things stand.</phil-narration>
+    <ul reveal>
+      <li say="A 2022 law removed the federal law's requirement to test new drugs on animals before human trials. Other tests can now take their place.">A 2022 law removed the federal law's requirement to test new drugs on animals before human trials. Other tests can now take their place.</li>
+      <li say="In 2025 the FDA began phasing down animal testing, starting with antibody drugs, and the NIH stopped issuing funding calls for research that uses only animals.">In 2025 the FDA began phasing down animal testing, starting with antibody drugs, and the NIH stopped issuing funding calls for research that uses only animals.</li>
+      <li say="The alternatives include organoids, which are tiny organs grown from human cells, organs on chips, and computer models.">The alternatives include <strong>organoids</strong> (tiny organs grown from human cells), organs on chips, and computer models.</li>
+      <li say="Animal studies are still allowed and still common. No dish yet captures a whole living body.">Animal studies are still allowed and still common. No dish yet captures a whole living body.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 29. Cloze: inside the lab -->
+  <phil-slide>
+    <h1>Fill In the Gaps</h1>
+    <phil-cloze data-qid="bioethics-animals:q5" review="oversight" explain="Right. Animal studies under either rule go to an IACUC, and human research to an IRB. The Animal Welfare Act leaves out mice and rats bred for research, though federally funded labs must still follow a policy that covers every vertebrate. And the 2022 law ended the requirement to test new drugs on animals; it didn't ban animal testing.">
+      <span class="line">1. A federally funded mouse study must be approved by an
+        <phil-blank answer="IACUC" options="IACUC,IRB,FDA,NIH">IACUC</phil-blank>.</span>
+      <span class="line">2. The Animal Welfare Act leaves out
+        <phil-blank answer="mice and rats bred for research" options="mice and rats bred for research,pigs,dogs,monkeys">mice and rats bred for research</phil-blank>.</span>
+      <span class="line">3. Federally funded labs must still follow a policy that covers every live
+        <phil-blank answer="vertebrate" options="vertebrate,insect,mammal over one year old,farm animal">vertebrate</phil-blank>.</span>
+      <span class="line">4. The 2022 law
+        <phil-blank answer="ended the requirement" options="ended the requirement,banned the practice,doubled the requirement,made no change">ended the requirement</phil-blank> to test new drugs on animals before human trials.</span>
+    </phil-cloze>
+    <phil-narration>Time to check what you've learned. Fill in each gap by choosing an option, then press Check.</phil-narration>
+    <phil-narration when="after">Right. The 2022 law ended the requirement to test drugs on animals. It didn't ban animal testing.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 30. Poll: approve? (end) -->
+  <phil-slide>
+    <img slot="art" src="./assets/committee.png" alt="In a brick-walled meeting room, a spotted sow in reading glasses, a black boar in green veterinary scrubs, and a young ginger sow in overalls and a straw hat sit at a long table with papers, listening to a Black woman surgeon in navy scrubs at a blank chart">
+    <h1>Decision Point: The Committee Votes Again</h1>
+    <phil-poll prompt="Now that you've heard all three answers: should the committee approve the pig-kidney trial?"
+               explain="Compare this with your first vote. Whichever way you've moved, the useful thing is being able to say which view your vote comes from, and what its strongest critic would say.">
+      <phil-choice note="Singer can say yes if the pigs' suffering is kept low and a life is saved. Cohen says yes, with humane treatment. The question for you: how do you answer the marginal-cases objection, or the charge that adding up harms sacrifices individuals?">Yes. A life is at stake.</phil-choice>
+      <phil-choice note="This is how the trials are actually run: approved, with an animal care committee watching how the pigs live. The 3Rs belong here.">Yes, with strict rules on how the pigs are raised.</phil-choice>
+      <phil-choice note="This is Regan's answer: the pig may not be used as a resource. The question for you: what about the lifeboat, and the human cost Cohen points to?">No. Pigs shouldn't be used this way.</phil-choice>
+      <phil-choice note="The evidence is still early: weeks or months so far, not years. This answer still owes a verdict once the evidence is in.">Not until we know whether it works.</phil-choice>
+    </phil-poll>
+    <phil-narration>One last decision point. Now that you've heard all three answers: should the committee approve the pig-kidney trial? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Compare this with your first vote. Whichever way you've moved, the useful thing is being able to say which view your vote comes from.</phil-narration>
+  </phil-slide>
+
+  <!-- 31. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, a quick summary of the lesson.</phil-narration>
+  </phil-slide>
+
+  <!-- 32. Summed up -->
+  <phil-slide>
+    <img slot="art" src="./assets/title.png" alt="An old gray wolf in round spectacles and a brown cardigan, leaning on a cane, knocks politely at the door of a brick cottage at dusk, while three upright pigs, one spotted, one black, and one ginger, peek out of the window">
+    <h1>Summed Up</h1>
+    <phil-narration>Here's the lesson, summed up.</phil-narration>
+    <ul reveal>
+      <li say="As of October 2026, pig organs have worked in living patients for weeks or months, and formal trials have begun.">As of October 2026, pig organs have worked in living patients for weeks or months, and formal trials have begun.</li>
+      <li say="Three answers. Singer weighs suffering equally, Regan forbids using a subject-of-a-life as a resource, and Cohen limits rights to the moral community."><strong>Three answers:</strong> Singer weighs suffering equally, Regan forbids using a subject-of-a-life as a resource, and Cohen limits rights to the moral community.</li>
+      <li say="Two dials. What's gained, a life or a meal, and who pays, a pig or a fly. Singer reads both. Regan reads who pays. Cohen's rights read neither."><strong>Two dials:</strong> what's gained (a life or a meal) and who pays (a pig or a fly). Singer reads both, Regan reads who pays, and Cohen's rights read neither.</li>
+      <li say="Inside the lab. The 3Rs say replace animals where possible, use fewer, and cause less suffering, all with sound science. They don't say whether a study should happen."><strong>Inside the lab:</strong> the 3Rs say replace animals where possible, use fewer, and cause less suffering, all with sound science. They don't say whether a study should happen.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Carl Cohen, “The Case for the Use of Animals in Biomedical Research,” <em>New England Journal of Medicine</em> 315, no. 14 (1986): 865–870. The moral community view, short and direct.</li>
+      <li>Carl Cohen and Tom Regan, <em>The Animal Rights Debate</em> (Rowman &amp; Littlefield, 2001). The two of them argue it out, each in his own words.</li>
+      <li>Peter Singer, <em>Animal Liberation Now</em> (Harper, 2023). The updated edition of the book that started the modern debate, including its chapter on research.</li>
+      <li>W. M. S. Russell and R. L. Burch, <em>The Principles of Humane Experimental Technique</em> (1959). Where the 3Rs come from.</li>
+      <li>Jonathan Birch, <em>The Edge of Sentience</em> (Oxford University Press, 2024). How to act when we can't be sure a creature can feel. Free online.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>

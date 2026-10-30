@@ -1,0 +1,592 @@
+{
+  "engine": "gemini",
+  "voice": "en-ca-storyteller-2",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "521b3b8a": {
+      "slide": "s1",
+      "text": "Welcome to The Wolf at the Door. The Big Bad Wolf is back at the brick house. This time he isn't huffing or puffing. He's asking for help. He's old, his kidneys are failing, and a new trial could give him a kidney from a pig. May we use pigs to save lives? Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to The Wolf at the Door. The Big Bad Wolf is back at the brick house. This time he isn't huffing or puffing. He's asking for help. He's old, his kidneys are failing, and a new trial could give him a kidney from a pig. May we use pigs to save lives? Whenever it's your turn, I'll stop and wait for you."
+    },
+    "eb00b0c4": {
+      "slide": "s2",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "6aba9e83": {
+      "slide": "request",
+      "text": "Here's the Wolf's request. First, a note: the pigs, the Wolf, and the hospital are invented. The medicine is real.",
+      "spoken": "Here's the Wolf's request. First, a note: the pigs, the Wolf, and the hospital are invented. The medicine is real."
+    },
+    "421a7763": {
+      "slide": "request",
+      "text": "Years after the huffing and puffing, the Big Bad Wolf is old, and his kidneys are failing. He spends three mornings a week on dialysis.",
+      "spoken": "Years after the huffing and puffing, the Big Bad Wolf is old, and his kidneys are failing. He spends three mornings a week on dialysis."
+    },
+    "b2e9b9df": {
+      "slide": "request",
+      "text": "The county hospital is running a trial of kidneys from gene-edited pigs. Doctor Amara Osei, the transplant surgeon, thinks he qualifies.",
+      "spoken": "The county hospital is running a trial of kidneys from gene-edited pigs. Doctor Amara Osei, the transplant surgeon, thinks he qualifies."
+    },
+    "bcf0d642": {
+      "slide": "request",
+      "text": "The hospital's ethics committee must approve the trial. Its chair is Hettie, the pig from the brick house, and her brother Barnaby and sister Clover sit on it too.",
+      "spoken": "The hospital's ethics committee must approve the trial. Its chair is Hettie, the pig from the brick house, and her brother Barnaby and sister Clover sit on it too."
+    },
+    "df29bb74": {
+      "slide": "request",
+      "text": "So the Wolf comes to the brick house, and knocks.",
+      "spoken": "So the Wolf comes to the brick house, and knocks."
+    },
+    "936dd1cc": {
+      "slide": "s4",
+      "text": "A first decision point. Should the committee approve the pig-kidney trial? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A first decision point. Should the committee approve the pig-kidney trial? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "e9cc0249": {
+      "slide": "s4",
+      "text": "You'll vote again at the end, after meeting three philosophers who answer this very differently.",
+      "spoken": "You'll vote again at the end, after meeting three philosophers who answer this very differently."
+    },
+    "13183641": {
+      "slide": "waitlist",
+      "text": "Why pigs? Start with the people waiting for organs.",
+      "spoken": "Why pigs? Start with the people waiting for organs."
+    },
+    "4928f401": {
+      "slide": "waitlist",
+      "text": "About a hundred and ten thousand people in the US are waiting for an organ. About eighty-six percent of them need a kidney.",
+      "spoken": "About a hundred and ten thousand people in the U.S. are waiting for an organ. About eighty-six percent of them need a kidney."
+    },
+    "e86c8205": {
+      "slide": "waitlist",
+      "text": "About twelve to thirteen people die each day while waiting.",
+      "spoken": "About twelve to thirteen people die each day while waiting."
+    },
+    "39ad6fb0": {
+      "slide": "waitlist",
+      "text": "Dialysis can keep kidney patients alive, but a transplant usually gives a longer and better life.",
+      "spoken": "Dialysis can keep kidney patients alive, but a transplant usually gives a longer and better life."
+    },
+    "4ef41b72": {
+      "slide": "waitlist",
+      "text": "Pigs are bred in large numbers, and their organs are close to human size. So researchers have spent decades trying to make pig organs work in people.",
+      "spoken": "Pigs are bred in large numbers, and their organs are close to human size. So researchers have spent decades trying to make pig organs work in people."
+    },
+    "045e5254": {
+      "slide": "so-far",
+      "text": "Here's what pig organs have done in living patients so far.",
+      "spoken": "Here's what pig organs have done in living patients so far."
+    },
+    "2e9c0275": {
+      "slide": "so-far",
+      "text": "Two men received pig hearts in Maryland, in 2022 and 2023. Both died within about two months.",
+      "spoken": "Two men received pig hearts in Maryland, in 2022 and 2023. Both died within about two months."
+    },
+    "e02a0119": {
+      "slide": "so-far",
+      "text": "Since 2024, at least eight living Americans have received pig kidneys. Some died, several kidneys were removed, and two recipients later got human kidneys.",
+      "spoken": "Since 2024, at least eight living Americans have received pig kidneys. Some died, several kidneys were removed, and two recipients later got human kidneys."
+    },
+    "09981cd3": {
+      "slide": "so-far",
+      "text": "The longest published case: Tim Andrews lived two hundred seventy-one days, about nine months, off dialysis with a pig kidney, then received a human kidney in January 2026.",
+      "spoken": "The longest published case: Tim Andrews lived two hundred seventy-one days, about nine months, off dialysis with a pig kidney, then received a human kidney in January 2026."
+    },
+    "83e3013f": {
+      "slide": "so-far",
+      "text": "In 2025 the FDA cleared the first formal pig-kidney trials. One began that November. Another is expected to start in 2027.",
+      "spoken": "In 2025 the FDA cleared the first formal pig-kidney trials. One began that November. Another is expected to start in 2027."
+    },
+    "638b3766": {
+      "slide": "donor-pig",
+      "text": "So how do you make a pig whose kidney a person can keep?",
+      "spoken": "So how do you make a pig whose kidney a person can keep?"
+    },
+    "8d24eac9": {
+      "slide": "donor-pig",
+      "text": "Donor pigs carry up to sixty-nine gene edits. Some remove pig genes whose products the human immune system attacks. Others add human genes, or disable viruses hidden in pig D N A.",
+      "spoken": "Donor pigs carry up to sixty-nine gene edits. Some remove pig genes whose products the human immune system attacks. Others add human genes, or disable viruses hidden in pig D N A."
+    },
+    "197cdfa0": {
+      "slide": "donor-pig",
+      "text": "They are born by caesarean section into sealed, pathogen-free barns, and screened for viruses.",
+      "spoken": "They are born by caesarean section into sealed, pathogen-free barns, and screened for viruses."
+    },
+    "e8aaf35b": {
+      "slide": "donor-pig",
+      "text": "The infection worry: a pig virus could cross into a patient on immune-suppressing drugs, then spread. A hidden pig virus was found in the first pig heart.",
+      "spoken": "The infection worry: a pig virus could cross into a patient on immune-suppressing drugs, then spread. A hidden pig virus was found in the first pig heart."
+    },
+    "3eb54d8c": {
+      "slide": "donor-pig",
+      "text": "Some ethicists warn that pathogen-free life means separation from their mothers at birth and isolated, barren housing for social animals. Others argue strict welfare standards can be met.",
+      "spoken": "Some ethicists warn that pathogen-free life means separation from their mothers at birth and isolated, barren housing for social animals. Others argue strict welfare standards can be met."
+    },
+    "f16f7321": {
+      "slide": "do-pigs-count",
+      "text": "Before asking whether we may use pigs, ask whether pigs count at all.",
+      "spoken": "Before asking whether we may use pigs, ask whether pigs count at all."
+    },
+    "47cd973e": {
+      "slide": "do-pigs-count",
+      "text": "In 1789, Jeremy Bentham wrote that the question is not, Can they reason? nor, Can they talk? but, Can they suffer?",
+      "spoken": "In 1789, Jeremy Bentham wrote that the question is not, Can they reason? nor, Can they talk? but, Can they suffer?"
+    },
+    "cd6fc334": {
+      "slide": "do-pigs-count",
+      "text": "Pigs can. They feel pain and fear, and a 2015 review calls the research findings suggestive of complex psychology.",
+      "spoken": "Pigs can. They feel pain and fear, and a 2015 review calls the research findings suggestive of complex psychology."
+    },
+    "ff98fb93": {
+      "slide": "do-pigs-count",
+      "text": "They remember, solve mazes, and learn from other pigs. In one study, pigs used a mirror to find hidden food, though a later study failed to repeat that result.",
+      "spoken": "They remember, solve mazes, and learn from other pigs. In one study, pigs used a mirror to find hidden food, though a later study failed to repeat that result."
+    },
+    "104a8333": {
+      "slide": "do-pigs-count",
+      "text": "So the question isn't whether pigs count. It's how much, and what that rules out.",
+      "spoken": "So the question isn't whether pigs count. It's how much, and what that rules out."
+    },
+    "1e8998b3": {
+      "slide": "s9",
+      "text": "Time to check what you've learned. Fill in each gap by choosing an option, then press Check.",
+      "spoken": "Time to check what you've learned. Fill in each gap by choosing an option, then press Check."
+    },
+    "70dac7bf": {
+      "slide": "s9",
+      "text": "Right. Pig kidneys have worked for weeks or months so far, and Bentham's question was whether animals can suffer.",
+      "spoken": "Right. Pig kidneys have worked for weeks or months so far, and Bentham's question was whether animals can suffer."
+    },
+    "3821a8d8": {
+      "slide": "singer",
+      "text": "The first answer: weigh the interests.",
+      "spoken": "The first answer: weigh the interests."
+    },
+    "31f579a4": {
+      "slide": "singer",
+      "text": "The philosopher Peter Singer holds that equal suffering counts equally, whoever feels it. He calls this equal consideration of interests.",
+      "spoken": "The philosopher Peter Singer holds that equal suffering counts equally, whoever feels it. He calls this equal consideration of interests."
+    },
+    "85651bca": {
+      "slide": "singer",
+      "text": "So using animals is justified only if the benefits outweigh all the suffering it causes, the animals' suffering counted equally.",
+      "spoken": "So using animals is justified only if the benefits outweigh all the suffering it causes, the animals' suffering counted equally."
+    },
+    "19aa2470": {
+      "slide": "singer",
+      "text": "Favoring our own species just because it's ours, he calls speciesism.",
+      "spoken": "Favoring our own species just because it's ours, he calls speciesism."
+    },
+    "73c828f9": {
+      "slide": "singer-test",
+      "text": "Singer offers a test for any experiment on animals.",
+      "spoken": "Singer offers a test for any experiment on animals."
+    },
+    "6b669339": {
+      "slide": "singer-test",
+      "text": "In a 1974 essay, he asks: Would the experimenter be prepared to perform his experiment on an orphaned human infant, if that were the only way to save many lives?",
+      "spoken": "In a 1974 essay, he asks: Would the experimenter be prepared to perform his experiment on an orphaned human infant, if that were the only way to save many lives?"
+    },
+    "a0294161": {
+      "slide": "singer-test",
+      "text": "If not, he argues, the readiness to use animals instead is simple discrimination: speciesism.",
+      "spoken": "If not, he argues, the readiness to use animals instead is simple discrimination: speciesism."
+    },
+    "369765b2": {
+      "slide": "singer-test",
+      "text": "He allows that an experiment could reduce suffering so much that it would be permissible. But he opposes animal research as it is usually practiced.",
+      "spoken": "He allows that an experiment could reduce suffering so much that it would be permissible. But he opposes animal research as it is usually practiced."
+    },
+    "cb4b4318": {
+      "slide": "singer-test",
+      "text": "Tom Regan replies that adding up harms this way can justify sacrificing an individual for the greater good.",
+      "spoken": "Tom Regan replies that adding up harms this way can justify sacrificing an individual for the greater good."
+    },
+    "88ebaaa7": {
+      "slide": "regan",
+      "text": "The second answer: rights.",
+      "spoken": "The second answer: rights."
+    },
+    "9421e59c": {
+      "slide": "regan",
+      "text": "The philosopher Tom Regan holds that any subject-of-a-life has inherent value: a being with beliefs, desires, memory, and a sense of its own future.",
+      "spoken": "The philosopher Tom Regan holds that any subject-of-a-life has inherent value: a being with beliefs, desires, memory, and a sense of its own future."
+    },
+    "b4fffe19": {
+      "slide": "regan",
+      "text": "Being a subject-of-a-life is enough for rights, he says. He doesn't say it's required.",
+      "spoken": "Being a subject-of-a-life is enough for rights, he says. He doesn't say it's required."
+    },
+    "216d59c5": {
+      "slide": "regan",
+      "text": "A being with rights may never be treated merely as a resource, however great the benefit to others.",
+      "spoken": "A being with rights may never be treated merely as a resource, however great the benefit to others."
+    },
+    "d1ee02f9": {
+      "slide": "regan",
+      "text": "So he calls for an end to harmful research on such animals. Justice demands not larger, cleaner cages, he writes in a later pamphlet, but empty cages.",
+      "spoken": "So he calls for an end to harmful research on such animals. Justice demands not larger, cleaner cages, he writes in a later pamphlet, but empty cages."
+    },
+    "f8775d10": {
+      "slide": "regan-objections",
+      "text": "Here are two questions for the rights view.",
+      "spoken": "Here are two questions for the rights view."
+    },
+    "bfc312f7": {
+      "slide": "regan-objections",
+      "text": "The cost. Carl Cohen argues that treating animals' rights as trumps would block much valuable research, or shift its risks onto human subjects.",
+      "spoken": "The cost. Carl Cohen argues that treating animals' rights as trumps would block much valuable research, or shift its risks onto human subjects."
+    },
+    "7abac9d0": {
+      "slide": "regan-objections",
+      "text": "The lifeboat. Four people and a dog are in a lifeboat that holds four. Regan says it would not be wrong to throw the dog overboard, since death harms each human more, and not wrong even for a million dogs.",
+      "spoken": "The lifeboat. Four people and a dog are in a lifeboat that holds four. Regan says it would not be wrong to throw the dog overboard, since death harms each human more, and not wrong even for a million dogs."
+    },
+    "3e19e7c3": {
+      "slide": "regan-objections",
+      "text": "Singer replies that Regan then cannot consistently deny that we should experiment on a diseased dog to save diseased humans.",
+      "spoken": "Singer replies that Regan then cannot consistently deny that we should experiment on a diseased dog to save diseased humans."
+    },
+    "e8ce37bc": {
+      "slide": "regan-objections",
+      "text": "Regan's answer: lab animals are coercively placed at risk of harm, risks they would not otherwise run, so that others might benefit. The dog was already in danger.",
+      "spoken": "Regan's answer: lab animals are coercively placed at risk of harm, risks they would not otherwise run, so that others might benefit. The dog was already in danger."
+    },
+    "e36cafa6": {
+      "slide": "cohen",
+      "text": "The third answer: the moral community.",
+      "spoken": "The third answer: the moral community."
+    },
+    "33871198": {
+      "slide": "cohen",
+      "text": "The philosopher Carl Cohen holds that rights arise only among beings who can make moral claims on each other, and recognize claims made on them.",
+      "spoken": "The philosopher Carl Cohen holds that rights arise only among beings who can make moral claims on each other, and recognize claims made on them."
+    },
+    "5e281fc8": {
+      "slide": "cohen",
+      "text": "Animals lack this capacity for free moral judgment, so they have no rights. But we still have obligations to them: we are at least obliged to act humanely.",
+      "spoken": "Animals lack this capacity for free moral judgment, so they have no rights. But we still have obligations to them: we are at least obliged to act humanely."
+    },
+    "58e0c53a": {
+      "slide": "cohen",
+      "text": "He accepts the label: I am a speciesist. The differences between species, he argues, are morally relevant, and ignoring them leads people astray.",
+      "spoken": "He accepts the label: I am a speciesist. The differences between species, he argues, are morally relevant, and ignoring them leads people astray."
+    },
+    "2e8cd8e0": {
+      "slide": "cohen",
+      "text": "He favors alternatives where they give the same result. But he argues for more animal research, not less, to avoid using humans as experimental subjects.",
+      "spoken": "He favors alternatives where they give the same result. But he argues for more animal research, not less, to avoid using humans as experimental subjects."
+    },
+    "e41697e5": {
+      "slide": "talking-pigs",
+      "text": "Now look at the story again.",
+      "spoken": "Now look at the story again."
+    },
+    "e41014e7": {
+      "slide": "talking-pigs",
+      "text": "Hettie can make moral claims on others and honor theirs: she keeps promises and owns up to her duties. The pigs in the hospital's barn can't.",
+      "spoken": "Hettie can make moral claims on others and honor theirs: she keeps promises and owns up to her duties. The pigs in the hospital's barn can't."
+    },
+    "fa3b11b7": {
+      "slide": "talking-pigs",
+      "text": "For Cohen, what matters isn't talking or reasoning but the capacity for moral claims. Rights belong to beings with it, and to every member of a kind that normally has it.",
+      "spoken": "For Cohen, what matters isn't talking or reasoning but the capacity for moral claims. Rights belong to beings with it, and to every member of a kind that normally has it."
+    },
+    "2d97c9d9": {
+      "slide": "talking-pigs",
+      "text": "Hettie qualifies. The barn pigs, like ordinary pigs generally, are owed humane treatment but have no rights.",
+      "spoken": "Hettie qualifies. The barn pigs, like ordinary pigs generally, are owed humane treatment but have no rights."
+    },
+    "582f7932": {
+      "slide": "talking-pigs",
+      "text": "Singer would look at what the barn pigs can feel, and Regan at whether each is a subject-of-a-life. For both, Hettie's capacity for moral claims isn't what gives her standing.",
+      "spoken": "Singer would look at what the barn pigs can feel, and Regan at whether each is a subject-of-a-life. For both, Hettie's capacity for moral claims isn't what gives her standing."
+    },
+    "2bdb55d4": {
+      "slide": "cohen-objections",
+      "text": "Here's the main question for Cohen's view.",
+      "spoken": "Here's the main question for Cohen's view."
+    },
+    "a5c844b2": {
+      "slide": "cohen-objections",
+      "text": "Marginal cases. Infants, and people with severe cognitive disabilities, can't make moral claims either.",
+      "spoken": "Marginal cases. Infants, and people with severe cognitive disabilities, can't make moral claims either."
+    },
+    "913a2b09": {
+      "slide": "cohen-objections",
+      "text": "Regan argues that if they have rights, so do animals like them. Singer argues that we may not do to animals what we'd refuse to do to humans with similar capacities.",
+      "spoken": "Regan argues that if they have rights, so do animals like them. Singer argues that we may not do to animals what we'd refuse to do to humans with similar capacities."
+    },
+    "ccb75a79": {
+      "slide": "cohen-objections",
+      "text": "Cohen's reply: The issue is one of kind. Every human has rights, since what humans retain when disabled, animals have never had.",
+      "spoken": "Cohen's reply: The issue is one of kind. Every human has rights, since what humans retain when disabled, animals have never had."
+    },
+    "4814b3f6": {
+      "slide": "cohen-objections",
+      "text": "The philosophers James Rachels and Jeff McMahan reply that an individual should be treated by its own capacities, not by what's normal for its kind.",
+      "spoken": "The philosophers James Rachels and Jeff McMahan reply that an individual should be treated by its own capacities, not by what's normal for its kind."
+    },
+    "a189f491": {
+      "slide": "s17",
+      "text": "Which view? Each line is said at the committee. Sort each one under Singer, Regan, or Cohen. When every line is placed, press Check answers.",
+      "spoken": "Which view? Each line is said at the committee. Sort each one under Singer, Regan, or Cohen. When every line is placed, press Check answers."
+    },
+    "4288ac7c": {
+      "slide": "s17",
+      "text": "Right. Singer weighs the interests, Regan defends rights, and Cohen limits rights to the moral community.",
+      "spoken": "Right. Singer weighs the interests, Regan defends rights, and Cohen limits rights to the moral community."
+    },
+    "b0e5c6c3": {
+      "slide": "kidney-bacon",
+      "text": "Every use of a pig can be set on two dials. Dial one: what's gained?",
+      "spoken": "Every use of a pig can be set on two dials. Dial one: what's gained?"
+    },
+    "fdec215d": {
+      "slide": "kidney-bacon",
+      "text": "The US slaughtered about a hundred and twenty-eight million pigs for food in 2025, and about one and a half billion a year worldwide. Dale Hargrove's farm sends pigs to market every week.",
+      "spoken": "The U.S. slaughtered about a hundred and twenty-eight million pigs for food in 2025, and about one and a half billion a year worldwide. Dale Hargrove's farm sends pigs to market every week."
+    },
+    "0d03d5d8": {
+      "slide": "kidney-bacon",
+      "text": "Cohen: One cannot coherently object to the killing of animals in biomedical investigations while continuing to eat them.",
+      "spoken": "Cohen: One cannot coherently object to the killing of animals in biomedical investigations while continuing to eat them."
+    },
+    "5e93d88e": {
+      "slide": "kidney-bacon",
+      "text": "On Singer's view, the two uses can come apart. A life saved may outweigh a pig's suffering. A meal, set against a factory-farmed pig's suffering, doesn't.",
+      "spoken": "On Singer's view, the two uses can come apart. A life saved may outweigh a pig's suffering. A meal, set against a factory-farmed pig's suffering, doesn't."
+    },
+    "388a137a": {
+      "slide": "kidney-bacon",
+      "text": "On Regan's view, both are wrong: either way, the pig is used as a resource. On Cohen's, neither violates a right, though both owe the pig humane treatment.",
+      "spoken": "On Regan's view, both are wrong: either way, the pig is used as a resource. On Cohen's, neither violates a right, though both owe the pig humane treatment."
+    },
+    "ba5c620f": {
+      "slide": "s19",
+      "text": "Another decision point. Which is easier to justify: using a pig for a kidney, or for a pork chop? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Another decision point. Which is easier to justify: using a pig for a kidney, or for a pork chop? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "5bb46e8c": {
+      "slide": "s19",
+      "text": "Many people find the kidney easier to justify, because far more is gained. Singer's view explains that. Regan's says the pig is used either way.",
+      "spoken": "Many people find the kidney easier to justify, because far more is gained. Singer's view explains that. Regan's says the pig is used either way."
+    },
+    "1643834f": {
+      "slide": "flies",
+      "text": "Dial two: who pays? Clover's straw house is full of fruit flies. Do they count too?",
+      "spoken": "Dial two: who pays? Clover's straw house is full of fruit flies. Do they count too?"
+    },
+    "778bc793": {
+      "slide": "flies",
+      "text": "Flies clearly detect and avoid harm. Whether they feel pain is uncertain.",
+      "spoken": "Flies clearly detect and avoid harm. Whether they feel pain is uncertain."
+    },
+    "5945a2ee": {
+      "slide": "flies",
+      "text": "A 2022 review found that adult flies meet most criteria for pain, which it counts as strong evidence. Skeptics say we can't yet detect the felt part.",
+      "spoken": "A 2022 review found that adult flies meet most criteria for pain, which it counts as strong evidence. Skeptics say we can't yet detect the felt part."
+    },
+    "40746b3c": {
+      "slide": "flies",
+      "text": "Even if flies feel something, most views give them a much weaker claim than a pig: far simpler lives, with far fewer interests at stake.",
+      "spoken": "Even if flies feel something, most views give them a much weaker claim than a pig: far simpler lives, with far fewer interests at stake."
+    },
+    "0618a8c9": {
+      "slide": "flies",
+      "text": "Singer once drew his line somewhere between a shrimp and an oyster, and has gone back and forth on it. A 2022 UK law covers octopuses and crabs, but not insects.",
+      "spoken": "Singer once drew his line somewhere between a shrimp and an oyster, and has gone back and forth on it. A 2022 UK law covers octopuses and crabs, but not insects."
+    },
+    "40514b4e": {
+      "slide": "fly-lab",
+      "text": "Flies matter in the lab, too.",
+      "spoken": "Flies matter in the lab, too."
+    },
+    "d1ff8604": {
+      "slide": "fly-lab",
+      "text": "Doctor Ravi Menon runs the hospital's fruit-fly lab. Flies have been studied in genetics since about 1910, and fly research has earned at least five Nobel Prizes.",
+      "spoken": "Doctor Ravi Menon runs the hospital's fruit-fly lab. Flies have been studied in genetics since about 1910, and fly research has earned at least five Nobel Prizes."
+    },
+    "2a5f9a7e": {
+      "slide": "fly-lab",
+      "text": "In a 2001 study, about three-quarters of the human disease genes searched had a fly counterpart.",
+      "spoken": "In a 2001 study, about three-quarters of the human disease genes searched had a fly counterpart."
+    },
+    "bc30a9ed": {
+      "slide": "fly-lab",
+      "text": "Britain's center for research alternatives counts swapping mice for flies as partial replacement: on current scientific thinking, flies are not considered capable of experiencing suffering.",
+      "spoken": "Britain's center for research alternatives counts swapping mice for flies as partial replacement: on current scientific thinking, flies are not considered capable of experiencing suffering."
+    },
+    "161fb5cc": {
+      "slide": "fly-lab",
+      "text": "The philosopher Jonathan Birch is less sure. Adult insects are realistic candidates for sentience, he argues, so fly labs must at least ask what precautions are proportionate.",
+      "spoken": "The philosopher Jonathan Birch is less sure. Adult insects are realistic candidates for sentience, he argues, so fly labs must at least ask what precautions are proportionate."
+    },
+    "a2867a61": {
+      "slide": "s22",
+      "text": "Now try it yourself. Here are four cases, each set on the two dials: what's gained, and who pays. Pick each case and compare how the three views rule on it. When you've seen all four, press Continue.",
+      "spoken": "Now try it yourself. Here are four cases, each set on the two dials: what's gained, and who pays. Pick each case and compare how the three views rule on it. When you've seen all four, press Continue."
+    },
+    "2a7ae918": {
+      "slide": "s23",
+      "text": "Reading the dials. Check every statement that is true, as this lesson presents it. Then press Check answers.",
+      "spoken": "Reading the dials. Check every statement that is true, as this lesson presents it. Then press Check answers."
+    },
+    "810b9ad8": {
+      "slide": "s23",
+      "text": "Right. Singer reads both dials, Regan reads who pays, and Cohen's rights read neither, though humane treatment still counts.",
+      "spoken": "Right. Singer reads both dials, Regan reads who pays, and Cohen's rights read neither, though humane treatment still counts."
+    },
+    "8db7d4d9": {
+      "slide": "oversight",
+      "text": "Whatever the philosophers say, here's how US labs are actually overseen.",
+      "spoken": "Whatever the philosophers say, here's how U.S. labs are actually overseen."
+    },
+    "e4709bdf": {
+      "slide": "oversight",
+      "text": "The Animal Welfare Act covers pigs, dogs, and monkeys. It leaves out mice and rats bred for research, and all insects.",
+      "spoken": "The Animal Welfare Act covers pigs, dogs, and monkeys. It leaves out mice and rats bred for research, and all insects."
+    },
+    "ea8dddfc": {
+      "slide": "oversight",
+      "text": "But federally funded labs must also follow a policy that covers every live vertebrate, mice included.",
+      "spoken": "But federally funded labs must also follow a policy that covers every live vertebrate, mice included."
+    },
+    "53100d07": {
+      "slide": "oversight",
+      "text": "Studies under either rule need approval from an animal care committee, called an I A C U C. Research on people goes to a different committee, an I R B.",
+      "spoken": "Studies under either rule need approval from an animal care committee, called an I A C U C. Research on people goes to a different committee, an I R B."
+    },
+    "76b538b0": {
+      "slide": "oversight",
+      "text": "One estimate puts mice and rats at over ninety-nine percent of US lab mammals, about a hundred and eleven million a year.",
+      "spoken": "One estimate puts mice and rats at over ninety-nine percent of U.S. lab mammals, about a hundred and eleven million a year."
+    },
+    "5216026b": {
+      "slide": "three-rs",
+      "text": "The rules labs work by come from a 1959 book by the zoologist William Russell and the microbiologist Rex Burch.",
+      "spoken": "The rules labs work by come from a 1959 book by the zoologist William Russell and the microbiologist Rex Burch."
+    },
+    "49cfa1d9": {
+      "slide": "three-rs",
+      "text": "Replace: use methods without animals, such as cells or computer models, or, as partial replacement, animals that current guidance doesn't consider able to suffer, such as fruit flies.",
+      "spoken": "Replace: use methods without animals, such as cells or computer models, or, as partial replacement, animals that current guidance doesn't consider able to suffer, such as fruit flies."
+    },
+    "981edc36": {
+      "slide": "three-rs",
+      "text": "Reduce: get the same answer from fewer animals.",
+      "spoken": "Reduce: get the same answer from fewer animals."
+    },
+    "be65f507": {
+      "slide": "three-rs",
+      "text": "Refine: make what's done to the animals that are used less painful and distressing.",
+      "spoken": "Refine: make what's done to the animals that are used less painful and distressing."
+    },
+    "b3a25cb5": {
+      "slide": "three-rs",
+      "text": "A change counts only if the science stays sound. Dropping a control group, for example, saves animals but leaves results nobody can trust.",
+      "spoken": "A change counts only if the science stays sound. Dropping a control group, for example, saves animals but leaves results nobody can trust."
+    },
+    "2ca8fa9b": {
+      "slide": "s26",
+      "text": "Now try it yourself. Here's an invented study: testing a new anti-rejection drug for pig-kidney transplants on sixty mice. Seven changes are proposed, one at a time. For each, decide which R it is, or whether it's not a 3R at all. When you've seen the new study, press Continue.",
+      "spoken": "Now try it yourself. Here's an invented study: testing a new anti-rejection drug for pig-kidney transplants on sixty mice. Seven changes are proposed, one at a time. For each, decide which R it is, or whether it's not a 3R at all. When you've seen the new study, press Continue."
+    },
+    "9b74fcfb": {
+      "slide": "s27",
+      "text": "Which R? Each change is proposed for a study. Sort each one under replace, reduce, refine, or not a 3R. When every line is placed, press Check answers.",
+      "spoken": "Which R? Each change is proposed for a study. Sort each one under replace, reduce, refine, or not a 3R. When every line is placed, press Check answers."
+    },
+    "7e206aa7": {
+      "slide": "s27",
+      "text": "Right. Replace swaps animals out, reduce uses fewer, refine makes it less painful, and nothing counts if the science stops being sound.",
+      "spoken": "Right. Replace swaps animals out, reduce uses fewer, refine makes it less painful, and nothing counts if the science stops being sound."
+    },
+    "7f8a9d08": {
+      "slide": "alternatives",
+      "text": "Labs are slowly moving away from animals. Here's where things stand.",
+      "spoken": "Labs are slowly moving away from animals. Here's where things stand."
+    },
+    "7ed9bf7b": {
+      "slide": "alternatives",
+      "text": "A 2022 law removed the federal law's requirement to test new drugs on animals before human trials. Other tests can now take their place.",
+      "spoken": "A 2022 law removed the federal law's requirement to test new drugs on animals before human trials. Other tests can now take their place."
+    },
+    "bb14d9a5": {
+      "slide": "alternatives",
+      "text": "In 2025 the FDA began phasing down animal testing, starting with antibody drugs, and the NIH stopped issuing funding calls for research that uses only animals.",
+      "spoken": "In 2025 the FDA began phasing down animal testing, starting with antibody drugs, and the NIH stopped issuing funding calls for research that uses only animals."
+    },
+    "5315ef5e": {
+      "slide": "alternatives",
+      "text": "The alternatives include organoids, which are tiny organs grown from human cells, organs on chips, and computer models.",
+      "spoken": "The alternatives include organoids, which are tiny organs grown from human cells, organs on chips, and computer models."
+    },
+    "a7516c53": {
+      "slide": "alternatives",
+      "text": "Animal studies are still allowed and still common. No dish yet captures a whole living body.",
+      "spoken": "Animal studies are still allowed and still common. No dish yet captures a whole living body."
+    },
+    "2fb0fe24": {
+      "slide": "s29",
+      "text": "Right. The 2022 law ended the requirement to test drugs on animals. It didn't ban animal testing.",
+      "spoken": "Right. The 2022 law ended the requirement to test drugs on animals. It didn't ban animal testing."
+    },
+    "6611103f": {
+      "slide": "s30",
+      "text": "One last decision point. Now that you've heard all three answers: should the committee approve the pig-kidney trial? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "One last decision point. Now that you've heard all three answers: should the committee approve the pig-kidney trial? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "2dbbc1b5": {
+      "slide": "s30",
+      "text": "Compare this with your first vote. Whichever way you've moved, the useful thing is being able to say which view your vote comes from.",
+      "spoken": "Compare this with your first vote. Whichever way you've moved, the useful thing is being able to say which view your vote comes from."
+    },
+    "db4f0028": {
+      "slide": "s31",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "d9a90532": {
+      "slide": "s31",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "5d72598c": {
+      "slide": "s32",
+      "text": "Here's the lesson, summed up.",
+      "spoken": "Here's the lesson, summed up."
+    },
+    "85d0eec6": {
+      "slide": "s32",
+      "text": "As of October 2026, pig organs have worked in living patients for weeks or months, and formal trials have begun.",
+      "spoken": "As of October 2026, pig organs have worked in living patients for weeks or months, and formal trials have begun."
+    },
+    "c94aa4fb": {
+      "slide": "s32",
+      "text": "Three answers. Singer weighs suffering equally, Regan forbids using a subject-of-a-life as a resource, and Cohen limits rights to the moral community.",
+      "spoken": "Three answers. Singer weighs suffering equally, Regan forbids using a subject-of-a-life as a resource, and Cohen limits rights to the moral community."
+    },
+    "1e48d0aa": {
+      "slide": "s32",
+      "text": "Two dials. What's gained, a life or a meal, and who pays, a pig or a fly. Singer reads both. Regan reads who pays. Cohen's rights read neither.",
+      "spoken": "Two dials. What's gained, a life or a meal, and who pays, a pig or a fly. Singer reads both. Regan reads who pays. Cohen's rights read neither."
+    },
+    "0ee8dd67": {
+      "slide": "s32",
+      "text": "Inside the lab. The 3Rs say replace animals where possible, use fewer, and cause less suffering, all with sound science. They don't say whether a study should happen.",
+      "spoken": "Inside the lab. The 3Rs say replace animals where possible, use fewer, and cause less suffering, all with sound science. They don't say whether a study should happen."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

@@ -4755,3 +4755,208 @@ history, and medicine; philosophy and science). The points a reviewer needs:
   women aged 18–80 (Harvey et al., *AJOG* 2022). Prostate screening for trans
   women who keep a prostate (UCSF). Hemophilia: X-linked recessive
   (MedlinePlus).
+
+---
+
+## Bioethics: Animal Ethics — "The Wolf at the Door"
+
+- **Path:** `lessons/bioethics/animal-ethics/`
+- **Lesson id:** `bioethics-animals`
+- **Top-bar title:** `The Wolf at the Door` · **Subject:** `Animal Ethics`
+- **The question:** May we use pigs to save human lives? Three answers, then
+  two dials that every answer has to read: what's gained (a life or a meal)
+  and who pays (a pig or a fly). Then the rules that actually govern the lab.
+- **Overlap:** the ethical-theory moral-status lesson already teaches
+  Singer's equal consideration, speciesism, Regan's subject-of-a-life, and
+  marginal cases. This lesson is applied: a two-slide bridge on why pigs
+  count works as a recap or a first look, and the new material is Cohen,
+  xenotransplantation, the organs-vs-meat and pig-vs-fly comparisons, and
+  the 3Rs.
+- **Frame:** the folk tale (Halliwell-Phillipps 1886, Jacobs 1890; public
+  domain). Nothing from Disney's 1933 cartoon (no Fifer, Fiddler, Practical;
+  no "Who's Afraid of the Big Bad Wolf?"; no Disney look). Years later, the
+  Big Bad Wolf is old and on dialysis, and a trial could give him a kidney
+  from a gene-edited pig. The three pigs, grown, sit on the county hospital's
+  ethics committee, and the wolf comes to the brick house to ask, not to huff.
+  The story's pigs talk and sit on committees; the farm and lab pigs don't.
+  That difference is Cohen's criterion, and the lesson asks whether it matters.
+- **Who says what:** Singer, Regan, and Cohen supply the three answers;
+  Bentham, Russell and Burch (the 3Rs), and Birch (sentience under
+  uncertainty) supply supporting ideas. Pigs, wolf, and staff supply cases
+  and questions only.
+- **Cast:** Hettie (sow, brick house, chairs the committee), Barnaby (boar,
+  stick house, a vet technician), Clover (young sow, straw house, keeps a
+  vegetable stand; her house is full of flies), the Wolf (old, gray, on
+  dialysis). Humans, invented: Dr. Amara Osei (Ghanaian American woman, 40s,
+  transplant surgeon), Dr. Ravi Menon (Indian American man, 30s, runs a
+  fruit-fly genetics lab), Dale Hargrove (white man, 60s, hog farmer).
+
+### The three answers (and only three)
+
+| View | Answer | Credited to | Main objection |
+|---|---|---|---|
+| Weigh the interests | Yes, if the benefits outweigh the suffering, counted equally | Singer | Regan: aggregation sacrifices individuals. Singer's own consistency test (would we use a human with similar capacities?). |
+| Rights | No: a pig is a subject-of-a-life, not a resource, whatever the benefit | Regan | Cohen: it forbids nearly all medical research; Regan's own lifeboat case. |
+| Moral community | Yes: rights hold only among beings who can make moral claims; humane treatment is still owed | Cohen (1986) | Singer and Regan: marginal cases. Cohen's reply: rights belong to kinds whose members normally can make claims. |
+
+### Two dials
+
+- **What's gained.** A pig kidney may save a life; bacon gives a meal. Singer's
+  verdicts can split (organs may pass where factory-farmed pork fails);
+  Regan rejects both uses; Cohen permits both, with humane treatment. The
+  consistency argument: anyone who accepts eating pigs can hardly reject
+  using them to save lives. *Check what Singer himself said about
+  xenotransplantation (1992, "Xenotransplantation and Speciesism") before
+  stating his verdict.*
+- **Who pays.** The flies in Clover's straw house. Evidence on insect sentience
+  is real but uncertain; Singer's line "somewhere between a shrimp and an
+  oyster"; Birch's precautionary approach; UK law (2022) covers crabs and
+  octopuses but not insects. Fruit flies as a partial *replacement* for mice
+  under the 3Rs. Never grade a view's verdict on flies that its author
+  didn't give (Regan's criterion is sufficient, not necessary).
+
+### Guardrails
+
+- Contested verdicts (should the trial go ahead; is eating pork wrong) are
+  polls. Graded items test what each view says, the 3Rs, and checked facts.
+- Every view gets its best case and a named critic. Cohen is the view most
+  often caricatured; state it in his terms.
+- Pig cognition stated as the reviews state it; no "smarter than a
+  three-year-old."
+- Xenotransplant outcomes stated honestly (deaths, removed kidneys) and dated.
+- US law accurately: the Animal Welfare Act excludes purpose-bred mice, rats,
+  and birds, but federally funded labs follow PHS Policy, which covers all
+  vertebrates. Never "mice have no protection."
+
+### Slide-by-slide (about 33)
+
+1. **Title** — the wolf at the brick house's door.
+2. **Belief probe:** pig organs to save lives; eating pork; animal rights;
+   research worth its cost; an insect's life matters.
+3. **The wolf's request** — the story, the committee.
+4. **Poll:** approve the trial? Repeated at the end.
+5. **The waitlist.**
+6. **Pig organs so far** — patients, dates, outcomes.
+7. **Making a donor pig** — gene edits, pathogen-free barns, infection risk.
+8. **Do pigs count?** — Bentham's question; what pigs can do (careful).
+9. **q1 cloze** — state of the art and the bridge.
+10. **Singer** card — equal consideration applied to research.
+11. **Singer's test** — the consistency challenge; his verdict (verified).
+12. **Regan** card — subject-of-a-life; "empty cages."
+13. **Questions for Regan** — the research cost; the lifeboat.
+14. **Cohen** card — rights among claim-makers; "I am a speciesist."
+15. **The talking pigs** — the story's pigs vs. the barn's; Cohen's criterion.
+16. **Questions for Cohen** — marginal cases; the kind reply; its critics.
+17. **q2 classify** — which view.
+18. **Dial one: what's gained** — kidney vs. bacon, the numbers, the
+    consistency argument, how each view reads it.
+19. **Poll:** the bacon question.
+20. **Dial two: who pays** — the flies; insect sentience; line-drawing.
+21. **Widget: Two Dials** (`hold`) — cases × views.
+22. **q3 checkset** — how each view reads the dials (clear verdicts only).
+23. **Who oversees the lab** — IACUC and IRB; AWA and PHS Policy.
+24. **The 3Rs** — Russell and Burch (1959).
+25. **Widget: The 3Rs Workshop** (`hold`) — redesign a protocol.
+26. **q4 classify** — replace, reduce, or refine.
+27. **Moving away from animals** — the 2022 law, 2025 FDA/NIH moves,
+    organoids, and their limits.
+28. **q5** — governance facts or the dials (decide while drafting).
+29. **Poll repeat** — approve the trial?
+30. **Belief review.**
+31. **Summed up.**
+32. **For Further Reading.**
+
+### As drafted (33 slides)
+
+Follows the plan. q5 is a cloze on lab oversight. Birch's caution sits on the
+fly-lab slide, set against the NC3Rs view that flies are unlikely to suffer.
+
+### Accuracy note (checked 2026-10-30)
+Full notes with URLs: two fact-check reports from this date (philosophy;
+science, law, and xenotransplantation). The points a reviewer needs:
+
+- **Waitlist:** about 110,000 waiting (HRSA, July 2026); about 86% need a
+  kidney (Donate Life/OPTN); 12 a day die (HRSA) or 13 (Donate Life). Not 17.
+- **Pig organs in living patients:** hearts, Bennett (Jan 2022, died Mar 2022)
+  and Faucette (Sept 2023, died Oct 2023). Kidneys since 2024: Slayman (died
+  day 52, no rejection), Pisano (removed day 47; died July 2024), Looney
+  (removed after 130 days), Andrews (271 days off dialysis; removed Oct 2025;
+  human kidney Jan 2026; *Lancet* 2026), Stewart, an unnamed woman (285+ days,
+  company report), and EXPAND patient 1 (Nov 2025). "At least eight living
+  Americans." Trials: EXPAND cleared Feb 2025, first transplant Nov 2025;
+  eGenesis cleared Sept 2025, start expected early 2027.
+- **Donor pigs:** up to 69 edits (eGenesis; Revivicor 10); caesarean birth,
+  pathogen-free barns; latent pig cytomegalovirus found in Bennett's graft (a
+  suspected contributor). Welfare trade-off: Johnson 2022; Rodger et al. 2024.
+- **Pig cognition:** Marino & Colvin 2015, "suggestive of complex
+  psychology" (a Farm Sanctuary project); Broom 2009 mirror study, not
+  replicated by Gieling et al. 2014. No "smarter than a three-year-old."
+- **Pigs for food:** 128.2 million US hogs slaughtered in 2025 (USDA NASS);
+  about 1.49 billion worldwide in 2024 (FAO).
+- **Flies:** 77% of 929 disease genes searched have a fly match (Reiter et
+  al. 2001); at least five Nobel Prizes. NC3Rs: partial replacement includes
+  animals "not considered capable of experiencing suffering," including
+  *Drosophila*. Gibbons et al. 2022: "strong evidence for pain" in adult
+  Diptera (6 of 8 criteria); Adamo 2016 skeptical. UK Animal Welfare
+  (Sentience) Act 2022: vertebrates, cephalopods, decapods; not insects.
+- **Oversight:** AWA excludes purpose-bred *Rattus*, *Mus*, and birds (2002)
+  and all invertebrates; covers research pigs. PHS Policy covers "any live,
+  vertebrate animal" in PHS-funded work. IACUC for animal protocols; IRB for
+  human research. Carbone 2021: mice and rats about 99.3% of lab mammals,
+  about 111.5 million a year (his own caveat: higher than other estimates).
+- **Alternatives:** FDA Modernization Act 2.0 (Dec 2022) replaced
+  "preclinical tests (including tests on animals)" with "nonclinical tests";
+  no ban. FDA roadmap Apr 10, 2025, antibodies first. NIH, July 2025: no new
+  funding calls for animal-only research.
+- **Bentham** (1789, ch. XVII n.): "the question is not, Can they reason? nor,
+  Can they talk? but, Can they suffer?"
+- **Singer:** equal consideration and the test from "All Animals Are Equal"
+  (1974): "Would the experimenter be prepared to perform his experiment on an
+  orphaned human infant, if that were the only way to save many lives?"; "his
+  readiness to use nonhumans is simple discrimination." NYRB 1985: an
+  experiment could "reduce suffering so much that it would be permissible";
+  2006: "I remain opposed to the institutional practice of using animals in
+  research." Xenotransplantation: the 1992 *Transplant Proc* paper was not
+  seen. A "1992 speech," quoted in an NIH article (secondary): anyone who
+  thinks it wrong to use animal body parts for transplants "but all right to
+  use them for breakfast" thinks nothing like him. The lesson says only that
+  his verdicts *can* split. "Somewhere between a shrimp and an oyster"
+  verified as his phrase (2018); he has "gone back and forth" (2010).
+- **Regan:** subject-of-a-life paraphrased, not quoted (sources disagree on a
+  word); sufficient, not necessary. 1985: "categorically abolitionist."
+  "It is not larger, cleaner cages that justice demands … but empty cages"
+  (his pamphlet *The Philosophy of Animal Rights*). Lifeboat (NYRB 1985): "It
+  would not be wrong to cast a million dogs overboard to save the four human
+  survivors." Singer (NYRB 1985): he "cannot consistently deny that we should
+  experiment on a diseased dog to save diseased humans." Regan's reply, in his
+  own 1985 words: in research, animals "are coercively placed at risk of
+  harm, risks they would not otherwise run, so that others might benefit."
+  (The book's lifeboat discussion itself was not seen.)
+- **Cohen's dates:** 1931–2023 (University of Michigan obituary). Full
+  speciesism sentence: "…essential for right conduct, because those who will
+  not make the morally relevant distinctions among species are almost
+  certain, in consequence, to misapprehend their true obligations." He also
+  favors substitution where alternatives give the same result. His criterion
+  works by kind, so the talking-pigs slide says rights belong to beings who
+  make moral claims "and to every member of a kind that normally has it."
+- **Singer and marginal cases:** Singer does not hold that infants have
+  rights (*Practical Ethics*); the lesson gives his version as a consistency
+  argument and Regan's as a rights argument.
+- **Cohen (1986), *NEJM* 315: 865–870:** rights "arise, and can be
+  intelligibly defended, only among beings who actually do, or can, make
+  moral claims against one another"; animals "lack this capacity for free
+  moral judgment"; "we are at least obliged to act humanely"; "I am a
+  speciesist. Speciesism is not merely plausible; it is essential for right
+  conduct" (p. 867); "The issue is one of kind … What humans retain when
+  disabled, animals have never had" (p. 866); increase animal use "to avoid
+  when feasible the use of humans"; "One cannot coherently object to the
+  killing of animals in biomedical investigations while continuing to eat
+  them." The criterion is moral claims, "not the ability to communicate or to
+  reason." Critics of the kind reply: Rachels (1990), McMahan (2005).
+- **Russell & Burch (1959):** replacement, reduction, refinement as defined in
+  ch. 4. Use "partial replacement" (NC3Rs) for flies, not "relative."
+- **Birch (2024):** sentience candidates and proportionate precautions; adult
+  insects are candidates. New York Declaration (Apr 2024): "at least a
+  realistic possibility of conscious experience in all vertebrates ... and
+  many invertebrates (including, at minimum, cephalopod mollusks, decapod
+  crustaceans, and insects)."
