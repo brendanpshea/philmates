@@ -4476,3 +4476,282 @@ facts; philosophy and citations). The points a reviewer needs:
   prostaglandin inhibition; lithium for mania since Cade (1949), mechanism still
   not fully understood. The slide uses London's own wording ("nearly a
   century").
+
+---
+
+## Bioethics: Sex and Gender — "Orlando's Wardrobe"
+
+- **Path:** `lessons/bioethics/sex-and-gender/`
+- **Lesson id:** `bioethics-sex-gender`
+- **Top-bar title:** `Orlando's Wardrobe` · **Subject:** `Sex and Gender`
+- **The question:** What makes someone a woman or a man? Three answers, and
+  the habit of asking what a category is *for* in a given context.
+- **Approach:** The sex/gender distinction; sex as layers that usually line up
+  and sometimes come apart; a philosophy-of-biology debate about whether sex has
+  one definition. Then three views of gender, each with its best case and its
+  main objection, credited to philosophers. Then medicine, where getting the
+  concept right has measurable stakes, and contextualism about both words.
+  Contested verdicts are polls. The lesson takes no side in political debates
+  and states no contested science as settled.
+- **Frame:** Virginia Woolf's *Orlando: A Biography* (1928; US public domain
+  since 2024). Orlando, sixteen when Elizabeth I visits, lives about 340
+  years (1586–1928) while aging twenty, and after a seven-day sleep in
+  Constantinople wakes as a woman. The centuries supply the light material (heels, wigs, boy
+  actors, pink and blue); the lawsuits over Orlando's estates supply the social
+  view; the morning supplies the puzzle. Act 3 is the lesson's own sequel, not
+  Woolf's: Orlando, still thirty-six, visits a present-day clinic and fills in
+  an intake form. Jokes target fashion, lawyers, and paperwork, never anyone's
+  identity. Avoid the novel's racial imagery (the opening scene) and its
+  portrayal of the Roma.
+- **Who says what:** Woolf supplies the case, not a theory. Arguments are
+  credited to Beauvoir, Byrne, Haslanger, Jenkins, Saul, Griffiths, and
+  Richardson, and objections to the philosophers who raised them. Orlando and
+  the clinic staff ask questions and live through cases only.
+- **Cast:** Orlando (white English noble; same face across the centuries).
+  Clinic staff, invented: Dr. Imani Brooks (Black woman, 50s, family doctor),
+  Tomás Reyes (Latino man, 30s, front desk and records), Mei Lin (Chinese
+  American woman, 60s, pharmacist). Widget patients, invented: Ruth (white
+  woman, 62, after a hysterectomy), Dana (woman, 30, with complete androgen
+  insensitivity), Eli (trans man, 28), Mr. Adeyemi (Nigerian American man,
+  70), and Orlando.
+
+### The three views (and only three)
+
+| View | Answer | Credited to | Main objection |
+|---|---|---|---|
+| Biological | Women are adult human females: a biological category | Alex Byrne (2020) | Bettcher: "female" is hard to define (Byrne: a definition may use an undefined word). And it implies trans women are not women, which Byrne accepts while hoping trans people live "in peace and dignity"; Dembroff and others reject it. |
+| Social | A social position: treated as subordinate because seen as female | Beauvoir (1949), Haslanger (2000) | Mikkola: the Queen of England may not count (Elizabeth I is the lesson's own illustration); and a just world would have no women in her sense. Haslanger accepts both. |
+| Identity | An inner map formed to guide someone classed as a woman | Jenkins (2016) | Circularity (Byrne 2020 n. 23; Jenkins 2018 states it herself). Jenkins's reply: the norms are defined by gender classes, not gender identity. |
+
+Contextualism is not a fourth view but a way of using the three: Richardson
+(2022) on sex, Saul (2012) on gender. Saul's own caveat matters: contextualism
+turns "which concept?" into a moral question for each context; it does not
+answer it.
+
+### Guardrails
+
+- **Sex claims.** The gamete definition is standard in evolutionary biology,
+  and a two-sex classification works well for most research and clinical
+  purposes. Other fields measure sex by chromosomes, gonads, hormones,
+  anatomy, or recorded sex. For most people these agree; in some intersex
+  conditions they come apart, and classification then depends on the
+  definition. Never grade "two sexes" or "a spectrum."
+- **Biological view ≠ biological determinism.** Byrne's definitional claim is
+  not the claim that sex fixes traits or roles (Aristotle, Rousseau). Running
+  them together is unfair to Byrne.
+- **Average differences.** Some are sizable (interest in people vs. things),
+  most are small, and distributions overlap. Causes involve both biology and
+  upbringing. A fact about averages does not settle what roles people should
+  have (is/ought).
+- **Hot contexts** (sports eligibility, prisons and shelters, ID documents) get
+  one slide naming them as places where the concepts collide, with no verdict.
+  Medical care for gender-questioning young people is named there as an area
+  of current scientific and political debate, outside this lesson (the author
+  teaches it in lecture). No graded item touches any of them.
+
+### Slide-by-slide (35)
+
+1. **Title** — Orlando across the centuries.
+2. **Belief probe** (`<phil-beliefs>`): body settles gender; roles mostly
+   social; people are the best judges of their own gender; one sex box is
+   enough for a hospital; science has settled what sex is.
+3. **Meet Orlando** — the novel, the mock-biography tone, ~350 years.
+4. **The morning in Constantinople** — Woolf's "did nothing whatever to alter
+   their identity." Same person, different sex: what makes Orlando a woman
+   now?
+5. **Poll:** When did Orlando become a woman? (body changed / world began
+   treating her as one / she came to see herself as one / depends who's
+   asking). Repeated at the end.
+6. **Two words** — sex (biological features) vs. gender (roles, norms,
+   identities). Money (1955), Oakley (1972).
+7. **Beauvoir** card — "One is not born, but rather becomes, a woman."
+8. **Sex has layers** — chromosomes, gonads, hormones, anatomy, gametes.
+9. **When the layers come apart** — differences of sex development; CAIS as
+   the example; prevalence 0.02%–1.7% depending on what is counted.
+10. **One definition or several?** — `<phil-compare>`: Griffiths (gametes)
+    vs. Richardson (sex contextualism); the same debate about species and genes.
+11. **Widget: Orlando's Wardrobe** (`hold`) — a time-travel sort of norms
+    across Orlando's centuries.
+12. **q1 classify** — sex or gender (standard distinction), 6–8 rows.
+13. **Three candidates** — back to the morning: body, treatment, self. Every
+    view agrees norms change; they disagree about what gender *is*.
+14. **Biological view** — Byrne card; best case (ordinary usage, across eras,
+    no stereotypes required).
+15. **Objections to the biological view** — which "female"; the trans-women
+    consequence, stated neutrally with Byrne's reply.
+16. **Not determinism** — Aristotle, Rousseau vs. Byrne.
+17. **What the averages show** — Hyde's similarities, a few large
+    differences, overlap, mixed causes, is/ought.
+18. **q2 checkset** — science and is/ought, 3 true / 3 false.
+19. **Social view** — Haslanger card; Orlando's lawsuits ("that she was a
+    woman, which amounts to much the same thing" as dead).
+20. **Objections to the social view** — Mikkola's queen (Elizabeth I appears
+    in the novel); no women in a just world; Haslanger accepts.
+21. **Identity view** — Jenkins card; the map.
+22. **Objection to the identity view** — circularity; Jenkins's reply.
+23. **q3 classify** — claim → view (3 columns).
+24. **Orlando at the clinic** — the lesson's sequel; the intake form
+    ("Date of birth?").
+25. **Medicine needs sex, carefully** — zolpidem (FDA 2013), crash-test
+    dummies, women excluded from early trials, NIH's sex-as-a-variable rule.
+26. **Four fields, not one box** — organs present, chromosomes, legal sex,
+    gender identity and name.
+27. **Widget: The Intake Form** (`hold`) — five patients × four tasks; where
+    one M/F box gives the wrong answer (most often for non-trans patients,
+    e.g. after a hysterectomy) and which field fixes it.
+28. **q4 classify** — which field does each task need (new rows).
+29. **Saul** card — contextualism and its caveat.
+30. **Where the concepts collide** — sports, prisons and shelters, ID
+    documents, youth gender medicine (named only). No verdict.
+31. **q5 cloze** — the views and who holds them.
+32. **Poll repeat** — When did Orlando become a woman?
+33. **Belief review.**
+34. **Takeaways.**
+35. **For Further Reading.**
+
+### Widgets
+
+- **Orlando's Wardrobe** (`assets/wardrobe.js`, `<phil-wardrobe>`): six or
+  seven verified norms from Orlando's centuries and ours; the student guesses
+  who was expected to wear or do each, then sees the record. Ungraded.
+- **The Intake Form** (`assets/intake.js`, `<phil-intake>`): guided. For each
+  task, see which patients the one-box form gets wrong, then pick the field
+  that fixes it. Ends with the redesigned form. Ungraded; the fields are taught
+  on the slide before it, and q4 uses new rows.
+
+### As drafted (35 slides)
+
+Follows the slide-by-slide plan, with these changes: the stereotypes
+objection to the identity view was cut (no philosopher could be named for
+it); the wardrobe's heels card is about Europe around 1600, not 1670s
+Versailles (women took up heels in the 1630s); the wig card is the 1770s
+Macaronis, with "Both" as the answer; the four intake questions are the
+lesson's simplification of the health-record standards, and the slide says
+so ("Orlando's clinic needs four").
+
+### Accuracy note (checked 2026-10-30)
+Full notes with URLs: two fact-check reports from this date (the novel,
+history, and medicine; philosophy and science). The points a reviewer needs:
+
+- **The novel.** Hogarth Press, 11 Oct 1928; US public domain 1 Jan 2024.
+  Ch 1: Orlando is sixteen when "The Queen had come"; ch 6: "she was now
+  thirty-six"; the poem's manuscript is dated 1586. Ch 3, after a seven-day
+  trance: "Orlando had become a woman—there is no denying it. But in every
+  other respect, Orlando remained precisely as he had been. The change of sex,
+  though it altered their future, did nothing whatever to alter their
+  identity." ("Their" means the man and the woman Orlando, not a singular
+  they.) Ch 4, the ship *Enamoured Lady*: "she realized with a start the
+  penalties and the privileges of her position." Ch 4: "It was a change in
+  Orlando herself that dictated her choice of a woman's dress and of a woman's
+  sex." Ch 4 charges: "(1) that she was dead, and therefore could not hold any
+  property whatsoever; (2) that she was a woman, which amounts to much the
+  same thing." Ch 5 settlement: "My sex ... is pronounced indisputably, and
+  beyond the shadow of a doubt ... female." No court or year is named.
+  Avoid: the ch 1 opening (the Moor's head), "Blackamoor," the n-word
+  (ch 2, 6), the Roma episode (ch 3) and the "gipsy" line opening ch 4.
+- **Beauvoir:** Parshley (1953): "One is not born, but rather becomes, a
+  woman" (Vintage 1989, p. 267). Borde & Malovany-Chevallier drop the "a."
+  Not hers: "biology is not destiny."
+- **Money and Oakley:** Money introduced "gender role" in 1955; Oakley,
+  *Sex, Gender and Society* (1972).
+- **DSDs:** about 0.02% (Sax 2002) to 1.7% (Blackless et al. 2000; late-onset
+  CAH is about 1.5 of the 1.7 points). Naming: "differences (or disorders) of
+  sex development," also called intersex. CAIS: XY, internal testes,
+  female-typical anatomy, no uterus or cervix, female identity (MedlinePlus;
+  Hughes et al., *Lancet* 2012); about 2–5 per 100,000, kept separate from
+  the overall range.
+- **Griffiths:** "Sex is real," *Aeon* (21 Sept 2020): "Males produce small
+  gametes, and females produce large gametes"; "There are also individual
+  organisms that are neither male nor female." "What are biological sexes?"
+  is a 2021 preprint. Gamete definition standard: Lehtonen & Parker 2014.
+- **Richardson (2022), *PTPBio* 14:2:** "the definition of sex and
+  sex-related variables, and whether they are relevant in biomedical
+  research, depends on the research context"; she doesn't deny sex is real.
+- **Pluralism:** Kitcher (1984) and Dupré's "promiscuous realism" are realist
+  pluralists; Ereshefsky doubts a single real species category; Griffiths &
+  Stotz (2013) on gene concepts.
+- **Byrne (2020), *Phil Studies* 177: 3783–3803:** "S is a woman iff S is an
+  adult human female," "a purely modal thesis: it is not a claim of
+  grounding, real definition, a prioricity, or synonymy"; "woman is a
+  biological (and not social) category." So the lesson says "women are
+  adult human females," never "'woman' means." Does *not* define "female" by
+  gametes (n. 15, answering Bettcher's worry that "female" is hard to define:
+  a definition can use an undefined word). On trans women: accepts the
+  consequence; "An eminently desirable and feasible goal is for trans women
+  (and men) to be accepted by society and live in peace and dignity." (His
+  "being an F vs. being (rightly) treated as an F" line is about a fictional
+  case, so the lesson doesn't use it.) He also calls relying on "trans women
+  are women" as an unargued premise "methodologically quite ill-advised."
+  Critic: Dembroff (2021), *Phil Studies* 178: 983–1003: Byrne's supporting
+  arguments "are at best confused—more often, they are question-begging or
+  false" (p. 985); Byrne stipulates "'woman' has a single, invariant meaning"
+  (p. 989); diagnosis (p. 999): the "natural attitude," that "there are two
+  universal genders, every person immutably has one, and all this is
+  vindicated by science." Bettcher 2009's own text was not seen; the lesson
+  states her worry only as Byrne's n. 15 reports it.
+- **Bettcher:** 2009 on "female" being hard to define (answered in Byrne's
+  n. 15); 2017 on first-person authority, after which Jenkins (2018, p. 733)
+  grants her account "does not entail that everyone is always right about
+  their own gender identity."
+- **Mikkola (2009), via SEP:** revisionary analyses like Haslanger's are
+  "both politically unhelpful and philosophically unnecessary."
+- **Determinism quotes:** Aristotle, *GA* 737a27–28 (Peck, Loeb): "the female
+  is as it were a deformed male." Rousseau, *Emile* V: "Ainsi toute
+  l'éducation des femmes doit être relative aux hommes" ("the whole education
+  of women ought to be relative to men," a literal rendering).
+- **Hyde (2005):** 30% of effects close to zero, 48% small (78%); large:
+  throwing velocity (d = 2.18) and some aspects of sexuality. Su, Rounds &
+  Armstrong (2009): things vs. people, d = 0.93. Balance: Del Giudice et al.
+  (2012) on combined traits. Causes: Berenbaum & Hines (1992), Pasterski
+  (2005); Lytton & Romney (1991), Else-Quest et al. (2010).
+- **Hume:** *Treatise* 3.1.1.27; Book 3 published 1740.
+- **Haslanger (2000), *Noûs* 34: 31–55:** p. 39: "S is a woman iff[df] S is
+  systematically subordinated along some dimension ... and S is 'marked' as
+  a target for this treatment by observed or imagined bodily features
+  presumed to be evidence of a female's biological role in reproduction."
+  pp. 45–46: some females aren't women in her sense, and they "are not
+  counterexamples." p. 46: "a day when there are no more women (though, of
+  course, we should not aim to do away with females!)."
+- **Mikkola's queen:** SEP: "At least arguably, the Queen of England is not
+  oppressed on sex-marked grounds"; usually cited to Mikkola 2009 (not seen).
+  Elizabeth I "may not count," since subordination need be only "along some
+  dimension."
+- **Jenkins (2016), *Ethics* 126(2): 394–421, p. 410:** "S has a female gender
+  identity iff S's internal 'map' is formed to guide someone classed as a
+  woman through the social or material realities that are, in that context,
+  characteristic of women as a class." Reply to circularity (2018, *Ergo*
+  5(27), p. 734): the norms "are not defined in terms of gender identity but
+  in terms of gender classes."
+- **Saul (2012), p. 201:** "'X is a woman' is true in a context C iff X is human
+  and relevantly similar (according to the standards at work in C) to most of
+  those possessing all of the biological markers of female sex." p. 204:
+  disputes are settled "by appeal to moral and political principles."
+- **Wardrobe.** Stage: "young men or boys" (Folger); first known professional
+  actress, Desdemona, 8 Dec 1660. Heels: Western Asia, for riding (Bata Shoe
+  Museum); European men from about 1600; women from the 1630s "to masculinise
+  their outfits" (Semmelhack). Macaronis (1770s): wigs, face powder, rouge,
+  mocked in caricature (V&A). Breeching at about 4–7; FDR in a dress at two
+  (Smithsonian, 1884). Pink: "pink for the boy and blue for the girl" (1918,
+  usually cited to *Earnshaw's Infants' Department*); contested, so the card
+  says "says one trade magazine" and that the code wasn't fixed until the
+  mid-1900s. ENIAC "was run by a team of six women" (Penn); Cosmopolitan,
+  April 1967, quoting Grace Hopper: "just like planning a dinner."
+- **Medicine.** Zolpidem: FDA, 10 Jan 2013, 10 → 5 mg (IR) and 12.5 → 6.25 mg
+  (ER); women clear it more slowly; about 15% of women vs 3% of men above 50
+  ng/mL at 8 hours. Dummies: the Hybrid III small female was built "primarily
+  using scaled male data" (NHTSA); Forman et al. 2019, 73% higher odds of
+  serious injury for belted women in frontal crashes; IIHS 2021: much of the
+  gap is vehicle choice and crash type, but women still had more injuries in
+  comparable frontal crashes. Trials: 1977 FDA guideline (phase 1 and early
+  phase 2), revoked 22 July 1993. SABV: NOT-OD-15-102, applied from 25 Jan
+  2016.
+- **Records and screening.** National Academies (2022): two questions (sex
+  assigned at birth; current gender); "Anatomic inventories have been
+  proposed"; "Pap tests are indicated only for people with a cervix." HL7
+  Gender Harmony (2023): gender identity, sex parameter for clinical use,
+  recorded sex or gender, name to use, pronouns. USPSTF 2018: cervical
+  screening "applies to all asymptomatic individuals with a cervix"; none
+  after "a hysterectomy with removal of the cervix." Hysterectomy: 21% of US
+  women aged 18–80 (Harvey et al., *AJOG* 2022). Prostate screening for trans
+  women who keep a prostate (UCSF). Hemophilia: X-linked recessive
+  (MedlinePlus).

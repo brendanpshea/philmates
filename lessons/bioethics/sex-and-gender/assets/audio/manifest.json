@@ -1,0 +1,612 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-storyteller-3",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "4d5ad8e3": {
+      "slide": "s1",
+      "text": "Welcome to Orlando's Wardrobe. One person, more than three hundred years, and a great many clothes. What makes someone a woman or a man? In Virginia Woolf's novel Orlando, a young nobleman lives for hundreds of years, and one morning wakes up a woman. Orlando's story is your way into one of the basic questions of bioethics. Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to Orlando's Wardrobe. One person, more than three hundred years, and a great many clothes. What makes someone a woman or a man? In Virginia Woolf's novel Orlando, a young nobleman lives for hundreds of years, and one morning wakes up a woman. Orlando's story is your way into one of the basic questions of bioethics. Whenever it's your turn, I'll stop and wait for you."
+    },
+    "eb00b0c4": {
+      "slide": "s2",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s2",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "77e6ebbb": {
+      "slide": "meet-orlando",
+      "text": "First, meet Orlando.",
+      "spoken": "First, meet Orlando."
+    },
+    "776851ff": {
+      "slide": "meet-orlando",
+      "text": "Virginia Woolf published Orlando: A Biography in 1928. It's a comic novel, written as if it were a stuffy biography.",
+      "spoken": "Virginia Woolf published Orlando: A Biography in 1928. It's a comic novel, written as if it were a stuffy biography."
+    },
+    "5b0eaee2": {
+      "slide": "meet-orlando",
+      "text": "Orlando is a sixteen-year-old nobleman when Queen Elizabeth the First comes to visit, and is still alive in 1928, aged only thirty-six.",
+      "spoken": "Orlando is a sixteen-year-old nobleman when Queen Elizabeth the First comes to visit, and is still alive in 1928, aged only thirty-six."
+    },
+    "f502f461": {
+      "slide": "meet-orlando",
+      "text": "Over the centuries, Orlando is a courtier, an ambassador, a poet, and a wife.",
+      "spoken": "Over the centuries, Orlando is a courtier, an ambassador, a poet, and a wife."
+    },
+    "3e6a2e2b": {
+      "slide": "meet-orlando",
+      "text": "Woolf modeled Orlando on her friend, the writer Vita Sackville-West.",
+      "spoken": "Woolf modeled Orlando on her friend, the writer Vita Sackville-West."
+    },
+    "763b7369": {
+      "slide": "the-morning",
+      "text": "One morning in Constantinople. Orlando, now an ambassador in Constantinople, falls into a sleep that lasts seven days, and wakes up a woman. Woolf's narrator reports: Orlando had become a woman. There is no denying it. But in every other respect, Orlando remained precisely as he had been. The change of sex, though it altered their future, did nothing whatever to alter their identity. Same person, different body. So what, exactly, makes Orlando a woman now?",
+      "spoken": "One morning in Constantinople. Orlando, now an ambassador in Constantinople, falls into a sleep that lasts seven days, and wakes up a woman. Woolf's narrator reports: Orlando had become a woman. There is no denying it. But in every other respect, Orlando remained precisely as he had been. The change of sex, though it altered their future, did nothing whatever to alter their identity. Same person, different body. So what, exactly, makes Orlando a woman now?"
+    },
+    "867f0d3a": {
+      "slide": "s5",
+      "text": "A first decision point. When did Orlando become a woman? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A first decision point. When did Orlando become a woman? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "f168296f": {
+      "slide": "s5",
+      "text": "Each answer matches one of the views in this lesson. You'll answer again at the end.",
+      "spoken": "Each answer matches one of the views in this lesson. You'll answer again at the end."
+    },
+    "bd393b66": {
+      "slide": "two-words",
+      "text": "To answer, you need two words: sex and gender.",
+      "spoken": "To answer, you need two words: sex and gender."
+    },
+    "f6fab4fd": {
+      "slide": "two-words",
+      "text": "Sex usually means biological features: chromosomes, reproductive organs, hormones, and the like.",
+      "spoken": "Sex usually means biological features: chromosomes, reproductive organs, hormones, and the like."
+    },
+    "d433eb39": {
+      "slide": "two-words",
+      "text": "Gender usually means the roles, rules, expectations, and identities a society links to being a man or a woman.",
+      "spoken": "Gender usually means the roles, rules, expectations, and identities a society links to being a man or a woman."
+    },
+    "4fd30846": {
+      "slide": "two-words",
+      "text": "The psychologist John Money coined the term gender role in 1955. The sociologist Ann Oakley brought the distinction into feminism in 1972.",
+      "spoken": "The psychologist John Money coined the term gender role in 1955. The sociologist Ann Oakley brought the distinction into feminism in 1972."
+    },
+    "1266a4a4": {
+      "slide": "two-words",
+      "text": "The distinction lets you ask which differences come from biology and which come from society.",
+      "spoken": "The distinction lets you ask which differences come from biology and which come from society."
+    },
+    "c6b6a44b": {
+      "slide": "beauvoir",
+      "text": "Here's one of the most influential statements of the idea, from before anyone used the word gender this way. In 1949, the French philosopher Simone de Beauvoir wrote: One is not born, but rather becomes, a woman.",
+      "spoken": "Here's one of the most influential statements of the idea, from before anyone used the word gender this way. In 1949, the French philosopher Simone de Beauvoir wrote: One is not born, but rather becomes, a woman."
+    },
+    "5c00984b": {
+      "slide": "beauvoir",
+      "text": "Beauvoir published The Second Sex in 1949, and that is its most famous line.",
+      "spoken": "Beauvoir published The Second Sex in 1949, and that is its most famous line."
+    },
+    "c73aa248": {
+      "slide": "beauvoir",
+      "text": "She meant that the work, manners, and limits expected of women are made by society, not handed down by biology.",
+      "spoken": "She meant that the work, manners, and limits expected of women are made by society, not handed down by biology."
+    },
+    "65f66a32": {
+      "slide": "beauvoir",
+      "text": "And she argued that society treats woman as the Other: defined by her relation to man, while man counts as the standard.",
+      "spoken": "And she argued that society treats woman as the Other: defined by her relation to man, while man counts as the standard."
+    },
+    "de79dad2": {
+      "slide": "layers",
+      "text": "Now, what exactly is biological sex? It has layers.",
+      "spoken": "Now, what exactly is biological sex? It has layers."
+    },
+    "10a03a0c": {
+      "slide": "layers",
+      "text": "Chromosomes. Most people have X X or X Y.",
+      "spoken": "Chromosomes. Most people have X X or X Y."
+    },
+    "a8857fd8": {
+      "slide": "layers",
+      "text": "Gonads and hormones. Ovaries or testes, and the hormones they make, such as estrogen and testosterone.",
+      "spoken": "Gonads and hormones. Ovaries or testes, and the hormones they make, such as estrogen and testosterone."
+    },
+    "bea84b9b": {
+      "slide": "layers",
+      "text": "Anatomy. Internal organs such as a uterus or a prostate, and the external genitals.",
+      "spoken": "Anatomy. Internal organs such as a uterus or a prostate, and the external genitals."
+    },
+    "d4202319": {
+      "slide": "layers",
+      "text": "Gametes. The sex cells a body is organized to make: large eggs or small sperm. For most people, all of these layers line up.",
+      "spoken": "Gametes. The sex cells a body is organized to make: large eggs or small sperm. For most people, all of these layers line up."
+    },
+    "02940181": {
+      "slide": "layers-apart",
+      "text": "But the layers don't always line up.",
+      "spoken": "But the layers don't always line up."
+    },
+    "3d03062f": {
+      "slide": "layers-apart",
+      "text": "In some people, the layers don't all line up. Doctors call these differences, or disorders, of sex development. They are also called intersex variations.",
+      "spoken": "In some people, the layers don't all line up. Doctors call these differences, or disorders, of sex development. They are also called intersex variations."
+    },
+    "98d92c2d": {
+      "slide": "layers-apart",
+      "text": "An example is complete androgen insensitivity. The person has X Y chromosomes and internal testes, but her body can't respond to testosterone.",
+      "spoken": "An example is complete androgen insensitivity. The person has X Y chromosomes and internal testes, but her body can't respond to testosterone."
+    },
+    "be93059e": {
+      "slide": "layers-apart",
+      "text": "She develops a female-typical outward body, without a uterus. She is usually raised as a girl, and identifies as a woman.",
+      "spoken": "She develops a female-typical outward body, without a uterus. She is usually raised as a girl, and identifies as a woman."
+    },
+    "1d3ac9bb": {
+      "slide": "layers-apart",
+      "text": "All kinds together, estimates run from about two in ten thousand people to about one in sixty. They differ because researchers disagree about which conditions count.",
+      "spoken": "All kinds together, estimates run from about two in ten thousand people to about one in sixty. They differ because researchers disagree about which conditions count."
+    },
+    "68bb42bd": {
+      "slide": "which-layer",
+      "text": "So, is there one definition of sex, or several? The philosopher of biology Paul Griffiths defends biology's standard definition: males produce small gametes, and females produce large gametes. He adds that some individual organisms are neither male nor female. The philosopher Sarah Richardson argues that how to define sex depends on the research context. She calls this sex contextualism, and she doesn't deny that sex is real. A genetics study might sort people by chromosomes, and a drug study by hormone levels. This is a live debate. Philosophers have the same argument about species and genes, because scientists in different fields define those differently too.",
+      "spoken": "So, is there one definition of sex, or several? The philosopher of biology Paul Griffiths defends biology's standard definition: males produce small gametes, and females produce large gametes. He adds that some individual organisms are neither male nor female. The philosopher Sarah Richardson argues that how to define sex depends on the research context. She calls this sex contextualism, and she doesn't deny that sex is real. A genetics study might sort people by chromosomes, and a drug study by hormone levels. This is a live debate. Philosophers have the same argument about species and genes, because scientists in different fields define those differently too."
+    },
+    "e837c30c": {
+      "slide": "s11",
+      "text": "Now, gender. Orlando has lived through centuries of rules about who wears and does what. Here are six of them, from Orlando's time and a little after. For each card, guess who was expected to do it, then read the record. When you've turned over all six, press Continue.",
+      "spoken": "Now, gender. Orlando has lived through centuries of rules about who wears and does what. Here are six of them, from Orlando's time and a little after. For each card, guess who was expected to do it, then read the record. When you've turned over all six, press Continue."
+    },
+    "5000d4d1": {
+      "slide": "s12",
+      "text": "Sex or gender? Using the distinction as defined in this lesson, sort each one under sex, a biological feature, or gender, a social role, rule, or expectation. When every line is placed, press Check answers.",
+      "spoken": "Sex or gender? Using the distinction as defined in this lesson, sort each one under sex, a biological feature, or gender, a social role, rule, or expectation. When every line is placed, press Check answers."
+    },
+    "8ae700c5": {
+      "slide": "s12",
+      "text": "Right. Chromosomes, organs, and gametes belong to sex. Rules about crying, colors, childcare, and voting belong to gender.",
+      "spoken": "Right. Chromosomes, organs, and gametes belong to sex. Rules about crying, colors, childcare, and voting belong to gender."
+    },
+    "878b5baf": {
+      "slide": "three-candidates",
+      "text": "Back to that morning. Every view in this lesson agrees that rules like those in Orlando's wardrobe come from society. They disagree about what being a woman is. Three things might settle it for Orlando.",
+      "spoken": "Back to that morning. Every view in this lesson agrees that rules like those in Orlando's wardrobe come from society. They disagree about what being a woman is. Three things might settle it for Orlando."
+    },
+    "2844d73c": {
+      "slide": "three-candidates",
+      "text": "Her body, which changed during that seven-day sleep.",
+      "spoken": "Her body, which changed during that seven-day sleep."
+    },
+    "4319d5b5": {
+      "slide": "three-candidates",
+      "text": "How the world treats her. On the ship home, given skirts and a captain's courtesy, Orlando realized with a start the penalties and the privileges of her position.",
+      "spoken": "How the world treats her. On the ship home, given skirts and a captain's courtesy, Orlando realized with a start the penalties and the privileges of her position."
+    },
+    "651e9114": {
+      "slide": "three-candidates",
+      "text": "Her own sense of herself. Woolf's narrator suspects that a change in Orlando herself led her to dress as a woman.",
+      "spoken": "Her own sense of herself. Woolf's narrator suspects that a change in Orlando herself led her to dress as a woman."
+    },
+    "19725b16": {
+      "slide": "three-candidates",
+      "text": "Each of the three views you're about to meet picks one of these.",
+      "spoken": "Each of the three views you're about to meet picks one of these."
+    },
+    "7d7fb1d6": {
+      "slide": "biological-view",
+      "text": "The first view is the biological view.",
+      "spoken": "The first view is the biological view."
+    },
+    "dfd56ccc": {
+      "slide": "biological-view",
+      "text": "The philosopher Alex Byrne argues that women are simply adult human females. On his view, woman names a biological category, not a social one.",
+      "spoken": "The philosopher Alex Byrne argues that women are simply adult human females. On his view, woman names a biological category, not a social one."
+    },
+    "4788a076": {
+      "slide": "biological-view",
+      "text": "On this view, Orlando became a woman the morning her body changed.",
+      "spoken": "On this view, Orlando became a woman the morning her body changed."
+    },
+    "6e8eb740": {
+      "slide": "biological-view",
+      "text": "Its best case: it fits ordinary speech, and it works in every century, whatever the rules.",
+      "spoken": "Its best case: it fits ordinary speech, and it works in every century, whatever the rules."
+    },
+    "a155be46": {
+      "slide": "biological-view",
+      "text": "It asks nothing about clothes or manners. A woman can break every rule in Orlando's wardrobe.",
+      "spoken": "It asks nothing about clothes or manners. A woman can break every rule in Orlando's wardrobe."
+    },
+    "26a5133a": {
+      "slide": "biological-objections",
+      "text": "Here are two questions for the biological view.",
+      "spoken": "Here are two questions for the biological view."
+    },
+    "502e3e2f": {
+      "slide": "biological-objections",
+      "text": "Which female? The philosopher Talia Mae Bettcher argues that female is hard to define. Byrne replies that a definition can use a word without defining it.",
+      "spoken": "Which female? The philosopher Talia Mae Bettcher argues that female is hard to define. Byrne replies that a definition can use a word without defining it."
+    },
+    "64379ab0": {
+      "slide": "biological-objections",
+      "text": "Trans women. The view implies that trans women are not women. Byrne accepts this, and argues that the opposite claim can't just be assumed as a premise.",
+      "spoken": "Trans women. The view implies that trans women are not women. Byrne accepts this, and argues that the opposite claim can't just be assumed as a premise."
+    },
+    "ccb193d9": {
+      "slide": "biological-objections",
+      "text": "He says the goal should be for trans women and men to be accepted by society and live in peace and dignity.",
+      "spoken": "He says the goal should be for trans women and men to be accepted by society and live in peace and dignity."
+    },
+    "79b3f000": {
+      "slide": "biological-objections",
+      "text": "The philosopher Robin Dembroff replies that Byrne assumes what he needs to prove: one fixed meaning for woman, and a science that sorts everyone into two genders.",
+      "spoken": "The philosopher Robin Dembroff replies that Byrne assumes what he needs to prove: one fixed meaning for woman, and a science that sorts everyone into two genders."
+    },
+    "fcf6f525": {
+      "slide": "not-determinism",
+      "text": "Don't confuse the biological view with a different claim.",
+      "spoken": "Don't confuse the biological view with a different claim."
+    },
+    "ef286337": {
+      "slide": "not-determinism",
+      "text": "Biological determinism is the claim that a person's sex fixes their traits and their proper role in life.",
+      "spoken": "Biological determinism is the claim that a person's sex fixes their traits and their proper role in life."
+    },
+    "99154db4": {
+      "slide": "not-determinism",
+      "text": "Aristotle called the female as it were a deformed male. Rousseau wrote that the whole education of women ought to be relative to men.",
+      "spoken": "Aristotle called the female as it were a deformed male. Rousseau wrote that the whole education of women ought to be relative to men."
+    },
+    "e86cee9c": {
+      "slide": "not-determinism",
+      "text": "That isn't Byrne's view. His claim is about what women are, not about what women can or should do.",
+      "spoken": "That isn't Byrne's view. His claim is about what women are, not about what women can or should do."
+    },
+    "262f4a16": {
+      "slide": "not-determinism",
+      "text": "Treating the two claims as one misrepresents the biological view.",
+      "spoken": "Treating the two claims as one misrepresents the biological view."
+    },
+    "60eb3438": {
+      "slide": "averages",
+      "text": "What does science say about differences between men and women?",
+      "spoken": "What does science say about differences between men and women?"
+    },
+    "043525c1": {
+      "slide": "averages",
+      "text": "In a 2005 review, the psychologist Janet Hyde found most measured differences between men and women small or close to zero. A few were large, such as throwing speed.",
+      "spoken": "In a 2005 review, the psychologist Janet Hyde found most measured differences between men and women small or close to zero. A few were large, such as throwing speed."
+    },
+    "009d9a59": {
+      "slide": "averages",
+      "text": "A 2009 study found a large average difference in interest in things versus people, though its size depends on how it's measured.",
+      "spoken": "A 2009 study found a large average difference in interest in things versus people, though its size depends on how it's measured."
+    },
+    "2d2c2193": {
+      "slide": "averages",
+      "text": "Marco Del Giudice argues that combining traits shows bigger differences. Still, the groups overlap, so an average doesn't tell you what one person is like.",
+      "spoken": "Marco Del Giudice argues that combining traits shows bigger differences. Still, the groups overlap, so an average doesn't tell you what one person is like."
+    },
+    "73b557e6": {
+      "slide": "averages",
+      "text": "Both biology and upbringing play a part, and how much each does is debated.",
+      "spoken": "Both biology and upbringing play a part, and how much each does is debated."
+    },
+    "de47cc50": {
+      "slide": "s18",
+      "text": "What follows, and what doesn't? Check every statement that is true, as this lesson presents it. Then press Check answers.",
+      "spoken": "What follows, and what doesn't? Check every statement that is true, as this lesson presents it. Then press Check answers."
+    },
+    "bce85edb": {
+      "slide": "s18",
+      "text": "Right. Averages can differ while the groups overlap. And no fact about averages, by itself, tells anyone what they should do.",
+      "spoken": "Right. Averages can differ while the groups overlap. And no fact about averages, by itself, tells anyone what they should do."
+    },
+    "4d32cff2": {
+      "slide": "social-view",
+      "text": "The second view is the social view.",
+      "spoken": "The second view is the social view."
+    },
+    "432960c5": {
+      "slide": "social-view",
+      "text": "The philosopher Sally Haslanger builds on Beauvoir. On her account, being a woman is a social position: being treated as subordinate because others see you as female.",
+      "spoken": "The philosopher Sally Haslanger builds on Beauvoir. On her account, being a woman is a social position: being treated as subordinate because others see you as female."
+    },
+    "e5f357fe": {
+      "slide": "social-view",
+      "text": "Back in England, Orlando is sued for her estates. Among the charges: that she is dead, and that she is a woman, which amounts to much the same thing.",
+      "spoken": "Back in England, Orlando is sued for her estates. Among the charges: that she is dead, and that she is a woman, which amounts to much the same thing."
+    },
+    "fe6e1338": {
+      "slide": "social-view",
+      "text": "On the social view, that treatment, not the change of body by itself, makes Orlando a woman.",
+      "spoken": "On the social view, that treatment, not the change of body by itself, makes Orlando a woman."
+    },
+    "2d50c2d6": {
+      "slide": "social-view",
+      "text": "Its best case: it names what women in very different societies share, and it asks what the word should do for feminism, not only how it's used.",
+      "spoken": "Its best case: it names what women in very different societies share, and it asks what the word should do for feminism, not only how it's used."
+    },
+    "cc229970": {
+      "slide": "social-objections",
+      "text": "Here are two questions for the social view.",
+      "spoken": "Here are two questions for the social view."
+    },
+    "2a49c19c": {
+      "slide": "social-objections",
+      "text": "The queen. Mari Mikkola asks about the Queen of England. If a queen isn't subordinated, she isn't a woman on this account. Orlando's Elizabeth the First may not count either.",
+      "spoken": "The queen. Mari Mikkola asks about the Queen of England. If a queen isn't subordinated, she isn't a woman on this account. Orlando's Elizabeth the First may not count either."
+    },
+    "00ee5e0f": {
+      "slide": "social-objections",
+      "text": "Haslanger saw this coming. Such females, she says, are not counterexamples, because her definition aims at the category feminism needs.",
+      "spoken": "Haslanger saw this coming. Such females, she says, are not counterexamples, because her definition aims at the category feminism needs."
+    },
+    "4cc7183a": {
+      "slide": "social-objections",
+      "text": "A just world. Ending gender injustice would end womanhood in her sense. She accepts this too. Feminism aims at a day when there are no more women, she writes, though not no more females.",
+      "spoken": "A just world. Ending gender injustice would end womanhood in her sense. She accepts this too. Feminism aims at a day when there are no more women, she writes, though not no more females."
+    },
+    "2008be5a": {
+      "slide": "social-objections",
+      "text": "Mikkola also argues that redefining woman this way is philosophically unnecessary and politically unhelpful.",
+      "spoken": "Mikkola also argues that redefining woman this way is philosophically unnecessary and politically unhelpful."
+    },
+    "c8bca4e0": {
+      "slide": "identity-view",
+      "text": "The third view is the identity view.",
+      "spoken": "The third view is the identity view."
+    },
+    "80c564b8": {
+      "slide": "identity-view",
+      "text": "The philosopher Katharine Jenkins argues that Haslanger's account leaves out trans women, so we need a second concept: gender identity.",
+      "spoken": "The philosopher Katharine Jenkins argues that Haslanger's account leaves out trans women, so we need a second concept: gender identity."
+    },
+    "b88b0a31": {
+      "slide": "identity-view",
+      "text": "To have a female gender identity, on her account, is to have an inner map formed to guide someone treated as a woman through her world.",
+      "spoken": "To have a female gender identity, on her account, is to have an inner map formed to guide someone treated as a woman through her world."
+    },
+    "f33fa17a": {
+      "slide": "identity-view",
+      "text": "Its best case: it counts how people understand themselves. On this view, Orlando is a woman once her map is a woman's.",
+      "spoken": "Its best case: it counts how people understand themselves. On this view, Orlando is a woman once her map is a woman's."
+    },
+    "f03203c5": {
+      "slide": "identity-objections",
+      "text": "Here are two questions for the identity view.",
+      "spoken": "Here are two questions for the identity view."
+    },
+    "389b842d": {
+      "slide": "identity-objections",
+      "text": "Circularity. If a woman is anyone who identifies as a woman, what is she identifying as? The definition seems to use the word it defines. Byrne presses this objection.",
+      "spoken": "Circularity. If a woman is anyone who identifies as a woman, what is she identifying as? The definition seems to use the word it defines. Byrne presses this objection."
+    },
+    "455f2bea": {
+      "slide": "identity-objections",
+      "text": "Jenkins's reply: her map is defined by Haslanger's social position, not by the identity sense of woman, so it doesn't go in a circle.",
+      "spoken": "Jenkins's reply: her map is defined by Haslanger's social position, not by the identity sense of woman, so it doesn't go in a circle."
+    },
+    "685380a5": {
+      "slide": "identity-objections",
+      "text": "The map tracks which gender norms you experience as relevant to you, not whether you like or follow them.",
+      "spoken": "The map tracks which gender norms you experience as relevant to you, not whether you like or follow them."
+    },
+    "413eb4f4": {
+      "slide": "identity-objections",
+      "text": "Authority. Bettcher argues that others should accept a person's sincere word about their gender. Jenkins grants that, on her account, people can be wrong about it.",
+      "spoken": "Authority. Bettcher argues that others should accept a person's sincere word about their gender. Jenkins grants that, on her account, people can be wrong about it."
+    },
+    "157234d0": {
+      "slide": "s23",
+      "text": "Which view? Each claim comes from one of the three views. Sort each one under the biological view, the social view, or the identity view. When every line is placed, press Check answers.",
+      "spoken": "Which view? Each claim comes from one of the three views. Sort each one under the biological view, the social view, or the identity view. When every line is placed, press Check answers."
+    },
+    "e0ebb4e7": {
+      "slide": "s23",
+      "text": "Right. The biological view looks to the body, the social view to how society treats you, and the identity view to your inner map.",
+      "spoken": "Right. The biological view looks to the body, the social view to how society treats you, and the identity view to your inner map."
+    },
+    "40043b6f": {
+      "slide": "clinic",
+      "text": "Orlando goes to the doctor. Woolf's novel ends in 1928. In this lesson's sequel, Orlando, still thirty-six, books a checkup at a present-day clinic.",
+      "spoken": "Orlando goes to the doctor. Woolf's novel ends in 1928. In this lesson's sequel, Orlando, still thirty-six, books a checkup at a present-day clinic."
+    },
+    "99ceef8e": {
+      "slide": "clinic",
+      "text": "The intake form asks for her date of birth. She decides to leave that one blank.",
+      "spoken": "The intake form asks for her date of birth. She decides to leave that one blank."
+    },
+    "adf8be01": {
+      "slide": "clinic",
+      "text": "Then it asks her sex: M or F. Orlando was born a boy, and her lawsuits ended with her sex pronounced indisputably female. Which does the clinic mean?",
+      "spoken": "Then it asks her sex: M or F. Orlando was born a boy, and her lawsuits ended with her sex pronounced indisputably female. Which does the clinic mean?"
+    },
+    "ecc42297": {
+      "slide": "clinic",
+      "text": "Doctor Imani Brooks, the clinic's family doctor, says it's a fair question. Different parts of the clinic need different answers.",
+      "spoken": "Doctor Imani Brooks, the clinic's family doctor, says it's a fair question. Different parts of the clinic need different answers."
+    },
+    "279b6b0b": {
+      "slide": "medicine-needs",
+      "text": "Medicine does need to know about sex. Here's why.",
+      "spoken": "Medicine does need to know about sex. Here's why."
+    },
+    "d6dbd57c": {
+      "slide": "medicine-needs",
+      "text": "In 2013, the FDA halved the recommended dose of the sleeping pill zolpidem for women. Women clear it more slowly, so more of them woke with enough left to impair driving.",
+      "spoken": "In 2013, the FDA halved the recommended dose of the sleeping pill zolpidem for women. Women clear it more slowly, so more of them woke with enough left to impair driving."
+    },
+    "2e55a8de": {
+      "slide": "medicine-needs",
+      "text": "Crash-test dummies were modeled on an average man. In comparable frontal crashes, belted women have been injured more often than belted men.",
+      "spoken": "Crash-test dummies were modeled on an average man. In comparable frontal crashes, belted women have been injured more often than belted men."
+    },
+    "b5ce8832": {
+      "slide": "medicine-needs",
+      "text": "From 1977 to 1993, FDA guidance kept women who could become pregnant out of the earliest drug trials.",
+      "spoken": "From 1977 to 1993, FDA guidance kept women who could become pregnant out of the earliest drug trials."
+    },
+    "12ff70c0": {
+      "slide": "medicine-needs",
+      "text": "Since 2016, the NIH has required the researchers it funds to consider sex as a biological variable in their studies.",
+      "spoken": "Since 2016, the NIH has required the researchers it funds to consider sex as a biological variable in their studies."
+    },
+    "41c8fc8d": {
+      "slide": "four-fields",
+      "text": "Here's the fix. Health-record standards now keep several of these facts apart, instead of one box. Orlando's clinic needs four.",
+      "spoken": "Here's the fix. Health-record standards now keep several of these facts apart, instead of one box. Orlando's clinic needs four."
+    },
+    "9e4f9186": {
+      "slide": "four-fields",
+      "text": "Organs present. Which organs a patient has, such as a cervix or a prostate. Cancer screening follows this.",
+      "spoken": "Organs present. Which organs a patient has, such as a cervix or a prostate. Cancer screening follows this."
+    },
+    "450ece12": {
+      "slide": "four-fields",
+      "text": "Chromosomes. X X, X Y, or another pattern. The risk of passing on a condition carried on the X chromosome follows this.",
+      "spoken": "Chromosomes. X X, X Y, or another pattern. The risk of passing on a condition carried on the X chromosome follows this."
+    },
+    "632a0bf2": {
+      "slide": "four-fields",
+      "text": "Legal sex. What the patient's ID and insurance records say. Billing and records follow this.",
+      "spoken": "Legal sex. What the patient's ID and insurance records say. Billing and records follow this."
+    },
+    "78ff53b9": {
+      "slide": "four-fields",
+      "text": "Gender identity and name. How the patient understands themselves, and the name, title, and pronouns they use. Staff use these to address the patient.",
+      "spoken": "Gender identity and name. How the patient understands themselves, and the name, title, and pronouns they use. Staff use these to address the patient."
+    },
+    "5f13327a": {
+      "slide": "s27",
+      "text": "Now try it yourself. The clinic's old form has one box: M or F. Here are five patients and four tasks the clinic has to get right. First see what the one box gets wrong. Then fix the form, one task at a time, by choosing the question the new form should ask. When you've seen the new form, press Continue.",
+      "spoken": "Now try it yourself. The clinic's old form has one box: M or F. Here are five patients and four tasks the clinic has to get right. First see what the one box gets wrong. Then fix the form, one task at a time, by choosing the question the new form should ask. When you've seen the new form, press Continue."
+    },
+    "b21ee29e": {
+      "slide": "s28",
+      "text": "Which question does it need? Each task comes up at the clinic. Sort each one under the question it needs: organs present, chromosomes, legal sex, or gender identity and name. When every line is placed, press Check answers.",
+      "spoken": "Which question does it need? Each task comes up at the clinic. Sort each one under the question it needs: organs present, chromosomes, legal sex, or gender identity and name. When every line is placed, press Check answers."
+    },
+    "2008485c": {
+      "slide": "s28",
+      "text": "Right. Screening follows organs, how hemophilia is passed on follows chromosomes, claims follow legal sex, and the title and name a patient asked for are recorded with their gender identity.",
+      "spoken": "Right. Screening follows organs, how hemophilia is passed on follows chromosomes, claims follow legal sex, and the title and name a patient asked for are recorded with their gender identity."
+    },
+    "bdca168f": {
+      "slide": "saul",
+      "text": "So maybe the answer is: it depends on the context.",
+      "spoken": "So maybe the answer is: it depends on the context."
+    },
+    "081db24c": {
+      "slide": "saul",
+      "text": "Some words shift with context. A tall pony isn't a tall giraffe.",
+      "spoken": "Some words shift with context. A tall pony isn't a tall giraffe."
+    },
+    "0775cb08": {
+      "slide": "saul",
+      "text": "The philosopher Jennifer Saul considers the idea that woman works like that: the context sets which similarities to typical females count.",
+      "spoken": "The philosopher Jennifer Saul considers the idea that woman works like that: the context sets which similarities to typical females count."
+    },
+    "c7187848": {
+      "slide": "saul",
+      "text": "That's the same kind of move Richardson makes about sex.",
+      "spoken": "That's the same kind of move Richardson makes about sex."
+    },
+    "8abc38be": {
+      "slide": "saul",
+      "text": "Saul's caution: contextualism doesn't say which standard a context should use. That's a moral and political question, and it's where the disagreements are.",
+      "spoken": "Saul's caution: contextualism doesn't say which standard a context should use. That's a moral and political question, and it's where the disagreements are."
+    },
+    "8e87dac5": {
+      "slide": "collide",
+      "text": "Where the concepts collide. In some contexts, the views give different answers, and people disagree sharply about which one should count. This lesson leaves the verdicts to you and your class.",
+      "spoken": "Where the concepts collide. In some contexts, the views give different answers, and people disagree sharply about which one should count. This lesson leaves the verdicts to you and your class."
+    },
+    "e2205360": {
+      "slide": "collide",
+      "text": "Sports. Who competes in women's events.",
+      "spoken": "Sports. Who competes in women's events."
+    },
+    "d9a250ad": {
+      "slide": "collide",
+      "text": "Prisons and shelters. Who is housed where.",
+      "spoken": "Prisons and shelters. Who is housed where."
+    },
+    "3393e474": {
+      "slide": "collide",
+      "text": "Identity documents. What a passport or birth certificate should say, and whether it can change.",
+      "spoken": "Identity documents. What a passport or birth certificate should say, and whether it can change."
+    },
+    "8d5850aa": {
+      "slide": "collide",
+      "text": "Medical care for gender-questioning young people. This is an area of current scientific and political debate, and it's outside this lesson.",
+      "spoken": "Medical care for gender-questioning young people. This is an area of current scientific and political debate, and it's outside this lesson."
+    },
+    "1e8998b3": {
+      "slide": "s31",
+      "text": "Time to check what you've learned. Fill in each gap by choosing an option, then press Check.",
+      "spoken": "Time to check what you've learned. Fill in each gap by choosing an option, then press Check."
+    },
+    "71de177d": {
+      "slide": "s31",
+      "text": "Right. Byrne looks to the body, Haslanger to social position, and Jenkins to an inner map. Richardson argues that defining sex depends on the context, and Saul considers the same kind of idea for woman.",
+      "spoken": "Right. Byrne looks to the body, Haslanger to social position, and Jenkins to an inner map. Richardson argues that defining sex depends on the context, and Saul considers the same kind of idea for woman."
+    },
+    "0616310e": {
+      "slide": "s32",
+      "text": "One last decision point. Now that you've met the three views: when did Orlando become a woman? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "One last decision point. Now that you've met the three views: when did Orlando become a woman? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "b38d21fb": {
+      "slide": "s32",
+      "text": "Compare this with what you picked at the start. Whichever way you've moved, the useful thing is being able to say which view your answer comes from.",
+      "spoken": "Compare this with what you picked at the start. Whichever way you've moved, the useful thing is being able to say which view your answer comes from."
+    },
+    "db4f0028": {
+      "slide": "s33",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "d9a90532": {
+      "slide": "s33",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "5d72598c": {
+      "slide": "s34",
+      "text": "Here's the lesson, summed up.",
+      "spoken": "Here's the lesson, summed up."
+    },
+    "35f7b195": {
+      "slide": "s34",
+      "text": "Sex and gender. Sex comes in biological layers, and whether it has one definition is debated. Gender is the social roles and identities linked to it.",
+      "spoken": "Sex and gender. Sex comes in biological layers, and whether it has one definition is debated. Gender is the social roles and identities linked to it."
+    },
+    "35468e1b": {
+      "slide": "s34",
+      "text": "Three views. Byrne looks to the body, Haslanger to how society treats you, and Jenkins to your inner map. Each faces a serious objection.",
+      "spoken": "Three views. Byrne looks to the body, Haslanger to how society treats you, and Jenkins to your inner map. Each faces a serious objection."
+    },
+    "9634561d": {
+      "slide": "s34",
+      "text": "Averages aren't destiny. Most differences are small, and no average, by itself, tells anyone what they should do.",
+      "spoken": "Averages aren't destiny. Most differences are small, and no average, by itself, tells anyone what they should do."
+    },
+    "f06144af": {
+      "slide": "s34",
+      "text": "Context. Medicine needs the right concept for each task. Saul's question remains: which concept should each context use?",
+      "spoken": "Context. Medicine needs the right concept for each task. Saul's question remains: which concept should each context use?"
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}
