@@ -95,15 +95,15 @@ const CASES = [
     id: "laurie",
     title: "3. Laurie",
     subtitle: "Sustainable Care vs. Martyrdom",
-    amyQuote: "I saw Laurie in the break room covering his tenth extra shift this month. He has a fever and dark circles under his eyes, but he's still smiling and making coffee for everyone. I felt guilty going home on time—should I volunteer for weekend shifts to prove I care?",
+    amyQuote: "I saw Laurie in the break room covering his tenth extra shift this month. He has a fever and dark circles under his eyes, but he's still smiling and making coffee for everyone. I felt guilty going home on time. Should I volunteer for weekend shifts to prove I care?",
     prompt: "How do you advise Amy on professional dedication and limits?",
     choices: [
       {
-        text: "Laurie's generosity is genuine, Amy, but working sick is not clinical virtue—it is exhaustion. Care that breaks the caregiver cannot sustain patients.",
+        text: "Laurie's generosity is genuine, Amy, but working sick is not clinical virtue. It is exhaustion. Care that breaks the caregiver cannot sustain patients.",
         type: "target",
         tag: "Virtuous Mentorship",
         isTarget: true,
-        reaction: "Amy nods slowly. 'So setting boundaries isn't a lack of caring—it is what allows us to keep caring safely tomorrow.'",
+        reaction: "Amy nods slowly. 'So setting boundaries isn't a lack of caring. It is what allows us to keep caring safely tomorrow.'",
         analysis: "This frames boundaries as an essential part of the virtue of care. Sustainable care requires recognizing human limits and institutional responsibilities."
       },
       {

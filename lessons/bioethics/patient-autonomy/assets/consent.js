@@ -8,7 +8,7 @@
    Ungraded exploration (not a quiz widget).
    Authoring:
      <phil-consent case="..." action="..." prompt="...">
-       <phil-req fail="No capacity — can't understand or weigh the choice.">
+       <phil-req fail="No capacity: can't understand or weigh the choice.">
          The patient can understand and weigh the choice (capacity).
        </phil-req>
        ...
@@ -112,7 +112,7 @@ class PhilConsent extends HTMLElement {
 
     this._verdict.className = 'cm-verdict ' + (valid ? 'yes' : 'no');
     this._verdict.textContent = valid
-      ? '✔ Valid informed consent — every element is present.'
+      ? '✔ Valid informed consent. Every element is present.'
       : `✘ Not valid yet — ${total - met} element(s) missing.`;
 
     this._defects.innerHTML = '';

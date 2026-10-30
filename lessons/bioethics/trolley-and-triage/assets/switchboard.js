@@ -120,7 +120,7 @@ const SCENARIOS = [
     utilitarian: "Recommended (Maximizes total survivors)",
     deontology: "Permissible if criteria are objective, public, and non-discriminatory",
     doubleEffect: "Passes (Not killing the untreated; scarcity forces tragic choice)",
-    takeaway: "Unlike Transplant, triage kills no one to harvest parts — it allocates scarce aid when not everyone can be saved. Note what the criterion is: surviving this admission, not having the most future left. Most US protocols exclude expected lifespan on purpose."
+    takeaway: "Unlike Transplant, triage kills no one to harvest parts. It allocates scarce aid when not everyone can be saved. Note what the criterion is: surviving this admission, not having the most future left. Most US protocols exclude expected lifespan on purpose."
   }
 ];
 

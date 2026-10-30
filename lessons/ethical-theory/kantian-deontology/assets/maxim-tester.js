@@ -12,7 +12,7 @@
      <phil-maxim-tester>
        <phil-maxim result="conception"
          universal="Everyone lies whenever it is convenient."
-         verdict="No one could believe any assertion — so the lie itself becomes impossible. The maxim destroys its own point.">
+         verdict="No one could believe any assertion, so the lie itself becomes impossible. The maxim destroys its own point.">
          Lie whenever a lie is convenient.
        </phil-maxim>
        ...

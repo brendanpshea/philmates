@@ -24,9 +24,9 @@ const el = (tag, cls, html) => {
 };
 
 const CATS = {
-  others:   { label: 'Prevents harm to OTHERS', ruling: 'Ruling: KEEP — a legitimate use of Ozma’s power under the Harm Principle.' },
-  self:     { label: 'Prevents harm to SELF',   ruling: 'Ruling: STRIKE — paternalism. "His own good… is not a sufficient warrant."' },
-  morality: { label: 'Enforces MORALITY',       ruling: 'Ruling: STRIKE — legal moralism. Being immoral isn’t the same as harming someone.' },
+  others:   { label: 'Prevents harm to OTHERS', ruling: 'Ruling: KEEP. A legitimate use of Ozma’s power under the Harm Principle.' },
+  self:     { label: 'Prevents harm to SELF',   ruling: 'Ruling: STRIKE. This is paternalism. "His own good… is not a sufficient warrant."' },
+  morality: { label: 'Enforces MORALITY',       ruling: 'Ruling: STRIKE. This is legal moralism. Being immoral isn’t the same as harming someone.' },
 };
 
 const STYLE = `
@@ -122,7 +122,7 @@ class PhilClauseSorter extends HTMLElement {
     const cat = CATS[c.verdict];
     this._ruling.className = 'cs-ruling ' + (ok ? 'good' : 'bad');
     this._ruling.innerHTML = (ok
-      ? '✔ Correct — the council agrees. '
+      ? '✔ Correct. The council agrees. '
       : `✘ Not quite — the council classifies this as “${cat.label}.” `) + cat.ruling;
     this._ruling.style.display = 'block';
     this._note.textContent = c.note;
