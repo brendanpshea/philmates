@@ -1919,14 +1919,31 @@ option lengths; run `node tools/validate-quizzes.mjs` before commit.
 
 ---
 
-## AI Ethics: Technomoral Virtues — "Growing Up in Springfield"
+## AI Ethics: Technomoral Virtues — "The Kids Are Online"  *(built; recast 2026-10-30)*
+
+> **Recast (2026-10-30):** the lesson used *The Simpsons*'s characters and official
+> character art, which the site's CC BY-NC license can't cover. It now uses an
+> original family, the Kapoors of Oak Hollow. Dev was ten in 1989 (arcade,
+> landline, Grandma Asha's "no TV until homework"); now he and Tasha, a nurse,
+> raise Zoe (13), Marcus (10), and baby Rosie. Mapping: Homer and Marge to Dev and
+> Tasha; Bart to Marcus (the re-evaluation slide now shows his traits as scenes:
+> cracking the parental lock, defending Zoe in a group chat); Lisa to Zoe; Maggie
+> to Rosie; Flanders to Mr. Pruitt next door; Mr. Burns to Vivian Stroud, founder
+> of the town's app company; Principal Skinner to Principal Delgado. The
+> philosophy content and graded items are unchanged, except that one classify
+> row, "Lisa decides for herself...", became "A teen decides for herself..." (same
+> data-qid). The widget's three dilemmas were recast and rewritten in plain
+> register; its text is now 15px. Art: twelve new panels in `prompts.md`,
+> including idea scenes for Aristotle and Vallor. The slide-by-slide outline
+> below predates the recast; read Homer, Bart, and so on as their recast
+> equivalents.
 
 > **Accuracy notes (batch 4 review):** Vallor's book is *Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting* (2016). Her technomoral perspective is a disposition to see moral phenomena as parts of a moral whole, not "novelty vs. flourishing"; her care is skilled concern for meeting others' needs, not ecological stewardship (extensions should be marked as such). "Technochauvinism" is Meredith Broussard's term (*Artificial Unintelligence*, 2018).
 
 - **Path:** `lessons/ai-ethics/technomoral-virtues/`
 - **Lesson id:** `ai-ethics-technomoral`
 - **Subject:** `Technomoral Virtues`
-- **Cast:** The Simpsons family (Homer, Marge, Bart, Lisa, Maggie, Ned Flanders, Mr. Burns).
+- **Cast:** The Kapoor family of Oak Hollow (see the recast note above). Cast is varied: South Asian, Black, and mixed-race family members; a Latina principal.
 - **Core scenario:** You step into Homer and Marge's shoes raising children as Springfield shifts from the media landscape of 1989 (broadcast TV, copper landlines, arcade coin-ops) to today (algorithmic feeds, generative AI, doomscrolling, surveillance capitalism).
 - **Philosophy:** Classical virtue traditions (Aristotle's eudaimonia and hexis, Confucian ren and li, Buddhist upāya) integrated with Shannon Vallor's *Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting* (2016).
 

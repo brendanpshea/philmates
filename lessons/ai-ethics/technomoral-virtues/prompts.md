@@ -1,73 +1,139 @@
-# Image Documentation — AI Ethics: Technomoral Virtues ("Growing Up in Springfield")
+# Image prompts — The Kids Are Online
 
-## Status (2026-10-28): flagged, replace all seven PNGs
+Twelve square scenes, generated as **three 2×2 sheets** and split into
+quadrants. Each sheet is one short, complete prompt in a code block, ready to
+paste into any image generator. Render each sheet square. Inspect every panel
+full-size: reject any with baked-in text, and re-roll any sheet that repeats a
+panel instead of drawing four different scenes. Keep the source sheets in
+`temp/technomoral-virtues-sheets/`, not in `assets/`.
 
-The seven PNGs below are official *The Simpsons* character art, not generated
-panels. `flanders.png` and `burns.png` carry Matt Groening's signature baked
-into the image. They break the house art rules (original designs only, no
-likeness to any show, no baked-in text, 16-bit pixel art), and the lesson's
-"About this lesson" note wrongly says its illustrations came from AI image
-generators. The fair-use paragraph below is not a basis to keep them. The
-lesson text also borrows the show's cast and places (see the standards
-report). After the 2026-10-28 review, `flanders.png` and `burns.png` are no
-longer referenced; theory slides now use text-only thinker cards for Aristotle
-and Vallor.
+**To re-roll one panel on its own,** paste the style line, then that panel's
+sentence, then "One single square image, not a grid."
 
-**Proposed replacement (author to decide names).** An original family in an
-original town, with the parents' 1989 childhood as the "before." Re-roll each
-panel on its own: paste the style line, then the panel's sentence, then "One
-single square image, not a grid."
+The frame is invented: the Kapoor family of Oak Hollow. Dev was ten in 1989;
+now he and his wife Tasha are raising Zoe (13), Marcus (10), and baby Rosie,
+with Dev's mother, Grandma Asha, nearby. This lesson replaced one built on a TV
+sitcom's characters and official art, so the rules matter more than usual:
+
+1. **Original designs only.** The look is a 1990s primetime cartoon, but no
+   likeness to any show, character, or studio. **Never name a show or its
+   creator in a prompt.** Generators answer a show's name by copying its
+   characters (yellow skin, overbites), which is the problem this recast fixes.
+   The style line describes the look instead.
+2. **Natural, varied skin tones.** Cartoon styles default to one skin color.
+   Every person is described with their own.
+3. **No portraits of real people.** Aristotle and Vallor appear only as idea
+   scenes on thinker cards. No faces in those panels.
+4. **No text.** Screens, charts, and notes show blank shapes, never letters or
+   numbers.
+5. **The characters are the setting.** The art should never show a character
+   arguing a philosophical position; panels show scenes and cases.
+
+## Status (2026-10-30)
+
+All three 2×2 sheets (`sheet-a.png` through `sheet-c.png`) generated with Gemini
+(Nano Banana) and split into all twelve 512×512 PNG assets in
+`lessons/ai-ethics/technomoral-virtues/assets/`.
+Full sheets are kept in `temp/technomoral-virtues-sheets/` outside `assets/` so
+they do not inflate the SCORM zip size.
+
+All 12 scene PNGs are validated, on-style (16-bit SNES pixel art / 1990s cartoon
+sitcom), text-free, and ready for authoring `index.html`.
+
+Where the panels differ from the prompts (alt text follows the panels):
+- `marcus.png`: the padlock on his phone is intact, not broken.
+- `bedside.png`: Zoe is out of frame; Tasha sits on the bed alone, and the
+  phone basket is on the nightstand, not by the door.
+
+## Style line (first line of every sheet)
 
 ```
-16-bit SNES pixel art. Hard pixel edges, limited palette, warm suburban colors, soft lamplight. No text, letters, or numbers anywhere. Original designs only, no likeness to any cartoon or show.
+16-bit SNES pixel art drawn like a 1990s primetime cartoon sitcom: bold black outlines, flat bright colors, big round eyes, rubbery proportions, retro-futurist gadgets. People have natural human skin tones. No text, letters, or numbers anywhere.
 ```
 
-| Replaces | New file | Re-roll sentence |
-|---|---|---|
-| `homer.png` | `dad.png` | A stocky Filipino American man in his forties with a round face, short black hair, and a rumpled blue work polo slumps on a worn living-room couch, holding a half-eaten donut and squinting at a glowing phone. |
-| `marge.png` | `mom.png` | A tall white woman in her forties with curly red hair in a loose bun and a green cardigan stands in a cozy kitchen, holding a wicker basket full of phones. |
-| `bart.png` | `son.png` | A boy of ten with light brown skin, messy black hair, a red T-shirt, and scuffed sneakers grins with his hands in his pockets, one foot on a skateboard. |
-| `lisa.png` | `daughter.png` | A girl of twelve with light brown skin, curly dark hair in a ponytail, and an orange hoodie sits on her bed at night, lit by a phone screen, a saxophone case beside her. |
-| `maggie.png` | `baby.png` | A baby of about one with light brown skin and a tuft of curly black hair, in a blue onesie, sits on a rug stacking wooden blocks. |
-| (new) | `idea-aristotle.png` | No faces anywhere: a well-worn lyre on a stone bench beside a neat stack of hand-laid bricks, lit by morning sun. |
-| (new) | `idea-vallor.png` | No faces anywhere: a brass compass lying on a dark, glowing tablet, its needle steady while blank app tiles flicker around it. |
+## Cast (keep these words the same in every panel)
 
-`flanders.png` and `burns.png` need no replacement unless the author restores
-a neighbor or an executive to those slides. If so, keep it gentle: no
-cartoon villain.
-
-Every asset below ships as a 512×512 PNG in `/assets/`, and the `src` in `index.html` points at it. 
-
-These images represent educational fair-use depictions of characters from *The Simpsons* (created by Matt Groening, Gracie Films / 20th Television), retrieved from public educational media repositories under **17 U.S.C. § 107 (Fair Use)** for non-profit philosophical critique, pedagogical instruction, and ethical analysis. Each character is framed as a centered figure on the PhilMates `#11131f` void canvas.
+- **Grandma Asha (today):** a South Asian grandmother in her seventies with
+  silver hair in a bun, round glasses, and a maroon cardigan.
+- **Dev (today):** a South Asian man in his late forties with graying temples
+  and stubble, in a gray hoodie.
+- **Dev (1989):** a South Asian boy of ten with a bowl haircut and a neon
+  windbreaker.
+- **Tasha:** a Black woman in her forties with natural curly hair, in green
+  nurse's scrubs.
+- **Zoe:** a girl of thirteen with brown skin, curly hair in a puff, braces,
+  and an oversized purple hoodie.
+- **Marcus:** a boy of ten with brown skin, short twists, a gap-toothed grin,
+  and a red T-shirt.
+- **Rosie:** a toddler with brown skin and a tuft of curly hair, in yellow
+  pajamas.
+- **Principal Delgado:** a Latina woman in her fifties with a gray bob and a
+  navy blazer.
 
 ---
 
-## Character Roster and Pedagogical Roles
+## Sheet A — the Kapoors
 
-### `homer.png` — Homer Simpson (The Impulsive Parent)
-- **Visual:** Homer in his classic white collared shirt and blue trousers, eyeing a pink frosted donut with conflicted longing.
-- **Pedagogical Role:** Represents human appetites, vulnerability to immediate gratification, and the parental instinct that loves his children deeply while frequently succumbing to technological and culinary convenience.
+Save as `sheet-a.png`, then split.
 
-### `marge.png` — Marge Simpson (Attentiveness and Moral Worry)
-- **Visual:** Marge in her green tube dress, red beaded necklace, and tall blue beehive hairstyle, with her characteristic earnest and slightly anxious expression.
-- **Pedagogical Role:** Embodies relational care, maternal attentiveness, and the struggle to maintain household rituals and boundaries against encroaching digital distractions.
+```
+16-bit SNES pixel art drawn like a 1990s primetime cartoon sitcom: bold black outlines, flat bright colors, big round eyes, rubbery proportions, retro-futurist gadgets. People have natural human skin tones. No text, letters, or numbers anywhere.
 
-### `bart.png` — Bart Simpson (The Digital Native and Trickster)
-- **Visual:** Bart with his yellow spiky crewcut hair, red t-shirt, and blue shorts, with his hands in his pockets and a sly smirk.
-- **Pedagogical Role:** Illustrates technological temptation (gaming addiction, generative AI shortcuts, viral pranks), but also tactical creativity, quick humor, and fierce situational loyalty.
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: a family living room at night where a South Asian dad in a gray hoodie, a Black mom in green scrubs, a girl in a purple hoodie, and a boy in a red T-shirt each stare into their own glowing screen, a toddler in yellow pajamas watches a tablet in a playpen, and a South Asian grandmother in a maroon cardigan frowns in the doorway.
+Top-right: a South Asian grandmother with silver hair in a bun, round glasses, and a maroon cardigan points sternly at a blank chore chart on the fridge, while behind her a boy with short twists and a red T-shirt tiptoes away with a phone.
+Bottom-left: a 1989 shopping mall arcade glowing with neon, where a South Asian boy of ten with a bowl haircut and a neon windbreaker plays a big arcade cabinet as kids of different ages and skin tones wait their turn.
+Bottom-right: a boy of ten with brown skin, short twists, a gap-toothed grin, and a red T-shirt proudly holds up a phone whose screen shows a broken padlock, in a messy bedroom.
+```
 
-### `lisa.png` — Lisa Simpson (The Intellect and Social Sorter)
-- **Visual:** Lisa in her orange dress and white pearl choker, with hands on her hips and an earnest, searching expression.
-- **Pedagogical Role:** Illustrates intellectual virtues, epistemic humility, and the vulnerability of thoughtful youth to social media comparison, algorithmic doomscrolling, and existential anxiety.
+| Quadrant | File | Slide use |
+|---|---|---|
+| Top-left | `title.png` | Title |
+| Top-right | `grandma.png` | Rules at the breaking point |
+| Bottom-left | `arcade-1989.png` | What happened to Dev's world? |
+| Bottom-right | `marcus.png` | Re-evaluating Marcus; widget avatar |
 
-### `maggie.png` — Maggie Simpson (The Infancy of Screen Exposure)
-- **Visual:** Baby Maggie in her blue sleep sack with her red pacifier.
-- **Pedagogical Role:** Represents the earliest stages of habituation—the "iPad toddler" phenomenon—where automated environments begin training dopamine loops and attentional habits before conscious reflection develops.
+## Sheet B — the kids at home
 
-### `flanders.png` — Ned Flanders (Rigid Rule-Compliance)
-- **Visual:** Ned in his green sweater over pink collar with his neat mustache and friendly wave.
-- **Pedagogical Role:** Contrasts conventional, rigid rule-following with *technomoral flexibility*. Flanders shows how rule-bound moralism becomes brittle when faced with novel, ambiguous technologies.
+Save as `sheet-b.png`, then split.
 
-### `burns.png` — Mr. Montgomery Burns (Technological Hubris and Extraction)
-- **Visual:** Mr. Burns in his teal business suit with his hands steepling in scheming contemplation.
-- **Pedagogical Role:** Exemplifies extractive surveillance capitalism, technological hubris, and the vice of viewing human attention and personal data solely as resources to be monetized.
+```
+16-bit SNES pixel art drawn like a 1990s primetime cartoon sitcom: bold black outlines, flat bright colors, big round eyes, rubbery proportions, retro-futurist gadgets. People have natural human skin tones. No text, letters, or numbers anywhere.
+
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: a girl of thirteen with brown skin, curly hair in a puff, braces, and an oversized purple hoodie lies in bed at night, her teary face lit blue by her phone, a sketchbook forgotten on the blanket.
+Top-right: a toddler with brown skin and a tuft of curly hair, in yellow pajamas, stares wide-eyed at a tablet propped in her playpen, flashing bright colors, while a dad on the couch behind her watches football on a big TV.
+Bottom-left: a wicker basket on a kitchen counter at night holding five phones charging face-down, a blank sticky note on the basket, moonlight through the window.
+Bottom-right: a Black woman in her forties with natural curly hair, in green nurse's scrubs, sits at the foot of her teenage daughter's bed at night, listening closely, both their phones resting in a basket by the door.
+```
+
+| Quadrant | File | Slide use |
+|---|---|---|
+| Top-left | `zoe.png` | Widget avatar (Zoe and feeds) |
+| Top-right | `rosie.png` | Widget avatar (Rosie and the tablet) |
+| Bottom-left | `basket.png` | Rules as scaffolding |
+| Bottom-right | `bedside.png` | Technochauvinism vs. technomoral wisdom |
+
+## Sheet C — the town, and the thinkers' idea scenes
+
+Save as `sheet-c.png`, then split.
+
+```
+16-bit SNES pixel art drawn like a 1990s primetime cartoon sitcom: bold black outlines, flat bright colors, big round eyes, rubbery proportions, retro-futurist gadgets. People have natural human skin tones. No text, letters, or numbers anywhere.
+
+A 2×2 grid of four DIFFERENT square scenes, separated by thin dark gutters:
+Top-left: a middle school hallway with bright lockers, where students of different ages, genders, and skin tones slide their phones into gray pouches at a table while a Latina principal in her fifties with a gray bob and a navy blazer watches.
+Top-right: three generations of one family, a South Asian grandmother, a South Asian dad, a Black mom, a teenage girl, a boy, and a toddler, squeezed onto a living room couch laughing over a board game, their phones charging in a basket on the shelf behind them.
+Bottom-left: a young sapling tied to a wooden stake in a sunny garden, growing straight along it, no people.
+Bottom-right: an old brass compass resting on the glowing screen of a smartphone, its needle steady, on a wooden desk, no people.
+```
+
+| Quadrant | File | Slide use |
+|---|---|---|
+| Top-left | `school.png` | Decision point: school phone bans |
+| Top-right | `couch.png` | The living room couch (closing) |
+| Bottom-left | `idea-aristotle.png` | Thinker card: Aristotle (twice) |
+| Bottom-right | `idea-vallor.png` | Thinker card: Vallor (four times) |
+
+The old files (`homer.png`, `marge.png`, `bart.png`, `lisa.png`, `maggie.png`,
+`burns.png`, `flanders.png`) were deleted in the recast and must not return.

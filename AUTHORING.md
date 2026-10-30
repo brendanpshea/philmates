@@ -758,7 +758,7 @@ case, and face the choice in a poll.
 
 A lesson with `<phil-narration>` lines gets a **Play** button that runs it as a
 narrated slideshow with captions, stopping at each activity. Students who don't
-press Play get the ordinary lesson. Every lesson but one has it; the catalog
+press Play get the ordinary lesson. Every lesson has it; the catalog
 marks them with a **Narrated** badge.
 
 - `<phil-narration>` on a slide is its spoken intro; `say="…"` on each reveal

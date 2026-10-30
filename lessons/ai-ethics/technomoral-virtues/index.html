@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Growing Up in Springfield: Technomoral Virtues · PhilMates</title>
-  <meta name="description" content="Homer and Marge navigate parenting in a digital world. Explore how emerging technologies reshape moral habituation, using Shannon Vallor's technomoral virtues.">
+  <title>The Kids Are Online: Technomoral Virtues · PhilMates</title>
+  <meta name="description" content="One family, two childhoods: a kid from 1989 now raises kids online. How technology shapes our habits, and Shannon Vallor's technomoral virtues for living well with it.">
   <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
   <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
   <script type="module" src="../../../shared/phil-core.js?v=14"></script>
@@ -12,28 +12,39 @@
 </head>
 <body>
 
-<phil-lesson id="ai-ethics-technomoral" title="Growing Up in Springfield" subject="Technomoral Virtues">
+<!-- INSTRUCTOR NOTE
+     The Kapoor family and the town of Oak Hollow are invented. This lesson
+     was recast in October 2026 from an earlier version built on characters
+     from a TV sitcom; the frame is now original, so the lesson can carry the
+     site's CC BY-NC license. Dev Kapoor was ten in 1989 and is now raising
+     his own kids, which gives the lesson its then-and-now contrast without
+     relying on students knowing any show. Arguments are credited to
+     Aristotle, Vallor, Zuboff, and Broussard by name, never to a character. -->
 
-  <!-- ============ ACT 0 — WELCOME TO 742 EVERGREEN TERRACE ============ -->
+<phil-lesson id="ai-ethics-technomoral" title="The Kids Are Online" subject="Technomoral Virtues">
+
+  <!-- ============ ACT 0 — THE KAPOORS OF OAK HOLLOW ============ -->
 
   <!-- 1. Title -->
   <phil-slide>
-    <img slot="art" src="./assets/homer.png" alt="Homer Simpson eating a bitten pink frosted donut">
-    <h1>Growing Up in Springfield</h1>
-    <p class="lead">In December 1989, raising children meant wrestling with broadcast television, landlines, and the mall arcade. Today, Homer and Marge face a world of algorithmic feeds, generative AI, and digital addiction.</p>
+    <img slot="art" src="./assets/title.png" alt="A cartoon family living room at night: a father, a mother, a teenage girl, and a boy each lit by their own glowing screen, a baby with a tablet in a playpen, and a grandmother frowning in the doorway">
+    <h1>The Kids Are Online</h1>
+    <p class="lead">In 1989, ten-year-old Dev Kapoor grew up with broadcast TV, a landline, and the mall arcade. Today Dev is a dad, and his kids grow up with algorithmic feeds, generative AI, and phones that never leave their hands.</p>
+    <phil-narration>Welcome to The Kids Are Online. In 1989, ten-year-old Dev Kapoor grew up with broadcast TV, a landline, and the mall arcade. Today Dev is a dad. His kids grow up with algorithmic feeds, generative AI, and phones that never leave their hands. Whenever it's your turn, I'll stop and wait for you.</phil-narration>
     <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
   </phil-slide>
 
-  <!-- 2. The Living Room -->
+  <!-- 2. Meet the family -->
   <phil-slide>
-    <img slot="art" src="./assets/marge.png" alt="Marge Simpson with her tall blue beehive hair and green dress">
-    <h1>Parenting at the Breaking Point</h1>
-    <p class="lead">"I try to set sensible household rules," Marge sighs. "No TV until homework is done."</p>
+    <img slot="art" src="./assets/grandma.png" alt="A grandmother with silver hair in a bun and round glasses points at a blank chore chart on the fridge, while behind her a grinning boy slips away with a phone">
+    <h1>Rules at the Breaking Point</h1>
+    <p class="lead">"No TV until homework is done," says Grandma Asha, Dev's mother. "It worked on Dev."</p>
+    <phil-narration>Grandma Asha, Dev's mother, has a rule. No TV until homework is done. She says it worked on Dev.</phil-narration>
     <ul reveal>
-      <li>For decades, Marge relied on clear parental guidelines to keep home grounded.</li>
-      <li>Today, static rules fail when children carry infinite portals in their pockets.</li>
-      <li>Bart bypasses device locks in seconds, while Lisa stays up doomscrolling.</li>
-      <li>This digital terrain requires more than rulebooks; it demands <em>virtue</em>.</li>
+      <li say="In 1989, one clear household rule kept Dev on track. There was one TV, and it sat in the living room.">In 1989, one clear household rule kept Dev on track. There was one TV, and it sat in the living room.</li>
+      <li say="Today Dev and his wife Tasha are raising three kids: Zoe, who's thirteen, Marcus, who's ten, and baby Rosie.">Today Dev and his wife Tasha are raising three kids: Zoe, 13, Marcus, 10, and baby Rosie.</li>
+      <li say="Marcus gets around the parental lock in seconds. And Zoe stays up scrolling until two in the morning.">Marcus gets around the parental lock in seconds, and Zoe stays up scrolling until two in the morning.</li>
+      <li say="Rules alone can't keep up with screens that travel in every pocket. This terrain also takes virtue.">Rules alone can't keep up with screens that travel in every pocket. This terrain also takes <em>virtue</em>.</li>
     </ul>
   </phil-slide>
 
@@ -48,32 +59,37 @@
       <phil-statement>Algorithms that maximize user engagement inevitably undermine human self-control.</phil-statement>
       <phil-statement>High-tech societies require genuinely new moral virtues that classical philosophers never imagined.</phil-statement>
     </phil-beliefs>
+    <phil-narration>Here's where you stand now. Rate each of these five statements by how much you agree. There are no right or wrong answers, and you'll rate them again at the end of the day. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
   </phil-slide>
 
-  <!-- ============ ACT 1 — WHAT HAPPENED TO BART'S WORLD? ============ -->
+  <!-- ============ ACT 1 — WHAT HAPPENED TO DEV'S WORLD? ============ -->
 
   <!-- 4. The Shift -->
   <phil-slide>
-    <img slot="art" src="./assets/bart.png" alt="Bart Simpson with spiky hair and hands in his pockets">
-    <h1>What Happened to Bart's World?</h1>
-    <p class="lead">When <em>The Simpsons</em> first aired, the family gathered around a single wooden CRT television set.</p>
+    <img slot="art" src="./assets/arcade-1989.png" alt="A ten-year-old boy with a bowl haircut and a neon windbreaker plays a glowing arcade cabinet in a 1989 shopping mall, other kids waiting their turn">
+    <h1>What Happened to Dev's World?</h1>
+    <p class="lead">In 1989, the whole Kapoor family gathered around one wooden TV set.</p>
+    <phil-narration>Let's see what happened to Dev's world. In 1989, the whole Kapoor family gathered around one wooden TV set.</phil-narration>
     <ul reveal>
-      <li>Media consumption was a shared household event bounded by scheduled hours and commercial breaks.</li>
-      <li>Bart played eight-bit games at the mall arcade and pulled pranks over a copper landline.</li>
-      <li>Today, digital media is individualized, portable, continuously personalized, and designed for infinite engagement.</li>
-      <li>The environment shaping human habits has shifted from occasional broadcast entertainment to pervasive digital immersion.</li>
+      <li say="Media was a shared household event, bounded by scheduled hours and commercial breaks.">Media consumption was a shared household event bounded by scheduled hours and commercial breaks.</li>
+      <li say="Dev played eight-bit games at the mall arcade, and made prank calls on the kitchen landline.">Dev played eight-bit games at the mall arcade and made prank calls on the kitchen landline.</li>
+      <li say="Today, digital media is individualized, portable, continuously personalized, and designed for infinite engagement.">Today, digital media is individualized, portable, continuously personalized, and designed for infinite engagement.</li>
+      <li say="The environment shaping our habits has shifted from occasional broadcast entertainment to pervasive digital immersion.">The environment shaping human habits has shifted from occasional broadcast entertainment to pervasive digital immersion.</li>
     </ul>
   </phil-slide>
 
   <!-- 5. Rules as Developmental Scaffolding -->
   <phil-slide>
+    <img slot="art" src="./assets/basket.png" alt="Five phones charging face-down in a wicker basket on a kitchen counter at night, a blank sticky note on the basket">
     <h1>Rules as Developmental Scaffolding</h1>
     <p class="lead">Aristotle held that the young need good rules while their habits form (<em>Nicomachean Ethics</em> X.9). Rules are a means, not the goal.</p>
+    <phil-narration>Aristotle held that the young need good rules while their habits form. That's in the Nicomachean Ethics, Book Ten, chapter nine. Rules are a means, not the goal.</phil-narration>
     <ul reveal>
-      <li>Consistent boundaries protect the quiet mental space adolescents need to focus, read, and sleep.</li>
-      <li>Yet rules that are erratic, unenforceable, or purely punitive merely encourage sneakiness and evasion.</li>
-      <li>External rules serve as temporary scaffolding to help emerging self-regulation take root.</li>
-      <li>The ultimate goal is raising young people who can someday govern their own attention without surveillance.</li>
+      <li say="Consistent boundaries protect the quiet mental space that adolescents need to focus, read, and sleep.">Consistent boundaries protect the quiet mental space adolescents need to focus, read, and sleep.</li>
+      <li say="Yet rules that are erratic, unenforceable, or purely punitive merely encourage sneakiness and evasion.">Yet rules that are erratic, unenforceable, or purely punitive merely encourage sneakiness and evasion.</li>
+      <li say="External rules are temporary scaffolding, there to help emerging self-regulation take root.">External rules serve as temporary scaffolding to help emerging self-regulation take root.</li>
+      <li say="The ultimate goal is raising young people who can someday govern their own attention without surveillance.">The ultimate goal is raising young people who can someday govern their own attention without surveillance.</li>
     </ul>
   </phil-slide>
 
@@ -81,6 +97,7 @@
   <phil-slide id="rules-virtues">
     <h1>Rules vs. Virtues in Digital Life</h1>
     <p>Navigating modern technologies requires both external guardrails and cultivated character traits.</p>
+    <phil-narration>Navigating modern technologies takes both external guardrails and cultivated character traits. On one side, Rules, the external scaffolding. These are clear boundaries that protect vulnerable cognitive spaces while young habits are still forming. For example, a household agreement that phones sleep in the kitchen overnight protects adolescent sleep. On the other side, Virtues, the internal self-regulation. These are cultivated dispositions and discernment that govern choices when young people are on their own. For example, a teenager who notices algorithmic manipulation and chooses to disengage when anxiety rises.</phil-narration>
     <phil-compare>
       <phil-side label="Rules" tag="External scaffolding">
         <p>Clear boundaries that protect vulnerable cognitive spaces while young habits are still forming.</p>
@@ -103,27 +120,31 @@
       <phil-item answer="rules" why="A household agreement like this is an external boundary that protects sleep.">Phones sleep in the kitchen overnight</phil-item>
       <phil-item answer="virt" why="Noticing manipulation and choosing to disengage is cultivated self-regulation.">A teenager notices a feed is making her anxious and logs off on her own</phil-item>
       <phil-item answer="rules" why="A fixed household limit is a rule, set from outside.">No screens until homework is done</phil-item>
-      <phil-item answer="virt" why="Deciding for herself, with no one enforcing it, is an internal disposition.">Lisa decides for herself when to put the phone down</phil-item>
+      <phil-item answer="virt" why="Deciding for herself, with no one enforcing it, is an internal disposition.">A teen decides for herself when to put the phone down</phil-item>
       <phil-item answer="rules" why="The lesson calls rules temporary scaffolding that helps self-regulation take root.">Temporary scaffolding while self-control takes root</phil-item>
       <phil-item answer="virt" why="Virtues govern choices when young people are on their own.">Self-regulation that keeps working when no adult is watching</phil-item>
     </phil-classify>
+    <phil-narration>Rules or virtues? Sort each of these six items under Rules or Virtues. When every item is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Rules are external scaffolding while habits form. Virtues are the inner self-regulation the scaffolding is for.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 2 — CLASSICAL ROOTS OF CHARACTER ============ -->
 
   <!-- 8. Virtue as an Acquired Disposition -->
   <phil-slide id="acquired-disposition">
-    <phil-thinker slot="art" name="Aristotle" dates="384–322 BCE" work="Nicomachean Ethics (trans. W. D. Ross)" accent="#ffcf5a">
+    <phil-thinker slot="art" name="Aristotle" dates="384–322 BCE" work="Nicomachean Ethics (trans. W. D. Ross)"
+                  img="./assets/idea-aristotle.png" alt="A young sapling tied to a wooden stake in a garden, growing straight along it" accent="#ffcf5a">
       <p>Virtue is a settled state of character, built by practice.</p>
       <blockquote>We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.</blockquote>
     </phil-thinker>
     <h1>Virtue as an Acquired Disposition</h1>
-    <p class="lead">"I know what I ought to do," Homer groans, eyeing the donut. "Doing it is the hard part."</p>
+    <p class="lead">"I know I should put the phone down," Dev sighs at midnight, still scrolling. "Doing it is the hard part."</p>
+    <phil-narration>Dev sighs at midnight, still scrolling. He knows he should put the phone down, but doing it is the hard part. Here's Aristotle's view: virtue is a settled state of character, built by practice. In his words, we become just by doing just acts, temperate by doing temperate acts, and brave by doing brave acts.</phil-narration>
     <ul reveal>
-      <li>Aristotle observed that simply memorizing ethical definitions does not make a person good.</li>
-      <li>A <em>moral virtue</em> is a stable disposition of character, formed through repeated practice until it becomes second nature.</li>
-      <li>Virtues are neither fleeting emotional moods nor genetic personality traits that people are born with.</li>
-      <li>Just as Homer's impulsive habits formed over decades, genuine moral character is built action by action.</li>
+      <li say="Aristotle observed that simply memorizing ethical definitions doesn't make a person good.">Aristotle observed that simply memorizing ethical definitions does not make a person good.</li>
+      <li say="A moral virtue is a stable disposition of character, formed through repeated practice until it becomes second nature.">A <em>moral virtue</em> is a stable disposition of character, formed through repeated practice until it becomes second nature.</li>
+      <li say="Virtues are neither fleeting emotional moods nor genetic personality traits that people are born with.">Virtues are neither fleeting emotional moods nor genetic personality traits that people are born with.</li>
+      <li say="Dev's midnight scrolling became a habit one night at a time. Good character is built the same way, action by action.">Dev's midnight scrolling became a habit one night at a time. Good character is built the same way, action by action.</li>
     </ul>
   </phil-slide>
 
@@ -131,11 +152,12 @@
   <phil-slide>
     <h1>The Doctrine of the Mean</h1>
     <p class="lead">Aristotle describes each moral virtue as a mean between two vices, one of excess and one of deficiency.</p>
+    <phil-narration>Aristotle describes each moral virtue as a mean between two vices: one of excess, and one of deficiency.</phil-narration>
     <ul reveal>
-      <li>Courage sits between the cowardice of running away and the reckless rashness of jumping Springfield Gorge.</li>
-      <li>Temperance navigates between Homer's boundless self-indulgence and Flanders' joyless self-denial.</li>
-      <li>Finding the appropriate mean is not an arithmetic formula; it requires context, purpose, and discernment.</li>
-      <li>Digital flourishing requires discovering balanced habits of engagement rather than choosing between total addiction and total abstinence.</li>
+      <li say="Courage sits between the cowardice of running away and the rashness of skateboarding off the garage roof.">Courage sits between the cowardice of running away and the rashness of skateboarding off the garage roof.</li>
+      <li say="Temperance sits between bingeing every snack in the house and the joyless self-denial of Mister Pruitt next door, who allows himself nothing.">Temperance sits between bingeing every snack in the house and the joyless self-denial of Mr. Pruitt next door, who allows himself nothing.</li>
+      <li say="Finding the appropriate mean is not an arithmetic formula. It requires context, purpose, and discernment.">Finding the appropriate mean is not an arithmetic formula; it requires context, purpose, and discernment.</li>
+      <li say="Digital flourishing means discovering balanced habits of engagement, rather than choosing between total addiction and total abstinence.">Digital flourishing requires discovering balanced habits of engagement rather than choosing between total addiction and total abstinence.</li>
     </ul>
   </phil-slide>
 
@@ -143,24 +165,26 @@
   <phil-slide>
     <h1>Cross-Cultural Traditions of Virtue</h1>
     <p class="lead">The insight that human flourishing requires cultivated character spans global philosophical traditions.</p>
+    <phil-narration>The insight that human flourishing requires cultivated character spans global philosophical traditions.</phil-narration>
     <ul reveal>
-      <li>Confucian ethics emphasizes <em>ren</em> (humane benevolence) and <em>li</em> (shared relational rituals that shape daily life).</li>
-      <li>Marge's steady dedication to family meals and listening to her children embodies this relational attunement.</li>
-      <li>Buddhist philosophy teaches <em>upāya</em> (skillful means) and <em>karuṇā</em> (compassion), adapting responses to changing conditions.</li>
-      <li>Classical traditions agree that human beings require deliberate practices and supportive environments to flourish.</li>
+      <li say="Confucian ethics emphasizes ren, which is humane benevolence, and li, which are shared relational rituals that shape daily life.">Confucian ethics emphasizes <em>ren</em> (humane benevolence) and <em>li</em> (shared relational rituals that shape daily life).</li>
+      <li say="Tasha's rule of family dinner with phones off, and her habit of really listening, is this kind of relational ritual.">Tasha's rule of family dinner with phones off, and her habit of really listening, is this kind of relational ritual.</li>
+      <li say="Buddhist philosophy teaches upāya, or skillful means, and karuṇā, or compassion. Both adapt our responses to changing conditions.">Buddhist philosophy teaches <em>upāya</em> (skillful means) and <em>karuṇā</em> (compassion), adapting responses to changing conditions.</li>
+      <li say="Classical traditions agree that human beings need deliberate practices and supportive environments to flourish.">Classical traditions agree that human beings require deliberate practices and supportive environments to flourish.</li>
     </ul>
   </phil-slide>
 
-  <!-- 11. Re-evaluating Bart -->
+  <!-- 11. Re-evaluating Marcus -->
   <phil-slide>
-    <img slot="art" src="./assets/bart.png" alt="Bart Simpson looking confident with hands in pockets">
-    <h1>Re-Evaluating Bart's Virtues</h1>
-    <p class="lead">At first glance, Bart appears to be a catalog of vices: impudent, undisciplined, and easily bored.</p>
+    <img slot="art" src="./assets/marcus.png" alt="A ten-year-old boy with short twists and a gap-toothed grin holds up a phone showing a padlock, looking very pleased with himself">
+    <h1>Re-Evaluating Marcus</h1>
+    <p class="lead">At first glance, Marcus looks like a list of vices: cheeky, undisciplined, and bored within a minute of any screen going dark.</p>
+    <phil-narration>At first glance, Marcus looks like a list of vices: cheeky, undisciplined, and bored within a minute of any screen going dark.</phil-narration>
     <ul reveal>
-      <li>Bart regularly rebels against school authority and falls prey to commercial fads and video game obsessions.</li>
-      <li>Yet Bart repeatedly demonstrates fierce personal loyalty whenever Lisa or his family faces genuine harm.</li>
-      <li>He displays tactical resourcefulness, sharp humor, and the courage to challenge hypocritical institutional authority.</li>
-      <li>Cultivating virtue in young people does not mean crushing their spirited vitality; it means channeling their gifts toward the good.</li>
+      <li say="He cracked the parental lock on his first try, and he sells his classmates cheat codes for their games.">He cracked the parental lock on his first try, and he sells his classmates cheat codes for their games.</li>
+      <li say="But when a group chat started mocking Zoe's drawings, Marcus called the posters out by name and took the backlash himself.">But when a group chat started mocking Zoe's drawings, Marcus called the posters out by name and took the backlash himself.</li>
+      <li say="He's quick, funny, and resourceful, and he won't follow a rule he thinks is unfair.">He is quick, funny, and resourceful, and he will not follow a rule he thinks is unfair.</li>
+      <li say="Cultivating virtue in young people doesn't mean crushing their spirited vitality. It means channeling their gifts toward the good.">Cultivating virtue in young people does not mean crushing their spirited vitality; it means channeling their gifts toward the good.</li>
     </ul>
   </phil-slide>
 
@@ -176,22 +200,26 @@
       <phil-statement>Virtue ethics consists of memorizing algorithmic checklists that dictate exact actions in every scenario.</phil-statement>
       <phil-statement>Being virtuous requires complete emotional detachment and total isolation from digital society.</phil-statement>
     </phil-checkset>
+    <phil-narration>Evaluating virtue concepts. Check every statement that is true about virtue ethics across classical traditions. Then press Check answers.</phil-narration>
+    <phil-narration when="after">Correct. Across classical traditions, virtue is an acquired, stable disposition aimed at human flourishing. It takes ongoing practice and inner moral motivation.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 3 — SHANNON VALLOR'S TECHNOMORAL VIRTUES ============ -->
 
   <!-- 13. Introducing Shannon Vallor -->
   <phil-slide>
-    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)" accent="#4cc2ff">
+    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)"
+                  img="./assets/idea-vallor.png" alt="An old brass compass resting on the glowing screen of a smartphone, its needle steady" accent="#4cc2ff">
       <p>Old virtues, adapted, can help us live well with new technology.</p>
     </phil-thinker>
     <h1>New Tools, New Habits</h1>
     <p class="lead">In 2016 the philosopher Shannon Vallor asked whether classical virtues can guide a hyper-technological future. Her book's subtitle names the goal: <em>a future worth wanting</em>.</p>
+    <phil-narration>In 2016 the philosopher Shannon Vallor asked whether classical virtues can guide a hyper-technological future. Her book's subtitle names the goal: a future worth wanting. Her idea, in short: old virtues, adapted, can help us live well with new technology.</phil-narration>
     <ul reveal>
-      <li>Emerging technologies alter the material conditions and cognitive environments in which human lives unfold.</li>
-      <li>Vallor calls our situation <em>acute technosocial opacity</em>: technology changes too fast for us to predict where it leads.</li>
-      <li>Vallor proposes twelve <em>technomoral virtues</em> adapted specifically for high-tech societies.</li>
-      <li>These virtues are not replacements for classical wisdom, but specialized expressions designed for an algorithmic world.</li>
+      <li say="Emerging technologies alter the material conditions and cognitive environments in which human lives unfold.">Emerging technologies alter the material conditions and cognitive environments in which human lives unfold.</li>
+      <li say="Vallor calls our situation acute technosocial opacity: technology changes too fast for us to predict where it leads.">Vallor calls our situation <em>acute technosocial opacity</em>: technology changes too fast for us to predict where it leads.</li>
+      <li say="Vallor proposes twelve technomoral virtues, adapted specifically for high-tech societies.">Vallor proposes twelve <em>technomoral virtues</em> adapted specifically for high-tech societies.</li>
+      <li say="These virtues aren't replacements for classical wisdom. They're specialized expressions of it, designed for an algorithmic world.">These virtues are not replacements for classical wisdom, but specialized expressions designed for an algorithmic world.</li>
     </ul>
   </phil-slide>
 
@@ -199,11 +227,12 @@
   <phil-slide id="self-control">
     <h1>Technomoral Self-Control</h1>
     <p class="lead">Aristotle's temperance governed bodily pleasures like food and drink. Today, self-control is also a matter of attention.</p>
+    <phil-narration>Aristotle's temperance governed bodily pleasures like food and drink. Today, self-control is also a matter of attention.</phil-narration>
     <ul reveal>
-      <li>Vallor's <em>technomoral self-control</em>: choosing, and ideally wanting, what helps us flourish. Online, that starts with attention.</li>
-      <li>Apps use infinite scroll, likes, and alerts to hold attention. In 2023, more than 40 states sued Meta, alleging such features hook kids.</li>
-      <li>Self-control is not a grim act of raw willpower; it involves structuring our spaces and habits to protect focus.</li>
-      <li>A person who masters this virtue decides consciously when to engage with screens rather than reacting to automated alerts.</li>
+      <li say="Vallor's technomoral self-control means choosing, and ideally wanting, what helps us flourish. Online, that starts with attention.">Vallor's <em>technomoral self-control</em>: choosing, and ideally wanting, what helps us flourish. Online, that starts with attention.</li>
+      <li say="Apps use infinite scroll, likes, and alerts to hold attention. In 2023, more than forty states sued Meta, alleging such features hook kids.">Apps use infinite scroll, likes, and alerts to hold attention. In 2023, more than 40 states sued Meta, alleging such features hook kids.</li>
+      <li say="Self-control isn't a grim act of raw willpower. It involves structuring our spaces and habits to protect focus.">Self-control is not a grim act of raw willpower; it involves structuring our spaces and habits to protect focus.</li>
+      <li say="A person who masters this virtue decides consciously when to engage with screens, rather than reacting to automated alerts.">A person who masters this virtue decides consciously when to engage with screens rather than reacting to automated alerts.</li>
     </ul>
   </phil-slide>
 
@@ -211,11 +240,12 @@
   <phil-slide>
     <h1>Technomoral Honesty</h1>
     <p class="lead">In an era of generative text, synthetic voices, and deepfakes, honesty faces unprecedented challenges.</p>
+    <phil-narration>In an era of generative text, synthetic voices, and deepfakes, honesty faces unprecedented challenges.</phil-narration>
     <ul reveal>
-      <li>Vallor defines <em>technomoral honesty</em> as an exemplary respect for truth, shown in a commitment to truth-seeking online.</li>
-      <li>It means resisting the temptation to outsource personal thinking to chatbots while pretending the work is our own.</li>
-      <li>It involves refusing to amplify unverified viral rumors, algorithmic rage-bait, and deceptive synthetic media.</li>
-      <li>Honesty means checking what chatbots claim. In 2023 a federal judge fined two lawyers for citing cases ChatGPT made up.</li>
+      <li say="Vallor defines technomoral honesty as an exemplary respect for truth, shown in a commitment to truth-seeking online.">Vallor defines <em>technomoral honesty</em> as an exemplary respect for truth, shown in a commitment to truth-seeking online.</li>
+      <li say="It means resisting the temptation to outsource our own thinking to chatbots while pretending the work is ours.">It means resisting the temptation to outsource personal thinking to chatbots while pretending the work is our own.</li>
+      <li say="It involves refusing to amplify unverified viral rumors, algorithmic rage-bait, and deceptive synthetic media.">It involves refusing to amplify unverified viral rumors, algorithmic rage-bait, and deceptive synthetic media.</li>
+      <li say="Honesty means checking what chatbots claim. In 2023 a federal judge fined two lawyers for citing cases that ChatGPT made up.">Honesty means checking what chatbots claim. In 2023 a federal judge fined two lawyers for citing cases ChatGPT made up.</li>
     </ul>
   </phil-slide>
 
@@ -223,11 +253,12 @@
   <phil-slide>
     <h1>Technomoral Empathy</h1>
     <p class="lead">Communication technologies allow instant global connection while stripping away embodied emotional presence.</p>
+    <phil-narration>Communication technologies allow instant global connection, while stripping away embodied emotional presence.</phil-narration>
     <ul reveal>
-      <li>Vallor's <em>technomoral empathy</em> is a cultivated openness to being moved to care by others' feelings, even behind a screen.</li>
-      <li>Text comments and social feeds encourage disinhibition, tempting users to treat ideological opponents as caricature targets.</li>
-      <li>This virtue requires resisting the algorithmic incentive to convert interpersonal dialogue into public spectator sport.</li>
-      <li>Practicing digital empathy means pausing before posting to consider how our mediated words will land upon a living person.</li>
+      <li say="Vallor's technomoral empathy is a cultivated openness to being moved to care by others' feelings, even behind a screen.">Vallor's <em>technomoral empathy</em> is a cultivated openness to being moved to care by others' feelings, even behind a screen.</li>
+      <li say="Text comments and social feeds encourage disinhibition, tempting users to treat ideological opponents as caricature targets.">Text comments and social feeds encourage disinhibition, tempting users to treat ideological opponents as caricature targets.</li>
+      <li say="This virtue requires resisting the algorithmic incentive to turn interpersonal dialogue into a public spectator sport.">This virtue requires resisting the algorithmic incentive to convert interpersonal dialogue into public spectator sport.</li>
+      <li say="Practicing digital empathy means pausing before posting, to consider how our mediated words will land on a living person.">Practicing digital empathy means pausing before posting to consider how our mediated words will land upon a living person.</li>
     </ul>
   </phil-slide>
 
@@ -240,6 +271,8 @@
       Technomoral honesty requires an ongoing commitment to <phil-blank answer="truth|truthfulness|truth-seeking|truth seeking">truth</phil-blank> in an era of synthetic media.
       Digital empathy means perceiving the <phil-blank options="human,algorithm,avatar">human</phil-blank> being behind the screen.
     </phil-cloze>
+    <phil-narration>Fill in each gap by choosing or typing, then press Check.</phil-narration>
+    <phil-narration when="after">Right. Vallor adapts classical virtue ethics to new technology. Attention is a main moral battleground, and empathy keeps the human being behind the screen in view.</phil-narration>
   </phil-slide>
 
   <!-- 18. Classify: which technomoral virtue -->
@@ -257,84 +290,97 @@
       <phil-item answer="emp" why="Empathy keeps the vulnerable person behind the screen in view.">Remembering that the classmate in an embarrassing clip is a real person who will read the replies</phil-item>
       <phil-item answer="self" why="Self-control involves structuring your spaces and habits to protect focus.">Keeping your phone in another room while you study</phil-item>
     </phil-classify>
+    <phil-narration>Which of Vallor's technomoral virtues does each habit practice? Sort each one under Self-control, Honesty, or Empathy. When every item is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Self-control protects your attention. Honesty is a commitment to truth, including about whose work is whose. Empathy keeps the real person behind the screen in view.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 4 — PARENTING IN THE DIGITAL AGE ============ -->
 
   <!-- 19. Interactive Widget -->
-  <phil-slide>
-    <h1 style="margin-bottom: 0.2em;">Parenting in Springfield</h1>
-    <p class="muted" style="margin: 0 0 8px;">Debrief Bart, Lisa, and Homer across three digital dilemmas. Choose guidance that cultivates virtue.</p>
+  <phil-slide hold>
+    <h1 style="margin-bottom: 0.2em;">Parenting in Oak Hollow</h1>
+    <p class="muted" style="margin: 0 0 8px;">Coach Marcus, Zoe, and Rosie through three digital dilemmas. Choose guidance that builds virtue.</p>
+    <phil-narration>Now it's your turn to parent. Coach Marcus, Zoe, and Rosie through three digital dilemmas, and choose the guidance that builds virtue. Take the cases at your own pace. When you're ready, press Continue.</phil-narration>
     <phil-parent></phil-parent>
   </phil-slide>
 
   <!-- 20. Environmental Habituation -->
   <phil-slide>
-    <phil-thinker slot="art" name="Aristotle" dates="384–322 BCE" work="Nicomachean Ethics (trans. W. D. Ross)" accent="#ffcf5a">
+    <phil-thinker slot="art" name="Aristotle" dates="384–322 BCE" work="Nicomachean Ethics (trans. W. D. Ross)"
+                  img="./assets/idea-aristotle.png" alt="A young sapling tied to a wooden stake in a garden, growing straight along it" accent="#ffcf5a">
       <p>Habits formed in childhood shape character for life.</p>
       <blockquote>It makes no small difference, then, whether we form habits of one kind or of another from our very youth.</blockquote>
     </phil-thinker>
     <h1>How Digital Environments Shape Habit</h1>
     <p class="lead">Aristotle taught that moral character is shaped long before children develop rational ethical arguments.</p>
+    <phil-narration>Aristotle taught that moral character is shaped long before children develop rational ethical arguments. Habits formed in childhood shape character for life. As he puts it, it makes no small difference whether we form habits of one kind or of another from our very youth.</phil-narration>
     <ul reveal>
-      <li>Early sensory environments establish baseline expectations for cognitive stimulation, boredom tolerance, and focus.</li>
-      <li>The World Health Organization (2019) advises against screen time for babies and one-year-olds, and favors reading and play.</li>
-      <li>Marge and Homer discover that parenting requires <em>environmental design</em> as much as verbal instruction.</li>
-      <li>Cultivating childhood virtue begins with creating quiet physical spaces where reflection, play, and presence can take root.</li>
+      <li say="Early sensory environments set baseline expectations for cognitive stimulation, boredom tolerance, and focus.">Early sensory environments establish baseline expectations for cognitive stimulation, boredom tolerance, and focus.</li>
+      <li say="The World Health Organization, in 2019, advises against screen time for babies and one-year-olds, and favors reading and play.">The World Health Organization (2019) advises against screen time for babies and one-year-olds, and favors reading and play.</li>
+      <li say="Dev and Tasha discover that parenting takes environmental design as much as talking.">Dev and Tasha discover that parenting takes <em>environmental design</em> as much as talking.</li>
+      <li say="Cultivating childhood virtue begins with creating quiet physical spaces where reflection, play, and presence can take root.">Cultivating childhood virtue begins with creating quiet physical spaces where reflection, play, and presence can take root.</li>
     </ul>
   </phil-slide>
 
-  <!-- 21. Mr. Burns & Technomoral Justice -->
+  <!-- 21. Technomoral Justice -->
   <phil-slide>
-    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)" accent="#4cc2ff">
+    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)"
+                  img="./assets/idea-vallor.png" alt="An old brass compass resting on the glowing screen of a smartphone, its needle steady" accent="#4cc2ff">
       <p>Share technology's benefits and risks fairly, and protect every person's dignity.</p>
     </phil-thinker>
     <h1>Technomoral Justice</h1>
-    <p class="lead">"Why should I care about human flourishing," Mr. Burns cackles, "when engagement algorithms yield record profits?"</p>
+    <p class="lead">"Why should I care about flourishing," laughs Vivian Stroud, founder of Oak Hollow's biggest app company, "when engagement pays this well?"</p>
+    <phil-narration>Vivian Stroud is the founder of Oak Hollow's biggest app company. She laughs and asks why she should care about flourishing, when engagement pays this well. Vallor's idea here: share technology's benefits and risks fairly, and protect every person's dignity.</phil-narration>
     <ul reveal>
-      <li>Vallor's <em>technomoral justice</em> seeks a fair share of technology's benefits and risks, and guards people's rights and dignity.</li>
-      <li>Shoshana Zuboff (2019) calls the business of turning personal data into predictions about behavior <em>surveillance capitalism</em>.</li>
-      <li>Justice also covers AI's hidden workers. In 2023, TIME reported Kenyans paid under $2 an hour to label toxic text for ChatGPT.</li>
-      <li>Ethical character must be paired with structural resistance against technological systems designed to exploit vulnerability.</li>
+      <li say="Vallor's technomoral justice seeks a fair share of technology's benefits and risks, and guards people's rights and dignity.">Vallor's <em>technomoral justice</em> seeks a fair share of technology's benefits and risks, and guards people's rights and dignity.</li>
+      <li say="Shoshana Zuboff, in 2019, calls the business of turning personal data into predictions about behavior surveillance capitalism.">Shoshana Zuboff (2019) calls the business of turning personal data into predictions about behavior <em>surveillance capitalism</em>.</li>
+      <li say="Justice also covers AI's hidden workers. In 2023, TIME reported that Kenyans were paid under two dollars an hour to label toxic text for ChatGPT.">Justice also covers AI's hidden workers. In 2023, TIME reported Kenyans paid under $2 an hour to label toxic text for ChatGPT.</li>
+      <li say="Ethical character must be paired with structural resistance against technological systems designed to exploit vulnerability.">Ethical character must be paired with structural resistance against technological systems designed to exploit vulnerability.</li>
     </ul>
   </phil-slide>
 
-  <!-- 22. Ned Flanders & Flexibility -->
+  <!-- 22. Flexibility -->
   <phil-slide>
-    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)" accent="#4cc2ff">
+    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)"
+                  img="./assets/idea-vallor.png" alt="An old brass compass resting on the glowing screen of a smartphone, its needle steady" accent="#4cc2ff">
       <p>Adjust action, belief, and feeling as new technology demands.</p>
     </phil-thinker>
     <h1>The Danger of Rigid Moralism</h1>
-    <p class="lead">"I have a strict, unbending rule for every possible occasion, neighbor!" Ned Flanders beams with pride.</p>
+    <p class="lead">"I have a strict rule for every possible occasion," says Mr. Pruitt next door, label maker in hand.</p>
+    <phil-narration>Mister Pruitt next door, label maker in hand, says he has a strict rule for every possible occasion. Vallor's idea here: adjust action, belief, and feeling as new technology demands.</phil-narration>
     <ul reveal>
-      <li>Vallor's <em>technomoral flexibility</em> is a skill for adjusting action, belief, and feeling to new and unstable technologies.</li>
-      <li>Flanders illustrates how brittle, rigid moralism shatters when confronted with ambiguous technologies that rulebooks never anticipated.</li>
-      <li>A family that bans all screens entirely fails to prepare children for the complex digital society they must inevitably enter.</li>
-      <li>Moral flexibility combines steady ethical commitments with creative, situational improvisation.</li>
+      <li say="Vallor's technomoral flexibility is a skill for adjusting action, belief, and feeling to new and unstable technologies.">Vallor's <em>technomoral flexibility</em> is a skill for adjusting action, belief, and feeling to new and unstable technologies.</li>
+      <li say="Mister Pruitt shows how rigid moralism breaks down when a new technology raises a question his rulebook never anticipated.">Mr. Pruitt shows how rigid moralism breaks down when a new technology raises a question his rulebook never anticipated.</li>
+      <li say="A family that bans all screens entirely fails to prepare children for the complex digital society they must inevitably enter.">A family that bans all screens entirely fails to prepare children for the complex digital society they must inevitably enter.</li>
+      <li say="Moral flexibility combines steady ethical commitments with creative, situational improvisation.">Moral flexibility combines steady ethical commitments with creative, situational improvisation.</li>
     </ul>
   </phil-slide>
 
   <!-- 23. Poll: School Phone Ban -->
   <phil-slide>
+    <img slot="art" src="./assets/school.png" alt="A middle school hallway with lockers, where students of different ages and skin tones slide their phones into gray pouches at a table as a principal watches">
     <h1>Decision Point: School Phone Bans</h1>
     <p class="muted">Not graded. By 2026 most U.S. states had limited phones in schools, but studies of the effects disagree.</p>
-    <phil-poll prompt="Springfield Elementary is debating a complete ban on smartphones during school hours. What should Principal Skinner do?"
+    <phil-poll prompt="Oak Hollow Middle School, where Zoe and Marcus go, is debating a complete ban on smartphones during school hours. What should Principal Delgado do?"
                explain="This question is the subject of active, evolving developmental research. Advocates of bell-to-bell bans emphasize that removing phones eliminates persistent ambient distraction, deepens classroom engagement, and protects peer social time. Conversely, advocates of guided access argue that schools should help adolescents practice digital self-regulation in supported environments rather than relying entirely on external enforcement. Both perspectives recognize that rules are only as valuable as the enduring character habits they help cultivate.">
       <phil-choice note="This maximizes protected cognitive focus during the school day, treating the classroom as a distraction-free sanctuary.">Impose a strict bell-to-bell ban where phones are placed in magnetic pouches or lockers.</phil-choice>
       <phil-choice note="This prioritizes autonomy, though many researchers worry that young students struggle to resist notifications without support.">Allow unrestricted device access and rely on students to voluntarily practice digital mindfulness.</phil-choice>
       <phil-choice note="This attempts a developmental middle ground, securing instructional time while allowing structured practice during breaks.">Ban phones during academic classes while permitting structured educational use and social lunch breaks.</phil-choice>
     </phil-poll>
+    <phil-narration>This is a decision point. Oak Hollow Middle School, where Zoe and Marcus go, is debating a complete ban on smartphones during school hours. What should Principal Delgado do? This one isn't graded. By 2026, most American states had limited phones in schools, but studies of the effects disagree. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Researchers are still studying this question. Both sides recognize that rules are only as valuable as the lasting character habits they help build. Next, the master virtue.</phil-narration>
   </phil-slide>
 
   <!-- 24. Technomoral Wisdom -->
   <phil-slide id="wisdom">
     <h1>Technomoral Wisdom (Phronesis)</h1>
     <p class="lead">Shannon Vallor identifies <em>technomoral wisdom</em> as the master virtue that orchestrates all others.</p>
+    <phil-narration>Shannon Vallor identifies technomoral wisdom as the master virtue that orchestrates all others.</phil-narration>
     <ul reveal>
-      <li>Aristotle called this <em>phronesis</em>: practical judgment that finds the right action, in the right way, at the right time.</li>
-      <li>Technomoral wisdom integrates self-control, honesty, and empathy to evaluate emerging tools in real time.</li>
-      <li>It refuses both uncritical techno-optimism and reactionary technophobia, choosing technologies that genuinely serve human flourishing.</li>
-      <li>For Homer and Marge, wisdom means knowing when a device assists family life and when it erodes genuine communion.</li>
+      <li say="Aristotle called this phronesis: practical judgment that finds the right action, in the right way, at the right time.">Aristotle called this <em>phronesis</em>: practical judgment that finds the right action, in the right way, at the right time.</li>
+      <li say="Technomoral wisdom integrates self-control, honesty, and empathy to evaluate emerging tools in real time.">Technomoral wisdom integrates self-control, honesty, and empathy to evaluate emerging tools in real time.</li>
+      <li say="It refuses both uncritical techno-optimism and reactionary technophobia, choosing technologies that genuinely serve human flourishing.">It refuses both uncritical techno-optimism and reactionary technophobia, choosing technologies that genuinely serve human flourishing.</li>
+      <li say="For Dev and Tasha, wisdom means knowing when a device helps family life and when it crowds it out.">For Dev and Tasha, wisdom means knowing when a device helps family life and when it crowds it out.</li>
     </ul>
   </phil-slide>
 
@@ -348,22 +394,26 @@
       <phil-choice feedback="Technomoral wisdom is not a narrow technical credential; it is an essential character capacity needed by all citizens in a high-tech world.">It operates as an isolated technical skill reserved exclusively for computer scientists and system engineers.</phil-choice>
       <phil-choice correct>It acts as an integrative master virtue that harmonizes specific virtues to guide practical judgment in novel situations.</phil-choice>
     </phil-mcq>
+    <phil-narration>Understanding technomoral wisdom. Pick an answer.</phil-narration>
+    <phil-narration when="after">Right. Technomoral wisdom is Vallor's master virtue. It draws on Aristotle's phronesis, and brings honesty, self-control, and empathy together to guide judgment in new situations.</phil-narration>
   </phil-slide>
 
   <!-- ============ ACT 5 — THE FUTURE WORTH WANTING ============ -->
 
   <!-- 26. Technomoral Perspective -->
   <phil-slide>
-    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)" accent="#4cc2ff">
+    <phil-thinker slot="art" name="Shannon Vallor" work="Technology and the Virtues (2016)"
+                  img="./assets/idea-vallor.png" alt="An old brass compass resting on the glowing screen of a smartphone, its needle steady" accent="#4cc2ff">
       <p>See each moral choice as part of a larger moral whole.</p>
     </phil-thinker>
     <h1>Technomoral Perspective</h1>
     <p class="lead">Vallor asks of every new device not just what new powers it gives us, but whether it helps us become better human beings.</p>
+    <phil-narration>Vallor asks of every new device not just what new powers it gives us, but whether it helps us become better human beings. Her idea of perspective: see each moral choice as part of a larger moral whole.</phil-narration>
     <ul reveal>
-      <li><em>Technomoral perspective</em>, in Vallor's account, is the habit of seeing each choice as part of a larger moral whole, not as an isolated problem.</li>
-      <li>High-tech societies routinely confuse efficiency, speed, and optimization with lives rich in meaning and companionship.</li>
-      <li>Perspective reminds clinicians, parents, and citizens that tools must serve moral ends rather than dictating them.</li>
-      <li>This virtue helps families ask what kind of community they want to build before adopting every new technological convenience.</li>
+      <li say="Technomoral perspective, in Vallor's account, is the habit of seeing each choice as part of a larger moral whole, not as an isolated problem."><em>Technomoral perspective</em>, in Vallor's account, is the habit of seeing each choice as part of a larger moral whole, not as an isolated problem.</li>
+      <li say="High-tech societies routinely confuse efficiency, speed, and optimization with lives rich in meaning and companionship.">High-tech societies routinely confuse efficiency, speed, and optimization with lives rich in meaning and companionship.</li>
+      <li say="Perspective reminds clinicians, parents, and citizens that tools must serve moral ends rather than dictate them.">Perspective reminds clinicians, parents, and citizens that tools must serve moral ends rather than dictating them.</li>
+      <li say="This virtue helps families ask what kind of community they want to build, before adopting every new technological convenience.">This virtue helps families ask what kind of community they want to build before adopting every new technological convenience.</li>
     </ul>
   </phil-slide>
 
@@ -371,18 +421,21 @@
   <phil-slide>
     <h1>Technomoral Care and Stewardship</h1>
     <p class="lead">For Vallor, <em>technomoral care</em> is attentive, skilled concern for meeting other people's needs. Many writers extend the same concern to the planet.</p>
+    <phil-narration>For Vallor, technomoral care is attentive, skilled concern for meeting other people's needs. Many writers extend the same concern to the planet.</phil-narration>
     <ul reveal>
-      <li>On that wider view, care means maintaining, repairing, and protecting both digital systems and the ecological commons.</li>
-      <li>Training and running AI takes electricity and cooling water. The IEA projects data-center power use will more than double by 2030.</li>
-      <li>Care demands attention to the physical infrastructure, mineral extraction, and electronic waste that digital convenience conceals.</li>
-      <li>Flourishing in the Anthropocene requires using technological power to regenerate the world rather than simply consuming it.</li>
+      <li say="On that wider view, care means maintaining, repairing, and protecting both digital systems and the ecological commons.">On that wider view, care means maintaining, repairing, and protecting both digital systems and the ecological commons.</li>
+      <li say="Training and running AI takes electricity and cooling water. The IEA projects that data-center power use will more than double by 2030.">Training and running AI takes electricity and cooling water. The IEA projects data-center power use will more than double by 2030.</li>
+      <li say="Care demands attention to the physical infrastructure, mineral extraction, and electronic waste that digital convenience conceals.">Care demands attention to the physical infrastructure, mineral extraction, and electronic waste that digital convenience conceals.</li>
+      <li say="Flourishing in the Anthropocene requires using technological power to regenerate the world, rather than simply consuming it.">Flourishing in the Anthropocene requires using technological power to regenerate the world rather than simply consuming it.</li>
     </ul>
   </phil-slide>
 
   <!-- 28. Compare: Technochauvinism vs Wisdom -->
   <phil-slide id="technochauvinism">
+    <img slot="art" src="./assets/bedside.png" alt="A mother in green scrubs sits on her daughter's bed at night, turned to listen, while the family's phones rest in a basket on the nightstand">
     <h1>Technochauvinism vs. Technomoral Wisdom</h1>
     <p>Distinguishing blind faith in technological fixes from wise discernment about human needs. <em>Technochauvinism</em> is the data journalist Meredith Broussard's term.</p>
+    <phil-narration>Technochauvinism versus technomoral wisdom. This slide sets blind faith in technological fixes against wise discernment about human needs. Technochauvinism is the data journalist Meredith Broussard's term. On one side, Technochauvinism, also called solutionism. It's the uncritical belief that every human and social problem has a technological solution, code fix, or automated app. For example, giving a lonely, grieving teenager a conversational AI companion rather than fostering real-world human friendships. On the other side, Technomoral Wisdom, which is about human flourishing. It's the reflective capacity to discern which human goods require embodied presence, vulnerability, and sustained personal labor. For example, Tasha sitting at the foot of Zoe's bed, listening without screens, restoring the human bond that no algorithm can provide.</phil-narration>
     <phil-compare>
       <phil-side label="Technochauvinism" tag="Solutionism">
         <p>The uncritical belief that every human and social problem has a technological solution, code fix, or automated app.</p>
@@ -390,7 +443,7 @@
       </phil-side>
       <phil-side label="Technomoral Wisdom" tag="Human flourishing">
         <p>The reflective capacity to discern which human goods require embodied presence, vulnerability, and sustained personal labor.</p>
-        <p class="case">Marge sitting at the foot of Lisa's bed, listening without screens, restoring the human bond that no algorithm can provide.</p>
+        <p class="case">Tasha sitting at the foot of Zoe's bed, listening without screens, restoring the human bond that no algorithm can provide.</p>
       </phil-side>
     </phil-compare>
   </phil-slide>
@@ -404,6 +457,8 @@
       Technomoral wisdom chooses technologies that genuinely serve human <phil-blank answer="flourishing|well-being|wellbeing|good">flourishing</phil-blank>.
       The ultimate goal of technomoral virtues is a future worth <phil-blank answer="wanting">wanting</phil-blank>.
     </phil-cloze>
+    <phil-narration>Synthesizing the framework. Fill in each gap by choosing or typing, then press Check.</phil-narration>
+    <phil-narration when="after">Right. Technomoral wisdom, Vallor's master virtue, rejects simplistic solutionism in favor of technologies that support deep human flourishing.</phil-narration>
   </phil-slide>
 
   <!-- ============ CLOSING ROUNDS ============ -->
@@ -413,18 +468,21 @@
     <h1>Revisiting Your Perspectives</h1>
     <p>Review the statements from the beginning of the lesson. Re-rate each one. Retaining your original perspective is entirely valid; the goal is to evaluate whether your reasoning has deepened.</p>
     <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>Now revisit the statements from the beginning of the lesson. Re-rate each one. Keeping your original view is entirely valid. The goal is to see whether your reasoning has deepened. When you've re-rated them, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Next, the closing slide.</phil-narration>
   </phil-slide>
 
   <!-- 31. The Living Room Couch -->
   <phil-slide>
-    <img slot="art" src="./assets/homer.png" alt="Homer Simpson munching a pink frosted donut, looking content">
+    <img slot="art" src="./assets/couch.png" alt="Three generations of a family squeezed onto a living room couch playing a board game, their phones charging in a basket on the shelf behind them">
     <h1>The Living Room Couch</h1>
-    <p class="lead">"Parenting in the digital age is hard," Homer admits. "We can't face it blind."</p>
+    <p class="lead">"Parenting online is hard," Dev admits. "Mom's old rule won't cover it, and we can't face it blind."</p>
+    <phil-narration>Dev admits that parenting online is hard. His mother's old rule won't cover it, and they can't face it blind.</phil-narration>
     <ul reveal>
-      <li>Technologies will continue evolving, bringing dilemmas no rulebook foresees.</li>
-      <li>Neither blanket bans nor passive surrender equips kids for an online world.</li>
-      <li>Cultivating technomoral virtues provides young people an internal compass.</li>
-      <li>Human character—patiently nurtured—remains our greatest technological safeguard.</li>
+      <li say="Technologies will continue evolving, bringing dilemmas no rulebook foresees.">Technologies will continue evolving, bringing dilemmas no rulebook foresees.</li>
+      <li say="Neither blanket bans nor passive surrender equips kids for an online world.">Neither blanket bans nor passive surrender equips kids for an online world.</li>
+      <li say="Cultivating technomoral virtues gives young people an internal compass.">Cultivating technomoral virtues provides young people an internal compass.</li>
+      <li say="Human character, patiently nurtured, remains our greatest technological safeguard. To finish the lesson, complete all exercises and both belief probes.">Human character—patiently nurtured—remains our greatest technological safeguard.</li>
     </ul>
     <p class="muted">Complete all exercises and both belief probes to finish.</p>
   </phil-slide>
@@ -439,7 +497,8 @@
       <li>Rosalind Hursthouse and Glen Pettigrove, “Virtue Ethics,” <em>Stanford Encyclopedia of Philosophy</em> (rev. 2026). <a href="https://plato.stanford.edu/entries/ethics-virtue/">Read online</a>. An introduction to virtue ethics and its central ideas.</li>
       <li>Meredith Broussard, <em>Artificial Unintelligence: How Computers Misunderstand the World</em> (MIT Press, 2018). Broussard’s case against technochauvinism, the belief that technology always has the answer.</li>
     </ul>
-    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The author reviewed everything and is responsible for any errors.</p>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
   </phil-slide>
 
 </phil-lesson>

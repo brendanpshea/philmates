@@ -10,8 +10,7 @@ The click-through lesson is still there: a student who never presses Play gets
 the ordinary lesson, and a paused player behaves exactly like it. Next and Back
 always work, so nothing is ever locked.
 
-**In use:** every lesson except *Growing Up in Springfield*, which waits on a
-recast. The pilot was *The Midnight Tribunal* (`ethical-theory/utilitarianism`).
+**In use:** every lesson. The pilot was *The Midnight Tribunal* (`ethical-theory/utilitarianism`).
 The catalog marks narrated lessons with a **Narrated** badge. Each lesson uses
 a Gemini voice chosen for it (see *Gemini voices* below); edge-tts is still
 supported but no lesson uses it now.
