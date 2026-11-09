@@ -4965,7 +4965,8 @@ science, law, and xenotransplantation). The points a reviewer needs:
 
 ## Computing & AI Ethics: AI and Climate Change — "Marley's Chain"  *(designed 2026-11-09; not built)*
 
-- **Path (planned):** `lessons/ai-ethics/ai-climate/`
+- **Path (planned):** `lessons/ai-ethics/ai-climate/` (holds `PLAN.md`, the build
+  plan, and `prompts.md`, the art prompts)
 - **Lesson id (planned):** `ai-climate`
 - **Top-bar title:** `Marley's Chain` · **Subject:** `AI and Climate Change`
 - **Slot:** week 12, Environmental and Social Impact. Replaces "The Hungry
