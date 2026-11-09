@@ -4963,11 +4963,10 @@ science, law, and xenotransplantation). The points a reviewer needs:
 
 ---
 
-## Computing & AI Ethics: AI and Climate Change — "Marley's Chain"  *(designed 2026-11-09; not built)*
+## Computing & AI Ethics: AI and Climate Change — "Marley's Chain"  *(built)*
 
-- **Path (planned):** `lessons/ai-ethics/ai-climate/` (holds `PLAN.md`, the build
-  plan, and `prompts.md`, the art prompts)
-- **Lesson id (planned):** `ai-climate`
+- **Path:** `lessons/ai-ethics/ai-climate/`
+- **Lesson id:** `ai-climate`
 - **Top-bar title:** `Marley's Chain` · **Subject:** `AI and Climate Change`
 - **Slot:** week 12, Environmental and Social Impact. Replaces "The Hungry
   Golem" in `docs/ai-ethics-semester-plan.md`.
@@ -5042,6 +5041,13 @@ science, law, and xenotransplantation). The points a reviewer needs:
 | Yet to Come | May we burn now because the engine may fix it later? | Rolnick and colleagues (2022); Gardiner (2006, 2010); Jonas (1979) | Holding AI back also costs future people. The slide gives the wager its strongest form. |
 
 ### Slide-by-slide (about 34)
+
+**As drafted (2026-11-09):** 37 slides. The story intro runs two slides. The
+Sinnott-Armstrong and Parfit comparison slide was dropped, since each has a
+slide of his own. Moral corruption has its own slide. "What the Engine Room
+showed" is the opening line of ledger page 3. The first effect category is
+called "Building and running the engine," and the outcome columns are "Full
+saving," "Rebound," and "Backfire."
 
 Opening
 1. **[T]** Title. Scrooge's counting-house at night, the engine's chimney behind it.
@@ -5166,103 +5172,146 @@ target and a permanent `data-qid` at build time. Slide count is over the usual
 - **The wager gets a fair hearing.** The final poll has three live options
   and no graded verdict.
 
-### Accuracy note (research 2026-11-09; **not yet checked against primary texts**)
+### Accuracy note (checked 2026-11-09)
 
-Two research reports from this date (philosophy and citations; present-day
-facts). Neither could open source pages in this session, so every quotation
-below was confirmed from search extracts or secondary quotation only. Before
-the build, check each against the primary text.
+Each item says how it was checked. "Primary" means the wording was read on
+the source's own text or a full-text copy. "Secondary" means it was seen only
+quoted in another paper or site; those are paraphrased on the slides, never
+quoted.
 
 Philosophy and citations:
 
-- **Jevons (1865), *The Coal Question*, ch. VII "Of the Economy of Fuel":** "It
-  is wholly a confusion of ideas to suppose that the economical use of fuel is
-  equivalent to a diminished consumption. The very contrary is the truth."
-  Cite by chapter; editions differ in pagination.
-- **Rebound and backfire:** backfire is rebound above 100%. Sorrell, *Energy
-  Policy* 37(4) (2009): 1456–1469: evidence "far from conclusive"; backfire
-  more plausible for early general-purpose technologies. Gillingham, Rapson
-  and Wagner (2016): research "provides little support for the so-called
-  'backfire' hypothesis." Brockway et al., *Renewable and Sustainable Energy
-  Reviews* 141 (2021): economy-wide rebound may erode "more than half" of
-  expected savings.
+- **Dickens (primary, Gutenberg #46).** Stave One: "I wear the chain I forged
+  in life," replied the Ghost. "I made it link by link, and yard by yard; I
+  girded it on of my own free will, and of my own free will I wore it." And:
+  "Scrooge had a very small fire, but the clerk's fire was so very much
+  smaller that it looked like one coal." Stave Four: "Are these the shadows of
+  the things that Will be, or are they shadows of things that May be, only?"
+- **Jevons (1865), *The Coal Question*, ch. VII (primary, Econlib):** "It is
+  wholly a confusion of ideas to suppose that the economical use of fuel is
+  equivalent to a diminished consumption. The very contrary is the truth." He
+  ties Watt's fuel-saving inventions and a roughly ten-fold rise in engine
+  "duty" (1769 to 1859) to cheaper power, wider use, and more coal burned.
+  Dates 1835–1882.
+- **Rebound and backfire.** Sorrell, "Jevons' Paradox revisited," *Energy
+  Policy* 37(4) (2009): 1456–1469 (abstract, primary): evidence for the
+  paradox "far from conclusive," but economy-wide rebound larger than usually
+  assumed. Gillingham, Rapson and Wagner, *REEP* 10(1) (2016): 68–88
+  (working-paper abstract): "little support for the so-called 'backfire'
+  hypothesis." The claim that backfire is more plausible for early
+  general-purpose technologies was **not** confirmed and is not on a slide.
 - **Sinnott-Armstrong (2005),** "It's Not My Fault: Global Warming and
-  Individual Moral Obligations," in Sinnott-Armstrong and Howarth (eds.),
-  *Perspectives on Climate Change* (Elsevier); reprinted in *Climate Ethics:
-  Essential Readings* (OUP, 2010). Page ranges conflict between records.
-  Quoted via secondary sources: "my individual joyride does not cause global
-  warming, climate change, or any of their resulting harms"; "It is better to
-  enjoy your Sunday driving while working to change the law so as to make it
-  illegal for you to enjoy your Sunday driving."
-- **Parfit (1984), *Reasons and Persons*, ch. 3:** Fifth Mistake: "If some act
-  has effects on other people that are imperceptible, this act cannot be
-  morally wrong because it has these effects" (p. 75 per secondary sources).
-  Also: "Even if an act harms no one, it may be wrong because it is one of a
-  set of acts that together harm other people." Harmless Torturers, p. 80.
+  Individual Moral Obligations," in *Perspectives on Climate Change*
+  (Elsevier), **pp. 285–307** (Crossref); reprinted in *Climate Ethics:
+  Essential Readings* (OUP, 2010). **Secondary only**, so the slides
+  paraphrase. Seen quoted: "my individual joyride does not cause global
+  warming, climate change, or any of their resulting harms" (2005: 299); our
+  "real moral obligations ... are to get governments to do their job"; "It is
+  better to enjoy your Sunday driving while working to change the law so as to
+  make it illegal for you to enjoy your Sunday driving" (reprint p. 344). He
+  tests candidate principles one at a time and finds each unsatisfactory; he
+  does not offer a general proof that the drive is permitted.
+- **Parfit (1984), *Reasons and Persons*, ch. 3 (primary, scanned text).**
+  (C7), p. 70: "Even if an act harms no one, this act may be wrong because it
+  is one of a set of acts that together harm other people." Fifth Mistake,
+  p. 75. Harmless Torturers, p. 80: each of a thousand torturers presses a
+  button, "thereby turning the switch once on each of the thousand
+  instruments"; "none of the torturers makes any victim's pain perceptibly
+  worse." Dates 1942–2017.
 - **Kagan (2011),** "Do I Make a Difference?" *Philosophy & Public Affairs*
-  39(2): 105–141. No verbatim line obtained; paraphrase only.
-- **Broome (2012), *Climate Matters*, ch. 5.** Paraphrase only. The "six
-  months of healthy human life" line was not found; do not use it.
-- **Shue (1993),** *Law & Policy* 15(1): 39–59: "it is not equitable to ask
-  some people to surrender necessities so that other people can retain
-  luxuries" (secondary; page not found).
-- **Burden-sharing:** Shue, *International Affairs* 75(3) (1999): 531–545
-  (cited from memory, not retrieved); Page, *International Theory* 4(2) (2012):
-  300–330 (beneficiary pays); Caney, *Leiden Journal of International Law*
-  18(4) (2005): 747–775 and *CRISPP* 13(1) (2010): 203–228.
-- **Gardiner (2006),** *Environmental Values* 15(3): 397–413, abstract:
-  "Climate change involves the convergence of a set of global,
+  39(2): 105–141 (primary). In triggering cases an act has a small chance of
+  being the one that triggers the harm, so its expected effect is bad.
+- **Broome (2012), *Climate Matters* (Norton).** Secondary only: emitting
+  "does serious harm to others," a duty of justice that offsetting can meet.
+  Paraphrased in half a sentence.
+- **Shue (1993),** "Subsistence Emissions and Luxury Emissions," *Law &
+  Policy* 15(1): **39–60** (Crossref). The "surrender necessities ... retain
+  luxuries" line is **secondary only**, so the card paraphrases it.
+- **Shue (1999),** *International Affairs* 75(3): 531–545 (primary). Three
+  principles of equity: greater contribution to the problem, greater ability
+  to pay, and a guaranteed minimum. He distinguishes his contribution
+  principle from the forward-looking "polluter pays principle." Page,
+  *International Theory* 4(2) (2012): 300–330 (beneficiary pays); Caney,
+  *Leiden JIL* 18(4) (2005): 747–775 and *CRISPP* 13(1) (2010): 203–228
+  (citations confirmed by Crossref). The three labels on the who-pays slide
+  are the literature's, credited to these writers as a group.
+- **Gardiner (2006),** *Environmental Values* 15(3): 397–413 (primary).
+  Abstract: "Climate change involves the convergence of a set of global,
   intergenerational and theoretical problems"; the storm "makes us extremely
-  vulnerable to moral corruption." "Arming the future" (2010), in *Climate
-  Ethics: Essential Readings*, pp. 284–312: paraphrase only.
-- **Kaack et al. (2022),** *Nature Climate Change* 12(6): 518–527: "three
-  categories: computing-related impacts, immediate impacts of applying ML and
-  system-level impacts." The paper says "ML," not "AI."
-- **van Wynsberghe (2021),** *AI and Ethics* 1: 213–218: "two branches with
-  different aims and methods: AI for sustainability vs sustainability of AI."
-- **Rolnick et al. (2022),** *ACM Computing Surveys* 55(2), art. 42 (arXiv
-  2019).
-- **Luccioni, Strubell and Crawford (2025),** "From Efficiency Gains to
-  Rebound Effects," FAccT '25, DOI 10.1145/3715275.3732007.
-- **Jonas (1984),** *The Imperative of Responsibility*: "Act so that the
-  effects of your action are compatible with the permanence of genuine human
-  life." Page not confirmed.
-- **Dickens, Stave One:** "I wear the chain I forged in life," replied the
-  Ghost. "I made it link by link, and yard by yard; I girded it on of my own
-  free will, and of my own free will I wore it." And: "Scrooge had a very
-  small fire, but the clerk's fire was so very much smaller that it looked
-  like one coal." **Stave Four:** "Are these the shadows of the things that
-  Will be, or are they shadows of things that May be, only?" Check punctuation
-  against Gutenberg #46.
+  vulnerable to moral corruption." Global storm: dispersion of causes and
+  effects, fragmentation of agency, institutional inadequacy. Intergenerational
+  storm: the same features across time, with costs deferred to later
+  generations. Theoretical storm: "our current theoretical ineptitude" about
+  uncertainty, intergenerational equity, contingent persons, and nature.
+  **"Arming the Future" (2010)** (primary): "there seems to be an important
+  moral difference between preparing for an emergency, and preparing for an
+  emergency that is to be brought about by one's own moral failure."
+  Paraphrased.
+- **Kaack et al. (2022),** *Nature Climate Change* 12(6): 518–527 (primary,
+  accepted manuscript): "three categories: computing-related impacts,
+  immediate impacts of applying ML and system-level impacts." The slide's
+  three names are ours; the first is "Building and running the engine,"
+  since computing-related impacts include hardware. The authors' press
+  release: "those impacts that are easiest to measure are not necessarily
+  those with the largest impacts."
+- **van Wynsberghe (2021),** *AI and Ethics* 1(3): 213–218 (abstract):
+  "Sustainable AI be understood as having two branches; AI for sustainability
+  and sustainability of AI." Nothing else is attributed to her.
+- **Rolnick et al. (2022),** *ACM Computing Surveys* 55(2) (citation
+  confirmed). The paper has sections on forecasting supply and demand,
+  accelerating materials science (batteries), and managing forests, and says
+  "machine learning is not a silver bullet" (checked by the adversarial
+  reviewer against the arXiv text).
+- **Luccioni, Strubell and Crawford (2025),** FAccT '25, pp. 76–88, DOI
+  10.1145/3715275.3732007 (Crossref).
+- **Jonas (1984),** *The Imperative of Responsibility*, p. 11: "Act so that
+  the effects of your action are compatible with the permanence of genuine
+  human life" (quoted consistently in several papers; the book itself was not
+  opened). This is the one secondary-only line quoted on a slide, on the
+  Jonas card, by the author's decision. Secondary, paraphrased on the slide: "Never must the existence or
+  the essence of man as a whole be made a stake in the hazards of action"
+  (about p. 37), and priority to well-grounded possibilities of disaster over
+  hopes (p. 32). That a person may risk what is their own is from secondary
+  commentary. Dates 1903–1993.
+- **Two totals slide.** Location-based and market-based totals are the two
+  Scope 2 methods in the GHG Protocol Scope 2 Guidance (2015), which asks
+  for both. Not re-read for this lesson.
+- **CO2 persistence.** IPCC AR5: roughly 15 to 40% of emitted CO2 stays in
+  the atmosphere for more than 1,000 years.
 - **Gap:** no peer-reviewed philosophy paper was found on an individual
   user's responsibility for the climate cost of using AI. The lesson builds
   that bridge from the climate-ethics literature and says so.
 
-Ledger pages (each number names its year; all from search extracts):
+Ledger pages (each number names its year):
 
-- **Page 1.** IEA, *Key Questions on Energy and AI* (Apr 2026): data centers
-  used about 485 TWh in 2025, roughly 1.5% of world electricity, up 17% in a
-  year; about 950 TWh (about 3%) projected for 2030. IEA, *Energy and AI* (Apr
-  2025): about 180 Mt CO2, about 0.5% of global combustion emissions in 2024.
-  AI's share of data-center electricity is inferred, not measured (estimates
-  run from 15% to about half).
-- **Page 2.** Google (Aug 2025, arXiv 2508.15734): median Gemini text prompt
-  0.24 Wh, about 1.4 minutes of a 10 W LED bulb; excludes training; carbon is
-  market-based. Oviedo et al., *Joule* (2026): a long reasoning-style answer is
-  roughly 13 times a short one. IEA (2025): a short video is far higher again.
-- **Page 3.** Nadella, 26–27 Jan 2025: "Jevons paradox strikes again! As AI
-  gets more efficient and accessible, we will see its use skyrocket, turning
-  it into a commodity we just can't get enough of." Epoch AI (Mar 2025): the
-  price of a fixed level of performance fell 9 to 900 times a year. Totals
-  rose over the same period (page 1). Consistent with rebound; not proof.
-- **Page 4.** ECMWF's AI forecasting system went operational in 2025.
-  Contrail trial (2025 flights, reported 2026): about 62% fewer contrails on
-  flights that followed the guidance, about 12% across eligible flights,
-  because the guidance was used about 15% of the time (secondary source).
-  IEA (2025): existing AI applications could cut about 5% of energy-related
-  emissions in 2035, but "there is currently no momentum that could ensure
-  the widespread adoption of these AI applications," and gains "could be
-  negated by rebound effects."
-- **To recheck before build:** the exact 2025 electricity share in the IEA
-  PDF; the Altman and Nadella wording against the originals; the contrail
-  figures against the published study.
+- **Page 1 (primary, IEA PDF).** IEA, *Key Questions on Energy and AI* (Apr
+  2026): data-centre electricity demand "grew by 17% in 2025"; AI-focused
+  data centres "surging 50%"; "from 485 TWh in 2025 to 950 TWh in 2030,
+  accounting for around 3%"; 1.5% of global electricity consumption in 2025.
+  The IEA gives no measured AI share for 2025. The 180 Mt / 0.5% emissions
+  figure (IEA 2025) could not be confirmed and was cut.
+- **Page 2 (primary).** Elsworth et al., Google, arXiv 2508.15734 (Aug 2025):
+  median Gemini Apps text prompt 0.24 Wh (0.24 Wh ÷ 10 W = 86 s). Counts
+  active chips, host CPU and memory, idle machines, and data-centre overhead;
+  leaves out training, networking, and user devices; carbon is market-based.
+  Oviedo et al., *Joule* (2026), art. 102430: long reasoning queries raise
+  energy by "more than an order of magnitude" (about 13 times in the arXiv
+  version). IEA (2026): video "hundreds to thousands of times more energy"
+  than short text.
+- **Page 3.** Epoch AI (12 Mar 2025, primary): price of a fixed performance
+  level fell "9x to 900x per year"; Epoch notes the fastest declines may not
+  persist. Nadella, 26–27 Jan 2025 (secondary, Fortune and others): "Jevons
+  paradox strikes again! As AI gets more efficient and accessible, we will see
+  its use skyrocket, turning it into a commodity we just can't get enough of."
+  Paraphrased on the slide.
+- **Page 4.** ECMWF (primary): AIFS operational 25 Feb 2025, ensemble version
+  1 July 2025, alongside the traditional system. Sankar et al., "Efficacy of
+  Scalable Airline-led Contrail Avoidance," arXiv 2603.06909 (Mar 2026;
+  primary): American Airlines flights, Jan–May 2025; 62.0% fewer contrails on
+  the 112 flights flown as planned; 11.6% across all 1,232 treatment flights;
+  7.8% released and flown as planned (112 of 1,232 is 9.1%; the paper is
+  inconsistent, and the slide says "fewer than 1 in 10"). The 62% is a
+  per-protocol figure; the randomized result is the 11.6%. IEA, *Energy and AI* (2025):
+  **secondary only** (the IEA site blocked every fetch). The slide gives the
+  gist with no number: known applications could cut emissions, but there is
+  "no momentum that could ensure the widespread adoption."

@@ -33,8 +33,29 @@ cards. Sheet G is our world today, for the four ledger pages. Rules:
 
 ## Status (2026-11-09)
 
-Not generated yet. Save full sheets in `temp/ai-climate-sheets/`, outside
-`assets/`, so they do not inflate the SCORM zip.
+All seven 2×2 sheets (`sheet-a.png` through `sheet-g.png`) generated with
+Cloudflare Workers AI (`flux-2-dev`) and split into all twenty-eight 512×512
+PNG assets in `lessons/ai-ethics/ai-climate/assets/`.
+Full sheets are kept in `temp/ai-climate-sheets/` outside `assets/` so they
+do not inflate the SCORM zip size.
+
+Checked full-size against the rules when the slides were written. Six panels
+need a re-roll (paste the style line, the panel's sentence, and "One single
+square image, not a grid"):
+
+- `two-ledgers.png` came out as a dark engine room with no ledgers. The "One
+  Engine, Two Honest Totals" slide has no art until this is redone; an HTML
+  comment marks the spot.
+- `morning.png` holds the family around the grate, and `present.png` holds
+  the Spirit alone. The Christmas-morning panel (Scrooge at the window) was
+  never drawn. The final poll uses `papers.png` for now.
+- `queue.png` has a lettered shop sign (rule: no text).
+- `idea-rolnick.png` has N and E on the weather vane and a numbered dial.
+- `bill.png` has scribbled writing on the bill (rule 3: paper stays blank).
+- `build-out.png` has four caricature faces that all read as men (rule 6).
+
+Sheets E and G came out as smooth renders, not hard-edged pixel art. Not
+used on any slide: `past.png`, `morning.png`, `two-ledgers.png`.
 
 ## Style line (first line of every story sheet)
 

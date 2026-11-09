@@ -1,0 +1,707 @@
+{
+  "engine": "gemini",
+  "voice": "en-gb-advisor-2",
+  "model": "gemini-3.8-flash-lite-tts",
+  "clips": {
+    "a005eacc": {
+      "slide": "s1",
+      "text": "Welcome to Marley's Chain. Scrooge's counting-house sells answers now. A brass thinking engine works them out, and the engine burns coal. She wants to build a bigger one, and the papers need your signature by Christmas morning. Is the engine worth its smoke? Whenever it's your turn, I'll stop and wait for you.",
+      "spoken": "Welcome to Marley's Chain. Scrooge's counting-house sells answers now. A brass thinking engine works them out, and the engine burns coal. She wants to build a bigger one, and the papers need your signature by Christmas morning. Is the engine worth its smoke? Whenever it's your turn, I'll stop and wait for you."
+    },
+    "3df5c2ae": {
+      "slide": "story",
+      "text": "Here's the story in brief. Dickens's Scrooge is a man. In this telling Scrooge is a woman, and so is her clerk.",
+      "spoken": "Here's the story in brief. Dickens's Scrooge is a man. In this telling Scrooge is a woman, and so is her clerk."
+    },
+    "5d69c978": {
+      "slide": "story",
+      "text": "In Charles Dickens's A Christmas Carol, from eighteen forty-three, Scrooge is a London money-lender who cares only for the account books.",
+      "spoken": "In Charles Dickens's A Christmas Carol, from eighteen forty-three, Scrooge is a London money-lender who cares only for the account books."
+    },
+    "ac172aa1": {
+      "slide": "story",
+      "text": "Scrooge's partner, Jacob Marley, died seven years ago. On Christmas Eve his ghost comes back, dragging a long chain.",
+      "spoken": "Scrooge's partner, Jacob Marley, died seven years ago. On Christmas Eve his ghost comes back, dragging a long chain."
+    },
+    "903e6b2e": {
+      "slide": "story",
+      "text": "Three Spirits follow: Christmas Past, Christmas Present, and Christmas Yet to Come. Each shows Scrooge something hard to look at.",
+      "spoken": "Three Spirits follow: Christmas Past, Christmas Present, and Christmas Yet to Come. Each shows Scrooge something hard to look at."
+    },
+    "6869dae9": {
+      "slide": "story",
+      "text": "By morning, Scrooge has to decide what to do differently.",
+      "spoken": "By morning, Scrooge has to decide what to do differently."
+    },
+    "f77ab342": {
+      "slide": "engine",
+      "text": "Here's what has changed in this telling. The engine stands for today's AI, and its coal smoke stands for the carbon dioxide from the electricity AI uses.",
+      "spoken": "Here's what has changed in this telling. The engine stands for today's AI, and its coal smoke stands for the carbon dioxide from the electricity AI uses."
+    },
+    "1e9101e1": {
+      "slide": "engine",
+      "text": "In this telling, the firm sells answers. Customers hand in questions, and a brass thinking engine in the back room works them out.",
+      "spoken": "In this telling, the firm sells answers. Customers hand in questions, and a brass thinking engine in the back room works them out."
+    },
+    "4f79229e": {
+      "slide": "engine",
+      "text": "The engine burns coal. Missus Cratchit, the clerk, stokes it all day while her son Tim waits by the door.",
+      "spoken": "The engine burns coal. Missus Cratchit, the clerk, stokes it all day while her son Tim waits by the door."
+    },
+    "30d28d3e": {
+      "slide": "engine",
+      "text": "Scrooge wants a second, larger engine hall. Her niece Freddie wants it too, because the engine can forecast floods on the river.",
+      "spoken": "Scrooge wants a second, larger engine hall. Her niece Freddie wants it too, because the engine can forecast floods on the river."
+    },
+    "08b39298": {
+      "slide": "engine",
+      "text": "You are the new junior partner. The building papers need your signature by Christmas morning.",
+      "spoken": "You are the new junior partner. The building papers need your signature by Christmas morning."
+    },
+    "eb00b0c4": {
+      "slide": "s4",
+      "text": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.",
+      "spoken": "Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit."
+    },
+    "89dd330e": {
+      "slide": "s4",
+      "text": "Saved. You'll come back to these at the end.",
+      "spoken": "Saved. You'll come back to these at the end."
+    },
+    "5bb13a24": {
+      "slide": "chain",
+      "text": "Here's Marley's chain.",
+      "spoken": "Here's Marley's chain."
+    },
+    "be7b0e9a": {
+      "slide": "chain",
+      "text": "I wear the chain I forged in life, the Ghost tells Scrooge. I made it link by link, and yard by yard.",
+      "spoken": "I wear the chain I forged in life, the Ghost tells Scrooge. I made it link by link, and yard by yard."
+    },
+    "8efd3a45": {
+      "slide": "chain",
+      "text": "Carbon dioxide adds up the same way. Much of the carbon dioxide a fire sends up stays in the air for centuries.",
+      "spoken": "Carbon dioxide adds up the same way. Much of the carbon dioxide a fire sends up stays in the air for centuries."
+    },
+    "eef7b36c": {
+      "slide": "chain",
+      "text": "The warming depends on the total added so far. So every fire, large or small, adds a link.",
+      "spoken": "The warming depends on the total added so far. So every fire, large or small, adds a link."
+    },
+    "09bbcb6f": {
+      "slide": "chain",
+      "text": "Four visitors are coming tonight, each with one question. Marley's is first: what belongs in the ledger?",
+      "spoken": "Four visitors are coming tonight, each with one question. Marley's is first: what belongs in the ledger?"
+    },
+    "35b97689": {
+      "slide": "ledger-size",
+      "text": "How big is it? These figures are from our world, as of November twenty twenty-six.",
+      "spoken": "How big is it? These figures are from our world, as of November twenty twenty-six."
+    },
+    "a4d00cc7": {
+      "slide": "ledger-size",
+      "text": "In twenty twenty-five the world's data centers used about four hundred eighty-five terawatt-hours of electricity. That is about one and a half percent of all the electricity the world used.",
+      "spoken": "In twenty twenty-five the world's data centers used about four hundred eighty-five terawatt-hours of electricity. That is about one and a half percent of all the electricity the world used."
+    },
+    "779372e6": {
+      "slide": "ledger-size",
+      "text": "Their use grew seventeen percent in that one year. AI is only part of it, but the data centers built for AI grew much faster, by about fifty percent.",
+      "spoken": "Their use grew seventeen percent in that one year. AI is only part of it, but the data centers built for AI grew much faster, by about fifty percent."
+    },
+    "e992eef9": {
+      "slide": "ledger-size",
+      "text": "The International Energy Agency projects that data centers will use about twice as much by twenty thirty, or about three percent of the world's electricity.",
+      "spoken": "The International Energy Agency projects that data centers will use about twice as much by twenty thirty, or about three percent of the world's electricity."
+    },
+    "e86daada": {
+      "slide": "ledger-size",
+      "text": "So the share is small, and it is growing fast. Both are true, and each side of the public argument tends to quote only one.",
+      "spoken": "So the share is small, and it is growing fast. Both are true, and each side of the public argument tends to quote only one."
+    },
+    "75c3bd2a": {
+      "slide": "three-kinds",
+      "text": "The researcher Lynn Kaack and her colleagues sort AI's effects on the climate into three kinds. Here they are in the story's words.",
+      "spoken": "The researcher Lynn Kahk and her colleagues sort AI's effects on the climate into three kinds. Here they are in the story's words."
+    },
+    "a64ecd9f": {
+      "slide": "three-kinds",
+      "text": "Building and running the engine: the coal it burns as it works, and the coal burned to build it.",
+      "spoken": "Building and running the engine: the coal it burns as it works, and the coal burned to build it."
+    },
+    "1b59f7f0": {
+      "slide": "three-kinds",
+      "text": "What the answers are used for: the direct result of what one answer is used for. One answer helps a baker burn less fuel, and another helps a prospector find more coal.",
+      "spoken": "What the answers are used for: the direct result of what one answer is used for. One answer helps a baker burn less fuel, and another helps a prospector find more coal."
+    },
+    "2d24121b": {
+      "slide": "three-kinds",
+      "text": "How the town changes: slower, wider shifts in how people live and work once answers are cheap and everywhere.",
+      "spoken": "How the town changes: slower, wider shifts in how people live and work once answers are cheap and everywhere."
+    },
+    "6f208a11": {
+      "slide": "three-kinds",
+      "text": "The first kind is the easiest to measure. The other two can cut emissions or add to them. The easiest effects to measure are not always the largest.",
+      "spoken": "The first kind is the easiest to measure. The other two can cut emissions or add to them. The easiest effects to measure are not always the largest."
+    },
+    "c7282736": {
+      "slide": "two-branches",
+      "text": "Here are the two branches.",
+      "spoken": "Here are the two branches."
+    },
+    "ee470117": {
+      "slide": "two-branches",
+      "text": "The ethicist Aimee van Wynsberghe says that sustainable AI has two branches.",
+      "spoken": "The ethicist Aimee van Wines-berg says that sustainable AI has two branches."
+    },
+    "cd137d1c": {
+      "slide": "two-branches",
+      "text": "AI for sustainability asks how AI can help the environment. Freddie's flood forecasts belong here.",
+      "spoken": "AI for sustainability asks how AI can help the environment. Freddie's flood forecasts belong here."
+    },
+    "451910f1": {
+      "slide": "two-branches",
+      "text": "The sustainability of AI asks what building and running AI costs the environment. Scrooge's coal-box belongs here.",
+      "spoken": "The sustainability of AI asks what building and running AI costs the environment. Scrooge's coal-box belongs here."
+    },
+    "efe5e168": {
+      "slide": "two-branches",
+      "text": "The two can come apart. An engine can forecast floods well and still burn a great deal of coal, so a full ledger needs both.",
+      "spoken": "The two can come apart. An engine can forecast floods well and still burn a great deal of coal, so a full ledger needs both."
+    },
+    "b6fb0bf5": {
+      "slide": "two-totals",
+      "text": "One engine can have two honest totals.",
+      "spoken": "One engine can have two honest totals."
+    },
+    "fee5962c": {
+      "slide": "two-totals",
+      "text": "Emissions from running a machine are called operational. Emissions from building it are called embodied.",
+      "spoken": "Emissions from running a machine are called operational. Emissions from building it are called embodied."
+    },
+    "89fc7f0c": {
+      "slide": "two-totals",
+      "text": "Scrooge's engine burns the town's coal. She also pays a windmill owner in another county for clean power.",
+      "spoken": "Scrooge's engine burns the town's coal. She also pays a windmill owner in another county for clean power."
+    },
+    "c54f6e0a": {
+      "slide": "two-totals",
+      "text": "A location-based total counts the coal burned where the engine runs. A market-based total counts the clean power she paid for instead.",
+      "spoken": "A location-based total counts the coal burned where the engine runs. A market-based total counts the clean power she paid for instead."
+    },
+    "2b6858ba": {
+      "slide": "two-totals",
+      "text": "Both methods are accepted. So ask: counted how? And ask whether her payment added clean power that would not otherwise exist. That is called additionality.",
+      "spoken": "Both methods are accepted. So ask: counted how? And ask whether her payment added clean power that would not otherwise exist. That is called additionality."
+    },
+    "a4c2e528": {
+      "slide": "s10",
+      "text": "Which kind of effect? Each line describes one effect of the thinking engine. Sort each one under building and running the engine, what the answers are used for, or how the town changes. When every line is placed, press Check answers.",
+      "spoken": "Which kind of effect? Each line describes one effect of the thinking engine. Sort each one under building and running the engine, what the answers are used for, or how the town changes. When every line is placed, press Check answers."
+    },
+    "042cf612": {
+      "slide": "s10",
+      "text": "Right. Coal burned while the engine works and coal burned to build it both count as building and running the engine. A baker's smaller fuel bill and a prospector's new coal seam come from what the answers were used for, while shops lit all night are a change in how the whole town lives.",
+      "spoken": "Right. Coal burned while the engine works and coal burned to build it both count as building and running the engine. A baker's smaller fuel bill and a prospector's new coal seam come from what the answers were used for, while shops lit all night are a change in how the whole town lives."
+    },
+    "cd3d899a": {
+      "slide": "per-prompt",
+      "text": "What does one prompt cost? These figures are from our world, as of November twenty twenty-six.",
+      "spoken": "What does one prompt cost? These figures are from our world, as of November twenty twenty-six."
+    },
+    "8c893aad": {
+      "slide": "per-prompt",
+      "text": "In twenty twenty-five Google measured a typical text prompt to its Gemini app at zero point two four watt-hours. That would light a ten-watt LED bulb for about a minute and a half.",
+      "spoken": "In twenty twenty-five Google measured a typical text prompt to its Gemini app at zero point two four watt-hours. That would light a ten-watt LED bulb for about a minute and a half."
+    },
+    "70db2f3f": {
+      "slide": "per-prompt",
+      "text": "The figure counts the chips that do the work, idle machines kept ready, and overhead such as cooling. It leaves out training the model.",
+      "spoken": "The figure counts the chips that do the work, idle machines kept ready, and overhead such as cooling. It leaves out training the model."
+    },
+    "4cd8e8be": {
+      "slide": "per-prompt",
+      "text": "It describes a typical text prompt. A twenty twenty-six study estimates that a long reasoning answer uses over ten times as much as a short one. Video can use hundreds of times as much.",
+      "spoken": "It describes a typical text prompt. A twenty twenty-six study estimates that a long reasoning answer uses over ten times as much as a short one. Video can use hundreds of times as much."
+    },
+    "4ba08f6a": {
+      "slide": "per-prompt",
+      "text": "It is not a total. A total is the energy per prompt times the number of prompts, and the figure does not give that number.",
+      "spoken": "It is not a total. A total is the energy per prompt times the number of prompts, and the figure does not give that number."
+    },
+    "82f5ad2f": {
+      "slide": "s12",
+      "text": "Reading a per-prompt figure. A company publishes the energy used by one typical text prompt, counted the way the figure on the ledger page was. Check every statement that is true of that figure, then press Check answers.",
+      "spoken": "Reading a per-prompt figure. A company publishes the energy used by one typical text prompt, counted the way the figure on the ledger page was. Check every statement that is true of that figure, then press Check answers."
+    },
+    "492698cd": {
+      "slide": "s12",
+      "text": "Right. The figure counts running the prompt, including idle machines and cooling, and it leaves out training. It describes a typical text prompt, and it gives no total until you multiply by the number of prompts.",
+      "spoken": "Right. The figure counts running the prompt, including idle machines and cooling, and it leaves out training. It describes a typical text prompt, and it gives no total until you multiply by the number of prompts."
+    },
+    "69301398": {
+      "slide": "jevons",
+      "text": "Christmas Past takes us back to eighteen sixty-five.",
+      "spoken": "Christmas Past takes us back to eighteen sixty-five."
+    },
+    "027d5460": {
+      "slide": "jevons",
+      "text": "The Spirit of Christmas Past sets you down in eighteen sixty-five. The economist William Stanley Jevons has just published The Coal Question.",
+      "spoken": "The Spirit of Christmas Past sets you down in eighteen sixty-five. The economist William Stanley Jevons has just published The Coal Question."
+    },
+    "75386739": {
+      "slide": "jevons",
+      "text": "James Watt's steam engine did the same work on far less coal than the engines before it.",
+      "spoken": "James Watt's steam engine did the same work on far less coal than the engines before it."
+    },
+    "8260b697": {
+      "slide": "jevons",
+      "text": "Jevons pointed out that Britain then burned more coal, not less. Cheaper steam power was worth using for many more jobs.",
+      "spoken": "Jevons pointed out that Britain then burned more coal, not less. Cheaper steam power was worth using for many more jobs."
+    },
+    "fcd2decc": {
+      "slide": "jevons",
+      "text": "This is now called the Jevons paradox. It describes something that can happen. It is not a law that efficiency always fails.",
+      "spoken": "This is now called the Jevons paradox. It describes something that can happen. It is not a law that efficiency always fails."
+    },
+    "508c4ca7": {
+      "slide": "three-outcomes",
+      "text": "The old engine gives a hundred answers a day at four scoops each: four hundred scoops. A new engine needs two scoops an answer. It promises the total the town would burn if it bought no more answers: two hundred.",
+      "spoken": "The old engine gives a hundred answers a day at four scoops each: four hundred scoops. A new engine needs two scoops an answer. It promises the total the town would burn if it bought no more answers: two hundred."
+    },
+    "3c73c1d5": {
+      "slide": "three-outcomes",
+      "text": "Full saving. The town still buys a hundred answers. A hundred times two is two hundred scoops. The total falls as much as promised.",
+      "spoken": "Full saving. The town still buys a hundred answers. A hundred times two is two hundred scoops. The total falls as much as promised."
+    },
+    "85e48b5f": {
+      "slide": "three-outcomes",
+      "text": "Rebound. Answers are cheaper, so the town buys a hundred fifty. A hundred fifty times two is three hundred scoops. The total falls, but less than promised.",
+      "spoken": "Rebound. Answers are cheaper, so the town buys a hundred fifty. A hundred fifty times two is three hundred scoops. The total falls, but less than promised."
+    },
+    "03e2f958": {
+      "slide": "three-outcomes",
+      "text": "Backfire. The town buys three hundred. Three hundred times two is six hundred scoops. The total rises.",
+      "spoken": "Backfire. The town buys three hundred. Three hundred times two is six hundred scoops. The total rises."
+    },
+    "901a74c1": {
+      "slide": "three-outcomes",
+      "text": "Economists find that some rebound is common. Reviews of the evidence find much less support for backfire as the usual result.",
+      "spoken": "Economists find that some rebound is common. Reviews of the evidence find much less support for backfire as the usual result."
+    },
+    "9dd2dfb1": {
+      "slide": "s15",
+      "text": "This is the Engine Room, a small model with two controls. Thrift is how much coal the new engine burns per answer. Appetite is how many answers the town buys once answers are cheaper. The numbers are invented. Try a setting, then read what happens to the coal. When you've tried a few settings, press Continue.",
+      "spoken": "This is the Engine Room, a small model with two controls. Thrift is how much coal the new engine burns per answer. Appetite is how many answers the town buys once answers are cheaper. The numbers are invented. Try a setting, then read what happens to the coal. When you've tried a few settings, press Continue."
+    },
+    "5f8b893b": {
+      "slide": "ledger-rebound",
+      "text": "The Engine Room shows one sum: total coal is the coal per answer times the number of answers. A thriftier engine lowers the first and can raise the second.",
+      "spoken": "The Engine Room shows one sum: total coal is the coal per answer times the number of answers. A thriftier engine lowers the first and can raise the second."
+    },
+    "277b19e9": {
+      "slide": "ledger-rebound",
+      "text": "The research group Epoch AI found in twenty twenty-five that the price of AI answers of a fixed quality was falling nine to nine hundred times a year, depending on the task.",
+      "spoken": "The research group Epoch AI found in twenty twenty-five that the price of AI answers of a fixed quality was falling nine to nine hundred times a year, depending on the task."
+    },
+    "936687f4": {
+      "slide": "ledger-rebound",
+      "text": "Meanwhile, the electricity used by data centers kept rising: seventeen percent in twenty twenty-five alone.",
+      "spoken": "Meanwhile, the electricity used by data centers kept rising: seventeen percent in twenty twenty-five alone."
+    },
+    "b62dda40": {
+      "slide": "ledger-rebound",
+      "text": "In January twenty twenty-five Microsoft's chief executive, Satya Nadella, posted that the Jevons paradox was striking again. He predicted that use of AI would soar.",
+      "spoken": "In January twenty twenty-five Microsoft's chief executive, Satya Nadella, posted that the Jevons paradox was striking again. He predicted that use of AI would soar."
+    },
+    "2a6026c0": {
+      "slide": "ledger-rebound",
+      "text": "All of this fits rebound. It does not prove that cheaper AI caused the growth, since new uses and new investment arrived in the same years.",
+      "spoken": "All of this fits rebound. It does not prove that cheaper AI caused the growth, since new uses and new investment arrived in the same years."
+    },
+    "47459f53": {
+      "slide": "s17",
+      "text": "Full saving, rebound, or backfire? In each case a new engine burns less coal per answer, and the town burned four hundred scoops a day before. Sort each case under full saving, rebound, or backfire, then press Check answers.",
+      "spoken": "Full saving, rebound, or backfire? In each case a new engine burns less coal per answer, and the town burned four hundred scoops a day before. Sort each case under full saving, rebound, or backfire, then press Check answers."
+    },
+    "607a4bed": {
+      "slide": "s17",
+      "text": "Right. When the town buys no more answers, the whole promised saving arrives. When it buys more but the total still falls, that's rebound, and when the total rises above four hundred scoops, the thriftier engine has backfired.",
+      "spoken": "Right. When the town buys no more answers, the whole promised saving arrives. When it buys more but the total still falls, that's rebound, and when the total rises above four hundred scoops, the thriftier engine has backfired."
+    },
+    "7b93dd82": {
+      "slide": "s18",
+      "text": "A decision point: the thriftier engine. Scrooge can buy an engine that halves the coal per answer. She expects to sell three times as many answers. What should the town ask of her? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A decision point: the thriftier engine. Scrooge can buy an engine that halves the coal per answer. She expects to sell three times as many answers. What should the town ask of her? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "32105813": {
+      "slide": "s18",
+      "text": "Half the coal per answer and three times the answers is one and a half times the coal. So efficiency is not a climate policy by itself. A cap on the total coal, or a price on each scoop, is what turns it into one.",
+      "spoken": "Half the coal per answer and three times the answers is one and a half times the coal. So efficiency is not a climate policy by itself. A cap on the total coal, or a price on each scoop, is what turns it into one."
+    },
+    "707d4ec6": {
+      "slide": "spoonful",
+      "text": "Christmas Present: one riddle, one spoonful.",
+      "spoken": "Christmas Present: one riddle, one spoonful."
+    },
+    "ff556df9": {
+      "slide": "spoonful",
+      "text": "The Spirit of Christmas Present shows you a customer buying the answer to a riddle. The engine burns one spoonful of coal for it.",
+      "spoken": "The Spirit of Christmas Present shows you a customer buying the answer to a riddle. The engine burns one spoonful of coal for it."
+    },
+    "99e59e26": {
+      "slide": "spoonful",
+      "text": "Nobody could measure what that spoonful adds to the smoke over London. Yet the smoke is made of nothing but spoonfuls.",
+      "spoken": "Nobody could measure what that spoonful adds to the smoke over London. Yet the smoke is made of nothing but spoonfuls."
+    },
+    "9934e91a": {
+      "slide": "spoonful",
+      "text": "So is that one purchase anybody's fault? Two philosophers answer very differently.",
+      "spoken": "So is that one purchase anybody's fault? Two philosophers answer very differently."
+    },
+    "7aaa7efb": {
+      "slide": "spoonful",
+      "text": "One wrote about driving, and the other about harms built up from many tiny acts. Applying their arguments to an AI prompt is our step, not theirs.",
+      "spoken": "One wrote about driving, and the other about harms built up from many tiny acts. Applying their arguments to an AI prompt is our step, not theirs."
+    },
+    "5d8fb4e8": {
+      "slide": "one-link",
+      "text": "The first answer is Walter Sinnott-Armstrong's: it's not my fault.",
+      "spoken": "The first answer is Walter Sinnott-Armstrong's: it's not my fault."
+    },
+    "3aa0f0bd": {
+      "slide": "one-link",
+      "text": "The philosopher Walter Sinnott-Armstrong imagines a Sunday drive in a gas-guzzler, taken just for fun.",
+      "spoken": "The philosopher Walter Sinnott-Armstrong imagines a Sunday drive in a gas-guzzler, taken just for fun."
+    },
+    "ea756934": {
+      "slide": "one-link",
+      "text": "His reasoning: warming would happen without that one drive, and the drive could not cause it alone. So no harm can be traced to it.",
+      "spoken": "His reasoning: warming would happen without that one drive, and the drive could not cause it alone. So no harm can be traced to it."
+    },
+    "ccbe10f2": {
+      "slide": "one-link",
+      "text": "He tests one moral principle after another and finds none that clearly makes the drive wrong. He reports a failed search, not a proof that the drive is fine.",
+      "spoken": "He tests one moral principle after another and finds none that clearly makes the drive wrong. He reports a failed search, not a proof that the drive is fine."
+    },
+    "98de33aa": {
+      "slide": "one-link",
+      "text": "He does not conclude that nobody need act. Our real obligation, he says, is to get governments to do their job.",
+      "spoken": "He does not conclude that nobody need act. Our real obligation, he says, is to get governments to do their job."
+    },
+    "c8eba53f": {
+      "slide": "torturers",
+      "text": "The second answer is Derek Parfit's: the harmless torturers.",
+      "spoken": "The second answer is Derek Parfit's: the harmless torturers."
+    },
+    "b47e70da": {
+      "slide": "torturers",
+      "text": "The philosopher Derek Parfit imagines a thousand torturers and a thousand victims. Each torturer presses one button.",
+      "spoken": "The philosopher Derek Parfit imagines a thousand torturers and a thousand victims. Each torturer presses one button."
+    },
+    "32f44620": {
+      "slide": "torturers",
+      "text": "Each press adds a tiny amount to every victim's pain. No victim can feel the difference one press makes. Together, the presses leave every victim in agony.",
+      "spoken": "Each press adds a tiny amount to every victim's pain. No victim can feel the difference one press makes. Together, the presses leave every victim in agony."
+    },
+    "d31ab447": {
+      "slide": "torturers",
+      "text": "Parfit holds that each torturer acts wrongly. An act can be wrong because it is one of a set of acts that together harm people.",
+      "spoken": "Parfit holds that each torturer acts wrongly. An act can be wrong because it is one of a set of acts that together harm people."
+    },
+    "dcabf240": {
+      "slide": "torturers",
+      "text": "Shelly Kagan and John Broome reach similar answers. Kagan argues that each act has a small chance of triggering a large harm. Broome argues that emitting harms others.",
+      "spoken": "Shelly Kagan and John Broome reach similar answers. Kagan argues that each act has a small chance of triggering a large harm. Broome argues that emitting harms others."
+    },
+    "d1ca82a7": {
+      "slide": "s22",
+      "text": "Whose reasoning? Each line is about one prompt and its spoonful of coal. Sort each one under Sinnott-Armstrong, Parfit, or Neither. When every line is placed, press Check answers.",
+      "spoken": "Whose reasoning? Each line is about one prompt and its spoonful of coal. Sort each one under Sinnott-Armstrong, Parfit, or Neither. When every line is placed, press Check answers."
+    },
+    "fe14a847": {
+      "slide": "s22",
+      "text": "Right. Sinnott-Armstrong puts the duty on changing the law, and Parfit holds that an act can be wrong as one of a set of acts that together do harm. Neither says that individuals have nothing to do with climate change.",
+      "spoken": "Right. Sinnott-Armstrong puts the duty on changing the law, and Parfit holds that an act can be wrong as one of a set of acts that together do harm. Neither says that individuals have nothing to do with climate change."
+    },
+    "71f5881b": {
+      "slide": "s23",
+      "text": "Another decision point. Is one prompt, with its spoonful of coal, a link in the chain that you answer for? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "Another decision point. Is one prompt, with its spoonful of coal, a link in the chain that you answer for? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "42abf2c0": {
+      "slide": "s23",
+      "text": "Philosophers still disagree about this. Notice that the answers can be combined: a person can hold that the single act counts and also work to change the rules.",
+      "spoken": "Philosophers still disagree about this. Notice that the answers can be combined: a person can hold that the single act counts and also work to change the rules."
+    },
+    "95f1acad": {
+      "slide": "shue",
+      "text": "Now Henry Shue, with one coal and a fire.",
+      "spoken": "Now Henry Shoo, with one coal and a fire."
+    },
+    "5a7762e3": {
+      "slide": "shue",
+      "text": "Dickens writes that Scrooge had a very small fire, but the clerk's fire was so very much smaller that it looked like one coal.",
+      "spoken": "Dickens writes that Scrooge had a very small fire, but the clerk's fire was so very much smaller that it looked like one coal."
+    },
+    "3ededebe": {
+      "slide": "shue",
+      "text": "The philosopher Henry Shue separates subsistence emissions, needed for a decent basic life, from luxury emissions, which go beyond that.",
+      "spoken": "The philosopher Henry Shoo separates subsistence emissions, needed for a decent basic life, from luxury emissions, which go beyond that."
+    },
+    "c1836b31": {
+      "slide": "shue",
+      "text": "Shue wrote about rich and poor nations. Applying his line to uses of AI is our step: a flood warning sits near one end, and a novelty video near the other.",
+      "spoken": "Shoo wrote about rich and poor nations. Applying his line to uses of AI is our step: a flood warning sits near one end, and a novelty video near the other."
+    },
+    "710f01b6": {
+      "slide": "shue",
+      "text": "Most uses fall in between, such as homework help, translation, or drafting a letter. Shue's distinction does not sort those for you.",
+      "spoken": "Most uses fall in between, such as homework help, translation, or drafting a letter. Shoo's distinction does not sort those for you."
+    },
+    "5ecd796b": {
+      "slide": "who-pays",
+      "text": "Cleaning up the smoke will cost money. Writers on climate justice, among them Henry Shue, Edward Page, and Simon Caney, debate three principles.",
+      "spoken": "Cleaning up the smoke will cost money. Writers on climate justice, among them Henry Shoo, Edward Page, and Simon Caney, debate three principles."
+    },
+    "bdaf9b2a": {
+      "slide": "who-pays",
+      "text": "Polluter pays: those who caused the emissions pay, in proportion to how much they caused. The problem: is the polluter the firm, or the customer who ordered the answer?",
+      "spoken": "Polluter pays: those who caused the emissions pay, in proportion to how much they caused. The problem: is the polluter the firm, or the customer who ordered the answer?"
+    },
+    "d87c11fa": {
+      "slide": "who-pays",
+      "text": "Beneficiary pays: those who gained from the emissions pay, even if they caused none. The problem: gains spread widely and are hard to trace.",
+      "spoken": "Beneficiary pays: those who gained from the emissions pay, even if they caused none. The problem: gains spread widely and are hard to trace."
+    },
+    "5cbaa739": {
+      "slide": "who-pays",
+      "text": "Ability to pay: those who can best afford it pay the most, whatever their part. The problem: it ignores who caused the smoke and who gained.",
+      "spoken": "Ability to pay: those who can best afford it pay the most, whatever their part. The problem: it ignores who caused the smoke and who gained."
+    },
+    "a41abf85": {
+      "slide": "s26",
+      "text": "Which principle? Each proposal is made at a town meeting about the cost of cleaning up the smoke. Sort each one under polluter pays, beneficiary pays, or ability to pay. When every line is placed, press Check answers.",
+      "spoken": "Which principle? Each proposal is made at a town meeting about the cost of cleaning up the smoke. Sort each one under polluter pays, beneficiary pays, or ability to pay. When every line is placed, press Check answers."
+    },
+    "b5b72cf9": {
+      "slide": "s26",
+      "text": "Right. Polluter pays charges people by how much of the smoke they caused. Beneficiary pays charges them by what they gained, and ability to pay charges them by what they can afford.",
+      "spoken": "Right. Polluter pays charges people by how much of the smoke they caused. Beneficiary pays charges them by what they gained, and ability to pay charges them by what they can afford."
+    },
+    "ceade11e": {
+      "slide": "s27",
+      "text": "A decision point: the bill. Who should pay most of the cost of the smoke from Scrooge's engine? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "A decision point: the bill. Who should pay most of the cost of the smoke from Scrooge's engine? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "3714589d": {
+      "slide": "s27",
+      "text": "Each principle picks out a different payer, and each has a problem you saw. Many writers on climate justice end up combining them.",
+      "spoken": "Each principle picks out a different payer, and each has a problem you saw. Many writers on climate justice end up combining them."
+    },
+    "d11aabbc": {
+      "slide": "promise",
+      "text": "Yet to Come begins with the promise.",
+      "spoken": "Yet to Come begins with the promise."
+    },
+    "6d4e2291": {
+      "slide": "promise",
+      "text": "The last Spirit says nothing. It points ahead, to the years Tim will live in. Start with the hopeful view.",
+      "spoken": "The last Spirit says nothing. It points ahead, to the years Tim will live in. Start with the hopeful view."
+    },
+    "140fffd5": {
+      "slide": "promise",
+      "text": "The computer scientist David Rolnick and his colleagues list many ways machine learning could help with climate change.",
+      "spoken": "The computer scientist David Rolnick and his colleagues list many ways machine learning could help with climate change."
+    },
+    "078b36b8": {
+      "slide": "promise",
+      "text": "Among them: forecasting supply and demand on the power grid, speeding the search for better battery materials, and tracking forests by satellite.",
+      "spoken": "Among them: forecasting supply and demand on the power grid, speeding the search for better battery materials, and tracking forests by satellite."
+    },
+    "3d70a644": {
+      "slide": "promise",
+      "text": "They present it as one tool among many, not as a cure. Freddie hopes the new hall will do this kind of good.",
+      "spoken": "They present it as one tool among many, not as a cure. Freddie hopes the new hall will do this kind of good."
+    },
+    "e8f1789d": {
+      "slide": "ledger-promise",
+      "text": "How much of the promise is real? These findings are from our world, as of November twenty twenty-six.",
+      "spoken": "How much of the promise is real? These findings are from our world, as of November twenty twenty-six."
+    },
+    "9a8fe2d5": {
+      "slide": "ledger-promise",
+      "text": "In daily use: in twenty twenty-five Europe's weather center, E C M W F, began running an AI forecasting system alongside its traditional one.",
+      "spoken": "In daily use: in twenty twenty-five Europe's weather center, E C M W F, began running an AI forecasting system alongside its traditional one."
+    },
+    "6a8a4305": {
+      "slide": "ledger-promise",
+      "text": "Shown to work, rarely used: the cloud trails behind jets trap heat. In a twenty twenty-five trial, flights that followed AI guidance to avoid making them made sixty-two percent fewer.",
+      "spoken": "Shown to work, rarely used: the cloud trails behind jets trap heat. In a twenty twenty-five trial, flights that followed AI guidance to avoid making them made sixty-two percent fewer."
+    },
+    "6e71ce98": {
+      "slide": "ledger-promise",
+      "text": "But fewer than one in ten of the flights offered the guidance flew it as planned. Across all the flights offered it, trails fell by about twelve percent.",
+      "spoken": "But fewer than one in ten of the flights offered the guidance flew it as planned. Across all the flights offered it, trails fell by about twelve percent."
+    },
+    "1d1df7ad": {
+      "slide": "ledger-promise",
+      "text": "The International Energy Agency made the same point in twenty twenty-five: known AI tools could cut emissions, but nothing yet ensures they will be widely used.",
+      "spoken": "The International Energy Agency made the same point in twenty twenty-five: known AI tools could cut emissions, but nothing yet ensures they will be widely used."
+    },
+    "87ba6388": {
+      "slide": "three-storms",
+      "text": "The philosopher Stephen Gardiner calls climate change a perfect moral storm: three problems that arrive together and make it hard to act well.",
+      "spoken": "The philosopher Stephen Gardiner calls climate change a perfect moral storm: three problems that arrive together and make it hard to act well."
+    },
+    "043d4cca": {
+      "slide": "three-storms",
+      "text": "The global storm: the smoke spreads over the whole world, so no town gains much by cutting alone, and no authority can hold every town to a limit.",
+      "spoken": "The global storm: the smoke spreads over the whole world, so no town gains much by cutting alone, and no authority can hold every town to a limit."
+    },
+    "aa0f8300": {
+      "slide": "three-storms",
+      "text": "The intergenerational storm: the burning helps people now. Most of the harm falls later, on people like Tim who have no say today.",
+      "spoken": "The intergenerational storm: the burning helps people now. Most of the harm falls later, on people like Tim who have no say today."
+    },
+    "4e3b59ed": {
+      "slide": "three-storms",
+      "text": "The theoretical storm: our theories are not up to the job. They give no agreed way to weigh future people, or to choose when the odds are unknown.",
+      "spoken": "The theoretical storm: our theories are not up to the job. They give no agreed way to weigh future people, or to choose when the odds are unknown."
+    },
+    "3947af91": {
+      "slide": "corruption",
+      "text": "Gardiner also warns about a convenient argument.",
+      "spoken": "Gardiner also warns about a convenient argument."
+    },
+    "43d76a0f": {
+      "slide": "corruption",
+      "text": "Gardiner warns that the three storms together invite moral corruption: we are drawn to arguments that happen to let us carry on as we are.",
+      "spoken": "Gardiner warns that the three storms together invite moral corruption: we are drawn to arguments that happen to let us carry on as we are."
+    },
+    "b7f5900a": {
+      "slide": "corruption",
+      "text": "Burn the coal now, and the engine will fix it later has that shape. The gain is ours and comes now. The cost is someone else's and comes later.",
+      "spoken": "Burn the coal now, and the engine will fix it later has that shape. The gain is ours and comes now. The cost is someone else's and comes later."
+    },
+    "f2c64515": {
+      "slide": "corruption",
+      "text": "That makes the argument suspect. It does not make it false, since a convenient claim can also be true.",
+      "spoken": "That makes the argument suspect. It does not make it false, since a convenient claim can also be true."
+    },
+    "c78ad9d1": {
+      "slide": "corruption",
+      "text": "Gardiner wrote about climate policy, not AI. Applying his warning to the engine is our step.",
+      "spoken": "Gardiner wrote about climate policy, not AI. Applying his warning to the engine is our step."
+    },
+    "4fea04cb": {
+      "slide": "wager",
+      "text": "Now, the wager and the caution.",
+      "spoken": "Now, the wager and the caution."
+    },
+    "3d0fa2ff": {
+      "slide": "wager",
+      "text": "For the wager: some of the tools are already real, and holding AI back also costs future people the help it might have given.",
+      "spoken": "For the wager: some of the tools are already real, and holding AI back also costs future people the help it might have given."
+    },
+    "5b2b81c4": {
+      "slide": "wager",
+      "text": "For the caution: the philosopher Hans Jonas argues that when a technology can reshape the far future, warnings deserve more weight than promises.",
+      "spoken": "For the caution: the philosopher Hans Yonas argues that when a technology can reshape the far future, warnings deserve more weight than promises."
+    },
+    "6315bbcf": {
+      "slide": "wager",
+      "text": "Jonas allows a person to risk what is their own. He holds that the existence of humanity as a whole must never be made the stake.",
+      "spoken": "Yonas allows a person to risk what is their own. He holds that the existence of humanity as a whole must never be made the stake."
+    },
+    "1f2fbaf4": {
+      "slide": "wager",
+      "text": "Gardiner, writing about climate engineering, adds that preparing for an emergency differs morally from preparing for one your own failure will bring about.",
+      "spoken": "Gardiner, writing about climate engineering, adds that preparing for an emergency differs morally from preparing for one your own failure will bring about."
+    },
+    "75a2136b": {
+      "slide": "s33",
+      "text": "Which storm? Each line is a feature of the decision about the new engine hall. Sort each one under global, intergenerational, or theoretical. When every line is placed, press Check answers.",
+      "spoken": "Which storm? Each line is a feature of the decision about the new engine hall. Sort each one under global, intergenerational, or theoretical. When every line is placed, press Check answers."
+    },
+    "553ca2cd": {
+      "slide": "s33",
+      "text": "Right. The global storm is about place, the intergenerational storm is about time, and the theoretical storm is about our tools for thinking.",
+      "spoken": "Right. The global storm is about place, the intergenerational storm is about time, and the theoretical storm is about our tools for thinking."
+    },
+    "d1bd9da0": {
+      "slide": "may-be",
+      "text": "Last, will be, or may be?",
+      "spoken": "Last, will be, or may be?"
+    },
+    "c35f4ce5": {
+      "slide": "may-be",
+      "text": "Scrooge asks the last Spirit: Are these the shadows of the things that Will be, or are they shadows of things that May be, only?",
+      "spoken": "Scrooge asks the last Spirit: Are these the shadows of the things that Will be, or are they shadows of things that May be, only?"
+    },
+    "55bd4eab": {
+      "slide": "may-be",
+      "text": "A forecast says what will be. A scenario says what may be if we take a certain path. Every long-range number about AI and climate is a scenario.",
+      "spoken": "A forecast says what will be. A scenario says what may be if we take a certain path. Every long-range number about AI and climate is a scenario."
+    },
+    "04efdd1c": {
+      "slide": "may-be",
+      "text": "A large if is where the power comes from. The same engine run on coal or on wind sends up very different amounts of smoke.",
+      "spoken": "A large if is where the power comes from. The same engine run on coal or on wind sends up very different amounts of smoke."
+    },
+    "559e3446": {
+      "slide": "may-be",
+      "text": "Three questions will outlast this year's numbers. Counted how? Is the clean power new? Who pays if the bet fails?",
+      "spoken": "Three questions will outlast this year's numbers. Counted how? Is the clean power new? Who pays if the bet fails?"
+    },
+    "7d47a9a2": {
+      "slide": "s35",
+      "text": "One last decision point. It is Christmas morning, and the papers for the new engine hall are on the desk. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note.",
+      "spoken": "One last decision point. It is Christmas morning, and the papers for the new engine hall are on the desk. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note."
+    },
+    "432da4f5": {
+      "slide": "s35",
+      "text": "All three answers can be defended. Whichever you chose, you should now be able to say what you would count, who answers for the smoke and who pays for it, and what you owe the people who come after you.",
+      "spoken": "All three answers can be defended. Whichever you chose, you should now be able to say what you would count, who answers for the smoke and who pays for it, and what you owe the people who come after you."
+    },
+    "db4f0028": {
+      "slide": "s36",
+      "text": "These are your ratings from the start. Rate each statement again, then press Submit.",
+      "spoken": "These are your ratings from the start. Rate each statement again, then press Submit."
+    },
+    "d9a90532": {
+      "slide": "s36",
+      "text": "Saved. Now, a quick summary of the lesson.",
+      "spoken": "Saved. Now, a quick summary of the lesson."
+    },
+    "5d72598c": {
+      "slide": "s37",
+      "text": "Here's the lesson, summed up.",
+      "spoken": "Here's the lesson, summed up."
+    },
+    "3dbd97e5": {
+      "slide": "s37",
+      "text": "What to count: building and running the engine, what the answers are used for, and how the town changes. Any total depends on how it was counted.",
+      "spoken": "What to count: building and running the engine, what the answers are used for, and how the town changes. Any total depends on how it was counted."
+    },
+    "0633cfa4": {
+      "slide": "s37",
+      "text": "Efficiency: a thriftier engine can bring a full saving, a rebound, or a backfire. Efficiency alone does not decide which. A cap or a price on the coal is what holds the total down.",
+      "spoken": "Efficiency: a thriftier engine can bring a full saving, a rebound, or a backfire. Efficiency alone does not decide which. A cap or a price on the coal is what holds the total down."
+    },
+    "c6c64391": {
+      "slide": "s37",
+      "text": "Fault and cost: Sinnott-Armstrong and Parfit disagree about one link. Polluter pays, beneficiary pays, and ability to pay disagree about the bill.",
+      "spoken": "Fault and cost: Sinnott-Armstrong and Parfit disagree about one link. Polluter pays, beneficiary pays, and ability to pay disagree about the bill."
+    },
+    "b382d1ba": {
+      "slide": "s37",
+      "text": "The future: Gardiner's three storms make burn now, fix later a tempting argument. Tempting is not the same as false.",
+      "spoken": "The future: Gardiner's three storms make burn now, fix later a tempting argument. Tempting is not the same as false."
+    },
+    "9b94d08c": {
+      "slide": "further-reading",
+      "text": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.",
+      "spoken": "If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing."
+    }
+  }
+}

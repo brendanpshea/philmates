@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marley's Chain: AI and Climate Change · PhilMates</title>
+  <meta name="description" content="Is AI worth its carbon? Scrooge's firm sells answers from a coal-fired engine, and four visitors bring Jevons, Parfit, Shue, and Gardiner to the question.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
+  <script type="module" src="../../../shared/phil-core.js?v=14"></script>
+  <script type="module" src="./assets/rebound.js"></script>
+  <style>
+    /* The four ledger pages hold every number that will go out of date. */
+    phil-slide p.ledger-stamp {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 4px 10px;
+      border: 2px dashed #ffcf5a;
+      color: #ffcf5a;
+      font-family: var(--pixel);
+      font-size: 10px;
+      line-height: 1.6;
+      letter-spacing: .04em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     The frame is Dickens's A Christmas Carol (1843; public domain). Nothing
+     comes from any film version. Scrooge, the clerk, and the nephew are
+     recast as women; Marley and the Spirits follow Dickens. The thinking
+     engine, its coal, and every number inside the story are invented.
+
+     Every real-world number sits on one of four slides marked
+     LEDGER PAGE, each stamped "Our world, November 2026". Refresh those
+     four once a year (search this file for LEDGER PAGE). No graded item
+     depends on a number, a company, a model, or a news story.
+
+     Arguments are credited by name to Jevons, Kaack and colleagues,
+     van Wynsberghe, Sinnott-Armstrong, Parfit, Kagan, Broome, Shue,
+     Gardiner, Jonas, and Rolnick and colleagues, never to a character.
+     Shue wrote about nations and Gardiner about climate policy and
+     geoengineering; the slides that apply them to AI say the application
+     is ours. Whether one prompt is a link in the chain, who should pay,
+     and whether to sign are ungraded polls. Sources and checked wording
+     are in phil_mates_outlines.md. -->
+
+<phil-lesson id="ai-climate" title="Marley's Chain" subject="AI and Climate Change">
+
+  <!-- ============ OPENING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/title.png" alt="A dark brick counting-house on a snowy street at night with one window lit gold, and behind it a tall chimney pouring dark smoke into the sky">
+    <h1>Marley's Chain</h1>
+    <p class="lead">Scrooge's counting-house sells answers now. A brass thinking engine works them out, and the engine burns coal.</p>
+    <p>She wants to build a bigger one, and the papers need your signature by Christmas morning. Is the engine worth its smoke?</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to Marley's Chain. Scrooge's counting-house sells answers now. A brass thinking engine works them out, and the engine burns coal. She wants to build a bigger one, and the papers need your signature by Christmas morning. Is the engine worth its smoke? Whenever it's your turn, I'll stop and wait for you.</phil-narration>
+  </phil-slide>
+
+  <!-- 2. The story -->
+  <phil-slide id="story">
+    <img slot="art" src="./assets/scrooge.png" alt="A thin Black woman in her sixties with gray hair, round spectacles, a dark green coat, and fingerless gloves sits at a desk over an open blank ledger by candlelight, a box of coal at her feet">
+    <h1>If You Haven't Read the Story</h1>
+    <phil-narration>Here's the story in brief. Dickens's Scrooge is a man. In this telling Scrooge is a woman, and so is her clerk.</phil-narration>
+    <ul reveal>
+      <li say="In Charles Dickens's A Christmas Carol, from eighteen forty-three, Scrooge is a London money-lender who cares only for the account books.">In Charles Dickens's <em>A Christmas Carol</em> (1843), Scrooge is a London money-lender who cares only for the account books.</li>
+      <li say="Scrooge's partner, Jacob Marley, died seven years ago. On Christmas Eve his ghost comes back, dragging a long chain.">Scrooge's partner, Jacob Marley, died seven years ago. On Christmas Eve his ghost comes back, dragging a long chain.</li>
+      <li say="Three Spirits follow: Christmas Past, Christmas Present, and Christmas Yet to Come. Each shows Scrooge something hard to look at.">Three Spirits follow: Christmas Past, Christmas Present, and Christmas Yet to Come. Each shows Scrooge something hard to look at.</li>
+      <li say="By morning, Scrooge has to decide what to do differently.">By morning, Scrooge has to decide what to do differently.</li>
+    </ul>
+    <p class="muted">Dickens's Scrooge is a man. In this telling Scrooge is a woman, and so is her clerk.</p>
+  </phil-slide>
+
+  <!-- 3. What has changed -->
+  <phil-slide id="engine">
+    <img slot="art" src="./assets/engine.png" alt="A South Asian woman in her thirties with a long black braid, a brown shawl, and a coal-smudged apron shovels coal into the glowing firebox of a brass engine with a round boiler, dials, and a flywheel">
+    <h1>What Has Changed</h1>
+    <phil-narration>Here's what has changed in this telling. The engine stands for today's AI, and its coal smoke stands for the carbon dioxide from the electricity AI uses.</phil-narration>
+    <ul reveal>
+      <li say="In this telling, the firm sells answers. Customers hand in questions, and a brass thinking engine in the back room works them out.">In this telling, the firm sells answers. Customers hand in questions, and a brass thinking engine in the back room works them out.</li>
+      <li say="The engine burns coal. Missus Cratchit, the clerk, stokes it all day while her son Tim waits by the door.">The engine burns coal. Mrs. Cratchit, the clerk, stokes it all day while her son Tim waits by the door.</li>
+      <li say="Scrooge wants a second, larger engine hall. Her niece Freddie wants it too, because the engine can forecast floods on the river.">Scrooge wants a second, larger engine hall. Her niece Freddie wants it too, because the engine can forecast floods on the river.</li>
+      <li say="You are the new junior partner. The building papers need your signature by Christmas morning.">You are the new junior partner. The building papers need your signature by Christmas morning.</li>
+    </ul>
+    <p class="muted">The engine stands for today's AI. Its coal smoke stands for the carbon dioxide from the electricity AI uses.</p>
+  </phil-slide>
+
+  <!-- 4. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>One person's use of AI is too small to matter to the climate.</phil-statement>
+      <phil-statement>A more efficient technology will end up using less energy.</phil-statement>
+      <phil-statement>AI used for entertainment deserves less of the carbon budget than AI used for medicine.</phil-statement>
+      <phil-statement>It is fair to pollute more now to build tools that may help people later.</phil-statement>
+      <phil-statement>Those who profit from AI should pay its climate costs, even if they broke no rule.</phil-statement>
+    </phil-beliefs>
+    <phil-narration>Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
+  </phil-slide>
+
+  <!-- 5. Marley's chain -->
+  <phil-slide id="chain">
+    <img slot="art" src="./assets/marley.png" alt="A pale old man with a bandage tied around his jaw stands sadly in a dark bedroom doorway, wrapped in a heavy chain hung with cash-boxes and lumps of coal">
+    <h1>Marley's Chain</h1>
+    <phil-narration>Here's Marley's chain.</phil-narration>
+    <ul reveal>
+      <li say="I wear the chain I forged in life, the Ghost tells Scrooge. I made it link by link, and yard by yard.">“I wear the chain I forged in life,” the Ghost tells Scrooge. “I made it link by link, and yard by yard.”</li>
+      <li say="Carbon dioxide adds up the same way. Much of the carbon dioxide a fire sends up stays in the air for centuries.">Carbon dioxide adds up the same way. Much of the carbon dioxide a fire sends up stays in the air for centuries.</li>
+      <li say="The warming depends on the total added so far. So every fire, large or small, adds a link.">The warming depends on the total added so far. So every fire, large or small, adds a link.</li>
+      <li say="Four visitors are coming tonight, each with one question. Marley's is first: what belongs in the ledger?">Four visitors are coming tonight, each with one question. Marley's is first: what belongs in the ledger?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 6. LEDGER PAGE 1 -->
+  <!-- LEDGER PAGE: refresh yearly -->
+  <phil-slide id="ledger-size" class="ledger-page">
+    <img slot="art" src="./assets/data-center.png" alt="A long, windowless data center building on flat land at dusk, with cooling units on its roof and power lines overhead">
+    <h1>How Big Is It?</h1>
+    <phil-narration>How big is it? These figures are from our world, as of November twenty twenty-six.</phil-narration>
+    <p class="ledger-stamp">Ledger page · Our world, November 2026</p>
+    <ul reveal>
+      <li say="In twenty twenty-five the world's data centers used about four hundred eighty-five terawatt-hours of electricity. That is about one and a half percent of all the electricity the world used.">In 2025 the world's data centers used about 485 terawatt-hours of electricity. That is about 1.5% of all the electricity the world used.</li>
+      <li say="Their use grew seventeen percent in that one year. AI is only part of it, but the data centers built for AI grew much faster, by about fifty percent.">Their use grew 17% in that one year. AI is only part of it, but the data centers built for AI grew much faster, by about 50%.</li>
+      <li say="The International Energy Agency projects that data centers will use about twice as much by twenty thirty, or about three percent of the world's electricity.">The International Energy Agency projects that data centers will use about twice as much by 2030, or about 3% of the world's electricity.</li>
+      <li say="So the share is small, and it is growing fast. Both are true, and each side of the public argument tends to quote only one.">So the share is small, and it is growing fast. Both are true, and each side of the public argument tends to quote only one.</li>
+    </ul>
+    <p class="muted">Source: International Energy Agency, <em>Key Questions on Energy and AI</em> (2026).</p>
+  </phil-slide>
+
+  <!-- ============ MARLEY'S GHOST: WHAT TO COUNT ============ -->
+
+  <!-- 7. Three kinds of effect -->
+  <phil-slide id="three-kinds">
+    <phil-thinker slot="art" name="Lynn Kaack and colleagues" work="“Aligning Artificial Intelligence with Climate Change Mitigation” (2022)"
+                  img="./assets/idea-kaack.png" alt="An open blank ledger ruled into three columns, with a lump of coal above the first, a brass gear above the second, and a tiny model town above the third" accent="#ffcf5a">
+      <p>AI affects the climate in three ways, and the power bill is only the first.</p>
+    </phil-thinker>
+    <h1>Three Kinds of Effect</h1>
+    <p>The researcher Lynn Kaack and her colleagues sort AI's effects on the climate into three kinds. Here they are in the story's words.</p>
+    <phil-narration>The researcher Lynn Kaack and her colleagues sort AI's effects on the climate into three kinds. Here they are in the story's words.</phil-narration>
+    <ul reveal>
+      <li say="Building and running the engine: the coal it burns as it works, and the coal burned to build it."><strong>Building and running the engine:</strong> the coal it burns as it works, and the coal burned to build it.</li>
+      <li say="What the answers are used for: the direct result of what one answer is used for. One answer helps a baker burn less fuel, and another helps a prospector find more coal."><strong>What the answers are used for:</strong> the direct result of what one answer is used for. One answer helps a baker burn less fuel, and another helps a prospector find more coal.</li>
+      <li say="How the town changes: slower, wider shifts in how people live and work once answers are cheap and everywhere."><strong>How the town changes:</strong> slower, wider shifts in how people live and work once answers are cheap and everywhere.</li>
+      <li say="The first kind is the easiest to measure. The other two can cut emissions or add to them. The easiest effects to measure are not always the largest.">The first kind is the easiest to measure. The other two can cut emissions or add to them. The easiest effects to measure are not always the largest.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Two branches -->
+  <phil-slide id="two-branches">
+    <img slot="art" src="./assets/freddie.png" alt="A cheerful Black woman in her twenties with a red scarf holds a map and points out a window at a wide, icy river, a brass weather-glass on the sill">
+    <h1>Two Branches</h1>
+    <phil-narration>Here are the two branches.</phil-narration>
+    <ul reveal>
+      <li say="The ethicist Aimee van Wynsberghe says that sustainable AI has two branches.">The ethicist Aimee van Wynsberghe says that “sustainable AI” has two branches.</li>
+      <li say="AI for sustainability asks how AI can help the environment. Freddie's flood forecasts belong here."><strong>AI for sustainability</strong> asks how AI can help the environment. Freddie's flood forecasts belong here.</li>
+      <li say="The sustainability of AI asks what building and running AI costs the environment. Scrooge's coal-box belongs here."><strong>The sustainability of AI</strong> asks what building and running AI costs the environment. Scrooge's coal-box belongs here.</li>
+      <li say="The two can come apart. An engine can forecast floods well and still burn a great deal of coal, so a full ledger needs both.">The two can come apart. An engine can forecast floods well and still burn a great deal of coal, so a full ledger needs both.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Two honest totals -->
+  <phil-slide id="two-totals">
+    <!-- ART: two-ledgers.png came out as an engine room, not two ledgers. Add
+         <img slot="art" src="./assets/two-ledgers.png" alt="…"> here once it is re-rolled. -->
+    <h1>One Engine, Two Honest Totals</h1>
+    <phil-narration>One engine can have two honest totals.</phil-narration>
+    <ul reveal>
+      <li say="Emissions from running a machine are called operational. Emissions from building it are called embodied.">Emissions from running a machine are called <strong>operational</strong>. Emissions from building it are called <strong>embodied</strong>.</li>
+      <li say="Scrooge's engine burns the town's coal. She also pays a windmill owner in another county for clean power.">Scrooge's engine burns the town's coal. She also pays a windmill owner in another county for clean power.</li>
+      <li say="A location-based total counts the coal burned where the engine runs. A market-based total counts the clean power she paid for instead.">A <strong>location-based</strong> total counts the coal burned where the engine runs. A <strong>market-based</strong> total counts the clean power she paid for instead.</li>
+      <li say="Both methods are accepted. So ask: counted how? And ask whether her payment added clean power that would not otherwise exist. That is called additionality.">Both methods are accepted. So ask “counted how?”, and ask whether her payment added clean power that would not otherwise exist. That is called <strong>additionality</strong>.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 10. Classify: three kinds -->
+  <phil-slide>
+    <h1>Which Kind of Effect?</h1>
+    <phil-classify data-qid="ai-climate:q1" review="three-kinds" prompt="Each line describes one effect of the thinking engine. Which of the three kinds is it?"
+                   explain="Right. Coal burned while the engine works and coal burned to build it both count as building and running the engine. A baker's smaller fuel bill and a prospector's new coal seam are direct results of what particular answers were used for, one good for the climate and one bad. Shops staying lit all night and families moving farther out are changes in how the whole town lives.">
+      <phil-col key="run">Building and running the engine</phil-col>
+      <phil-col key="use">What the answers are used for</phil-col>
+      <phil-col key="town">How the town changes</phil-col>
+      <phil-item answer="run" why="Coal burned while the engine works is part of building and running it.">The engine burns a bucket of coal working through one long calculation.</phil-item>
+      <phil-item answer="run" why="Coal burned to build the engine belongs to this first kind. These are its embodied emissions.">A foundry burns coal to smelt the iron for the engine's new boiler.</phil-item>
+      <phil-item answer="use" why="The fuel saved is the direct result of what this one answer was used for.">A baker buys an answer about her oven's draft and burns less fuel from then on.</phil-item>
+      <phil-item answer="use" why="The new seam is the direct result of what these answers were used for. Uses can add emissions too.">A prospector buys answers about rock layers and finds a new coal seam.</phil-item>
+      <phil-item answer="town" why="No single answer did this. It is a wider change in how the town lives once answers are cheap.">Once answers are cheap and quick, shops all over town take to staying open and lit through the night.</phil-item>
+      <phil-item answer="town" why="This is a slow shift in where and how people live, not the result of one answer.">Over ten years of cheap answers, the town spreads out. Families settle farther from the center and travel more.</phil-item>
+    </phil-classify>
+    <phil-narration>Which kind of effect? Each line describes one effect of the thinking engine. Sort each one under building and running the engine, what the answers are used for, or how the town changes. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Coal burned while the engine works and coal burned to build it both count as building and running the engine. A baker's smaller fuel bill and a prospector's new coal seam come from what the answers were used for, while shops lit all night are a change in how the whole town lives.</phil-narration>
+  </phil-slide>
+
+  <!-- 11. LEDGER PAGE 2 -->
+  <!-- LEDGER PAGE: refresh yearly -->
+  <phil-slide id="per-prompt" class="ledger-page">
+    <img slot="art" src="./assets/bulb.png" alt="A phone lying on a desk beside one small glowing desk lamp, with the rest of the room dark">
+    <h1>What Does One Prompt Cost?</h1>
+    <phil-narration>What does one prompt cost? These figures are from our world, as of November twenty twenty-six.</phil-narration>
+    <p class="ledger-stamp">Ledger page · Our world, November 2026</p>
+    <ul reveal>
+      <li say="In twenty twenty-five Google measured a typical text prompt to its Gemini app at zero point two four watt-hours. That would light a ten-watt LED bulb for about a minute and a half.">In 2025 Google measured a typical text prompt to its Gemini app at 0.24 watt-hours. That would light a 10-watt LED bulb for about a minute and a half.</li>
+      <li say="The figure counts the chips that do the work, idle machines kept ready, and overhead such as cooling. It leaves out training the model.">The figure counts the chips that do the work, idle machines kept ready, and overhead such as cooling. It leaves out training the model.</li>
+      <li say="It describes a typical text prompt. A twenty twenty-six study estimates that a long reasoning answer uses over ten times as much as a short one. Video can use hundreds of times as much.">It describes a typical text prompt. A 2026 study estimates that a long reasoning answer uses over ten times as much as a short one. Video can use hundreds of times as much.</li>
+      <li say="It is not a total. A total is the energy per prompt times the number of prompts, and the figure does not give that number.">It is not a total. A total is the energy per prompt times the number of prompts, and the figure does not give that number.</li>
+    </ul>
+    <p class="muted">Sources: Elsworth and colleagues at Google (2025), Oviedo and colleagues in <em>Joule</em> (2026), and the IEA (2026).</p>
+  </phil-slide>
+
+  <!-- 12. Checkset: a per-prompt figure -->
+  <phil-slide>
+    <h1>Reading a Per-Prompt Figure</h1>
+    <phil-checkset data-qid="ai-climate:q2" review="per-prompt" prompt="A company publishes the energy used by one typical text prompt, counted the way the figure on the ledger page was. Check every statement that is true of that figure."
+                   explain="Right. The figure counts running the prompt, including idle machines and cooling, and it leaves out training. It describes a typical text prompt, so a long reasoning answer or a video uses more. And it is a figure for one prompt, so it gives no total until you multiply by the number of prompts, and even that total leaves out training.">
+      <phil-statement correct>It includes energy used by idle machines that are kept ready.</phil-statement>
+      <phil-statement correct>A long reasoning answer would be expected to use more energy than this figure.</phil-statement>
+      <phil-statement correct>To turn it into a total, you would also need the number of prompts.</phil-statement>
+      <phil-statement>It includes the energy used to train the model.</phil-statement>
+      <phil-statement>It applies equally to a text prompt and to a request for a video.</phil-statement>
+      <phil-statement>It tells you how much energy the company's AI used over the year.</phil-statement>
+    </phil-checkset>
+    <phil-narration>Reading a per-prompt figure. A company publishes the energy used by one typical text prompt, counted the way the figure on the ledger page was. Check every statement that is true of that figure, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. The figure counts running the prompt, including idle machines and cooling, and it leaves out training. It describes a typical text prompt, and it gives no total until you multiply by the number of prompts.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CHRISTMAS PAST: DOES EFFICIENCY SAVE US? ============ -->
+
+  <!-- 13. Jevons -->
+  <phil-slide id="jevons">
+    <phil-thinker slot="art" name="William Stanley Jevons" dates="1835–1882" work="The Coal Question (1865)"
+                  img="./assets/idea-jevons.png" alt="A small brass steam engine and a coal scuttle in front of a mountain of coal many times their height" accent="#ff8fab">
+      <p>Using coal more thriftily can lead a country to burn more of it.</p>
+      <blockquote>It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth.</blockquote>
+    </phil-thinker>
+    <h1>Christmas Past: 1865</h1>
+    <phil-narration>Christmas Past takes us back to eighteen sixty-five.</phil-narration>
+    <ul reveal>
+      <li say="The Spirit of Christmas Past sets you down in eighteen sixty-five. The economist William Stanley Jevons has just published The Coal Question.">The Spirit of Christmas Past sets you down in 1865. The economist William Stanley Jevons has just published <em>The Coal Question</em>.</li>
+      <li say="James Watt's steam engine did the same work on far less coal than the engines before it.">James Watt's steam engine did the same work on far less coal than the engines before it.</li>
+      <li say="Jevons pointed out that Britain then burned more coal, not less. Cheaper steam power was worth using for many more jobs.">Jevons pointed out that Britain then burned more coal, not less. Cheaper steam power was worth using for many more jobs.</li>
+      <li say="This is now called the Jevons paradox. It describes something that can happen. It is not a law that efficiency always fails.">This is now called the <strong>Jevons paradox</strong>. It describes something that can happen. It is not a law that efficiency always fails.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 14. Three outcomes -->
+  <phil-slide id="three-outcomes">
+    <img slot="art" src="./assets/queue.png" alt="A long line of townspeople in winter coats winds along a snowy street to the lit window of a brick counting-house">
+    <h1>Three Outcomes</h1>
+    <p>The old engine gives 100 answers a day at 4 scoops each: 400 scoops. A new engine needs 2 scoops an answer. It promises the total the town would burn if it bought no more answers: 200.</p>
+    <phil-narration>The old engine gives a hundred answers a day at four scoops each: four hundred scoops. A new engine needs two scoops an answer. It promises the total the town would burn if it bought no more answers: two hundred.</phil-narration>
+    <ul reveal>
+      <li say="Full saving. The town still buys a hundred answers. A hundred times two is two hundred scoops. The total falls as much as promised."><strong>Full saving.</strong> The town still buys 100 answers. 100 × 2 = 200 scoops. The total falls as much as promised.</li>
+      <li say="Rebound. Answers are cheaper, so the town buys a hundred fifty. A hundred fifty times two is three hundred scoops. The total falls, but less than promised."><strong>Rebound.</strong> Answers are cheaper, so the town buys 150. 150 × 2 = 300 scoops. The total falls, but less than promised.</li>
+      <li say="Backfire. The town buys three hundred. Three hundred times two is six hundred scoops. The total rises."><strong>Backfire.</strong> The town buys 300. 300 × 2 = 600 scoops. The total rises.</li>
+      <li say="Economists find that some rebound is common. Reviews of the evidence find much less support for backfire as the usual result.">Economists find that some rebound is common. Reviews of the evidence find much less support for backfire as the usual result.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Explorer: the Engine Room -->
+  <phil-slide hold>
+    <h1>Try It: The Engine Room</h1>
+    <phil-narration>This is the Engine Room, a small model with two controls. Thrift is how much coal the new engine burns per answer. Appetite is how many answers the town buys once answers are cheaper. The numbers are invented. Try a setting, then read what happens to the coal. When you've tried a few settings, press Continue.</phil-narration>
+    <phil-rebound prompt="Choose how thrifty the new engine is, and how many answers the town buys once answers are cheaper. Then read what happens to the coal."></phil-rebound>
+  </phil-slide>
+
+  <!-- 16. LEDGER PAGE 3 -->
+  <!-- LEDGER PAGE: refresh yearly -->
+  <phil-slide id="ledger-rebound" class="ledger-page">
+    <img slot="art" src="./assets/build-out.png" alt="A construction site where two cranes rise over three unfinished halls, with four workers in hard hats in the foreground">
+    <h1>Cheaper Answers, Rising Totals</h1>
+    <p class="ledger-stamp">Ledger page · Our world, November 2026</p>
+    <p>The Engine Room shows one sum: total coal is the coal per answer times the number of answers. A thriftier engine lowers the first and can raise the second.</p>
+    <phil-narration>The Engine Room shows one sum: total coal is the coal per answer times the number of answers. A thriftier engine lowers the first and can raise the second.</phil-narration>
+    <ul reveal>
+      <li say="The research group Epoch AI found in twenty twenty-five that the price of AI answers of a fixed quality was falling nine to nine hundred times a year, depending on the task.">The research group Epoch AI found in 2025 that the price of AI answers of a fixed quality was falling 9 to 900 times a year, depending on the task.</li>
+      <li say="Meanwhile, the electricity used by data centers kept rising: seventeen percent in twenty twenty-five alone.">Meanwhile, the electricity used by data centers kept rising: 17% in 2025 alone.</li>
+      <li say="In January twenty twenty-five Microsoft's chief executive, Satya Nadella, posted that the Jevons paradox was striking again. He predicted that use of AI would soar.">In January 2025 Microsoft's chief executive, Satya Nadella, posted that the Jevons paradox was striking again. He predicted that use of AI would soar.</li>
+      <li say="All of this fits rebound. It does not prove that cheaper AI caused the growth, since new uses and new investment arrived in the same years.">All of this fits rebound. It does not prove that cheaper AI caused the growth, since new uses and new investment arrived in the same years.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Classify: three outcomes -->
+  <phil-slide>
+    <h1>Full Saving, Rebound, or Backfire?</h1>
+    <phil-classify data-qid="ai-climate:q3" review="three-outcomes" prompt="In each case a new engine burns less coal per answer. The town burned 400 scoops a day before. The promised total is what it would burn if it bought no more answers. Which outcome is it?"
+                   explain="Right. When the town buys no more answers than before, the whole promised saving arrives. When it buys more but the total still falls, part of the saving has been taken back: rebound. When it buys so many more that the total rises above 400 scoops, the thriftier engine has backfired.">
+      <phil-col key="save">Full saving: the total falls as much as promised</phil-col>
+      <phil-col key="rebound">Rebound: the total falls, but less than promised</phil-col>
+      <phil-col key="backfire">Backfire: the total rises</phil-col>
+      <phil-item answer="save" why="The town buys no more answers, so nothing takes back the saving.">Coal per answer halves. The town buys the same number of answers. The total falls to 200 scoops.</phil-item>
+      <phil-item answer="save" why="The number of answers is unchanged, so the whole promised saving of 100 scoops arrives.">Coal per answer falls by a quarter. The town buys the same number of answers. The total falls to 300 scoops.</phil-item>
+      <phil-item answer="rebound" why="Halving the coal per answer promised 200 scoops. Extra answers took part of the saving back, but the total still fell.">Coal per answer halves. The town buys half again as many answers. The total falls to 300 scoops.</phil-item>
+      <phil-item answer="rebound" why="With no extra answers the total would have been 300 scoops. Extra answers made it 375, which is still below 400.">Coal per answer falls by a quarter. The town buys a quarter more answers. The total falls to 375 scoops.</phil-item>
+      <phil-item answer="backfire" why="The total ends above the 400 scoops the town burned before.">Coal per answer halves. The town buys three times as many answers. The total comes to 600 scoops.</phil-item>
+      <phil-item answer="backfire" why="The total ends above the 400 scoops the town burned before, even though each answer burns less.">Coal per answer falls by a quarter. The town buys twice as many answers. The total comes to 600 scoops.</phil-item>
+    </phil-classify>
+    <phil-narration>Full saving, rebound, or backfire? In each case a new engine burns less coal per answer, and the town burned four hundred scoops a day before. Sort each case under full saving, rebound, or backfire, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. When the town buys no more answers, the whole promised saving arrives. When it buys more but the total still falls, that's rebound, and when the total rises above four hundred scoops, the thriftier engine has backfired.</phil-narration>
+  </phil-slide>
+
+  <!-- 18. Poll: what should the town ask? -->
+  <phil-slide>
+    <img slot="art" src="./assets/meeting.png" alt="A crowded town meeting in a great hall lit by hundreds of candles, seen from the back of the crowd">
+    <h1>Decision Point: The Thriftier Engine</h1>
+    <phil-poll prompt="Scrooge can buy an engine that halves the coal per answer. She expects to sell three times as many answers. What should the town ask of her?"
+               explain="Half the coal per answer and three times the answers is one and a half times the coal. A thriftier engine lowers the coal per answer, and it does nothing to limit the number of answers. So efficiency is not a climate policy by itself. A cap on the total coal, or a price on each scoop, is what turns it into one.">
+      <phil-choice note="A thriftier engine is a real gain for each answer. With three times the answers, the town still ends up with more smoke than before.">Nothing. A thriftier engine is progress.</phil-choice>
+      <phil-choice note="A cap fixes the total. Under it, a thriftier engine means more answers for the same coal, not more coal.">A cap on her total coal, however many answers she sells.</phil-choice>
+      <phil-choice note="A price leaves the choice to her and her customers. It works only if it is high enough to change what they buy.">A price on every scoop, paid to the town.</phil-choice>
+      <phil-choice note="This stops the extra smoke. It also gives up the engine's better uses along with its worse ones.">Refuse the new engine altogether.</phil-choice>
+    </phil-poll>
+    <phil-narration>A decision point: the thriftier engine. Scrooge can buy an engine that halves the coal per answer. She expects to sell three times as many answers. What should the town ask of her? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Half the coal per answer and three times the answers is one and a half times the coal. So efficiency is not a climate policy by itself. A cap on the total coal, or a price on each scoop, is what turns it into one.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CHRISTMAS PRESENT: WHOSE FAULT, AND WHO PAYS? ============ -->
+
+  <!-- 19. One riddle, one spoonful -->
+  <phil-slide id="spoonful">
+    <img slot="art" src="./assets/spoonful.png" alt="A single teaspoon of coal dust on a wooden table, in front of a huge dark heap of coal">
+    <h1>Christmas Present: One Riddle, One Spoonful</h1>
+    <phil-narration>Christmas Present: one riddle, one spoonful.</phil-narration>
+    <ul reveal>
+      <li say="The Spirit of Christmas Present shows you a customer buying the answer to a riddle. The engine burns one spoonful of coal for it.">The Spirit of Christmas Present shows you a customer buying the answer to a riddle. The engine burns one spoonful of coal for it.</li>
+      <li say="Nobody could measure what that spoonful adds to the smoke over London. Yet the smoke is made of nothing but spoonfuls.">Nobody could measure what that spoonful adds to the smoke over London. Yet the smoke is made of nothing but spoonfuls.</li>
+      <li say="So is that one purchase anybody's fault? Two philosophers answer very differently.">So is that one purchase anybody's fault? Two philosophers answer very differently.</li>
+      <li say="One wrote about driving, and the other about harms built up from many tiny acts. Applying their arguments to an AI prompt is our step, not theirs.">One wrote about driving, and the other about harms built up from many tiny acts. Applying their arguments to an AI prompt is our step, not theirs.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 20. Sinnott-Armstrong -->
+  <phil-slide id="one-link">
+    <phil-thinker slot="art" name="Walter Sinnott-Armstrong" work="“It's Not My Fault” (2005)"
+                  img="./assets/idea-sinnott-armstrong.png" alt="An open-topped vintage motor car with a picnic basket, parked alone on an empty country road" accent="#4cc2ff">
+      <p>No clear principle makes one joyride wrong. The duty is to change the law.</p>
+    </phil-thinker>
+    <h1>“It's Not My Fault”</h1>
+    <phil-narration>The first answer is Walter Sinnott-Armstrong's: it's not my fault.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Walter Sinnott-Armstrong imagines a Sunday drive in a gas-guzzler, taken just for fun.">The philosopher Walter Sinnott-Armstrong imagines a Sunday drive in a gas-guzzler, taken just for fun.</li>
+      <li say="His reasoning: warming would happen without that one drive, and the drive could not cause it alone. So no harm can be traced to it.">His reasoning: warming would happen without that one drive, and the drive could not cause it alone. So no harm can be traced to it.</li>
+      <li say="He tests one moral principle after another and finds none that clearly makes the drive wrong. He reports a failed search, not a proof that the drive is fine.">He tests one moral principle after another and finds none that clearly makes the drive wrong. He reports a failed search, not a proof that the drive is fine.</li>
+      <li say="He does not conclude that nobody need act. Our real obligation, he says, is to get governments to do their job.">He does not conclude that nobody need act. Our real obligation, he says, is to get governments to do their job.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Parfit -->
+  <phil-slide id="torturers">
+    <phil-thinker slot="art" name="Derek Parfit" dates="1942–2017" work="Reasons and Persons (1984)"
+                  img="./assets/idea-parfit-drops.png" alt="Many small cups pouring tiny drops of water down into one large clay jug" accent="#46e07a">
+      <p>An act can be wrong because it is one of a set of acts that together do harm.</p>
+    </phil-thinker>
+    <h1>The Harmless Torturers</h1>
+    <phil-narration>The second answer is Derek Parfit's: the harmless torturers.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Derek Parfit imagines a thousand torturers and a thousand victims. Each torturer presses one button.">The philosopher Derek Parfit imagines a thousand torturers and a thousand victims. Each torturer presses one button.</li>
+      <li say="Each press adds a tiny amount to every victim's pain. No victim can feel the difference one press makes. Together, the presses leave every victim in agony.">Each press adds a tiny amount to every victim's pain. No victim can feel the difference one press makes. Together, the presses leave every victim in agony.</li>
+      <li say="Parfit holds that each torturer acts wrongly. An act can be wrong because it is one of a set of acts that together harm people.">Parfit holds that each torturer acts wrongly. An act can be wrong because it is one of a set of acts that together harm people.</li>
+      <li say="Shelly Kagan and John Broome reach similar answers. Kagan argues that each act has a small chance of triggering a large harm. Broome argues that emitting harms others.">Shelly Kagan and John Broome reach similar answers. Kagan argues that each act has a small chance of triggering a large harm. Broome argues that emitting harms others.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Classify: whose reasoning -->
+  <phil-slide>
+    <h1>Whose Reasoning?</h1>
+    <phil-classify data-qid="ai-climate:q4" review="one-link" prompt="Each line is about one prompt and its spoonful of coal. Whose reasoning is it?"
+                   explain="Right. Sinnott-Armstrong reasons that one act is neither needed for the harm nor enough to cause it, finds no clear principle that makes it wrong, and puts the duty on changing the law. Parfit reasons that an act can be wrong as one of a set of acts that together do harm, even when nobody can feel what the one act adds. Neither says that individuals have nothing to do with climate change, and neither says that one small act does great harm all by itself.">
+      <phil-col key="sa" descriptive>Sinnott-Armstrong's reasoning</phil-col>
+      <phil-col key="parfit" descriptive>Parfit's reasoning</phil-col>
+      <phil-col key="neither" descriptive>Neither</phil-col>
+      <phil-item answer="sa" why="Not needed for the harm and not enough to cause it alone: this is Sinnott-Armstrong's reasoning about the Sunday drive.">“The warming would come without this one prompt, and this one prompt could not bring it on alone. So no harm can be traced to it.”</phil-item>
+      <phil-item answer="sa" why="Sinnott-Armstrong finds no clear principle against the single act and puts the duty on changing the law.">“I can't find a principle that makes this one prompt wrong. What a person should do is work for a law that limits everyone's coal.”</phil-item>
+      <phil-item answer="parfit" why="Being wrong as one of a set of acts that together do harm is Parfit's principle.">“This prompt may harm no one by itself. It can still be wrong, because it is one of a set of acts that together do harm.”</phil-item>
+      <phil-item answer="parfit" why="This is the lesson Parfit draws from the harmless torturers.">“Nobody can feel what one more spoonful adds. That does not clear the person who adds it, any more than it clears each of a thousand torturers.”</phil-item>
+      <phil-item answer="neither" why="Sinnott-Armstrong holds that people should work to change the law, and Parfit holds that single acts can be wrong. Neither says individuals have no part.">“Climate change is a matter for governments only. An ordinary person has no duty of any kind about it.”</phil-item>
+      <phil-item answer="neither" why="Sinnott-Armstrong denies that harm can be traced to one act, and Parfit grants that one act may harm no one. Neither says one prompt does great harm alone.">“One prompt does serious damage to the climate all by itself, whatever anyone else does.”</phil-item>
+    </phil-classify>
+    <phil-narration>Whose reasoning? Each line is about one prompt and its spoonful of coal. Sort each one under Sinnott-Armstrong, Parfit, or Neither. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Sinnott-Armstrong puts the duty on changing the law, and Parfit holds that an act can be wrong as one of a set of acts that together do harm. Neither says that individuals have nothing to do with climate change.</phil-narration>
+  </phil-slide>
+
+  <!-- 23. Poll: is your prompt a link? -->
+  <phil-slide>
+    <img slot="art" src="./assets/link.png" alt="One large iron link lies on a wooden floor, with a long chain trailing away from it into the dark">
+    <h1>Decision Point: One Link</h1>
+    <phil-poll prompt="Is one prompt, with its spoonful of coal, a link in the chain that you answer for?"
+               explain="Philosophers still disagree about this. Sinnott-Armstrong finds no clear principle against the single act and puts the duty on changing the rules. Parfit, Kagan, and Broome each hold that the single act counts, for different reasons. Notice that the answers can be combined: a person can hold that the single act counts and also work to change the rules.">
+      <phil-choice note="This is close to Sinnott-Armstrong. It still leaves you a duty, which is to work for better rules.">No. One link changes nothing. The duty is to change the rules.</phil-choice>
+      <phil-choice note="This is close to Parfit. The question for you is how to weigh your link against the good the prompt does.">Yes. It is one of a set of acts that together do harm.</phil-choice>
+      <phil-choice note="This is close to Kagan and Broome. A small chance of harm is easier to outweigh than a certain one, but it is not zero.">Yes, a little. It carries a small chance of real harm.</phil-choice>
+      <phil-choice note="Then you need a way to tell uses apart. The next slide offers one.">It depends on what the prompt is for.</phil-choice>
+    </phil-poll>
+    <phil-narration>Another decision point. Is one prompt, with its spoonful of coal, a link in the chain that you answer for? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Philosophers still disagree about this. Notice that the answers can be combined: a person can hold that the single act counts and also work to change the rules.</phil-narration>
+  </phil-slide>
+
+  <!-- 24. Shue -->
+  <phil-slide id="shue">
+    <phil-thinker slot="art" name="Henry Shue" work="“Subsistence Emissions and Luxury Emissions” (1993)"
+                  img="./assets/idea-shue.png" alt="A plain plate holding one loaf of bread beside a tall frosted cake on a silver stand" accent="#c79bff">
+      <p>Nobody should have to give up necessities so that others can keep luxuries.</p>
+    </phil-thinker>
+    <h1>One Coal and a Fire</h1>
+    <phil-narration>Now Henry Shue, with one coal and a fire.</phil-narration>
+    <ul reveal>
+      <li say="Dickens writes that Scrooge had a very small fire, but the clerk's fire was so very much smaller that it looked like one coal.">Dickens writes that Scrooge “had a very small fire, but the clerk's fire was so very much smaller that it looked like one coal.”</li>
+      <li say="The philosopher Henry Shue separates subsistence emissions, needed for a decent basic life, from luxury emissions, which go beyond that.">The philosopher Henry Shue separates <strong>subsistence emissions</strong>, needed for a decent basic life, from <strong>luxury emissions</strong>, which go beyond that.</li>
+      <li say="Shue wrote about rich and poor nations. Applying his line to uses of AI is our step: a flood warning sits near one end, and a novelty video near the other.">Shue wrote about rich and poor nations. Applying his line to uses of AI is our step: a flood warning sits near one end, and a novelty video near the other.</li>
+      <li say="Most uses fall in between, such as homework help, translation, or drafting a letter. Shue's distinction does not sort those for you.">Most uses fall in between, such as homework help, translation, or drafting a letter. Shue's distinction does not sort those for you.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Who pays -->
+  <phil-slide id="who-pays">
+    <img slot="art" src="./assets/bill.png" alt="A paper bill lies on a wooden table above three purses: a fat purple velvet one, a plain brown leather one, and a small patched cloth one">
+    <h1>Who Pays for the Coal?</h1>
+    <p>Cleaning up the smoke will cost money. Writers on climate justice, among them Henry Shue, Edward Page, and Simon Caney, debate three principles.</p>
+    <phil-narration>Cleaning up the smoke will cost money. Writers on climate justice, among them Henry Shue, Edward Page, and Simon Caney, debate three principles.</phil-narration>
+    <ul reveal>
+      <li say="Polluter pays: those who caused the emissions pay, in proportion to how much they caused. The problem: is the polluter the firm, or the customer who ordered the answer?"><strong>Polluter pays:</strong> those who caused the emissions pay, in proportion to how much they caused. The problem: is the polluter the firm, or the customer who ordered the answer?</li>
+      <li say="Beneficiary pays: those who gained from the emissions pay, even if they caused none. The problem: gains spread widely and are hard to trace."><strong>Beneficiary pays:</strong> those who gained from the emissions pay, even if they caused none. The problem: gains spread widely and are hard to trace.</li>
+      <li say="Ability to pay: those who can best afford it pay the most, whatever their part. The problem: it ignores who caused the smoke and who gained."><strong>Ability to pay:</strong> those who can best afford it pay the most, whatever their part. The problem: it ignores who caused the smoke and who gained.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 26. Classify: who pays -->
+  <phil-slide>
+    <h1>Which Principle?</h1>
+    <phil-classify data-qid="ai-climate:q5" review="who-pays" prompt="Each proposal is made at a town meeting about the cost of cleaning up the smoke. Which principle does it apply?"
+                   explain="Right. Polluter pays charges people by how much of the smoke they caused. Beneficiary pays charges people by how much they gained from the burning, whether or not they caused any of it. Ability to pay charges people by what they can afford, whatever their part in the smoke.">
+      <phil-col key="pp">Polluter pays</phil-col>
+      <phil-col key="bp">Beneficiary pays</phil-col>
+      <phil-col key="ap">Ability to pay</phil-col>
+      <phil-item answer="pp" why="The charge follows how much smoke each chimney caused: polluter pays.">“Measure the smoke from every chimney in town, and bill each owner for the share that came from theirs.”</phil-item>
+      <phil-item answer="pp" why="The charge follows who caused the burning, with no regard to wealth or gain: polluter pays.">“Whoever caused coal to be burned should pay for that coal's smoke, rich or poor, and whether or not it did them any good.”</phil-item>
+      <phil-item answer="bp" why="The charge follows who gained, even though they burned nothing themselves: beneficiary pays.">“The mills never bought an answer or lit a fire, but the trade that the engine's forecasts brought to town made them money. They gained from the burning, so they should cover the cost.”</phil-item>
+      <phil-item answer="bp" why="The charge follows the size of each person's gain, not what they caused or can afford: beneficiary pays.">“Work out how much better off the smoke-making has left each household, and charge each one in proportion to that gain.”</phil-item>
+      <phil-item answer="ap" why="The charge follows wealth alone, even for those who had no part in the smoke: ability to pay.">“The wealthiest households should pay the most, including those that never bought an answer or burned a coal.”</phil-item>
+      <phil-item answer="ap" why="The charge follows what each can afford, not what each caused or gained: ability to pay.">“Don't ask who made the smoke or who profited. Set each household's charge by what it can afford.”</phil-item>
+    </phil-classify>
+    <phil-narration>Which principle? Each proposal is made at a town meeting about the cost of cleaning up the smoke. Sort each one under polluter pays, beneficiary pays, or ability to pay. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Polluter pays charges people by how much of the smoke they caused. Beneficiary pays charges them by what they gained, and ability to pay charges them by what they can afford.</phil-narration>
+  </phil-slide>
+
+  <!-- 27. Poll: who should pay? -->
+  <phil-slide>
+    <img slot="art" src="./assets/present.png" alt="A large, smiling brown-skinned woman with a holly wreath in her curly hair, in a green robe trimmed with white fur, holds up a flaming torch in a small kitchen">
+    <h1>Decision Point: The Bill</h1>
+    <phil-poll prompt="Who should pay most of the cost of the smoke from Scrooge's engine?"
+               explain="Each principle picks out a different payer, and each has a problem you saw. Many writers on climate justice end up combining them. Shue, for one, argues that those who caused more of the problem and those more able to pay should both carry more of the cost.">
+      <phil-choice note="This is polluter pays, with the firm counted as the polluter. Expect the firm to pass some of the cost on in the price of an answer.">Scrooge's firm, which burns the coal.</phil-choice>
+      <phil-choice note="This could be polluter pays or beneficiary pays, depending on whether you think customers cause the burning or just gain from it.">The customers, who order the answers.</phil-choice>
+      <phil-choice note="This is ability to pay. It asks nothing extra of a poor household that buys many answers.">Whoever in town can best afford it.</phil-choice>
+      <phil-choice note="This is where many writers on climate justice end up. The work is in saying how much weight each principle gets.">A mix of all three.</phil-choice>
+    </phil-poll>
+    <phil-narration>A decision point: the bill. Who should pay most of the cost of the smoke from Scrooge's engine? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Each principle picks out a different payer, and each has a problem you saw. Many writers on climate justice end up combining them.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ YET TO COME: MAY WE BET THE FUTURE ON IT? ============ -->
+
+  <!-- 28. The promise -->
+  <phil-slide id="promise">
+    <phil-thinker slot="art" name="David Rolnick and colleagues" work="“Tackling Climate Change with Machine Learning” (2022)"
+                  img="./assets/idea-rolnick.png" alt="A brass barometer, a weather vane, and a small model windmill on a workbench" accent="#4cc2ff">
+      <p>Machine learning can help cut emissions and help people adapt.</p>
+    </phil-thinker>
+    <h1>Yet to Come: The Promise</h1>
+    <phil-narration>Yet to Come begins with the promise.</phil-narration>
+    <ul reveal>
+      <li say="The last Spirit says nothing. It points ahead, to the years Tim will live in. Start with the hopeful view.">The last Spirit says nothing. It points ahead, to the years Tim will live in. Start with the hopeful view.</li>
+      <li say="The computer scientist David Rolnick and his colleagues list many ways machine learning could help with climate change.">The computer scientist David Rolnick and his colleagues list many ways machine learning could help with climate change.</li>
+      <li say="Among them: forecasting supply and demand on the power grid, speeding the search for better battery materials, and tracking forests by satellite.">Among them: forecasting supply and demand on the power grid, speeding the search for better battery materials, and tracking forests by satellite.</li>
+      <li say="They present it as one tool among many, not as a cure. Freddie hopes the new hall will do this kind of good.">They present it as one tool among many, not as a cure. Freddie hopes the new hall will do this kind of good.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 29. LEDGER PAGE 4 -->
+  <!-- LEDGER PAGE: refresh yearly -->
+  <phil-slide id="ledger-promise" class="ledger-page">
+    <img slot="art" src="./assets/forecast.png" alt="A woman in a navy blazer stands before a wall screen showing a swirling storm, while through the window an airliner leaves a white trail across the sky">
+    <h1>How Much of the Promise Is Real?</h1>
+    <phil-narration>How much of the promise is real? These findings are from our world, as of November twenty twenty-six.</phil-narration>
+    <p class="ledger-stamp">Ledger page · Our world, November 2026</p>
+    <ul reveal>
+      <li say="In daily use: in twenty twenty-five Europe's weather center, E C M W F, began running an AI forecasting system alongside its traditional one."><strong>In daily use:</strong> in 2025 Europe's weather center, ECMWF, began running an AI forecasting system alongside its traditional one.</li>
+      <li say="Shown to work, rarely used: the cloud trails behind jets trap heat. In a twenty twenty-five trial, flights that followed AI guidance to avoid making them made sixty-two percent fewer."><strong>Shown to work, rarely used:</strong> the cloud trails behind jets trap heat. In a 2025 trial, flights that followed AI guidance to avoid making them made 62% fewer.</li>
+      <li say="But fewer than one in ten of the flights offered the guidance flew it as planned. Across all the flights offered it, trails fell by about twelve percent.">But fewer than 1 in 10 of the flights offered the guidance flew it as planned. Across all the flights offered it, trails fell by about 12%.</li>
+      <li say="The International Energy Agency made the same point in twenty twenty-five: known AI tools could cut emissions, but nothing yet ensures they will be widely used.">The International Energy Agency made the same point in 2025: known AI tools could cut emissions, but nothing yet ensures they will be widely used.</li>
+    </ul>
+    <p class="muted">Sources: ECMWF (2025), Sankar and colleagues on a Google and American Airlines trial (2026), and the IEA, <em>Energy and AI</em> (2025).</p>
+  </phil-slide>
+
+  <!-- 30. Gardiner: three storms -->
+  <phil-slide id="three-storms">
+    <phil-thinker slot="art" name="Stephen Gardiner" work="“A Perfect Moral Storm” (2006)"
+                  img="./assets/idea-gardiner.png" alt="A small wooden sailing boat on a rough sea with dark storm clouds closing in from three sides" accent="#ffcf5a">
+      <p>Climate change brings three hard problems together at once.</p>
+    </phil-thinker>
+    <h1>The Perfect Moral Storm</h1>
+    <p>The philosopher Stephen Gardiner calls climate change a perfect moral storm: three problems that arrive together and make it hard to act well.</p>
+    <phil-narration>The philosopher Stephen Gardiner calls climate change a perfect moral storm: three problems that arrive together and make it hard to act well.</phil-narration>
+    <ul reveal>
+      <li say="The global storm: the smoke spreads over the whole world, so no town gains much by cutting alone, and no authority can hold every town to a limit.">The <strong>global</strong> storm: the smoke spreads over the whole world, so no town gains much by cutting alone, and no authority can hold every town to a limit.</li>
+      <li say="The intergenerational storm: the burning helps people now. Most of the harm falls later, on people like Tim who have no say today.">The <strong>intergenerational</strong> storm: the burning helps people now. Most of the harm falls later, on people like Tim who have no say today.</li>
+      <li say="The theoretical storm: our theories are not up to the job. They give no agreed way to weigh future people, or to choose when the odds are unknown.">The <strong>theoretical</strong> storm: our theories are not up to the job. They give no agreed way to weigh future people, or to choose when the odds are unknown.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 31. Moral corruption -->
+  <phil-slide id="corruption">
+    <h1>A Convenient Argument</h1>
+    <phil-narration>Gardiner also warns about a convenient argument.</phil-narration>
+    <ul reveal>
+      <li say="Gardiner warns that the three storms together invite moral corruption: we are drawn to arguments that happen to let us carry on as we are.">Gardiner warns that the three storms together invite <strong>moral corruption</strong>: we are drawn to arguments that happen to let us carry on as we are.</li>
+      <li say="Burn the coal now, and the engine will fix it later has that shape. The gain is ours and comes now. The cost is someone else's and comes later.">“Burn the coal now, and the engine will fix it later” has that shape. The gain is ours and comes now. The cost is someone else's and comes later.</li>
+      <li say="That makes the argument suspect. It does not make it false, since a convenient claim can also be true.">That makes the argument suspect. It does not make it false, since a convenient claim can also be true.</li>
+      <li say="Gardiner wrote about climate policy, not AI. Applying his warning to the engine is our step.">Gardiner wrote about climate policy, not AI. Applying his warning to the engine is our step.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 32. The wager and the caution -->
+  <phil-slide id="wager">
+    <phil-thinker slot="art" name="Hans Jonas" dates="1903–1993" work="The Imperative of Responsibility (1979; English 1984)"
+                  img="./assets/idea-jonas.png" alt="A row of hands passing a lit lantern from one to the next in the dark" accent="#ff8fab">
+      <p>Humanity as a whole must never be the stake in a wager.</p>
+      <blockquote>Act so that the effects of your action are compatible with the permanence of genuine human life.</blockquote>
+    </phil-thinker>
+    <h1>The Wager and the Caution</h1>
+    <phil-narration>Now, the wager and the caution.</phil-narration>
+    <ul reveal>
+      <li say="For the wager: some of the tools are already real, and holding AI back also costs future people the help it might have given."><strong>For the wager:</strong> some of the tools are already real, and holding AI back also costs future people the help it might have given.</li>
+      <li say="For the caution: the philosopher Hans Jonas argues that when a technology can reshape the far future, warnings deserve more weight than promises."><strong>For the caution:</strong> the philosopher Hans Jonas argues that when a technology can reshape the far future, warnings deserve more weight than promises.</li>
+      <li say="Jonas allows a person to risk what is their own. He holds that the existence of humanity as a whole must never be made the stake.">Jonas allows a person to risk what is their own. He holds that the existence of humanity as a whole must never be made the stake.</li>
+      <li say="Gardiner, writing about climate engineering, adds that preparing for an emergency differs morally from preparing for one your own failure will bring about.">Gardiner, writing about climate engineering, adds that preparing for an emergency differs morally from preparing for one your own failure will bring about.</li>
+    </ul>
+    <p class="muted">Jonas wrote about modern technology in general, and Gardiner about climate engineering. Applying either to AI is our step.</p>
+  </phil-slide>
+
+  <!-- 33. Classify: three storms -->
+  <phil-slide>
+    <h1>Which Storm?</h1>
+    <phil-classify data-qid="ai-climate:q6" review="three-storms" prompt="Each line is a feature of the decision about the new engine hall. Which of Gardiner's three storms does it belong to?"
+                   explain="Right. The global storm is about place: smoke spreads everywhere, and no one authority covers every town. The intergenerational storm is about time: the gain comes now, and the harm falls later on people with no say. The theoretical storm is about our tools for thinking: we lack agreed theories for weighing far-future people and deep uncertainty.">
+      <phil-col key="global">Global</phil-col>
+      <phil-col key="inter">Intergenerational</phil-col>
+      <phil-col key="theory">Theoretical</phil-col>
+      <phil-item answer="global" why="Smoke that spreads to every town, so that no town gains much by cutting alone, is a problem of place: the global storm.">The engine's smoke spreads over every town alike, so a town that cuts its own coal gains little unless the others cut too.</phil-item>
+      <phil-item answer="global" why="No single authority over all the towns is part of the global storm.">Each town has its own council, and no council has the power to set a coal limit for all the towns together.</phil-item>
+      <phil-item answer="inter" why="A gain now and a harm decades later is the intergenerational storm.">The hall's profits arrive this year. Most of the harm from its smoke arrives decades later.</phil-item>
+      <phil-item answer="inter" why="The people who bear the cost have no say today: the intergenerational storm.">The people who will live longest with the result are children today, or not yet born, and none of them signs the papers.</phil-item>
+      <phil-item answer="theory" why="Having no agreed theory of how much future people count is a gap in our theories: the theoretical storm.">Moral philosophers have not agreed on a theory of how much the interests of future people should count.</phil-item>
+      <phil-item answer="theory" why="Theories that give no guidance when the odds are unknown are a gap in our thinking tools: the theoretical storm.">Even the best current theories of how to choose give no settled guidance when nobody can put odds on the outcomes.</phil-item>
+    </phil-classify>
+    <phil-narration>Which storm? Each line is a feature of the decision about the new engine hall. Sort each one under global, intergenerational, or theoretical. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. The global storm is about place, the intergenerational storm is about time, and the theoretical storm is about our tools for thinking.</phil-narration>
+  </phil-slide>
+
+  <!-- 34. Will be, or may be -->
+  <phil-slide id="may-be">
+    <img slot="art" src="./assets/yet-to-come.png" alt="A tall figure in a dark hooded robe that hides its face points ahead, beside a small boy in a wool cap, both standing in blue snow">
+    <h1>“Will Be” or “May Be”?</h1>
+    <phil-narration>Last, will be, or may be?</phil-narration>
+    <ul reveal>
+      <li say="Scrooge asks the last Spirit: Are these the shadows of the things that Will be, or are they shadows of things that May be, only?">Scrooge asks the last Spirit: “Are these the shadows of the things that Will be, or are they shadows of things that May be, only?”</li>
+      <li say="A forecast says what will be. A scenario says what may be if we take a certain path. Every long-range number about AI and climate is a scenario.">A forecast says what will be. A scenario says what may be if we take a certain path. Every long-range number about AI and climate is a scenario.</li>
+      <li say="A large if is where the power comes from. The same engine run on coal or on wind sends up very different amounts of smoke.">A large “if” is where the power comes from. The same engine run on coal or on wind sends up very different amounts of smoke.</li>
+      <li say="Three questions will outlast this year's numbers. Counted how? Is the clean power new? Who pays if the bet fails?">Three questions will outlast this year's numbers. Counted how? Is the clean power new? Who pays if the bet fails?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 35. Poll: Christmas morning -->
+  <phil-slide>
+    <img slot="art" src="./assets/papers.png" alt="A blank sheet of paper lies on a wooden desk beside a candle burned low, with ledgers stacked behind it in a dark room">
+    <h1>Decision Point: Christmas Morning</h1>
+    <phil-poll prompt="It is Christmas morning, and the papers for the new engine hall are on the desk. What do you do?"
+               explain="All three answers can be defended. Whichever you chose, you should now be able to say what you would count, whether you expect a saving or a rebound, who answers for the smoke and who pays for it, and what you owe the people who come after you.">
+      <phil-choice note="This takes the wager. The question for you: what would show that the bet is failing, and who pays if it does?">Sign. The engine may do more good than its smoke does harm.</phil-choice>
+      <phil-choice note="This takes the wager with limits. The conditions matter: a cap on total coal, new clean power, or the firm paying for its smoke.">Sign, with conditions written into the papers.</phil-choice>
+      <phil-choice note="This takes the caution. The question for you: what do you say to Freddie about the floods the engine might have forecast?">Refuse. The smoke is certain and the benefit is a hope.</phil-choice>
+    </phil-poll>
+    <phil-narration>One last decision point. It is Christmas morning, and the papers for the new engine hall are on the desk. What do you do? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">All three answers can be defended. Whichever you chose, you should now be able to say what you would count, who answers for the smoke and who pays for it, and what you owe the people who come after you.</phil-narration>
+  </phil-slide>
+
+  <!-- 36. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, a quick summary of the lesson.</phil-narration>
+  </phil-slide>
+
+  <!-- 37. Summed up -->
+  <phil-slide>
+    <img slot="art" src="./assets/title.png" alt="A dark brick counting-house on a snowy street at night with one window lit gold, and behind it a tall chimney pouring dark smoke into the sky">
+    <h1>Summed Up</h1>
+    <phil-narration>Here's the lesson, summed up.</phil-narration>
+    <ul reveal>
+      <li say="What to count: building and running the engine, what the answers are used for, and how the town changes. Any total depends on how it was counted."><strong>What to count:</strong> building and running the engine, what the answers are used for, and how the town changes. Any total depends on how it was counted.</li>
+      <li say="Efficiency: a thriftier engine can bring a full saving, a rebound, or a backfire. Efficiency alone does not decide which. A cap or a price on the coal is what holds the total down."><strong>Efficiency:</strong> a thriftier engine can bring a full saving, a rebound, or a backfire. Efficiency alone does not decide which. A cap or a price on the coal is what holds the total down.</li>
+      <li say="Fault and cost: Sinnott-Armstrong and Parfit disagree about one link. Polluter pays, beneficiary pays, and ability to pay disagree about the bill."><strong>Fault and cost:</strong> Sinnott-Armstrong and Parfit disagree about one link. Polluter pays, beneficiary pays, and ability to pay disagree about the bill.</li>
+      <li say="The future: Gardiner's three storms make burn now, fix later a tempting argument. Tempting is not the same as false."><strong>The future:</strong> Gardiner's three storms make “burn now, fix later” a tempting argument. Tempting is not the same as false.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Walter Sinnott-Armstrong, “It's Not My Fault: Global Warming and Individual Moral Obligations,” in <em>Perspectives on Climate Change</em>, ed. Sinnott-Armstrong and Howarth (Elsevier, 2005), 285–307. The Sunday drive, and a careful search for a principle that forbids it.</li>
+      <li>Henry Shue, “Subsistence Emissions and Luxury Emissions,” <em>Law &amp; Policy</em> 15, no. 1 (1993): 39–60. Why necessities and luxuries should not be counted alike.</li>
+      <li>Stephen M. Gardiner, “A Perfect Moral Storm: Climate Change, Intergenerational Ethics and the Problem of Moral Corruption,” <em>Environmental Values</em> 15, no. 3 (2006): 397–413. The three storms, in the author's own words.</li>
+      <li>Lynn H. Kaack and colleagues, “Aligning Artificial Intelligence with Climate Change Mitigation,” <em>Nature Climate Change</em> 12 (2022): 518–527. The three kinds of effect, with examples of each.</li>
+      <li>Alexandra Sasha Luccioni, Emma Strubell, and Kate Crawford, “From Efficiency Gains to Rebound Effects,” <em>Proceedings of FAccT '25</em> (2025): 76–88. Jevons's paradox applied to AI. Free online.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
