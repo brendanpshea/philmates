@@ -20,7 +20,7 @@ narrative frame + thinker cards + one signature widget per lesson (see
 | 9 | Oct 19–23 | Exam 1 (L1–6) | **The Gauntlet of Six Gates** (new, review) |
 | 10 | Oct 26–30 | 7: What Is AI? | **The Masquerade of Silverport** (new) |
 | 11 | Nov 2–6 | 8: Future of Work and Art | **The Loom and the Lark** (new) |
-| 12 | Nov 9–13 | 9: Environmental/Social Impact | **The Hungry Golem** (new) |
+| 12 | Nov 9–13 | 9: Environmental/Social Impact | **Marley's Chain** (new, designed) |
 | 13 | Nov 16–20 | Essay 2 | **The Advocate's Mirror** (new) |
 | 14 | Nov 23–27 | 10: AI and the End of the World | **The Wish Engine** (new) |
 | 15 | Nov 30–Dec 4 | 11: Robot Rights / Moral Status | reuse **The Ambassador's Manifest**; optional **The Tin Woodman's Trial** |
@@ -139,13 +139,20 @@ that outsings the town bard. **Widget:** "who made this?" gallery — guess
 human vs. machine for poems and pictures — then the harder question of
 whether inability to tell settles anything about art.
 
-## Week 12 — The Hungry Golem (Environmental & Social Impact)
+## Week 12 — Marley's Chain (AI and Climate Change)
 
-The kingdom's miracle golem drinks a river a day; its clay is dug by distant
-villagers nobody in the capital has met. Data-center water/energy, mineral
-extraction, ghost-work data labeling in one figure. **Widget:** trace the
-golem's supply chain on a map, uncovering a hidden cost at each node. Echoes
-the Mechanical Turk's hidden operator (week 2).
+Designed, not built. Replaces the planned "Hungry Golem," and narrows the
+slot to one question: is building and using AI worth its carbon? Dickens's
+*A Christmas Carol* as the frame: Scrooge and Marley's counting-house runs a
+coal-fired thinking engine, and each visitor takes one question. Marley's
+Ghost: what to count (Kaack and colleagues, van Wynsberghe). Christmas Past:
+Jevons and rebound. Christmas Present: one prompt as one link
+(Sinnott-Armstrong vs Parfit), Shue's subsistence and luxury emissions, and
+who pays. Yet to Come: the bet that AI will fix it (Gardiner, Jonas).
+**Widget:** the Engine Room, where a thriftier engine can end up burning more
+coal. Perishable numbers sit on four dated "ledger page" slides, and nothing
+graded depends on them. Not covered: water, minerals, ghost work, local
+data-center fights. Slide-by-slide in `phil_mates_outlines.md`.
 
 ## Week 13 — The Advocate's Mirror (Essay 2)
 
@@ -190,5 +197,4 @@ of week 1's Oracle's Ledger.
   that carries the whole concept.
 - **Most reusable across courses:** the two essay-week lessons (5, 13).
 - **Connected-universe touches:** Bentham reappears as Panopticon architect
-  (8); the Mechanical Turk's hidden operator echoes in the Hungry Golem's
-  ghost workers (12).
+  (8); the Mechanical Turk's hidden operator (2).

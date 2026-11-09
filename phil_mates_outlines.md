@@ -4960,3 +4960,308 @@ science, law, and xenotransplantation). The points a reviewer needs:
   realistic possibility of conscious experience in all vertebrates ... and
   many invertebrates (including, at minimum, cephalopod mollusks, decapod
   crustaceans, and insects)."
+
+---
+
+## Computing & AI Ethics: AI and Climate Change — "Marley's Chain"  *(designed 2026-11-09; not built)*
+
+- **Path (planned):** `lessons/ai-ethics/ai-climate/`
+- **Lesson id (planned):** `ai-climate`
+- **Top-bar title:** `Marley's Chain` · **Subject:** `AI and Climate Change`
+- **Slot:** week 12, Environmental and Social Impact. Replaces "The Hungry
+  Golem" in `docs/ai-ethics-semester-plan.md`.
+- **Topic:** Narrowed on purpose to one question: is building and using AI
+  worth its carbon? Not covered: water, minerals and e-waste, noise, local
+  electricity prices, ghost work (Amberville's boiler-house scene touches
+  these), and any named local fight over a data center.
+- **Built to last.** Three rules keep the lesson from expiring:
+  1. Every perishable number sits on one of four **ledger pages**: slides
+     stamped "Our world, November 2026" and built to be swapped once a year.
+  2. **Nothing graded depends on a number** or on a named company, model, or
+     news story. Graded items test the ideas (kinds of effect, rebound,
+     who is responsible, who pays, the three storms).
+  3. The spine is philosophy that already has a shelf life: Jevons (1865),
+     Parfit (1984), Shue (1993), Sinnott-Armstrong (2005), Gardiner (2006).
+- **Approach:** Four questions, one per visitor.
+  1. *What do we count?* Kaack and colleagues' three kinds of effect; van
+     Wynsberghe's two branches; two honest ways to keep the same ledger.
+  2. *Does efficiency save us?* Jevons, rebound and backfire, and why backfire
+     is disputed.
+  3. *Whose fault, and who pays?* One prompt as one link: Sinnott-Armstrong
+     against Parfit (with Kagan and Broome). Shue's subsistence and luxury
+     emissions applied to uses of AI. Polluter pays, beneficiary pays, ability
+     to pay.
+  4. *May we bet the future on it?* The promise (Rolnick and colleagues), then
+     Gardiner's perfect moral storm and moral corruption, and Jonas's
+     imperative against the wager. Verdicts are polls.
+- **Frame:** Dickens, *A Christmas Carol* (1843; public domain). Nothing from
+  any film version. Scrooge and Marley's counting-house now sells answers from
+  a coal-fired thinking engine, and the firm must decide by Christmas morning
+  whether to build a second, larger engine hall. The student is the new junior
+  partner whose signature the papers need. Marley's Ghost and the three Spirits
+  each take one of the four questions. The story never names a real company or
+  a real number; the ledger pages do that.
+- **Why this frame fits:** Marley's chain is forged "link by link," which is
+  both cumulative carbon and the one-prompt problem. Scrooge keeps the
+  coal-box and the books. The Spirit of Christmas Past can stand in 1865, the
+  year of *The Coal Question*. Scrooge's question to the last Spirit (shadows
+  of things that "Will be" or "May be, only") is the difference between a
+  forecast and a scenario, which is the reason the lesson avoids predictions.
+  Week 12 also falls in mid-November.
+- **Who says what:** Jevons, Kaack and colleagues, van Wynsberghe,
+  Sinnott-Armstrong, Parfit, Kagan, Broome, Shue, Gardiner, and Jonas supply
+  every argument. Scrooge, the Cratchits, and the Spirits supply cases and
+  questions only. Shue wrote about nations and Gardiner about geoengineering;
+  each slide that applies them to AI says the application is ours.
+- **Cast (recast from Dickens):** Scrooge (Black British woman, 60s, owns the
+  firm); Marley's Ghost (white man, 70s, in chains); Mrs. Cratchit (South
+  Asian woman, 30s, the clerk who stokes the engine) and her son Tim (8); Fred
+  becomes Freddie (Scrooge's niece, 20s, who wants the new hall built to
+  forecast floods). The three Spirits follow Dickens's descriptions, with
+  Christmas Present as a large woman in a green robe.
+- **Widget:** `assets/rebound.js`, `<phil-rebound>`, "The Engine Room." Two
+  controls: how much less coal the new engine burns per answer, and how many
+  more answers the town buys when answers get cheaper. A bar shows total coal
+  before and after, labeled in words as *saving*, *rebound*, or *backfire*.
+  A toy with invented numbers, labeled as such. Nothing graded depends on it;
+  the next slide states the result.
+- **Left out on purpose:** per-company emissions tables and pledges (stale
+  yearly); the Strubell "five cars" figure (it measured one architecture
+  search, not ordinary training, and is usually misquoted); Nolt's "one or two
+  future people" estimate (heavily disputed); Hardin's commons; discount
+  rates; existential risk (week 14).
+
+### The four questions
+
+| Visitor | Question | Credited to | The pushback |
+|---|---|---|---|
+| Marley's Ghost | What belongs in the ledger? | Kaack and colleagues (2022); van Wynsberghe (2021) | The same engine has two honest Scope 2 totals, so "how much?" always needs "counted how?" |
+| Christmas Past | Does a thriftier engine burn less coal? | Jevons (1865) | Rebound is well documented; backfire is disputed (Sorrell 2009; Gillingham, Rapson and Wagner 2016). |
+| Christmas Present | Is one prompt anyone's fault? Which uses deserve the coal? Who pays? | Sinnott-Armstrong (2005); Parfit (1984); Shue (1993, 1999) | Kagan and Broome side with Parfit by different routes. Shue's line has a wide middle (homework, translation). |
+| Yet to Come | May we burn now because the engine may fix it later? | Rolnick and colleagues (2022); Gardiner (2006, 2010); Jonas (1979) | Holding AI back also costs future people. The slide gives the wager its strongest form. |
+
+### Slide-by-slide (about 34)
+
+Opening
+1. **[T]** Title. Scrooge's counting-house at night, the engine's chimney behind it.
+2. **[T]** If you haven't read the story: Scrooge, Marley, the Cratchits, three
+   Spirits. What has changed: the firm sells answers, and the engine burns coal.
+3. **[P]** Belief probe, five statements: one person's use of AI is too small to
+   matter to the climate · a more efficient technology will end up using less
+   energy · AI used for entertainment deserves less of the carbon budget than AI
+   used for medicine · it is fair to pollute more now to build tools that may
+   help people later · those who profit from AI should pay its climate costs
+   even if they broke no rule.
+4. **[T]** Marley's chain, `reveal`. Carbon dioxide adds up the way the chain
+   does, link by link. The papers on the desk and the Christmas-morning deadline.
+5. **[T]** *Ledger page 1.* How big is it? A small share of world emissions,
+   growing fast. Both halves are true, and each side of the public argument
+   quotes only one.
+
+Marley's Ghost: what to count
+6. **[T]** Three kinds of effect, with a thinker card for Kaack and colleagues
+   (idea scene: a ledger ruled in three columns). Running the engine; what the
+   answers are used for; how the town changes around it.
+7. **[C]** van Wynsberghe: AI *for* sustainability vs the sustainability *of*
+   AI. Freddie's flood forecasts on one side, the coal-box on the other.
+8. **[T]** One engine, two honest totals. Operational vs embodied emissions.
+   Then the grid's coal vs the clean power the firm paid for somewhere else
+   (location-based vs market-based), and whether the purchase added any clean
+   power that would not otherwise exist (additionality).
+9. **[Q classify]** Six cases into the three kinds of effect, plus Not sure.
+10. **[T]** *Ledger page 2.* What one prompt costs by a company's own
+    measurement, shown against a light bulb. What that figure leaves out
+    (training, hardware, the accounting method) and the 10 to 100 times spread
+    between a short text answer and a long reasoning or video one.
+11. **[Q checkset]** A per-prompt figure: which of these does it tell you, and
+    which does it not?
+
+Christmas Past: does efficiency save us?
+12. **[T]** The Spirit sets you down in 1865. Thinker card for Jevons with the
+    "confusion of ideas" line. Watt's engine burned less coal per job, and
+    Britain burned more coal.
+13. **[T]** Three outcomes, defined: saving, rebound (some of the saving is
+    eaten by extra use), backfire (total use rises). Rebound is common.
+    Backfire is disputed, and is more plausible for a general-purpose
+    technology in its early years.
+14. **[V]** The Engine Room (`<phil-rebound>`), `hold`.
+15. **[T]** What the Engine Room showed, in a sentence, so nobody has to have
+    played it.
+16. **[T]** *Ledger page 3.* The cost of an answer has fallen steeply while
+    total electricity use has risen. That fits rebound. It does not prove that
+    efficiency caused the growth.
+17. **[Q classify]** Six small cases with numbers: saving, rebound, or backfire.
+18. **[Poll]** Scrooge can buy an engine that halves the coal per answer, and
+    she expects to sell three times the answers. What should the town ask of
+    her? (`explain`: efficiency is not a climate policy by itself; a cap or a
+    price on the coal is what turns it into one.)
+
+Christmas Present: whose fault, and who pays?
+19. **[T]** One riddle, one spoonful of coal. Is that one link anybody's
+    fault? Thinker card for Sinnott-Armstrong: the Sunday joyride, and his
+    conclusion that the duty is to change the law, stated as tentatively as he
+    states it.
+20. **[T]** Thinker card for Parfit: the harmless torturers. The "mistake in
+    moral mathematics" is shown as the view he rejects. One line each for
+    Kagan (a small chance of triggering a large harm) and Broome (each
+    person's emissions do real harm).
+21. **[C]** The same prompt, read by Sinnott-Armstrong and by Parfit.
+22. **[Q classify]** Six short statements about a prompt: Sinnott-Armstrong's
+    reasoning, Parfit's reasoning, or neither.
+23. **[Poll]** Is your prompt a link in the chain?
+24. **[T]** The Cratchits' one coal and Scrooge's fire. Thinker card for Shue:
+    subsistence emissions and luxury emissions. Applied to uses of AI, with
+    the hard middle left hard.
+25. **[T]** Who pays for the coal? Polluter pays, beneficiary pays, ability to
+    pay, each defined and each given a problem. For the engine: the firm that
+    burns, the customers who gain, whoever can best afford it.
+26. **[Q classify]** Six proposals into the three principles.
+27. **[Poll]** Who should pay for Scrooge's coal?
+
+Yet to Come: may we bet the future on it?
+28. **[T]** *Ledger page 4.* The promise. Rolnick and colleagues' survey, one
+    proven use (machine-learning weather forecasts) and one that worked in
+    trials and was barely adopted (contrail avoidance). The IEA's estimate of
+    what existing AI could cut, with the IEA's own caveat.
+29. **[T]** Thinker card for Gardiner: the perfect moral storm. Global,
+    intergenerational, theoretical. Tim stands for the people who will live
+    with the result and have no say in it.
+30. **[T]** Moral corruption: we are tempted by arguments that happen to let
+    us carry on. "Burn now, the engine will fix it later" has that shape,
+    which makes it suspect and does not make it false.
+31. **[C]** The wager vs the caution. For the wager: the tools may be real,
+    and delay also costs future people. For the caution: Jonas's imperative,
+    and Gardiner's point that those who make an emergency are badly placed to
+    plead it.
+32. **[Q classify]** Six features of the engine decision into the three storms.
+33. **[T]** "Will be" or "May be, only." How much the engine emits depends
+    mostly on what the grid burns, so the same engine can be dirty or nearly
+    clean. Three questions that travel to any future version of this debate:
+    counted how, clean power that is new, and who pays if the bet fails.
+34. **[Poll]** Christmas morning. Sign, sign with conditions, or refuse.
+35. **[P]** Belief review.
+36. **[T]** What you can now say.
+37. **[T]** For Further Reading: Jevons ch. VII; Sinnott-Armstrong; Shue
+    (1993); Gardiner (2006); Kaack and colleagues (2022); Luccioni, Strubell
+    and Crawford (2025) on Jevons and AI.
+
+Graded: six items (five classify, one checkset), no MCQ. Each gets a `review`
+target and a permanent `data-qid` at build time. Slide count is over the usual
+33; slides 10–11 and 15–16 are the first candidates to merge.
+
+### Guardrails
+
+- **No scare numbers, no shrug numbers.** "A bottle of water per prompt" and
+  "less than a second of microwave" both appear in public argument. The lesson
+  shows what each kind of figure counts and leaves out.
+- **Jevons is not a law.** No slide or key says efficiency always backfires.
+- **Sinnott-Armstrong is not a shrug.** He holds that individuals should work
+  to change policy. The key must not have him saying climate change is not
+  the individual's concern.
+- **Parfit's "mistakes" are views he rejects.** State them that way.
+- **Caney revises polluter pays; he does not simply defend it.** Credit the
+  principles to the literature, with Shue (1999), Page (2012), and Caney
+  (2010) as the readings.
+- **The wager gets a fair hearing.** The final poll has three live options
+  and no graded verdict.
+
+### Accuracy note (research 2026-11-09; **not yet checked against primary texts**)
+
+Two research reports from this date (philosophy and citations; present-day
+facts). Neither could open source pages in this session, so every quotation
+below was confirmed from search extracts or secondary quotation only. Before
+the build, check each against the primary text.
+
+Philosophy and citations:
+
+- **Jevons (1865), *The Coal Question*, ch. VII "Of the Economy of Fuel":** "It
+  is wholly a confusion of ideas to suppose that the economical use of fuel is
+  equivalent to a diminished consumption. The very contrary is the truth."
+  Cite by chapter; editions differ in pagination.
+- **Rebound and backfire:** backfire is rebound above 100%. Sorrell, *Energy
+  Policy* 37(4) (2009): 1456–1469: evidence "far from conclusive"; backfire
+  more plausible for early general-purpose technologies. Gillingham, Rapson
+  and Wagner (2016): research "provides little support for the so-called
+  'backfire' hypothesis." Brockway et al., *Renewable and Sustainable Energy
+  Reviews* 141 (2021): economy-wide rebound may erode "more than half" of
+  expected savings.
+- **Sinnott-Armstrong (2005),** "It's Not My Fault: Global Warming and
+  Individual Moral Obligations," in Sinnott-Armstrong and Howarth (eds.),
+  *Perspectives on Climate Change* (Elsevier); reprinted in *Climate Ethics:
+  Essential Readings* (OUP, 2010). Page ranges conflict between records.
+  Quoted via secondary sources: "my individual joyride does not cause global
+  warming, climate change, or any of their resulting harms"; "It is better to
+  enjoy your Sunday driving while working to change the law so as to make it
+  illegal for you to enjoy your Sunday driving."
+- **Parfit (1984), *Reasons and Persons*, ch. 3:** Fifth Mistake: "If some act
+  has effects on other people that are imperceptible, this act cannot be
+  morally wrong because it has these effects" (p. 75 per secondary sources).
+  Also: "Even if an act harms no one, it may be wrong because it is one of a
+  set of acts that together harm other people." Harmless Torturers, p. 80.
+- **Kagan (2011),** "Do I Make a Difference?" *Philosophy & Public Affairs*
+  39(2): 105–141. No verbatim line obtained; paraphrase only.
+- **Broome (2012), *Climate Matters*, ch. 5.** Paraphrase only. The "six
+  months of healthy human life" line was not found; do not use it.
+- **Shue (1993),** *Law & Policy* 15(1): 39–59: "it is not equitable to ask
+  some people to surrender necessities so that other people can retain
+  luxuries" (secondary; page not found).
+- **Burden-sharing:** Shue, *International Affairs* 75(3) (1999): 531–545
+  (cited from memory, not retrieved); Page, *International Theory* 4(2) (2012):
+  300–330 (beneficiary pays); Caney, *Leiden Journal of International Law*
+  18(4) (2005): 747–775 and *CRISPP* 13(1) (2010): 203–228.
+- **Gardiner (2006),** *Environmental Values* 15(3): 397–413, abstract:
+  "Climate change involves the convergence of a set of global,
+  intergenerational and theoretical problems"; the storm "makes us extremely
+  vulnerable to moral corruption." "Arming the future" (2010), in *Climate
+  Ethics: Essential Readings*, pp. 284–312: paraphrase only.
+- **Kaack et al. (2022),** *Nature Climate Change* 12(6): 518–527: "three
+  categories: computing-related impacts, immediate impacts of applying ML and
+  system-level impacts." The paper says "ML," not "AI."
+- **van Wynsberghe (2021),** *AI and Ethics* 1: 213–218: "two branches with
+  different aims and methods: AI for sustainability vs sustainability of AI."
+- **Rolnick et al. (2022),** *ACM Computing Surveys* 55(2), art. 42 (arXiv
+  2019).
+- **Luccioni, Strubell and Crawford (2025),** "From Efficiency Gains to
+  Rebound Effects," FAccT '25, DOI 10.1145/3715275.3732007.
+- **Jonas (1984),** *The Imperative of Responsibility*: "Act so that the
+  effects of your action are compatible with the permanence of genuine human
+  life." Page not confirmed.
+- **Dickens, Stave One:** "I wear the chain I forged in life," replied the
+  Ghost. "I made it link by link, and yard by yard; I girded it on of my own
+  free will, and of my own free will I wore it." And: "Scrooge had a very
+  small fire, but the clerk's fire was so very much smaller that it looked
+  like one coal." **Stave Four:** "Are these the shadows of the things that
+  Will be, or are they shadows of things that May be, only?" Check punctuation
+  against Gutenberg #46.
+- **Gap:** no peer-reviewed philosophy paper was found on an individual
+  user's responsibility for the climate cost of using AI. The lesson builds
+  that bridge from the climate-ethics literature and says so.
+
+Ledger pages (each number names its year; all from search extracts):
+
+- **Page 1.** IEA, *Key Questions on Energy and AI* (Apr 2026): data centers
+  used about 485 TWh in 2025, roughly 1.5% of world electricity, up 17% in a
+  year; about 950 TWh (about 3%) projected for 2030. IEA, *Energy and AI* (Apr
+  2025): about 180 Mt CO2, about 0.5% of global combustion emissions in 2024.
+  AI's share of data-center electricity is inferred, not measured (estimates
+  run from 15% to about half).
+- **Page 2.** Google (Aug 2025, arXiv 2508.15734): median Gemini text prompt
+  0.24 Wh, about 1.4 minutes of a 10 W LED bulb; excludes training; carbon is
+  market-based. Oviedo et al., *Joule* (2026): a long reasoning-style answer is
+  roughly 13 times a short one. IEA (2025): a short video is far higher again.
+- **Page 3.** Nadella, 26–27 Jan 2025: "Jevons paradox strikes again! As AI
+  gets more efficient and accessible, we will see its use skyrocket, turning
+  it into a commodity we just can't get enough of." Epoch AI (Mar 2025): the
+  price of a fixed level of performance fell 9 to 900 times a year. Totals
+  rose over the same period (page 1). Consistent with rebound; not proof.
+- **Page 4.** ECMWF's AI forecasting system went operational in 2025.
+  Contrail trial (2025 flights, reported 2026): about 62% fewer contrails on
+  flights that followed the guidance, about 12% across eligible flights,
+  because the guidance was used about 15% of the time (secondary source).
+  IEA (2025): existing AI applications could cut about 5% of energy-related
+  emissions in 2035, but "there is currently no momentum that could ensure
+  the widespread adoption of these AI applications," and gains "could be
+  negated by rebound effects."
+- **To recheck before build:** the exact 2025 electricity share in the IEA
+  PDF; the Altman and Nadella wording against the originals; the contrail
+  figures against the published study.
