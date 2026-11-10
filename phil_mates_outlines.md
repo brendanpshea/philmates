@@ -5315,3 +5315,193 @@ Ledger pages (each number names its year):
   **secondary only** (the IEA site blocked every fetch). The slide gives the
   gist with no number: known applications could cut emissions, but there is
   "no momentum that could ensure the widespread adoption."
+
+---
+
+## Computing & AI Ethics: AI and Moral Status — "Robot Movie Night"  *(built)*
+
+- **Path:** `lessons/ai-ethics/ai-moral-status/`
+- **Lesson id:** `ai-moral-status`
+- **Top-bar title:** `Robot Movie Night` · **Subject:** `AI and Moral Status`
+- **Slot:** week 15, Robot Rights / Moral Status. Replaces the planned "Tin
+  Woodman's Trial." "The Ambassador's Manifest" stays the general lesson on
+  theories of moral status; this one is AI-specific and recaps only three
+  terms from it.
+- **Kept simple on purpose.** Three ideas, each used several times:
+  1. *What grounds moral status?* Moral status, sentience, and intelligence
+     are separate. Schwitzgebel and Garza's no-relevant-difference argument.
+  2. *How would we know?* Birch's gaming problem: talk from a system trained
+     on human writing is weak evidence either way. Two camps on what would
+     count (computational: Butlin, Long and colleagues; biological: Seth).
+  3. *Two ways to be wrong.* Under- and over-attribution (Butlin, Long and
+     colleagues), and three responses: precaution (Sebo and Long; Birch),
+     honest design (Schwitzgebel and Garza), don't build it (Bryson;
+     Metzinger).
+- **Frame:** an all-night robot marathon at the Rialto, an invented one-screen
+  cinema. Four real films, one idea each: *Star Trek: The Next Generation*,
+  "The Measure of a Man" (1989); *Ex Machina* (2014); *Her* (2013); *Blade
+  Runner* (1982). After each film a "Lights Up" slide says what the film gets
+  right and where it misleads. The plots are summarized, never quoted, and
+  the art never shows a film's characters.
+- **Where the films mislead (the lesson's second thread):** screen robots have
+  faces; the camera shows their private moments, so the film settles what
+  real life cannot; the smart machine is always the feeling one; one body is
+  one being (*Her* is the exception, and raises copies); and the doubter is
+  always the villain, so only under-attribution is ever shown.
+- **Cast (invented):** Dee (Cuban American woman, 60s, projectionist); Kwame
+  (Black man, 19, film student); Priya (South Asian woman, 30s, builds
+  chatbots); Hank (Navajo man, 70s, a regular since 1982); Marquee, a rented
+  AI ticket kiosk that says it will miss the place. The student is the new
+  usher and is never drawn. Characters supply cases and facts about how
+  things were built; every argument belongs to a named philosopher.
+- **Widget:** `assets/grid.js`, `<phil-wrong-grid>`, "Marquee at Dawn." Pick
+  what the Rialto does (tool, person, cheap precautions) and what turns out
+  to be true (feels nothing, can feel). Six outcomes, named in words. Not
+  graded; the two-errors slide before it teaches the terms.
+- **Dated slides:** "It Happened in 2022" (LaMDA) and "Outside the Cinema"
+  (stamped "Our world, November 2026"). Search `index.html` for `DATED
+  SLIDE`. One more dated fact, the 2025 teen-companion survey, is on the
+  honest-design slide. No graded item depends on any of them.
+- **Left out on purpose:** agents versus patients, Kant, and marginal cases
+  (in "The Ambassador's Manifest"); cruelty to robots and character (Kant's
+  indirect duties, Darling); the relational view (Gunkel, Coeckelbergh);
+  Chalmers's credences; legal personhood bills; existential risk.
+
+### Slide-by-slide (33)
+
+1. Title. 2. The Rialto's Robot Marathon. 3. Marquee. 4. Belief probe.
+5. Three Words for Tonight (`three-words`).
+6. Reel One: The Hearing. 7. What Would It Take? (`no-difference`, card:
+Schwitzgebel and Garza). 8. Lights Up: A Face and a Brain. 9. **q1** classify:
+intelligence, sentience, moral status.
+10. Reel Two: The Test. 11. It Happened in 2022. 12. The Gaming Problem
+(`gaming`, card: Birch). 13. Then What Would Count? (`two-views`, compare).
+14. Lights Up: The Camera Tells Us. 15. **q2** classify: gaming problem,
+computational view, biological view.
+16. Reel Three: The Voice. 17. Honest Design (`honest-design`, card:
+Schwitzgebel and Garza). 18. Lights Up: One Voice, Thousands of Rooms.
+19. Poll: the companion app.
+20. Reel Four: The Hunted. 21. Two Ways to Be Wrong (`two-errors`). 22. Try
+It: Marquee at Dawn (`hold`). 23. **q3** classify: under-attribution,
+over-attribution, neither. 24. Three Responses (`three-responses`, card: Sebo
+and Long). 25. Outside the Cinema. 26. **q4** classify: precaution, honest
+design, don't build it. 27. Four Habits of Robot Movies (`four-habits`).
+28. **q5** checkset.
+29. Closing Time. 30. Poll: Marquee. 31. Belief review. 32. Summed Up.
+33. For Further Reading.
+
+### Guardrails
+
+- **No verdict on whether any AI is sentient.** The lesson teaches why the
+  question is hard and what follows from not knowing.
+- **Both mistakes get equal weight.** The films push toward one; the slides
+  and the widget show both.
+- **q3 states what each machine really is,** and its prompt stipulates that
+  feeling is the test of moral status for those cases. The rows never ask a
+  student to judge whether a system feels. The widget makes the same
+  stipulation.
+- **Schwitzgebel and Garza's conclusion is "similar," not "equal."** They
+  call it intentionally weak.
+- **Bryson is not pro-slavery.** She argues against building machines that
+  could be owed anything, and has said she regrets the title.
+- **Disclosure.** The "Outside the Cinema" slide mentions Anthropic and
+  Claude, and Claude helped draft the lesson. The slide states only what
+  Anthropic published, and Suleyman's opposing view sits beside it.
+
+### Accuracy note (checked 2026-11-10)
+
+"Primary" means read on the source or a full-text copy. "Secondary" items are
+paraphrased on the slides, never quoted.
+
+Philosophy:
+
+- **Schwitzgebel and Garza (2015),** *Midwest Studies in Philosophy* 39:
+  98–119 (primary, author's draft). Conclusion: "there are possible AIs who
+  deserve a degree of moral consideration similar to that of human beings."
+  Sec. 2: "Whether they are silicon or meat, humanoid or ship-shaped, sim or
+  ghost, is irrelevant except insofar as it influences their psychological
+  and social properties." The Emotional Alignment Design Policy is first
+  stated here (sec. 8), not in the 2020 chapter. Abstract: "(1) design AIs
+  that tend to provoke reactions from users that accurately reflect the AIs'
+  real moral status, and (2) avoid designing AIs whose moral status is
+  unclear." "Honest design" is our name for it. Schwitzgebel (2023),
+  *Patterns* 4(8): 100818, restates it; citation secondary, so not cited on
+  a slide.
+- **Birch (2024), *The Edge of Sentience*, ch. 16** (primary, OUP page):
+  "When an artificial agent is able to intelligently draw upon huge amounts
+  of human-generated training data (as in large language models, or LLMs),
+  the result can be gaming of our criteria for sentience." The crab guarding
+  a wound is our example of an animal marker, from his field, not a quotation.
+  "Proportionate" precautions: secondary (Schwitzgebel's review).
+- **Butlin, Long, et al. (2023),** arXiv:2308.08708 (primary). "Our analysis
+  suggests that no current AI systems are conscious, but also suggests that
+  there are no obvious technical barriers to building AI systems which
+  satisfy these indicators." Computational functionalism "as a working
+  hypothesis." Sec. 4.1: "risks associated with under-attributing
+  consciousness ... and risks associated with over-attributing
+  consciousness"; over-attribution could "wrongly prioritise the perceived
+  interests of AI systems when our efforts would better be directed at
+  improving the lives of humans and non-human animals." The report speaks of
+  consciousness; the slide's definitions in terms of moral status are ours.
+- **Seth (2025),** "Conscious artificial intelligence and biological
+  naturalism," *Behavioral and Brain Sciences* (primary, abstract):
+  "consciousness depends on our nature as living organisms."
+- **Searle (1980),** "Minds, Brains, and Programs," replies (primary): "a
+  computer simulation of a rainstorm will leave us all drenched" is what no
+  one supposes. Paraphrased, not quoted.
+- **Sebo and Long,** *AI and Ethics* 5 (2025): 591–606, online Dec 2023
+  (primary): "humans have a duty to extend moral consideration to beings
+  that have a non-negligible chance, given the evidence, of being conscious."
+  They add that this "has no straightforward implications for how humans
+  should treat AI systems."
+- **Bryson (2010),** in Wilks (ed.), *Close Engagements with Artificial
+  Companions*, 63–74 (primary, author's draft): "Robot builders are ethically
+  obliged ... to make robots that robot owners have no ethical obligations
+  to"; "it would also be wrong to build robots we owe personhood to." Her
+  regret about the title: secondary (podcast transcript and her blog).
+- **Metzinger (2021),** *Journal of Artificial Intelligence and
+  Consciousness* 8(1): 43–66. Secondary only: a ban until 2050 on research
+  that risks synthetic phenomenology. Paraphrased as "a pause."
+- **Sentience "enough for moral status":** the standard sentientist view
+  (Bentham, Singer), taught in "The Ambassador's Manifest."
+
+Films (plots from detailed synopses and scripts; nothing is quoted):
+
+- **"The Measure of a Man"** (TNG 2x09, aired 13 Feb 1989, written by Melinda
+  M. Snodgrass): Maddox, the property ruling, the hearing, the ruling that
+  Data has the right to choose (Wikipedia). The three criteria (intelligence,
+  self-awareness, consciousness) and Picard's slavery warning are from a
+  script draft and Wikiquote; the aired wording was not checked.
+- ***Ex Machina*** (2014, Alex Garland): plot and Nathan's test from the
+  published script and Wikipedia. Ava's mind was built from Blue Book search
+  data and phone microphones and cameras.
+- ***Her*** (2013, Spike Jonze): plot from Wikipedia, which says "thousands"
+  and "hundreds." The exact numbers (8,316 and 641) were not confirmed and
+  are not on a slide.
+- ***Blade Runner*** (1982, Ridley Scott): replicants bio-engineered by the
+  Tyrell Corporation for off-world colonies, "retired," four-year lifespan,
+  Voight-Kampff, Roy saving Deckard (Wikipedia). "Slave labor" is the opening
+  crawl's phrase from memory; the crawl was not fetched.
+
+Dated facts:
+
+- **LaMDA (2022).** Secondary only (Futurism, Engadget; the Medium post and
+  Washington Post blocked fetches): Lemoine on leave 6 June, fired 22 July;
+  LaMDA's "very deep fear of being turned off," which "would be exactly like
+  death for me"; Google found no evidence of sentience.
+- **Anthropic (primary).** "Exploring model welfare," 24 Apr 2025. 15 Aug
+  2025: Claude Opus 4 and 4.1 can end conversations "in rare, extreme cases
+  of persistently harmful or abusive user interactions"; "highly uncertain
+  about the potential moral status of Claude."
+- **Suleyman (primary),** 19 Aug 2025: "We must build AI for people; not to
+  be a person." The same essay calls model-welfare work "both premature, and
+  frankly dangerous" (seen by the adversarial reviewer; paraphrased on the
+  slide). An 18 Sep 2026 Project Syndicate piece criticizes Anthropic's
+  approach; not on a slide. Anthropic hired its first welfare researcher in
+  Sept 2024 (secondary), so the slide says the program was "announced" in
+  2025.
+- **Colombatto and Fleming (2024),** *Neuroscience of Consciousness*
+  2024(1): niae013 (primary): 67% of 300 US participants "attributed some
+  possibility of phenomenal consciousness to ChatGPT."
+- **Common Sense Media (16 July 2025, primary):** 72% of US teens aged 13 to
+  17 have used AI companions at least once.

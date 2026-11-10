@@ -23,7 +23,7 @@ narrative frame + thinker cards + one signature widget per lesson (see
 | 12 | Nov 9–13 | 9: Environmental/Social Impact | **Marley's Chain** (new, built) |
 | 13 | Nov 16–20 | Essay 2 | **The Advocate's Mirror** (new) |
 | 14 | Nov 23–27 | 10: AI and the End of the World | **The Wish Engine** (new) |
-| 15 | Nov 30–Dec 4 | 11: Robot Rights / Moral Status | reuse **The Ambassador's Manifest**; optional **The Tin Woodman's Trial** |
+| 15 | Nov 30–Dec 4 | 11: Robot Rights / Moral Status | reuse **The Ambassador's Manifest**; **Robot Movie Night** (new, built) |
 | 16 | Dec 7–11 | 12: Games and Ethics | **The Arcade at the End of the World** (new) |
 | 17 | Dec 14–18 | Exam 2 (L7–12) | **The Gauntlet, Part II** (new, review + beliefs payoff) |
 
@@ -172,10 +172,15 @@ iterate over three rounds — specification gaming made visceral.
 ## Week 15 — Robot Rights / Moral Status
 
 Reuse **The Ambassador's Manifest** (`lessons/ethical-theory/moral-status/`) —
-this is its home fixture. Optional AI-specific sequel, **The Tin Woodman's
-Trial**: courtroom hearing on whether a woodman who *performs* pain can be
-wronged. Sentience vs. sapience, moral patients vs. agents, precautionary
-"what if we're wrong?"
+this is its home fixture. The AI-specific companion is **Robot Movie Night**
+(`lessons/ai-ethics/ai-moral-status/`), built in place of the planned "Tin
+Woodman's Trial." An all-night robot marathon at an old cinema: four real
+films, one idea each, and a "Lights Up" slide after each on where the film
+misleads. Three ideas: moral status, sentience, and intelligence are
+separate; a chatbot's talk is weak evidence either way (Birch's gaming
+problem); and there are two ways to be wrong, with three responses.
+**Widget:** a grid of what the cinema does about its ticket kiosk against
+what turns out to be true. Slide-by-slide in `phil_mates_outlines.md`.
 
 ## Week 16 — The Arcade at the End of the World (Games and Ethics)
 

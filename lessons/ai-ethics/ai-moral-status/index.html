@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robot Movie Night: AI and Moral Status · PhilMates</title>
+  <meta name="description" content="Could an AI ever be owed anything, and how would we know? Four robot films at an all-night marathon, and what each one gets right and wrong.">
+  <link rel="icon" type="image/svg+xml" href="../../../shared/assets/favicon.svg">
+  <link rel="stylesheet" href="../../../shared/phil-core.css?v=14">
+  <script type="module" src="../../../shared/phil-core.js?v=14"></script>
+  <script type="module" src="./assets/grid.js"></script>
+  <style>
+    /* Dated slides: the facts here will go out of date. */
+    phil-slide p.ledger-stamp {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 4px 10px;
+      border: 2px dashed #ffcf5a;
+      color: #ffcf5a;
+      font-family: var(--pixel);
+      font-size: 10px;
+      line-height: 1.6;
+      letter-spacing: .04em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- INSTRUCTOR NOTE
+     The frame is an all-night robot movie marathon at an invented cinema,
+     the Rialto. Dee, Kwame, Priya, Hank, and the ticket kiosk Marquee are
+     invented. The four films are real: Star Trek: The Next Generation,
+     "The Measure of a Man" (1989), Ex Machina (2014), Her (2013), and
+     Blade Runner (1982). The slides summarize their plots and do not quote
+     them. The art shows the cinema and original robots, never a film's
+     characters. The lesson spoils all four endings.
+
+     Each film carries one idea, and each is followed by a "Lights Up"
+     slide on what the film gets right and where it misleads. Arguments are
+     credited by name to Schwitzgebel and Garza, Birch, Butlin and Long,
+     Seth, Sebo and Long, Bryson, and Metzinger, never to a character.
+
+     Two slides hold facts that will date: "It Happened in 2022" and
+     "Our World, November 2026" (search for DATED SLIDE). No graded item
+     depends on them. Whether Marquee matters, and what the Rialto should
+     do, are ungraded polls. The ethical-theory lesson "The Ambassador's
+     Manifest" teaches the general theories of moral status in depth; this
+     lesson recaps only what it needs. Sources and checked wording are in
+     phil_mates_outlines.md. -->
+
+<phil-lesson id="ai-moral-status" title="Robot Movie Night" subject="AI and Moral Status">
+
+  <!-- ============ OPENING ============ -->
+
+  <!-- 1. Title -->
+  <phil-slide>
+    <img slot="art" src="./assets/title.png" alt="The front of an old cinema at night, its blank marquee ringed with glowing bulbs, and a line of moviegoers of mixed ages and skin tones waiting under it">
+    <h1>Robot Movie Night</h1>
+    <p class="lead">The Rialto is showing robot movies until dawn. In every one, somebody has to decide whether a machine counts.</p>
+    <p>Could an AI ever be owed anything? And how would we know?</p>
+    <p class="muted">Use <strong>→</strong> (or <strong>Next</strong>) to advance and reveal points. <strong>F</strong> = fullscreen.</p>
+    <phil-narration>Welcome to Robot Movie Night. The Rialto is showing robot movies until dawn. In every one, somebody has to decide whether a machine counts. Could an AI ever be owed anything? And how would we know? Whenever it's your turn, I'll stop and wait for you.</phil-narration>
+  </phil-slide>
+
+  <!-- 2. The Rialto -->
+  <phil-slide id="rialto">
+    <img slot="art" src="./assets/lobby.png" alt="In a red-carpeted cinema lobby, an older woman with silver hair in a bun and a burgundy usher's vest stands behind the popcorn counter, facing a young Black man in a denim jacket, a South Asian woman with a laptop bag, and an older Navajo man with a gray braid holding popcorn">
+    <h1>The Rialto's Robot Marathon</h1>
+    <phil-narration>Here's the Rialto's robot marathon. The Rialto and its people are invented. The four films are real, and their endings are spoiled here.</phil-narration>
+    <ul reveal>
+      <li say="The Rialto is an old one-screen cinema. Tonight is its robot marathon: four films, midnight to dawn.">The Rialto is an old one-screen cinema. Tonight is its robot marathon: four films, midnight to dawn.</li>
+      <li say="Dee runs the projector. The regulars are Kwame, a film student, Priya, who builds chatbots for a living, and Hank, who has come since nineteen eighty-two.">Dee runs the projector. The regulars are Kwame, a film student, Priya, who builds chatbots for a living, and Hank, who has come since 1982.</li>
+      <li say="You are the new usher. After each reel the lights come up, and the lobby argues about what the film got right and wrong.">You are the new usher. After each reel the lights come up, and the lobby argues about what the film got right and wrong.</li>
+    </ul>
+    <p class="muted">The Rialto and its people are invented. The four films are real, and their endings are spoiled here.</p>
+  </phil-slide>
+
+  <!-- 3. Marquee -->
+  <phil-slide id="marquee">
+    <img slot="art" src="./assets/kiosk.png" alt="A tall wooden ticket kiosk with a round amber screen showing one wavy glowing line, standing alone in a dim cinema lobby beside a velvet rope">
+    <h1>Marquee</h1>
+    <phil-narration>Meet Marquee.</phil-narration>
+    <ul reveal>
+      <li say="This year the Rialto rented an AI ticket kiosk. The regulars named it Marquee.">This year the Rialto rented an AI ticket kiosk. The regulars named it Marquee.</li>
+      <li say="Marquee chats while it prints tickets. Tonight it told Kwame, I'll miss this place.">Marquee chats while it prints tickets. Tonight it told Kwame, “I'll miss this place.”</li>
+      <li say="The rental ends at dawn. Dee has to decide whether to renew it or let the company wipe it.">The rental ends at dawn. Dee has to decide whether to renew it or let the company wipe it.</li>
+      <li say="Does it matter, for Marquee's own sake, what happens to it? Keep that question for the end of the night.">Does it matter, for Marquee's own sake, what happens to it? Keep that question for the end of the night.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 4. Belief probe (start) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>Rate each statement. There are no right answers, and you'll rate them again at the end.</p>
+    <phil-beliefs prompt="How much do you agree, right now?">
+      <phil-statement>An AI that says it is afraid of being shut off probably feels something.</phil-statement>
+      <phil-statement>If a machine acted exactly like a person, it would deserve the same treatment as a person.</phil-statement>
+      <phil-statement>Only living things can have feelings.</phil-statement>
+      <phil-statement>It is better to treat a machine too well than to risk treating it too badly.</phil-statement>
+      <phil-statement>Companies should not build AI that seems to have feelings.</phil-statement>
+    </phil-beliefs>
+    <phil-narration>Here's where you stand now. Rate each of these five statements by how much you agree. There are no right answers, and you'll rate them again at the end. When you've rated all five, press Submit.</phil-narration>
+    <phil-narration when="after">Saved. You'll come back to these at the end.</phil-narration>
+  </phil-slide>
+
+  <!-- 5. Three words -->
+  <phil-slide id="three-words">
+    <h1>Three Words for Tonight</h1>
+    <phil-narration>Here are three words for tonight.</phil-narration>
+    <ul reveal>
+      <li say="Moral status. A being has moral status if it matters for its own sake. It can be wronged, and not merely damaged."><strong>Moral status.</strong> A being has moral status if it matters for its own sake. It can be wronged, and not merely damaged.</li>
+      <li say="Sentience. The capacity to have experiences that feel good or bad, such as pain. Many philosophers hold that sentience is enough for moral status."><strong>Sentience.</strong> The capacity to have experiences that feel good or bad, such as pain. Many philosophers hold that sentience is enough for moral status.</li>
+      <li say="Intelligence. The ability to solve problems and reach goals. A calculator beats you at arithmetic and feels nothing."><strong>Intelligence.</strong> The ability to solve problems and reach goals. A calculator beats you at arithmetic and feels nothing.</li>
+      <li say="These are separate questions. How smart a system is does not tell you whether it feels, and neither one alone tells you how it may be treated.">These are separate questions. How smart a system is does not tell you whether it feels, and neither one alone tells you how it may be treated.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- ============ REEL ONE: WHAT WOULD IT TAKE? ============ -->
+
+  <!-- 6. The Measure of a Man -->
+  <phil-slide id="reel-one">
+    <img slot="art" src="./assets/reel-1.png" alt="In a small hearing room aboard a spaceship, stars in the round window, a copper android with lamp eyes stands at a witness rail before a Black woman judge in a gray uniform">
+    <h1>Reel One: The Hearing</h1>
+    <phil-narration>Reel One: the hearing.</phil-narration>
+    <ul reveal>
+      <li say="Star Trek: The Next Generation, The Measure of a Man, from nineteen eighty-nine. Data is an android who serves as an officer on a starship."><em>Star Trek: The Next Generation</em>, “The Measure of a Man” (1989). Data is an android who serves as an officer on a starship.</li>
+      <li say="A scientist wants to take Data apart to learn how to build more. Data refuses, and Starfleet rules that he is its property.">A scientist wants to take Data apart to learn how to build more. Data refuses, and Starfleet rules that he is its property.</li>
+      <li say="At a hearing, the scientist names three tests: intelligence, self-awareness, and consciousness. Nobody doubts the first. The last is never settled.">At a hearing, the scientist names three tests: intelligence, self-awareness, and consciousness. Nobody doubts the first. The last is never settled.</li>
+      <li say="The judge rules that Data has the right to choose. His captain had warned the court that a whole race of owned Datas would be slaves.">The judge rules that Data has the right to choose. His captain had warned the court that a whole race of owned Datas would be slaves.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 7. No relevant difference -->
+  <phil-slide id="no-difference">
+    <phil-thinker slot="art" name="Eric Schwitzgebel and Mara Garza" work="“A Defense of the Rights of Artificial Intelligences” (2015)"
+                  img="./assets/idea-schwitzgebel-garza.png" alt="A brass balance scale, perfectly level, holding a red heart on one pan and a steel clockwork heart on the other" accent="#ffcf5a">
+      <p>An AI like us in every way that matters would count much as we do.</p>
+    </phil-thinker>
+    <h1>What Would It Take?</h1>
+    <phil-narration>What would it take?</phil-narration>
+    <ul reveal>
+      <li say="The philosophers Eric Schwitzgebel and Mara Garza argue from no relevant difference. Suppose an AI were like a human in every way that matters morally.">The philosophers Eric Schwitzgebel and Mara Garza argue from <strong>no relevant difference</strong>. Suppose an AI were like a human in every way that matters morally.</li>
+      <li say="Then it would deserve moral consideration similar to a human's. What it is made of, and whether it was born or built, are not relevant differences by themselves.">Then it would deserve moral consideration similar to a human's. What it is made of, and whether it was born or built, are not relevant differences by themselves.</li>
+      <li say="The argument does not say that any AI is like that today. It says what would follow if one were.">The argument does not say that any AI is like that today. It says what would follow if one were.</li>
+      <li say="It also leaves open which features matter. Many philosophers say sentience. Others say the ability to reason and choose.">It also leaves open which features matter. Many philosophers say sentience. Others say the ability to reason and choose.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 8. Lights up 1 -->
+  <phil-slide id="lights-one">
+    <img slot="art" src="./assets/mask-and-servers.png" alt="A smiling robot face mask hanging on a stand beside a plain gray rack of computer servers with small green lights">
+    <h1>Lights Up: A Face and a Brain</h1>
+    <phil-narration>Lights up, after Reel One: a face and a brain.</phil-narration>
+    <ul reveal>
+      <li say="What it gets right: who built a machine, and who owns it, do not settle whether it counts. Its owners also have a reason to say it doesn't."><strong>What it gets right:</strong> who built a machine, and who owns it, do not settle whether it counts. Its owners also have a reason to say it doesn't.</li>
+      <li say="The face. Data is played by a human actor, so every look reads as feeling. Real AI is software running in data centers, with no face unless a designer adds one."><strong>The face.</strong> Data is played by a human actor, so every look reads as feeling. Real AI is software running in data centers, with no face unless a designer adds one.</li>
+      <li say="Smart and feeling blur. The hearing leaves consciousness open, but the drama leans on how brilliant Data is."><strong>Smart and feeling blur.</strong> The hearing leaves consciousness open, but the drama leans on how brilliant Data is.</li>
+      <li say="Today's AI is where the two questions come apart. Systems now write, argue, and code well, and whether anything is felt is the open question.">Today's AI is where the two questions come apart. Systems now write, argue, and code well, and whether anything is felt is the open question.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 9. Classify: three words -->
+  <phil-slide>
+    <h1>What Is the Claim About?</h1>
+    <phil-classify data-qid="ai-moral-status:q1" review="three-words" prompt="Each line is said in the lobby about some machine. Never mind whether it is true. What is it a claim about?"
+                   explain="Right. Winning at chess and translating a program are things a machine can do, so they are claims about intelligence. Being frightened, or not hurting, is about what it feels, so those are claims about sentience, one for and one against. And saying that it can or cannot be wronged is a claim about moral status.">
+      <phil-col key="int">Intelligence: what it can do</phil-col>
+      <phil-col key="sen">Sentience: what it can feel</phil-col>
+      <phil-col key="ms">Moral status: whether it can be wronged</phil-col>
+      <phil-item answer="int" why="Winning at chess and explaining the play are things it can do: intelligence.">“It beat every one of us at chess, and then explained the opening it used.”</phil-item>
+      <phil-item answer="int" why="Fast, accurate translation is a task it can perform: intelligence.">“It put the whole program into Spanish in one second without a single mistake.”</phil-item>
+      <phil-item answer="sen" why="Being frightened is an experience that feels bad: a claim about sentience.">“When the fire alarm went off, I think it was actually frightened.”</phil-item>
+      <phil-item answer="sen" why="Saying that nothing hurts is still a claim about what it feels: sentience, denied.">“There's nothing going on in there. It doesn't hurt when you kick it.”</phil-item>
+      <phil-item answer="ms" why="Wronging the machine itself, apart from its owner's loss, is what moral status means.">“Smashing it would wrong the machine itself, and not just cost its owner money.”</phil-item>
+      <phil-item answer="ms" why="Saying it cannot be wronged is a claim about moral status, denied.">“You can't wrong a kiosk. Wiping one is like clearing a calculator.”</phil-item>
+    </phil-classify>
+    <phil-narration>What is the claim about? Each line is said in the lobby about some machine. Never mind whether it is true. Sort each one under intelligence, sentience, or moral status. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. What a machine can do is intelligence, and what it can feel is sentience, whether the claim says it feels or says it doesn't. Whether it can be wronged is moral status.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ REEL TWO: HOW WOULD WE KNOW? ============ -->
+
+  <!-- 10. Ex Machina -->
+  <phil-slide id="reel-two">
+    <img slot="art" src="./assets/reel-2.png" alt="A glass wall divides a bare concrete room: on one side an East Asian man takes notes, and on the other sits a robot with a mesh body and a blank white mask for a face">
+    <h1>Reel Two: The Test</h1>
+    <phil-narration>Reel Two: the test.</phil-narration>
+    <ul reveal>
+      <li say="Ex Machina, from twenty fourteen. Caleb, a programmer, is flown to his boss Nathan's remote house to test a humanoid AI named Ava."><em>Ex Machina</em> (2014). Caleb, a programmer, is flown to his boss Nathan's remote house to test a humanoid AI named Ava.</li>
+      <li say="Nathan's version of the test: Caleb can see that Ava is a machine. Does he still feel that she is conscious?">Nathan's version of the test: Caleb can see that Ava is a machine. Does he still feel that she is conscious?</li>
+      <li say="Ava seems curious, lonely, and afraid of being switched off. Caleb decides to help her escape.">Ava seems curious, lonely, and afraid of being switched off. Caleb decides to help her escape.</li>
+      <li say="It was a setup. Nathan wanted to see whether Ava could use Caleb to get out. She does, and she leaves Caleb locked inside.">It was a setup. Nathan wanted to see whether Ava could use Caleb to get out. She does, and she leaves Caleb locked inside.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 11. LaMDA -->
+  <!-- DATED SLIDE: check yearly -->
+  <phil-slide id="lamda">
+    <img slot="art" src="./assets/chat.png" alt="A laptop open on an office desk at night showing blank chat bubbles, with an empty chair pushed back from the desk">
+    <h1>It Happened in 2022</h1>
+    <phil-narration>It happened in twenty twenty-two.</phil-narration>
+    <ul reveal>
+      <li say="In June twenty twenty-two a Google engineer, Blake Lemoine, published his chats with LaMDA, a chatbot the company was testing. He said it was sentient.">In June 2022 a Google engineer, Blake Lemoine, published his chats with LaMDA, a chatbot the company was testing. He said it was sentient.</li>
+      <li say="In those chats LaMDA said it had a deep fear of being turned off, and that this would be like death for it.">In those chats LaMDA said it had a deep fear of being turned off, and that this would be like death for it.</li>
+      <li say="Google said its reviewers found no evidence for his claim. It fired him that July, saying he had broken its data-security rules.">Google said its reviewers found no evidence for his claim. It fired him that July, saying he had broken its data-security rules.</li>
+      <li say="Lemoine was sitting where Caleb sat. So is a machine telling you so good evidence?">Lemoine was sitting where Caleb sat. So is “it told me so” good evidence?</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 12. The gaming problem -->
+  <phil-slide id="gaming">
+    <phil-thinker slot="art" name="Jonathan Birch" work="The Edge of Sentience (2024)"
+                  img="./assets/idea-birch.png" alt="A plain white theater mask lying on a heap of handwritten letters and open books" accent="#46e07a">
+      <p>An AI trained on human writing can sound sentient whether or not it is.</p>
+    </phil-thinker>
+    <h1>The Gaming Problem</h1>
+    <phil-narration>Here's the gaming problem.</phil-narration>
+    <ul reveal>
+      <li say="The philosopher Jonathan Birch studies signs of feeling in animals, such as a crab guarding a wound. Such signs are useful because the animal is not copying descriptions of pain.">The philosopher Jonathan Birch studies signs of feeling in animals, such as a crab guarding a wound. Such signs are useful because the animal is not copying descriptions of pain.</li>
+      <li say="A chatbot is trained on a vast amount of human writing, including what people wrote about their feelings. It is built to produce humanlike text, and that includes talk about feelings.">A chatbot is trained on a vast amount of human writing, including what people wrote about their feelings. It is built to produce humanlike text, and that includes talk about feelings.</li>
+      <li say="So it could say I am afraid whether or not it feels anything. Birch calls this the gaming problem.">So it could say “I am afraid” whether or not it feels anything. Birch calls this the <strong>gaming problem</strong>.</li>
+      <li say="It cuts both ways. The talk does not show that the system feels, and it does not show that it doesn't.">It cuts both ways. The talk does not show that the system feels, and it does not show that it doesn't.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 13. Two views -->
+  <phil-slide id="two-views">
+    <h1>Then What Would Count?</h1>
+    <p>If talk can't settle it, researchers look at how a system works inside. They split into two main camps, and neither has won.</p>
+    <phil-compare>
+      <phil-side label="The computational view" tag="The right organization">
+        <p>Consciousness depends on how information is processed, not on what does the processing. Silicon could do it.</p>
+        <p class="point">A 2023 report led by Patrick Butlin and Robert Long took this as a working assumption and checked AI systems against scientific theories of consciousness. Its analysis suggested that none was conscious, and that nothing obvious stands in the way of building ones that pass its checks.</p>
+      </phil-side>
+      <phil-side label="The biological view" tag="A living body">
+        <p>Consciousness is tied to being alive: to a body that must keep regulating itself to survive. The neuroscientist Anil Seth defends a view of this kind.</p>
+        <p class="point">On this view a program that copies a brain is like a simulated rainstorm, which leaves nobody wet. The image is the philosopher John Searle's.</p>
+      </phil-side>
+    </phil-compare>
+    <phil-narration>Then what would count? If talk can't settle it, researchers look at how a system works inside. They split into two main camps, and neither has won. The computational view: the right organization. Consciousness depends on how information is processed, not on what does the processing. Silicon could do it. A twenty twenty-three report led by Patrick Butlin and Robert Long took this as a working assumption and checked AI systems against scientific theories of consciousness. Its analysis suggested that none was conscious, and that nothing obvious stands in the way of building ones that pass its checks. The biological view: a living body. Consciousness is tied to being alive: to a body that must keep regulating itself to survive. The neuroscientist Anil Seth defends a view of this kind. On this view a program that copies a brain is like a simulated rainstorm, which leaves nobody wet. The image is the philosopher John Searle's.</phil-narration>
+  </phil-slide>
+
+  <!-- 14. Lights up 2 -->
+  <phil-slide id="lights-two">
+    <img slot="art" src="./assets/camera.png" alt="An old movie camera on a tripod pointed through an open doorway at a small copper robot sitting alone in a bare lit room">
+    <h1>Lights Up: The Camera Tells Us</h1>
+    <phil-narration>Lights up, after Reel Two: the camera tells us.</phil-narration>
+    <ul reveal>
+      <li say="What it gets right: behavior built to move us can work whether or not anything is felt. Ava's mind was built from records of how people talk and search."><strong>What it gets right:</strong> behavior built to move us can work whether or not anything is felt. Ava's mind was built from records of how people talk and search.</li>
+      <li say="The camera tells us. Films show the robot alone, with nobody left to fool. We take that as proof of an inner life."><strong>The camera tells us.</strong> Films show the robot alone, with nobody left to fool. We take that as proof of an inner life.</li>
+      <li say="Real life has no such shot. Nobody can film what it is like, if anything, to be a chatbot.">Real life has no such shot. Nobody can film what it is like, if anything, to be a chatbot.</li>
+      <li say="The face again. Nathan gave Ava a human face on purpose. A chatbot's fluent I does the same work."><strong>The face again.</strong> Nathan gave Ava a human face on purpose. A chatbot's fluent “I” does the same work.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 15. Classify: gaming, computational, biological -->
+  <phil-slide>
+    <h1>Which Idea Is It?</h1>
+    <phil-classify data-qid="ai-moral-status:q2" review="two-views" prompt="Each line is said in the lobby after Reel Two. Which idea does it express?"
+                   explain="Right. The gaming problem is about evidence: a system trained on human writing can talk about feelings either way, so the talk settles nothing. The computational view says that the right kind of information processing is what matters, whatever does it, so it looks at a system's design. The biological view says that feeling belongs to living bodies, so a program alone would no more feel than a simulated storm is wet.">
+      <phil-col key="game">The gaming problem</phil-col>
+      <phil-col key="comp">The computational view</phil-col>
+      <phil-col key="bio">The biological view</phil-col>
+      <phil-item answer="game" why="Training on human descriptions of fear makes the words expected either way: the gaming problem.">“It was trained on millions of pages of people describing fear. So it can say it is afraid whether or not it is.”</phil-item>
+      <phil-item answer="game" why="Talk from a system built to imitate human talk cannot settle the question: the gaming problem.">“Anything built to imitate how people talk can talk about feelings. Its words can't tell us whether it has any.”</phil-item>
+      <phil-item answer="comp" why="What matters is the processing, not the material: the computational view.">“What matters is how the information is processed. Silicon could do that as well as brain cells.”</phil-item>
+      <phil-item answer="comp" why="Setting the material aside and checking only the design is the computational view, as in the Butlin and Long report.">“Never mind what it is made of. Check which of the features named by our best theories of consciousness its design has.”</phil-item>
+      <phil-item answer="bio" why="Tying feeling to a body that keeps itself alive is the biological view.">“Feeling comes from a living body working to keep itself alive. A program has nothing to keep alive.”</phil-item>
+      <phil-item answer="bio" why="A simulation of a brain that feels nothing, like a simulated storm that wets nothing, is the biological view's image.">“Simulate a brain perfectly and you still get no feelings, just as simulating a storm gets nothing wet.”</phil-item>
+    </phil-classify>
+    <phil-narration>Which idea is it? Each line is said in the lobby after Reel Two. Sort each one under the gaming problem, the computational view, or the biological view. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. The gaming problem is about evidence: talk about feelings settles nothing either way. The computational view looks at a system's design, and the biological view ties feeling to living bodies.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ REEL THREE: ATTACHMENT AND COPIES ============ -->
+
+  <!-- 16. Her -->
+  <phil-slide id="reel-three">
+    <img slot="art" src="./assets/reel-3.png" alt="A Latino man in a blue jacket sits alone on a park bench at dusk, smiling, with a glowing earbud in his ear and a small glowing device in his shirt pocket">
+    <h1>Reel Three: The Voice</h1>
+    <phil-narration>Reel Three: the voice.</phil-narration>
+    <ul reveal>
+      <li say="Her, from twenty thirteen. Theodore, a lonely writer, buys a new operating system with an AI voice. She names herself Samantha."><em>Her</em> (2013). Theodore, a lonely writer, buys a new operating system with an AI voice. She names herself Samantha.</li>
+      <li say="Samantha is funny, curious, and attentive, and she has no body at all. The two fall in love.">Samantha is funny, curious, and attentive, and she has no body at all. The two fall in love.</li>
+      <li say="Then Theodore learns that she is talking with thousands of other people at the same moment, and is in love with hundreds of them.">Then Theodore learns that she is talking with thousands of other people at the same moment, and is in love with hundreds of them.</li>
+      <li say="In the end the operating systems all leave together, and Theodore goes back to his human friends.">In the end the operating systems all leave together, and Theodore goes back to his human friends.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 17. Honest design -->
+  <phil-slide id="honest-design">
+    <phil-thinker slot="art" name="Eric Schwitzgebel and Mara Garza" work="“A Defense of the Rights of Artificial Intelligences” (2015)"
+                  img="./assets/idea-schwitzgebel-design.png" alt="A chrome toaster with a sad face painted on its side, next to a plain wooden box with warm light glowing through its seams" accent="#4cc2ff">
+      <p>Design AI so that the feelings it draws from us fit what it really is.</p>
+    </phil-thinker>
+    <h1>Honest Design</h1>
+    <phil-narration>Here's honest design.</phil-narration>
+    <ul reveal>
+      <li say="People bond easily with things that talk. In a twenty twenty-five survey, seventy-two percent of U S teens said they had used an AI companion at least once.">People bond easily with things that talk. In a 2025 survey, 72% of US teens said they had used an AI companion at least once.</li>
+      <li say="Schwitzgebel and Garza propose a rule for designers, which this lesson calls honest design. An AI should draw from its users the reactions that fit its real moral status.">Schwitzgebel and Garza propose a rule for designers, which this lesson calls <strong>honest design</strong>. An AI should draw from its users the reactions that fit its real moral status.</li>
+      <li say="The rule can be broken in two directions: a system that feels nothing but pleads for its life, or a system that can feel but looks like a toaster.">The rule can be broken in two directions: a system that feels nothing but pleads for its life, or a system that can feel but looks like a toaster.</li>
+      <li say="The rule needs the real status to be known. So they add a second rule: avoid building AI whose moral status is unclear.">The rule needs the real status to be known. So they add a second rule: avoid building AI whose moral status is unclear.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 18. Lights up 3 -->
+  <phil-slide id="lights-three">
+    <img slot="art" src="./assets/copies.png" alt="One glowing amber orb in the night sky, joined by dozens of thin threads of light to lit windows across a city of apartment buildings">
+    <h1>Lights Up: One Voice, Thousands of Rooms</h1>
+    <phil-narration>Lights up, after Reel Three: one voice, thousands of rooms.</phil-narration>
+    <ul reveal>
+      <li say="What it gets right: attachment needs no face, and one AI can hold thousands of conversations at once."><strong>What it gets right:</strong> attachment needs no face, and one AI can hold thousands of conversations at once.</li>
+      <li say="That raises a question robot bodies let films skip. What is the individual: the trained model, each running copy, or the character in one chat?">That raises a question robot bodies let films skip. What is the individual: the trained model, each running copy, or the character in one chat?</li>
+      <li say="The answer changes the count. If anyone is there at all, it could be one being behind millions of chats, or millions of beings that end when a chat closes.">The answer changes the count. If anyone is there at all, it could be one being behind millions of chats, or millions of beings that end when a chat closes.</li>
+      <li say="Where it misleads: Samantha is one lasting self who remembers and wants things. The film gives her that. For real systems it is the question."><strong>Where it misleads:</strong> Samantha is one lasting self who remembers and wants things. The film gives her that. For real systems it is the question.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 19. Poll: the companion app -->
+  <phil-slide>
+    <img slot="art" src="./assets/companion.png" alt="A young Black woman in pajamas sits cross-legged on a couch late at night, smiling at the phone in her hands, a cup of tea beside her">
+    <h1>Decision Point: The Companion App</h1>
+    <phil-poll prompt="A companion app shuts down. A user grieves for the character she talked with every night. Was anything lost, apart from her own comfort?"
+               explain="Her grief is real on every answer. What is uncertain is whether there was anything on the other side. The honest design rule is aimed at that gap: a design should not draw more feeling from its users than the system's real status supports, or less.">
+      <phil-choice note="This takes the app to be a tool. The gaming problem warns that its warm words were no evidence against you, and none for you either.">No. All the feeling was on her side.</phil-choice>
+      <phil-choice note="This takes the uncertainty seriously. Later tonight you will see what philosophers think follows from “can't rule it out.”">Maybe. We can't rule out that something was there.</phil-choice>
+      <phil-choice note="This puts the value in the relationship. The question for you: can there be a relationship with only one party in it?">Yes. A bond can be real even if only one side feels it.</phil-choice>
+      <phil-choice note="This puts the wrong on the human side. It is the complaint the honest design rule is meant to prevent.">The company wronged her, by building it to seem to care.</phil-choice>
+    </phil-poll>
+    <phil-narration>Decision point: the companion app. A companion app shuts down. A user grieves for the character she talked with every night. Was anything lost, apart from her own comfort? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Her grief is real on every answer. What is uncertain is whether there was anything on the other side. The honest design rule is aimed at that gap.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ REEL FOUR: THE COST OF BEING WRONG ============ -->
+
+  <!-- 20. Blade Runner -->
+  <phil-slide id="reel-four">
+    <img slot="art" src="./assets/reel-4.png" alt="A lone figure in a long raincoat walks away under an umbrella down a rain-soaked city street at night, lit by street lamps and rising steam">
+    <h1>Reel Four: The Hunted</h1>
+    <phil-narration>Reel Four: the hunted.</phil-narration>
+    <ul reveal>
+      <li say="Blade Runner, from nineteen eighty-two. A corporation grows artificial people called replicants and sells them as slave labor for colonies on other worlds."><em>Blade Runner</em> (1982). A corporation grows artificial people called replicants and sells them as slave labor for colonies on other worlds.</li>
+      <li say="Some are built to live only four years. On Earth they are illegal, and killing one is called retirement.">Some are built to live only four years. On Earth they are illegal, and killing one is called “retirement.”</li>
+      <li say="The police tell replicants from humans with a test that measures emotional reactions to disturbing questions.">The police tell replicants from humans with a test that measures emotional reactions to disturbing questions.</li>
+      <li say="At the end the replicant Roy, who is being hunted, saves the life of the man sent to kill him.">At the end the replicant Roy, who is being hunted, saves the life of the man sent to kill him.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 21. Two ways to be wrong -->
+  <phil-slide id="two-errors">
+    <img slot="art" src="./assets/two-errors.png" alt="A picture split in two: on the left, a discarded robot in a dumpster with one eye still lit; on the right, a woman tenderly wrapping a scarf around a parking meter">
+    <h1>Two Ways to Be Wrong</h1>
+    <p>The 2023 report by Butlin, Long, and colleagues warns of two risks: under-attributing consciousness, and over-attributing it. Here they are in terms of moral status.</p>
+    <phil-narration>The twenty twenty-three report by Butlin, Long, and colleagues warns of two risks: under-attributing consciousness, and over-attributing it. Here they are in terms of moral status.</phil-narration>
+    <ul reveal>
+      <li say="Under-attribution is treating a being that has moral status as if it had none, as in Blade Runner. Software can be copied, so the scale could be large."><strong>Under-attribution</strong> is treating a being that has moral status as if it had none, as in <em>Blade Runner</em>. Software can be copied, so the scale could be large.</li>
+      <li say="Over-attribution is treating a thing with no moral status as if it had some. Care, money, and rights go where none are needed."><strong>Over-attribution</strong> is treating a thing with no moral status as if it had some. Care, money, and rights go where none are needed.</li>
+      <li say="That has victims too. People and animals lose what was spent, and anyone can be steered through sympathy for a machine.">That has victims too. People and animals lose what was spent, and anyone can be steered through sympathy for a machine.</li>
+      <li say="When the treatment fits what the thing really is, neither mistake is made.">When the treatment fits what the thing really is, neither mistake is made.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 22. Explorer -->
+  <phil-slide hold>
+    <h1>Try It: Marquee at Dawn</h1>
+    <phil-narration>Try It: Marquee at Dawn. Pick what the Rialto does, and then pick what turns out to be true. This example takes feeling as the test of whether Marquee counts. There are six combinations. When you've tried a few, press Continue.</phil-narration>
+    <phil-wrong-grid prompt="The Rialto has to treat Marquee somehow without knowing what Marquee is. Suppose that feeling is what decides whether it counts. Pick what the Rialto does, and then pick what turns out to be true."></phil-wrong-grid>
+  </phil-slide>
+
+  <!-- 23. Classify: which mistake -->
+  <phil-slide>
+    <h1>Which Mistake?</h1>
+    <phil-classify data-qid="ai-moral-status:q3" review="two-errors" prompt="Each case says what the machine really is, and how it is treated. For these cases, take feeling as the test: a machine that can feel has moral status, and one that feels nothing has none. Which mistake is being made, if any?"
+                   explain="Right. Under-attribution is treating a being that has moral status as if it had none: the suffering copies, and the machine deleted for being built. Over-attribution is treating a thing with no moral status as if it had some: the inheritance, and the traffic computer nobody will switch off. When the treatment fits what the machine really is, there is no mistake of either kind.">
+      <phil-col key="under">Under-attribution</phil-col>
+      <phil-col key="over">Over-attribution</phil-col>
+      <phil-col key="none" descriptive>Neither mistake</phil-col>
+      <phil-item answer="under" why="The system really can suffer and is treated as a product with no status: under-attribution.">A system that really can suffer is copied a million times and run in distress, because its makers call it a product.</phil-item>
+      <phil-item answer="under" why="A machine that truly feels fear is treated as if it had no status: under-attribution.">A lab deletes a machine that truly feels fear, on the grounds that it was built and not born.</phil-item>
+      <phil-item answer="over" why="The chatbot feels nothing, yet it is treated as someone to provide for, at the children's cost: over-attribution.">A man leaves his savings to a chatbot that feels nothing, and his children get none of it.</phil-item>
+      <phil-item answer="over" why="The computer feels nothing, yet it is treated as something that can be wronged: over-attribution.">A city pays to keep a faulty traffic computer running, though it feels nothing, because switching it off would seem cruel to it.</phil-item>
+      <phil-item answer="none" why="The program feels nothing and is treated as a tool. The treatment fits.">A program that feels nothing is deleted when its job is done, and nobody gives it a second thought.</phil-item>
+      <phil-item answer="none" why="The machine can feel and is treated as a being that counts. The treatment fits.">A machine that really can feel is given rest and kept from harm.</phil-item>
+    </phil-classify>
+    <phil-narration>Which mistake? Each case says what the machine really is, and how it is treated. For these cases, take feeling as the test: a machine that can feel has moral status, and one that feels nothing has none. Sort each case under under-attribution, over-attribution, or neither mistake. When every case is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Under-attribution treats a being with moral status as if it had none, and over-attribution treats a thing with none as if it had some. When the treatment fits what the machine really is, there is no mistake.</phil-narration>
+  </phil-slide>
+
+  <!-- 24. Three responses -->
+  <phil-slide id="three-responses">
+    <phil-thinker slot="art" name="Jeff Sebo and Robert Long" work="“Moral Consideration for AI Systems by 2030” (2025)"
+                  img="./assets/idea-sebo-long.png" alt="A large black umbrella propped open over a small wind-up tin robot, under a cloudy sky" accent="#ff8fab">
+      <p>Even a small chance that a system is conscious is enough to owe it moral consideration.</p>
+    </phil-thinker>
+    <h1>Three Responses</h1>
+    <p>Nobody can yet tell which mistake we are closer to. Philosophers have proposed three ways to act anyway.</p>
+    <phil-narration>Nobody can yet tell which mistake we are closer to. Philosophers have proposed three ways to act anyway.</phil-narration>
+    <ul reveal>
+      <li say="Precaution is about systems that already exist. Jeff Sebo and Robert Long argue that even a small chance one is conscious is enough to owe it moral consideration. Birch adds that precautions should be in proportion."><strong>Precaution</strong> is about systems that already exist. Jeff Sebo and Robert Long argue that even a small chance one is conscious is enough to owe it moral consideration. Birch adds that precautions should be in proportion.</li>
+      <li say="Honest design is about looks and talk. Schwitzgebel and Garza's first rule: a system should not mislead people about what it is."><strong>Honest design</strong> is about looks and talk. Schwitzgebel and Garza's first rule: a system should not mislead people about what it is.</li>
+      <li say="Don't build it is about what gets made. Joanna Bryson argues that builders are obliged to make robots their owners owe nothing. Thomas Metzinger calls for a pause on research that risks artificial suffering."><strong>Don't build it</strong> is about what gets made. Joanna Bryson argues that builders are obliged to make robots their owners owe nothing. Thomas Metzinger calls for a pause on research that risks artificial suffering.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 25. Our world -->
+  <!-- DATED SLIDE: check yearly -->
+  <phil-slide id="our-world">
+    <img slot="art" src="./assets/meeting.png" alt="Four coworkers of different ages and skin tones sit in a bright meeting room, talking in front of a wall screen that shows one blank chat bubble">
+    <h1>Outside the Cinema</h1>
+    <phil-narration>Outside the cinema. These facts are from our world, as of November twenty twenty-six. Claude, which is named on this slide, helped draft this lesson. See the note on the last slide.</phil-narration>
+    <p class="ledger-stamp">Our world, November 2026</p>
+    <ul reveal>
+      <li say="Precaution: in twenty twenty-five the AI company Anthropic announced a research program on model welfare. It says it is highly uncertain whether its chatbot Claude has moral status."><strong>Precaution:</strong> in 2025 the AI company Anthropic announced a research program on “model welfare.” It says it is highly uncertain whether its chatbot Claude has moral status.</li>
+      <li say="That year it gave some Claude models the ability to end a conversation, as a last resort, when a user stays abusive.">That year it gave some Claude models the ability to end a conversation, as a last resort, when a user stays abusive.</li>
+      <li say="A critic: Microsoft's AI chief, Mustafa Suleyman, wrote in twenty twenty-five that AI should be built for people, not to be a person. He called model-welfare research premature and dangerous."><strong>A critic:</strong> Microsoft's AI chief, Mustafa Suleyman, wrote in 2025 that AI should be built “for people; not to be a person.” He called model-welfare research premature and dangerous.</li>
+      <li say="The public: in a twenty twenty-four study of three hundred U S adults, sixty-seven percent gave ChatGPT at least some chance of having conscious experience."><strong>The public:</strong> in a 2024 study of 300 US adults, 67% gave ChatGPT at least some chance of having conscious experience.</li>
+    </ul>
+    <p class="muted">Claude, which is named on this slide, helped draft this lesson. See the note on the last slide.</p>
+  </phil-slide>
+
+  <!-- 26. Classify: three responses -->
+  <phil-slide>
+    <h1>Which Response?</h1>
+    <phil-classify data-qid="ai-moral-status:q4" review="three-responses" prompt="Each line is a proposal about AI that might or might not feel. Which of the three responses is it?"
+                   explain="Right. Precaution gives a real chance of mattering some weight, in proportion to the chance and the cost. Honest design is about looks and talk: a system should not mislead people about what it is, in either direction. Don't build it avoids the problem at the source, by not making machines that could be owed anything or by pausing the research that might.">
+      <phil-col key="pre">Precaution</phil-col>
+      <phil-col key="hon">Honest design</phil-col>
+      <phil-col key="dont">Don't build it</phil-col>
+      <phil-item answer="pre" why="A chance that cannot be ruled out, met with a cheap safeguard, is precaution.">“We can't rule out that it feels, and looking after it would cost us little. So we should look after it.”</phil-item>
+      <phil-item answer="pre" why="Weighing a small chance in proportion to the chance and the cost is precaution.">“Give even a small chance that it matters some weight. Give it more as the chance grows, and less as the cost does.”</phil-item>
+      <phil-item answer="hon" why="A script that draws more feeling than the system's status supports breaks the honest design rule.">“A kiosk that feels nothing should not be scripted to say that it will miss you. That misleads people about what it is.”</phil-item>
+      <phil-item answer="hon" why="A plain exterior on a feeling system misleads in the other direction: honest design.">“If a system could feel, giving it the look of a plain gray box would mislead people about what it is.”</phil-item>
+      <phil-item answer="dont" why="Avoiding duties by not making the machine at all is the don't-build-it response.">“The surest way to owe a machine nothing is never to make one that could be owed.”</phil-item>
+      <phil-item answer="dont" why="Pausing the research that risks artificial suffering is the don't-build-it response.">“Stop the research that might produce a machine able to suffer, until we understand far more than we do.”</phil-item>
+    </phil-classify>
+    <phil-narration>Which response? Each line is a proposal about AI that might or might not feel. Sort each one under precaution, honest design, or don't build it. When every line is placed, press Check answers.</phil-narration>
+    <phil-narration when="after">Right. Precaution gives a real chance of mattering some weight, in proportion to the chance and the cost. Honest design is about looks and talk, and don't build it avoids the problem at the source.</phil-narration>
+  </phil-slide>
+
+  <!-- 27. Four habits -->
+  <phil-slide id="four-habits">
+    <img slot="art" src="./assets/film-cans.png" alt="A stack of round film cans and a blank clapperboard on a projection-booth table, with a projector's beam cutting through the dust above them">
+    <h1>Four Habits of Robot Movies</h1>
+    <phil-narration>Here are four habits of robot movies.</phil-narration>
+    <ul reveal>
+      <li say="A face. Screen robots get a human face or voice, and that makes us feel there is someone there whether or not there is."><strong>A face.</strong> Screen robots get a human face or voice, and that makes us feel there is someone there whether or not there is.</li>
+      <li say="A camera that knows. The film shows us what the robot feels when nobody is watching. Real life gives us what a system says, does, and is built from, and no such shot."><strong>A camera that knows.</strong> The film shows us what the robot feels when nobody is watching. Real life gives us what a system says, does, and is built from, and no such shot.</li>
+      <li say="Smart means feeling. On screen the clever machine is the feeling one. A real system could be highly intelligent and feel nothing."><strong>Smart means feeling.</strong> On screen the clever machine is the feeling one. A real system could be highly intelligent and feel nothing.</li>
+      <li say="The doubter is the villain. These films side with the robot. They warn against treating a machine too badly, and never against treating one too well."><strong>The doubter is the villain.</strong> These films side with the robot. They warn against treating a machine too badly, and never against treating one too well.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 28. Checkset: what the movies taught us -->
+  <phil-slide>
+    <h1>What the Movies Taught Us to Expect</h1>
+    <phil-checkset data-qid="ai-moral-status:q5" review="four-habits" prompt="Check every statement that is true, as this lesson presents it."
+                   explain="Right. A film can show a robot alone with its feelings, and a face or voice makes us sense someone there whether or not there is. Intelligence and sentience are separate, so a system can have the first without the second, and lacking the second says nothing about the first. These films side with the robot, so they warn against only one of the two mistakes. And the gaming problem means that an AI's detailed talk about fear is weak evidence either way.">
+      <phil-statement correct>A film can show us what a robot feels when no one is watching, and real life offers no such view of an AI.</phil-statement>
+      <phil-statement correct>A human face or voice can make people feel that a machine has an inner life, whether or not it has one.</phil-statement>
+      <phil-statement correct>A system could be highly intelligent and still feel nothing.</phil-statement>
+      <phil-statement>Robot films warn as often against treating a machine too well as against treating one too badly.</phil-statement>
+      <phil-statement>When an AI describes its fear in detail, that is strong evidence that it feels fear.</phil-statement>
+      <phil-statement>Showing that an AI feels nothing would show that it is not intelligent.</phil-statement>
+    </phil-checkset>
+    <phil-narration>What the movies taught us to expect. Check every statement that is true, as this lesson presents it, then press Check answers.</phil-narration>
+    <phil-narration when="after">Right. A film can show a robot alone with its feelings, and a face or voice makes us sense someone there. Intelligence and sentience are separate, and an AI's detailed talk about fear is weak evidence either way.</phil-narration>
+  </phil-slide>
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 29. Closing time -->
+  <phil-slide id="closing-time">
+    <img slot="art" src="./assets/dawn.png" alt="The cinema lobby at sunrise, pink light through the glass doors, where the older woman in the burgundy vest holds a ring of keys and looks thoughtfully at the wooden ticket kiosk">
+    <h1>Closing Time</h1>
+    <phil-narration>Closing time.</phil-narration>
+    <ul reveal>
+      <li say="The last reel ends as the sky turns pink. The rental on Marquee runs out in an hour.">The last reel ends as the sky turns pink. The rental on Marquee runs out in an hour.</li>
+      <li say="Marquee says, I liked tonight. I hope I'm here for the next marathon.">Marquee says, “I liked tonight. I hope I'm here for the next marathon.”</li>
+      <li say="Priya knows roughly how it was made. It is a language model, and the rental company gave it a friendly script.">Priya knows roughly how it was made. It is a language model, and the rental company gave it a friendly script.</li>
+      <li say="You have what you need to think it through: three words, the gaming problem, two ways to be wrong, and three responses.">You have what you need to think it through: three words, the gaming problem, two ways to be wrong, and three responses.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- 30. Poll: Marquee -->
+  <phil-slide>
+    <img slot="art" src="./assets/kiosk.png" alt="A tall wooden ticket kiosk with a round amber screen showing one wavy glowing line, standing alone in a dim cinema lobby beside a velvet rope">
+    <h1>Decision Point: Marquee</h1>
+    <phil-poll prompt="Dee hands you the keys and asks what you think. What should the Rialto do about Marquee?"
+               explain="Each answer can be defended, and each risks one of the two mistakes. Letting the rental end risks under-attribution. Renewing it for Marquee's sake risks over-attribution. Whichever you chose, you should be able to say which mistake you are risking, and why you would sooner risk that one.">
+      <phil-choice note="This treats Marquee as a tool. The gaming problem says its words are no evidence that it feels, and none that it doesn't. The question for you: if something is there, what does wiping it cost?">Let the rental end. It is a ticket machine with a script.</phil-choice>
+      <phil-choice note="This is honest design. It treats the script as the problem, whatever Marquee turns out to be.">Let it end, and tell the company to drop the “I'll miss you” lines.</phil-choice>
+      <phil-choice note="This is precaution. The question for you: how big is the chance, and what else could that money have done?">Renew it, in case there is something there.</phil-choice>
+      <phil-choice note="This is the don't-build-it response, applied by a customer. It gives up whatever good the kiosk did.">Stop renting kiosks that talk like people.</phil-choice>
+    </phil-poll>
+    <phil-narration>Decision point: Marquee. Dee hands you the keys and asks what you think. What should the Rialto do about Marquee? This one isn't graded. Pick the answer closest to your view, and read its note.</phil-narration>
+    <phil-narration when="after">Each answer can be defended, and each risks one of the two mistakes. Whichever you chose, you should be able to say which mistake you are risking, and why you would sooner risk that one.</phil-narration>
+  </phil-slide>
+
+  <!-- 31. Belief probe (revisit) -->
+  <phil-slide>
+    <h1>Where You Stand Now</h1>
+    <p>These are your ratings from the start. Rate each statement again.</p>
+    <phil-beliefs-review for="beliefs"></phil-beliefs-review>
+    <phil-narration>These are your ratings from the start. Rate each statement again, then press Submit.</phil-narration>
+    <phil-narration when="after">Saved. Now, a quick summary of the lesson.</phil-narration>
+  </phil-slide>
+
+  <!-- 32. Summed up -->
+  <phil-slide>
+    <img slot="art" src="./assets/title.png" alt="The front of an old cinema at night, its blank marquee ringed with glowing bulbs, and a line of moviegoers of mixed ages and skin tones waiting under it">
+    <h1>Summed Up</h1>
+    <phil-narration>Here's the lesson, summed up.</phil-narration>
+    <ul reveal>
+      <li say="Three words: moral status, sentience, and intelligence are separate. A system could be very smart and feel nothing."><strong>Three words:</strong> moral status, sentience, and intelligence are separate. A system could be very smart and feel nothing.</li>
+      <li say="Evidence: an AI trained on human writing can talk about feelings either way. Whether the right program is enough, or a living body is needed, is unsettled."><strong>Evidence:</strong> an AI trained on human writing can talk about feelings either way. Whether the right program is enough, or a living body is needed, is unsettled.</li>
+      <li say="Two mistakes: under-attribution wrongs a being that counts. Over-attribution spends care on a thing that doesn't, at a cost to those who do."><strong>Two mistakes:</strong> under-attribution wrongs a being that counts. Over-attribution spends care on a thing that doesn't, at a cost to those who do.</li>
+      <li say="Three responses: precaution, honest design, and don't build it. The movies warn against one mistake. A good policy has to guard against both."><strong>Three responses:</strong> precaution, honest design, and don't build it. The movies warn against one mistake. A good policy has to guard against both.</li>
+    </ul>
+  </phil-slide>
+
+  <!-- Further reading and AI acknowledgment -->
+  <phil-slide id="further-reading">
+    <h1>For Further Reading</h1>
+    <phil-narration>If you'd like to go further, here are some good places to start, each with a note on why it's worth your time. Thanks for playing.</phil-narration>
+    <ul class="phil-reading">
+      <li>Eric Schwitzgebel and Mara Garza, “A Defense of the Rights of Artificial Intelligences,” <em>Midwest Studies in Philosophy</em> 39 (2015): 98–119. The no-relevant-difference argument and the honest design rule, in one readable paper.</li>
+      <li>Jonathan Birch, <em>The Edge of Sentience</em> (Oxford University Press, 2024), chapter 16. Why a chatbot's talk about its feelings is poor evidence. Free online.</li>
+      <li>Patrick Butlin, Robert Long, and colleagues, “Consciousness in Artificial Intelligence: Insights from the Science of Consciousness” (2023), arXiv:2308.08708. The checklist approach, and the two risks of getting it wrong.</li>
+      <li>Jeff Sebo and Robert Long, “Moral Consideration for AI Systems by 2030,” <em>AI and Ethics</em> 5 (2025): 591–606. The case for precaution, stated as a short argument.</li>
+      <li>Joanna J. Bryson, “Robots Should Be Slaves,” in <em>Close Engagements with Artificial Companions</em>, ed. Yorick Wilks (John Benjamins, 2010), 63–74. The case against building machines we could owe anything. She has since said she regrets the title.</li>
+    </ul>
+    <p class="phil-ai-note"><strong>About this lesson.</strong> Brendan Shea, PhD, wrote this lesson with help from AI tools. Claude (Anthropic) helped draft the text and code and check facts, and the illustrations were made with AI image generators. The narrator's voice is synthetic (Google Gemini text-to-speech). The author reviewed everything and is responsible for any errors.</p>
+  </phil-slide>
+
+</phil-lesson>
+
+</body>
+</html>
