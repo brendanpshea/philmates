@@ -53,6 +53,9 @@ const pctText = (c) => {
   const p = c * 100;
   return `${Number.isInteger(p * 2) ? p : Math.round(p)}%`;
 };
+// "Thursday, Nov 19, 6:42 AM", in the student's own locale and time zone.
+const whenText = ms => new Date(ms).toLocaleString(undefined,
+  { weekday: 'long', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 // Checked at call time, not module load — users change this setting mid-session.
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
@@ -202,10 +205,14 @@ class PhilLesson extends HTMLElement {
     const top = el('header', 'phil-top');
     const row = el('div', 'phil-top__row');
     this._tally = el('span', 'phil-tally', '');
-    const reset = el('button', 'phil-btn phil-btn--ghost phil-reset', '↺ Reset');
-    reset.title = 'Reset this lesson’s progress';
-    reset.setAttribute('aria-label', 'Reset this lesson’s progress');
+    // In an LMS package the button becomes Retake once a retake is open
+    // (see shared/scorm-api.js). The live site's store has no canRetake.
+    const retake = !!this.store.canRetake?.();
+    const reset = el('button', 'phil-btn phil-btn--ghost phil-reset', retake ? '↺ Retake' : '↺ Reset');
+    reset.title = retake ? 'Retake this lesson for a better score' : 'Reset this lesson’s progress';
+    reset.setAttribute('aria-label', reset.title);
     reset.onclick = () => this._confirmReset();
+    this._resetBtn = reset;
     const right = el('div', 'phil-top__right');
     // Position and score live together up here so the bottom bar is nothing
     // but navigation.
@@ -233,7 +240,11 @@ class PhilLesson extends HTMLElement {
     this._bar = bar;
     this._fill = el('div', 'phil-progress__fill');
     bar.append(this._fill);
-    top.append(row, bar);
+    // LMS packages only: once the lesson is finished, says when a retake for a
+    // better score opens, then that it is open. See _updateRetake.
+    this._notice = el('p', 'phil-notice');
+    this._notice.hidden = true;
+    top.append(row, bar, this._notice);
 
     // Slide changes swap the whole visible page. Screen readers get told about it
     // here; see show().
@@ -293,18 +304,34 @@ class PhilLesson extends HTMLElement {
     const box = el('div', 'phil-modal__box');
     box.setAttribute('role', 'dialog');
     box.setAttribute('aria-modal', 'true');
-    const title = el('p', 'phil-modal__title', '↺ Reset this lesson?');
+    // Three cases in an LMS package: a retake is open; the attempt is finished
+    // and the retake opens later; or the attempt isn't finished. The live site
+    // has none of these and just clears everything.
+    const st = this.store;
+    const retake = !!st.canRetake?.();
+    const title = el('p', 'phil-modal__title', retake ? '↺ Retake this lesson?' : '↺ Reset this lesson?');
     title.id = 'phil-modal-title';
     box.setAttribute('aria-labelledby', title.id);
-    box.append(
-      title,
-      el('p', null, 'This clears your progress — every slide and question starts over. This can’t be undone.')
-    );
-    if (this.store.keepsCredit) {
-      box.append(el('p', null, 'Your score so far is kept. Answering the questions again won’t raise it.'));
+    box.append(title);
+    if (retake) {
+      box.append(
+        el('p', null, 'This starts a new attempt. Every slide and question starts over, and wrong tries from your last attempt no longer count.'),
+        el('p', null, `Your best score so far, ${st.bestScore()}%, is kept. If the new attempt scores higher, that score replaces it.`)
+      );
+    } else {
+      box.append(el('p', null, 'This clears your progress — every slide and question starts over. This can’t be undone.'));
+      if (st.keepsCredit) {
+        box.append(el('p', null, 'Your score so far is kept. Answering the questions again won’t raise it.'));
+        const opens = st.retakeOpensAt?.();
+        if (opens != null) {
+          box.append(el('p', null, `To try for a better score, wait for the retake. It opens ${whenText(opens)}.`));
+        } else if (st.retakeWaitHours) {
+          box.append(el('p', null, `Once you finish the lesson, you can retake it for a better score ${st.retakeWaitHours === 24 ? 'a day' : st.retakeWaitHours + ' hours'} later.`));
+        }
+      }
     }
     const cancel = el('button', 'phil-btn', 'Cancel');
-    const confirm = el('button', 'phil-btn phil-btn--danger', 'Yes, reset');
+    const confirm = el('button', 'phil-btn phil-btn--danger', retake ? 'Yes, retake' : 'Yes, reset');
     const actions = el('div', 'phil-modal__actions');
     actions.append(cancel, confirm);
     box.append(actions);
@@ -330,7 +357,7 @@ class PhilLesson extends HTMLElement {
     cancel.onclick = close;
     overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
     document.addEventListener('keydown', onKey, true);
-    confirm.onclick = () => { this.store.reset(); location.reload(); };
+    confirm.onclick = () => { retake ? st.retake() : st.reset(); location.reload(); };
 
     this.setAttribute('inert', '');                    // belt and braces for AT + pointer
     document.body.append(overlay);
@@ -796,7 +823,11 @@ class PhilLesson extends HTMLElement {
     this._bar.setAttribute('aria-valuetext', `Slide ${idx + 1} of ${this.linear.length}`);
     const solved = this.widgets.filter(w => this.store.correct.has(w.dataset.qid)).length;
     const parts = [];
-    if (this.widgets.length) parts.push(`★ Score ${this.score()}%`, `${solved}/${this.widgets.length} solved`);
+    if (this.widgets.length) {
+      const best = this.store.best;    // best earlier attempt, LMS packages only
+      parts.push(`★ Score ${this.score()}%` + (best != null && best > this.score() ? ` (best ${best}%)` : ''),
+        `${solved}/${this.widgets.length} solved`);
+    }
     if (this.tasks.length) parts.push(`✔ ${this.tasksDone.size}/${this.tasks.length}`);
     this._tally.textContent = parts.join(' · ');
     this._reviewBtn.hidden = !(this._reviewFrom && this.current !== this._reviewFrom);
@@ -813,6 +844,31 @@ class PhilLesson extends HTMLElement {
       && this.store.correct.size === this.widgets.length
       && this.tasksDone.size === this.tasks.length;
     if (complete && !this.store.completed) this._celebrate();
+    this._updateRetake();
+  }
+  /* LMS packages: tell the student a retake exists. Before the wait is up the
+     strip gives the time it opens; after, the button turns solid and says
+     Retake. The live site's store has no retakes, so nothing shows there. */
+  _updateRetake() {
+    const st = this.store;
+    if (!st.retakeOpensAt) return;
+    const opens = st.retakeOpensAt(), open = st.canRetake();
+    const btn = this._resetBtn;
+    btn.textContent = open ? '↺ Retake' : '↺ Reset';
+    btn.title = open ? 'Retake this lesson for a better score' : 'Reset this lesson’s progress';
+    btn.setAttribute('aria-label', btn.title);
+    btn.classList.toggle('phil-reset--ready', open);
+    const text = open
+      ? '↺ A retake is open. Press the Retake button to try for a better score. Your best score stays in the gradebook.'
+      : opens != null
+        ? `✔ Finished. Want a better score? You can retake this lesson from ${whenText(opens)}.`
+        : '';
+    if (this._notice.textContent !== text) {
+      const flip = this._notice.hidden !== !text;
+      this._notice.textContent = text;
+      this._notice.hidden = !text;
+      if (flip) this._fitSlide(this.current);   // the strip takes height from the stage
+    }
   }
   _celebrate() {
     this.store.completed = true;
@@ -820,6 +876,8 @@ class PhilLesson extends HTMLElement {
     PhilSfx.complete();
     this.dispatchEvent(new CustomEvent('phil:complete', { bubbles: true, detail: { lessonId: this.lessonId } }));
     const toast = el('div', 'phil-toast', '✔ LESSON COMPLETE!');
+    const opens = this.store.retakeOpensAt?.();
+    if (opens != null) toast.append(el('span', 'phil-toast__sub', `Retake for a better score from ${whenText(opens)}`));
     toast.setAttribute('role', 'status');   // it self-dismisses after 3.5s; announce it
     document.body.append(toast);
     requestAnimationFrame(() => toast.classList.add('show'));

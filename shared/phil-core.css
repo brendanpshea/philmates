@@ -67,6 +67,20 @@ img[src$=".png"], img[data-pixel] { image-rendering: pixelated; }
 .phil-top__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .phil-top__right { display: flex; align-items: center; gap: 12px; }
 .phil-reset { font-size: 9px; padding: 8px 10px; }
+/* LMS packages: a retake is open, so the button stops being a ghost */
+.phil-btn--ghost.phil-reset--ready { background: var(--accent-3); color: var(--bg); }
+/* LMS packages: when a retake opens, once the lesson is finished */
+.phil-notice {
+  margin: 0;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink);
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-left: 6px solid var(--accent-3);
+}
+.phil-notice[hidden] { display: none; }
 
 /* narration script is data for the TTS generator, not shown on screen */
 phil-narration { display: none; }
@@ -563,6 +577,7 @@ phil-slide.is-current .phil-vs { animation: phil-vs-pop .42s ease-out .3s both; 
   transition: transform .3s ease-out; z-index: 50;
 }
 .phil-toast.show { transform: translateX(-50%) translateY(0); }
+.phil-toast__sub { display: block; margin-top: 8px; font-family: var(--body); font-size: 15px; }
 
 /* small screens / projector portrait */
 @media (max-width: 760px) {

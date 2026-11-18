@@ -15,24 +15,38 @@
      cmi.core.lesson_status   <- "passed" once complete (completion already
                                   requires every question correct), else
                                   "incomplete".
-     cmi.core.score.raw       <- round(earned credit / total * 100). Each wrong
+     cmi.core.score.raw       <- the better of this attempt's score and the best
+                                  earlier attempt. An attempt's score is
+                                  round(earned credit / total * 100). Each wrong
                                   try lowers what a question can still earn by
                                   0.8 (100, 80, 64 …); multi-part items also bank
-                                  partial credit per check. Credit never falls.
-                                  Reported even mid-lesson so the gradebook shows
-                                  partial work.
+                                  partial credit per check. The reported score
+                                  never falls. Reported even mid-lesson so the
+                                  gradebook shows partial work.
      cmi.core.session_time    <- time in the lesson this session, on exit. The
                                   LMS adds it up into total time.
-     cmi.suspend_data         <- compact JSON of {v,c,d,b,p,m,k} for resume. SCORM
-                                  1.2 caps this at 4096 chars; we store question IDs,
-                                  not labels, and warn if we approach the limit.
+     cmi.suspend_data         <- compact JSON of {v,c,d,b,p,m,k,f,s,a} for resume.
+                                  f = when this attempt was finished (ms), s = best
+                                  earlier attempt's score, a = attempt number.
+                                  SCORM 1.2 caps this at 4096 chars; we store
+                                  question IDs, not labels, and warn if we approach
+                                  the limit.
 
-   Reset never raises a score. It clears the slides and answers so a student
-   can run the lesson again, but keeps wrong-try counts and earned credit, and
-   never moves a "passed" lesson back to "incomplete".
+   Reset and retake.
+     Reset clears the slides and answers so a student can run the lesson again,
+     but keeps wrong-try counts and earned credit, so it never raises a score.
+     Retake opens RETAKE_WAIT_HOURS after an attempt is finished. It starts a
+     new attempt with wrong tries and credit cleared, and remembers the best
+     score so far, so the gradebook keeps the best attempt. The wait makes the
+     second try real recall rather than a replay of the keys just seen. The
+     clock is the student's own, which a determined student could change.
+     Neither one moves a "passed" lesson back to "incomplete".
    ===================================================================== */
 (function () {
   'use strict';
+
+  /* Hours after finishing an attempt before a retake opens. */
+  const RETAKE_WAIT_HOURS = 24;
 
   /* ---- locate the LMS API (SCORM 1.2 discovery algorithm) ---- */
   function findAPI(win) {
@@ -95,12 +109,21 @@
       // Progress saved before graded credit existed keeps full credit.
       for (const q of this.correct) if (!(q in this.credit)) this.credit[q] = 1;
       this.keepsCredit = true;   // phil-core tells the student Reset won't raise the score
+      this.retakeWaitHours = RETAKE_WAIT_HOURS;
       this._t0 = Date.now();
 
       // First launch: move "not attempted" to "incomplete" so the LMS shows
       // the lesson as in-progress the moment it opens.
       const status = get('cmi.core.lesson_status');
       this.passedOnce = status === 'passed' || this.completed;
+
+      // Retakes. A lesson finished before retakes existed has no finish time;
+      // it was finished at least that long ago, so its retake is open now.
+      this.best = typeof data.s === 'number' ? data.s : null;   // best earlier attempt, 0–100
+      this.attempt = data.a || 1;
+      // Only a missing field means "from before retakes"; null means this
+      // attempt isn't finished yet.
+      this.finishedAt = 'f' in data ? data.f : (this.passedOnce ? 0 : null);
       if (initialized && (!status || status === 'not attempted')) {
         set('cmi.core.lesson_status', 'incomplete');
         commit();
@@ -113,25 +136,44 @@
       window.addEventListener('pagehide', () => this.finish());
     }
 
-    _writeScore() {
+    /* This attempt's score, 0–100, or null with no questions. */
+    attemptScore() {
       const total = totalQuestions();
-      if (!total) return;
+      if (!total) return null;
       const earned = Object.values(this.credit).reduce((s, c) => s + c, 0);
-      const raw = Math.round((Math.min(earned, total) / total) * 100);
+      return Math.round((Math.min(earned, total) / total) * 100);
+    }
+    /* The score the gradebook holds: the best of every attempt so far. */
+    bestScore() { return Math.max(this.best ?? 0, this.attemptScore() ?? 0); }
+
+    _writeScore() {
+      if (this.attemptScore() == null) return;
       set('cmi.core.score.min', '0');
       set('cmi.core.score.max', '100');
-      set('cmi.core.score.raw', raw);
+      set('cmi.core.score.raw', this.bestScore());
+    }
+
+    /* When a retake opens (ms), or null if this attempt isn't finished yet. */
+    retakeOpensAt() {
+      return this.finishedAt == null ? null : this.finishedAt + RETAKE_WAIT_HOURS * 3600e3;
+    }
+    canRetake() {
+      const t = this.retakeOpensAt();
+      return t != null && Date.now() >= t;
+    }
+    _payload() {
+      return { m: this.misses, k: this.credit, f: this.finishedAt, s: this.best, a: this.attempt };
     }
 
     save() {
+      if (this.completed && this.finishedAt == null) this.finishedAt = Date.now();
       const payload = JSON.stringify({
         v: [...this.visited],
         c: [...this.correct],
         d: this.completed,
         b: this.beliefs,
         p: this.polls,
-        m: this.misses,
-        k: this.credit,
+        ...this._payload(),
       });
       if (payload.length > 4000) {
         console.warn(`[scorm] suspend_data is ${payload.length} chars — close to SCORM 1.2's 4096 limit.`);
@@ -150,10 +192,23 @@
       this.polls = {};
       // Keep misses and credit (in suspend_data and the score) so a reset
       // can't farm first-try credit, and keep a lesson that was passed passed.
-      set('cmi.suspend_data', JSON.stringify({ m: this.misses, k: this.credit }));
+      // The finish time is kept too, so the retake still opens on schedule.
+      set('cmi.suspend_data', JSON.stringify(this._payload()));
       if (!this.passedOnce) set('cmi.core.lesson_status', 'incomplete');
       this._writeScore();
       commit();
+    }
+
+    /* A new attempt: everything starts over, including wrong tries and credit.
+       The best score so far is remembered, so the gradebook never drops. */
+    retake() {
+      if (!this.canRetake()) return this.reset();
+      this.best = this.bestScore();
+      this.attempt += 1;
+      this.misses = {};
+      this.credit = {};
+      this.finishedAt = null;
+      this.reset();
     }
 
     finish() {

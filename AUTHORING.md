@@ -79,9 +79,15 @@ later hook in.
 
 The top bar also has a **↺ Reset** button (built in — you don't author it). It
 pops a confirmation, then clears this lesson's saved progress and reloads to a
-clean slide 1. Handy for re-running a lesson live in class. In a SCORM build,
-Reset keeps the score: it clears slides and answers, but never the wrong-try
-counts or earned credit.
+clean slide 1. Handy for re-running a lesson live in class.
+
+In a SCORM build, Reset keeps the score: it clears slides and answers, but never
+the wrong-try counts or earned credit. A day after a student finishes the
+lesson, the button turns into **↺ Retake**. A retake is a fresh attempt, with
+wrong tries and credit cleared, and the gradebook keeps the best attempt. The
+day's wait is there so the retake tests recall, not a replay of answers just
+seen. The wait is `RETAKE_WAIT_HOURS` in `shared/scorm-api.js`. The live site
+has no gradebook, so its Reset is unchanged.
 
 ## Scoring: each wrong try is worth 80% of the last
 

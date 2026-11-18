@@ -37,9 +37,9 @@ build installs `globalThis.PhilProgressStore` from
 | PhilMates state                       | SCORM 1.2 element            |
 | ------------------------------------- | --------------------------- |
 | `phil:complete` (all questions right) | `cmi.core.lesson_status` = `passed` |
-| earned credit / total questions       | `cmi.core.score.raw` (0–100, also reported mid-lesson) |
+| earned credit / total questions, best attempt | `cmi.core.score.raw` (0–100, also reported mid-lesson) |
 | time in the lesson this session       | `cmi.core.session_time` (on exit; the LMS sums it into total time) |
-| visited slides, correct, beliefs, wrong tries, credit | `cmi.suspend_data` (resume) |
+| visited slides, correct, beliefs, wrong tries, credit, best score, finish time | `cmi.suspend_data` (resume) |
 
 Notes:
 
@@ -53,8 +53,16 @@ Notes:
   See "Scoring" in [AUTHORING.md](../AUTHORING.md).
 - **Total time** in the LMS's activity report shows who clicked through in a
   few minutes.
-- **Reset never raises a score.** In a package, Reset clears slides and answers
-  but keeps wrong-try counts and credit, and a `passed` lesson stays `passed`.
+- **Reset never raises a score; a retake can.** In a package, Reset clears
+  slides and answers but keeps wrong-try counts and credit. A day after a
+  student finishes, the button becomes **Retake**: a fresh attempt with wrong
+  tries and credit cleared. The gradebook keeps the best attempt, so a worse
+  retake never lowers it, and a `passed` lesson stays `passed`. The wait is
+  `RETAKE_WAIT_HOURS` in `shared/scorm-api.js`; set it to `0` to allow a
+  retake at once. It runs on the student's own clock, so a student who changes
+  the computer's date can skip it.
+- **Lessons finished before retakes existed** have no recorded finish time.
+  Their retake opens at once.
 - The manifest has **no `masteryscore`**. With graded credit, a mastery score of
   100 would let some LMSs mark finishers as `failed`.
 - Progress saved before graded credit existed keeps full credit for questions
